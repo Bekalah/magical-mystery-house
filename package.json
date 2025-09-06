@@ -1,0 +1,10 @@
+{
+  "name": "magical-mystery-house",
+  "version": "1.0.0",
+  "description": "Static offline cosmic helix renderer and labyrinth structure",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}
