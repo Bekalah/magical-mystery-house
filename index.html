@@ -50,9 +50,26 @@
       }
     };
 
-    const palette = await loadJSON("./data/palette.json");
-    const active = palette || defaults.palette;
-    elStatus.textContent = palette ? "Palette loaded." : "Palette missing; using safe fallback.";
+    const params = new URLSearchParams(location.search);
+    const worldId = params.get("world");
+    const worlds = await loadJSON("./data/worlds.json");
+    let active;
+    if (worlds) {
+      if (worldId && worlds[worldId]) {
+        active = worlds[worldId].palette;
+        elStatus.textContent = "World \"" + worldId + "\" loaded.";
+      } else if (worlds.default) {
+        active = worlds.default.palette;
+        elStatus.textContent = worldId ? "World \"" + worldId + "\" missing; using default world." : "Default world loaded.";
+      } else {
+        active = defaults.palette;
+        elStatus.textContent = "Worlds file missing palette; using fallback.";
+      }
+    } else {
+      const palette = await loadJSON("./data/palette.json");
+      active = palette || defaults.palette;
+      elStatus.textContent = palette ? "Palette loaded." : "Palette missing; using safe fallback.";
+    }
 
     // Numerology constants used by geometry routines
     const NUM = { THREE:3, SEVEN:7, NINE:9, ELEVEN:11, TWENTYTWO:22, THIRTYTHREE:33, NINETYNINE:99, ONEFORTYFOUR:144 };
