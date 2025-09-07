@@ -1,3 +1,16 @@
+```
+__  __               _             _      __  __           _     _
+|  \/  | __ _  __ _  | | ___   ___ | | __ |  \/  | ___   __| | __| | ___ _ __
+| |\/| |/ _` |/ _` | | |/ _ \ / _ \| |/ / | |\/| |/ _ \ / _` |/ _` |/ _ \ '__|
+| |  | | (_| | (_| | | | (_) | (_) |   <  | |  | | (_) | (_| | (_| |  __/ |
+|_|  |_|\__,_|\__,_| |_|\___/ \___/|_|\_\ |_|  |_\___/ \__,_|\__,_|\___|_|
+
+    /\\        /\\        /\\        /\\        /\\        /\\
+   /  \\      /  \\      /  \\      /  \\      /  \\      /  \\
+  / /\\ \\    / /\\ \\    / /\\ \\    / /\\ \\    / /\\ \\    / /\\ \\
+ / /  \\ \\  / /  \\ \\  / /  \\ \\  / /  \\ \\  / /  \\ \\  / /  \\ \\
+/_/    \\_\/_/    \\_\/_/    \\_\/_/    \\_\/_/    \\_\/_/    \\_\/
+```
 Architectural Framework
 
 Imagine a labyrinthine house of 144 rooms arranged in 12 concentric rings (mirroring Codex 144).
@@ -69,3 +82,8 @@ Respect for Original Creators: robust citation and attribution for all incorpora
 Celebrate Diversity: embrace multiple cultures, genres, and disciplines—every room honors a distinct facet of creativity.
 
 This “Magical Mystery House” unites open-world exploration, spiral learning, and reverence for artistic mastery. By continually adding rooms, customizing experiences, and preserving every creative output, it becomes a living Codex that grows with its visitors—turning exploration into enlightenment and art into an ever-expanding celebration.
+
+## Build Tasks
+- [ ] Craft ASCII cathedral rooms reflecting elemental architecture.
+- [ ] Integrate Tree-of-Life lore into new ring puzzles.
+- [ ] Expand palette with cultural motifs while staying ND-safe.
