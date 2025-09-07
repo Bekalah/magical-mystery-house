@@ -1,10 +1,9 @@
 # Cosmic Helix Renderer
 
-
 Static, offline canvas demo for layered sacred geometry. No build step, no network calls, ND-safe by design.
 
 ## Layers
-1. **Vesica field** — intersecting circles seed the grid (constant 3 + 7 + 9)
+1. **Vesica field** — intersecting circles seed the grid (constants 3 + 7 + 9)
 2. **Tree-of-Life scaffold** — 10 nodes and 22 connective paths
 3. **Fibonacci curve** — logarithmic spiral using 144 sampled points
 4. **Double-helix lattice** — two phase-shifted strands with 33 cross rungs
@@ -20,15 +19,4 @@ Static, offline canvas demo for layered sacred geometry. No build step, no netwo
 
 ## Numerology constants
 Constants are exposed in `index.html` as `NUM` and feed the renderer. Values: 3, 7, 9, 11, 22, 33, 99, 144.
-=======
-Static, offline HTML+Canvas demo that layers Vesica, Tree-of-Life, Fibonacci spiral, and a double-helix lattice.
-
-## Use
-- Open `index.html` directly in any modern browser (no server required).
-- Optional palette values are in `data/palette.json`; if missing, a safe fallback palette is used.
-
-## Design Notes
-- ND-safe: calm contrast, no motion, no flashing.
-- Geometry is parameterized with numerology constants (3,7,9,11,22,33,99,144).
-- Pure ES module with no dependencies or build step.
 
