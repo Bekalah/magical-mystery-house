@@ -19,6 +19,7 @@ Static, offline canvas demo for layered sacred geometry. No build step, no netwo
 ## Numerology constants
 
 Values exposed as `NUM` in `index.html`: 3, 7, 9, 11, 22, 33, 99, 144.
-=======
+
 Constants are exposed in `index.html` as `NUM` and feed the renderer. Values: 3, 7, 9, 11, 22, 33, 99, 144.
+
 
