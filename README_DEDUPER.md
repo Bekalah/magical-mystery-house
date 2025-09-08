@@ -1,3 +1,5 @@
+Per Texturas Numerorum, Spira Loquitur.  //
+
 # Duplicate Line Cleaner
 
 This repo may collect accidental duplicate lines. Run `node tools/dedupe.mjs` to clean text files.
