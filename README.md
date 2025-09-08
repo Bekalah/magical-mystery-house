@@ -83,7 +83,8 @@ Celebrate Diversity: embrace multiple cultures, genres, and disciplines—every 
 
 This “Magical Mystery House” unites open-world exploration, spiral learning, and reverence for artistic mastery. By continually adding rooms, customizing experiences, and preserving every creative output, it becomes a living Codex that grows with its visitors—turning exploration into enlightenment and art into an ever-expanding celebration.
 
-## Build Tasks
+## Task Status
+- [x] Offline helix renderer with palette fallback.
 - [ ] Craft ASCII cathedral rooms reflecting elemental architecture.
 - [ ] Integrate Tree-of-Life lore into new ring puzzles.
 - [ ] Expand palette with cultural motifs while staying ND-safe.
