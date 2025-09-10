@@ -12,7 +12,7 @@ Static, offline canvas demo for layered sacred geometry. No build step, no netwo
 ## Usage
 
 - Open `index.html` directly in any modern browser.
-- Optional: edit `data/palette.json` to change colors; if missing, a calm fallback palette is used.
+- Optional: edit `data/palette.json` to change colors; if missing, a calm fallback palette is used and the header shows a small notice.
 
 ## ND-safe choices
 
