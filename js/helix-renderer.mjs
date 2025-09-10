@@ -144,4 +144,3 @@ function drawHelix(ctx, w, h, strandColor, rungColor, NUM) {
   }
   ctx.restore();
 }
-
