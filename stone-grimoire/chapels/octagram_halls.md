@@ -85,3 +85,4 @@
 - **Trial**: Align seed syllables with Tara lights to cleanse chamber.
 - **Atelier Tasks**: Trace Cho Ku Rei spiral; sequence syllables for mandala light.
 - **Witch-Mode Gift**: Heal party + remove trauma condition.
+
