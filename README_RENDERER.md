@@ -28,11 +28,11 @@ If `data/palette.json` is absent or malformed, the renderer announces the missin
 
 ## Numerology constants
 
-Constants exposed in `index.html` as `NUM` feed the renderer: 3, 7, 9, 11, 22, 33, 99, 144.
+The renderer uses constants that echo Tarot and Fibonacci harmonics: 3, 7, 9, 11, 22, 33, 99, 144.
 
 ## Numerology as spiral grammar
 
-The wider cathedral runs on spiral invariants: numbers that echo Fibonacci and Tarot harmonics.
+The wider cathedral runs on spiral invariants:
 
 - 21 pillars: Fibonacci step (8 + 13) aligned with major arcana and the 21 Taras.
 - 33 spine: 3 x 11 initiatory vertebrae; a Christic ladder of balance.
@@ -41,6 +41,5 @@ The wider cathedral runs on spiral invariants: numbers that echo Fibonacci and T
 - 99 gates: 3 x 33 triplicity opening to recursive paths.
 - 144 lattice: Fibonacci square (12^2) supporting the codex itself.
 - 243 completion: 3^5 cube of balance sealing the cathedral.
-Constants are exposed in `index.html` as `NUM` and feed the renderer. Values: 3, 7, 9, 11, 22, 33, 99, 144.
 
 These constants form the project's mathematical DNA: a Fibonacci spiral encoded in geometry and pathworking.
