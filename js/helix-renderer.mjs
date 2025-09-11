@@ -19,11 +19,13 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
     3) Fibonacci curve (log spiral polyline)
     4) Double-helix lattice (two phase-shifted strands with rungs)
 
-*/
 >>>>>>>+main
 >>>>>>> origin/codex/implement-daimon-registry-and-bind-spiral-stages
-
-export function renderHelix(ctx, { width, height, palette, NUM }) {
+>>>>>>>+main
+  All fu  All functions are pure and render once; no motion or external deps.
+*/
+>>>>>>>+origin/codex/cr
+function renderHelix(ctx, { width, height, palette, NUM }) {
   // Prepare stage
   ctx.save();
   ctx.fillStyle = palette.bg;
@@ -31,15 +33,19 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
 
   // Layer order preserves depth without motion
   drawVesica(ctx, width, height, palette.layers[0], NUM);
-  drawFibonacci(ctx, width, height, palette.layers[3], NUM);
+<<<<<<< main
+  drawTr  drawTree(ctx, width, height, palette.layers[1], palette.layers[2], NUM);
+bonacci(ctx, width, height, palette.layers[3], NUM);
   drawHelix(ctx, width, height, palette.layers[4], NUM);
   drawTree(ctx, width, height, palette.layers[1], NUM);
   drawFibonacci(ctx, width, height, palette.layers[2], NUM);
   drawHelix(ctx, width, height,
     palette.layers[3], palette.layers[4], palette.layers[5], NUM);
+  // Tre  // Tree uses two colors: nodes and paths
 >>>>>>>+main
   // Tre  // Tree uses two colors: nodes and paths
-  drawTree(ctx, width, height, palette.layers[2], palette.layers[1], NUM);
+>>>>>>>+origin/codex/cr
+ee(ctx, width, height, palette.layers[2], palette.layers[1], NUM);
   drawFibonacci(ctx, width, height, palette.layers[3], NUM);
 
   drawHelix(ctx, width, height, {
@@ -50,11 +56,17 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
 
 
   drawHelix(ctx, width, height, palette.layers[4], palette.layers[5], NUM);
+<<<<<<< main
 >>>>>>>+origin/codex/im
 estore();
 }
 
 <<<<<<< /* Layer 1: Vesica field */
+
+  ctx.restore();
+}
+
+/* Layer 1: Vesica field */
 function drawVesica(ctx, w, h, color, NUM) {
   // ND-safe: thin lines, sparse pattern
   ctx.save();
@@ -65,6 +77,7 @@ function drawVesica(ctx, w, h, color, NUM) {
   const step = r / NUM.SEVEN;
 >>>>>>>+main
 // Layer// Layer 1 ---------------------------------------------------------------
+// Layer 1 ---------------------------------------------------------------
 
 function drawVesica(ctx, w, h, color, NUM) {
 
@@ -81,6 +94,7 @@ function drawVesica(ctx, w, h, color, NUM) {
 
 >>>>>>>+origin/codex/im
 ica field: calm outline grid of intersecting circles.
+  /* Vesica field: calm outline grid of intersecting circles.
      ND-safe: thin strokes, generous spacing. */
   const r = Math.min(w, h) / NUM.THREE;
   const step = r / NUM.SEVEN;
