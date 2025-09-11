@@ -1,3 +1,5 @@
+Per Texturas Numerorum, Spira Loquitur.  //
+
 # Cosmic Helix Renderer
 
 Static, offline canvas demo for layered sacred geometry. No build step, no network calls, ND-safe by design.
@@ -12,7 +14,11 @@ Static, offline canvas demo for layered sacred geometry. No build step, no netwo
 ## Usage
 
 - Open `index.html` directly in any modern browser.
-- Optional: edit `data/palette.json` to change colors; if missing, a calm fallback palette is used.
+- Optional: edit `data/palette.json` to change colors; if missing, a calm fallback palette is used and the header shows a small notice.
+
+## Fallback behavior
+
+If `data/palette.json` is absent or malformed, the renderer announces the missing palette and uses a built-in calm palette. This guards against harsh defaults while staying fully offline.
 
 ## ND-safe choices
 
@@ -35,5 +41,6 @@ The wider cathedral runs on spiral invariants: numbers that echo Fibonacci and T
 - 99 gates: 3 x 33 triplicity opening to recursive paths.
 - 144 lattice: Fibonacci square (12^2) supporting the codex itself.
 - 243 completion: 3^5 cube of balance sealing the cathedral.
+Constants are exposed in `index.html` as `NUM` and feed the renderer. Values: 3, 7, 9, 11, 22, 33, 99, 144.
 
 These constants form the project's mathematical DNA: a Fibonacci spiral encoded in geometry and pathworking.
