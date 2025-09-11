@@ -13,6 +13,15 @@ Static, offline canvas demo for layered sacred geometry. No build step, no netwo
 
 ## Layers
 
+1. **Vesica field** — intersecting circles seed the grid (constants 3, 7, 9)
+2. **Tree-of-Life scaffold** — 10 nodes and 22 connective paths
+
+1. **Vesica field** — intersecting circles seed the grid (3,7,9)
+2. **Tree-of-Life scaffold** — 10 nodes with 22 connective paths
+
+3. **Fibonacci curve** — logarithmic spiral using 144 sampled points
+4. **Double-helix lattice** — two phase-shifted strands with 33 cross rungs
+
 1. **Vesica field** — intersecting circles seed the grid (3,7,9).
 2. **Tree-of-Life scaffold** — 10 nodes with 22 connective paths.
 3. **Fibonacci curve** — logarithmic spiral using 144 sampled points.
