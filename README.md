@@ -91,3 +91,6 @@ This “Magical Mystery House” unites open-world exploration, spiral learning,
 - [ ] Integrate Tree-of-Life lore into new ring puzzles.
 - [ ] Expand palette with cultural motifs while staying ND-safe.
 - [ ] Verify links to sibling repos (`circuitum99`, `cosmogenesis-learning-engine`, `stone-cathedral`, `liber-arcanae`).
+- [ ] Craft ASCII cathedral rooms reflecting elemental architecture.
+- [ ] Integrate Tree-of-Life lore into new ring puzzles.
+- [ ] Expand palette with cultural motifs while staying ND-safe.
