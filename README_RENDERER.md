@@ -1,3 +1,5 @@
+Per Texturas Numerorum, Spira Loquitur.  //
+
 # Cosmic Helix Renderer
 
 Static, offline canvas demo for layered sacred geometry. No build step, no network calls, ND-safe by design.
