@@ -31,7 +31,6 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
 
   // Layer order preserves depth without motion
   drawVesica(ctx, width, height, palette.layers[0], NUM);
-<<<<<<<   drawTree(ctx, width, height, palette.layers[1], palette.layers[2], NUM);
   drawFibonacci(ctx, width, height, palette.layers[3], NUM);
   drawHelix(ctx, width, height, palette.layers[4], NUM);
   drawTree(ctx, width, height, palette.layers[1], NUM);
@@ -196,6 +195,7 @@ function drawTree(ctx, w, h, color, NUM) {
 
 /* Layer 3: Fibonacci curve */
 function drawFibonacci(ctx, w, h, color, NUM) {
+<<<<<<< main
 // Layer 3 ---------------------------------------------------------------
 
 function drawFibonacci(ctx, w, h, color, NUM) {
