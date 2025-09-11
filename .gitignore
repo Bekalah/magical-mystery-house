@@ -1,0 +1,11 @@
+# keep giant masters local; ship runtime builds
+assets/figures-src/
+*.kra
+*.blend
+*.procreate
+
+# caches & OS
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
