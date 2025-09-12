@@ -105,9 +105,10 @@ function drawTree(ctx, w, h, nodeColor, pathColor, NUM) {
     [1,4],[2,3],[1,5],[2,6],[3,8],[4,8],[5,9],[6,9]
   ].slice(0, NUM.TWENTYTWO);
   ctx.save();
-  ctx.strokeStyle = color;
+  ctx.strokeStyle = pathColor;
   ctx.lineWidth = 1;
-  paths.forEach(([a,b]) => {
+  for (const [a,b] of paths) {
+    const p1 = nodes[a], p2 = nodes[b];
     ctx.beginPath();
     ctx.moveTo(nodes[a][0]*w, nodes[a][1]*h);
     ctx.lineTo(nodes[b][0]*w, nodes[b][1]*h);
@@ -150,8 +151,16 @@ function drawTree(ctx, w, h, nodeColor, pathColor, NUM) {
   nodes.forEach(([x,y]) => {
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI * 2);
+    ctx.moveTo(p1.x * w, p1.y * h);
+    ctx.lineTo(p2.x * w, p2.y * h);
+    ctx.stroke();
+  }
+  ctx.fillStyle = nodeColor;
+  for (const p of nodes) {
+    ctx.beginPath();
+    ctx.arc(p.x * w, p.y * h, r, 0, Math.PI * 2);
     ctx.fill();
-  });
+  }
   ctx.restore();
 }
 
@@ -226,6 +235,9 @@ function drawHelix(ctx, w, h, strandColor, rungColor, NUM) {
   const waves = NUM.ELEVEN;
   const steps = NUM.NINETYNINE;
 
+
+  // strand A
+  ctx.strokeStyle = colors.a;
   ctx.lineWidth = 2;
   ctx.strokeStyle = colors.a;
   ctx.beginPath();
