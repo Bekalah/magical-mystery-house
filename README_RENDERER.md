@@ -1,4 +1,5 @@
 Per Texturas Numerorum, Spira Loquitur.
+Per Texturas Numerorum, Spira Loquitur. //
 
 # Cosmic Helix Renderer
 
@@ -13,6 +14,10 @@ Static, offline canvas demo for layered sacred geometry. No build step, no netwo
 2. **Tree-of-Life scaffold** — 10 nodes with 22 connective paths.
 3. **Fibonacci curve** — logarithmic spiral using 144 sampled points.
 4. **Double-helix lattice** — two phase-shifted strands with 33 cross rungs.
+1. **Vesica field** (R001) - intersecting circles seed the grid (constants 3,7,9).
+2. **Tree-of-Life scaffold** (R002) - 10 nodes and 22 connective paths.
+3. **Fibonacci curve** (R003) - logarithmic spiral using 144 sampled points.
+4. **Double-helix lattice** (R004) - two phase-shifted strands with 33 cross rungs.
 
 ## Usage
 - Open `index.html` directly in any modern browser.
@@ -34,6 +39,7 @@ The renderer uses constants that echo Tarot and Fibonacci harmonics: 3, 7, 9, 11
 ## Numerology as spiral grammar
 
 The wider cathedral runs on spiral invariants:
+The wider cathedral runs on spiral invariants: numbers that echo Fibonacci and Tarot harmonics.
 
 - 21 pillars: Fibonacci step (8 + 13) aligned with major arcana and the 21 Taras.
 - 33 spine: 3 x 11 initiatory vertebrae; a Christic ladder of balance.
@@ -42,5 +48,3 @@ The wider cathedral runs on spiral invariants:
 - 99 gates: 3 x 33 triplicity opening to recursive paths.
 - 144 lattice: Fibonacci square (12^2) supporting the codex itself.
 - 243 completion: 3^5 cube of balance sealing the cathedral.
-
-These constants form the project's mathematical DNA: a Fibonacci spiral encoded in geometry and pathworking.
