@@ -18,6 +18,11 @@
     2) Tree-of-Life scaffold — 10 sephirot nodes + 22 connecting paths
     3) Fibonacci curve — logarithmic spiral approximated by polyline
     4) Double-helix lattice — two phase-shifted strands with 33 cross rungs
+  Layers (drawn in order):
+    1) Vesica field - intersecting circles forming a calm grid
+    2) Tree-of-Life scaffold - 10 sephirot nodes + 22 connecting paths
+    3) Fibonacci curve - logarithmic spiral approximated by polyline
+    4) Double-helix lattice - two phase-shifted strands with 33 cross rungs
 
   Design: no motion, no external deps, ASCII quotes only.
 */
@@ -79,6 +84,16 @@ function drawVesica(ctx, w, h, color, NUM) {
     for (let x = r; x < w; x += step * NUM.NINE) {
       ctx.beginPath(); ctx.arc(x - step, y, r, 0, Math.PI * 2); ctx.stroke();
       ctx.beginPath(); ctx.arc(x + step, y, r, 0, Math.PI * 2); ctx.stroke();
+/* Layer 1: Vesica field */
+function drawVesica(ctx, w, h, color, NUM) {
+  // ND-safe: thin lines, generous spacing
+  ctx.save();
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1;
+  const r = Math.min(w, h) / NUM.THREE;      // triadic radius
+  const step = r / NUM.SEVEN;                // septenary spacing
+  for (let y = r; y < h; y += step * NUM.NINE) {
+    for (let x = r; x < w; x += step * NUM.NINE) {
       ctx.beginPath();
       ctx.arc(x - step, y, r, 0, Math.PI * 2);
       ctx.stroke();
@@ -254,6 +269,49 @@ function drawTree(ctx, w, h, nodeColor, pathColor, NUM) {
   for (const [x, y] of nodes) {
     ctx.beginPath();
     ctx.arc(x * w, y * h, r, 0, Math.PI * 2);
+  // ND-safe: static scaffold, no motion
+  const nodes = [];
+  const colX = [
+    w / NUM.THREE,
+    w / 2,
+    w - w / NUM.THREE
+  ];
+  const rowY = [];
+  for (let i = 1; i <= NUM.NINE; i++) {
+    rowY.push((h / (NUM.NINE + 1)) * i);
+  }
+  // simplified 10 sephirot layout
+  nodes.push({ x: colX[1], y: rowY[0] }); // Keter
+  nodes.push({ x: colX[0], y: rowY[1] }); // Chokmah
+  nodes.push({ x: colX[2], y: rowY[1] }); // Binah
+  nodes.push({ x: colX[0], y: rowY[2] }); // Chesed
+  nodes.push({ x: colX[2], y: rowY[2] }); // Geburah
+  nodes.push({ x: colX[1], y: rowY[3] }); // Tiferet
+  nodes.push({ x: colX[0], y: rowY[4] }); // Netzach
+  nodes.push({ x: colX[2], y: rowY[4] }); // Hod
+  nodes.push({ x: colX[1], y: rowY[5] }); // Yesod
+  nodes.push({ x: colX[1], y: rowY[7] }); // Malkuth
+
+  const paths = [
+    [0,1],[0,2],[1,3],[1,5],[2,4],[2,5],
+    [3,4],[3,5],[4,5],[3,6],[4,7],[6,7],
+    [6,8],[7,8],[5,8],[8,9]
+  ];
+  ctx.save();
+  ctx.strokeStyle = pathColor;
+  ctx.lineWidth = 2;
+  for (const [a,b] of paths) {
+    const A = nodes[a], B = nodes[b];
+    ctx.beginPath();
+    ctx.moveTo(A.x, A.y);
+    ctx.lineTo(B.x, B.y);
+    ctx.stroke();
+  }
+  ctx.fillStyle = nodeColor;
+  const r = Math.min(w, h) / NUM.NINETYNINE * NUM.THREE; // small node radius
+  for (const n of nodes) {
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, r, 0, Math.PI * 2);
     ctx.fill();
   }
   ctx.restore();
@@ -329,6 +387,22 @@ function drawFibonacci(ctx, w, h, color, NUM) {
     const ang = t * Math.PI / NUM.ELEVEN;
     const x = w/2 + r * Math.cos(ang);
     const y = h/2 + r * Math.sin(ang);
+  // ND-safe: static spiral with 144 samples
+  ctx.save();
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 2;
+  const phi = (1 + Math.sqrt(5)) / 2;
+  const center = { x: w / 2, y: h / 2 };
+  const maxR = Math.min(w, h) / 2;
+  const tMax = NUM.ONEFORTYFOUR / NUM.TWENTYTWO;
+  const base = maxR / Math.pow(phi, tMax);
+  ctx.beginPath();
+  for (let i = 0; i <= NUM.ONEFORTYFOUR; i++) {
+    const t = i / NUM.TWENTYTWO;
+    const r = base * Math.pow(phi, t);
+    const ang = t * 2 * Math.PI;
+    const x = center.x + r * Math.cos(ang);
+    const y = center.y + r * Math.sin(ang);
     if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
   }
   points.forEach(([x, y], idx) => {
@@ -347,6 +421,7 @@ function drawHelix(ctx, w, h, colors, NUM) {
 function drawHelix(ctx, w, h, strandColor, rungColor, NUM) {
   /* Double-helix lattice: two static strands with cross rungs.
      ND-safe: fixed lines, no flashing. */
+  // ND-safe: static lattice of two strands with cross rungs
   const amp = h / NUM.NINE;
   const waves = NUM.ELEVEN;
   const steps = NUM.NINETYNINE;
@@ -372,6 +447,9 @@ function drawHelix(ctx, w, h, colors, NUM) {
   ctx.strokeStyle = colors.a;
   ctx.lineWidth = 2;
   ctx.strokeStyle = colors.a;
+
+  // strand A
+  ctx.strokeStyle = colors.a;
   ctx.beginPath();
   for (let i = 0; i <= steps; i++) {
     const t = i / steps;
@@ -388,6 +466,7 @@ function drawHelix(ctx, w, h, colors, NUM) {
   ctx.strokeStyle = colors.b;
   // strand B
   // strand B (phase shifted)
+  // strand B (phase shifted by pi)
   ctx.strokeStyle = colors.b;
   ctx.beginPath();
   for (let i = 0; i <= steps; i++) {
@@ -405,6 +484,7 @@ function drawHelix(ctx, w, h, colors, NUM) {
   // rungs
   ctx.strokeStyle = rungColor;
   // rungs
+  // rungs
   ctx.strokeStyle = colors.rung;
   ctx.lineWidth = 1;
   for (let i = 0; i <= NUM.THIRTYTHREE; i++) {
@@ -418,6 +498,9 @@ function drawHelix(ctx, w, h, colors, NUM) {
     const y2 = h/2 + Math.sin(phase + Math.PI) * amp;
     const y1 = h/2 + Math.sin(t * waves * 2 * Math.PI) * amp;
     const y2 = h/2 + Math.sin(t * waves * 2 * Math.PI + Math.PI) * amp;
+    const y1 = h/2 + Math.sin(phase) * amp;
+    const y2 = h/2 + Math.sin(phase + Math.PI) * amp;
+    const phase = t * waves * 2*Math.PI;
     const y1 = h/2 + Math.sin(phase) * amp;
     const y2 = h/2 + Math.sin(phase + Math.PI) * amp;
     ctx.beginPath();
