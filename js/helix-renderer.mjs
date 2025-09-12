@@ -7,6 +7,10 @@
     2) Tree-of-Life scaffold – 10 sephirot nodes + 22 paths
     3) Fibonacci curve – logarithmic spiral approximated by polyline
     4) Double-helix lattice – two static strands with 33 cross rungs
+    1) Vesica field (intersecting circles)
+    2) Tree-of-Life scaffold (10 nodes + 22 paths)
+    3) Fibonacci curve (log spiral polyline)
+    4) Double-helix lattice (two phase-shifted strands with rungs)
 
   Design: no motion, no external deps, ASCII quotes only.
 */
@@ -79,6 +83,30 @@ function drawTree(ctx, w, h, nodeColor, pathColor, NUM) {
     ctx.arc(p.x * w, p.y * h, r, 0, Math.PI * 2);
     ctx.fill();
   }
+    [0.5, 0.05],[0.2,0.2],[0.8,0.2],[0.2,0.4],[0.8,0.4],
+    [0.5,0.5],[0.2,0.7],[0.8,0.7],[0.5,0.85],[0.5,0.95]
+  ];
+  const paths = [
+    [0,1],[0,2],[1,2],[1,3],[2,4],[3,5],[4,5],
+    [3,6],[4,7],[5,6],[5,7],[6,8],[7,8],[8,9],
+    [1,4],[2,3],[1,5],[2,6],[3,8],[4,8],[5,9],[6,9]
+  ].slice(0, NUM.TWENTYTWO);
+  ctx.save();
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1;
+  paths.forEach(([a,b]) => {
+    ctx.beginPath();
+    ctx.moveTo(nodes[a][0]*w, nodes[a][1]*h);
+    ctx.lineTo(nodes[b][0]*w, nodes[b][1]*h);
+    ctx.stroke();
+  });
+  ctx.fillStyle = color;
+  const r = w / NUM.NINETYNINE;
+  nodes.forEach(([nx, ny]) => {
+    ctx.beginPath();
+    ctx.arc(nx*w, ny*h, r, 0, Math.PI*2);
+    ctx.fill();
+  });
   ctx.restore();
 }
 
@@ -91,6 +119,13 @@ function drawFibonacci(ctx, w, h, color, NUM) {
   const points = NUM.ONEFORTYFOUR;
   const phi = (1 + Math.sqrt(5)) / 2; // golden ratio
   const scale = Math.min(w, h) / NUM.THIRTYTHREE;
+  /* Fibonacci spiral: static logarithmic curve.
+     ND-safe: single line, no animation. */
+  const center = { x: w/NUM.THREE, y: h/NUM.THREE };
+  const phi = (1 + Math.sqrt(5)) / 2;
+  const turns = NUM.THREE;
+  const segs = NUM.ONEFORTYFOUR;
+  const scale = Math.min(w, h) / NUM.SEVEN;
   ctx.save();
   ctx.strokeStyle = color;
   ctx.lineWidth = 2;
@@ -100,6 +135,11 @@ function drawFibonacci(ctx, w, h, color, NUM) {
     const radius = scale * Math.pow(phi, i / NUM.TWENTYTWO);
     const x = cx + Math.cos(angle) * radius;
     const y = cy - Math.sin(angle) * radius;
+  for (let i = 0; i <= segs; i++) {
+    const t = (turns * 2 * Math.PI) * (i / segs);
+    const r = Math.pow(phi, t / (2 * Math.PI));
+    const x = center.x + scale * r * Math.cos(t);
+    const y = center.y + scale * r * Math.sin(t);
     if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
   }
   ctx.stroke();
@@ -110,10 +150,16 @@ function drawFibonacci(ctx, w, h, color, NUM) {
 function drawHelix(ctx, w, h, colors, NUM) {
   /* Double helix: two static sine strands with 33 rungs.
      ND-safe: even spacing, no motion. */
+// Layer 4 ---------------------------------------------------------------
+function drawHelix(ctx, w, h, strandColor, rungColor, NUM) {
+  /* Double-helix lattice: two static strands with cross rungs.
+     ND-safe: fixed lines, no flashing. */
   const amp = h / NUM.NINE;
   const waves = NUM.ELEVEN;
   const steps = NUM.NINETYNINE;
   ctx.save();
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = strandColor;
 
   // strand A
   ctx.strokeStyle = colors.a;
@@ -129,6 +175,7 @@ function drawHelix(ctx, w, h, colors, NUM) {
 
   // strand B phase shifted
   ctx.strokeStyle = colors.b;
+  // strand B
   ctx.beginPath();
   for (let i = 0; i <= steps; i++) {
     const t = i / steps;
@@ -140,6 +187,8 @@ function drawHelix(ctx, w, h, colors, NUM) {
 
   // cross rungs
   ctx.strokeStyle = colors.rung;
+  // rungs
+  ctx.strokeStyle = rungColor;
   ctx.lineWidth = 1;
   for (let i = 0; i <= NUM.THIRTYTHREE; i++) {
     const t = i / NUM.THIRTYTHREE;
