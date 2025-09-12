@@ -12,6 +12,9 @@ Static, offline canvas demo for layered sacred geometry. No build step, no netwo
 - Open `index.html` directly in any modern browser.
 - Optional: edit `data/palette.json` to change colors; if missing, a calm fallback palette is used and the header shows a small notice.
 
+## Fallback behavior
+If `data/palette.json` is absent or malformed, the renderer announces the missing palette and uses a built-in calm palette. This guards against harsh defaults while staying fully offline.
+
 ## ND-safe choices
 - No animation, autoplay, or flashing.
 - Gentle contrast with readable inks on dark background.
