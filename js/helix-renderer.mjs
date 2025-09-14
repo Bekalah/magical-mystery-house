@@ -9,6 +9,13 @@
     4) Double-helix lattice — two phase-shifted strands with 33 rungs
 
   All functions are pure and run once; no motion, no dependencies.
+  Layers  Layers (rendered in order):
+    1) Vesica field — intersecting circles
+    2) Tree-of-Life scaffold — 10 nodes with 22 paths
+    3) Fibonacci curve — logarithmic spiral polyline
+    4) Double-helix lattice — two phase-shifted strands with rungs
+ are pure and run once; no motion, no dependencies.
+>>>>>>> main
 */
 
 export function renderHelix(ctx, { width, height, palette, NUM }) {
@@ -17,6 +24,10 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
   ctx.fillRect(0, 0, width, height);
 
   // Layer order preserves depth without motion
+<<<<<<< main
+  /  // Layer order preserves depth without motion
+origin/codex/update-version-to-1.0.1-0d7tvt
+>>>>>>> main
   drawVesica(ctx, width, height, palette.layers[0], NUM);
   drawTree(ctx, width, height, palette.layers[1], palette.layers[2], NUM);
   drawFibonacci(ctx, width, height, palette.layers[3], NUM);
@@ -26,6 +37,8 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
 }
 
 /* Layer 1: Vesica field ---------------------------------------------------- */
+<<<<<<< main
+/* /* Layer 1: Vesica field ---------------------------------------------------- */
 function drawVesica(ctx, w, h, color, NUM) {
   /* Vesica field: calm outline grid built from overlapping circles.
      ND-safe: thin lines, generous spacing. */
@@ -51,6 +64,23 @@ function drawVesica(ctx, w, h, color, NUM) {
 }
 
 /* Layer 2: Tree-of-Life scaffold ------------------------------------------ */
+ 1: Vesi/* Layer 1: Vesica field — calm grid of intersecting circles */
+function drawVesica(ctx, w, h, color, NUM) {
+  const r = Math.min(w, h) / NUM.THREE; // triadic radius
+  const step = r / NUM.SEVEN;           // septenary spacing
+  ctx.save();
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1;
+  for (let y = r; y < h; y += step * NUM.NINE) {
+    for (let x = r; x < w; x += step * NUM.NINE) {
+      ctx.beginPath(); ctx.arc(x - step, y, r, 0, Math.PI * 2); ctx.stroke();
+      ctx.beginPath(); ctx.arc(x + step, y, r, 0, Math.PI * 2); ctx.stroke();
+>>>>>>>+origin/codex/up
+store();
+}
+
+/* La/* Layer 2: Tree-of-Life scaffold ------------------------------------------ */
+>>>>>>> main
 function drawTree(ctx, w, h, edgeColor, nodeColor, NUM) {
   /* Tree-of-Life: ten nodes and twenty-two paths.
      ND-safe: static layout with soft strokes and filled nodes. */
@@ -72,6 +102,7 @@ function drawTree(ctx, w, h, edgeColor, nodeColor, NUM) {
   ctx.save();
   ctx.strokeStyle = edgeColor;
   ctx.lineWidth = 1;
+<<<<<<< codex/define-art-standards-in-codex-144-99-yj95r6
 
   edges.forEach(([a, b]) => {
     const [ax, ay] = nodes[a];
@@ -104,6 +135,84 @@ function drawFibonacci(ctx, w, h, color, NUM) {
   ctx.lineWidth = 2;
   ctx.beginPath();
 
+
+  edges.forEach(([a, b]) => {
+    const [ax, ay] = nodes[a];
+    const [bx, by] = nodes[b];
+    ctx.beginPath();
+    ctx.moveTo(ax * w, ay * h);
+    ctx.lineTo(bx * w, by * h);
+: Tree-o/* Layer 2: Tree-of-Life scaffold — 10 nodes, 22 paths */
+function drawTree(ctx, w, h, nodeColor, pathColor, NUM) {
+  const nodes = [
+    [0.5, 0.05],
+    [0.25, 0.15], [0.75, 0.15],
+    [0.25, 0.3], [0.5, 0.35], [0.75, 0.3],
+    [0.25, 0.5], [0.75, 0.5],
+    [0.5, 0.6],
+    [0.5, 0.8]
+  ].map(([x, y]) => [x * w, y * h]);
+
+  const paths = [
+    [0,1],[0,2],
+    [1,2],[1,3],[1,4],[2,4],[2,5],
+    [3,4],[4,5],
+    [3,6],[4,6],[4,7],[5,7],
+    [6,8],[7,8],
+    [6,9],[7,9],
+    [8,9],
+    [3,5],[1,5],[2,3],[6,7]
+  ];
+
+  ctx.save();
+  ctx.strokeStyle = pathColor;
+  ctx.lineWidth = 1;
+  paths.forEach(([a,b]) => {
+    ctx.beginPath();
+    ctx.moveTo(nodes[a][0], nodes[a][1]);
+    ctx.lineTo(nodes[b][0], nodes[b][1]);
+>>>>>>>+origin/codex/up
+});
+
+  ctx.fillStyle = nodeColor;
+  nodes  nodes.forEach(([x, y]) => {
+    ctx.beginPath();
+    ctx.arc(x * w, y * h, w / NUM.NINETYNINE * 2, 0, Math.PI * 2);
+>>>>>>>+main
+Math.min  const r = Math.min(w, h) / NUM.TWENTYTWO;
+  nodes.forEach(([x,y]) => {
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, Math.PI * 2);
+>>>>>>>+origin/codex/up
+;
+  ctx.restore();
+}
+
+<<<<<<< main
+/* Laye/* Layer 3: Fibonacci curve ------------------------------------------------- */
+function drawFibonacci(ctx, w, h, color, NUM) {
+  /* Fibonacci curve: logarithmic spiral sampling 144 points.
+     ND-safe: static polyline, no highlight. */
+  const phi = (1 + Math.sqrt(5)) / 2;
+  const steps = NUM.ONEFORTYFOUR;
+  const scale = Math.min(w, h) / NUM.TWENTYTWO;
+
+>>>>>>>+main
+Fibonacc/* Layer 3: Fibonacci curve — static logarithmic spiral */
+function drawFibonacci(ctx, w, h, color, NUM) {
+  const phi = (1 + Math.sqrt(5)) / 2;
+  const samples = NUM.ONEFORTYFOUR;
+  const scale = Math.min(w, h) / NUM.THIRTYTHREE;
+  const cx = w / 2;
+  const cy = h / 2;
+>>>>>>>+origin/codex/up
+rokeStyle = color;
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+<<<<<<< main
+
+  for (l
+>>>>>>> main
   for (let i = 0; i <= steps; i++) {
     const theta = i * (Math.PI / NUM.ELEVEN);
     const r = scale * Math.pow(phi, theta / (Math.PI * 2));
@@ -112,10 +221,23 @@ function drawFibonacci(ctx, w, h, color, NUM) {
     if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
   }
 
+<<<<<<< codex/define-art-standards-in-codex-144-99-yj95r6
   ctx.stroke();
   ctx.restore();
 }
 
+ 0; i <=  for (let i = 0; i <= samples; i++) {
+    const theta = i * (Math.PI / NUM.ELEVEN);
+    const r = scale * Math.pow(phi, theta / Math.PI);
+    const x = cx + Math.cos(theta) * r;
+    const y = cy - Math.sin(theta) * r;
+    if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+  }
+>>>>>>>+origin/codex/up
+restore();
+}
+
+>>>>>>> main
 /* Layer 4: Double-helix lattice ------------------------------------------- */
 function drawHelix(ctx, w, h, colors, NUM) {
   /* Double-helix lattice: two static strands with cross rungs.
@@ -124,6 +246,12 @@ function drawHelix(ctx, w, h, colors, NUM) {
   const waves = NUM.ELEVEN;
   const steps = NUM.NINETYNINE;
 
+<<<<<<< codex/define-art-standards-in-codex-144-99-yj95r6
+/* Layer 4: Double-helix lattice — two static strands with rungs */
+function drawHelix(ctx, w, h, colors, NUM) {
+  const amp = h / NUM.NINE;       // gentle amplitude
+  const waves = NUM.ELEVEN;       // helix turns
+  const steps = NUM.NINETYNINE;   // sampling
   ctx.save();
   ctx.lineWidth = 2;
 
@@ -150,6 +278,7 @@ function drawHelix(ctx, w, h, colors, NUM) {
   ctx.stroke();
 
   // cross rungs
+  // rungs
   ctx.strokeStyle = colors.rung;
   ctx.lineWidth = 1;
   for (let i = 0; i <= NUM.THIRTYTHREE; i++) {
