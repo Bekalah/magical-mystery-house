@@ -21,3 +21,4 @@ Static, offline canvas demo for layered sacred geometry. No build step, no netwo
 
 ## Numerology constants
 The renderer uses constants that echo Fibonacci and Tarot harmonics: 3, 7, 9, 11, 22, 33, 99, 144.
+Constants exposed in `index.html` as `NUM` feed the geometry: 3, 7, 9, 11, 22, 33, 99, 144.

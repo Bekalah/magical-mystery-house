@@ -9,6 +9,7 @@
     4) Double-helix lattice — two phase-shifted strands with 33 cross rungs
 
   All functions are pure and run once; no motion, no dependencies.
+  Functions are pure and run once; no motion, no dependencies.
 */
 
 export function renderHelix(ctx, { width, height, palette, NUM }) {
@@ -26,16 +27,13 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
 }
 
 /* Layer 1: Vesica field ---------------------------------------------------- */
+/* Layer 1: Vesica field -- calm grid of intersecting circles */
 function drawVesica(ctx, w, h, color, NUM) {
-  /* Vesica field: calm outline grid built from overlapping circles.
-     ND-safe: thin lines, generous spacing. */
-  const r = Math.min(w, h) / NUM.THREE;      // base radius from sacred triad
-  const step = r / NUM.SEVEN;                // spacing guided by 7
-
+  const r = Math.min(w, h) / NUM.THREE; // triadic radius
+  const step = r / NUM.SEVEN;           // septenary spacing
   ctx.save();
   ctx.strokeStyle = color;
   ctx.lineWidth = 1;
-
   for (let y = r; y < h; y += step * NUM.NINE) {
     for (let x = r; x < w; x += step * NUM.NINE) {
       ctx.beginPath(); ctx.arc(x - step, y, r, 0, Math.PI * 2); ctx.stroke();
@@ -65,6 +63,36 @@ function drawTree(ctx, w, h, pathColor, nodeColor, NUM) {
     [6,8],[6,9],
     [7,8],[7,9],
     [8,9]
+      ctx.beginPath();
+      ctx.arc(x - step, y, r, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(x + step, y, r, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+  }
+  ctx.restore();
+}
+
+/* Layer 2: Tree-of-Life scaffold -- nodes and paths */
+function drawTree(ctx, w, h, pathColor, nodeColor, NUM) {
+  const pts = [
+    [0.5, 0.1],
+    [0.25, 0.2],
+    [0.75, 0.2],
+    [0.25, 0.4],
+    [0.75, 0.4],
+    [0.5, 0.5],
+    [0.25, 0.7],
+    [0.75, 0.7],
+    [0.5, 0.8],
+    [0.5, 0.9]
+  ].map(([x, y]) => [x * w, y * h]);
+
+  const edges = [
+    [0,1],[0,2],[1,2],[1,3],[1,5],[2,4],[2,5],[3,4],[3,5],[3,6],
+    [4,5],[4,7],[5,6],[5,7],[5,8],[6,8],[6,9],[7,8],[7,9],[8,9],
+    [1,7],[2,8]
   ];
 
   ctx.save();
@@ -92,12 +120,33 @@ function drawTree(ctx, w, h, pathColor, nodeColor, NUM) {
 }
 
 /* Layer 3: Fibonacci curve ------------------------------------------------- */
+  ctx.lineWidth = 1.5;
+  edges.forEach(([a, b]) => {
+    ctx.beginPath();
+    ctx.moveTo(pts[a][0], pts[a][1]);
+    ctx.lineTo(pts[b][0], pts[b][1]);
+    ctx.stroke();
+  });
+
+  ctx.fillStyle = nodeColor;
+  const r = Math.min(w, h) / NUM.TWENTYTWO;
+  pts.forEach(([x, y]) => {
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, Math.PI * 2);
+    ctx.fill();
+  });
+  ctx.restore();
+}
+
+/* Layer 3: Fibonacci curve -- static logarithmic spiral */
 function drawFibonacci(ctx, w, h, color, NUM) {
   /* Logarithmic spiral with fixed samples.
      ND-safe: static polyline, no motion. */
   const phi = (1 + Math.sqrt(5)) / 2;
   const samples = NUM.ONEFORTYFOUR;
   const scale = Math.min(w, h) / NUM.THIRTYTHREE;
+  const cx = w / 2;
+  const cy = h / 2;
 
   ctx.save();
   ctx.strokeStyle = color;
@@ -109,6 +158,9 @@ function drawFibonacci(ctx, w, h, color, NUM) {
     const r = scale * Math.pow(phi, theta / Math.PI);
     const x = w / 2 + Math.cos(theta) * r;
     const y = h / 2 - Math.sin(theta) * r;
+    const r = scale * Math.pow(phi, theta / (Math.PI * 2));
+    const x = cx + Math.cos(theta) * r;
+    const y = cy + Math.sin(theta) * r;
     if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
   }
 
@@ -123,11 +175,15 @@ function drawHelix(ctx, w, h, colors, NUM) {
   const amp = h / NUM.NINE;
   const waves = NUM.ELEVEN;
   const steps = NUM.NINETYNINE;
+/* Layer 4: Double-helix lattice -- two static strands with rungs */
+function drawHelix(ctx, w, h, colors, NUM) {
+  const amp = h / NUM.NINE;       // gentle amplitude
+  const waves = NUM.ELEVEN;       // helix turns
+  const steps = NUM.NINETYNINE;   // sampling
 
   ctx.save();
   ctx.lineWidth = 2;
 
-  // strand A
   ctx.strokeStyle = colors.a;
   ctx.beginPath();
   for (let i = 0; i <= steps; i++) {
@@ -138,7 +194,6 @@ function drawHelix(ctx, w, h, colors, NUM) {
   }
   ctx.stroke();
 
-  // strand B (phase shift π)
   ctx.strokeStyle = colors.b;
   ctx.beginPath();
   for (let i = 0; i <= steps; i++) {
