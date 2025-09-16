@@ -38,6 +38,12 @@ function drawVesica(ctx, w, h, color, NUM) {
     for (let x = r; x < w; x += step * NUM.NINE) {
       ctx.beginPath(); ctx.arc(x - step, y, r, 0, Math.PI * 2); ctx.stroke();
       ctx.beginPath(); ctx.arc(x + step, y, r, 0, Math.PI * 2); ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(x - step, y, r, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(x + step, y, r, 0, Math.PI * 2);
+      ctx.stroke();
     }
   }
 
@@ -120,6 +126,9 @@ function drawTree(ctx, w, h, pathColor, nodeColor, NUM) {
 }
 
 /* Layer 3: Fibonacci curve ------------------------------------------------- */
+  ctx.lineWidth = 1.5;
+  edges.forEach(([a, b]) => {
+    ctx.beginPath();
   ctx.lineWidth = 1.5;
   edges.forEach(([a, b]) => {
     ctx.beginPath();
