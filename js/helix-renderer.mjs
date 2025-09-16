@@ -5,7 +5,7 @@
   Layers drawn in order:
     1) Vesica field — intersecting circles forming a calm grid
     2) Tree-of-Life scaffold — 10 sephirot nodes + 22 paths
-    3) Fibonacci curve — logarithmic spiral using 144 samples
+    3) Fibonacci curve — logarithmic spiral using 144 sampled points
     4) Double-helix lattice — two phase-shifted strands with 33 cross rungs
 
   All functions are pure and run once; no motion, no dependencies.
@@ -44,6 +44,11 @@ function drawVesica(ctx, w, h, color, NUM) {
      ND-safe: thin lines, generous spacing. */
   const r = Math.min(w, h) / NUM.THREE;      // base radius from sacred triad
   const step = r / NUM.SEVEN;                // spacing guided by 7
+/* Layer 1: Vesica field — calm grid of intersecting circles */
+function drawVesica(ctx, w, h, color, NUM) {
+  // ND-safe: thin lines, generous spacing
+  const r = Math.min(w, h) / NUM.THREE;       // triadic radius
+  const step = r / NUM.SEVEN;                 // septenary spacing
 
   ctx.save();
   ctx.strokeStyle = color;
@@ -219,6 +224,46 @@ function drawFibonacci(ctx, w, h, color, NUM) {
     ctx.beginPath();
     ctx.moveTo(pts[a][0], pts[a][1]);
     ctx.lineTo(pts[b][0], pts[b][1]);
+  ctx.restore();
+}
+
+/* Layer 2: Tree-of-Life scaffold — nodes and paths */
+function drawTree(ctx, w, h, nodeColor, pathColor, NUM) {
+  // Layout approximates the sefirot; static and evenly spaced
+  const cx = w / 2;
+  const top = h / NUM.NINE;
+  const bottom = h - top;
+  const middle = (top + bottom) / 2;
+  const quarter = (top + middle) / 2;
+  const threeQuarter = (middle + bottom) / 2;
+
+  const nodes = [
+    [cx, top],
+    [cx - w / NUM.SEVEN, quarter],
+    [cx + w / NUM.SEVEN, quarter],
+    [cx - w / NUM.NINE, middle],
+    [cx + w / NUM.NINE, middle],
+    [cx, middle + h / NUM.TWENTYTWO],
+    [cx - w / NUM.NINE, threeQuarter],
+    [cx + w / NUM.NINE, threeQuarter],
+    [cx, bottom - h / NUM.ELEVEN],
+    [cx, bottom]
+  ];
+
+  const paths = [
+    [0,1],[0,2],[1,3],[2,4],[3,4],[3,5],[4,5],[3,6],[4,7],[6,7],[6,8],[7,8],[5,8],[8,9]
+  ];
+
+  ctx.save();
+  ctx.strokeStyle = pathColor;
+  ctx.lineWidth = 1;
+
+  paths.forEach(([a,b]) => {
+    const [x1,y1] = nodes[a];
+    const [x2,y2] = nodes[b];
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
     ctx.stroke();
   });
 
@@ -282,6 +327,12 @@ function drawHelix(ctx, w, h, colors, NUM) {
   const amp = h / NUM.NINE;       // gentle amplitude
   const waves = NUM.ELEVEN;       // helix turns
   const steps = NUM.NINETYNINE;   // sampling
+/* Layer 4: Double-helix lattice — two static strands with rungs */
+function drawHelix(ctx, w, h, colors, NUM) {
+  // ND-safe: even spacing, no motion
+  const amp = h / NUM.NINE;
+  const waves = NUM.ELEVEN;
+  const steps = NUM.NINETYNINE;
 
   ctx.save();
   ctx.lineWidth = 2;
