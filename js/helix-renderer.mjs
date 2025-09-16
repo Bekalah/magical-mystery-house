@@ -39,6 +39,16 @@ function drawVesica(ctx, w, h, color, NUM) {
   ctx.save();
   ctx.strokeStyle = color;
   ctx.lineWidth = 1;
+function drawVesica(ctx, w, h, color, NUM) {
+  /* Vesica field: calm outline grid built from overlapping circles.
+     ND-safe: thin lines, generous spacing. */
+  const r = Math.min(w, h) / NUM.THREE;      // base radius from sacred triad
+  const step = r / NUM.SEVEN;                // spacing guided by 7
+
+  ctx.save();
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1;
+
   for (let y = r; y < h; y += step * NUM.NINE) {
     for (let x = r; x < w; x += step * NUM.NINE) {
       ctx.beginPath(); ctx.arc(x - step, y, r, 0, Math.PI * 2); ctx.stroke();
@@ -131,6 +141,30 @@ function drawTree(ctx, w, h, pathColor, nodeColor, NUM) {
     [0,1],[0,2],[1,2],[1,3],[1,5],[2,4],[2,5],[3,4],[3,5],[3,6],
     [4,5],[4,7],[5,6],[5,7],[5,8],[6,8],[6,9],[7,8],[7,9],[8,9],
     [1,7],[2,8]
+  ctx.restore();
+}
+
+/* Layer 2: Tree-of-Life scaffold ------------------------------------------- */
+function drawTree(ctx, w, h, nodeColor, pathColor, NUM) {
+  /* Tree-of-Life: 10 sephirot nodes linked by 22 paths.
+     ND-safe: static layout, thin lines. */
+
+  const nodes = [
+    [0.5, 0.05], [0.75, 0.18], [0.25, 0.18],
+    [0.25, 0.38], [0.75, 0.38], [0.5, 0.52],
+    [0.25, 0.66], [0.75, 0.66], [0.5, 0.8], [0.5, 0.93]
+  ].map(([x, y]) => [x * w, y * h]);
+
+  const paths = [
+    [0,1],[0,2],[0,5],
+    [1,2],[1,5],[1,4],
+    [2,3],[2,5],[2,4],
+    [3,5],[3,6],
+    [4,5],[4,7],
+    [5,6],[5,7],[5,8],
+    [6,7],[6,8],[6,9],
+    [7,8],[7,9],
+    [8,9]
   ];
 
   ctx.save();
@@ -202,6 +236,14 @@ function drawFibonacci(ctx, w, h, color, NUM) {
 function drawFibonacci(ctx, w, h, color, NUM) {
   /* Logarithmic spiral with fixed samples.
      ND-safe: static polyline, no motion. */
+
+  ctx.restore();
+}
+
+/* Layer 3: Fibonacci curve ------------------------------------------------- */
+function drawFibonacci(ctx, w, h, color, NUM) {
+  /* Fibonacci spiral: static logarithmic curve.
+     ND-safe: single stroke, no motion. */
   const phi = (1 + Math.sqrt(5)) / 2;
   const samples = NUM.ONEFORTYFOUR;               // 144 points
   const scale = Math.min(w, h) / NUM.THIRTYTHREE; // gentle size
