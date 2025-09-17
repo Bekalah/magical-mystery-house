@@ -8,8 +8,13 @@
   <style>
     /* ND-safe: calm contrast, no motion, generous spacing */
     :root { --bg:#0b0b12; --ink:#e8e8f0; --muted:#a6a6c1; }
-    html,body { margin:0; padding:0; background:var(--bg); color:var(--ink); font:14px/1.4 system-ui,-apple-system, Segoe UI, Roboto, sans-serif; }
-    html,body { margin:0; padding:0; background:var(--bg); color:var(--ink); font:14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    html, body {
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--ink);
+      font:14px/1.4 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    }
     header { padding:12px 16px; border-bottom:1px solid #1d1d2a; }
     .status { color:var(--muted); font-size:12px; }
     #stage { display:block; margin:16px auto; box-shadow:0 0 0 1px #1d1d2a; }
@@ -21,7 +26,6 @@
   <header>
     <div><strong>Cosmic Helix Renderer</strong> — layered sacred geometry (offline, ND-safe)</div>
     <div class="status" id="status">Loading palette...</div>
-    <div class="status" id="status">Loading palette…</div>
   </header>
 
   <canvas id="stage" width="1440" height="900" aria-label="Layered sacred geometry canvas"></canvas>
@@ -39,9 +43,27 @@
         const res = await fetch(path, { cache: "no-store" });
         if (!res.ok) throw new Error(String(res.status));
         return await res.json();
-      } catch {
+      } catch (err) {
+        console.warn("Palette unavailable, using fallback palette.", err);
         return null;
       }
+    }
+
+    function normalizePalette(candidate, fallback) {
+      if (!candidate) return fallback;
+      const bg = typeof candidate.bg === "string" ? candidate.bg : fallback.bg;
+      const ink = typeof candidate.ink === "string" ? candidate.ink : fallback.ink;
+      const hasLayers = Array.isArray(candidate.layers) && candidate.layers.length >= 6;
+      const rawLayers = hasLayers ? candidate.layers.slice(0, 6) : fallback.layers;
+      const trimmed = rawLayers.map((value) => (typeof value === "string" ? value.trim() : ""));
+      const layers = trimmed.map((value, index) => value || fallback.layers[index]);
+      return { bg, ink, layers };
+    }
+
+    function applyDocumentPalette(palette) {
+      const root = document.documentElement.style;
+      root.setProperty("--bg", palette.bg);
+      root.setProperty("--ink", palette.ink);
     }
 
     const defaults = {
@@ -52,14 +74,15 @@
       }
     };
 
-    const palette = await loadJSON("./data/palette.json");
-    const active = palette || defaults.palette;
-    elStatus.textContent = palette ? "Palette loaded." : "Palette missing; using safe fallback.";
+    const paletteData = await loadJSON("./data/palette.json");
+    const active = normalizePalette(paletteData, defaults.palette);
+    applyDocumentPalette(active);
+    elStatus.textContent = paletteData ? "Palette loaded." : "Palette missing; using safe fallback.";
 
-    // Numerology constants used by geometry routines
+    // Numerology constants used by geometry routines (3, 7, 9, 11, 22, 33, 99, 144)
     const NUM = { THREE:3, SEVEN:7, NINE:9, ELEVEN:11, TWENTYTWO:22, THIRTYTHREE:33, NINETYNINE:99, ONEFORTYFOUR:144 };
 
-    // ND-safe rationale: no motion, high readability, soft colors, layered order
+    // ND-safe rationale: render once, no motion, layered order preserves depth gently.
     renderHelix(ctx, { width:canvas.width, height:canvas.height, palette:active, NUM });
   </script>
 </body>
