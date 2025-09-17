@@ -11,14 +11,13 @@ Static, offline canvas demo for layered sacred geometry. No build step, no netwo
 4. **Double-helix lattice** — two phase-shifted strands with 33 cross rungs
 
 ## Usage
-- Open `index.html` directly in any modern browser.
-- Optional: edit `data/palette.json` to change colors; if missing, a calm fallback palette is used and the header shows a notice.
+- Open `index.html` directly in any modern browser (offline-first).
+- Optional: edit `data/palette.json` to change colors; if the file is missing the header shows a calm fallback notice and the default palette is used.
 
 ## ND-safe choices
-- No animation, autoplay, or flashing.
-- Gentle contrast with readable inks on dark background.
-- Layer order preserves depth without motion.
+- No animation, autoplay, or flashing; every layer renders once.
+- Gentle contrast with readable inks on dark background; palette overrides stay ND-safe via sane defaults.
+- Layer order preserves depth without motion so the geometry feels dimensional yet steady.
 
 ## Numerology constants
-The renderer uses constants that echo Fibonacci and Tarot harmonics: 3, 7, 9, 11, 22, 33, 99, 144.
-Constants exposed in `index.html` as `NUM` feed the geometry: 3, 7, 9, 11, 22, 33, 99, 144.
+The renderer exposes constants (3, 7, 9, 11, 22, 33, 99, 144) in `index.html` as `NUM` so each geometric routine remains grounded in the requested harmonics.
