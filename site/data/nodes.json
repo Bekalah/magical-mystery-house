@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "title": "Aurora Node",
+      "alignment": "Triune Harmonics",
+      "frequency": "3 : 9 : 27",
+      "summary": "Maintains the Vesica overlays for the renderer; keeps intersections luminous without triggering motion." 
+    },
+    {
+      "title": "Sephira Conduit",
+      "alignment": "Tree Circuit",
+      "frequency": "7 : 11 : 22",
+      "summary": "Maps each sephirot to calm study paths so the offline grids mirror the ND-safe atelier cadence." 
+    },
+    {
+      "title": "Spiral Archive",
+      "alignment": "Fibonacci Memory",
+      "frequency": "33 : 66 : 99",
+      "summary": "Stores static polyline spirals and annotates ratios for analog journaling sequences." 
+    }
+  ]
+}
