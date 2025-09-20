@@ -1,16 +1,19 @@
 /**
- * Render a static, non-animated multi-layer sacred-geometry composition onto a canvas.
+ * Render a deterministic, non-animated multi-layer sacred-geometry composition onto a canvas.
  *
- * Clears the canvas to palette.bg then draws four layers in this fixed order:
- * 1) Vesica field (intersecting circle outlines),
- * 2) Tree-of-Life scaffold (10 nodes + 22 paths),
- * 3) Fibonacci logarithmic spiral,
- * 4) Double-helix lattice (two phase-shifted strands with cross rungs).
+ * Clears the canvas to palette.bg then draws, in fixed order: a vesica field (overlapping circle outlines), 
+ * a Tree-of-Life scaffold (10 nodes + 22 paths), a Fibonacci (logarithmic) spiral, and a double-helix lattice 
+ * (two phase-shifted strands with cross rungs). All drawing is performed directly on the provided canvas context.
  *
- * The function is deterministic and side-effect-limited to drawing on the provided canvas context.
- *
- * @param {object} palette - Color palette used for rendering. Expected shape: { bg: string, layers: string[], ink: string } where `layers` supplies layer stroke colors in the order consumed by the renderer.
- * @param {object} NUM - Numeric constants used for sizing and spacing (e.g., scaling and sample counts).
+ * @param {CanvasRenderingContext2D} ctx - Canvas 2D rendering context to draw into.
+ * @param {object} options
+ * @param {number} options.width - Width of the drawing area in pixels.
+ * @param {number} options.height - Height of the drawing area in pixels.
+ * @param {object} options.palette - Color palette: { bg: string, layers: string[], ink: string }.
+ *   - bg: background fill color.
+ *   - layers: array of stroke colors consumed in layer order (vesica, tree.path, tree.node, spiral, helix.strandA, helix.strandB).
+ *   - ink: color used for helix rungs.
+ * @param {object} options.NUM - Numeric constants used for sizing and sampling (controls radii, steps, sample counts, etc.).
  */
 
 export function renderHelix(ctx, { width, height, palette, NUM }) {
@@ -28,19 +31,17 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
 }
 
 /**
- * Draws a calm, non-animated field of overlapping vesica-style circle outlines.
+ * Draws a static field of overlapping vesica-style circle outlines on the canvas.
  *
- * Renders a static grid of paired circles across the canvas using a thin stroke.
- * Circle size and spacing are derived from the provided numeric constants to keep
- * composition proportional to the canvas dimensions.
+ * The grid of paired circles scales with canvas size: baseRadius = Math.min(w, h) / NUM.THREE,
+ * step = baseRadius / NUM.SEVEN, and cells are spaced by step * NUM.NINE. Circles are stroked
+ * with a 1px line using the provided color. The function is deterministic and only mutates
+ * the supplied canvas context.
  *
  * @param {number} w - Canvas width in pixels.
  * @param {number} h - Canvas height in pixels.
- * @param {string|CanvasGradient|CanvasPattern} color - Stroke style used for the circle outlines.
- * @param {Object} NUM - Scaling constants object. Expected numeric properties:
- *   - THREE: divisor used to compute the base circle radius (Math.min(w,h) / THREE)
- *   - SEVEN: divisor used to compute the finer step (baseRadius / SEVEN)
- *   - NINE: multiplier used to space grid rows/columns (step * NINE)
+ * @param {string|CanvasGradient|CanvasPattern} color - Stroke style for the circle outlines.
+ * @param {Object} NUM - Numeric scaling constants; must include THREE, SEVEN, and NINE.
  */
 function drawVesica(ctx, w, h, color, NUM) {
   /* Vesica field: calm outlines from overlapping circles.
