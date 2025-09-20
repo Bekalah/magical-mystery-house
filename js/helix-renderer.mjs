@@ -1,15 +1,17 @@
 /**
- * Render the full four-layer sacred-geometry composition into a 2D canvas context.
+ * Render the full four-layer sacred-geometry composition into a 2D canvas.
  *
- * Draws, in order: a vesica-field of overlapping circles, a Tree-of-Life scaffold (paths + nodes),
- * a logarithmic Fibonacci spiral, and a double-helix lattice (two sine strands with cross-rungs).
+ * Draws, in order, a vesica-field of overlapping circles, a Tree-of-Life scaffold
+ * (paths + nodes), a logarithmic Fibonacci spiral, and a double-helix lattice
+ * (two sine strands with cross-rungs), using colors supplied by the palette.
  *
+ * @param {CanvasRenderingContext2D} ctx - Canvas 2D rendering context to draw into.
  * @param {Object} cfg - Rendering configuration.
  * @param {number} cfg.width - Canvas width in pixels.
  * @param {number} cfg.height - Canvas height in pixels.
- * @param {Object} cfg.palette - Palette object; expected shape includes `bg`, `ink`, and `layers` array
- *   where layers[0]..layers[5] supply per-layer stroke/fill colors used by the sublayers.
- * @param {Object} cfg.NUM - Numeric constants object used to scale geometry (predefined constants).
+ * @param {Object} cfg.palette - Palette with keys: `bg` (background), `ink` (accent),
+ *   and `layers` (array where layers[0]..layers[5] supply per-layer stroke/fill colors).
+ * @param {Object} cfg.NUM - Numeric constants used to scale geometry (predefined constants).
  */
 
 export function renderHelix(ctx, { width, height, palette, NUM }) {
@@ -29,15 +31,17 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
 /**
  * Draws a static "vesica" field: a grid of paired overlapping circle outlines.
  *
- * Renders thin, evenly spaced stroked circles arranged on a rectangular grid. Each grid cell
- * draws two circles offset horizontally by a small step to produce repeated vesica (almond)
- * shapes. Intended to be visually subtle and ND-safe (thin strokes, ample spacing).
+ * Renders thin, evenly spaced stroked circles arranged on a rectangular grid where each
+ * cell contains two horizontally offset circles that form repeated vesica (almond) shapes.
+ * Intended to be visually subtle and non-animated (thin strokes, ample spacing).
  *
  * @param {number} w - Canvas width in pixels.
  * @param {number} h - Canvas height in pixels.
- * @param {string|CanvasStyle} color - Stroke color used for the circle outlines.
- * @param {Object} NUM - Numeric constants object used for scaling (expects properties THREE, SEVEN, NINE).
- *   THREE controls base radius scaling, SEVEN controls the finer spacing step, and NINE controls grid spacing.
+ * @param {string|CanvasStyle} color - Stroke color for the circle outlines.
+ * @param {Object} NUM - Numeric constants used for scaling. Required properties:
+ *   - THREE: divisor for base radius,
+ *   - SEVEN: divisor for the finer offset step,
+ *   - NINE: multiplier controlling grid spacing.
  */
 function drawVesica(ctx, w, h, color, NUM) {
   /* Vesica field: calm outlines from overlapping circles.
@@ -65,18 +69,18 @@ function drawVesica(ctx, w, h, color, NUM) {
 }
 
 /**
- * Render a static "Tree of Life" scaffold: 10 nodes connected by 22 paths.
+ * Render a static "Tree of Life" scaffold: 10 nodes connected by 22 edges.
  *
- * Draws a fixed-layout set of normalized node positions scaled to the canvas,
- * strokes the 22 connecting edges using colors.path, then fills each node
- * as a small circle using colors.node. The node radius is tied to NUM.TWENTYTWO.
+ * Scales a fixed set of normalized node positions to the canvas, strokes the
+ * predefined 22 connections using colors.path, then draws filled node discs
+ * using colors.node. The visual scale of nodes is tied to NUM.TWENTYTWO.
  *
  * @param {number} w - Canvas width in pixels.
  * @param {number} h - Canvas height in pixels.
  * @param {Object} colors - Color roles for the layer.
- * @param {string} colors.path - Stroke color used for connecting edges.
- * @param {string} colors.node - Fill color used for node circles.
- * @param {Object} NUM - Numeric constants object; NUM.TWENTYTWO is used to compute node radius.
+ * @param {string} colors.path - Stroke color for connecting edges.
+ * @param {string} colors.node - Fill color for node circles.
+ * @param {Object} NUM - Numeric constants object; NUM.TWENTYTWO controls node radius.
  */
 function drawTree(ctx, w, h, colors, NUM) {
   /* Tree-of-Life: 10 nodes with 22 connective paths.
@@ -176,17 +180,17 @@ function drawFibonacci(ctx, w, h, color, NUM) {
 }
 
 /**
- * Render a static double-helix lattice: two phase-shifted sine-wave strands with vertical cross-rungs.
+ * Draws a static double-helix lattice: two phase-shifted sine-wave strands with evenly spaced vertical rungs.
  *
- * Draws two stroked sine-wave strands (phase offset by π) across the canvas and a set of evenly spaced
- * vertical rungs connecting the strands. Uses NUM constants to derive amplitude, wave count, sampling
- * resolution, and rung count; preserves and restores the canvas context.
+ * Renders two stroked sine strands (phase offset by π) across the canvas and a set of vertical cross-rungs
+ * that connect the strands. The function preserves and restores the canvas state and draws directly into the
+ * provided 2D rendering context.
  *
  * @param {CanvasRenderingContext2D} ctx - Canvas 2D rendering context to draw into.
  * @param {number} w - Canvas width in pixels.
  * @param {number} h - Canvas height in pixels.
- * @param {{ strandA: string, strandB: string, rung: string }} colors - Stroke colors for strand A, strand B, and rungs.
- * @param {Object} NUM - Numeric constants object (expects NUM.NINE, NUM.ELEVEN, NUM.NINETYNINE, NUM.THIRTYTHREE).
+ * @param {{ strandA: string, strandB: string, rung: string }} colors - Stroke colors for strand A, strand B, and the rungs.
+ * @param {Object} NUM - Numeric constants object (expected to provide NUM.NINE, NUM.ELEVEN, NUM.NINETYNINE, NUM.THIRTYTHREE).
  */
 function drawHelix(ctx, w, h, colors, NUM) {
   /* Double-helix: paired sine waves with 33 static cross rungs.
