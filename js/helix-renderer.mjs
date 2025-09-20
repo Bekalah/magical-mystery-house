@@ -1,15 +1,20 @@
 /**
  * Render the full four-layer sacred-geometry composition into a 2D canvas context.
  *
- * Draws, in order: a vesica-field of overlapping circles, a Tree-of-Life scaffold (paths + nodes),
- * a logarithmic Fibonacci spiral, and a double-helix lattice (two sine strands with cross-rungs).
+ * Draws, in back-to-front order: a vesica-field of overlapping circles, a Tree-of-Life scaffold
+ * (paths + nodes), a logarithmic Fibonacci spiral, and a double-helix lattice (two sine strands
+ * with vertical rungs). The function fills the canvas background with palette.bg and restores
+ * the canvas state before returning.
  *
+ * @param {CanvasRenderingContext2D} ctx - 2D drawing context for the target canvas.
  * @param {Object} cfg - Rendering configuration.
  * @param {number} cfg.width - Canvas width in pixels.
  * @param {number} cfg.height - Canvas height in pixels.
- * @param {Object} cfg.palette - Palette object; expected shape includes `bg`, `ink`, and `layers` array
- *   where layers[0]..layers[5] supply per-layer stroke/fill colors used by the sublayers.
- * @param {Object} cfg.NUM - Numeric constants object used to scale geometry (predefined constants).
+ * @param {Object} cfg.palette - Palette with `bg`, `ink`, and `layers` array. Expected layer mapping:
+ *   layers[0] – vesica stroke, layers[1] – tree path, layers[2] – tree node,
+ *   layers[3] – Fibonacci spiral, layers[4] – helix strand A, layers[5] – helix strand B.
+ *   `ink` is used for helix rungs.
+ * @param {Object} cfg.NUM - Numeric constants used to scale geometric elements.
  */
 
 export function renderHelix(ctx, { width, height, palette, NUM }) {
@@ -65,18 +70,18 @@ function drawVesica(ctx, w, h, color, NUM) {
 }
 
 /**
- * Render a static "Tree of Life" scaffold: 10 nodes connected by 22 paths.
+ * Draws a static "Tree of Life" scaffold: 10 nodes connected by 22 edges.
  *
- * Draws a fixed-layout set of normalized node positions scaled to the canvas,
- * strokes the 22 connecting edges using colors.path, then fills each node
- * as a small circle using colors.node. The node radius is tied to NUM.TWENTYTWO.
+ * Positions a fixed set of normalized nodes scaled to the provided canvas size,
+ * strokes the 22 predefined connections using colors.path, then fills each node
+ * as a small circle whose radius is derived from NUM.TWENTYTWO.
  *
  * @param {number} w - Canvas width in pixels.
  * @param {number} h - Canvas height in pixels.
  * @param {Object} colors - Color roles for the layer.
  * @param {string} colors.path - Stroke color used for connecting edges.
  * @param {string} colors.node - Fill color used for node circles.
- * @param {Object} NUM - Numeric constants object; NUM.TWENTYTWO is used to compute node radius.
+ * @param {Object} NUM - Numeric constants; NUM.TWENTYTWO is used to compute node radius.
  */
 function drawTree(ctx, w, h, colors, NUM) {
   /* Tree-of-Life: 10 nodes with 22 connective paths.
