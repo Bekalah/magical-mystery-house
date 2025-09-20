@@ -68,17 +68,18 @@ function drawVesica(ctx, w, h, color, NUM) {
 }
 
 /**
- * Render a static Tree-of-Life scaffold: 10 nodes connected by 22 paths.
+ * Draws a static Tree-of-Life scaffold: 10 filled nodes connected by 22 stroked paths.
  *
- * Draws a fixed, non-animated arrangement of nodes and connecting lines onto the provided canvas
- * context. Coordinates are computed from a normalized layout scaled to the given width/height.
- * The canvas state is saved and restored; drawing mutates only the provided context.
+ * Nodes are defined as normalized (0..1) positions and scaled to the given width/height.
+ * The canvas state is saved and restored; drawing only mutates the provided 2D context.
  *
- * @param {Object} colors - Color map used for rendering. Required properties:
+ * @param {number} w - Canvas width used to scale normalized node X coordinates.
+ * @param {number} h - Canvas height used to scale normalized node Y coordinates.
+ * @param {Object} colors - Color map for rendering. Required properties:
  *   - {string} node - fill color for each node.
  *   - {string} path - stroke color for connecting paths.
- * @param {Object} NUM - Numeric constants used for sizing. This function uses NUM.TWENTYTWO
- *   to compute the node radius (nodeRadius = Math.min(w, h) / NUM.TWENTYTWO).
+ * @param {Object} NUM - Numeric constants. Uses NUM.TWENTYTWO to compute node radius:
+ *   nodeRadius = Math.min(w, h) / NUM.TWENTYTWO.
  */
 function drawTree(ctx, w, h, colors, NUM) {
   /* Tree-of-Life: 10 nodes with 22 connective paths.
