@@ -1,16 +1,25 @@
-/*
-  helix-renderer.mjs
-  ND-safe static renderer for layered sacred geometry.
-
-  Layers drawn in order:
-    1) Vesica field — intersecting circles forming a calm grid
-    2) Tree-of-Life scaffold — 10 sephirot nodes with 22 paths
-    3) Fibonacci curve — logarithmic spiral using 144 samples
-    4) Double-helix lattice — two phase-shifted strands with 33 rungs
-
-  All functions are pure (no shared state) and execute once to honor the
-  no-motion requirement.
-*/
+/**
+ * Render the complete static helix composition into a 2D canvas context.
+ *
+ * Draws four layered components in order onto the provided canvas context:
+ * 1) vesica field (overlapping circle lattice),
+ * 2) Tree-of-Life scaffold (10 nodes with connecting paths),
+ * 3) Fibonacci logarithmic spiral (144 samples),
+ * 4) double-helix lattice (two phase-shifted strands with cross rungs).
+ *
+ * The function is pure and performs a single-frame, no-motion render; it saves
+ * and restores the canvas state around the drawing operations.
+ *
+ * @param {CanvasRenderingContext2D} ctx - Canvas 2D rendering context.
+ * @param {Object} options
+ * @param {number} options.width - Canvas width in pixels.
+ * @param {number} options.height - Canvas height in pixels.
+ * @param {Object} options.palette - Color palette for the composition.
+ *   Expected shape: { bg: string, layers: string[], ink: string } where
+ *   layers supplies per-layer colors in the order used by the renderer.
+ * @param {Object} options.NUM - Numeric constants object used by helpers
+ *   (e.g., sample counts and divisors) — passed through to internal draw routines.
+ */
 
 export function renderHelix(ctx, { width, height, palette, NUM }) {
   ctx.save();
@@ -32,7 +41,17 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
   ctx.restore();
 }
 
-/* Layer 1: Vesica field ---------------------------------------------------- */
+/**
+ * Render a calm lattice of overlapping vesica (circle) outlines onto the canvas.
+ *
+ * Draws two offset stroked circles at each lattice point across the area defined by width and height.
+ * The function saves and restores the canvas context state so calling code's context settings are preserved.
+ *
+ * @param {number} w - Canvas width in pixels.
+ * @param {number} h - Canvas height in pixels.
+ * @param {string|CanvasGradient|CanvasPattern} color - Stroke color for the vesica outlines (any valid canvas stroke style).
+ * @param {Object} NUM - Numeric constants object; must provide THREE, SEVEN, and NINE used to compute radius and spacing.
+ */
 function drawVesica(ctx, w, h, color, NUM) {
   /* Vesica field: calm lattice of overlapping circles.
      ND-safe: thin strokes and wide spacing prevent overstimulation. */
@@ -58,7 +77,20 @@ function drawVesica(ctx, w, h, color, NUM) {
   ctx.restore();
 }
 
-/* Layer 2: Tree-of-Life scaffold ------------------------------------------- */
+/**
+ * Render the Tree-of-Life scaffold: ten positioned nodes connected by twenty-two edges.
+ *
+ * Draws a static, legible network of filled node disks and stroked connecting paths
+ * onto the provided canvas context. The function temporarily modifies canvas state
+ * (styles, line width, globalAlpha) and restores it before returning.
+ *
+ * @param {number} w - Canvas width in pixels.
+ * @param {number} h - Canvas height in pixels.
+ * @param {Object} colors - Color roles used for the layer.
+ * @param {string} colors.path - Stroke color for connective edges.
+ * @param {string} colors.node - Fill color for node discs.
+ * @param {Object} NUM - Numeric constants object (used to compute node radius).
+ */
 function drawTree(ctx, w, h, colors, NUM) {
   /* Tree-of-Life: 10 nodes linked by 22 connective paths.
      ND-safe: static placement, gentle strokes, high legibility. */
@@ -113,7 +145,19 @@ function drawTree(ctx, w, h, colors, NUM) {
   ctx.restore();
 }
 
-/* Layer 3: Fibonacci curve -------------------------------------------------- */
+/**
+ * Draws a single-stroke Fibonacci-inspired logarithmic spiral onto the canvas.
+ *
+ * Renders a 144-sample spiral (sampling, growth and angular step derived from NUM constants)
+ * roughly centered at (w * 0.33, h * 0.72). The provided color is used as the stroke; the
+ * rendering is a single stroked polyline with modest line width and transparency to keep
+ * the layer visually calm and ND-safe.
+ *
+ * @param {number} w - Canvas width in pixels.
+ * @param {number} h - Canvas height in pixels.
+ * @param {string} color - Stroke color for the spiral.
+ * @param {object} NUM - Constants object (expects ONEFORTYFOUR, NINETYNINE, TWENTYTWO, ELEVEN) controlling sample count and scaling.
+ */
 function drawFibonacci(ctx, w, h, color, NUM) {
   /* Fibonacci logarithmic spiral: 144 samples expressing gentle growth.
      ND-safe: single static stroke maintains calm focus. */
@@ -140,7 +184,19 @@ function drawFibonacci(ctx, w, h, color, NUM) {
   ctx.restore();
 }
 
-/* Layer 4: Double-helix lattice -------------------------------------------- */
+/**
+ * Render a double-helix lattice: two sinusoidal strands with cross rungs.
+ *
+ * Draws two offset strands (using buildStrand) and connects corresponding samples
+ * with a fixed number of rungs. Renders directly to the provided canvas context and
+ * does not return a value.
+ *
+ * @param {Object} colors - Color channels used for rendering.
+ * @param {string} colors.strandA - Stroke style for the first strand.
+ * @param {string} colors.strandB - Stroke style for the second strand.
+ * @param {string} colors.rung - Stroke style for cross rungs between strands.
+ * @param {Object} NUM - Numeric constants object (expects NUM.THIRTYTHREE for rung count).
+ */
 function drawHelix(ctx, w, h, colors, NUM) {
   /* Double helix: two offset strands linked by 33 cross rungs.
      ND-safe: static geometry, balanced spacing via numerology constants. */
@@ -174,6 +230,20 @@ function drawHelix(ctx, w, h, colors, NUM) {
   ctx.restore();
 }
 
+/**
+ * Generate a vertical sinusoidal strand used for the double-helix.
+ *
+ * Produces an array of [x, y] coordinate pairs sampled evenly from top to bottom
+ * of the canvas. The horizontal position oscillates as a sine wave around the
+ * canvas midline; amplitude, vertical span and sample count are derived from
+ * the provided dimensions and NUM constants.
+ *
+ * @param {number} w - Canvas width in pixels.
+ * @param {number} h - Canvas height in pixels.
+ * @param {object} NUM - Numeric constants container (e.g., sample counts and divisors).
+ * @param {number} phaseShift - Phase offset (radians) applied to the sine wave.
+ * @return {Array<Array<number>>} Array of [x, y] points defining the strand path.
+ */
 function buildStrand(w, h, NUM, phaseShift) {
   const samples = NUM.NINETYNINE;
   const top = h * 0.12;
@@ -193,7 +263,14 @@ function buildStrand(w, h, NUM, phaseShift) {
   return points;
 }
 
-/* Shared helper ------------------------------------------------------------- */
+/**
+ * Stroke a connected polyline through a sequence of 2D points on the provided canvas context.
+ *
+ * If `points` is not an array or contains fewer than two coordinate pairs, the function returns
+ * without drawing.
+ *
+ * @param {number[][]} points - Array of [x, y] coordinate pairs defining the polyline vertices.
+ */
 function drawPolyline(ctx, points) {
   if (!Array.isArray(points) || points.length < 2) {
     return;
