@@ -5,6 +5,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "prebuild": "node scripts/verify-absent.mjs",
+    "build": "npm run test"
   }
 }

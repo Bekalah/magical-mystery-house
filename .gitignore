@@ -9,3 +9,6 @@ assets/figures-src/
 Thumbs.db
 __pycache__/
 *.pyc
+
+# keep forbidden masters out of the repo
+site/assets/art/black-madonna-master.png

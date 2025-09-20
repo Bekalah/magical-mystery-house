@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>COSMOGENESIS — Cathedral of Circuits</title>
   <meta name="description" content="A living grimoire: sacred geometry, techno-occult research, and spiral learning." />
-  <link rel="preload" href="assets/img/hero.avif" as="image" />
+  <link rel="preload" href="assets/art/black-madonna-altar-1600.webp" as="image" type="image/webp" />
   <link rel="stylesheet" href="assets/css/atelier.css" />
 </head>
 <body>
@@ -34,7 +34,8 @@
         <a class="btn-primary" href="#arcana">Enter the living grimoire</a>
       </div>
       <figure class="hero-figure">
-        <img src="assets/img/hero.avif" alt="Layered aurora geometry over a tranquil circuit cathedral" width="720" height="480" loading="lazy" />
+        <canvas id="opus" width="1200" height="675" aria-label="Opalescent octagram field"></canvas>
+        <div id="hero-art" class="hero-art-slot" aria-live="polite">Hero art offline; canvas fallback active.</div>
         <figcaption>ND-safe tapestry: depth without motion, layered for calm study.</figcaption>
       </figure>
     </section>
@@ -106,6 +107,12 @@
     <p class="copyright">© MMXXV — Cathedral of Circuits</p>
   </footer>
 
+  <script type="module">
+    import { paintOctagram } from '/assets/js/first-paint-octagram.js';
+    import { mountArt } from '/assets/js/art-loader.js';
+    paintOctagram();
+    mountArt();
+  </script>
   <script type="module" src="assets/js/calm.js"></script>
   <script type="module" src="assets/js/nodes.js"></script>
 </body>
