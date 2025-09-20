@@ -1,5 +1,15 @@
 // first-paint-octagram.js
-// Renders a static octagram gradient as chapel-safe fallback when hero art is offline.
+/**
+ * Render a static octagram gradient into a canvas element as a fallback hero image.
+ *
+ * Draws a centered radial gradient and eight translucent radial spokes onto the
+ * canvas identified by `id`. If the canvas element or its 2D context is not
+ * available, the function returns without side effects.
+ *
+ * @param {string} [id='opus'] - The DOM id of the <canvas> element to draw into.
+ * @param {number} [width=1200] - Canvas width in CSS pixels; also sets the element's drawing buffer width.
+ * @param {number} [height=675] - Canvas height in CSS pixels; also sets the element's drawing buffer height.
+ */
 export function paintOctagram(id = 'opus', width = 1200, height = 675) {
   const canvas = document.getElementById(id);
   if (!canvas) return;
