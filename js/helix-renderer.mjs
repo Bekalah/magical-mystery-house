@@ -1,15 +1,17 @@
-/*
-  helix-renderer.mjs
-  ND-safe static renderer for layered sacred geometry.
-
-  Layers:
-    1) Vesica field (intersecting circles)
-    2) Tree-of-Life scaffold (10 sephirot nodes + 22 paths)
-    3) Fibonacci curve (logarithmic spiral polyline)
-    4) Double-helix lattice (two phase-shifted strands)
-
-  All drawing routines are pure and run exactly once. No animation and no external dependencies.
-*/
+/**
+ * Render a static, non-animated multi-layer sacred-geometry composition onto a canvas.
+ *
+ * Clears the canvas to palette.bg then draws four layers in this fixed order:
+ * 1) Vesica field (intersecting circle outlines),
+ * 2) Tree-of-Life scaffold (10 nodes + 22 paths),
+ * 3) Fibonacci logarithmic spiral,
+ * 4) Double-helix lattice (two phase-shifted strands with cross rungs).
+ *
+ * The function is deterministic and side-effect-limited to drawing on the provided canvas context.
+ *
+ * @param {object} palette - Color palette used for rendering. Expected shape: { bg: string, layers: string[], ink: string } where `layers` supplies layer stroke colors in the order consumed by the renderer.
+ * @param {object} NUM - Numeric constants used for sizing and spacing (e.g., scaling and sample counts).
+ */
 
 export function renderHelix(ctx, { width, height, palette, NUM }) {
   ctx.save();
@@ -25,7 +27,21 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
   ctx.restore();
 }
 
-/* Layer 1: Vesica field ---------------------------------------------------- */
+/**
+ * Draws a calm, non-animated field of overlapping vesica-style circle outlines.
+ *
+ * Renders a static grid of paired circles across the canvas using a thin stroke.
+ * Circle size and spacing are derived from the provided numeric constants to keep
+ * composition proportional to the canvas dimensions.
+ *
+ * @param {number} w - Canvas width in pixels.
+ * @param {number} h - Canvas height in pixels.
+ * @param {string|CanvasGradient|CanvasPattern} color - Stroke style used for the circle outlines.
+ * @param {Object} NUM - Scaling constants object. Expected numeric properties:
+ *   - THREE: divisor used to compute the base circle radius (Math.min(w,h) / THREE)
+ *   - SEVEN: divisor used to compute the finer step (baseRadius / SEVEN)
+ *   - NINE: multiplier used to space grid rows/columns (step * NINE)
+ */
 function drawVesica(ctx, w, h, color, NUM) {
   /* Vesica field: calm outlines from overlapping circles.
      ND-safe: thin strokes, ample spacing, static grid. */
@@ -51,7 +67,19 @@ function drawVesica(ctx, w, h, color, NUM) {
   ctx.restore();
 }
 
-/* Layer 2: Tree-of-Life scaffold ------------------------------------------- */
+/**
+ * Render a static Tree-of-Life scaffold: 10 nodes connected by 22 paths.
+ *
+ * Draws a fixed, non-animated arrangement of nodes and connecting lines onto the provided canvas
+ * context. Coordinates are computed from a normalized layout scaled to the given width/height.
+ * The canvas state is saved and restored; drawing mutates only the provided context.
+ *
+ * @param {Object} colors - Color map used for rendering. Required properties:
+ *   - {string} node - fill color for each node.
+ *   - {string} path - stroke color for connecting paths.
+ * @param {Object} NUM - Numeric constants used for sizing. This function uses NUM.TWENTYTWO
+ *   to compute the node radius (nodeRadius = Math.min(w, h) / NUM.TWENTYTWO).
+ */
 function drawTree(ctx, w, h, colors, NUM) {
   /* Tree-of-Life: 10 nodes with 22 connective paths.
      ND-safe: static composition, balanced spacing, gentle line weights. */
@@ -107,7 +135,18 @@ function drawTree(ctx, w, h, colors, NUM) {
   ctx.restore();
 }
 
-/* Layer 3: Fibonacci curve ------------------------------------------------- */
+/**
+ * Draws a static Fibonacci (logarithmic) spiral centered on the canvas.
+ *
+ * Renders a single stroked polyline approximating a logarithmic spiral sampled at 144 points
+ * (11 turns). The spiral is centered at (w/2, h/2) and scaled from Math.min(w, h).
+ * Non-animated — produces a single deterministic stroke.
+ *
+ * @param {object} NUM - Numeric constants used by the routine. Required fields:
+ *   ONEFORTYFOUR (number): sample count (144),
+ *   ELEVEN (number): number of half-π multiples used to produce ~11 turns,
+ *   THIRTYTHREE (number): divisor used to compute the spiral scale.
+ */
 function drawFibonacci(ctx, w, h, color, NUM) {
   /* Fibonacci spiral: static logarithmic spiral sampled at 144 points.
      ND-safe: single stroke, no motion or flashing. */
@@ -138,7 +177,23 @@ function drawFibonacci(ctx, w, h, color, NUM) {
   ctx.restore();
 }
 
-/* Layer 4: Double-helix lattice ------------------------------------------- */
+/**
+ * Draws a static double-helix lattice: two phase-shifted sine-wave strands with evenly spaced cross rungs.
+ *
+ * Renders two stroked polylines (strandA and strandB) that form an 11-turn helix across the canvas width and
+ * a set of vertical rungs connecting the strands at 33 evenly spaced positions. The helix is centered
+ * vertically and scaled by the provided NUM constants so the result is deterministic and non-animated.
+ *
+ * @param {CanvasRenderingContext2D} ctx - Canvas 2D rendering context to draw into.
+ * @param {number} w - Canvas width in pixels.
+ * @param {number} h - Canvas height in pixels.
+ * @param {{strandA: string, strandB: string, rung: string}} colors - Stroke colors for the two strands and the rungs.
+ * @param {{NINE: number, ELEVEN: number, NINETYNINE: number, THIRTYTHREE: number}} NUM - Numeric constants used for sizing:
+ *   - NINE: divisor used to compute vertical amplitude (amplitude = h / NINE).
+ *   - ELEVEN: number of helical turns across the width.
+ *   - NINETYNINE: number of sample steps per strand.
+ *   - THIRTYTHREE: number of cross-rungs (evenly spaced; 33 used).
+ */
 function drawHelix(ctx, w, h, colors, NUM) {
   /* Double-helix: paired sine waves with 33 static cross rungs.
      ND-safe: even spacing, no oscillation over time, readable contrast. */
