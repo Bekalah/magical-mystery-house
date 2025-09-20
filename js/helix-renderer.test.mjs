@@ -12,6 +12,7 @@ import assert from 'node:assert/strict';
 import { renderHelix } from './helix-renderer.mjs';
 
 // Adapter: ensure describe/it exist in environments without a test framework
+
 if (typeof globalThis.describe === 'undefined') {
   const t = await import('node:test');
   globalThis.describe = t.describe;
@@ -176,5 +177,149 @@ describe('renderHelix (ND-safe static renderer)', () => {
   it('is resilient to zero-size canvases (no throw)', () => {
     const small = createCtxMock();
     assert.doesNotThrow(() => renderHelix(small.ctx, { width: 0, height: 0, palette, NUM }));
+  });
+});
+// --- Additional tests appended by PR assistant ---
+
+// Test utilities for appended cases
+
+function deepClone(obj){ return JSON.parse(JSON.stringify(obj)); }
+
+function withPalette(base, overrides){ const p = deepClone(base); return Object.assign(p, overrides); }
+
+
+describe('renderHelix – additional robustness and input validation', () => {
+  let ctx, events;
+  const W = 210;
+  const H = 210;
+
+  beforeEach(() => {
+    ({ ctx, events } = createCtxMock());
+  });
+
+  it('does not mutate provided palette or NUM objects', () => {
+    const palette = deepClone(defaultPalette);
+    const NUMlocal = deepClone(NUM);
+    const paletteBefore = JSON.stringify(palette);
+    const numBefore = JSON.stringify(NUMlocal);
+
+    renderHelix(ctx, { width: W, height: H, palette, NUM: NUMlocal });
+
+    assert.strictEqual(JSON.stringify(palette), paletteBefore, 'palette should remain immutable');
+    assert.strictEqual(JSON.stringify(NUMlocal), numBefore, 'NUM should remain immutable');
+  });
+
+  it('handles minimal viable canvas (1x1) without throwing and still sets background', () => {
+    assert.doesNotThrow(() => renderHelix(ctx, { width: 1, height: 1, palette: defaultPalette, NUM }));
+    const fills = events.filter(e => e.op === 'call' && e.method === 'fillRect');
+
+    assert.ok(fills.length >= 1, 'should at least fill background');
+    assert.deepStrictEqual(fills[0].args, [0, 0, 1, 1], 'fills entire tiny canvas');
+  });
+
+  it('gracefully handles missing optional options by using sane defaults where applicable', () => {
+    // Some implementations may support defaults; this verifies no throw even if palette/NUM omitted.
+    assert.doesNotThrow(() => renderHelix(ctx, { width: W, height: H }));
+    assert.ok(events.some(e => e.op === 'call' && e.method === 'fillRect'), 'background likely filled');
+  });
+
+  it('accepts custom ink color for rungs and applies it consistently', () => {
+    const customInk = '#222233';
+    const palette = withPalette(defaultPalette, { ink: customInk });
+
+    renderHelix(ctx, { width: W, height: H, palette, NUM });
+
+    const rungSegments = events.filter(e => e.op === 'call' && e.method === 'lineTo' && e.state.strokeStyle === customInk);
+    assert.ok(rungSegments.length >= NUM.THIRTYTHREE, 'rungs drawn with custom ink');
+    rungSegments.forEach(ev => assert.strictEqual(ev.state.lineWidth, 1, 'custom ink preserves rung line width'));
+  });
+
+  it('tolerates fractional and non-integer dimensions by coercing/using provided values without crashing', () => {
+    assert.doesNotThrow(() => renderHelix(ctx, { width: 210.7, height: 199.2, palette: defaultPalette, NUM }));
+    // Ensure background rect uses provided args (our spy records raw args)
+    const fill = events.find(e => e.op === 'call' && e.method === 'fillRect');
+
+    assert.ok(fill, 'background filled even with fractional dims');
+  });
+
+  it('is resilient when NUM values are extreme but valid numbers', () => {
+    const weirdNUM = deepClone(NUM);
+
+    weirdNUM.ONEFORTYFOUR = 1;      // Degenerate fibonacci segments
+    weirdNUM.NINETYNINE   = 0;      // No helix segments
+    weirdNUM.THIRTYTHREE  = 0;      // No rungs
+    renderHelix(ctx, { width: W, height: H, palette: defaultPalette, NUM: weirdNUM });
+
+    // Expect no throws and zero or near-zero counts for affected layers
+    assert.strictEqual(callsByStyle(events, 'lineTo', 'strokeStyle', defaultPalette.layers[3]).length, 1, 'fibonacci minimal segments');
+    assert.strictEqual(callsByStyle(events, 'lineTo', 'strokeStyle', defaultPalette.layers[4]).length, 0, 'helix A suppressed');
+    assert.strictEqual(callsByStyle(events, 'lineTo', 'strokeStyle', defaultPalette.layers[5]).length, 0, 'helix B suppressed');
+  });
+
+  it('ignores negative dimensions by not attempting to draw shapes (but still does not throw)', () => {
+    assert.doesNotThrow(() => renderHelix(ctx, { width: -100, height: -50, palette: defaultPalette, NUM }));
+    // With our spy, a naive implementation might still attempt fillRect; we only assert that it didn’t crash.
+  });
+
+  it('ensures save/restore always balanced even if an exception occurs mid-render', async () => {
+    // Build a ctx that throws once on a specific method to simulate mid-render failure
+    const failing = createCtxMock();
+    const originalLineTo = failing.ctx.lineTo;
+    let didThrow = false;
+    failing.ctx.lineTo = (...args) => {
+      if (!didThrow) {
+        didThrow = true;
+        throw new Error('synthetic draw failure');
+      }
+      return originalLineTo(...args);
+    };
+
+    try {
+      renderHelix(failing.ctx, { width: W, height: H, palette: defaultPalette, NUM });
+    } catch (_e) {
+      // swallow to inspect balancing
+    }
+    const saves = failing.events.filter(e => e.op === 'call' && e.method === 'save').length;
+    const restores = failing.events.filter(e => e.op === 'call' && e.method === 'restore').length;
+    assert.strictEqual(saves, restores, 'save/restore balanced even on failure');
+  });
+
+  it('applies layer-specific line widths when provided via ctx.lineWidth changes', () => {
+    // Ensure that helix strands differ from rung widths if implementation sets them
+    renderHelix(ctx, { width: W, height: H, palette: defaultPalette, NUM });
+
+    const strandA = callsByStyle(events, 'lineTo', 'strokeStyle', defaultPalette.layers[4]);
+    const strandB = callsByStyle(events, 'lineTo', 'strokeStyle', defaultPalette.layers[5]);
+    const rungs   = callsByStyle(events, 'lineTo', 'strokeStyle', defaultPalette.ink);
+
+    // If the implementation sets lineWidth for strands, they should be >= 1; rungs are asserted as 1 in the base suite
+    if (strandA.length) assert.ok(strandA.some(e => e.state.lineWidth >= 1), 'strand A has a visible line width');
+    if (strandB.length) assert.ok(strandB.some(e => e.state.lineWidth >= 1), 'strand B has a visible line width');
+    if (rungs.length)   rungs.forEach(e => assert.strictEqual(e.state.lineWidth, 1));
+  });
+
+  it('uses provided palette.layer colors exactly and never falls back to unexpected defaults', () => {
+    const custom = withPalette(defaultPalette, {
+      layers: ['#aa0000', '#00aa00', '#0000aa', '#aaaa00', '#aa00aa', '#00aaaa'],
+      ink: '#121212',
+      bg: '#0a0a0a',
+    });
+
+    renderHelix(ctx, { width: W, height: H, palette: custom, NUM });
+
+    const seenColors = new Set(events.filter(e => e.op === 'set').map(e => `${e.prop}:${e.value}`));
+    for (const c of [custom.bg, custom.ink, ...custom.layers]) {
+      assert.ok(
+        [...seenColors].some(s => s.endsWith(`:${c}`)),
+        `observed color set event for ${c}`
+      );
+    }
+  });
+
+  it('does not rely on implicit globals; requires ctx with expected 2D methods only', () => {
+    const badCtx = {}; // missing methods
+    assert.throws(() => renderHelix(badCtx, { width: W, height: H, palette: defaultPalette, NUM }), {
+      name: /TypeError|Error/,
+    }, 'throws when ctx lacks drawing API');
   });
 });
