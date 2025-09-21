@@ -17,6 +17,7 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
   ctx.fillStyle = palette.bg;
   ctx.fillRect(0, 0, width, height);
 
+  // ND-safe layering: draw gentle background first, then structural guides, then focal glyphs.
   drawVesica(ctx, width, height, palette.layers[0], NUM);
   drawTree(ctx, width, height, {
     path: palette.layers[1],
