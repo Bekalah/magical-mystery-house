@@ -94,6 +94,17 @@
     const canvas = document.getElementById("stage");
     const ctx = canvas.getContext("2d");
 
+    // Provenance metadata embedded per Cathedral Visionary standard.
+    const PROVENANCE = Object.freeze({
+      ruleset: "Cathedral Visionary 1.0",
+      geometry: ["octagon", "hexagram", "vesica", "cube"],
+      color_system: "21 Taras + gold",
+      ratios: ["phi", "3:2", "5:4", "7:4"],
+      style: ["Vienna Fantastic Realism", "Japanese Ma/Shibumi", "Rosslyn reference"],
+      full_view: true
+    });
+    canvas.dataset.provenance = JSON.stringify(PROVENANCE);
+
     async function loadJSON(path) {
       try {
         const response = await fetch(path, { cache: "no-store" });
@@ -118,35 +129,49 @@
     const usingFallback = !palette;
     const active = palette || defaults.palette;
 
+    const PHI = (1 + Math.sqrt(5)) / 2;
+    const phiTolerance = 0.03; // Allow slight deviation while respecting ND-safe 1440x900 brief.
+    const aspectRatio = canvas.width / canvas.height;
+    const ratioWithinPhi = Math.abs(aspectRatio - PHI) <= phiTolerance;
+
     elStatus.textContent = usingFallback
       ? "Palette fallback active — using bundled ND-safe tones."
       : "Palette loaded from data/palette.json.";
     elNote.hidden = !usingFallback;
 
-    // Numerology constants used by geometry routines.
-    const NUM = Object.freeze({
-      THREE: 3,
-      SEVEN: 7,
-      NINE: 9,
-      ELEVEN: 11,
-      TWENTYTWO: 22,
-      THIRTYTHREE: 33,
-      NINETYNINE: 99,
-      ONEFORTYFOUR: 144
-    });
+    if (!ratioWithinPhi) {
+      elStatus.textContent = "Frame ratio check failed — adjust canvas to phi before rendering.";
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      // ND-safe guard: skip drawing if sacred proportion not respected.
+    } else {
+      // Numerology constants used by geometry routines.
+      const NUM = Object.freeze({
+        THREE: 3,
+        SEVEN: 7,
+        NINE: 9,
+        ELEVEN: 11,
+        TWENTYTWO: 22,
+        THIRTYTHREE: 33,
+        NINETYNINE: 99,
+        ONEFORTYFOUR: 144
+      });
 
-    const notice = usingFallback
-      ? "Palette fallback engaged. Sacred geometry rendered with bundled tones."
-      : "";
+      const notices = [];
+      if (usingFallback) {
+        notices.push("Palette fallback engaged. Sacred geometry rendered with bundled tones.");
+      }
 
-    // ND-safe rationale: no motion, high readability, gentle gradients, ordered layers.
-    renderHelix(ctx, {
-      width: canvas.width,
-      height: canvas.height,
-      palette: active,
-      NUM,
-      notice
-    });
+      const notice = notices.join(" ");
+
+      // ND-safe rationale: no motion, high readability, gentle gradients, ordered layers.
+      renderHelix(ctx, {
+        width: canvas.width,
+        height: canvas.height,
+        palette: active,
+        NUM,
+        notice
+      });
+    }
   </script>
 </body>
 </html>
