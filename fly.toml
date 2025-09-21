@@ -1,0 +1,16 @@
+# Fly.io configuration for the static Cosmic Helix renderer.
+# Update the "app" name before deploying.
+
+app = "magical-mystery-house"
+kill_signal = "SIGINT"
+kill_timeout = 5
+
+[build]
+  image = "flyio/static"
+
+[env]
+  STATIC_ROOT = "/app"
+
+[[statics]]
+  guest_path = "/app"
+  url_prefix = "/"
