@@ -1,0 +1,154 @@
+/*
+  primitives.css — Base layout primitives for the Cathedral two-panel shell.
+  All spacing and typography draw from tokens.css to keep ND-safe consistency.
+*/
+
+@import url("./tokens.css");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--surface-base);
+  color: var(--ink-primary);
+  font-family: var(--font-family-sans);
+  line-height: var(--line-height-base);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: var(--space-md) var(--space-xl) var(--space-sm);
+  border-bottom: 1px solid var(--border-soft);
+  background: linear-gradient(180deg, var(--surface-panel), var(--surface-base));
+  box-shadow: var(--shadow-soft);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+header p {
+  margin: var(--space-xxs) 0 0;
+  color: var(--ink-muted);
+  font-size: 13px;
+}
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 1fr;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+}
+
+.panel {
+  background: var(--surface-panel);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+}
+
+.panel p {
+  margin: 0 0 var(--space-md);
+  color: var(--ink-secondary);
+}
+
+ul.motion-pledge {
+  margin: 0;
+  padding-left: var(--space-lg);
+  color: var(--ink-muted);
+}
+
+.motion-gate {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--border-soft);
+}
+
+.motion-gate button {
+  width: 100%;
+  min-height: 44px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-elevated);
+  color: var(--ink-accent);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.motion-gate button:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 3px;
+}
+
+.motion-gate .status {
+  margin-top: var(--space-sm);
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+article {
+  display: grid;
+  gap: var(--space-lg);
+  align-content: start;
+}
+
+article section {
+  background: var(--surface-panel);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-soft);
+}
+
+article h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+article p {
+  margin: 0 0 var(--space-md);
+  color: var(--ink-secondary);
+}
+
+article code {
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-elevated);
+  color: var(--ink-accent);
+}
+
+@media (max-width: 960px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    background: var(--surface-deep);
+  }
+  main {
+    padding: var(--space-lg);
+  }
+}

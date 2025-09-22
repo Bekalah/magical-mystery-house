@@ -6,30 +6,25 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="color-scheme" content="light dark">
   <style>
-    /* ND-safe: calm contrast, still gradients, generous breathing room */
+    /* ND-safe layout: calm contrast, static layers, no animation. */
     :root {
-      --bg-deep: #050718;
-      --bg-soft: #111a3a;
-      --ink: #f4f2ff;
-      --muted: #a9b2d6;
-      --border: #1a254a;
-      --panel: rgba(17, 26, 58, 0.72);
+      --bg: #0b0b12;
+      --ink: #e8e8f0;
+      --muted: #a6a6c1;
+      --border: #1f2237;
+      --panel: rgba(24, 27, 47, 0.72);
     }
     html, body {
       margin: 0;
       padding: 0;
-      min-height: 100%;
-      background: radial-gradient(circle at 50% 8%, rgba(90, 120, 255, 0.12), transparent 55%),
-        radial-gradient(circle at 50% 0%, rgba(115, 186, 255, 0.08), transparent 65%),
-        linear-gradient(180deg, var(--bg-deep), var(--bg-soft));
+      background: var(--bg);
       color: var(--ink);
       font: 15px/1.5 "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
     }
     header {
-      padding: 16px 20px 12px;
+      padding: 16px 18px 12px;
       border-bottom: 1px solid var(--border);
       background: var(--panel);
-      backdrop-filter: blur(6px);
     }
     header strong {
       letter-spacing: 0.08em;
@@ -37,20 +32,20 @@
       font-size: 12px;
     }
     .status {
-      margin-top: 4px;
+      margin-top: 6px;
       color: var(--muted);
       font-size: 12px;
     }
     main {
       max-width: 960px;
       margin: 20px auto 40px;
-      padding: 0 20px;
+      padding: 0 18px;
     }
     #stage {
       display: block;
       width: 100%;
       max-width: 1440px;
-      margin: 0 auto 18px;
+      margin: 0 auto 16px;
       box-shadow: 0 0 0 1px var(--border), 0 24px 60px rgba(7, 10, 32, 0.55);
       background: transparent;
     }
@@ -66,24 +61,18 @@
     .note[hidden] {
       display: none;
     }
-    code {
-      background: rgba(12, 16, 34, 0.75);
-      padding: 2px 5px;
-      border-radius: 4px;
-      color: var(--ink);
-    }
   </style>
 </head>
 <body>
   <header>
     <div><strong>Cosmic Helix Renderer</strong> — layered sacred geometry (offline, ND-safe)</div>
-    <div class="status" id="status">Preparing palette…</div>
+    <div class="status" id="status">Loading palette…</div>
   </header>
 
   <main>
     <canvas id="stage" width="1440" height="900" aria-label="Layered sacred geometry canvas"></canvas>
-    <p class="note">This still composition encodes a vesica field, a Tree-of-Life scaffold, a Fibonacci spiral, and a static double helix. The canvas stays motionless yet dimensional to echo the breathing calm of the provided mandalas.</p>
-    <p class="note" id="palette-note" hidden>Palette file was unavailable; a built-in ND-safe fallback kept the render gentle and readable.</p>
+    <p class="note">Static render encodes vesica lattice, Tree-of-Life scaffold, Fibonacci curve, and double helix lattice. No motion, no autoplay, full offline calm.</p>
+    <p class="note" id="palette-note" hidden>Palette file was unavailable; a bundled ND-safe fallback kept the render readable.</p>
   </main>
 
   <script type="module">
@@ -93,15 +82,18 @@
     const elNote = document.getElementById("palette-note");
     const canvas = document.getElementById("stage");
     const ctx = canvas.getContext("2d");
+    if (!ctx) {
+      elStatus.textContent = "Canvas context unavailable; check browser support.";
+      elNote.hidden = false;
+      elNote.textContent = "Canvas API missing, so the layered render cannot draw.";
+    }
 
-    // Provenance metadata embedded per Cathedral Visionary standard.
     const PROVENANCE = Object.freeze({
       ruleset: "Cathedral Visionary 1.0",
-      geometry: ["octagon", "hexagram", "vesica", "cube"],
-      color_system: "21 Taras + gold",
-      ratios: ["phi", "3:2", "5:4", "7:4"],
-      style: ["Vienna Fantastic Realism", "Japanese Ma/Shibumi", "Rosslyn reference"],
-      full_view: true
+      geometry: ["vesica", "sephirot", "fibonacci", "helix"],
+      numerology: [3, 7, 9, 11, 22, 33, 99, 144],
+      offline: true,
+      nd_safe: true
     });
     canvas.dataset.provenance = JSON.stringify(PROVENANCE);
 
@@ -119,9 +111,9 @@
 
     const defaults = {
       palette: {
-        bg: "#050718",
-        ink: "#f4f2ff",
-        layers: ["#425df4", "#5fc4ff", "#74ffcf", "#ffd6a5", "#f5a3ff", "#c5d1ff"]
+        bg: "#0b0b12",
+        ink: "#e8e8f0",
+        layers: ["#b1c7ff", "#89f7fe", "#a0ffa1", "#ffd27f", "#f5a3ff", "#d0d0e6"]
       }
     };
 
@@ -129,41 +121,27 @@
     const usingFallback = !palette;
     const active = palette || defaults.palette;
 
-    const PHI = (1 + Math.sqrt(5)) / 2;
-    const phiTolerance = 0.03; // Allow slight deviation while respecting ND-safe 1440x900 brief.
-    const aspectRatio = canvas.width / canvas.height;
-    const ratioWithinPhi = Math.abs(aspectRatio - PHI) <= phiTolerance;
-
     elStatus.textContent = usingFallback
-      ? "Palette fallback active — using bundled ND-safe tones."
-      : "Palette loaded from data/palette.json.";
+      ? "Palette missing; using safe fallback." 
+      : "Palette loaded.";
     elNote.hidden = !usingFallback;
 
-    if (!ratioWithinPhi) {
-      elStatus.textContent = "Frame ratio check failed — adjust canvas to phi before rendering.";
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      // ND-safe guard: skip drawing if sacred proportion not respected.
-    } else {
-      // Numerology constants used by geometry routines.
-      const NUM = Object.freeze({
-        THREE: 3,
-        SEVEN: 7,
-        NINE: 9,
-        ELEVEN: 11,
-        TWENTYTWO: 22,
-        THIRTYTHREE: 33,
-        NINETYNINE: 99,
-        ONEFORTYFOUR: 144
-      });
+    const NUM = Object.freeze({
+      THREE: 3,
+      SEVEN: 7,
+      NINE: 9,
+      ELEVEN: 11,
+      TWENTYTWO: 22,
+      THIRTYTHREE: 33,
+      NINETYNINE: 99,
+      ONEFORTYFOUR: 144
+    });
 
-      const notices = [];
-      if (usingFallback) {
-        notices.push("Palette fallback engaged. Sacred geometry rendered with bundled tones.");
-      }
+    const notice = usingFallback
+      ? "Palette fallback engaged. Sacred geometry rendered with bundled tones."
+      : "";
 
-      const notice = notices.join(" ");
-
-      // ND-safe rationale: no motion, high readability, gentle gradients, ordered layers.
+    if (ctx) {
       renderHelix(ctx, {
         width: canvas.width,
         height: canvas.height,

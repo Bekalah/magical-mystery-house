@@ -1,0 +1,72 @@
+/*
+  tokens.css — Shared design tokens honoring Kanso / Ma / Shibumi guidance.
+  These tokens are static to preserve ND-safe calm and AA+ contrast.
+*/
+
+:root {
+  color-scheme: dark;
+  --surface-deep: #05050c;
+  --surface-base: #0b0b12;
+  --surface-panel: #131623;
+  --surface-elevated: #1f2233;
+
+  --ink-primary: #f2f3ff;
+  --ink-secondary: #c7cae6;
+  --ink-muted: #8f93b5;
+  --ink-accent: #9fd6ff;
+  --ink-warm: #ffd8a8;
+
+  --accent-teal: #7ee8d5;
+  --accent-blue: #6aa8ff;
+  --accent-violet: #c0a8ff;
+  --accent-rose: #f2a2ff;
+
+  --border-soft: rgba(159, 189, 255, 0.24);
+  --border-strong: rgba(159, 189, 255, 0.36);
+  --shadow-soft: 0 24px 80px rgba(5, 8, 24, 0.55);
+
+  --font-family-sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --line-height-tight: 1.2;
+  --line-height-base: 1.4;
+  --line-height-loose: 1.6;
+
+  --motion-duration: 0ms; /* Motion gate enforces stillness. */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --surface-deep: #f6f7ff;
+    --surface-base: #f0f2ff;
+    --surface-panel: #e6e8f7;
+    --surface-elevated: #d9dcf2;
+
+    --ink-primary: #232538;
+    --ink-secondary: #3c4060;
+    --ink-muted: #6b7199;
+    --ink-accent: #2a6fd6;
+    --ink-warm: #d15b00;
+
+    --accent-teal: #009d8b;
+    --accent-blue: #2f6bff;
+    --accent-violet: #6c4df5;
+    --accent-rose: #a030c6;
+
+    --border-soft: rgba(26, 46, 102, 0.18);
+    --border-strong: rgba(26, 46, 102, 0.28);
+    --shadow-soft: 0 24px 60px rgba(32, 38, 82, 0.16);
+  }
+}
