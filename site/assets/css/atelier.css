@@ -165,11 +165,17 @@ main {
   text-align: center;
 }
 
-.hero-figure img {
+.hero-figure canvas,
+.hero-figure .hero-art-slot img {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 12px;
+}
+
+.hero-art-slot {
+  margin-top: 12px;
+  color: var(--muted);
 }
 
 .hero-figure figcaption {

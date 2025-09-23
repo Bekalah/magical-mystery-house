@@ -121,6 +121,8 @@
     <div class="status" id="status">Loading palette...</div>
     <div><strong>Cosmic Helix Renderer</strong> &mdash; layered sacred geometry (offline, ND-safe)</div>
     <div class="status" id="status">Loading palette&hellip;</div>
+    <div><strong>Cosmic Helix Renderer</strong> — layered sacred geometry (offline, ND-safe)</div>
+    <div class="status" id="status">Loading palette...</div>
   </header>
 
   <canvas id="stage" width="1440" height="900" aria-label="Layered sacred geometry canvas"></canvas>
@@ -136,6 +138,7 @@
 
     const elStatus = document.getElementById("status");
     const elNote = document.getElementById("palette-note");
+    const statusEl = document.getElementById("status");
     const canvas = document.getElementById("stage");
     const ctx = canvas.getContext("2d");
     if (!ctx) {
@@ -215,6 +218,9 @@
     const NUM = Object.freeze({
     const active = palette || defaults.palette;
     elStatus.textContent = palette ? "Palette loaded." : "Palette missing; using safe fallback.";
+
+    const activePalette = palette || fallbackPalette;
+    statusEl.textContent = palette ? "Palette loaded." : "Palette missing; using safe fallback.";
 
     // Numerology constants anchor all geometry calculations.
     const NUM = {
