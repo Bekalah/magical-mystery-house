@@ -119,6 +119,8 @@
     <div class="status" id="status">Preparing palette…</div>
     <div><strong>Cosmic Helix Renderer</strong> &mdash; layered sacred geometry (offline, ND-safe)</div>
     <div class="status" id="status">Loading palette...</div>
+    <div><strong>Cosmic Helix Renderer</strong> &mdash; layered sacred geometry (offline, ND-safe)</div>
+    <div class="status" id="status">Loading palette&hellip;</div>
   </header>
 
   <canvas id="stage" width="1440" height="900" aria-label="Layered sacred geometry canvas"></canvas>
@@ -211,6 +213,11 @@
 
     // Numerology constants used by geometry routines.
     const NUM = Object.freeze({
+    const active = palette || defaults.palette;
+    elStatus.textContent = palette ? "Palette loaded." : "Palette missing; using safe fallback.";
+
+    // Numerology constants anchor all geometry calculations.
+    const NUM = {
       THREE: 3,
       SEVEN: 7,
       NINE: 9,
@@ -284,6 +291,9 @@
 
     // ND-safe rationale: render once, no motion, layered order preserves depth gently.
     renderHelix(ctx, { width:canvas.width, height:canvas.height, palette:active, NUM });
+
+    // ND-safe rationale: no motion, high readability, gentle colors, ordered layers.
+    renderHelix(ctx, { width: canvas.width, height: canvas.height, palette: active, NUM });
   </script>
 </body>
 </html>

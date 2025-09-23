@@ -244,6 +244,7 @@ function drawTree(ctx, w, h, edgeColor, nodeColor, NUM) {
     ctx.arc(x, y, radius, 0, Math.PI * 2);
     ctx.fill();
   });
+  // ND-safe layering: draw gentle background first, then structural guides, then focal glyphs.
   drawVesica(ctx, width, height, palette.layers[0], NUM);
   drawTree(ctx, width, height, {
     path: palette.layers[1],
