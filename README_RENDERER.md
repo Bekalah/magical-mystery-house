@@ -72,3 +72,13 @@ The renderer references 3, 7, 9, 11, 22, 33, 99, and 144 to align with the cathe
 
 ## Recovery Protocol
 - Safe stop is always available: close the page, or reinforce stillness via the motion gate inside the hub UI.
+- Open `index.html` directly in any modern browser (offline-first).
+- Optional: edit `data/palette.json` to change colors; if the file is missing the header shows a calm fallback notice and the default palette is used.
+
+## ND-safe choices
+- No animation, autoplay, or flashing; every layer renders once.
+- Gentle contrast with readable inks on dark background; palette overrides stay ND-safe via sane defaults.
+- Layer order preserves depth without motion so the geometry feels dimensional yet steady.
+
+## Numerology constants
+The renderer exposes constants (3, 7, 9, 11, 22, 33, 99, 144) in `index.html` as `NUM` so each geometric routine remains grounded in the requested harmonics.
