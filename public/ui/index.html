@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cathedral Hub — Two-Panel Shell</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <link rel="stylesheet" href="./tokens.css">
+  <link rel="stylesheet" href="./primitives.css">
+</head>
+<body>
+  <header>
+    <h1>Cathedral Hub Shell</h1>
+    <p>Offline-first navigator with a motion gate to honor trauma-informed pacing.</p>
+  </header>
+
+  <main>
+    <aside class="panel" aria-labelledby="panel-title">
+      <h2 id="panel-title">Motion Gate &amp; Protocol</h2>
+      <p>This shell stays perfectly still by default. The gate below logs consent before any optional motion is considered.</p>
+      <ul class="motion-pledge">
+        <li>No strobe, autoplay, or surprise transitions.</li>
+        <li>Every effect must pass ND-safe review.</li>
+        <li>Gate logs the decision locally; nothing leaves this device.</li>
+      </ul>
+      <div class="motion-gate">
+        <button id="gate-button" type="button">Hold Stillness</button>
+        <p class="status" id="gate-status" aria-live="polite">Motion remains locked. Geometry stays layered yet still.</p>
+      </div>
+    </aside>
+
+    <article>
+      <section>
+        <h2>Layered Geometry Brief</h2>
+        <p>The hub mirrors the renderer: vesica lattice, Tree-of-Life spine, Fibonacci arc, and double helix lattice knit the Trinity routing together.</p>
+        <p>Keep numerology anchors in mind: <code>3</code>, <code>7</code>, <code>9</code>, <code>11</code>, <code>22</code>, <code>33</code>, <code>99</code>, and <code>144</code>.</p>
+      </section>
+      <section>
+        <h2>Offline Guidance</h2>
+        <p>All scenes run locally. Double-click <code>index.html</code> at the repository root for the cosmic helix render, or stay within this hub to read protocols.</p>
+        <p>WebSocket bridges only connect when explicitly called through the event bus module.</p>
+      </section>
+      <section>
+        <h2>Recovery Protocol</h2>
+        <p>Safe stop remains available at any moment. Close the tab or tap the stillness button again to reaffirm the motion lock.</p>
+      </section>
+    </article>
+  </main>
+
+  <script type="module">
+    const button = document.getElementById("gate-button");
+    const status = document.getElementById("gate-status");
+    let stillLocked = true;
+
+    button.addEventListener("click", () => {
+      stillLocked = !stillLocked;
+      if (stillLocked) {
+        status.textContent = "Motion remains locked. Geometry stays layered yet still.";
+        button.textContent = "Hold Stillness";
+        document.body.removeAttribute("data-motion-allowed");
+      } else {
+        status.textContent = "Consent logged. Optional motion features stay disabled until manual review.";
+        button.textContent = "Reinstate Stillness";
+        document.body.setAttribute("data-motion-allowed", "false");
+      }
+    });
+  </script>
+</body>
+</html>

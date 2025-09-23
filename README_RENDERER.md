@@ -32,34 +32,29 @@ The renderer exposes constants that echo Fibonacci and Tarot harmonics: 3, 7, 9,
 The renderer uses constants that echo Fibonacci and Tarot harmonics: 3, 7, 9, 11, 22, 33, 99, 144.
 Constants exposed in `index.html` as `NUM` feed the geometry: 3, 7, 9, 11, 22, 33, 99, 144.
 Static, offline canvas render of layered sacred geometry. The scene now reflects a calmer, Fly-ready stack with luminous blues inspired by the provided artwork.
+Static, offline canvas render of layered sacred geometry. The scene remains motionless yet dimensional, reflecting vesica fields, Tree-of-Life scaffolding, Fibonacci curvature, and a still double helix lattice.
 
 ## Layers (Depth-Ordered)
-1. **Vesica field** — Intersecting circles (3, 7, 9 ratios) with additive glow.
-2. **Tree-of-Life scaffold** — 10 sephirot and 22 connective paths, haloed for depth.
-3. **Fibonacci curve** — Logarithmic spiral traced with 144 samples and gentle gradient.
-4. **Double helix** — Two strands (99 points each) with 33 rungs, phase-shifted but static.
+1. **Vesica field** — Intersecting circles woven with 3 · 7 · 9 spacing, additive glow for depth.
+2. **Tree-of-Life scaffold** — Ten sephirot with halos plus 22 connective paths.
+3. **Fibonacci curve** — Logarithmic spiral traced with 144 samples for gentle flow.
+4. **Double helix** — Two strands (99 sample points each) bridged by 33 rungs.
 
 ## Offline Usage
-- Double-click `index.html`. A modern browser is enough; no server is required.
-- If `data/palette.json` cannot be fetched (common when running via `file://`), the header and canvas display a soft inline notice and a safe fallback palette.
-- The render always respects ND-safe constraints: no motion, readable contrast, trauma-informed comments inside `js/helix-renderer.mjs`.
+- Double-click `index.html`. A browser renders the canvas locally — no server or build step.
+- If `data/palette.json` cannot be read (common via `file://`), the header shows a fallback note and the renderer paints with bundled ND-safe tones while logging the notice inline.
+- Canvas metadata embeds the Cathedral Visionary provenance JSON for traceability without network calls.
 
 ## Palette Tuning
-- Primary colors live in `data/palette.json`. Edit the hex values to adjust the zen aura.
-- The script attempts to load this file locally. When it fails, bundled tones (same harmony) keep the scene consistent.
+- Edit `data/palette.json` to retune layers. Each entry mirrors the numerology stack and keeps AA+ contrast.
+- Absent palette files trigger a bundled fallback (`index.html` describes the notice).
 
-## Fly.io Transition Notes
-- Netlify-specific files have been retired to simplify the repository for Fly.io.
-- A new `fly.toml` config pairs with the lightweight `flyio/static` image, serving the project as plain files.
-- Suggested steps (no automated workflows):
-  1. Install the Fly CLI: `curl -L https://fly.io/install.sh | sh` (requires network access once).
-  2. Authenticate locally: `fly auth login`.
-  3. Update the `app` name inside `fly.toml` if desired.
-  4. Deploy from the repo root: `fly launch --no-deploy --copy-config` (creates the app without changing files), then `fly deploy`.
-  5. Verify by visiting the Fly-provided URL; everything is static so scaling stays minimal.
+## Shared Shell & Event Bus
+- `/public/ui/index.html` hosts the two-panel hub with a motion gate toggle. It relies on the shared tokens defined in `/public/ui/tokens.css` and `/public/ui/primitives.css` to honor Kanso / Ma / Shibumi guidance.
+- `/libs/event-bus.ts` provides a lightweight bridge to `wss://cathedral-core.fly.dev/ws`. The connector queues messages and never leaves the device without explicit consent.
 
 ## Numerology Constants
-The renderer keeps these anchors in `index.html` to encode sacred ratios: 3, 7, 9, 11, 22, 33, 99, 144. They pass directly into the drawing routines for clarity.
+The renderer keeps these anchors inside `index.html` and passes them into `js/helix-renderer.mjs`: 3, 7, 9, 11, 22, 33, 99, 144.
 
 ## Why This Stays ND-Safe
 - Still gradients evoke breath without animation or flicker.
@@ -71,3 +66,9 @@ The renderer keeps these anchors in `index.html` to encode sacred ratios: 3, 7, 
 - `index.html` embeds the Cathedral Visionary provenance JSON directly onto the canvas element.
 - This satisfies the Rosslyn ruleset requirement for metadata without introducing network calls or extra tooling.
 The renderer references 3, 7, 9, 11, 22, 33, 99, and 144 to align with the cathedral numerology and geometry mappings.
+- Still gradients and halo glows maintain layered geometry without motion or strobe.
+- Palette choices maintain AA+ contrast and comment on ND-safe intent directly inside the source files.
+- Offline-first workflow: no bundlers, pipelines, or CI. Just open the files locally.
+
+## Recovery Protocol
+- Safe stop is always available: close the page, or reinforce stillness via the motion gate inside the hub UI.
