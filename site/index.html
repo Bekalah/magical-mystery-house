@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>COSMOGENESIS — Cathedral of Circuits</title>
+  <meta name="description" content="A living grimoire: sacred geometry, techno-occult research, and spiral learning." />
+  <link rel="preload" href="assets/img/hero.avif" as="image" />
+  <link rel="stylesheet" href="assets/css/atelier.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="atelier-nav">
+    <a href="#collections" class="marque-logo">COSMOGENESIS</a>
+    <ul class="nav-collection">
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#arcana">Living Arcana</a></li>
+      <li><a href="#node-system">Node System</a></li>
+      <li><a href="#atelier">Atelier</a></li>
+    </ul>
+    <button id="calmToggle" class="btn-couture" aria-pressed="false">Calm Mode</button>
+  </nav>
+
+  <main id="main">
+    <section id="collections" class="section hero">
+      <div class="hero-copy">
+        <h1>Cathedral of Circuits</h1>
+        <p class="lead">An offline sanctuary for techno-mystics. Each collection threads luminous research, analog rituals, and modular learning rituals into a gentle lattice.</p>
+        <div class="callouts">
+          <p>• Harmonic diagrams curated for neurodivergent focus.</p>
+          <p>• Layered geometry studies with zero autoplay or flicker.</p>
+          <p>• Printable field guides for traveling ateliers.</p>
+        </div>
+        <a class="btn-primary" href="#arcana">Enter the living grimoire</a>
+      </div>
+      <figure class="hero-figure">
+        <img src="assets/img/hero.avif" alt="Layered aurora geometry over a tranquil circuit cathedral" width="720" height="480" loading="lazy" />
+        <figcaption>ND-safe tapestry: depth without motion, layered for calm study.</figcaption>
+      </figure>
+    </section>
+
+    <section id="arcana" class="section arcana">
+      <h2>Living Arcana</h2>
+      <p>Spiral curricula tuned to constants 3, 7, 9, 11, 22, 33, 99, and 144. Each sequence keeps the cosmic helix renderer offline-first and annotation-ready.</p>
+      <div class="arcana-grid">
+        <article class="arcana-card">
+          <h3>Vesica Field Notes</h3>
+          <p>Printable diagrams layering intersecting circles for meditative drafting. Includes guidance for tracing without inducing motion fatigue.</p>
+        </article>
+        <article class="arcana-card">
+          <h3>Tree-of-Life Routes</h3>
+          <p>Stepwise walks through sephirot pairings. Each route mirrors the renderer&apos;s calm luminance palette for consistent sensory grounding.</p>
+        </article>
+        <article class="arcana-card">
+          <h3>Fibonacci Spirals</h3>
+          <p>Static polyline studies mapping growth ratios to analog journaling prompts. Designed for layered note-taking and offline reference.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="node-system" class="section nodes">
+      <div class="nodes-header">
+        <h2>Node System</h2>
+        <p>The Cathedral archives manifest as constellated nodes. Loadouts below are rendered locally; no network calls are required beyond this page.</p>
+      </div>
+      <div class="node-list" data-node-list></div>
+      <template id="node-template">
+        <article class="node-card">
+          <h3 class="node-title"></h3>
+          <dl class="node-details">
+            <div>
+              <dt>Alignment</dt>
+              <dd class="node-alignment"></dd>
+            </div>
+            <div>
+              <dt>Frequency</dt>
+              <dd class="node-frequency"></dd>
+            </div>
+          </dl>
+          <p class="node-summary"></p>
+        </article>
+      </template>
+      <p class="node-fallback" hidden>Node registry is offline; explore README_RENDERER.md for manual schematics.</p>
+    </section>
+
+    <section id="atelier" class="section atelier">
+      <h2>Atelier Commissions</h2>
+      <p>Collaborate on quiet, layered renderings. Each commission respects sensory pacing, shipping printable files instead of animated screens.</p>
+      <ul class="atelier-list">
+        <li><strong>Resonant Atlases:</strong> Multi-layer canvases prepared for community rituals.</li>
+        <li><strong>Calm Installations:</strong> Exhibition-ready static canvases with annotated geometry.</li>
+        <li><strong>Learning Spirals:</strong> Offline-first study sequences for small circles.</li>
+      </ul>
+      <a class="btn-secondary" href="labs/void-lab.html">Visit the Void Lab</a>
+    </section>
+  </main>
+
+  <footer class="maison-footer">
+    <div class="footer-marque">COSMOGENESIS</div>
+    <div class="footer-links">
+      <a href="#collections">Harmonic Research</a>
+      <a href="#node-system">Node System Docs</a>
+      <a href="https://github.com/your-org/your-repo" rel="noopener noreferrer">Open Source</a>
+      <a href="#atelier">Commissions</a>
+    </div>
+    <p class="copyright">© MMXXV — Cathedral of Circuits</p>
+  </footer>
+
+  <script type="module" src="assets/js/calm.js"></script>
+  <script type="module" src="assets/js/nodes.js"></script>
+</body>
+</html>
