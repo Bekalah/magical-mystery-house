@@ -75,6 +75,22 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
 
   All functions below are pure and execute once to preserve stillness.
 */
+/**
+ * Render a complete, ND-safe static composition of layered sacred geometry onto a canvas.
+ *
+ * Draws, in back-to-front order: layered background, Vesica field, Tree-of-Life scaffold,
+ * Fibonacci spiral, and a double-helix lattice. Optionally renders a small inline notice.
+ * The function saves and restores the canvas context state and performs no external side effects.
+ *
+ * @param {CanvasRenderingContext2D} ctx - Canvas 2D rendering context to draw into.
+ * @param {Object} opts - Rendering options.
+ * @param {number} opts.width - Canvas width in pixels.
+ * @param {number} opts.height - Canvas height in pixels.
+ * @param {Object} opts.palette - Color palette object with expected keys (bg, ink, layers[]).
+ * @param {Object} opts.NUM - Numeric constants/config used to scale and sample geometry.
+ * @param {string} [opts.notice] - Optional short message; when a non-empty string is provided it is
+ *   drawn unobtrusively near the bottom-left of the canvas.
+ */
 
 export function renderHelix(ctx, { width, height, palette, NUM, notice }) {
   ctx.save();
@@ -246,6 +262,14 @@ function drawVesica(ctx, w, h, color, NUM) {
   const r = Math.min(w, h) / NUM.THREE;       // triadic radius
   const step = r / NUM.SEVEN;                 // septenary spacing
 /* Layer 0: Gradient background -------------------------------------------- */
+/**
+ * Paints the layered background for the composition: base fill, a celestial radial glow, and a subtle vertical grounding gradient.
+ *
+ * The routine is ND-safe (static) and relies on palette color stops to build two gradient overlays over the solid background.
+ *
+ * @param {Object} palette - Color palette: must include `bg` (base background color) and `layers` (array of colors used as gradient stops).
+ * @param {Object} NUM - Numeric constants used for scale; this function uses `NUM.NINE` to compute the radial focus radius.
+ */
 function fillBackground(ctx, width, height, palette, NUM) {
   /* ND-safe: slow gradients echo the provided art without motion. */
   ctx.fillStyle = palette.bg;
@@ -308,7 +332,19 @@ function drawVesica(ctx, w, h, color, NUM) {
   ctx.fillRect(0, 0, width, height);
 }
 
-/* Layer 1: Vesica field --------------------------------------------------- */
+/**
+ * Draws a luminous Vesica field: a repeating grid of overlapping circular outlines.
+ *
+ * Renders two offset circles at each grid point using translucent, additive strokes
+ * to produce a glowing outline effect. The canvas context state is saved and
+ * restored; no value is returned.
+ *
+ * @param {CanvasRenderingContext2D} ctx - Canvas 2D rendering context to draw on.
+ * @param {number} width - Canvas drawing width in pixels.
+ * @param {number} height - Canvas drawing height in pixels.
+ * @param {string} color - Stroke color (any CSS color string) used for the circle outlines.
+ * @param {object} NUM - Scaling constants object (e.g., { THREE, SEVEN, NINE }) used to compute radius and spacing.
+ */
 function drawVesica(ctx, width, height, color, NUM) {
   /* Vesica field: luminous outline grid built from overlapping circles. */
   const radius = Math.min(width, height) / NUM.THREE;
@@ -344,7 +380,19 @@ function drawVesica(ctx, width, height, color, NUM) {
   ctx.restore();
 }
 
-/* Layer 2: Tree-of-Life scaffold ------------------------------------------ */
+/**
+ * Draws a static "Tree of Life" scaffold (connected nodes with haloed nodes) onto the canvas.
+ *
+ * Renders a fixed, non-animated layout of normalized node positions scaled to the provided
+ * width/height. Draws connecting paths (strokes) between predefined node pairs and filled
+ * circular nodes with a soft halo glow.
+ *
+ * @param {Object} colors - Color roles used by the layer. Required keys:
+ *   - {string} path: stroke color for connecting lines.
+ *   - {string} node: fill color for node disks.
+ *   - {string} halo: color used for the node glow (converted to a translucent shadow).
+ * @param {Object} NUM - Numerical constants used for sizing (expects NUM.TWENTYTWO to compute node radius).
+ */
 function drawTree(ctx, width, height, colors, NUM) {
   /* Tree-of-Life: static layout to respect sacred order without motion. */
   const nodeRadius = Math.min(width, height) / NUM.TWENTYTWO;
@@ -518,7 +566,19 @@ function drawTree(ctx, w, h, colors, NUM) {
   ctx.restore();
 }
 
-/* Layer 3: Fibonacci curve ------------------------------------------------- */
+/**
+ * Draws a static Fibonacci (logarithmic) spiral as a stroked polyline with a vertical color gradient.
+ *
+ * The spiral is sampled from a fixed center (≈32% width, 68% height) using NUM-derived counts and steps;
+ * stroke styling uses a vertical gradient built from the provided base color and soft alpha stops.
+ * If fewer than two spiral points are generated, the function returns without drawing.
+ *
+ * @param {CanvasRenderingContext2D} ctx - Canvas 2D rendering context.
+ * @param {number} width - Canvas width in pixels.
+ * @param {number} height - Canvas height in pixels.
+ * @param {string} color - Base hex color used to construct the gradient stroke.
+ * @param {object} NUM - Numeric constants object (expects keys like ONEFORTYFOUR, ELEVEN, TWENTYTWO).
+ */
 function drawFibonacci(ctx, width, height, color, NUM) {
   /* Fibonacci spiral: static polyline for gentle, motionless flow. */
   const count = NUM.ONEFORTYFOUR;
@@ -588,7 +648,20 @@ function createSpiralPoints({ count, centerX, centerY, radius, growth, angleStep
   return pts;
 }
 
-/* Layer 4: Double-helix lattice ------------------------------------------- */
+/**
+ * Render a static double-helix lattice (two strands plus cross rungs) onto a canvas.
+ *
+ * Draws two sinusoidal strands as stroked polylines with a shared glow gradient and
+ * then renders a fixed number of cross rungs connecting corresponding points on the strands.
+ * Visual parameters (sampling density, vertical span, amplitude, twists, and rung count)
+ * are derived from the provided NUM constants.
+ *
+ * @param {CanvasRenderingContext2D} ctx - 2D canvas drawing context to render into.
+ * @param {number} width - Canvas width in pixels.
+ * @param {number} height - Canvas height in pixels.
+ * @param {{ strandA: string, strandB: string, rung: string }} colors - Hex color strings used for the two strand endpoints (blended into a gradient) and the rung stroke.
+ * @param {object} NUM - Numeric constants object used for sampling and layout (expects fields like NINETYNINE, THIRTYTHREE, TWENTYTWO, THREE).
+ */
 function drawHelix(ctx, width, height, colors, NUM) {
   /* Double helix: two strands plus 33 cross rungs, all static. */
   const count = NUM.NINETYNINE;
@@ -806,6 +879,12 @@ function createHelixStrand({ count, top, bottom, centerX, amplitude, phase, twis
     } else {
       ctx.lineTo(x, y);
     }
+/**
+ * Stroke a connected polyline through an ordered list of points on the given canvas context.
+ *
+ * @param {CanvasRenderingContext2D} ctx - 2D rendering context to draw into.
+ * @param {Array<{x: number, y: number}>} pts - Ordered array of points; if empty the function returns without drawing.
+ */
 function drawPolyline(ctx, pts) {
   if (pts.length === 0) {
     return;
@@ -854,6 +933,18 @@ function drawPolyline(ctx, pts) {
     ctx.lineTo(x, y2);
     ctx.stroke();
 /* Layer 5: Inline notice --------------------------------------------------- */
+/**
+ * Draws a small, non-intrusive inline notice at the bottom-left of the canvas.
+ *
+ * Renders `message` using `inkHex` (with applied alpha) and a soft shadow, positioned
+ * with consistent padding from the canvas edges. The canvas state is saved and restored.
+ *
+ * @param {CanvasRenderingContext2D} ctx - The 2D canvas rendering context.
+ * @param {number} width - Canvas width in pixels.
+ * @param {number} height - Canvas height in pixels.
+ * @param {string} inkHex - Hex color string used for the text and shadow (e.g. "#RRGGBB").
+ * @param {string} message - The notice text to draw.
+ */
 function drawNotice(ctx, width, height, inkHex, message) {
   /* Inline fallback notice keeps the reader informed without alerts. */
   ctx.save();
@@ -867,7 +958,15 @@ function drawNotice(ctx, width, height, inkHex, message) {
   ctx.restore();
 }
 
-/* Utilities ---------------------------------------------------------------- */
+/**
+ * Convert a hex color to an RGBA CSS string with the specified alpha.
+ *
+ * Accepts a 6-digit hex string (with or without a leading '#'). If the input
+ * cannot be parsed, returns opaque-white with the requested alpha.
+ *
+ * @param {string} hex - Hex color string (e.g. "#RRGGBB" or "RRGGBB").
+ * @param {number} alpha - Opacity in [0, 1].
+ * @return {string} CSS `rgba(r, g, b, a)` string suitable for canvas or CSS.
 function withAlpha(hex, alpha) {
   const rgb = hexToRgb(hex);
   if (!rgb) {
@@ -877,6 +976,16 @@ function withAlpha(hex, alpha) {
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
 
+/**
+ * Convert a 6-digit hexadecimal color string to an RGB object.
+ *
+ * Accepts a hex string with or without a leading '#' (e.g. "#ff00aa" or "ff00aa").
+ * Returns an object with numeric r, g, b components in the 0–255 range, or `null`
+ * if the input is not a valid 6-digit hex string.
+ *
+ * @param {string} hex - 6-digit hex color string, optionally prefixed with '#'.
+ * @return {{r: number, g: number, b: number} | null} RGB components or null on invalid input.
+ */
 function hexToRgb(hex) {
   if (typeof hex !== "string") {
     return null;
