@@ -62,3 +62,7 @@ The renderer keeps these anchors in `index.html` to encode sacred ratios: 3, 7, 
 - Luminous halos provide layered geometry (never flat) inspired by the shared mandalas.
 - Canvas notices replace pop-ups to avoid startle.
 - No build tooling, bundlers, or workflows — everything remains offline-first and transparent.
+
+## Provenance Encoding
+- `index.html` embeds the Cathedral Visionary provenance JSON directly onto the canvas element.
+- This satisfies the Rosslyn ruleset requirement for metadata without introducing network calls or extra tooling.
