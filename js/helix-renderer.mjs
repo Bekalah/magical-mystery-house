@@ -111,6 +111,21 @@ export function renderHelix(ctx, { width, height, palette, NUM }) {
  * @param {Object} opts.NUM - Numeric constants/config used to scale and sample geometry.
  * @param {string} [opts.notice] - Optional short message; when a non-empty string is provided it is
  *   drawn unobtrusively near the bottom-left of the canvas.
+/**
+ * Render a static, ND-safe layered sacred-geometry composition onto a canvas.
+ *
+ * Clears the canvas to palette.bg and draws four depth-ordered layers:
+ * 1) Vesica field (intersecting circles)
+ * 2) Tree-of-Life scaffold (nodes and connecting paths)
+ * 3) Fibonacci spiral (sampled polyline)
+ * 4) Double-helix lattice (two strands with cross rungs)
+ *
+ * @param {CanvasRenderingContext2D} ctx - Canvas 2D rendering context to draw into.
+ * @param {Object} options - Rendering options.
+ * @param {number} options.width - Canvas width in pixels.
+ * @param {number} options.height - Canvas height in pixels.
+ * @param {Object} options.palette - Color palette with `bg`, `ink`, and `layers` array used per layer.
+ * @param {Object} options.NUM - Numeric constants object used to size and sample elements.
  */
 
 export function renderHelix(ctx, { width, height, palette, NUM, notice }) {
@@ -285,6 +300,16 @@ function drawVesica(ctx, w, h, color, NUM) {
       ctx.arc(x + step, y, r, 0, Math.PI * 2);
       ctx.stroke();
 function drawVesica(ctx, w, h, color, NUM) {
+/**
+ * Draws a calm vesica field of overlapping stroked circles across the canvas.
+ *
+ * Renders two horizontally offset circles at each grid point to form a gentle, repeating vesica pattern.
+ * Uses thin strokes and reduced global alpha so the field remains visually soft and non-distracting.
+ *
+ * @param {string} color - Stroke color (any canvas-compatible CSS color).
+ * @param {object} NUM - Numeric constants used for layout (expects numeric properties such as THREE, SEVEN, NINE).
+ */
+function drawVesica(ctx, width, height, color, NUM) {
   /* Vesica field: calm outline grid built from overlapping circles.
      ND-safe: thin lines, generous spacing. */
   const r = Math.min(w, h) / NUM.THREE;      // base radius from sacred triad
@@ -449,6 +474,11 @@ function drawVesica(ctx, w, h, color, NUM) {
  *   - {string} node: fill color for node disks.
  *   - {string} halo: color used for the node glow (converted to a translucent shadow).
  * @param {Object} NUM - Numerical constants used for sizing (expects NUM.TWENTYTWO to compute node radius).
+ * Draws a static "Tree of Life" scaffold: a fixed set of connected nodes and paths centered in the canvas.
+ *
+ * Renders a non-animated layout of nodes (filled circles) and connecting paths (stroked lines). Node positions are defined as normalized coordinates then scaled to the provided width and height. Node radius is derived from canvas size and NUM.TWENTYTWO.
+ *
+ * @param {Object} colors - Color roles used when drawing. Must include `path` (stroke color for connections) and `node` (fill color for nodes).
  */
 function drawTree(ctx, width, height, colors, NUM) {
   /* Tree-of-Life: static layout to respect sacred order without motion. */
@@ -687,6 +717,17 @@ function drawTree(ctx, w, h, colors, NUM) {
  * @param {number} height - Canvas height in pixels.
  * @param {string} color - Base hex color used to construct the gradient stroke.
  * @param {object} NUM - Numeric constants object (expects keys like ONEFORTYFOUR, ELEVEN, TWENTYTWO).
+ * Draws a static Fibonacci-style spiral as a stroked polyline on the given canvas context.
+ *
+ * Generates a sequence of points along a logarithmic spiral centered near (width*0.32, height*0.68)
+ * and strokes a smooth polyline through them using the provided color. The function saves and
+ * restores the canvas context state; it does not animate the spiral.
+ *
+ * @param {CanvasRenderingContext2D} ctx - Canvas 2D rendering context to draw into.
+ * @param {number} width - Canvas width in pixels (used to position and scale the spiral).
+ * @param {number} height - Canvas height in pixels (used to position and scale the spiral).
+ * @param {string} color - Stroke color used for the spiral (any valid CSS color string).
+ * @param {object} NUM - Numeric constants object (provides counts and divisors used for sizing and steps).
  */
 function drawFibonacci(ctx, width, height, color, NUM) {
   /* Fibonacci spiral: static polyline for gentle, motionless flow. */
@@ -731,6 +772,21 @@ function drawFibonacci(ctx, width, height, color, NUM) {
   ctx.restore();
 }
 
+/**
+ * Generate a sequence of (x,y) coordinates lying along a logarithmic spiral.
+ *
+ * Produces `count` points starting at polar radius `radius` around (centerX, centerY).
+ * Each step multiplies the radius by `growth` and advances the polar angle by `angleStep` (radians).
+ *
+ * @param {Object} params
+ * @param {number} params.count - Number of points to generate (non-negative integer).
+ * @param {number} params.centerX - X coordinate of the spiral center.
+ * @param {number} params.centerY - Y coordinate of the spiral center.
+ * @param {number} params.radius - Initial radial distance from the center for the first point.
+ * @param {number} params.growth - Multiplicative growth factor applied to the radius each step (use >0).
+ * @param {number} params.angleStep - Angle increment per step, in radians.
+ * @return {Array<{x:number,y:number}>} Array of point objects in canvas coordinates.
+ */
 function createSpiralPoints({ count, centerX, centerY, radius, growth, angleStep }) {
   const pts = [];
   let currentRadius = radius;
@@ -850,6 +906,22 @@ function drawHelix(ctx, w, h, colors, NUM) {
  * @param {number} height - Canvas height in pixels.
  * @param {{ strandA: string, strandB: string, rung: string }} colors - Hex color strings used for the two strand endpoints (blended into a gradient) and the rung stroke.
  * @param {object} NUM - Numeric constants object used for sampling and layout (expects fields like NINETYNINE, THIRTYTHREE, TWENTYTWO, THREE).
+/**
+ * Draws a static double-helix lattice (two strands plus cross rungs) onto the provided canvas context.
+ *
+ * Generates two opposing helical strands and renders them as polylines, then draws a fixed number
+ * of short cross-rungs connecting corresponding points on the two strands. The drawing uses
+ * colors provided in the `colors` object and mutates the given canvas context (no return value).
+ *
+ * @param {CanvasRenderingContext2D} ctx - Canvas 2D rendering context to draw into.
+ * @param {number} width - Canvas width in pixels (used to position and scale the helix).
+ * @param {number} height - Canvas height in pixels (used to position and scale the helix).
+ * @param {Object} colors - Required color assignments:
+ *   - {string} colors.strandA - stroke color for strand A.
+ *   - {string} colors.strandB - stroke color for strand B.
+ *   - {string} colors.rung - stroke color for the cross-rungs between strands.
+ * @param {Object} NUM - Numeric constants object used to control counts and spacing (expects members
+ *   like NINETYNINE, TWENTYTW0, THREE, THIRTYTHREE — values used: NINETYNINE, TWENTYTWO, THREE, THIRTYTHREE).
  */
 function drawHelix(ctx, width, height, colors, NUM) {
   /* Double helix: two strands plus 33 cross rungs, all static. */
@@ -1044,6 +1116,22 @@ function drawHelix(ctx, w, h, colors, NUM) {
     } else {
       ctx.lineTo(x, y);
     }
+/**
+ * Generate a single vertical helix strand as an array of points.
+ *
+ * Produces `count` points evenly spaced in y from `top` to `bottom`. Each point's x coordinate is
+ * computed as `centerX + sin(phase + t * PI * twists) * amplitude`, where t ranges [0,1] along the strand.
+ *
+ * @param {Object} params
+ * @param {number} params.count - Number of points to generate (>= 1).
+ * @param {number} params.top - Y coordinate at the top of the strand.
+ * @param {number} params.bottom - Y coordinate at the bottom of the strand.
+ * @param {number} params.centerX - Central x position about which the strand oscillates.
+ * @param {number} params.amplitude - Maximum horizontal displacement of the strand.
+ * @param {number} params.phase - Angular offset (radians) applied to the sine.
+ * @param {number} params.twists - Controls how many oscillations; the total angle added across the strand is `PI * twists`.
+ * @return {Array<{x: number, y: number}>} Array of points composing the helix strand.
+ */
 function createHelixStrand({ count, top, bottom, centerX, amplitude, phase, twists }) {
   const pts = [];
   for (let i = 0; i < count; i += 1) {
@@ -1073,6 +1161,13 @@ function createHelixStrand({ count, top, bottom, centerX, amplitude, phase, twis
  *
  * @param {CanvasRenderingContext2D} ctx - 2D rendering context to draw into.
  * @param {Array<{x: number, y: number}>} pts - Ordered array of points; if empty the function returns without drawing.
+/**
+ * Stroke a continuous polyline through an array of points using the current canvas stroke style.
+ *
+ * If the point array is empty the function does nothing. The path is left open (not closed or filled),
+ * and the canvas' current stroke-related state (strokeStyle, lineWidth, lineJoin, etc.) is used.
+ *
+ * @param {Array<{x: number, y: number}>} pts - Ordered array of 2D points to connect with straight segments.
  */
 function drawPolyline(ctx, pts) {
   if (pts.length === 0) {
