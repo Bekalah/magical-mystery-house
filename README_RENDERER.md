@@ -2,7 +2,7 @@ Per Texturas Numerorum, Spira Loquitur.
 
 # Cosmic Helix Renderer
 
-Static, offline canvas demo for layered sacred geometry. No build step, no network calls, ND-safe by design.
+Static, offline canvas renderer for layered sacred geometry. No build step, no network calls, ND-safe by design.
 
 ## Layers
 1. **Vesica field** - intersecting circles seed the grid (3, 7, 9).
@@ -13,6 +13,10 @@ Static, offline canvas demo for layered sacred geometry. No build step, no netwo
 2. **Tree-of-Life scaffold** — 10 nodes with 22 connective paths
 3. **Fibonacci curve** — logarithmic spiral using 144 sampled points
 4. **Double-helix lattice** — two phase-shifted strands with 33 cross rungs
+1. **Vesica field** - intersecting circles seed the grid (3, 7, 9)
+2. **Tree-of-Life scaffold** - 10 nodes with 22 connective paths
+3. **Fibonacci curve** - logarithmic spiral using 144 sampled points
+4. **Double-helix lattice** - two phase-shifted strands with 33 cross rungs
 
 ## Usage
 - Open `index.html` directly in any modern browser (double-click works offline).
@@ -66,3 +70,4 @@ The renderer keeps these anchors in `index.html` to encode sacred ratios: 3, 7, 
 ## Provenance Encoding
 - `index.html` embeds the Cathedral Visionary provenance JSON directly onto the canvas element.
 - This satisfies the Rosslyn ruleset requirement for metadata without introducing network calls or extra tooling.
+The renderer references 3, 7, 9, 11, 22, 33, 99, and 144 to align with the cathedral numerology and geometry mappings.

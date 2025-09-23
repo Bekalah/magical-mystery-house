@@ -119,6 +119,8 @@
     <div><strong>Cosmic Helix Renderer</strong> - layered sacred geometry (offline, ND-safe)</div>
     <div><strong>Cosmic Helix Renderer</strong> — layered sacred geometry (offline, ND-safe)</div>
     <div class="status" id="status">Preparing palette…</div>
+    <div><strong>Cosmic Helix Renderer</strong> &mdash; layered sacred geometry (offline, ND-safe)</div>
+    <div class="status" id="status">Loading palette...</div>
   </header>
 
   <canvas id="stage" width="1440" height="900" aria-label="Layered sacred geometry canvas"></canvas>
@@ -155,6 +157,9 @@
           throw new Error(String(response.status));
         }
         return await response.json();
+        const res = await fetch(path, { cache: "no-store" });
+        if (!res.ok) throw new Error(String(res.status));
+        return await res.json();
       } catch (error) {
         return null;
       }
@@ -237,6 +242,20 @@
         notice
       });
     }
+    // Numerology constants used by the geometry routines
+    const NUM = {
+      THREE: 3,
+      SEVEN: 7,
+      NINE: 9,
+      ELEVEN: 11,
+      TWENTYTWO: 22,
+      THIRTYTHREE: 33,
+      NINETYNINE: 99,
+      ONEFORTYFOUR: 144
+    };
+
+    // ND-safe rationale: no motion, high readability, soft colors, layered order
+    renderHelix(ctx, { width: canvas.width, height: canvas.height, palette: active, NUM });
   </script>
 </body>
 </html>
