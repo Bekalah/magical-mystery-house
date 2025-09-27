@@ -1,0 +1,5 @@
+[
+  { "id": "alpha-gate", "name": "Alpha Gate", "desc": "Threshold of lucid resonance" },
+  { "id": "aurora-hall", "name": "Aurora Hall", "desc": "Prismatic corridor of harmonics" },
+  { "id": "omega-chamber", "name": "Omega Chamber", "desc": "Sanctum of converging stories" }
+]
