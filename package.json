@@ -5,8 +5,21 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
+    "dev": "vite",
     "test": "node --test",
     "prebuild": "node scripts/verify-absent.mjs",
-    "build": "npm run test"
+    "build": "npm run prebuild && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
   }
 }
