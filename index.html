@@ -8,6 +8,69 @@
   <style>
     @media (prefers-reduced-motion: reduce){
       *{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+    /* ND-safe styling: calm contrast, generous breathing room, no motion */
+    :root {
+      --bg: #0b0b12;
+      --ink: #e8e8f0;
+      --muted: #a6a6c1;
+      --border: #1f2237;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--ink);
+      font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    header {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header strong {
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    .status {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 20px auto 40px;
+      padding: 0 18px;
+    }
+
+    #stage {
+      display: block;
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto 18px;
+      box-shadow: 0 0 0 1px var(--border);
+      background: transparent;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0 auto 12px;
+      max-width: 860px;
+    }
+
+    .note strong {
+      color: var(--ink);
+    }
+
+    .note[hidden] {
+      display: none;
     }
     html,body,#root{height:100%;margin:0;background:#0b0b0f;color:#eee}
     .boot{display:grid;place-items:center;height:100%;font:600 1rem system-ui}
@@ -16,5 +79,92 @@
 <body>
   <div id="root"><div class="boot">Loading House…</div></div>
   <script type="module" src="/src/main.tsx"></script>
+  <header>
+    <div><strong>Cosmic Helix Renderer</strong> — layered sacred geometry (offline, ND-safe)</div>
+    <div class="status" id="status">Loading palette…</div>
+  </header>
+
+  <main>
+    <canvas id="stage" width="1440" height="900" aria-label="Layered sacred geometry canvas"></canvas>
+    <p class="note">Static renderer encoding Vesica field, Tree-of-Life scaffold, Fibonacci curve, and a double-helix lattice. No animation, no external dependencies.</p>
+    <p class="note" id="notice" hidden></p>
+  </main>
+
+  <script type="module">
+    import { renderHelix } from "./js/helix-renderer.mjs";
+
+    const statusEl = document.getElementById("status");
+    const noticeEl = document.getElementById("notice");
+    const canvas = document.getElementById("stage");
+    const ctx = canvas.getContext("2d");
+
+    if (!ctx) {
+      statusEl.textContent = "Canvas API unavailable; rendering skipped.";
+      noticeEl.hidden = false;
+      noticeEl.textContent = "This browser does not expose Canvas 2D, so the layered geometry cannot draw.";
+    } else {
+      bootstrap();
+    }
+
+    async function bootstrap() {
+      const defaults = {
+        palette: {
+          bg: "#0b0b12",
+          ink: "#e8e8f0",
+          layers: ["#b1c7ff", "#89f7fe", "#a0ffa1", "#ffd27f", "#f5a3ff", "#d0d0e6"]
+        }
+      };
+
+      const palette = await loadPalette("./data/palette.json");
+      const activePalette = palette || defaults.palette;
+
+      if (palette) {
+        statusEl.textContent = "Palette loaded.";
+      } else {
+        statusEl.textContent = "Palette missing; using bundled ND-safe fallback.";
+        noticeEl.hidden = false;
+        noticeEl.textContent = "No palette file detected. Fallback hues keep contrast calm and readable.";
+      }
+
+      const NUM = Object.freeze({
+        THREE: 3,
+        SEVEN: 7,
+        NINE: 9,
+        ELEVEN: 11,
+        TWENTYTWO: 22,
+        THIRTYTHREE: 33,
+        NINETYNINE: 99,
+        ONEFORTYFOUR: 144
+      });
+
+      canvas.dataset.provenance = JSON.stringify({
+        canon: "Cosmic Helix",
+        layers: ["vesica", "tree", "fibonacci", "helix"],
+        nd_safe: true,
+        offline: true,
+        numerology: Object.values(NUM)
+      });
+
+      renderHelix(ctx, {
+        width: canvas.width,
+        height: canvas.height,
+        palette: activePalette,
+        NUM,
+        notice: noticeEl.hidden ? "" : noticeEl.textContent
+      });
+    }
+
+    async function loadPalette(path) {
+      try {
+        const response = await fetch(path, { cache: "no-store" });
+        if (!response.ok) {
+          throw new Error(String(response.status));
+        }
+        return await response.json();
+      } catch (error) {
+        return null;
+      }
+    }
+  </script>
 </body>
 </html>
