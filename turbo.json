@@ -1,0 +1,96 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**", "build/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "type-check": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"]
+    },
+    "clean": {
+      "cache": false
+    },
+    "validate:setup": {
+      "cache": false,
+      "outputs": []
+    },
+    "health:check": {
+      "cache": false,
+      "outputs": []
+    },
+    "health:map": {
+      "cache": false,
+      "outputs": ["health-map.json", "health-map.md", "health-map.html"]
+    },
+    "debug:all": {
+      "cache": false,
+      "dependsOn": ["health:map"],
+      "outputs": ["debug-report.json", "debug-report.md"]
+    },
+    "debug:types": {
+      "cache": false,
+      "outputs": []
+    },
+    "debug:build": {
+      "cache": false,
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "debug:deps": {
+      "cache": false,
+      "outputs": []
+    },
+    "check:dependencies": {
+      "cache": false,
+      "outputs": []
+    },
+    "check:quality": {
+      "cache": false,
+      "outputs": []
+    },
+    "check:all": {
+      "dependsOn": ["health:check", "check:dependencies", "check:quality"],
+      "outputs": []
+    },
+    "security:check": {
+      "cache": false,
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "theme:apply": {
+      "cache": false,
+      "outputs": []
+    },
+    "discover:full": {
+      "cache": false,
+      "outputs": ["DISCOVERY_REPORT.json", "DISCOVERY_REPORT.md"]
+    },
+    "sync:remotes": {
+      "cache": false,
+      "outputs": [".remote-repos/**"]
+    },
+    "update:codex": {
+      "cache": false,
+      "outputs": ["CODEX_MASTER.json"]
+    },
+    "consolidate:master": {
+      "cache": false,
+      "outputs": ["CONSOLIDATION_TO_MASTER.json"]
+    }
+  }
+}
