@@ -8,9 +8,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:52.383Z",
+  "consolidatedAt": "2025-11-30T21:20:57.724Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Game Mathematics",
+    "symbol": "⊙",
+    "label": "⊙ Game Mathematics (game-mathematics-core)"
+  }
 }

@@ -7,5 +7,10 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc"
+  },
+  "alchemical": {
+    "name": "Mystery House",
+    "symbol": "⊙",
+    "label": "⊙ Mystery House (mystery-house-core)"
   }
 }

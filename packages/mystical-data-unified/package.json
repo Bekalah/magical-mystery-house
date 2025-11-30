@@ -34,6 +34,11 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:43.563Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:16.663Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Mystical Data Unified",
+    "symbol": "⊙",
+    "label": "⊙ Mystical Data Unified (@cathedral/mystical-data-unified)"
+  }
 }

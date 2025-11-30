@@ -7,5 +7,10 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc"
+  },
+  "alchemical": {
+    "name": "Circuitum99",
+    "symbol": "⊙",
+    "label": "⊙ Circuitum99 (circuitum99-core)"
   }
 }

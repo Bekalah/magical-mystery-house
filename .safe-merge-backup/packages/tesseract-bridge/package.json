@@ -33,5 +33,10 @@
   },
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:28.576Z",
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Tesseract",
+    "symbol": "⊞",
+    "label": "⊞ Tesseract (@cathedral/tesseract-bridge)"
+  }
 }

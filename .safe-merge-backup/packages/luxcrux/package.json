@@ -29,5 +29,10 @@
   },
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:24.495Z",
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Luxcrux",
+    "symbol": "⊙",
+    "label": "⊙ Luxcrux (@cathedral/luxcrux)"
+  }
 }

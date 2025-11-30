@@ -7,6 +7,16 @@
  * @license CC0-1.0 - Public Domain
  */
 
+/**
+ * ⊙ Fusionkinkdesignmathematics
+ * 
+ * @alchemical Fusionkinkdesignmathematics
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 import { SACRED_MATH, goldenRectangle } from '../../sacred-mathematics-core/src/index';
 
 // Solfeggio frequencies mapping

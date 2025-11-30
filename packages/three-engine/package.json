@@ -37,6 +37,11 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:44.530Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:17.772Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Three",
+    "symbol": "⊙",
+    "label": "⊙ Three (@cathedral/three-engine)"
+  }
 }

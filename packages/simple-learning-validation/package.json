@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:44.061Z",
+  "consolidatedAt": "2025-11-30T21:24:17.216Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Simple Learning Validation",
+    "symbol": "⊙",
+    "label": "⊙ Simple Learning Validation (simple-learning-validation)"
+  }
 }

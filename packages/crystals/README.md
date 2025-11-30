@@ -1,3 +1,13 @@
+# ⊙ Crystals - crystals
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # Cathedral Crystals Module
 
 High-end bio-geo-frequency & sacred geometry intelligence layer for Codex 144:99.

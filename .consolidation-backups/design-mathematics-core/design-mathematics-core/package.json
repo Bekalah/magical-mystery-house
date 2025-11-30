@@ -8,9 +8,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:52.238Z",
+  "consolidatedAt": "2025-11-30T21:20:57.148Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Design Mathematics",
+    "symbol": "⊙",
+    "label": "⊙ Design Mathematics (design-mathematics-core)"
+  }
 }

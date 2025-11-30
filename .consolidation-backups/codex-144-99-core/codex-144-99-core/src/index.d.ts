@@ -6,6 +6,16 @@
   * @author Rebecca Respawn
  * @license CC0-1.0 - Public Domain
 */
+/**
+ * ⊙ Index.D
+ * 
+ * @alchemical Index.D
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 export type { CodexNode, CodexDepth } from './Codex144Engine';
 export { Codex144Engine } from './Codex144Engine';
 export { Codex144Security, DEFAULT_SECURITY_CONFIG } from './Codex144Security';

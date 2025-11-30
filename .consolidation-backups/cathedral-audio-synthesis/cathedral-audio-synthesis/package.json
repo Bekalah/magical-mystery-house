@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:51.302Z",
+  "consolidatedAt": "2025-11-30T21:20:55.061Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Cathedral Audio Synthesis",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Audio Synthesis (cathedral-audio-synthesis)"
+  }
 }

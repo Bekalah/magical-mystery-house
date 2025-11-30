@@ -56,5 +56,10 @@
   "license": "CC0-1.0",
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:25.427Z",
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Node Tree",
+    "symbol": "⊙",
+    "label": "⊙ Node Tree (@cathedral/node-tree-engine)"
+  }
 }

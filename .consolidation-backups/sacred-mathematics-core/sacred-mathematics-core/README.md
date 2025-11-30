@@ -1,3 +1,13 @@
+# ⊙ Sacred Mathematics - sacred-mathematics-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # sacred-mathematics-core
 
 No description available

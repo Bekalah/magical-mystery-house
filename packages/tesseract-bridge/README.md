@@ -1,3 +1,13 @@
+# ⊞ Tesseract - tesseract-bridge
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊞
+
+---
+
 # @cathedral/tesseract-bridge
 
 Tesseract Bridge - Kabbalistic paths and sacred geometry with master art principles

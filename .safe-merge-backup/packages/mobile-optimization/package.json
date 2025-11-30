@@ -15,5 +15,10 @@
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Mobile Optimization",
+    "symbol": "⊙",
+    "label": "⊙ Mobile Optimization (mobile-optimization)"
+  }
 }

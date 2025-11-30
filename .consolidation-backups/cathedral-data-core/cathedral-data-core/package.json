@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:51.319Z",
+  "consolidatedAt": "2025-11-30T21:20:55.089Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Cathedral Data",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Data (cathedral-data-core)"
+  }
 }

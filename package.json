@@ -44,7 +44,7 @@
     "fix:all": "node scripts/comprehensive-error-fixer.mjs",
     "fix:errors": "node scripts/comprehensive-error-fixer.mjs",
     "update:versions": "node scripts/update-version-pinning.mjs",
-    "label:all": "node scripts/system-labeler.mjs",
+    "label:all": "node scripts/system-labeler.mjs && node tools/apply-alchemical-labels.mjs",
     "label:systems": "node scripts/system-labeler.mjs",
     "deduplicate": "node scripts/real-deduplicator.mjs",
     "deduplicate:all": "node scripts/real-deduplicator.mjs",
@@ -65,7 +65,7 @@
     "analyze:codex": "node tools/codex-alignment-analyzer.mjs",
     "sync:remotes": "node tools/include-remote-repos.mjs",
     "discover:full": "pnpm run sync:remotes && node tools/comprehensive-discovery.mjs && node tools/partial-analyzer.mjs && node tools/codex-alignment-analyzer.mjs",
-    "consolidate:all": "node tools/comprehensive-consolidator.mjs",
+    "consolidate:all": "node tools/consolidate-all-workspaces.mjs",
     "consolidate": "node tools/comprehensive-consolidator.mjs",
     "test:commands": "node scripts/test-all-commands.mjs",
     "fix:all-issues": "node tools/fix-all-issues.mjs",
@@ -93,8 +93,8 @@
     "consolidate:master": "node tools/consolidate-to-master.mjs",
     "theme:apply": "node tools/apply-unified-theme.mjs",
     "theme:unified": "node tools/apply-unified-theme.mjs",
+    "label:alchemical": "node tools/apply-alchemical-labels.mjs",
     "consolidate:workspaces": "node tools/consolidate-all-workspaces.mjs",
-    "consolidate:all": "node tools/consolidate-all-workspaces.mjs",
     "consolidate:execute": "node tools/execute-consolidation.mjs",
     "consolidate:merge": "node tools/execute-consolidation.mjs",
     "registry:update": "node scripts/create-comprehensive-registry.mjs",
@@ -113,5 +113,10 @@
     "pnpm": "*"
   },
   "license": "CC0-1.0",
-  "packageManager": "pnpm@10.23.0"
+  "packageManager": "pnpm@10.23.0",
+  "alchemical": {
+    "name": "Cathedral Master Deployment",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Master Deployment (cathedral-master-deployment)"
+  }
 }

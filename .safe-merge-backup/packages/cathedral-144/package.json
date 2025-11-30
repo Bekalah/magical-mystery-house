@@ -15,5 +15,10 @@
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Cathedral 144",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral 144 (cathedral-144)"
+  }
 }

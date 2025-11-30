@@ -83,6 +83,11 @@
     "@vitest/coverage-v8": "^1.6.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:44.995Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:18.365Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "@Cathedral Trinity/Accessibility",
+    "symbol": "⊙",
+    "label": "⊙ @Cathedral Trinity/Accessibility (@cathedral-trinity/accessibility)"
+  }
 }

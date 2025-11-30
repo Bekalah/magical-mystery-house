@@ -1,3 +1,13 @@
+# ⊙ Game Mathematics - game-mathematics-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # game-mathematics-core
 
 No description available

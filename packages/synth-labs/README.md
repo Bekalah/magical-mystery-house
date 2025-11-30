@@ -1,3 +1,13 @@
+# ⊙ Synth Labs - synth-labs
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # synth-labs
 
 No description available

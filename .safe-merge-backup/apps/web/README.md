@@ -1,3 +1,13 @@
+# ⊙ Web - web
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # Cathedral Web Interface
 
 **3D Open World Experience** - Not website-like, immersive exploration

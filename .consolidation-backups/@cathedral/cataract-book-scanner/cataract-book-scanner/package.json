@@ -62,6 +62,11 @@
   },
   "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/cataract-book-scanner",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:51.221Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:20:54.960Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Cataract Book Scanner",
+    "symbol": "⊙",
+    "label": "⊙ Cataract Book Scanner (@cathedral/cataract-book-scanner)"
+  }
 }

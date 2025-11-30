@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:53.024Z",
+  "consolidatedAt": "2025-11-30T21:20:59.707Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Moonchild Scanner",
+    "symbol": "⊙",
+    "label": "⊙ Moonchild Scanner (moonchild-scanner)"
+  }
 }

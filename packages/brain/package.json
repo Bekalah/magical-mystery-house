@@ -16,6 +16,11 @@
   "license": "CC0-1.0",
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:41.463Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:14.563Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Brain",
+    "symbol": "⊙",
+    "label": "⊙ Brain (@cathedral/brain)"
+  }
 }

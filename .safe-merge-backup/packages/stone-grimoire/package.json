@@ -31,5 +31,10 @@
   },
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:27.953Z",
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Stone Grimoire",
+    "symbol": "⊙",
+    "label": "⊙ Stone Grimoire (@cathedral/stone-grimoire)"
+  }
 }

@@ -41,6 +41,11 @@
     "directory": "packages/config"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:52.053Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:20:56.722Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Config",
+    "symbol": "⊙",
+    "label": "⊙ Config (@cathedral/config)"
+  }
 }

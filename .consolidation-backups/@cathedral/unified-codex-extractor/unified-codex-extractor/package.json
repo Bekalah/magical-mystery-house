@@ -58,6 +58,11 @@
   },
   "license": "CC0-1.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:54.486Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:21:03.082Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Unified Codex Extractor",
+    "symbol": "⊙",
+    "label": "⊙ Unified Codex Extractor (@cathedral/unified-codex-extractor)"
+  }
 }

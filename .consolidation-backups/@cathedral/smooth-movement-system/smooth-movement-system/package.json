@@ -34,6 +34,11 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:53.604Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:21:01.191Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Smooth Movement System",
+    "symbol": "⊙",
+    "label": "⊙ Smooth Movement System (@cathedral/smooth-movement-system)"
+  }
 }

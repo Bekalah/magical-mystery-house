@@ -8,9 +8,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:53.079Z",
+  "consolidatedAt": "2025-11-30T21:20:59.800Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Mystery House",
+    "symbol": "⊙",
+    "label": "⊙ Mystery House (mystery-house-core)"
+  }
 }

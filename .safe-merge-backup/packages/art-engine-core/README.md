@@ -1,3 +1,13 @@
+# ⊙ Art - art-engine-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/art-engine-core
 
 **Sacred Geometry & Visual Creation Engine**

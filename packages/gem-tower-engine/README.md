@@ -1,3 +1,13 @@
+# ⊙ Gem Tower - gem-tower-engine
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/gem-tower-engine
 
 Gem Tower Engine - Crystal and gem visualization system

@@ -1,3 +1,13 @@
+# ⊙ Cataract Book Scanner - cataract-book-scanner
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/cataract-book-scanner
 
 Cataract: Professional book-to-archetype scanner for public domain books with sacred geometry precision

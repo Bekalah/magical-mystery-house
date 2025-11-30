@@ -33,5 +33,10 @@
     "prettier": "^3.0.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:01.587Z"
+  "consolidatedAt": "2025-11-30T16:48:01.587Z",
+  "alchemical": {
+    "name": "Cathedral Of Circuits",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Of Circuits (cathedral-of-circuits)"
+  }
 }

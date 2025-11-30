@@ -34,6 +34,11 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:52.315Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:20:57.391Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Fusion Kink Generator",
+    "symbol": "⊙",
+    "label": "⊙ Fusion Kink Generator (@cathedral/fusion-kink-generator)"
+  }
 }

@@ -1,3 +1,13 @@
+# ⊙ Health Map - health-map-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/health-map-core
 
 **System Health Monitoring & Mapping**

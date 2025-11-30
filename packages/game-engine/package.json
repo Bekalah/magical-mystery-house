@@ -26,6 +26,11 @@
   },
   "license": "CC0-1.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:42.705Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:15.848Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Game",
+    "symbol": "⊙",
+    "label": "⊙ Game (@cathedral/game-engine)"
+  }
 }

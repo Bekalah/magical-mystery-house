@@ -42,6 +42,11 @@
   },
   "license": "CC0-1.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:51.439Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:20:55.271Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Design Library",
+    "symbol": "⊙",
+    "label": "⊙ Design Library (@cathedral/design-library)"
+  }
 }

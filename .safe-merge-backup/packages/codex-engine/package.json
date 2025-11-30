@@ -35,5 +35,10 @@
   "devDependencies": {},
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:21.460Z",
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Codex",
+    "symbol": "⊙",
+    "label": "⊙ Codex (@cathedral/codex-engine)"
+  }
 }

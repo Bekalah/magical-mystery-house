@@ -35,6 +35,11 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:52.411Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:20:57.796Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Gem Tower",
+    "symbol": "⊙",
+    "label": "⊙ Gem Tower (@cathedral/gem-tower-engine)"
+  }
 }

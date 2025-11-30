@@ -8,9 +8,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:43.329Z",
+  "consolidatedAt": "2025-11-30T21:24:16.446Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Liber Arcanae",
+    "symbol": "⊙",
+    "label": "⊙ Liber Arcanae (liber-arcanae-core)"
+  }
 }

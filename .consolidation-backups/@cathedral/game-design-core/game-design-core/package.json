@@ -46,5 +46,13 @@
   ],
   "packageManager": "pnpm@8.0.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:52.342Z"
+  "consolidatedAt": "2025-11-30T21:20:57.448Z",
+  "alchemical": {
+    "name": "Terra",
+    "element": "Earth",
+    "planet": "Saturn",
+    "metal": "Lead",
+    "symbol": "♄",
+    "label": "♄ Terra (@cathedral/game-design-core)"
+  }
 }

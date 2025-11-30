@@ -109,5 +109,10 @@
   },
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:23.044Z",
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Hall Of Ateliers",
+    "symbol": "⊙",
+    "label": "⊙ Hall Of Ateliers (@cathedral/hall-of-ateliers)"
+  }
 }

@@ -35,5 +35,10 @@
   "devDependencies": {},
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:19.815Z",
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Avatar Experience System",
+    "symbol": "⊙",
+    "label": "⊙ Avatar Experience System (@cathedral/avatar-experience-system)"
+  }
 }

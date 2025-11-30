@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:53.156Z",
+  "consolidatedAt": "2025-11-30T21:20:59.935Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Physics Cannon",
+    "symbol": "⊙",
+    "label": "⊙ Physics Cannon (physics-cannon-core)"
+  }
 }

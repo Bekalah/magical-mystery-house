@@ -15,5 +15,10 @@
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Story",
+    "symbol": "⊙",
+    "label": "⊙ Story (story-engine)"
+  }
 }

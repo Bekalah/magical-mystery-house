@@ -94,5 +94,10 @@
   },
   "dependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:42.811Z"
+  "consolidatedAt": "2025-11-30T21:24:15.936Z",
+  "alchemical": {
+    "name": "Godot Vfx Library",
+    "symbol": "⊙",
+    "label": "⊙ Godot Vfx Library (@cathedral/godot-vfx-library)"
+  }
 }

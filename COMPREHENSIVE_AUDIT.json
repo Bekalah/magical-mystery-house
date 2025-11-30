@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764536900554,
+  "timestamp": 1764538603192,
   "workspaces": [
     {
       "name": "cathedral-master-deployment",
@@ -2763,6 +2763,17 @@
           "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/app-completion-research.mjs",
           "category": "tool",
           "description": "@author Rebecca Respawn",
+          "license": "CC0-1.0",
+          "completion": "complete",
+          "type": "tool"
+        },
+        {
+          "realName": "apply-alchemical-labels",
+          "toolName": "apply-alchemical-labels.mjs",
+          "workspace": "cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-alchemical-labels.mjs",
+          "category": "tool",
+          "description": "Apply Alchemical/Hermetic Labels Across All Files",
           "license": "CC0-1.0",
           "completion": "complete",
           "type": "tool"
@@ -17581,6 +17592,17 @@
       "type": "tool"
     },
     {
+      "realName": "apply-alchemical-labels",
+      "toolName": "apply-alchemical-labels.mjs",
+      "workspace": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-alchemical-labels.mjs",
+      "category": "tool",
+      "description": "Apply Alchemical/Hermetic Labels Across All Files",
+      "license": "CC0-1.0",
+      "completion": "complete",
+      "type": "tool"
+    },
+    {
       "realName": "apply-patches",
       "toolName": "apply-patches.mjs",
       "workspace": "cathedral-master-deployment",
@@ -21068,7 +21090,7 @@
     }
   ],
   "licensing": {
-    "publicDomain": 619,
+    "publicDomain": 620,
     "missing": [],
     "needsUpdate": []
   },
@@ -22741,6 +22763,11 @@
       },
       {
         "name": "app-completion-research",
+        "type": "tool",
+        "workspace": "cathedral-master-deployment"
+      },
+      {
+        "name": "apply-alchemical-labels",
         "type": "tool",
         "workspace": "cathedral-master-deployment"
       },

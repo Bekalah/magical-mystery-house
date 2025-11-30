@@ -7,5 +7,10 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc"
+  },
+  "alchemical": {
+    "name": "Sacred Mathematics",
+    "symbol": "⊙",
+    "label": "⊙ Sacred Mathematics (sacred-mathematics-core)"
   }
 }

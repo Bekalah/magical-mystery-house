@@ -16,6 +16,11 @@
   "license": "CC0-1.0",
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:42.480Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:15.664Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Crystals",
+    "symbol": "⊙",
+    "label": "⊙ Crystals (@cathedral/crystals)"
+  }
 }

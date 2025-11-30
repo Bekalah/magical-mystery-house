@@ -7,5 +7,10 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc"
+  },
+  "alchemical": {
+    "name": "Synth Design Math",
+    "symbol": "⊙",
+    "label": "⊙ Synth Design Math (synth-design-math-core)"
   }
 }

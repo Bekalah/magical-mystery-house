@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:52.944Z",
+  "consolidatedAt": "2025-11-30T21:20:59.577Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Living Libraries",
+    "symbol": "⊙",
+    "label": "⊙ Living Libraries (living-libraries)"
+  }
 }

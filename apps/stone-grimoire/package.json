@@ -11,5 +11,10 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:02.072Z"
+  "consolidatedAt": "2025-11-30T16:48:02.072Z",
+  "alchemical": {
+    "name": "Stone Grimoire",
+    "symbol": "⊙",
+    "label": "⊙ Stone Grimoire (stone-grimoire)"
+  }
 }

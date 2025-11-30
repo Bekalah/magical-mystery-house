@@ -97,5 +97,10 @@
   },
   "dependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:42.781Z"
+  "consolidatedAt": "2025-11-30T21:24:15.911Z",
+  "alchemical": {
+    "name": "Godot Design Studio",
+    "symbol": "⊙",
+    "label": "⊙ Godot Design Studio (@cathedral/godot-design-studio)"
+  }
 }

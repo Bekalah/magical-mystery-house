@@ -1,3 +1,13 @@
+# ⊙ Codex 144 99 - codex-144-99
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # 📚 Codex 144:99 Library System
 
 A comprehensive library system for managing sacred knowledge datasets and connecting to real-world research sources. This system provides pure algorithmic implementations for the Codex 144:99 mystical framework, completely free of AI dependencies.

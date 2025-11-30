@@ -1,3 +1,13 @@
+# ⊞ Tesseract - tesseract-bridge-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊞
+
+---
+
 # tesseract-bridge-core
 
 No description available

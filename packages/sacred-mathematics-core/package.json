@@ -8,9 +8,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:43.832Z",
+  "consolidatedAt": "2025-11-30T21:24:16.987Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Sacred Mathematics",
+    "symbol": "⊙",
+    "label": "⊙ Sacred Mathematics (sacred-mathematics-core)"
+  }
 }

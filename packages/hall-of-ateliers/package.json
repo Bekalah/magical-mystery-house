@@ -108,6 +108,11 @@
     "registry": "https://registry.npmjs.org/"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:42.872Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:15.994Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Hall Of Ateliers",
+    "symbol": "⊙",
+    "label": "⊙ Hall Of Ateliers (@cathedral/hall-of-ateliers)"
+  }
 }

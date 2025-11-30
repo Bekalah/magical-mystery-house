@@ -7,5 +7,10 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc"
+  },
+  "alchemical": {
+    "name": "Design Mathematics",
+    "symbol": "⊙",
+    "label": "⊙ Design Mathematics (design-mathematics-core)"
   }
 }

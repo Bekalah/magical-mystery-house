@@ -42,6 +42,11 @@
   },
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:42.957Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:16.039Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Inter App Communicator",
+    "symbol": "⊙",
+    "label": "⊙ Inter App Communicator (@cathedral/inter-app-communicator)"
+  }
 }

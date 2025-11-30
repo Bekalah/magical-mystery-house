@@ -34,6 +34,11 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:42.423Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:15.613Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Cosmogenesis",
+    "symbol": "⊙",
+    "label": "⊙ Cosmogenesis (@cathedral/cosmogenesis)"
+  }
 }

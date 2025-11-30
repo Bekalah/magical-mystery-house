@@ -15,5 +15,10 @@
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Visionary Design System",
+    "symbol": "⊙",
+    "label": "⊙ Visionary Design System (visionary-design-system)"
+  }
 }

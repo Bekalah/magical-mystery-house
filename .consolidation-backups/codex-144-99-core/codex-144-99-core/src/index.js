@@ -7,7 +7,17 @@
   * @author Rebecca Respawn
  * @license CC0-1.0 - Public Domain
 */
-Object.defineProperty(exports, "__esModule", { value: true });
+Object.defineProperty(/**
+ * ⊙ Index
+ * 
+ * @alchemical Index
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
+exports, "__esModule", { value: true });
 exports.default = exports.Codex144Engine = void 0;
 var Codex144Engine_1 = require("./Codex144Engine");
 Object.defineProperty(exports, "Codex144Engine", { enumerable: true, get: function () { return Codex144Engine_1.Codex144Engine; } });

@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:51.244Z",
+  "consolidatedAt": "2025-11-30T21:20:54.996Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Cathedral 144",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral 144 (cathedral-144)"
+  }
 }

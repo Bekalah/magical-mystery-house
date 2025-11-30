@@ -11,5 +11,10 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:02.038Z"
+  "consolidatedAt": "2025-11-30T16:48:02.038Z",
+  "alchemical": {
+    "name": "Master Catalog Browser",
+    "symbol": "⊙",
+    "label": "⊙ Master Catalog Browser (master-catalog-browser)"
+  }
 }

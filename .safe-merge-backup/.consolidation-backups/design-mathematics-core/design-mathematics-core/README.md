@@ -1,3 +1,13 @@
+# ⊙ Design Mathematics - design-mathematics-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # design-mathematics-core
 
 No description available

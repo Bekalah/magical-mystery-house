@@ -28,6 +28,11 @@
     "@types/node": "^20.17.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:43.426Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:16.527Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Luxcrux",
+    "symbol": "⊙",
+    "label": "⊙ Luxcrux (@cathedral/luxcrux)"
+  }
 }

@@ -1,3 +1,13 @@
+# ⊙ Types - types
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/types
 
 Shared TypeScript types for Cathedral monorepo

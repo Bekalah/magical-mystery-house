@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:44.138Z",
+  "consolidatedAt": "2025-11-30T21:24:17.320Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Spiral Learning",
+    "symbol": "⊙",
+    "label": "⊙ Spiral Learning (spiral-learning-engine)"
+  }
 }

@@ -1,3 +1,13 @@
+# ⊙ Cathedral Design Library - cathedral-design-library
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/design-library
 
 Figma-style design library integrating Codex 144:99, Liber Arcanae, and Fusion Kink

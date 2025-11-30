@@ -25,6 +25,11 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:53.319Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:21:00.579Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Sacred Geometry",
+    "symbol": "⊙",
+    "label": "⊙ Sacred Geometry (@cathedral/sacred-geometry-core)"
+  }
 }

@@ -50,5 +50,10 @@
   ],
   "license": "CC0-1.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:01.723Z"
+  "consolidatedAt": "2025-11-30T16:48:01.723Z",
+  "alchemical": {
+    "name": "Cathedral Unity",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Unity (@cathedral/cathedral-unity)"
+  }
 }

@@ -22,6 +22,11 @@
   },
   "license": "CC0-1.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:42.407Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:15.598Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Core",
+    "symbol": "⊙",
+    "label": "⊙ Core (@cathedral/core)"
+  }
 }

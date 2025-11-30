@@ -1,3 +1,13 @@
+# ⊙ Synthesis - synthesis-engine
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/synthesis-engine
 
 Synthesis Engine - Core synthesis and fusion system for Cathedral projects

@@ -34,6 +34,11 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:52.034Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:20:56.694Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Codex Musical System",
+    "symbol": "⊙",
+    "label": "⊙ Codex Musical System (@cathedral/codex-musical-system)"
+  }
 }

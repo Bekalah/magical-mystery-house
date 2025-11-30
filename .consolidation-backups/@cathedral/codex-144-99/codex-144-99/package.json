@@ -133,6 +133,11 @@
     "pnpm": "9.15.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:51.921Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:20:56.358Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Codex 144 99",
+    "symbol": "⊙",
+    "label": "⊙ Codex 144 99 (@cathedral/codex-144-99)"
+  }
 }

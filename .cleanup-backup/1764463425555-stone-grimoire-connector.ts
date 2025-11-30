@@ -22,6 +22,16 @@
  * @license CC0-1.0 - Public Domain
  */
 
+/**
+ * ⊙ 1764463425555 Stone Grimoire Connector
+ * 
+ * @alchemical 1764463425555 Stone Grimoire Connector
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 import type { TrinityV11State, SkillMastery } from './TrinityV11Core';
 
 export interface GrimoireChapel {

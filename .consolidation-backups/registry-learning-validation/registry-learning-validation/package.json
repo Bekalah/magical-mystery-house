@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:53.308Z",
+  "consolidatedAt": "2025-11-30T21:21:00.545Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Registry Learning Validation",
+    "symbol": "⊙",
+    "label": "⊙ Registry Learning Validation (registry-learning-validation)"
+  }
 }

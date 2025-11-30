@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:44.086Z",
+  "consolidatedAt": "2025-11-30T21:24:17.254Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Sonic Physics",
+    "symbol": "⊙",
+    "label": "⊙ Sonic Physics (sonic-physics-engine)"
+  }
 }

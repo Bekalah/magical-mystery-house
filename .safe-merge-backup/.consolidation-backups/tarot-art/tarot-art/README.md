@@ -1,3 +1,13 @@
+# ⊙ Tarot Art - tarot-art
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # tarot-art
 
 No description available

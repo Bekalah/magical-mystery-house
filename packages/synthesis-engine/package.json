@@ -33,6 +33,11 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:44.345Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:17.553Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Synthesis",
+    "symbol": "⊙",
+    "label": "⊙ Synthesis (@cathedral/synthesis-engine)"
+  }
 }

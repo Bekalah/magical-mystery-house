@@ -20,5 +20,10 @@
   },
   "license": "CC0-1.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:02.160Z"
+  "consolidatedAt": "2025-11-30T16:48:02.160Z",
+  "alchemical": {
+    "name": "Test Ground",
+    "symbol": "⊙",
+    "label": "⊙ Test Ground (@cathedral/test-ground)"
+  }
 }

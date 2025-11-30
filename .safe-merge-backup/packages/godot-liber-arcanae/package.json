@@ -97,5 +97,10 @@
   },
   "dependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:00:22.897Z"
+  "consolidatedAt": "2025-11-30T20:00:22.897Z",
+  "alchemical": {
+    "name": "Godot Liber Arcanae",
+    "symbol": "⊙",
+    "label": "⊙ Godot Liber Arcanae (@cathedral/godot-liber-arcanae)"
+  }
 }

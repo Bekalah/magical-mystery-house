@@ -44,5 +44,10 @@
   ],
   "packageManager": "pnpm@8.0.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:42.883Z"
+  "consolidatedAt": "2025-11-30T21:24:16.006Z",
+  "alchemical": {
+    "name": "Health Map",
+    "symbol": "⊙",
+    "label": "⊙ Health Map (@cathedral/health-map-core)"
+  }
 }

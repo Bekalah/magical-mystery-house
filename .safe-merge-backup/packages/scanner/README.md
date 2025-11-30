@@ -1,3 +1,13 @@
+# ⊙ Scanner - scanner
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # scanner
 
 No description available

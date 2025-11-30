@@ -7,6 +7,16 @@
  * Follows the complete Python specification exactly
  */
 
+/**
+ * ⊙ Index
+ * 
+ * @alchemical Index
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 export { default as CathedralFusionCreativeSuite } from './core/fusion-creative-suite.js';
 export * from './types/index.js';
 export * from './config/trauma-safe.js';

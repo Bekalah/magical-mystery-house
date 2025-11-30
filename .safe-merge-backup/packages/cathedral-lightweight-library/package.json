@@ -36,5 +36,10 @@
   "devDependencies": {},
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:20.240Z",
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Lightweight Library",
+    "symbol": "⊙",
+    "label": "⊙ Lightweight Library (@cathedral/lightweight-library)"
+  }
 }

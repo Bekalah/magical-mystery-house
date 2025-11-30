@@ -7,5 +7,10 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc"
+  },
+  "alchemical": {
+    "name": "Tesseract",
+    "symbol": "⊞",
+    "label": "⊞ Tesseract (tesseract-bridge-core)"
   }
 }

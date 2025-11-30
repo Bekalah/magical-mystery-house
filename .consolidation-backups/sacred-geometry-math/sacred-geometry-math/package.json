@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:53.331Z",
+  "consolidatedAt": "2025-11-30T21:21:00.609Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Sacred Geometry Math",
+    "symbol": "⊙",
+    "label": "⊙ Sacred Geometry Math (sacred-geometry-math)"
+  }
 }

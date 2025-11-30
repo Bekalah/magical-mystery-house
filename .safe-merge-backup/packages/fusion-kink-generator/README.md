@@ -1,3 +1,13 @@
+# ⊙ Fusion Kink Generator - fusion-kink-generator
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/fusion-kink-generator
 
 Alchemical Fusion Generator - Quality-focused synthesis patterns (a + b = d)

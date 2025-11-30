@@ -27,5 +27,10 @@
   "devDependencies": {},
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:22.304Z",
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Fractal Flames Daemon Deity",
+    "symbol": "⊙",
+    "label": "⊙ Fractal Flames Daemon Deity (@cathedral/fractal-flames-daemon-deity)"
+  }
 }

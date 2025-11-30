@@ -15,5 +15,10 @@
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Codex 144",
+    "symbol": "⊙",
+    "label": "⊙ Codex 144 (codex-144)"
+  }
 }

@@ -1,3 +1,13 @@
+# ⊙ Cosmogenesis - cosmogenesis
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/cosmogenesis
 
 Cathedral of Circuits package

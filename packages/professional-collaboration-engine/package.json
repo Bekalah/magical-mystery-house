@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:43.661Z",
+  "consolidatedAt": "2025-11-30T21:24:16.775Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Professional Collaboration",
+    "symbol": "⊙",
+    "label": "⊙ Professional Collaboration (professional-collaboration-engine)"
+  }
 }

@@ -8,9 +8,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:54.199Z",
+  "consolidatedAt": "2025-11-30T21:21:02.592Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Trinity V1 1",
+    "symbol": "⊙",
+    "label": "⊙ Trinity V1 1 (trinity-v1-1-core)"
+  }
 }

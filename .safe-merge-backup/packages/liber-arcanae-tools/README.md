@@ -1,3 +1,13 @@
+# ⊙ Liber Arcanae Tools - liber-arcanae-tools
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral-real/liber-arcanae-tools
 
 Liber Arcanae Tools - Professional Creative Canvas for Circuitum 99

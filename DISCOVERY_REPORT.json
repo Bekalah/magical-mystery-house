@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-11-30T21:00:49.266Z",
+  "timestamp": "2025-11-30T21:24:13.616Z",
   "version": "1.0.0",
   "summary": {
     "totalPackages": 249,
@@ -38,7 +38,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.222Z"
+        "timestamp": "2025-11-30T21:24:13.591Z"
       },
       {
         "realName": "arcana",
@@ -58,7 +58,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.223Z"
+        "timestamp": "2025-11-30T21:24:13.592Z"
       },
       {
         "realName": "@cathedral/art-generation-node",
@@ -82,7 +82,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.224Z"
+        "timestamp": "2025-11-30T21:24:13.593Z"
       },
       {
         "realName": "@cathedral/art-standards-core",
@@ -103,7 +103,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.224Z"
+        "timestamp": "2025-11-30T21:24:13.593Z"
       },
       {
         "realName": "atelier-constitution",
@@ -123,7 +123,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.224Z"
+        "timestamp": "2025-11-30T21:24:13.593Z"
       },
       {
         "realName": "@cathedral/brain",
@@ -144,7 +144,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.224Z"
+        "timestamp": "2025-11-30T21:24:13.593Z"
       },
       {
         "realName": "@cathedral/cataract-book-scanner",
@@ -170,7 +170,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.224Z"
+        "timestamp": "2025-11-30T21:24:13.593Z"
       },
       {
         "realName": "cathedral-144",
@@ -190,7 +190,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.224Z"
+        "timestamp": "2025-11-30T21:24:13.593Z"
       },
       {
         "realName": "@cathedral/cathedral-architect",
@@ -213,7 +213,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.225Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "cathedral-audio-synthesis",
@@ -233,7 +233,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.225Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "cathedral-data-core",
@@ -253,7 +253,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.225Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "@cathedral/design-library",
@@ -279,7 +279,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.225Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "cathedral-integration-bridge",
@@ -299,7 +299,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.225Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "cathedral-liber-arcanae-bridge",
@@ -319,7 +319,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.225Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "@cathedral/sqlite-persistence",
@@ -343,7 +343,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.226Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "cathedral-style",
@@ -363,7 +363,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.226Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "cathedral-synthesis-core",
@@ -383,7 +383,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.226Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "character-alchemical-art",
@@ -403,7 +403,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.226Z"
+        "timestamp": "2025-11-30T21:24:13.595Z"
       },
       {
         "realName": "@cathedral/circuit-craft-creative-game",
@@ -427,7 +427,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.226Z"
+        "timestamp": "2025-11-30T21:24:13.595Z"
       },
       {
         "realName": "@cathedral/circuitum99-arcanae-cyoa",
@@ -453,7 +453,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.226Z"
+        "timestamp": "2025-11-30T21:24:13.595Z"
       },
       {
         "realName": "circuitum99-core",
@@ -471,7 +471,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.226Z"
+        "timestamp": "2025-11-30T21:24:13.595Z"
       },
       {
         "realName": "codex-144",
@@ -491,7 +491,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.226Z"
+        "timestamp": "2025-11-30T21:24:13.595Z"
       },
       {
         "realName": "@cathedral/codex-144-99",
@@ -544,7 +544,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.226Z"
+        "timestamp": "2025-11-30T21:24:13.595Z"
       },
       {
         "realName": "codex-144-99-core",
@@ -562,7 +562,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.226Z"
+        "timestamp": "2025-11-30T21:24:13.595Z"
       },
       {
         "realName": "codex-game-bridge",
@@ -582,7 +582,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.227Z"
+        "timestamp": "2025-11-30T21:24:13.595Z"
       },
       {
         "realName": "@cathedral/config",
@@ -613,7 +613,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.227Z"
+        "timestamp": "2025-11-30T21:24:13.595Z"
       },
       {
         "realName": "connections",
@@ -633,7 +633,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.227Z"
+        "timestamp": "2025-11-30T21:24:13.595Z"
       },
       {
         "realName": "consciousness-aware-creative",
@@ -651,7 +651,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.227Z"
+        "timestamp": "2025-11-30T21:24:13.595Z"
       },
       {
         "realName": "@cathedral/cosmogenesis",
@@ -675,7 +675,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.227Z"
+        "timestamp": "2025-11-30T21:24:13.596Z"
       },
       {
         "realName": "@cathedral/crystals",
@@ -696,7 +696,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.227Z"
+        "timestamp": "2025-11-30T21:24:13.596Z"
       },
       {
         "realName": "daimon-gear",
@@ -716,7 +716,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.227Z"
+        "timestamp": "2025-11-30T21:24:13.596Z"
       },
       {
         "realName": "design-mathematics-core",
@@ -734,7 +734,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.227Z"
+        "timestamp": "2025-11-30T21:24:13.596Z"
       },
       {
         "realName": "@cathedral/fractal-flames-daemon-deity",
@@ -756,7 +756,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.227Z"
+        "timestamp": "2025-11-30T21:24:13.596Z"
       },
       {
         "realName": "fusion-creative-suite",
@@ -776,7 +776,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.228Z"
+        "timestamp": "2025-11-30T21:24:13.596Z"
       },
       {
         "realName": "fusion-kink-core",
@@ -794,7 +794,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.228Z"
+        "timestamp": "2025-11-30T21:24:13.596Z"
       },
       {
         "realName": "@cathedral/fusion-kink-generator",
@@ -815,7 +815,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.229Z"
+        "timestamp": "2025-11-30T21:24:13.597Z"
       },
       {
         "realName": "@cathedral/game-design-core",
@@ -836,7 +836,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.229Z"
+        "timestamp": "2025-11-30T21:24:13.597Z"
       },
       {
         "realName": "game-mathematics-core",
@@ -854,7 +854,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.229Z"
+        "timestamp": "2025-11-30T21:24:13.597Z"
       },
       {
         "realName": "game-world",
@@ -874,7 +874,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.229Z"
+        "timestamp": "2025-11-30T21:24:13.597Z"
       },
       {
         "realName": "@cathedral/godot-design-studio",
@@ -897,7 +897,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.230Z"
+        "timestamp": "2025-11-30T21:24:13.597Z"
       },
       {
         "realName": "@cathedral/godot-vfx-library",
@@ -920,7 +920,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.230Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "graphs",
@@ -940,7 +940,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.230Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "holographic-interface",
@@ -960,7 +960,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.230Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "@cathedral/labs",
@@ -981,7 +981,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.230Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "@cathedral/liber-arcanae",
@@ -1009,7 +1009,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.230Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "liber-arcanae-core",
@@ -1027,7 +1027,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.230Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "@cathedral-real/liber-arcanae-tools",
@@ -1050,7 +1050,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "living-libraries",
@@ -1070,7 +1070,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "@cathedral/luxcrux",
@@ -1092,7 +1092,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "magnum-opus",
@@ -1112,7 +1112,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "mobile-optimization",
@@ -1132,7 +1132,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "moonchild-scanner",
@@ -1152,7 +1152,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "museum-sources",
@@ -1172,7 +1172,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "mystery-house-core",
@@ -1190,7 +1190,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "physics-cannon-core",
@@ -1210,7 +1210,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "professional-export-integration",
@@ -1230,7 +1230,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "professional-quality-control",
@@ -1250,7 +1250,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "professional-suite",
@@ -1270,7 +1270,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "registry-learning-validation",
@@ -1290,7 +1290,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "@cathedral/sacred-geometry-core",
@@ -1311,7 +1311,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "sacred-geometry-math",
@@ -1331,7 +1331,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "sacred-geometry-simd",
@@ -1351,7 +1351,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "sacred-mathematics-core",
@@ -1369,7 +1369,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "scanner",
@@ -1389,7 +1389,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "simple-learning-validation",
@@ -1409,7 +1409,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "@cathedral/soul",
@@ -1430,7 +1430,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "sound-mathematics-core",
@@ -1448,7 +1448,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "spells",
@@ -1468,7 +1468,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "stone-grimoire-core",
@@ -1486,7 +1486,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "@cathedral/synth",
@@ -1507,7 +1507,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "synth-design-math-core",
@@ -1525,7 +1525,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "synth-labs",
@@ -1545,7 +1545,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "synth-spells",
@@ -1565,7 +1565,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "tarot-art",
@@ -1585,7 +1585,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "tarot-reader",
@@ -1605,7 +1605,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "@cathedral/tesseract-bridge",
@@ -1627,7 +1627,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "tesseract-bridge-core",
@@ -1645,7 +1645,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "trauma-safe-ui",
@@ -1665,7 +1665,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.234Z"
+        "timestamp": "2025-11-30T21:24:13.601Z"
       },
       {
         "realName": "@cathedral/trinity-architecture",
@@ -1688,7 +1688,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.234Z"
+        "timestamp": "2025-11-30T21:24:13.601Z"
       },
       {
         "realName": "trinity-v1-1-core",
@@ -1706,7 +1706,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.234Z"
+        "timestamp": "2025-11-30T21:24:13.601Z"
       },
       {
         "realName": "@cathedral/types",
@@ -1741,7 +1741,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.234Z"
+        "timestamp": "2025-11-30T21:24:13.601Z"
       },
       {
         "realName": "@cathedral/ui",
@@ -1765,7 +1765,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.234Z"
+        "timestamp": "2025-11-30T21:24:13.601Z"
       },
       {
         "realName": "@cathedral-trinity/accessibility",
@@ -1819,7 +1819,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.234Z"
+        "timestamp": "2025-11-30T21:24:13.602Z"
       },
       {
         "realName": "agent-integration",
@@ -1839,7 +1839,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.239Z"
+        "timestamp": "2025-11-30T21:24:13.605Z"
       },
       {
         "realName": "arcana",
@@ -1859,7 +1859,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.239Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/art-generation-node",
@@ -1883,7 +1883,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.240Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/art-standards-core",
@@ -1904,7 +1904,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.240Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "atelier-constitution",
@@ -1924,7 +1924,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.240Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/brain",
@@ -1945,7 +1945,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.240Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/cataract-book-scanner",
@@ -1971,7 +1971,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.241Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "cathedral-144",
@@ -1991,7 +1991,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.241Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/cathedral-architect",
@@ -2014,7 +2014,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.241Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "cathedral-audio-synthesis",
@@ -2034,7 +2034,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.241Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "cathedral-data-core",
@@ -2054,7 +2054,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.241Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/design-library",
@@ -2080,7 +2080,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.242Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "cathedral-integration-bridge",
@@ -2100,7 +2100,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.242Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "cathedral-liber-arcanae-bridge",
@@ -2120,7 +2120,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.242Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/sqlite-persistence",
@@ -2144,7 +2144,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.242Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "cathedral-style",
@@ -2164,7 +2164,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.243Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "cathedral-synthesis-core",
@@ -2184,7 +2184,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.243Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "character-alchemical-art",
@@ -2204,7 +2204,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.243Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "@cathedral/circuit-craft-creative-game",
@@ -2228,7 +2228,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.243Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "@cathedral/circuitum99-arcanae-cyoa",
@@ -2254,7 +2254,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.243Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "circuitum99-core",
@@ -2272,7 +2272,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.243Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "codex-144",
@@ -2292,7 +2292,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.244Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "@cathedral/codex-144-99",
@@ -2345,7 +2345,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.244Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "codex-144-99-core",
@@ -2363,7 +2363,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.245Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "codex-game-bridge",
@@ -2383,7 +2383,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.245Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "@cathedral/config",
@@ -2414,7 +2414,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.247Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "connections",
@@ -2434,7 +2434,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.247Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "consciousness-aware-creative",
@@ -2452,7 +2452,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.248Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "@cathedral/cosmogenesis",
@@ -2476,7 +2476,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.248Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "@cathedral/crystals",
@@ -2497,7 +2497,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.248Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "daimon-gear",
@@ -2517,7 +2517,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.248Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "design-mathematics-core",
@@ -2535,7 +2535,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.248Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/fractal-flames-daemon-deity",
@@ -2557,7 +2557,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.248Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "fusion-creative-suite",
@@ -2577,7 +2577,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.248Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "fusion-kink-core",
@@ -2595,7 +2595,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.248Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/fusion-kink-generator",
@@ -2616,7 +2616,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.248Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/game-design-core",
@@ -2637,7 +2637,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.249Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "game-mathematics-core",
@@ -2655,7 +2655,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.249Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "game-world",
@@ -2675,7 +2675,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.249Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/godot-design-studio",
@@ -2698,7 +2698,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.251Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/godot-vfx-library",
@@ -2721,7 +2721,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.251Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "graphs",
@@ -2741,7 +2741,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.251Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "holographic-interface",
@@ -2761,7 +2761,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.251Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/labs",
@@ -2782,7 +2782,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.251Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/liber-arcanae",
@@ -2810,7 +2810,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.251Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "liber-arcanae-core",
@@ -2828,7 +2828,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.251Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral-real/liber-arcanae-tools",
@@ -2851,7 +2851,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.252Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "living-libraries",
@@ -2871,7 +2871,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.252Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "@cathedral/luxcrux",
@@ -2893,7 +2893,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.252Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "magnum-opus",
@@ -2913,7 +2913,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.252Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "mobile-optimization",
@@ -2933,7 +2933,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.252Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "moonchild-scanner",
@@ -2953,7 +2953,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.252Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "museum-sources",
@@ -2973,7 +2973,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.252Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "mystery-house-core",
@@ -2991,7 +2991,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.252Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "physics-cannon-core",
@@ -3011,7 +3011,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.254Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "professional-export-integration",
@@ -3031,7 +3031,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.254Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "professional-quality-control",
@@ -3051,7 +3051,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.254Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "professional-suite",
@@ -3071,7 +3071,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.255Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "registry-learning-validation",
@@ -3091,7 +3091,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.255Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "@cathedral/sacred-geometry-core",
@@ -3112,7 +3112,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.255Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "sacred-geometry-math",
@@ -3132,7 +3132,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.255Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "sacred-geometry-simd",
@@ -3152,7 +3152,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.255Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "sacred-mathematics-core",
@@ -3170,7 +3170,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.255Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "scanner",
@@ -3190,7 +3190,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.255Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "simple-learning-validation",
@@ -3210,7 +3210,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.255Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "@cathedral/soul",
@@ -3231,7 +3231,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "sound-mathematics-core",
@@ -3249,7 +3249,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "spells",
@@ -3269,7 +3269,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "stone-grimoire-core",
@@ -3287,7 +3287,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "@cathedral/synth",
@@ -3308,7 +3308,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "synth-design-math-core",
@@ -3326,7 +3326,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "synth-labs",
@@ -3346,7 +3346,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "synth-spells",
@@ -3366,7 +3366,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "tarot-art",
@@ -3386,7 +3386,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "tarot-reader",
@@ -3406,7 +3406,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "@cathedral/tesseract-bridge",
@@ -3428,7 +3428,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "tesseract-bridge-core",
@@ -3446,7 +3446,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "trauma-safe-ui",
@@ -3466,7 +3466,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.257Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "@cathedral/trinity-architecture",
@@ -3489,7 +3489,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.257Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "trinity-v1-1-core",
@@ -3507,7 +3507,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.257Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "@cathedral/types",
@@ -3542,7 +3542,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.257Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "@cathedral/ui",
@@ -3566,7 +3566,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.257Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "@cathedral-trinity/accessibility",
@@ -3620,7 +3620,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.258Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "agent-integration",
@@ -3640,7 +3640,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.259Z"
+        "timestamp": "2025-11-30T21:24:13.611Z"
       },
       {
         "realName": "arcana",
@@ -3660,7 +3660,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.259Z"
+        "timestamp": "2025-11-30T21:24:13.611Z"
       },
       {
         "realName": "@cathedral/art-generation-node",
@@ -3684,7 +3684,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.260Z"
+        "timestamp": "2025-11-30T21:24:13.611Z"
       },
       {
         "realName": "@cathedral/art-standards-core",
@@ -3705,7 +3705,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.260Z"
+        "timestamp": "2025-11-30T21:24:13.611Z"
       },
       {
         "realName": "atelier-constitution",
@@ -3725,7 +3725,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/brain",
@@ -3746,7 +3746,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/cataract-book-scanner",
@@ -3772,7 +3772,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "cathedral-144",
@@ -3792,7 +3792,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/cathedral-architect",
@@ -3815,7 +3815,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "cathedral-audio-synthesis",
@@ -3835,7 +3835,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "cathedral-data-core",
@@ -3855,7 +3855,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/design-library",
@@ -3881,7 +3881,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "cathedral-integration-bridge",
@@ -3901,7 +3901,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "cathedral-liber-arcanae-bridge",
@@ -3921,7 +3921,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/sqlite-persistence",
@@ -3945,7 +3945,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "cathedral-style",
@@ -3965,7 +3965,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "cathedral-synthesis-core",
@@ -3985,7 +3985,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "character-alchemical-art",
@@ -4005,7 +4005,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/circuit-craft-creative-game",
@@ -4029,7 +4029,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/circuitum99-arcanae-cyoa",
@@ -4055,7 +4055,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "circuitum99-core",
@@ -4073,7 +4073,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "codex-144",
@@ -4093,7 +4093,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/codex-144-99",
@@ -4146,7 +4146,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "codex-144-99-core",
@@ -4164,7 +4164,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "codex-game-bridge",
@@ -4184,7 +4184,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/config",
@@ -4215,7 +4215,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "connections",
@@ -4235,7 +4235,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "consciousness-aware-creative",
@@ -4253,7 +4253,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/cosmogenesis",
@@ -4277,7 +4277,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/crystals",
@@ -4298,7 +4298,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "daimon-gear",
@@ -4318,7 +4318,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "design-mathematics-core",
@@ -4336,7 +4336,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/fractal-flames-daemon-deity",
@@ -4358,7 +4358,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "fusion-creative-suite",
@@ -4378,7 +4378,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "fusion-kink-core",
@@ -4396,7 +4396,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/fusion-kink-generator",
@@ -4417,7 +4417,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/game-design-core",
@@ -4438,7 +4438,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "game-mathematics-core",
@@ -4456,7 +4456,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "game-world",
@@ -4476,7 +4476,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/godot-design-studio",
@@ -4499,7 +4499,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/godot-vfx-library",
@@ -4522,7 +4522,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "graphs",
@@ -4542,7 +4542,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "holographic-interface",
@@ -4562,7 +4562,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "@cathedral/labs",
@@ -4583,7 +4583,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "@cathedral/liber-arcanae",
@@ -4611,7 +4611,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "liber-arcanae-core",
@@ -4629,7 +4629,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "@cathedral-real/liber-arcanae-tools",
@@ -4652,7 +4652,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "living-libraries",
@@ -4672,7 +4672,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "@cathedral/luxcrux",
@@ -4694,7 +4694,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "magnum-opus",
@@ -4714,7 +4714,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "mobile-optimization",
@@ -4734,7 +4734,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "moonchild-scanner",
@@ -4754,7 +4754,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "museum-sources",
@@ -4774,7 +4774,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "mystery-house-core",
@@ -4792,7 +4792,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "physics-cannon-core",
@@ -4812,7 +4812,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "professional-export-integration",
@@ -4832,7 +4832,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "professional-quality-control",
@@ -4852,7 +4852,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "professional-suite",
@@ -4872,7 +4872,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "registry-learning-validation",
@@ -4892,7 +4892,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "@cathedral/sacred-geometry-core",
@@ -4913,7 +4913,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "sacred-geometry-math",
@@ -4933,7 +4933,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "sacred-geometry-simd",
@@ -4953,7 +4953,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "sacred-mathematics-core",
@@ -4971,7 +4971,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "scanner",
@@ -4991,7 +4991,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "simple-learning-validation",
@@ -5011,7 +5011,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "@cathedral/soul",
@@ -5032,7 +5032,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "sound-mathematics-core",
@@ -5050,7 +5050,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "spells",
@@ -5070,7 +5070,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "stone-grimoire-core",
@@ -5088,7 +5088,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "@cathedral/synth",
@@ -5109,7 +5109,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "synth-design-math-core",
@@ -5127,7 +5127,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "synth-labs",
@@ -5147,7 +5147,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "synth-spells",
@@ -5167,7 +5167,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "tarot-art",
@@ -5187,7 +5187,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "tarot-reader",
@@ -5207,7 +5207,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "@cathedral/tesseract-bridge",
@@ -5229,7 +5229,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "tesseract-bridge-core",
@@ -5247,7 +5247,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "trauma-safe-ui",
@@ -5267,7 +5267,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "@cathedral/trinity-architecture",
@@ -5290,7 +5290,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.616Z"
       },
       {
         "realName": "trinity-v1-1-core",
@@ -5308,7 +5308,7 @@
           "scripts": []
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.616Z"
       },
       {
         "realName": "@cathedral/types",
@@ -5343,7 +5343,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.616Z"
       },
       {
         "realName": "@cathedral/ui",
@@ -5367,7 +5367,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.616Z"
       },
       {
         "realName": "@cathedral-trinity/accessibility",
@@ -5421,7 +5421,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.616Z"
       }
     ],
     "tools": [],
@@ -5445,7 +5445,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.235Z"
+        "timestamp": "2025-11-30T21:24:13.602Z"
       },
       {
         "realName": "cathedral-design-studio",
@@ -5466,7 +5466,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.235Z"
+        "timestamp": "2025-11-30T21:24:13.602Z"
       },
       {
         "realName": "cathedral-immersive-creative-studio",
@@ -5487,7 +5487,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.235Z"
+        "timestamp": "2025-11-30T21:24:13.602Z"
       },
       {
         "realName": "cathedral-of-circuits",
@@ -5512,7 +5512,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.235Z"
+        "timestamp": "2025-11-30T21:24:13.602Z"
       },
       {
         "realName": "@cathedral/cathedral-unity",
@@ -5536,7 +5536,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.235Z"
+        "timestamp": "2025-11-30T21:24:13.602Z"
       },
       {
         "realName": "cosmogenesis-visualizer",
@@ -5557,7 +5557,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.235Z"
+        "timestamp": "2025-11-30T21:24:13.602Z"
       },
       {
         "realName": "cathedral-spell-frontend",
@@ -5578,7 +5578,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.236Z"
+        "timestamp": "2025-11-30T21:24:13.603Z"
       },
       {
         "realName": "@bekalah/cathedral-monorepo",
@@ -5636,7 +5636,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.237Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "@cathedral/liber-arcanae-app",
@@ -5657,7 +5657,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.237Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "@bekalah/liber-arcanae-tarot",
@@ -5697,7 +5697,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.237Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "living-library",
@@ -5718,7 +5718,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.237Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "master-catalog-browser",
@@ -5739,7 +5739,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.238Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "@cathedral/mystical-treasure-hunt",
@@ -5763,7 +5763,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.238Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "rosslyn-explorer",
@@ -5784,7 +5784,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.238Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "stone-grimoire",
@@ -5805,7 +5805,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.238Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "@cathedral/synth-lab",
@@ -5826,7 +5826,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.238Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "@cathedral/tarot-arena",
@@ -5847,7 +5847,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.238Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "@cathedral/test-ground",
@@ -5868,7 +5868,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.238Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "visual-systems-hub",
@@ -5889,7 +5889,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.238Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "@cathedral/web",
@@ -5911,7 +5911,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.238Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "@cathedral/web-from-master",
@@ -5933,7 +5933,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.238Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       },
       {
         "realName": "@bekalah/cathedral-worker",
@@ -5953,7 +5953,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.238Z"
+        "timestamp": "2025-11-30T21:24:13.604Z"
       }
     ],
     "engines": [
@@ -5975,7 +5975,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.223Z"
+        "timestamp": "2025-11-30T21:24:13.592Z"
       },
       {
         "realName": "@cathedral/art-engine-core",
@@ -5996,7 +5996,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.224Z"
+        "timestamp": "2025-11-30T21:24:13.593Z"
       },
       {
         "realName": "@cathedral/fusion-kink-engine",
@@ -6024,7 +6024,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.225Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "cathedral-visual-engine",
@@ -6044,7 +6044,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.226Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "@cathedral/codex-engine",
@@ -6065,7 +6065,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.226Z"
+        "timestamp": "2025-11-30T21:24:13.595Z"
       },
       {
         "realName": "fusionkink-engine",
@@ -6085,7 +6085,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.229Z"
+        "timestamp": "2025-11-30T21:24:13.597Z"
       },
       {
         "realName": "@cathedral/game-engine",
@@ -6108,7 +6108,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.229Z"
+        "timestamp": "2025-11-30T21:24:13.597Z"
       },
       {
         "realName": "@cathedral/gem-tower-engine",
@@ -6130,7 +6130,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.229Z"
+        "timestamp": "2025-11-30T21:24:13.597Z"
       },
       {
         "realName": "kira-audio-engine",
@@ -6150,7 +6150,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.230Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "living-canon-engine",
@@ -6170,7 +6170,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "@cathedral/music-engine-core",
@@ -6191,7 +6191,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "@cathedral/mystical-sound-engine",
@@ -6213,7 +6213,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "@cathedral/node-tree-engine",
@@ -6245,7 +6245,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "professional-collaboration-engine",
@@ -6265,7 +6265,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "professional-typography-engine",
@@ -6285,7 +6285,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "professional-vector-engine",
@@ -6305,7 +6305,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "@cathedral/science-engine-core",
@@ -6326,7 +6326,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "sonic-physics-engine",
@@ -6346,7 +6346,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "spiral-learning-engine",
@@ -6366,7 +6366,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "stone-grimoire-library-engine",
@@ -6386,7 +6386,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "story-engine",
@@ -6406,7 +6406,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "@cathedral/synthesis-engine",
@@ -6427,7 +6427,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "tarot-engine",
@@ -6447,7 +6447,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "@cathedral/three-engine",
@@ -6468,7 +6468,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.601Z"
       },
       {
         "realName": "@cathedral/unified-codex-core",
@@ -6489,7 +6489,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.234Z"
+        "timestamp": "2025-11-30T21:24:13.601Z"
       },
       {
         "realName": "archetypal-engine",
@@ -6509,7 +6509,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.239Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/art-engine-core",
@@ -6530,7 +6530,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.240Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/fusion-kink-engine",
@@ -6558,7 +6558,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.242Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "cathedral-visual-engine",
@@ -6578,7 +6578,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.243Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "@cathedral/codex-engine",
@@ -6599,7 +6599,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.245Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "fusionkink-engine",
@@ -6619,7 +6619,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.249Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/game-engine",
@@ -6642,7 +6642,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.249Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/gem-tower-engine",
@@ -6664,7 +6664,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.250Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "kira-audio-engine",
@@ -6684,7 +6684,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.251Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "living-canon-engine",
@@ -6704,7 +6704,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.252Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/music-engine-core",
@@ -6725,7 +6725,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.252Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "@cathedral/mystical-sound-engine",
@@ -6747,7 +6747,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.252Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "@cathedral/node-tree-engine",
@@ -6779,7 +6779,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.252Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "professional-collaboration-engine",
@@ -6799,7 +6799,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.254Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "professional-typography-engine",
@@ -6819,7 +6819,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.255Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "professional-vector-engine",
@@ -6839,7 +6839,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.255Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "@cathedral/science-engine-core",
@@ -6860,7 +6860,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.255Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "sonic-physics-engine",
@@ -6880,7 +6880,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "spiral-learning-engine",
@@ -6900,7 +6900,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "stone-grimoire-library-engine",
@@ -6920,7 +6920,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "story-engine",
@@ -6940,7 +6940,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "@cathedral/synthesis-engine",
@@ -6961,7 +6961,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "tarot-engine",
@@ -6981,7 +6981,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "@cathedral/three-engine",
@@ -7002,7 +7002,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.257Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "@cathedral/unified-codex-core",
@@ -7023,7 +7023,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.258Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "archetypal-engine",
@@ -7043,7 +7043,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.259Z"
+        "timestamp": "2025-11-30T21:24:13.611Z"
       },
       {
         "realName": "@cathedral/art-engine-core",
@@ -7064,7 +7064,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.260Z"
+        "timestamp": "2025-11-30T21:24:13.611Z"
       },
       {
         "realName": "@cathedral/fusion-kink-engine",
@@ -7092,7 +7092,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "cathedral-visual-engine",
@@ -7112,7 +7112,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/codex-engine",
@@ -7133,7 +7133,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "fusionkink-engine",
@@ -7153,7 +7153,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/game-engine",
@@ -7176,7 +7176,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/gem-tower-engine",
@@ -7198,7 +7198,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "kira-audio-engine",
@@ -7218,7 +7218,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "living-canon-engine",
@@ -7238,7 +7238,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "@cathedral/music-engine-core",
@@ -7259,7 +7259,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "@cathedral/mystical-sound-engine",
@@ -7281,7 +7281,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "@cathedral/node-tree-engine",
@@ -7313,7 +7313,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "professional-collaboration-engine",
@@ -7333,7 +7333,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "professional-typography-engine",
@@ -7353,7 +7353,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "professional-vector-engine",
@@ -7373,7 +7373,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "@cathedral/science-engine-core",
@@ -7394,7 +7394,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "sonic-physics-engine",
@@ -7414,7 +7414,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "spiral-learning-engine",
@@ -7434,7 +7434,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "stone-grimoire-library-engine",
@@ -7454,7 +7454,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "story-engine",
@@ -7474,7 +7474,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "@cathedral/synthesis-engine",
@@ -7495,7 +7495,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "tarot-engine",
@@ -7515,7 +7515,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "@cathedral/three-engine",
@@ -7536,7 +7536,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "@cathedral/unified-codex-core",
@@ -7557,7 +7557,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.616Z"
       }
     ],
     "systems": [
@@ -7579,7 +7579,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.224Z"
+        "timestamp": "2025-11-30T21:24:13.593Z"
       },
       {
         "realName": "@cathedral/avatar-experience-system",
@@ -7601,7 +7601,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.224Z"
+        "timestamp": "2025-11-30T21:24:13.593Z"
       },
       {
         "realName": "@cathedral/lightweight-library",
@@ -7622,7 +7622,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.225Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "@cathedral/logo-system",
@@ -7644,7 +7644,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.225Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "@cathedral/plugin-system",
@@ -7667,7 +7667,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.225Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "cathedral-rpg-inventory-system",
@@ -7687,7 +7687,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.225Z"
+        "timestamp": "2025-11-30T21:24:13.594Z"
       },
       {
         "realName": "@cathedral/codex-musical-system",
@@ -7708,7 +7708,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.227Z"
+        "timestamp": "2025-11-30T21:24:13.595Z"
       },
       {
         "realName": "@cathedral/core",
@@ -7732,7 +7732,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.227Z"
+        "timestamp": "2025-11-30T21:24:13.596Z"
       },
       {
         "realName": "@cathedral/debug-system-core",
@@ -7753,7 +7753,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.227Z"
+        "timestamp": "2025-11-30T21:24:13.596Z"
       },
       {
         "realName": "@cathedral/godot-codex-14499",
@@ -7776,7 +7776,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.230Z"
+        "timestamp": "2025-11-30T21:24:13.597Z"
       },
       {
         "realName": "@cathedral/godot-liber-arcanae",
@@ -7799,7 +7799,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.230Z"
+        "timestamp": "2025-11-30T21:24:13.597Z"
       },
       {
         "realName": "@cathedral/hall-of-ateliers",
@@ -7847,7 +7847,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.230Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "@cathedral/health-map-core",
@@ -7868,7 +7868,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.230Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "@cathedral/inter-app-communicator",
@@ -7890,7 +7890,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.230Z"
+        "timestamp": "2025-11-30T21:24:13.598Z"
       },
       {
         "realName": "@cathedral/mystical-data-unified",
@@ -7911,7 +7911,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "@cathedral/portal-system",
@@ -7932,7 +7932,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.231Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "@cathedral/shared",
@@ -7955,7 +7955,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "@cathedral/smooth-movement-system",
@@ -7976,7 +7976,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.599Z"
       },
       {
         "realName": "@cathedral/stone-grimoire",
@@ -7998,7 +7998,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.232Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "@cathedral/tesseract-bridge-hub",
@@ -8020,7 +8020,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.233Z"
+        "timestamp": "2025-11-30T21:24:13.600Z"
       },
       {
         "realName": "@cathedral/unified-codex-extractor",
@@ -8053,7 +8053,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.234Z"
+        "timestamp": "2025-11-30T21:24:13.601Z"
       },
       {
         "realName": "unified-creative-system",
@@ -8073,7 +8073,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.234Z"
+        "timestamp": "2025-11-30T21:24:13.601Z"
       },
       {
         "realName": "visionary-design-system",
@@ -8093,7 +8093,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.235Z"
+        "timestamp": "2025-11-30T21:24:13.602Z"
       },
       {
         "realName": "art-systems",
@@ -8113,7 +8113,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.240Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/avatar-experience-system",
@@ -8135,7 +8135,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.240Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/lightweight-library",
@@ -8156,7 +8156,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.242Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/logo-system",
@@ -8178,7 +8178,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.242Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/plugin-system",
@@ -8201,7 +8201,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.242Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "cathedral-rpg-inventory-system",
@@ -8221,7 +8221,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.242Z"
+        "timestamp": "2025-11-30T21:24:13.606Z"
       },
       {
         "realName": "@cathedral/codex-musical-system",
@@ -8242,7 +8242,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.245Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "@cathedral/core",
@@ -8266,7 +8266,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.248Z"
+        "timestamp": "2025-11-30T21:24:13.607Z"
       },
       {
         "realName": "@cathedral/debug-system-core",
@@ -8287,7 +8287,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.248Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/godot-codex-14499",
@@ -8310,7 +8310,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.250Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/godot-liber-arcanae",
@@ -8333,7 +8333,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.251Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/hall-of-ateliers",
@@ -8381,7 +8381,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.251Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/health-map-core",
@@ -8402,7 +8402,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.251Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/inter-app-communicator",
@@ -8424,7 +8424,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.251Z"
+        "timestamp": "2025-11-30T21:24:13.608Z"
       },
       {
         "realName": "@cathedral/mystical-data-unified",
@@ -8445,7 +8445,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.252Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "@cathedral/portal-system",
@@ -8466,7 +8466,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.254Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "@cathedral/shared",
@@ -8489,7 +8489,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.255Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "@cathedral/smooth-movement-system",
@@ -8510,7 +8510,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.609Z"
       },
       {
         "realName": "@cathedral/stone-grimoire",
@@ -8532,7 +8532,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.256Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "@cathedral/tesseract-bridge-hub",
@@ -8554,7 +8554,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.257Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "@cathedral/unified-codex-extractor",
@@ -8587,7 +8587,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.258Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "unified-creative-system",
@@ -8607,7 +8607,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.258Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "visionary-design-system",
@@ -8627,7 +8627,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.258Z"
+        "timestamp": "2025-11-30T21:24:13.610Z"
       },
       {
         "realName": "art-systems",
@@ -8647,7 +8647,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/avatar-experience-system",
@@ -8669,7 +8669,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/lightweight-library",
@@ -8690,7 +8690,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/logo-system",
@@ -8712,7 +8712,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/plugin-system",
@@ -8735,7 +8735,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "cathedral-rpg-inventory-system",
@@ -8755,7 +8755,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.261Z"
+        "timestamp": "2025-11-30T21:24:13.612Z"
       },
       {
         "realName": "@cathedral/codex-musical-system",
@@ -8776,7 +8776,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/core",
@@ -8800,7 +8800,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/debug-system-core",
@@ -8821,7 +8821,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.262Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/godot-codex-14499",
@@ -8844,7 +8844,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.613Z"
       },
       {
         "realName": "@cathedral/godot-liber-arcanae",
@@ -8867,7 +8867,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "@cathedral/hall-of-ateliers",
@@ -8915,7 +8915,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "@cathedral/health-map-core",
@@ -8936,7 +8936,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "@cathedral/inter-app-communicator",
@@ -8958,7 +8958,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.263Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "@cathedral/mystical-data-unified",
@@ -8979,7 +8979,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "@cathedral/portal-system",
@@ -9000,7 +9000,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.614Z"
       },
       {
         "realName": "@cathedral/shared",
@@ -9023,7 +9023,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "@cathedral/smooth-movement-system",
@@ -9044,7 +9044,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "@cathedral/stone-grimoire",
@@ -9066,7 +9066,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.264Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "@cathedral/tesseract-bridge-hub",
@@ -9088,7 +9088,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.615Z"
       },
       {
         "realName": "@cathedral/unified-codex-extractor",
@@ -9121,7 +9121,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.616Z"
       },
       {
         "realName": "unified-creative-system",
@@ -9141,7 +9141,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.616Z"
       },
       {
         "realName": "visionary-design-system",
@@ -9161,7 +9161,7 @@
           ]
         },
         "hasPackageJson": true,
-        "timestamp": "2025-11-30T21:00:49.265Z"
+        "timestamp": "2025-11-30T21:24:13.616Z"
       }
     ],
     "partials": [

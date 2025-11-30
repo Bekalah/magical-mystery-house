@@ -47,6 +47,11 @@
     "pnpm": ">=8.0.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:52.826Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:20:59.345Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Liber Arcanae",
+    "symbol": "⊙",
+    "label": "⊙ Liber Arcanae (@cathedral/liber-arcanae)"
+  }
 }

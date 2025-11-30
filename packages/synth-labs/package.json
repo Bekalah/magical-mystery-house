@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:44.321Z",
+  "consolidatedAt": "2025-11-30T21:24:17.509Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Synth Labs",
+    "symbol": "⊙",
+    "label": "⊙ Synth Labs (synth-labs)"
+  }
 }

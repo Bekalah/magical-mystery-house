@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-11-30T20:40:45.011Z",
+  "timestamp": "2025-11-30T21:24:18.380Z",
   "version": "1.0.0",
   "summary": {
     "consolidated": 131,
@@ -14,7 +14,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/agent-integration",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/agent-integration"
       ],
-      "timestamp": "2025-11-30T20:40:41.296Z"
+      "timestamp": "2025-11-30T21:24:14.387Z"
     },
     {
       "realName": "arcana",
@@ -23,7 +23,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/arcana",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/arcana"
       ],
-      "timestamp": "2025-11-30T20:40:41.313Z"
+      "timestamp": "2025-11-30T21:24:14.401Z"
     },
     {
       "realName": "archetypal-engine",
@@ -32,7 +32,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/archetypal-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/archetypal-engine"
       ],
-      "timestamp": "2025-11-30T20:40:41.329Z"
+      "timestamp": "2025-11-30T21:24:14.420Z"
     },
     {
       "realName": "@cathedral/art-engine-core",
@@ -41,7 +41,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/art-engine-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-engine-core"
       ],
-      "timestamp": "2025-11-30T20:40:41.344Z"
+      "timestamp": "2025-11-30T21:24:14.440Z"
     },
     {
       "realName": "@cathedral/art-generation-node",
@@ -50,7 +50,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/art-generation-node",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-generation-node"
       ],
-      "timestamp": "2025-11-30T20:40:41.369Z"
+      "timestamp": "2025-11-30T21:24:14.462Z"
     },
     {
       "realName": "@cathedral/art-standards-core",
@@ -59,7 +59,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/art-standards-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-standards-core"
       ],
-      "timestamp": "2025-11-30T20:40:41.379Z"
+      "timestamp": "2025-11-30T21:24:14.473Z"
     },
     {
       "realName": "art-systems",
@@ -68,7 +68,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/art-systems",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-systems"
       ],
-      "timestamp": "2025-11-30T20:40:41.390Z"
+      "timestamp": "2025-11-30T21:24:14.489Z"
     },
     {
       "realName": "atelier-constitution",
@@ -77,7 +77,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/atelier-constitution",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/atelier-constitution"
       ],
-      "timestamp": "2025-11-30T20:40:41.406Z"
+      "timestamp": "2025-11-30T21:24:14.502Z"
     },
     {
       "realName": "@cathedral/avatar-experience-system",
@@ -86,7 +86,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/avatar-experience-system",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/avatar-experience-system"
       ],
-      "timestamp": "2025-11-30T20:40:41.423Z"
+      "timestamp": "2025-11-30T21:24:14.513Z"
     },
     {
       "realName": "@cathedral/brain",
@@ -95,7 +95,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/brain",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/brain"
       ],
-      "timestamp": "2025-11-30T20:40:41.464Z"
+      "timestamp": "2025-11-30T21:24:14.564Z"
     },
     {
       "realName": "@cathedral/cataract-book-scanner",
@@ -104,7 +104,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cataract-book-scanner",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cataract-book-scanner"
       ],
-      "timestamp": "2025-11-30T20:40:41.480Z"
+      "timestamp": "2025-11-30T21:24:14.585Z"
     },
     {
       "realName": "cathedral-144",
@@ -113,7 +113,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-144",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-144"
       ],
-      "timestamp": "2025-11-30T20:40:41.493Z"
+      "timestamp": "2025-11-30T21:24:14.668Z"
     },
     {
       "realName": "@cathedral/cathedral-architect",
@@ -122,7 +122,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-architect",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-architect"
       ],
-      "timestamp": "2025-11-30T20:40:41.507Z"
+      "timestamp": "2025-11-30T21:24:14.730Z"
     },
     {
       "realName": "cathedral-audio-synthesis",
@@ -131,7 +131,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-audio-synthesis",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-audio-synthesis"
       ],
-      "timestamp": "2025-11-30T20:40:41.520Z"
+      "timestamp": "2025-11-30T21:24:14.762Z"
     },
     {
       "realName": "cathedral-data-core",
@@ -140,7 +140,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-data-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-data-core"
       ],
-      "timestamp": "2025-11-30T20:40:41.533Z"
+      "timestamp": "2025-11-30T21:24:14.783Z"
     },
     {
       "realName": "@cathedral/design-library",
@@ -149,7 +149,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-design-library",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-design-library"
       ],
-      "timestamp": "2025-11-30T20:40:41.678Z"
+      "timestamp": "2025-11-30T21:24:14.823Z"
     },
     {
       "realName": "@cathedral/fusion-kink-engine",
@@ -158,7 +158,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-fusion-kink-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-fusion-kink-engine"
       ],
-      "timestamp": "2025-11-30T20:40:41.704Z"
+      "timestamp": "2025-11-30T21:24:14.855Z"
     },
     {
       "realName": "cathedral-integration-bridge",
@@ -167,7 +167,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-integration-bridge",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-integration-bridge"
       ],
-      "timestamp": "2025-11-30T20:40:41.727Z"
+      "timestamp": "2025-11-30T21:24:15.008Z"
     },
     {
       "realName": "cathedral-liber-arcanae-bridge",
@@ -176,7 +176,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-liber-arcanae-bridge",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-liber-arcanae-bridge"
       ],
-      "timestamp": "2025-11-30T20:40:41.747Z"
+      "timestamp": "2025-11-30T21:24:15.029Z"
     },
     {
       "realName": "@cathedral/lightweight-library",
@@ -185,7 +185,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-lightweight-library",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-lightweight-library"
       ],
-      "timestamp": "2025-11-30T20:40:41.766Z"
+      "timestamp": "2025-11-30T21:24:15.044Z"
     },
     {
       "realName": "@cathedral/logo-system",
@@ -194,7 +194,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-logo-system",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-logo-system"
       ],
-      "timestamp": "2025-11-30T20:40:41.825Z"
+      "timestamp": "2025-11-30T21:24:15.059Z"
     },
     {
       "realName": "@cathedral/plugin-system",
@@ -203,7 +203,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-plugin-system",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-plugin-system"
       ],
-      "timestamp": "2025-11-30T20:40:41.854Z"
+      "timestamp": "2025-11-30T21:24:15.079Z"
     },
     {
       "realName": "cathedral-rpg-inventory-system",
@@ -212,7 +212,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-rpg-inventory-system",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-rpg-inventory-system"
       ],
-      "timestamp": "2025-11-30T20:40:41.875Z"
+      "timestamp": "2025-11-30T21:24:15.093Z"
     },
     {
       "realName": "@cathedral/sqlite-persistence",
@@ -221,7 +221,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-sqlite-persistence",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-sqlite-persistence"
       ],
-      "timestamp": "2025-11-30T20:40:41.900Z"
+      "timestamp": "2025-11-30T21:24:15.111Z"
     },
     {
       "realName": "cathedral-style",
@@ -230,7 +230,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-style",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-style"
       ],
-      "timestamp": "2025-11-30T20:40:41.918Z"
+      "timestamp": "2025-11-30T21:24:15.124Z"
     },
     {
       "realName": "cathedral-synthesis-core",
@@ -239,7 +239,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-synthesis-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-synthesis-core"
       ],
-      "timestamp": "2025-11-30T20:40:41.933Z"
+      "timestamp": "2025-11-30T21:24:15.137Z"
     },
     {
       "realName": "cathedral-visual-engine",
@@ -248,7 +248,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cathedral-visual-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-visual-engine"
       ],
-      "timestamp": "2025-11-30T20:40:41.944Z"
+      "timestamp": "2025-11-30T21:24:15.148Z"
     },
     {
       "realName": "character-alchemical-art",
@@ -257,7 +257,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/character-alchemical-art",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/character-alchemical-art"
       ],
-      "timestamp": "2025-11-30T20:40:41.959Z"
+      "timestamp": "2025-11-30T21:24:15.158Z"
     },
     {
       "realName": "@cathedral/circuit-craft-creative-game",
@@ -266,7 +266,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/circuit-craft-creative-game",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuit-craft-creative-game"
       ],
-      "timestamp": "2025-11-30T20:40:41.983Z"
+      "timestamp": "2025-11-30T21:24:15.178Z"
     },
     {
       "realName": "@cathedral/circuitum99-arcanae-cyoa",
@@ -275,7 +275,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/circuitum99-arcanae-cyoa",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuitum99-arcanae-cyoa"
       ],
-      "timestamp": "2025-11-30T20:40:42.001Z"
+      "timestamp": "2025-11-30T21:24:15.205Z"
     },
     {
       "realName": "circuitum99-core",
@@ -284,7 +284,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/circuitum99-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuitum99-core"
       ],
-      "timestamp": "2025-11-30T20:40:42.019Z"
+      "timestamp": "2025-11-30T21:24:15.218Z"
     },
     {
       "realName": "codex-144",
@@ -293,7 +293,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/codex-144",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144"
       ],
-      "timestamp": "2025-11-30T20:40:42.040Z"
+      "timestamp": "2025-11-30T21:24:15.236Z"
     },
     {
       "realName": "@cathedral/codex-144-99",
@@ -302,7 +302,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/codex-144-99",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144-99"
       ],
-      "timestamp": "2025-11-30T20:40:42.218Z"
+      "timestamp": "2025-11-30T21:24:15.403Z"
     },
     {
       "realName": "codex-144-99-core",
@@ -311,7 +311,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/codex-144-99-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144-99-core"
       ],
-      "timestamp": "2025-11-30T20:40:42.260Z"
+      "timestamp": "2025-11-30T21:24:15.445Z"
     },
     {
       "realName": "@cathedral/codex-engine",
@@ -320,7 +320,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/codex-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-engine"
       ],
-      "timestamp": "2025-11-30T20:40:42.273Z"
+      "timestamp": "2025-11-30T21:24:15.459Z"
     },
     {
       "realName": "codex-game-bridge",
@@ -329,7 +329,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/codex-game-bridge",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-game-bridge"
       ],
-      "timestamp": "2025-11-30T20:40:42.285Z"
+      "timestamp": "2025-11-30T21:24:15.470Z"
     },
     {
       "realName": "@cathedral/codex-musical-system",
@@ -338,7 +338,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/codex-musical-system",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-musical-system"
       ],
-      "timestamp": "2025-11-30T20:40:42.301Z"
+      "timestamp": "2025-11-30T21:24:15.491Z"
     },
     {
       "realName": "@cathedral/config",
@@ -347,7 +347,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/config",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/config"
       ],
-      "timestamp": "2025-11-30T20:40:42.317Z"
+      "timestamp": "2025-11-30T21:24:15.506Z"
     },
     {
       "realName": "connections",
@@ -356,7 +356,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/connections",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/connections"
       ],
-      "timestamp": "2025-11-30T20:40:42.334Z"
+      "timestamp": "2025-11-30T21:24:15.516Z"
     },
     {
       "realName": "consciousness-aware-creative",
@@ -365,7 +365,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/consciousness-aware-creative",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/consciousness-aware-creative"
       ],
-      "timestamp": "2025-11-30T20:40:42.350Z"
+      "timestamp": "2025-11-30T21:24:15.533Z"
     },
     {
       "realName": "@cathedral/core",
@@ -374,7 +374,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/core"
       ],
-      "timestamp": "2025-11-30T20:40:42.407Z"
+      "timestamp": "2025-11-30T21:24:15.598Z"
     },
     {
       "realName": "@cathedral/cosmogenesis",
@@ -383,7 +383,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/cosmogenesis",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/cosmogenesis"
       ],
-      "timestamp": "2025-11-30T20:40:42.423Z"
+      "timestamp": "2025-11-30T21:24:15.614Z"
     },
     {
       "realName": "@cathedral/crystals",
@@ -392,7 +392,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/crystals",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/crystals"
       ],
-      "timestamp": "2025-11-30T20:40:42.480Z"
+      "timestamp": "2025-11-30T21:24:15.664Z"
     },
     {
       "realName": "daimon-gear",
@@ -401,7 +401,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/daimon-gear",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/daimon-gear"
       ],
-      "timestamp": "2025-11-30T20:40:42.500Z"
+      "timestamp": "2025-11-30T21:24:15.681Z"
     },
     {
       "realName": "@cathedral/debug-system-core",
@@ -410,7 +410,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/debug-system-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/debug-system-core"
       ],
-      "timestamp": "2025-11-30T20:40:42.515Z"
+      "timestamp": "2025-11-30T21:24:15.695Z"
     },
     {
       "realName": "design-mathematics-core",
@@ -419,7 +419,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/design-mathematics-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/design-mathematics-core"
       ],
-      "timestamp": "2025-11-30T20:40:42.529Z"
+      "timestamp": "2025-11-30T21:24:15.705Z"
     },
     {
       "realName": "@cathedral/fractal-flames-daemon-deity",
@@ -428,7 +428,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/fractal-flames-daemon-deity",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/fractal-flames-daemon-deity"
       ],
-      "timestamp": "2025-11-30T20:40:42.547Z"
+      "timestamp": "2025-11-30T21:24:15.724Z"
     },
     {
       "realName": "fusion-creative-suite",
@@ -437,7 +437,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/fusion-creative-suite",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusion-creative-suite"
       ],
-      "timestamp": "2025-11-30T20:40:42.578Z"
+      "timestamp": "2025-11-30T21:24:15.745Z"
     },
     {
       "realName": "fusion-kink-core",
@@ -446,7 +446,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/fusion-kink-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusion-kink-core"
       ],
-      "timestamp": "2025-11-30T20:40:42.613Z"
+      "timestamp": "2025-11-30T21:24:15.774Z"
     },
     {
       "realName": "@cathedral/fusion-kink-generator",
@@ -455,7 +455,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/fusion-kink-generator",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusion-kink-generator"
       ],
-      "timestamp": "2025-11-30T20:40:42.627Z"
+      "timestamp": "2025-11-30T21:24:15.791Z"
     },
     {
       "realName": "fusionkink-engine",
@@ -464,7 +464,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/fusionkink-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusionkink-engine"
       ],
-      "timestamp": "2025-11-30T20:40:42.640Z"
+      "timestamp": "2025-11-30T21:24:15.800Z"
     },
     {
       "realName": "@cathedral/game-design-core",
@@ -473,7 +473,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/game-design-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-design-core"
       ],
-      "timestamp": "2025-11-30T20:40:42.664Z"
+      "timestamp": "2025-11-30T21:24:15.812Z"
     },
     {
       "realName": "@cathedral/game-engine",
@@ -482,7 +482,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/game-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-engine"
       ],
-      "timestamp": "2025-11-30T20:40:42.705Z"
+      "timestamp": "2025-11-30T21:24:15.848Z"
     },
     {
       "realName": "game-mathematics-core",
@@ -491,7 +491,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/game-mathematics-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-mathematics-core"
       ],
-      "timestamp": "2025-11-30T20:40:42.721Z"
+      "timestamp": "2025-11-30T21:24:15.858Z"
     },
     {
       "realName": "game-world",
@@ -500,7 +500,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/game-world",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-world"
       ],
-      "timestamp": "2025-11-30T20:40:42.737Z"
+      "timestamp": "2025-11-30T21:24:15.872Z"
     },
     {
       "realName": "@cathedral/gem-tower-engine",
@@ -509,7 +509,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/gem-tower-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/gem-tower-engine"
       ],
-      "timestamp": "2025-11-30T20:40:42.751Z"
+      "timestamp": "2025-11-30T21:24:15.886Z"
     },
     {
       "realName": "@cathedral/godot-codex-14499",
@@ -518,7 +518,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/godot-codex-14499",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-codex-14499"
       ],
-      "timestamp": "2025-11-30T20:40:42.768Z"
+      "timestamp": "2025-11-30T21:24:15.899Z"
     },
     {
       "realName": "@cathedral/godot-design-studio",
@@ -527,7 +527,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/godot-design-studio",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-design-studio"
       ],
-      "timestamp": "2025-11-30T20:40:42.781Z"
+      "timestamp": "2025-11-30T21:24:15.911Z"
     },
     {
       "realName": "@cathedral/godot-liber-arcanae",
@@ -536,7 +536,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/godot-liber-arcanae",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-liber-arcanae"
       ],
-      "timestamp": "2025-11-30T20:40:42.793Z"
+      "timestamp": "2025-11-30T21:24:15.921Z"
     },
     {
       "realName": "@cathedral/godot-vfx-library",
@@ -545,7 +545,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/godot-vfx-library",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-vfx-library"
       ],
-      "timestamp": "2025-11-30T20:40:42.811Z"
+      "timestamp": "2025-11-30T21:24:15.936Z"
     },
     {
       "realName": "graphs",
@@ -554,7 +554,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/graphs",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/graphs"
       ],
-      "timestamp": "2025-11-30T20:40:42.842Z"
+      "timestamp": "2025-11-30T21:24:15.971Z"
     },
     {
       "realName": "@cathedral/hall-of-ateliers",
@@ -563,7 +563,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/hall-of-ateliers",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/hall-of-ateliers"
       ],
-      "timestamp": "2025-11-30T20:40:42.872Z"
+      "timestamp": "2025-11-30T21:24:15.995Z"
     },
     {
       "realName": "@cathedral/health-map-core",
@@ -572,7 +572,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/health-map-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/health-map-core"
       ],
-      "timestamp": "2025-11-30T20:40:42.883Z"
+      "timestamp": "2025-11-30T21:24:16.007Z"
     },
     {
       "realName": "holographic-interface",
@@ -581,7 +581,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/holographic-interface",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/holographic-interface"
       ],
-      "timestamp": "2025-11-30T20:40:42.928Z"
+      "timestamp": "2025-11-30T21:24:16.022Z"
     },
     {
       "realName": "@cathedral/inter-app-communicator",
@@ -590,7 +590,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/inter-app-communicator",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/inter-app-communicator"
       ],
-      "timestamp": "2025-11-30T20:40:42.957Z"
+      "timestamp": "2025-11-30T21:24:16.039Z"
     },
     {
       "realName": "kira-audio-engine",
@@ -599,7 +599,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/kira-audio-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/kira-audio-engine"
       ],
-      "timestamp": "2025-11-30T20:40:42.990Z"
+      "timestamp": "2025-11-30T21:24:16.062Z"
     },
     {
       "realName": "@cathedral/labs",
@@ -608,7 +608,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/labs",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/labs"
       ],
-      "timestamp": "2025-11-30T20:40:43.009Z"
+      "timestamp": "2025-11-30T21:24:16.094Z"
     },
     {
       "realName": "@cathedral/liber-arcanae",
@@ -617,7 +617,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae"
       ],
-      "timestamp": "2025-11-30T20:40:43.253Z"
+      "timestamp": "2025-11-30T21:24:16.384Z"
     },
     {
       "realName": "liber-arcanae-core",
@@ -626,7 +626,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae-core"
       ],
-      "timestamp": "2025-11-30T20:40:43.329Z"
+      "timestamp": "2025-11-30T21:24:16.446Z"
     },
     {
       "realName": "@cathedral-real/liber-arcanae-tools",
@@ -635,7 +635,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-tools",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae-tools"
       ],
-      "timestamp": "2025-11-30T20:40:43.354Z"
+      "timestamp": "2025-11-30T21:24:16.461Z"
     },
     {
       "realName": "living-canon-engine",
@@ -644,7 +644,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/living-canon-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/living-canon-engine"
       ],
-      "timestamp": "2025-11-30T20:40:43.391Z"
+      "timestamp": "2025-11-30T21:24:16.493Z"
     },
     {
       "realName": "living-libraries",
@@ -653,7 +653,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/living-libraries",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/living-libraries"
       ],
-      "timestamp": "2025-11-30T20:40:43.408Z"
+      "timestamp": "2025-11-30T21:24:16.516Z"
     },
     {
       "realName": "@cathedral/luxcrux",
@@ -662,7 +662,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/luxcrux",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/luxcrux"
       ],
-      "timestamp": "2025-11-30T20:40:43.426Z"
+      "timestamp": "2025-11-30T21:24:16.528Z"
     },
     {
       "realName": "magnum-opus",
@@ -671,7 +671,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/magnum-opus",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/magnum-opus"
       ],
-      "timestamp": "2025-11-30T20:40:43.456Z"
+      "timestamp": "2025-11-30T21:24:16.549Z"
     },
     {
       "realName": "mobile-optimization",
@@ -680,7 +680,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/mobile-optimization",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/mobile-optimization"
       ],
-      "timestamp": "2025-11-30T20:40:43.477Z"
+      "timestamp": "2025-11-30T21:24:16.566Z"
     },
     {
       "realName": "moonchild-scanner",
@@ -689,7 +689,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/moonchild-scanner",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/moonchild-scanner"
       ],
-      "timestamp": "2025-11-30T20:40:43.495Z"
+      "timestamp": "2025-11-30T21:24:16.586Z"
     },
     {
       "realName": "museum-sources",
@@ -698,7 +698,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/museum-sources",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/museum-sources"
       ],
-      "timestamp": "2025-11-30T20:40:43.510Z"
+      "timestamp": "2025-11-30T21:24:16.604Z"
     },
     {
       "realName": "@cathedral/music-engine-core",
@@ -707,7 +707,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/music-engine-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/music-engine-core"
       ],
-      "timestamp": "2025-11-30T20:40:43.531Z"
+      "timestamp": "2025-11-30T21:24:16.625Z"
     },
     {
       "realName": "mystery-house-core",
@@ -716,7 +716,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/mystery-house-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystery-house-core"
       ],
-      "timestamp": "2025-11-30T20:40:43.546Z"
+      "timestamp": "2025-11-30T21:24:16.646Z"
     },
     {
       "realName": "@cathedral/mystical-data-unified",
@@ -725,7 +725,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/mystical-data-unified",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystical-data-unified"
       ],
-      "timestamp": "2025-11-30T20:40:43.563Z"
+      "timestamp": "2025-11-30T21:24:16.664Z"
     },
     {
       "realName": "@cathedral/mystical-sound-engine",
@@ -734,7 +734,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/mystical-sound-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystical-sound-engine"
       ],
-      "timestamp": "2025-11-30T20:40:43.579Z"
+      "timestamp": "2025-11-30T21:24:16.682Z"
     },
     {
       "realName": "@cathedral/node-tree-engine",
@@ -743,7 +743,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/node-tree-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/node-tree-engine"
       ],
-      "timestamp": "2025-11-30T20:40:43.603Z"
+      "timestamp": "2025-11-30T21:24:16.706Z"
     },
     {
       "realName": "physics-cannon-core",
@@ -752,7 +752,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/physics-cannon-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/physics-cannon-core"
       ],
-      "timestamp": "2025-11-30T20:40:43.616Z"
+      "timestamp": "2025-11-30T21:24:16.720Z"
     },
     {
       "realName": "@cathedral/portal-system",
@@ -761,7 +761,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/portal-system",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/portal-system"
       ],
-      "timestamp": "2025-11-30T20:40:43.630Z"
+      "timestamp": "2025-11-30T21:24:16.738Z"
     },
     {
       "realName": "professional-collaboration-engine",
@@ -770,7 +770,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/professional-collaboration-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-collaboration-engine"
       ],
-      "timestamp": "2025-11-30T20:40:43.661Z"
+      "timestamp": "2025-11-30T21:24:16.776Z"
     },
     {
       "realName": "professional-export-integration",
@@ -779,7 +779,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/professional-export-integration",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-export-integration"
       ],
-      "timestamp": "2025-11-30T20:40:43.685Z"
+      "timestamp": "2025-11-30T21:24:16.812Z"
     },
     {
       "realName": "professional-quality-control",
@@ -788,7 +788,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/professional-quality-control",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-quality-control"
       ],
-      "timestamp": "2025-11-30T20:40:43.714Z"
+      "timestamp": "2025-11-30T21:24:16.847Z"
     },
     {
       "realName": "professional-suite",
@@ -797,7 +797,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/professional-suite",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-suite"
       ],
-      "timestamp": "2025-11-30T20:40:43.729Z"
+      "timestamp": "2025-11-30T21:24:16.866Z"
     },
     {
       "realName": "professional-typography-engine",
@@ -806,7 +806,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/professional-typography-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-typography-engine"
       ],
-      "timestamp": "2025-11-30T20:40:43.745Z"
+      "timestamp": "2025-11-30T21:24:16.893Z"
     },
     {
       "realName": "professional-vector-engine",
@@ -815,7 +815,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/professional-vector-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-vector-engine"
       ],
-      "timestamp": "2025-11-30T20:40:43.761Z"
+      "timestamp": "2025-11-30T21:24:16.906Z"
     },
     {
       "realName": "registry-learning-validation",
@@ -824,7 +824,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/registry-learning-validation",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/registry-learning-validation"
       ],
-      "timestamp": "2025-11-30T20:40:43.770Z"
+      "timestamp": "2025-11-30T21:24:16.919Z"
     },
     {
       "realName": "@cathedral/sacred-geometry-core",
@@ -833,7 +833,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-core"
       ],
-      "timestamp": "2025-11-30T20:40:43.782Z"
+      "timestamp": "2025-11-30T21:24:16.933Z"
     },
     {
       "realName": "sacred-geometry-math",
@@ -842,7 +842,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-math",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-math"
       ],
-      "timestamp": "2025-11-30T20:40:43.796Z"
+      "timestamp": "2025-11-30T21:24:16.946Z"
     },
     {
       "realName": "sacred-geometry-simd",
@@ -851,7 +851,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-simd",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-simd"
       ],
-      "timestamp": "2025-11-30T20:40:43.813Z"
+      "timestamp": "2025-11-30T21:24:16.964Z"
     },
     {
       "realName": "sacred-mathematics-core",
@@ -860,7 +860,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/sacred-mathematics-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-mathematics-core"
       ],
-      "timestamp": "2025-11-30T20:40:43.832Z"
+      "timestamp": "2025-11-30T21:24:16.987Z"
     },
     {
       "realName": "scanner",
@@ -869,7 +869,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/scanner",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/scanner"
       ],
-      "timestamp": "2025-11-30T20:40:43.846Z"
+      "timestamp": "2025-11-30T21:24:17.000Z"
     },
     {
       "realName": "@cathedral/science-engine-core",
@@ -878,7 +878,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/science-engine-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/science-engine-core"
       ],
-      "timestamp": "2025-11-30T20:40:43.869Z"
+      "timestamp": "2025-11-30T21:24:17.015Z"
     },
     {
       "realName": "@cathedral/shared",
@@ -887,7 +887,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/shared",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/shared"
       ],
-      "timestamp": "2025-11-30T20:40:44.049Z"
+      "timestamp": "2025-11-30T21:24:17.204Z"
     },
     {
       "realName": "simple-learning-validation",
@@ -896,7 +896,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/simple-learning-validation",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/simple-learning-validation"
       ],
-      "timestamp": "2025-11-30T20:40:44.061Z"
+      "timestamp": "2025-11-30T21:24:17.216Z"
     },
     {
       "realName": "@cathedral/smooth-movement-system",
@@ -905,7 +905,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/smooth-movement-system",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/smooth-movement-system"
       ],
-      "timestamp": "2025-11-30T20:40:44.074Z"
+      "timestamp": "2025-11-30T21:24:17.233Z"
     },
     {
       "realName": "sonic-physics-engine",
@@ -914,7 +914,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/sonic-physics-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/sonic-physics-engine"
       ],
-      "timestamp": "2025-11-30T20:40:44.086Z"
+      "timestamp": "2025-11-30T21:24:17.254Z"
     },
     {
       "realName": "@cathedral/soul",
@@ -923,7 +923,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/soul",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/soul"
       ],
-      "timestamp": "2025-11-30T20:40:44.103Z"
+      "timestamp": "2025-11-30T21:24:17.271Z"
     },
     {
       "realName": "sound-mathematics-core",
@@ -932,7 +932,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/sound-mathematics-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/sound-mathematics-core"
       ],
-      "timestamp": "2025-11-30T20:40:44.116Z"
+      "timestamp": "2025-11-30T21:24:17.288Z"
     },
     {
       "realName": "spells",
@@ -941,7 +941,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/spells",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/spells"
       ],
-      "timestamp": "2025-11-30T20:40:44.129Z"
+      "timestamp": "2025-11-30T21:24:17.305Z"
     },
     {
       "realName": "spiral-learning-engine",
@@ -950,7 +950,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/spiral-learning-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/spiral-learning-engine"
       ],
-      "timestamp": "2025-11-30T20:40:44.138Z"
+      "timestamp": "2025-11-30T21:24:17.321Z"
     },
     {
       "realName": "@cathedral/stone-grimoire",
@@ -959,7 +959,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire"
       ],
-      "timestamp": "2025-11-30T20:40:44.206Z"
+      "timestamp": "2025-11-30T21:24:17.406Z"
     },
     {
       "realName": "stone-grimoire-core",
@@ -968,7 +968,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire-core"
       ],
-      "timestamp": "2025-11-30T20:40:44.219Z"
+      "timestamp": "2025-11-30T21:24:17.418Z"
     },
     {
       "realName": "stone-grimoire-library-engine",
@@ -977,7 +977,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire-library-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire-library-engine"
       ],
-      "timestamp": "2025-11-30T20:40:44.254Z"
+      "timestamp": "2025-11-30T21:24:17.432Z"
     },
     {
       "realName": "story-engine",
@@ -986,7 +986,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/story-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/story-engine"
       ],
-      "timestamp": "2025-11-30T20:40:44.271Z"
+      "timestamp": "2025-11-30T21:24:17.447Z"
     },
     {
       "realName": "@cathedral/synth",
@@ -995,7 +995,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/synth",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth"
       ],
-      "timestamp": "2025-11-30T20:40:44.292Z"
+      "timestamp": "2025-11-30T21:24:17.471Z"
     },
     {
       "realName": "synth-design-math-core",
@@ -1004,7 +1004,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/synth-design-math-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth-design-math-core"
       ],
-      "timestamp": "2025-11-30T20:40:44.305Z"
+      "timestamp": "2025-11-30T21:24:17.494Z"
     },
     {
       "realName": "synth-labs",
@@ -1013,7 +1013,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/synth-labs",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth-labs"
       ],
-      "timestamp": "2025-11-30T20:40:44.321Z"
+      "timestamp": "2025-11-30T21:24:17.509Z"
     },
     {
       "realName": "synth-spells",
@@ -1022,7 +1022,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/synth-spells",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth-spells"
       ],
-      "timestamp": "2025-11-30T20:40:44.332Z"
+      "timestamp": "2025-11-30T21:24:17.525Z"
     },
     {
       "realName": "@cathedral/synthesis-engine",
@@ -1031,7 +1031,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/synthesis-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/synthesis-engine"
       ],
-      "timestamp": "2025-11-30T20:40:44.345Z"
+      "timestamp": "2025-11-30T21:24:17.553Z"
     },
     {
       "realName": "tarot-art",
@@ -1040,7 +1040,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/tarot-art",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/tarot-art"
       ],
-      "timestamp": "2025-11-30T20:40:44.362Z"
+      "timestamp": "2025-11-30T21:24:17.575Z"
     },
     {
       "realName": "tarot-engine",
@@ -1049,7 +1049,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/tarot-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/tarot-engine"
       ],
-      "timestamp": "2025-11-30T20:40:44.371Z"
+      "timestamp": "2025-11-30T21:24:17.588Z"
     },
     {
       "realName": "tarot-reader",
@@ -1058,7 +1058,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/tarot-reader",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/tarot-reader"
       ],
-      "timestamp": "2025-11-30T20:40:44.385Z"
+      "timestamp": "2025-11-30T21:24:17.606Z"
     },
     {
       "realName": "@cathedral/tesseract-bridge",
@@ -1067,7 +1067,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge"
       ],
-      "timestamp": "2025-11-30T20:40:44.471Z"
+      "timestamp": "2025-11-30T21:24:17.695Z"
     },
     {
       "realName": "tesseract-bridge-core",
@@ -1076,7 +1076,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge-core"
       ],
-      "timestamp": "2025-11-30T20:40:44.499Z"
+      "timestamp": "2025-11-30T21:24:17.729Z"
     },
     {
       "realName": "@cathedral/tesseract-bridge-hub",
@@ -1085,7 +1085,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge-hub",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge-hub"
       ],
-      "timestamp": "2025-11-30T20:40:44.518Z"
+      "timestamp": "2025-11-30T21:24:17.753Z"
     },
     {
       "realName": "@cathedral/three-engine",
@@ -1094,7 +1094,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/three-engine",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/three-engine"
       ],
-      "timestamp": "2025-11-30T20:40:44.530Z"
+      "timestamp": "2025-11-30T21:24:17.772Z"
     },
     {
       "realName": "trauma-safe-ui",
@@ -1103,7 +1103,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/trauma-safe-ui",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/trauma-safe-ui"
       ],
-      "timestamp": "2025-11-30T20:40:44.542Z"
+      "timestamp": "2025-11-30T21:24:17.789Z"
     },
     {
       "realName": "@cathedral/trinity-architecture",
@@ -1112,7 +1112,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/trinity-architecture",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/trinity-architecture"
       ],
-      "timestamp": "2025-11-30T20:40:44.583Z"
+      "timestamp": "2025-11-30T21:24:17.849Z"
     },
     {
       "realName": "trinity-v1-1-core",
@@ -1121,7 +1121,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/trinity-v1-1-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/trinity-v1-1-core"
       ],
-      "timestamp": "2025-11-30T20:40:44.671Z"
+      "timestamp": "2025-11-30T21:24:17.957Z"
     },
     {
       "realName": "@cathedral/types",
@@ -1130,7 +1130,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/types",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/types"
       ],
-      "timestamp": "2025-11-30T20:40:44.807Z"
+      "timestamp": "2025-11-30T21:24:18.128Z"
     },
     {
       "realName": "@cathedral/ui",
@@ -1139,7 +1139,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/ui",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/ui"
       ],
-      "timestamp": "2025-11-30T20:40:44.823Z"
+      "timestamp": "2025-11-30T21:24:18.149Z"
     },
     {
       "realName": "@cathedral/unified-codex-core",
@@ -1148,7 +1148,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/unified-codex-core",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/unified-codex-core"
       ],
-      "timestamp": "2025-11-30T20:40:44.841Z"
+      "timestamp": "2025-11-30T21:24:18.177Z"
     },
     {
       "realName": "@cathedral/unified-codex-extractor",
@@ -1157,7 +1157,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/unified-codex-extractor",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/unified-codex-extractor"
       ],
-      "timestamp": "2025-11-30T20:40:44.964Z"
+      "timestamp": "2025-11-30T21:24:18.324Z"
     },
     {
       "realName": "unified-creative-system",
@@ -1166,7 +1166,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/unified-creative-system",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/unified-creative-system"
       ],
-      "timestamp": "2025-11-30T20:40:44.976Z"
+      "timestamp": "2025-11-30T21:24:18.341Z"
     },
     {
       "realName": "@cathedral-trinity/accessibility",
@@ -1175,7 +1175,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/universal-accessibility",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/universal-accessibility"
       ],
-      "timestamp": "2025-11-30T20:40:44.995Z"
+      "timestamp": "2025-11-30T21:24:18.366Z"
     },
     {
       "realName": "visionary-design-system",
@@ -1184,7 +1184,7 @@
         "/Users/rebeccalemke/cathedral-real/packages/visionary-design-system",
         "/Users/rebeccalemke/cathedral-fixed-clean/packages/visionary-design-system"
       ],
-      "timestamp": "2025-11-30T20:40:45.010Z"
+      "timestamp": "2025-11-30T21:24:18.379Z"
     }
   ],
   "errors": [],
@@ -1192,1967 +1192,1967 @@
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/agent-integration",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/agent-integration/agent-integration",
-      "timestamp": "2025-11-30T20:40:41.270Z"
+      "timestamp": "2025-11-30T21:24:14.358Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/agent-integration",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/agent-integration/agent-integration",
-      "timestamp": "2025-11-30T20:40:41.280Z"
+      "timestamp": "2025-11-30T21:24:14.368Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/agent-integration",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/agent-integration/agent-integration",
-      "timestamp": "2025-11-30T20:40:41.287Z"
+      "timestamp": "2025-11-30T21:24:14.377Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/arcana",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/arcana/arcana",
-      "timestamp": "2025-11-30T20:40:41.301Z"
+      "timestamp": "2025-11-30T21:24:14.392Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/arcana",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/arcana/arcana",
-      "timestamp": "2025-11-30T20:40:41.305Z"
+      "timestamp": "2025-11-30T21:24:14.395Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/arcana",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/arcana/arcana",
-      "timestamp": "2025-11-30T20:40:41.309Z"
+      "timestamp": "2025-11-30T21:24:14.398Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/archetypal-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/archetypal-engine/archetypal-engine",
-      "timestamp": "2025-11-30T20:40:41.318Z"
+      "timestamp": "2025-11-30T21:24:14.406Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/archetypal-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/archetypal-engine/archetypal-engine",
-      "timestamp": "2025-11-30T20:40:41.322Z"
+      "timestamp": "2025-11-30T21:24:14.411Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/archetypal-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/archetypal-engine/archetypal-engine",
-      "timestamp": "2025-11-30T20:40:41.326Z"
+      "timestamp": "2025-11-30T21:24:14.415Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-engine-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/art-engine-core/art-engine-core",
-      "timestamp": "2025-11-30T20:40:41.332Z"
+      "timestamp": "2025-11-30T21:24:14.424Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/art-engine-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/art-engine-core/art-engine-core",
-      "timestamp": "2025-11-30T20:40:41.336Z"
+      "timestamp": "2025-11-30T21:24:14.428Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-engine-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/art-engine-core/art-engine-core",
-      "timestamp": "2025-11-30T20:40:41.339Z"
+      "timestamp": "2025-11-30T21:24:14.435Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-generation-node",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/art-generation-node/art-generation-node",
-      "timestamp": "2025-11-30T20:40:41.350Z"
+      "timestamp": "2025-11-30T21:24:14.449Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/art-generation-node",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/art-generation-node/art-generation-node",
-      "timestamp": "2025-11-30T20:40:41.359Z"
+      "timestamp": "2025-11-30T21:24:14.454Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-generation-node",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/art-generation-node/art-generation-node",
-      "timestamp": "2025-11-30T20:40:41.366Z"
+      "timestamp": "2025-11-30T21:24:14.459Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-standards-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/art-standards-core/art-standards-core",
-      "timestamp": "2025-11-30T20:40:41.371Z"
+      "timestamp": "2025-11-30T21:24:14.466Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/art-standards-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/art-standards-core/art-standards-core",
-      "timestamp": "2025-11-30T20:40:41.374Z"
+      "timestamp": "2025-11-30T21:24:14.469Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-standards-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/art-standards-core/art-standards-core",
-      "timestamp": "2025-11-30T20:40:41.376Z"
+      "timestamp": "2025-11-30T21:24:14.471Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-systems",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/art-systems/art-systems",
-      "timestamp": "2025-11-30T20:40:41.381Z"
+      "timestamp": "2025-11-30T21:24:14.477Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/art-systems",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/art-systems/art-systems",
-      "timestamp": "2025-11-30T20:40:41.385Z"
+      "timestamp": "2025-11-30T21:24:14.482Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-systems",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/art-systems/art-systems",
-      "timestamp": "2025-11-30T20:40:41.387Z"
+      "timestamp": "2025-11-30T21:24:14.486Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/atelier-constitution",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/atelier-constitution/atelier-constitution",
-      "timestamp": "2025-11-30T20:40:41.394Z"
+      "timestamp": "2025-11-30T21:24:14.493Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/atelier-constitution",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/atelier-constitution/atelier-constitution",
-      "timestamp": "2025-11-30T20:40:41.398Z"
+      "timestamp": "2025-11-30T21:24:14.495Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/atelier-constitution",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/atelier-constitution/atelier-constitution",
-      "timestamp": "2025-11-30T20:40:41.402Z"
+      "timestamp": "2025-11-30T21:24:14.499Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/avatar-experience-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/avatar-experience-system/avatar-experience-system",
-      "timestamp": "2025-11-30T20:40:41.412Z"
+      "timestamp": "2025-11-30T21:24:14.506Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/avatar-experience-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/avatar-experience-system/avatar-experience-system",
-      "timestamp": "2025-11-30T20:40:41.416Z"
+      "timestamp": "2025-11-30T21:24:14.508Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/avatar-experience-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/avatar-experience-system/avatar-experience-system",
-      "timestamp": "2025-11-30T20:40:41.419Z"
+      "timestamp": "2025-11-30T21:24:14.511Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/brain/brain",
-      "timestamp": "2025-11-30T20:40:41.434Z"
+      "timestamp": "2025-11-30T21:24:14.524Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/brain",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/brain/brain",
-      "timestamp": "2025-11-30T20:40:41.445Z"
+      "timestamp": "2025-11-30T21:24:14.536Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/brain",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/brain/brain",
-      "timestamp": "2025-11-30T20:40:41.457Z"
+      "timestamp": "2025-11-30T21:24:14.556Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cataract-book-scanner",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/cataract-book-scanner/cataract-book-scanner",
-      "timestamp": "2025-11-30T20:40:41.470Z"
+      "timestamp": "2025-11-30T21:24:14.571Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cataract-book-scanner",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/cataract-book-scanner/cataract-book-scanner",
-      "timestamp": "2025-11-30T20:40:41.473Z"
+      "timestamp": "2025-11-30T21:24:14.575Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cataract-book-scanner",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/cataract-book-scanner/cataract-book-scanner",
-      "timestamp": "2025-11-30T20:40:41.477Z"
+      "timestamp": "2025-11-30T21:24:14.580Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-144",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-144/cathedral-144",
-      "timestamp": "2025-11-30T20:40:41.484Z"
+      "timestamp": "2025-11-30T21:24:14.594Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-144",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-144/cathedral-144",
-      "timestamp": "2025-11-30T20:40:41.486Z"
+      "timestamp": "2025-11-30T21:24:14.603Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-144",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-144/cathedral-144",
-      "timestamp": "2025-11-30T20:40:41.489Z"
+      "timestamp": "2025-11-30T21:24:14.622Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-architect",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/cathedral-architect/cathedral-architect",
-      "timestamp": "2025-11-30T20:40:41.496Z"
+      "timestamp": "2025-11-30T21:24:14.697Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-architect",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/cathedral-architect/cathedral-architect",
-      "timestamp": "2025-11-30T20:40:41.499Z"
+      "timestamp": "2025-11-30T21:24:14.718Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-architect",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/cathedral-architect/cathedral-architect",
-      "timestamp": "2025-11-30T20:40:41.503Z"
+      "timestamp": "2025-11-30T21:24:14.725Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-audio-synthesis",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-audio-synthesis/cathedral-audio-synthesis",
-      "timestamp": "2025-11-30T20:40:41.511Z"
+      "timestamp": "2025-11-30T21:24:14.737Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-audio-synthesis",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-audio-synthesis/cathedral-audio-synthesis",
-      "timestamp": "2025-11-30T20:40:41.514Z"
+      "timestamp": "2025-11-30T21:24:14.752Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-audio-synthesis",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-audio-synthesis/cathedral-audio-synthesis",
-      "timestamp": "2025-11-30T20:40:41.517Z"
+      "timestamp": "2025-11-30T21:24:14.758Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-data-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-data-core/cathedral-data-core",
-      "timestamp": "2025-11-30T20:40:41.524Z"
+      "timestamp": "2025-11-30T21:24:14.771Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-data-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-data-core/cathedral-data-core",
-      "timestamp": "2025-11-30T20:40:41.527Z"
+      "timestamp": "2025-11-30T21:24:14.775Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-data-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-data-core/cathedral-data-core",
-      "timestamp": "2025-11-30T20:40:41.530Z"
+      "timestamp": "2025-11-30T21:24:14.779Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-design-library",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/design-library/cathedral-design-library",
-      "timestamp": "2025-11-30T20:40:41.540Z"
+      "timestamp": "2025-11-30T21:24:14.796Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-design-library",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/design-library/cathedral-design-library",
-      "timestamp": "2025-11-30T20:40:41.652Z"
+      "timestamp": "2025-11-30T21:24:14.810Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-design-library",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/design-library/cathedral-design-library",
-      "timestamp": "2025-11-30T20:40:41.671Z"
+      "timestamp": "2025-11-30T21:24:14.818Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-fusion-kink-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/fusion-kink-engine/cathedral-fusion-kink-engine",
-      "timestamp": "2025-11-30T20:40:41.687Z"
+      "timestamp": "2025-11-30T21:24:14.830Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-fusion-kink-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/fusion-kink-engine/cathedral-fusion-kink-engine",
-      "timestamp": "2025-11-30T20:40:41.694Z"
+      "timestamp": "2025-11-30T21:24:14.837Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-fusion-kink-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/fusion-kink-engine/cathedral-fusion-kink-engine",
-      "timestamp": "2025-11-30T20:40:41.700Z"
+      "timestamp": "2025-11-30T21:24:14.845Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-integration-bridge",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-integration-bridge/cathedral-integration-bridge",
-      "timestamp": "2025-11-30T20:40:41.709Z"
+      "timestamp": "2025-11-30T21:24:14.863Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-integration-bridge",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-integration-bridge/cathedral-integration-bridge",
-      "timestamp": "2025-11-30T20:40:41.714Z"
+      "timestamp": "2025-11-30T21:24:14.875Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-integration-bridge",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-integration-bridge/cathedral-integration-bridge",
-      "timestamp": "2025-11-30T20:40:41.720Z"
+      "timestamp": "2025-11-30T21:24:15.002Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-liber-arcanae-bridge",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-liber-arcanae-bridge/cathedral-liber-arcanae-bridge",
-      "timestamp": "2025-11-30T20:40:41.730Z"
+      "timestamp": "2025-11-30T21:24:15.015Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-liber-arcanae-bridge",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-liber-arcanae-bridge/cathedral-liber-arcanae-bridge",
-      "timestamp": "2025-11-30T20:40:41.734Z"
+      "timestamp": "2025-11-30T21:24:15.019Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-liber-arcanae-bridge",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-liber-arcanae-bridge/cathedral-liber-arcanae-bridge",
-      "timestamp": "2025-11-30T20:40:41.742Z"
+      "timestamp": "2025-11-30T21:24:15.023Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-lightweight-library",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/lightweight-library/cathedral-lightweight-library",
-      "timestamp": "2025-11-30T20:40:41.752Z"
+      "timestamp": "2025-11-30T21:24:15.033Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-lightweight-library",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/lightweight-library/cathedral-lightweight-library",
-      "timestamp": "2025-11-30T20:40:41.756Z"
+      "timestamp": "2025-11-30T21:24:15.038Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-lightweight-library",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/lightweight-library/cathedral-lightweight-library",
-      "timestamp": "2025-11-30T20:40:41.762Z"
+      "timestamp": "2025-11-30T21:24:15.042Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-logo-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/logo-system/cathedral-logo-system",
-      "timestamp": "2025-11-30T20:40:41.811Z"
+      "timestamp": "2025-11-30T21:24:15.048Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-logo-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/logo-system/cathedral-logo-system",
-      "timestamp": "2025-11-30T20:40:41.817Z"
+      "timestamp": "2025-11-30T21:24:15.052Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-logo-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/logo-system/cathedral-logo-system",
-      "timestamp": "2025-11-30T20:40:41.822Z"
+      "timestamp": "2025-11-30T21:24:15.057Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-plugin-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/plugin-system/cathedral-plugin-system",
-      "timestamp": "2025-11-30T20:40:41.834Z"
+      "timestamp": "2025-11-30T21:24:15.065Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-plugin-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/plugin-system/cathedral-plugin-system",
-      "timestamp": "2025-11-30T20:40:41.841Z"
+      "timestamp": "2025-11-30T21:24:15.070Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-plugin-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/plugin-system/cathedral-plugin-system",
-      "timestamp": "2025-11-30T20:40:41.849Z"
+      "timestamp": "2025-11-30T21:24:15.075Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-rpg-inventory-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-rpg-inventory-system/cathedral-rpg-inventory-system",
-      "timestamp": "2025-11-30T20:40:41.861Z"
+      "timestamp": "2025-11-30T21:24:15.083Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-rpg-inventory-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-rpg-inventory-system/cathedral-rpg-inventory-system",
-      "timestamp": "2025-11-30T20:40:41.866Z"
+      "timestamp": "2025-11-30T21:24:15.087Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-rpg-inventory-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-rpg-inventory-system/cathedral-rpg-inventory-system",
-      "timestamp": "2025-11-30T20:40:41.871Z"
+      "timestamp": "2025-11-30T21:24:15.090Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-sqlite-persistence",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/sqlite-persistence/cathedral-sqlite-persistence",
-      "timestamp": "2025-11-30T20:40:41.883Z"
+      "timestamp": "2025-11-30T21:24:15.097Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-sqlite-persistence",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/sqlite-persistence/cathedral-sqlite-persistence",
-      "timestamp": "2025-11-30T20:40:41.890Z"
+      "timestamp": "2025-11-30T21:24:15.102Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-sqlite-persistence",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/sqlite-persistence/cathedral-sqlite-persistence",
-      "timestamp": "2025-11-30T20:40:41.897Z"
+      "timestamp": "2025-11-30T21:24:15.108Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-style",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-style/cathedral-style",
-      "timestamp": "2025-11-30T20:40:41.905Z"
+      "timestamp": "2025-11-30T21:24:15.115Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-style",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-style/cathedral-style",
-      "timestamp": "2025-11-30T20:40:41.910Z"
+      "timestamp": "2025-11-30T21:24:15.118Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-style",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-style/cathedral-style",
-      "timestamp": "2025-11-30T20:40:41.914Z"
+      "timestamp": "2025-11-30T21:24:15.121Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-synthesis-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-synthesis-core/cathedral-synthesis-core",
-      "timestamp": "2025-11-30T20:40:41.923Z"
+      "timestamp": "2025-11-30T21:24:15.128Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-synthesis-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-synthesis-core/cathedral-synthesis-core",
-      "timestamp": "2025-11-30T20:40:41.927Z"
+      "timestamp": "2025-11-30T21:24:15.131Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-synthesis-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-synthesis-core/cathedral-synthesis-core",
-      "timestamp": "2025-11-30T20:40:41.930Z"
+      "timestamp": "2025-11-30T21:24:15.134Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-visual-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-visual-engine/cathedral-visual-engine",
-      "timestamp": "2025-11-30T20:40:41.936Z"
+      "timestamp": "2025-11-30T21:24:15.141Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cathedral-visual-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-visual-engine/cathedral-visual-engine",
-      "timestamp": "2025-11-30T20:40:41.938Z"
+      "timestamp": "2025-11-30T21:24:15.143Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-visual-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/cathedral-visual-engine/cathedral-visual-engine",
-      "timestamp": "2025-11-30T20:40:41.941Z"
+      "timestamp": "2025-11-30T21:24:15.146Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/character-alchemical-art",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/character-alchemical-art/character-alchemical-art",
-      "timestamp": "2025-11-30T20:40:41.947Z"
+      "timestamp": "2025-11-30T21:24:15.151Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/character-alchemical-art",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/character-alchemical-art/character-alchemical-art",
-      "timestamp": "2025-11-30T20:40:41.952Z"
+      "timestamp": "2025-11-30T21:24:15.153Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/character-alchemical-art",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/character-alchemical-art/character-alchemical-art",
-      "timestamp": "2025-11-30T20:40:41.955Z"
+      "timestamp": "2025-11-30T21:24:15.155Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/circuit-craft-creative-game/circuit-craft-creative-game",
-      "timestamp": "2025-11-30T20:40:41.967Z"
+      "timestamp": "2025-11-30T21:24:15.165Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/circuit-craft-creative-game",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/circuit-craft-creative-game/circuit-craft-creative-game",
-      "timestamp": "2025-11-30T20:40:41.974Z"
+      "timestamp": "2025-11-30T21:24:15.170Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuit-craft-creative-game",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/circuit-craft-creative-game/circuit-craft-creative-game",
-      "timestamp": "2025-11-30T20:40:41.979Z"
+      "timestamp": "2025-11-30T21:24:15.175Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/circuitum99-arcanae-cyoa/circuitum99-arcanae-cyoa",
-      "timestamp": "2025-11-30T20:40:41.987Z"
+      "timestamp": "2025-11-30T21:24:15.185Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/circuitum99-arcanae-cyoa",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/circuitum99-arcanae-cyoa/circuitum99-arcanae-cyoa",
-      "timestamp": "2025-11-30T20:40:41.992Z"
+      "timestamp": "2025-11-30T21:24:15.193Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuitum99-arcanae-cyoa",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/circuitum99-arcanae-cyoa/circuitum99-arcanae-cyoa",
-      "timestamp": "2025-11-30T20:40:41.997Z"
+      "timestamp": "2025-11-30T21:24:15.200Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/circuitum99-core/circuitum99-core",
-      "timestamp": "2025-11-30T20:40:42.005Z"
+      "timestamp": "2025-11-30T21:24:15.209Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/circuitum99-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/circuitum99-core/circuitum99-core",
-      "timestamp": "2025-11-30T20:40:42.009Z"
+      "timestamp": "2025-11-30T21:24:15.212Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuitum99-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/circuitum99-core/circuitum99-core",
-      "timestamp": "2025-11-30T20:40:42.016Z"
+      "timestamp": "2025-11-30T21:24:15.215Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/codex-144/codex-144",
-      "timestamp": "2025-11-30T20:40:42.024Z"
+      "timestamp": "2025-11-30T21:24:15.222Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/codex-144",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/codex-144/codex-144",
-      "timestamp": "2025-11-30T20:40:42.030Z"
+      "timestamp": "2025-11-30T21:24:15.227Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/codex-144/codex-144",
-      "timestamp": "2025-11-30T20:40:42.036Z"
+      "timestamp": "2025-11-30T21:24:15.232Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144-99",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/codex-144-99/codex-144-99",
-      "timestamp": "2025-11-30T20:40:42.102Z"
+      "timestamp": "2025-11-30T21:24:15.293Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/codex-144-99",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/codex-144-99/codex-144-99",
-      "timestamp": "2025-11-30T20:40:42.157Z"
+      "timestamp": "2025-11-30T21:24:15.341Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144-99",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/codex-144-99/codex-144-99",
-      "timestamp": "2025-11-30T20:40:42.208Z"
+      "timestamp": "2025-11-30T21:24:15.393Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144-99-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/codex-144-99-core/codex-144-99-core",
-      "timestamp": "2025-11-30T20:40:42.231Z"
+      "timestamp": "2025-11-30T21:24:15.417Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/codex-144-99-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/codex-144-99-core/codex-144-99-core",
-      "timestamp": "2025-11-30T20:40:42.245Z"
+      "timestamp": "2025-11-30T21:24:15.429Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144-99-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/codex-144-99-core/codex-144-99-core",
-      "timestamp": "2025-11-30T20:40:42.257Z"
+      "timestamp": "2025-11-30T21:24:15.442Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/codex-engine/codex-engine",
-      "timestamp": "2025-11-30T20:40:42.264Z"
+      "timestamp": "2025-11-30T21:24:15.449Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/codex-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/codex-engine/codex-engine",
-      "timestamp": "2025-11-30T20:40:42.267Z"
+      "timestamp": "2025-11-30T21:24:15.453Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/codex-engine/codex-engine",
-      "timestamp": "2025-11-30T20:40:42.270Z"
+      "timestamp": "2025-11-30T21:24:15.456Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-game-bridge",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/codex-game-bridge/codex-game-bridge",
-      "timestamp": "2025-11-30T20:40:42.277Z"
+      "timestamp": "2025-11-30T21:24:15.462Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/codex-game-bridge",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/codex-game-bridge/codex-game-bridge",
-      "timestamp": "2025-11-30T20:40:42.279Z"
+      "timestamp": "2025-11-30T21:24:15.465Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-game-bridge",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/codex-game-bridge/codex-game-bridge",
-      "timestamp": "2025-11-30T20:40:42.283Z"
+      "timestamp": "2025-11-30T21:24:15.468Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-musical-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/codex-musical-system/codex-musical-system",
-      "timestamp": "2025-11-30T20:40:42.289Z"
+      "timestamp": "2025-11-30T21:24:15.476Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/codex-musical-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/codex-musical-system/codex-musical-system",
-      "timestamp": "2025-11-30T20:40:42.294Z"
+      "timestamp": "2025-11-30T21:24:15.481Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-musical-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/codex-musical-system/codex-musical-system",
-      "timestamp": "2025-11-30T20:40:42.297Z"
+      "timestamp": "2025-11-30T21:24:15.486Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/config",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/config/config",
-      "timestamp": "2025-11-30T20:40:42.305Z"
+      "timestamp": "2025-11-30T21:24:15.497Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/config",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/config/config",
-      "timestamp": "2025-11-30T20:40:42.309Z"
+      "timestamp": "2025-11-30T21:24:15.500Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/config",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/config/config",
-      "timestamp": "2025-11-30T20:40:42.313Z"
+      "timestamp": "2025-11-30T21:24:15.503Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/connections",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/connections/connections",
-      "timestamp": "2025-11-30T20:40:42.324Z"
+      "timestamp": "2025-11-30T21:24:15.509Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/connections",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/connections/connections",
-      "timestamp": "2025-11-30T20:40:42.327Z"
+      "timestamp": "2025-11-30T21:24:15.511Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/connections",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/connections/connections",
-      "timestamp": "2025-11-30T20:40:42.330Z"
+      "timestamp": "2025-11-30T21:24:15.513Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/consciousness-aware-creative",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/consciousness-aware-creative/consciousness-aware-creative",
-      "timestamp": "2025-11-30T20:40:42.339Z"
+      "timestamp": "2025-11-30T21:24:15.522Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/consciousness-aware-creative",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/consciousness-aware-creative/consciousness-aware-creative",
-      "timestamp": "2025-11-30T20:40:42.343Z"
+      "timestamp": "2025-11-30T21:24:15.525Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/consciousness-aware-creative",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/consciousness-aware-creative/consciousness-aware-creative",
-      "timestamp": "2025-11-30T20:40:42.347Z"
+      "timestamp": "2025-11-30T21:24:15.529Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/core/core",
-      "timestamp": "2025-11-30T20:40:42.369Z"
+      "timestamp": "2025-11-30T21:24:15.549Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/core/core",
-      "timestamp": "2025-11-30T20:40:42.384Z"
+      "timestamp": "2025-11-30T21:24:15.571Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/core/core",
-      "timestamp": "2025-11-30T20:40:42.402Z"
+      "timestamp": "2025-11-30T21:24:15.589Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/cosmogenesis",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/cosmogenesis/cosmogenesis",
-      "timestamp": "2025-11-30T20:40:42.412Z"
+      "timestamp": "2025-11-30T21:24:15.603Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/cosmogenesis",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/cosmogenesis/cosmogenesis",
-      "timestamp": "2025-11-30T20:40:42.416Z"
+      "timestamp": "2025-11-30T21:24:15.607Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cosmogenesis",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/cosmogenesis/cosmogenesis",
-      "timestamp": "2025-11-30T20:40:42.420Z"
+      "timestamp": "2025-11-30T21:24:15.611Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/crystals/crystals",
-      "timestamp": "2025-11-30T20:40:42.441Z"
+      "timestamp": "2025-11-30T21:24:15.631Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/crystals",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/crystals/crystals",
-      "timestamp": "2025-11-30T20:40:42.454Z"
+      "timestamp": "2025-11-30T21:24:15.647Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/crystals",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/crystals/crystals",
-      "timestamp": "2025-11-30T20:40:42.476Z"
+      "timestamp": "2025-11-30T21:24:15.659Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/daimon-gear",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/daimon-gear/daimon-gear",
-      "timestamp": "2025-11-30T20:40:42.486Z"
+      "timestamp": "2025-11-30T21:24:15.668Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/daimon-gear",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/daimon-gear/daimon-gear",
-      "timestamp": "2025-11-30T20:40:42.490Z"
+      "timestamp": "2025-11-30T21:24:15.674Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/daimon-gear",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/daimon-gear/daimon-gear",
-      "timestamp": "2025-11-30T20:40:42.497Z"
+      "timestamp": "2025-11-30T21:24:15.677Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/debug-system-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/debug-system-core/debug-system-core",
-      "timestamp": "2025-11-30T20:40:42.503Z"
+      "timestamp": "2025-11-30T21:24:15.685Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/debug-system-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/debug-system-core/debug-system-core",
-      "timestamp": "2025-11-30T20:40:42.507Z"
+      "timestamp": "2025-11-30T21:24:15.689Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/debug-system-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/debug-system-core/debug-system-core",
-      "timestamp": "2025-11-30T20:40:42.512Z"
+      "timestamp": "2025-11-30T21:24:15.692Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/design-mathematics-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/design-mathematics-core/design-mathematics-core",
-      "timestamp": "2025-11-30T20:40:42.518Z"
+      "timestamp": "2025-11-30T21:24:15.697Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/design-mathematics-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/design-mathematics-core/design-mathematics-core",
-      "timestamp": "2025-11-30T20:40:42.521Z"
+      "timestamp": "2025-11-30T21:24:15.700Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/design-mathematics-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/design-mathematics-core/design-mathematics-core",
-      "timestamp": "2025-11-30T20:40:42.524Z"
+      "timestamp": "2025-11-30T21:24:15.702Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/fractal-flames-daemon-deity",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/fractal-flames-daemon-deity/fractal-flames-daemon-deity",
-      "timestamp": "2025-11-30T20:40:42.534Z"
+      "timestamp": "2025-11-30T21:24:15.710Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/fractal-flames-daemon-deity",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/fractal-flames-daemon-deity/fractal-flames-daemon-deity",
-      "timestamp": "2025-11-30T20:40:42.539Z"
+      "timestamp": "2025-11-30T21:24:15.715Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fractal-flames-daemon-deity",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/fractal-flames-daemon-deity/fractal-flames-daemon-deity",
-      "timestamp": "2025-11-30T20:40:42.544Z"
+      "timestamp": "2025-11-30T21:24:15.721Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/fusion-creative-suite",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/fusion-creative-suite/fusion-creative-suite",
-      "timestamp": "2025-11-30T20:40:42.555Z"
+      "timestamp": "2025-11-30T21:24:15.731Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/fusion-creative-suite",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/fusion-creative-suite/fusion-creative-suite",
-      "timestamp": "2025-11-30T20:40:42.563Z"
+      "timestamp": "2025-11-30T21:24:15.737Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusion-creative-suite",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/fusion-creative-suite/fusion-creative-suite",
-      "timestamp": "2025-11-30T20:40:42.569Z"
+      "timestamp": "2025-11-30T21:24:15.742Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/fusion-kink-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/fusion-kink-core/fusion-kink-core",
-      "timestamp": "2025-11-30T20:40:42.588Z"
+      "timestamp": "2025-11-30T21:24:15.755Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/fusion-kink-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/fusion-kink-core/fusion-kink-core",
-      "timestamp": "2025-11-30T20:40:42.597Z"
+      "timestamp": "2025-11-30T21:24:15.764Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusion-kink-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/fusion-kink-core/fusion-kink-core",
-      "timestamp": "2025-11-30T20:40:42.607Z"
+      "timestamp": "2025-11-30T21:24:15.771Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/fusion-kink-generator",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/fusion-kink-generator/fusion-kink-generator",
-      "timestamp": "2025-11-30T20:40:42.617Z"
+      "timestamp": "2025-11-30T21:24:15.778Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/fusion-kink-generator",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/fusion-kink-generator/fusion-kink-generator",
-      "timestamp": "2025-11-30T20:40:42.620Z"
+      "timestamp": "2025-11-30T21:24:15.782Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusion-kink-generator",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/fusion-kink-generator/fusion-kink-generator",
-      "timestamp": "2025-11-30T20:40:42.623Z"
+      "timestamp": "2025-11-30T21:24:15.786Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/fusionkink-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/fusionkink-engine/fusionkink-engine",
-      "timestamp": "2025-11-30T20:40:42.630Z"
+      "timestamp": "2025-11-30T21:24:15.794Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/fusionkink-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/fusionkink-engine/fusionkink-engine",
-      "timestamp": "2025-11-30T20:40:42.634Z"
+      "timestamp": "2025-11-30T21:24:15.796Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusionkink-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/fusionkink-engine/fusionkink-engine",
-      "timestamp": "2025-11-30T20:40:42.637Z"
+      "timestamp": "2025-11-30T21:24:15.798Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/game-design-core/game-design-core",
-      "timestamp": "2025-11-30T20:40:42.645Z"
+      "timestamp": "2025-11-30T21:24:15.804Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/game-design-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/game-design-core/game-design-core",
-      "timestamp": "2025-11-30T20:40:42.653Z"
+      "timestamp": "2025-11-30T21:24:15.806Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-design-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/game-design-core/game-design-core",
-      "timestamp": "2025-11-30T20:40:42.661Z"
+      "timestamp": "2025-11-30T21:24:15.809Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/game-engine/game-engine",
-      "timestamp": "2025-11-30T20:40:42.677Z"
+      "timestamp": "2025-11-30T21:24:15.823Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/game-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/game-engine/game-engine",
-      "timestamp": "2025-11-30T20:40:42.688Z"
+      "timestamp": "2025-11-30T21:24:15.835Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/game-engine/game-engine",
-      "timestamp": "2025-11-30T20:40:42.699Z"
+      "timestamp": "2025-11-30T21:24:15.845Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-mathematics-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/game-mathematics-core/game-mathematics-core",
-      "timestamp": "2025-11-30T20:40:42.709Z"
+      "timestamp": "2025-11-30T21:24:15.851Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/game-mathematics-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/game-mathematics-core/game-mathematics-core",
-      "timestamp": "2025-11-30T20:40:42.714Z"
+      "timestamp": "2025-11-30T21:24:15.853Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-mathematics-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/game-mathematics-core/game-mathematics-core",
-      "timestamp": "2025-11-30T20:40:42.719Z"
+      "timestamp": "2025-11-30T21:24:15.855Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-world",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/game-world/game-world",
-      "timestamp": "2025-11-30T20:40:42.726Z"
+      "timestamp": "2025-11-30T21:24:15.861Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/game-world",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/game-world/game-world",
-      "timestamp": "2025-11-30T20:40:42.730Z"
+      "timestamp": "2025-11-30T21:24:15.864Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-world",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/game-world/game-world",
-      "timestamp": "2025-11-30T20:40:42.733Z"
+      "timestamp": "2025-11-30T21:24:15.868Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/gem-tower-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/gem-tower-engine/gem-tower-engine",
-      "timestamp": "2025-11-30T20:40:42.742Z"
+      "timestamp": "2025-11-30T21:24:15.875Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/gem-tower-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/gem-tower-engine/gem-tower-engine",
-      "timestamp": "2025-11-30T20:40:42.745Z"
+      "timestamp": "2025-11-30T21:24:15.878Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/gem-tower-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/gem-tower-engine/gem-tower-engine",
-      "timestamp": "2025-11-30T20:40:42.748Z"
+      "timestamp": "2025-11-30T21:24:15.882Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-codex-14499",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/godot-codex-14499/godot-codex-14499",
-      "timestamp": "2025-11-30T20:40:42.756Z"
+      "timestamp": "2025-11-30T21:24:15.891Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/godot-codex-14499",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/godot-codex-14499/godot-codex-14499",
-      "timestamp": "2025-11-30T20:40:42.760Z"
+      "timestamp": "2025-11-30T21:24:15.894Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-codex-14499",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/godot-codex-14499/godot-codex-14499",
-      "timestamp": "2025-11-30T20:40:42.764Z"
+      "timestamp": "2025-11-30T21:24:15.896Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-design-studio",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/godot-design-studio/godot-design-studio",
-      "timestamp": "2025-11-30T20:40:42.773Z"
+      "timestamp": "2025-11-30T21:24:15.902Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/godot-design-studio",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/godot-design-studio/godot-design-studio",
-      "timestamp": "2025-11-30T20:40:42.775Z"
+      "timestamp": "2025-11-30T21:24:15.904Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-design-studio",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/godot-design-studio/godot-design-studio",
-      "timestamp": "2025-11-30T20:40:42.778Z"
+      "timestamp": "2025-11-30T21:24:15.908Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/godot-liber-arcanae/godot-liber-arcanae",
-      "timestamp": "2025-11-30T20:40:42.784Z"
+      "timestamp": "2025-11-30T21:24:15.914Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/godot-liber-arcanae",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/godot-liber-arcanae/godot-liber-arcanae",
-      "timestamp": "2025-11-30T20:40:42.787Z"
+      "timestamp": "2025-11-30T21:24:15.916Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-liber-arcanae",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/godot-liber-arcanae/godot-liber-arcanae",
-      "timestamp": "2025-11-30T20:40:42.790Z"
+      "timestamp": "2025-11-30T21:24:15.918Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-vfx-library",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/godot-vfx-library/godot-vfx-library",
-      "timestamp": "2025-11-30T20:40:42.797Z"
+      "timestamp": "2025-11-30T21:24:15.925Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/godot-vfx-library",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/godot-vfx-library/godot-vfx-library",
-      "timestamp": "2025-11-30T20:40:42.802Z"
+      "timestamp": "2025-11-30T21:24:15.928Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-vfx-library",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/godot-vfx-library/godot-vfx-library",
-      "timestamp": "2025-11-30T20:40:42.807Z"
+      "timestamp": "2025-11-30T21:24:15.932Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/graphs",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/graphs/graphs",
-      "timestamp": "2025-11-30T20:40:42.818Z"
+      "timestamp": "2025-11-30T21:24:15.944Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/graphs",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/graphs/graphs",
-      "timestamp": "2025-11-30T20:40:42.826Z"
+      "timestamp": "2025-11-30T21:24:15.956Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/graphs",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/graphs/graphs",
-      "timestamp": "2025-11-30T20:40:42.836Z"
+      "timestamp": "2025-11-30T21:24:15.964Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/hall-of-ateliers",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/hall-of-ateliers/hall-of-ateliers",
-      "timestamp": "2025-11-30T20:40:42.856Z"
+      "timestamp": "2025-11-30T21:24:15.978Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/hall-of-ateliers",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/hall-of-ateliers/hall-of-ateliers",
-      "timestamp": "2025-11-30T20:40:42.863Z"
+      "timestamp": "2025-11-30T21:24:15.985Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/hall-of-ateliers",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/hall-of-ateliers/hall-of-ateliers",
-      "timestamp": "2025-11-30T20:40:42.868Z"
+      "timestamp": "2025-11-30T21:24:15.992Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/health-map-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/health-map-core/health-map-core",
-      "timestamp": "2025-11-30T20:40:42.876Z"
+      "timestamp": "2025-11-30T21:24:15.999Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/health-map-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/health-map-core/health-map-core",
-      "timestamp": "2025-11-30T20:40:42.878Z"
+      "timestamp": "2025-11-30T21:24:16.001Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/health-map-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/health-map-core/health-map-core",
-      "timestamp": "2025-11-30T20:40:42.881Z"
+      "timestamp": "2025-11-30T21:24:16.004Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/holographic-interface",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/holographic-interface/holographic-interface",
-      "timestamp": "2025-11-30T20:40:42.890Z"
+      "timestamp": "2025-11-30T21:24:16.011Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/holographic-interface",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/holographic-interface/holographic-interface",
-      "timestamp": "2025-11-30T20:40:42.916Z"
+      "timestamp": "2025-11-30T21:24:16.015Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/holographic-interface",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/holographic-interface/holographic-interface",
-      "timestamp": "2025-11-30T20:40:42.922Z"
+      "timestamp": "2025-11-30T21:24:16.018Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/inter-app-communicator",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/inter-app-communicator/inter-app-communicator",
-      "timestamp": "2025-11-30T20:40:42.936Z"
+      "timestamp": "2025-11-30T21:24:16.026Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/inter-app-communicator",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/inter-app-communicator/inter-app-communicator",
-      "timestamp": "2025-11-30T20:40:42.940Z"
+      "timestamp": "2025-11-30T21:24:16.031Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/inter-app-communicator",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/inter-app-communicator/inter-app-communicator",
-      "timestamp": "2025-11-30T20:40:42.946Z"
+      "timestamp": "2025-11-30T21:24:16.035Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/kira-audio-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/kira-audio-engine/kira-audio-engine",
-      "timestamp": "2025-11-30T20:40:42.969Z"
+      "timestamp": "2025-11-30T21:24:16.045Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/kira-audio-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/kira-audio-engine/kira-audio-engine",
-      "timestamp": "2025-11-30T20:40:42.977Z"
+      "timestamp": "2025-11-30T21:24:16.051Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/kira-audio-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/kira-audio-engine/kira-audio-engine",
-      "timestamp": "2025-11-30T20:40:42.986Z"
+      "timestamp": "2025-11-30T21:24:16.057Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/labs",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/labs/labs",
-      "timestamp": "2025-11-30T20:40:42.996Z"
+      "timestamp": "2025-11-30T21:24:16.078Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/labs",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/labs/labs",
-      "timestamp": "2025-11-30T20:40:43.000Z"
+      "timestamp": "2025-11-30T21:24:16.084Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/labs",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/labs/labs",
-      "timestamp": "2025-11-30T20:40:43.004Z"
+      "timestamp": "2025-11-30T21:24:16.089Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/liber-arcanae/liber-arcanae",
-      "timestamp": "2025-11-30T20:40:43.088Z"
+      "timestamp": "2025-11-30T21:24:16.189Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/liber-arcanae/liber-arcanae",
-      "timestamp": "2025-11-30T20:40:43.170Z"
+      "timestamp": "2025-11-30T21:24:16.275Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/liber-arcanae/liber-arcanae",
-      "timestamp": "2025-11-30T20:40:43.246Z"
+      "timestamp": "2025-11-30T21:24:16.372Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/liber-arcanae-core/liber-arcanae-core",
-      "timestamp": "2025-11-30T20:40:43.279Z"
+      "timestamp": "2025-11-30T21:24:16.409Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/liber-arcanae-core/liber-arcanae-core",
-      "timestamp": "2025-11-30T20:40:43.299Z"
+      "timestamp": "2025-11-30T21:24:16.425Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/liber-arcanae-core/liber-arcanae-core",
-      "timestamp": "2025-11-30T20:40:43.322Z"
+      "timestamp": "2025-11-30T21:24:16.443Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae-tools",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral-real/liber-arcanae-tools/liber-arcanae-tools",
-      "timestamp": "2025-11-30T20:40:43.336Z"
+      "timestamp": "2025-11-30T21:24:16.451Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-tools",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral-real/liber-arcanae-tools/liber-arcanae-tools",
-      "timestamp": "2025-11-30T20:40:43.341Z"
+      "timestamp": "2025-11-30T21:24:16.455Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae-tools",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral-real/liber-arcanae-tools/liber-arcanae-tools",
-      "timestamp": "2025-11-30T20:40:43.350Z"
+      "timestamp": "2025-11-30T21:24:16.458Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/living-canon-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/living-canon-engine/living-canon-engine",
-      "timestamp": "2025-11-30T20:40:43.363Z"
+      "timestamp": "2025-11-30T21:24:16.470Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/living-canon-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/living-canon-engine/living-canon-engine",
-      "timestamp": "2025-11-30T20:40:43.377Z"
+      "timestamp": "2025-11-30T21:24:16.480Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/living-canon-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/living-canon-engine/living-canon-engine",
-      "timestamp": "2025-11-30T20:40:43.387Z"
+      "timestamp": "2025-11-30T21:24:16.489Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/living-libraries",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/living-libraries/living-libraries",
-      "timestamp": "2025-11-30T20:40:43.395Z"
+      "timestamp": "2025-11-30T21:24:16.504Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/living-libraries",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/living-libraries/living-libraries",
-      "timestamp": "2025-11-30T20:40:43.398Z"
+      "timestamp": "2025-11-30T21:24:16.508Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/living-libraries",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/living-libraries/living-libraries",
-      "timestamp": "2025-11-30T20:40:43.404Z"
+      "timestamp": "2025-11-30T21:24:16.512Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/luxcrux",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/luxcrux/luxcrux",
-      "timestamp": "2025-11-30T20:40:43.414Z"
+      "timestamp": "2025-11-30T21:24:16.519Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/luxcrux",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/luxcrux/luxcrux",
-      "timestamp": "2025-11-30T20:40:43.418Z"
+      "timestamp": "2025-11-30T21:24:16.522Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/luxcrux",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/luxcrux/luxcrux",
-      "timestamp": "2025-11-30T20:40:43.421Z"
+      "timestamp": "2025-11-30T21:24:16.525Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/magnum-opus",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/magnum-opus/magnum-opus",
-      "timestamp": "2025-11-30T20:40:43.433Z"
+      "timestamp": "2025-11-30T21:24:16.535Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/magnum-opus",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/magnum-opus/magnum-opus",
-      "timestamp": "2025-11-30T20:40:43.444Z"
+      "timestamp": "2025-11-30T21:24:16.541Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/magnum-opus",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/magnum-opus/magnum-opus",
-      "timestamp": "2025-11-30T20:40:43.451Z"
+      "timestamp": "2025-11-30T21:24:16.546Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/mobile-optimization",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/mobile-optimization/mobile-optimization",
-      "timestamp": "2025-11-30T20:40:43.463Z"
+      "timestamp": "2025-11-30T21:24:16.556Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/mobile-optimization",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/mobile-optimization/mobile-optimization",
-      "timestamp": "2025-11-30T20:40:43.468Z"
+      "timestamp": "2025-11-30T21:24:16.560Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mobile-optimization",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/mobile-optimization/mobile-optimization",
-      "timestamp": "2025-11-30T20:40:43.472Z"
+      "timestamp": "2025-11-30T21:24:16.563Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/moonchild-scanner",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/moonchild-scanner/moonchild-scanner",
-      "timestamp": "2025-11-30T20:40:43.483Z"
+      "timestamp": "2025-11-30T21:24:16.574Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/moonchild-scanner",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/moonchild-scanner/moonchild-scanner",
-      "timestamp": "2025-11-30T20:40:43.487Z"
+      "timestamp": "2025-11-30T21:24:16.578Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/moonchild-scanner",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/moonchild-scanner/moonchild-scanner",
-      "timestamp": "2025-11-30T20:40:43.491Z"
+      "timestamp": "2025-11-30T21:24:16.582Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/museum-sources",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/museum-sources/museum-sources",
-      "timestamp": "2025-11-30T20:40:43.499Z"
+      "timestamp": "2025-11-30T21:24:16.591Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/museum-sources",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/museum-sources/museum-sources",
-      "timestamp": "2025-11-30T20:40:43.503Z"
+      "timestamp": "2025-11-30T21:24:16.597Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/museum-sources",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/museum-sources/museum-sources",
-      "timestamp": "2025-11-30T20:40:43.507Z"
+      "timestamp": "2025-11-30T21:24:16.600Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/music-engine-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/music-engine-core/music-engine-core",
-      "timestamp": "2025-11-30T20:40:43.516Z"
+      "timestamp": "2025-11-30T21:24:16.610Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/music-engine-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/music-engine-core/music-engine-core",
-      "timestamp": "2025-11-30T20:40:43.521Z"
+      "timestamp": "2025-11-30T21:24:16.615Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/music-engine-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/music-engine-core/music-engine-core",
-      "timestamp": "2025-11-30T20:40:43.527Z"
+      "timestamp": "2025-11-30T21:24:16.621Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/mystery-house-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/mystery-house-core/mystery-house-core",
-      "timestamp": "2025-11-30T20:40:43.535Z"
+      "timestamp": "2025-11-30T21:24:16.633Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/mystery-house-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/mystery-house-core/mystery-house-core",
-      "timestamp": "2025-11-30T20:40:43.540Z"
+      "timestamp": "2025-11-30T21:24:16.638Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystery-house-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/mystery-house-core/mystery-house-core",
-      "timestamp": "2025-11-30T20:40:43.544Z"
+      "timestamp": "2025-11-30T21:24:16.642Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/mystical-data-unified",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/mystical-data-unified/mystical-data-unified",
-      "timestamp": "2025-11-30T20:40:43.551Z"
+      "timestamp": "2025-11-30T21:24:16.652Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/mystical-data-unified",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/mystical-data-unified/mystical-data-unified",
-      "timestamp": "2025-11-30T20:40:43.556Z"
+      "timestamp": "2025-11-30T21:24:16.656Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystical-data-unified",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/mystical-data-unified/mystical-data-unified",
-      "timestamp": "2025-11-30T20:40:43.559Z"
+      "timestamp": "2025-11-30T21:24:16.660Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/mystical-sound-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/mystical-sound-engine/mystical-sound-engine",
-      "timestamp": "2025-11-30T20:40:43.568Z"
+      "timestamp": "2025-11-30T21:24:16.669Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/mystical-sound-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/mystical-sound-engine/mystical-sound-engine",
-      "timestamp": "2025-11-30T20:40:43.572Z"
+      "timestamp": "2025-11-30T21:24:16.675Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystical-sound-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/mystical-sound-engine/mystical-sound-engine",
-      "timestamp": "2025-11-30T20:40:43.576Z"
+      "timestamp": "2025-11-30T21:24:16.679Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/node-tree-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/node-tree-engine/node-tree-engine",
-      "timestamp": "2025-11-30T20:40:43.587Z"
+      "timestamp": "2025-11-30T21:24:16.689Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/node-tree-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/node-tree-engine/node-tree-engine",
-      "timestamp": "2025-11-30T20:40:43.592Z"
+      "timestamp": "2025-11-30T21:24:16.695Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/node-tree-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/node-tree-engine/node-tree-engine",
-      "timestamp": "2025-11-30T20:40:43.598Z"
+      "timestamp": "2025-11-30T21:24:16.700Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/physics-cannon-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/physics-cannon-core/physics-cannon-core",
-      "timestamp": "2025-11-30T20:40:43.606Z"
+      "timestamp": "2025-11-30T21:24:16.710Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/physics-cannon-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/physics-cannon-core/physics-cannon-core",
-      "timestamp": "2025-11-30T20:40:43.610Z"
+      "timestamp": "2025-11-30T21:24:16.714Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/physics-cannon-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/physics-cannon-core/physics-cannon-core",
-      "timestamp": "2025-11-30T20:40:43.613Z"
+      "timestamp": "2025-11-30T21:24:16.717Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/portal-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/portal-system/portal-system",
-      "timestamp": "2025-11-30T20:40:43.620Z"
+      "timestamp": "2025-11-30T21:24:16.725Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/portal-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/portal-system/portal-system",
-      "timestamp": "2025-11-30T20:40:43.623Z"
+      "timestamp": "2025-11-30T21:24:16.729Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/portal-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/portal-system/portal-system",
-      "timestamp": "2025-11-30T20:40:43.626Z"
+      "timestamp": "2025-11-30T21:24:16.733Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-collaboration-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-collaboration-engine/professional-collaboration-engine",
-      "timestamp": "2025-11-30T20:40:43.639Z"
+      "timestamp": "2025-11-30T21:24:16.750Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/professional-collaboration-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-collaboration-engine/professional-collaboration-engine",
-      "timestamp": "2025-11-30T20:40:43.648Z"
+      "timestamp": "2025-11-30T21:24:16.759Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-collaboration-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-collaboration-engine/professional-collaboration-engine",
-      "timestamp": "2025-11-30T20:40:43.658Z"
+      "timestamp": "2025-11-30T21:24:16.772Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-export-integration",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-export-integration/professional-export-integration",
-      "timestamp": "2025-11-30T20:40:43.669Z"
+      "timestamp": "2025-11-30T21:24:16.790Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/professional-export-integration",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-export-integration/professional-export-integration",
-      "timestamp": "2025-11-30T20:40:43.676Z"
+      "timestamp": "2025-11-30T21:24:16.800Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-export-integration",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-export-integration/professional-export-integration",
-      "timestamp": "2025-11-30T20:40:43.682Z"
+      "timestamp": "2025-11-30T21:24:16.809Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-quality-control",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-quality-control/professional-quality-control",
-      "timestamp": "2025-11-30T20:40:43.693Z"
+      "timestamp": "2025-11-30T21:24:16.822Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/professional-quality-control",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-quality-control/professional-quality-control",
-      "timestamp": "2025-11-30T20:40:43.702Z"
+      "timestamp": "2025-11-30T21:24:16.833Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-quality-control",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-quality-control/professional-quality-control",
-      "timestamp": "2025-11-30T20:40:43.711Z"
+      "timestamp": "2025-11-30T21:24:16.844Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-suite",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-suite/professional-suite",
-      "timestamp": "2025-11-30T20:40:43.719Z"
+      "timestamp": "2025-11-30T21:24:16.852Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/professional-suite",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-suite/professional-suite",
-      "timestamp": "2025-11-30T20:40:43.722Z"
+      "timestamp": "2025-11-30T21:24:16.856Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-suite",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-suite/professional-suite",
-      "timestamp": "2025-11-30T20:40:43.726Z"
+      "timestamp": "2025-11-30T21:24:16.861Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-typography-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-typography-engine/professional-typography-engine",
-      "timestamp": "2025-11-30T20:40:43.732Z"
+      "timestamp": "2025-11-30T21:24:16.873Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/professional-typography-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-typography-engine/professional-typography-engine",
-      "timestamp": "2025-11-30T20:40:43.735Z"
+      "timestamp": "2025-11-30T21:24:16.879Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-typography-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-typography-engine/professional-typography-engine",
-      "timestamp": "2025-11-30T20:40:43.741Z"
+      "timestamp": "2025-11-30T21:24:16.889Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-vector-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-vector-engine/professional-vector-engine",
-      "timestamp": "2025-11-30T20:40:43.749Z"
+      "timestamp": "2025-11-30T21:24:16.897Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/professional-vector-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-vector-engine/professional-vector-engine",
-      "timestamp": "2025-11-30T20:40:43.753Z"
+      "timestamp": "2025-11-30T21:24:16.900Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-vector-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/professional-vector-engine/professional-vector-engine",
-      "timestamp": "2025-11-30T20:40:43.757Z"
+      "timestamp": "2025-11-30T21:24:16.904Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/registry-learning-validation",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/registry-learning-validation/registry-learning-validation",
-      "timestamp": "2025-11-30T20:40:43.764Z"
+      "timestamp": "2025-11-30T21:24:16.912Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/registry-learning-validation",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/registry-learning-validation/registry-learning-validation",
-      "timestamp": "2025-11-30T20:40:43.766Z"
+      "timestamp": "2025-11-30T21:24:16.914Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/registry-learning-validation",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/registry-learning-validation/registry-learning-validation",
-      "timestamp": "2025-11-30T20:40:43.768Z"
+      "timestamp": "2025-11-30T21:24:16.916Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/sacred-geometry-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/sacred-geometry-core/sacred-geometry-core",
-      "timestamp": "2025-11-30T20:40:43.773Z"
+      "timestamp": "2025-11-30T21:24:16.923Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/sacred-geometry-core/sacred-geometry-core",
-      "timestamp": "2025-11-30T20:40:43.777Z"
+      "timestamp": "2025-11-30T21:24:16.926Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/sacred-geometry-core/sacred-geometry-core",
-      "timestamp": "2025-11-30T20:40:43.780Z"
+      "timestamp": "2025-11-30T21:24:16.929Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/sacred-geometry-math",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sacred-geometry-math/sacred-geometry-math",
-      "timestamp": "2025-11-30T20:40:43.785Z"
+      "timestamp": "2025-11-30T21:24:16.938Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-math",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sacred-geometry-math/sacred-geometry-math",
-      "timestamp": "2025-11-30T20:40:43.789Z"
+      "timestamp": "2025-11-30T21:24:16.941Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-math",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sacred-geometry-math/sacred-geometry-math",
-      "timestamp": "2025-11-30T20:40:43.794Z"
+      "timestamp": "2025-11-30T21:24:16.943Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/sacred-geometry-simd",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sacred-geometry-simd/sacred-geometry-simd",
-      "timestamp": "2025-11-30T20:40:43.801Z"
+      "timestamp": "2025-11-30T21:24:16.952Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-simd",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sacred-geometry-simd/sacred-geometry-simd",
-      "timestamp": "2025-11-30T20:40:43.805Z"
+      "timestamp": "2025-11-30T21:24:16.957Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-simd",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sacred-geometry-simd/sacred-geometry-simd",
-      "timestamp": "2025-11-30T20:40:43.810Z"
+      "timestamp": "2025-11-30T21:24:16.961Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/sacred-mathematics-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sacred-mathematics-core/sacred-mathematics-core",
-      "timestamp": "2025-11-30T20:40:43.819Z"
+      "timestamp": "2025-11-30T21:24:16.972Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/sacred-mathematics-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sacred-mathematics-core/sacred-mathematics-core",
-      "timestamp": "2025-11-30T20:40:43.824Z"
+      "timestamp": "2025-11-30T21:24:16.977Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-mathematics-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sacred-mathematics-core/sacred-mathematics-core",
-      "timestamp": "2025-11-30T20:40:43.830Z"
+      "timestamp": "2025-11-30T21:24:16.983Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/scanner",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/scanner/scanner",
-      "timestamp": "2025-11-30T20:40:43.836Z"
+      "timestamp": "2025-11-30T21:24:16.992Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/scanner",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/scanner/scanner",
-      "timestamp": "2025-11-30T20:40:43.839Z"
+      "timestamp": "2025-11-30T21:24:16.995Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/scanner",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/scanner/scanner",
-      "timestamp": "2025-11-30T20:40:43.843Z"
+      "timestamp": "2025-11-30T21:24:16.998Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/science-engine-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/science-engine-core/science-engine-core",
-      "timestamp": "2025-11-30T20:40:43.851Z"
+      "timestamp": "2025-11-30T21:24:17.005Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/science-engine-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/science-engine-core/science-engine-core",
-      "timestamp": "2025-11-30T20:40:43.858Z"
+      "timestamp": "2025-11-30T21:24:17.008Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/science-engine-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/science-engine-core/science-engine-core",
-      "timestamp": "2025-11-30T20:40:43.865Z"
+      "timestamp": "2025-11-30T21:24:17.012Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/shared",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/shared/shared",
-      "timestamp": "2025-11-30T20:40:43.944Z"
+      "timestamp": "2025-11-30T21:24:17.061Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/shared",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/shared/shared",
-      "timestamp": "2025-11-30T20:40:43.990Z"
+      "timestamp": "2025-11-30T21:24:17.132Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/shared",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/shared/shared",
-      "timestamp": "2025-11-30T20:40:44.037Z"
+      "timestamp": "2025-11-30T21:24:17.191Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/simple-learning-validation",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/simple-learning-validation/simple-learning-validation",
-      "timestamp": "2025-11-30T20:40:44.052Z"
+      "timestamp": "2025-11-30T21:24:17.208Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/simple-learning-validation",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/simple-learning-validation/simple-learning-validation",
-      "timestamp": "2025-11-30T20:40:44.055Z"
+      "timestamp": "2025-11-30T21:24:17.211Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/simple-learning-validation",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/simple-learning-validation/simple-learning-validation",
-      "timestamp": "2025-11-30T20:40:44.058Z"
+      "timestamp": "2025-11-30T21:24:17.213Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/smooth-movement-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/smooth-movement-system/smooth-movement-system",
-      "timestamp": "2025-11-30T20:40:44.065Z"
+      "timestamp": "2025-11-30T21:24:17.221Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/smooth-movement-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/smooth-movement-system/smooth-movement-system",
-      "timestamp": "2025-11-30T20:40:44.068Z"
+      "timestamp": "2025-11-30T21:24:17.225Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/smooth-movement-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/smooth-movement-system/smooth-movement-system",
-      "timestamp": "2025-11-30T20:40:44.071Z"
+      "timestamp": "2025-11-30T21:24:17.230Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/sonic-physics-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sonic-physics-engine/sonic-physics-engine",
-      "timestamp": "2025-11-30T20:40:44.077Z"
+      "timestamp": "2025-11-30T21:24:17.239Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/sonic-physics-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sonic-physics-engine/sonic-physics-engine",
-      "timestamp": "2025-11-30T20:40:44.081Z"
+      "timestamp": "2025-11-30T21:24:17.245Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sonic-physics-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sonic-physics-engine/sonic-physics-engine",
-      "timestamp": "2025-11-30T20:40:44.084Z"
+      "timestamp": "2025-11-30T21:24:17.250Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/soul",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/soul/soul",
-      "timestamp": "2025-11-30T20:40:44.090Z"
+      "timestamp": "2025-11-30T21:24:17.259Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/soul",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/soul/soul",
-      "timestamp": "2025-11-30T20:40:44.094Z"
+      "timestamp": "2025-11-30T21:24:17.263Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/soul",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/soul/soul",
-      "timestamp": "2025-11-30T20:40:44.099Z"
+      "timestamp": "2025-11-30T21:24:17.266Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/sound-mathematics-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sound-mathematics-core/sound-mathematics-core",
-      "timestamp": "2025-11-30T20:40:44.107Z"
+      "timestamp": "2025-11-30T21:24:17.275Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/sound-mathematics-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sound-mathematics-core/sound-mathematics-core",
-      "timestamp": "2025-11-30T20:40:44.110Z"
+      "timestamp": "2025-11-30T21:24:17.281Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sound-mathematics-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/sound-mathematics-core/sound-mathematics-core",
-      "timestamp": "2025-11-30T20:40:44.113Z"
+      "timestamp": "2025-11-30T21:24:17.284Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/spells",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/spells/spells",
-      "timestamp": "2025-11-30T20:40:44.120Z"
+      "timestamp": "2025-11-30T21:24:17.293Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/spells",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/spells/spells",
-      "timestamp": "2025-11-30T20:40:44.123Z"
+      "timestamp": "2025-11-30T21:24:17.298Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/spells",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/spells/spells",
-      "timestamp": "2025-11-30T20:40:44.127Z"
+      "timestamp": "2025-11-30T21:24:17.302Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/spiral-learning-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/spiral-learning-engine/spiral-learning-engine",
-      "timestamp": "2025-11-30T20:40:44.131Z"
+      "timestamp": "2025-11-30T21:24:17.309Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/spiral-learning-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/spiral-learning-engine/spiral-learning-engine",
-      "timestamp": "2025-11-30T20:40:44.133Z"
+      "timestamp": "2025-11-30T21:24:17.312Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/spiral-learning-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/spiral-learning-engine/spiral-learning-engine",
-      "timestamp": "2025-11-30T20:40:44.136Z"
+      "timestamp": "2025-11-30T21:24:17.315Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/stone-grimoire/stone-grimoire",
-      "timestamp": "2025-11-30T20:40:44.163Z"
+      "timestamp": "2025-11-30T21:24:17.353Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/stone-grimoire/stone-grimoire",
-      "timestamp": "2025-11-30T20:40:44.179Z"
+      "timestamp": "2025-11-30T21:24:17.378Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/stone-grimoire/stone-grimoire",
-      "timestamp": "2025-11-30T20:40:44.199Z"
+      "timestamp": "2025-11-30T21:24:17.400Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/stone-grimoire-core/stone-grimoire-core",
-      "timestamp": "2025-11-30T20:40:44.211Z"
+      "timestamp": "2025-11-30T21:24:17.409Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/stone-grimoire-core/stone-grimoire-core",
-      "timestamp": "2025-11-30T20:40:44.214Z"
+      "timestamp": "2025-11-30T21:24:17.412Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/stone-grimoire-core/stone-grimoire-core",
-      "timestamp": "2025-11-30T20:40:44.217Z"
+      "timestamp": "2025-11-30T21:24:17.415Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire-library-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/stone-grimoire-library-engine/stone-grimoire-library-engine",
-      "timestamp": "2025-11-30T20:40:44.223Z"
+      "timestamp": "2025-11-30T21:24:17.422Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire-library-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/stone-grimoire-library-engine/stone-grimoire-library-engine",
-      "timestamp": "2025-11-30T20:40:44.231Z"
+      "timestamp": "2025-11-30T21:24:17.425Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire-library-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/stone-grimoire-library-engine/stone-grimoire-library-engine",
-      "timestamp": "2025-11-30T20:40:44.238Z"
+      "timestamp": "2025-11-30T21:24:17.429Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/story-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/story-engine/story-engine",
-      "timestamp": "2025-11-30T20:40:44.260Z"
+      "timestamp": "2025-11-30T21:24:17.438Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/story-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/story-engine/story-engine",
-      "timestamp": "2025-11-30T20:40:44.264Z"
+      "timestamp": "2025-11-30T21:24:17.442Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/story-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/story-engine/story-engine",
-      "timestamp": "2025-11-30T20:40:44.267Z"
+      "timestamp": "2025-11-30T21:24:17.445Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/synth",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/synth/synth",
-      "timestamp": "2025-11-30T20:40:44.276Z"
+      "timestamp": "2025-11-30T21:24:17.453Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/synth",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/synth/synth",
-      "timestamp": "2025-11-30T20:40:44.282Z"
+      "timestamp": "2025-11-30T21:24:17.458Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/synth/synth",
-      "timestamp": "2025-11-30T20:40:44.288Z"
+      "timestamp": "2025-11-30T21:24:17.465Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/synth-design-math-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/synth-design-math-core/synth-design-math-core",
-      "timestamp": "2025-11-30T20:40:44.296Z"
+      "timestamp": "2025-11-30T21:24:17.484Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/synth-design-math-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/synth-design-math-core/synth-design-math-core",
-      "timestamp": "2025-11-30T20:40:44.299Z"
+      "timestamp": "2025-11-30T21:24:17.489Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth-design-math-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/synth-design-math-core/synth-design-math-core",
-      "timestamp": "2025-11-30T20:40:44.302Z"
+      "timestamp": "2025-11-30T21:24:17.491Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/synth-labs",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/synth-labs/synth-labs",
-      "timestamp": "2025-11-30T20:40:44.311Z"
+      "timestamp": "2025-11-30T21:24:17.498Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/synth-labs",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/synth-labs/synth-labs",
-      "timestamp": "2025-11-30T20:40:44.314Z"
+      "timestamp": "2025-11-30T21:24:17.503Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth-labs",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/synth-labs/synth-labs",
-      "timestamp": "2025-11-30T20:40:44.318Z"
+      "timestamp": "2025-11-30T21:24:17.506Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/synth-spells",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/synth-spells/synth-spells",
-      "timestamp": "2025-11-30T20:40:44.324Z"
+      "timestamp": "2025-11-30T21:24:17.512Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/synth-spells",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/synth-spells/synth-spells",
-      "timestamp": "2025-11-30T20:40:44.327Z"
+      "timestamp": "2025-11-30T21:24:17.517Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth-spells",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/synth-spells/synth-spells",
-      "timestamp": "2025-11-30T20:40:44.330Z"
+      "timestamp": "2025-11-30T21:24:17.522Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/synthesis-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/synthesis-engine/synthesis-engine",
-      "timestamp": "2025-11-30T20:40:44.336Z"
+      "timestamp": "2025-11-30T21:24:17.530Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/synthesis-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/synthesis-engine/synthesis-engine",
-      "timestamp": "2025-11-30T20:40:44.338Z"
+      "timestamp": "2025-11-30T21:24:17.535Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synthesis-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/synthesis-engine/synthesis-engine",
-      "timestamp": "2025-11-30T20:40:44.342Z"
+      "timestamp": "2025-11-30T21:24:17.551Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/tarot-art",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/tarot-art/tarot-art",
-      "timestamp": "2025-11-30T20:40:44.350Z"
+      "timestamp": "2025-11-30T21:24:17.559Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/tarot-art",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/tarot-art/tarot-art",
-      "timestamp": "2025-11-30T20:40:44.353Z"
+      "timestamp": "2025-11-30T21:24:17.563Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tarot-art",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/tarot-art/tarot-art",
-      "timestamp": "2025-11-30T20:40:44.358Z"
+      "timestamp": "2025-11-30T21:24:17.570Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/tarot-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/tarot-engine/tarot-engine",
-      "timestamp": "2025-11-30T20:40:44.364Z"
+      "timestamp": "2025-11-30T21:24:17.579Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/tarot-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/tarot-engine/tarot-engine",
-      "timestamp": "2025-11-30T20:40:44.367Z"
+      "timestamp": "2025-11-30T21:24:17.582Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tarot-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/tarot-engine/tarot-engine",
-      "timestamp": "2025-11-30T20:40:44.369Z"
+      "timestamp": "2025-11-30T21:24:17.585Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/tarot-reader",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/tarot-reader/tarot-reader",
-      "timestamp": "2025-11-30T20:40:44.375Z"
+      "timestamp": "2025-11-30T21:24:17.594Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/tarot-reader",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/tarot-reader/tarot-reader",
-      "timestamp": "2025-11-30T20:40:44.378Z"
+      "timestamp": "2025-11-30T21:24:17.597Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tarot-reader",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/tarot-reader/tarot-reader",
-      "timestamp": "2025-11-30T20:40:44.382Z"
+      "timestamp": "2025-11-30T21:24:17.603Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/tesseract-bridge/tesseract-bridge",
-      "timestamp": "2025-11-30T20:40:44.411Z"
+      "timestamp": "2025-11-30T21:24:17.643Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/tesseract-bridge/tesseract-bridge",
-      "timestamp": "2025-11-30T20:40:44.431Z"
+      "timestamp": "2025-11-30T21:24:17.664Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/tesseract-bridge/tesseract-bridge",
-      "timestamp": "2025-11-30T20:40:44.466Z"
+      "timestamp": "2025-11-30T21:24:17.687Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/tesseract-bridge-core/tesseract-bridge-core",
-      "timestamp": "2025-11-30T20:40:44.479Z"
+      "timestamp": "2025-11-30T21:24:17.706Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/tesseract-bridge-core/tesseract-bridge-core",
-      "timestamp": "2025-11-30T20:40:44.486Z"
+      "timestamp": "2025-11-30T21:24:17.715Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/tesseract-bridge-core/tesseract-bridge-core",
-      "timestamp": "2025-11-30T20:40:44.496Z"
+      "timestamp": "2025-11-30T21:24:17.725Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-hub",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/tesseract-bridge-hub/tesseract-bridge-hub",
-      "timestamp": "2025-11-30T20:40:44.505Z"
+      "timestamp": "2025-11-30T21:24:17.736Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge-hub",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/tesseract-bridge-hub/tesseract-bridge-hub",
-      "timestamp": "2025-11-30T20:40:44.510Z"
+      "timestamp": "2025-11-30T21:24:17.742Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge-hub",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/tesseract-bridge-hub/tesseract-bridge-hub",
-      "timestamp": "2025-11-30T20:40:44.515Z"
+      "timestamp": "2025-11-30T21:24:17.748Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/three-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/three-engine/three-engine",
-      "timestamp": "2025-11-30T20:40:44.521Z"
+      "timestamp": "2025-11-30T21:24:17.759Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/three-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/three-engine/three-engine",
-      "timestamp": "2025-11-30T20:40:44.524Z"
+      "timestamp": "2025-11-30T21:24:17.762Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/three-engine",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/three-engine/three-engine",
-      "timestamp": "2025-11-30T20:40:44.528Z"
+      "timestamp": "2025-11-30T21:24:17.767Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/trauma-safe-ui",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/trauma-safe-ui/trauma-safe-ui",
-      "timestamp": "2025-11-30T20:40:44.533Z"
+      "timestamp": "2025-11-30T21:24:17.777Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/trauma-safe-ui",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/trauma-safe-ui/trauma-safe-ui",
-      "timestamp": "2025-11-30T20:40:44.536Z"
+      "timestamp": "2025-11-30T21:24:17.780Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/trauma-safe-ui",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/trauma-safe-ui/trauma-safe-ui",
-      "timestamp": "2025-11-30T20:40:44.539Z"
+      "timestamp": "2025-11-30T21:24:17.784Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/trinity-architecture",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/trinity-architecture/trinity-architecture",
-      "timestamp": "2025-11-30T20:40:44.555Z"
+      "timestamp": "2025-11-30T21:24:17.807Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/trinity-architecture",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/trinity-architecture/trinity-architecture",
-      "timestamp": "2025-11-30T20:40:44.569Z"
+      "timestamp": "2025-11-30T21:24:17.822Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/trinity-architecture",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/trinity-architecture/trinity-architecture",
-      "timestamp": "2025-11-30T20:40:44.579Z"
+      "timestamp": "2025-11-30T21:24:17.843Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/trinity-v1-1-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/trinity-v1-1-core/trinity-v1-1-core",
-      "timestamp": "2025-11-30T20:40:44.609Z"
+      "timestamp": "2025-11-30T21:24:17.889Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/trinity-v1-1-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/trinity-v1-1-core/trinity-v1-1-core",
-      "timestamp": "2025-11-30T20:40:44.634Z"
+      "timestamp": "2025-11-30T21:24:17.920Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/trinity-v1-1-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/trinity-v1-1-core/trinity-v1-1-core",
-      "timestamp": "2025-11-30T20:40:44.664Z"
+      "timestamp": "2025-11-30T21:24:17.947Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/types",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/types/types",
-      "timestamp": "2025-11-30T20:40:44.708Z"
+      "timestamp": "2025-11-30T21:24:18.017Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/types",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/types/types",
-      "timestamp": "2025-11-30T20:40:44.756Z"
+      "timestamp": "2025-11-30T21:24:18.061Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/types",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/types/types",
-      "timestamp": "2025-11-30T20:40:44.797Z"
+      "timestamp": "2025-11-30T21:24:18.118Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/ui",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/ui/ui",
-      "timestamp": "2025-11-30T20:40:44.814Z"
+      "timestamp": "2025-11-30T21:24:18.134Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/ui",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/ui/ui",
-      "timestamp": "2025-11-30T20:40:44.817Z"
+      "timestamp": "2025-11-30T21:24:18.141Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/ui",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/ui/ui",
-      "timestamp": "2025-11-30T20:40:44.820Z"
+      "timestamp": "2025-11-30T21:24:18.146Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/unified-codex-core/unified-codex-core",
-      "timestamp": "2025-11-30T20:40:44.830Z"
+      "timestamp": "2025-11-30T21:24:18.158Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/unified-codex-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/unified-codex-core/unified-codex-core",
-      "timestamp": "2025-11-30T20:40:44.833Z"
+      "timestamp": "2025-11-30T21:24:18.164Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/unified-codex-core",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/unified-codex-core/unified-codex-core",
-      "timestamp": "2025-11-30T20:40:44.837Z"
+      "timestamp": "2025-11-30T21:24:18.173Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-extractor",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/unified-codex-extractor/unified-codex-extractor",
-      "timestamp": "2025-11-30T20:40:44.880Z"
+      "timestamp": "2025-11-30T21:24:18.226Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/unified-codex-extractor",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/unified-codex-extractor/unified-codex-extractor",
-      "timestamp": "2025-11-30T20:40:44.917Z"
+      "timestamp": "2025-11-30T21:24:18.274Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/unified-codex-extractor",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral/unified-codex-extractor/unified-codex-extractor",
-      "timestamp": "2025-11-30T20:40:44.955Z"
+      "timestamp": "2025-11-30T21:24:18.315Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-creative-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/unified-creative-system/unified-creative-system",
-      "timestamp": "2025-11-30T20:40:44.967Z"
+      "timestamp": "2025-11-30T21:24:18.328Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/unified-creative-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/unified-creative-system/unified-creative-system",
-      "timestamp": "2025-11-30T20:40:44.970Z"
+      "timestamp": "2025-11-30T21:24:18.333Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/unified-creative-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/unified-creative-system/unified-creative-system",
-      "timestamp": "2025-11-30T20:40:44.973Z"
+      "timestamp": "2025-11-30T21:24:18.338Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/universal-accessibility",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral-trinity/accessibility/universal-accessibility",
-      "timestamp": "2025-11-30T20:40:44.981Z"
+      "timestamp": "2025-11-30T21:24:18.347Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/universal-accessibility",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral-trinity/accessibility/universal-accessibility",
-      "timestamp": "2025-11-30T20:40:44.985Z"
+      "timestamp": "2025-11-30T21:24:18.355Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/universal-accessibility",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/@cathedral-trinity/accessibility/universal-accessibility",
-      "timestamp": "2025-11-30T20:40:44.991Z"
+      "timestamp": "2025-11-30T21:24:18.360Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-master-deployment/packages/visionary-design-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/visionary-design-system/visionary-design-system",
-      "timestamp": "2025-11-30T20:40:44.999Z"
+      "timestamp": "2025-11-30T21:24:18.370Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-real/packages/visionary-design-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/visionary-design-system/visionary-design-system",
-      "timestamp": "2025-11-30T20:40:45.002Z"
+      "timestamp": "2025-11-30T21:24:18.373Z"
     },
     {
       "original": "/Users/rebeccalemke/cathedral-fixed-clean/packages/visionary-design-system",
       "backup": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups/visionary-design-system/visionary-design-system",
-      "timestamp": "2025-11-30T20:40:45.007Z"
+      "timestamp": "2025-11-30T21:24:18.376Z"
     }
   ]
 }

@@ -33,6 +33,11 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:43.629Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:16.737Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Portal System",
+    "symbol": "⊙",
+    "label": "⊙ Portal System (@cathedral/portal-system)"
+  }
 }

@@ -24,5 +24,10 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "alchemical": {
+    "name": "Codex 144",
+    "symbol": "⊙",
+    "label": "⊙ Codex 144 (@cathedral/codex-144)"
   }
 }

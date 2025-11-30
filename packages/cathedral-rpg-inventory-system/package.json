@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:41.874Z",
+  "consolidatedAt": "2025-11-30T21:24:15.093Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Cathedral Rpg Inventory System",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Rpg Inventory System (cathedral-rpg-inventory-system)"
+  }
 }

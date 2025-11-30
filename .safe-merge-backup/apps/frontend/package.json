@@ -44,5 +44,10 @@
     "@testing-library/user-event": "^13.5.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:01.917Z"
+  "consolidatedAt": "2025-11-30T16:48:01.917Z",
+  "alchemical": {
+    "name": "Cathedral Spell Frontend",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Spell Frontend (cathedral-spell-frontend)"
+  }
 }

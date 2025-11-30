@@ -40,6 +40,11 @@
   },
   "license": "CC0-1.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:54.328Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:21:02.842Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Types",
+    "symbol": "⊙",
+    "label": "⊙ Types (@cathedral/types)"
+  }
 }

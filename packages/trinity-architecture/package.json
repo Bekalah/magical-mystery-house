@@ -40,6 +40,11 @@
     "pnpm": ">=8.0.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:44.583Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:17.848Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Trinity Architecture",
+    "symbol": "⊙",
+    "label": "⊙ Trinity Architecture (@cathedral/trinity-architecture)"
+  }
 }

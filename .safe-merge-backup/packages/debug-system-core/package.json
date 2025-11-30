@@ -44,5 +44,10 @@
   ],
   "packageManager": "pnpm@8.0.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:00:22.168Z"
+  "consolidatedAt": "2025-11-30T20:00:22.168Z",
+  "alchemical": {
+    "name": "Debug System",
+    "symbol": "⊙",
+    "label": "⊙ Debug System (@cathedral/debug-system-core)"
+  }
 }

@@ -58,5 +58,10 @@
   "devDependencies": {},
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:20.293Z",
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Logo System",
+    "symbol": "⊙",
+    "label": "⊙ Logo System (@cathedral/logo-system)"
+  }
 }

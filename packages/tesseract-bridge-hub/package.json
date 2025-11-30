@@ -49,6 +49,11 @@
     "free"
   ],
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:44.518Z",
-  "packageManager": "pnpm@8.0.0"
+  "consolidatedAt": "2025-11-30T21:24:17.752Z",
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Tesseract Bridge Hub",
+    "symbol": "⊙",
+    "label": "⊙ Tesseract Bridge Hub (@cathedral/tesseract-bridge-hub)"
+  }
 }

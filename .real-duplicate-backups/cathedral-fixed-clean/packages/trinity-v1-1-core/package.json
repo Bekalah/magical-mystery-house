@@ -7,5 +7,10 @@
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc"
+  },
+  "alchemical": {
+    "name": "Trinity V1 1",
+    "symbol": "⊙",
+    "label": "⊙ Trinity V1 1 (trinity-v1-1-core)"
   }
 }

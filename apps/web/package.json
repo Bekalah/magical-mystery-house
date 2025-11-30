@@ -41,5 +41,10 @@
     "node": "*",
     "pnpm": "*"
   },
-  "license": "CC0-1.0"
+  "license": "CC0-1.0",
+  "alchemical": {
+    "name": "Web",
+    "symbol": "⊙",
+    "label": "⊙ Web (@cathedral/web)"
+  }
 }

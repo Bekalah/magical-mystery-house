@@ -11,5 +11,10 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:01.540Z"
+  "consolidatedAt": "2025-11-30T16:48:01.540Z",
+  "alchemical": {
+    "name": "Cathedral Immersive Creative Studio",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Immersive Creative Studio (cathedral-immersive-creative-studio)"
+  }
 }

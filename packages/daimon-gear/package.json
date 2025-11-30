@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:40:42.500Z",
+  "consolidatedAt": "2025-11-30T21:24:15.680Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Daimon Gear",
+    "symbol": "⊙",
+    "label": "⊙ Daimon Gear (daimon-gear)"
+  }
 }

@@ -11,9 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T20:33:53.233Z",
+  "consolidatedAt": "2025-11-30T21:21:00.135Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@8.0.0",
+  "alchemical": {
+    "name": "Professional Export Integration",
+    "symbol": "⊙",
+    "label": "⊙ Professional Export Integration (professional-export-integration)"
+  }
 }
