@@ -1,125 +1,103 @@
 {
-  "timestamp": 1764531476233,
-  "cathedral": [
-    "Bekalah/cathedral-master",
-    "Bekalah/cathedral",
-    "Bekalah/cathedral-integration-workspace",
-    "Bekalah/cathedral-minimal",
-    "Bekalah/cathedral-research",
-    "Bekalah/cathedral-vercel",
-    "Bekalah/cathedral-connection-map",
-    "Bekalah/BUILDING-CATHEDRALS"
-  ],
-  "circuits": [
-    "Bekalah/circuitum99",
-    "Bekalah/circuitum99-minimal",
-    "Bekalah/codex-14499",
-    "Bekalah/tesseract-bridge"
-  ],
-  "magnumOpus": [
-    "Bekalah/stone-grimoire",
-    "Bekalah/liber-arcanae",
-    "Bekalah/liber-arcanae-game",
-    "Bekalah/magical-mystery-house",
-    "Bekalah/cosmogenesis-learning-engine",
-    "Bekalah/master-catalog-browser"
-  ],
-  "connections": [
+  "timestamp": "2025-11-30T23:30:56.393Z",
+  "archived": [
     {
-      "local": "cathedral-master-deployment",
+      "remote": "Bekalah/cathedral-minimal",
+      "remoteName": "cathedral_minimal",
+      "type": "cathedral",
+      "reason": "Old/degraded pattern detected",
+      "archivedAt": "2025-11-30T23:30:56.398Z"
+    },
+    {
+      "remote": "Bekalah/cathedral-research",
+      "remoteName": "cathedral_research",
+      "type": "cathedral",
+      "reason": "Old/degraded pattern detected",
+      "archivedAt": "2025-11-30T23:30:56.398Z"
+    },
+    {
+      "remote": "Bekalah/circuitum99-minimal",
+      "remoteName": "circuitum99_minimal",
+      "type": "circuit",
+      "reason": "Old/degraded pattern detected",
+      "archivedAt": "2025-11-30T23:30:56.398Z"
+    }
+  ],
+  "modern": [
+    {
       "remote": "Bekalah/cathedral-master",
       "remoteName": "cathedral_master",
       "type": "cathedral"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/cathedral",
       "remoteName": "cathedral",
       "type": "cathedral"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/cathedral-integration-workspace",
       "remoteName": "cathedral_integration_workspace",
       "type": "cathedral"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/cathedral-vercel",
       "remoteName": "cathedral_vercel",
       "type": "cathedral"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/cathedral-connection-map",
       "remoteName": "cathedral_connection_map",
       "type": "cathedral"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/BUILDING-CATHEDRALS",
       "remoteName": "BUILDING_CATHEDRALS",
       "type": "cathedral"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/circuitum99",
       "remoteName": "circuitum99",
       "type": "circuit"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/codex-14499",
       "remoteName": "codex_14499",
       "type": "circuit"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/tesseract-bridge",
       "remoteName": "tesseract_bridge",
       "type": "circuit"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/stone-grimoire",
       "remoteName": "stone_grimoire",
       "type": "magnum-opus"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/liber-arcanae",
       "remoteName": "liber_arcanae",
       "type": "magnum-opus"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/liber-arcanae-game",
       "remoteName": "liber_arcanae_game",
       "type": "magnum-opus"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/magical-mystery-house",
       "remoteName": "magical_mystery_house",
       "type": "magnum-opus"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/cosmogenesis-learning-engine",
       "remoteName": "cosmogenesis_learning_engine",
       "type": "magnum-opus"
     },
     {
-      "local": "cathedral-master-deployment",
       "remote": "Bekalah/master-catalog-browser",
       "remoteName": "master_catalog_browser",
       "type": "magnum-opus"
     }
-  ],
-  "summary": {
-    "totalCathedral": 8,
-    "totalCircuits": 4,
-    "totalMagnumOpus": 6,
-    "totalConnections": 18
-  }
+  ]
 }
