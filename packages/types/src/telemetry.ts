@@ -11,6 +11,23 @@ export const telemetrySettings = ["unset", "enabled", "disabled"] as const
 
 export const telemetrySettingsSchema = z.enum(telemetrySettings)
 
+/**
+ * ⚗️ TelemetrySetting - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type TelemetrySetting = z.infer<typeof telemetrySettingsSchema>
 
 /**
@@ -87,6 +104,23 @@ export const staticAppPropertiesSchema = z.object({
 	hostname: z.string().optional(),
 })
 
+/**
+ * ⚗️ StaticAppProperties - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type StaticAppProperties = z.infer<typeof staticAppPropertiesSchema>
 
 export const dynamicAppPropertiesSchema = z.object({
@@ -94,12 +128,46 @@ export const dynamicAppPropertiesSchema = z.object({
 	mode: z.string(),
 })
 
+/**
+ * ⚗️ DynamicAppProperties - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type DynamicAppProperties = z.infer<typeof dynamicAppPropertiesSchema>
 
 export const cloudAppPropertiesSchema = z.object({
 	cloudIsAuthenticated: z.boolean().optional(),
 })
 
+/**
+ * ⚗️ CloudAppProperties - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type CloudAppProperties = z.infer<typeof cloudAppPropertiesSchema>
 
 export const appPropertiesSchema = z.object({
@@ -108,6 +176,23 @@ export const appPropertiesSchema = z.object({
 	...cloudAppPropertiesSchema.shape,
 })
 
+/**
+ * ⚗️ AppProperties - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type AppProperties = z.infer<typeof appPropertiesSchema>
 
 export const taskPropertiesSchema = z.object({
@@ -127,6 +212,23 @@ export const taskPropertiesSchema = z.object({
 		.optional(),
 })
 
+/**
+ * ⚗️ TaskProperties - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type TaskProperties = z.infer<typeof taskPropertiesSchema>
 
 export const gitPropertiesSchema = z.object({
@@ -135,6 +237,23 @@ export const gitPropertiesSchema = z.object({
 	defaultBranch: z.string().optional(),
 })
 
+/**
+ * ⚗️ GitProperties - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type GitProperties = z.infer<typeof gitPropertiesSchema>
 
 export const telemetryPropertiesSchema = z.object({
@@ -143,12 +262,46 @@ export const telemetryPropertiesSchema = z.object({
 	...gitPropertiesSchema.shape,
 })
 
+/**
+ * ⚗️ TelemetryProperties - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type TelemetryProperties = z.infer<typeof telemetryPropertiesSchema>
 
 /**
  * TelemetryEvent
  */
 
+/**
+ * ⚗️ TelemetryEvent - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type TelemetryEvent = {
 	event: TelemetryEventName
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -233,12 +386,46 @@ export const CathedralTelemetryEventSchema = z.discriminatedUnion("type", [
 	}),
 ])
 
+/**
+ * ⚗️ CathedralTelemetryEvent - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type CathedralTelemetryEvent = z.infer<typeof CathedralTelemetryEventSchema>
 
 /**
  * TelemetryEventSubscription
  */
 
+/**
+ * ⚗️ TelemetryEventSubscription - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type TelemetryEventSubscription =
 	| { type: "include"; events: TelemetryEventName[] }
 	| { type: "exclude"; events: TelemetryEventName[] }
@@ -247,6 +434,23 @@ export type TelemetryEventSubscription =
  * TelemetryPropertiesProvider
  */
 
+/**
+ * ⚗️ TelemetryPropertiesProvider - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface TelemetryPropertiesProvider {
 	getTelemetryProperties(): Promise<TelemetryProperties>
 }
@@ -255,6 +459,23 @@ export interface TelemetryPropertiesProvider {
  * TelemetryClient
  */
 
+/**
+ * ⚗️ TelemetryClient - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface TelemetryClient {
 	subscription?: TelemetryEventSubscription
 

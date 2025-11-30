@@ -14,6 +14,23 @@ import { staticAppPropertiesSchema, gitPropertiesSchema } from "./telemetry.js"
  * JWTPayload
  */
 
+/**
+ * ⚗️ JWTPayload - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface JWTPayload {
 	iss?: string // Issuer (should be 'rcc')
 	sub?: string // Subject - CloudJob ID for job tokens (t:'cj'), User ID for auth tokens (t:'auth')
@@ -32,6 +49,23 @@ export interface JWTPayload {
  * CloudUserInfo
  */
 
+/**
+ * ⚗️ CloudUserInfo - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CloudUserInfo {
 	id?: string
 	name?: string
@@ -48,6 +82,23 @@ export interface CloudUserInfo {
  * CloudOrganization
  */
 
+/**
+ * ⚗️ CloudOrganization - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CloudOrganization {
 	id: string
 	name: string
@@ -62,6 +113,23 @@ export interface CloudOrganization {
  * CloudOrganizationMembership
  */
 
+/**
+ * ⚗️ CloudOrganizationMembership - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CloudOrganizationMembership {
 	id: string
 	organization: CloudOrganization
@@ -85,6 +153,23 @@ export const organizationAllowListSchema = z.object({
 	),
 })
 
+/**
+ * ⚗️ OrganizationAllowList - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type OrganizationAllowList = z.infer<typeof organizationAllowListSchema>
 
 /**
@@ -118,6 +203,23 @@ export const organizationDefaultSettingsSchema = globalSettingsSchema
 		}),
 	)
 
+/**
+ * ⚗️ OrganizationDefaultSettings - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type OrganizationDefaultSettings = z.infer<typeof organizationDefaultSettingsSchema>
 
 /**
@@ -131,6 +233,23 @@ export const organizationCloudSettingsSchema = z.object({
 	allowMembersViewAllTasks: z.boolean().optional(),
 })
 
+/**
+ * ⚗️ OrganizationCloudSettings - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type OrganizationCloudSettings = z.infer<typeof organizationCloudSettingsSchema>
 
 /**
@@ -141,6 +260,23 @@ export const organizationFeaturesSchema = z.object({
 	roomoteControlEnabled: z.boolean().optional(),
 })
 
+/**
+ * ⚗️ OrganizationFeatures - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type OrganizationFeatures = z.infer<typeof organizationFeaturesSchema>
 
 /**
@@ -159,6 +295,23 @@ export const organizationSettingsSchema = z.object({
 	providerProfiles: z.record(z.string(), providerSettingsWithIdSchema).optional(),
 })
 
+/**
+ * ⚗️ OrganizationSettings - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type OrganizationSettings = z.infer<typeof organizationSettingsSchema>
 
 /**
@@ -169,6 +322,23 @@ export const userFeaturesSchema = z.object({
 	roomoteControlEnabled: z.boolean().optional(),
 })
 
+/**
+ * ⚗️ UserFeatures - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type UserFeatures = z.infer<typeof userFeaturesSchema>
 
 export const userSettingsConfigSchema = z.object({
@@ -176,6 +346,23 @@ export const userSettingsConfigSchema = z.object({
 	taskSyncEnabled: z.boolean().optional(),
 })
 
+/**
+ * ⚗️ UserSettingsConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type UserSettingsConfig = z.infer<typeof userSettingsConfigSchema>
 
 export const userSettingsDataSchema = z.object({
@@ -184,6 +371,23 @@ export const userSettingsDataSchema = z.object({
 	version: z.number(),
 })
 
+/**
+ * ⚗️ UserSettingsData - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type UserSettingsData = z.infer<typeof userSettingsDataSchema>
 
 /**
@@ -211,6 +415,23 @@ export const ORGANIZATION_DEFAULT: OrganizationSettings = {
  * ShareVisibility
  */
 
+/**
+ * ⚗️ ShareVisibility - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ShareVisibility = "organization" | "public"
 
 /**
@@ -225,14 +446,65 @@ export const shareResponseSchema = z.object({
 	manageUrl: z.string().optional(),
 })
 
+/**
+ * ⚗️ ShareResponse - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ShareResponse = z.infer<typeof shareResponseSchema>
 
 /**
  * AuthService
  */
 
+/**
+ * ⚗️ AuthState - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type AuthState = "initializing" | "logged-out" | "active-session" | "attempting-session" | "inactive-session"
 
+/**
+ * ⚗️ AuthService - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface AuthService extends EventEmitter<AuthServiceEvents> {
 	// Lifecycle
 	initialize(): Promise<void>
@@ -263,6 +535,23 @@ export interface AuthService extends EventEmitter<AuthServiceEvents> {
  * AuthServiceEvents
  */
 
+/**
+ * ⚗️ AuthServiceEvents - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface AuthServiceEvents {
 	"auth-state-changed": [
 		data: {
@@ -279,6 +568,23 @@ export interface AuthServiceEvents {
 
 /**
  * Interface for settings services that provide organization settings
+ */
+/**
+ * ⚗️ SettingsService - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export interface SettingsService {
 	/**
@@ -336,6 +642,23 @@ export interface SettingsService {
  * SettingsServiceEvents
  */
 
+/**
+ * ⚗️ SettingsServiceEvents - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SettingsServiceEvents {
 	"settings-updated": [data: Record<string, never>]
 }
@@ -344,6 +667,23 @@ export interface SettingsServiceEvents {
  * CloudServiceEvents
  */
 
+/**
+ * ⚗️ CloudServiceEvents - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type CloudServiceEvents = AuthServiceEvents & SettingsServiceEvents
 
 /**
@@ -362,6 +702,23 @@ export enum ConnectionState {
  * RetryConfig
  */
 
+/**
+ * ⚗️ RetryConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface RetryConfig {
 	maxInitialAttempts: number
 	initialDelay: number
@@ -391,6 +748,23 @@ const extensionTaskSchema = z.object({
 	...taskMetadataSchema.shape,
 })
 
+/**
+ * ⚗️ ExtensionTask - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ExtensionTask = z.infer<typeof extensionTaskSchema>
 
 /**
@@ -414,6 +788,23 @@ export const extensionInstanceSchema = z.object({
 	isCloudAgent: z.boolean().optional(),
 })
 
+/**
+ * ⚗️ ExtensionInstance - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ExtensionInstance = z.infer<typeof extensionInstanceSchema>
 
 /**
@@ -558,6 +949,23 @@ export const extensionBridgeEventSchema = z.discriminatedUnion("type", [
 	}),
 ])
 
+/**
+ * ⚗️ ExtensionBridgeEvent - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ExtensionBridgeEvent = z.infer<typeof extensionBridgeEventSchema>
 
 /**
@@ -596,6 +1004,23 @@ export const extensionBridgeCommandSchema = z.discriminatedUnion("type", [
 	}),
 ])
 
+/**
+ * ⚗️ ExtensionBridgeCommand - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ExtensionBridgeCommand = z.infer<typeof extensionBridgeCommandSchema>
 
 /**
@@ -626,6 +1051,23 @@ export const taskBridgeEventSchema = z.discriminatedUnion("type", [
 	}),
 ])
 
+/**
+ * ⚗️ TaskBridgeEvent - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type TaskBridgeEvent = z.infer<typeof taskBridgeEventSchema>
 
 /**
@@ -670,6 +1112,23 @@ export const taskBridgeCommandSchema = z.discriminatedUnion("type", [
 	}),
 ])
 
+/**
+ * ⚗️ TaskBridgeCommand - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type TaskBridgeCommand = z.infer<typeof taskBridgeCommandSchema>
 
 /**
@@ -710,6 +1169,23 @@ export enum TaskSocketEvents {
  * `emit()` Response Types
  */
 
+/**
+ * ⚗️ JoinResponse - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type JoinResponse = {
 	success: boolean
 	error?: string
@@ -717,6 +1193,23 @@ export type JoinResponse = {
 	timestamp?: string
 }
 
+/**
+ * ⚗️ LeaveResponse - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type LeaveResponse = {
 	success: boolean
 	taskId?: string
@@ -743,4 +1236,21 @@ export const usageStatsSchema = z.object({
 	period: z.number(), // Period in days (e.g., 30)
 })
 
+/**
+ * ⚗️ UsageStats - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type UsageStats = z.infer<typeof usageStatsSchema>

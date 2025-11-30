@@ -366,6 +366,23 @@ export const ALL_99_GATES: Gate[] = [
 /**
  * Generate all 99 gates with fractal sound art mechanics
  */
+/**
+ * ⚗️ GenerateAll99Gates - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function generateAll99Gates(): Gate[] {
   const gates: Gate[] = [];
   
@@ -428,6 +445,23 @@ export function generateAll99Gates(): Gate[] {
 
 /**
  * Create a gate with fractal sound art mechanics
+ */
+/**
+ * ⚗️ CreateGate - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 function createGate(
   number: number,
@@ -546,17 +580,68 @@ function createGate(
 }
 
 // Helper functions
+/**
+ * ⚗️ GetGeometryForLayer - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function getGeometryForLayer(layer: number, pattern: string): string {
   const geometries = ['Circle', 'Vesica Piscis', 'Triangle', 'Square', 'Pentagon', 'Hexagon', 'Heptagon', 'Octagon'];
   return geometries[layer % geometries.length];
 }
 
+/**
+ * ⚗️ GetColorForFrequency - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function getColorForFrequency(freq: number): string {
   // Map frequency to color (simplified)
   const hue = (freq % 360);
   return `hsl(${hue}, 70%, 50%)`;
 }
 
+/**
+ * ⚗️ GetMeaningForLayer - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function getMeaningForLayer(layer: number, realm: GateRealm): string {
   const meanings: Record<GateRealm, string[]> = {
     foundation: ['Foundation', 'Grounding', 'Stability', 'Structure', 'Manifestation', 'Integration', 'Completion'],
@@ -572,6 +657,23 @@ function getMeaningForLayer(layer: number, realm: GateRealm): string {
   return meanings[realm][layer % meanings[realm].length];
 }
 
+/**
+ * ⚗️ GetMovementPattern - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function getMovementPattern(realm: GateRealm): string {
   const patterns: Record<GateRealm, string> = {
     foundation: 'Spiral downward, then upward',
@@ -587,6 +689,23 @@ function getMovementPattern(realm: GateRealm): string {
   return patterns[realm];
 }
 
+/**
+ * ⚗️ GenerateFibonacciFrequencies - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function generateFibonacciFrequencies(base: number, count: number): number[] {
   const fib = [1, 1];
   for (let i = 2; i < count; i++) {
@@ -595,11 +714,45 @@ function generateFibonacciFrequencies(base: number, count: number): number[] {
   return fib.map(n => base * n);
 }
 
+/**
+ * ⚗️ GetSolfeggioForGate - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function getSolfeggioForGate(gate: number): number {
   const solfeggio = [174, 285, 396, 417, 528, 639, 741, 852, 963];
   return solfeggio[(gate - 1) % solfeggio.length];
 }
 
+/**
+ * ⚗️ GetCodexNodesForGate - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function getCodexNodesForGate(gate: number): number[] {
   // Map gate to Codex nodes
   const primary = ((gate - 1) % 144) + 1;
@@ -607,21 +760,89 @@ function getCodexNodesForGate(gate: number): number[] {
   return [primary, harmonic];
 }
 
+/**
+ * ⚗️ GetElementForGate - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function getElementForGate(gate: number): string {
   const elements = ['Earth', 'Water', 'Air', 'Fire', 'Spirit'];
   return elements[(gate - 1) % elements.length];
 }
 
+/**
+ * ⚗️ GetPlanetForGate - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function getPlanetForGate(gate: number): string {
   const planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'];
   return planets[(gate - 1) % planets.length];
 }
 
+/**
+ * ⚗️ GetZodiacForGate - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function getZodiacForGate(gate: number): string {
   const zodiac = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'];
   return zodiac[(gate - 1) % zodiac.length];
 }
 
+/**
+ * ⚗️ GetChakraForGate - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function getChakraForGate(gate: number): string {
   const chakras = ['Root', 'Sacral', 'Solar Plexus', 'Heart', 'Throat', 'Third Eye', 'Crown'];
   return chakras[(gate - 1) % chakras.length];

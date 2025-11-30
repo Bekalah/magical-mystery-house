@@ -14,6 +14,23 @@
  * - Integration with Codex 144:99, Soyga, I Ching, 72 Shem Angels/Demons
  * - Never flat - always flowing, trauma-informed design
  */
+/**
+ * ⚗️ PlayableCharacter - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PlayableCharacter {
     id: string;
     number: number;
@@ -29,12 +46,46 @@ export interface PlayableCharacter {
     art: CharacterArt;
     research: CharacterResearch;
 }
+/**
+ * ⚗️ CharacterPersonality - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CharacterPersonality {
     traits: string[];
     voice: string;
     approach: string;
     philosophy: string;
 }
+/**
+ * ⚗️ CharacterAbility - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CharacterAbility {
     id: string;
     name: string;
@@ -42,6 +93,23 @@ export interface CharacterAbility {
     type: 'active' | 'passive' | 'ultimate';
     cooldown?: number;
 }
+/**
+ * ⚗️ Teaching - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Teaching {
     id: string;
     title: string;
@@ -50,6 +118,23 @@ export interface Teaching {
     description: string;
     exercises: string[];
 }
+/**
+ * ⚗️ CharacterCorrespondences - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CharacterCorrespondences {
     planet: string;
     zodiac: string;
@@ -65,18 +150,69 @@ export interface CharacterCorrespondences {
     chapel?: string;
     room?: string;
 }
+/**
+ * ⚗️ CharacterConnections - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CharacterConnections {
     allies: string[];
     students: string[];
     teachers: string[];
     systems: string[];
 }
+/**
+ * ⚗️ CharacterArt - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CharacterArt {
     style: string;
     techniques: string[];
     masters: string[];
     examples: string[];
 }
+/**
+ * ⚗️ CharacterResearch - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CharacterResearch {
     sources: string[];
     topics: string[];

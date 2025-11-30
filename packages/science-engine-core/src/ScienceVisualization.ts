@@ -10,12 +10,46 @@
 import type { DataPoint, Visualization } from './ScienceEngine';
 import { SACRED_MATH } from '../../sacred-mathematics-core/src/index';
 
+/**
+ * ⚗️ ChartData - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ChartData {
   labels: string[];
   datasets: Dataset[];
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ Dataset - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Dataset {
   label: string;
   data: number[];
@@ -23,6 +57,23 @@ export interface Dataset {
   consciousnessLevel: number;
 }
 
+/**
+ * ⚗️ InteractiveVisualization - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface InteractiveVisualization {
   type: 'interactive-chart' | '3d-scatter' | 'network-graph' | 'sacred-geometry-plot';
   data: any;
@@ -30,6 +81,23 @@ export interface InteractiveVisualization {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ Interaction - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Interaction {
   type: 'zoom' | 'pan' | 'filter' | 'select' | 'animate';
   enabled: boolean;
@@ -38,6 +106,23 @@ export interface Interaction {
 
 /**
  * Science Visualization Tools
+ */
+/**
+ * ⚗️ ScienceVisualizationTools - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class ScienceVisualizationTools {
   private readonly GOLDEN_RATIO = SACRED_MATH.PHI;

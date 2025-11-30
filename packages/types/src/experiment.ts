@@ -16,6 +16,23 @@ export const experimentIds = [
 
 export const experimentIdsSchema = z.enum(experimentIds)
 
+/**
+ * ⚗️ ExperimentId - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ExperimentId = z.infer<typeof experimentIdsSchema>
 
 /**
@@ -30,6 +47,40 @@ export const experimentsSchema = z.object({
 	runSlashCommand: z.boolean().optional(),
 })
 
+/**
+ * ⚗️ Experiments - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type Experiments = z.infer<typeof experimentsSchema>
 
+/**
+ * ⚗️ _AssertExperiments - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 type _AssertExperiments = AssertEqual<Equals<ExperimentId, Keys<Experiments>>>

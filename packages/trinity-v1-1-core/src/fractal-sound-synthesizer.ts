@@ -14,6 +14,23 @@
 
 import SacredGeometryEngine from './sacred-geometry-engine';
 
+/**
+ * ⚗️ FractalSoundWave - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FractalSoundWave {
   frequency: number; // Hz
   amplitude: number; // 0-1
@@ -22,6 +39,23 @@ export interface FractalSoundWave {
   envelope: Envelope;
 }
 
+/**
+ * ⚗️ Envelope - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Envelope {
   attack: number; // seconds
   decay: number; // seconds
@@ -29,6 +63,23 @@ export interface Envelope {
   release: number; // seconds
 }
 
+/**
+ * ⚗️ FractalSoundPattern - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FractalSoundPattern {
   gate_id: number;
   base_frequency: number;
@@ -38,6 +89,23 @@ export interface FractalSoundPattern {
 }
 
 export // Trauma-aware: gentle, supportive, ESC exits, pause anytime
+/**
+ * ⚗️ FractalSoundSynthesizer - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 class FractalSoundSynthesizer {
   // A4 = 432 Hz (sacred tuning)
   public static readonly BASE_FREQUENCY = 432;

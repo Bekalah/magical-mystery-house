@@ -5,6 +5,23 @@
  * based on the 22 Major Arcana integration
  */
 
+/**
+ * ⚗️ ConsciousnessLevel - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ConsciousnessLevel {
   id: number;
   name: string;
@@ -18,6 +35,23 @@ export interface ConsciousnessLevel {
   traumaSafeLevel: number; // 1-5 scale
 }
 
+/**
+ * ⚗️ ConsciousnessFusion - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ConsciousnessFusion {
   level1: number;
   level2: number;
@@ -32,6 +66,23 @@ export interface ConsciousnessFusion {
   };
 }
 
+/**
+ * ⚗️ SacredGeometry - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SacredGeometry {
   goldenRatio: number;
   fibonacci: number[];
@@ -54,6 +105,23 @@ export interface SacredGeometry {
   };
 }
 
+/**
+ * ⚗️ TraumaSafeConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface TraumaSafeConfig {
   level: number; // 1-5
   escExitAvailable: boolean;
@@ -64,6 +132,23 @@ export interface TraumaSafeConfig {
   neurodivergentFriendly: boolean;
 }
 
+/**
+ * ⚗️ ConsciousnessState - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ConsciousnessState {
   currentLevel: number;
   activeFusions: ConsciousnessFusion[];

@@ -74,12 +74,46 @@ export const SACRED_MATH = {
 /**
  * Calculate golden ratio proportion
  */
+/**
+ * ⚗️ GoldenRatioProportion - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function goldenRatioProportion(value: number): number {
   return value * SACRED_MATH.PHI_INVERSE;
 }
 
 /**
  * Calculate golden rectangle dimensions
+ */
+/**
+ * ⚗️ GoldenRectangle - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function goldenRectangle(width: number): { width: number; height: number } {
   return {
@@ -91,6 +125,23 @@ export function goldenRectangle(width: number): { width: number; height: number 
 /**
  * Calculate Fibonacci-based sizing
  */
+/**
+ * ⚗️ FibonacciSize - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function fibonacciSize(index: number): number {
   if (index < 0 || index >= SACRED_MATH.FIBONACCI.length) {
     return 1;
@@ -100,6 +151,23 @@ export function fibonacciSize(index: number): number {
 
 /**
  * Calculate golden spiral point
+ */
+/**
+ * ⚗️ GoldenSpiralPoint - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function goldenSpiralPoint(angle: number, scale: number = 1): { x: number; y: number } {
   const r = scale * Math.pow(SACRED_MATH.PHI, angle / (Math.PI / 2));
@@ -112,6 +180,23 @@ export function goldenSpiralPoint(angle: number, scale: number = 1): { x: number
 /**
  * Calculate 144:99 ratio proportion
  */
+/**
+ * ⚗️ CathedralRatioProportion - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function cathedralRatioProportion(value: number): number {
   return value * SACRED_MATH.CATHEDRAL_RATIO;
 }
@@ -119,12 +204,46 @@ export function cathedralRatioProportion(value: number): number {
 /**
  * Calculate inverse 144:99 ratio proportion
  */
+/**
+ * ⚗️ CathedralInverseProportion - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function cathedralInverseProportion(value: number): number {
   return value * SACRED_MATH.CATHEDRAL_INVERSE;
 }
 
 /**
  * Map frequency to consciousness level (0-21)
+ */
+/**
+ * ⚗️ FrequencyToConsciousnessLevel - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function frequencyToConsciousnessLevel(frequency: number): number {
   const solfeggioFreqs = Object.values(SACRED_MATH.SOLFEGGIO);
@@ -138,6 +257,23 @@ export function frequencyToConsciousnessLevel(frequency: number): number {
 /**
  * Map consciousness level (0-21) to frequency
  */
+/**
+ * ⚗️ ConsciousnessLevelToFrequency - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function consciousnessLevelToFrequency(level: number): number {
   const solfeggioFreqs = Object.values(SACRED_MATH.SOLFEGGIO);
   const minFreq = Math.min(...solfeggioFreqs);
@@ -149,6 +285,23 @@ export function consciousnessLevelToFrequency(level: number): number {
 
 /**
  * Calculate node-to-gate mapping (Codex 144:99 to Circuitum99)
+ */
+/**
+ * ⚗️ NodeToGateMapping - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function nodeToGateMapping(nodeIndex: number): {
   primaryGate: number;
@@ -171,6 +324,23 @@ export function nodeToGateMapping(nodeIndex: number): {
 /**
  * Calculate gate-to-node mapping (Circuitum99 to Codex 144:99)
  */
+/**
+ * ⚗️ GateToNodeMapping - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function gateToNodeMapping(gateIndex: number): number[] {
   const nodes: number[] = [];
   // Find all nodes that map to this gate
@@ -187,6 +357,23 @@ export function gateToNodeMapping(gateIndex: number): number[] {
 
 /**
  * Validate sacred math compliance
+ */
+/**
+ * ⚗️ ValidateSacredMath - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function validateSacredMath(value: number, tolerance: number = 0.0001): {
   isValid: boolean;
@@ -210,12 +397,46 @@ export function validateSacredMath(value: number, tolerance: number = 0.0001): {
 /**
  * Calculate harmonic interval
  */
+/**
+ * ⚗️ HarmonicInterval - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function harmonicInterval(freq1: number, freq2: number): number {
   return freq2 / freq1;
 }
 
 /**
  * Calculate geometric mean
+ */
+/**
+ * ⚗️ GeometricMean - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function geometricMean(values: number[]): number {
   if (values.length === 0) return 1;
@@ -225,6 +446,23 @@ export function geometricMean(values: number[]): number {
 
 /**
  * Calculate sacred proportion
+ */
+/**
+ * ⚗️ SacredProportion - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function sacredProportion(value: number, ratio: 'phi' | 'cathedral' | 'sqrt2' | 'sqrt3' | 'sqrt5'): number {
   switch (ratio) {

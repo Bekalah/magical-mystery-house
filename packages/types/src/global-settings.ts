@@ -186,6 +186,23 @@ export const globalSettingsSchema = z.object({
 	lastModeImportPath: z.string().optional(),
 })
 
+/**
+ * ⚗️ GlobalSettings - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type GlobalSettings = z.infer<typeof globalSettingsSchema>
 
 export const GLOBAL_SETTINGS_KEYS = globalSettingsSchema.keyof().options
@@ -196,6 +213,23 @@ export const GLOBAL_SETTINGS_KEYS = globalSettingsSchema.keyof().options
 
 export const CathedralSettingsSchema = providerSettingsSchema.merge(globalSettingsSchema)
 
+/**
+ * ⚗️ CathedralSettings - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type CathedralSettings = GlobalSettings & ProviderSettings
 
 /**
@@ -248,10 +282,61 @@ export const GLOBAL_SECRET_KEYS = [
 ] as const
 
 // Type for the actual secret storage keys
+/**
+ * ⚗️ ProviderSecretKey - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 type ProviderSecretKey = (typeof SECRET_STATE_KEYS)[number]
+/**
+ * ⚗️ GlobalSecretKey - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 type GlobalSecretKey = (typeof GLOBAL_SECRET_KEYS)[number]
 
 // Type representing all secrets that can be stored
+/**
+ * ⚗️ SecretState - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type SecretState = Pick<ProviderSettings, Extract<ProviderSecretKey, keyof ProviderSettings>> & {
 	[K in GlobalSecretKey]?: string
 }
@@ -263,6 +348,23 @@ export const isSecretStateKey = (key: string): key is Keys<SecretState> =>
  * GlobalState
  */
 
+/**
+ * ⚗️ GlobalState - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type GlobalState = Omit<CathedralSettings, Keys<SecretState>>
 
 export const GLOBAL_STATE_KEYS = [...GLOBAL_SETTINGS_KEYS, ...PROVIDER_SETTINGS_KEYS].filter(

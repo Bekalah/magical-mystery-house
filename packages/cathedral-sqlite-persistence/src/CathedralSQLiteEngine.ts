@@ -90,11 +90,96 @@ export const CollaborationSessionSchema = z.object({
   max_users: z.number().default(10)
 });
 
+/**
+ * ⚗️ DesignElement - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type DesignElement = z.infer<typeof DesignElementSchema>;
+/**
+ * ⚗️ Workspace - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type Workspace = z.infer<typeof WorkspaceSchema>;
+/**
+ * ⚗️ Version - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type Version = z.infer<typeof VersionSchema>;
+/**
+ * ⚗️ CollaborationSession - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type CollaborationSession = z.infer<typeof CollaborationSessionSchema>;
 
+/**
+ * ⚗️ CathedralSQLiteEngine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class CathedralSQLiteEngine extends EventEmitter {
   private db: Database.Database;
   private autoSaveTimers: Map<string, NodeJS.Timeout> = new Map();
@@ -511,7 +596,10 @@ export class CathedralSQLiteEngine extends EventEmitter {
       
       // Validate data integrity
       if (!this.validateDataIntegrity(elements)) {
-        throw new Error('Data integrity validation failed');
+        throw new Error(`⚗️ The alchemical process encountered an unexpected transformation.
+
+The elements did not combine as anticipated, and the philosopher's stone
+remains elusive. The crucible awaits your guidance to continue the work.`);
       }
 
       // Record auto-save in history
@@ -650,7 +738,10 @@ export class CathedralSQLiteEngine extends EventEmitter {
       const ids = elements.map(e => e.id);
       const uniqueIds = new Set(ids);
       if (ids.length !== uniqueIds.size) {
-        console.error('Duplicate element IDs detected');
+        console.error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
         return false;
       }
 

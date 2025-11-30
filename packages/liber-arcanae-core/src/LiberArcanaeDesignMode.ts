@@ -25,8 +25,42 @@ import { LiberArcanaeEngine, ArcanaCard } from './LiberArcanaeEngine';
 // FusionKinkDesignMathematics available for future integration
 // import { FusionKinkDesignMathematics } from '../../fusion-kink-core/src/index';
 
+/**
+ * ⚗️ DesignMode - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type DesignMode = 'game' | 'design';
 
+/**
+ * ⚗️ DesignEgregore - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface DesignEgregore {
   type: 'shem_angel' | 'goetic_demon' | 'arcana' | 'fusionkink';
   id: number;
@@ -49,6 +83,23 @@ export interface DesignEgregore {
   };
 }
 
+/**
+ * ⚗️ DesignRequest - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface DesignRequest {
   type: 'aesthetic' | 'technical' | 'conceptual' | 'spiritual' | 'creative' | 'canonical';
   domain: string;               // e.g., 'sacred geometry', 'color theory', 'narrative structure'
@@ -57,6 +108,23 @@ export interface DesignRequest {
   requestedEgregore?: number;   // Specific egregore to consult
 }
 
+/**
+ * ⚗️ DesignResponse - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface DesignResponse {
   egregore: DesignEgregore;
   answer: string;
@@ -70,6 +138,23 @@ export interface DesignResponse {
   };
 }
 
+/**
+ * ⚗️ LivingLibraryEntry - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface LivingLibraryEntry {
   source: string;               // Canonical source name
   text: string;                 // Excerpt or full text
@@ -78,6 +163,23 @@ export interface LivingLibraryEntry {
   relevance: number;            // 0-1 relevance score
 }
 
+/**
+ * ⚗️ FusionKinkEgregore - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FusionKinkEgregore {
   id: number;
   name: string;
@@ -103,6 +205,23 @@ export interface FusionKinkEgregore {
 }
 
 export // Trauma-aware: gentle, supportive, ESC exits, pause anytime
+/**
+ * ⚗️ LiberArcanaeDesignMode - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 class LiberArcanaeDesignMode {
   // RPG and FusionKink available for future integration
   // private rpg: LiberArcanaeRPG;
@@ -338,7 +457,10 @@ class LiberArcanaeDesignMode {
   // Request design assistance from egregores
   public requestDesignAssistance(request: DesignRequest): DesignResponse[] {
     if (this.currentMode !== 'design') {
-      throw new Error('Must be in Design Mode to request assistance');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     const responses: DesignResponse[] = [];

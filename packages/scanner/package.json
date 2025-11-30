@@ -11,8 +11,9 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:24:17.000Z",
+  "consolidatedAt": "2025-11-30T23:04:24.508Z",
   "engines": {
+    "node": "*",
     "pnpm": ">=8.0.0"
   },
   "packageManager": "pnpm@8.0.0",
@@ -20,5 +21,8 @@
     "name": "Scanner",
     "symbol": "⊙",
     "label": "⊙ Scanner (scanner)"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

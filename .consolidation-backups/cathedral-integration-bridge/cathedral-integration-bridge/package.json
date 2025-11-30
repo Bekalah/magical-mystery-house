@@ -11,8 +11,9 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:20:55.348Z",
+  "consolidatedAt": "2025-11-30T23:00:59.298Z",
   "engines": {
+    "node": "*",
     "pnpm": ">=8.0.0"
   },
   "packageManager": "pnpm@8.0.0",
@@ -20,5 +21,8 @@
     "name": "Cathedral Integration Bridge",
     "symbol": "⊙",
     "label": "⊙ Cathedral Integration Bridge (cathedral-integration-bridge)"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

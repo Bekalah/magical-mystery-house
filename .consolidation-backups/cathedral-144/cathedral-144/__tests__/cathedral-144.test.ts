@@ -2,16 +2,6 @@
  * @license CC0-1.0 - Public Domain
  */
 
-/**
- * ⊙ Cathedral 144.Test
- * 
- * @alchemical Cathedral 144.Test
- * @element N/A
- * @symbol ⊙
- * 
- * @license CC0-1.0 - Public Domain
- */
-
 import { describe, it, expect } from 'vitest';
 
 describe('cathedral-144', () => {

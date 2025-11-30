@@ -14,6 +14,23 @@
  * @license CC0-1.0 - Public Domain
  */
 
+/**
+ * ⚗️ ProfessionalTheme - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ProfessionalTheme {
   // Core Identity
   name: string;
@@ -282,6 +299,23 @@ export const UNIFIED_PROFESSIONAL_THEME: ProfessionalTheme = {
 /**
  * Apply theme to component
  */
+/**
+ * ⚗️ ApplyProfessionalTheme - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function applyProfessionalTheme(component: string, variant?: string): Record<string, any> {
   const theme = UNIFIED_PROFESSIONAL_THEME;
   
@@ -326,6 +360,23 @@ export function applyProfessionalTheme(component: string, variant?: string): Rec
 
 /**
  * Get alchemical styling for element
+ */
+/**
+ * ⚗️ GetAlchemicalStyle - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function getAlchemicalStyle(element: 'fire' | 'water' | 'air' | 'earth'): Record<string, any> {
   const theme = UNIFIED_PROFESSIONAL_THEME;

@@ -11,6 +11,23 @@
 // import { Codex144Engine } from '../../codex-144-99-core/src/index';
 // SACRED_MATH available if needed via imports
 
+/**
+ * ⚗️ GameNode - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface GameNode {
   nodeIndex: number;
   gameMechanics: GameMechanic[];
@@ -23,6 +40,23 @@ export interface GameNode {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ GameMechanic - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface GameMechanic {
   name: string;
   type: 'exploration' | 'combat' | 'puzzle' | 'social' | 'creative' | 'narrative';
@@ -31,6 +65,23 @@ export interface GameMechanic {
   traumaAware: boolean;
 }
 
+/**
+ * ⚗️ RPGElement - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface RPGElement {
   name: string;
   type: 'character' | 'quest' | 'item' | 'location' | 'ability' | 'story';
@@ -38,15 +89,83 @@ export interface RPGElement {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ InteractionType - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type InteractionType = 'immersive-3d' | 'point-click' | 'text-based' | 'gesture' | 'voice' | 'multi-modal';
+/**
+ * ⚗️ PlayStyle - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type PlayStyle = 'open-world' | 'linear' | 'sandbox' | 'narrative-driven' | 'exploration-focused' | 'creative';
 
+/**
+ * ⚗️ RewardStructure - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface RewardStructure {
   type: 'intrinsic' | 'extrinsic' | 'flow-state' | 'consciousness-evolution';
   rewards: string[];
   traumaAware: boolean;
 }
 
+/**
+ * ⚗️ GameDesign - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface GameDesign {
   nodes: GameNode[];
   world: GameWorld;
@@ -58,6 +177,23 @@ export interface GameDesign {
   };
 }
 
+/**
+ * ⚗️ GameWorld - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface GameWorld {
   type: 'open-world' | 'procedural' | 'hand-crafted' | 'hybrid';
   size: number; // World size metric
@@ -65,6 +201,23 @@ export interface GameWorld {
   sacredGeometry: boolean;
 }
 
+/**
+ * ⚗️ NarrativeStructure - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface NarrativeStructure {
   type: 'non-linear' | 'branching' | 'emergent' | 'procedural';
   consciousnessBased: boolean;
@@ -74,6 +227,23 @@ export interface NarrativeStructure {
 
 /**
  * Game Design Engine
+ */
+/**
+ * ⚗️ GameDesignEngine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class GameDesignEngine {
   // private codex144: Codex144Engine; // Available if needed

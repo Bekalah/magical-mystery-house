@@ -10,6 +10,23 @@
 
 import { RealCreatorNode } from '../nodes/real-creator-node';
 
+/**
+ * ⚗️ ArchetypeCollision - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArchetypeCollision {
   id: string;
   primary_archetype: number;
@@ -26,6 +43,23 @@ export interface ArchetypeCollision {
   world_integration_impact: number;
 }
 
+/**
+ * ⚗️ CreativeOutput - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CreativeOutput {
   artistic_synthesis: string;
   narrative_development: string;
@@ -36,6 +70,23 @@ export interface CreativeOutput {
   collaboration_methods: string[];
 }
 
+/**
+ * ⚗️ CollisionPattern - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CollisionPattern {
   archetype_pair: [number, number];
   frequency_of_occurrence: number;
@@ -46,6 +97,23 @@ export interface CollisionPattern {
   accessibility_features: string[];
 }
 
+/**
+ * ⚗️ ArchetypeResonance - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArchetypeResonance {
   source_figure: string;
   target_figure: string;
@@ -56,6 +124,23 @@ export interface ArchetypeResonance {
   world_integration_potential: number;
 }
 
+/**
+ * ⚗️ SynthesisEvent - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SynthesisEvent {
   event_id: string;
   colliding_archetypes: number[];
@@ -69,6 +154,23 @@ export interface SynthesisEvent {
   trauma_safe_experience: boolean;
 }
 
+/**
+ * ⚗️ ArchetypeCollisions - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class ArchetypeCollisions {
   private collision_database: Map<string, ArchetypeCollision> = new Map();
   private pattern_library: CollisionPattern[] = [];

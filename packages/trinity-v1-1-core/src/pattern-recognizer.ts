@@ -11,6 +11,23 @@
  * @license CC0-1.0 - Public Domain
  */
 
+/**
+ * ⚗️ CreativePattern - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CreativePattern {
   id: string;
   name: string;
@@ -21,6 +38,23 @@ export interface CreativePattern {
   optimizationPotential: number; // 0-100
 }
 
+/**
+ * ⚗️ CreativeTendency - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CreativeTendency {
   type: 'temporal' | 'spatial' | 'thematic' | 'methodological';
   description: string;
@@ -28,6 +62,23 @@ export interface CreativeTendency {
   authenticImplementations: string[];
 }
 
+/**
+ * ⚗️ PatternInsight - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PatternInsight {
   pattern: CreativePattern;
   insight: string;
@@ -35,6 +86,23 @@ export interface PatternInsight {
   expectedImpact: 'low' | 'medium' | 'high';
 }
 
+/**
+ * ⚗️ PatternRecognizer - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class PatternRecognizer {
   // Recognize patterns from creative history (Organic story paths) (Open world story exploration) (Trauma-aware narrative design) (Living narrative that responds to choices) (Dynamic story transformation)
   public static recognizePatterns(

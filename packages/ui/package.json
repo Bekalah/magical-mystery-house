@@ -33,11 +33,14 @@
   },
   "license": "CC0-1.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:24:18.149Z",
+  "consolidatedAt": "2025-11-30T23:04:27.152Z",
   "packageManager": "pnpm@8.0.0",
   "alchemical": {
     "name": "Ui",
     "symbol": "⊙",
     "label": "⊙ Ui (@cathedral/ui)"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

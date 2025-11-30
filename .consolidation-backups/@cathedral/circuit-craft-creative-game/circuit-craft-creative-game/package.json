@@ -37,11 +37,12 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:20:55.822Z",
+  "consolidatedAt": "2025-11-30T23:01:00.538Z",
   "packageManager": "pnpm@8.0.0",
   "alchemical": {
     "name": "Circuit Craft Creative Game",
     "symbol": "⊙",
     "label": "⊙ Circuit Craft Creative Game (@cathedral/circuit-craft-creative-game)"
-  }
+  },
+  "types": "dist/index.d.ts"
 }

@@ -11,6 +11,23 @@
 // import type { MusicNode, RhythmPattern, TimbreProfile } from './MusicEngine';
 import { SACRED_MATH } from '../../sacred-mathematics-core/src/index';
 
+/**
+ * ⚗️ PerformanceSettings - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PerformanceSettings {
   sampleRate: number;
   bufferSize: number;
@@ -18,12 +35,46 @@ export interface PerformanceSettings {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ EffectChain - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface EffectChain {
   effects: Effect[];
   order: number[];
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ Effect - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Effect {
   type: 'reverb' | 'delay' | 'chorus' | 'distortion' | 'filter' | 'sacred-geometry';
   parameters: Record<string, number>;
@@ -32,6 +83,23 @@ export interface Effect {
 
 /**
  * Music Performance Tools
+ */
+/**
+ * ⚗️ MusicPerformanceTools - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class MusicPerformanceTools {
   private readonly GOLDEN_RATIO = SACRED_MATH.PHI;

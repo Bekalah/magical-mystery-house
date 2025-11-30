@@ -1,5 +1,43 @@
 # ⊙ Docs - docs
 
+
+# ⚗️ README
+
+**In the alchemical tradition, this grimoire contains the sacred knowledge**
+**and principles that guide the transformation of base materials into gold.**
+
+---
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Docs - docs
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Docs - docs
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Docs - docs
+
 **Alchemical Correspondence:**
 - Element: N/A
 - Planet: N/A

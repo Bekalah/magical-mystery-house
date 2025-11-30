@@ -11,6 +11,23 @@
 // import { Codex144Engine } from '../../codex-144-99-core/src/index';
 import { SACRED_MATH } from '../../sacred-mathematics-core/src/index';
 
+/**
+ * ⚗️ ScienceNode - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ScienceNode {
   nodeIndex: number;
   researchQuestion: string;
@@ -23,6 +40,23 @@ export interface ScienceNode {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ Methodology - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Methodology {
   type: 'experimental' | 'observational' | 'computational' | 'theoretical';
   steps: string[];
@@ -31,6 +65,23 @@ export interface Methodology {
   sampleSize?: number;
 }
 
+/**
+ * ⚗️ Variable - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Variable {
   name: string;
   type: 'independent' | 'dependent' | 'control';
@@ -38,18 +89,69 @@ export interface Variable {
   range?: [number, number];
 }
 
+/**
+ * ⚗️ DataPoint - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface DataPoint {
   timestamp: number;
   values: Record<string, any>;
   metadata?: Record<string, any>;
 }
 
+/**
+ * ⚗️ Visualization - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Visualization {
   type: 'graph' | 'chart' | '3d' | 'network' | 'geometric';
   data: Record<string, unknown> | Array<Record<string, unknown>> | number[] | string[];
   config: VisualizationConfig;
 }
 
+/**
+ * ⚗️ VisualizationConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface VisualizationConfig {
   width: number;
   height: number;
@@ -62,6 +164,23 @@ export interface VisualizationConfig {
   };
 }
 
+/**
+ * ⚗️ ScienceExperiment - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ScienceExperiment {
   nodes: ScienceNode[];
   researchArea: string;
@@ -77,6 +196,23 @@ export interface ScienceExperiment {
 
 /**
  * Science Engine - Creates scientific research from Codex144 nodes
+ */
+/**
+ * ⚗️ ScienceEngine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class ScienceEngine {
   // private codex144: Codex144Engine; // Available if needed
@@ -362,13 +498,22 @@ export class ScienceEngine {
   public createExperiment(nodeIndices: number[], researchArea: string): ScienceExperiment {
     // Input validation
     if (!Array.isArray(nodeIndices) || nodeIndices.length === 0) {
-      throw new Error('nodeIndices must be a non-empty array');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (nodeIndices.some(idx => typeof idx !== 'number' || idx < 0 || idx >= 144 || !Number.isInteger(idx))) {
-      throw new Error('All nodeIndices must be integers between 0 and 143');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (typeof researchArea !== 'string' || researchArea.trim().length === 0) {
-      throw new Error('researchArea must be a non-empty string');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     const scienceNodes = nodeIndices.map(index => this.createScienceNode(index));
     
@@ -401,7 +546,10 @@ export class ScienceEngine {
   public generateCSV(dataPoints: DataPoint[]): string {
     // Input validation
     if (!Array.isArray(dataPoints) || dataPoints.length === 0) {
-      throw new Error('dataPoints must be a non-empty array');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (dataPoints.length === 0) return '';
     

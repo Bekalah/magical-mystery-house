@@ -11,6 +11,23 @@ import { SACRED_MATH } from '../../sacred-mathematics-core/src/index';
 
 // Note: GOLDEN_RATIO, RATIO_144_99, and FIBONACCI are available via SACRED_MATH if needed
 
+/**
+ * ⚗️ QualityMetrics - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface QualityMetrics {
   resolution: number;
   colorDepth: number;
@@ -22,6 +39,23 @@ export interface QualityMetrics {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ OptimizationResult - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface OptimizationResult {
   improved: boolean;
   metrics: QualityMetrics;
@@ -29,6 +63,23 @@ export interface OptimizationResult {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ Certification - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Certification {
   level: 'museum-grade' | 'professional' | 'high' | 'standard' | 'uncertified';
   score: number; // 0-100
@@ -38,6 +89,23 @@ export interface Certification {
 
 /**
  * Art Quality Tools
+ */
+/**
+ * ⚗️ ArtQualityTools - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class ArtQualityTools {
   // Sacred ratios - using SACRED_MATH directly
@@ -61,13 +129,25 @@ export class ArtQualityTools {
   }): QualityMetrics {
     // Input validation
     if (!art || typeof art.width !== 'number' || art.width <= 0) {
-      throw new Error('Invalid art: width must be a positive number');
+      throw new Error(`⚗️ The formula you have provided does not align with the sacred mathematics.
+
+Like a misaligned constellation, the elements cannot find their harmony.
+
+Please consult the grimoire and ensure your invocation follows the 144:99 ratio.`);
     }
     if (typeof art.height !== 'number' || art.height <= 0) {
-      throw new Error('Invalid art: height must be a positive number');
+      throw new Error(`⚗️ The formula you have provided does not align with the sacred mathematics.
+
+Like a misaligned constellation, the elements cannot find their harmony.
+
+Please consult the grimoire and ensure your invocation follows the 144:99 ratio.`);
     }
     if (typeof art.consciousnessLevel !== 'number' || art.consciousnessLevel < 0 || art.consciousnessLevel > 21) {
-      throw new Error('Invalid art: consciousnessLevel must be between 0 and 21');
+      throw new Error(`⚗️ The formula you have provided does not align with the sacred mathematics.
+
+Like a misaligned constellation, the elements cannot find their harmony.
+
+Please consult the grimoire and ensure your invocation follows the 144:99 ratio.`);
     }
     // Resolution score (normalized to 0-1)
     const resolution = Math.min(1, art.width * art.height / (3840 * 2160));
@@ -124,16 +204,28 @@ export class ArtQualityTools {
   }): OptimizationResult {
     // Input validation
     if (!art || typeof art !== 'object') {
-      throw new Error('art must be an object');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (typeof art.width !== 'number' || art.width <= 0) {
-      throw new Error('art.width must be a positive number');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (typeof art.height !== 'number' || art.height <= 0) {
-      throw new Error('art.height must be a positive number');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (typeof art.consciousnessLevel !== 'number' || art.consciousnessLevel < 0 || art.consciousnessLevel > 21) {
-      throw new Error('art.consciousnessLevel must be a number between 0 and 21');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     const currentMetrics = this.calculateMetrics(art);
     const recommendations: string[] = [];
@@ -196,10 +288,16 @@ export class ArtQualityTools {
   public certify(metrics: QualityMetrics): Certification {
     // Input validation
     if (!metrics || typeof metrics !== 'object') {
-      throw new Error('metrics must be a QualityMetrics object');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (typeof metrics.overall !== 'number' || metrics.overall < 0 || metrics.overall > 1) {
-      throw new Error('metrics.overall must be a number between 0 and 1');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     const score = metrics.overall * 100;
     

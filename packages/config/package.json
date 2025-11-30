@@ -41,11 +41,14 @@
     "directory": "packages/config"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:24:15.506Z",
+  "consolidatedAt": "2025-11-30T23:04:20.780Z",
   "packageManager": "pnpm@8.0.0",
   "alchemical": {
     "name": "Config",
     "symbol": "⊙",
     "label": "⊙ Config (@cathedral/config)"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

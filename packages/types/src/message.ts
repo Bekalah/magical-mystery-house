@@ -42,6 +42,23 @@ export const cathedralAsks = [
 
 export const cathedralAskSchema = z.enum(cathedralAsks)
 
+/**
+ * ⚗️ CathedralAsk - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type cathedralAsk = z.infer<typeof cathedralAskSchema>
 
 // Needs classification:
@@ -62,8 +79,42 @@ export const idleAsks = [
 	"auto_approval_max_req_reached",
 ] as const satisfies readonly cathedralAsk[]
 
+/**
+ * ⚗️ IdleAsk - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type IdleAsk = (typeof idleAsks)[number]
 
+/**
+ * ⚗️ IsIdleAsk - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function isIdleAsk(ask: cathedralAsk): ask is IdleAsk {
 	return (idleAsks as readonly cathedralAsk[]).includes(ask)
 }
@@ -76,8 +127,42 @@ export function isIdleAsk(ask: cathedralAsk): ask is IdleAsk {
 
 export const resumableAsks = ["resume_task"] as const satisfies readonly cathedralAsk[]
 
+/**
+ * ⚗️ ResumableAsk - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ResumableAsk = (typeof resumableAsks)[number]
 
+/**
+ * ⚗️ IsResumableAsk - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function isResumableAsk(ask: cathedralAsk): ask is ResumableAsk {
 	return (resumableAsks as readonly cathedralAsk[]).includes(ask)
 }
@@ -96,8 +181,42 @@ export const interactiveAsks = [
 	"use_mcp_server",
 ] as const satisfies readonly cathedralAsk[]
 
+/**
+ * ⚗️ InteractiveAsk - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type InteractiveAsk = (typeof interactiveAsks)[number]
 
+/**
+ * ⚗️ IsInteractiveAsk - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function isInteractiveAsk(ask: cathedralAsk): ask is InteractiveAsk {
 	return (interactiveAsks as readonly cathedralAsk[]).includes(ask)
 }
@@ -170,6 +289,23 @@ export const cathedralSays = [
 
 export const cathedralSaySchema = z.enum(cathedralSays)
 
+/**
+ * ⚗️ CathedralSay - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type cathedralSay = z.infer<typeof cathedralSaySchema>
 
 /**
@@ -181,6 +317,23 @@ export const toolProgressStatusSchema = z.object({
 	text: z.string().optional(),
 })
 
+/**
+ * ⚗️ ToolProgressStatus - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ToolProgressStatus = z.infer<typeof toolProgressStatusSchema>
 
 /**
@@ -194,6 +347,23 @@ export const contextCondenseSchema = z.object({
 	summary: z.string(),
 })
 
+/**
+ * ⚗️ ContextCondense - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ContextCondense = z.infer<typeof contextCondenseSchema>
 
 /**
@@ -227,6 +397,23 @@ export const cathedralMessageSchema = z.object({
 		.optional(),
 })
 
+/**
+ * ⚗️ CathedralMessage - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type cathedralMessage = z.infer<typeof cathedralMessageSchema>
 
 /**
@@ -242,6 +429,23 @@ export const tokenUsageSchema = z.object({
 	contextTokens: z.number(),
 })
 
+/**
+ * ⚗️ TokenUsage - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type TokenUsage = z.infer<typeof tokenUsageSchema>
 
 /**
@@ -255,4 +459,21 @@ export const queuedMessageSchema = z.object({
 	images: z.array(z.string()).optional(),
 })
 
+/**
+ * ⚗️ QueuedMessage - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type QueuedMessage = z.infer<typeof queuedMessageSchema>

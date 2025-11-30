@@ -14,6 +14,23 @@
 import type { FlowStateMetrics } from './flow-state-detector';
 import type { CreativePattern } from './pattern-recognizer';
 
+/**
+ * ⚗️ LearningProfile - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface LearningProfile {
   learningStyle: 'visual' | 'auditory' | 'kinesthetic' | 'reading' | 'multimodal';
   pace: 'slow' | 'moderate' | 'fast';
@@ -22,6 +39,23 @@ export interface LearningProfile {
   adaptationSpeed: number; // 0-100
 }
 
+/**
+ * ⚗️ LearningRecommendation - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface LearningRecommendation {
   type: 'technique' | 'content' | 'timing' | 'environment';
   priority: 'high' | 'medium' | 'low';
@@ -31,6 +65,23 @@ export interface LearningRecommendation {
   implementationSteps: string[];
 }
 
+/**
+ * ⚗️ AdaptiveLearningState - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface AdaptiveLearningState {
   profile: LearningProfile;
   currentLevel: number; // 0-100
@@ -44,6 +95,23 @@ export interface AdaptiveLearningState {
   }>;
 }
 
+/**
+ * ⚗️ AdaptiveLearningEngine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class AdaptiveLearningEngine {
   private state: AdaptiveLearningState;
 

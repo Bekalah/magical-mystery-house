@@ -13,6 +13,23 @@
  * @license CC0 - Your Original Work
  */
 
+/**
+ * ⚗️ CodexNode - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CodexNode {
   id: number;
   name: string;
@@ -43,6 +60,23 @@ export interface CodexNode {
   };
 }
 
+/**
+ * ⚗️ ConsciousnessFusion - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ConsciousnessFusion {
   id: string;
   nodes: number[];
@@ -64,6 +98,23 @@ export interface ConsciousnessFusion {
   };
 }
 
+/**
+ * ⚗️ Codex144Engine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class Codex144Engine {
   private nodes: Map<number, CodexNode> = new Map();
   private fusions: Map<string, ConsciousnessFusion> = new Map();
@@ -431,7 +482,10 @@ export class Codex144Engine {
   public createCustomFusion(nodeIds: number[]): ConsciousnessFusion {
     const nodeResults = nodeIds.map(id => this.nodes.get(id)).filter((n): n is CodexNode => n !== null);
     if (nodeResults.length === 0) {
-      throw new Error('No valid nodes found for fusion');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     const resultNode = nodeResults[nodeResults.length - 1]!;

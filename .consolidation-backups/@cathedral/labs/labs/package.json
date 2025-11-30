@@ -16,11 +16,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:20:58.846Z",
+  "consolidatedAt": "2025-11-30T23:01:06.314Z",
   "packageManager": "pnpm@8.0.0",
   "alchemical": {
     "name": "Labs",
     "symbol": "⊙",
     "label": "⊙ Labs (@cathedral/labs)"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

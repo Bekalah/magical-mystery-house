@@ -9,6 +9,23 @@
  * @package @cathedral/game-engine
  */
 
+/**
+ * ⚗️ AbyssCrossing - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface AbyssCrossing {
   id: string;
   cycle: number;
@@ -26,6 +43,23 @@ export interface AbyssCrossing {
   };
 }
 
+/**
+ * ⚗️ AbyssProgress - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface AbyssProgress {
   cyclesCompleted: number;
   toolsCreated: number;
@@ -39,6 +73,23 @@ export interface AbyssProgress {
  * Abyss Crossing Mechanics
  * 
  * Tracks and rewards the solve et coagula process in the game
+ */
+/**
+ * ⚗️ AbyssCrossingMechanics - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class AbyssCrossingMechanics {
   private crossings: AbyssCrossing[] = [];

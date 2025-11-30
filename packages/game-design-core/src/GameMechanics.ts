@@ -10,6 +10,23 @@
 import type { GameMechanic, RPGElement, RewardStructure } from './GameDesignEngine';
 import { SACRED_MATH } from '../../sacred-mathematics-core/src/index';
 
+/**
+ * ⚗️ BalanceAnalysis - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface BalanceAnalysis {
   challenge: number; // 0-10
   reward: number; // 0-10
@@ -18,6 +35,23 @@ export interface BalanceAnalysis {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ ProgressionSystem - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ProgressionSystem {
   type: 'linear' | 'exponential' | 'fibonacci' | 'golden-ratio' | 'consciousness-based';
   levels: number;
@@ -25,6 +59,23 @@ export interface ProgressionSystem {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ PlayerExperience - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PlayerExperience {
   engagement: number; // 0-10
   satisfaction: number; // 0-10
@@ -36,6 +87,23 @@ export interface PlayerExperience {
 
 /**
  * Advanced Game Mechanics Tools
+ */
+/**
+ * ⚗️ GameMechanicsTools - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class GameMechanicsTools {
   private readonly GOLDEN_RATIO = SACRED_MATH.PHI;

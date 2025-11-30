@@ -11,8 +11,9 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:21:00.640Z",
+  "consolidatedAt": "2025-11-30T23:01:09.346Z",
   "engines": {
+    "node": "*",
     "pnpm": ">=8.0.0"
   },
   "packageManager": "pnpm@8.0.0",
@@ -20,5 +21,8 @@
     "name": "Sacred Geometry Simd",
     "symbol": "⊙",
     "label": "⊙ Sacred Geometry Simd (sacred-geometry-simd)"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

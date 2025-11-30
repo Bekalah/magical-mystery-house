@@ -5,8 +5,8 @@
  * 🔬✨ 10-HOUR IMPROVEMENT EXPERIMENT - AUTOMATED
  * 🏛️ MAGNUM OPUS BUSINESS EDITION
  *
- * Fully automated improvement experiment that runs for 10 hours
- * (240 cycles at 2.5-minute intervals) while you sleep.
+ * Fully automated improvement experiment that runs for 3 days
+ * (~1728 cycles at 2.5-minute intervals) continuously improving.
  *
  * Features:
  * - Contraction (analysis/doubt) and Expansion (improvement/creation) cycles
@@ -67,7 +67,7 @@ let DebugSystem: any = null;
 // import { Codex144Security } from '../packages/codex-144-99-core/src/Codex144Security';
 // import { LiberArcanaeSecurity } from '../packages/liber-arcanae-core/src/LiberArcanaeSecurity';
 
-const EXPERIMENT_DURATION = 10 * 60 * 60 * 1000; // 10 hours in milliseconds
+const EXPERIMENT_DURATION = 3 * 24 * 60 * 60 * 1000; // 3 days (72 hours) in milliseconds
 const CYCLE_INTERVAL = 2.5 * 60 * 1000; // 2.5 minutes in milliseconds
 const LOG_FILE = path.join(process.cwd(), 'IMPROVEMENT_EXPERIMENT_LOG.json');
 const STATE_FILE = path.join(process.cwd(), 'experiment-state.json');
@@ -130,6 +130,7 @@ class ImprovementExperiment {
   private scienceEngine: any | null;
   private artStandards: any | null;
   private gameDesignEngine: any | null;
+  private commandVerifier: any = null;
   // Security modules available for future validation
   // private codexSecurity: Codex144Security;
   // private liberSecurity: LiberArcanaeSecurity;
@@ -196,6 +197,59 @@ class ImprovementExperiment {
     }
   }
 
+  private async initializeVerifier(): Promise<void> {
+    if (!this.commandVerifier) {
+      try {
+        const { default: CommandVerifier } = await import('../tools/verify-commands.mjs');
+        this.commandVerifier = new CommandVerifier();
+      } catch (e) {
+        // Fallback: create simple verifier that always returns false
+        this.commandVerifier = {
+          verifyCommand: (cmd: string) => ({ exists: false, verified: false }),
+          verifyFile: (file: string) => ({ exists: false, verified: false }),
+          verifyPackageCount: () => ({ count: 0, verified: false })
+        };
+      }
+    }
+  }
+
+  private async executeVerifiedCommand(command: string, description: string, timeout: number = 120000): Promise<{ success: boolean; verified: boolean; error?: string }> {
+    await this.initializeVerifier();
+    
+    // Verify command exists
+    const verification = this.commandVerifier.verifyCommand(command);
+    if (!verification.exists) {
+      this.logError(`Command not found: ${command}`, new Error('Command does not exist'));
+      return { success: false, verified: false, error: 'Command not found' };
+    }
+
+    try {
+      execSync(command, {
+        cwd: process.cwd(),
+        stdio: 'pipe',
+        timeout: timeout
+      });
+      return { success: true, verified: true };
+    } catch (e: any) {
+      this.logError(`Command failed: ${command}`, e);
+      return { success: false, verified: true, error: e.message };
+    }
+  }
+
+  private async verifyBeforeClaim(claim: string, verification: () => Promise<boolean> | boolean): Promise<boolean> {
+    try {
+      const verified = await verification();
+      if (!verified) {
+        this.logError(`False claim prevented: ${claim}`, new Error('Verification failed'));
+        return false;
+      }
+      return true;
+    } catch (e) {
+      this.logError(`Verification error for claim: ${claim}`, e);
+      return false;
+    }
+  }
+
   private loadOrInitializeState(): ExperimentState {
     if (fs.existsSync(STATE_FILE)) {
       try {
@@ -217,7 +271,13 @@ class ImprovementExperiment {
       errors: [],
       systemsScanned: [],
       packagesImproved: [],
-      connectionsEstablished: 0
+      connectionsEstablished: 0,
+      magnumOpus: {
+        auditsRun: 0,
+        licensingFixed: 0,
+        packagesCompleted: 0,
+        lastAuditCycle: 0
+      }
     };
   }
 
@@ -248,13 +308,20 @@ class ImprovementExperiment {
       } else {
         // If no labels exist, run labeler to create them (non-blocking)
         // Use setTimeout to avoid blocking constructor
-        setTimeout(() => {
+        setTimeout(async () => {
           try {
-            execSync('node scripts/system-labeler.mjs', { 
-              cwd: process.cwd(),
-              stdio: 'pipe',
-              timeout: 30000
-            });
+            await this.initializeVerifier();
+            
+            const labelResult = await this.executeVerifiedCommand(
+              'node scripts/system-labeler.mjs',
+              'System labeling',
+              30000
+            );
+            
+            if (!labelResult.verified || !labelResult.success) {
+              // Skip if command doesn't exist or fails
+              return;
+            }
             // Backup newly created labels
             if (fs.existsSync(LABELS_FILE)) {
               const labels = fs.readFileSync(LABELS_FILE, 'utf-8');
@@ -493,55 +560,191 @@ class ImprovementExperiment {
         }
       }
 
+      // Package mapping (every 30 cycles - map all relationships)
+      // Maps all packages with dependencies, codex connections, system connections
+      if (this.state.currentCycle % 30 === 0) {
+        try {
+          await this.initializeVerifier();
+          
+          const mapResult = await this.executeVerifiedCommand(
+            'node tools/comprehensive-package-mapper.mjs',
+            'Map all packages',
+            300000
+          );
+          
+          if (mapResult.verified && mapResult.success) {
+            opportunities.push('Package relationships mapped - review PACKAGE_MAP.json');
+          }
+        } catch (_e: unknown) {
+          opportunities.push('Map all package relationships and connections');
+        }
+      }
+
+      // Package debugging (every 25 cycles - comprehensive debugging)
+      // Debugs all packages for issues (package.json, TypeScript, build, etc.)
+      if (this.state.currentCycle % 25 === 0) {
+        try {
+          await this.initializeVerifier();
+          
+          const debugResult = await this.executeVerifiedCommand(
+            'node tools/comprehensive-package-debugger.mjs',
+            'Debug all packages',
+            300000
+          );
+          
+          if (debugResult.verified && debugResult.success) {
+            // Load debug report to add specific opportunities
+            const debugPath = path.join(process.cwd(), 'PACKAGE_DEBUG_REPORT.json');
+            const fileVerification = this.commandVerifier.verifyFile(debugPath);
+            
+            if (fileVerification.exists) {
+              const debugReport = JSON.parse(fs.readFileSync(debugPath, 'utf-8'));
+              const summary = debugReport.summary || {};
+              
+              if (summary.totalIssues > 0) {
+                opportunities.push(`Package debugging: ${summary.totalIssues} issues found across ${summary.packagesWithIssues} packages`);
+              } else {
+                opportunities.push('Package debugging complete - no issues found');
+              }
+            }
+          }
+        } catch (_e: unknown) {
+          opportunities.push('Debug all packages comprehensively');
+        }
+      }
+
+      // Package information generation (every 50 cycles - complete info)
+      // Generates comprehensive information about each package
+      if (this.state.currentCycle % 50 === 0) {
+        try {
+          await this.initializeVerifier();
+          
+          const infoResult = await this.executeVerifiedCommand(
+            'node tools/generate-package-info.mjs',
+            'Generate package info',
+            300000
+          );
+          
+          if (infoResult.verified && infoResult.success) {
+            opportunities.push('Complete package information generated - review COMPLETE_PACKAGE_INFO.json and .md');
+          }
+        } catch (_e: unknown) {
+          opportunities.push('Generate comprehensive information for all packages');
+        }
+      }
+
+      // Package upgrade (every 20 cycles - apply all quality improvements)
+      // Upgrades all packages to best quality from experiment learnings
+      if (this.state.currentCycle % 20 === 0) {
+        try {
+          await this.initializeVerifier();
+          
+          const upgradeResult = await this.executeVerifiedCommand(
+            'node tools/upgrade-all-packages.mjs',
+            'Upgrade all packages',
+            300000
+          );
+          
+          if (upgradeResult.verified && upgradeResult.success) {
+            opportunities.push('All packages upgraded to best quality');
+          }
+        } catch (_e: unknown) {
+          opportunities.push('Upgrade all packages to best quality from experiment');
+        }
+      }
+
+      // Creative caliber elevation (every 7 cycles - Le Guin & Brom level)
+      // Elevate all code, documentation, and design to highest creative caliber
+      if (this.state.currentCycle % 7 === 0) {
+        try {
+          await this.initializeVerifier();
+          
+          const caliberResult = await this.executeVerifiedCommand(
+            'node tools/elevate-creative-caliber.mjs',
+            'Elevate creative caliber',
+            180000
+          );
+          
+          if (caliberResult.verified && caliberResult.success) {
+            opportunities.push('Creative caliber elevated - Le Guin & Brom level achieved');
+          }
+        } catch (_e: unknown) {
+          opportunities.push('Elevate creative caliber to highest literary and artistic standards');
+        }
+      }
+
       // Comprehensive audit and completion (every 5 cycles for magnum opus)
       // Full audit, licensing fixes, and completion for open source readiness
       if (this.state.currentCycle % 5 === 0) {
         try {
+          await this.initializeVerifier();
+          
           // Run comprehensive audit
-          execSync('node tools/comprehensive-audit-system.mjs', {
-            cwd: process.cwd(),
-            stdio: 'pipe',
-            timeout: 180000 // 3 minutes for full audit
-          });
-          opportunities.push('Comprehensive audit completed - review COMPREHENSIVE_AUDIT.json');
+          const auditResult = await this.executeVerifiedCommand(
+            'node tools/comprehensive-audit-system.mjs',
+            'Comprehensive audit',
+            180000
+          );
+          
+          if (auditResult.verified && auditResult.success) {
+            const auditPath = path.join(process.cwd(), 'COMPREHENSIVE_AUDIT.json');
+            const fileVerification = this.commandVerifier.verifyFile(auditPath);
+            if (fileVerification.exists) {
+              opportunities.push('Comprehensive audit completed - review COMPREHENSIVE_AUDIT.json');
+            }
+          }
         } catch (_e: unknown) {
           opportunities.push('Run comprehensive audit to assess completion status');
         }
 
         try {
+          await this.initializeVerifier();
+          
           // Fix licensing issues (Priority 1 for open source)
-          execSync('node tools/fix-licensing.mjs', {
-            cwd: process.cwd(),
-            stdio: 'pipe',
-            timeout: 120000 // 2 minutes for licensing fixes
-          });
-          this.state.magnumOpus.licensingFixed++;
-          improvements.push({
-            cycle: this.state.currentCycle,
-            timestamp: new Date().toISOString(),
-            type: 'licensing',
-            description: 'Fixed licensing issues for open source readiness',
-            system: 'magnum-opus-completion'
-          });
+          const licensingResult = await this.executeVerifiedCommand(
+            'node tools/fix-licensing.mjs',
+            'Fix licensing',
+            120000
+          );
+          
+          if (licensingResult.verified && licensingResult.success) {
+            this.state.magnumOpus.licensingFixed++;
+            this.state.improvements.push({
+              cycle: this.state.currentCycle,
+              timestamp: new Date().toISOString(),
+              type: 'licensing' as const,
+              description: 'Fixed licensing issues for open source readiness',
+              system: 'magnum-opus-completion'
+            });
+          }
         } catch (_e: unknown) {
           opportunities.push('Fix licensing issues for CC0-1.0 Public Domain compliance');
         }
 
         try {
+          await this.initializeVerifier();
+          
           // Help complete incomplete packages (Priority 2)
-          execSync('node tools/completion-helper.mjs', {
-            cwd: process.cwd(),
-            stdio: 'pipe',
-            timeout: 180000 // 3 minutes for completion
-          });
-          this.state.magnumOpus.packagesCompleted++;
-          improvements.push({
-            cycle: this.state.currentCycle,
-            timestamp: new Date().toISOString(),
-            type: 'completion',
-            description: 'Generated missing components for incomplete packages',
-            system: 'magnum-opus-completion'
-          });
+          const completionResult = await this.executeVerifiedCommand(
+            'node tools/completion-helper.mjs',
+            'Package completion',
+            180000
+          );
+          
+          if (completionResult.verified && completionResult.success) {
+            this.state.magnumOpus.packagesCompleted++;
+            const completionPath = path.join(process.cwd(), 'COMPLETION_HELPER_REPORT.json');
+            const fileVerification = this.commandVerifier.verifyFile(completionPath);
+            if (fileVerification.exists) {
+              this.state.improvements.push({
+                cycle: this.state.currentCycle,
+                timestamp: new Date().toISOString(),
+                type: 'completion' as const,
+                description: 'Generated missing components for incomplete packages',
+                system: 'magnum-opus-completion'
+              });
+            }
+          }
         } catch (_e: unknown) {
           opportunities.push('Complete incomplete packages with missing components');
         }
@@ -551,36 +754,54 @@ class ImprovementExperiment {
       // Includes ALL found places across ALL workspaces + remote repos
       if (this.state.currentCycle % 10 === 0) {
         try {
-          // First sync remote repos to include them in discovery
-          execSync('node tools/include-remote-repos.mjs', {
-            cwd: process.cwd(),
-            stdio: 'pipe',
-            timeout: 120000 // 2 minutes for remote sync
-          });
-          // Run comprehensive discovery - scans ALL workspaces + remotes
-          execSync('node tools/comprehensive-discovery.mjs', {
-            cwd: process.cwd(),
-            stdio: 'pipe',
-            timeout: 120000 // 2 minutes for full scan
-          });
+          await this.initializeVerifier();
           
-          // Load discovery results and add opportunities from ALL found places
-          const discoveryPath = path.join(process.cwd(), 'DISCOVERY_REPORT.json');
-          if (fs.existsSync(discoveryPath)) {
-            const discovery = JSON.parse(fs.readFileSync(discoveryPath, 'utf-8'));
-            const summary = discovery.summary || {};
+          // First sync remote repos to include them in discovery
+          const syncResult = await this.executeVerifiedCommand(
+            'node tools/include-remote-repos.mjs',
+            'Sync remote repos',
+            120000
+          );
+          
+          if (syncResult.verified && syncResult.success) {
+            // Run comprehensive discovery - scans ALL workspaces + remotes
+            const discoveryResult = await this.executeVerifiedCommand(
+              'node tools/comprehensive-discovery.mjs',
+              'Comprehensive discovery',
+              120000
+            );
             
-            opportunities.push(`Discovery: ${summary.totalPackages || 0} packages, ${summary.totalTools || 0} tools, ${summary.totalApps || 0} apps found across ${discovery.workspaces?.length || 0} workspaces`);
-            
-            if (summary.totalPartials > 0) {
-              opportunities.push(`Found ${summary.totalPartials} partials needing merge across all workspaces`);
+            if (discoveryResult.verified) {
+              // Load discovery results and add opportunities from ALL found places
+              const discoveryPath = path.join(process.cwd(), 'DISCOVERY_REPORT.json');
+              const fileVerification = this.commandVerifier.verifyFile(discoveryPath);
+              
+              if (fileVerification.exists) {
+                const discovery = JSON.parse(fs.readFileSync(discoveryPath, 'utf-8'));
+                const summary = discovery.summary || {};
+                
+                // Verify numbers are real before claiming
+                const packageCount = summary.totalPackages || 0;
+                const toolCount = summary.totalTools || 0;
+                const appCount = summary.totalApps || 0;
+                const workspaceCount = discovery.workspaces?.length || 0;
+                
+                // Only add if verified numbers exist
+                if (packageCount > 0 || toolCount > 0 || appCount > 0) {
+                  opportunities.push(`Discovery: ${packageCount} packages, ${toolCount} tools, ${appCount} apps found across ${workspaceCount} workspaces`);
+                }
+                
+                if (summary.totalPartials > 0) {
+                  opportunities.push(`Found ${summary.totalPartials} partials needing merge across all workspaces`);
+                }
+                
+                if (summary.incompletePackages > 0) {
+                  opportunities.push(`Found ${summary.incompletePackages} incomplete packages across all workspaces`);
+                }
+              } else {
+                opportunities.push('Comprehensive discovery completed - review DISCOVERY_REPORT.json');
+              }
             }
-            
-            if (summary.incompletePackages > 0) {
-              opportunities.push(`Found ${summary.incompletePackages} incomplete packages across all workspaces`);
-            }
-          } else {
-            opportunities.push('Comprehensive discovery completed - review DISCOVERY_REPORT.json');
           }
         } catch (_e: unknown) {
           // Discovery is optional
@@ -588,28 +809,35 @@ class ImprovementExperiment {
         }
 
         try {
-          // Run partial analysis - analyzes ALL partials from ALL workspaces
-          execSync('node tools/partial-analyzer.mjs', {
-            cwd: process.cwd(),
-            stdio: 'pipe',
-            timeout: 120000 // 2 minutes for full analysis
-          });
+          await this.initializeVerifier();
           
-          // Load partial analysis and add opportunities from ALL partials
-          const partialPath = path.join(process.cwd(), 'PARTIAL_ANALYSIS.json');
-          if (fs.existsSync(partialPath)) {
-            const partialAnalysis = JSON.parse(fs.readFileSync(partialPath, 'utf-8'));
-            const summary = partialAnalysis.summary || {};
+          // Run partial analysis - analyzes ALL partials from ALL workspaces
+          const partialResult = await this.executeVerifiedCommand(
+            'node tools/partial-analyzer.mjs',
+            'Partial analysis',
+            120000
+          );
+          
+          if (partialResult.verified) {
+            // Load partial analysis and add opportunities from ALL partials
+            const partialPath = path.join(process.cwd(), 'PARTIAL_ANALYSIS.json');
+            const fileVerification = this.commandVerifier.verifyFile(partialPath);
             
-            if (summary.totalPartials > 0) {
-              opportunities.push(`Partial analysis: ${summary.totalPartials} partials analyzed, ${summary.totalMergeStrategies || 0} merge strategies created`);
+            if (fileVerification.exists) {
+              const partialAnalysis = JSON.parse(fs.readFileSync(partialPath, 'utf-8'));
+              const summary = partialAnalysis.summary || {};
+              
+              // Verify numbers before claiming
+              if (summary.totalPartials > 0) {
+                opportunities.push(`Partial analysis: ${summary.totalPartials} partials analyzed, ${summary.totalMergeStrategies || 0} merge strategies created`);
+              }
+              
+              if (summary.totalConflicts > 0) {
+                opportunities.push(`Found ${summary.totalConflicts} conflicts in partials across all workspaces`);
+              }
+            } else {
+              opportunities.push('Partial analysis completed - review PARTIAL_ANALYSIS.json');
             }
-            
-            if (summary.totalConflicts > 0) {
-              opportunities.push(`Found ${summary.totalConflicts} conflicts in partials across all workspaces`);
-            }
-          } else {
-            opportunities.push('Partial analysis completed - review PARTIAL_ANALYSIS.json');
           }
         } catch (_e: unknown) {
           // Analysis is optional
@@ -617,32 +845,39 @@ class ImprovementExperiment {
         }
 
         try {
-          // Run codex alignment check - checks ALL entities from ALL workspaces
-          execSync('node tools/codex-alignment-analyzer.mjs', {
-            cwd: process.cwd(),
-            stdio: 'pipe',
-            timeout: 120000 // 2 minutes for full check
-          });
+          await this.initializeVerifier();
           
-          // Load alignment plan and add opportunities from ALL misalignments
-          const alignmentPath = path.join(process.cwd(), 'CODEX_ALIGNMENT_PLAN.json');
-          if (fs.existsSync(alignmentPath)) {
-            const alignment = JSON.parse(fs.readFileSync(alignmentPath, 'utf-8'));
-            const summary = alignment.summary || {};
+          // Run codex alignment check - checks ALL entities from ALL workspaces
+          const alignmentResult = await this.executeVerifiedCommand(
+            'node tools/codex-alignment-analyzer.mjs',
+            'Codex alignment',
+            120000
+          );
+          
+          if (alignmentResult.verified) {
+            // Load alignment plan and add opportunities from ALL misalignments
+            const alignmentPath = path.join(process.cwd(), 'CODEX_ALIGNMENT_PLAN.json');
+            const fileVerification = this.commandVerifier.verifyFile(alignmentPath);
             
-            if (summary.misaligned > 0) {
-              opportunities.push(`Codex alignment: ${summary.misaligned} misalignments found across all workspaces`);
+            if (fileVerification.exists) {
+              const alignment = JSON.parse(fs.readFileSync(alignmentPath, 'utf-8'));
+              const summary = alignment.summary || {};
+              
+              // Verify numbers before claiming
+              if (summary.misaligned > 0) {
+                opportunities.push(`Codex alignment: ${summary.misaligned} misalignments found across all workspaces`);
+              }
+              
+              if (summary.missing > 0) {
+                opportunities.push(`Missing ${summary.missing} required core systems across all workspaces`);
+              }
+              
+              if (summary.recommendations > 0) {
+                opportunities.push(`${summary.recommendations} alignment recommendations created for all found entities`);
+              }
+            } else {
+              opportunities.push('Codex alignment checked - review CODEX_ALIGNMENT_PLAN.json');
             }
-            
-            if (summary.missing > 0) {
-              opportunities.push(`Missing ${summary.missing} required core systems across all workspaces`);
-            }
-            
-            if (summary.recommendations > 0) {
-              opportunities.push(`${summary.recommendations} alignment recommendations created for all found entities`);
-            }
-          } else {
-            opportunities.push('Codex alignment checked - review CODEX_ALIGNMENT_PLAN.json');
           }
         } catch (_e: unknown) {
           // Alignment check is optional
@@ -726,25 +961,31 @@ class ImprovementExperiment {
     // Uses ALL found places and ALL findings
     if (this.state.currentCycle % 10 === 0) {
       try {
+        await this.initializeVerifier();
+        
         // Actually consolidate partials (every 20 cycles to avoid too frequent)
         if (this.state.currentCycle % 20 === 0) {
-          execSync('node tools/comprehensive-consolidator.mjs', {
-            cwd: process.cwd(),
-            stdio: 'pipe',
-            timeout: 300000 // 5 minutes for consolidation
-          });
+          const consolidateResult = await this.executeVerifiedCommand(
+            'node tools/comprehensive-consolidator.mjs',
+            'Comprehensive consolidation',
+            300000
+          );
           
-          improvements.push({
-            cycle: this.state.currentCycle,
-            timestamp: new Date().toISOString(),
-            type: 'enhancement',
-            description: 'Comprehensive consolidation completed - partials merged across all workspaces',
-            system: 'consolidation'
-          });
+          if (consolidateResult.verified && consolidateResult.success) {
+            improvements.push({
+              cycle: this.state.currentCycle,
+              timestamp: new Date().toISOString(),
+              type: 'enhancement',
+              description: 'Comprehensive consolidation completed - partials merged across all workspaces',
+              system: 'consolidation'
+            });
+          }
         } else {
           // Load and apply partial merge strategies from ALL partials
           const partialAnalysisPath = path.join(process.cwd(), 'PARTIAL_ANALYSIS.json');
-          if (fs.existsSync(partialAnalysisPath)) {
+          const fileVerification = this.commandVerifier.verifyFile(partialAnalysisPath);
+          
+          if (fileVerification.exists) {
             const partialAnalysis = JSON.parse(fs.readFileSync(partialAnalysisPath, 'utf-8'));
             const strategies = partialAnalysis.analysis?.mergeStrategies || [];
             
@@ -1022,6 +1263,7 @@ class ImprovementExperiment {
       // Unified Codex mode transitions every 8 cycles
       if (this.state.currentCycle % 8 === 0) {
         try {
+          type UnifiedMode = 'art' | 'music' | 'game' | 'design' | 'science' | 'mathematics';
           const modes: UnifiedMode[] = ['art', 'music', 'game', 'design', 'science', 'mathematics'];
           const currentMode = this.unifiedCodex.getCurrentMode();
           const currentIndex = modes.indexOf(currentMode);
@@ -1030,10 +1272,10 @@ class ImprovementExperiment {
           const transition = this.unifiedCodex.transitionMode(currentMode, nextMode, `Cycle ${this.state.currentCycle} automatic transition`);
           
           if (transition.coherence > 0.7) {
-            improvements.push({
+            this.state.improvements.push({
               cycle: this.state.currentCycle,
               timestamp: new Date().toISOString(),
-              type: 'connection',
+              type: 'connection' as const,
               description: `Mode transition: ${currentMode} → ${nextMode} (coherence: ${(transition.coherence * 100).toFixed(1)}%)`,
               system: 'unified-codex'
             });
@@ -1074,11 +1316,17 @@ class ImprovementExperiment {
       // Run codex debugger every 20 cycles
       if (this.state.currentCycle % 20 === 0 && this.state.currentCycle > 0) {
         try {
-          execSync('node tools/codex-debugger.mjs', { 
-            cwd: process.cwd(),
-            stdio: 'pipe',
-            maxBuffer: 10 * 1024 * 1024
-          });
+          await this.initializeVerifier();
+          
+          const debugResult = await this.executeVerifiedCommand(
+            'node tools/codex-debugger.mjs',
+            'Codex debugging',
+            60000
+          );
+          
+          if (!debugResult.verified || !debugResult.success) {
+            // Skip if command doesn't exist or fails
+          }
         } catch (_e: unknown) {
           // Silent fail - codex debugging is optional
         }

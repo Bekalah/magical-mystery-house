@@ -11,8 +11,9 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:24:16.603Z",
+  "consolidatedAt": "2025-11-30T23:04:23.442Z",
   "engines": {
+    "node": "*",
     "pnpm": ">=8.0.0"
   },
   "packageManager": "pnpm@8.0.0",
@@ -20,5 +21,8 @@
     "name": "Museum Sources",
     "symbol": "⊙",
     "label": "⊙ Museum Sources (museum-sources)"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

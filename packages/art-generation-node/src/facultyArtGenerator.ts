@@ -13,6 +13,23 @@ import { AzureAIFoundry, AzureAIConfig, ArtGenerationRequest } from './azureAIFo
 import * as facultyData from '../../data/complete-arcana-profiles.json';
 import * as researchData from '../../data/complete-rebecca-arcanae-influences.json';
 
+/**
+ * ⚗️ FacultyArtGenerationRequest - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FacultyArtGenerationRequest {
   facultyMember: string;
   style?: string;
@@ -21,6 +38,23 @@ export interface FacultyArtGenerationRequest {
   customPrompt?: string;
 }
 
+/**
+ * ⚗️ FacultyArtResult - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FacultyArtResult {
   facultyName: string;
   artUrl: string;
@@ -34,6 +68,23 @@ export interface FacultyArtResult {
   };
 }
 
+/**
+ * ⚗️ FacultyArtGenerator - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class FacultyArtGenerator {
   private aiFoundry: AzureAIFoundry;
   private config: AzureAIConfig;

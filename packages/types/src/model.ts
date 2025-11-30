@@ -8,6 +8,23 @@ export const reasoningEfforts = ["low", "medium", "high"] as const
 
 export const reasoningEffortsSchema = z.enum(reasoningEfforts)
 
+/**
+ * ⚗️ ReasoningEffort - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ReasoningEffort = z.infer<typeof reasoningEffortsSchema>
 
 /**
@@ -16,6 +33,23 @@ export type ReasoningEffort = z.infer<typeof reasoningEffortsSchema>
 
 export const reasoningEffortWithMinimalSchema = z.union([reasoningEffortsSchema, z.literal("minimal")])
 
+/**
+ * ⚗️ ReasoningEffortWithMinimal - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ReasoningEffortWithMinimal = z.infer<typeof reasoningEffortWithMinimalSchema>
 
 /**
@@ -26,6 +60,23 @@ export const verbosityLevels = ["low", "medium", "high"] as const
 
 export const verbosityLevelsSchema = z.enum(verbosityLevels)
 
+/**
+ * ⚗️ VerbosityLevel - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type VerbosityLevel = z.infer<typeof verbosityLevelsSchema>
 
 /**
@@ -33,6 +84,23 @@ export type VerbosityLevel = z.infer<typeof verbosityLevelsSchema>
  */
 export const serviceTiers = ["default", "flex", "priority"] as const
 export const serviceTierSchema = z.enum(serviceTiers)
+/**
+ * ⚗️ ServiceTier - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ServiceTier = z.infer<typeof serviceTierSchema>
 
 /**
@@ -43,6 +111,23 @@ export const modelParameters = ["max_tokens", "temperature", "reasoning", "inclu
 
 export const modelParametersSchema = z.enum(modelParameters)
 
+/**
+ * ⚗️ ModelParameter - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ModelParameter = z.infer<typeof modelParametersSchema>
 
 export const isModelParameter = (value: string): value is ModelParameter =>
@@ -103,4 +188,21 @@ export const modelInfoSchema = z.object({
 		.optional(),
 })
 
+/**
+ * ⚗️ ModelInfo - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ModelInfo = z.infer<typeof modelInfoSchema>

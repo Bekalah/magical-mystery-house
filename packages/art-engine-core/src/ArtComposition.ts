@@ -10,6 +10,23 @@
 import type { Color, Point } from './ArtEngine';
 import { SACRED_MATH } from '../../sacred-mathematics-core/src/index';
 
+/**
+ * ⚗️ ColorHarmony - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ColorHarmony {
   type: 'monochromatic' | 'analogous' | 'complementary' | 'triadic' | 'tetradic' | 'sacred-geometry';
   colors: Color[];
@@ -17,6 +34,23 @@ export interface ColorHarmony {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ LayoutOptimization - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface LayoutOptimization {
   focalPoints: Point[];
   balance: number; // 0-1
@@ -25,6 +59,23 @@ export interface LayoutOptimization {
   sacredGeometry: boolean;
 }
 
+/**
+ * ⚗️ PatternGenerator - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PatternGenerator {
   type: 'fractal' | 'sacred-geometry' | 'organic' | 'geometric' | 'consciousness-based';
   complexity: number; // 0-10
@@ -35,6 +86,23 @@ export interface PatternGenerator {
 
 /**
  * Advanced Art Composition Tools
+ */
+/**
+ * ⚗️ ArtCompositionTools - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class ArtCompositionTools {
   private readonly GOLDEN_RATIO = SACRED_MATH.PHI;

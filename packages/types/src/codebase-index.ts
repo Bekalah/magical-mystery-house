@@ -38,6 +38,23 @@ export const codebaseIndexConfigSchema = z.object({
 	codebaseIndexOpenAiCompatibleModelDimension: z.number().optional(),
 })
 
+/**
+ * ⚗️ CodebaseIndexConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type CodebaseIndexConfig = z.infer<typeof codebaseIndexConfigSchema>
 
 /**
@@ -54,6 +71,23 @@ export const codebaseIndexModelsSchema = z.object({
 	openrouter: z.record(z.string(), z.object({ dimension: z.number() })).optional(),
 })
 
+/**
+ * ⚗️ CodebaseIndexModels - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type CodebaseIndexModels = z.infer<typeof codebaseIndexModelsSchema>
 
 /**
@@ -72,4 +106,21 @@ export const codebaseIndexProviderSchema = z.object({
 	codebaseIndexOpenRouterApiKey: z.string().optional(),
 })
 
+/**
+ * ⚗️ CodebaseIndexProvider - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type CodebaseIndexProvider = z.infer<typeof codebaseIndexProviderSchema>

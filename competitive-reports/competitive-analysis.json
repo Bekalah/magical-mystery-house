@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764537102933,
+  "timestamp": 1764543852914,
   "cathedralState": {
     "packages": [
       "agent-integration",
@@ -139,6 +139,7 @@
       "alignment-cleaner.mjs",
       "alignment-detector.mjs",
       "app-completion-research.mjs",
+      "apply-alchemical-labels.mjs",
       "apply-patches.mjs",
       "apply-unified-theme.mjs",
       "auto-documentation.mjs",
@@ -173,6 +174,8 @@
       "comprehensive-cleanup.mjs",
       "comprehensive-consolidator.mjs",
       "comprehensive-discovery.mjs",
+      "comprehensive-package-debugger.mjs",
+      "comprehensive-package-mapper.mjs",
       "connect-and-fix-all.mjs",
       "connect-cathedral-work.mjs",
       "connect-live-deployments.mjs",
@@ -195,6 +198,7 @@
       "discover-authentic-vision.mjs",
       "discover-influences.mjs",
       "egregore-design-assistant.mjs",
+      "elevate-creative-caliber.mjs",
       "enhanced-logger.mjs",
       "enhanced-quality-check.mjs",
       "error-recovery.mjs",
@@ -279,6 +283,7 @@
       "tool-packager.mjs",
       "update-all-references.mjs",
       "update-codex-circuitum99.mjs",
+      "upgrade-all-packages.mjs",
       "user-feedback.mjs",
       "utils.mjs",
       "validate-all.mjs",
@@ -288,6 +293,7 @@
       "validate-sacred-math.mjs",
       "validate-setup.mjs",
       "validate-sound-math.mjs",
+      "verify-commands.mjs",
       "vision-integration.mjs",
       "vision-weaver.mjs",
       "visionary-art-validator.mjs",

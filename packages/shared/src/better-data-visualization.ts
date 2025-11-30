@@ -10,6 +10,23 @@
 
 import { ExecutiveFunctionTask } from './executive-function-support';
 
+/**
+ * ⚗️ DataVisualization - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface DataVisualization {
   type: '3d' | 'geometric' | 'sacred' | 'interactive';
   data: any;
@@ -17,6 +34,23 @@ export interface DataVisualization {
   accessibility: AccessibilityFeatures;
 }
 
+/**
+ * ⚗️ VisualElements - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface VisualElements {
   colors: ColorHarmony;
   geometry: string[];
@@ -25,6 +59,23 @@ export interface VisualElements {
   patterns: string[];
 }
 
+/**
+ * ⚗️ ColorHarmony - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ColorHarmony {
   primary: string;
   secondary: string;
@@ -33,6 +84,23 @@ export interface ColorHarmony {
   harmony: 'complementary' | 'triadic' | 'analogous' | 'monochromatic';
 }
 
+/**
+ * ⚗️ AccessibilityFeatures - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface AccessibilityFeatures {
   highContrast: boolean;
   screenReader: string;
@@ -45,6 +113,23 @@ export interface AccessibilityFeatures {
  * 
  * Creates 3D, geometric, beautiful visualizations
  * Uses sacred geometry and master art principles
+ */
+/**
+ * ⚗️ BetterDataVisualization - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class BetterDataVisualization {
   /**

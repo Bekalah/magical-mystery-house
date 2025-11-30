@@ -17,6 +17,23 @@ import { SACRED_MATH, nodeToGateMapping, gateToNodeMapping } from '../../sacred-
 /**
  * Game Mathematics Engine
  */
+/**
+ * ⚗️ GameMathematicsEngine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class GameMathematicsEngine {
   private progressionCurves: Map<string, ProgressionCurve>;
   private balanceFormulas: Map<string, BalanceFormula>;
@@ -221,17 +238,68 @@ export class GameMathematicsEngine {
 /**
  * Interfaces
  */
+/**
+ * ⚗️ ProgressionCurve - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ProgressionCurve {
   name: string;
   formula: (level: number) => number;
   ratio: number;
 }
 
+/**
+ * ⚗️ BalanceFormula - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface BalanceFormula {
   name: string;
   calculate: (level: number, baseValue?: number) => number;
 }
 
+/**
+ * ⚗️ GameBalanceMetrics - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface GameBalanceMetrics {
   level: number;
   experiencePoints: number;

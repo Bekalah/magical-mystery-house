@@ -20,8 +20,42 @@ import { SACRED_MATH } from '../../sacred-mathematics-core/src/index';
 // import { MysteryHouseEngine } from '../../mystery-house-core/src/index.js';
 // import { FusionKinkDesignMathematics } from '../../fusion-kink-core/src/index.js';
 
+/**
+ * ⚗️ RibbonType - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type RibbonType = 'RESEARCH' | 'GAME' | 'FUSION_KINK' | 'PSYCH' | 'CRAFT' | 'ESOTERIC' | 'SCIENCE';
 
+/**
+ * ⚗️ Ribbon - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Ribbon {
   type: RibbonType;
   nodeRanges: number[][];      // Node ranges this ribbon connects
@@ -31,6 +65,23 @@ export interface Ribbon {
   syncRules: SyncRule[];
 }
 
+/**
+ * ⚗️ SyncRule - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SyncRule {
   sourceSystem: string;
   targetSystem: string;
@@ -38,6 +89,23 @@ export interface SyncRule {
   validation: (data: any) => boolean;
 }
 
+/**
+ * ⚗️ CrossSystemSync - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CrossSystemSync {
   codexToCircuitum: SyncRule;
   codexToGrimoire: SyncRule;
@@ -47,6 +115,23 @@ export interface CrossSystemSync {
   grimoireToMystery: SyncRule;
 }
 
+/**
+ * ⚗️ TesseractBridge - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class TesseractBridge {
   private ribbons: Map<RibbonType, Ribbon>;
   // Components available for future integration

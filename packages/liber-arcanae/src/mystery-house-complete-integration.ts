@@ -29,6 +29,23 @@ import { AppMode } from './world-app-maker-integration';
 // COMPLETE 8 ROOMS INTEGRATION
 // ============================================================================
 
+/**
+ * ⚗️ CompleteMysteryHouseRoom - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CompleteMysteryHouseRoom extends MysteryHouseRoomIntegration {
   // Room-specific details
   roomNumber: number; // 0-7
@@ -66,6 +83,23 @@ export interface CompleteMysteryHouseRoom extends MysteryHouseRoomIntegration {
   roomLearningPaths: RoomLearningPath[];
 }
 
+/**
+ * ⚗️ GameRoomFeatures - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface GameRoomFeatures {
   characters: string[]; // Which Arcanae appear
   quests: RoomQuest[];
@@ -73,6 +107,23 @@ export interface GameRoomFeatures {
   rewards: RoomReward[];
 }
 
+/**
+ * ⚗️ ArtRoomFeatures - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArtRoomFeatures {
   artTools: string[];
   techniques: string[];
@@ -81,6 +132,23 @@ export interface ArtRoomFeatures {
   creationSpaces: string[];
 }
 
+/**
+ * ⚗️ SoundRoomFeatures - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SoundRoomFeatures {
   synthesizers: string[];
   frequencies: number[];
@@ -88,6 +156,23 @@ export interface SoundRoomFeatures {
   acousticSpaces: string[];
 }
 
+/**
+ * ⚗️ FractalSoundArtRoom - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FractalSoundArtRoom {
   baseFrequency: number;
   harmonics: number[];
@@ -95,6 +180,23 @@ export interface FractalSoundArtRoom {
   interactive: boolean;
 }
 
+/**
+ * ⚗️ ProfessionalRoomFeatures - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ProfessionalRoomFeatures {
   designTools: string[];
   exportFormats: string[];
@@ -102,6 +204,23 @@ export interface ProfessionalRoomFeatures {
   qualityControls: string[];
 }
 
+/**
+ * ⚗️ FusionRoomFeatures - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FusionRoomFeatures {
   fusionEngine: boolean;
   arcanaFusions: string[];
@@ -110,6 +229,23 @@ export interface FusionRoomFeatures {
   modeFusions: string[];
 }
 
+/**
+ * ⚗️ RoomQuest - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface RoomQuest {
   id: string;
   name: string;
@@ -120,6 +256,23 @@ export interface RoomQuest {
   rewards: string[];
 }
 
+/**
+ * ⚗️ RoomInteraction - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface RoomInteraction {
   id: string;
   type: 'dialogue' | 'ritual' | 'creation' | 'exploration' | 'learning';
@@ -128,6 +281,23 @@ export interface RoomInteraction {
   outcome: string;
 }
 
+/**
+ * ⚗️ RoomReward - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface RoomReward {
   type: 'ability' | 'knowledge' | 'item' | 'relationship' | 'gateway';
   name: string;
@@ -135,6 +305,23 @@ export interface RoomReward {
   unlocks: string[];
 }
 
+/**
+ * ⚗️ SystemPortal - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SystemPortal {
   id: string;
   name: string;
@@ -148,6 +335,23 @@ export interface SystemPortal {
   codexNode?: number;
 }
 
+/**
+ * ⚗️ RoomFusion - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface RoomFusion {
   id: string;
   name: string;
@@ -165,6 +369,23 @@ export interface RoomFusion {
   unlocks: string[];
 }
 
+/**
+ * ⚗️ RoomLearningPath - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface RoomLearningPath {
   id: string;
   name: string;
@@ -176,6 +397,23 @@ export interface RoomLearningPath {
   modes: string[];
 }
 
+/**
+ * ⚗️ LearningPathStage - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface LearningPathStage {
   number: number;
   name: string;
@@ -1093,12 +1331,46 @@ export const COMPLETE_MYSTERY_HOUSE_ROOMS: CompleteMysteryHouseRoom[] = [
 /**
  * Get room by ID
  */
+/**
+ * ⚗️ GetCompleteRoom - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function getCompleteRoom(id: string): CompleteMysteryHouseRoom | undefined {
   return COMPLETE_MYSTERY_HOUSE_ROOMS.find(room => room.id === id);
 }
 
 /**
  * Get rooms by mode
+ */
+/**
+ * ⚗️ GetRoomsByMode - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function getRoomsByMode(modeId: string): CompleteMysteryHouseRoom[] {
   return COMPLETE_MYSTERY_HOUSE_ROOMS.filter(room => 
@@ -1115,6 +1387,23 @@ export function getRoomsByMode(modeId: string): CompleteMysteryHouseRoom[] {
 /**
  * Get rooms by Arcana
  */
+/**
+ * ⚗️ GetRoomsByArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function getRoomsByArcana(arcanaId: string): CompleteMysteryHouseRoom[] {
   return COMPLETE_MYSTERY_HOUSE_ROOMS.filter(room => 
     room.arcanae.includes(arcanaId) || room.arcanae.includes('all')
@@ -1123,6 +1412,23 @@ export function getRoomsByArcana(arcanaId: string): CompleteMysteryHouseRoom[] {
 
 /**
  * Get rooms by Gate
+ */
+/**
+ * ⚗️ GetRoomsByGate - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function getRoomsByGate(gateNumber: number): CompleteMysteryHouseRoom[] {
   return COMPLETE_MYSTERY_HOUSE_ROOMS.filter(room => 
@@ -1133,6 +1439,23 @@ export function getRoomsByGate(gateNumber: number): CompleteMysteryHouseRoom[] {
 /**
  * Get rooms by Codex Node
  */
+/**
+ * ⚗️ GetRoomsByCodexNode - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function getRoomsByCodexNode(nodeId: number): CompleteMysteryHouseRoom[] {
   return COMPLETE_MYSTERY_HOUSE_ROOMS.filter(room => 
     room.codexNodes.includes(nodeId) || room.codexNodes.length === 144
@@ -1141,6 +1464,23 @@ export function getRoomsByCodexNode(nodeId: number): CompleteMysteryHouseRoom[] 
 
 /**
  * Get all rooms
+ */
+/**
+ * ⚗️ GetAllCompleteRooms - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function getAllCompleteRooms(): CompleteMysteryHouseRoom[] {
   return COMPLETE_MYSTERY_HOUSE_ROOMS;

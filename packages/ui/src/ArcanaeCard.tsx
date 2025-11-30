@@ -1,6 +1,23 @@
 import React, { useState } from 'react';
 import '@cathedral/shared/src/styles/unified-professional.css';
 
+/**
+ * ⚗️ Arcanae - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 interface Arcanae {
   name: string;
   guardian_spirit: string;
@@ -17,6 +34,23 @@ interface Arcanae {
   artistic_lineage: string;
 }
 
+/**
+ * ⚗️ ArcanaeCardProps - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 interface ArcanaeCardProps {
   arcana: Arcanae;
   onSelect?: (arcana: Arcanae) => void;

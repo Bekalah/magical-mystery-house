@@ -10,6 +10,23 @@ export const mcpParameterSchema = z.object({
 	optional: z.boolean().optional().default(false),
 })
 
+/**
+ * ⚗️ McpParameter - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type McpParameter = z.infer<typeof mcpParameterSchema>
 
 /**
@@ -22,6 +39,23 @@ export const mcpInstallationMethodSchema = z.object({
 	prerequisites: z.array(z.string()).optional(),
 })
 
+/**
+ * ⚗️ McpInstallationMethod - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type McpInstallationMethod = z.infer<typeof mcpInstallationMethodSchema>
 
 /**
@@ -29,6 +63,23 @@ export type McpInstallationMethod = z.infer<typeof mcpInstallationMethodSchema>
  */
 export const marketplaceItemTypeSchema = z.enum(["mode", "mcp"] as const)
 
+/**
+ * ⚗️ MarketplaceItemType - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type MarketplaceItemType = z.infer<typeof marketplaceItemTypeSchema>
 
 /**
@@ -51,6 +102,23 @@ export const modeMarketplaceItemSchema = baseMarketplaceItemSchema.extend({
 	content: z.string().min(1), // YAML content for modes
 })
 
+/**
+ * ⚗️ ModeMarketplaceItem - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ModeMarketplaceItem = z.infer<typeof modeMarketplaceItemSchema>
 
 export const mcpMarketplaceItemSchema = baseMarketplaceItemSchema.extend({
@@ -59,6 +127,23 @@ export const mcpMarketplaceItemSchema = baseMarketplaceItemSchema.extend({
 	parameters: z.array(mcpParameterSchema).optional(),
 })
 
+/**
+ * ⚗️ McpMarketplaceItem - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type McpMarketplaceItem = z.infer<typeof mcpMarketplaceItemSchema>
 
 /**
@@ -75,6 +160,23 @@ export const marketplaceItemSchema = z.discriminatedUnion("type", [
 	}),
 ])
 
+/**
+ * ⚗️ MarketplaceItem - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type MarketplaceItem = z.infer<typeof marketplaceItemSchema>
 
 /**
@@ -85,4 +187,21 @@ export const installMarketplaceItemOptionsSchema = z.object({
 	parameters: z.record(z.string(), z.any()).optional(),
 })
 
+/**
+ * ⚗️ InstallMarketplaceItemOptions - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type InstallMarketplaceItemOptions = z.infer<typeof installMarketplaceItemOptionsSchema>

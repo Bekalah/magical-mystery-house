@@ -10,6 +10,23 @@
  * Provides type safety for React integration
  */
 
+/**
+ * ⚗️ GameState - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface GameState {
   isInitialized: boolean;
   currentNode: any;
@@ -19,6 +36,23 @@ export interface GameState {
   availableNodes?: number[];
 }
 
+/**
+ * ⚗️ GameEngine - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface GameEngine {
   initialize(): Promise<void>;
   startGame(): Promise<any>;
@@ -31,6 +65,23 @@ export interface GameEngine {
   };
 }
 
+/**
+ * ⚗️ CodexGameEngine - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * earth energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Earth
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CodexGameEngine extends GameEngine {
   nodeManager: any;
   characterSystem: any;

@@ -12,6 +12,23 @@
  * @license CC0-1.0 - Public Domain
  */
 
+/**
+ * ⚗️ NarrativeThread - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface NarrativeThread {
   id: string;
   title: string;
@@ -24,6 +41,23 @@ export interface NarrativeThread {
   currentChapter: number;
 }
 
+/**
+ * ⚗️ Chapter - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Chapter {
   id: string;
   title: string;
@@ -33,6 +67,23 @@ export interface Chapter {
   connections: string[]; // Chapter IDs
 }
 
+/**
+ * ⚗️ Character - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Character {
   id: string;
   name: string;
@@ -42,6 +93,23 @@ export interface Character {
   connections: string[]; // Character IDs
 }
 
+/**
+ * ⚗️ StoryFlow - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface StoryFlow {
   threads: NarrativeThread[];
   coherence: number; // 0-1
@@ -49,6 +117,23 @@ export interface StoryFlow {
   activeThread: string | null;
 }
 
+/**
+ * ⚗️ NarrativeThreadManager - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class NarrativeThreadManager {
   private threads: Map<string, NarrativeThread> = new Map();
 
@@ -123,7 +208,11 @@ export class NarrativeThreadManager {
     const thread2 = this.threads.get(threadId2);
 
     if (!thread1 || !thread2) {
-      throw new Error('One or both threads not found');
+      throw new Error(`⚗️ The path you seek has not yet been revealed.
+
+The grimoire you requested exists in the realm of possibility, but has not yet been manifested in this dimension.
+
+Perhaps the path needs to be created first, or perhaps you seek something that exists by another name.`);
     }
 
     if (!thread1.connections.includes(threadId2)) {

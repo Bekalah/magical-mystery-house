@@ -19,6 +19,23 @@ import { TraumaSafeConfig } from '../types/consciousness';
  * Coordinates the Body/Soul/Spirit consciousness evolution system
  * with cross-component communication and validation
  */
+/**
+ * ⚗️ TrinityArchitecture - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class TrinityArchitecture {
   private consciousnessEngine: ConsciousnessEvolutionEngine;
   private bodyComponent: any; // Hall of Ateliers
@@ -128,7 +145,10 @@ export class TrinityArchitecture {
    */
   public async progressThroughTrinity(targetLevel: number): Promise<ConsciousnessState> {
     if (!this.activeSession) {
-      throw new Error('No active session. Start a session first.');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     // Progress in consciousness evolution engine
@@ -246,7 +266,10 @@ export class TrinityArchitecture {
    */
   public async performTrinityFusion(level1: number, level2: number): Promise<any> {
     if (!this.activeSession) {
-      throw new Error('No active session. Start a session first.');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     // Perform fusion in consciousness engine
@@ -291,7 +314,10 @@ export class TrinityArchitecture {
    */
   public getValidation(): TrinityValidation {
     if (!this.activeSession) {
-      throw new Error('No active session. Start a session first.');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     return {
@@ -382,7 +408,10 @@ export class TrinityArchitecture {
    */
   public endSession(): any {
     if (!this.activeSession) {
-      throw new Error('No active session to end');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     const sessionData = {

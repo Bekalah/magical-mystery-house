@@ -8,6 +8,36 @@
 
 ---
 
+# ⊙ Tarot Arena - tarot-arena
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Tarot Arena - tarot-arena
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Tarot Arena - tarot-arena
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # Tarot Arena
 
 A mini-game where Arcana avatars (not just cards) interact, team up, duel, and create living art and patterns. Includes lore, grimoire, and user-generated egregores.

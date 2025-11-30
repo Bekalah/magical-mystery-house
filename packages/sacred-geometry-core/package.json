@@ -17,7 +17,7 @@
     "nodes"
   ],
   "author": "Cathedral Master Creative Intelligence Team",
-  "license": "CC0",
+  "license": "CC0-1.0",
   "engines": {
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0"
@@ -25,11 +25,15 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:24:16.932Z",
+  "consolidatedAt": "2025-11-30T23:04:24.330Z",
   "packageManager": "pnpm@8.0.0",
   "alchemical": {
     "name": "Sacred Geometry",
     "symbol": "⊙",
     "label": "⊙ Sacred Geometry (@cathedral/sacred-geometry-core)"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts"
 }

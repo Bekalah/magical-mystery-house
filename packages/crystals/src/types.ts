@@ -4,6 +4,23 @@
  * @package @cathedral/crystals
  */
 // types.ts - domain types for crystal intelligence
+/**
+ * ⚗️ Crystal - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Crystal {
   id: string;
   displayName: string;
@@ -33,6 +50,23 @@ export interface Crystal {
   narrativeHook?: string; // short lore fragment for Codex use
 }
 
+/**
+ * ⚗️ CrystalFusionSet - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CrystalFusionSet {
   id: string;
   name: string;
@@ -47,6 +81,23 @@ export interface CrystalFusionSet {
   lore?: string;
 }
 
+/**
+ * ⚗️ ResonanceComputationResult - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ResonanceComputationResult {
   compositeFrequency: number[]; // merged frequency stack
   colorField: string[]; // emergent color set

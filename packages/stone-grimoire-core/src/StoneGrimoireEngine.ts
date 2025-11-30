@@ -10,6 +10,23 @@
 import { SACRED_MATH, nodeToGateMapping, goldenRectangle } from '../../sacred-mathematics-core/src/index';
 // gateToNodeMapping available for future use
 
+/**
+ * ⚗️ Chapel - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Chapel {
   chapelNumber: number;        // 1-8
   name: string;
@@ -28,6 +45,23 @@ export interface Chapel {
   researchSources: ResearchSource[];
 }
 
+/**
+ * ⚗️ SacredGeometry - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SacredGeometry {
   goldenRatioProportions: { width: number; height: number };
   fibonacciSpacing: number[];
@@ -36,6 +70,23 @@ export interface SacredGeometry {
   shape: string;
 }
 
+/**
+ * ⚗️ ChapelCorrespondences - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ChapelCorrespondences {
   planet: string;
   zodiac: string;
@@ -49,6 +100,23 @@ export interface ChapelCorrespondences {
   soyga?: string;
 }
 
+/**
+ * ⚗️ PathworkingNode - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PathworkingNode {
   nodeId: string;
   title: string;
@@ -57,6 +125,23 @@ export interface PathworkingNode {
   correspondences: Record<string, any>;
 }
 
+/**
+ * ⚗️ ArtTradition - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArtTradition {
   name: string;
   period: string;
@@ -65,6 +150,23 @@ export interface ArtTradition {
   authenticImplementations: string[];
 }
 
+/**
+ * ⚗️ ResearchSource - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ResearchSource {
   name: string;
   type: 'library' | 'archive' | 'museum' | 'academic' | 'digital';
@@ -72,6 +174,23 @@ export interface ResearchSource {
   description: string;
 }
 
+/**
+ * ⚗️ Folio - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Folio {
   folioNumber: number;          // 0-143
   chapelNumber: number;         // 1-8
@@ -88,6 +207,23 @@ export interface Folio {
   pathworkingConnections: string[];
 }
 
+/**
+ * ⚗️ StoneGrimoireEngine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class StoneGrimoireEngine {
   private chapels: Map<number, Chapel>;
   private folios: Map<number, Folio>;

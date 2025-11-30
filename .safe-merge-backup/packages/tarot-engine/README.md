@@ -8,6 +8,36 @@
 
 ---
 
+# ⊙ Tarot - tarot-engine
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Tarot - tarot-engine
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Tarot - tarot-engine
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # tarot-engine
 
 No description available

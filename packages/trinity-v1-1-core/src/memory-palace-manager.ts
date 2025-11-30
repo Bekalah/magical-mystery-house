@@ -14,6 +14,23 @@
  * @license CC0-1.0 - Public Domain
 */
 
+/**
+ * ⚗️ MemoryRoom - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface MemoryRoom {
   id: string;
   name: string;
@@ -24,6 +41,23 @@ export interface MemoryRoom {
   lastAccessed: number; // timestamp
 }
 
+/**
+ * ⚗️ KnowledgeNode - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface KnowledgeNode {
   id: string;
   content: string;
@@ -33,6 +67,23 @@ export interface KnowledgeNode {
   tags: string[];
 }
 
+/**
+ * ⚗️ WisdomConnection - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface WisdomConnection {
   from: string; // Node or Room ID
   to: string; // Node or Room ID
@@ -41,6 +92,23 @@ export interface WisdomConnection {
 }
 
 export // Trauma-aware: gentle, supportive, ESC exits, pause anytime
+/**
+ * ⚗️ MemoryPalaceManager - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 class MemoryPalaceManager {
   private rooms: Map<string, MemoryRoom> = new Map();
   private knowledgeGraph: Map<string, KnowledgeNode> = new Map();
@@ -123,7 +191,11 @@ class MemoryPalaceManager {
     const room2 = this.rooms.get(roomId2);
 
     if (!room1 || !room2) {
-      throw new Error('One or both rooms not found');
+      throw new Error(`⚗️ The path you seek has not yet been revealed.
+
+The grimoire you requested exists in the realm of possibility, but has not yet been manifested in this dimension.
+
+Perhaps the path needs to be created first, or perhaps you seek something that exists by another name.`);
     }
 
     if (!room1.connections.includes(roomId2)) {

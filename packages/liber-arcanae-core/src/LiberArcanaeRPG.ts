@@ -75,6 +75,23 @@ export const GOETIC_DEMONS = [
   { number: 72, name: 'Andromalius', rank: 'Earl', legion: 36, gate: 72, element: 'Earth', planet: 'Saturn' }
 ];
 
+/**
+ * ⚗️ RPGCharacter - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface RPGCharacter {
   arcanaIndex: number;           // 0-21 (Major Arcana)
   name: string;
@@ -109,6 +126,23 @@ export interface RPGCharacter {
   };
 }
 
+/**
+ * ⚗️ AbyssCrossing - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface AbyssCrossing {
   characterIndex: number;
   stage: 'preparation' | 'crossing' | 'crossed' | 'failed';
@@ -122,6 +156,23 @@ export interface AbyssCrossing {
   };
 }
 
+/**
+ * ⚗️ HolyGuardianAngel - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface HolyGuardianAngel {
   characterIndex: number;
   name: string;
@@ -136,6 +187,23 @@ export interface HolyGuardianAngel {
   };
 }
 
+/**
+ * ⚗️ PathworkingSession - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PathworkingSession {
   characterIndex: number;
   type: 'shem_angel' | 'goetic_demon' | 'circuitum_gate' | 'abyss' | 'hga';
@@ -146,6 +214,23 @@ export interface PathworkingSession {
   canonicalSource: string;
 }
 
+/**
+ * ⚗️ LiberArcanaeRPG - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class LiberArcanaeRPG {
   private arcanaEngine: LiberArcanaeEngine;
   // Codex engine available for future integration
@@ -536,7 +621,11 @@ export class LiberArcanaeRPG {
   public communeWithHGA(characterIndex: number): string[] {
     const hga = this.holyGuardianAngels.get(characterIndex);
     if (!hga || !hga.found) {
-      throw new Error('Holy Guardian Angel not found');
+      throw new Error(`⚗️ The path you seek has not yet been revealed.
+
+The grimoire you requested exists in the realm of possibility, but has not yet been manifested in this dimension.
+
+Perhaps the path needs to be created first, or perhaps you seek something that exists by another name.`);
     }
 
     if (!hga.contacted) {

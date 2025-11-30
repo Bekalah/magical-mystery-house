@@ -11,8 +11,9 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:20:54.996Z",
+  "consolidatedAt": "2025-11-30T23:00:58.533Z",
   "engines": {
+    "node": "*",
     "pnpm": ">=8.0.0"
   },
   "packageManager": "pnpm@8.0.0",
@@ -20,5 +21,8 @@
     "name": "Cathedral 144",
     "symbol": "⊙",
     "label": "⊙ Cathedral 144 (cathedral-144)"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -20,6 +20,23 @@ import { PrimarySourceDatabase } from '../creators/primary-source-database';
 import { NonLinearBiography } from '../narrative/non-linear-biography';
 import { ArchetypeCollisions } from '../archetypes/archetype-collisions';
 
+/**
+ * ⚗️ CircuitumConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CircuitumConfig {
   real_creator_database: Map<string, RealCreatorNode>;
   narrative_graph: NarrativeGraph;
@@ -32,6 +49,23 @@ export interface CircuitumConfig {
   authentic_material_requirement: boolean;
 }
 
+/**
+ * ⚗️ ArchetypeFunction - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArchetypeFunction {
   id: number;
   name: string;
@@ -45,6 +79,23 @@ export interface ArchetypeFunction {
   historical_threading: HistoricalThread[];
 }
 
+/**
+ * ⚗️ CollisionPotential - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CollisionPotential {
   with_figure: string;
   collision_type: 'collaboration' | 'rivalry' | 'inspiration' | 'synthesis';
@@ -53,6 +104,23 @@ export interface CollisionPotential {
   authentic_material: PrimarySourceEntry[];
 }
 
+/**
+ * ⚗️ CreativeOutput - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CreativeOutput {
   figure: string;
   work_type: 'poem' | 'diary' | 'formula' | 'painting' | 'theory' | 'invention';
@@ -63,6 +131,23 @@ export interface CreativeOutput {
   sound_spell_config: SoundSpellConfig;
 }
 
+/**
+ * ⚗️ HistoricalThread - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface HistoricalThread {
   figure1: string;
   figure2: string;
@@ -72,6 +157,23 @@ export interface HistoricalThread {
   narrative_hooks: string[];
 }
 
+/**
+ * ⚗️ WorldRegion - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface WorldRegion {
   id: string;
   name: string;
@@ -87,6 +189,23 @@ export interface WorldRegion {
   };
 }
 
+/**
+ * ⚗️ Portal - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Portal {
   destination: string;
   symbol: string;
@@ -94,12 +213,46 @@ export interface Portal {
   archetype_resonance: number[];
 }
 
+/**
+ * ⚗️ SoundSpellSystem - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SoundSpellSystem {
   figures: Map<string, FigureSoundProfile>;
   mixing_engine: MixingEngine;
   spell_effects: SoundSpellEffect[];
 }
 
+/**
+ * ⚗️ FigureSoundProfile - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FigureSoundProfile {
   figure: string;
   base_frequency: number;
@@ -110,12 +263,46 @@ export interface FigureSoundProfile {
   historical_authenticity: number;
 }
 
+/**
+ * ⚗️ MixingEngine - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface MixingEngine {
   blend_motifs: (figures: string[], intent: string) => SoundSpellResult;
   create_new_consciousness: (figures: string[]) => ConsciousnessFusion;
   validate_historical_accuracy: (mix: SoundSpellResult) => AuthenticityReport;
 }
 
+/**
+ * ⚗️ SoundSpellResult - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SoundSpellResult {
   frequency_signature: number[];
   emotional_impact: number;
@@ -124,6 +311,23 @@ export interface SoundSpellResult {
   authentic_material_integrated: PrimarySourceEntry[];
 }
 
+/**
+ * ⚗️ ConsciousnessFusion - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ConsciousnessFusion {
   figures_involved: string[];
   new_archetype_emergence: string;
@@ -132,6 +336,23 @@ export interface ConsciousnessFusion {
   world_changing_potential: number;
 }
 
+/**
+ * ⚗️ AuthenticityReport - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface AuthenticityReport {
   historical_accuracy_score: number;
   authentic_material_usage: number;
@@ -139,6 +360,23 @@ export interface AuthenticityReport {
   provenance_tracking: ProvenanceRecord[];
 }
 
+/**
+ * ⚗️ PrimarySourceEntry - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PrimarySourceEntry {
   id: string;
   figure: string;
@@ -158,6 +396,23 @@ export interface PrimarySourceEntry {
  * 
  * Treats every historical creator as a node in one meta-story.
  * The Circuitum Itself - a single, evolving being composed of all creators.
+ */
+/**
+ * ⚗️ LivingCanonEngine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class LivingCanonEngine {
   private config: CircuitumConfig;
@@ -640,7 +895,10 @@ export class LivingCanonEngine {
     // Validate authenticity of materials used
     const authentic_materials = await this.validateAuthenticity(playerInput.materials_used);
     if (authentic_materials.score < 0.8) {
-      throw new Error("Creation must use authentic historical material");
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     // Identify relevant figures and archetypal functions
@@ -688,7 +946,10 @@ export class LivingCanonEngine {
     const sound_profiles = figures.map(f => this.config.sound_spell_system.figures.get(f)).filter(Boolean);
     
     if (sound_profiles.length < 2) {
-      throw new Error("Need at least 2 figures for sound spell mixing");
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     return this.config.sound_spell_system.mixing_engine.blend_motifs(figures, creation_intent);
@@ -850,12 +1111,46 @@ export class LivingCanonEngine {
 }
 
 // Supporting classes
+/**
+ * ⚗️ NarrativeMomentum - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 class NarrativeMomentum {
   current_energy: number = 0.5;
   direction: string = "ascension";
   acceleration: number = 0.1;
 }
 
+/**
+ * ⚗️ EmergingThreat - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 class EmergingThreat {
   type: string;
   description: string;
@@ -863,6 +1158,23 @@ class EmergingThreat {
   affected_regions: string[];
 }
 
+/**
+ * ⚗️ PlayerImpactTracker - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 class PlayerImpactTracker {
   creative_acts: number = 0;
   figures_activated: Set<string> = new Set();
@@ -871,6 +1183,23 @@ class PlayerImpactTracker {
 }
 
 // Supporting interfaces
+/**
+ * ⚗️ CreationInput - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CreationInput {
   player_name: string;
   materials_used: any[];
@@ -880,6 +1209,23 @@ export interface CreationInput {
   trauma_safe_preferences: any;
 }
 
+/**
+ * ⚗️ WorldEffect - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface WorldEffect {
   id: string;
   name: string;
@@ -893,6 +1239,23 @@ export interface WorldEffect {
   authenticity_score: number;
 }
 
+/**
+ * ⚗️ PlayerContext - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PlayerContext {
   theme: string;
   consciousness_level: number;
@@ -900,6 +1263,23 @@ export interface PlayerContext {
   narrative_arc_position: number;
 }
 
+/**
+ * ⚗️ NPCResponse - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface NPCResponse {
   figure: string;
   dialogue: string;
@@ -908,6 +1288,23 @@ export interface NPCResponse {
   authentic_material_quoted: string;
 }
 
+/**
+ * ⚗️ StoryState - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface StoryState {
   current_world_region: string;
   active_figures: Set<string>;
@@ -918,12 +1315,46 @@ export interface StoryState {
   world_stability: number;
 }
 
+/**
+ * ⚗️ SoundSpellConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SoundSpellConfig {
   frequency_signature: number;
   rhythm: string;
   emotional_impact: string;
 }
 
+/**
+ * ⚗️ ProvenanceRecord - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ProvenanceRecord {
   source: string;
   authenticity_score: number;
@@ -931,6 +1362,23 @@ export interface ProvenanceRecord {
   historical_context: string;
 }
 
+/**
+ * ⚗️ PrimarySourceDatabase - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PrimarySourceDatabase {
   // Implementation would include methods for:
   // - getQuotesForFigure(figure: string, theme: string)

@@ -8,6 +8,36 @@
 
 ---
 
+# ⊙ Cathedral Style - cathedral-style
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Cathedral Style - cathedral-style
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Cathedral Style - cathedral-style
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # cathedral-style
 
 No description available

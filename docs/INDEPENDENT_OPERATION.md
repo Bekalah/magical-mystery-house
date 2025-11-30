@@ -1,5 +1,13 @@
 # Independent Operation Guide
 
+
+# ⚗️ INDEPENDENT_OPERATION
+
+**In the alchemical tradition, this grimoire contains the sacred knowledge**
+**and principles that guide the transformation of base materials into gold.**
+
+---
+
 **Author**: Rebecca Respawn  
 **License**: CC0-1.0 - Public Domain
 

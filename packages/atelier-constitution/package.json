@@ -11,8 +11,9 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:24:14.501Z",
+  "consolidatedAt": "2025-11-30T23:04:18.623Z",
   "engines": {
+    "node": "*",
     "pnpm": ">=8.0.0"
   },
   "packageManager": "pnpm@8.0.0",
@@ -20,5 +21,8 @@
     "name": "Atelier Constitution",
     "symbol": "⊙",
     "label": "⊙ Atelier Constitution (atelier-constitution)"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -9,6 +9,23 @@
  * @package @cathedral/synth
  */
 
+/**
+ * ⚗️ SacredFrequency - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SacredFrequency {
   id: string;
   name: string;
@@ -102,6 +119,23 @@ export const SACRED_FREQUENCIES: SacredFrequency[] = [
  * 
  * Creates fractal-based sound frequencies for healing and focus
  */
+/**
+ * ⚗️ SacredFrequencyWeaver - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class SacredFrequencyWeaver {
   private context: AudioContext | null = null;
 
@@ -116,7 +150,10 @@ export class SacredFrequencyWeaver {
    */
   async playFrequency(frequencyId: string, duration: number = 300): Promise<void> {
     if (!this.context) {
-      throw new Error('AudioContext not available');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     const freq = SACRED_FREQUENCIES.find(f => f.id === frequencyId);

@@ -11,6 +11,23 @@
 // import type { MusicNode, MusicComposition } from './MusicEngine';
 import { SACRED_MATH } from '../../sacred-mathematics-core/src/index';
 
+/**
+ * ⚗️ ChordProgression - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ChordProgression {
   chords: number[];
   key: string;
@@ -18,6 +35,23 @@ export interface ChordProgression {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ HarmonicAnalysis - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface HarmonicAnalysis {
   root: number;
   intervals: number[];
@@ -30,6 +64,23 @@ export interface HarmonicAnalysis {
   };
 }
 
+/**
+ * ⚗️ MusicalForm - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface MusicalForm {
   type: 'binary' | 'ternary' | 'rondo' | 'sonata' | 'theme-variations' | 'sacred-geometry';
   sections: string[];
@@ -39,6 +90,23 @@ export interface MusicalForm {
 
 /**
  * Advanced Music Composition Tools
+ */
+/**
+ * ⚗️ MusicCompositionTools - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class MusicCompositionTools {
   private readonly GOLDEN_RATIO = SACRED_MATH.PHI;
@@ -51,13 +119,22 @@ export class MusicCompositionTools {
   public generateSacredProgression(nodeIndices: number[], key: string = 'C', mode: 'major' | 'minor' = 'major'): ChordProgression {
     // Input validation
     if (!Array.isArray(nodeIndices) || nodeIndices.length === 0) {
-      throw new Error('nodeIndices must be a non-empty array');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (typeof key !== 'string' || key.trim().length === 0) {
-      throw new Error('key must be a non-empty string');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (mode !== 'major' && mode !== 'minor' && mode !== 'dorian' && mode !== 'phrygian' && mode !== 'lydian' && mode !== 'mixolydian' && mode !== 'locrian') {
-      throw new Error('mode must be a valid mode type');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     // Use Fibonacci to determine progression length
     const fibIndex = nodeIndices.length % this.FIBONACCI.length;
@@ -86,10 +163,16 @@ export class MusicCompositionTools {
   public analyzeHarmony(frequency: number, harmonics: number[]): HarmonicAnalysis {
     // Input validation
     if (typeof frequency !== 'number' || frequency <= 0 || frequency > 20000) {
-      throw new Error('frequency must be a positive number between 0 and 20000 Hz');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (!Array.isArray(harmonics)) {
-      throw new Error('harmonics must be an array');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     const root = frequency;
     const intervals: number[] = [];

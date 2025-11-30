@@ -11,6 +11,23 @@
 // import { Codex144Engine } from '../../codex-144-99-core/src/index';
 // import { SACRED_MATH } from '../../sacred-mathematics-core/src/index';
 
+/**
+ * ⚗️ ArtNode - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArtNode {
   nodeIndex: number;
   geometry: GeometryShape;
@@ -21,6 +38,23 @@ export interface ArtNode {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ GeometryShape - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface GeometryShape {
   type: 'circle' | 'square' | 'triangle' | 'pentagon' | 'hexagon' | 'spiral' | 'mandala';
   vertices: Point[];
@@ -30,12 +64,46 @@ export interface GeometryShape {
   scale: number;
 }
 
+/**
+ * ⚗️ Point - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Point {
   x: number;
   y: number;
   z?: number;
 }
 
+/**
+ * ⚗️ ColorPalette - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ColorPalette {
   primary: Color;
   secondary: Color;
@@ -44,6 +112,23 @@ export interface ColorPalette {
   consciousnessBased: boolean;
 }
 
+/**
+ * ⚗️ Color - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Color {
   r: number;  // 0-255
   g: number;  // 0-255
@@ -51,6 +136,23 @@ export interface Color {
   a: number;  // 0-1
 }
 
+/**
+ * ⚗️ Pattern - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Pattern {
   type: 'fractal' | 'sacred-geometry' | 'organic' | 'geometric';
   complexity: number;
@@ -58,6 +160,23 @@ export interface Pattern {
   seed: number;
 }
 
+/**
+ * ⚗️ Composition - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Composition {
   layout: 'golden-ratio' | 'rule-of-thirds' | 'sacred-geometry' | 'fibonacci';
   focalPoints: Point[];
@@ -65,6 +184,23 @@ export interface Composition {
   depth: number;
 }
 
+/**
+ * ⚗️ ArtComposition - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArtComposition {
   nodes: ArtNode[];
   canvas: {
@@ -81,6 +217,23 @@ export interface ArtComposition {
 
 /**
  * Art Engine - Creates art from Codex144 nodes
+ */
+/**
+ * ⚗️ ArtEngine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class ArtEngine {
   // private codex144: Codex144Engine; // Available if needed
@@ -375,13 +528,22 @@ export class ArtEngine {
   public createArtComposition(nodeIndices: number[], canvasWidth: number = 1920, _canvasHeight: number = 1080): ArtComposition {
     // Input validation
     if (!Array.isArray(nodeIndices) || nodeIndices.length === 0) {
-      throw new Error('nodeIndices must be a non-empty array');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (nodeIndices.some(idx => typeof idx !== 'number' || idx < 0 || idx >= 144 || !Number.isInteger(idx))) {
-      throw new Error('All nodeIndices must be integers between 0 and 143');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (typeof canvasWidth !== 'number' || canvasWidth <= 0) {
-      throw new Error('canvasWidth must be a positive number');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     const artNodes = nodeIndices.map(index => this.createArtNode(index));
     
@@ -410,10 +572,16 @@ export class ArtEngine {
   public generateSVG(artNode: ArtNode, width: number = 800, _height: number = 600): string {
     // Input validation
     if (!artNode) {
-      throw new Error('artNode is required');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (typeof width !== 'number' || width <= 0) {
-      throw new Error('width must be a positive number');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     const aspectRatio = this.RATIO_144_99;
     const adjustedHeight = width / aspectRatio;

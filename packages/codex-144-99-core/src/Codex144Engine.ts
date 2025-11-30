@@ -12,6 +12,23 @@ import { FusionKinkDesignMathematics } from '../../fusion-kink-core/src/index';
 // Codex144Security available for future use
 // import { Codex144Security } from './Codex144Security';
 
+/**
+ * ⚗️ CodexNode - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CodexNode {
   nodeIndex: number;           // 0-143
   name: string;
@@ -39,6 +56,23 @@ export interface CodexNode {
   correspondences: Record<string, any>;
 }
 
+/**
+ * ⚗️ CodexDepth - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CodexDepth {
   depthIndex: number;            // 0-98 (multi-layered depth with sacred geometry)
   name: string;
@@ -55,6 +89,23 @@ export interface CodexDepth {
 }
 
 // Trauma-aware: gentle, supportive, ESC exits, pause anytime
+/**
+ * ⚗️ Codex144Engine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class Codex144Engine {
   private nodes: Map<number, CodexNode>;
   private depths: Map<number, CodexDepth>;

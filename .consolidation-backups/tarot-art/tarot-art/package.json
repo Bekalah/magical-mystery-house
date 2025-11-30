@@ -11,8 +11,9 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:21:01.847Z",
+  "consolidatedAt": "2025-11-30T23:01:11.663Z",
   "engines": {
+    "node": "*",
     "pnpm": ">=8.0.0"
   },
   "packageManager": "pnpm@8.0.0",
@@ -20,5 +21,8 @@
     "name": "Tarot Art",
     "symbol": "⊙",
     "label": "⊙ Tarot Art (tarot-art)"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

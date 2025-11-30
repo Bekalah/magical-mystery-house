@@ -26,11 +26,15 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:24:15.723Z",
+  "consolidatedAt": "2025-11-30T23:04:21.285Z",
   "packageManager": "pnpm@8.0.0",
   "alchemical": {
     "name": "Fractal Flames Daemon Deity",
     "symbol": "⊙",
     "label": "⊙ Fractal Flames Daemon Deity (@cathedral/fractal-flames-daemon-deity)"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts"
 }

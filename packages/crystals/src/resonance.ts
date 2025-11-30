@@ -11,6 +11,23 @@ import * as dotenv from 'dotenv';
 
 dotenv.config();
 
+/**
+ * ⚗️ Mean - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function mean(nums: number[]) { return nums.reduce((a,b)=>a+b,0)/Math.max(1,nums.length); }
 
 export async function computeFusionResonance(fusionId: string): Promise<ResonanceComputationResult | null> {
@@ -59,5 +76,39 @@ export async function computeFusionResonance(fusionId: string): Promise<Resonanc
 }
 
 
+/**
+ * ⚗️ ListCrystalIds - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function listCrystalIds() { return baseCrystals.map(c => c.id); }
+/**
+ * ⚗️ ListFusionSets - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function listFusionSets() { return fusionSets.map(f => ({ id: f.id, name: f.name })); }

@@ -16,6 +16,23 @@
  * - Art synthesis (local processing)
  */
 
+/**
+ * ⚗️ AzureAIConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface AzureAIConfig {
   openAIEndpoint: string;
   openAIKey: string;
@@ -24,6 +41,23 @@ export interface AzureAIConfig {
   computerVisionKey: string;
 }
 
+/**
+ * ⚗️ ArtGenerationRequest - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArtGenerationRequest {
   prompt: string;
   style: string;
@@ -34,12 +68,46 @@ export interface ArtGenerationRequest {
   quality?: 'standard' | 'hd';
 }
 
+/**
+ * ⚗️ ResearchAnalysisRequest - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ResearchAnalysisRequest {
   researchData: any;
   analysisType: 'literary' | 'artistic' | 'scientific' | 'mystical' | 'technological';
   depth: 'summary' | 'detailed' | 'comprehensive';
 }
 
+/**
+ * ⚗️ FusionKinkAnalysis - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FusionKinkAnalysis {
   arcanaResonance: number;
   codexAlignment: number;
@@ -48,6 +116,23 @@ export interface FusionKinkAnalysis {
   practicalApplications: string[];
 }
 
+/**
+ * ⚗️ AzureAIFoundry - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class AzureAIFoundry {
   private config: AzureAIConfig | null = null;
 

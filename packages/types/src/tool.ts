@@ -8,6 +8,23 @@ export const toolGroups = ["read", "edit", "browser", "command", "mcp", "modes"]
 
 export const toolGroupsSchema = z.enum(toolGroups)
 
+/**
+ * ⚗️ ToolGroup - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ToolGroup = z.infer<typeof toolGroupsSchema>
 
 /**
@@ -39,6 +56,23 @@ export const toolNames = [
 
 export const toolNamesSchema = z.enum(toolNames)
 
+/**
+ * ⚗️ ToolName - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ToolName = z.infer<typeof toolNamesSchema>
 
 /**
@@ -53,4 +87,21 @@ export const toolUsageSchema = z.record(
 	}),
 )
 
+/**
+ * ⚗️ ToolUsage - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ToolUsage = z.infer<typeof toolUsageSchema>

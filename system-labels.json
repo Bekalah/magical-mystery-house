@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764538597415,
+  "timestamp": 1764539957419,
   "summary": {
     "packages": 127,
     "codex": 92,
@@ -2381,8 +2381,8 @@
       "label": "[CODEX] package.json",
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144-99-core/package.json",
       "type": "codex-json",
-      "size": 348,
-      "mtime": "2025-11-30T21:24:15.446Z"
+      "size": 473,
+      "mtime": "2025-11-30T21:36:38.913Z"
     }
   ],
   "systems": [
@@ -5908,8 +5908,8 @@
         "label": "[CODEX] package.json",
         "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144-99-core/package.json",
         "type": "codex-json",
-        "size": 348,
-        "mtime": "2025-11-30T21:24:15.446Z"
+        "size": 473,
+        "mtime": "2025-11-30T21:36:38.913Z"
       }
     },
     {

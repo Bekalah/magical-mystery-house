@@ -27,6 +27,23 @@
 import type { TrinityV11State } from './TrinityV11Core';
 import FractalSoundSynthesizer from './fractal-sound-synthesizer';
 
+/**
+ * ⚗️ CircuitumGate - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CircuitumGate {
   gate_id: number; // 0-98 for 99 Gates
   name: string;
@@ -38,6 +55,23 @@ export interface CircuitumGate {
   fractal_sound_frequency?: number; // Hz
 }
 
+/**
+ * ⚗️ Circuitum99Connector - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class Circuitum99Connector {
   private gates: Map<number, CircuitumGate> = new Map();
 

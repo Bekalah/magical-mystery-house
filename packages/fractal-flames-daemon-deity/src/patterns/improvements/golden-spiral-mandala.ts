@@ -9,6 +9,23 @@
  * @package @cathedral/fractal-flames-daemon-deity
  */
 
+/**
+ * ⚗️ GoldenSpiralMandala - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface GoldenSpiralMandala {
   id: string;
   name: string;
@@ -28,6 +45,23 @@ export interface GoldenSpiralMandala {
  * Generate Golden Spiral Mandala
  * 
  * Creates beautiful fractal patterns based on golden ratio
+ */
+/**
+ * ⚗️ GoldenSpiralMandalaGenerator - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class GoldenSpiralMandalaGenerator {
   private goldenRatio = 1.618033988749895;

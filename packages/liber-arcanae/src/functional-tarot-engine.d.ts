@@ -21,6 +21,23 @@
  * Creative use: Game apps, tarot apps, divination apps, RPG apps
  */
 import { CompleteTarotCard } from './complete-tarot-system';
+/**
+ * ⚗️ TarotReading - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface TarotReading {
     id: string;
     type: 'daily' | 'three-card' | 'celtic-cross' | 'relationship' | 'healing';
@@ -29,12 +46,46 @@ export interface TarotReading {
     timestamp: Date;
     interpretation: string;
 }
+/**
+ * ⚗️ ReadingCard - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ReadingCard {
     card: CompleteTarotCard;
     position: string;
     reversed: boolean;
     interpretation: string;
 }
+/**
+ * ⚗️ SpreadType - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type SpreadType = 'daily' | 'three-card' | 'celtic-cross' | 'relationship' | 'healing';
 /**
  * Functional Tarot Engine

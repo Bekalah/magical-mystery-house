@@ -11,6 +11,23 @@
  * Perfect quality with ornate mappings
  */
 
+/**
+ * ⚗️ CodexMapping - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CodexMapping {
   nodeId: number;
   visual: {
@@ -33,6 +50,23 @@ export interface CodexMapping {
  * - Visual apps: Visualize Codex nodes
  * - Game apps: Use Codex in gameplay
  * - Audio apps: Generate sound from Codex
+ */
+/**
+ * ⚗️ CreativeCodexMapper - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class CreativeCodexMapper {
   /**

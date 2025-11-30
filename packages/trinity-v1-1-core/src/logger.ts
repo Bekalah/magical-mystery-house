@@ -17,6 +17,23 @@ import EnhancedLogger from '../../tools/enhanced-logger.mjs';
 // Trauma-aware: gentle, supportive, ESC exits, pause anytime
 const externalLogger = new EnhancedLogger();
 
+/**
+ * ⚗️ Logger - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Logger {
   info(message: string, metadata?: Record<string, unknown>): void;
   warn(message: string, metadata?: Record<string, unknown>): void;
@@ -24,6 +41,23 @@ export interface Logger {
   debug(message: string, metadata?: Record<string, unknown>): void;
 }
 
+/**
+ * ⚗️ TrinityLogger - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 class TrinityLogger implements Logger {
   private enabled: boolean = true;
   private logLevel: 'debug' | 'info' | 'warn' | 'error' = 'info';

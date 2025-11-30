@@ -16,6 +16,23 @@
  * Supports both generated art and static assets
  */
 
+/**
+ * ⚗️ CardArtAsset - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CardArtAsset {
   cardId: string;
   frontImage?: string; // URL or data URI
@@ -26,6 +43,23 @@ export interface CardArtAsset {
   source: 'generated' | 'static' | 'user-upload';
 }
 
+/**
+ * ⚗️ ArtGeneratorConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArtGeneratorConfig {
   style: 'visionary' | 'renaissance' | 'baroque';
   palette: string[];
@@ -33,6 +67,23 @@ export interface ArtGeneratorConfig {
   includeSeal: boolean;
 }
 
+/**
+ * ⚗️ LiberArcanaeArtLoader - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class LiberArcanaeArtLoader {
   private artAssets: Map<string, CardArtAsset> = new Map();
   private artBasePath: string;

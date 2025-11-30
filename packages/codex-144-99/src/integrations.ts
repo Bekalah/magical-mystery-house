@@ -16,6 +16,23 @@
  * - Never flat - always flowing, trauma-informed
  */
 
+/**
+ * ⚗️ SoygaTable - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SoygaTable {
   id: string;
   name: string;
@@ -24,6 +41,23 @@ export interface SoygaTable {
   connections: number[]; // Codex 144:99 node connections
 }
 
+/**
+ * ⚗️ IChingHexagram - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface IChingHexagram {
   number: number; // 1-64
   name: string;
@@ -34,6 +68,23 @@ export interface IChingHexagram {
   connections: number[]; // Codex 144:99 node connections
 }
 
+/**
+ * ⚗️ ShemAngel - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ShemAngel {
   number: number; // 1-72
   name: string;
@@ -43,6 +94,23 @@ export interface ShemAngel {
   connections: number[]; // Codex 144:99 node connections
 }
 
+/**
+ * ⚗️ GoetiaDemon - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface GoetiaDemon {
   number: number; // 1-72
   name: string;
@@ -52,6 +120,23 @@ export interface GoetiaDemon {
   connections: number[]; // Codex 144:99 node connections
 }
 
+/**
+ * ⚗️ Deity - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Deity {
   name: string;
   tradition: string; // Greek, Hindu, Egyptian, Celtic, Norse, etc.
@@ -351,12 +436,46 @@ export const DEITIES: Deity[] = [
 /**
  * Get Soyga table by element
  */
+/**
+ * ⚗️ GetSoygaTable - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function getSoygaTable(element: string): SoygaTable | undefined {
   return SOYGA_TABLES.find(table => table.element === element);
 }
 
 /**
  * Get I Ching hexagram by number
+ */
+/**
+ * ⚗️ GetIChingHexagram - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function getIChingHexagram(number: number): IChingHexagram | undefined {
   return I_CHING_HEXAGRAMS.find(hex => hex.number === number);
@@ -365,12 +484,46 @@ export function getIChingHexagram(number: number): IChingHexagram | undefined {
 /**
  * Get Shem Angel by number
  */
+/**
+ * ⚗️ GetShemAngel - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function getShemAngel(number: number): ShemAngel | undefined {
   return SHEM_ANGELS.find(angel => angel.number === number);
 }
 
 /**
  * Get Goetia Demon by number
+ */
+/**
+ * ⚗️ GetGoetiaDemon - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function getGoetiaDemon(number: number): GoetiaDemon | undefined {
   return GOETIA_DEMONS.find(demon => demon.number === number);
@@ -379,12 +532,46 @@ export function getGoetiaDemon(number: number): GoetiaDemon | undefined {
 /**
  * Get deities by tradition
  */
+/**
+ * ⚗️ GetDeitiesByTradition - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function getDeitiesByTradition(tradition: string): Deity[] {
   return DEITIES.filter(deity => deity.tradition === tradition);
 }
 
 /**
  * Get all correspondences for a Codex node
+ */
+/**
+ * ⚗️ GetNodeCorrespondences - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function getNodeCorrespondences(nodeId: number): {
   soyga?: SoygaTable;

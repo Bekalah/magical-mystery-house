@@ -34,6 +34,23 @@ export const ackSchema = z.object({
 	ppid: z.number(),
 })
 
+/**
+ * ⚗️ Ack - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type Ack = z.infer<typeof ackSchema>
 
 /**
@@ -75,6 +92,23 @@ export const taskCommandSchema = z.discriminatedUnion("commandName", [
 	}),
 ])
 
+/**
+ * ⚗️ TaskCommand - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type TaskCommand = z.infer<typeof taskCommandSchema>
 
 /**
@@ -101,12 +135,46 @@ export const ipcMessageSchema = z.discriminatedUnion("type", [
 	}),
 ])
 
+/**
+ * ⚗️ IpcMessage - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type IpcMessage = z.infer<typeof ipcMessageSchema>
 
 /**
  * IpcClientEvents
  */
 
+/**
+ * ⚗️ IpcClientEvents - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type IpcClientEvents = {
 	[IpcMessageType.Connect]: []
 	[IpcMessageType.Disconnect]: []
@@ -119,6 +187,23 @@ export type IpcClientEvents = {
  * IpcServerEvents
  */
 
+/**
+ * ⚗️ IpcServerEvents - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type IpcServerEvents = {
 	[IpcMessageType.Connect]: [clientId: string]
 	[IpcMessageType.Disconnect]: [clientId: string]

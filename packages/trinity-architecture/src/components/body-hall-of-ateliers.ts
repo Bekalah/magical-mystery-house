@@ -11,6 +11,23 @@
 import { StudioSpace, CollaborationSession } from '../types/arcana';
 import { TraumaSafeConfig } from '../types/consciousness';
 
+/**
+ * ⚗️ ArtistProfile - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArtistProfile {
   id: string;
   name: string;
@@ -22,6 +39,23 @@ export interface ArtistProfile {
   booking_history: BookingRecord[];
 }
 
+/**
+ * ⚗️ PortfolioItem - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PortfolioItem {
   id: string;
   title: string;
@@ -34,6 +68,23 @@ export interface PortfolioItem {
   created_date: Date;
 }
 
+/**
+ * ⚗️ BookingRecord - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface BookingRecord {
   studio_id: string;
   date: Date;
@@ -44,6 +95,23 @@ export interface BookingRecord {
   arcana_progression: number;
 }
 
+/**
+ * ⚗️ HallOfAteliersConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface HallOfAteliersConfig {
   trauma_safe_level: number; // 1-5
   available_studios: number;
@@ -58,6 +126,23 @@ export interface HallOfAteliersConfig {
  * 
  * Manages physical creative spaces aligned with Major Arcana
  * Provides trauma-safe environments for consciousness-based creation
+ */
+/**
+ * ⚗️ HallOfAteliers - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class HallOfAteliers {
   private config: HallOfAteliersConfig;
@@ -396,7 +481,11 @@ export class HallOfAteliers {
   ): Promise<CollaborationSession> {
     const facilitator = this.artistProfiles.get(facilitatorId);
     if (!facilitator) {
-      throw new Error('Facilitator profile not found');
+      throw new Error(`⚗️ The path you seek has not yet been revealed.
+
+The grimoire you requested exists in the realm of possibility, but has not yet been manifested in this dimension.
+
+Perhaps the path needs to be created first, or perhaps you seek something that exists by another name.`);
     }
 
     // Validate all participants
@@ -633,6 +722,23 @@ export class HallOfAteliers {
   }
 }
 
+/**
+ * ⚗️ ExhibitionSpace - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 interface ExhibitionSpace {
   id: string;
   name: string;

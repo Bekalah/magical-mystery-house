@@ -2,16 +2,6 @@
  * @license CC0-1.0 - Public Domain
  */
 
-/**
- * ⊙ Cathedral Audio Synthesis.Test
- * 
- * @alchemical Cathedral Audio Synthesis.Test
- * @element N/A
- * @symbol ⊙
- * 
- * @license CC0-1.0 - Public Domain
- */
-
 import { describe, it, expect } from 'vitest';
 
 describe('cathedral-audio-synthesis', () => {

@@ -15,7 +15,7 @@
     "directions"
   ],
   "author": "Cathedral Master Creative Intelligence Team",
-  "license": "CC0",
+  "license": "CC0-1.0",
   "engines": {
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0"
@@ -28,11 +28,15 @@
     "@types/node": "^20.17.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:20:59.608Z",
+  "consolidatedAt": "2025-11-30T23:01:07.906Z",
   "packageManager": "pnpm@8.0.0",
   "alchemical": {
     "name": "Luxcrux",
     "symbol": "⊙",
     "label": "⊙ Luxcrux (@cathedral/luxcrux)"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts"
 }

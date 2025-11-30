@@ -28,6 +28,23 @@ import { MetadataSystem } from './metadata-system';
 import { CollaborativeEngine } from '../collaboration/collaborative-engine';
 import { SacredGeometryLibrary } from '../symbols/sacred-geometry-library';
 
+/**
+ * ⚗️ CanvasSettings - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CanvasSettings {
   width: number;
   height: number;
@@ -44,6 +61,23 @@ export interface CanvasSettings {
   audioReactive: boolean;
 }
 
+/**
+ * ⚗️ DrawingElement - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface DrawingElement {
   id: string;
   type: 'path' | 'shape' | 'text' | 'sacred_geometry' | 'alchemical_symbol' | 'archetype_mandala';
@@ -98,6 +132,23 @@ export interface DrawingElement {
   };
 }
 
+/**
+ * ⚗️ ArtSpellEffect - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArtSpellEffect {
   id: string;
   name: string;
@@ -118,6 +169,23 @@ export interface ArtSpellEffect {
   trauma_safe: boolean;
 }
 
+/**
+ * ⚗️ WorldIntegration - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface WorldIntegration {
   position: { x: number; y: number; z: number };
   realm: string; // Which part of Codex Abyssiae
@@ -132,6 +200,23 @@ export interface WorldIntegration {
 
 /**
  * Liber Arcanae Canvas - The Art = Spell Creative Engine
+ */
+/**
+ * ⚗️ LiberArcanaeCanvas - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class LiberArcanaeCanvas {
   private canvas: HTMLCanvasElement;
@@ -200,7 +285,10 @@ export class LiberArcanaeCanvas {
     }) as CanvasRenderingContext2D;
     
     if (!this.ctx) {
-      throw new Error('Could not initialize canvas 2D context');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     // Configure for high color depth and professional quality

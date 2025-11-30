@@ -6,6 +6,23 @@
 // Perfect integration of Liber Arcanae and Codex 144:99 systems
 
 // Interim type definitions until full integration
+/**
+ * ⚗️ CodexNode - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CodexNode {
   id: number;
   resonance: number;
@@ -14,6 +31,23 @@ export interface CodexNode {
   archetype: string;
 }
 
+/**
+ * ⚗️ ResonancePattern - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ResonancePattern {
   primaryCodexNode: number;
   secondaryCodexNodes: number[];
@@ -23,6 +57,23 @@ export interface ResonancePattern {
   chakraAlignment: string;
 }
 
+/**
+ * ⚗️ ArcanaCard - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArcanaCard {
   id: string;
   name: string;
@@ -109,6 +160,23 @@ export interface ArcanaCard {
   };
 }
 
+/**
+ * ⚗️ FusionTransformation - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FusionTransformation {
   physical: string[];
   emotional: string[];
@@ -117,6 +185,23 @@ export interface FusionTransformation {
   consciousness: string[];
 }
 
+/**
+ * ⚗️ FusionOutcome - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FusionOutcome {
   newAbilities: string[];
   storyDevelopment: string[];
@@ -125,6 +210,23 @@ export interface FusionOutcome {
   resonanceEvolution: number[]; // Array of resonance values
 }
 
+/**
+ * ⚗️ FusionKinkSession - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FusionKinkSession {
   id: string;
   participants: string[];
@@ -142,6 +244,23 @@ export interface FusionKinkSession {
  * 144-Node Codex Integration
  * Enhanced with Violet Flame Transmutation capabilities
  */
+/**
+ * ⚗️ VioletFlameTransformation - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface VioletFlameTransformation {
   nodeId: number;
   currentResonance: number;
@@ -156,6 +275,23 @@ export interface VioletFlameTransformation {
 
 /**
  * Enhanced Resonance Pattern for 144-Node Integration
+ */
+/**
+ * ⚗️ Codex144Resonance - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export interface Codex144Resonance extends ResonancePattern {
   codexMappings: {
@@ -173,6 +309,23 @@ export interface Codex144Resonance extends ResonancePattern {
  * Sacred Trinity Integration
  * Connects Codex 144:99, Liber Arcanae, and Fusion Kink Engine
  */
+/**
+ * ⚗️ TrinityIntegration - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface TrinityIntegration {
   codexNode: CodexNode & { violetFlamePotential: number };
   arcanaCard: ArcanaCard;
@@ -185,6 +338,23 @@ export interface TrinityIntegration {
 /**
  * Cathedral Master Session
  * Ultimate integration point for all sacred systems
+ */
+/**
+ * ⚗️ CathedralMasterSession - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export interface CathedralMasterSession {
   sessionId: string;

@@ -15,6 +15,23 @@
 import SacredGeometryEngine, { SacredGeometryPoint, SacredGeometryPattern } from './sacred-geometry-engine';
 import ConsciousnessMapper from './consciousness-mapper';
 
+/**
+ * ⚗️ VisualizationConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface VisualizationConfig {
   systemType: 'arcana' | 'gate' | 'codex' | 'chapel' | 'room';
   systemId: number;
@@ -25,6 +42,23 @@ export interface VisualizationConfig {
   animation: boolean;
 }
 
+/**
+ * ⚗️ VisualizationData - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface VisualizationData {
   points: SacredGeometryPoint[];
   connections: number[][];
@@ -37,6 +71,23 @@ export interface VisualizationData {
 }
 
 export // Trauma-aware: gentle, supportive, ESC exits, pause anytime
+/**
+ * ⚗️ VisualizationEngine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 class VisualizationEngine {
   // Generate visualization for a system
   public static generateVisualization(config: VisualizationConfig): VisualizationData {

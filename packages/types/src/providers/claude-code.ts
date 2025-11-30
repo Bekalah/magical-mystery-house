@@ -14,12 +14,46 @@ const VERTEX_DATE_PATTERN = /-(\d{8})$/
  * convertModelNameForVertex("claude-sonnet-4-20250514") // returns "claude-sonnet-4@20250514"
  * convertModelNameForVertex("claude-model") // returns "claude-model" (no change)
  */
+/**
+ * ⚗️ ConvertModelNameForVertex - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function convertModelNameForVertex(modelName: string): string {
 	// Convert hyphen-date format to @date format for Vertex AI
 	return modelName.replace(VERTEX_DATE_PATTERN, "@$1")
 }
 
 // Claude Code
+/**
+ * ⚗️ ClaudeCodeModelId - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ClaudeCodeModelId = keyof typeof claudeCodeModels
 export const claudeCodeDefaultModelId: ClaudeCodeModelId = "claude-sonnet-4-5"
 export const CLAUDE_CODE_DEFAULT_MAX_OUTPUT_TOKENS = 16000
@@ -34,6 +68,23 @@ export const CLAUDE_CODE_DEFAULT_MAX_OUTPUT_TOKENS = 16000
  * @example
  * getClaudeCodeModelId("claude-sonnet-4-20250514", true) // returns "claude-sonnet-4@20250514"
  * getClaudeCodeModelId("claude-sonnet-4-20250514", false) // returns "claude-sonnet-4-20250514"
+ */
+/**
+ * ⚗️ GetClaudeCodeModelId - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function getClaudeCodeModelId(baseModelId: ClaudeCodeModelId, useVertex = false): string {
 	return useVertex ? convertModelNameForVertex(baseModelId) : baseModelId

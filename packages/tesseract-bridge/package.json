@@ -22,7 +22,7 @@
     "geometry"
   ],
   "author": "Cathedral Master Creative Intelligence Team",
-  "license": "CC0",
+  "license": "CC0-1.0",
   "engines": {
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0"
@@ -32,11 +32,15 @@
     "@types/node": "^20.17.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T21:24:17.695Z",
+  "consolidatedAt": "2025-11-30T23:04:26.135Z",
   "packageManager": "pnpm@8.0.0",
   "alchemical": {
     "name": "Tesseract",
     "symbol": "⊞",
     "label": "⊞ Tesseract (@cathedral/tesseract-bridge)"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts"
 }

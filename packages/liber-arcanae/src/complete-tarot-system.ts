@@ -25,6 +25,23 @@
 import { CodexLibrary } from '@cathedral/codex-144-99';
 import { getChapter } from '@cathedral/circuitum99/33-chapters';
 
+/**
+ * ⚗️ CompleteTarotCard - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CompleteTarotCard {
   id: string;
   number: number;
@@ -42,6 +59,23 @@ export interface CompleteTarotCard {
   connections: TarotConnections;
 }
 
+/**
+ * ⚗️ TarotCorrespondences - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface TarotCorrespondences {
   codexNodes: number[]; // Connected Codex 144:99 nodes
   circuitumChapters: number[]; // Connected Circuitum99 chapters
@@ -54,6 +88,23 @@ export interface TarotCorrespondences {
   path?: number;
 }
 
+/**
+ * ⚗️ TarotNarrative - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface TarotNarrative {
   theme: string;
   archetype: string;
@@ -65,6 +116,23 @@ export interface TarotNarrative {
   keywords: string[];
 }
 
+/**
+ * ⚗️ FableRPGMechanics - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FableRPGMechanics {
   alignment: {
     light: number; // 0-100
@@ -84,6 +152,23 @@ export interface FableRPGMechanics {
   rewards: string[];
 }
 
+/**
+ * ⚗️ TarotConnections - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface TarotConnections {
   allies: string[]; // Other cards that work well together
   challenges: string[]; // Cards that represent challenges
@@ -277,12 +362,46 @@ export const COMPLETE_TAROT: CompleteTarotCard[] = [
 /**
  * Get card by ID
  */
+/**
+ * ⚗️ GetCard - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function getCard(id: string): CompleteTarotCard | undefined {
   return COMPLETE_TAROT.find(card => card.id === id);
 }
 
 /**
  * Get all Major Arcana
+ */
+/**
+ * ⚗️ GetMajorArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function getMajorArcana(): CompleteTarotCard[] {
   return COMPLETE_TAROT.filter(card => card.type === 'major');
@@ -291,6 +410,23 @@ export function getMajorArcana(): CompleteTarotCard[] {
 /**
  * Get all Minor Arcana
  */
+/**
+ * ⚗️ GetMinorArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function getMinorArcana(): CompleteTarotCard[] {
   return COMPLETE_TAROT.filter(card => card.type === 'minor');
 }
@@ -298,12 +434,46 @@ export function getMinorArcana(): CompleteTarotCard[] {
 /**
  * Get cards by suit
  */
+/**
+ * ⚗️ GetCardsBySuit - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function getCardsBySuit(suit: 'wands' | 'cups' | 'swords' | 'pentacles'): CompleteTarotCard[] {
   return COMPLETE_TAROT.filter(card => card.suit === suit);
 }
 
 /**
  * Get cards connected to Codex node
+ */
+/**
+ * ⚗️ GetCardsByCodexNode - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function getCardsByCodexNode(nodeId: number): CompleteTarotCard[] {
   return COMPLETE_TAROT.filter(card => 
@@ -313,6 +483,23 @@ export function getCardsByCodexNode(nodeId: number): CompleteTarotCard[] {
 
 /**
  * Get cards connected to Circuitum99 chapter
+ */
+/**
+ * ⚗️ GetCardsByChapter - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function getCardsByChapter(chapterNumber: number): CompleteTarotCard[] {
   return COMPLETE_TAROT.filter(card =>

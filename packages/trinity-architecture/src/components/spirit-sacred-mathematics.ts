@@ -19,6 +19,23 @@ import {
 } from '../types/sacred-mathematics';
 import { TraumaSafeConfig } from '../types/consciousness';
 
+/**
+ * ⚗️ SacredRatio - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SacredRatio {
   value: number;
   precision: number;
@@ -27,6 +44,23 @@ export interface SacredRatio {
   trauma_safe_level: number; // 1-5
 }
 
+/**
+ * ⚗️ GeometryVisualization - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface GeometryVisualization {
   type: 'golden_ratio' | 'fibonacci' | 'platonic' | 'merkaba' | 'flower_of_life';
   parameters: Record<string, any>;
@@ -39,6 +73,23 @@ export interface GeometryVisualization {
   healing_focus: string;
 }
 
+/**
+ * ⚗️ ConsciousnessMathematics - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ConsciousnessMathematics {
   current_level: number;
   active_geometry: GeometryVisualization[];
@@ -59,6 +110,23 @@ export interface ConsciousnessMathematics {
   };
 }
 
+/**
+ * ⚗️ MathematicalHealing - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface MathematicalHealing {
   ratio: number;
   healing_focus: string;
@@ -68,6 +136,23 @@ export interface MathematicalHealing {
   contraindications: string[];
 }
 
+/**
+ * ⚗️ SacredGeometryEngine - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SacredGeometryEngine {
   golden_ratio_utilities: boolean;
   fibonacci_progression: boolean;
@@ -83,6 +168,23 @@ export interface SacredGeometryEngine {
  * 
  * Provides mathematical and geometric foundation for consciousness evolution
  * with 144:99 ratio compliance and trauma-safe design
+ */
+/**
+ * ⚗️ SacredMathematics - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class SacredMathematics {
   private goldenRatio!: GoldenRatio;
@@ -694,7 +796,10 @@ export class SacredMathematics {
    */
   public progressConsciousness(level: number): ConsciousnessMathematics {
     if (!this.consciousnessGeometry) {
-      throw new Error('Consciousness geometry not initialized');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     const newLevel = Math.min(level, 21);

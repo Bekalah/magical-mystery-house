@@ -16,6 +16,23 @@
 
 import type { TrinityV11State } from './TrinityV11Core';
 
+/**
+ * ⚗️ ArcanaConnection - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArcanaConnection {
   arcana_id: number; // 0-21 for 22 Major Arcanae
   name: string;
@@ -26,6 +43,23 @@ export interface ArcanaConnection {
   codex_nodes: string[]; // Connected Codex nodes
 }
 
+/**
+ * ⚗️ Circuitum99Connection - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Circuitum99Connection {
   gate_id: number; // 0-98 for 99 Gates
   name: string;
@@ -35,6 +69,23 @@ export interface Circuitum99Connection {
   codex_connections: string[];
 }
 
+/**
+ * ⚗️ CodexConnection - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CodexConnection {
   node_id: string;
   arcana_connections: number[];
@@ -43,6 +94,23 @@ export interface CodexConnection {
   wisdom_integration: number;
 }
 
+/**
+ * ⚗️ GrimoireConnection - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface GrimoireConnection {
   chapel_id: number; // 0-7 for 8 Chapels
   name: string;
@@ -51,6 +119,23 @@ export interface GrimoireConnection {
   skill_connections: string[];
 }
 
+/**
+ * ⚗️ TrinityConnections - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class TrinityConnections {
   private arcanae: Map<number, ArcanaConnection> = new Map();
   private gates: Map<number, Circuitum99Connection> = new Map();

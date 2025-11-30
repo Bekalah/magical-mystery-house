@@ -18,6 +18,23 @@
 // DOUBT & STRUGGLE SYSTEM
 // ============================================================================
 
+/**
+ * ⚗️ DoubtMoment - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface DoubtMoment {
   id: string;
   timestamp: number;
@@ -28,6 +45,23 @@ export interface DoubtMoment {
   questions: string[];
 }
 
+/**
+ * ⚗️ Improvement - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Improvement {
   id: string;
   doubtId: string;
@@ -40,6 +74,23 @@ export interface Improvement {
   quality: 'better' | 'much-better' | 'perfect';
 }
 
+/**
+ * ⚗️ ImprovementCycle - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ImprovementCycle {
   doubt: DoubtMoment;
   improvement: Improvement;
@@ -48,6 +99,23 @@ export interface ImprovementCycle {
   impact: 'low' | 'medium' | 'high' | 'transformative';
 }
 
+/**
+ * ⚗️ ToolCreated - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ToolCreated {
   id: string;
   name: string;
@@ -62,6 +130,23 @@ export interface ToolCreated {
 // DOUBT GENERATORS
 // ============================================================================
 
+/**
+ * ⚗️ DoubtGenerator - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class DoubtGenerator {
   private areas: string[] = [
     'styling',
@@ -303,6 +388,23 @@ export class DoubtGenerator {
 // IMPROVEMENT GENERATOR
 // ============================================================================
 
+/**
+ * ⚗️ ImprovementGenerator - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class ImprovementGenerator {
   /**
    * Generate improvement from doubt
@@ -475,6 +577,23 @@ export class ImprovementGenerator {
 // CONTINUOUS IMPROVEMENT CYCLE ENGINE
 // ============================================================================
 
+/**
+ * ⚗️ ContinuousImprovementCycleEngine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class ContinuousImprovementCycleEngine {
   private doubtGenerator: DoubtGenerator;
   private improvementGenerator: ImprovementGenerator;

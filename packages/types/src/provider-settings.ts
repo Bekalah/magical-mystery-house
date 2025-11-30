@@ -52,6 +52,23 @@ export const dynamicProviders = [
 	"chutes",
 ] as const
 
+/**
+ * ⚗️ DynamicProvider - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type DynamicProvider = (typeof dynamicProviders)[number]
 
 export const isDynamicProvider = (key: string): key is DynamicProvider =>
@@ -65,6 +82,23 @@ export const isDynamicProvider = (key: string): key is DynamicProvider =>
 
 export const localProviders = ["ollama", "lmstudio"] as const
 
+/**
+ * ⚗️ LocalProvider - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type LocalProvider = (typeof localProviders)[number]
 
 export const isLocalProvider = (key: string): key is LocalProvider => localProviders.includes(key as LocalProvider)
@@ -78,6 +112,23 @@ export const isLocalProvider = (key: string): key is LocalProvider => localProvi
 
 export const internalProviders = ["vscode-lm"] as const
 
+/**
+ * ⚗️ InternalProvider - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type InternalProvider = (typeof internalProviders)[number]
 
 export const isInternalProvider = (key: string): key is InternalProvider =>
@@ -91,6 +142,23 @@ export const isInternalProvider = (key: string): key is InternalProvider =>
 
 export const customProviders = ["openai"] as const
 
+/**
+ * ⚗️ CustomProvider - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type CustomProvider = (typeof customProviders)[number]
 
 export const isCustomProvider = (key: string): key is CustomProvider => customProviders.includes(key as CustomProvider)
@@ -104,6 +172,23 @@ export const isCustomProvider = (key: string): key is CustomProvider => customPr
 
 export const fauxProviders = ["fake-ai", "human-relay"] as const
 
+/**
+ * ⚗️ FauxProvider - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type FauxProvider = (typeof fauxProviders)[number]
 
 export const isFauxProvider = (key: string): key is FauxProvider => fauxProviders.includes(key as FauxProvider)
@@ -143,6 +228,23 @@ export const providerNames = [
 
 export const providerNamesSchema = z.enum(providerNames)
 
+/**
+ * ⚗️ ProviderName - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ProviderName = z.infer<typeof providerNamesSchema>
 
 export const isProviderName = (key: unknown): key is ProviderName =>
@@ -159,6 +261,23 @@ export const providerSettingsEntrySchema = z.object({
 	modelId: z.string().optional(),
 })
 
+/**
+ * ⚗️ ProviderSettingsEntry - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ProviderSettingsEntry = z.infer<typeof providerSettingsEntrySchema>
 
 /**
@@ -388,6 +507,23 @@ const sambaNovaSchema = apiModelIdProviderModelSchema.extend({
 
 export const zaiApiLineSchema = z.enum(["international_coding", "china_coding"])
 
+/**
+ * ⚗️ ZaiApiLine - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ZaiApiLine = z.infer<typeof zaiApiLineSchema>
 
 const zaiSchema = apiModelIdProviderModelSchema.extend({
@@ -508,6 +644,23 @@ export const providerSettingsSchema = z.object({
 	...codebaseIndexProviderSchema.shape,
 })
 
+/**
+ * ⚗️ ProviderSettings - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ProviderSettings = z.infer<typeof providerSettingsSchema>
 
 export const providerSettingsWithIdSchema = providerSettingsSchema.extend({ id: z.string().optional() })
@@ -516,6 +669,23 @@ export const discriminatedProviderSettingsWithIdSchema = providerSettingsSchemaD
 	z.object({ id: z.string().optional() }),
 )
 
+/**
+ * ⚗️ ProviderSettingsWithId - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ProviderSettingsWithId = z.infer<typeof providerSettingsWithIdSchema>
 
 export const PROVIDER_SETTINGS_KEYS = providerSettingsSchema.keyof().options
@@ -541,6 +711,23 @@ export const modelIdKeys = [
 	"deepInfraModelId",
 ] as const satisfies readonly (keyof ProviderSettings)[]
 
+/**
+ * ⚗️ ModelIdKey - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type ModelIdKey = (typeof modelIdKeys)[number]
 
 export const getModelId = (settings: ProviderSettings): string | undefined => {
@@ -552,6 +739,23 @@ export const getModelId = (settings: ProviderSettings): string | undefined => {
  * TypicalProvider
  */
 
+/**
+ * ⚗️ TypicalProvider - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type TypicalProvider = Exclude<ProviderName, InternalProvider | CustomProvider | FauxProvider>
 
 export const isTypicalProvider = (key: unknown): key is TypicalProvider =>

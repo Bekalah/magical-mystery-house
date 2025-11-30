@@ -1059,6 +1059,23 @@ export const COMPLETE_22_MASTER_ARCANAE: MasterArcana[] = [
 /**
  * Generate complete ornate Arcana with all details
  */
+/**
+ * ⚗️ GenerateOrnateArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function generateOrnateArcana(
   number: number,
   name: string,
@@ -1098,6 +1115,23 @@ export function generateOrnateArcana(
 }
 
 // Helper functions for generating ornate details
+/**
+ * ⚗️ CreateChariotForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createChariotForArcana(number: number, name: string, baseData: any): Chariot {
   // Generate chariot based on Arcana
   return {
@@ -1142,6 +1176,23 @@ function createChariotForArcana(number: number, name: string, baseData: any): Ch
   };
 }
 
+/**
+ * ⚗️ GetDaimonPairForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function getDaimonPairForArcana(number: number): DaimonPair {
   const shemNumber = ((number * 3) % 72) + 1;
   const goetiaNumber = ((number * 3 + 1) % 72) + 1;
@@ -1177,6 +1228,23 @@ function getDaimonPairForArcana(number: number): DaimonPair {
   };
 }
 
+/**
+ * ⚗️ CreateCodexMirrorForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createCodexMirrorForArcana(number: number): CodexMirror {
   return {
     primaryNodes: [number, number + 1, number + 2],
@@ -1191,6 +1259,23 @@ function createCodexMirrorForArcana(number: number): CodexMirror {
   };
 }
 
+/**
+ * ⚗️ CreateWilberIntegrationForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createWilberIntegrationForArcana(number: number, name: string): WilberIntegration {
   return {
     quadrants: {
@@ -1207,6 +1292,23 @@ function createWilberIntegrationForArcana(number: number, name: string): WilberI
   };
 }
 
+/**
+ * ⚗️ CreateLearyIntegrationForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createLearyIntegrationForArcana(number: number, name: string): LearyIntegration {
   return {
     circuits: {
@@ -1225,6 +1327,23 @@ function createLearyIntegrationForArcana(number: number, name: string): LearyInt
   };
 }
 
+/**
+ * ⚗️ CreateJungIntegrationForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createJungIntegrationForArcana(number: number, name: string): JungIntegration {
   return {
     archetype: name,
@@ -1236,6 +1355,23 @@ function createJungIntegrationForArcana(number: number, name: string): JungInteg
   };
 }
 
+/**
+ * ⚗️ CreateRegardieIntegrationForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createRegardieIntegrationForArcana(number: number, name: string): RegardieIntegration {
   return {
     sephirah: 'Tiphareth',
@@ -1246,6 +1382,23 @@ function createRegardieIntegrationForArcana(number: number, name: string): Regar
   };
 }
 
+/**
+ * ⚗️ CreatePersonalityForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createPersonalityForArcana(name: string, baseData: any): CharacterPersonality {
   return {
     traits: ['Wise', 'Powerful', 'Guiding'],
@@ -1260,6 +1413,23 @@ function createPersonalityForArcana(name: string, baseData: any): CharacterPerso
   };
 }
 
+/**
+ * ⚗️ CreateAbilitiesForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createAbilitiesForArcana(number: number, name: string): CharacterAbility[] {
   return [
     {
@@ -1275,6 +1445,23 @@ function createAbilitiesForArcana(number: number, name: string): CharacterAbilit
   ];
 }
 
+/**
+ * ⚗️ CreateTeachingsForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createTeachingsForArcana(number: number, name: string, baseData: any): Teaching[] {
   return [
     {
@@ -1289,6 +1476,23 @@ function createTeachingsForArcana(number: number, name: string, baseData: any): 
   ];
 }
 
+/**
+ * ⚗️ CreateCorrespondencesForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createCorrespondencesForArcana(number: number, name: string, baseData: any): CharacterCorrespondences {
   return {
     planet: baseData.planet || 'Uranus',
@@ -1307,6 +1511,23 @@ function createCorrespondencesForArcana(number: number, name: string, baseData: 
   };
 }
 
+/**
+ * ⚗️ CreateConnectionsForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createConnectionsForArcana(number: number, name: string): CharacterConnections {
   return {
     allies: ['all'],
@@ -1317,6 +1538,23 @@ function createConnectionsForArcana(number: number, name: string): CharacterConn
   };
 }
 
+/**
+ * ⚗️ CreateArtForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createArtForArcana(name: string, baseData: any): CharacterArt {
   return {
     style: 'Master art style',
@@ -1326,6 +1564,23 @@ function createArtForArcana(name: string, baseData: any): CharacterArt {
   };
 }
 
+/**
+ * ⚗️ CreateResearchForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createResearchForArcana(name: string, baseData: any): CharacterResearch {
   return {
     sources: ['Research sources'],
@@ -1334,6 +1589,23 @@ function createResearchForArcana(name: string, baseData: any): CharacterResearch
   };
 }
 
+/**
+ * ⚗️ CreateRPGStatsForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createRPGStatsForArcana(number: number): RPGStats {
   return {
     intellect: 70 + (number * 2),
@@ -1345,6 +1617,23 @@ function createRPGStatsForArcana(number: number): RPGStats {
   };
 }
 
+/**
+ * ⚗️ CreateWillMechanicsForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createWillMechanicsForArcana(number: number, name: string): CharacterWillMechanics {
   return {
     willType: number % 4 === 0 ? 'balanced' : 'pure',
@@ -1355,6 +1644,23 @@ function createWillMechanicsForArcana(number: number, name: string): CharacterWi
   };
 }
 
+/**
+ * ⚗️ CreatePathworkingForArcana - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function createPathworkingForArcana(number: number, name: string): CharacterPathworking {
   return {
     entry: `Enter ${name}'s pathworking`,
@@ -1369,6 +1675,23 @@ function createPathworkingForArcana(number: number, name: string): CharacterPath
 /**
  * Get all 22 Master Arcanae
  */
+/**
+ * ⚗️ GetAll22MasterArcanae - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function getAll22MasterArcanae(): MasterArcana[] {
   return COMPLETE_22_MASTER_ARCANAE;
 }
@@ -1376,12 +1699,46 @@ export function getAll22MasterArcanae(): MasterArcana[] {
 /**
  * Get Arcana by ID
  */
+/**
+ * ⚗️ GetMasterArcanaById - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function getMasterArcanaById(id: string): MasterArcana | undefined {
   return COMPLETE_22_MASTER_ARCANAE.find(arcana => arcana.id === id);
 }
 
 /**
  * Get Arcana by number
+ */
+/**
+ * ⚗️ GetMasterArcanaByNumber - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function getMasterArcanaByNumber(number: number): MasterArcana | undefined {
   return COMPLETE_22_MASTER_ARCANAE.find(arcana => arcana.number === number);

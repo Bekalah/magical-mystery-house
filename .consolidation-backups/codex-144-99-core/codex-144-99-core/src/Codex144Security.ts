@@ -7,16 +7,6 @@
  * @license CC0-1.0 - Public Domain
  */
 
-/**
- * ⊙ Codex144security
- * 
- * @alchemical Codex144security
- * @element N/A
- * @symbol ⊙
- * 
- * @license CC0-1.0 - Public Domain
- */
-
 import { CodexNode, CodexDepth } from './Codex144Engine';
 
 export interface SecurityValidation {

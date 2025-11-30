@@ -12,6 +12,23 @@ import { SACRED_MATH, consciousnessLevelToFrequency } from '../../sacred-mathema
 // import { Codex144Engine } from '../../codex-144-99-core/src/index';
 import { LiberArcanaeSecurity } from './LiberArcanaeSecurity';
 
+/**
+ * ⚗️ ArcanaCard - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArcanaCard {
   cardIndex: number;            // 0-143
   name: string;
@@ -27,6 +44,23 @@ export interface ArcanaCard {
   pathworking: PathworkingPractice; // Organic story paths, Dynamic story transformation, Open world story exploration, Trauma-aware narrative design
 }
 
+/**
+ * ⚗️ ArcanaCorrespondences - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArcanaCorrespondences {
   planet?: string;
   zodiac?: string;
@@ -47,6 +81,23 @@ export interface ArcanaCorrespondences {
   correspondences?: Record<string, any>;
 }
 
+/**
+ * ⚗️ PathworkingPractice - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PathworkingPractice {
   meditation: string;
   integration: string;
@@ -54,6 +105,23 @@ export interface PathworkingPractice {
   correspondences: Record<string, any>;
 }
 
+/**
+ * ⚗️ LiberArcanaeEngine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class LiberArcanaeEngine {
   private cards: Map<number, ArcanaCard>;
   // Codex engine available for future integration

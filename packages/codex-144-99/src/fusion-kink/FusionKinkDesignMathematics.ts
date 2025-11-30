@@ -24,6 +24,23 @@
 
 import { codex144Engine, CodexNode, ConsciousnessFusion } from '../core/Codex144Engine';
 
+/**
+ * ⚗️ UniversalQualityTheme - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface UniversalQualityTheme {
   theme_id: string;
   name: string;
@@ -58,6 +75,23 @@ export interface UniversalQualityTheme {
   };
 }
 
+/**
+ * ⚗️ QualityParameter - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface QualityParameter {
   parameter_name: string;
   domain_specific: boolean;
@@ -81,6 +115,23 @@ export interface QualityParameter {
   };
 }
 
+/**
+ * ⚗️ ConsciousnessQualityMapping - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ConsciousnessQualityMapping {
   level: number;
   base_frequency: number;
@@ -90,6 +141,23 @@ export interface ConsciousnessQualityMapping {
   transformation_potential: number;
 }
 
+/**
+ * ⚗️ FusionKinkDesignMathematics - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class FusionKinkDesignMathematics {
   private qualityThemes: Map<string, UniversalQualityTheme> = new Map();
   private qualityParameters: Map<string, QualityParameter> = new Map();

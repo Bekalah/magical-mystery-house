@@ -13,6 +13,23 @@
 
 import { SACRED_MATH } from '../../sacred-mathematics-core/src/index';
 
+/**
+ * ⚗️ ArtStandard - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ArtStandard {
   name: string;
   description: string;
@@ -26,6 +43,23 @@ export interface ArtStandard {
   consciousnessLevel: number; // 0-21
 }
 
+/**
+ * ⚗️ ColorStandard - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ColorStandard {
   name: string;
   rgb: { r: number; g: number; b: number };
@@ -35,6 +69,23 @@ export interface ColorStandard {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ CompositionStandard - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CompositionStandard {
   name: string;
   layout: 'golden-ratio' | 'rule-of-thirds' | 'sacred-geometry' | 'fibonacci' | '144-99';
@@ -44,6 +95,23 @@ export interface CompositionStandard {
   sacredGeometry: boolean;
 }
 
+/**
+ * ⚗️ QualityStandard - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface QualityStandard {
   level: 'museum-grade' | 'professional' | 'high' | 'standard';
   requirements: {
@@ -58,6 +126,23 @@ export interface QualityStandard {
 
 /**
  * Art Standards Engine
+ */
+/**
+ * ⚗️ ArtStandards - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * fire energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Fire
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class ArtStandards {
   private readonly STANDARDS: ArtStandard[] = [
@@ -251,7 +336,10 @@ export class ArtStandards {
    */
   public getStandard(name: string): ArtStandard | null {
     if (typeof name !== 'string' || name.trim().length === 0) {
-      throw new Error('name must be a non-empty string');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     return this.STANDARDS.find(s => s.name === name) || null;
   }
@@ -269,7 +357,10 @@ export class ArtStandards {
    */
   public getComposition(layout: CompositionStandard['layout']): CompositionStandard | null {
     if (!layout || typeof layout !== 'string') {
-      throw new Error('layout must be a valid composition layout type');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     return this.COMPOSITION_STANDARDS.find(c => c.layout === layout) || null;
   }
@@ -279,7 +370,10 @@ export class ArtStandards {
    */
   public getQuality(level: QualityStandard['level']): QualityStandard | null {
     if (!level || typeof level !== 'string') {
-      throw new Error('level must be a valid quality level type');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     return this.QUALITY_STANDARDS.find(q => q.level === level) || null;
   }

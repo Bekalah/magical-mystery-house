@@ -1,5 +1,13 @@
 # Codex and Engine Security Maintenance Guide
 
+
+# ⚗️ Codex Engine Security Guide
+
+**In the alchemical tradition, this grimoire contains the sacred knowledge**
+**and principles that guide the transformation of base materials into gold.**
+
+---
+
 ## Overview
 
 This guide documents security best practices for maintaining safety in custom Codex and Engine systems, based on security research and industry standards.

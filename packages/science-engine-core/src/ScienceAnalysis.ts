@@ -10,6 +10,23 @@
 import type { DataPoint } from './ScienceEngine';
 import { SACRED_MATH } from '../../sacred-mathematics-core/src/index';
 
+/**
+ * ⚗️ StatisticalAnalysis - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface StatisticalAnalysis {
   mean: number;
   median: number;
@@ -20,6 +37,23 @@ export interface StatisticalAnalysis {
   sacredRatio: number;
 }
 
+/**
+ * ⚗️ PatternRecognition - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PatternRecognition {
   patterns: string[];
   confidence: number; // 0-1
@@ -27,6 +61,23 @@ export interface PatternRecognition {
   consciousnessLevel: number;
 }
 
+/**
+ * ⚗️ ValidationResult - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ValidationResult {
   valid: boolean;
   confidence: number; // 0-1
@@ -37,6 +88,23 @@ export interface ValidationResult {
 
 /**
  * Advanced Science Analysis Tools
+ */
+/**
+ * ⚗️ ScienceAnalysisTools - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * air energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Air
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class ScienceAnalysisTools {
   private readonly GOLDEN_RATIO = SACRED_MATH.PHI;

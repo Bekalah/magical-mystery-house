@@ -8,6 +8,36 @@
 
 ---
 
+# ⊙ Cathedral Rpg Inventory System - cathedral-rpg-inventory-system
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Cathedral Rpg Inventory System - cathedral-rpg-inventory-system
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Cathedral Rpg Inventory System - cathedral-rpg-inventory-system
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # cathedral-rpg-inventory-system
 
 No description available

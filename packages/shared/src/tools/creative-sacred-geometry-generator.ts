@@ -13,6 +13,23 @@
 
 import { goldenRatio, fibonacci, vesicaPiscis, pentagram, octagon } from '@cathedral/master-artPrinciples/geometry';
 
+/**
+ * ⚗️ SacredGeometryPattern - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SacredGeometryPattern {
   type: 'vesica-piscis' | 'pentagram' | 'octagon' | 'flower-of-life' | 'metatron-cube' | 'golden-spiral';
   vertices: Array<{ x: number; y: number; z?: number }>;
@@ -21,6 +38,23 @@ export interface SacredGeometryPattern {
   creativeUse: string;
 }
 
+/**
+ * ⚗️ AnimationConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface AnimationConfig {
   type: 'rotation' | 'pulse' | 'spiral' | 'fractal';
   duration: number;
@@ -36,6 +70,23 @@ export interface AnimationConfig {
  * - Visual effects
  * - Game environments
  * - Interactive installations
+ */
+/**
+ * ⚗️ CreativeSacredGeometryGenerator - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class CreativeSacredGeometryGenerator {
   /**

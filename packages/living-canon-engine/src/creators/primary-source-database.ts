@@ -8,6 +8,23 @@
  * @version 1.0.0
  */
 
+/**
+ * ⚗️ PrimarySourceEntry - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PrimarySourceEntry {
   id: string;
   figure: string;
@@ -22,6 +39,23 @@ export interface PrimarySourceEntry {
   sound_rhythm: string;
 }
 
+/**
+ * ⚗️ ProvenanceRecord - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ProvenanceRecord {
   source: string;
   authenticity_score: number;
@@ -31,6 +65,23 @@ export interface ProvenanceRecord {
   last_validated: Date;
 }
 
+/**
+ * ⚗️ AuthenticityValidation - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface AuthenticityValidation {
   historical_accuracy: number;
   source_credibility: number;
@@ -41,6 +92,23 @@ export interface AuthenticityValidation {
 
 /**
  * Primary Source Database - Historical Material Repository
+ */
+/**
+ * ⚗️ PrimarySourceDatabase - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class PrimarySourceDatabase {
   private sources: Map<string, PrimarySourceEntry[]> = new Map();

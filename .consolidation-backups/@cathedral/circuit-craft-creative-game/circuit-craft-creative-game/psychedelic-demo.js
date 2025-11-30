@@ -6,16 +6,6 @@
  * and visionary art realm experiences.
  */
 
-/**
- * ⊙ Psychedelic Demo
- * 
- * @alchemical Psychedelic Demo
- * @element N/A
- * @symbol ⊙
- * 
- * @license CC0-1.0 - Public Domain
- */
-
 import CircuitCraftGame from './src/index.js';
 import TimothyLearyArchetypeAdventure from './src/timothyLeary-adventure.js';
 

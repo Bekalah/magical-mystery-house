@@ -16,6 +16,23 @@
  * const safeName = sanitizeSQL(userInput);
  * // Or better, use parameterized queries
  */
+/**
+ * ⚗️ SanitizeSQL - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function sanitizeSQL(input: string): string {
   if (typeof input !== 'string') {
     throw new TypeError('Input must be a string');
@@ -36,6 +53,23 @@ export function sanitizeSQL(input: string): string {
 /**
  * Validate identifier names (table names, column names)
  * Only allows alphanumeric characters and underscores
+ */
+/**
+ * ⚗️ ValidateIdentifier - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function validateIdentifier(identifier: string): boolean {
   if (typeof identifier !== 'string' || identifier.length === 0) {
@@ -62,6 +96,23 @@ export function validateIdentifier(identifier: string): boolean {
  * Safe identifier escaping for dynamic table/column names
  * Use this when you must use dynamic identifiers
  */
+/**
+ * ⚗️ EscapeIdentifier - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function escapeIdentifier(identifier: string): string {
   if (!validateIdentifier(identifier)) {
     throw new Error(`Invalid SQL identifier: ${identifier}`);
@@ -74,6 +125,23 @@ export function escapeIdentifier(identifier: string): string {
 /**
  * Create a parameterized query builder
  * Prevents SQL injection by using placeholders
+ */
+/**
+ * ⚗️ SafeQueryBuilder - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class SafeQueryBuilder {
   private query: string = '';
@@ -137,7 +205,10 @@ export class SafeQueryBuilder {
 
   limit(count: number): this {
     if (!Number.isInteger(count) || count < 0) {
-      throw new Error('Limit must be a non-negative integer');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     this.query += ` LIMIT $${this.paramIndex}`;
     this.params.push(count);
@@ -156,6 +227,23 @@ export class SafeQueryBuilder {
 /**
  * Database connection string builder with validation
  */
+/**
+ * ⚗️ DatabaseConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface DatabaseConfig {
   host: string;
   port: number;
@@ -165,20 +253,49 @@ export interface DatabaseConfig {
   ssl?: boolean;
 }
 
+/**
+ * ⚗️ BuildConnectionString - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export function buildConnectionString(config: DatabaseConfig): string {
   // Validate host (no special characters except . and -)
   if (!/^[a-zA-Z0-9.-]+$/.test(config.host)) {
-    throw new Error('Invalid database host');
+    throw new Error(`⚗️ The formula you have provided does not align with the sacred mathematics.
+
+Like a misaligned constellation, the elements cannot find their harmony.
+
+Please consult the grimoire and ensure your invocation follows the 144:99 ratio.`);
   }
   
   // Validate port
   if (!Number.isInteger(config.port) || config.port < 1 || config.port > 65535) {
-    throw new Error('Invalid database port');
+    throw new Error(`⚗️ The formula you have provided does not align with the sacred mathematics.
+
+Like a misaligned constellation, the elements cannot find their harmony.
+
+Please consult the grimoire and ensure your invocation follows the 144:99 ratio.`);
   }
   
   // Validate database name
   if (!validateIdentifier(config.database)) {
-    throw new Error('Invalid database name');
+    throw new Error(`⚗️ The formula you have provided does not align with the sacred mathematics.
+
+Like a misaligned constellation, the elements cannot find their harmony.
+
+Please consult the grimoire and ensure your invocation follows the 144:99 ratio.`);
   }
   
   // URL encode password to handle special characters
@@ -192,6 +309,23 @@ export function buildConnectionString(config: DatabaseConfig): string {
 
 /**
  * Check if a string looks like it might contain SQL injection attempts
+ */
+/**
+ * ⚗️ DetectSQLInjection - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function detectSQLInjection(input: string): boolean {
   const injectionPatterns = [
@@ -209,6 +343,23 @@ export function detectSQLInjection(input: string): boolean {
 
 /**
  * Log suspicious activity for security monitoring
+ */
+/**
+ * ⚗️ LogSecurityEvent - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function logSecurityEvent(event: {
   type: 'SQL_INJECTION_ATTEMPT' | 'INVALID_INPUT' | 'ACCESS_DENIED' | 'RATE_LIMIT';

@@ -11,6 +11,23 @@
 // import { Codex144Engine } from '../../codex-144-99-core/src/index';
 // import { SACRED_MATH } from '../../sacred-mathematics-core/src/index';
 
+/**
+ * ⚗️ MusicNode - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface MusicNode {
   nodeIndex: number;
   frequency: number;           // Solfeggio frequency (396-963 Hz)
@@ -22,6 +39,23 @@ export interface MusicNode {
   sacredRatio: number;         // Golden ratio, Fibonacci, etc.
 }
 
+/**
+ * ⚗️ RhythmPattern - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface RhythmPattern {
   beats: number[];              // Beat positions (0-1)
   tempo: number;                // BPM
@@ -29,6 +63,23 @@ export interface RhythmPattern {
   polyrhythm?: number[];        // Polyrhythmic layers
 }
 
+/**
+ * ⚗️ TimbreProfile - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface TimbreProfile {
   waveform: 'sine' | 'square' | 'sawtooth' | 'triangle' | 'complex';
   harmonics: number[];          // Harmonic amplitudes
@@ -36,6 +87,23 @@ export interface TimbreProfile {
   filter: FilterSettings;
 }
 
+/**
+ * ⚗️ Envelope - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Envelope {
   attack: number;   // 0-1 seconds
   decay: number;    // 0-1 seconds
@@ -43,12 +111,46 @@ export interface Envelope {
   release: number;  // 0-1 seconds
 }
 
+/**
+ * ⚗️ FilterSettings - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FilterSettings {
   type: 'lowpass' | 'highpass' | 'bandpass' | 'notch';
   frequency: number;
   resonance: number;
 }
 
+/**
+ * ⚗️ MusicComposition - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface MusicComposition {
   nodes: MusicNode[];
   progression: number[];        // Node indices in sequence
@@ -65,6 +167,23 @@ export interface MusicComposition {
 
 /**
  * Music Engine - Creates music from Codex144 nodes
+ */
+/**
+ * ⚗️ MusicEngine - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * water energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Water
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class MusicEngine {
   // private codex144: Codex144Engine; // Available if needed
@@ -277,13 +396,22 @@ export class MusicEngine {
   public createComposition(nodeIndices: number[], key: string = 'C', mode: 'major' | 'minor' = 'major'): MusicComposition {
     // Input validation
     if (!Array.isArray(nodeIndices) || nodeIndices.length === 0) {
-      throw new Error('nodeIndices must be a non-empty array');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (nodeIndices.some(idx => typeof idx !== 'number' || idx < 0 || idx >= 144 || !Number.isInteger(idx))) {
-      throw new Error('All nodeIndices must be integers between 0 and 143');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (typeof key !== 'string' || key.trim().length === 0) {
-      throw new Error('key must be a non-empty string');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (mode !== 'major' && mode !== 'minor') {
       throw new Error('mode must be either "major" or "minor"');
@@ -311,10 +439,16 @@ export class MusicEngine {
   public generateAudio(composition: MusicComposition, duration: number = 10): Float32Array {
     // Input validation
     if (!composition || typeof composition !== 'object') {
-      throw new Error('composition must be a MusicComposition object');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     if (typeof duration !== 'number' || duration <= 0 || duration > 3600) {
-      throw new Error('duration must be a positive number between 0 and 3600 seconds');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
     const sampleRate = 44100;
     const samples = duration * sampleRate;

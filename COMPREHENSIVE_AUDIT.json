@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764538603192,
+  "timestamp": 1764545353040,
   "workspaces": [
     {
       "name": "cathedral-master-deployment",
@@ -1255,7 +1255,7 @@
           "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae",
           "version": "2.0.0",
           "description": "Liber Arcanae - Sacred mystical library with Codex 144:99 integration, fusion kink mechanics, and tarot CLI tools.",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@cathedral/codex-144-99": "workspace:*",
             "@cathedral/shared": "workspace:*",
@@ -1294,7 +1294,7 @@
           "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae-tools",
           "version": "1.0.0",
           "description": "Liber Arcanae Tools - Professional Creative Canvas for Circuitum 99",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@cathedral-real/trinity-architecture": "workspace:*",
             "fabric": "^5.3.0",
@@ -1354,7 +1354,7 @@
           "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/luxcrux",
           "version": "1.0.0",
           "description": "Luxcrux - Elemental directions and spatial consciousness",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@cathedral/master-art-principles": "workspace:*",
             "typescript": "^5.6.3",
@@ -1687,7 +1687,7 @@
           "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/sacred-geometry-core",
           "version": "1.0.0",
           "description": "Sacred Geometry Core - Fractal settings and geometry nodes for Codex 144:99 integration.",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {},
           "hasSource": true,
           "hasTests": true,
@@ -2118,7 +2118,7 @@
           "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge",
           "version": "1.0.0",
           "description": "Tesseract Bridge - Kabbalistic paths and sacred geometry",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@azure/openai": "^1.0.0-beta.12",
             "@azure/cognitiveservices-computervision": "^8.2.0",
@@ -2215,7 +2215,7 @@
           "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/trinity-architecture",
           "version": "1.0.0",
           "description": "Body/Soul/Spirit consciousness evolution platform with 144:99 ratio compliance",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@cathedral/hall-of-ateliers": "workspace:*",
             "@cathedral/fusion-creative-suite": "workspace:*",
@@ -3153,6 +3153,28 @@
           "type": "tool"
         },
         {
+          "realName": "comprehensive-package-debugger",
+          "toolName": "comprehensive-package-debugger.mjs",
+          "workspace": "cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/comprehensive-package-debugger.mjs",
+          "category": "tool",
+          "description": "Comprehensive Package Debugger",
+          "license": "CC0-1.0",
+          "completion": "complete",
+          "type": "tool"
+        },
+        {
+          "realName": "comprehensive-package-mapper",
+          "toolName": "comprehensive-package-mapper.mjs",
+          "workspace": "cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/comprehensive-package-mapper.mjs",
+          "category": "tool",
+          "description": "Comprehensive Package Mapper",
+          "license": "CC0-1.0",
+          "completion": "complete",
+          "type": "tool"
+        },
+        {
           "realName": "connect-and-fix-all",
           "toolName": "connect-and-fix-all.mjs",
           "workspace": "cathedral-master-deployment",
@@ -3395,6 +3417,17 @@
           "type": "tool"
         },
         {
+          "realName": "elevate-creative-caliber",
+          "toolName": "elevate-creative-caliber.mjs",
+          "workspace": "cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/elevate-creative-caliber.mjs",
+          "category": "tool",
+          "description": "Elevate Creative Caliber - Le Guin & Brom Level",
+          "license": "CC0-1.0",
+          "completion": "complete",
+          "type": "tool"
+        },
+        {
           "realName": "enhanced-logger",
           "toolName": "enhanced-logger.mjs",
           "workspace": "cathedral-master-deployment",
@@ -3615,6 +3648,17 @@
           "type": "tool"
         },
         {
+          "realName": "fix-npm-references",
+          "toolName": "fix-npm-references.mjs",
+          "workspace": "cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-npm-references.mjs",
+          "category": "tool",
+          "description": "Fix npm References",
+          "license": "CC0-1.0",
+          "completion": "complete",
+          "type": "tool"
+        },
+        {
           "realName": "fix-package-json-for-pnpm",
           "toolName": "fix-package-json-for-pnpm.mjs",
           "workspace": "cathedral-master-deployment",
@@ -3643,6 +3687,17 @@
           "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/generate-learning-report.mjs",
           "category": "tool",
           "description": "@author Rebecca Respawn",
+          "license": "CC0-1.0",
+          "completion": "complete",
+          "type": "tool"
+        },
+        {
+          "realName": "generate-package-info",
+          "toolName": "generate-package-info.mjs",
+          "workspace": "cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/generate-package-info.mjs",
+          "category": "tool",
+          "description": "Generate Package Information",
           "license": "CC0-1.0",
           "completion": "complete",
           "type": "tool"
@@ -4143,6 +4198,17 @@
           "type": "tool"
         },
         {
+          "realName": "remove-degraded-mentions",
+          "toolName": "remove-degraded-mentions.mjs",
+          "workspace": "cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/remove-degraded-mentions.mjs",
+          "category": "tool",
+          "description": "Remove Degraded Mentions",
+          "license": "CC0-1.0",
+          "completion": "complete",
+          "type": "tool"
+        },
+        {
           "realName": "repo-sync",
           "toolName": "repo-sync.mjs",
           "workspace": "cathedral-master-deployment",
@@ -4319,6 +4385,17 @@
           "type": "tool"
         },
         {
+          "realName": "upgrade-all-packages",
+          "toolName": "upgrade-all-packages.mjs",
+          "workspace": "cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/upgrade-all-packages.mjs",
+          "category": "tool",
+          "description": "Upgrade All Packages to Best Quality",
+          "license": "CC0-1.0",
+          "completion": "complete",
+          "type": "tool"
+        },
+        {
           "realName": "user-feedback",
           "toolName": "user-feedback.mjs",
           "workspace": "cathedral-master-deployment",
@@ -4413,6 +4490,17 @@
           "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/validate-sound-math.mjs",
           "category": "tool",
           "description": "@author Rebecca Respawn",
+          "license": "CC0-1.0",
+          "completion": "complete",
+          "type": "tool"
+        },
+        {
+          "realName": "verify-commands",
+          "toolName": "verify-commands.mjs",
+          "workspace": "cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/verify-commands.mjs",
+          "category": "tool",
+          "description": "Command Verification System",
           "license": "CC0-1.0",
           "completion": "complete",
           "type": "tool"
@@ -6341,7 +6429,7 @@
           "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae",
           "version": "2.0.0",
           "description": "Liber Arcanae - Sacred mystical library with Codex 144:99 integration, fusion kink mechanics, and tarot CLI tools.",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@cathedral/codex-144-99": "workspace:*",
             "@cathedral/shared": "workspace:*",
@@ -6380,7 +6468,7 @@
           "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-tools",
           "version": "1.0.0",
           "description": "Liber Arcanae Tools - Professional Creative Canvas for Circuitum 99",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@cathedral-real/trinity-architecture": "workspace:*",
             "fabric": "^5.3.0",
@@ -6440,7 +6528,7 @@
           "path": "/Users/rebeccalemke/cathedral-real/packages/luxcrux",
           "version": "1.0.0",
           "description": "Luxcrux - Elemental directions and spatial consciousness",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@cathedral/master-art-principles": "workspace:*",
             "typescript": "^5.6.3",
@@ -6773,7 +6861,7 @@
           "path": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-core",
           "version": "1.0.0",
           "description": "Sacred Geometry Core - Fractal settings and geometry nodes for Codex 144:99 integration.",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {},
           "hasSource": true,
           "hasTests": true,
@@ -7204,7 +7292,7 @@
           "path": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge",
           "version": "1.0.0",
           "description": "Tesseract Bridge - Kabbalistic paths and sacred geometry",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@azure/openai": "^1.0.0-beta.12",
             "@azure/cognitiveservices-computervision": "^8.2.0",
@@ -7301,7 +7389,7 @@
           "path": "/Users/rebeccalemke/cathedral-real/packages/trinity-architecture",
           "version": "1.0.0",
           "description": "Body/Soul/Spirit consciousness evolution platform with 144:99 ratio compliance",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@cathedral/hall-of-ateliers": "workspace:*",
             "@cathedral/fusion-creative-suite": "workspace:*",
@@ -8794,7 +8882,7 @@
           "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae",
           "version": "2.0.0",
           "description": "Liber Arcanae - Sacred mystical library with Codex 144:99 integration, fusion kink mechanics, and tarot CLI tools.",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@cathedral/codex-144-99": "workspace:*",
             "@cathedral/shared": "workspace:*",
@@ -8833,7 +8921,7 @@
           "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae-tools",
           "version": "1.0.0",
           "description": "Liber Arcanae Tools - Professional Creative Canvas for Circuitum 99",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@cathedral-real/trinity-architecture": "workspace:*",
             "fabric": "^5.3.0",
@@ -8893,7 +8981,7 @@
           "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/luxcrux",
           "version": "1.0.0",
           "description": "Luxcrux - Elemental directions and spatial consciousness",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@cathedral/master-art-principles": "workspace:*",
             "typescript": "^5.6.3",
@@ -9226,7 +9314,7 @@
           "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-core",
           "version": "1.0.0",
           "description": "Sacred Geometry Core - Fractal settings and geometry nodes for Codex 144:99 integration.",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {},
           "hasSource": true,
           "hasTests": true,
@@ -9657,7 +9745,7 @@
           "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge",
           "version": "1.0.0",
           "description": "Tesseract Bridge - Kabbalistic paths and sacred geometry",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@azure/openai": "^1.0.0-beta.12",
             "@azure/cognitiveservices-computervision": "^8.2.0",
@@ -9754,7 +9842,7 @@
           "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/trinity-architecture",
           "version": "1.0.0",
           "description": "Body/Soul/Spirit consciousness evolution platform with 144:99 ratio compliance",
-          "license": "CC0",
+          "license": "CC0-1.0",
           "dependencies": {
             "@cathedral/hall-of-ateliers": "workspace:*",
             "@cathedral/fusion-creative-suite": "workspace:*",
@@ -11245,7 +11333,7 @@
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae",
       "version": "2.0.0",
       "description": "Liber Arcanae - Sacred mystical library with Codex 144:99 integration, fusion kink mechanics, and tarot CLI tools.",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@cathedral/codex-144-99": "workspace:*",
         "@cathedral/shared": "workspace:*",
@@ -11284,7 +11372,7 @@
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae-tools",
       "version": "1.0.0",
       "description": "Liber Arcanae Tools - Professional Creative Canvas for Circuitum 99",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@cathedral-real/trinity-architecture": "workspace:*",
         "fabric": "^5.3.0",
@@ -11344,7 +11432,7 @@
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/luxcrux",
       "version": "1.0.0",
       "description": "Luxcrux - Elemental directions and spatial consciousness",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@cathedral/master-art-principles": "workspace:*",
         "typescript": "^5.6.3",
@@ -11677,7 +11765,7 @@
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/sacred-geometry-core",
       "version": "1.0.0",
       "description": "Sacred Geometry Core - Fractal settings and geometry nodes for Codex 144:99 integration.",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {},
       "hasSource": true,
       "hasTests": true,
@@ -12108,7 +12196,7 @@
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge",
       "version": "1.0.0",
       "description": "Tesseract Bridge - Kabbalistic paths and sacred geometry",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@azure/openai": "^1.0.0-beta.12",
         "@azure/cognitiveservices-computervision": "^8.2.0",
@@ -12205,7 +12293,7 @@
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/trinity-architecture",
       "version": "1.0.0",
       "description": "Body/Soul/Spirit consciousness evolution platform with 144:99 ratio compliance",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@cathedral/hall-of-ateliers": "workspace:*",
         "@cathedral/fusion-creative-suite": "workspace:*",
@@ -13662,7 +13750,7 @@
       "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae",
       "version": "2.0.0",
       "description": "Liber Arcanae - Sacred mystical library with Codex 144:99 integration, fusion kink mechanics, and tarot CLI tools.",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@cathedral/codex-144-99": "workspace:*",
         "@cathedral/shared": "workspace:*",
@@ -13701,7 +13789,7 @@
       "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-tools",
       "version": "1.0.0",
       "description": "Liber Arcanae Tools - Professional Creative Canvas for Circuitum 99",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@cathedral-real/trinity-architecture": "workspace:*",
         "fabric": "^5.3.0",
@@ -13761,7 +13849,7 @@
       "path": "/Users/rebeccalemke/cathedral-real/packages/luxcrux",
       "version": "1.0.0",
       "description": "Luxcrux - Elemental directions and spatial consciousness",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@cathedral/master-art-principles": "workspace:*",
         "typescript": "^5.6.3",
@@ -14094,7 +14182,7 @@
       "path": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-core",
       "version": "1.0.0",
       "description": "Sacred Geometry Core - Fractal settings and geometry nodes for Codex 144:99 integration.",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {},
       "hasSource": true,
       "hasTests": true,
@@ -14525,7 +14613,7 @@
       "path": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge",
       "version": "1.0.0",
       "description": "Tesseract Bridge - Kabbalistic paths and sacred geometry",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@azure/openai": "^1.0.0-beta.12",
         "@azure/cognitiveservices-computervision": "^8.2.0",
@@ -14622,7 +14710,7 @@
       "path": "/Users/rebeccalemke/cathedral-real/packages/trinity-architecture",
       "version": "1.0.0",
       "description": "Body/Soul/Spirit consciousness evolution platform with 144:99 ratio compliance",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@cathedral/hall-of-ateliers": "workspace:*",
         "@cathedral/fusion-creative-suite": "workspace:*",
@@ -16079,7 +16167,7 @@
       "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae",
       "version": "2.0.0",
       "description": "Liber Arcanae - Sacred mystical library with Codex 144:99 integration, fusion kink mechanics, and tarot CLI tools.",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@cathedral/codex-144-99": "workspace:*",
         "@cathedral/shared": "workspace:*",
@@ -16118,7 +16206,7 @@
       "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae-tools",
       "version": "1.0.0",
       "description": "Liber Arcanae Tools - Professional Creative Canvas for Circuitum 99",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@cathedral-real/trinity-architecture": "workspace:*",
         "fabric": "^5.3.0",
@@ -16178,7 +16266,7 @@
       "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/luxcrux",
       "version": "1.0.0",
       "description": "Luxcrux - Elemental directions and spatial consciousness",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@cathedral/master-art-principles": "workspace:*",
         "typescript": "^5.6.3",
@@ -16511,7 +16599,7 @@
       "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-core",
       "version": "1.0.0",
       "description": "Sacred Geometry Core - Fractal settings and geometry nodes for Codex 144:99 integration.",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {},
       "hasSource": true,
       "hasTests": true,
@@ -16942,7 +17030,7 @@
       "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge",
       "version": "1.0.0",
       "description": "Tesseract Bridge - Kabbalistic paths and sacred geometry",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@azure/openai": "^1.0.0-beta.12",
         "@azure/cognitiveservices-computervision": "^8.2.0",
@@ -17039,7 +17127,7 @@
       "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/trinity-architecture",
       "version": "1.0.0",
       "description": "Body/Soul/Spirit consciousness evolution platform with 144:99 ratio compliance",
-      "license": "CC0",
+      "license": "CC0-1.0",
       "dependencies": {
         "@cathedral/hall-of-ateliers": "workspace:*",
         "@cathedral/fusion-creative-suite": "workspace:*",
@@ -17977,6 +18065,28 @@
       "type": "tool"
     },
     {
+      "realName": "comprehensive-package-debugger",
+      "toolName": "comprehensive-package-debugger.mjs",
+      "workspace": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/comprehensive-package-debugger.mjs",
+      "category": "tool",
+      "description": "Comprehensive Package Debugger",
+      "license": "CC0-1.0",
+      "completion": "complete",
+      "type": "tool"
+    },
+    {
+      "realName": "comprehensive-package-mapper",
+      "toolName": "comprehensive-package-mapper.mjs",
+      "workspace": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/comprehensive-package-mapper.mjs",
+      "category": "tool",
+      "description": "Comprehensive Package Mapper",
+      "license": "CC0-1.0",
+      "completion": "complete",
+      "type": "tool"
+    },
+    {
       "realName": "connect-and-fix-all",
       "toolName": "connect-and-fix-all.mjs",
       "workspace": "cathedral-master-deployment",
@@ -18219,6 +18329,17 @@
       "type": "tool"
     },
     {
+      "realName": "elevate-creative-caliber",
+      "toolName": "elevate-creative-caliber.mjs",
+      "workspace": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/elevate-creative-caliber.mjs",
+      "category": "tool",
+      "description": "Elevate Creative Caliber - Le Guin & Brom Level",
+      "license": "CC0-1.0",
+      "completion": "complete",
+      "type": "tool"
+    },
+    {
       "realName": "enhanced-logger",
       "toolName": "enhanced-logger.mjs",
       "workspace": "cathedral-master-deployment",
@@ -18439,6 +18560,17 @@
       "type": "tool"
     },
     {
+      "realName": "fix-npm-references",
+      "toolName": "fix-npm-references.mjs",
+      "workspace": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-npm-references.mjs",
+      "category": "tool",
+      "description": "Fix npm References",
+      "license": "CC0-1.0",
+      "completion": "complete",
+      "type": "tool"
+    },
+    {
       "realName": "fix-package-json-for-pnpm",
       "toolName": "fix-package-json-for-pnpm.mjs",
       "workspace": "cathedral-master-deployment",
@@ -18467,6 +18599,17 @@
       "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/generate-learning-report.mjs",
       "category": "tool",
       "description": "@author Rebecca Respawn",
+      "license": "CC0-1.0",
+      "completion": "complete",
+      "type": "tool"
+    },
+    {
+      "realName": "generate-package-info",
+      "toolName": "generate-package-info.mjs",
+      "workspace": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/generate-package-info.mjs",
+      "category": "tool",
+      "description": "Generate Package Information",
       "license": "CC0-1.0",
       "completion": "complete",
       "type": "tool"
@@ -18967,6 +19110,17 @@
       "type": "tool"
     },
     {
+      "realName": "remove-degraded-mentions",
+      "toolName": "remove-degraded-mentions.mjs",
+      "workspace": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/remove-degraded-mentions.mjs",
+      "category": "tool",
+      "description": "Remove Degraded Mentions",
+      "license": "CC0-1.0",
+      "completion": "complete",
+      "type": "tool"
+    },
+    {
       "realName": "repo-sync",
       "toolName": "repo-sync.mjs",
       "workspace": "cathedral-master-deployment",
@@ -19143,6 +19297,17 @@
       "type": "tool"
     },
     {
+      "realName": "upgrade-all-packages",
+      "toolName": "upgrade-all-packages.mjs",
+      "workspace": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/upgrade-all-packages.mjs",
+      "category": "tool",
+      "description": "Upgrade All Packages to Best Quality",
+      "license": "CC0-1.0",
+      "completion": "complete",
+      "type": "tool"
+    },
+    {
       "realName": "user-feedback",
       "toolName": "user-feedback.mjs",
       "workspace": "cathedral-master-deployment",
@@ -19237,6 +19402,17 @@
       "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/validate-sound-math.mjs",
       "category": "tool",
       "description": "@author Rebecca Respawn",
+      "license": "CC0-1.0",
+      "completion": "complete",
+      "type": "tool"
+    },
+    {
+      "realName": "verify-commands",
+      "toolName": "verify-commands.mjs",
+      "workspace": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/verify-commands.mjs",
+      "category": "tool",
+      "description": "Command Verification System",
       "license": "CC0-1.0",
       "completion": "complete",
       "type": "tool"
@@ -21090,7 +21266,7 @@
     }
   ],
   "licensing": {
-    "publicDomain": 620,
+    "publicDomain": 628,
     "missing": [],
     "needsUpdate": []
   },
@@ -22942,6 +23118,16 @@
         "workspace": "cathedral-master-deployment"
       },
       {
+        "name": "comprehensive-package-debugger",
+        "type": "tool",
+        "workspace": "cathedral-master-deployment"
+      },
+      {
+        "name": "comprehensive-package-mapper",
+        "type": "tool",
+        "workspace": "cathedral-master-deployment"
+      },
+      {
         "name": "connect-and-fix-all",
         "type": "tool",
         "workspace": "cathedral-master-deployment"
@@ -23052,6 +23238,11 @@
         "workspace": "cathedral-master-deployment"
       },
       {
+        "name": "elevate-creative-caliber",
+        "type": "tool",
+        "workspace": "cathedral-master-deployment"
+      },
+      {
         "name": "enhanced-logger",
         "type": "tool",
         "workspace": "cathedral-master-deployment"
@@ -23152,6 +23343,11 @@
         "workspace": "cathedral-master-deployment"
       },
       {
+        "name": "fix-npm-references",
+        "type": "tool",
+        "workspace": "cathedral-master-deployment"
+      },
+      {
         "name": "fix-package-json-for-pnpm",
         "type": "tool",
         "workspace": "cathedral-master-deployment"
@@ -23163,6 +23359,11 @@
       },
       {
         "name": "generate-learning-report",
+        "type": "tool",
+        "workspace": "cathedral-master-deployment"
+      },
+      {
+        "name": "generate-package-info",
         "type": "tool",
         "workspace": "cathedral-master-deployment"
       },
@@ -23392,6 +23593,11 @@
         "workspace": "cathedral-master-deployment"
       },
       {
+        "name": "remove-degraded-mentions",
+        "type": "tool",
+        "workspace": "cathedral-master-deployment"
+      },
+      {
         "name": "repo-sync",
         "type": "tool",
         "workspace": "cathedral-master-deployment"
@@ -23472,6 +23678,11 @@
         "workspace": "cathedral-master-deployment"
       },
       {
+        "name": "upgrade-all-packages",
+        "type": "tool",
+        "workspace": "cathedral-master-deployment"
+      },
+      {
         "name": "user-feedback",
         "type": "tool",
         "workspace": "cathedral-master-deployment"
@@ -23513,6 +23724,11 @@
       },
       {
         "name": "validate-sound-math",
+        "type": "tool",
+        "workspace": "cathedral-master-deployment"
+      },
+      {
+        "name": "verify-commands",
         "type": "tool",
         "workspace": "cathedral-master-deployment"
       },

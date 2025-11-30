@@ -19,6 +19,23 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '@cathedral/shared/src/styles/unified-professional.css';
 
+/**
+ * ⚗️ DualityArcanaConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface DualityArcanaConfig {
   // Figures
   angelicPresence: number; // 1-10
@@ -45,6 +62,23 @@ export interface DualityArcanaConfig {
  * Duality Arcana Art Component
  * 
  * Better than static art because it's ALIVE and INTERACTIVE
+ */
+/**
+ * ⚗️ DualityArcanaArt - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export function DualityArcanaArt({
   config = {
@@ -185,6 +219,23 @@ export function DualityArcanaArt({
 /**
  * Draw textured dark background
  */
+/**
+ * ⚗️ DrawTexturedBackground - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function drawTexturedBackground(
   ctx: CanvasRenderingContext2D,
   canvas: HTMLCanvasElement,
@@ -215,6 +266,23 @@ function drawTexturedBackground(
 
 /**
  * Draw vesica piscis pattern
+ */
+/**
+ * ⚗️ DrawVesicaPiscis - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 function drawVesicaPiscis(
   ctx: CanvasRenderingContext2D,
@@ -262,6 +330,23 @@ function drawVesicaPiscis(
 
 /**
  * Draw golden geometric pattern
+ */
+/**
+ * ⚗️ DrawGoldenPattern - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 function drawGoldenPattern(
   ctx: CanvasRenderingContext2D,
@@ -314,6 +399,23 @@ function drawGoldenPattern(
 
 /**
  * Draw angelic figure (left side)
+ */
+/**
+ * ⚗️ DrawAngelicFigure - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 function drawAngelicFigure(
   ctx: CanvasRenderingContext2D,
@@ -434,6 +536,23 @@ function drawAngelicFigure(
 
 /**
  * Draw demonic figure (right side)
+ */
+/**
+ * ⚗️ DrawDemonicFigure - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 function drawDemonicFigure(
   ctx: CanvasRenderingContext2D,
@@ -572,6 +691,23 @@ function drawDemonicFigure(
 /**
  * Draw dramatic lighting
  */
+/**
+ * ⚗️ DrawDramaticLighting - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 function drawDramaticLighting(
   ctx: CanvasRenderingContext2D,
   canvas: HTMLCanvasElement,
@@ -603,6 +739,23 @@ function drawDramaticLighting(
 
 /**
  * Draw starburst
+ */
+/**
+ * ⚗️ DrawStarburst - Solve et Coagula
+ * 
+ * In the alchemical tradition, this function serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this function
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: Solve et Coagula
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 function drawStarburst(
   ctx: CanvasRenderingContext2D,

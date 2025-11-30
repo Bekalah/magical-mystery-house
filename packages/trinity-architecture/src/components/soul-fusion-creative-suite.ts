@@ -11,6 +11,23 @@
 import { ConsciousnessFusion } from '../types/consciousness';
 import { TraumaSafeConfig } from '../types/consciousness';
 
+/**
+ * ⚗️ CreativeFusion - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CreativeFusion {
   id: string;
   name: string;
@@ -22,6 +39,23 @@ export interface CreativeFusion {
   aftercare_protocol: AftercareProtocol;
 }
 
+/**
+ * ⚗️ VisualElement - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface VisualElement {
   type: 'merkaba' | 'sacred_geometry' | 'frequency_wave' | 'arcanum_symbol' | 'fusion_pattern';
   parameters: Record<string, any>;
@@ -33,6 +67,23 @@ export interface VisualElement {
   };
 }
 
+/**
+ * ⚗️ AftercareProtocol - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface AftercareProtocol {
   grounding_techniques: string[];
   integration_time: number; // minutes
@@ -41,6 +92,23 @@ export interface AftercareProtocol {
   safety_reminders: string[];
 }
 
+/**
+ * ⚗️ Merkaba3D - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Merkaba3D {
   upper_tetrahedron: {
     rotation: [number, number, number];
@@ -57,6 +125,23 @@ export interface Merkaba3D {
   trauma_safe_rotation: boolean;
 }
 
+/**
+ * ⚗️ FrequencyVisualizer - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FrequencyVisualizer {
   active_frequencies: number[]; // Hz
   visual_responses: FrequencyResponse[];
@@ -64,6 +149,23 @@ export interface FrequencyVisualizer {
   arcana_frequency_mapping: { [key: number]: number }; // Arcanum ID -> frequency
 }
 
+/**
+ * ⚗️ FrequencyResponse - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface FrequencyResponse {
   frequency: number;
   visual_pattern: 'wave' | 'spiral' | 'mandala' | 'pulse' | 'harmony';
@@ -72,6 +174,23 @@ export interface FrequencyResponse {
   healing_potential: number;
 }
 
+/**
+ * ⚗️ ProfessionalCanvas - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface ProfessionalCanvas {
   resolution: '4096x4096';
   color_depth: '16-bit';
@@ -81,6 +200,23 @@ export interface ProfessionalCanvas {
   trauma_safe_defaults: TraumaSafeDefaults;
 }
 
+/**
+ * ⚗️ BrushEngine - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface BrushEngine {
   da_vinci_quality: boolean;
   pressure_sensitivity: boolean;
@@ -89,6 +225,23 @@ export interface BrushEngine {
   trauma_safe_presets: BrushPreset[];
 }
 
+/**
+ * ⚗️ BrushPreset - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface BrushPreset {
   name: string;
   arcana_alignment: number;
@@ -98,6 +251,23 @@ export interface BrushPreset {
   trauma_safe: boolean;
 }
 
+/**
+ * ⚗️ SacredGeometryTools - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SacredGeometryTools {
   golden_ratio_utilities: boolean;
   fibonacci_tools: boolean;
@@ -107,6 +277,23 @@ export interface SacredGeometryTools {
   trauma_safe_visualization: boolean;
 }
 
+/**
+ * ⚗️ TraumaSafeDefaults - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface TraumaSafeDefaults {
   gentle_motion: boolean;
   slow_animations: boolean;
@@ -121,6 +308,23 @@ export interface TraumaSafeDefaults {
  * 
  * Manages consciousness fusion through 3D creative tools
  * with trauma-safe design and Major Arcana integration
+ */
+/**
+ * ⚗️ FusionCreativeSuite - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
  */
 export class FusionCreativeSuite {
   private creativeFusions: Map<string, CreativeFusion> = new Map();
@@ -477,7 +681,10 @@ export class FusionCreativeSuite {
     // Validate Arcana combination
     const validCombination = fusion.arcana_combination.every(id => arcanaIds.includes(id));
     if (!validCombination) {
-      throw new Error('Arcana combination does not match fusion requirements');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     // Apply trauma-safe modifications if needed
@@ -498,7 +705,10 @@ export class FusionCreativeSuite {
    */
   public async buildMerkaba(consciousnessLevel: number, arcanaId: number): Promise<Merkaba3D> {
     if (!this.merkaba3D) {
-      throw new Error('Merkaba 3D not initialized');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     // Validate consciousness level for activation
@@ -541,7 +751,10 @@ export class FusionCreativeSuite {
    */
   public async startFrequencyVisualization(frequencies: number[]): Promise<FrequencyVisualizer> {
     if (!this.frequencyVisualizer) {
-      throw new Error('Frequency Visualizer not initialized');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     // Validate frequencies for trauma safety
@@ -562,7 +775,10 @@ export class FusionCreativeSuite {
    */
   public async createCanvasSession(arcanaId: number): Promise<ProfessionalCanvas> {
     if (!this.professionalCanvas) {
-      throw new Error('Professional Canvas not initialized');
+      throw new Error(`⚗️ An unexpected transformation occurred in the alchemical process.
+
+The elements did not combine as anticipated. Please consult the grimoire
+and ensure all correspondences are properly aligned.`);
     }
 
     // Apply trauma-safe defaults

@@ -94,6 +94,15 @@
     "theme:apply": "node tools/apply-unified-theme.mjs",
     "theme:unified": "node tools/apply-unified-theme.mjs",
     "label:alchemical": "node tools/apply-alchemical-labels.mjs",
+    "elevate:caliber": "node tools/elevate-creative-caliber.mjs",
+    "upgrade:packages": "node tools/upgrade-all-packages.mjs",
+    "upgrade:all": "node tools/upgrade-all-packages.mjs && node tools/elevate-creative-caliber.mjs && node tools/apply-alchemical-labels.mjs",
+    "map:packages": "node tools/comprehensive-package-mapper.mjs",
+    "debug:packages": "node tools/comprehensive-package-debugger.mjs",
+    "info:packages": "node tools/generate-package-info.mjs",
+    "map-debug-info:all": "node tools/comprehensive-package-mapper.mjs && node tools/comprehensive-package-debugger.mjs && node tools/generate-package-info.mjs",
+    "verify:commands": "node tools/verify-commands.mjs",
+    "verify:all": "node tools/verify-commands.mjs && pnpm run test:commands",
     "consolidate:workspaces": "node tools/consolidate-all-workspaces.mjs",
     "consolidate:execute": "node tools/execute-consolidation.mjs",
     "consolidate:merge": "node tools/execute-consolidation.mjs",
@@ -103,10 +112,10 @@
     "deploy:docs": "gh-pages -d docs"
   },
   "devDependencies": {
-    "turbo": "^1.10.0",
-    "typescript": "^5.0.0",
+    "@types/node": "^20.19.25",
     "glob": "^10.3.10",
-    "@types/node": "^20.0.0"
+    "turbo": "^1.10.0",
+    "typescript": "^5.0.0"
   },
   "engines": {
     "node": "*",

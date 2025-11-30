@@ -41,6 +41,23 @@ export declare const GOETIC_DEMONS: {
     element: string;
     planet: string;
 }[];
+/**
+ * ⚗️ RPGCharacter - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface RPGCharacter {
     arcanaIndex: number;
     name: string;
@@ -74,6 +91,23 @@ export interface RPGCharacter {
         connections: number[];
     };
 }
+/**
+ * ⚗️ AbyssCrossing - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface AbyssCrossing {
     characterIndex: number;
     stage: 'preparation' | 'crossing' | 'crossed' | 'failed';
@@ -86,6 +120,23 @@ export interface AbyssCrossing {
         surrender: boolean;
     };
 }
+/**
+ * ⚗️ HolyGuardianAngel - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface HolyGuardianAngel {
     characterIndex: number;
     name: string;
@@ -99,6 +150,23 @@ export interface HolyGuardianAngel {
         revelations: string[];
     };
 }
+/**
+ * ⚗️ PathworkingSession - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface PathworkingSession {
     characterIndex: number;
     type: 'shem_angel' | 'goetic_demon' | 'circuitum_gate' | 'abyss' | 'hga';

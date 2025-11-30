@@ -11,7 +11,41 @@
  *
  * @license CC0-1.0 - Public Domain
  */
+/**
+ * ⚗️ RibbonType - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export type RibbonType = 'RESEARCH' | 'GAME' | 'FUSION_KINK' | 'PSYCH' | 'CRAFT' | 'ESOTERIC' | 'SCIENCE';
+/**
+ * ⚗️ Ribbon - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface Ribbon {
     type: RibbonType;
     nodeRanges: number[][];
@@ -20,12 +54,46 @@ export interface Ribbon {
     status: 'ACTIVE' | 'WARMING_UP' | 'AWAKENING' | 'CONSENT_REQUIRED';
     syncRules: SyncRule[];
 }
+/**
+ * ⚗️ SyncRule - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface SyncRule {
     sourceSystem: string;
     targetSystem: string;
     mapping: (data: any) => any;
     validation: (data: any) => boolean;
 }
+/**
+ * ⚗️ CrossSystemSync - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface CrossSystemSync {
     codexToCircuitum: SyncRule;
     codexToGrimoire: SyncRule;
