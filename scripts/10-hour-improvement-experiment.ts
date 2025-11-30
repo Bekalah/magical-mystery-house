@@ -96,7 +96,7 @@ interface ExperimentState {
 interface Improvement {
   cycle: number;
   timestamp: string;
-  type: 'fix' | 'enhancement' | 'connection' | 'documentation';
+  type: 'fix' | 'enhancement' | 'connection' | 'documentation' | 'licensing' | 'completion';
   description: string;
   file?: string;
   system?: string;
@@ -165,6 +165,7 @@ class ImprovementExperiment {
   private async initializeEngines(): Promise<void> {
     try {
       // Try to import engines dynamically
+      // @ts-expect-error - Dynamic import may not have types
       const contractionModule = await import('../packages/trinity-v1-1-core/contraction-engine.js');
       this.contractionEngine = new contractionModule.default();
     } catch (e) {
@@ -181,6 +182,7 @@ class ImprovementExperiment {
     }
     
     try {
+      // @ts-expect-error - Dynamic import may not have types
       const expansionModule = await import('../packages/trinity-v1-1-core/expansion-engine.js');
       this.expansionEngine = new expansionModule.default();
     } catch (e) {
@@ -200,6 +202,7 @@ class ImprovementExperiment {
   private async initializeVerifier(): Promise<void> {
     if (!this.commandVerifier) {
       try {
+        // @ts-expect-error - Dynamic import may not have types
         const { default: CommandVerifier } = await import('../tools/verify-commands.mjs');
         this.commandVerifier = new CommandVerifier();
       } catch (e) {
@@ -712,7 +715,7 @@ class ImprovementExperiment {
             this.state.improvements.push({
               cycle: this.state.currentCycle,
               timestamp: new Date().toISOString(),
-              type: 'licensing' as const,
+              type: 'licensing',
               description: 'Fixed licensing issues for open source readiness',
               system: 'magnum-opus-completion'
             });
@@ -739,7 +742,7 @@ class ImprovementExperiment {
               this.state.improvements.push({
                 cycle: this.state.currentCycle,
                 timestamp: new Date().toISOString(),
-                type: 'completion' as const,
+                type: 'completion',
                 description: 'Generated missing components for incomplete packages',
                 system: 'magnum-opus-completion'
               });
