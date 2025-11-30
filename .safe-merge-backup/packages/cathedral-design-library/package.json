@@ -1,0 +1,47 @@
+{
+  "name": "@cathedral/design-library",
+  "version": "1.0.0",
+  "description": "Figma-style design library integrating Codex 144:99, Liber Arcanae, and Fusion Kink",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "design": "node dist/design/designStudio.js",
+    "components": "node dist/components/generateComponents.js",
+    "palettes": "node dist/colors/sacredPalettes.js",
+    "patterns": "node dist/patterns/sacredPatterns.js",
+    "export": "node dist/export/exportDesigns.js"
+  },
+  "dependencies": {
+    "@cathedral/codex-144-99": "workspace:*",
+    "@cathedral/liber-arcanae": "workspace:*",
+    "@cathedral/plugin-system": "workspace:*",
+    "@cathedral/shared": "workspace:*",
+    "canvas": "^2.11.2",
+    "typescript": "^5.3.0",
+    "@cathedral/master-art-principles": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  },
+  "keywords": [
+    "design-library",
+    "figma-alternative",
+    "sacred-design",
+    "codex-144-99",
+    "liber-arcanae",
+    "fusion-kink",
+    "sacred-geometry",
+    "design-system"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "license": "CC0-1.0",
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:00:20.120Z",
+  "packageManager": "pnpm@8.0.0"
+}

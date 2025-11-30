@@ -1,0 +1,1683 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      User Journey Visualization System - Cathedral Master V1 Control System
+    </title>
+    <meta
+      name="description"
+      content="Comprehensive stakeholder journey and interaction flow visualization system for the Cathedral Master V1 Control System" />
+
+    <!-- D3.js for advanced data visualization -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Cathedral Master V1 Control System Styles -->
+    <style>
+      :root {
+        --cathedral-deep-blue: #1a237e;
+        --cathedral-gold: #ffd700;
+        --cathedral-silver: #c0c0c0;
+        --cathedral-crystal: #e1f5fe;
+        --cathedral-stone: #795548;
+        --cathedral-light: #fafafa;
+        --cathedral-accent: #4caf50;
+        --cathedral-warning: #ff9800;
+        --cathedral-error: #f44336;
+        --cathedral-success: #4caf50;
+        --cathedral-shadow: rgba(0, 0, 0, 0.2);
+        --cathedral-transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        background: linear-gradient(
+          135deg,
+          var(--cathedral-deep-blue) 0%,
+          #283593 50%,
+          #1a237e 100%
+        );
+        color: var(--cathedral-light);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      /* Navigation Header */
+      .cathedral-header {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid var(--cathedral-gold);
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .cathedral-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .cathedral-logo {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+      }
+
+      .nav-item a {
+        color: var(--cathedral-light);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: var(--cathedral-transition);
+        font-size: 0.9rem;
+      }
+
+      .nav-item a:hover,
+      .nav-item a.active {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-deep-blue);
+      }
+
+      .back-link {
+        background: var(--cathedral-accent);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: var(--cathedral-transition);
+      }
+
+      .back-link:hover {
+        background: #45a049;
+        transform: scale(1.05);
+      }
+
+      /* Main Content */
+      .journey-main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .journey-header {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .journey-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px var(--cathedral-shadow);
+      }
+
+      .journey-subtitle {
+        font-size: 1.1rem;
+        color: var(--cathedral-crystal);
+        margin-bottom: 1.5rem;
+      }
+
+      /* Stakeholder Types */
+      .stakeholder-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .stakeholder-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid transparent;
+        border-radius: 16px;
+        padding: 1.5rem;
+        backdrop-filter: blur(10px);
+        transition: var(--cathedral-transition);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .stakeholder-card:hover {
+        border-color: var(--cathedral-gold);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px var(--cathedral-shadow);
+      }
+
+      .stakeholder-card.active {
+        border-color: var(--cathedral-accent);
+        background: rgba(76, 175, 80, 0.1);
+      }
+
+      .stakeholder-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .stakeholder-icon {
+        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+        background: var(--cathedral-gold);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--cathedral-deep-blue);
+      }
+
+      .stakeholder-name {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+      }
+
+      .stakeholder-description {
+        color: var(--cathedral-crystal);
+        line-height: 1.5;
+        margin-bottom: 1rem;
+      }
+
+      .journey-stats {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        color: var(--cathedral-light);
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .stat-number {
+        font-weight: 700;
+        color: var(--cathedral-gold);
+      }
+
+      .stat-label {
+        font-size: 0.8rem;
+        color: var(--cathedral-crystal);
+      }
+
+      /* Journey Visualization Container */
+      .journey-visualization {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid var(--cathedral-gold);
+        border-radius: 16px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .viz-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .viz-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+      }
+
+      .viz-controls {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .control-group {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .control-label {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+      }
+
+      .control-select {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--cathedral-silver);
+        border-radius: 6px;
+        padding: 0.3rem 0.8rem;
+        color: var(--cathedral-light);
+        font-size: 0.8rem;
+      }
+
+      .control-select:focus {
+        outline: none;
+        border-color: var(--cathedral-gold);
+      }
+
+      /* Journey Flow Canvas */
+      .journey-canvas {
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--cathedral-silver);
+        border-radius: 8px;
+        padding: 1.5rem;
+        min-height: 500px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Journey Steps */
+      .journey-steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .journey-step {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid var(--cathedral-silver);
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: center;
+        transition: var(--cathedral-transition);
+        cursor: pointer;
+        position: relative;
+      }
+
+      .journey-step:hover {
+        border-color: var(--cathedral-gold);
+        transform: scale(1.02);
+      }
+
+      .journey-step.current {
+        border-color: var(--cathedral-accent);
+        background: rgba(76, 175, 80, 0.1);
+      }
+
+      .step-number {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        margin-bottom: 0.5rem;
+      }
+
+      .step-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--cathedral-light);
+        margin-bottom: 0.5rem;
+      }
+
+      .step-description {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+        line-height: 1.4;
+      }
+
+      .step-metrics {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .step-metric {
+        text-align: center;
+      }
+
+      .metric-value {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+      }
+
+      .metric-label {
+        font-size: 0.7rem;
+        color: var(--cathedral-crystal);
+      }
+
+      /* Pain Points & Opportunities */
+      .analysis-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .analysis-panel {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid var(--cathedral-silver);
+        border-radius: 12px;
+        padding: 1.5rem;
+        backdrop-filter: blur(5px);
+      }
+
+      .panel-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .issue-list {
+        list-style: none;
+      }
+
+      .issue-item {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 0.8rem;
+        transition: var(--cathedral-transition);
+      }
+
+      .issue-item:hover {
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      .issue-title {
+        font-weight: 600;
+        color: var(--cathedral-light);
+        margin-bottom: 0.5rem;
+      }
+
+      .issue-description {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+        line-height: 1.4;
+      }
+
+      .issue-impact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+      }
+
+      .impact-level {
+        padding: 0.2rem 0.6rem;
+        border-radius: 12px;
+        font-size: 0.7rem;
+        font-weight: 600;
+      }
+
+      .impact-high {
+        background: var(--cathedral-error);
+        color: white;
+      }
+
+      .impact-medium {
+        background: var(--cathedral-warning);
+        color: white;
+      }
+
+      .impact-low {
+        background: var(--cathedral-accent);
+        color: white;
+      }
+
+      .opportunity-score {
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        font-size: 0.9rem;
+      }
+
+      /* Journey Insights */
+      .insights-section {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .insights-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .insights-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .insight-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: center;
+        border: 2px solid transparent;
+        transition: var(--cathedral-transition);
+      }
+
+      .insight-card:hover {
+        border-color: var(--cathedral-gold);
+        transform: translateY(-2px);
+      }
+
+      .insight-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .insight-value {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        margin-bottom: 0.5rem;
+      }
+
+      .insight-label {
+        font-size: 1rem;
+        color: var(--cathedral-crystal);
+        font-weight: 600;
+      }
+
+      .insight-description {
+        font-size: 0.9rem;
+        color: var(--cathedral-light);
+        margin-top: 0.5rem;
+        line-height: 1.4;
+      }
+
+      /* D3.js Journey Flow Styles */
+      .journey-node {
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .journey-node:hover {
+        transform: scale(1.1);
+      }
+
+      .journey-link {
+        stroke: var(--cathedral-silver);
+        stroke-width: 2px;
+        fill: none;
+        transition: var(--cathedral-transition);
+      }
+
+      .journey-link:hover {
+        stroke: var(--cathedral-gold);
+        stroke-width: 3px;
+      }
+
+      .journey-label {
+        fill: var(--cathedral-light);
+        font-size: 12px;
+        text-anchor: middle;
+        font-weight: 600;
+      }
+
+      .journey-node-circle {
+        stroke: var(--cathedral-gold);
+        stroke-width: 2px;
+        transition: var(--cathedral-transition);
+      }
+
+      .journey-node-circle:hover {
+        stroke-width: 3px;
+        filter: drop-shadow(0 0 10px var(--cathedral-gold));
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        .cathedral-nav {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .nav-menu {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .journey-title {
+          font-size: 2rem;
+        }
+
+        .stakeholder-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .analysis-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .journey-main {
+          padding: 1rem;
+        }
+
+        .viz-controls {
+          flex-direction: column;
+          gap: 0.5rem;
+          align-items: flex-start;
+        }
+
+        .journey-steps {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Accessibility */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      a:focus,
+      button:focus,
+      select:focus {
+        outline: 2px solid var(--cathedral-gold);
+        outline-offset: 2px;
+      }
+
+      /* Loading and Error States */
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        color: var(--cathedral-gold);
+      }
+
+      .error-message {
+        background: var(--cathedral-error);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        text-align: center;
+      }
+
+      .success-message {
+        background: var(--cathedral-success);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="cathedral-header">
+      <nav class="cathedral-nav">
+        <a href="#" class="cathedral-logo"> 🕍 Cathedral V1 </a>
+        <div style="display: flex; align-items: center; gap: 1rem">
+          <a href="index.html" class="back-link">← Back to Hub</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#stakeholders" class="active">Stakeholders</a>
+            </li>
+            <li class="nav-item"><a href="#journey">Journey Map</a></li>
+            <li class="nav-item"><a href="#analysis">Analysis</a></li>
+            <li class="nav-item"><a href="#insights">Insights</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="journey-main">
+      <!-- Journey Header -->
+      <section class="journey-header">
+        <h1 class="journey-title">User Journey Visualization System</h1>
+        <p class="journey-subtitle">
+          Comprehensive stakeholder journey and interaction flow visualization
+          system for the Cathedral Master V1 Control System
+        </p>
+      </section>
+
+      <!-- Stakeholder Types -->
+      <section id="stakeholders" class="stakeholder-grid">
+        <div class="stakeholder-card active" data-stakeholder="developers">
+          <div class="stakeholder-header">
+            <div class="stakeholder-icon">👨‍💻</div>
+            <h3 class="stakeholder-name">Developers</h3>
+          </div>
+          <p class="stakeholder-description">
+            Software engineers and technical contributors building Cathedral
+            applications and systems
+          </p>
+          <div class="journey-stats">
+            <div class="stat-item">
+              <div class="stat-number">12</div>
+              <div class="stat-label">Core Steps</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">87%</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2.3h</div>
+              <div class="stat-label">Avg Time</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stakeholder-card" data-stakeholder="designers">
+          <div class="stakeholder-header">
+            <div class="stakeholder-icon">🎨</div>
+            <h3 class="stakeholder-name">Designers</h3>
+          </div>
+          <p class="stakeholder-description">
+            UI/UX designers and visual creators using Cathedral tools and design
+            systems
+          </p>
+          <div class="journey-stats">
+            <div class="stat-item">
+              <div class="stat-number">15</div>
+              <div class="stat-label">Core Steps</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">92%</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">4.1h</div>
+              <div class="stat-label">Avg Time</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stakeholder-card" data-stakeholder="researchers">
+          <div class="stakeholder-header">
+            <div class="stakeholder-icon">🔬</div>
+            <h3 class="stakeholder-name">Researchers</h3>
+          </div>
+          <p class="stakeholder-description">
+            Academic and professional researchers exploring Cathedral's data and
+            tools
+          </p>
+          <div class="journey-stats">
+            <div class="stat-item">
+              <div class="stat-number">8</div>
+              <div class="stat-label">Core Steps</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">78%</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">6.8h</div>
+              <div class="stat-label">Avg Time</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stakeholder-card" data-stakeholder="content-creators">
+          <div class="stakeholder-header">
+            <div class="stakeholder-icon">✍️</div>
+            <h3 class="stakeholder-name">Content Creators</h3>
+          </div>
+          <p class="stakeholder-description">
+            Writers, storytellers, and creative professionals building content
+            with Cathedral
+          </p>
+          <div class="journey-stats">
+            <div class="stat-item">
+              <div class="stat-number">18</div>
+              <div class="stat-label">Core Steps</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">94%</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">3.7h</div>
+              <div class="stat-label">Avg Time</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stakeholder-card" data-stakeholder="system-administrators">
+          <div class="stakeholder-header">
+            <div class="stakeholder-icon">⚙️</div>
+            <h3 class="stakeholder-name">System Administrators</h3>
+          </div>
+          <p class="stakeholder-description">
+            DevOps engineers and system managers maintaining Cathedral
+            infrastructure
+          </p>
+          <div class="journey-stats">
+            <div class="stat-item">
+              <div class="stat-number">10</div>
+              <div class="stat-label">Core Steps</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">85%</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1.9h</div>
+              <div class="stat-label">Avg Time</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stakeholder-card" data-stakeholder="end-users">
+          <div class="stakeholder-header">
+            <div class="stakeholder-icon">👥</div>
+            <h3 class="stakeholder-name">End Users</h3>
+          </div>
+          <p class="stakeholder-description">
+            Final consumers and users interacting with Cathedral-powered
+            applications
+          </p>
+          <div class="journey-stats">
+            <div class="stat-item">
+              <div class="stat-number">6</div>
+              <div class="stat-label">Core Steps</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">89%</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">0.8h</div>
+              <div class="stat-label">Avg Time</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Journey Visualization -->
+      <section id="journey" class="journey-visualization">
+        <div class="viz-header">
+          <h3 class="viz-title">Developer Journey Flow</h3>
+          <div class="viz-controls">
+            <div class="control-group">
+              <label class="control-label">Journey Type:</label>
+              <select class="control-select" id="journeyType">
+                <option value="onboarding">Onboarding</option>
+                <option value="development" selected>Development</option>
+                <option value="deployment">Deployment</option>
+                <option value="maintenance">Maintenance</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label class="control-label">View:</label>
+              <select class="control-select" id="viewMode">
+                <option value="steps" selected>Step View</option>
+                <option value="flow">Flow View</option>
+                <option value="timeline">Timeline View</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Detail Level:</label>
+              <select class="control-select" id="detailLevel">
+                <option value="high">High</option>
+                <option value="medium" selected>Medium</option>
+                <option value="low">Low</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="journey-canvas" id="journeyCanvas">
+          <!-- Journey visualization will be rendered here -->
+        </div>
+      </section>
+
+      <!-- Journey Steps -->
+      <section class="journey-steps">
+        <div class="journey-step current">
+          <div class="step-number">1</div>
+          <h4 class="step-title">Discovery</h4>
+          <p class="step-description">
+            User discovers Cathedral through documentation, community, or
+            referral
+          </p>
+          <div class="step-metrics">
+            <div class="step-metric">
+              <div class="metric-value">85%</div>
+              <div class="metric-label">Success</div>
+            </div>
+            <div class="step-metric">
+              <div class="metric-value">2.3m</div>
+              <div class="metric-label">Time</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-step">
+          <div class="step-number">2</div>
+          <h4 class="step-title">Documentation Review</h4>
+          <p class="step-description">
+            User explores OpenSpec documentation and implementation guides
+          </p>
+          <div class="step-metrics">
+            <div class="step-metric">
+              <div class="metric-value">78%</div>
+              <div class="metric-label">Success</div>
+            </div>
+            <div class="step-metric">
+              <div class="metric-value">15m</div>
+              <div class="metric-label">Time</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-step">
+          <div class="step-number">3</div>
+          <h4 class="step-title">Environment Setup</h4>
+          <p class="step-description">
+            User configures development environment and dependencies
+          </p>
+          <div class="step-metrics">
+            <div class="step-metric">
+              <div class="metric-value">92%</div>
+              <div class="metric-label">Success</div>
+            </div>
+            <div class="step-metric">
+              <div class="metric-value">25m</div>
+              <div class="metric-label">Time</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-step">
+          <div class="step-number">4</div>
+          <h4 class="step-title">First Project</h4>
+          <p class="step-description">
+            User creates their first Cathedral project using templates
+          </p>
+          <div class="step-metrics">
+            <div class="step-metric">
+              <div class="metric-value">89%</div>
+              <div class="metric-label">Success</div>
+            </div>
+            <div class="step-metric">
+              <div class="metric-value">45m</div>
+              <div class="metric-label">Time</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-step">
+          <div class="step-number">5</div>
+          <h4 class="step-title">Integration</h4>
+          <p class="step-description">
+            User integrates REGISTRY data and connects to visual systems
+          </p>
+          <div class="step-metrics">
+            <div class="step-metric">
+              <div class="metric-value">76%</div>
+              <div class="metric-label">Success</div>
+            </div>
+            <div class="step-metric">
+              <div class="metric-value">1.2h</div>
+              <div class="metric-label">Time</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey-step">
+          <div class="step-number">6</div>
+          <h4 class="step-title">Deployment</h4>
+          <p class="step-description">
+            User deploys application using Cathedral's deployment tools
+          </p>
+          <div class="step-metrics">
+            <div class="step-metric">
+              <div class="metric-value">94%</div>
+              <div class="metric-label">Success</div>
+            </div>
+            <div class="step-metric">
+              <div class="metric-value">30m</div>
+              <div class="metric-label">Time</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pain Points & Opportunities -->
+      <section id="analysis" class="analysis-grid">
+        <div class="analysis-panel">
+          <h3 class="panel-title">🎯 Pain Points</h3>
+          <ul class="issue-list">
+            <li class="issue-item">
+              <h4 class="issue-title">Documentation Navigation</h4>
+              <p class="issue-description">
+                Users struggle to find specific information in the extensive
+                OpenSpec documentation
+              </p>
+              <div class="issue-impact">
+                <span class="impact-level impact-high">High Impact</span>
+                <span class="opportunity-score">Opportunity: 8.5</span>
+              </div>
+            </li>
+            <li class="issue-item">
+              <h4 class="issue-title">Environment Configuration</h4>
+              <p class="issue-description">
+                Setting up development environment requires multiple manual
+                steps and configurations
+              </p>
+              <div class="issue-impact">
+                <span class="impact-level impact-medium">Medium Impact</span>
+                <span class="opportunity-score">Opportunity: 7.2</span>
+              </div>
+            </li>
+            <li class="issue-item">
+              <h4 class="issue-title">Integration Complexity</h4>
+              <p class="issue-description">
+                REGISTRY integration requires deep understanding of data
+                structures
+              </p>
+              <div class="issue-impact">
+                <span class="impact-level impact-high">High Impact</span>
+                <span class="opportunity-score">Opportunity: 9.1</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="analysis-panel">
+          <h3 class="panel-title">💡 Opportunities</h3>
+          <ul class="issue-list">
+            <li class="issue-item">
+              <h4 class="issue-title">Interactive Tutorials</h4>
+              <p class="issue-description">
+                Step-by-step guided tutorials with real-time feedback and
+                examples
+              </p>
+              <div class="issue-impact">
+                <span class="impact-level impact-high">High Impact</span>
+                <span class="opportunity-score">Impact: 9.3</span>
+              </div>
+            </li>
+            <li class="issue-item">
+              <h4 class="issue-title">Quick Start Wizard</h4>
+              <p class="issue-description">
+                Automated environment setup with guided configuration wizard
+              </p>
+              <div class="issue-impact">
+                <span class="impact-level impact-medium">Medium Impact</span>
+                <span class="opportunity-score">Impact: 8.7</span>
+              </div>
+            </li>
+            <li class="issue-item">
+              <h4 class="issue-title">Visual Integration Builder</h4>
+              <p class="issue-description">
+                Drag-and-drop interface for building REGISTRY connections
+              </p>
+              <div class="issue-impact">
+                <span class="impact-level impact-high">High Impact</span>
+                <span class="opportunity-score">Impact: 9.6</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Journey Insights -->
+      <section id="insights" class="insights-section">
+        <h3 class="insights-title">Journey Performance Insights</h3>
+        <div class="insights-grid">
+          <div class="insight-card">
+            <div class="insight-icon">📈</div>
+            <div class="insight-value">76%</div>
+            <div class="insight-label">Completion Rate</div>
+            <p class="insight-description">
+              Overall journey completion across all stakeholder types
+            </p>
+          </div>
+
+          <div class="insight-card">
+            <div class="insight-icon">⏱️</div>
+            <div class="insight-value">3.2h</div>
+            <div class="insight-label">Average Time</div>
+            <p class="insight-description">
+              Mean time from discovery to successful deployment
+            </p>
+          </div>
+
+          <div class="insight-card">
+            <div class="insight-icon">😊</div>
+            <div class="insight-value">87%</div>
+            <div class="insight-label">Satisfaction Score</div>
+            <p class="insight-description">
+              User satisfaction rating post-journey completion
+            </p>
+          </div>
+
+          <div class="insight-card">
+            <div class="insight-icon">🔄</div>
+            <div class="insight-value">2.1x</div>
+            <div class="insight-label">Return Rate</div>
+            <p class="insight-description">
+              Users who return for additional projects within 30 days
+            </p>
+          </div>
+
+          <div class="insight-card">
+            <div class="insight-icon">🎯</div>
+            <div class="insight-value">89%</div>
+            <div class="insight-label">Goal Achievement</div>
+            <p class="insight-description">
+              Users who successfully achieve their primary objectives
+            </p>
+          </div>
+
+          <div class="insight-card">
+            <div class="insight-icon">🔗</div>
+            <div class="insight-value">4.7</div>
+            <div class="insight-label">NPS Score</div>
+            <p class="insight-description">
+              Net Promoter Score for Cathedral ecosystem
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Cathedral User Journey Visualization JavaScript
+      class UserJourneyVisualization {
+        constructor() {
+          this.currentStakeholder = "developers";
+          this.journeyType = "development";
+          this.viewMode = "steps";
+          this.detailLevel = "medium";
+          this.journeyData = {};
+
+          this.init();
+        }
+
+        async init() {
+          await this.loadJourneyData();
+          this.setupEventListeners();
+          this.renderJourneyVisualization();
+          this.initializeStakeholderInteractions();
+        }
+
+        async loadJourneyData() {
+          try {
+            // Simulate loading REGISTRY data for journey mapping
+            this.journeyData = this.getJourneyData();
+          } catch (error) {
+            console.warn("Loading fallback journey data:", error);
+            this.journeyData = this.getFallbackJourneyData();
+          }
+        }
+
+        getJourneyData() {
+          return {
+            developers: {
+              onboarding: {
+                steps: [
+                  {
+                    id: 1,
+                    title: "Discovery",
+                    description: "Find Cathedral through documentation",
+                    duration: "5m",
+                    satisfaction: 85,
+                  },
+                  {
+                    id: 2,
+                    title: "Documentation Review",
+                    description: "Read OpenSpec guides",
+                    duration: "15m",
+                    satisfaction: 78,
+                  },
+                  {
+                    id: 3,
+                    title: "Environment Setup",
+                    description: "Configure development environment",
+                    duration: "25m",
+                    satisfaction: 92,
+                  },
+                  {
+                    id: 4,
+                    title: "First Project",
+                    description: "Create initial project",
+                    duration: "45m",
+                    satisfaction: 89,
+                  },
+                  {
+                    id: 5,
+                    title: "Integration",
+                    description: "Connect to REGISTRY",
+                    duration: "1.2h",
+                    satisfaction: 76,
+                  },
+                  {
+                    id: 6,
+                    title: "Deployment",
+                    description: "Deploy using Cathedral tools",
+                    duration: "30m",
+                    satisfaction: 94,
+                  },
+                ],
+              },
+              development: {
+                steps: [
+                  {
+                    id: 1,
+                    title: "Project Planning",
+                    description: "Define scope and requirements",
+                    duration: "30m",
+                    satisfaction: 88,
+                  },
+                  {
+                    id: 2,
+                    title: "REGISTRY Analysis",
+                    description: "Understand data structures",
+                    duration: "45m",
+                    satisfaction: 82,
+                  },
+                  {
+                    id: 3,
+                    title: "Component Selection",
+                    description: "Choose Cathedral components",
+                    duration: "20m",
+                    satisfaction: 90,
+                  },
+                  {
+                    id: 4,
+                    title: "Implementation",
+                    description: "Build with Cathedral tools",
+                    duration: "2h",
+                    satisfaction: 87,
+                  },
+                  {
+                    id: 5,
+                    title: "Testing",
+                    description: "Validate functionality",
+                    duration: "45m",
+                    satisfaction: 84,
+                  },
+                  {
+                    id: 6,
+                    title: "Optimization",
+                    description: "Performance tuning",
+                    duration: "30m",
+                    satisfaction: 79,
+                  },
+                ],
+              },
+            },
+            designers: {
+              onboarding: {
+                steps: [
+                  {
+                    id: 1,
+                    title: "Creative Discovery",
+                    description: "Explore Cathedral design tools",
+                    duration: "10m",
+                    satisfaction: 92,
+                  },
+                  {
+                    id: 2,
+                    title: "Visual System Review",
+                    description: "Understand design language",
+                    duration: "20m",
+                    satisfaction: 89,
+                  },
+                  {
+                    id: 3,
+                    title: "Component Library",
+                    description: "Browse visual components",
+                    duration: "15m",
+                    satisfaction: 94,
+                  },
+                  {
+                    id: 4,
+                    title: "First Design",
+                    description: "Create initial visual design",
+                    duration: "1h",
+                    satisfaction: 91,
+                  },
+                  {
+                    id: 5,
+                    title: "Integration",
+                    description: "Connect to application",
+                    duration: "45m",
+                    satisfaction: 87,
+                  },
+                  {
+                    id: 6,
+                    title: "Review & Refine",
+                    description: "Iterate and improve",
+                    duration: "30m",
+                    satisfaction: 93,
+                  },
+                ],
+              },
+            },
+          };
+        }
+
+        getFallbackJourneyData() {
+          return {
+            developers: {
+              onboarding: {
+                steps: [
+                  {
+                    id: 1,
+                    title: "Discovery",
+                    description: "Initial exploration",
+                    duration: "5m",
+                    satisfaction: 80,
+                  },
+                  {
+                    id: 2,
+                    title: "Setup",
+                    description: "Environment configuration",
+                    duration: "30m",
+                    satisfaction: 85,
+                  },
+                  {
+                    id: 3,
+                    title: "First Build",
+                    description: "Initial project creation",
+                    duration: "1h",
+                    satisfaction: 82,
+                  },
+                ],
+              },
+            },
+          };
+        }
+
+        setupEventListeners() {
+          // Stakeholder selection
+          document.querySelectorAll(".stakeholder-card").forEach((card) => {
+            card.addEventListener("click", () => {
+              this.selectStakeholder(card.dataset.stakeholder);
+            });
+          });
+
+          // Journey type selector
+          document
+            .getElementById("journeyType")
+            .addEventListener("change", (e) => {
+              this.journeyType = e.target.value;
+              this.renderJourneyVisualization();
+            });
+
+          // View mode selector
+          document
+            .getElementById("viewMode")
+            .addEventListener("change", (e) => {
+              this.viewMode = e.target.value;
+              this.renderJourneyVisualization();
+            });
+
+          // Detail level selector
+          document
+            .getElementById("detailLevel")
+            .addEventListener("change", (e) => {
+              this.detailLevel = e.target.value;
+              this.renderJourneyVisualization();
+            });
+
+          // Journey step interaction
+          document.querySelectorAll(".journey-step").forEach((step, index) => {
+            step.addEventListener("click", () => {
+              this.selectStep(index);
+            });
+          });
+
+          // Navigation smooth scrolling
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", (e) => {
+              e.preventDefault();
+              const target = document.querySelector(
+                e.target.getAttribute("href")
+              );
+              if (target) {
+                target.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }
+            });
+          });
+        }
+
+        selectStakeholder(stakeholder) {
+          this.currentStakeholder = stakeholder;
+
+          // Update active stakeholder card
+          document.querySelectorAll(".stakeholder-card").forEach((card) => {
+            card.classList.remove("active");
+          });
+          document
+            .querySelector(`[data-stakeholder="${stakeholder}"]`)
+            .classList.add("active");
+
+          // Update journey title
+          const stakeholderName = stakeholder
+            .replace("-", " ")
+            .replace(/\b\w/g, (l) => l.toUpperCase());
+          document.querySelector(".viz-title").textContent =
+            `${stakeholderName} Journey Flow`;
+
+          this.renderJourneyVisualization();
+        }
+
+        selectStep(stepIndex) {
+          document.querySelectorAll(".journey-step").forEach((step) => {
+            step.classList.remove("current");
+          });
+          document
+            .querySelectorAll(".journey-step")
+            [stepIndex].classList.add("current");
+        }
+
+        renderJourneyVisualization() {
+          const canvas = document.getElementById("journeyCanvas");
+          canvas.innerHTML = "";
+
+          if (this.viewMode === "steps") {
+            this.renderStepsView(canvas);
+          } else if (this.viewMode === "flow") {
+            this.renderFlowView(canvas);
+          } else {
+            this.renderTimelineView(canvas);
+          }
+        }
+
+        renderStepsView(container) {
+          const steps = this.getCurrentSteps();
+          const stepsContainer = document.createElement("div");
+          stepsContainer.className = "journey-steps-grid";
+          stepsContainer.style.cssText =
+            "display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;";
+
+          steps.forEach((step, index) => {
+            const stepElement = document.createElement("div");
+            stepElement.className = "journey-step";
+            stepElement.style.cssText = `
+              background: rgba(255, 255, 255, 0.1);
+              border: 2px solid var(--cathedral-silver);
+              border-radius: 12px;
+              padding: 1.5rem;
+              text-align: center;
+              transition: var(--cathedral-transition);
+              cursor: pointer;
+            `;
+            stepElement.innerHTML = `
+              <div class="step-number" style="font-size: 1.5rem; font-weight: 700; color: var(--cathedral-gold); margin-bottom: 0.5rem;">
+                ${step.id}
+              </div>
+              <h4 class="step-title" style="font-size: 1rem; font-weight: 600; color: var(--cathedral-light); margin-bottom: 0.5rem;">
+                ${step.title}
+              </h4>
+              <p class="step-description" style="font-size: 0.9rem; color: var(--cathedral-crystal); line-height: 1.4;">
+                ${step.description}
+              </p>
+              <div class="step-metrics" style="display: flex; justify-content: space-around; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255, 255, 255, 0.2);">
+                <div class="step-metric" style="text-align: center;">
+                  <div class="metric-value" style="font-size: 1.1rem; font-weight: 700; color: var(--cathedral-gold);">
+                    ${step.satisfaction}%
+                  </div>
+                  <div class="metric-label" style="font-size: 0.7rem; color: var(--cathedral-crystal);">
+                    Success
+                  </div>
+                </div>
+                <div class="step-metric" style="text-align: center;">
+                  <div class="metric-value" style="font-size: 1.1rem; font-weight: 700; color: var(--cathedral-gold);">
+                    ${step.duration}
+                  </div>
+                  <div class="metric-label" style="font-size: 0.7rem; color: var(--cathedral-crystal);">
+                    Time
+                  </div>
+                </div>
+              </div>
+            `;
+
+            stepElement.addEventListener("mouseenter", () => {
+              stepElement.style.borderColor = "var(--cathedral-gold)";
+              stepElement.style.transform = "scale(1.02)";
+            });
+
+            stepElement.addEventListener("mouseleave", () => {
+              stepElement.style.borderColor = "var(--cathedral-silver)";
+              stepElement.style.transform = "scale(1)";
+            });
+
+            stepsContainer.appendChild(stepElement);
+          });
+
+          container.appendChild(stepsContainer);
+        }
+
+        renderFlowView(container) {
+          const width = container.clientWidth - 60;
+          const height = 400;
+
+          const svg = d3
+            .select(container)
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+          const steps = this.getCurrentSteps();
+          const nodes = steps.map((step, i) => ({
+            id: step.id,
+            title: step.title,
+            satisfaction: step.satisfaction,
+            x: 100 + (i * (width - 200)) / (steps.length - 1),
+            y: height / 2,
+          }));
+
+          const links = nodes.slice(1).map((node, i) => ({
+            source: nodes[i],
+            target: node,
+          }));
+
+          // Draw links
+          svg
+            .selectAll(".journey-link")
+            .data(links)
+            .enter()
+            .append("line")
+            .attr("class", "journey-link")
+            .attr("x1", (d) => d.source.x)
+            .attr("y1", (d) => d.source.y)
+            .attr("x2", (d) => d.target.x)
+            .attr("y2", (d) => d.target.y);
+
+          // Draw nodes
+          const nodeGroups = svg
+            .selectAll(".journey-node")
+            .data(nodes)
+            .enter()
+            .append("g")
+            .attr("class", "journey-node")
+            .attr("transform", (d) => `translate(${d.x}, ${d.y})`);
+
+          nodeGroups
+            .append("circle")
+            .attr("class", "journey-node-circle")
+            .attr("r", 30)
+            .attr("fill", (d) =>
+              d.satisfaction > 85
+                ? "var(--cathedral-success)"
+                : d.satisfaction > 75
+                  ? "var(--cathedral-warning)"
+                  : "var(--cathedral-error)"
+            );
+
+          nodeGroups
+            .append("text")
+            .attr("class", "journey-label")
+            .attr("dy", -45)
+            .text((d) => d.title)
+            .style("font-size", "12px");
+
+          nodeGroups
+            .append("text")
+            .attr("class", "journey-label")
+            .attr("dy", 5)
+            .text((d) => `${d.satisfaction}%`)
+            .style("font-weight", "700");
+
+          // Add interactivity
+          nodeGroups.on("mouseenter", function () {
+            d3.select(this)
+              .select("circle")
+              .transition()
+              .duration(200)
+              .attr("r", 35)
+              .style("filter", "drop-shadow(0 0 10px var(--cathedral-gold))");
+          });
+
+          nodeGroups.on("mouseleave", function () {
+            d3.select(this)
+              .select("circle")
+              .transition()
+              .duration(200)
+              .attr("r", 30)
+              .style("filter", "none");
+          });
+        }
+
+        renderTimelineView(container) {
+          const steps = this.getCurrentSteps();
+          const timeline = document.createElement("div");
+          timeline.style.cssText = "position: relative; padding: 2rem;";
+
+          // Timeline line
+          const line = document.createElement("div");
+          line.style.cssText = `
+            position: absolute;
+            top: 50%;
+            left: 2rem;
+            right: 2rem;
+            height: 4px;
+            background: linear-gradient(to right, var(--cathedral-silver), var(--cathedral-gold), var(--cathedral-accent));
+            border-radius: 2px;
+            transform: translateY(-50%);
+          `;
+          timeline.appendChild(line);
+
+          steps.forEach((step, index) => {
+            const stepElement = document.createElement("div");
+            stepElement.style.cssText = `
+              position: absolute;
+              top: ${index * 80 + 20}px;
+              left: ${40 + index * 200}px;
+              background: rgba(255, 255, 255, 0.1);
+              border: 2px solid var(--cathedral-gold);
+              border-radius: 12px;
+              padding: 1rem;
+              min-width: 180px;
+              backdrop-filter: blur(5px);
+            `;
+
+            stepElement.innerHTML = `
+              <div style="font-weight: 700; color: var(--cathedral-gold); margin-bottom: 0.5rem;">
+                ${step.title}
+              </div>
+              <div style="font-size: 0.8rem; color: var(--cathedral-crystal); margin-bottom: 0.5rem;">
+                ${step.duration}
+              </div>
+              <div style="font-size: 0.9rem; color: var(--cathedral-light);">
+                ${step.satisfaction}% satisfaction
+              </div>
+            `;
+
+            timeline.appendChild(stepElement);
+          });
+
+          container.appendChild(timeline);
+        }
+
+        getCurrentSteps() {
+          return (
+            this.journeyData[this.currentStakeholder]?.[this.journeyType]
+              ?.steps || []
+          );
+        }
+
+        initializeStakeholderInteractions() {
+          // Add smooth animations for stakeholder cards
+          document
+            .querySelectorAll(".stakeholder-card")
+            .forEach((card, index) => {
+              card.style.animation = `fadeInUp 0.6s ease-out ${index * 0.1}s both`;
+            });
+        }
+      }
+
+      // Initialize journey visualization when DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        new UserJourneyVisualization();
+      });
+
+      // Keyboard navigation support
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          // Reset any active states
+          document.querySelectorAll(".journey-step").forEach((step) => {
+            step.classList.remove("current");
+          });
+        }
+      });
+
+      // Add CSS animations
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `;
+      document.head.appendChild(style);
+    </script>
+  </body>
+</html>

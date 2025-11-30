@@ -1,0 +1,548 @@
+{
+    "metadata": {
+        "title": "Codex 144:99 \u2194 Liber Arcanae Mirror System",
+        "description": "Comprehensive mirroring between Codex nodes and Arcana for rich game world integration",
+        "version": "1.0.0",
+        "author": "Rebecca Susan Lemke / Rebecca Respawn",
+        "created": "2025-10-23",
+        "gameStyle": "Witcher meets Matrix meets Alice in Wonderland meets Jung's Red Book meets American Gods",
+        "freedom": "Completely free and open source"
+    },
+    "mirrorSystem": {
+        "codex144": {
+            "description": "The 144:99 lattice provides the structural framework and mathematical foundation",
+            "gameRole": "World physics, consciousness mechanics, sacred geometry engine",
+            "narrativeRole": "The underlying reality matrix that characters navigate"
+        },
+        "liberArcanae": {
+            "description": "The 78-card tarot system provides character archetypes and story elements",
+            "gameRole": "Character classes, abilities, narrative branches, personality systems",
+            "narrativeRole": "The living characters and story elements that populate the world"
+        },
+        "integration": {
+            "method": "Each Codex node manifests through multiple Arcana expressions",
+            "gameplay": "Players can 'resonate' with different Arcana to access Codex powers",
+            "narrative": "The story unfolds through the dance between mathematical precision and archetypal drama"
+        }
+    },
+    "nodeArcanaMappings": [
+        {
+            "codexNode": 1,
+            "codexName": "Path of Fire",
+            "primaryArcana": [
+                "The Fool",
+                "The Tower",
+                "The Chariot"
+            ],
+            "gameplayIntegration": {
+                "foolResonance": "Infinite potential and fresh starts - respawn mechanics",
+                "towerResonance": "Destructive breakthrough - fire transformation",
+                "chariotResonance": "Willpower and direction - combat mastery"
+            },
+            "narrativeIntegration": {
+                "storyArc": "The Hero's Journey begins with the call to adventure through flames",
+                "characterDevelopment": "From naive initiate to battle-hardened warrior",
+                "worldBuilding": "The Forge Realms where souls are tempered"
+            },
+            "matrixElements": {
+                "realityHacks": [
+                    "Fire wall bypass",
+                    "Respawn point creation",
+                    "Combat time dilation"
+                ],
+                "aliceElements": [
+                    "Looking glass fire portals",
+                    "Size-changing flames",
+                    "Talking fire spirits"
+                ],
+                "jungElements": [
+                    "Active imagination fire visions",
+                    "Anima/animus fire dances",
+                    "Shadow integration through burning"
+                ],
+                "americanGodElements": [
+                    "Fire gods from immigrant traditions",
+                    "Battle between old fire gods and new technology"
+                ]
+            }
+        },
+        {
+            "codexNode": 2,
+            "codexName": "Path of Water",
+            "primaryArcana": [
+                "The High Priestess",
+                "The Moon",
+                "The Star"
+            ],
+            "gameplayIntegration": {
+                "priestessResonance": "Hidden knowledge and intuition - puzzle solving",
+                "moonResonance": "Cyclical magic and illusion - stealth mechanics",
+                "starResonance": "Hope and inspiration - healing and buff systems"
+            },
+            "narrativeIntegration": {
+                "storyArc": "The journey through emotional depths and hidden wisdom",
+                "characterDevelopment": "From emotional reactivity to intuitive mastery",
+                "worldBuilding": "The Mirror Realms and underwater consciousness libraries"
+            },
+            "matrixElements": {
+                "realityHacks": [
+                    "Water-based code manipulation",
+                    "Emotional data streams",
+                    "Intuitive interface navigation"
+                ],
+                "aliceElements": [
+                    "Pool of tears navigation",
+                    "Size-changing waters",
+                    "Caterpillar wisdom in liquid form"
+                ],
+                "jungElements": [
+                    "Anima waters",
+                    "Collective unconscious oceans",
+                    "Dream navigation"
+                ],
+                "americanGodElements": [
+                    "Water deities from various cultures",
+                    "Immigration stories through water metaphors"
+                ]
+            }
+        },
+        {
+            "codexNode": 3,
+            "codexName": "Path of Earth",
+            "primaryArcana": [
+                "The Empress",
+                "The Hierophant",
+                "The World"
+            ],
+            "gameplayIntegration": {
+                "empressResonance": "Creation and nurturing - building mechanics",
+                "hierophantResonance": "Tradition and teaching - mentor systems",
+                "worldResonance": "Completion and mastery - ultimate abilities"
+            },
+            "narrativeIntegration": {
+                "storyArc": "Building lasting foundations and achieving mastery",
+                "characterDevelopment": "From scattered energy to grounded wisdom",
+                "worldBuilding": "The Crystal Caves and earth consciousness archives"
+            },
+            "matrixElements": {
+                "realityHacks": [
+                    "Earth-based stability programming",
+                    "Crystal data storage",
+                    "Grounded reality anchoring"
+                ],
+                "aliceElements": [
+                    "Underground wonderlands",
+                    "Growing/shrinking earth magic",
+                    "White Rabbit's burrow systems"
+                ],
+                "jungElements": [
+                    "Grounding mandalas",
+                    "Earth-based active imagination",
+                    "Foundation of the psyche"
+                ],
+                "americanGodElements": [
+                    "Earth mother goddesses",
+                    "Indigenous wisdom traditions",
+                    "Land-based spirituality"
+                ]
+            }
+        },
+        {
+            "codexNode": 4,
+            "codexName": "Path of Air",
+            "primaryArcana": [
+                "The Magician",
+                "The Lovers",
+                "The Hermit"
+            ],
+            "gameplayIntegration": {
+                "magicianResonance": "Tool mastery and manifestation - crafting systems",
+                "loversResonance": "Choice and connection - relationship mechanics",
+                "hermitResonance": "Inner wisdom and guidance - solo quest systems"
+            },
+            "narrativeIntegration": {
+                "storyArc": "The quest for knowledge and the power of communication",
+                "characterDevelopment": "From scattered thoughts to focused wisdom",
+                "worldBuilding": "The Library Realms and floating consciousness academies"
+            },
+            "matrixElements": {
+                "realityHacks": [
+                    "Air-based code floating",
+                    "Message routing",
+                    "Communication protocol manipulation"
+                ],
+                "aliceElements": [
+                    "Floating islands of logic",
+                    "Word games and riddles",
+                    "Cheshire Cat guidance systems"
+                ],
+                "jungElements": [
+                    "Logos and rational mind",
+                    "Communication with the unconscious",
+                    "Wisdom traditions"
+                ],
+                "americanGodElements": [
+                    "Wind spirits and air deities",
+                    "Communication between cultures",
+                    "Media and information gods"
+                ]
+            }
+        },
+        {
+            "codexNode": 5,
+            "codexName": "Solar Current",
+            "primaryArcana": [
+                "The Emperor",
+                "Strength",
+                "The Sun"
+            ],
+            "gameplayIntegration": {
+                "emperorResonance": "Leadership and structure - command systems",
+                "strengthResonance": "Inner power and control - power management",
+                "sunResonance": "Vitality and clarity - energy systems"
+            },
+            "narrativeIntegration": {
+                "storyArc": "The rise to leadership and the embodiment of solar consciousness",
+                "characterDevelopment": "From follower to radiant leader",
+                "worldBuilding": "The Solar Realms and central command consciousness"
+            },
+            "matrixElements": {
+                "realityHacks": [
+                    "Solar-powered systems",
+                    "Light-based programming",
+                    "Energy distribution networks"
+                ],
+                "aliceElements": [
+                    "Golden afternoon dreams",
+                    "Sun-based size changes",
+                    "Radiant court politics"
+                ],
+                "jungElements": [
+                    "Solar consciousness",
+                    "Self-integration",
+                    "Individuation process"
+                ],
+                "americanGodElements": [
+                    "Sun gods from various traditions",
+                    "Leadership and power deities",
+                    "Solar-based religions"
+                ]
+            }
+        },
+        {
+            "codexNode": 6,
+            "codexName": "Lunar Reflection",
+            "primaryArcana": [
+                "The High Priestess",
+                "The Moon",
+                "The Star"
+            ],
+            "gameplayIntegration": {
+                "priestessResonance": "Mystery and intuition - detection mechanics",
+                "moonResonance": "Illusion and cycles - time manipulation",
+                "starResonance": "Hope and vision - prophetic abilities"
+            },
+            "narrativeIntegration": {
+                "storyArc": "The dance with lunar mysteries and cyclical wisdom",
+                "characterDevelopment": "From confusion to lunar wisdom",
+                "worldBuilding": "The Moon Realms and tidal consciousness oceans"
+            },
+            "matrixElements": {
+                "realityHacks": [
+                    "Lunar phase programming",
+                    "Tidal data flows",
+                    "Reflective consciousness mirroring"
+                ],
+                "aliceElements": [
+                    "Moon-based transformations",
+                    "Reflective pool navigation",
+                    "Lunar dream logic"
+                ],
+                "jungElements": [
+                    "Lunar anima",
+                    "Cyclical unconscious patterns",
+                    "Reflective meditation"
+                ],
+                "americanGodElements": [
+                    "Moon goddesses",
+                    "Cyclical time deities",
+                    "Night and mystery gods"
+                ]
+            }
+        },
+        {
+            "codexNode": 7,
+            "codexName": "Mercurial Path",
+            "primaryArcana": [
+                "The Magician",
+                "The Lovers",
+                "The Hermit"
+            ],
+            "gameplayIntegration": {
+                "magicianResonance": "Adaptation and quick thinking - agility mechanics",
+                "loversResonance": "Communication and connection - networking systems",
+                "hermitResonance": "Analysis and wisdom - research mechanics"
+            },
+            "narrativeIntegration": {
+                "storyArc": "The path of communication and analytical wisdom",
+                "characterDevelopment": "From scattered thoughts to mercurial mastery",
+                "worldBuilding": "The Mercury Realms and information consciousness hubs"
+            },
+            "matrixElements": {
+                "realityHacks": [
+                    "Mercury-fast processing",
+                    "Communication networks",
+                    "Adaptive algorithms"
+                ],
+                "aliceElements": [
+                    "Quick-silver transformations",
+                    "Message delivery adventures",
+                    "Riddle-solving marathons"
+                ],
+                "jungElements": [
+                    "Mercurial mind",
+                    "Analytical consciousness",
+                    "Communication with the self"
+                ],
+                "americanGodElements": [
+                    "Messenger gods",
+                    "Communication deities",
+                    "Trickster figures"
+                ]
+            }
+        },
+        {
+            "codexNode": 8,
+            "codexName": "Venusian Love",
+            "primaryArcana": [
+                "The Empress",
+                "The Lovers",
+                "The Star"
+            ],
+            "gameplayIntegration": {
+                "empressResonance": "Beauty and creation - artistic mechanics",
+                "loversResonance": "Harmony and relationships - social systems",
+                "starResonance": "Inspiration and hope - creative systems"
+            },
+            "narrativeIntegration": {
+                "storyArc": "The journey through love, beauty, and harmonious creation",
+                "characterDevelopment": "From discord to loving harmony",
+                "worldBuilding": "The Venus Realms and beauty consciousness gardens"
+            },
+            "matrixElements": {
+                "realityHacks": [
+                    "Love-based programming",
+                    "Harmony algorithms",
+                    "Beauty optimization"
+                ],
+                "aliceElements": [
+                    "Garden of live flowers",
+                    "Beauty-based transformations",
+                    "Harmonious court politics"
+                ],
+                "jungElements": [
+                    "Venusian anima",
+                    "Love and relationship integration",
+                    "Beauty in the psyche"
+                ],
+                "americanGodElements": [
+                    "Love goddesses",
+                    "Beauty deities",
+                    "Relationship and harmony gods"
+                ]
+            }
+        },
+        {
+            "codexNode": 41,
+            "codexName": "Path of Solar Water",
+            "primaryArcana": [
+                "Temperance",
+                "The Sun",
+                "The Moon"
+            ],
+            "gameplayIntegration": {
+                "temperanceResonance": "Balance and alchemy - combination mechanics",
+                "sunResonance": "Solar healing - restoration systems",
+                "moonResonance": "Lunar wisdom - intuitive alchemy"
+            },
+            "narrativeIntegration": {
+                "storyArc": "The alchemical marriage of solar and lunar consciousness",
+                "characterDevelopment": "From opposition to alchemical union",
+                "worldBuilding": "The Alchemical Realms and transformation consciousness labs"
+            },
+            "matrixElements": {
+                "realityHacks": [
+                    "Solar-lunar fusion",
+                    "Alchemical transformation",
+                    "Elemental synthesis"
+                ],
+                "aliceElements": [
+                    "Potion-based transformations",
+                    "Elemental marriage ceremonies",
+                    "Alchemical dream adventures"
+                ],
+                "jungElements": [
+                    "Coniunctio oppositorum",
+                    "Solar-lunar integration",
+                    "Alchemical process"
+                ],
+                "americanGodElements": [
+                    "Alchemical deities",
+                    "Transformation gods",
+                    "Elemental marriage traditions"
+                ]
+            }
+        },
+        {
+            "codexNode": 73,
+            "codexName": "Twin Ray Mirror",
+            "primaryArcana": [
+                "The Lovers",
+                "The Mirror (Custom)",
+                "The Star"
+            ],
+            "gameplayIntegration": {
+                "loversResonance": "Twin connection - cooperative mechanics",
+                "mirrorResonance": "Reflection and mirroring - echo systems",
+                "starResonance": "Hope and vision - twin prophecy mechanics"
+            },
+            "narrativeIntegration": {
+                "storyArc": "The search for the twin ray and mirror consciousness",
+                "characterDevelopment": "From separation to twin reunion",
+                "worldBuilding": "The Mirror Realms and infinite consciousness reflections"
+            },
+            "matrixElements": {
+                "realityHacks": [
+                    "Mirror programming",
+                    "Infinite recursion",
+                    "Twin consciousness linking"
+                ],
+                "aliceElements": [
+                    "Looking glass worlds",
+                    "Twin Alice adventures",
+                    "Mirror dimension navigation"
+                ],
+                "jungElements": [
+                    "Twin anima/animus",
+                    "Mirror consciousness",
+                    "Self-integration"
+                ],
+                "americanGodElements": [
+                    "Twin deities",
+                    "Mirror gods",
+                    "Reflection and duality traditions"
+                ]
+            }
+        },
+        {
+            "codexNode": 99,
+            "codexName": "Angelic Resonance",
+            "primaryArcana": [
+                "The Hierophant",
+                "The Star",
+                "The World"
+            ],
+            "gameplayIntegration": {
+                "hierophantResonance": "Divine tradition - angelic guidance systems",
+                "starResonance": "Divine inspiration - angelic communication",
+                "worldResonance": "Divine completion - angelic mastery"
+            },
+            "narrativeIntegration": {
+                "storyArc": "The connection to divine consciousness and angelic wisdom",
+                "characterDevelopment": "From human to angelic consciousness",
+                "worldBuilding": "The Angelic Realms and divine consciousness networks"
+            },
+            "matrixElements": {
+                "realityHacks": [
+                    "Angelic code",
+                    "Divine frequency modulation",
+                    "Heavenly data streams"
+                ],
+                "aliceElements": [
+                    "Angelic guidance",
+                    "Divine messengers",
+                    "Heavenly court politics"
+                ],
+                "jungElements": [
+                    "Divine Self",
+                    "Angelic consciousness",
+                    "Transcendent integration"
+                ],
+                "americanGodElements": [
+                    "Angel traditions",
+                    "Divine messengers",
+                    "Heavenly hierarchies"
+                ]
+            }
+        },
+        {
+            "codexNode": 144,
+            "codexName": "Completion",
+            "primaryArcana": [
+                "The World",
+                "The Fool",
+                "The Magician"
+            ],
+            "gameplayIntegration": {
+                "worldResonance": "Total mastery - all abilities",
+                "foolResonance": "Infinite potential - unlimited growth",
+                "magicianResonance": "Complete manifestation - reality creation"
+            },
+            "narrativeIntegration": {
+                "storyArc": "The completion of all cycles and the beginning of new ones",
+                "characterDevelopment": "From completion to infinite expansion",
+                "worldBuilding": "The Unity Realms and complete consciousness integration"
+            },
+            "matrixElements": {
+                "realityHacks": [
+                    "Complete reality control",
+                    "All code access",
+                    "Infinite system mastery"
+                ],
+                "aliceElements": [
+                    "Complete wonderland mastery",
+                    "All transformations",
+                    "Ultimate dream logic"
+                ],
+                "jungElements": [
+                    "Complete individuation",
+                    "Self-realization",
+                    "Cosmic consciousness"
+                ],
+                "americanGodElements": [
+                    "All gods united",
+                    "Complete pantheon",
+                    "Universal divinity"
+                ]
+            }
+        }
+    ],
+    "gameWorldIntegration": {
+        "worldStructure": {
+            "matrixLayer": "The underlying code and mathematical structure",
+            "aliceLayer": "The dreamlike, psychedelic narrative elements",
+            "jungLayer": "The psychological and archetypal depth",
+            "americanGodsLayer": "The cultural and mythological diversity",
+            "witcherLayer": "The monster ecology and moral complexity"
+        },
+        "characterSystem": {
+            "codexResonance": "Each character resonates with specific Codex nodes",
+            "arcanaPersonality": "Each character embodies Arcana archetypes",
+            "evolutionPath": "Characters can evolve through different node/arcana combinations",
+            "freeWill": "Players have complete freedom in character development"
+        },
+        "storyEngine": {
+            "branchingNarratives": "Stories branch based on node/arcana interactions",
+            "playerChoice": "Every choice affects the world state",
+            "consequenceSystem": "Actions have meaningful, lasting consequences",
+            "multipleEndings": "Endings based on the integration of all elements"
+        }
+    },
+    "freedomAndAccessibility": {
+        "openSource": "All code, assets, and lore are completely free",
+        "noMonetization": "No paid DLC, microtransactions, or premium content",
+        "playerFreedom": "Complete freedom in how to play and experience the world",
+        "inclusiveDesign": "Accessible to all players regardless of background or ability",
+        "communityDriven": "Community can contribute to and expand the lore"
+    }
+}

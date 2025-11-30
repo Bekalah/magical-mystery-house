@@ -1,0 +1,1731 @@
+{
+  "timestamp": "2025-11-30T21:00:49.973Z",
+  "version": "1.0.0",
+  "summary": {
+    "aligned": 0,
+    "misaligned": 129,
+    "missing": 0,
+    "recommendations": 129
+  },
+  "alignment": {
+    "aligned": [],
+    "misaligned": [
+      {
+        "type": "core-system",
+        "name": "codex-144-99",
+        "description": "Core system \"codex-144-99\" found in 6 locations (needs merge)",
+        "locations": [
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144-99",
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144-99-core",
+          "/Users/rebeccalemke/cathedral-real/packages/codex-144-99",
+          "/Users/rebeccalemke/cathedral-real/packages/codex-144-99-core",
+          "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144-99",
+          "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144-99-core"
+        ]
+      },
+      {
+        "type": "core-system",
+        "name": "liber-arcanae",
+        "description": "Core system \"liber-arcanae\" found in 15 locations (needs merge)",
+        "locations": [
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-liber-arcanae-bridge",
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae",
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae-core",
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae-tools",
+          "/Users/rebeccalemke/cathedral-real/packages/cathedral-liber-arcanae-bridge",
+          "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae",
+          "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-core",
+          "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-tools",
+          "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-liber-arcanae-bridge",
+          "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae",
+          "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae-core",
+          "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae-tools",
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae",
+          "/Users/rebeccalemke/cathedral-real/packages/godot-liber-arcanae",
+          "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-liber-arcanae"
+        ]
+      },
+      {
+        "type": "core-system",
+        "name": "circuitum99",
+        "description": "Core system \"circuitum99\" found in 6 locations (needs merge)",
+        "locations": [
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa",
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-core",
+          "/Users/rebeccalemke/cathedral-real/packages/circuitum99-arcanae-cyoa",
+          "/Users/rebeccalemke/cathedral-real/packages/circuitum99-core",
+          "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuitum99-arcanae-cyoa",
+          "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuitum99-core"
+        ]
+      },
+      {
+        "type": "core-system",
+        "name": "stone-grimoire",
+        "description": "Core system \"stone-grimoire\" found in 9 locations (needs merge)",
+        "locations": [
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire-core",
+          "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire-core",
+          "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire-core",
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire-library-engine",
+          "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire-library-engine",
+          "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire-library-engine",
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire",
+          "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire",
+          "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire"
+        ]
+      },
+      {
+        "type": "naming",
+        "name": "agent-integration",
+        "description": "Name \"agent-integration\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/agent-integration",
+        "recommendation": "@cathedral/agent-integration"
+      },
+      {
+        "type": "naming",
+        "name": "arcana",
+        "description": "Name \"arcana\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/arcana",
+        "recommendation": "@cathedral/arcana"
+      },
+      {
+        "type": "naming",
+        "name": "atelier-constitution",
+        "description": "Name \"atelier-constitution\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/atelier-constitution",
+        "recommendation": "@cathedral/atelier-constitution"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-144",
+        "description": "Name \"cathedral-144\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-144",
+        "recommendation": "@cathedral/cathedral-144"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-audio-synthesis",
+        "description": "Name \"cathedral-audio-synthesis\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-audio-synthesis",
+        "recommendation": "@cathedral/cathedral-audio-synthesis"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-integration-bridge",
+        "description": "Name \"cathedral-integration-bridge\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-integration-bridge",
+        "recommendation": "@cathedral/cathedral-integration-bridge"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-liber-arcanae-bridge",
+        "description": "Name \"cathedral-liber-arcanae-bridge\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-liber-arcanae-bridge",
+        "recommendation": "@cathedral/cathedral-liber-arcanae-bridge"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-style",
+        "description": "Name \"cathedral-style\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-style",
+        "recommendation": "@cathedral/cathedral-style"
+      },
+      {
+        "type": "naming",
+        "name": "character-alchemical-art",
+        "description": "Name \"character-alchemical-art\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/character-alchemical-art",
+        "recommendation": "@cathedral/character-alchemical-art"
+      },
+      {
+        "type": "naming",
+        "name": "codex-144",
+        "description": "Name \"codex-144\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144",
+        "recommendation": "@cathedral/codex-144"
+      },
+      {
+        "type": "naming",
+        "name": "codex-game-bridge",
+        "description": "Name \"codex-game-bridge\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-game-bridge",
+        "recommendation": "@cathedral/codex-game-bridge"
+      },
+      {
+        "type": "naming",
+        "name": "connections",
+        "description": "Name \"connections\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/connections",
+        "recommendation": "@cathedral/connections"
+      },
+      {
+        "type": "naming",
+        "name": "consciousness-aware-creative",
+        "description": "Name \"consciousness-aware-creative\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/consciousness-aware-creative",
+        "recommendation": "@cathedral/consciousness-aware-creative"
+      },
+      {
+        "type": "naming",
+        "name": "daimon-gear",
+        "description": "Name \"daimon-gear\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/daimon-gear",
+        "recommendation": "@cathedral/daimon-gear"
+      },
+      {
+        "type": "naming",
+        "name": "fusion-creative-suite",
+        "description": "Name \"fusion-creative-suite\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/fusion-creative-suite",
+        "recommendation": "@cathedral/fusion-creative-suite"
+      },
+      {
+        "type": "naming",
+        "name": "game-world",
+        "description": "Name \"game-world\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-world",
+        "recommendation": "@cathedral/game-world"
+      },
+      {
+        "type": "naming",
+        "name": "graphs",
+        "description": "Name \"graphs\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/graphs",
+        "recommendation": "@cathedral/graphs"
+      },
+      {
+        "type": "naming",
+        "name": "holographic-interface",
+        "description": "Name \"holographic-interface\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/holographic-interface",
+        "recommendation": "@cathedral/holographic-interface"
+      },
+      {
+        "type": "naming",
+        "name": "living-libraries",
+        "description": "Name \"living-libraries\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/living-libraries",
+        "recommendation": "@cathedral/living-libraries"
+      },
+      {
+        "type": "naming",
+        "name": "magnum-opus",
+        "description": "Name \"magnum-opus\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/magnum-opus",
+        "recommendation": "@cathedral/magnum-opus"
+      },
+      {
+        "type": "naming",
+        "name": "mobile-optimization",
+        "description": "Name \"mobile-optimization\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/mobile-optimization",
+        "recommendation": "@cathedral/mobile-optimization"
+      },
+      {
+        "type": "naming",
+        "name": "moonchild-scanner",
+        "description": "Name \"moonchild-scanner\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/moonchild-scanner",
+        "recommendation": "@cathedral/moonchild-scanner"
+      },
+      {
+        "type": "naming",
+        "name": "museum-sources",
+        "description": "Name \"museum-sources\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/museum-sources",
+        "recommendation": "@cathedral/museum-sources"
+      },
+      {
+        "type": "naming",
+        "name": "professional-export-integration",
+        "description": "Name \"professional-export-integration\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-export-integration",
+        "recommendation": "@cathedral/professional-export-integration"
+      },
+      {
+        "type": "naming",
+        "name": "professional-quality-control",
+        "description": "Name \"professional-quality-control\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-quality-control",
+        "recommendation": "@cathedral/professional-quality-control"
+      },
+      {
+        "type": "naming",
+        "name": "professional-suite",
+        "description": "Name \"professional-suite\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-suite",
+        "recommendation": "@cathedral/professional-suite"
+      },
+      {
+        "type": "naming",
+        "name": "registry-learning-validation",
+        "description": "Name \"registry-learning-validation\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/registry-learning-validation",
+        "recommendation": "@cathedral/registry-learning-validation"
+      },
+      {
+        "type": "naming",
+        "name": "sacred-geometry-math",
+        "description": "Name \"sacred-geometry-math\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/sacred-geometry-math",
+        "recommendation": "@cathedral/sacred-geometry-math"
+      },
+      {
+        "type": "naming",
+        "name": "sacred-geometry-simd",
+        "description": "Name \"sacred-geometry-simd\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/sacred-geometry-simd",
+        "recommendation": "@cathedral/sacred-geometry-simd"
+      },
+      {
+        "type": "naming",
+        "name": "scanner",
+        "description": "Name \"scanner\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/scanner",
+        "recommendation": "@cathedral/scanner"
+      },
+      {
+        "type": "naming",
+        "name": "simple-learning-validation",
+        "description": "Name \"simple-learning-validation\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/simple-learning-validation",
+        "recommendation": "@cathedral/simple-learning-validation"
+      },
+      {
+        "type": "naming",
+        "name": "spells",
+        "description": "Name \"spells\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/spells",
+        "recommendation": "@cathedral/spells"
+      },
+      {
+        "type": "naming",
+        "name": "synth-labs",
+        "description": "Name \"synth-labs\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/synth-labs",
+        "recommendation": "@cathedral/synth-labs"
+      },
+      {
+        "type": "naming",
+        "name": "synth-spells",
+        "description": "Name \"synth-spells\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/synth-spells",
+        "recommendation": "@cathedral/synth-spells"
+      },
+      {
+        "type": "naming",
+        "name": "tarot-art",
+        "description": "Name \"tarot-art\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/tarot-art",
+        "recommendation": "@cathedral/tarot-art"
+      },
+      {
+        "type": "naming",
+        "name": "tarot-reader",
+        "description": "Name \"tarot-reader\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/tarot-reader",
+        "recommendation": "@cathedral/tarot-reader"
+      },
+      {
+        "type": "naming",
+        "name": "trauma-safe-ui",
+        "description": "Name \"trauma-safe-ui\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/trauma-safe-ui",
+        "recommendation": "@cathedral/trauma-safe-ui"
+      },
+      {
+        "type": "naming",
+        "name": "agent-integration",
+        "description": "Name \"agent-integration\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/agent-integration",
+        "recommendation": "@cathedral/agent-integration"
+      },
+      {
+        "type": "naming",
+        "name": "arcana",
+        "description": "Name \"arcana\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/arcana",
+        "recommendation": "@cathedral/arcana"
+      },
+      {
+        "type": "naming",
+        "name": "atelier-constitution",
+        "description": "Name \"atelier-constitution\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/atelier-constitution",
+        "recommendation": "@cathedral/atelier-constitution"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-144",
+        "description": "Name \"cathedral-144\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/cathedral-144",
+        "recommendation": "@cathedral/cathedral-144"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-audio-synthesis",
+        "description": "Name \"cathedral-audio-synthesis\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/cathedral-audio-synthesis",
+        "recommendation": "@cathedral/cathedral-audio-synthesis"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-integration-bridge",
+        "description": "Name \"cathedral-integration-bridge\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/cathedral-integration-bridge",
+        "recommendation": "@cathedral/cathedral-integration-bridge"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-liber-arcanae-bridge",
+        "description": "Name \"cathedral-liber-arcanae-bridge\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/cathedral-liber-arcanae-bridge",
+        "recommendation": "@cathedral/cathedral-liber-arcanae-bridge"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-style",
+        "description": "Name \"cathedral-style\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/cathedral-style",
+        "recommendation": "@cathedral/cathedral-style"
+      },
+      {
+        "type": "naming",
+        "name": "character-alchemical-art",
+        "description": "Name \"character-alchemical-art\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/character-alchemical-art",
+        "recommendation": "@cathedral/character-alchemical-art"
+      },
+      {
+        "type": "naming",
+        "name": "codex-144",
+        "description": "Name \"codex-144\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/codex-144",
+        "recommendation": "@cathedral/codex-144"
+      },
+      {
+        "type": "naming",
+        "name": "codex-game-bridge",
+        "description": "Name \"codex-game-bridge\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/codex-game-bridge",
+        "recommendation": "@cathedral/codex-game-bridge"
+      },
+      {
+        "type": "naming",
+        "name": "connections",
+        "description": "Name \"connections\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/connections",
+        "recommendation": "@cathedral/connections"
+      },
+      {
+        "type": "naming",
+        "name": "consciousness-aware-creative",
+        "description": "Name \"consciousness-aware-creative\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/consciousness-aware-creative",
+        "recommendation": "@cathedral/consciousness-aware-creative"
+      },
+      {
+        "type": "naming",
+        "name": "daimon-gear",
+        "description": "Name \"daimon-gear\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/daimon-gear",
+        "recommendation": "@cathedral/daimon-gear"
+      },
+      {
+        "type": "naming",
+        "name": "fusion-creative-suite",
+        "description": "Name \"fusion-creative-suite\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/fusion-creative-suite",
+        "recommendation": "@cathedral/fusion-creative-suite"
+      },
+      {
+        "type": "naming",
+        "name": "game-world",
+        "description": "Name \"game-world\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/game-world",
+        "recommendation": "@cathedral/game-world"
+      },
+      {
+        "type": "naming",
+        "name": "graphs",
+        "description": "Name \"graphs\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/graphs",
+        "recommendation": "@cathedral/graphs"
+      },
+      {
+        "type": "naming",
+        "name": "holographic-interface",
+        "description": "Name \"holographic-interface\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/holographic-interface",
+        "recommendation": "@cathedral/holographic-interface"
+      },
+      {
+        "type": "naming",
+        "name": "living-libraries",
+        "description": "Name \"living-libraries\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/living-libraries",
+        "recommendation": "@cathedral/living-libraries"
+      },
+      {
+        "type": "naming",
+        "name": "magnum-opus",
+        "description": "Name \"magnum-opus\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/magnum-opus",
+        "recommendation": "@cathedral/magnum-opus"
+      },
+      {
+        "type": "naming",
+        "name": "mobile-optimization",
+        "description": "Name \"mobile-optimization\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/mobile-optimization",
+        "recommendation": "@cathedral/mobile-optimization"
+      },
+      {
+        "type": "naming",
+        "name": "moonchild-scanner",
+        "description": "Name \"moonchild-scanner\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/moonchild-scanner",
+        "recommendation": "@cathedral/moonchild-scanner"
+      },
+      {
+        "type": "naming",
+        "name": "museum-sources",
+        "description": "Name \"museum-sources\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/museum-sources",
+        "recommendation": "@cathedral/museum-sources"
+      },
+      {
+        "type": "naming",
+        "name": "professional-export-integration",
+        "description": "Name \"professional-export-integration\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/professional-export-integration",
+        "recommendation": "@cathedral/professional-export-integration"
+      },
+      {
+        "type": "naming",
+        "name": "professional-quality-control",
+        "description": "Name \"professional-quality-control\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/professional-quality-control",
+        "recommendation": "@cathedral/professional-quality-control"
+      },
+      {
+        "type": "naming",
+        "name": "professional-suite",
+        "description": "Name \"professional-suite\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/professional-suite",
+        "recommendation": "@cathedral/professional-suite"
+      },
+      {
+        "type": "naming",
+        "name": "registry-learning-validation",
+        "description": "Name \"registry-learning-validation\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/registry-learning-validation",
+        "recommendation": "@cathedral/registry-learning-validation"
+      },
+      {
+        "type": "naming",
+        "name": "sacred-geometry-math",
+        "description": "Name \"sacred-geometry-math\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-math",
+        "recommendation": "@cathedral/sacred-geometry-math"
+      },
+      {
+        "type": "naming",
+        "name": "sacred-geometry-simd",
+        "description": "Name \"sacred-geometry-simd\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-simd",
+        "recommendation": "@cathedral/sacred-geometry-simd"
+      },
+      {
+        "type": "naming",
+        "name": "scanner",
+        "description": "Name \"scanner\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/scanner",
+        "recommendation": "@cathedral/scanner"
+      },
+      {
+        "type": "naming",
+        "name": "simple-learning-validation",
+        "description": "Name \"simple-learning-validation\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/simple-learning-validation",
+        "recommendation": "@cathedral/simple-learning-validation"
+      },
+      {
+        "type": "naming",
+        "name": "spells",
+        "description": "Name \"spells\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/spells",
+        "recommendation": "@cathedral/spells"
+      },
+      {
+        "type": "naming",
+        "name": "synth-labs",
+        "description": "Name \"synth-labs\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/synth-labs",
+        "recommendation": "@cathedral/synth-labs"
+      },
+      {
+        "type": "naming",
+        "name": "synth-spells",
+        "description": "Name \"synth-spells\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/synth-spells",
+        "recommendation": "@cathedral/synth-spells"
+      },
+      {
+        "type": "naming",
+        "name": "tarot-art",
+        "description": "Name \"tarot-art\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/tarot-art",
+        "recommendation": "@cathedral/tarot-art"
+      },
+      {
+        "type": "naming",
+        "name": "tarot-reader",
+        "description": "Name \"tarot-reader\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/tarot-reader",
+        "recommendation": "@cathedral/tarot-reader"
+      },
+      {
+        "type": "naming",
+        "name": "trauma-safe-ui",
+        "description": "Name \"trauma-safe-ui\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/trauma-safe-ui",
+        "recommendation": "@cathedral/trauma-safe-ui"
+      },
+      {
+        "type": "naming",
+        "name": "agent-integration",
+        "description": "Name \"agent-integration\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/agent-integration",
+        "recommendation": "@cathedral/agent-integration"
+      },
+      {
+        "type": "naming",
+        "name": "arcana",
+        "description": "Name \"arcana\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/arcana",
+        "recommendation": "@cathedral/arcana"
+      },
+      {
+        "type": "naming",
+        "name": "atelier-constitution",
+        "description": "Name \"atelier-constitution\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/atelier-constitution",
+        "recommendation": "@cathedral/atelier-constitution"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-144",
+        "description": "Name \"cathedral-144\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-144",
+        "recommendation": "@cathedral/cathedral-144"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-audio-synthesis",
+        "description": "Name \"cathedral-audio-synthesis\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-audio-synthesis",
+        "recommendation": "@cathedral/cathedral-audio-synthesis"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-integration-bridge",
+        "description": "Name \"cathedral-integration-bridge\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-integration-bridge",
+        "recommendation": "@cathedral/cathedral-integration-bridge"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-liber-arcanae-bridge",
+        "description": "Name \"cathedral-liber-arcanae-bridge\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-liber-arcanae-bridge",
+        "recommendation": "@cathedral/cathedral-liber-arcanae-bridge"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-style",
+        "description": "Name \"cathedral-style\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-style",
+        "recommendation": "@cathedral/cathedral-style"
+      },
+      {
+        "type": "naming",
+        "name": "character-alchemical-art",
+        "description": "Name \"character-alchemical-art\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/character-alchemical-art",
+        "recommendation": "@cathedral/character-alchemical-art"
+      },
+      {
+        "type": "naming",
+        "name": "codex-144",
+        "description": "Name \"codex-144\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144",
+        "recommendation": "@cathedral/codex-144"
+      },
+      {
+        "type": "naming",
+        "name": "codex-game-bridge",
+        "description": "Name \"codex-game-bridge\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-game-bridge",
+        "recommendation": "@cathedral/codex-game-bridge"
+      },
+      {
+        "type": "naming",
+        "name": "connections",
+        "description": "Name \"connections\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/connections",
+        "recommendation": "@cathedral/connections"
+      },
+      {
+        "type": "naming",
+        "name": "consciousness-aware-creative",
+        "description": "Name \"consciousness-aware-creative\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/consciousness-aware-creative",
+        "recommendation": "@cathedral/consciousness-aware-creative"
+      },
+      {
+        "type": "naming",
+        "name": "daimon-gear",
+        "description": "Name \"daimon-gear\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/daimon-gear",
+        "recommendation": "@cathedral/daimon-gear"
+      },
+      {
+        "type": "naming",
+        "name": "fusion-creative-suite",
+        "description": "Name \"fusion-creative-suite\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusion-creative-suite",
+        "recommendation": "@cathedral/fusion-creative-suite"
+      },
+      {
+        "type": "naming",
+        "name": "game-world",
+        "description": "Name \"game-world\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-world",
+        "recommendation": "@cathedral/game-world"
+      },
+      {
+        "type": "naming",
+        "name": "graphs",
+        "description": "Name \"graphs\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/graphs",
+        "recommendation": "@cathedral/graphs"
+      },
+      {
+        "type": "naming",
+        "name": "holographic-interface",
+        "description": "Name \"holographic-interface\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/holographic-interface",
+        "recommendation": "@cathedral/holographic-interface"
+      },
+      {
+        "type": "naming",
+        "name": "living-libraries",
+        "description": "Name \"living-libraries\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/living-libraries",
+        "recommendation": "@cathedral/living-libraries"
+      },
+      {
+        "type": "naming",
+        "name": "magnum-opus",
+        "description": "Name \"magnum-opus\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/magnum-opus",
+        "recommendation": "@cathedral/magnum-opus"
+      },
+      {
+        "type": "naming",
+        "name": "mobile-optimization",
+        "description": "Name \"mobile-optimization\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mobile-optimization",
+        "recommendation": "@cathedral/mobile-optimization"
+      },
+      {
+        "type": "naming",
+        "name": "moonchild-scanner",
+        "description": "Name \"moonchild-scanner\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/moonchild-scanner",
+        "recommendation": "@cathedral/moonchild-scanner"
+      },
+      {
+        "type": "naming",
+        "name": "museum-sources",
+        "description": "Name \"museum-sources\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/museum-sources",
+        "recommendation": "@cathedral/museum-sources"
+      },
+      {
+        "type": "naming",
+        "name": "professional-export-integration",
+        "description": "Name \"professional-export-integration\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-export-integration",
+        "recommendation": "@cathedral/professional-export-integration"
+      },
+      {
+        "type": "naming",
+        "name": "professional-quality-control",
+        "description": "Name \"professional-quality-control\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-quality-control",
+        "recommendation": "@cathedral/professional-quality-control"
+      },
+      {
+        "type": "naming",
+        "name": "professional-suite",
+        "description": "Name \"professional-suite\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-suite",
+        "recommendation": "@cathedral/professional-suite"
+      },
+      {
+        "type": "naming",
+        "name": "registry-learning-validation",
+        "description": "Name \"registry-learning-validation\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/registry-learning-validation",
+        "recommendation": "@cathedral/registry-learning-validation"
+      },
+      {
+        "type": "naming",
+        "name": "sacred-geometry-math",
+        "description": "Name \"sacred-geometry-math\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-math",
+        "recommendation": "@cathedral/sacred-geometry-math"
+      },
+      {
+        "type": "naming",
+        "name": "sacred-geometry-simd",
+        "description": "Name \"sacred-geometry-simd\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-simd",
+        "recommendation": "@cathedral/sacred-geometry-simd"
+      },
+      {
+        "type": "naming",
+        "name": "scanner",
+        "description": "Name \"scanner\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/scanner",
+        "recommendation": "@cathedral/scanner"
+      },
+      {
+        "type": "naming",
+        "name": "simple-learning-validation",
+        "description": "Name \"simple-learning-validation\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/simple-learning-validation",
+        "recommendation": "@cathedral/simple-learning-validation"
+      },
+      {
+        "type": "naming",
+        "name": "spells",
+        "description": "Name \"spells\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/spells",
+        "recommendation": "@cathedral/spells"
+      },
+      {
+        "type": "naming",
+        "name": "synth-labs",
+        "description": "Name \"synth-labs\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth-labs",
+        "recommendation": "@cathedral/synth-labs"
+      },
+      {
+        "type": "naming",
+        "name": "synth-spells",
+        "description": "Name \"synth-spells\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth-spells",
+        "recommendation": "@cathedral/synth-spells"
+      },
+      {
+        "type": "naming",
+        "name": "tarot-art",
+        "description": "Name \"tarot-art\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tarot-art",
+        "recommendation": "@cathedral/tarot-art"
+      },
+      {
+        "type": "naming",
+        "name": "tarot-reader",
+        "description": "Name \"tarot-reader\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tarot-reader",
+        "recommendation": "@cathedral/tarot-reader"
+      },
+      {
+        "type": "naming",
+        "name": "trauma-safe-ui",
+        "description": "Name \"trauma-safe-ui\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/trauma-safe-ui",
+        "recommendation": "@cathedral/trauma-safe-ui"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-connection-map",
+        "description": "Name \"cathedral-connection-map\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/apps/cathedral-connection-map",
+        "recommendation": "cathedral-connection-map"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-design-studio",
+        "description": "Name \"cathedral-design-studio\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/apps/cathedral-design-studio",
+        "recommendation": "cathedral-design-studio"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-immersive-creative-studio",
+        "description": "Name \"cathedral-immersive-creative-studio\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/apps/cathedral-immersive-creative-studio",
+        "recommendation": "cathedral-immersive-creative-studio"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-of-circuits",
+        "description": "Name \"cathedral-of-circuits\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/apps/cathedral-of-circuits",
+        "recommendation": "cathedral-of-circuits"
+      },
+      {
+        "type": "naming",
+        "name": "cosmogenesis-visualizer",
+        "description": "Name \"cosmogenesis-visualizer\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/apps/cosmogenesis-visualizer",
+        "recommendation": "cosmogenesis-visualizer"
+      },
+      {
+        "type": "naming",
+        "name": "cathedral-spell-frontend",
+        "description": "Name \"cathedral-spell-frontend\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/apps/frontend",
+        "recommendation": "cathedral-spell-frontend"
+      },
+      {
+        "type": "naming",
+        "name": "living-library",
+        "description": "Name \"living-library\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/apps/living-library",
+        "recommendation": "living-library"
+      },
+      {
+        "type": "naming",
+        "name": "master-catalog-browser",
+        "description": "Name \"master-catalog-browser\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/apps/master-catalog-browser",
+        "recommendation": "master-catalog-browser"
+      },
+      {
+        "type": "naming",
+        "name": "rosslyn-explorer",
+        "description": "Name \"rosslyn-explorer\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/apps/rosslyn-explorer",
+        "recommendation": "rosslyn-explorer"
+      },
+      {
+        "type": "naming",
+        "name": "stone-grimoire",
+        "description": "Name \"stone-grimoire\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/apps/stone-grimoire",
+        "recommendation": "stone-grimoire"
+      },
+      {
+        "type": "naming",
+        "name": "visual-systems-hub",
+        "description": "Name \"visual-systems-hub\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/apps/visual-systems-hub",
+        "recommendation": "visual-systems-hub"
+      },
+      {
+        "type": "naming",
+        "name": "art-systems",
+        "description": "Name \"art-systems\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-systems",
+        "recommendation": "art-systems-system"
+      },
+      {
+        "type": "naming",
+        "name": "art-systems",
+        "description": "Name \"art-systems\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-real/packages/art-systems",
+        "recommendation": "art-systems-system"
+      },
+      {
+        "type": "naming",
+        "name": "art-systems",
+        "description": "Name \"art-systems\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-systems",
+        "recommendation": "art-systems-system"
+      }
+    ],
+    "missing": [],
+    "recommendations": [
+      {
+        "entity": "codex-144-99",
+        "type": "core-system",
+        "issue": "Core system \"codex-144-99\" found in 6 locations (needs merge)",
+        "fix": "Merge 6 locations into one complete package"
+      },
+      {
+        "entity": "liber-arcanae",
+        "type": "core-system",
+        "issue": "Core system \"liber-arcanae\" found in 15 locations (needs merge)",
+        "fix": "Merge 15 locations into one complete package"
+      },
+      {
+        "entity": "circuitum99",
+        "type": "core-system",
+        "issue": "Core system \"circuitum99\" found in 6 locations (needs merge)",
+        "fix": "Merge 6 locations into one complete package"
+      },
+      {
+        "entity": "stone-grimoire",
+        "type": "core-system",
+        "issue": "Core system \"stone-grimoire\" found in 9 locations (needs merge)",
+        "fix": "Merge 9 locations into one complete package"
+      },
+      {
+        "entity": "agent-integration",
+        "type": "naming",
+        "issue": "Name \"agent-integration\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/agent-integration"
+      },
+      {
+        "entity": "arcana",
+        "type": "naming",
+        "issue": "Name \"arcana\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/arcana"
+      },
+      {
+        "entity": "atelier-constitution",
+        "type": "naming",
+        "issue": "Name \"atelier-constitution\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/atelier-constitution"
+      },
+      {
+        "entity": "cathedral-144",
+        "type": "naming",
+        "issue": "Name \"cathedral-144\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-144"
+      },
+      {
+        "entity": "cathedral-audio-synthesis",
+        "type": "naming",
+        "issue": "Name \"cathedral-audio-synthesis\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-audio-synthesis"
+      },
+      {
+        "entity": "cathedral-integration-bridge",
+        "type": "naming",
+        "issue": "Name \"cathedral-integration-bridge\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-integration-bridge"
+      },
+      {
+        "entity": "cathedral-liber-arcanae-bridge",
+        "type": "naming",
+        "issue": "Name \"cathedral-liber-arcanae-bridge\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-liber-arcanae-bridge"
+      },
+      {
+        "entity": "cathedral-style",
+        "type": "naming",
+        "issue": "Name \"cathedral-style\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-style"
+      },
+      {
+        "entity": "character-alchemical-art",
+        "type": "naming",
+        "issue": "Name \"character-alchemical-art\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/character-alchemical-art"
+      },
+      {
+        "entity": "codex-144",
+        "type": "naming",
+        "issue": "Name \"codex-144\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/codex-144"
+      },
+      {
+        "entity": "codex-game-bridge",
+        "type": "naming",
+        "issue": "Name \"codex-game-bridge\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/codex-game-bridge"
+      },
+      {
+        "entity": "connections",
+        "type": "naming",
+        "issue": "Name \"connections\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/connections"
+      },
+      {
+        "entity": "consciousness-aware-creative",
+        "type": "naming",
+        "issue": "Name \"consciousness-aware-creative\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/consciousness-aware-creative"
+      },
+      {
+        "entity": "daimon-gear",
+        "type": "naming",
+        "issue": "Name \"daimon-gear\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/daimon-gear"
+      },
+      {
+        "entity": "fusion-creative-suite",
+        "type": "naming",
+        "issue": "Name \"fusion-creative-suite\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/fusion-creative-suite"
+      },
+      {
+        "entity": "game-world",
+        "type": "naming",
+        "issue": "Name \"game-world\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/game-world"
+      },
+      {
+        "entity": "graphs",
+        "type": "naming",
+        "issue": "Name \"graphs\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/graphs"
+      },
+      {
+        "entity": "holographic-interface",
+        "type": "naming",
+        "issue": "Name \"holographic-interface\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/holographic-interface"
+      },
+      {
+        "entity": "living-libraries",
+        "type": "naming",
+        "issue": "Name \"living-libraries\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/living-libraries"
+      },
+      {
+        "entity": "magnum-opus",
+        "type": "naming",
+        "issue": "Name \"magnum-opus\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/magnum-opus"
+      },
+      {
+        "entity": "mobile-optimization",
+        "type": "naming",
+        "issue": "Name \"mobile-optimization\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/mobile-optimization"
+      },
+      {
+        "entity": "moonchild-scanner",
+        "type": "naming",
+        "issue": "Name \"moonchild-scanner\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/moonchild-scanner"
+      },
+      {
+        "entity": "museum-sources",
+        "type": "naming",
+        "issue": "Name \"museum-sources\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/museum-sources"
+      },
+      {
+        "entity": "professional-export-integration",
+        "type": "naming",
+        "issue": "Name \"professional-export-integration\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/professional-export-integration"
+      },
+      {
+        "entity": "professional-quality-control",
+        "type": "naming",
+        "issue": "Name \"professional-quality-control\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/professional-quality-control"
+      },
+      {
+        "entity": "professional-suite",
+        "type": "naming",
+        "issue": "Name \"professional-suite\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/professional-suite"
+      },
+      {
+        "entity": "registry-learning-validation",
+        "type": "naming",
+        "issue": "Name \"registry-learning-validation\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/registry-learning-validation"
+      },
+      {
+        "entity": "sacred-geometry-math",
+        "type": "naming",
+        "issue": "Name \"sacred-geometry-math\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/sacred-geometry-math"
+      },
+      {
+        "entity": "sacred-geometry-simd",
+        "type": "naming",
+        "issue": "Name \"sacred-geometry-simd\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/sacred-geometry-simd"
+      },
+      {
+        "entity": "scanner",
+        "type": "naming",
+        "issue": "Name \"scanner\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/scanner"
+      },
+      {
+        "entity": "simple-learning-validation",
+        "type": "naming",
+        "issue": "Name \"simple-learning-validation\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/simple-learning-validation"
+      },
+      {
+        "entity": "spells",
+        "type": "naming",
+        "issue": "Name \"spells\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/spells"
+      },
+      {
+        "entity": "synth-labs",
+        "type": "naming",
+        "issue": "Name \"synth-labs\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/synth-labs"
+      },
+      {
+        "entity": "synth-spells",
+        "type": "naming",
+        "issue": "Name \"synth-spells\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/synth-spells"
+      },
+      {
+        "entity": "tarot-art",
+        "type": "naming",
+        "issue": "Name \"tarot-art\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/tarot-art"
+      },
+      {
+        "entity": "tarot-reader",
+        "type": "naming",
+        "issue": "Name \"tarot-reader\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/tarot-reader"
+      },
+      {
+        "entity": "trauma-safe-ui",
+        "type": "naming",
+        "issue": "Name \"trauma-safe-ui\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/trauma-safe-ui"
+      },
+      {
+        "entity": "agent-integration",
+        "type": "naming",
+        "issue": "Name \"agent-integration\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/agent-integration"
+      },
+      {
+        "entity": "arcana",
+        "type": "naming",
+        "issue": "Name \"arcana\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/arcana"
+      },
+      {
+        "entity": "atelier-constitution",
+        "type": "naming",
+        "issue": "Name \"atelier-constitution\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/atelier-constitution"
+      },
+      {
+        "entity": "cathedral-144",
+        "type": "naming",
+        "issue": "Name \"cathedral-144\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-144"
+      },
+      {
+        "entity": "cathedral-audio-synthesis",
+        "type": "naming",
+        "issue": "Name \"cathedral-audio-synthesis\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-audio-synthesis"
+      },
+      {
+        "entity": "cathedral-integration-bridge",
+        "type": "naming",
+        "issue": "Name \"cathedral-integration-bridge\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-integration-bridge"
+      },
+      {
+        "entity": "cathedral-liber-arcanae-bridge",
+        "type": "naming",
+        "issue": "Name \"cathedral-liber-arcanae-bridge\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-liber-arcanae-bridge"
+      },
+      {
+        "entity": "cathedral-style",
+        "type": "naming",
+        "issue": "Name \"cathedral-style\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-style"
+      },
+      {
+        "entity": "character-alchemical-art",
+        "type": "naming",
+        "issue": "Name \"character-alchemical-art\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/character-alchemical-art"
+      },
+      {
+        "entity": "codex-144",
+        "type": "naming",
+        "issue": "Name \"codex-144\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/codex-144"
+      },
+      {
+        "entity": "codex-game-bridge",
+        "type": "naming",
+        "issue": "Name \"codex-game-bridge\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/codex-game-bridge"
+      },
+      {
+        "entity": "connections",
+        "type": "naming",
+        "issue": "Name \"connections\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/connections"
+      },
+      {
+        "entity": "consciousness-aware-creative",
+        "type": "naming",
+        "issue": "Name \"consciousness-aware-creative\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/consciousness-aware-creative"
+      },
+      {
+        "entity": "daimon-gear",
+        "type": "naming",
+        "issue": "Name \"daimon-gear\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/daimon-gear"
+      },
+      {
+        "entity": "fusion-creative-suite",
+        "type": "naming",
+        "issue": "Name \"fusion-creative-suite\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/fusion-creative-suite"
+      },
+      {
+        "entity": "game-world",
+        "type": "naming",
+        "issue": "Name \"game-world\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/game-world"
+      },
+      {
+        "entity": "graphs",
+        "type": "naming",
+        "issue": "Name \"graphs\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/graphs"
+      },
+      {
+        "entity": "holographic-interface",
+        "type": "naming",
+        "issue": "Name \"holographic-interface\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/holographic-interface"
+      },
+      {
+        "entity": "living-libraries",
+        "type": "naming",
+        "issue": "Name \"living-libraries\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/living-libraries"
+      },
+      {
+        "entity": "magnum-opus",
+        "type": "naming",
+        "issue": "Name \"magnum-opus\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/magnum-opus"
+      },
+      {
+        "entity": "mobile-optimization",
+        "type": "naming",
+        "issue": "Name \"mobile-optimization\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/mobile-optimization"
+      },
+      {
+        "entity": "moonchild-scanner",
+        "type": "naming",
+        "issue": "Name \"moonchild-scanner\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/moonchild-scanner"
+      },
+      {
+        "entity": "museum-sources",
+        "type": "naming",
+        "issue": "Name \"museum-sources\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/museum-sources"
+      },
+      {
+        "entity": "professional-export-integration",
+        "type": "naming",
+        "issue": "Name \"professional-export-integration\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/professional-export-integration"
+      },
+      {
+        "entity": "professional-quality-control",
+        "type": "naming",
+        "issue": "Name \"professional-quality-control\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/professional-quality-control"
+      },
+      {
+        "entity": "professional-suite",
+        "type": "naming",
+        "issue": "Name \"professional-suite\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/professional-suite"
+      },
+      {
+        "entity": "registry-learning-validation",
+        "type": "naming",
+        "issue": "Name \"registry-learning-validation\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/registry-learning-validation"
+      },
+      {
+        "entity": "sacred-geometry-math",
+        "type": "naming",
+        "issue": "Name \"sacred-geometry-math\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/sacred-geometry-math"
+      },
+      {
+        "entity": "sacred-geometry-simd",
+        "type": "naming",
+        "issue": "Name \"sacred-geometry-simd\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/sacred-geometry-simd"
+      },
+      {
+        "entity": "scanner",
+        "type": "naming",
+        "issue": "Name \"scanner\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/scanner"
+      },
+      {
+        "entity": "simple-learning-validation",
+        "type": "naming",
+        "issue": "Name \"simple-learning-validation\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/simple-learning-validation"
+      },
+      {
+        "entity": "spells",
+        "type": "naming",
+        "issue": "Name \"spells\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/spells"
+      },
+      {
+        "entity": "synth-labs",
+        "type": "naming",
+        "issue": "Name \"synth-labs\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/synth-labs"
+      },
+      {
+        "entity": "synth-spells",
+        "type": "naming",
+        "issue": "Name \"synth-spells\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/synth-spells"
+      },
+      {
+        "entity": "tarot-art",
+        "type": "naming",
+        "issue": "Name \"tarot-art\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/tarot-art"
+      },
+      {
+        "entity": "tarot-reader",
+        "type": "naming",
+        "issue": "Name \"tarot-reader\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/tarot-reader"
+      },
+      {
+        "entity": "trauma-safe-ui",
+        "type": "naming",
+        "issue": "Name \"trauma-safe-ui\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/trauma-safe-ui"
+      },
+      {
+        "entity": "agent-integration",
+        "type": "naming",
+        "issue": "Name \"agent-integration\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/agent-integration"
+      },
+      {
+        "entity": "arcana",
+        "type": "naming",
+        "issue": "Name \"arcana\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/arcana"
+      },
+      {
+        "entity": "atelier-constitution",
+        "type": "naming",
+        "issue": "Name \"atelier-constitution\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/atelier-constitution"
+      },
+      {
+        "entity": "cathedral-144",
+        "type": "naming",
+        "issue": "Name \"cathedral-144\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-144"
+      },
+      {
+        "entity": "cathedral-audio-synthesis",
+        "type": "naming",
+        "issue": "Name \"cathedral-audio-synthesis\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-audio-synthesis"
+      },
+      {
+        "entity": "cathedral-integration-bridge",
+        "type": "naming",
+        "issue": "Name \"cathedral-integration-bridge\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-integration-bridge"
+      },
+      {
+        "entity": "cathedral-liber-arcanae-bridge",
+        "type": "naming",
+        "issue": "Name \"cathedral-liber-arcanae-bridge\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-liber-arcanae-bridge"
+      },
+      {
+        "entity": "cathedral-style",
+        "type": "naming",
+        "issue": "Name \"cathedral-style\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/cathedral-style"
+      },
+      {
+        "entity": "character-alchemical-art",
+        "type": "naming",
+        "issue": "Name \"character-alchemical-art\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/character-alchemical-art"
+      },
+      {
+        "entity": "codex-144",
+        "type": "naming",
+        "issue": "Name \"codex-144\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/codex-144"
+      },
+      {
+        "entity": "codex-game-bridge",
+        "type": "naming",
+        "issue": "Name \"codex-game-bridge\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/codex-game-bridge"
+      },
+      {
+        "entity": "connections",
+        "type": "naming",
+        "issue": "Name \"connections\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/connections"
+      },
+      {
+        "entity": "consciousness-aware-creative",
+        "type": "naming",
+        "issue": "Name \"consciousness-aware-creative\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/consciousness-aware-creative"
+      },
+      {
+        "entity": "daimon-gear",
+        "type": "naming",
+        "issue": "Name \"daimon-gear\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/daimon-gear"
+      },
+      {
+        "entity": "fusion-creative-suite",
+        "type": "naming",
+        "issue": "Name \"fusion-creative-suite\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/fusion-creative-suite"
+      },
+      {
+        "entity": "game-world",
+        "type": "naming",
+        "issue": "Name \"game-world\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/game-world"
+      },
+      {
+        "entity": "graphs",
+        "type": "naming",
+        "issue": "Name \"graphs\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/graphs"
+      },
+      {
+        "entity": "holographic-interface",
+        "type": "naming",
+        "issue": "Name \"holographic-interface\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/holographic-interface"
+      },
+      {
+        "entity": "living-libraries",
+        "type": "naming",
+        "issue": "Name \"living-libraries\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/living-libraries"
+      },
+      {
+        "entity": "magnum-opus",
+        "type": "naming",
+        "issue": "Name \"magnum-opus\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/magnum-opus"
+      },
+      {
+        "entity": "mobile-optimization",
+        "type": "naming",
+        "issue": "Name \"mobile-optimization\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/mobile-optimization"
+      },
+      {
+        "entity": "moonchild-scanner",
+        "type": "naming",
+        "issue": "Name \"moonchild-scanner\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/moonchild-scanner"
+      },
+      {
+        "entity": "museum-sources",
+        "type": "naming",
+        "issue": "Name \"museum-sources\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/museum-sources"
+      },
+      {
+        "entity": "professional-export-integration",
+        "type": "naming",
+        "issue": "Name \"professional-export-integration\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/professional-export-integration"
+      },
+      {
+        "entity": "professional-quality-control",
+        "type": "naming",
+        "issue": "Name \"professional-quality-control\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/professional-quality-control"
+      },
+      {
+        "entity": "professional-suite",
+        "type": "naming",
+        "issue": "Name \"professional-suite\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/professional-suite"
+      },
+      {
+        "entity": "registry-learning-validation",
+        "type": "naming",
+        "issue": "Name \"registry-learning-validation\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/registry-learning-validation"
+      },
+      {
+        "entity": "sacred-geometry-math",
+        "type": "naming",
+        "issue": "Name \"sacred-geometry-math\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/sacred-geometry-math"
+      },
+      {
+        "entity": "sacred-geometry-simd",
+        "type": "naming",
+        "issue": "Name \"sacred-geometry-simd\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/sacred-geometry-simd"
+      },
+      {
+        "entity": "scanner",
+        "type": "naming",
+        "issue": "Name \"scanner\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/scanner"
+      },
+      {
+        "entity": "simple-learning-validation",
+        "type": "naming",
+        "issue": "Name \"simple-learning-validation\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/simple-learning-validation"
+      },
+      {
+        "entity": "spells",
+        "type": "naming",
+        "issue": "Name \"spells\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/spells"
+      },
+      {
+        "entity": "synth-labs",
+        "type": "naming",
+        "issue": "Name \"synth-labs\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/synth-labs"
+      },
+      {
+        "entity": "synth-spells",
+        "type": "naming",
+        "issue": "Name \"synth-spells\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/synth-spells"
+      },
+      {
+        "entity": "tarot-art",
+        "type": "naming",
+        "issue": "Name \"tarot-art\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/tarot-art"
+      },
+      {
+        "entity": "tarot-reader",
+        "type": "naming",
+        "issue": "Name \"tarot-reader\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/tarot-reader"
+      },
+      {
+        "entity": "trauma-safe-ui",
+        "type": "naming",
+        "issue": "Name \"trauma-safe-ui\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/trauma-safe-ui"
+      },
+      {
+        "entity": "cathedral-connection-map",
+        "type": "naming",
+        "issue": "Name \"cathedral-connection-map\" doesn't match codex naming patterns",
+        "fix": "Rename to: cathedral-connection-map"
+      },
+      {
+        "entity": "cathedral-design-studio",
+        "type": "naming",
+        "issue": "Name \"cathedral-design-studio\" doesn't match codex naming patterns",
+        "fix": "Rename to: cathedral-design-studio"
+      },
+      {
+        "entity": "cathedral-immersive-creative-studio",
+        "type": "naming",
+        "issue": "Name \"cathedral-immersive-creative-studio\" doesn't match codex naming patterns",
+        "fix": "Rename to: cathedral-immersive-creative-studio"
+      },
+      {
+        "entity": "cathedral-of-circuits",
+        "type": "naming",
+        "issue": "Name \"cathedral-of-circuits\" doesn't match codex naming patterns",
+        "fix": "Rename to: cathedral-of-circuits"
+      },
+      {
+        "entity": "cosmogenesis-visualizer",
+        "type": "naming",
+        "issue": "Name \"cosmogenesis-visualizer\" doesn't match codex naming patterns",
+        "fix": "Rename to: cosmogenesis-visualizer"
+      },
+      {
+        "entity": "cathedral-spell-frontend",
+        "type": "naming",
+        "issue": "Name \"cathedral-spell-frontend\" doesn't match codex naming patterns",
+        "fix": "Rename to: cathedral-spell-frontend"
+      },
+      {
+        "entity": "living-library",
+        "type": "naming",
+        "issue": "Name \"living-library\" doesn't match codex naming patterns",
+        "fix": "Rename to: living-library"
+      },
+      {
+        "entity": "master-catalog-browser",
+        "type": "naming",
+        "issue": "Name \"master-catalog-browser\" doesn't match codex naming patterns",
+        "fix": "Rename to: master-catalog-browser"
+      },
+      {
+        "entity": "rosslyn-explorer",
+        "type": "naming",
+        "issue": "Name \"rosslyn-explorer\" doesn't match codex naming patterns",
+        "fix": "Rename to: rosslyn-explorer"
+      },
+      {
+        "entity": "stone-grimoire",
+        "type": "naming",
+        "issue": "Name \"stone-grimoire\" doesn't match codex naming patterns",
+        "fix": "Rename to: stone-grimoire"
+      },
+      {
+        "entity": "visual-systems-hub",
+        "type": "naming",
+        "issue": "Name \"visual-systems-hub\" doesn't match codex naming patterns",
+        "fix": "Rename to: visual-systems-hub"
+      },
+      {
+        "entity": "art-systems",
+        "type": "naming",
+        "issue": "Name \"art-systems\" doesn't match codex naming patterns",
+        "fix": "Rename to: art-systems-system"
+      },
+      {
+        "entity": "art-systems",
+        "type": "naming",
+        "issue": "Name \"art-systems\" doesn't match codex naming patterns",
+        "fix": "Rename to: art-systems-system"
+      },
+      {
+        "entity": "art-systems",
+        "type": "naming",
+        "issue": "Name \"art-systems\" doesn't match codex naming patterns",
+        "fix": "Rename to: art-systems-system"
+      }
+    ]
+  }
+}

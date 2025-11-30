@@ -1,0 +1,33 @@
+/**
+ * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+ */
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "outDir": "../dist/scripts",
+    "rootDir": "../",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "declaration": false,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "allowImportingTsExtensions": false
+  },
+  "include": [
+    "../scripts/**/*",
+    "../packages/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
+

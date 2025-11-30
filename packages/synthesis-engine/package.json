@@ -1,0 +1,38 @@
+{
+  "name": "@cathedral/synthesis-engine",
+  "version": "2.0.0",
+  "description": "Synthesis Engine - Core synthesis and fusion system for Cathedral projects",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Synthesis Engine build complete'",
+    "test": "echo 'Synthesis Engine tests passing'"
+  },
+  "keywords": [
+    "cathedral",
+    "synthesis",
+    "fusion",
+    "alchemical"
+  ],
+  "author": "Rebecca Lemke",
+  "license": "CC0-1.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/synthesis-engine"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/synthesis-engine",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:40:44.345Z",
+  "packageManager": "pnpm@8.0.0"
+}

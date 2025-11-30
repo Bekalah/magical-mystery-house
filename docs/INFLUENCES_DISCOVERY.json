@@ -1,0 +1,41 @@
+/**
+ * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+ */
+{
+  "summary": {
+    "Hilma af Klint": 0,
+    "Leonora Carrington": 0,
+    "Emma Kunz": 0,
+    "Dion Fortune": 0,
+    "Aleister Crowley": 0,
+    "Agrippa": 0,
+    "John Dee": 0,
+    "Paul Foster Case": 0,
+    "Rudolf Steiner": 0,
+    "Frater Achad": 0,
+    "Ronald Hutton": 0,
+    "Andrew Gonzalez": 0,
+    "Gabor Maté": 0,
+    "Paul Levy": 0,
+    "Robert Falconer": 0
+  },
+  "influences": {
+    "Hilma af Klint": [],
+    "Leonora Carrington": [],
+    "Emma Kunz": [],
+    "Dion Fortune": [],
+    "Aleister Crowley": [],
+    "Agrippa": [],
+    "John Dee": [],
+    "Paul Foster Case": [],
+    "Rudolf Steiner": [],
+    "Frater Achad": [],
+    "Ronald Hutton": [],
+    "Andrew Gonzalez": [],
+    "Gabor Maté": [],
+    "Paul Levy": [],
+    "Robert Falconer": []
+  },
+  "integrationSuggestions": []
+}

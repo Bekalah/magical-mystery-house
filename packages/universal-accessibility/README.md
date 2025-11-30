@@ -1,0 +1,20 @@
+# @cathedral-trinity/accessibility
+
+Cathedral v1.0 Universal Accessibility Engine - ND Support, Cognitive Load Optimization, Trauma-Safe Environments
+
+## License
+
+CC0-1.0 - Public Domain
+
+## Installation
+
+```bash
+pnpm install
+```
+
+## Usage
+
+```typescript
+// TODO: Add usage examples
+```
+

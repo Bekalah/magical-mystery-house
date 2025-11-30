@@ -1,0 +1,48 @@
+{
+  "name": "@cathedral/health-map-core",
+  "version": "1.0.0",
+  "description": "Enterprise Health Map System - Comprehensive catalog and health monitoring for Cathedral ecosystem",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "CC0-1.0",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "typescript": "^5.0.0",
+    "glob": "^10.3.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rebeccalemke/cathedral-master-deployment.git",
+    "directory": "packages/health-map-core"
+  },
+  "homepage": "https://github.com/rebeccalemke/cathedral-master-deployment/tree/main/packages/health-map-core",
+  "bugs": {
+    "url": "https://github.com/rebeccalemke/cathedral-master-deployment/issues"
+  },
+  "keywords": [
+    "cathedral",
+    "sacred-geometry",
+    "144-99",
+    "codex",
+    "consciousness",
+    "trauma-aware",
+    "open-source",
+    "free"
+  ],
+  "packageManager": "pnpm@8.0.0",
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:52.538Z"
+}

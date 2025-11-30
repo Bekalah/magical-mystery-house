@@ -1,0 +1,52 @@
+{
+  "name": "@cathedral/liber-arcanae",
+  "version": "2.0.0",
+  "description": "Liber Arcanae - Sacred mystical library with Codex 144:99 integration, fusion kink mechanics, and tarot CLI tools.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "cli": "node dist/cli.js",
+    "cards": "node dist/cli.js cards",
+    "major": "node dist/cli.js major",
+    "minor": "node dist/cli.js minor",
+    "search": "node dist/cli.js search",
+    "fusion": "node dist/cli.js fusion",
+    "report": "node dist/cli.js report"
+  },
+  "dependencies": {
+    "@cathedral/codex-144-99": "workspace:*",
+    "@cathedral/shared": "workspace:*",
+    "@cathedral/mystical-data-unified": "workspace:*",
+    "@cathedral/sacred-geometry-core": "workspace:*",
+    "typescript": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  },
+  "keywords": [
+    "cathedral",
+    "liber-arcanae",
+    "tarot",
+    "archetypes",
+    "codex-abyssiae",
+    "alchemy-deck",
+    "sacred-wisdom",
+    "fusion-kink",
+    "rebecca-respawn",
+    "mystical-library",
+    "codex-144-99",
+    "fusion-mechanics"
+  ],
+  "author": "Cathedral Master Creative Intelligence Team",
+  "license": "CC0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T19:53:31.489Z",
+  "packageManager": "pnpm@8.0.0"
+}

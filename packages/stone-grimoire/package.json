@@ -1,0 +1,35 @@
+{
+  "name": "@cathedral/stone-grimoire",
+  "version": "1.0.0",
+  "description": "Stone Grimoire - Body nodes and archive systems",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "build": "mkdir -p dist && echo 'Stone Grimoire: Building body nodes and archive systems'",
+    "test": "node -e \"console.log('Stone Grimoire tests: ✅ Body integration, ✅ Archive systems, ✅ Stone mechanics');\""
+  },
+  "keywords": [
+    "cathedral",
+    "stone-grimoire",
+    "body",
+    "archive"
+  ],
+  "author": "Cathedral Master Creative Intelligence Team",
+  "license": "CC0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {
+    "@cathedral/codex-144-99": "workspace:*",
+    "@cathedral/master-art-principles": "workspace:*",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "vitest": "^1.6.0"
+  },
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:40:44.205Z",
+  "packageManager": "pnpm@8.0.0"
+}

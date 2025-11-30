@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../cathedral-v1-consolidated"
+		},
+		{
+			"path": "../Roo-Code"
+		},
+		{
+			"path": "../cathedral-fixed-clean"
+		},
+		{
+			"path": "../cathedral-real"
+		},
+		{
+			"path": "../restore_temp"
+		},
+		{
+			"path": "../cosmogenesis-engine"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,1231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Performance Monitoring Dashboard - Cathedral Master V1 Control System</title>
+    <meta
+      name="description"
+      content="Real-time performance and health monitoring dashboard for the Cathedral Master V1 Control System" />
+
+    <!-- D3.js for advanced data visualization -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- Cathedral Master V1 Control System Styles -->
+    <style>
+      :root {
+        --cathedral-deep-blue: #1a237e;
+        --cathedral-gold: #ffd700;
+        --cathedral-silver: #c0c0c0;
+        --cathedral-crystal: #e1f5fe;
+        --cathedral-stone: #795548;
+        --cathedral-light: #fafafa;
+        --cathedral-accent: #4caf50;
+        --cathedral-warning: #ff9800;
+        --cathedral-error: #f44336;
+        --cathedral-success: #4caf50;
+        --cathedral-shadow: rgba(0, 0, 0, 0.2);
+        --cathedral-transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        background: linear-gradient(
+          135deg,
+          var(--cathedral-deep-blue) 0%,
+          #283593 50%,
+          #1a237e 100%
+        );
+        color: var(--cathedral-light);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      /* Navigation Header */
+      .cathedral-header {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid var(--cathedral-gold);
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .cathedral-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .cathedral-logo {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+      }
+
+      .nav-item a {
+        color: var(--cathedral-light);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: var(--cathedral-transition);
+        font-size: 0.9rem;
+      }
+
+      .nav-item a:hover,
+      .nav-item a.active {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-deep-blue);
+      }
+
+      .back-link {
+        background: var(--cathedral-accent);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: var(--cathedral-transition);
+      }
+
+      .back-link:hover {
+        background: #45a049;
+        transform: scale(1.05);
+      }
+
+      /* Main Dashboard Content */
+      .dashboard-main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .dashboard-header {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .dashboard-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px var(--cathedral-shadow);
+      }
+
+      .dashboard-subtitle {
+        font-size: 1.1rem;
+        color: var(--cathedral-crystal);
+        margin-bottom: 1.5rem;
+      }
+
+      .system-status {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 1rem;
+      }
+
+      .status-indicator {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 25px;
+        font-size: 0.9rem;
+      }
+
+      .status-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+      }
+
+      .status-good {
+        background: var(--cathedral-success);
+      }
+
+      .status-warning {
+        background: var(--cathedral-warning);
+      }
+
+      .status-error {
+        background: var(--cathedral-error);
+      }
+
+      @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+      }
+
+      /* Metrics Grid */
+      .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .metric-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid transparent;
+        border-radius: 16px;
+        padding: 1.5rem;
+        backdrop-filter: blur(10px);
+        transition: var(--cathedral-transition);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .metric-card:hover {
+        border-color: var(--cathedral-gold);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px var(--cathedral-shadow);
+      }
+
+      .metric-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .metric-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+      }
+
+      .metric-icon {
+        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+        background: var(--cathedral-gold);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--cathedral-deep-blue);
+      }
+
+      .metric-value {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--cathedral-light);
+        margin-bottom: 0.5rem;
+        font-family: "Monaco", "Menlo", monospace;
+      }
+
+      .metric-label {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+        margin-bottom: 0.5rem;
+      }
+
+      .metric-change {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+
+      .metric-change.positive {
+        color: var(--cathedral-success);
+      }
+
+      .metric-change.negative {
+        color: var(--cathedral-error);
+      }
+
+      .metric-change.neutral {
+        color: var(--cathedral-silver);
+      }
+
+      /* Visualization Container */
+      .visualization-container {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid var(--cathedral-gold);
+        border-radius: 16px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .viz-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .viz-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+      }
+
+      .viz-controls {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .control-group {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .control-label {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+      }
+
+      .control-select {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--cathedral-silver);
+        border-radius: 6px;
+        padding: 0.3rem 0.8rem;
+        color: var(--cathedral-light);
+        font-size: 0.8rem;
+      }
+
+      .control-select:focus {
+        outline: none;
+        border-color: var(--cathedral-gold);
+      }
+
+      /* Chart Container */
+      .chart-container {
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--cathedral-silver);
+        border-radius: 8px;
+        padding: 1rem;
+        min-height: 400px;
+        position: relative;
+      }
+
+      /* Real-time Data Stream */
+      .data-stream {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .stream-panel {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid var(--cathedral-silver);
+        border-radius: 12px;
+        padding: 1.5rem;
+        backdrop-filter: blur(5px);
+      }
+
+      .stream-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .stream-content {
+        font-family: "Monaco", "Menlo", monospace;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        max-height: 200px;
+        overflow-y: auto;
+        color: var(--cathedral-crystal);
+      }
+
+      .stream-item {
+        padding: 0.3rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .timestamp {
+        font-size: 0.8rem;
+        opacity: 0.7;
+        color: var(--cathedral-silver);
+      }
+
+      .log-level {
+        font-weight: 600;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.7rem;
+      }
+
+      .log-info {
+        background: var(--cathedral-crystal);
+        color: var(--cathedral-deep-blue);
+      }
+
+      .log-warning {
+        background: var(--cathedral-warning);
+        color: white;
+      }
+
+      .log-error {
+        background: var(--cathedral-error);
+        color: white;
+      }
+
+      /* Health Overview */
+      .health-overview {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .health-item {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: center;
+        border: 2px solid transparent;
+        transition: var(--cathedral-transition);
+      }
+
+      .health-item.excellent {
+        border-color: var(--cathedral-success);
+      }
+
+      .health-item.good {
+        border-color: var(--cathedral-accent);
+      }
+
+      .health-item.warning {
+        border-color: var(--cathedral-warning);
+      }
+
+      .health-item.critical {
+        border-color: var(--cathedral-error);
+      }
+
+      .health-score {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .health-label {
+        font-size: 1rem;
+        color: var(--cathedral-crystal);
+        margin-bottom: 0.5rem;
+      }
+
+      .health-status {
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 0.3rem 1rem;
+        border-radius: 20px;
+        display: inline-block;
+      }
+
+      .health-status.excellent {
+        background: var(--cathedral-success);
+        color: white;
+      }
+
+      .health-status.good {
+        background: var(--cathedral-accent);
+        color: white;
+      }
+
+      .health-status.warning {
+        background: var(--cathedral-warning);
+        color: white;
+      }
+
+      .health-status.critical {
+        background: var(--cathedral-error);
+        color: white;
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        .cathedral-nav {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .nav-menu {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .dashboard-title {
+          font-size: 2rem;
+        }
+
+        .metrics-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .data-stream {
+          grid-template-columns: 1fr;
+        }
+
+        .dashboard-main {
+          padding: 1rem;
+        }
+
+        .viz-controls {
+          flex-direction: column;
+          gap: 0.5rem;
+          align-items: flex-start;
+        }
+      }
+
+      /* Accessibility */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      a:focus,
+      button:focus,
+      select:focus {
+        outline: 2px solid var(--cathedral-gold);
+        outline-offset: 2px;
+      }
+
+      /* Loading and Error States */
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        color: var(--cathedral-gold);
+      }
+
+      .error-message {
+        background: var(--cathedral-error);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        text-align: center;
+      }
+
+      .success-message {
+        background: var(--cathedral-success);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="cathedral-header">
+      <nav class="cathedral-nav">
+        <a href="#" class="cathedral-logo">
+          🕍 Cathedral V1
+        </a>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <a href="index.html" class="back-link">← Back to Hub</a>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#overview" class="active">Overview</a></li>
+            <li class="nav-item"><a href="#metrics">Metrics</a></li>
+            <li class="nav-item"><a href="#charts">Charts</a></li>
+            <li class="nav-item"><a href="#logs">Logs</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-main">
+      <!-- Dashboard Header -->
+      <section class="dashboard-header">
+        <h1 class="dashboard-title">Performance Monitoring Dashboard</h1>
+        <p class="dashboard-subtitle">
+          Real-time system health and performance metrics for the Cathedral Master V1 Control System
+        </p>
+        <div class="system-status">
+          <div class="status-indicator">
+            <div class="status-dot status-good"></div>
+            <span>System Status: Operational</span>
+          </div>
+          <div class="status-indicator">
+            <div class="status-dot status-good"></div>
+            <span>REGISTRY: Connected</span>
+          </div>
+          <div class="status-indicator">
+            <div class="status-dot status-warning"></div>
+            <span>Performance: Monitoring</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Metrics Grid -->
+      <section id="metrics" class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-header">
+            <h3 class="metric-title">System Uptime</h3>
+            <div class="metric-icon">⏱️</div>
+          </div>
+          <div class="metric-value" id="uptime">99.9%</div>
+          <div class="metric-label">Last 30 days</div>
+          <div class="metric-change positive">
+            <span>↗</span> +0.1% from last month
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header">
+            <h3 class="metric-title">Response Time</h3>
+            <div class="metric-icon">⚡</div>
+          </div>
+          <div class="metric-value" id="response-time">127ms</div>
+          <div class="metric-label">Average response time</div>
+          <div class="metric-change positive">
+            <span>↘</span> -15ms improvement
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header">
+            <h3 class="metric-title">Active Users</h3>
+            <div class="metric-icon">👥</div>
+          </div>
+          <div class="metric-value" id="active-users">2,847</div>
+          <div class="metric-label">Current session users</div>
+          <div class="metric-change positive">
+            <span>↗</span> +234 from yesterday
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header">
+            <h3 class="metric-title">Error Rate</h3>
+            <div class="metric-icon">❌</div>
+          </div>
+          <div class="metric-value" id="error-rate">0.02%</div>
+          <div class="metric-label">Last 24 hours</div>
+          <div class="metric-change positive">
+            <span>↘</span> -0.01% reduction
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header">
+            <h3 class="metric-title">CPU Usage</h3>
+            <div class="metric-icon">🖥️</div>
+          </div>
+          <div class="metric-value" id="cpu-usage">23%</div>
+          <div class="metric-label">Current system load</div>
+          <div class="metric-change neutral">
+            <span>→</span> Stable performance
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-header">
+            <h3 class="metric-title">Memory Usage</h3>
+            <div class="metric-icon">💾</div>
+          </div>
+          <div class="metric-value" id="memory-usage">68%</div>
+          <div class="metric-label">Total memory utilization</div>
+          <div class="metric-change negative">
+            <span>↗</span> +3% increase
+          </div>
+        </div>
+      </section>
+
+      <!-- Health Overview -->
+      <section class="health-overview">
+        <div class="health-item excellent">
+          <div class="health-score" style="color: var(--cathedral-success);">A+</div>
+          <div class="health-label">API Performance</div>
+          <div class="health-status excellent">Excellent</div>
+        </div>
+
+        <div class="health-item good">
+          <div class="health-score" style="color: var(--cathedral-accent);">B+</div>
+          <div class="health-label">Database Health</div>
+          <div class="health-status good">Good</div>
+        </div>
+
+        <div class="health-item warning">
+          <div class="health-score" style="color: var(--cathedral-warning);">C</div>
+          <div class="health-label">Network Latency</div>
+          <div class="health-status warning">Monitoring</div>
+        </div>
+
+        <div class="health-item excellent">
+          <div class="health-score" style="color: var(--cathedral-success);">A</div>
+          <div class="health-label">Security Status</div>
+          <div class="health-status excellent">Secure</div>
+        </div>
+      </section>
+
+      <!-- Visualization Container -->
+      <section class="visualization-container">
+        <div class="viz-header">
+          <h3 class="viz-title">Real-Time Performance Charts</h3>
+          <div class="viz-controls">
+            <div class="control-group">
+              <label class="control-label">Time Range:</label>
+              <select class="control-select" id="timeRange">
+                <option value="1h">Last Hour</option>
+                <option value="6h">Last 6 Hours</option>
+                <option value="24h" selected>Last 24 Hours</option>
+                <option value="7d">Last 7 Days</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Metric:</label>
+              <select class="control-select" id="metricSelect">
+                <option value="response_time" selected>Response Time</option>
+                <option value="throughput">Throughput</option>
+                <option value="error_rate">Error Rate</option>
+                <option value="cpu_usage">CPU Usage</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Refresh:</label>
+              <select class="control-select" id="refreshRate">
+                <option value="5">5s</option>
+                <option value="10" selected>10s</option>
+                <option value="30">30s</option>
+                <option value="60">1m</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="chart-container" id="mainChart">
+          <!-- D3.js chart will be rendered here -->
+        </div>
+      </section>
+
+      <!-- Real-time Data Stream -->
+      <section class="data-stream">
+        <div class="stream-panel">
+          <h3 class="stream-title">
+            📊 System Logs
+            <span style="font-size: 0.8rem; opacity: 0.7;">Real-time updates</span>
+          </h3>
+          <div class="stream-content" id="systemLogs">
+            <!-- Real-time log entries will appear here -->
+          </div>
+        </div>
+
+        <div class="stream-panel">
+          <h3 class="stream-title">
+            🚨 Alerts & Events
+            <span style="font-size: 0.8rem; opacity: 0.7;">Active monitoring</span>
+          </h3>
+          <div class="stream-content" id="alertsStream">
+            <!-- Alert entries will appear here -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Cathedral Performance Dashboard JavaScript
+      class PerformanceDashboard {
+        constructor() {
+          this.data = {
+            metrics: {
+              uptime: 99.9,
+              responseTime: 127,
+              activeUsers: 2847,
+              errorRate: 0.02,
+              cpuUsage: 23,
+              memoryUsage: 68
+            },
+            timeRange: '24h',
+            selectedMetric: 'response_time',
+            refreshRate: 10000,
+            chartData: []
+          };
+          
+          this.logs = [];
+          this.alerts = [];
+          this.refreshInterval = null;
+          
+          this.init();
+        }
+
+        async init() {
+          await this.loadInitialData();
+          this.setupEventListeners();
+          this.initializeCharts();
+          this.startRealTimeUpdates();
+          this.initializeLogStreams();
+        }
+
+        async loadInitialData() {
+          try {
+            // Simulate loading REGISTRY data for performance metrics
+            await this.simulateDataLoad();
+            this.updateMetricsDisplay();
+          } catch (error) {
+            console.warn('Loading fallback data:', error);
+            this.loadFallbackData();
+          }
+        }
+
+        simulateDataLoad() {
+          return new Promise((resolve) => {
+            setTimeout(() => {
+              // Simulate real performance data
+              this.data.chartData = this.generateChartData();
+              resolve();
+            }, 1000);
+          });
+        }
+
+        generateChartData() {
+          const data = [];
+          const now = Date.now();
+          const hours = 24;
+          
+          for (let i = 0; i < hours; i++) {
+            const timestamp = now - (hours - i) * 3600000;
+            data.push({
+              timestamp,
+              response_time: 100 + Math.random() * 50,
+              throughput: 800 + Math.random() * 400,
+              error_rate: Math.random() * 0.1,
+              cpu_usage: 20 + Math.random() * 30
+            });
+          }
+          
+          return data;
+        }
+
+        loadFallbackData() {
+          this.data = {
+            metrics: {
+              uptime: 99.5,
+              responseTime: 145,
+              activeUsers: 2156,
+              errorRate: 0.08,
+              cpuUsage: 31,
+              memoryUsage: 72
+            },
+            chartData: this.generateChartData(),
+            timeRange: '24h',
+            selectedMetric: 'response_time',
+            refreshRate: 10000
+          };
+          this.updateMetricsDisplay();
+        }
+
+        setupEventListeners() {
+          // Time range selector
+          document.getElementById('timeRange').addEventListener('change', (e) => {
+            this.data.timeRange = e.target.value;
+            this.updateChart();
+          });
+
+          // Metric selector
+          document.getElementById('metricSelect').addEventListener('change', (e) => {
+            this.data.selectedMetric = e.target.value;
+            this.updateChart();
+          });
+
+          // Refresh rate selector
+          document.getElementById('refreshRate').addEventListener('change', (e) => {
+            this.data.refreshRate = parseInt(e.target.value) * 1000;
+            this.restartRealTimeUpdates();
+          });
+
+          // Navigation smooth scrolling
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', (e) => {
+              e.preventDefault();
+              const target = document.querySelector(e.target.getAttribute('href'));
+              if (target) {
+                target.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }
+            });
+          });
+        }
+
+        initializeCharts() {
+          this.createMainChart();
+        }
+
+        createMainChart() {
+          const container = d3.select('#mainChart');
+          container.selectAll('*').remove();
+
+          const margin = { top: 20, right: 30, bottom: 40, left: 50 };
+          const width = container.node().getBoundingClientRect().width - margin.left - margin.right;
+          const height = 400 - margin.top - margin.bottom;
+
+          const svg = container
+            .append('svg')
+            .attr('width', width + margin.left + margin.right)
+            .attr('height', height + margin.top + margin.bottom)
+            .append('g')
+            .attr('transform', `translate(${margin.left},${margin.top})`);
+
+          // Add axes
+          const xScale = d3.scaleTime()
+            .domain(d3.extent(this.data.chartData, d => new Date(d.timestamp)))
+            .range([0, width]);
+
+          const yScale = d3.scaleLinear()
+            .domain(d3.extent(this.data.chartData, d => d[this.data.selectedMetric]))
+            .nice()
+            .range([height, 0]);
+
+          const line = d3.line()
+            .x(d => xScale(new Date(d.timestamp)))
+            .y(d => yScale(d[this.data.selectedMetric]))
+            .curve(d3.curveMonotoneX);
+
+          // Add gradient
+          const gradient = svg.append('defs')
+            .append('linearGradient')
+            .attr('id', 'chartGradient')
+            .attr('gradientUnits', 'userSpaceOnUse')
+            .attr('x1', 0).attr('y1', height)
+            .attr('x2', 0).attr('y2', 0);
+
+          gradient.append('stop')
+            .attr('offset', '0%')
+            .attr('stop-color', 'var(--cathedral-gold)')
+            .attr('stop-opacity', 0.1);
+
+          gradient.append('stop')
+            .attr('offset', '100%')
+            .attr('stop-color', 'var(--cathedral-gold)')
+            .attr('stop-opacity', 0.8);
+
+          // Add area
+          const area = d3.area()
+            .x(d => xScale(new Date(d.timestamp)))
+            .y0(height)
+            .y1(d => yScale(d[this.data.selectedMetric]))
+            .curve(d3.curveMonotoneX);
+
+          svg.append('path')
+            .datum(this.data.chartData)
+            .attr('fill', 'url(#chartGradient)')
+            .attr('d', area);
+
+          // Add line
+          svg.append('path')
+            .datum(this.data.chartData)
+            .attr('fill', 'none')
+            .attr('stroke', 'var(--cathedral-gold)')
+            .attr('stroke-width', 3)
+            .attr('d', line);
+
+          // Add axes
+          const xAxis = d3.axisBottom(xScale)
+            .tickFormat(d3.timeFormat('%H:%M'));
+          
+          const yAxis = d3.axisLeft(yScale);
+
+          svg.append('g')
+            .attr('transform', `translate(0,${height})`)
+            .call(xAxis)
+            .selectAll('text')
+            .style('fill', 'var(--cathedral-crystal)');
+
+          svg.append('g')
+            .call(yAxis)
+            .selectAll('text')
+            .style('fill', 'var(--cathedral-crystal)');
+
+          // Add tooltip
+          const tooltip = d3.select('body').append('div')
+            .attr('class', 'chart-tooltip')
+            .style('position', 'absolute')
+            .style('visibility', 'hidden')
+            .style('background', 'var(--cathedral-deep-blue)')
+            .style('color', 'var(--cathedral-light)')
+            .style('padding', '10px')
+            .style('border-radius', '8px')
+            .style('border', '2px solid var(--cathedral-gold)')
+            .style('font-size', '12px')
+            .style('z-index', '1000');
+
+          // Add invisible overlay for mouse events
+          svg.append('rect')
+            .attr('width', width)
+            .attr('height', height)
+            .attr('fill', 'none')
+            .attr('pointer-events', 'all')
+            .on('mouseover', () => tooltip.style('visibility', 'visible'))
+            .on('mouseout', () => tooltip.style('visibility', 'hidden'))
+            .on('mousemove', (event) => {
+              const [mouseX] = d3.pointer(event);
+              const x0 = xScale.invert(mouseX);
+              const bisector = d3.bisector(d => d.timestamp).left;
+              const i = bisector(this.data.chartData, +x0, 1);
+              const d0 = this.data.chartData[i - 1];
+              const d1 = this.data.chartData[i];
+              const d = d1 && (x0 - d0.timestamp > d1.timestamp - x0) ? d1 : d0;
+              
+              if (d) {
+                tooltip
+                  .html(`
+                    <strong>${this.getMetricLabel(this.data.selectedMetric)}</strong><br/>
+                    ${d[this.data.selectedMetric].toFixed(2)}<br/>
+                    <small>${new Date(d.timestamp).toLocaleString()}</small>
+                  `)
+                  .style('left', (event.pageX + 10) + 'px')
+                  .style('top', (event.pageY - 10) + 'px');
+              }
+            });
+        }
+
+        getMetricLabel(metric) {
+          const labels = {
+            response_time: 'Response Time',
+            throughput: 'Throughput',
+            error_rate: 'Error Rate',
+            cpu_usage: 'CPU Usage'
+          };
+          return labels[metric] || metric;
+        }
+
+        updateChart() {
+          this.createMainChart();
+        }
+
+        updateMetricsDisplay() {
+          document.getElementById('uptime').textContent = this.data.metrics.uptime + '%';
+          document.getElementById('response-time').textContent = this.data.metrics.responseTime + 'ms';
+          document.getElementById('active-users').textContent = this.data.metrics.activeUsers.toLocaleString();
+          document.getElementById('error-rate').textContent = this.data.metrics.errorRate + '%';
+          document.getElementById('cpu-usage').textContent = this.data.metrics.cpuUsage + '%';
+          document.getElementById('memory-usage').textContent = this.data.metrics.memoryUsage + '%';
+        }
+
+        startRealTimeUpdates() {
+          this.refreshInterval = setInterval(() => {
+            this.updateRealTimeMetrics();
+            this.updateLogs();
+            this.updateAlerts();
+          }, this.data.refreshRate);
+        }
+
+        restartRealTimeUpdates() {
+          if (this.refreshInterval) {
+            clearInterval(this.refreshInterval);
+          }
+          this.startRealTimeUpdates();
+        }
+
+        updateRealTimeMetrics() {
+          // Simulate real-time metric updates
+          this.data.metrics.responseTime = Math.round(100 + Math.random() * 60);
+          this.data.metrics.cpuUsage = Math.round(20 + Math.random() * 25);
+          this.data.metrics.memoryUsage = Math.round(65 + Math.random() * 10);
+          this.data.metrics.activeUsers = Math.round(2500 + Math.random() * 500);
+          
+          // Add new data point to chart
+          const newDataPoint = {
+            timestamp: Date.now(),
+            response_time: this.data.metrics.responseTime,
+            throughput: 800 + Math.random() * 400,
+            error_rate: Math.random() * 0.1,
+            cpu_usage: this.data.metrics.cpuUsage
+          };
+          
+          this.data.chartData.push(newDataPoint);
+          
+          // Keep only the last 24 hours of data
+          const cutoff = Date.now() - 24 * 3600000;
+          this.data.chartData = this.data.chartData.filter(d => d.timestamp > cutoff);
+          
+          this.updateMetricsDisplay();
+          this.updateChart();
+        }
+
+        initializeLogStreams() {
+          // Initialize with some sample logs
+          this.addSampleLogs();
+          this.addSampleAlerts();
+          this.renderLogs();
+          this.renderAlerts();
+        }
+
+        addSampleLogs() {
+          const logTypes = ['INFO', 'WARN', 'ERROR'];
+          const messages = [
+            'REGISTRY data synchronization completed',
+            'Database connection established',
+            'API endpoint health check passed',
+            'Memory usage optimization cycle started',
+            'Performance metrics updated',
+            'User session initialized',
+            'System backup initiated',
+            'Cache clearing completed'
+          ];
+
+          for (let i = 0; i < 10; i++) {
+            this.logs.push({
+              timestamp: new Date(Date.now() - Math.random() * 3600000),
+              level: logTypes[Math.floor(Math.random() * logTypes.length)],
+              message: messages[Math.floor(Math.random() * messages.length)]
+            });
+          }
+        }
+
+        addSampleAlerts() {
+          this.alerts.push({
+            timestamp: new Date(),
+            level: 'INFO',
+            title: 'System Performance',
+            message: 'All systems operating within normal parameters'
+          });
+          
+          this.alerts.push({
+            timestamp: new Date(Date.now() - 300000),
+            level: 'WARN',
+            title: 'Memory Usage',
+            message: 'Memory usage at 68%, consider optimization'
+          });
+        }
+
+        addNewLog() {
+          const logTypes = ['INFO', 'WARN', 'ERROR'];
+          const messages = [
+            'API response time: ' + (100 + Math.random() * 50) + 'ms',
+            'Database query executed successfully',
+            'Cache hit rate: ' + (85 + Math.random() * 10).toFixed(1) + '%',
+            'Active connections: ' + Math.floor(50 + Math.random() * 100),
+            'Network latency: ' + Math.round(10 + Math.random() * 20) + 'ms'
+          ];
+
+          this.logs.unshift({
+            timestamp: new Date(),
+            level: logTypes[Math.floor(Math.random() * logTypes.length)],
+            message: messages[Math.floor(Math.random() * messages.length)]
+          });
+
+          // Keep only last 20 logs
+          if (this.logs.length > 20) {
+            this.logs = this.logs.slice(0, 20);
+          }
+        }
+
+        updateLogs() {
+          this.addNewLog();
+          this.renderLogs();
+        }
+
+        updateAlerts() {
+          // Randomly add new alerts
+          if (Math.random() < 0.1) {
+            this.alerts.unshift({
+              timestamp: new Date(),
+              level: Math.random() < 0.8 ? 'INFO' : 'WARN',
+              title: 'Performance Update',
+              message: 'System metrics updated successfully'
+            });
+            
+            if (this.alerts.length > 10) {
+              this.alerts = this.alerts.slice(0, 10);
+            }
+          }
+          
+          this.renderAlerts();
+        }
+
+        renderLogs() {
+          const container = document.getElementById('systemLogs');
+          container.innerHTML = this.logs.map(log => `
+            <div class="stream-item">
+              <span>${log.message}</span>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <span class="log-level log-${log.level.toLowerCase()}">${log.level}</span>
+                <span class="timestamp">${log.timestamp.toLocaleTimeString()}</span>
+              </div>
+            </div>
+          `).join('');
+        }
+
+        renderAlerts() {
+          const container = document.getElementById('alertsStream');
+          container.innerHTML = this.alerts.map(alert => `
+            <div class="stream-item">
+              <span>
+                <strong>${alert.title}</strong><br/>
+                <small>${alert.message}</small>
+              </span>
+              <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <span class="log-level log-${alert.level.toLowerCase()}">${alert.level}</span>
+                <span class="timestamp">${alert.timestamp.toLocaleTimeString()}</span>
+              </div>
+            </div>
+          `).join('');
+        }
+      }
+
+      // Initialize dashboard when DOM is loaded
+      document.addEventListener('DOMContentLoaded', () => {
+        new PerformanceDashboard();
+      });
+
+      // Keyboard navigation support
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          // Close any open tooltips or modals
+          document.querySelectorAll('.chart-tooltip').forEach(tooltip => {
+            tooltip.remove();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

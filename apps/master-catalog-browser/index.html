@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Haute Couture Baseline Styles -->
+    <link rel="stylesheet" href="/packages/shared/assets/css/couture.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Catalog Browser - Museum-Quality Soul Resources</title>
+    <meta name="description" content="CPTSD-safe access to museum-quality spiritual and healing resources">
+    
+    <style>
+        :root {
+            --catalog-gold: #B8860B;
+            --wisdom-blue: #4169E1;
+            --healing-green: #228B22;
+            --safe-purple: #663399;
+            --warm-cream: #FFF8DC;
+            --gentle-gray: #F5F5F5;
+            --protection-dark: #2F4F4F;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background: linear-gradient(135deg, var(--warm-cream) 0%, #F0E68C 100%);
+            min-height: 100vh;
+            color: var(--protection-dark);
+        }
+
+        .catalog-header {
+            background: var(--protection-dark);
+            color: var(--warm-cream);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .catalog-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--catalog-gold);
+        }
+
+        .catalog-subtitle {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .safety-notice {
+            background: var(--healing-green);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .filter-system {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .filter-category {
+            text-align: center;
+        }
+
+        .filter-title {
+            font-size: 1.2rem;
+            color: var(--wisdom-blue);
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .filter-button {
+            display: block;
+            width: 100%;
+            margin-bottom: 0.5rem;
+            padding: 0.8rem;
+            background: var(--gentle-gray);
+            border: 2px solid transparent;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .filter-button:hover {
+            background: var(--safe-purple);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .filter-button.active {
+            background: var(--catalog-gold);
+            color: white;
+            border-color: var(--wisdom-blue);
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .resource-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 3px solid transparent;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--catalog-gold);
+        }
+
+        .resource-type {
+            background: var(--wisdom-blue);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .resource-title {
+            font-size: 1.5rem;
+            color: var(--protection-dark);
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .resource-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        .healing-aspects {
+            background: var(--healing-green);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .healing-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .healing-list {
+            list-style: none;
+            font-size: 0.9rem;
+        }
+
+        .healing-list li {
+            margin-bottom: 0.3rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .healing-list li:before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+        }
+
+        .access-button {
+            width: 100%;
+            padding: 1rem;
+            background: var(--safe-purple);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .access-button:hover {
+            background: var(--wisdom-blue);
+            transform: scale(1.02);
+        }
+
+        .trauma-warning {
+            background: #FFB6C1;
+            border: 2px solid #DC143C;
+            border-radius: 10px;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+            color: #8B0000;
+        }
+
+        .protection-seal {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--catalog-gold);
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .filter-system {
+                grid-template-columns: 1fr;
+            }
+            
+            .catalog-title {
+                font-size: 2rem;
+            }
+            
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Haute Couture Baseline Container -->
+    <div class="cathedral-couture"></div>
+    <header class="catalog-header">
+        <h1 class="catalog-title">📚 Master Catalog Browser</h1>
+        <p class="catalog-subtitle">Museum-Quality Spiritual & Healing Resources</p>
+        <div class="safety-notice">
+            <strong>🛡️ Protected Access:</strong> All resources are filtered for trauma safety and presented with content warnings. You control what you access and can exit safely at any time.
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="filter-system" id="filterSystem">
+            <!-- Filters will be generated by JavaScript -->
+        </div>
+
+        <div class="resources-grid" id="resourcesGrid">
+            <!-- Resources will be generated by JavaScript -->
+        </div>
+
+        <div class="protection-seal" onclick="showProtectionInfo()" title="Protection Seals Active">
+            🔯
+        </div>
+    </main>
+
+        <!-- Import the shared couture engine -->
+        <script type="module">
+            import '/packages/shared/couture-engine.js';
+            window.addEventListener('DOMContentLoaded', () => {
+                if (window.CathedralCoutureEngine) {
+                    const couture = new window.CathedralCoutureEngine();
+                    couture.init();
+                }
+            });
+        </script>
+        <script>
+        class MasterCatalogBrowser {
+            constructor() {
+                this.activeFilters = {
+                    tradition: 'all',
+                    healing_type: 'all', 
+                    intensity: 'gentle',
+                    source: 'all'
+                };
+                
+                this.filters = this.initializeFilters();
+                this.resources = this.initializeResources();
+                this.render();
+            }
+
+            initializeFilters() {
+                return {
+                    tradition: {
+                        title: "🏛️ Spiritual Tradition",
+                        options: {
+                            'all': 'All Traditions',
+                            'hermetic': 'Hermetic/Golden Dawn',
+                            'kabbalah': 'Kabbalistic',
+                            'tarot': 'Tarot/Archetypal',
+                            'psychological': 'Depth Psychology',
+                            'healing': 'Energy Healing',
+                            'indigenous': 'Indigenous Wisdom'
+                        }
+                    },
+                    
+                    healing_type: {
+                        title: "🌟 Healing Focus",
+                        options: {
+                            'all': 'All Types',
+                            'trauma': 'Trauma Integration',
+                            'soul': 'Soul Reclamation', 
+                            'shadow': 'Shadow Work',
+                            'inner_child': 'Inner Child Healing',
+                            'spiritual': 'Spiritual Awakening',
+                            'creativity': 'Creative Liberation'
+                        }
+                    },
+                    
+                    intensity: {
+                        title: "🫁 Intensity Level",
+                        options: {
+                            'gentle': 'Gentle Approach',
+                            'moderate': 'Moderate Depth',
+                            'advanced': 'Advanced Practice'
+                        }
+                    },
+                    
+                    source: {
+                        title: "📖 Source Type",
+                        options: {
+                            'all': 'All Sources',
+                            'museum': 'Museum Collections',
+                            'academic': 'Academic Research',
+                            'experiential': 'Experiential Guides',
+                            'archive': 'Digital Archives',
+                            'living': 'Living Traditions'
+                        }
+                    }
+                };
+            }
+
+            initializeResources() {
+                return [
+                    {
+                        id: 'golden_dawn_healing',
+                        type: 'Hermetic Healing System',
+                        title: 'Golden Dawn Therapeutic Protocols',
+                        tradition: 'hermetic',
+                        healing_type: 'spiritual',
+                        intensity: 'moderate',
+                        source: 'academic',
+                        description: 'Museum-quality collection of Golden Dawn healing rituals adapted for modern trauma-informed practice. Includes the complete Chicken Qabalah lecture series with soul reclamation emphasis.',
+                        healing_aspects: [
+                            'CPTSD-safe ritual structure',
+                            'Archetypal soul retrieval methods',
+                            'Trauma-informed ceremonial practices',
+                            'Integration with IFS therapy',
+                            'Protection protocols for sensitive souls'
+                        ],
+                        trauma_warning: 'Contains shadow work elements - approach with support system'
+                    },
+
+                    {
+                        id: 'living_tarot_archetypes',
+                        type: 'Archetypal Soul Work',
+                        title: 'Living Tarot Characters for Soul Reclamation',
+                        tradition: 'tarot',
+                        healing_type: 'soul',
+                        intensity: 'gentle',
+                        source: 'living',
+                        description: 'Complete system of 78 living archetypal beings designed specifically for CPTSD healing. Each archetype offers unique soul reclamation tools and trauma-informed wisdom.',
+                        healing_aspects: [
+                            'Rebecca Respawn (The Fool) - New beginnings',
+                            'Virelai Ezra Lux (The Magician) - Creative power reclamation', 
+                            'Ann Abyss (Death) - Grief integration',
+                            'Moonchild (The Hierophant) - Spiritual healing',
+                            'All 78 characters with healing specializations'
+                        ]
+                    },
+
+                    {
+                        id: 'codex_144_system',
+                        type: 'Sacred Mathematics',
+                        title: 'Codex 144:99 - Complete Correspondence System',
+                        tradition: 'kabbalah',
+                        healing_type: 'spiritual',
+                        intensity: 'advanced',
+                        source: 'archive',
+                        description: 'The complete 144-node sacred mathematics system discovered from museum archives. Includes 72 angels, 72 demons, and 22 Major Arcana correspondences for soul integration work.',
+                        healing_aspects: [
+                            '144 manifestation nodes for goal setting',
+                            '99 dissolution depths for release work',
+                            'Angel-demon balance for shadow integration',
+                            'Sacred ratio mathematics for spiritual proportion',
+                            'Complete Shem ha-Mephorash healing angels'
+                        ],
+                        trauma_warning: 'Advanced content - requires spiritual preparation and support'
+                    },
+
+                    {
+                        id: 'inner_child_archetypal',
+                        type: 'Inner Child Healing',
+                        title: 'Archetypal Inner Child Recovery System',
+                        tradition: 'psychological',
+                        healing_type: 'inner_child',
+                        intensity: 'gentle',
+                        source: 'experiential',
+                        description: 'CPTSD-specialized system using archetypal beings to safely connect with and heal inner child parts. Developed for complex trauma survivors.',
+                        healing_aspects: [
+                            'Safe inner child contact methods',
+                            'Archetypal protector activation',
+                            'Trauma-informed playfulness return',
+                            'Wonder and creativity reclamation',
+                            'Joy without guilt integration'
+                        ]
+                    },
+
+                    {
+                        id: 'shadow_integration_safe',
+                        type: 'Shadow Work',
+                        title: 'Trauma-Safe Shadow Integration Protocols',
+                        tradition: 'psychological',
+                        healing_type: 'shadow',
+                        intensity: 'moderate',
+                        source: 'academic',
+                        description: 'Revolutionary shadow work methods designed specifically for trauma survivors. Uses 72 Goetic demons as integration allies rather than threats.',
+                        healing_aspects: [
+                            'PTSD-safe shadow contact',
+                            'Demons as wounded parts needing healing',
+                            'Angel-demon balance for safety',
+                            'IFS-compatible parts integration',
+                            'Gradual exposure with exit strategies'
+                        ],
+                        trauma_warning: 'Shadow work content - ensure therapeutic support before beginning'
+                    },
+
+                    {
+                        id: 'creative_liberation',
+                        type: 'Creative Healing',
+                        title: 'Archetypal Creative Block Liberation',
+                        tradition: 'healing',
+                        healing_type: 'creativity',
+                        intensity: 'gentle',
+                        source: 'experiential',
+                        description: 'Museum-quality collection of creative liberation techniques using archetypal guides. Specifically designed for trauma survivors whose creativity was suppressed.',
+                        healing_aspects: [
+                            'Trickster archetypes for pattern breaking',
+                            'Artist archetypes for inspiration return',
+                            'Permission-giving for creative expression',
+                            'Trauma-informed art therapy methods',
+                            'Creative confidence rebuilding'
+                        ]
+                    }
+                ];
+            }
+
+            render() {
+                this.renderFilters();
+                this.renderResources();
+            }
+
+            renderFilters() {
+                const filterSystem = document.getElementById('filterSystem');
+                filterSystem.innerHTML = '';
+
+                Object.entries(this.filters).forEach(([filterType, filter]) => {
+                    const filterDiv = document.createElement('div');
+                    filterDiv.className = 'filter-category';
+                    
+                    filterDiv.innerHTML = `
+                        <div class="filter-title">${filter.title}</div>
+                        ${Object.entries(filter.options).map(([key, label]) => `
+                            <button class="filter-button ${this.activeFilters[filterType] === key ? 'active' : ''}"
+                                    onclick="catalog.setFilter('${filterType}', '${key}')">
+                                ${label}
+                            </button>
+                        `).join('')}
+                    `;
+                    
+                    filterSystem.appendChild(filterDiv);
+                });
+            }
+
+            renderResources() {
+                const resourcesGrid = document.getElementById('resourcesGrid');
+                const filteredResources = this.getFilteredResources();
+                
+                resourcesGrid.innerHTML = filteredResources.map(resource => `
+                    <div class="resource-card">
+                        <div class="resource-type">${resource.type}</div>
+                        <div class="resource-title">${resource.title}</div>
+                        <div class="resource-description">${resource.description}</div>
+                        
+                        ${resource.trauma_warning ? `
+                            <div class="trauma-warning">
+                                <strong>⚠️ Trauma Notice:</strong> ${resource.trauma_warning}
+                            </div>
+                        ` : ''}
+                        
+                        <div class="healing-aspects">
+                            <div class="healing-title">🌟 Healing Benefits:</div>
+                            <ul class="healing-list">
+                                ${resource.healing_aspects.map(aspect => `<li>${aspect}</li>`).join('')}
+                            </ul>
+                        </div>
+                        
+                        <button class="access-button" onclick="catalog.accessResource('${resource.id}')">
+                            🔓 Safe Access - Prepare for Gentle Entry
+                        </button>
+                    </div>
+                `).join('');
+            }
+
+            setFilter(filterType, value) {
+                this.activeFilters[filterType] = value;
+                this.render();
+            }
+
+            getFilteredResources() {
+                return this.resources.filter(resource => {
+                    return Object.entries(this.activeFilters).every(([filterType, filterValue]) => {
+                        if (filterValue === 'all') return true;
+                        return resource[filterType] === filterValue;
+                    });
+                });
+            }
+
+            accessResource(resourceId) {
+                const resource = this.resources.find(r => r.id === resourceId);
+                
+                // Create safe access modal
+                const modal = document.createElement('div');
+                modal.style.cssText = `
+                    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+                    background: rgba(0,0,0,0.8); z-index: 2000;
+                    display: flex; align-items: center; justify-content: center;
+                    padding: 2rem;
+                `;
+                
+                modal.innerHTML = `
+                    <div style="background: white; padding: 2rem; border-radius: 15px; max-width: 500px; text-align: center;">
+                        <h2 style="color: var(--wisdom-blue); margin-bottom: 1rem;">🛡️ Safe Access Preparation</h2>
+                        <p style="margin-bottom: 1.5rem; line-height: 1.6;">
+                            You're about to access:<br>
+                            <strong>${resource.title}</strong>
+                        </p>
+                        
+                        <div style="background: var(--healing-green); color: white; padding: 1rem; border-radius: 10px; margin-bottom: 1.5rem; font-size: 0.9rem;">
+                            <strong>Safety Reminders:</strong><br>
+                            • You can exit anytime<br>
+                            • Go at your own pace<br>
+                            • Your safety matters most<br>
+                            • Support is available if needed
+                        </div>
+                        
+                        <button onclick="this.parentElement.parentElement.remove(); catalog.enterResource('${resourceId}')"
+                                style="background: var(--safe-purple); color: white; padding: 1rem 2rem; border: none; border-radius: 8px; margin-right: 1rem; cursor: pointer;">
+                            I'm Ready - Enter Safely
+                        </button>
+                        
+                        <button onclick="this.parentElement.parentElement.remove()"
+                                style="background: var(--gentle-gray); padding: 1rem 2rem; border: none; border-radius: 8px; cursor: pointer;">
+                            Not Right Now
+                        </button>
+                    </div>
+                `;
+                
+                document.body.appendChild(modal);
+            }
+
+            enterResource(resourceId) {
+                // This would normally navigate to the actual resource
+                // For now, we'll show a preparation screen
+                alert(`Preparing safe access to ${resourceId}...\n\nIn the full system, this would open the resource with all trauma-informed protections active.`);
+            }
+        }
+
+        function showProtectionInfo() {
+            alert('🔯 Protection Seals Active:\n\n• Trauma-informed content filtering\n• Safe exit protocols ready\n• Grounding techniques available\n• Support resources accessible\n• Your pace, your choice');
+        }
+
+        // Initialize the catalog browser
+        const catalog = new MasterCatalogBrowser();
+    </script>
+</body>
+</html>

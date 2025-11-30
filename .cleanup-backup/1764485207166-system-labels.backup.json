@@ -1,0 +1,2983 @@
+{
+  "timestamp": 1764485093001,
+  "summary": {
+    "packages": 9,
+    "codex": 90,
+    "systems": 6,
+    "labels": 105,
+    "connections": 90,
+    "duplicates": 0
+  },
+  "packages": [
+    {
+      "id": "pkg:art-engine",
+      "name": "@cathedral/art-engine-core",
+      "label": "[PACKAGE] @cathedral/art-engine-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-engine-core",
+      "packageName": "@cathedral/art-engine-core",
+      "version": "1.0.0",
+      "description": "Art Engine - Sacred Geometry & Visual Creation for Cathedral",
+      "type": "engine"
+    },
+    {
+      "id": "pkg:art-standards",
+      "name": "@cathedral/art-standards-core",
+      "label": "[PACKAGE] @cathedral/art-standards-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-standards-core",
+      "packageName": "@cathedral/art-standards-core",
+      "version": "1.0.0",
+      "description": "Art Standards - Museum-Grade Quality & Sacred Geometry for Cathedral",
+      "type": "core"
+    },
+    {
+      "id": "pkg:debug-system",
+      "name": "@cathedral/debug-system-core",
+      "label": "[PACKAGE] @cathedral/debug-system-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/debug-system-core",
+      "packageName": "@cathedral/debug-system-core",
+      "version": "1.0.0",
+      "description": "Enterprise Debug System - Comprehensive error tracking and diagnostics for Cathedral ecosystem",
+      "type": "core"
+    },
+    {
+      "id": "pkg:game-design",
+      "name": "@cathedral/game-design-core",
+      "label": "[PACKAGE] @cathedral/game-design-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core",
+      "packageName": "@cathedral/game-design-core",
+      "version": "1.0.0",
+      "description": "Game Design Engine - Interactive Experiences & RPG Mechanics for Cathedral",
+      "type": "core"
+    },
+    {
+      "id": "pkg:health-map",
+      "name": "@cathedral/health-map-core",
+      "label": "[PACKAGE] @cathedral/health-map-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/health-map-core",
+      "packageName": "@cathedral/health-map-core",
+      "version": "1.0.0",
+      "description": "Enterprise Health Map System - Comprehensive catalog and health monitoring for Cathedral ecosystem",
+      "type": "core"
+    },
+    {
+      "id": "pkg:music-engine",
+      "name": "@cathedral/music-engine-core",
+      "label": "[PACKAGE] @cathedral/music-engine-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/music-engine-core",
+      "packageName": "@cathedral/music-engine-core",
+      "version": "1.0.0",
+      "description": "Music Engine - Sacred Frequencies & Harmonic Synthesis for Cathedral",
+      "type": "engine"
+    },
+    {
+      "id": "pkg:science-engine",
+      "name": "@cathedral/science-engine-core",
+      "label": "[PACKAGE] @cathedral/science-engine-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/science-engine-core",
+      "packageName": "@cathedral/science-engine-core",
+      "version": "1.0.0",
+      "description": "Science Engine - Empirical Research & Experimentation for Cathedral",
+      "type": "engine"
+    },
+    {
+      "id": "pkg:tesseract-bridge-hub",
+      "name": "@cathedral/tesseract-bridge-hub",
+      "label": "[PACKAGE] @cathedral/tesseract-bridge-hub",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-hub",
+      "packageName": "@cathedral/tesseract-bridge-hub",
+      "version": "1.0.0",
+      "description": "Tesseract Bridge Hub - Central orchestration system for all Cathedral systems",
+      "type": "bridge"
+    },
+    {
+      "id": "pkg:unified-codex",
+      "name": "@cathedral/unified-codex-core",
+      "label": "[PACKAGE] @cathedral/unified-codex-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-core",
+      "packageName": "@cathedral/unified-codex-core",
+      "version": "1.0.0",
+      "description": "Unified Codex Engine - Mirrors all engines with mode transitions (Art → Music → Game → Design → Science → Mathematics)",
+      "type": "core"
+    }
+  ],
+  "codex": [
+    {
+      "id": "codex:1764354828236",
+      "name": "codex-1764354828236.json",
+      "label": "[CODEX] codex-1764354828236.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764354828236.json",
+      "type": "codex-json",
+      "size": 6844,
+      "mtime": "2025-11-28T18:33:48.238Z"
+    },
+    {
+      "id": "codex:1764364804935",
+      "name": "codex-1764364804935.json",
+      "label": "[CODEX] codex-1764364804935.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764364804935.json",
+      "type": "codex-json",
+      "size": 7483,
+      "mtime": "2025-11-28T21:20:04.938Z"
+    },
+    {
+      "id": "codex:1764364862053",
+      "name": "codex-1764364862053.json",
+      "label": "[CODEX] codex-1764364862053.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764364862053.json",
+      "type": "codex-json",
+      "size": 7201,
+      "mtime": "2025-11-28T21:21:02.054Z"
+    },
+    {
+      "id": "codex:1764371234429",
+      "name": "codex-1764371234429.json",
+      "label": "[CODEX] codex-1764371234429.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764371234429.json",
+      "type": "codex-json",
+      "size": 7255,
+      "mtime": "2025-11-28T23:07:14.431Z"
+    },
+    {
+      "id": "codex:1764371547395",
+      "name": "codex-1764371547395.json",
+      "label": "[CODEX] codex-1764371547395.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764371547395.json",
+      "type": "codex-json",
+      "size": 6026,
+      "mtime": "2025-11-28T23:12:27.395Z"
+    },
+    {
+      "id": "codex:1764371928745",
+      "name": "codex-1764371928745.json",
+      "label": "[CODEX] codex-1764371928745.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764371928745.json",
+      "type": "codex-json",
+      "size": 5936,
+      "mtime": "2025-11-28T23:18:48.746Z"
+    },
+    {
+      "id": "codex:1764372274417",
+      "name": "codex-1764372274417.json",
+      "label": "[CODEX] codex-1764372274417.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764372274417.json",
+      "type": "codex-json",
+      "size": 7327,
+      "mtime": "2025-11-28T23:24:34.418Z"
+    },
+    {
+      "id": "codex:1764372622579",
+      "name": "codex-1764372622579.json",
+      "label": "[CODEX] codex-1764372622579.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764372622579.json",
+      "type": "codex-json",
+      "size": 7110,
+      "mtime": "2025-11-28T23:30:22.580Z"
+    },
+    {
+      "id": "codex:1764372938354",
+      "name": "codex-1764372938354.json",
+      "label": "[CODEX] codex-1764372938354.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764372938354.json",
+      "type": "codex-json",
+      "size": 7205,
+      "mtime": "2025-11-28T23:35:38.355Z"
+    },
+    {
+      "id": "codex:1764373243176",
+      "name": "codex-1764373243176.json",
+      "label": "[CODEX] codex-1764373243176.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764373243176.json",
+      "type": "codex-json",
+      "size": 7663,
+      "mtime": "2025-11-28T23:40:43.177Z"
+    },
+    {
+      "id": "codex:1764373553811",
+      "name": "codex-1764373553811.json",
+      "label": "[CODEX] codex-1764373553811.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764373553811.json",
+      "type": "codex-json",
+      "size": 7184,
+      "mtime": "2025-11-28T23:45:53.812Z"
+    },
+    {
+      "id": "codex:1764373867522",
+      "name": "codex-1764373867522.json",
+      "label": "[CODEX] codex-1764373867522.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764373867522.json",
+      "type": "codex-json",
+      "size": 7559,
+      "mtime": "2025-11-28T23:51:07.523Z"
+    },
+    {
+      "id": "codex:1764374176272",
+      "name": "codex-1764374176272.json",
+      "label": "[CODEX] codex-1764374176272.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764374176272.json",
+      "type": "codex-json",
+      "size": 7505,
+      "mtime": "2025-11-28T23:56:16.273Z"
+    },
+    {
+      "id": "codex:1764374487863",
+      "name": "codex-1764374487863.json",
+      "label": "[CODEX] codex-1764374487863.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764374487863.json",
+      "type": "codex-json",
+      "size": 7117,
+      "mtime": "2025-11-29T00:01:27.863Z"
+    },
+    {
+      "id": "codex:1764374788620",
+      "name": "codex-1764374788620.json",
+      "label": "[CODEX] codex-1764374788620.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764374788620.json",
+      "type": "codex-json",
+      "size": 7203,
+      "mtime": "2025-11-29T00:06:28.622Z"
+    },
+    {
+      "id": "codex:1764375095229",
+      "name": "codex-1764375095229.json",
+      "label": "[CODEX] codex-1764375095229.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764375095229.json",
+      "type": "codex-json",
+      "size": 6858,
+      "mtime": "2025-11-29T00:11:35.230Z"
+    },
+    {
+      "id": "codex:1764375398852",
+      "name": "codex-1764375398852.json",
+      "label": "[CODEX] codex-1764375398852.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764375398852.json",
+      "type": "codex-json",
+      "size": 7481,
+      "mtime": "2025-11-29T00:16:38.852Z"
+    },
+    {
+      "id": "codex:1764375705915",
+      "name": "codex-1764375705915.json",
+      "label": "[CODEX] codex-1764375705915.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764375705915.json",
+      "type": "codex-json",
+      "size": 7611,
+      "mtime": "2025-11-29T00:21:45.916Z"
+    },
+    {
+      "id": "codex:1764376007097",
+      "name": "codex-1764376007097.json",
+      "label": "[CODEX] codex-1764376007097.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764376007097.json",
+      "type": "codex-json",
+      "size": 7253,
+      "mtime": "2025-11-29T00:26:47.097Z"
+    },
+    {
+      "id": "codex:1764376313951",
+      "name": "codex-1764376313951.json",
+      "label": "[CODEX] codex-1764376313951.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764376313951.json",
+      "type": "codex-json",
+      "size": 7350,
+      "mtime": "2025-11-29T00:31:53.952Z"
+    },
+    {
+      "id": "codex:1764376617097",
+      "name": "codex-1764376617097.json",
+      "label": "[CODEX] codex-1764376617097.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764376617097.json",
+      "type": "codex-json",
+      "size": 7026,
+      "mtime": "2025-11-29T00:36:57.098Z"
+    },
+    {
+      "id": "codex:1764376921391",
+      "name": "codex-1764376921391.json",
+      "label": "[CODEX] codex-1764376921391.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764376921391.json",
+      "type": "codex-json",
+      "size": 7416,
+      "mtime": "2025-11-29T00:42:01.392Z"
+    },
+    {
+      "id": "codex:1764377224077",
+      "name": "codex-1764377224077.json",
+      "label": "[CODEX] codex-1764377224077.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764377224077.json",
+      "type": "codex-json",
+      "size": 7118,
+      "mtime": "2025-11-29T00:47:04.078Z"
+    },
+    {
+      "id": "codex:1764377538241",
+      "name": "codex-1764377538241.json",
+      "label": "[CODEX] codex-1764377538241.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764377538241.json",
+      "type": "codex-json",
+      "size": 7416,
+      "mtime": "2025-11-29T00:52:18.242Z"
+    },
+    {
+      "id": "codex:1764377858502",
+      "name": "codex-1764377858502.json",
+      "label": "[CODEX] codex-1764377858502.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764377858502.json",
+      "type": "codex-json",
+      "size": 7085,
+      "mtime": "2025-11-29T00:57:38.506Z"
+    },
+    {
+      "id": "codex:1764378638647",
+      "name": "codex-1764378638647.json",
+      "label": "[CODEX] codex-1764378638647.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764378638647.json",
+      "type": "codex-json",
+      "size": 7268,
+      "mtime": "2025-11-29T01:10:38.648Z"
+    },
+    {
+      "id": "codex:1764379005118",
+      "name": "codex-1764379005118.json",
+      "label": "[CODEX] codex-1764379005118.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764379005118.json",
+      "type": "codex-json",
+      "size": 7368,
+      "mtime": "2025-11-29T01:16:45.118Z"
+    },
+    {
+      "id": "codex:1764379314824",
+      "name": "codex-1764379314824.json",
+      "label": "[CODEX] codex-1764379314824.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764379314824.json",
+      "type": "codex-json",
+      "size": 7466,
+      "mtime": "2025-11-29T01:21:54.825Z"
+    },
+    {
+      "id": "codex:1764379631105",
+      "name": "codex-1764379631105.json",
+      "label": "[CODEX] codex-1764379631105.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764379631105.json",
+      "type": "codex-json",
+      "size": 7102,
+      "mtime": "2025-11-29T01:27:11.106Z"
+    },
+    {
+      "id": "codex:1764379945422",
+      "name": "codex-1764379945422.json",
+      "label": "[CODEX] codex-1764379945422.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764379945422.json",
+      "type": "codex-json",
+      "size": 7052,
+      "mtime": "2025-11-29T01:32:25.424Z"
+    },
+    {
+      "id": "codex:1764380252445",
+      "name": "codex-1764380252445.json",
+      "label": "[CODEX] codex-1764380252445.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764380252445.json",
+      "type": "codex-json",
+      "size": 7424,
+      "mtime": "2025-11-29T01:37:32.446Z"
+    },
+    {
+      "id": "codex:1764380564473",
+      "name": "codex-1764380564473.json",
+      "label": "[CODEX] codex-1764380564473.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764380564473.json",
+      "type": "codex-json",
+      "size": 7430,
+      "mtime": "2025-11-29T01:42:44.473Z"
+    },
+    {
+      "id": "codex:1764380873710",
+      "name": "codex-1764380873710.json",
+      "label": "[CODEX] codex-1764380873710.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764380873710.json",
+      "type": "codex-json",
+      "size": 7495,
+      "mtime": "2025-11-29T01:47:53.711Z"
+    },
+    {
+      "id": "codex:1764381225237",
+      "name": "codex-1764381225237.json",
+      "label": "[CODEX] codex-1764381225237.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764381225237.json",
+      "type": "codex-json",
+      "size": 7852,
+      "mtime": "2025-11-29T01:53:45.238Z"
+    },
+    {
+      "id": "codex:1764381400101",
+      "name": "codex-1764381400101.json",
+      "label": "[CODEX] codex-1764381400101.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764381400101.json",
+      "type": "codex-json",
+      "size": 7447,
+      "mtime": "2025-11-29T01:56:40.102Z"
+    },
+    {
+      "id": "codex:1764381583060",
+      "name": "codex-1764381583060.json",
+      "label": "[CODEX] codex-1764381583060.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764381583060.json",
+      "type": "codex-json",
+      "size": 7187,
+      "mtime": "2025-11-29T01:59:43.061Z"
+    },
+    {
+      "id": "codex:1764381747528",
+      "name": "codex-1764381747528.json",
+      "label": "[CODEX] codex-1764381747528.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764381747528.json",
+      "type": "codex-json",
+      "size": 7367,
+      "mtime": "2025-11-29T02:02:27.530Z"
+    },
+    {
+      "id": "codex:1764381998918",
+      "name": "codex-1764381998918.json",
+      "label": "[CODEX] codex-1764381998918.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764381998918.json",
+      "type": "codex-json",
+      "size": 7121,
+      "mtime": "2025-11-29T02:06:38.919Z"
+    },
+    {
+      "id": "codex:1764382122241",
+      "name": "codex-1764382122241.json",
+      "label": "[CODEX] codex-1764382122241.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764382122241.json",
+      "type": "codex-json",
+      "size": 7148,
+      "mtime": "2025-11-29T02:08:42.242Z"
+    },
+    {
+      "id": "codex:1764382362130",
+      "name": "codex-1764382362130.json",
+      "label": "[CODEX] codex-1764382362130.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764382362130.json",
+      "type": "codex-json",
+      "size": 6998,
+      "mtime": "2025-11-29T02:12:42.131Z"
+    },
+    {
+      "id": "codex:1764382490914",
+      "name": "codex-1764382490914.json",
+      "label": "[CODEX] codex-1764382490914.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764382490914.json",
+      "type": "codex-json",
+      "size": 7123,
+      "mtime": "2025-11-29T02:14:50.914Z"
+    },
+    {
+      "id": "codex:1764382799145",
+      "name": "codex-1764382799145.json",
+      "label": "[CODEX] codex-1764382799145.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764382799145.json",
+      "type": "codex-json",
+      "size": 7430,
+      "mtime": "2025-11-29T02:19:59.146Z"
+    },
+    {
+      "id": "codex:1764383033635",
+      "name": "codex-1764383033635.json",
+      "label": "[CODEX] codex-1764383033635.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764383033635.json",
+      "type": "codex-json",
+      "size": 7056,
+      "mtime": "2025-11-29T02:23:53.636Z"
+    },
+    {
+      "id": "codex:1764383267151",
+      "name": "codex-1764383267151.json",
+      "label": "[CODEX] codex-1764383267151.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764383267151.json",
+      "type": "codex-json",
+      "size": 7456,
+      "mtime": "2025-11-29T02:27:47.153Z"
+    },
+    {
+      "id": "codex:1764383317529",
+      "name": "codex-1764383317529.json",
+      "label": "[CODEX] codex-1764383317529.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764383317529.json",
+      "type": "codex-json",
+      "size": 7139,
+      "mtime": "2025-11-29T02:28:37.530Z"
+    },
+    {
+      "id": "codex:1764383579406",
+      "name": "codex-1764383579406.json",
+      "label": "[CODEX] codex-1764383579406.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764383579406.json",
+      "type": "codex-json",
+      "size": 5822,
+      "mtime": "2025-11-29T02:32:59.407Z"
+    },
+    {
+      "id": "codex:1764383781487",
+      "name": "codex-1764383781487.json",
+      "label": "[CODEX] codex-1764383781487.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764383781487.json",
+      "type": "codex-json",
+      "size": 7187,
+      "mtime": "2025-11-29T02:36:21.491Z"
+    },
+    {
+      "id": "codex:1764383885503",
+      "name": "codex-1764383885503.json",
+      "label": "[CODEX] codex-1764383885503.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764383885503.json",
+      "type": "codex-json",
+      "size": 7395,
+      "mtime": "2025-11-29T02:38:05.504Z"
+    },
+    {
+      "id": "codex:1764384189136",
+      "name": "codex-1764384189136.json",
+      "label": "[CODEX] codex-1764384189136.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764384189136.json",
+      "type": "codex-json",
+      "size": 7291,
+      "mtime": "2025-11-29T02:43:09.137Z"
+    },
+    {
+      "id": "codex:1764384372307",
+      "name": "codex-1764384372307.json",
+      "label": "[CODEX] codex-1764384372307.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764384372307.json",
+      "type": "codex-json",
+      "size": 7569,
+      "mtime": "2025-11-29T02:46:12.308Z"
+    },
+    {
+      "id": "codex:1764384572819",
+      "name": "codex-1764384572819.json",
+      "label": "[CODEX] codex-1764384572819.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764384572819.json",
+      "type": "codex-json",
+      "size": 7398,
+      "mtime": "2025-11-29T02:49:32.820Z"
+    },
+    {
+      "id": "codex:1764384902339",
+      "name": "codex-1764384902339.json",
+      "label": "[CODEX] codex-1764384902339.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764384902339.json",
+      "type": "codex-json",
+      "size": 7513,
+      "mtime": "2025-11-29T02:55:02.340Z"
+    },
+    {
+      "id": "codex:1764385075015",
+      "name": "codex-1764385075015.json",
+      "label": "[CODEX] codex-1764385075015.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764385075015.json",
+      "type": "codex-json",
+      "size": 7759,
+      "mtime": "2025-11-29T02:57:55.016Z"
+    },
+    {
+      "id": "codex:1764385440071",
+      "name": "codex-1764385440071.json",
+      "label": "[CODEX] codex-1764385440071.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764385440071.json",
+      "type": "codex-json",
+      "size": 7066,
+      "mtime": "2025-11-29T03:04:00.072Z"
+    },
+    {
+      "id": "codex:1764385647991",
+      "name": "codex-1764385647991.json",
+      "label": "[CODEX] codex-1764385647991.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764385647991.json",
+      "type": "codex-json",
+      "size": 7365,
+      "mtime": "2025-11-29T03:07:27.992Z"
+    },
+    {
+      "id": "codex:1764385870407",
+      "name": "codex-1764385870407.json",
+      "label": "[CODEX] codex-1764385870407.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764385870407.json",
+      "type": "codex-json",
+      "size": 7327,
+      "mtime": "2025-11-29T03:11:10.408Z"
+    },
+    {
+      "id": "codex:1764386008945",
+      "name": "codex-1764386008945.json",
+      "label": "[CODEX] codex-1764386008945.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764386008945.json",
+      "type": "codex-json",
+      "size": 7251,
+      "mtime": "2025-11-29T03:13:28.946Z"
+    },
+    {
+      "id": "codex:1764386571217",
+      "name": "codex-1764386571217.json",
+      "label": "[CODEX] codex-1764386571217.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764386571217.json",
+      "type": "codex-json",
+      "size": 7577,
+      "mtime": "2025-11-29T03:22:51.218Z"
+    },
+    {
+      "id": "codex:1764386747265",
+      "name": "codex-1764386747265.json",
+      "label": "[CODEX] codex-1764386747265.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764386747265.json",
+      "type": "codex-json",
+      "size": 6047,
+      "mtime": "2025-11-29T03:25:47.267Z"
+    },
+    {
+      "id": "codex:1764387005122",
+      "name": "codex-1764387005122.json",
+      "label": "[CODEX] codex-1764387005122.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764387005122.json",
+      "type": "codex-json",
+      "size": 7469,
+      "mtime": "2025-11-29T03:30:05.123Z"
+    },
+    {
+      "id": "codex:1764387296475",
+      "name": "codex-1764387296475.json",
+      "label": "[CODEX] codex-1764387296475.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764387296475.json",
+      "type": "codex-json",
+      "size": 7174,
+      "mtime": "2025-11-29T03:34:56.476Z"
+    },
+    {
+      "id": "codex:1764387451858",
+      "name": "codex-1764387451858.json",
+      "label": "[CODEX] codex-1764387451858.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764387451858.json",
+      "type": "codex-json",
+      "size": 7183,
+      "mtime": "2025-11-29T03:37:31.859Z"
+    },
+    {
+      "id": "codex:1764388012833",
+      "name": "codex-1764388012833.json",
+      "label": "[CODEX] codex-1764388012833.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764388012833.json",
+      "type": "codex-json",
+      "size": 7604,
+      "mtime": "2025-11-29T03:46:52.834Z"
+    },
+    {
+      "id": "codex:1764388685796",
+      "name": "codex-1764388685796.json",
+      "label": "[CODEX] codex-1764388685796.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764388685796.json",
+      "type": "codex-json",
+      "size": 7230,
+      "mtime": "2025-11-29T03:58:05.797Z"
+    },
+    {
+      "id": "codex:1764388934088",
+      "name": "codex-1764388934088.json",
+      "label": "[CODEX] codex-1764388934088.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764388934088.json",
+      "type": "codex-json",
+      "size": 7382,
+      "mtime": "2025-11-29T04:02:14.090Z"
+    },
+    {
+      "id": "codex:1764388958697",
+      "name": "codex-1764388958697.json",
+      "label": "[CODEX] codex-1764388958697.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764388958697.json",
+      "type": "codex-json",
+      "size": 7150,
+      "mtime": "2025-11-29T04:02:38.698Z"
+    },
+    {
+      "id": "codex:1764389536138",
+      "name": "codex-1764389536138.json",
+      "label": "[CODEX] codex-1764389536138.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764389536138.json",
+      "type": "codex-json",
+      "size": 7544,
+      "mtime": "2025-11-29T04:12:16.139Z"
+    },
+    {
+      "id": "codex:1764389622496",
+      "name": "codex-1764389622496.json",
+      "label": "[CODEX] codex-1764389622496.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764389622496.json",
+      "type": "codex-json",
+      "size": 7076,
+      "mtime": "2025-11-29T04:13:42.497Z"
+    },
+    {
+      "id": "codex:1764389661850",
+      "name": "codex-1764389661850.json",
+      "label": "[CODEX] codex-1764389661850.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764389661850.json",
+      "type": "codex-json",
+      "size": 7435,
+      "mtime": "2025-11-29T04:14:21.851Z"
+    },
+    {
+      "id": "codex:1764390333924",
+      "name": "codex-1764390333924.json",
+      "label": "[CODEX] codex-1764390333924.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764390333924.json",
+      "type": "codex-json",
+      "size": 7282,
+      "mtime": "2025-11-29T04:25:33.925Z"
+    },
+    {
+      "id": "codex:1764390463967",
+      "name": "codex-1764390463967.json",
+      "label": "[CODEX] codex-1764390463967.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764390463967.json",
+      "type": "codex-json",
+      "size": 7515,
+      "mtime": "2025-11-29T04:27:43.969Z"
+    },
+    {
+      "id": "codex:1764390793093",
+      "name": "codex-1764390793093.json",
+      "label": "[CODEX] codex-1764390793093.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764390793093.json",
+      "type": "codex-json",
+      "size": 7550,
+      "mtime": "2025-11-29T04:33:13.094Z"
+    },
+    {
+      "id": "codex:1764391103715",
+      "name": "codex-1764391103715.json",
+      "label": "[CODEX] codex-1764391103715.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764391103715.json",
+      "type": "codex-json",
+      "size": 7034,
+      "mtime": "2025-11-29T04:38:23.716Z"
+    },
+    {
+      "id": "codex:1764391107559",
+      "name": "codex-1764391107559.json",
+      "label": "[CODEX] codex-1764391107559.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764391107559.json",
+      "type": "codex-json",
+      "size": 7529,
+      "mtime": "2025-11-29T04:38:27.560Z"
+    },
+    {
+      "id": "codex:1764391366361",
+      "name": "codex-1764391366361.json",
+      "label": "[CODEX] codex-1764391366361.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764391366361.json",
+      "type": "codex-json",
+      "size": 7284,
+      "mtime": "2025-11-29T04:42:46.362Z"
+    },
+    {
+      "id": "codex:1764391678374",
+      "name": "codex-1764391678374.json",
+      "label": "[CODEX] codex-1764391678374.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764391678374.json",
+      "type": "codex-json",
+      "size": 7253,
+      "mtime": "2025-11-29T04:47:58.376Z"
+    },
+    {
+      "id": "codex:1764391700111",
+      "name": "codex-1764391700111.json",
+      "label": "[CODEX] codex-1764391700111.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764391700111.json",
+      "type": "codex-json",
+      "size": 7235,
+      "mtime": "2025-11-29T04:48:20.112Z"
+    },
+    {
+      "id": "codex:1764391915096",
+      "name": "codex-1764391915096.json",
+      "label": "[CODEX] codex-1764391915096.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764391915096.json",
+      "type": "codex-json",
+      "size": 7260,
+      "mtime": "2025-11-29T04:51:55.097Z"
+    },
+    {
+      "id": "codex:1764392221188",
+      "name": "codex-1764392221188.json",
+      "label": "[CODEX] codex-1764392221188.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764392221188.json",
+      "type": "codex-json",
+      "size": 5986,
+      "mtime": "2025-11-29T04:57:01.189Z"
+    },
+    {
+      "id": "codex:1764392266434",
+      "name": "codex-1764392266434.json",
+      "label": "[CODEX] codex-1764392266434.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764392266434.json",
+      "type": "codex-json",
+      "size": 7475,
+      "mtime": "2025-11-29T04:57:46.435Z"
+    },
+    {
+      "id": "codex:1764392497577",
+      "name": "codex-1764392497577.json",
+      "label": "[CODEX] codex-1764392497577.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764392497577.json",
+      "type": "codex-json",
+      "size": 5968,
+      "mtime": "2025-11-29T05:01:37.579Z"
+    },
+    {
+      "id": "codex:1764392706293",
+      "name": "codex-1764392706293.json",
+      "label": "[CODEX] codex-1764392706293.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764392706293.json",
+      "type": "codex-json",
+      "size": 6048,
+      "mtime": "2025-11-29T05:05:06.294Z"
+    },
+    {
+      "id": "codex:1764392826139",
+      "name": "codex-1764392826139.json",
+      "label": "[CODEX] codex-1764392826139.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764392826139.json",
+      "type": "codex-json",
+      "size": 7012,
+      "mtime": "2025-11-29T05:07:06.140Z"
+    },
+    {
+      "id": "codex:1764392967616",
+      "name": "codex-1764392967616.json",
+      "label": "[CODEX] codex-1764392967616.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764392967616.json",
+      "type": "codex-json",
+      "size": 7249,
+      "mtime": "2025-11-29T05:09:27.617Z"
+    },
+    {
+      "id": "codex:1764393203478",
+      "name": "codex-1764393203478.json",
+      "label": "[CODEX] codex-1764393203478.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764393203478.json",
+      "type": "codex-json",
+      "size": 7040,
+      "mtime": "2025-11-29T05:13:23.479Z"
+    },
+    {
+      "id": "codex:1764393237879",
+      "name": "codex-1764393237879.json",
+      "label": "[CODEX] codex-1764393237879.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764393237879.json",
+      "type": "codex-json",
+      "size": 6944,
+      "mtime": "2025-11-29T05:13:57.880Z"
+    },
+    {
+      "id": "codex:1764393352883",
+      "name": "codex-1764393352883.json",
+      "label": "[CODEX] codex-1764393352883.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764393352883.json",
+      "type": "codex-json",
+      "size": 7332,
+      "mtime": "2025-11-29T05:15:52.884Z"
+    },
+    {
+      "id": "codex:1764393659479",
+      "name": "codex-1764393659479.json",
+      "label": "[CODEX] codex-1764393659479.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764393659479.json",
+      "type": "codex-json",
+      "size": 7408,
+      "mtime": "2025-11-29T05:20:59.480Z"
+    },
+    {
+      "id": "codex:1764393682175",
+      "name": "codex-1764393682175.json",
+      "label": "[CODEX] codex-1764393682175.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764393682175.json",
+      "type": "codex-json",
+      "size": 6989,
+      "mtime": "2025-11-29T05:21:22.176Z"
+    },
+    {
+      "id": "codex:analysis",
+      "name": "codex-analysis.json",
+      "label": "[CODEX] codex-analysis.json",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/codex-reports/codex-analysis.json",
+      "type": "codex-json",
+      "size": 3159,
+      "mtime": "2025-11-29T15:14:14.388Z"
+    }
+  ],
+  "systems": [
+    {
+      "id": "sys:health-monitor",
+      "name": "health-monitor",
+      "label": "[SYSTEM:MONITORING] health-monitor",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/monorepo-health-monitor.mjs",
+      "type": "monitoring",
+      "category": "health"
+    },
+    {
+      "id": "sys:improvement-experiment",
+      "name": "improvement-experiment",
+      "label": "[SYSTEM:AUTOMATION] improvement-experiment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/run-improvement-experiment.mjs",
+      "type": "automation",
+      "category": "workflow"
+    },
+    {
+      "id": "sys:fusionkink-integrator",
+      "name": "fusionkink-integrator",
+      "label": "[SYSTEM:INTEGRATION] fusionkink-integrator",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/fusionkink-integrator.mjs",
+      "type": "integration",
+      "category": "connectivity"
+    },
+    {
+      "id": "sys:system-connector",
+      "name": "system-connector",
+      "label": "[SYSTEM:INTEGRATION] system-connector",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/system-connector.mjs",
+      "type": "integration",
+      "category": "connectivity"
+    },
+    {
+      "id": "sys:error-fixer",
+      "name": "error-fixer",
+      "label": "[SYSTEM:QUALITY] error-fixer",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/comprehensive-error-fixer.mjs",
+      "type": "quality",
+      "category": "development"
+    },
+    {
+      "id": "sys:security-audit",
+      "name": "security-audit",
+      "label": "[SYSTEM:SECURITY] security-audit",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/security-audit.mjs",
+      "type": "security",
+      "category": "safety"
+    }
+  ],
+  "labels": [
+    {
+      "id": "pkg:art-engine",
+      "type": "package",
+      "label": "[PACKAGE] @cathedral/art-engine-core",
+      "item": {
+        "id": "pkg:art-engine",
+        "name": "@cathedral/art-engine-core",
+        "label": "[PACKAGE] @cathedral/art-engine-core",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-engine-core",
+        "packageName": "@cathedral/art-engine-core",
+        "version": "1.0.0",
+        "description": "Art Engine - Sacred Geometry & Visual Creation for Cathedral",
+        "type": "engine"
+      }
+    },
+    {
+      "id": "pkg:art-standards",
+      "type": "package",
+      "label": "[PACKAGE] @cathedral/art-standards-core",
+      "item": {
+        "id": "pkg:art-standards",
+        "name": "@cathedral/art-standards-core",
+        "label": "[PACKAGE] @cathedral/art-standards-core",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-standards-core",
+        "packageName": "@cathedral/art-standards-core",
+        "version": "1.0.0",
+        "description": "Art Standards - Museum-Grade Quality & Sacred Geometry for Cathedral",
+        "type": "core"
+      }
+    },
+    {
+      "id": "pkg:debug-system",
+      "type": "package",
+      "label": "[PACKAGE] @cathedral/debug-system-core",
+      "item": {
+        "id": "pkg:debug-system",
+        "name": "@cathedral/debug-system-core",
+        "label": "[PACKAGE] @cathedral/debug-system-core",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/debug-system-core",
+        "packageName": "@cathedral/debug-system-core",
+        "version": "1.0.0",
+        "description": "Enterprise Debug System - Comprehensive error tracking and diagnostics for Cathedral ecosystem",
+        "type": "core"
+      }
+    },
+    {
+      "id": "pkg:game-design",
+      "type": "package",
+      "label": "[PACKAGE] @cathedral/game-design-core",
+      "item": {
+        "id": "pkg:game-design",
+        "name": "@cathedral/game-design-core",
+        "label": "[PACKAGE] @cathedral/game-design-core",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core",
+        "packageName": "@cathedral/game-design-core",
+        "version": "1.0.0",
+        "description": "Game Design Engine - Interactive Experiences & RPG Mechanics for Cathedral",
+        "type": "core"
+      }
+    },
+    {
+      "id": "pkg:health-map",
+      "type": "package",
+      "label": "[PACKAGE] @cathedral/health-map-core",
+      "item": {
+        "id": "pkg:health-map",
+        "name": "@cathedral/health-map-core",
+        "label": "[PACKAGE] @cathedral/health-map-core",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/health-map-core",
+        "packageName": "@cathedral/health-map-core",
+        "version": "1.0.0",
+        "description": "Enterprise Health Map System - Comprehensive catalog and health monitoring for Cathedral ecosystem",
+        "type": "core"
+      }
+    },
+    {
+      "id": "pkg:music-engine",
+      "type": "package",
+      "label": "[PACKAGE] @cathedral/music-engine-core",
+      "item": {
+        "id": "pkg:music-engine",
+        "name": "@cathedral/music-engine-core",
+        "label": "[PACKAGE] @cathedral/music-engine-core",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/music-engine-core",
+        "packageName": "@cathedral/music-engine-core",
+        "version": "1.0.0",
+        "description": "Music Engine - Sacred Frequencies & Harmonic Synthesis for Cathedral",
+        "type": "engine"
+      }
+    },
+    {
+      "id": "pkg:science-engine",
+      "type": "package",
+      "label": "[PACKAGE] @cathedral/science-engine-core",
+      "item": {
+        "id": "pkg:science-engine",
+        "name": "@cathedral/science-engine-core",
+        "label": "[PACKAGE] @cathedral/science-engine-core",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/science-engine-core",
+        "packageName": "@cathedral/science-engine-core",
+        "version": "1.0.0",
+        "description": "Science Engine - Empirical Research & Experimentation for Cathedral",
+        "type": "engine"
+      }
+    },
+    {
+      "id": "pkg:tesseract-bridge-hub",
+      "type": "package",
+      "label": "[PACKAGE] @cathedral/tesseract-bridge-hub",
+      "item": {
+        "id": "pkg:tesseract-bridge-hub",
+        "name": "@cathedral/tesseract-bridge-hub",
+        "label": "[PACKAGE] @cathedral/tesseract-bridge-hub",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-hub",
+        "packageName": "@cathedral/tesseract-bridge-hub",
+        "version": "1.0.0",
+        "description": "Tesseract Bridge Hub - Central orchestration system for all Cathedral systems",
+        "type": "bridge"
+      }
+    },
+    {
+      "id": "pkg:unified-codex",
+      "type": "package",
+      "label": "[PACKAGE] @cathedral/unified-codex-core",
+      "item": {
+        "id": "pkg:unified-codex",
+        "name": "@cathedral/unified-codex-core",
+        "label": "[PACKAGE] @cathedral/unified-codex-core",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-core",
+        "packageName": "@cathedral/unified-codex-core",
+        "version": "1.0.0",
+        "description": "Unified Codex Engine - Mirrors all engines with mode transitions (Art → Music → Game → Design → Science → Mathematics)",
+        "type": "core"
+      }
+    },
+    {
+      "id": "codex:1764354828236",
+      "type": "codex",
+      "label": "[CODEX] codex-1764354828236.json",
+      "item": {
+        "id": "codex:1764354828236",
+        "name": "codex-1764354828236.json",
+        "label": "[CODEX] codex-1764354828236.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764354828236.json",
+        "type": "codex-json",
+        "size": 6844,
+        "mtime": "2025-11-28T18:33:48.238Z"
+      }
+    },
+    {
+      "id": "codex:1764364804935",
+      "type": "codex",
+      "label": "[CODEX] codex-1764364804935.json",
+      "item": {
+        "id": "codex:1764364804935",
+        "name": "codex-1764364804935.json",
+        "label": "[CODEX] codex-1764364804935.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764364804935.json",
+        "type": "codex-json",
+        "size": 7483,
+        "mtime": "2025-11-28T21:20:04.938Z"
+      }
+    },
+    {
+      "id": "codex:1764364862053",
+      "type": "codex",
+      "label": "[CODEX] codex-1764364862053.json",
+      "item": {
+        "id": "codex:1764364862053",
+        "name": "codex-1764364862053.json",
+        "label": "[CODEX] codex-1764364862053.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764364862053.json",
+        "type": "codex-json",
+        "size": 7201,
+        "mtime": "2025-11-28T21:21:02.054Z"
+      }
+    },
+    {
+      "id": "codex:1764371234429",
+      "type": "codex",
+      "label": "[CODEX] codex-1764371234429.json",
+      "item": {
+        "id": "codex:1764371234429",
+        "name": "codex-1764371234429.json",
+        "label": "[CODEX] codex-1764371234429.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764371234429.json",
+        "type": "codex-json",
+        "size": 7255,
+        "mtime": "2025-11-28T23:07:14.431Z"
+      }
+    },
+    {
+      "id": "codex:1764371547395",
+      "type": "codex",
+      "label": "[CODEX] codex-1764371547395.json",
+      "item": {
+        "id": "codex:1764371547395",
+        "name": "codex-1764371547395.json",
+        "label": "[CODEX] codex-1764371547395.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764371547395.json",
+        "type": "codex-json",
+        "size": 6026,
+        "mtime": "2025-11-28T23:12:27.395Z"
+      }
+    },
+    {
+      "id": "codex:1764371928745",
+      "type": "codex",
+      "label": "[CODEX] codex-1764371928745.json",
+      "item": {
+        "id": "codex:1764371928745",
+        "name": "codex-1764371928745.json",
+        "label": "[CODEX] codex-1764371928745.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764371928745.json",
+        "type": "codex-json",
+        "size": 5936,
+        "mtime": "2025-11-28T23:18:48.746Z"
+      }
+    },
+    {
+      "id": "codex:1764372274417",
+      "type": "codex",
+      "label": "[CODEX] codex-1764372274417.json",
+      "item": {
+        "id": "codex:1764372274417",
+        "name": "codex-1764372274417.json",
+        "label": "[CODEX] codex-1764372274417.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764372274417.json",
+        "type": "codex-json",
+        "size": 7327,
+        "mtime": "2025-11-28T23:24:34.418Z"
+      }
+    },
+    {
+      "id": "codex:1764372622579",
+      "type": "codex",
+      "label": "[CODEX] codex-1764372622579.json",
+      "item": {
+        "id": "codex:1764372622579",
+        "name": "codex-1764372622579.json",
+        "label": "[CODEX] codex-1764372622579.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764372622579.json",
+        "type": "codex-json",
+        "size": 7110,
+        "mtime": "2025-11-28T23:30:22.580Z"
+      }
+    },
+    {
+      "id": "codex:1764372938354",
+      "type": "codex",
+      "label": "[CODEX] codex-1764372938354.json",
+      "item": {
+        "id": "codex:1764372938354",
+        "name": "codex-1764372938354.json",
+        "label": "[CODEX] codex-1764372938354.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764372938354.json",
+        "type": "codex-json",
+        "size": 7205,
+        "mtime": "2025-11-28T23:35:38.355Z"
+      }
+    },
+    {
+      "id": "codex:1764373243176",
+      "type": "codex",
+      "label": "[CODEX] codex-1764373243176.json",
+      "item": {
+        "id": "codex:1764373243176",
+        "name": "codex-1764373243176.json",
+        "label": "[CODEX] codex-1764373243176.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764373243176.json",
+        "type": "codex-json",
+        "size": 7663,
+        "mtime": "2025-11-28T23:40:43.177Z"
+      }
+    },
+    {
+      "id": "codex:1764373553811",
+      "type": "codex",
+      "label": "[CODEX] codex-1764373553811.json",
+      "item": {
+        "id": "codex:1764373553811",
+        "name": "codex-1764373553811.json",
+        "label": "[CODEX] codex-1764373553811.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764373553811.json",
+        "type": "codex-json",
+        "size": 7184,
+        "mtime": "2025-11-28T23:45:53.812Z"
+      }
+    },
+    {
+      "id": "codex:1764373867522",
+      "type": "codex",
+      "label": "[CODEX] codex-1764373867522.json",
+      "item": {
+        "id": "codex:1764373867522",
+        "name": "codex-1764373867522.json",
+        "label": "[CODEX] codex-1764373867522.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764373867522.json",
+        "type": "codex-json",
+        "size": 7559,
+        "mtime": "2025-11-28T23:51:07.523Z"
+      }
+    },
+    {
+      "id": "codex:1764374176272",
+      "type": "codex",
+      "label": "[CODEX] codex-1764374176272.json",
+      "item": {
+        "id": "codex:1764374176272",
+        "name": "codex-1764374176272.json",
+        "label": "[CODEX] codex-1764374176272.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764374176272.json",
+        "type": "codex-json",
+        "size": 7505,
+        "mtime": "2025-11-28T23:56:16.273Z"
+      }
+    },
+    {
+      "id": "codex:1764374487863",
+      "type": "codex",
+      "label": "[CODEX] codex-1764374487863.json",
+      "item": {
+        "id": "codex:1764374487863",
+        "name": "codex-1764374487863.json",
+        "label": "[CODEX] codex-1764374487863.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764374487863.json",
+        "type": "codex-json",
+        "size": 7117,
+        "mtime": "2025-11-29T00:01:27.863Z"
+      }
+    },
+    {
+      "id": "codex:1764374788620",
+      "type": "codex",
+      "label": "[CODEX] codex-1764374788620.json",
+      "item": {
+        "id": "codex:1764374788620",
+        "name": "codex-1764374788620.json",
+        "label": "[CODEX] codex-1764374788620.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764374788620.json",
+        "type": "codex-json",
+        "size": 7203,
+        "mtime": "2025-11-29T00:06:28.622Z"
+      }
+    },
+    {
+      "id": "codex:1764375095229",
+      "type": "codex",
+      "label": "[CODEX] codex-1764375095229.json",
+      "item": {
+        "id": "codex:1764375095229",
+        "name": "codex-1764375095229.json",
+        "label": "[CODEX] codex-1764375095229.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764375095229.json",
+        "type": "codex-json",
+        "size": 6858,
+        "mtime": "2025-11-29T00:11:35.230Z"
+      }
+    },
+    {
+      "id": "codex:1764375398852",
+      "type": "codex",
+      "label": "[CODEX] codex-1764375398852.json",
+      "item": {
+        "id": "codex:1764375398852",
+        "name": "codex-1764375398852.json",
+        "label": "[CODEX] codex-1764375398852.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764375398852.json",
+        "type": "codex-json",
+        "size": 7481,
+        "mtime": "2025-11-29T00:16:38.852Z"
+      }
+    },
+    {
+      "id": "codex:1764375705915",
+      "type": "codex",
+      "label": "[CODEX] codex-1764375705915.json",
+      "item": {
+        "id": "codex:1764375705915",
+        "name": "codex-1764375705915.json",
+        "label": "[CODEX] codex-1764375705915.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764375705915.json",
+        "type": "codex-json",
+        "size": 7611,
+        "mtime": "2025-11-29T00:21:45.916Z"
+      }
+    },
+    {
+      "id": "codex:1764376007097",
+      "type": "codex",
+      "label": "[CODEX] codex-1764376007097.json",
+      "item": {
+        "id": "codex:1764376007097",
+        "name": "codex-1764376007097.json",
+        "label": "[CODEX] codex-1764376007097.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764376007097.json",
+        "type": "codex-json",
+        "size": 7253,
+        "mtime": "2025-11-29T00:26:47.097Z"
+      }
+    },
+    {
+      "id": "codex:1764376313951",
+      "type": "codex",
+      "label": "[CODEX] codex-1764376313951.json",
+      "item": {
+        "id": "codex:1764376313951",
+        "name": "codex-1764376313951.json",
+        "label": "[CODEX] codex-1764376313951.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764376313951.json",
+        "type": "codex-json",
+        "size": 7350,
+        "mtime": "2025-11-29T00:31:53.952Z"
+      }
+    },
+    {
+      "id": "codex:1764376617097",
+      "type": "codex",
+      "label": "[CODEX] codex-1764376617097.json",
+      "item": {
+        "id": "codex:1764376617097",
+        "name": "codex-1764376617097.json",
+        "label": "[CODEX] codex-1764376617097.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764376617097.json",
+        "type": "codex-json",
+        "size": 7026,
+        "mtime": "2025-11-29T00:36:57.098Z"
+      }
+    },
+    {
+      "id": "codex:1764376921391",
+      "type": "codex",
+      "label": "[CODEX] codex-1764376921391.json",
+      "item": {
+        "id": "codex:1764376921391",
+        "name": "codex-1764376921391.json",
+        "label": "[CODEX] codex-1764376921391.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764376921391.json",
+        "type": "codex-json",
+        "size": 7416,
+        "mtime": "2025-11-29T00:42:01.392Z"
+      }
+    },
+    {
+      "id": "codex:1764377224077",
+      "type": "codex",
+      "label": "[CODEX] codex-1764377224077.json",
+      "item": {
+        "id": "codex:1764377224077",
+        "name": "codex-1764377224077.json",
+        "label": "[CODEX] codex-1764377224077.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764377224077.json",
+        "type": "codex-json",
+        "size": 7118,
+        "mtime": "2025-11-29T00:47:04.078Z"
+      }
+    },
+    {
+      "id": "codex:1764377538241",
+      "type": "codex",
+      "label": "[CODEX] codex-1764377538241.json",
+      "item": {
+        "id": "codex:1764377538241",
+        "name": "codex-1764377538241.json",
+        "label": "[CODEX] codex-1764377538241.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764377538241.json",
+        "type": "codex-json",
+        "size": 7416,
+        "mtime": "2025-11-29T00:52:18.242Z"
+      }
+    },
+    {
+      "id": "codex:1764377858502",
+      "type": "codex",
+      "label": "[CODEX] codex-1764377858502.json",
+      "item": {
+        "id": "codex:1764377858502",
+        "name": "codex-1764377858502.json",
+        "label": "[CODEX] codex-1764377858502.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764377858502.json",
+        "type": "codex-json",
+        "size": 7085,
+        "mtime": "2025-11-29T00:57:38.506Z"
+      }
+    },
+    {
+      "id": "codex:1764378638647",
+      "type": "codex",
+      "label": "[CODEX] codex-1764378638647.json",
+      "item": {
+        "id": "codex:1764378638647",
+        "name": "codex-1764378638647.json",
+        "label": "[CODEX] codex-1764378638647.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764378638647.json",
+        "type": "codex-json",
+        "size": 7268,
+        "mtime": "2025-11-29T01:10:38.648Z"
+      }
+    },
+    {
+      "id": "codex:1764379005118",
+      "type": "codex",
+      "label": "[CODEX] codex-1764379005118.json",
+      "item": {
+        "id": "codex:1764379005118",
+        "name": "codex-1764379005118.json",
+        "label": "[CODEX] codex-1764379005118.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764379005118.json",
+        "type": "codex-json",
+        "size": 7368,
+        "mtime": "2025-11-29T01:16:45.118Z"
+      }
+    },
+    {
+      "id": "codex:1764379314824",
+      "type": "codex",
+      "label": "[CODEX] codex-1764379314824.json",
+      "item": {
+        "id": "codex:1764379314824",
+        "name": "codex-1764379314824.json",
+        "label": "[CODEX] codex-1764379314824.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764379314824.json",
+        "type": "codex-json",
+        "size": 7466,
+        "mtime": "2025-11-29T01:21:54.825Z"
+      }
+    },
+    {
+      "id": "codex:1764379631105",
+      "type": "codex",
+      "label": "[CODEX] codex-1764379631105.json",
+      "item": {
+        "id": "codex:1764379631105",
+        "name": "codex-1764379631105.json",
+        "label": "[CODEX] codex-1764379631105.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764379631105.json",
+        "type": "codex-json",
+        "size": 7102,
+        "mtime": "2025-11-29T01:27:11.106Z"
+      }
+    },
+    {
+      "id": "codex:1764379945422",
+      "type": "codex",
+      "label": "[CODEX] codex-1764379945422.json",
+      "item": {
+        "id": "codex:1764379945422",
+        "name": "codex-1764379945422.json",
+        "label": "[CODEX] codex-1764379945422.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764379945422.json",
+        "type": "codex-json",
+        "size": 7052,
+        "mtime": "2025-11-29T01:32:25.424Z"
+      }
+    },
+    {
+      "id": "codex:1764380252445",
+      "type": "codex",
+      "label": "[CODEX] codex-1764380252445.json",
+      "item": {
+        "id": "codex:1764380252445",
+        "name": "codex-1764380252445.json",
+        "label": "[CODEX] codex-1764380252445.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764380252445.json",
+        "type": "codex-json",
+        "size": 7424,
+        "mtime": "2025-11-29T01:37:32.446Z"
+      }
+    },
+    {
+      "id": "codex:1764380564473",
+      "type": "codex",
+      "label": "[CODEX] codex-1764380564473.json",
+      "item": {
+        "id": "codex:1764380564473",
+        "name": "codex-1764380564473.json",
+        "label": "[CODEX] codex-1764380564473.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764380564473.json",
+        "type": "codex-json",
+        "size": 7430,
+        "mtime": "2025-11-29T01:42:44.473Z"
+      }
+    },
+    {
+      "id": "codex:1764380873710",
+      "type": "codex",
+      "label": "[CODEX] codex-1764380873710.json",
+      "item": {
+        "id": "codex:1764380873710",
+        "name": "codex-1764380873710.json",
+        "label": "[CODEX] codex-1764380873710.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764380873710.json",
+        "type": "codex-json",
+        "size": 7495,
+        "mtime": "2025-11-29T01:47:53.711Z"
+      }
+    },
+    {
+      "id": "codex:1764381225237",
+      "type": "codex",
+      "label": "[CODEX] codex-1764381225237.json",
+      "item": {
+        "id": "codex:1764381225237",
+        "name": "codex-1764381225237.json",
+        "label": "[CODEX] codex-1764381225237.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764381225237.json",
+        "type": "codex-json",
+        "size": 7852,
+        "mtime": "2025-11-29T01:53:45.238Z"
+      }
+    },
+    {
+      "id": "codex:1764381400101",
+      "type": "codex",
+      "label": "[CODEX] codex-1764381400101.json",
+      "item": {
+        "id": "codex:1764381400101",
+        "name": "codex-1764381400101.json",
+        "label": "[CODEX] codex-1764381400101.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764381400101.json",
+        "type": "codex-json",
+        "size": 7447,
+        "mtime": "2025-11-29T01:56:40.102Z"
+      }
+    },
+    {
+      "id": "codex:1764381583060",
+      "type": "codex",
+      "label": "[CODEX] codex-1764381583060.json",
+      "item": {
+        "id": "codex:1764381583060",
+        "name": "codex-1764381583060.json",
+        "label": "[CODEX] codex-1764381583060.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764381583060.json",
+        "type": "codex-json",
+        "size": 7187,
+        "mtime": "2025-11-29T01:59:43.061Z"
+      }
+    },
+    {
+      "id": "codex:1764381747528",
+      "type": "codex",
+      "label": "[CODEX] codex-1764381747528.json",
+      "item": {
+        "id": "codex:1764381747528",
+        "name": "codex-1764381747528.json",
+        "label": "[CODEX] codex-1764381747528.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764381747528.json",
+        "type": "codex-json",
+        "size": 7367,
+        "mtime": "2025-11-29T02:02:27.530Z"
+      }
+    },
+    {
+      "id": "codex:1764381998918",
+      "type": "codex",
+      "label": "[CODEX] codex-1764381998918.json",
+      "item": {
+        "id": "codex:1764381998918",
+        "name": "codex-1764381998918.json",
+        "label": "[CODEX] codex-1764381998918.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764381998918.json",
+        "type": "codex-json",
+        "size": 7121,
+        "mtime": "2025-11-29T02:06:38.919Z"
+      }
+    },
+    {
+      "id": "codex:1764382122241",
+      "type": "codex",
+      "label": "[CODEX] codex-1764382122241.json",
+      "item": {
+        "id": "codex:1764382122241",
+        "name": "codex-1764382122241.json",
+        "label": "[CODEX] codex-1764382122241.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764382122241.json",
+        "type": "codex-json",
+        "size": 7148,
+        "mtime": "2025-11-29T02:08:42.242Z"
+      }
+    },
+    {
+      "id": "codex:1764382362130",
+      "type": "codex",
+      "label": "[CODEX] codex-1764382362130.json",
+      "item": {
+        "id": "codex:1764382362130",
+        "name": "codex-1764382362130.json",
+        "label": "[CODEX] codex-1764382362130.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764382362130.json",
+        "type": "codex-json",
+        "size": 6998,
+        "mtime": "2025-11-29T02:12:42.131Z"
+      }
+    },
+    {
+      "id": "codex:1764382490914",
+      "type": "codex",
+      "label": "[CODEX] codex-1764382490914.json",
+      "item": {
+        "id": "codex:1764382490914",
+        "name": "codex-1764382490914.json",
+        "label": "[CODEX] codex-1764382490914.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764382490914.json",
+        "type": "codex-json",
+        "size": 7123,
+        "mtime": "2025-11-29T02:14:50.914Z"
+      }
+    },
+    {
+      "id": "codex:1764382799145",
+      "type": "codex",
+      "label": "[CODEX] codex-1764382799145.json",
+      "item": {
+        "id": "codex:1764382799145",
+        "name": "codex-1764382799145.json",
+        "label": "[CODEX] codex-1764382799145.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764382799145.json",
+        "type": "codex-json",
+        "size": 7430,
+        "mtime": "2025-11-29T02:19:59.146Z"
+      }
+    },
+    {
+      "id": "codex:1764383033635",
+      "type": "codex",
+      "label": "[CODEX] codex-1764383033635.json",
+      "item": {
+        "id": "codex:1764383033635",
+        "name": "codex-1764383033635.json",
+        "label": "[CODEX] codex-1764383033635.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764383033635.json",
+        "type": "codex-json",
+        "size": 7056,
+        "mtime": "2025-11-29T02:23:53.636Z"
+      }
+    },
+    {
+      "id": "codex:1764383267151",
+      "type": "codex",
+      "label": "[CODEX] codex-1764383267151.json",
+      "item": {
+        "id": "codex:1764383267151",
+        "name": "codex-1764383267151.json",
+        "label": "[CODEX] codex-1764383267151.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764383267151.json",
+        "type": "codex-json",
+        "size": 7456,
+        "mtime": "2025-11-29T02:27:47.153Z"
+      }
+    },
+    {
+      "id": "codex:1764383317529",
+      "type": "codex",
+      "label": "[CODEX] codex-1764383317529.json",
+      "item": {
+        "id": "codex:1764383317529",
+        "name": "codex-1764383317529.json",
+        "label": "[CODEX] codex-1764383317529.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764383317529.json",
+        "type": "codex-json",
+        "size": 7139,
+        "mtime": "2025-11-29T02:28:37.530Z"
+      }
+    },
+    {
+      "id": "codex:1764383579406",
+      "type": "codex",
+      "label": "[CODEX] codex-1764383579406.json",
+      "item": {
+        "id": "codex:1764383579406",
+        "name": "codex-1764383579406.json",
+        "label": "[CODEX] codex-1764383579406.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764383579406.json",
+        "type": "codex-json",
+        "size": 5822,
+        "mtime": "2025-11-29T02:32:59.407Z"
+      }
+    },
+    {
+      "id": "codex:1764383781487",
+      "type": "codex",
+      "label": "[CODEX] codex-1764383781487.json",
+      "item": {
+        "id": "codex:1764383781487",
+        "name": "codex-1764383781487.json",
+        "label": "[CODEX] codex-1764383781487.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764383781487.json",
+        "type": "codex-json",
+        "size": 7187,
+        "mtime": "2025-11-29T02:36:21.491Z"
+      }
+    },
+    {
+      "id": "codex:1764383885503",
+      "type": "codex",
+      "label": "[CODEX] codex-1764383885503.json",
+      "item": {
+        "id": "codex:1764383885503",
+        "name": "codex-1764383885503.json",
+        "label": "[CODEX] codex-1764383885503.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764383885503.json",
+        "type": "codex-json",
+        "size": 7395,
+        "mtime": "2025-11-29T02:38:05.504Z"
+      }
+    },
+    {
+      "id": "codex:1764384189136",
+      "type": "codex",
+      "label": "[CODEX] codex-1764384189136.json",
+      "item": {
+        "id": "codex:1764384189136",
+        "name": "codex-1764384189136.json",
+        "label": "[CODEX] codex-1764384189136.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764384189136.json",
+        "type": "codex-json",
+        "size": 7291,
+        "mtime": "2025-11-29T02:43:09.137Z"
+      }
+    },
+    {
+      "id": "codex:1764384372307",
+      "type": "codex",
+      "label": "[CODEX] codex-1764384372307.json",
+      "item": {
+        "id": "codex:1764384372307",
+        "name": "codex-1764384372307.json",
+        "label": "[CODEX] codex-1764384372307.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764384372307.json",
+        "type": "codex-json",
+        "size": 7569,
+        "mtime": "2025-11-29T02:46:12.308Z"
+      }
+    },
+    {
+      "id": "codex:1764384572819",
+      "type": "codex",
+      "label": "[CODEX] codex-1764384572819.json",
+      "item": {
+        "id": "codex:1764384572819",
+        "name": "codex-1764384572819.json",
+        "label": "[CODEX] codex-1764384572819.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764384572819.json",
+        "type": "codex-json",
+        "size": 7398,
+        "mtime": "2025-11-29T02:49:32.820Z"
+      }
+    },
+    {
+      "id": "codex:1764384902339",
+      "type": "codex",
+      "label": "[CODEX] codex-1764384902339.json",
+      "item": {
+        "id": "codex:1764384902339",
+        "name": "codex-1764384902339.json",
+        "label": "[CODEX] codex-1764384902339.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764384902339.json",
+        "type": "codex-json",
+        "size": 7513,
+        "mtime": "2025-11-29T02:55:02.340Z"
+      }
+    },
+    {
+      "id": "codex:1764385075015",
+      "type": "codex",
+      "label": "[CODEX] codex-1764385075015.json",
+      "item": {
+        "id": "codex:1764385075015",
+        "name": "codex-1764385075015.json",
+        "label": "[CODEX] codex-1764385075015.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764385075015.json",
+        "type": "codex-json",
+        "size": 7759,
+        "mtime": "2025-11-29T02:57:55.016Z"
+      }
+    },
+    {
+      "id": "codex:1764385440071",
+      "type": "codex",
+      "label": "[CODEX] codex-1764385440071.json",
+      "item": {
+        "id": "codex:1764385440071",
+        "name": "codex-1764385440071.json",
+        "label": "[CODEX] codex-1764385440071.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764385440071.json",
+        "type": "codex-json",
+        "size": 7066,
+        "mtime": "2025-11-29T03:04:00.072Z"
+      }
+    },
+    {
+      "id": "codex:1764385647991",
+      "type": "codex",
+      "label": "[CODEX] codex-1764385647991.json",
+      "item": {
+        "id": "codex:1764385647991",
+        "name": "codex-1764385647991.json",
+        "label": "[CODEX] codex-1764385647991.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764385647991.json",
+        "type": "codex-json",
+        "size": 7365,
+        "mtime": "2025-11-29T03:07:27.992Z"
+      }
+    },
+    {
+      "id": "codex:1764385870407",
+      "type": "codex",
+      "label": "[CODEX] codex-1764385870407.json",
+      "item": {
+        "id": "codex:1764385870407",
+        "name": "codex-1764385870407.json",
+        "label": "[CODEX] codex-1764385870407.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764385870407.json",
+        "type": "codex-json",
+        "size": 7327,
+        "mtime": "2025-11-29T03:11:10.408Z"
+      }
+    },
+    {
+      "id": "codex:1764386008945",
+      "type": "codex",
+      "label": "[CODEX] codex-1764386008945.json",
+      "item": {
+        "id": "codex:1764386008945",
+        "name": "codex-1764386008945.json",
+        "label": "[CODEX] codex-1764386008945.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764386008945.json",
+        "type": "codex-json",
+        "size": 7251,
+        "mtime": "2025-11-29T03:13:28.946Z"
+      }
+    },
+    {
+      "id": "codex:1764386571217",
+      "type": "codex",
+      "label": "[CODEX] codex-1764386571217.json",
+      "item": {
+        "id": "codex:1764386571217",
+        "name": "codex-1764386571217.json",
+        "label": "[CODEX] codex-1764386571217.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764386571217.json",
+        "type": "codex-json",
+        "size": 7577,
+        "mtime": "2025-11-29T03:22:51.218Z"
+      }
+    },
+    {
+      "id": "codex:1764386747265",
+      "type": "codex",
+      "label": "[CODEX] codex-1764386747265.json",
+      "item": {
+        "id": "codex:1764386747265",
+        "name": "codex-1764386747265.json",
+        "label": "[CODEX] codex-1764386747265.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764386747265.json",
+        "type": "codex-json",
+        "size": 6047,
+        "mtime": "2025-11-29T03:25:47.267Z"
+      }
+    },
+    {
+      "id": "codex:1764387005122",
+      "type": "codex",
+      "label": "[CODEX] codex-1764387005122.json",
+      "item": {
+        "id": "codex:1764387005122",
+        "name": "codex-1764387005122.json",
+        "label": "[CODEX] codex-1764387005122.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764387005122.json",
+        "type": "codex-json",
+        "size": 7469,
+        "mtime": "2025-11-29T03:30:05.123Z"
+      }
+    },
+    {
+      "id": "codex:1764387296475",
+      "type": "codex",
+      "label": "[CODEX] codex-1764387296475.json",
+      "item": {
+        "id": "codex:1764387296475",
+        "name": "codex-1764387296475.json",
+        "label": "[CODEX] codex-1764387296475.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764387296475.json",
+        "type": "codex-json",
+        "size": 7174,
+        "mtime": "2025-11-29T03:34:56.476Z"
+      }
+    },
+    {
+      "id": "codex:1764387451858",
+      "type": "codex",
+      "label": "[CODEX] codex-1764387451858.json",
+      "item": {
+        "id": "codex:1764387451858",
+        "name": "codex-1764387451858.json",
+        "label": "[CODEX] codex-1764387451858.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764387451858.json",
+        "type": "codex-json",
+        "size": 7183,
+        "mtime": "2025-11-29T03:37:31.859Z"
+      }
+    },
+    {
+      "id": "codex:1764388012833",
+      "type": "codex",
+      "label": "[CODEX] codex-1764388012833.json",
+      "item": {
+        "id": "codex:1764388012833",
+        "name": "codex-1764388012833.json",
+        "label": "[CODEX] codex-1764388012833.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764388012833.json",
+        "type": "codex-json",
+        "size": 7604,
+        "mtime": "2025-11-29T03:46:52.834Z"
+      }
+    },
+    {
+      "id": "codex:1764388685796",
+      "type": "codex",
+      "label": "[CODEX] codex-1764388685796.json",
+      "item": {
+        "id": "codex:1764388685796",
+        "name": "codex-1764388685796.json",
+        "label": "[CODEX] codex-1764388685796.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764388685796.json",
+        "type": "codex-json",
+        "size": 7230,
+        "mtime": "2025-11-29T03:58:05.797Z"
+      }
+    },
+    {
+      "id": "codex:1764388934088",
+      "type": "codex",
+      "label": "[CODEX] codex-1764388934088.json",
+      "item": {
+        "id": "codex:1764388934088",
+        "name": "codex-1764388934088.json",
+        "label": "[CODEX] codex-1764388934088.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764388934088.json",
+        "type": "codex-json",
+        "size": 7382,
+        "mtime": "2025-11-29T04:02:14.090Z"
+      }
+    },
+    {
+      "id": "codex:1764388958697",
+      "type": "codex",
+      "label": "[CODEX] codex-1764388958697.json",
+      "item": {
+        "id": "codex:1764388958697",
+        "name": "codex-1764388958697.json",
+        "label": "[CODEX] codex-1764388958697.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764388958697.json",
+        "type": "codex-json",
+        "size": 7150,
+        "mtime": "2025-11-29T04:02:38.698Z"
+      }
+    },
+    {
+      "id": "codex:1764389536138",
+      "type": "codex",
+      "label": "[CODEX] codex-1764389536138.json",
+      "item": {
+        "id": "codex:1764389536138",
+        "name": "codex-1764389536138.json",
+        "label": "[CODEX] codex-1764389536138.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764389536138.json",
+        "type": "codex-json",
+        "size": 7544,
+        "mtime": "2025-11-29T04:12:16.139Z"
+      }
+    },
+    {
+      "id": "codex:1764389622496",
+      "type": "codex",
+      "label": "[CODEX] codex-1764389622496.json",
+      "item": {
+        "id": "codex:1764389622496",
+        "name": "codex-1764389622496.json",
+        "label": "[CODEX] codex-1764389622496.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764389622496.json",
+        "type": "codex-json",
+        "size": 7076,
+        "mtime": "2025-11-29T04:13:42.497Z"
+      }
+    },
+    {
+      "id": "codex:1764389661850",
+      "type": "codex",
+      "label": "[CODEX] codex-1764389661850.json",
+      "item": {
+        "id": "codex:1764389661850",
+        "name": "codex-1764389661850.json",
+        "label": "[CODEX] codex-1764389661850.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764389661850.json",
+        "type": "codex-json",
+        "size": 7435,
+        "mtime": "2025-11-29T04:14:21.851Z"
+      }
+    },
+    {
+      "id": "codex:1764390333924",
+      "type": "codex",
+      "label": "[CODEX] codex-1764390333924.json",
+      "item": {
+        "id": "codex:1764390333924",
+        "name": "codex-1764390333924.json",
+        "label": "[CODEX] codex-1764390333924.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764390333924.json",
+        "type": "codex-json",
+        "size": 7282,
+        "mtime": "2025-11-29T04:25:33.925Z"
+      }
+    },
+    {
+      "id": "codex:1764390463967",
+      "type": "codex",
+      "label": "[CODEX] codex-1764390463967.json",
+      "item": {
+        "id": "codex:1764390463967",
+        "name": "codex-1764390463967.json",
+        "label": "[CODEX] codex-1764390463967.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764390463967.json",
+        "type": "codex-json",
+        "size": 7515,
+        "mtime": "2025-11-29T04:27:43.969Z"
+      }
+    },
+    {
+      "id": "codex:1764390793093",
+      "type": "codex",
+      "label": "[CODEX] codex-1764390793093.json",
+      "item": {
+        "id": "codex:1764390793093",
+        "name": "codex-1764390793093.json",
+        "label": "[CODEX] codex-1764390793093.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764390793093.json",
+        "type": "codex-json",
+        "size": 7550,
+        "mtime": "2025-11-29T04:33:13.094Z"
+      }
+    },
+    {
+      "id": "codex:1764391103715",
+      "type": "codex",
+      "label": "[CODEX] codex-1764391103715.json",
+      "item": {
+        "id": "codex:1764391103715",
+        "name": "codex-1764391103715.json",
+        "label": "[CODEX] codex-1764391103715.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764391103715.json",
+        "type": "codex-json",
+        "size": 7034,
+        "mtime": "2025-11-29T04:38:23.716Z"
+      }
+    },
+    {
+      "id": "codex:1764391107559",
+      "type": "codex",
+      "label": "[CODEX] codex-1764391107559.json",
+      "item": {
+        "id": "codex:1764391107559",
+        "name": "codex-1764391107559.json",
+        "label": "[CODEX] codex-1764391107559.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764391107559.json",
+        "type": "codex-json",
+        "size": 7529,
+        "mtime": "2025-11-29T04:38:27.560Z"
+      }
+    },
+    {
+      "id": "codex:1764391366361",
+      "type": "codex",
+      "label": "[CODEX] codex-1764391366361.json",
+      "item": {
+        "id": "codex:1764391366361",
+        "name": "codex-1764391366361.json",
+        "label": "[CODEX] codex-1764391366361.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764391366361.json",
+        "type": "codex-json",
+        "size": 7284,
+        "mtime": "2025-11-29T04:42:46.362Z"
+      }
+    },
+    {
+      "id": "codex:1764391678374",
+      "type": "codex",
+      "label": "[CODEX] codex-1764391678374.json",
+      "item": {
+        "id": "codex:1764391678374",
+        "name": "codex-1764391678374.json",
+        "label": "[CODEX] codex-1764391678374.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764391678374.json",
+        "type": "codex-json",
+        "size": 7253,
+        "mtime": "2025-11-29T04:47:58.376Z"
+      }
+    },
+    {
+      "id": "codex:1764391700111",
+      "type": "codex",
+      "label": "[CODEX] codex-1764391700111.json",
+      "item": {
+        "id": "codex:1764391700111",
+        "name": "codex-1764391700111.json",
+        "label": "[CODEX] codex-1764391700111.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764391700111.json",
+        "type": "codex-json",
+        "size": 7235,
+        "mtime": "2025-11-29T04:48:20.112Z"
+      }
+    },
+    {
+      "id": "codex:1764391915096",
+      "type": "codex",
+      "label": "[CODEX] codex-1764391915096.json",
+      "item": {
+        "id": "codex:1764391915096",
+        "name": "codex-1764391915096.json",
+        "label": "[CODEX] codex-1764391915096.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764391915096.json",
+        "type": "codex-json",
+        "size": 7260,
+        "mtime": "2025-11-29T04:51:55.097Z"
+      }
+    },
+    {
+      "id": "codex:1764392221188",
+      "type": "codex",
+      "label": "[CODEX] codex-1764392221188.json",
+      "item": {
+        "id": "codex:1764392221188",
+        "name": "codex-1764392221188.json",
+        "label": "[CODEX] codex-1764392221188.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764392221188.json",
+        "type": "codex-json",
+        "size": 5986,
+        "mtime": "2025-11-29T04:57:01.189Z"
+      }
+    },
+    {
+      "id": "codex:1764392266434",
+      "type": "codex",
+      "label": "[CODEX] codex-1764392266434.json",
+      "item": {
+        "id": "codex:1764392266434",
+        "name": "codex-1764392266434.json",
+        "label": "[CODEX] codex-1764392266434.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764392266434.json",
+        "type": "codex-json",
+        "size": 7475,
+        "mtime": "2025-11-29T04:57:46.435Z"
+      }
+    },
+    {
+      "id": "codex:1764392497577",
+      "type": "codex",
+      "label": "[CODEX] codex-1764392497577.json",
+      "item": {
+        "id": "codex:1764392497577",
+        "name": "codex-1764392497577.json",
+        "label": "[CODEX] codex-1764392497577.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764392497577.json",
+        "type": "codex-json",
+        "size": 5968,
+        "mtime": "2025-11-29T05:01:37.579Z"
+      }
+    },
+    {
+      "id": "codex:1764392706293",
+      "type": "codex",
+      "label": "[CODEX] codex-1764392706293.json",
+      "item": {
+        "id": "codex:1764392706293",
+        "name": "codex-1764392706293.json",
+        "label": "[CODEX] codex-1764392706293.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764392706293.json",
+        "type": "codex-json",
+        "size": 6048,
+        "mtime": "2025-11-29T05:05:06.294Z"
+      }
+    },
+    {
+      "id": "codex:1764392826139",
+      "type": "codex",
+      "label": "[CODEX] codex-1764392826139.json",
+      "item": {
+        "id": "codex:1764392826139",
+        "name": "codex-1764392826139.json",
+        "label": "[CODEX] codex-1764392826139.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764392826139.json",
+        "type": "codex-json",
+        "size": 7012,
+        "mtime": "2025-11-29T05:07:06.140Z"
+      }
+    },
+    {
+      "id": "codex:1764392967616",
+      "type": "codex",
+      "label": "[CODEX] codex-1764392967616.json",
+      "item": {
+        "id": "codex:1764392967616",
+        "name": "codex-1764392967616.json",
+        "label": "[CODEX] codex-1764392967616.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764392967616.json",
+        "type": "codex-json",
+        "size": 7249,
+        "mtime": "2025-11-29T05:09:27.617Z"
+      }
+    },
+    {
+      "id": "codex:1764393203478",
+      "type": "codex",
+      "label": "[CODEX] codex-1764393203478.json",
+      "item": {
+        "id": "codex:1764393203478",
+        "name": "codex-1764393203478.json",
+        "label": "[CODEX] codex-1764393203478.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764393203478.json",
+        "type": "codex-json",
+        "size": 7040,
+        "mtime": "2025-11-29T05:13:23.479Z"
+      }
+    },
+    {
+      "id": "codex:1764393237879",
+      "type": "codex",
+      "label": "[CODEX] codex-1764393237879.json",
+      "item": {
+        "id": "codex:1764393237879",
+        "name": "codex-1764393237879.json",
+        "label": "[CODEX] codex-1764393237879.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764393237879.json",
+        "type": "codex-json",
+        "size": 6944,
+        "mtime": "2025-11-29T05:13:57.880Z"
+      }
+    },
+    {
+      "id": "codex:1764393352883",
+      "type": "codex",
+      "label": "[CODEX] codex-1764393352883.json",
+      "item": {
+        "id": "codex:1764393352883",
+        "name": "codex-1764393352883.json",
+        "label": "[CODEX] codex-1764393352883.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764393352883.json",
+        "type": "codex-json",
+        "size": 7332,
+        "mtime": "2025-11-29T05:15:52.884Z"
+      }
+    },
+    {
+      "id": "codex:1764393659479",
+      "type": "codex",
+      "label": "[CODEX] codex-1764393659479.json",
+      "item": {
+        "id": "codex:1764393659479",
+        "name": "codex-1764393659479.json",
+        "label": "[CODEX] codex-1764393659479.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764393659479.json",
+        "type": "codex-json",
+        "size": 7408,
+        "mtime": "2025-11-29T05:20:59.480Z"
+      }
+    },
+    {
+      "id": "codex:1764393682175",
+      "type": "codex",
+      "label": "[CODEX] codex-1764393682175.json",
+      "item": {
+        "id": "codex:1764393682175",
+        "name": "codex-1764393682175.json",
+        "label": "[CODEX] codex-1764393682175.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/docs/codex-generated/codex-1764393682175.json",
+        "type": "codex-json",
+        "size": 6989,
+        "mtime": "2025-11-29T05:21:22.176Z"
+      }
+    },
+    {
+      "id": "codex:analysis",
+      "type": "codex",
+      "label": "[CODEX] codex-analysis.json",
+      "item": {
+        "id": "codex:analysis",
+        "name": "codex-analysis.json",
+        "label": "[CODEX] codex-analysis.json",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/codex-reports/codex-analysis.json",
+        "type": "codex-json",
+        "size": 3159,
+        "mtime": "2025-11-29T15:14:14.388Z"
+      }
+    },
+    {
+      "id": "sys:health-monitor",
+      "type": "system",
+      "label": "[SYSTEM:MONITORING] health-monitor",
+      "item": {
+        "id": "sys:health-monitor",
+        "name": "health-monitor",
+        "label": "[SYSTEM:MONITORING] health-monitor",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/monorepo-health-monitor.mjs",
+        "type": "monitoring",
+        "category": "health"
+      }
+    },
+    {
+      "id": "sys:improvement-experiment",
+      "type": "system",
+      "label": "[SYSTEM:AUTOMATION] improvement-experiment",
+      "item": {
+        "id": "sys:improvement-experiment",
+        "name": "improvement-experiment",
+        "label": "[SYSTEM:AUTOMATION] improvement-experiment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/run-improvement-experiment.mjs",
+        "type": "automation",
+        "category": "workflow"
+      }
+    },
+    {
+      "id": "sys:fusionkink-integrator",
+      "type": "system",
+      "label": "[SYSTEM:INTEGRATION] fusionkink-integrator",
+      "item": {
+        "id": "sys:fusionkink-integrator",
+        "name": "fusionkink-integrator",
+        "label": "[SYSTEM:INTEGRATION] fusionkink-integrator",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/fusionkink-integrator.mjs",
+        "type": "integration",
+        "category": "connectivity"
+      }
+    },
+    {
+      "id": "sys:system-connector",
+      "type": "system",
+      "label": "[SYSTEM:INTEGRATION] system-connector",
+      "item": {
+        "id": "sys:system-connector",
+        "name": "system-connector",
+        "label": "[SYSTEM:INTEGRATION] system-connector",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/system-connector.mjs",
+        "type": "integration",
+        "category": "connectivity"
+      }
+    },
+    {
+      "id": "sys:error-fixer",
+      "type": "system",
+      "label": "[SYSTEM:QUALITY] error-fixer",
+      "item": {
+        "id": "sys:error-fixer",
+        "name": "error-fixer",
+        "label": "[SYSTEM:QUALITY] error-fixer",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/comprehensive-error-fixer.mjs",
+        "type": "quality",
+        "category": "development"
+      }
+    },
+    {
+      "id": "sys:security-audit",
+      "type": "system",
+      "label": "[SYSTEM:SECURITY] security-audit",
+      "item": {
+        "id": "sys:security-audit",
+        "name": "security-audit",
+        "label": "[SYSTEM:SECURITY] security-audit",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/security-audit.mjs",
+        "type": "security",
+        "category": "safety"
+      }
+    }
+  ],
+  "connections": [
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764354828236",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764364804935",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764364862053",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764371234429",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764371547395",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764371928745",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764372274417",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764372622579",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764372938354",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764373243176",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764373553811",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764373867522",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764374176272",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764374487863",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764374788620",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764375095229",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764375398852",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764375705915",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764376007097",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764376313951",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764376617097",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764376921391",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764377224077",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764377538241",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764377858502",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764378638647",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764379005118",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764379314824",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764379631105",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764379945422",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764380252445",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764380564473",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764380873710",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764381225237",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764381400101",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764381583060",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764381747528",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764381998918",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764382122241",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764382362130",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764382490914",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764382799145",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764383033635",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764383267151",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764383317529",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764383579406",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764383781487",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764383885503",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764384189136",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764384372307",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764384572819",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764384902339",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764385075015",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764385440071",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764385647991",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764385870407",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764386008945",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764386571217",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764386747265",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764387005122",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764387296475",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764387451858",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764388012833",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764388685796",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764388934088",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764388958697",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764389536138",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764389622496",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764389661850",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764390333924",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764390463967",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764390793093",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764391103715",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764391107559",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764391366361",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764391678374",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764391700111",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764391915096",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764392221188",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764392266434",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764392497577",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764392706293",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764392826139",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764392967616",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764393203478",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764393237879",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764393352883",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764393659479",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:1764393682175",
+      "type": "package-codex",
+      "strength": "strong"
+    },
+    {
+      "from": "pkg:unified-codex",
+      "to": "codex:analysis",
+      "type": "package-codex",
+      "strength": "strong"
+    }
+  ],
+  "duplicates": []
+}

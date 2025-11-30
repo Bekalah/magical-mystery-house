@@ -1,0 +1,1613 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Systems Integration Hub - Cathedral Master V1 Control System</title>
+    <meta
+      name="description"
+      content="Unified navigation hub for all Cathedral Master V1 Control System visual systems and interactive mapping components" />
+
+    <!-- D3.js for advanced data visualization -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- Cathedral Master V1 Control System Styles -->
+    <style>
+      :root {
+        --cathedral-deep-blue: #1a237e;
+        --cathedral-gold: #ffd700;
+        --cathedral-silver: #c0c0c0;
+        --cathedral-crystal: #e1f5fe;
+        --cathedral-stone: #795548;
+        --cathedral-light: #fafafa;
+        --cathedral-accent: #4caf50;
+        --cathedral-warning: #ff9800;
+        --cathedral-error: #f44336;
+        --cathedral-success: #4caf50;
+        --cathedral-shadow: rgba(0, 0, 0, 0.2);
+        --cathedral-transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        background: linear-gradient(
+          135deg,
+          var(--cathedral-deep-blue) 0%,
+          #283593 50%,
+          #1a237e 100%
+        );
+        color: var(--cathedral-light);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      /* Navigation Header */
+      .cathedral-header {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid var(--cathedral-gold);
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .cathedral-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .cathedral-logo {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+      }
+
+      .nav-item a {
+        color: var(--cathedral-light);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: var(--cathedral-transition);
+        font-size: 0.9rem;
+      }
+
+      .nav-item a:hover,
+      .nav-item a.active {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-deep-blue);
+      }
+
+      .back-link {
+        background: var(--cathedral-accent);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: var(--cathedral-transition);
+      }
+
+      .back-link:hover {
+        background: #45a049;
+        transform: scale(1.05);
+      }
+
+      /* Main Content */
+      .integration-main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      /* Hub Header */
+      .hub-header {
+        text-align: center;
+        padding: 3rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        margin-bottom: 3rem;
+        backdrop-filter: blur(15px);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hub-header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at 30% 40%, var(--cathedral-gold) 0%, transparent 50%),
+                    radial-gradient(circle at 70% 60%, var(--cathedral-crystal) 0%, transparent 50%);
+        opacity: 0.1;
+        z-index: -1;
+      }
+
+      .hub-title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        margin-bottom: 1rem;
+        text-shadow: 3px 3px 6px var(--cathedral-shadow);
+        position: relative;
+      }
+
+      .hub-subtitle {
+        font-size: 1.2rem;
+        color: var(--cathedral-crystal);
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+
+      .hub-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .hub-stat {
+        text-align: center;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        border: 1px solid var(--cathedral-gold);
+      }
+
+      .stat-value {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        margin-bottom: 0.5rem;
+        font-family: "Monaco", "Menlo", monospace;
+      }
+
+      .stat-label {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+        font-weight: 500;
+      }
+
+      /* Visual Systems Grid */
+      .systems-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .system-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid var(--cathedral-silver);
+        border-radius: 20px;
+        padding: 2rem;
+        backdrop-filter: blur(10px);
+        transition: var(--cathedral-transition);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+      }
+
+      .system-card:hover {
+        border-color: var(--cathedral-gold);
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 15px 40px var(--cathedral-shadow);
+      }
+
+      .system-card.architecture {
+        border-color: var(--cathedral-success);
+        background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.registry {
+        border-color: var(--cathedral-accent);
+        background: linear-gradient(135deg, rgba(0, 150, 136, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.navigation {
+        border-color: #9c27b0;
+        background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.process {
+        border-color: var(--cathedral-warning);
+        background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.dataflow {
+        border-color: var(--cathedral-crystal);
+        background: linear-gradient(135deg, rgba(225, 245, 254, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.relationships {
+        border-color: var(--cathedral-stone);
+        background: linear-gradient(135deg, rgba(121, 85, 72, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.performance {
+        border-color: var(--cathedral-error);
+        background: linear-gradient(135deg, rgba(244, 67, 54, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.journey {
+        border-color: #673ab7;
+        background: linear-gradient(135deg, rgba(103, 58, 183, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.integration {
+        border-color: #ff5722;
+        background: linear-gradient(135deg, rgba(255, 87, 34, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+        transform: rotate(45deg);
+        transition: var(--cathedral-transition);
+        opacity: 0;
+      }
+
+      .system-card:hover::before {
+        opacity: 1;
+        animation: shimmer 1.5s ease-in-out;
+      }
+
+      @keyframes shimmer {
+        0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+        100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+      }
+
+      .system-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      .system-icon {
+        font-size: 2.5rem;
+        width: 60px;
+        height: 60px;
+        background: var(--cathedral-gold);
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--cathedral-deep-blue);
+        box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+      }
+
+      .system-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        flex: 1;
+      }
+
+      .system-status {
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .status-active {
+        background: var(--cathedral-success);
+        color: white;
+        animation: pulse-green 2s infinite;
+      }
+
+      .status-development {
+        background: var(--cathedral-warning);
+        color: white;
+      }
+
+      @keyframes pulse-green {
+        0% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7); }
+        70% { box-shadow: 0 0 0 10px rgba(76, 175, 80, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
+      }
+
+      .system-description {
+        font-size: 1rem;
+        color: var(--cathedral-crystal);
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      .system-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        color: var(--cathedral-light);
+      }
+
+      .feature-icon {
+        font-size: 0.8rem;
+        color: var(--cathedral-gold);
+      }
+
+      .system-actions {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 2rem;
+        right: 2rem;
+        display: flex;
+        gap: 1rem;
+        z-index: 2;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--cathedral-transition);
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .btn-primary {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-deep-blue);
+        flex: 1;
+      }
+
+      .btn-primary:hover {
+        background: #ffc107;
+        transform: scale(1.05);
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: var(--cathedral-light);
+        border: 2px solid var(--cathedral-gold);
+        flex: 1;
+      }
+
+      .btn-secondary:hover {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-deep-blue);
+      }
+
+      /* Integration Map */
+      .integration-map-section {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid var(--cathedral-gold);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(15px);
+      }
+
+      .map-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .map-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 0.5rem;
+      }
+
+      .map-subtitle {
+        font-size: 1.1rem;
+        color: var(--cathedral-crystal);
+      }
+
+      .integration-map {
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--cathedral-silver);
+        border-radius: 12px;
+        padding: 2rem;
+        min-height: 700px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Quick Actions Panel */
+      .quick-actions {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid var(--cathedral-silver);
+        border-radius: 16px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .actions-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .actions-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+
+      .action-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 1.5rem;
+        text-align: center;
+        transition: var(--cathedral-transition);
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+
+      .action-card:hover {
+        border-color: var(--cathedral-gold);
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-2px);
+      }
+
+      .action-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .action-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--cathedral-light);
+        margin-bottom: 0.5rem;
+      }
+
+      .action-description {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+        line-height: 1.4;
+      }
+
+      /* System Status Dashboard */
+      .status-dashboard {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid var(--cathedral-silver);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .dashboard-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      .status-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .status-metric {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: center;
+        border: 2px solid transparent;
+        transition: var(--cathedral-transition);
+      }
+
+      .status-metric:hover {
+        border-color: var(--cathedral-gold);
+        transform: scale(1.05);
+      }
+
+      .status-metric.excellent {
+        border-color: var(--cathedral-success);
+      }
+
+      .status-metric.good {
+        border-color: var(--cathedral-accent);
+      }
+
+      .status-metric.warning {
+        border-color: var(--cathedral-warning);
+      }
+
+      .metric-score {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .metric-score.excellent {
+        color: var(--cathedral-success);
+      }
+
+      .metric-score.good {
+        color: var(--cathedral-accent);
+      }
+
+      .metric-score.warning {
+        color: var(--cathedral-warning);
+      }
+
+      .metric-label {
+        font-size: 1rem;
+        color: var(--cathedral-light);
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .metric-status {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        .cathedral-nav {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .nav-menu {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .hub-title {
+          font-size: 2.2rem;
+        }
+
+        .systems-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+
+        .integration-main {
+          padding: 1rem;
+        }
+
+        .system-features {
+          grid-template-columns: 1fr;
+        }
+
+        .system-actions {
+          position: static;
+          margin-top: 1rem;
+        }
+
+        .actions-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .status-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hub-stats {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hub-title {
+          font-size: 1.8rem;
+        }
+
+        .system-card {
+          height: auto;
+          min-height: 350px;
+        }
+
+        .hub-stats {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Accessibility */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+
+        .system-card:hover {
+          transform: none;
+        }
+
+        .action-card:hover {
+          transform: none;
+        }
+      }
+
+      a:focus,
+      button:focus,
+      .system-card:focus,
+      .action-card:focus {
+        outline: 2px solid var(--cathedral-gold);
+        outline-offset: 2px;
+      }
+
+      /* Loading and Error States */
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        color: var(--cathedral-gold);
+        font-size: 1.2rem;
+      }
+
+      .error-message {
+        background: var(--cathedral-error);
+        color: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        margin: 1rem 0;
+        text-align: center;
+      }
+
+      .success-message {
+        background: var(--cathedral-success);
+        color: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        margin: 1rem 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="cathedral-header">
+      <nav class="cathedral-nav">
+        <a href="#" class="cathedral-logo">
+          🕍 Cathedral V1
+        </a>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <a href="index.html" class="back-link">← Back to Hub</a>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#systems" class="active">Visual Systems</a></li>
+            <li class="nav-item"><a href="#integration">Integration Map</a></li>
+            <li class="nav-item"><a href="#actions">Quick Actions</a></li>
+            <li class="nav-item"><a href="#status">System Status</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="integration-main">
+      <!-- Hub Header -->
+      <section class="hub-header">
+        <h1 class="hub-title">Visual Systems Integration Hub</h1>
+        <p class="hub-subtitle">
+          Unified navigation and control center for all Cathedral Master V1 Control System visual components,
+          providing seamless access to interactive maps, dashboards, and visualization tools
+        </p>
+        <div class="hub-stats">
+          <div class="hub-stat">
+            <div class="stat-value">9</div>
+            <div class="stat-label">Visual Systems</div>
+          </div>
+          <div class="hub-stat">
+            <div class="stat-value">144</div>
+            <div class="stat-label">Cathedral Rooms</div>
+          </div>
+          <div class="hub-stat">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">System Health</div>
+          </div>
+          <div class="hub-stat">
+            <div class="stat-value">24/7</div>
+            <div class="stat-label">Monitoring</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visual Systems Grid -->
+      <section id="systems" class="systems-grid">
+        <!-- System Architecture Maps -->
+        <div class="system-card architecture">
+          <div class="system-header">
+            <div class="system-icon">🏗️</div>
+            <h3 class="system-title">System Architecture</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Interactive system architecture maps with comprehensive visualization of the Cathedral Master V1 Control System structure and dependencies.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Force-directed layouts</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Real-time monitoring</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Component filtering</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Interactive exploration</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="index.html" class="btn-primary">Open Map</a>
+            <a href="#" class="btn-secondary">Documentation</a>
+          </div>
+        </div>
+
+        <!-- REGISTRY Visualization Engine -->
+        <div class="system-card registry">
+          <div class="system-header">
+            <div class="system-icon">📊</div>
+            <h3 class="system-title">REGISTRY Data</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Comprehensive REGISTRY data visualization with multiple view modes, dynamic filtering, and real-time exploration of the Cathedral ecosystem.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Multiple view modes</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Dynamic filtering</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Data exploration</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Real-time updates</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="registry-viewer.html" class="btn-primary">Explore Data</a>
+            <a href="#" class="btn-secondary">API Docs</a>
+          </div>
+        </div>
+
+        <!-- Cathedral Navigation System -->
+        <div class="system-card navigation">
+          <div class="system-header">
+            <div class="system-icon">🗺️</div>
+            <h3 class="system-title">Cathedral Navigation</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Interactive 3D navigation system for exploring the complete 144-room Cathedral structure with detailed room information and connections.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>3D navigation</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>144 room catalog</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Interactive exploration</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Room connections</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="cathedral-navigation.html" class="btn-primary">Navigate</a>
+            <a href="#" class="btn-secondary">Room Guide</a>
+          </div>
+        </div>
+
+        <!-- Process Flowchart Visualizer -->
+        <div class="system-card process">
+          <div class="system-header">
+            <div class="system-icon">📈</div>
+            <h3 class="system-title">Process Flowcharts</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Interactive flowchart editor with drag-and-drop capabilities for visualizing Cathedral development and deployment workflows.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Drag & drop editor</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Multiple templates</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Export capabilities</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Workflow sharing</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="process-flowchart.html" class="btn-primary">Create Flow</a>
+            <a href="#" class="btn-secondary">Templates</a>
+          </div>
+        </div>
+
+        <!-- Data Flow Diagram Generator -->
+        <div class="system-card dataflow">
+          <div class="system-header">
+            <div class="system-icon">🔄</div>
+            <h3 class="system-title">Data Flow Diagrams</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Interactive data flow diagram generator with real-time monitoring and comprehensive visualization of Cathedral system interactions.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Real-time monitoring</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Interactive diagrams</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Flow analytics</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Performance metrics</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="data-flow-generator.html" class="btn-primary">Generate Flow</a>
+            <a href="#" class="btn-secondary">Examples</a>
+          </div>
+        </div>
+
+        <!-- Component Relationship Maps -->
+        <div class="system-card relationships">
+          <div class="system-header">
+            <div class="system-icon">🔗</div>
+            <h3 class="system-title">Component Relations</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Interactive component relationship mapping system with comprehensive dependency visualization and relationship analysis tools.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Dependency mapping</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Relationship analysis</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Circular dependency detection</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Impact visualization</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="component-relationships.html" class="btn-primary">Map Relations</a>
+            <a href="#" class="btn-secondary">Analysis Tools</a>
+          </div>
+        </div>
+
+        <!-- Performance Monitoring Dashboard -->
+        <div class="system-card performance">
+          <div class="system-header">
+            <div class="system-icon">📊</div>
+            <h3 class="system-title">Performance Monitor</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Real-time performance and health monitoring dashboard with comprehensive system metrics and alerting capabilities.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Real-time metrics</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Health monitoring</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Alert system</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Performance trends</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="performance-dashboard.html" class="btn-primary">View Dashboard</a>
+            <a href="#" class="btn-secondary">Alerts</a>
+          </div>
+        </div>
+
+        <!-- User Journey Visualization -->
+        <div class="system-card journey">
+          <div class="system-header">
+            <div class="system-icon">🛤️</div>
+            <h3 class="system-title">User Journeys</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Comprehensive stakeholder journey and interaction flow visualization system with pain point identification and optimization tools.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Journey mapping</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Pain point analysis</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Interaction flows</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Optimization tools</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="user-journey-maps.html" class="btn-primary">Map Journeys</a>
+            <a href="#" class="btn-secondary">Analytics</a>
+          </div>
+        </div>
+
+        <!-- Integration Visualization Platform -->
+        <div class="system-card integration">
+          <div class="system-header">
+            <div class="system-icon">🔗</div>
+            <h3 class="system-title">Integration Platform</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Cross-platform integration visualization with comprehensive service mapping and health monitoring for the complete Cathedral ecosystem.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Service mapping</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Health monitoring</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>API connections</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Dependency tracking</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="integration-platform.html" class="btn-primary">View Platform</a>
+            <a href="#" class="btn-secondary">Health Status</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integration Map -->
+      <section id="integration" class="integration-map-section">
+        <div class="map-header">
+          <h3 class="map-title">Systems Integration Map</h3>
+          <p class="map-subtitle">
+            Real-time visualization of connections and data flow between all Cathedral Visual Systems
+          </p>
+        </div>
+        <div class="integration-map" id="systemsMap">
+          <!-- D3.js integration map will be rendered here -->
+        </div>
+      </section>
+
+      <!-- Quick Actions Panel -->
+      <section id="actions" class="quick-actions">
+        <h3 class="actions-title">Quick Actions</h3>
+        <div class="actions-grid">
+          <div class="action-card" onclick="openSystem('registry')">
+            <div class="action-icon">📊</div>
+            <h4 class="action-title">Open REGISTRY</h4>
+            <p class="action-description">Access the REGISTRY data visualization with all filtering options</p>
+          </div>
+          <div class="action-card" onclick="openSystem('navigation')">
+            <div class="action-icon">🗺️</div>
+            <h4 class="action-title">Navigate Cathedral</h4>
+            <p class="action-description">Explore the 3D Cathedral navigation system for room discovery</p>
+          </div>
+          <div class="action-card" onclick="openSystem('performance')">
+            <div class="action-icon">📊</div>
+            <h4 class="action-title">Monitor Performance</h4>
+            <p class="action-description">Check real-time system performance and health metrics</p>
+          </div>
+          <div class="action-card" onclick="openSystem('flowchart')">
+            <div class="action-icon">📈</div>
+            <h4 class="action-title">Create Flowchart</h4>
+            <p class="action-description">Design new process flowcharts with the interactive editor</p>
+          </div>
+          <div class="action-card" onclick="openSystem('dataflow')">
+            <div class="action-icon">🔄</div>
+            <h4 class="action-title">Generate Data Flow</h4>
+            <p class="action-description">Create and analyze data flow diagrams for system interactions</p>
+          </div>
+          <div class="action-card" onclick="openSystem('relationships')">
+            <div class="action-icon">🔗</div>
+            <h4 class="action-title">Component Analysis</h4>
+            <p class="action-description">Map component relationships and dependency structures</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- System Status Dashboard -->
+      <section id="status" class="status-dashboard">
+        <h3 class="dashboard-title">System Status Dashboard</h3>
+        <div class="status-grid">
+          <div class="status-metric excellent">
+            <div class="metric-score excellent">A+</div>
+            <div class="metric-label">Overall Health</div>
+            <div class="metric-status">All systems operational</div>
+          </div>
+          <div class="status-metric excellent">
+            <div class="metric-score excellent">100%</div>
+            <div class="metric-label">Uptime</div>
+            <div class="metric-status">24/7 monitoring active</div>
+          </div>
+          <div class="status-metric good">
+            <div class="metric-score good">8/9</div>
+            <div class="metric-label">Active Systems</div>
+            <div class="metric-status">All critical systems running</div>
+          </div>
+          <div class="status-metric excellent">
+            <div class="metric-score excellent">99.9%</div>
+            <div class="metric-label">Response Time</div>
+            <div class="metric-status">Optimal performance</div>
+          </div>
+          <div class="status-metric good">
+            <div class="metric-score good">2.3s</div>
+            <div class="metric-label">Avg Load Time</div>
+            <div class="metric-status">Within acceptable range</div>
+          </div>
+          <div class="status-metric excellent">
+            <div class="metric-score excellent">0</div>
+            <div class="metric-label">Critical Alerts</div>
+            <div class="metric-status">No issues detected</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Cathedral Integration Hub JavaScript
+      class IntegrationHub {
+        constructor() {
+          this.systems = [];
+          this.connections = [];
+          this.currentSystem = null;
+          
+          this.init();
+        }
+
+        async init() {
+          await this.loadSystemData();
+          this.setupEventListeners();
+          this.initializeIntegrationMap();
+          this.startRealTimeUpdates();
+        }
+
+        async loadSystemData() {
+          try {
+            // Load system data for integration mapping
+            this.systems = this.getSystemsData();
+            this.connections = this.getConnectionsData();
+          } catch (error) {
+            console.warn('Loading fallback system data:', error);
+            this.loadFallbackData();
+          }
+        }
+
+        getSystemsData() {
+          return [
+            {
+              id: 'architecture',
+              name: 'System Architecture',
+              type: 'core',
+              x: 350,
+              y: 150,
+              status: 'active',
+              connections: ['registry', 'navigation', 'performance']
+            },
+            {
+              id: 'registry',
+              name: 'REGISTRY Data',
+              type: 'data',
+              x: 200,
+              y: 250,
+              status: 'active',
+              connections: ['architecture', 'dataflow', 'relationships']
+            },
+            {
+              id: 'navigation',
+              name: 'Cathedral Navigation',
+              type: 'navigation',
+              x: 500,
+              y: 250,
+              status: 'active',
+              connections: ['architecture', 'journey']
+            },
+            {
+              id: 'flowchart',
+              name: 'Process Flowcharts',
+              type: 'workflow',
+              x: 100,
+              y: 400,
+              status: 'active',
+              connections: ['registry']
+            },
+            {
+              id: 'dataflow',
+              name: 'Data Flow Diagrams',
+              type: 'analysis',
+              x: 350,
+              y: 400,
+              status: 'active',
+              connections: ['registry', 'performance']
+            },
+            {
+              id: 'relationships',
+              name: 'Component Relations',
+              type: 'analysis',
+              x: 600,
+              y: 400,
+              status: 'active',
+              connections: ['registry', 'integration']
+            },
+            {
+              id: 'performance',
+              name: 'Performance Monitor',
+              type: 'monitoring',
+              x: 200,
+              y: 550,
+              status: 'active',
+              connections: ['architecture', 'dataflow']
+            },
+            {
+              id: 'journey',
+              name: 'User Journeys',
+              type: 'ux',
+              x: 500,
+              y: 550,
+              status: 'active',
+              connections: ['navigation']
+            },
+            {
+              id: 'integration',
+              name: 'Integration Platform',
+              type: 'integration',
+              x: 700,
+              y: 550,
+              status: 'active',
+              connections: ['relationships']
+            }
+          ];
+        }
+
+        getConnectionsData() {
+          return [
+            { from: 'architecture', to: 'registry', type: 'data-source', status: 'active' },
+            { from: 'architecture', to: 'navigation', type: 'core-service', status: 'active' },
+            { from: 'architecture', to: 'performance', type: 'monitoring', status: 'active' },
+            { from: 'registry', to: 'dataflow', type: 'data-flow', status: 'active' },
+            { from: 'registry', to: 'relationships', type: 'data-analysis', status: 'active' },
+            { from: 'navigation', to: 'journey', type: 'user-experience', status: 'active' },
+            { from: 'flowchart', to: 'registry', type: 'process-data', status: 'active' },
+            { from: 'dataflow', to: 'performance', type: 'metrics', status: 'active' },
+            { from: 'relationships', to: 'integration', type: 'integration-data', status: 'active' }
+          ];
+        }
+
+        loadFallbackData() {
+          this.systems = [
+            { id: 'fallback', name: 'System Hub', type: 'core', x: 200, y: 200, status: 'active', connections: [] }
+          ];
+          this.connections = [];
+        }
+
+        setupEventListeners() {
+          // Navigation smooth scrolling
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', (e) => {
+              e.preventDefault();
+              const target = document.querySelector(e.target.getAttribute('href'));
+              if (target) {
+                target.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }
+            });
+          });
+
+          // System card interactions
+          document.querySelectorAll('.system-card').forEach((card) => {
+            card.addEventListener('click', (e) => {
+              if (!e.target.closest('a')) {
+                const systemId = card.classList[1]; // Get system type from class
+                this.openSystemDetails(systemId);
+              }
+            });
+          });
+
+          // Action card interactions
+          document.querySelectorAll('.action-card').forEach((card) => {
+            card.addEventListener('click', (e) => {
+              const action = e.currentTarget.getAttribute('onclick');
+              if (action) {
+                const match = action.match(/openSystem\('([^']+)'\)/);
+                if (match) {
+                  this.openSystem(match[1]);
+                }
+              }
+            });
+          });
+        }
+
+        initializeIntegrationMap() {
+          this.createIntegrationMap();
+        }
+
+        createIntegrationMap() {
+          const container = d3.select('#systemsMap');
+          container.selectAll('*').remove();
+
+          const width = container.node().getBoundingClientRect().width - 100;
+          const height = 700;
+
+          const svg = container
+            .append('svg')
+            .attr('width', width)
+            .attr('height', height)
+            .style('border', '2px solid var(--cathedral-gold)')
+            .style('border-radius', '12px')
+            .style('background', 'rgba(0, 0, 0, 0.5)');
+
+          // Draw connections first (behind nodes)
+          this.drawConnections(svg, width, height);
+
+          // Draw systems
+          this.drawSystems(svg, width, height);
+
+          // Add interactivity
+          this.addMapInteractivity(svg);
+        }
+
+        drawConnections(svg, width, height) {
+          const connections = this.connections;
+
+          svg.selectAll('.connection-line')
+            .data(connections)
+            .enter()
+            .append('line')
+            .attr('class', 'connection-line')
+            .attr('x1', d => this.getSystemById(d.from)?.x || 0)
+            .attr('y1', d => this.getSystemById(d.from)?.y || 0)
+            .attr('x2', d => this.getSystemById(d.to)?.x || 0)
+            .attr('y2', d => this.getSystemById(d.to)?.y || 0)
+            .style('stroke', 'var(--cathedral-silver)')
+            .style('stroke-width', '3px')
+            .style('opacity', '0.6')
+            .style('stroke-dasharray', '5,5')
+            .style('animation', 'flow 3s linear infinite');
+
+          // Add CSS animation for connection flow
+          const style = document.createElement('style');
+          style.textContent = `
+            @keyframes flow {
+              0% { stroke-dashoffset: 0; }
+              100% { stroke-dashoffset: 20; }
+            }
+          `;
+          document.head.appendChild(style);
+        }
+
+        drawSystems(svg, width, height) {
+          const systems = this.systems;
+
+          const systemGroups = svg.selectAll('.system-node')
+            .data(systems)
+            .enter()
+            .append('g')
+            .attr('class', 'system-node')
+            .attr('transform', d => `translate(${d.x}, ${d.y})`);
+
+          // System circles
+          systemGroups.append('circle')
+            .attr('r', 35)
+            .attr('fill', d => {
+              switch (d.type) {
+                case 'core': return 'var(--cathedral-success)';
+                case 'data': return 'var(--cathedral-accent)';
+                case 'navigation': return '#9c27b0';
+                case 'workflow': return 'var(--cathedral-warning)';
+                case 'analysis': return 'var(--cathedral-crystal)';
+                case 'monitoring': return 'var(--cathedral-error)';
+                case 'ux': return '#673ab7';
+                case 'integration': return '#ff5722';
+                default: return 'var(--cathedral-gold)';
+              }
+            })
+            .style('filter', 'drop-shadow(0 0 15px rgba(255, 215, 0, 0.6))')
+            .style('stroke', 'var(--cathedral-gold)')
+            .style('stroke-width', '3px');
+
+          // System labels
+          systemGroups.append('text')
+            .attr('class', 'system-label')
+            .attr('text-anchor', 'middle')
+            .attr('dy', '5')
+            .style('fill', 'var(--cathedral-light)')
+            .style('font-size', '11px')
+            .style('font-weight', '700')
+            .style('text-shadow', '2px 2px 4px rgba(0, 0, 0, 0.8)')
+            .text(d => d.name.length > 12 ? d.name.substring(0, 12) + '...' : d.name);
+
+          // Status indicators
+          systemGroups.append('circle')
+            .attr('r', 8)
+            .attr('cx', 25)
+            .attr('cy', -25)
+            .attr('fill', 'var(--cathedral-success)')
+            .style('filter', 'drop-shadow(0 0 8px var(--cathedral-success))')
+            .style('animation', 'pulse 2s infinite');
+        }
+
+        addMapInteractivity(svg) {
+          // System node hover effects
+          svg.selectAll('.system-node')
+            .on('mouseenter', function() {
+              d3.select(this).select('circle')
+                .transition()
+                .duration(200)
+                .attr('r', 40)
+                .style('filter', 'drop-shadow(0 0 25px var(--cathedral-gold))');
+            })
+            .on('mouseleave', function() {
+              d3.select(this).select('circle')
+                .transition()
+                .duration(200)
+                .attr('r', 35)
+                .style('filter', 'drop-shadow(0 0 15px rgba(255, 215, 0, 0.6))');
+            })
+            .on('click', (event, d) => {
+              this.showSystemModal(d);
+            });
+
+          // Connection hover effects
+          svg.selectAll('.connection-line')
+            .on('mouseenter', function() {
+              d3.select(this)
+                .transition()
+                .duration(200)
+                .style('stroke-width', '5px')
+                .style('opacity', '1');
+            })
+            .on('mouseleave', function() {
+              d3.select(this)
+                .transition()
+                .duration(200)
+                .style('stroke-width', '3px')
+                .style('opacity', '0.6');
+            });
+        }
+
+        getSystemById(id) {
+          return this.systems.find(system => system.id === id);
+        }
+
+        showSystemModal(system) {
+          const modal = document.createElement('div');
+          modal.style.cssText = `
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.9); z-index: 2000;
+            display: flex; align-items: center; justify-content: center;
+            padding: 2rem;
+          `;
+
+          modal.innerHTML = `
+            <div style="background: linear-gradient(135deg, var(--cathedral-deep-blue), var(--cathedral-light)); 
+                        color: var(--cathedral-light); padding: 3rem; border-radius: 25px; 
+                        border: 3px solid var(--cathedral-gold); text-align: center; max-width: 600px;
+                        box-shadow: 0 0 100px var(--cathedral-gold); position: relative;">
+              <h2 style="color: var(--cathedral-gold); margin-bottom: 1rem; font-size: 2rem;">${system.name}</h2>
+              <p style="margin-bottom: 1.5rem; color: var(--cathedral-crystal); font-size: 1.1rem;">Type: ${system.type.toUpperCase()}</p>
+              <p style="margin-bottom: 1.5rem; color: var(--cathedral-crystal);">Status: <span style="color: var(--cathedral-success); font-weight: bold;">${system.status.toUpperCase()}</span></p>
+              <div style="margin-bottom: 2rem;">
+                <p style="color: var(--cathedral-light); margin-bottom: 0.5rem;">Connections: ${system.connections.length}</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
+                  ${system.connections.map(conn => `<span style="background: rgba(255, 255, 255, 0.1); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem;">${conn}</span>`).join('')}
+                </div>
+              </div>
+              <div style="display: flex; gap: 1rem; justify-content: center;">
+                <button onclick="this.parentElement.parentElement.parentElement.remove()"
+                        style="background: var(--cathedral-gold); color: var(--cathedral-deep-blue); 
+                               padding: 1rem 2rem; border: none; border-radius: 12px; 
+                               font-size: 1.1rem; cursor: pointer; font-weight: bold;">
+                  Close
+                </button>
+              </div>
+            </div>
+          `;
+
+          document.body.appendChild(modal);
+
+          // Remove modal on click outside
+          modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+              modal.remove();
+            }
+          });
+        }
+
+        openSystem(systemType) {
+          const systemUrls = {
+            'registry': 'registry-viewer.html',
+            'navigation': 'cathedral-navigation.html',
+            'performance': 'performance-dashboard.html',
+            'flowchart': 'process-flowchart.html',
+            'dataflow': 'data-flow-generator.html',
+            'relationships': 'component-relationships.html'
+          };
+
+          const url = systemUrls[systemType];
+          if (url) {
+            window.open(url, '_blank');
+          } else {
+            console.log('Opening system:', systemType);
+          }
+        }
+
+        openSystemDetails(systemType) {
+          // Handle system details modal
+          console.log('Opening system details for:', systemType);
+        }
+
+        startRealTimeUpdates() {
+          // Simulate real-time status updates
+          setInterval(() => {
+            this.updateSystemStatuses();
+          }, 15000);
+        }
+
+        updateSystemStatuses() {
+          // Update system status indicators
+          document.querySelectorAll('.system-card').forEach((card, index) => {
+            const statusElement = card.querySelector('.system-status');
+            if (statusElement) {
+              // Simulate status changes
+              const statuses = ['Active', 'Maintenance', 'Updated'];
+              const randomStatus = statuses[Math.floor(Math.random() * statuses.length)];
+              statusElement.textContent = randomStatus;
+              
+              if (randomStatus === 'Active') {
+                statusElement.className = 'system-status status-active';
+              } else {
+                statusElement.className = 'system-status status-development';
+              }
+            }
+          });
+        }
+      }
+
+      // Global functions for onclick handlers
+      function openSystem(systemType) {
+        // Delegate to IntegrationHub instance
+        if (window.integrationHub) {
+          window.integrationHub.openSystem(systemType);
+        }
+      }
+
+      // Initialize integration hub when DOM is loaded
+      document.addEventListener('DOMContentLoaded', () => {
+        window.integrationHub = new IntegrationHub();
+      });
+
+      // Keyboard navigation support
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          // Close any open modals
+          document.querySelectorAll('[style*="z-index: 2000"]').forEach(modal => {
+            modal.remove();
+          });
+        }
+      });
+
+      // Handle window resize for integration map
+      window.addEventListener('resize', () => {
+        if (window.integrationHub) {
+          setTimeout(() => {
+            window.integrationHub.initializeIntegrationMap();
+          }, 300);
+        }
+      });
+    </script>
+  </body>
+</html>

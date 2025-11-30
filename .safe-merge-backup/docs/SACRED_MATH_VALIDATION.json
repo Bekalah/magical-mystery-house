@@ -1,0 +1,869 @@
+/**
+ * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+ */
+{
+  "timestamp": "2025-11-28T07:52:10.367Z",
+  "summary": {
+    "validations": 201,
+    "issues": 0,
+    "byType": {
+      "cathedral_ratio": 53,
+      "golden_ratio": 54,
+      "fibonacci": 34,
+      "solfeggio": 15
+    }
+  },
+  "validations": [
+    {
+      "file": "/packages/codex-144-99-core/src/index.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/packages/codex-144-99-core/src/index.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/codex-144-99-core/src/index.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/codex-144-99-core/src/index.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/design - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality-mathematics-core/src/index.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/packages/design-mathematics-core/src/index.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/design-mathematics-core/src/index.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/design-mathematics-core/src/index.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/game-mathematics-core/src/index.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/packages/game-mathematics-core/src/index.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/game-mathematics-core/src/index.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/game-mathematics-core/src/index.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/sacred-mathematics-core/src/index.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/packages/sacred-mathematics-core/src/index.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/sacred-mathematics-core/src/index.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/sacred-mathematics-core/src/index.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/sacred-mathematics-core/src/index.ts",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/packages/sound-mathematics-core/src/index.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/sound-mathematics-core/src/index.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/sound-mathematics-core/src/index.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/sound-mathematics-core/src/index.ts",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/packages/synth-design-math-core/src/index.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/synth-design-math-core/src/index.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/TrinityV11Core.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/TrinityV11Core.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/TrinityV11Core.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/TrinityV11Core.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/codex-connector.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/codex-connector.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/codex-connector.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/connections.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/connections.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/connections.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/fractal-sound-synthesizer.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/fractal-sound-synthesizer.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/sacred-geometry-engine.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/sacred-geometry-engine.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/system-connector.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/system-connector.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/visualization-engine.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/scripts/workspace-integrator.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/DeployArchitecture.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/DeployArchitecture.tsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/ProfessionalDesignInterface.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/ProfessionalDesignInterface.tsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/CanvasManager.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/CanvasManager.js",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/DeploymentManager.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/MenuSystem.js",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/MenuSystem.js",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/MenuSystem.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/MenuSystem.js",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/QualityControl.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/QualityControl.js",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/SQLiteManager.js",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/SQLiteManager.js",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/SQLiteManager.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/main.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/main.js",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/main.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/vite.config.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-unity/vite.config.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/circuitum99/src/LivingArcanaDatabase.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/circuitum99/src/LivingArcanaDatabase.tsx",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/apps/frontend/src/components/SpellCastingUI.jsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/frontend/src/components/VolcanicFireScene.jsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/liber-arcanae-tarot/src/main.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/liber-arcanae-tarot/src/main.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/synth-lab/src/ui/SynthLabApp.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/tarot-arena/src/index.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/tarot-arena/src/index.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/tarot-arena/src/index.tsx",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/apps/test-ground/src/index.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/web/pages/index.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/pages/index.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/App.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/src/App.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/components/CathedralGameInterface.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/src/components/CathedralGameInterface.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/components/CathedralGameInterface.tsx",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/apps/web/src/components/liberCodexDemo.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/src/components/liberCodexDemo.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/components/liberCodexDemo.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/main.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/src/main.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/routes/Codex.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/src/routes/Codex.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/routes/Fusion.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/src/routes/Fusion.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/routes/Home.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/src/routes/Home.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/vite.config.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/vite.config.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web-evals/src/components/layout/logo.tsx",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/DeployArchitecture.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/DeployArchitecture.tsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/ProfessionalDesignInterface.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/ProfessionalDesignInterface.tsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/CanvasManager.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/CanvasManager.js",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/DeploymentManager.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/MenuSystem.js",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/MenuSystem.js",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/MenuSystem.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/MenuSystem.js",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/QualityControl.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/QualityControl.js",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/SQLiteManager.js",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/SQLiteManager.js",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/components/SQLiteManager.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/main.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/main.js",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/main.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/vite.config.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-unity/vite.config.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/circuitum99/src/LivingArcanaDatabase.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/circuitum99/src/LivingArcanaDatabase.tsx",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/apps/frontend/src/components/SpellCastingUI.jsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/frontend/src/components/VolcanicFireScene.jsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/liber-arcanae-tarot/src/main.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/liber-arcanae-tarot/src/main.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/synth-lab/src/ui/SynthLabApp.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/tarot-arena/src/index.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/tarot-arena/src/index.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/tarot-arena/src/index.tsx",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/apps/test-ground/src/index.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/web/pages/cymatics.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/pages/cymatics.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/pages/fusion.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/pages/fusion.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/pages/index.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/pages/index.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/components/CathedralGameInterface.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/src/components/CathedralGameInterface.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/components/CathedralRPG.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/components/liberCodexDemo.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/src/components/liberCodexDemo.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/main.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/src/main.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/routes/Codex.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/src/routes/Codex.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/routes/Fusion.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/src/routes/Fusion.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/src/routes/Home.tsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/src/routes/Home.tsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/vite.config.optimized.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/vite.config.optimized.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/web/vite.config.optimized.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/web/vite.config.optimized.ts",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/apps/web/vite.config.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/web/vite.config.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/worker/src/index.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/apps/worker/src/index.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/worker/src/index.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/worker/src/index.ts",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/attached_assets/book-game-launcher_1761993929574.js",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/attached_assets/book-game-launcher_1761993929574.js",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/attached_assets/book-game-launcher_1761993929574.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/attached_assets/cathedral-3d-engine_1761993929573.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/attached_assets/cathedral-toggle-system_1761993929574.js",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/attached_assets/fractal-engine_1761993607162.js",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/cathedral-144/Cathedral144.jsx",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/cathedral-144/Cathedral144.jsx",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/cathedral-144/Cathedral144.jsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/cathedral-fusion-kink-engine/src/FusionKinkEngine.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/cathedral-fusion-kink-engine/src/FusionKinkEngine.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/cathedral-fusion-kink-engine/src/FusionKinkEngine.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/cathedral-fusion-kink-engine/src/FusionKinkEngine.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/cathedral-fusion-kink-engine/src/FusionKinkEngine.ts",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/cathedral-fusion-kink-engine/src/index.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/cathedral-fusion-kink-engine/src/index.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/cathedral-fusion-kink-engine/src/types.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/cathedral-fusion-kink-engine/src/types.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/cathedral-lightweight-library/src/index.js",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/cathedral-lightweight-library/src/index.js",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/cathedral-lightweight-library/src/index.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/docs/assets/index-5c31ae6e.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/docs/assets/index-5c31ae6e.js",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/docs/assets/index-5c31ae6e.js",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/packages/3d-environments/src/animations.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/3d-environments/src/animations.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/3d-environments/src/babylon-environments.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/3d-environments/src/index.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/3d-environments/src/stone-grimoire-3d.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/3d-environments/src/three-environments.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/alexandria-library/src/living-dark-academia-library.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/art-generation-node/src/azureAIFoundry.ts",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/packages/art-generation-node/src/azureAIFoundry.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/art-generation-node/src/facultyArtGenerator.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/art-generation-node/src/generators/patternGenerator.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/art-generation-node/src/generators/patternGenerator.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/art-generation-node/src/index.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/art-generation-node/src/realDataSources.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/art-generation-node/src/realDataSources.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/art-generation-node/src/realDataSources.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/art-generation-node/src/realDataSources.ts",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/packages/art-generation-node/src/types.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/art-generation-node/src/types.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/avatar-experience-system/src/index.js",
+      "type": "correct_constant",
+      "constant": "CATHEDRAL_RATIO"
+    },
+    {
+      "file": "/packages/avatar-experience-system/src/index.js",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/avatar-experience-system/src/index.js",
+      "type": "solfeggio_usage"
+    }
+  ],
+  "issues": []
+}

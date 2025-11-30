@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://sacred_geometry"]
+
+[ext_resource type="Script" path="res://addons/cathedral-vfx/scripts/sacred_geometry.gd" id="1"]
+[ext_resource type="Shader" path="res://addons/cathedral-vfx/shaders/sacred_geometry.gdshader" id="2"]
+[ext_resource type="Material" path="res://addons/cathedral-vfx/materials/sacred_geometry.tres" id="3"]
+
+[node name="SacredGeometry" type="Node2D"]
+script = ext_resource("1")
+golden_ratio = true
+ratio_144_99 = false
+fibonacci_spiral = true
+flower_of_life = false
+metatron_cube = false
+trauma_safe = true
+motion_enabled = true
+speed_multiplier = 1.0
+esc_exit = true
+
+[node name="GeometryRenderer" type="ColorRect" parent="."]
+material = ext_resource("3")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": ext_resource("2")
+}
+
+[connection signal="tree_exited" from="." to="." method="_on_exit"]
+[connection signal="input_event" from="." to="." method="_on_input_event"]

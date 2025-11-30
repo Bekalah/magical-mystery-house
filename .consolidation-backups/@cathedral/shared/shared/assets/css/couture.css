@@ -1,0 +1,11 @@
+/* Cathedral Haute Couture Baseline Styles */
+.cathedral-couture {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  perspective: var(--life-perspective);
+  background: radial-gradient(ellipse at 50% 0%, rgba(25, 20, 35, 0.98) 0%, rgba(8, 6, 12, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  overflow: hidden;
+  z-index: 0;
+}
+/* ...rest of the CSS from the engine's style block... */

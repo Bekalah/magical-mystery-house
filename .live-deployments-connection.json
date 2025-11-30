@@ -1,0 +1,28 @@
+{
+  "timestamp": "2025-11-28T00:21:46.206Z",
+  "deployments": [
+    {
+      "name": "Cathedral Main",
+      "liveUrl": "https://bekalah.github.io/cathedral-master",
+      "connected": true,
+      "issues": []
+    },
+    {
+      "name": "Cathedral Deployment",
+      "liveUrl": "https://bekalah.github.io/cathedral-master-deployment",
+      "connected": true,
+      "issues": []
+    },
+    {
+      "name": "Cathedral Fixed Clean",
+      "liveUrl": "https://bekalah.github.io/cathedral",
+      "connected": true,
+      "issues": []
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "connected": 3,
+    "needsAttention": 0
+  }
+}

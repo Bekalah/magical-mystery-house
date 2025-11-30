@@ -1,0 +1,20 @@
+# @cathedral/fusion-kink-engine
+
+Liber Arcanae Codex Abyssiae - 78-card tarot system mirroring Codex 144:99
+
+## License
+
+CC0-1.0 - Public Domain
+
+## Installation
+
+```bash
+pnpm install
+```
+
+## Usage
+
+```typescript
+// TODO: Add usage examples
+```
+

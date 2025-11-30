@@ -1,0 +1,462 @@
+/**
+ * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+ */
+{
+  "timestamp": "2025-11-28T04:36:46.188Z",
+  "summary": {
+    "frequencyToProportionMappings": 7,
+    "proportionToFrequencyMappings": 9,
+    "harmonicToGeometryMappings": 7,
+    "geometryToHarmonicMappings": 6,
+    "unifiedParameters": 4
+  },
+  "connections": {
+    "frequencyToProportion": {
+      "396": {
+        "frequency": 396,
+        "proportion": 0.5562305898749055,
+        "goldenRatio": 1.618033988749895,
+        "design - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade qualityScale": 0,
+        "layoutRatio": 0.5562305898749055
+      },
+      "417": {
+        "frequency": 417,
+        "proportion": 0.5857276666106959,
+        "goldenRatio": 1.618033988749895,
+        "designScale": 0.037037037037037035,
+        "layoutRatio": 0.5857276666106959
+      },
+      "528": {
+        "frequency": 528,
+        "proportion": 0.7416407864998739,
+        "goldenRatio": 1.618033988749895,
+        "designScale": 0.2328042328042328,
+        "layoutRatio": 0.7416407864998739
+      },
+      "639": {
+        "frequency": 639,
+        "proportion": 0.897553906389052,
+        "goldenRatio": 1.618033988749895,
+        "designScale": 0.42857142857142855,
+        "layoutRatio": 0.897553906389052
+      },
+      "741": {
+        "frequency": 741,
+        "proportion": 1.0408254219628912,
+        "goldenRatio": 1.618033988749895,
+        "designScale": 0.6084656084656085,
+        "layoutRatio": 1.0408254219628912
+      },
+      "852": {
+        "frequency": 852,
+        "proportion": 1.196738541852069,
+        "goldenRatio": 1.618033988749895,
+        "designScale": 0.8042328042328042,
+        "layoutRatio": 1.196738541852069
+      },
+      "963": {
+        "frequency": 963,
+        "proportion": 1.3526516617412472,
+        "goldenRatio": 1.618033988749895,
+        "designScale": 1,
+        "layoutRatio": 1.3526516617412472
+      }
+    },
+    "proportionToFrequency": {
+      "1": {
+        "proportion": 1,
+        "frequency": 440,
+        "nearestSolfeggio": {
+          "name": "RE",
+          "frequency": 417,
+          "difference": 23
+        },
+        "harmonicRatio": 1,
+        "designApplication": "General proportion"
+      },
+      "2": {
+        "proportion": 2,
+        "frequency": 880,
+        "nearestSolfeggio": {
+          "name": "LA",
+          "frequency": 852,
+          "difference": 28
+        },
+        "harmonicRatio": 2,
+        "designApplication": "General proportion"
+      },
+      "0.6180339887498949": {
+        "proportion": 0.6180339887498949,
+        "frequency": 271.93495504995377,
+        "nearestSolfeggio": {
+          "name": "UT",
+          "frequency": 396,
+          "difference": 124.06504495004623
+        },
+        "harmonicRatio": 0.6180339887498949,
+        "designApplication": "Golden section layout"
+      },
+      "1.618033988749895": {
+        "proportion": 1.618033988749895,
+        "frequency": 711.9349550499537,
+        "nearestSolfeggio": {
+          "name": "SOL",
+          "frequency": 741,
+          "difference": 29.065044950046286
+        },
+        "harmonicRatio": 1.618033988749895,
+        "designApplication": "Golden rectangle"
+      },
+      "1.4142135623730951": {
+        "proportion": 1.4142135623730951,
+        "frequency": 622.2539674441618,
+        "nearestSolfeggio": {
+          "name": "FA",
+          "frequency": 639,
+          "difference": 16.746032555838156
+        },
+        "harmonicRatio": 1.4142135623730951,
+        "designApplication": "Dynamic symmetry"
+      },
+      "1.7320508075688772": {
+        "proportion": 1.7320508075688772,
+        "frequency": 762.102355330306,
+        "nearestSolfeggio": {
+          "name": "SOL",
+          "frequency": 741,
+          "difference": 21.102355330305954
+        },
+        "harmonicRatio": 1.7320508075688772,
+        "designApplication": "General proportion"
+      },
+      "1.4545454545454546": {
+        "proportion": 1.4545454545454546,
+        "frequency": 640,
+        "nearestSolfeggio": {
+          "name": "FA",
+          "frequency": 639,
+          "difference": 1
+        },
+        "harmonicRatio": 1.4545454545454546,
+        "designApplication": "Cathedral proportion"
+      },
+      "1.5": {
+        "proportion": 1.5,
+        "frequency": 660,
+        "nearestSolfeggio": {
+          "name": "FA",
+          "frequency": 639,
+          "difference": 21
+        },
+        "harmonicRatio": 1.5,
+        "designApplication": "General proportion"
+      },
+      "1.333": {
+        "proportion": 1.333,
+        "frequency": 586.52,
+        "nearestSolfeggio": {
+          "name": "FA",
+          "frequency": 639,
+          "difference": 52.48000000000002
+        },
+        "harmonicRatio": 1.333,
+        "designApplication": "General proportion"
+      }
+    },
+    "harmonicToGeometry": {
+      "unison": {
+        "harmonicRatio": 1,
+        "geometricShape": "circle",
+        "sacredGeometry": "Sacred geometry pattern",
+        "designProportion": 1,
+        "soundFrequency": 440
+      },
+      "octave": {
+        "harmonicRatio": 2,
+        "geometricShape": "custom",
+        "sacredGeometry": "Sacred geometry pattern",
+        "designProportion": 2,
+        "soundFrequency": 880
+      },
+      "perfectFifth": {
+        "harmonicRatio": 1.5,
+        "geometricShape": "custom",
+        "sacredGeometry": "Sacred geometry pattern",
+        "designProportion": 1.5,
+        "soundFrequency": 660
+      },
+      "perfectFourth": {
+        "harmonicRatio": 1.333,
+        "geometricShape": "custom",
+        "sacredGeometry": "Sacred geometry pattern",
+        "designProportion": 1.333,
+        "soundFrequency": 586.52
+      },
+      "majorThird": {
+        "harmonicRatio": 1.25,
+        "geometricShape": "custom",
+        "sacredGeometry": "Sacred geometry pattern",
+        "designProportion": 1.25,
+        "soundFrequency": 550
+      },
+      "minorThird": {
+        "harmonicRatio": 1.2,
+        "geometricShape": "custom",
+        "sacredGeometry": "Sacred geometry pattern",
+        "designProportion": 1.2,
+        "soundFrequency": 528
+      },
+      "goldenRatio": {
+        "harmonicRatio": 1.618033988749895,
+        "geometricShape": "pentagon",
+        "sacredGeometry": "Golden ratio spiral",
+        "designProportion": 1.618033988749895,
+        "soundFrequency": 711.9349550499537
+      }
+    },
+    "geometryToHarmonic": {
+      "circle": {
+        "shape": "circle",
+        "ratio": 1,
+        "description": "Unity, completeness",
+        "harmonicInterval": "unison",
+        "frequency": 440,
+        "solfeggioMapping": {
+          "name": "RE",
+          "frequency": 417,
+          "difference": 23
+        }
+      },
+      "square": {
+        "shape": "square",
+        "ratio": 1.4142135623730951,
+        "description": "Dynamic symmetry",
+        "harmonicInterval": "custom interval",
+        "frequency": 622.2539674441618,
+        "solfeggioMapping": {
+          "name": "FA",
+          "frequency": 639,
+          "difference": 16.746032555838156
+        }
+      },
+      "triangle": {
+        "shape": "triangle",
+        "ratio": 1.7320508075688772,
+        "description": "Trinity, stability",
+        "harmonicInterval": "custom interval",
+        "frequency": 762.102355330306,
+        "solfeggioMapping": {
+          "name": "SOL",
+          "frequency": 741,
+          "difference": 21.102355330305954
+        }
+      },
+      "pentagon": {
+        "shape": "pentagon",
+        "ratio": 1.618033988749895,
+        "description": "Golden ratio, life force",
+        "harmonicInterval": "golden ratio interval",
+        "frequency": 711.9349550499537,
+        "solfeggioMapping": {
+          "name": "SOL",
+          "frequency": 741,
+          "difference": 29.065044950046286
+        }
+      },
+      "hexagon": {
+        "shape": "hexagon",
+        "ratio": 1.732,
+        "description": "Harmony, balance",
+        "harmonicInterval": "custom interval",
+        "frequency": 762.08,
+        "solfeggioMapping": {
+          "name": "SOL",
+          "frequency": 741,
+          "difference": 21.08000000000004
+        }
+      },
+      "octagon": {
+        "shape": "octagon",
+        "ratio": 1.4545454545454546,
+        "description": "Cathedral ratio",
+        "harmonicInterval": "custom interval",
+        "frequency": 640,
+        "solfeggioMapping": {
+          "name": "FA",
+          "frequency": 639,
+          "difference": 1
+        }
+      }
+    }
+  },
+  "unifiedParameters": {
+    "goldenRatio": {
+      "sound": {
+        "frequency": 711.9349550499537,
+        "harmonic": 1.618033988749895,
+        "interval": "golden ratio interval"
+      },
+      "design": {
+        "proportion": 1.618033988749895,
+        "layout": "golden rectangle",
+        "spacing": 0.6180339887498949
+      }
+    },
+    "cathedralRatio": {
+      "sound": {
+        "frequency": 640,
+        "harmonic": 1.4545454545454546,
+        "interval": "cathedral ratio interval"
+      },
+      "design": {
+        "proportion": 1.4545454545454546,
+        "layout": "cathedral proportion",
+        "spacing": 0.6875
+      }
+    },
+    "fibonacci": {
+      "sound": {
+        "frequencies": [
+          3.0555555555555554,
+          3.0555555555555554,
+          6.111111111111111,
+          9.166666666666666,
+          15.277777777777779,
+          24.444444444444443,
+          39.72222222222222,
+          64.16666666666667
+        ],
+        "harmonics": [
+          0.006944444444444444,
+          0.006944444444444444,
+          0.013888888888888888,
+          0.020833333333333332,
+          0.034722222222222224,
+          0.05555555555555555,
+          0.09027777777777778,
+          0.14583333333333334
+        ],
+        "intervals": "fibonacci intervals"
+      },
+      "design": {
+        "sizes": [
+          1,
+          1,
+          2,
+          3,
+          5,
+          8,
+          13,
+          21
+        ],
+        "spacing": [
+          1,
+          1,
+          2,
+          1.5,
+          1.6666666666666667,
+          1.6,
+          1.625,
+          1.6153846153846154
+        ],
+        "proportions": "fibonacci proportions"
+      }
+    },
+    "solfeggio": {
+      "sound": {
+        "frequencies": [
+          396,
+          417,
+          528,
+          639,
+          741,
+          852,
+          963
+        ],
+        "harmonics": [
+          0.9,
+          0.9477272727272728,
+          1.2,
+          1.4522727272727274,
+          1.684090909090909,
+          1.9363636363636363,
+          2.1886363636363635
+        ],
+        "intervals": "solfeggio frequencies"
+      },
+      "design": {
+        "proportions": [
+          0.9,
+          0.9477272727272728,
+          1.2,
+          1.4522727272727274,
+          1.684090909090909,
+          1.9363636363636363,
+          2.1886363636363635
+        ],
+        "colors": [
+          {
+            "frequency": 396,
+            "color": "#8B0000",
+            "chakra": "Root"
+          },
+          {
+            "frequency": 417,
+            "color": "#FF4500",
+            "chakra": "Sacral"
+          },
+          {
+            "frequency": 528,
+            "color": "#FFD700",
+            "chakra": "Solar Plexus"
+          },
+          {
+            "frequency": 639,
+            "color": "#32CD32",
+            "chakra": "Heart"
+          },
+          {
+            "frequency": 741,
+            "color": "#4169E1",
+            "chakra": "Throat"
+          },
+          {
+            "frequency": 852,
+            "color": "#9370DB",
+            "chakra": "Third Eye"
+          },
+          {
+            "frequency": 963,
+            "color": "#FF1493",
+            "chakra": "Crown"
+          }
+        ],
+        "layouts": "solfeggio-based layouts"
+      }
+    }
+  },
+  "integrationCode": {
+    "typescript": "// Synth-Design Math Integration\n// Generated by connect-synths-to-design-math.mjs\n\nexport const SYNTH_DESIGN_MATH = {\n  // Sacred Mathematics Constants\n  CATHEDRAL_RATIO: 1.4545454545454546,\n  PHI: 1.618033988749895,\n  PHI_INVERSE: 0.6180339887498949,\n  \n  // Frequency to Proportion\n  frequencyToProportion: (freq: number) => {\n    const proportion = freq / 440;\n    return proportion * 0.6180339887498949;\n  },\n  \n  // Proportion to Frequency\n  proportionToFrequency: (proportion: number) => {\n    return 440 * proportion;\n  },\n  \n  // Harmonic to Geometry\n  harmonicToGeometry: (harmonic: number) => {\n    // Returns geometric shape based on harmonic ratio\n    if (Math.abs(harmonic - 1.618033988749895) < 0.01) return 'pentagon';\n    if (Math.abs(harmonic - 1.4142135623730951) < 0.01) return 'square';\n    if (Math.abs(harmonic - 1.7320508075688772) < 0.01) return 'triangle';\n    return 'circle';\n  },\n  \n  // Geometry to Harmonic\n  geometryToHarmonic: (shape: string) => {\n    const map = {\n      'circle': 1.0,\n      'square': 1.4142135623730951,\n      'triangle': 1.7320508075688772,\n      'pentagon': 1.618033988749895\n    };\n    return map[shape] || 1.0;\n  }\n};",
+    "javascript": "// Synth-Design Math Integration\n// Generated by connect-synths-to-design-math.mjs\n\nexport const synthDesignMath = {\n  // Frequency to Design Proportion\n  frequencyToProportion(freq) {\n    const proportion = freq / 440;\n    return proportion * 0.6180339887498949;\n  },\n  \n  // Design Proportion to Frequency\n  proportionToFrequency(proportion) {\n    return 440 * proportion;\n  },\n  \n  // Get Unified Parameters\n  getUnifiedParameters(type) {\n    return this.unifiedParameters[type];\n  }\n};",
+    "authentic implementations": {
+      "frequencyToLayout": {
+        "description": "Convert frequency to layout proportion",
+        "code": "const freq = 528; // MI - Transformation\nconst layoutProportion = synthDesignMath.frequencyToProportion(freq);\n// Use layoutProportion for golden ratio layout"
+      },
+      "proportionToFrequency": {
+        "description": "Convert design proportion to frequency",
+        "code": "const proportion = 1.618; // Golden ratio\nconst frequency = synthDesignMath.proportionToFrequency(proportion);\n// Use frequency for sound synthesis"
+      },
+      "unifiedSynthesis": {
+        "description": "Use unified parameters for both sound and design",
+        "code": "const params = synthDesignMath.getUnifiedParameters('goldenRatio');\n// params.sound.frequency - for synthesis\n// params.design.proportion - for layout"
+      }
+    }
+  },
+  "usageauthentic implementations": {
+    "frequencyToDesign": "Use frequencies to calculate design proportions",
+    "designToFrequency": "Use design proportions to calculate frequencies",
+    "unifiedSynthesis": "Use unified parameters for both sound and visual design"
+  }
+}

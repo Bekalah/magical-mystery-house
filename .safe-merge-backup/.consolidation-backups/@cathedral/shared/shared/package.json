@@ -1,0 +1,29 @@
+{
+  "name": "@cathedral/shared",
+  "version": "1.0.0",
+  "description": "Cathedral shared utilities and core systems",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^17.2.3",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "license": "CC0-1.0",
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T19:53:33.502Z",
+  "packageManager": "pnpm@8.0.0"
+}

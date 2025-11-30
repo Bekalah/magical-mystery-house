@@ -1,0 +1,2428 @@
+{
+  "timestamp": 1764528895858,
+  "workspaces": [
+    {
+      "name": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment",
+      "canEliminate": false
+    },
+    {
+      "name": "cathedral-real",
+      "path": "/Users/rebeccalemke/cathedral-real",
+      "canEliminate": true
+    },
+    {
+      "name": "cathedral-fixed-clean",
+      "path": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "canEliminate": true
+    }
+  ],
+  "entities": {
+    "packages": 131,
+    "apps": 22,
+    "tools": 151,
+    "systems": 2,
+    "engines": 24
+  },
+  "duplicates": 131,
+  "consolidated": [
+    {
+      "type": "package",
+      "name": "agent-integration",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/agent-integration"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/agent-integration"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/agent-integration"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "arcana",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/arcana"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/arcana"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/arcana"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "archetypal-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/archetypal-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/archetypal-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/archetypal-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/art-engine-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-engine-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/art-engine-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-engine-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/art-generation-node",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-generation-node"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/art-generation-node"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-generation-node"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/art-standards-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-standards-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/art-standards-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-standards-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "art-systems",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-systems"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/art-systems"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-systems"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "atelier-constitution",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/atelier-constitution"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/atelier-constitution"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/atelier-constitution"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/avatar-experience-system",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/avatar-experience-system"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/avatar-experience-system"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/avatar-experience-system"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/brain",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/brain"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/brain"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/cataract-book-scanner",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cataract-book-scanner"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cataract-book-scanner"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cataract-book-scanner"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "cathedral-144",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-144"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-144"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-144"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/cathedral-architect",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-architect"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-architect"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-architect"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "cathedral-audio-synthesis",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-audio-synthesis"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-audio-synthesis"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-audio-synthesis"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "cathedral-data-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-data-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-data-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-data-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/design-library",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-design-library"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-design-library"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-design-library"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/fusion-kink-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-fusion-kink-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-fusion-kink-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-fusion-kink-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "cathedral-integration-bridge",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-integration-bridge"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-integration-bridge"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-integration-bridge"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "cathedral-liber-arcanae-bridge",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-liber-arcanae-bridge"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-liber-arcanae-bridge"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-liber-arcanae-bridge"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/lightweight-library",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-lightweight-library"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-lightweight-library"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-lightweight-library"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/logo-system",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-logo-system"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-logo-system"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-logo-system"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/plugin-system",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-plugin-system"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-plugin-system"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-plugin-system"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "cathedral-rpg-inventory-system",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-rpg-inventory-system"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-rpg-inventory-system"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-rpg-inventory-system"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/sqlite-persistence",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-sqlite-persistence"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-sqlite-persistence"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-sqlite-persistence"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "cathedral-style",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-style"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-style"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-style"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "cathedral-synthesis-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-synthesis-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-synthesis-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-synthesis-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "cathedral-visual-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-visual-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-visual-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-visual-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "character-alchemical-art",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/character-alchemical-art"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/character-alchemical-art"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/character-alchemical-art"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/circuit-craft-creative-game",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/circuit-craft-creative-game"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuit-craft-creative-game"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/circuitum99-arcanae-cyoa",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/circuitum99-arcanae-cyoa"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuitum99-arcanae-cyoa"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "circuitum99-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/circuitum99-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuitum99-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "codex-144",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/codex-144"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/codex-144-99",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144-99"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/codex-144-99"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144-99"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "codex-144-99-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144-99-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/codex-144-99-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144-99-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/codex-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/codex-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "codex-game-bridge",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-game-bridge"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/codex-game-bridge"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-game-bridge"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/codex-musical-system",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-musical-system"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/codex-musical-system"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-musical-system"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/config",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/config"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/config"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/config"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "connections",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/connections"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/connections"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/connections"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "consciousness-aware-creative",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/consciousness-aware-creative"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/consciousness-aware-creative"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/consciousness-aware-creative"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/cosmogenesis",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cosmogenesis"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cosmogenesis"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cosmogenesis"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/crystals",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/crystals"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/crystals"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "daimon-gear",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/daimon-gear"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/daimon-gear"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/daimon-gear"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/debug-system-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/debug-system-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/debug-system-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/debug-system-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "design-mathematics-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/design-mathematics-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/design-mathematics-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/design-mathematics-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/fractal-flames-daemon-deity",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/fractal-flames-daemon-deity"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/fractal-flames-daemon-deity"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fractal-flames-daemon-deity"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "fusion-creative-suite",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/fusion-creative-suite"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/fusion-creative-suite"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusion-creative-suite"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "fusion-kink-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/fusion-kink-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/fusion-kink-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusion-kink-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/fusion-kink-generator",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/fusion-kink-generator"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/fusion-kink-generator"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusion-kink-generator"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "fusionkink-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/fusionkink-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/fusionkink-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusionkink-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/game-design-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/game-design-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-design-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/game-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/game-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "game-mathematics-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-mathematics-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/game-mathematics-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-mathematics-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "game-world",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-world"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/game-world"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-world"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/gem-tower-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/gem-tower-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/gem-tower-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/gem-tower-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/godot-codex-14499",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-codex-14499"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/godot-codex-14499"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-codex-14499"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/godot-design-studio",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-design-studio"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/godot-design-studio"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-design-studio"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/godot-liber-arcanae",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/godot-liber-arcanae"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-liber-arcanae"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/godot-vfx-library",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-vfx-library"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/godot-vfx-library"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-vfx-library"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "graphs",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/graphs"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/graphs"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/graphs"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/hall-of-ateliers",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/hall-of-ateliers"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/hall-of-ateliers"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/hall-of-ateliers"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/health-map-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/health-map-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/health-map-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/health-map-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "holographic-interface",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/holographic-interface"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/holographic-interface"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/holographic-interface"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/inter-app-communicator",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/inter-app-communicator"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/inter-app-communicator"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/inter-app-communicator"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "kira-audio-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/kira-audio-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/kira-audio-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/kira-audio-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/labs",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/labs"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/labs"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/labs"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/liber-arcanae",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "liber-arcanae-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral-real/liber-arcanae-tools",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae-tools"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-tools"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae-tools"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "living-canon-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/living-canon-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/living-canon-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/living-canon-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "living-libraries",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/living-libraries"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/living-libraries"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/living-libraries"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/luxcrux",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/luxcrux"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/luxcrux"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/luxcrux"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "magnum-opus",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/magnum-opus"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/magnum-opus"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/magnum-opus"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "mobile-optimization",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/mobile-optimization"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/mobile-optimization"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mobile-optimization"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "moonchild-scanner",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/moonchild-scanner"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/moonchild-scanner"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/moonchild-scanner"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "museum-sources",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/museum-sources"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/museum-sources"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/museum-sources"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/music-engine-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/music-engine-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/music-engine-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/music-engine-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "mystery-house-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/mystery-house-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/mystery-house-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystery-house-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/mystical-data-unified",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/mystical-data-unified"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/mystical-data-unified"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystical-data-unified"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/mystical-sound-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/mystical-sound-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/mystical-sound-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystical-sound-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/node-tree-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/node-tree-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/node-tree-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/node-tree-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "physics-cannon-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/physics-cannon-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/physics-cannon-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/physics-cannon-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/portal-system",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/portal-system"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/portal-system"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/portal-system"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "professional-collaboration-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-collaboration-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/professional-collaboration-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-collaboration-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "professional-export-integration",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-export-integration"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/professional-export-integration"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-export-integration"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "professional-quality-control",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-quality-control"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/professional-quality-control"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-quality-control"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "professional-suite",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-suite"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/professional-suite"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-suite"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "professional-typography-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-typography-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/professional-typography-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-typography-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "professional-vector-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-vector-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/professional-vector-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/professional-vector-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "registry-learning-validation",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/registry-learning-validation"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/registry-learning-validation"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/registry-learning-validation"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/sacred-geometry-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/sacred-geometry-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "sacred-geometry-math",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/sacred-geometry-math"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-math"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-math"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "sacred-geometry-simd",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/sacred-geometry-simd"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-simd"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-simd"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "sacred-mathematics-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/sacred-mathematics-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/sacred-mathematics-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-mathematics-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "scanner",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/scanner"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/scanner"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/scanner"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/science-engine-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/science-engine-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/science-engine-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/science-engine-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/shared",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/shared"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/shared"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/shared"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "simple-learning-validation",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/simple-learning-validation"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/simple-learning-validation"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/simple-learning-validation"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/smooth-movement-system",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/smooth-movement-system"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/smooth-movement-system"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/smooth-movement-system"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "sonic-physics-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/sonic-physics-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/sonic-physics-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sonic-physics-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/soul",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/soul"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/soul"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/soul"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "sound-mathematics-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/sound-mathematics-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/sound-mathematics-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sound-mathematics-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "spells",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/spells"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/spells"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/spells"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "spiral-learning-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/spiral-learning-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/spiral-learning-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/spiral-learning-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/stone-grimoire",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "stone-grimoire-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "stone-grimoire-library-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire-library-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire-library-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire-library-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "story-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/story-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/story-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/story-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/synth",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/synth"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/synth"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "synth-design-math-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/synth-design-math-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/synth-design-math-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth-design-math-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "synth-labs",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/synth-labs"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/synth-labs"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth-labs"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "synth-spells",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/synth-spells"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/synth-spells"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth-spells"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/synthesis-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/synthesis-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/synthesis-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synthesis-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "tarot-art",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tarot-art"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/tarot-art"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tarot-art"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "tarot-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tarot-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/tarot-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tarot-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "tarot-reader",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tarot-reader"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/tarot-reader"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tarot-reader"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/tesseract-bridge",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "tesseract-bridge-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/tesseract-bridge-hub",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-hub"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge-hub"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge-hub"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/three-engine",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/three-engine"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/three-engine"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/three-engine"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "trauma-safe-ui",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/trauma-safe-ui"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/trauma-safe-ui"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/trauma-safe-ui"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/trinity-architecture",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/trinity-architecture"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/trinity-architecture"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/trinity-architecture"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "trinity-v1-1-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/trinity-v1-1-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/trinity-v1-1-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/trinity-v1-1-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/types",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/types"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/types"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/types"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/ui",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/ui"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/ui"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/ui"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/unified-codex-core",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-core"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/unified-codex-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/unified-codex-core"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/unified-codex-extractor",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-extractor"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/unified-codex-extractor"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/unified-codex-extractor"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "unified-creative-system",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-creative-system"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/unified-creative-system"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/unified-creative-system"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "@cathedral-trinity/accessibility",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/universal-accessibility"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/universal-accessibility"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/universal-accessibility"
+        }
+      ]
+    },
+    {
+      "type": "package",
+      "name": "visionary-design-system",
+      "primary": {
+        "workspace": "cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/visionary-design-system"
+      },
+      "mergeFrom": [
+        {
+          "workspace": "cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/visionary-design-system"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/visionary-design-system"
+        }
+      ]
+    }
+  ],
+  "connections": 210,
+  "consolidationSteps": [
+    {
+      "step": 1,
+      "action": "Merge packages",
+      "description": "Copy all unique packages from other workspaces to cathedral-master-deployment/packages",
+      "entities": 131
+    },
+    {
+      "step": 2,
+      "action": "Merge apps",
+      "description": "Copy all unique apps from other workspaces to cathedral-master-deployment/apps",
+      "entities": 0
+    },
+    {
+      "step": 3,
+      "action": "Merge tools",
+      "description": "Copy all unique tools from other workspaces to cathedral-master-deployment/tools",
+      "entities": 0
+    },
+    {
+      "step": 4,
+      "action": "Update references",
+      "description": "Update all import paths and dependencies to point to consolidated locations"
+    },
+    {
+      "step": 5,
+      "action": "Verify",
+      "description": "Run builds and tests to verify everything works"
+    },
+    {
+      "step": 6,
+      "action": "Archive workspaces",
+      "description": "Move old workspaces to archive directory (don't delete yet)",
+      "workspaces": [
+        "cathedral-real",
+        "cathedral-fixed-clean"
+      ]
+    }
+  ]
+}

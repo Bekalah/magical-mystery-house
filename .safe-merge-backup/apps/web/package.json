@@ -1,0 +1,45 @@
+{
+  "name": "@cathedral/web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cathedral Web Interface - 3D Open World Experience",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "three": "^0.160.0",
+    "@react-three/fiber": "^8.15.0",
+    "@react-three/drei": "^9.88.0",
+    "@cathedral/codex-144-99-core": "workspace:*",
+    "@cathedral/unified-codex-core": "workspace:*",
+    "@cathedral/stone-grimoire-core": "workspace:*",
+    "@cathedral/mystery-house-core": "workspace:*",
+    "@cathedral/liber-arcanae-core": "workspace:*",
+    "@cathedral/music-engine-core": "workspace:*",
+    "@cathedral/art-engine-core": "workspace:*",
+    "@cathedral/science-engine-core": "workspace:*",
+    "@cathedral/art-standards-core": "workspace:*",
+    "@cathedral/game-design-core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/three": "^0.160.0",
+    "typescript": "^5.0.0",
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0"
+  },
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "license": "CC0-1.0"
+}

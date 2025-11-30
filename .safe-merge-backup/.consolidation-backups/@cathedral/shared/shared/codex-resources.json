@@ -1,0 +1,21 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "name": "Monad",
+      "art": ["https://www.wikiart.org/en/search/monad"],
+      "music": ["https://www.freesound.org/search/?q=drone"],
+      "synth": ["https://tonejs.github.io/"],
+      "inspiration": ["https://en.wikipedia.org/wiki/Monad_(philosophy)"]
+    },
+    {
+      "id": 1,
+      "name": "The Magician",
+      "art": ["https://www.wikiart.org/en/search/magician"],
+      "music": ["https://www.freesound.org/search/?q=magic"],
+      "synth": ["https://magenta.tensorflow.org/"],
+      "inspiration": ["https://en.wikipedia.org/wiki/Magician_(archetype)"]
+    }
+    
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@cathedral/cathedral-architect",
+  "version": "1.0.0",
+  "description": "🏛️ Cathedral Architect Engine - Transforms Codex nodes into explorable chambers",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rimraf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "three": "^0.158.0",
+    "@cathedral/three-engine": "workspace:*",
+    "@cathedral/codex-engine": "workspace:*",
+    "typescript": "^5.2.2",
+    "rimraf": "^5.0.5"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "cathedral",
+    "architecture",
+    "sacred-geometry",
+    "three.js",
+    "exploration",
+    "mystical-computing"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "license": "CC0-1.0",
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:00:20.022Z",
+  "packageManager": "pnpm@8.0.0"
+}

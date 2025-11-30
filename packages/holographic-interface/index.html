@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathedral - Holographic Master Interface</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;300&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --silk: #fefaf6;
+            --rose: #f5d4c8;
+            --lavender: #e8dff5;
+            --sage: #d4e4d4;
+            --deep: #3a2f3f;
+            --glow: rgba(232, 180, 184, 0.6);
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1520 50%, #0f0a15 100%);
+            color: var(--silk);
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        /* Starfield background */
+        #starfield {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+        }
+
+        /* Main 3D Canvas */
+        #hologram {
+            position: fixed;
+            inset: 0;
+            z-index: 1;
+        }
+
+        /* Control Panel */
+        .controls {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 320px;
+            background: linear-gradient(135deg, rgba(254, 250, 246, 0.05), rgba(232, 223, 245, 0.05));
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(232, 180, 184, 0.2);
+            border-radius: 24px;
+            padding: 28px;
+            z-index: 10;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(232, 180, 184, 0.2);
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2em;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            color: var(--rose);
+            text-shadow: 0 0 20px var(--glow);
+        }
+
+        .subtitle {
+            font-size: 0.7em;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--lavender);
+            opacity: 0.7;
+            margin-top: 8px;
+        }
+
+        /* Settings Group */
+        .group {
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(232, 180, 184, 0.1);
+        }
+
+        .group:last-child {
+            border: none;
+            margin-bottom: 0;
+        }
+
+        .group-title {
+            font-size: 0.75em;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--lavender);
+            margin-bottom: 16px;
+            opacity: 0.8;
+        }
+
+        /* Slider */
+        .param {
+            margin-bottom: 18px;
+        }
+
+        .param-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 0.8em;
+            color: var(--silk);
+            opacity: 0.7;
+        }
+
+        .param-value {
+            color: var(--rose);
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--rose), var(--lavender));
+            opacity: 0.3;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 14px;
+            height: 14px;
+            background: var(--rose);
+            border-radius: 50%;
+            cursor: grab;
+            box-shadow: 0 0 15px var(--glow);
+        }
+
+        input[type="range"]:hover {
+            opacity: 0.6;
+        }
+
+        /* Toggle Buttons */
+        .toggles {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .toggle {
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(232, 180, 184, 0.2);
+            border-radius: 8px;
+            font-size: 0.75em;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            color: var(--silk);
+            opacity: 0.5;
+        }
+
+        .toggle:hover {
+            opacity: 0.8;
+            border-color: var(--rose);
+        }
+
+        .toggle.active {
+            background: linear-gradient(135deg, var(--rose), var(--lavender));
+            border-color: transparent;
+            opacity: 1;
+            box-shadow: 0 0 20px var(--glow);
+        }
+
+        /* Mode Selector */
+        .modes {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 20px;
+        }
+
+        .mode-btn {
+            flex: 1;
+            padding: 12px 8px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(232, 180, 184, 0.2);
+            border-radius: 10px;
+            font-size: 0.7em;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+            color: var(--silk);
+            opacity: 0.4;
+        }
+
+        .mode-btn:hover {
+            opacity: 0.7;
+        }
+
+        .mode-btn.active {
+            background: linear-gradient(135deg, rgba(245, 212, 200, 0.2), rgba(232, 223, 245, 0.2));
+            border-color: var(--rose);
+            opacity: 1;
+        }
+
+        /* Stats Display */
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(232, 180, 184, 0.1);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.6em;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--lavender);
+            opacity: 0.6;
+            margin-bottom: 4px;
+        }
+
+        .stat-value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1em;
+            color: var(--rose);
+        }
+
+        /* Loading indicator */
+        .loading {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2em;
+            color: var(--rose);
+            text-shadow: 0 0 30px var(--glow);
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s;
+        }
+
+        .loading.active {
+            opacity: 1;
+        }
+
+        /* Trinity Integration Portal */
+        .trinity-portal {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: linear-gradient(135deg, rgba(254, 250, 246, 0.05), rgba(232, 223, 245, 0.05));
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(232, 180, 184, 0.2);
+            border-radius: 16px;
+            padding: 20px;
+            z-index: 10;
+        }
+
+        .portal-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.9em;
+            letter-spacing: 0.1em;
+            color: var(--rose);
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .portal-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .portal-btn {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(232, 180, 184, 0.2);
+            border-radius: 8px;
+            font-size: 0.75em;
+            letter-spacing: 0.1em;
+            color: var(--silk);
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .portal-btn:hover {
+            background: linear-gradient(135deg, var(--rose), var(--lavender));
+            border-color: transparent;
+            color: var(--deep);
+        }
+    </style>
+</head>
+<body>
+    <!-- Starfield Canvas -->
+    <canvas id="starfield"></canvas>
+
+    <!-- Main 3D Hologram -->
+    <canvas id="hologram"></canvas>
+
+    <!-- Loading -->
+    <div class="loading" id="loading">Initializing Hologram...</div>
+
+    <!-- Trinity Portal -->
+    <div class="trinity-portal">
+        <div class="portal-title">Trinity Gateway</div>
+        <div class="portal-buttons">
+            <a href="../circuitum99/" class="portal-btn">Soul • Circuitum99</a>
+            <a href="../stone-grimoire/" class="portal-btn">Body • Stone Grimoire</a>
+            <a href="../cosmogenesis-learning-engine/" class="portal-btn">Spirit • Cosmogenesis</a>
+            <a href="../codex-14499/" class="portal-btn">Lattice • Codex 144:99</a>
+        </div>
+    </div>
+
+    <!-- Control Panel -->
+    <div class="controls">
+        <div class="header">
+            <h1>Cathedral</h1>
+            <p class="subtitle">Holographic Interface</p>
+        </div>
+
+        <div class="group">
+            <div class="group-title">Visualization Mode</div>
+            <div class="modes">
+                <button class="mode-btn active" data-mode="fractal">Fractal</button>
+                <button class="mode-btn" data-mode="oscilloscope">Wave</button>
+                <button class="mode-btn" data-mode="spectral">Spectral</button>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="group-title">Holographic Depth</div>
+            <div class="param">
+                <div class="param-label">
+                    <span>Layer Separation</span>
+                    <span class="param-value" id="depthVal">5.0</span>
+                </div>
+                <input type="range" id="depth" min="1" max="20" step="0.5" value="5">
+            </div>
+            <div class="param">
+                <div class="param-label">
+                    <span>Rotation Speed</span>
+                    <span class="param-value" id="rotateVal">1.0×</span>
+                </div>
+                <input type="range" id="rotate" min="0" max="5" step="0.1" value="1">
+            </div>
+            <div class="param">
+                <div class="param-label">
+                    <span>Particle Density</span>
+                    <span class="param-value" id="particleVal">500</span>
+                </div>
+                <input type="range" id="particles" min="100" max="2000" step="100" value="500">
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="group-title">Visual Parameters</div>
+            <div class="param">
+                <div class="param-label">
+                    <span>Complexity</span>
+                    <span class="param-value" id="complexVal">256</span>
+                </div>
+                <input type="range" id="complexity" min="50" max="1000" step="50" value="256">
+            </div>
+            <div class="param">
+                <div class="param-label">
+                    <span>Frequency</span>
+                    <span class="param-value" id="freqVal">440 Hz</span>
+                </div>
+                <input type="range" id="frequency" min="20" max="2000" step="10" value="440">
+            </div>
+            <div class="param">
+                <div class="param-label">
+                    <span>Zoom Level</span>
+                    <span class="param-value" id="zoomVal">1.0×</span>
+                </div>
+                <input type="range" id="zoom" min="0.1" max="10" step="0.1" value="1">
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="group-title">Effects</div>
+            <div class="toggles">
+                <div class="toggle active" data-effect="glow">Glow</div>
+                <div class="toggle active" data-effect="blur">Depth Blur</div>
+                <div class="toggle" data-effect="chromatic">Chromatic</div>
+                <div class="toggle" data-effect="trails">Trails</div>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-label">FPS</div>
+                <div class="stat-value" id="fps">60</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Render</div>
+                <div class="stat-value" id="renderTime">16ms</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // === SETTINGS STATE ===
+        const settings = {
+            mode: 'fractal',
+            depth: 5,
+            rotation: 1,
+            particles: 500,
+            complexity: 256,
+            frequency: 440,
+            zoom: 1,
+            effects: {
+                glow: true,
+                blur: true,
+                chromatic: false,
+                trails: false
+            }
+        };
+
+        // === STARFIELD BACKGROUND ===
+        const starCanvas = document.getElementById('starfield');
+        const starCtx = starCanvas.getContext('2d');
+        starCanvas.width = window.innerWidth;
+        starCanvas.height = window.innerHeight;
+
+        const stars = [];
+        for (let i = 0; i < 200; i++) {
+            stars.push({
+                x: Math.random() * starCanvas.width,
+                y: Math.random() * starCanvas.height,
+                size: Math.random() * 2,
+                alpha: Math.random(),
+                speed: Math.random() * 0.5
+            });
+        }
+
+        function animateStars() {
+            starCtx.fillStyle = 'rgba(10, 10, 15, 0.1)';
+            starCtx.fillRect(0, 0, starCanvas.width, starCanvas.height);
+            
+            stars.forEach(star => {
+                star.alpha += (Math.random() - 0.5) * 0.05;
+                star.alpha = Math.max(0.3, Math.min(1, star.alpha));
+                
+                starCtx.fillStyle = `rgba(232, 180, 184, ${star.alpha})`;
+                starCtx.beginPath();
+                starCtx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+                starCtx.fill();
+                
+                star.y += star.speed;
+                if (star.y > starCanvas.height) {
+                    star.y = 0;
+                    star.x = Math.random() * starCanvas.width;
+                }
+            });
+            
+            requestAnimationFrame(animateStars);
+        }
+        animateStars();
+
+        // === THREE.JS HOLOGRAM ===
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ 
+            canvas: document.getElementById('hologram'),
+            alpha: true,
+            antialias: true
+        });
+        
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        camera.position.z = 15;
+
+        // === HOLOGRAPHIC MATERIALS ===
+        const holoMaterial = new THREE.ShaderMaterial({
+            uniforms: {
+                time: { value: 0 },
+                color1: { value: new THREE.Color(0xf5d4c8) },
+                color2: { value: new THREE.Color(0xe8dff5) },
+                opacity: { value: 0.8 }
+            },
+            vertexShader: `
+                varying vec2 vUv;
+                varying vec3 vPosition;
+                void main() {
+                    vUv = uv;
+                    vPosition = position;
+                    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                }
+            `,
+            fragmentShader: `
+                uniform float time;
+                uniform vec3 color1;
+                uniform vec3 color2;
+                uniform float opacity;
+                varying vec2 vUv;
+                varying vec3 vPosition;
+                
+                void main() {
+                    float pattern = sin(vUv.x * 20.0 + time) * sin(vUv.y * 20.0 + time);
+                    vec3 color = mix(color1, color2, pattern * 0.5 + 0.5);
+                    
+                    float glow = 1.0 - length(vUv - 0.5) * 2.0;
+                    gl_FragColor = vec4(color, opacity * glow);
+                }
+            `,
+            transparent: true,
+            blending: THREE.AdditiveBlending
+        });
+
+        // === CREATE HOLOGRAPHIC LAYERS ===
+        const layers = [];
+        function createLayers() {
+            // Clear existing
+            layers.forEach(layer => scene.remove(layer));
+            layers.length = 0;
+
+            const numLayers = 5;
+            for (let i = 0; i < numLayers; i++) {
+                const geometry = createGeometry(settings.mode);
+                const material = holoMaterial.clone();
+                material.uniforms.opacity.value = 0.3 - i * 0.05;
+                
+                const mesh = new THREE.Mesh(geometry, material);
+                mesh.position.z = -i * settings.depth;
+                mesh.rotation.x = Math.PI / 4;
+                
+                scene.add(mesh);
+                layers.push(mesh);
+            }
+        }
+
+        function createGeometry(mode) {
+            switch(mode) {
+                case 'fractal':
+                    return new THREE.IcosahedronGeometry(3, 2);
+                case 'oscilloscope':
+                    return new THREE.TorusGeometry(3, 0.5, 16, 100);
+                case 'spectral':
+                    return new THREE.PlaneGeometry(6, 6, 64, 64);
+                default:
+                    return new THREE.SphereGeometry(3, 32, 32);
+            }
+        }
+
+        // === PARTICLE SYSTEM ===
+        let particleSystem;
+        function createParticles() {
+            if (particleSystem) scene.remove(particleSystem);
+
+            const geometry = new THREE.BufferGeometry();
+            const positions = [];
+            const colors = [];
+
+            const color1 = new THREE.Color(0xf5d4c8);
+            const color2 = new THREE.Color(0xe8dff5);
+
+            for (let i = 0; i < settings.particles; i++) {
+                const x = (Math.random() - 0.5) * 30;
+                const y = (Math.random() - 0.5) * 30;
+                const z = (Math.random() - 0.5) * 30;
+                positions.push(x, y, z);
+
+                const color = color1.clone().lerp(color2, Math.random());
+                colors.push(color.r, color.g, color.b);
+            }
+
+            geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+            geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+
+            const material = new THREE.PointsMaterial({
+                size: 0.1,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.6,
+                blending: THREE.AdditiveBlending
+            });
+
+            particleSystem = new THREE.Points(geometry, material);
+            scene.add(particleSystem);
+        }
+
+        // === ANIMATION LOOP ===
+        let time = 0;
+        let lastTime = performance.now();
+        let frameCount = 0;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            const now = performance.now();
+            const delta = now - lastTime;
+            lastTime = now;
+            
+            time += 0.01;
+            frameCount++;
+
+            // Update FPS
+            if (frameCount % 60 === 0) {
+                document.getElementById('fps').textContent = Math.round(1000 / delta);
+                document.getElementById('renderTime').textContent = Math.round(delta) + 'ms';
+            }
+
+            // Rotate layers
+            layers.forEach((layer, i) => {
+                layer.rotation.y += 0.001 * settings.rotation * (i + 1);
+                layer.rotation.x += 0.0005 * settings.rotation;
+                layer.material.uniforms.time.value = time;
+            });
+
+            // Rotate particles
+            if (particleSystem) {
+                particleSystem.rotation.y += 0.0002 * settings.rotation;
+            }
+
+            renderer.render(scene, camera);
+        }
+
+        // === UI CONTROLS ===
+        
+        // Mode buttons
+        document.querySelectorAll('.mode-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                settings.mode = btn.dataset.mode;
+                createLayers();
+            });
+        });
+
+        // Sliders
+        function setupSlider(id, prop, format = v => v) {
+            const slider = document.getElementById(id);
+            const display = document.getElementById(id + 'Val');
+            
+            slider.addEventListener('input', () => {
+                const val = parseFloat(slider.value);
+                settings[prop] = val;
+                display.textContent = format(val);
+                
+                if (prop === 'depth') createLayers();
+                if (prop === 'particles') createParticles();
+            });
+        }
+
+        setupSlider('depth', 'depth', v => v.toFixed(1));
+        setupSlider('rotate', 'rotation', v => v.toFixed(1) + '×');
+        setupSlider('particles', 'particles');
+        setupSlider('complexity', 'complexity');
+        setupSlider('frequency', 'frequency', v => v + ' Hz');
+        setupSlider('zoom', 'zoom', v => v.toFixed(1) + '×');
+
+        // Effect toggles
+        document.querySelectorAll('.toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                toggle.classList.toggle('active');
+                const effect = toggle.dataset.effect;
+                settings.effects[effect] = toggle.classList.contains('active');
+            });
+        });
+
+        // Window resize
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            
+            starCanvas.width = window.innerWidth;
+            starCanvas.height = window.innerHeight;
+        });
+
+        // Mouse interaction
+        let mouseX = 0, mouseY = 0;
+        document.addEventListener('mousemove', (e) => {
+            mouseX = (e.clientX / window.innerWidth) * 2 - 1;
+            mouseY = -(e.clientY / window.innerHeight) * 2 + 1;
+            
+            camera.position.x += (mouseX * 2 - camera.position.x) * 0.05;
+            camera.position.y += (mouseY * 2 - camera.position.y) * 0.05;
+            camera.lookAt(scene.position);
+        });
+
+        // === INITIALIZE ===
+        const loading = document.getElementById('loading');
+        loading.classList.add('active');
+
+        setTimeout(() => {
+            createLayers();
+            createParticles();
+            animate();
+            loading.classList.remove('active');
+        }, 1000);
+    </script>
+</body>
+</html>

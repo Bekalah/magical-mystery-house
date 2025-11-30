@@ -1,0 +1,31 @@
+{
+  "name": "@cathedral/fractal-flames-daemon-deity",
+  "version": "1.0.0",
+  "description": "Fractal Flames Library - Real Elements, Daimons, and Deities as Fractals",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Fractal flames - permanent technology'",
+    "dev": "echo 'Fractal flames - eternal flame'",
+    "generate": "node src/generators/fractal-flame-generator.js"
+  },
+  "keywords": [
+    "fractal-flames",
+    "daemon-deity",
+    "sacred-fractals",
+    "elemental-fractals",
+    "mystical-technology",
+    "permanent-flame"
+  ],
+  "author": "Cathedral Master Creative Intelligence Team",
+  "license": "CC0-1.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:00:22.304Z",
+  "packageManager": "pnpm@8.0.0"
+}

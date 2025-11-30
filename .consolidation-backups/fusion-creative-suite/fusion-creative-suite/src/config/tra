@@ -1,0 +1,420 @@
+/**
+ * 🛡️ Fusion Creative Suite - Trauma-Safe Configuration
+ * Professional Adobe/Figma replacement with healing-focused defaults
+ * Frequency ranges, motion controls, sacred geometry without overwhelming effects
+ */
+
+import { TraumaSafeConfig } from '../types/index.js';
+
+// ============================================================================
+// FUSION CREATIVE SUITE TRAUMA-SAFE DEFAULTS
+// ============================================================================
+
+export const FUSION_TRAUMA_SAFE_DEFAULTS: TraumaSafeConfig = {
+  emergencyExits: true,
+  motionReduction: true,
+  processingTime: 1500, // Slightly longer for creative tools (1.5s)
+  gentleDefaults: true,
+  
+  sensoryControls: {
+    sound: 'reduced' as const,        // Reduced audio for focus
+    motion: 'reduced' as const,       // Minimal motion in interface
+    colorIntensity: 'dimmed' as const, // Gentle color palette
+    frequencyRange: 'safe' as const    // Safe healing frequencies only
+  },
+  
+  accessibilityFeatures: {
+    keyboardNavigation: true,
+    screenReader: true,
+    highContrast: false,
+    fontScaling: true,
+    voiceControl: true,
+    eyeTracking: false
+  },
+  
+  harmonyBalance: {
+    divineLight: 0.7,        // More divine for creative inspiration
+    infernalShadow: 0.2,     // Minimal shadow for safety
+    neutral: 0.1            // Some neutral grounding
+  }
+};
+
+// ============================================================================
+// CREATIVE TOOL SPECIFIC SAFETY
+// ============================================================================
+
+export const CREATIVE_TOOL_SAFETY = {
+  // Merkaba 3D Builder Safety
+  merkaba: {
+    maxRotationSpeed: 0.5,    // Max 0.5 rotations per second
+    maxOpacity: 0.8,         // Not fully opaque
+    gentleColors: true,      // Use healing colors
+    staticMode: true,        // Can be static if needed
+    sizeLimit: 200,          // Max pixel size
+    complexityLimit: 8       // Max geometric complexity
+  },
+  
+  // Brush Engine Safety
+  brushes: {
+    maxPressure: 0.7,        // Not maximum pressure
+    maxSize: 100,            // Reasonable brush sizes
+    gentleDynamics: true,    // Softer brush dynamics
+    safeTextures: true,      // No overwhelming textures
+    frequencySafe: true,     // No overwhelming frequency effects
+    colorJitter: 0.1,        // Minimal color variation
+    smoothTransitions: true  // No harsh transitions
+  },
+  
+  // Vector Graphics Safety
+  vectors: {
+    maxComplexity: 50,       // Max path complexity
+    gentleColors: true,      // Soft color palette
+    noFlashing: true,        // No flashing effects
+    smoothAnimations: true,  // Smooth transitions
+    sacredGeometrySafe: true // Safe sacred geometry
+  },
+  
+  // Frequency Visualizer Safety
+  frequencies: {
+    maxAmplitude: 0.5,       // Not maximum volume
+    safeRanges: true,        // Only healing frequencies
+    gentleViz: true,         // Soft visualizations
+    noStrobing: true,        // No strobing effects
+    gradualChanges: true,    // Gradual frequency changes
+    userControl: true        // Full user control
+  }
+};
+
+// ============================================================================
+// GENTLE COLOR PRESETS FOR CREATIVE TOOLS
+// ============================================================================
+
+export const CREATIVE_COLOR_PRESETS = {
+  // Healing palette for creative work
+  healing: {
+    primary: { r: 0.75, g: 0.85, b: 0.95 },    // Soft blue healing
+    secondary: { r: 0.85, g: 0.9, b: 0.8 },    // Mint healing
+    divine: { r: 0.8, g: 0.9, b: 0.95 },       // Divine light blue
+    infernal: { r: 0.7, g: 0.75, b: 0.8 },     // Gentle shadow
+    aura: { r: 0.8, g: 0.88, b: 0.9 }          // Soft aura
+  },
+  
+  // Creative inspiration palette
+  inspiration: {
+    primary: { r: 0.8, g: 0.7, b: 0.9 },       // Soft purple creativity
+    secondary: { r: 0.9, g: 0.8, b: 0.7 },     // Warm cream inspiration
+    divine: { r: 0.9, g: 0.85, b: 0.95 },      // Light divine
+    infernal: { r: 0.75, g: 0.65, b: 0.8 },    // Gentle shadow
+    aura: { r: 0.85, g: 0.75, b: 0.85 }        // Creative aura
+  },
+  
+  // Monochrome for high sensitivity
+  monochrome: {
+    primary: { r: 0.85, g: 0.85, b: 0.85 },    // Soft gray
+    secondary: { r: 0.9, g: 0.9, b: 0.9 },     // Lighter gray
+    divine: { r: 0.8, g: 0.8, b: 0.8 },        // Divine gray
+    infernal: { r: 0.7, g: 0.7, b: 0.7 },      // Shadow gray
+    aura: { r: 0.85, g: 0.85, b: 0.85 }        // Balanced gray
+  }
+};
+
+// ============================================================================
+// SAFE FREQUENCY RANGES FOR CREATIVE WORK
+// ============================================================================
+
+export const CREATIVE_FREQUENCY_RANGES = {
+  // Healing creative frequencies
+  creative_healing: {
+    min: 396,      // Liberation from fear
+    max: 741,      // Awakening intuition
+    base: 528,     // DNA repair, transformation
+    safe: true,
+    therapeutic: true
+  },
+  
+  // Creative inspiration frequencies
+  creative_flow: {
+    min: 528,      // Transformation
+    max: 852,      // Spiritual order
+    base: 639,     // Connection
+    safe: true,
+    inspirational: true
+  },
+  
+  // Meditation and deep focus
+  creative_zen: {
+    min: 417,      // Undo situations, change
+    max: 639,      // Connection
+    base: 432,     // Universal frequency
+    safe: true,
+    meditative: true
+  },
+  
+  // Artistic expression
+  creative_expression: {
+    min: 741,      // Awakening intuition
+    max: 963,      // Divine consciousness
+    base: 852,     // Spiritual order
+    safe: true,
+    expressive: true
+  }
+};
+
+// ============================================================================
+// SACRED GEOMETRY SAFETY LIMITS
+// ============================================================================
+
+export const SACRED_GEOMETRY_SAFETY = {
+  // Flower of Life patterns
+  flowerOfLife: {
+    maxRings: 5,           // Max 5 rings (center + 4 around)
+    maxOpacity: 0.7,       // Not fully opaque
+    gentleRotation: true,  // Slow, gentle rotation
+    staticAllowed: true,   // Can be static
+    softColors: true       // Healing colors only
+  },
+  
+  // Fibonacci spirals
+  fibonacci: {
+    maxIterations: 10,     // Max 10 iterations
+    gentleColors: true,    // Soft colors
+    staticAllowed: true,   // Can be static
+    sizeLimit: 300,        // Max size in pixels
+    smoothTransitions: true
+  },
+  
+  // Merkaba (Star Tetrahedron)
+  merkaba: {
+    maxSize: 150,          // Max size in pixels
+    gentleRotation: true,  // Slow rotation
+    softColors: true,      // Healing colors
+    staticAllowed: true,   // Can be static
+    opacityLimit: 0.8,     // Not fully opaque
+    rotationSpeed: 0.3     // Max 0.3 rotations/sec
+  },
+  
+  // Metatron's Cube
+  metatron: {
+    maxComplexity: 6,      // Max 6 circles
+    gentleColors: true,    // Soft colors
+    staticAllowed: true,   // Can be static
+    sizeLimit: 250,        // Max size
+    smoothLines: true      // Smooth, not sharp
+  }
+};
+
+// ============================================================================
+// ARcana CHARACTER SYSTEM SAFETY
+// ============================================================================
+
+export const ARCANA_SAFETY = {
+  // Gentle arcana selection
+  selection: {
+    positiveOnly: false,   // User chooses their path
+    gentleThemes: true,    // Emphasize positive aspects
+    healingFrequencies: true, // Use healing frequencies
+    userChoice: true,      // Full user control
+    safeDescriptions: true // Non-triggering descriptions
+  },
+  
+  // Character visualization
+  visualization: {
+    gentleAuras: true,     // Soft, healing auras
+    noDarkImagery: false,  // User chooses imagery style
+    softColors: true,      // Healing color palette
+    staticAllowed: true,   // Can be static if preferred
+    sizeLimit: 200,        // Max size
+    userControl: true      // Full customization
+  },
+  
+  // Frequency work with arcana
+  frequencyWork: {
+    gentleFrequencies: true, // Healing frequencies only
+    userControl: true,      // Full control
+    durationLimits: true,   // Reasonable session limits
+    breakReminders: true,   // Encourage breaks
+    gradualIntroduction: true // Start gentle
+  }
+};
+
+// ============================================================================
+// CANVAS AND RENDERING SAFETY
+// ============================================================================
+
+export const CANVAS_SAFETY = {
+  // Professional canvas settings
+  canvas: {
+    maxResolution: 4096,    // 4096x4096 max
+    bitDepth: 16,           // 16-bit color
+    gentleDefaults: true,   // Safe starting settings
+    traumaSafeColors: true, // Healing color palette
+    userControl: true       // Full user control
+  },
+  
+  // Brush engine safety
+  brushes: {
+    maxSize: 200,           // Max brush size
+    maxHardness: 0.8,       // Not maximum hardness
+    gentleDynamics: true,   // Soft brush behavior
+    frequencySafe: true,    // No overwhelming effects
+    userControl: true,      // Full customization
+    safeTextures: true      // No harsh textures
+  },
+  
+  // Vector graphics safety
+  vectors: {
+    maxComplexity: 100,     // Max path complexity
+    gentleColors: true,     // Soft color palette
+    noFlashing: true,       // No flashing effects
+    smoothRendering: true,  // Smooth, anti-aliased
+    userControl: true       // Full control
+  }
+};
+
+// ============================================================================
+// INTERACTION SAFETY
+// ============================================================================
+
+export const INTERACTION_SAFETY = {
+  // Mouse/touch interaction
+  mouse: {
+    gentleCursors: true,    // Soft cursor styles
+    smoothTracking: true,   // Smooth cursor movement
+    noHarshTransitions: true, // Smooth transitions
+    accessibleTargets: true // Large, accessible targets
+  },
+  
+  // Keyboard navigation
+  keyboard: {
+    fullNavigation: true,   // Complete keyboard support
+    logicalTabOrder: true,  // Proper tab order
+    focusIndicators: true,  // Clear focus indicators
+    shortcuts: true,        // Helpful shortcuts
+    escapeExits: true       // ESC always exits
+  },
+  
+  // Voice control
+  voice: {
+    gentleCommands: true,   // Soft, non-intimidating
+    clearFeedback: true,    // Clear audio feedback
+    userControl: true,      // Full control
+    safeCommands: true      // Safe voice commands only
+  }
+};
+
+// ============================================================================
+// CREATIVE TOOL PRESETS
+// ============================================================================
+
+export const CREATIVE_TOOL_PRESETS = {
+  // Beginner-friendly preset
+  beginner: {
+    motion: 'none' as const,
+    colorIntensity: 'dimmed' as const,
+    sound: 'reduced' as const,
+    frequencyRange: 'safe' as const,
+    complexity: 'simple' as const,
+    guidance: true
+  },
+  
+  // Standard creative preset
+  standard: {
+    motion: 'reduced' as const,
+    colorIntensity: 'dimmed' as const,
+    sound: 'reduced' as const,
+    frequencyRange: 'safe' as const,
+    complexity: 'moderate' as const,
+    guidance: false
+  },
+  
+  // Advanced user preset
+  advanced: {
+    motion: 'full' as const,
+    colorIntensity: 'full' as const,
+    sound: 'full' as const,
+    frequencyRange: 'safe' as const,
+    complexity: 'advanced' as const,
+    guidance: false
+  }
+};
+
+// ============================================================================
+// VALIDATION AND TESTING
+// ============================================================================
+
+export const validateFusionSafetyConfig = (config: TraumaSafeConfig): {
+  valid: boolean;
+  warnings: string[];
+  errors: string[];
+  recommendations: string[];
+} => {
+  const warnings: string[] = [];
+  const errors: string[] = [];
+  const recommendations: string[] = [];
+  
+  // Check frequency safety
+  if (config.sensoryControls.frequencyRange === 'full') {
+    warnings.push('Full frequency range may be overwhelming for sensitive users');
+    recommendations.push('Consider using "safe" range for healing-focused work');
+  }
+  
+  // Check motion levels
+  if (config.sensoryControls.motion === 'full' && config.gentleDefaults) {
+    warnings.push('Full motion with gentle defaults may conflict');
+    recommendations.push('Use "reduced" motion for gentler experience');
+  }
+  
+  // Check processing time
+  if (config.processingTime < 1000 && config.gentleDefaults) {
+    recommendations.push('Consider longer processing time for creative tools');
+  }
+  
+  // Check harmony balance
+  const total = config.harmonyBalance.divineLight + 
+               config.harmonyBalance.infernalShadow + 
+               config.harmonyBalance.neutral;
+  if (Math.abs(total - 1.0) > 0.01) {
+    errors.push('Harmony balance must sum to 1.0');
+  }
+  
+  // Check for creative tool safety
+  if (config.emergencyExits === false) {
+    errors.push('Emergency exits must be enabled for safety');
+  }
+  
+  return {
+    valid: errors.length === 0,
+    warnings,
+    errors,
+    recommendations
+  };
+};
+
+// ============================================================================
+// EXPORT
+// ============================================================================
+
+export {
+  FUSION_TRAUMA_SAFE_DEFAULTS,
+  CREATIVE_TOOL_SAFETY,
+  CREATIVE_COLOR_PRESETS,
+  CREATIVE_FREQUENCY_RANGES,
+  SACRED_GEOMETRY_SAFETY,
+  ARCANA_SAFETY,
+  CANVAS_SAFETY,
+  INTERACTION_SAFETY,
+  CREATIVE_TOOL_PRESETS
+};
+
+export default {
+  defaults: FUSION_TRAUMA_SAFE_DEFAULTS,
+  tools: CREATIVE_TOOL_SAFETY,
+  colors: CREATIVE_COLOR_PRESETS,
+  frequencies: CREATIVE_FREQUENCY_RANGES,
+  geometry: SACRED_GEOMETRY_SAFETY,
+  arcana: ARCANA_SAFETY,
+  canvas: CANVAS_SAFETY,
+  interaction: INTERACTION_SAFETY,
+  presets: CREATIVE_TOOL_PRESETS,
+  validate: validateFusionSafetyConfig
+};

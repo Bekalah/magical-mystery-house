@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Experiment files
+experiment-state.json
+IMPROVEMENT_EXPERIMENT_LOG.json
+improvements-summary.md
+experiment.out
+
+# Continuous improvement files
+.continuous-improvement-state.json
+.continuous-improvement.log
+.continuous-improvement.pid
+
+# GitHub token (if accidentally committed)
+.env.local
+.env.*.local
+*.token
+*.key
+

@@ -1,0 +1,116 @@
+#!/usr/bin/env node
+/**
+ * ND joy: Central to all tools - honors neurodivergent creative expression
+ */
+
+/**
+ * State File Cleanup Utility
+ * Optimizes and cleans the continuous improvement state file
+ * 
+ * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+ */
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const BASE_DIR = path.join(__dirname, '..');
+
+const STATE_FILE = path.join(BASE_DIR, '.continuous-improvement-state.json');
+const ARCHIVE_FILE = path.join(BASE_DIR, '.continuous-improvement-archive.json');
+
+function cleanupStateFile() {
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log('🧹 Cleaning up state file...\n');
+
+  if (!fs.existsSync(STATE_FILE)) {
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log('✅ No state file found - nothing to clean');
+    return;
+  }
+
+  try {
+    // Read current state
+    const stateContent = fs.readFileSync(STATE_FILE, 'utf-8');
+    const state = JSON.parse(stateContent);
+    
+    const originalSize = stateContent.length;
+    const originalCycles = state.cycles?.length || 0;
+
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`📊 Current state:`);
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   File size: ${(originalSize / 1024).toFixed(2)} KB`);
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   Cycles: ${originalCycles}`);
+
+    // Archive old cycles (keep only last 50)
+    if (state.cycles && state.cycles.length > 50) {
+      const toArchive = state.cycles.slice(0, -50);
+      const toKeep = state.cycles.slice(-50);
+      
+      // Load or create archive
+      let archive = { cycles: [] };
+      if (fs.existsSync(ARCHIVE_FILE)) {
+        const archiveContent = fs.readFileSync(ARCHIVE_FILE, 'utf-8');
+        if (archiveContent.trim()) {
+          archive = JSON.parse(archiveContent);
+        }
+      }
+      
+      // Add to archive
+      archive.cycles.push(...toArchive);
+      
+      // Keep only last 1000 in archive
+      if (archive.cycles.length > 1000) {
+        archive.cycles = archive.cycles.slice(-1000);
+      }
+      
+      // Save archive
+      fs.writeFileSync(ARCHIVE_FILE, JSON.stringify(archive, null, 2), 'utf-8');
+      
+      // Update state
+      state.cycles = toKeep;
+      
+      // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`\n📦 Archived ${toArchive.length} cycles`);
+      // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   Kept ${toKeep.length} recent cycles`);
+    }
+
+    // Clean up metrics if too large
+    if (state.metrics?.toolStats) {
+      const toolStats = state.metrics.toolStats;
+      const toolCount = Object.keys(toolStats).length;
+      // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`\n📊 Metrics: ${toolCount} tools tracked`);
+      
+      // Convert any Set objects to Arrays
+      Object.keys(toolStats).forEach(tool => {
+        if (toolStats[tool].phases instanceof Set) {
+          toolStats[tool].phases = Array.from(toolStats[tool].phases);
+        }
+      });
+    }
+
+    // Save optimized state
+    const optimizedContent = JSON.stringify(state, null, 2);
+    fs.writeFileSync(STATE_FILE, optimizedContent, 'utf-8');
+    
+    const newSize = optimizedContent.length;
+    const sizeReduction = originalSize - newSize;
+    const percentReduction = ((sizeReduction / originalSize) * 100).toFixed(1);
+
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`\n✅ Cleanup complete:`);
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   New file size: ${(newSize / 1024).toFixed(2)} KB`);
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   Size reduction: ${(sizeReduction / 1024).toFixed(2)} KB (${percentReduction}%)`);
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   Cycles: ${state.cycles?.length || 0}`);
+
+  } catch (error) {
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.error(`❌ Error cleaning state file: ${error.message}`);
+    process.exit(1);
+  }
+}
+
+// Run if called directly
+if (import.meta.url === `file://${process.argv[1]}`) {
+  cleanupStateFile();
+}
+
+export { cleanupStateFile };
+

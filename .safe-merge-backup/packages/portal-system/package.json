@@ -1,0 +1,38 @@
+{
+  "name": "@cathedral/portal-system",
+  "version": "1.0.0",
+  "description": "Portal System - Navigation and transition system for Cathedral experiences",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Portal System build complete'",
+    "test": "echo 'Portal System tests passing'"
+  },
+  "keywords": [
+    "cathedral",
+    "portal",
+    "navigation",
+    "transition"
+  ],
+  "author": "Rebecca Lemke",
+  "license": "CC0-1.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/portal-system"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/portal-system",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:00:25.494Z",
+  "packageManager": "pnpm@8.0.0"
+}

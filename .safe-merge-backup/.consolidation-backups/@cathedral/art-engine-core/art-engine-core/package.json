@@ -1,0 +1,49 @@
+{
+  "name": "@cathedral/art-engine-core",
+  "version": "1.0.0",
+  "description": "Art Engine - Sacred Geometry & Visual Creation for Cathedral",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "CC0-1.0",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "@cathedral/codex-144-99-core": "workspace:*",
+    "@cathedral/sacred-mathematics-core": "workspace:*",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rebeccalemke/cathedral-master-deployment.git",
+    "directory": "packages/art-engine-core"
+  },
+  "homepage": "https://github.com/rebeccalemke/cathedral-master-deployment/tree/main/packages/art-engine-core",
+  "bugs": {
+    "url": "https://github.com/rebeccalemke/cathedral-master-deployment/issues"
+  },
+  "keywords": [
+    "cathedral",
+    "art",
+    "sacred-geometry",
+    "visual",
+    "144-99",
+    "codex",
+    "consciousness",
+    "trauma-aware",
+    "open-source",
+    "free"
+  ],
+  "packageManager": "pnpm@8.0.0",
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T19:53:26.699Z"
+}

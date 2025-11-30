@@ -1,0 +1,42 @@
+{
+  "name": "@cathedral/circuitum99",
+  "version": "2.0.0",
+  "description": "Circuitum99 - Mystical circuit visualization with gem tower integration and sacred geometry",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "clean": "rm -rf dist node_modules/.vite"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.158.0",
+    "@react-three/fiber": "^8.15.11",
+    "@react-three/drei": "^9.88.17",
+    "zustand": "^4.4.6",
+    "framer-motion": "^10.16.5",
+    "tone": "^14.7.77",
+    "@cathedral/sacred-geometry-core": "workspace:*",
+    "@cathedral/mystical-data-unified": "workspace:*",
+    "@cathedral/gem-tower-engine": "workspace:*",
+    "@cathedral/fusion-kink-generator": "workspace:*",
+    "@cathedral/smooth-movement-system": "workspace:*",
+    "@cathedral/portal-system": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^6.0.1",
+    "eslint": "^8.54.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5"
+  }
+}

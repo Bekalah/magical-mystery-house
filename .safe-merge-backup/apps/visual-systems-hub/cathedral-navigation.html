@@ -1,0 +1,1373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      144-Room Cathedral Navigation System - Cathedral Master V1 Control System
+    </title>
+    <meta
+      name="description"
+      content="Interactive 3D navigation system for exploring the complete 144-room Cathedral structure with spatial relationships" />
+
+    <style>
+      :root {
+        --cathedral-primary: #1a237e;
+        --cathedral-gold: #ffd700;
+        --cathedral-silver: #c0c0c0;
+        --cathedral-crystal: #e1f5fe;
+        --cathedral-stone: #795548;
+        --cathedral-light: #fafafa;
+        --cathedral-accent: #4caf50;
+        --cathedral-warning: #ff9800;
+        --cathedral-error: #f44336;
+        --cathedral-shadow: rgba(0, 0, 0, 0.2);
+        --cathedral-transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        background: linear-gradient(
+          135deg,
+          var(--cathedral-primary) 0%,
+          #283593 50%,
+          #3f51b5 100%
+        );
+        color: var(--cathedral-light);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      /* Navigation Header */
+      .cathedral-nav-header {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid var(--cathedral-gold);
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .nav-logo {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        text-decoration: none;
+      }
+
+      .nav-controls {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .control-group {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .control-label {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+      }
+
+      .control-select,
+      .control-button {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--cathedral-silver);
+        color: var(--cathedral-light);
+        padding: 0.5rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: var(--cathedral-transition);
+      }
+
+      .control-button:hover,
+      .control-select:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: var(--cathedral-gold);
+      }
+
+      .back-button {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-primary);
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: var(--cathedral-transition);
+      }
+
+      .back-button:hover {
+        background: var(--cathedral-light);
+        transform: scale(1.05);
+      }
+
+      /* Main Content */
+      .cathedral-main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .cathedral-title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px var(--cathedral-shadow);
+      }
+
+      .cathedral-subtitle {
+        text-align: center;
+        font-size: 1.1rem;
+        color: var(--cathedral-crystal);
+        margin-bottom: 3rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Navigation Interface */
+      .navigation-interface {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 2rem;
+        margin-bottom: 3rem;
+        height: 600px;
+      }
+
+      .cathedral-canvas {
+        background: rgba(0, 0, 0, 0.4);
+        border: 3px solid var(--cathedral-gold);
+        border-radius: 16px;
+        position: relative;
+        overflow: hidden;
+        backdrop-filter: blur(5px);
+      }
+
+      .canvas-3d {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          45deg,
+          #1a237e 0%,
+          #283593 50%,
+          #3f51b5 100%
+        );
+        position: relative;
+      }
+
+      .room-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        gap: 2px;
+        padding: 20px;
+        height: 100%;
+        position: relative;
+      }
+
+      .room-cell {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--cathedral-silver);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: var(--cathedral-transition);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: var(--cathedral-light);
+      }
+
+      .room-cell:hover {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-primary);
+        transform: scale(1.1);
+        z-index: 10;
+        box-shadow: 0 4px 12px var(--cathedral-shadow);
+      }
+
+      .room-cell.active {
+        background: var(--cathedral-accent);
+        color: white;
+        border-color: var(--cathedral-accent);
+        box-shadow: 0 0 20px var(--cathedral-accent);
+      }
+
+      .room-cell.visited {
+        background: var(--cathedral-warning);
+        color: white;
+      }
+
+      .room-cell.locked {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: var(--cathedral-silver);
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .room-number {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        font-size: 0.6rem;
+        opacity: 0.7;
+      }
+
+      .room-icon {
+        font-size: 1rem;
+        margin-bottom: 2px;
+      }
+
+      /* Side Panel */
+      .navigation-panel {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 1.5rem;
+        backdrop-filter: blur(10px);
+        border: 2px solid var(--cathedral-silver);
+      }
+
+      .panel-section {
+        margin-bottom: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 1rem;
+        border-bottom: 2px solid var(--cathedral-silver);
+        padding-bottom: 0.5rem;
+      }
+
+      .current-room {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .room-info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .room-icon-large {
+        font-size: 2rem;
+        color: var(--cathedral-gold);
+      }
+
+      .room-details h3 {
+        color: var(--cathedral-gold);
+        margin-bottom: 0.25rem;
+      }
+
+      .room-details p {
+        color: var(--cathedral-crystal);
+        font-size: 0.9rem;
+      }
+
+      .room-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      .stat-item {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0.5rem;
+        border-radius: 4px;
+        text-align: center;
+      }
+
+      .stat-value {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+      }
+
+      .stat-label {
+        font-size: 0.7rem;
+        color: var(--cathedral-crystal);
+      }
+
+      /* Navigation Controls */
+      .nav-controls-panel {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        padding: 1rem;
+      }
+
+      .control-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .nav-button {
+        background: var(--cathedral-silver);
+        color: var(--cathedral-primary);
+        border: none;
+        border-radius: 4px;
+        padding: 0.8rem;
+        cursor: pointer;
+        font-weight: 600;
+        transition: var(--cathedral-transition);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+      }
+
+      .nav-button:hover:not(:disabled) {
+        background: var(--cathedral-gold);
+        transform: scale(1.05);
+      }
+
+      .nav-button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .nav-button.center {
+        grid-column: 2;
+      }
+
+      /* Room List */
+      .room-list {
+        max-height: 200px;
+        overflow-y: auto;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        padding: 1rem;
+      }
+
+      .room-item {
+        padding: 0.5rem;
+        border-radius: 4px;
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+        transition: var(--cathedral-transition);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .room-item:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .room-item.active {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-primary);
+      }
+
+      .room-item.visited {
+        background: rgba(255, 152, 0, 0.3);
+      }
+
+      /* Legend */
+      .cathedral-legend {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .legend-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+      }
+
+      .legend-sample {
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        border: 2px solid var(--cathedral-gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+
+      .legend-label {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+      }
+
+      /* Search Panel */
+      .search-panel {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .search-input {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--cathedral-silver);
+        color: var(--cathedral-light);
+        padding: 0.75rem;
+        border-radius: 6px;
+        font-size: 1rem;
+      }
+
+      .search-input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      /* Path Visualization */
+      .path-visualization {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 1rem;
+      }
+
+      .path-steps {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .path-step {
+        background: var(--cathedral-silver);
+        color: var(--cathedral-primary);
+        padding: 0.3rem 0.6rem;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+
+      .path-step.current {
+        background: var(--cathedral-gold);
+        box-shadow: 0 0 10px var(--cathedral-gold);
+      }
+
+      .path-arrow {
+        color: var(--cathedral-gold);
+        font-size: 1.2rem;
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 1024px) {
+        .navigation-interface {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr auto;
+          height: auto;
+        }
+
+        .cathedral-canvas {
+          height: 400px;
+        }
+
+        .navigation-panel {
+          order: -1;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .nav-container {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .nav-controls {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .cathedral-title {
+          font-size: 2rem;
+        }
+
+        .room-grid {
+          grid-template-columns: repeat(8, 1fr);
+          grid-template-rows: repeat(18, 1fr);
+        }
+
+        .control-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      /* Accessibility */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      a:focus,
+      button:focus,
+      .room-cell:focus {
+        outline: 2px solid var(--cathedral-gold);
+        outline-offset: 2px;
+      }
+
+      /* Loading Animation */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .navigation-interface {
+        animation: fadeIn 0.6s ease-out;
+      }
+
+      /* Tooltip */
+      .room-tooltip {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.9);
+        color: var(--cathedral-light);
+        padding: 0.8rem;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        pointer-events: none;
+        z-index: 2000;
+        max-width: 200px;
+        box-shadow: 0 4px 12px var(--cathedral-shadow);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .room-tooltip.visible {
+        opacity: 1;
+      }
+
+      /* Zoom Controls */
+      .zoom-controls {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .zoom-button {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--cathedral-silver);
+        color: var(--cathedral-light);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: var(--cathedral-transition);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+      }
+
+      .zoom-button:hover {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-primary);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Header -->
+    <header class="cathedral-nav-header">
+      <nav class="nav-container">
+        <a href="index.html" class="nav-logo">🏛️ Cathedral Navigation System</a>
+        <div class="nav-controls">
+          <div class="control-group">
+            <span class="control-label">View Mode:</span>
+            <select class="control-select" id="viewMode">
+              <option value="grid">Grid View</option>
+              <option value="list">List View</option>
+              <option value="3d">3D View</option>
+            </select>
+          </div>
+          <div class="control-group">
+            <span class="control-label">Filter:</span>
+            <select class="control-select" id="roomFilter">
+              <option value="all">All Rooms</option>
+              <option value="visited">Visited</option>
+              <option value="unvisited">Unvisited</option>
+              <option value="favorites">Favorites</option>
+            </select>
+          </div>
+          <a href="index.html" class="back-button">← Back to Hub</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="cathedral-main">
+      <h1 class="cathedral-title">144-Room Cathedral Navigation</h1>
+      <p class="cathedral-subtitle">
+        Interactive exploration of the complete Cathedral structure with spatial
+        relationships and optimized navigation paths
+      </p>
+
+      <!-- Navigation Interface -->
+      <section class="navigation-interface">
+        <!-- Cathedral Canvas -->
+        <div class="cathedral-canvas">
+          <div class="canvas-3d" id="cathedralCanvas">
+            <div class="room-grid" id="roomGrid">
+              <!-- Room grid will be generated by JavaScript -->
+            </div>
+
+            <!-- Zoom Controls -->
+            <div class="zoom-controls">
+              <button class="zoom-button" id="zoomIn">+</button>
+              <button class="zoom-button" id="zoomOut">−</button>
+              <button class="zoom-button" id="zoomReset">⌂</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Panel -->
+        <div class="navigation-panel">
+          <!-- Current Room Info -->
+          <div class="panel-section">
+            <h2 class="section-title">Current Location</h2>
+            <div class="current-room">
+              <div class="room-info">
+                <div class="room-icon-large">🏛️</div>
+                <div class="room-details">
+                  <h3 id="currentRoomName">Cathedral Entrance</h3>
+                  <p id="currentRoomDesc">
+                    Welcome to the Cathedral. Choose a room to begin your
+                    journey.
+                  </p>
+                </div>
+              </div>
+              <div class="room-stats">
+                <div class="stat-item">
+                  <div class="stat-value" id="visitedCount">1</div>
+                  <div class="stat-label">Visited</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-value" id="totalRooms">144</div>
+                  <div class="stat-label">Total Rooms</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Controls -->
+          <div class="panel-section">
+            <h2 class="section-title">Navigation</h2>
+            <div class="nav-controls-panel">
+              <div class="control-grid">
+                <button class="nav-button" id="moveNW">↖</button>
+                <button class="nav-button" id="moveN">↑</button>
+                <button class="nav-button" id="moveNE">↗</button>
+                <button class="nav-button" id="moveW">←</button>
+                <button class="nav-button center" id="stay">●</button>
+                <button class="nav-button" id="moveE">→</button>
+                <button class="nav-button" id="moveSW">↙</button>
+                <button class="nav-button" id="moveS">↓</button>
+                <button class="nav-button" id="moveSE">↘</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Search Panel -->
+          <div class="panel-section">
+            <h2 class="section-title">Find Room</h2>
+            <div class="search-panel">
+              <input
+                type="text"
+                class="search-input"
+                id="roomSearch"
+                placeholder="Search rooms (e.g., R001, Chapel, Tower)" />
+            </div>
+          </div>
+
+          <!-- Room List -->
+          <div class="panel-section">
+            <h2 class="section-title">Recent Rooms</h2>
+            <div class="room-list" id="roomList">
+              <div class="room-item active" data-room="R001">
+                <span>🏛️</span>
+                <span>R001 - Cathedral Entrance</span>
+              </div>
+              <div class="room-item" data-room="R002">
+                <span>📚</span>
+                <span>R002 - Library of Wisdom</span>
+              </div>
+              <div class="room-item" data-room="R003">
+                <span>🎨</span>
+                <span>R003 - Atelier Studio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Path Visualization -->
+          <div class="panel-section">
+            <h2 class="section-title">Current Path</h2>
+            <div class="path-visualization">
+              <div class="path-steps" id="pathSteps">
+                <span class="path-step current">R001</span>
+                <span class="path-arrow">→</span>
+                <span class="path-step">R002</span>
+                <span class="path-arrow">→</span>
+                <span class="path-step">R003</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Legend -->
+      <section class="cathedral-legend">
+        <h2 class="section-title">Navigation Legend</h2>
+        <div class="legend-grid">
+          <div class="legend-item">
+            <div
+              class="legend-sample"
+              style="background: var(--cathedral-accent); color: white">
+              R001
+            </div>
+            <span class="legend-label">Active/Current Room</span>
+          </div>
+          <div class="legend-item">
+            <div
+              class="legend-sample"
+              style="background: var(--cathedral-warning); color: white">
+              R002
+            </div>
+            <span class="legend-label">Visited Room</span>
+          </div>
+          <div class="legend-item">
+            <div
+              class="legend-sample"
+              style="
+                background: rgba(255, 255, 255, 0.1);
+                color: var(--cathedral-crystal);
+              ">
+              R003
+            </div>
+            <span class="legend-label">Unvisited Room</span>
+          </div>
+          <div class="legend-item">
+            <div
+              class="legend-sample"
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                color: var(--cathedral-silver);
+              ">
+              R144
+            </div>
+            <span class="legend-label">Locked/Inaccessible</span>
+          </div>
+          <div class="legend-item">
+            <div
+              class="legend-sample"
+              style="
+                background: var(--cathedral-gold);
+                color: var(--cathedral-primary);
+              ">
+              🏛️
+            </div>
+            <span class="legend-label">Chapel</span>
+          </div>
+          <div class="legend-item">
+            <div
+              class="legend-sample"
+              style="background: var(--cathedral-purple); color: white">
+              📚
+            </div>
+            <span class="legend-label">Library/Study</span>
+          </div>
+          <div class="legend-item">
+            <div
+              class="legend-sample"
+              style="background: var(--cathedral-teal); color: white">
+              🎨
+            </div>
+            <span class="legend-label">Atelier/Studio</span>
+          </div>
+          <div class="legend-item">
+            <div
+              class="legend-sample"
+              style="
+                background: var(--cathedral-amber);
+                color: var(--cathedral-primary);
+              ">
+              ⚡
+            </div>
+            <span class="legend-label">Portal/Connection</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Room Tooltip -->
+    <div class="room-tooltip" id="roomTooltip"></div>
+
+    <script>
+      // Cathedral Navigation System
+      class CathedralNavigation {
+        constructor() {
+          this.currentRoom = "R001";
+          this.visitedRooms = new Set(["R001"]);
+          this.favoriteRooms = new Set();
+          this.roomData = this.generateRoomData();
+          this.zoomLevel = 1;
+          this.viewMode = "grid";
+          this.filterMode = "all";
+
+          this.init();
+        }
+
+        init() {
+          this.generateRoomGrid();
+          this.setupEventListeners();
+          this.updateCurrentRoom();
+          this.updateStatistics();
+        }
+
+        generateRoomData() {
+          const rooms = {};
+          const roomTypes = [
+            { icon: "🏛️", name: "Chapel", color: "var(--cathedral-gold)" },
+            { icon: "📚", name: "Library", color: "var(--cathedral-purple)" },
+            { icon: "🎨", name: "Atelier", color: "var(--cathedral-teal)" },
+            { icon: "⚡", name: "Portal", color: "var(--cathedral-amber)" },
+            { icon: "🌟", name: "Sanctuary", color: "var(--cathedral-accent)" },
+            {
+              icon: "🔮",
+              name: "Mystic Chamber",
+              color: "var(--cathedral-warning)",
+            },
+            { icon: "📖", name: "Study", color: "var(--cathedral-silver)" },
+            { icon: "🗝️", name: "Vault", color: "var(--cathedral-stone)" },
+          ];
+
+          for (let i = 1; i <= 144; i++) {
+            const roomId = `R${i.toString().padStart(3, "0")}`;
+            const typeIndex = (i - 1) % roomTypes.length;
+            const roomType = roomTypes[typeIndex];
+
+            rooms[roomId] = {
+              id: roomId,
+              icon: roomType.icon,
+              name: `${roomType.name} ${i}`,
+              description: `${roomType.name} number ${i} in the Cathedral. A place of learning and discovery.`,
+              type: roomType.name.toLowerCase(),
+              color: roomType.color,
+              row: Math.floor((i - 1) / 12),
+              col: (i - 1) % 12,
+              accessible: i <= 20 || this.visitedRooms.has(roomId),
+              connections: this.getRoomConnections(i),
+            };
+          }
+
+          return rooms;
+        }
+
+        getRoomConnections(roomNumber) {
+          const connections = [];
+          if (roomNumber > 1)
+            connections.push(
+              `R${(roomNumber - 1).toString().padStart(3, "0")}`
+            );
+          if (roomNumber < 144)
+            connections.push(
+              `R${(roomNumber + 1).toString().padStart(3, "0")}`
+            );
+          if (roomNumber > 12)
+            connections.push(
+              `R${(roomNumber - 12).toString().padStart(3, "0")}`
+            );
+          if (roomNumber <= 132)
+            connections.push(
+              `R${(roomNumber + 12).toString().padStart(3, "0")}`
+            );
+          return connections;
+        }
+
+        generateRoomGrid() {
+          const grid = document.getElementById("roomGrid");
+          grid.innerHTML = "";
+
+          for (let i = 1; i <= 144; i++) {
+            const roomId = `R${i.toString().padStart(3, "0")}`;
+            const room = this.roomData[roomId];
+
+            const roomCell = document.createElement("div");
+            roomCell.className = "room-cell";
+            roomCell.dataset.room = roomId;
+
+            // Set grid position
+            roomCell.style.gridRow = room.row + 1;
+            roomCell.style.gridColumn = room.col + 1;
+
+            // Apply room status styling
+            if (roomId === this.currentRoom) {
+              roomCell.classList.add("active");
+            } else if (this.visitedRooms.has(roomId)) {
+              roomCell.classList.add("visited");
+            } else if (!room.accessible) {
+              roomCell.classList.add("locked");
+            }
+
+            // Set content
+            roomCell.innerHTML = `
+                        <div class="room-number">${i}</div>
+                        <div class="room-icon">${room.icon}</div>
+                    `;
+
+            // Add event listeners
+            roomCell.addEventListener("click", () => this.selectRoom(roomId));
+            roomCell.addEventListener("mouseenter", (e) =>
+              this.showRoomTooltip(room, e)
+            );
+            roomCell.addEventListener("mouseleave", () =>
+              this.hideRoomTooltip()
+            );
+
+            grid.appendChild(roomCell);
+          }
+        }
+
+        selectRoom(roomId) {
+          const room = this.roomData[roomId];
+
+          if (!room.accessible && !this.visitedRooms.has(roomId)) {
+            this.showMessage(
+              "This room is not yet accessible. Continue exploring to unlock new areas."
+            );
+            return;
+          }
+
+          this.currentRoom = roomId;
+          this.visitedRooms.add(roomId);
+          this.updateCurrentRoom();
+          this.updateRoomGrid();
+          this.updateStatistics();
+          this.addToRecentRooms(roomId);
+        }
+
+        updateCurrentRoom() {
+          const room = this.roomData[this.currentRoom];
+
+          document.getElementById("currentRoomName").textContent = room.name;
+          document.getElementById("currentRoomDesc").textContent =
+            room.description;
+
+          // Update navigation button states
+          this.updateNavigationButtons();
+        }
+
+        updateNavigationButtons() {
+          const roomNumber = parseInt(this.currentRoom.replace("R", ""));
+          const row = Math.floor((roomNumber - 1) / 12);
+          const col = (roomNumber - 1) % 12;
+
+          // Disable buttons that would move outside bounds or to locked rooms
+          const buttons = {
+            moveNW: row > 0 && col > 0 && this.isAccessible(roomNumber - 13),
+            moveN: row > 0 && this.isAccessible(roomNumber - 1),
+            moveNE: row > 0 && col < 11 && this.isAccessible(roomNumber + 11),
+            moveW: col > 0 && this.isAccessible(roomNumber - 2),
+            moveE: col < 11 && this.isAccessible(roomNumber),
+            moveSW: row < 11 && col > 0 && this.isAccessible(roomNumber + 11),
+            moveS: row < 11 && this.isAccessible(roomNumber + 12),
+            moveSE: row < 11 && col < 11 && this.isAccessible(roomNumber + 13),
+          };
+
+          Object.entries(buttons).forEach(([buttonId, enabled]) => {
+            const button = document.getElementById(buttonId);
+            button.disabled = !enabled;
+          });
+        }
+
+        isAccessible(roomNumber) {
+          if (roomNumber < 1 || roomNumber > 144) return false;
+          const roomId = `R${roomNumber.toString().padStart(3, "0")}`;
+          const room = this.roomData[roomId];
+          return room.accessible || this.visitedRooms.has(roomId);
+        }
+
+        moveToRoom(direction) {
+          const roomNumber = parseInt(this.currentRoom.replace("R", ""));
+          let targetRoom = roomNumber;
+
+          switch (direction) {
+            case "NW":
+              targetRoom = roomNumber - 13;
+              break;
+            case "N":
+              targetRoom = roomNumber - 12;
+              break;
+            case "NE":
+              targetRoom = roomNumber - 11;
+              break;
+            case "W":
+              targetRoom = roomNumber - 2;
+              break;
+            case "E":
+              targetRoom = roomNumber;
+              break;
+            case "SW":
+              targetRoom = roomNumber + 11;
+              break;
+            case "S":
+              targetRoom = roomNumber + 12;
+              break;
+            case "SE":
+              targetRoom = roomNumber + 13;
+              break;
+          }
+
+          if (this.isAccessible(targetRoom)) {
+            const targetRoomId = `R${targetRoom.toString().padStart(3, "0")}`;
+            this.selectRoom(targetRoomId);
+          }
+        }
+
+        updateRoomGrid() {
+          document.querySelectorAll(".room-cell").forEach((cell) => {
+            const roomId = cell.dataset.room;
+            cell.classList.remove("active", "visited");
+
+            if (roomId === this.currentRoom) {
+              cell.classList.add("active");
+            } else if (this.visitedRooms.has(roomId)) {
+              cell.classList.add("visited");
+            }
+          });
+        }
+
+        updateStatistics() {
+          document.getElementById("visitedCount").textContent =
+            this.visitedRooms.size;
+          document.getElementById("totalRooms").textContent = 144;
+        }
+
+        addToRecentRooms(roomId) {
+          const room = this.roomData[roomId];
+          const roomList = document.getElementById("roomList");
+
+          // Remove existing entry if it exists
+          const existingItem = roomList.querySelector(
+            `[data-room="${roomId}"]`
+          );
+          if (existingItem) {
+            existingItem.remove();
+          }
+
+          // Add new item at the top
+          const roomItem = document.createElement("div");
+          roomItem.className = "room-item";
+          roomItem.dataset.room = roomId;
+          roomItem.innerHTML = `
+                    <span>${room.icon}</span>
+                    <span>${room.name}</span>
+                `;
+
+          roomItem.addEventListener("click", () => this.selectRoom(roomId));
+          roomList.insertBefore(roomItem, roomList.firstChild);
+
+          // Keep only the most recent 5 rooms
+          while (roomList.children.length > 5) {
+            roomList.removeChild(roomList.lastChild);
+          }
+        }
+
+        searchRooms(query) {
+          const results = [];
+          const searchTerm = query.toLowerCase();
+
+          Object.values(this.roomData).forEach((room) => {
+            if (
+              room.name.toLowerCase().includes(searchTerm) ||
+              room.type.toLowerCase().includes(searchTerm) ||
+              room.id.toLowerCase().includes(searchTerm)
+            ) {
+              results.push(room);
+            }
+          });
+
+          return results.slice(0, 10); // Limit to 10 results
+        }
+
+        showRoomTooltip(room, event) {
+          const tooltip = document.getElementById("roomTooltip");
+          tooltip.innerHTML = `
+                    <strong>${room.name}</strong><br>
+                    ${room.description}<br>
+                    <small>Type: ${room.type} | Connections: ${room.connections.length}</small>
+                `;
+
+          tooltip.style.left = event.pageX + 10 + "px";
+          tooltip.style.top = event.pageY - 10 + "px";
+          tooltip.classList.add("visible");
+        }
+
+        hideRoomTooltip() {
+          document.getElementById("roomTooltip").classList.remove("visible");
+        }
+
+        showMessage(message) {
+          // Simple message display - could be enhanced with a proper modal
+          alert(message);
+        }
+
+        setupEventListeners() {
+          // Navigation buttons
+          document
+            .getElementById("moveNW")
+            .addEventListener("click", () => this.moveToRoom("NW"));
+          document
+            .getElementById("moveN")
+            .addEventListener("click", () => this.moveToRoom("N"));
+          document
+            .getElementById("moveNE")
+            .addEventListener("click", () => this.moveToRoom("NE"));
+          document
+            .getElementById("moveW")
+            .addEventListener("click", () => this.moveToRoom("W"));
+          document
+            .getElementById("moveE")
+            .addEventListener("click", () => this.moveToRoom("E"));
+          document
+            .getElementById("moveSW")
+            .addEventListener("click", () => this.moveToRoom("SW"));
+          document
+            .getElementById("moveS")
+            .addEventListener("click", () => this.moveToRoom("S"));
+          document
+            .getElementById("moveSE")
+            .addEventListener("click", () => this.moveToRoom("SE"));
+          document
+            .getElementById("stay")
+            .addEventListener("click", () => this.selectRoom(this.currentRoom));
+
+          // View mode selector
+          document
+            .getElementById("viewMode")
+            .addEventListener("change", (e) => {
+              this.viewMode = e.target.value;
+              this.updateViewMode();
+            });
+
+          // Filter selector
+          document
+            .getElementById("roomFilter")
+            .addEventListener("change", (e) => {
+              this.filterMode = e.target.value;
+              this.applyFilter();
+            });
+
+          // Search functionality
+          document
+            .getElementById("roomSearch")
+            .addEventListener("input", (e) => {
+              const query = e.target.value;
+              if (query.length > 2) {
+                const results = this.searchRooms(query);
+                this.displaySearchResults(results);
+              }
+            });
+
+          // Zoom controls
+          document
+            .getElementById("zoomIn")
+            .addEventListener("click", () => this.zoomIn());
+          document
+            .getElementById("zoomOut")
+            .addEventListener("click", () => this.zoomOut());
+          document
+            .getElementById("zoomReset")
+            .addEventListener("click", () => this.zoomReset());
+
+          // Keyboard navigation
+          document.addEventListener("keydown", (e) => {
+            this.handleKeyNavigation(e);
+          });
+        }
+
+        updateViewMode() {
+          const canvas = document.getElementById("cathedralCanvas");
+
+          switch (this.viewMode) {
+            case "grid":
+              canvas.style.transform = "none";
+              break;
+            case "list":
+              canvas.style.transform = "rotateX(45deg)";
+              break;
+            case "3d":
+              canvas.style.transform =
+                "perspective(1000px) rotateX(30deg) rotateY(15deg)";
+              break;
+          }
+        }
+
+        applyFilter() {
+          document.querySelectorAll(".room-cell").forEach((cell) => {
+            const roomId = cell.dataset.room;
+            const room = this.roomData[roomId];
+
+            let visible = true;
+
+            switch (this.filterMode) {
+              case "visited":
+                visible = this.visitedRooms.has(roomId);
+                break;
+              case "unvisited":
+                visible = !this.visitedRooms.has(roomId);
+                break;
+              case "favorites":
+                visible = this.favoriteRooms.has(roomId);
+                break;
+            }
+
+            cell.style.display = visible ? "flex" : "none";
+          });
+        }
+
+        displaySearchResults(results) {
+          // This could be enhanced to show a dropdown with search results
+          if (results.length > 0) {
+            this.selectRoom(results[0].id);
+          }
+        }
+
+        zoomIn() {
+          this.zoomLevel = Math.min(this.zoomLevel * 1.2, 3);
+          this.updateZoom();
+        }
+
+        zoomOut() {
+          this.zoomLevel = Math.max(this.zoomLevel / 1.2, 0.5);
+          this.updateZoom();
+        }
+
+        zoomReset() {
+          this.zoomLevel = 1;
+          this.updateZoom();
+        }
+
+        updateZoom() {
+          const grid = document.getElementById("roomGrid");
+          grid.style.transform = `scale(${this.zoomLevel})`;
+          grid.style.transformOrigin = "center center";
+        }
+
+        handleKeyNavigation(e) {
+          switch (e.key) {
+            case "ArrowUp":
+            case "w":
+            case "W":
+              e.preventDefault();
+              this.moveToRoom("N");
+              break;
+            case "ArrowDown":
+            case "s":
+            case "S":
+              e.preventDefault();
+              this.moveToRoom("S");
+              break;
+            case "ArrowLeft":
+            case "a":
+            case "A":
+              e.preventDefault();
+              this.moveToRoom("W");
+              break;
+            case "ArrowRight":
+            case "d":
+            case "D":
+              e.preventDefault();
+              this.moveToRoom("E");
+              break;
+            case " ":
+              e.preventDefault();
+              this.selectRoom(this.currentRoom);
+              break;
+          }
+        }
+      }
+
+      // Initialize when DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        new CathedralNavigation();
+      });
+
+      // Accessibility: Focus management
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Tab") {
+          // Ensure proper focus management for keyboard navigation
+          const focusableElements = document.querySelectorAll(
+            "button, .room-cell, input, select"
+          );
+          const firstElement = focusableElements[0];
+          const lastElement = focusableElements[focusableElements.length - 1];
+
+          if (e.shiftKey && document.activeElement === firstElement) {
+            e.preventDefault();
+            lastElement.focus();
+          } else if (!e.shiftKey && document.activeElement === lastElement) {
+            e.preventDefault();
+            firstElement.focus();
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cathedral.of.circuits/asset-manifest-schema.json",
+  "title": "Cathedral Asset Manifest Schema",
+  "description": "Schema for Avalon asset manifests generated from photo processing",
+  "type": "object",
+  "properties": {
+    "assetId": {
+      "type": "string",
+      "description": "Unique identifier for the asset",
+      "pattern": "^[a-zA-Z0-9_-]+$"
+    },
+    "sourcePhotos": {
+      "type": "array",
+      "description": "Array of source photo URLs/paths",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1
+    },
+    "archetype": {
+      "type": "string",
+      "description": "Tarot archetype this asset represents",
+      "enum": [
+        "The Fool", "The Magician", "The High Priestess", "The Empress", "The Emperor",
+        "The Hierophant", "The Lovers", "The Chariot", "Strength", "The Hermit",
+        "Wheel of Fortune", "Justice", "The Hanged Man", "Death", "Temperance",
+        "The Devil", "The Tower", "The Star", "The Moon", "The Sun", "Judgement", "The World"
+      ]
+    },
+    "boon": {
+      "type": "string",
+      "description": "Special ability or power granted by this asset"
+    },
+    "textures": {
+      "type": "object",
+      "description": "PBR texture maps",
+      "properties": {
+        "albedo": {
+          "type": "string",
+          "description": "Base color texture URL",
+          "format": "uri"
+        },
+        "normal": {
+          "type": "string",
+          "description": "Normal map texture URL",
+          "format": "uri"
+        },
+        "roughness": {
+          "type": "string",
+          "description": "Roughness texture URL",
+          "format": "uri"
+        },
+        "metallic": {
+          "type": "string",
+          "description": "Metallic texture URL",
+          "format": "uri"
+        },
+        "emissive": {
+          "type": "string",
+          "description": "Emissive texture URL",
+          "format": "uri"
+        }
+      },
+      "required": ["albedo"]
+    },
+    "gltf": {
+      "type": "string",
+      "description": "glTF 3D model URL",
+      "format": "uri"
+    },
+    "codexNode": {
+      "type": "string",
+      "description": "Codex 144:99 node this asset is linked to",
+      "pattern": "^C144:N[0-9]+$"
+    },
+    "ndFriendly": {
+      "type": "boolean",
+      "description": "Whether this asset follows neurodiversity-friendly design principles",
+      "default": true
+    },
+    "mysticalProperties": {
+      "type": "object",
+      "description": "Mystical and consciousness-responsive properties",
+      "properties": {
+        "consciousnessResponsive": {
+          "type": "boolean",
+          "description": "Whether the asset responds to user consciousness/awareness"
+        },
+        "traumaSafe": {
+          "type": "boolean",
+          "description": "Whether the asset follows trauma-informed design"
+        },
+        "morganLeFayApproved": {
+          "type": "boolean",
+          "description": "Whether Morgan Le Fay has approved this asset"
+        },
+        "dionFortuneStyle": {
+          "type": "boolean",
+          "description": "Whether the asset follows Dion Fortune's visionary style"
+        },
+        "ronaldHuttonWisdom": {
+          "type": "boolean",
+          "description": "Whether the asset incorporates Ronald Hutton's earth wisdom"
+        }
+      }
+    },
+    "processingMetadata": {
+      "type": "object",
+      "description": "Information about how this asset was processed",
+      "properties": {
+        "shemWorkers": {
+          "type": "array",
+          "description": "List of Shem workers that processed this asset",
+          "items": {
+            "type": "string",
+            "pattern": "^shem-[0-9]+-[a-z]+$"
+          }
+        },
+        "processingTime": {
+          "type": "number",
+          "description": "Processing time in milliseconds"
+        },
+        "aiModels": {
+          "type": "array",
+          "description": "AI models used in processing",
+          "items": {
+            "type": "string"
+          }
+        },
+        "generated": {
+          "type": "string",
+          "description": "ISO timestamp of when asset was generated",
+          "format": "date-time"
+        }
+      },
+      "required": ["shemWorkers", "generated"]
+    },
+    "tags": {
+      "type": "array",
+      "description": "Tags for categorizing and searching assets",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "license": {
+      "type": "string",
+      "description": "License information for the asset",
+      "default": "Cathedral of Circuits - Creative Commons"
+    }
+  },
+  "required": ["assetId", "sourcePhotos", "archetype", "codexNode", "ndFriendly"]
+}

@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathedral of Circuits - Rosslyn Exploration</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cinzel', serif;
+            background: linear-gradient(135deg, #fff9e6, #f0e6d2, #e6d7b8);
+            color: #2d1810;
+            overflow: hidden;
+        }
+        
+        #canvas-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        #exploration-ui {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100;
+        }
+        
+        .ui-panel {
+            position: absolute;
+            background: rgba(26, 26, 46, 0.9);
+            border: 2px solid #8b7355;
+            border-radius: 15px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            pointer-events: auto;
+            box-shadow: 0 0 30px rgba(139, 115, 85, 0.3);
+        }
+        
+        #character-panel {
+            top: 20px;
+            left: 20px;
+            width: 300px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        #discovery-panel {
+            top: 20px;
+            right: 20px;
+            width: 350px;
+            min-height: 200px;
+            display: none;
+        }
+        
+        #spell-panel {
+            bottom: 20px;
+            left: 20px;
+            width: 400px;
+            display: none;
+        }
+        
+        #navigation-help {
+            bottom: 20px;
+            right: 20px;
+            background: rgba(26, 26, 46, 0.7);
+        }
+        
+        .character-card {
+            border: 1px solid #8b7355;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            background: linear-gradient(135deg, rgba(139, 115, 85, 0.1), rgba(139, 115, 85, 0.05));
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .character-card:hover {
+            border-color: #ffd700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .character-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffd700;
+            margin-bottom: 5px;
+        }
+        
+        .character-archetype {
+            font-size: 14px;
+            color: #c0c0c0;
+            font-style: italic;
+        }
+        
+        .symbol-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 10px 0;
+        }
+        
+        .symbol-tag {
+            background: rgba(255, 215, 0, 0.2);
+            color: #ffd700;
+            padding: 3px 8px;
+            border-radius: 15px;
+            font-size: 12px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+        
+        .discovery-item {
+            background: rgba(139, 115, 85, 0.1);
+            border: 1px solid #8b7355;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .discovery-item:hover {
+            background: rgba(255, 215, 0, 0.1);
+            border-color: #ffd700;
+        }
+        
+        .book-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffd700;
+            margin-bottom: 5px;
+        }
+        
+        .book-description {
+            font-size: 14px;
+            color: #c0c0c0;
+            margin-bottom: 10px;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .action-btn {
+            background: linear-gradient(135deg, #8b7355, #6d5a44);
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        
+        .action-btn:hover {
+            background: linear-gradient(135deg, #ffd700, #ffcc00);
+            color: #1a1a2e;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+        
+        .spell-active {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(255, 215, 0, 0.1));
+            border: 2px solid #ffd700;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+            animation: spellPulse 2s infinite;
+        }
+        
+        @keyframes spellPulse {
+            0%, 100% { box-shadow: 0 0 30px rgba(255, 215, 0, 0.4); }
+            50% { box-shadow: 0 0 50px rgba(255, 215, 0, 0.7); }
+        }
+        
+        #agent-status {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(26, 26, 46, 0.95);
+            border: 2px solid #ffd700;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            display: none;
+            box-shadow: 0 0 50px rgba(255, 215, 0, 0.5);
+            max-width: 500px;
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 215, 0, 0.3);
+            border-top: 4px solid #ffd700;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .generated-content {
+            background: rgba(139, 115, 85, 0.1);
+            border: 1px solid #8b7355;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            text-align: left;
+        }
+        
+        .art-preview {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            background: linear-gradient(45deg, #1a1a2e, #8b7355);
+            border-radius: 8px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffd700;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <div id="exploration-ui">
+        <!-- Character Panel -->
+        <div id="character-panel" class="ui-panel">
+            <h3 style="color: #ffd700; margin-bottom: 15px; text-align: center;">🏰 Cathedral Arcana</h3>
+            <div id="character-list"></div>
+        </div>
+        
+        <!-- Discovery Panel -->
+        <div id="discovery-panel" class="ui-panel">
+            <h3 style="color: #ffd700; margin-bottom: 15px;">📚 Discovery</h3>
+            <div id="discovery-content"></div>
+        </div>
+        
+        <!-- Spell Panel -->
+        <div id="spell-panel" class="ui-panel">
+            <h3 style="color: #ffd700; margin-bottom: 15px;">✨ Active Spell</h3>
+            <div id="spell-content"></div>
+        </div>
+        
+        <!-- Navigation Help -->
+        <div id="navigation-help" class="ui-panel">
+            <strong>🎮 Navigation</strong><br>
+            WASD: Move<br>
+            Mouse: Look around<br>
+            Click: Interact<br>
+            E: Open book/artifact
+        </div>
+        
+        <!-- Agent of Kaoz Status -->
+        <div id="agent-status">
+            <div class="loading-spinner"></div>
+            <h3 style="color: #ffd700;">Agent of Kaoz</h3>
+            <p id="agent-message">Generating mystical content...</p>
+            <div id="agent-result"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        class CathedralExplorer {
+            constructor() {
+                this.scene = new THREE.Scene();
+                this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+                this.renderer = new THREE.WebGLRenderer({ antialias: true });
+                
+                this.discoveredItems = [];
+                this.activeCharacter = null;
+                this.activeSpell = null;
+                
+                this.characters = [];
+                this.books = [];
+                this.artifacts = [];
+                
+                this.init();
+                this.loadCharacters();
+                this.createEnvironment();
+                this.setupControls();
+                this.animate();
+            }
+            
+            init() {
+                this.renderer.setSize(window.innerWidth, window.innerHeight);
+                this.renderer.setClearColor(0x0f1419);
+                this.renderer.shadowMap.enabled = true;
+                this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+                
+                document.getElementById('canvas-container').appendChild(this.renderer.domElement);
+                
+                // Position camera
+                this.camera.position.set(0, 5, 10);
+                
+                // Add ambient lighting
+                const ambientLight = new THREE.AmbientLight(0x404040, 0.3);
+                this.scene.add(ambientLight);
+                
+                // Add dramatic directional light
+                const directionalLight = new THREE.DirectionalLight(0xffd700, 0.8);
+                directionalLight.position.set(10, 20, 5);
+                directionalLight.castShadow = true;
+                this.scene.add(directionalLight);
+                
+                // Add mystical point lights
+                this.addMysticalLights();
+            }
+            
+            addMysticalLights() {
+                const colors = [0xff6b6b, 0x4ecdc4, 0x45b7d1, 0x96ceb4, 0xfeca57];
+                
+                for (let i = 0; i < 5; i++) {
+                    const light = new THREE.PointLight(colors[i], 0.5, 30);
+                    light.position.set(
+                        (Math.random() - 0.5) * 40,
+                        Math.random() * 10 + 3,
+                        (Math.random() - 0.5) * 40
+                    );
+                    this.scene.add(light);
+                }
+            }
+            
+            createEnvironment() {
+                // Create Rosslyn Chapel floor with stone pattern
+                const floorGeometry = new THREE.PlaneGeometry(50, 50, 20, 20);
+                const floorMaterial = new THREE.MeshLambertMaterial({ 
+                    color: 0x3a3a3a,
+                    transparent: true,
+                    opacity: 0.8
+                });
+                const floor = new THREE.Mesh(floorGeometry, floorMaterial);
+                floor.rotation.x = -Math.PI / 2;
+                floor.receiveShadow = true;
+                this.scene.add(floor);
+                
+                // Create walls with Gothic architecture
+                this.createGothicWalls();
+                
+                // Create the famous apprentice pillar
+                this.createApprenticePillar();
+                
+                // Create other pillars
+                this.createPillars();
+                
+                // Create altar area
+                this.createAltar();
+                
+                // Place books and artifacts
+                this.placeDiscoverables();
+                
+                // Add atmospheric elements
+                this.addAtmosphericElements();
+            }
+            
+            createGothicWalls() {
+                const wallHeight = 20;
+                const wallThickness = 1;
+                
+                // Create walls with Gothic arches
+                for (let i = 0; i < 4; i++) {
+                    const wallGeometry = new THREE.BoxGeometry(
+                        i % 2 === 0 ? wallThickness : 50,
+                        wallHeight,
+                        i % 2 === 0 ? 50 : wallThickness
+                    );
+                    const wallMaterial = new THREE.MeshLambertMaterial({ color: 0x5a5a5a });
+                    const wall = new THREE.Mesh(wallGeometry, wallMaterial);
+                    
+                    switch(i) {
+                        case 0: wall.position.set(25, wallHeight/2, 0); break; // East
+                        case 1: wall.position.set(0, wallHeight/2, 25); break; // North
+                        case 2: wall.position.set(-25, wallHeight/2, 0); break; // West
+                        case 3: wall.position.set(0, wallHeight/2, -25); break; // South
+                    }
+                    
+                    wall.castShadow = true;
+                    wall.receiveShadow = true;
+                    this.scene.add(wall);
+                }
+                
+                // Add Gothic windows
+                this.createGothicWindows();
+            }
+            
+            createGothicWindows() {
+                const windowPositions = [
+                    { pos: [24, 12, 0], rot: [0, Math.PI/2, 0] },
+                    { pos: [-24, 12, 0], rot: [0, -Math.PI/2, 0] },
+                    { pos: [0, 12, 24], rot: [0, 0, 0] }
+                ];
+                
+                windowPositions.forEach(window => {
+                    const windowGeometry = new THREE.PlaneGeometry(6, 12);
+                    const windowMaterial = new THREE.MeshBasicMaterial({ 
+                        color: 0x4a90e2,
+                        transparent: true,
+                        opacity: 0.3
+                    });
+                    const windowMesh = new THREE.Mesh(windowGeometry, windowMaterial);
+                    windowMesh.position.set(...window.pos);
+                    windowMesh.rotation.set(...window.rot);
+                    this.scene.add(windowMesh);
+                });
+            }
+            
+            createApprenticePillar() {
+                // The famous spiral apprentice pillar
+                const pillarGeometry = new THREE.CylinderGeometry(1.5, 1.8, 15, 12);
+                const pillarMaterial = new THREE.MeshLambertMaterial({ color: 0x8b7355 });
+                const pillar = new THREE.Mesh(pillarGeometry, pillarMaterial);
+                pillar.position.set(8, 7.5, 8);
+                pillar.castShadow = true;
+                this.scene.add(pillar);
+                
+                // Add spiral carvings
+                for (let i = 0; i < 8; i++) {
+                    const spiralGeometry = new THREE.TorusGeometry(1.7, 0.1, 8, 16);
+                    const spiralMaterial = new THREE.MeshLambertMaterial({ color: 0xffd700 });
+                    const spiral = new THREE.Mesh(spiralGeometry, spiralMaterial);
+                    spiral.position.set(8, 3 + i * 1.5, 8);
+                    spiral.rotation.y = i * 0.3;
+                    this.scene.add(spiral);
+                }
+                
+                // Add dragons carved around the pillar
+                this.addDragonCarvings(pillar);
+                
+                // Mark as interactive
+                pillar.userData = { 
+                    type: 'apprentice_pillar', 
+                    character: 'rebecca_respawn',
+                    description: 'The legendary Apprentice Pillar of Rosslyn Chapel'
+                };
+            }
+            
+            addDragonCarvings(pillar) {
+                // Add dragon shapes around the pillar
+                for (let i = 0; i < 4; i++) {
+                    const dragonGeometry = new THREE.ConeGeometry(0.3, 1, 6);
+                    const dragonMaterial = new THREE.MeshLambertMaterial({ 
+                        color: 0xffd700,
+                        emissive: 0x333300
+                    });
+                    const dragon = new THREE.Mesh(dragonGeometry, dragonMaterial);
+                    
+                    const angle = (i / 4) * Math.PI * 2;
+                    dragon.position.set(
+                        pillar.position.x + Math.cos(angle) * 2,
+                        pillar.position.y + 2,
+                        pillar.position.z + Math.sin(angle) * 2
+                    );
+                    dragon.rotation.y = angle;
+                    
+                    dragon.userData = { 
+                        type: 'dragon_carving', 
+                        character: 'rebecca_respawn',
+                        power: 'dragon_lightning'
+                    };
+                    
+                    this.scene.add(dragon);
+                }
+            }
+            
+            createPillars() {
+                const pillarGeometry = new THREE.CylinderGeometry(1, 1.2, 12, 8);
+                const pillarMaterial = new THREE.MeshLambertMaterial({ color: 0x6b6b6b });
+                
+                const positions = [
+                    [-8, 6, -8], [8, 6, -8],
+                    [-8, 6, 8], [-8, 6, 0],
+                    [0, 6, -8], [0, 6, 0]
+                ];
+                
+                positions.forEach(pos => {
+                    const pillar = new THREE.Mesh(pillarGeometry, pillarMaterial);
+                    pillar.position.set(...pos);
+                    pillar.castShadow = true;
+                    pillar.receiveShadow = true;
+                    this.scene.add(pillar);
+                });
+            }
+            
+            createAltar() {
+                // Main altar
+                const altarGeometry = new THREE.BoxGeometry(6, 1.5, 3);
+                const altarMaterial = new THREE.MeshLambertMaterial({ color: 0x8b7355 });
+                const altar = new THREE.Mesh(altarGeometry, altarMaterial);
+                altar.position.set(0, 0.75, -20);
+                altar.castShadow = true;
+                this.scene.add(altar);
+                
+                // Add sacred symbols on altar
+                this.addAltarSymbols(altar);
+            }
+            
+            addAltarSymbols(altar) {
+                // Lightning symbol (Rebecca Respawn)
+                const lightningGeometry = new THREE.ConeGeometry(0.5, 2, 6);
+                const lightningMaterial = new THREE.MeshLambertMaterial({ 
+                    color: 0xffd700,
+                    emissive: 0x333300
+                });
+                const lightningSymbol = new THREE.Mesh(lightningGeometry, lightningMaterial);
+                lightningSymbol.position.set(0, 3, -20);
+                lightningSymbol.userData = { 
+                    type: 'lightning_symbol', 
+                    character: 'rebecca_respawn',
+                    power: 'lightning_clarity'
+                };
+                this.scene.add(lightningSymbol);
+                
+                // Spiral symbol
+                const spiralGeometry = new THREE.TorusGeometry(0.8, 0.1, 8, 16);
+                const spiralMaterial = new THREE.MeshLambertMaterial({ color: 0x4ecdc4 });
+                const spiralSymbol = new THREE.Mesh(spiralGeometry, spiralMaterial);
+                spiralSymbol.position.set(-2, 2.5, -20);
+                spiralSymbol.userData = { 
+                    type: 'spiral_symbol',
+                    power: 'spiral_navigation'
+                };
+                this.scene.add(spiralSymbol);
+                
+                // Tree of Life symbol
+                const treeGeometry = new THREE.CylinderGeometry(0.1, 0.3, 2, 8);
+                const treeMaterial = new THREE.MeshLambertMaterial({ color: 0x96ceb4 });
+                const treeSymbol = new THREE.Mesh(treeGeometry, treeMaterial);
+                treeSymbol.position.set(2, 2.5, -20);
+                treeSymbol.userData = { 
+                    type: 'tree_symbol',
+                    power: 'living_wisdom'
+                };
+                this.scene.add(treeSymbol);
+            }
+            
+            placeDiscoverables() {
+                // Create mystical books with real connections
+                const bookData = [
+                    {
+                        pos: [-15, 1.2, -5],
+                        title: "The Hearing Trumpet",
+                        author: "Leonora Carrington",
+                        description: "Surrealist masterpiece about aging, wisdom, and magical transformation",
+                        character: "rebecca_respawn",
+                        spell: "surreal_transformation"
+                    },
+                    {
+                        pos: [15, 1.2, 5],
+                        title: "Complex PTSD",
+                        author: "Pete Walker",
+                        description: "Healing trauma through understanding and practical techniques",
+                        character: "rebecca_respawn",
+                        spell: "trauma_healing"
+                    },
+                    {
+                        pos: [-5, 1.2, 15],
+                        title: "Women Who Run With Wolves",
+                        author: "Clarissa Pinkola Estés",
+                        description: "Reclaiming the wild woman archetype and intuitive wisdom",
+                        spell: "wild_wisdom"
+                    },
+                    {
+                        pos: [5, 1.2, -15],
+                        title: "The Tarot",
+                        author: "Arthur Edward Waite",
+                        description: "Classic guide to the symbolic wisdom of the tarot",
+                        spell: "arcane_knowledge"
+                    }
+                ];
+                
+                bookData.forEach(book => {
+                    this.createMysticalBook(book);
+                });
+                
+                // Add crystal formations
+                this.addCrystalFormations();
+            }
+            
+            createMysticalBook(bookData) {
+                // Create book pedestal
+                const pedestalGeometry = new THREE.CylinderGeometry(1, 1.2, 1, 8);
+                const pedestalMaterial = new THREE.MeshLambertMaterial({ color: 0x8b7355 });
+                const pedestal = new THREE.Mesh(pedestalGeometry, pedestalMaterial);
+                pedestal.position.set(bookData.pos[0], 0.5, bookData.pos[2]);
+                this.scene.add(pedestal);
+                
+                // Create book
+                const bookGeometry = new THREE.BoxGeometry(0.3, 0.4, 0.8);
+                const bookMaterial = new THREE.MeshLambertMaterial({ 
+                    color: this.getBookColor(bookData.title)
+                });
+                const bookMesh = new THREE.Mesh(bookGeometry, bookMaterial);
+                bookMesh.position.set(bookData.pos[0], bookData.pos[1], bookData.pos[2]);
+                bookMesh.userData = { 
+                    type: 'book',
+                    ...bookData,
+                    discovered: false
+                };
+                
+                // Add mystical glow
+                const glowGeometry = new THREE.SphereGeometry(1.5, 16, 16);
+                const glowMaterial = new THREE.MeshBasicMaterial({ 
+                    color: this.getBookColor(bookData.title),
+                    transparent: true,
+                    opacity: 0.1
+                });
+                const glow = new THREE.Mesh(glowGeometry, glowMaterial);
+                glow.position.copy(bookMesh.position);
+                this.scene.add(glow);
+                
+                this.scene.add(bookMesh);
+                this.books.push(bookMesh);
+            }
+            
+            getBookColor(title) {
+                const colors = {
+                    "The Hearing Trumpet": 0xff6b6b,
+                    "Complex PTSD": 0x4ecdc4,
+                    "Women Who Run With Wolves": 0x96ceb4,
+                    "The Tarot": 0xfeca57
+                };
+                return colors[title] || 0x8b7355;
+            }
+            
+            addCrystalFormations() {
+                for (let i = 0; i < 6; i++) {
+                    const crystalGeometry = new THREE.ConeGeometry(0.5, 2, 6);
+                    const crystalMaterial = new THREE.MeshLambertMaterial({ 
+                        color: 0x9966cc,
+                        transparent: true,
+                        opacity: 0.7
+                    });
+                    const crystal = new THREE.Mesh(crystalGeometry, crystalMaterial);
+                    
+                    crystal.position.set(
+                        (Math.random() - 0.5) * 30,
+                        1,
+                        (Math.random() - 0.5) * 30
+                    );
+                    
+                    crystal.userData = { 
+                        type: 'crystal',
+                        power: 'energy_amplification'
+                    };
+                    
+                    this.scene.add(crystal);
+                }
+            }
+            
+            addAtmosphericElements() {
+                // Add floating particles
+                const particleCount = 100;
+                const particles = new THREE.BufferGeometry();
+                const positions = [];
+                
+                for (let i = 0; i < particleCount; i++) {
+                    positions.push(
+                        (Math.random() - 0.5) * 50,
+                        Math.random() * 20,
+                        (Math.random() - 0.5) * 50
+                    );
+                }
+                
+                particles.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+                
+                const particleMaterial = new THREE.PointsMaterial({
+                    color: 0xffd700,
+                    size: 0.1,
+                    transparent: true,
+                    opacity: 0.6
+                });
+                
+                const particleSystem = new THREE.Points(particles, particleMaterial);
+                this.scene.add(particleSystem);
+            }
+            
+            setupControls() {
+                this.keys = { w: false, a: false, s: false, d: false };
+                
+                document.addEventListener('keydown', (event) => {
+                    switch(event.code) {
+                        case 'KeyW': this.keys.w = true; break;
+                        case 'KeyA': this.keys.a = true; break;
+                        case 'KeyS': this.keys.s = true; break;
+                        case 'KeyD': this.keys.d = true; break;
+                        case 'KeyE': this.interact(); break;
+                    }
+                });
+                
+                document.addEventListener('keyup', (event) => {
+                    switch(event.code) {
+                        case 'KeyW': this.keys.w = false; break;
+                        case 'KeyA': this.keys.a = false; break;
+                        case 'KeyS': this.keys.s = false; break;
+                        case 'KeyD': this.keys.d = false; break;
+                    }
+                });
+                
+                // Mouse controls
+                let isMouseDown = false;
+                let mouseX = 0, mouseY = 0;
+                
+                document.addEventListener('mousedown', () => isMouseDown = true);
+                document.addEventListener('mouseup', () => isMouseDown = false);
+                
+                document.addEventListener('mousemove', (event) => {
+                    if (isMouseDown) {
+                        const deltaX = event.clientX - mouseX;
+                        const deltaY = event.clientY - mouseY;
+                        
+                        this.camera.rotation.y -= deltaX * 0.002;
+                        this.camera.rotation.x -= deltaY * 0.002;
+                        this.camera.rotation.x = Math.max(-Math.PI/3, Math.min(Math.PI/3, this.camera.rotation.x));
+                    }
+                    
+                    mouseX = event.clientX;
+                    mouseY = event.clientY;
+                });
+                
+                // Click to interact
+                this.renderer.domElement.addEventListener('click', (event) => {
+                    this.handleClick(event);
+                });
+            }
+            
+            handleClick(event) {
+                const raycaster = new THREE.Raycaster();
+                const mouse = new THREE.Vector2();
+                
+                mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+                mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+                
+                raycaster.setFromCamera(mouse, this.camera);
+                
+                const intersects = raycaster.intersectObjects(this.scene.children);
+                
+                if (intersects.length > 0) {
+                    const object = intersects[0].object;
+                    if (object.userData.type) {
+                        this.discoverItem(object);
+                    }
+                }
+            }
+            
+            interact() {
+                const nearbyObjects = this.getNearbyInteractables();
+                if (nearbyObjects.length > 0) {
+                    this.discoverItem(nearbyObjects[0]);
+                }
+            }
+            
+            getNearbyInteractables() {
+                const playerPos = this.camera.position;
+                const nearby = [];
+                
+                this.scene.children.forEach(obj => {
+                    if (obj.userData.type && obj.position.distanceTo(playerPos) < 5) {
+                        nearby.push(obj);
+                    }
+                });
+                
+                return nearby;
+            }
+            
+            discoverItem(object) {
+                if (object.userData.discovered) return;
+                
+                object.userData.discovered = true;
+                this.discoveredItems.push(object);
+                
+                this.showDiscovery(object);
+                
+                if (object.userData.character) {
+                    this.triggerAgentOfKaoz(object.userData.character, object.userData.type, object.userData);
+                }
+            }
+            
+            showDiscovery(object) {
+                const panel = document.getElementById('discovery-panel');
+                const content = document.getElementById('discovery-content');
+                
+                let html = this.generateDiscoveryHTML(object);
+                
+                content.innerHTML = html;
+                panel.style.display = 'block';
+                
+                setTimeout(() => {
+                    panel.style.display = 'none';
+                }, 15000);
+            }
+            
+            generateDiscoveryHTML(object) {
+                const data = object.userData;
+                
+                switch(data.type) {
+                    case 'book':
+                        return `
+                            <div class="discovery-item">
+                                <div class="book-title">📖 ${data.title}</div>
+                                <div class="book-description">by ${data.author}</div>
+                                <p style="font-size: 13px; margin: 10px 0;">${data.description}</p>
+                                <div class="action-buttons">
+                                    <button class="action-btn" onclick="explorer.readBook('${data.title}')">📖 Read with Agent</button>
+                                    <button class="action-btn" onclick="explorer.generateArt('${data.title}')">🎨 Generate Art</button>
+                                    <button class="action-btn" onclick="explorer.createSpell('${data.spell}')">✨ Cast ${data.spell}</button>
+                                </div>
+                            </div>
+                        `;
+                    
+                    case 'apprentice_pillar':
+                        return `
+                            <div class="discovery-item">
+                                <div class="book-title">🌀 The Apprentice Pillar</div>
+                                <div class="book-description">The legendary spiral pillar of Rosslyn Chapel</div>
+                                <p style="font-size: 13px; margin: 10px 0;">Carved with dragons, spirals, and hidden wisdom. Legend says it holds the secret of the master mason.</p>
+                                <div class="action-buttons">
+                                    <button class="action-btn" onclick="explorer.activateCharacter('rebecca_respawn')">⚡ Awaken Rebecca Respawn</button>
+                                    <button class="action-btn" onclick="explorer.spiralMeditation()">🧘 Spiral Meditation</button>
+                                    <button class="action-btn" onclick="explorer.generateArt('apprentice_pillar')">🎨 Channel Pillar Energy</button>
+                                </div>
+                            </div>
+                        `;
+                    
+                    case 'lightning_symbol':
+                        return `
+                            <div class="discovery-item">
+                                <div class="book-title">⚡ Lightning Symbol</div>
+                                <div class="book-description">Tibetan symbol of mind clarity and sudden illumination</div>
+                                <div class="action-buttons">
+                                    <button class="action-btn" onclick="explorer.lightningStrike()">⚡ Lightning Strike</button>
+                                    <button class="action-btn" onclick="explorer.generateLightningArt()">🎨 Lightning Art</button>
+                                </div>
+                            </div>
+                        `;
+                    
+                    case 'dragon_carving':
+                        return `
+                            <div class="discovery-item">
+                                <div class="book-title">🐉 Dragon Carving</div>
+                                <div class="book-description">Ancient symbol of creative power and transformation</div>
+                                <div class="action-buttons">
+                                    <button class="action-btn" onclick="explorer.dragonBreath()">🔥 Dragon Breath</button>
+                                    <button class="action-btn" onclick="explorer.generateArt('dragon')">🎨 Dragon Art</button>
+                                </div>
+                            </div>
+                        `;
+                    
+                    default:
+                        return `
+                            <div class="discovery-item">
+                                <div class="book-title">✨ Mystical Discovery</div>
+                                <div class="book-description">You've found something magical...</div>
+                                <div class="action-buttons">
+                                    <button class="action-btn" onclick="explorer.generateArt('mystery')">🎨 Generate Art</button>
+                                </div>
+                            </div>
+                        `;
+                }
+            }
+            
+            async loadCharacters() {
+                this.characters = [
+                    {
+                        id: "rebecca_respawn",
+                        name: "Rebecca Respawn",
+                        archetype: "The Fool",
+                        symbolism: ["Lightning", "Dragon", "Spiral"],
+                        active: false,
+                        description: "Gatekeeper of Circuitum99, Alpha Omega Architect-Scribe"
+                    }
+                ];
+                
+                this.renderCharacterList();
+            }
+            
+            renderCharacterList() {
+                const list = document.getElementById('character-list');
+                
+                const html = this.characters.map(char => `
+                    <div class="character-card ${char.active ? 'spell-active' : ''}" onclick="explorer.selectCharacter('${char.id}')">
+                        <div class="character-name">${char.name}</div>
+                        <div class="character-archetype">${char.archetype}</div>
+                        <div class="symbol-list">
+                            ${char.symbolism.map(symbol => `<span class="symbol-tag">${symbol}</span>`).join('')}
+                        </div>
+                        <p style="font-size: 12px; margin-top: 5px; color: #c0c0c0;">${char.description}</p>
+                    </div>
+                `).join('');
+                
+                list.innerHTML = html;
+            }
+            
+            selectCharacter(characterId) {
+                this.characters.forEach(char => {
+                    char.active = char.id === characterId;
+                });
+                
+                this.activeCharacter = this.characters.find(char => char.id === characterId);
+                this.renderCharacterList();
+                
+                console.log(`Selected character: ${this.activeCharacter.name}`);
+            }
+            
+            activateCharacter(characterId) {
+                this.selectCharacter(characterId);
+                this.triggerAgentOfKaoz(characterId, 'character_activation', { name: this.activeCharacter.name });
+            }
+            
+            async triggerAgentOfKaoz(context, actionType, data = {}) {
+                const agentStatus = document.getElementById('agent-status');
+                const agentMessage = document.getElementById('agent-message');
+                const agentResult = document.getElementById('agent-result');
+                
+                agentStatus.style.display = 'block';
+                agentMessage.textContent = 'Agent of Kaoz is weaving mystical connections...';
+                agentResult.innerHTML = '';
+                
+                // Simulate Azure AI processing with realistic content
+                const responses = await this.getAgentResponse(context, actionType, data);
+                
+                setTimeout(() => {
+                    agentMessage.textContent = `Agent of Kaoz has channeled wisdom for ${context}!`;
+                    agentResult.innerHTML = responses;
+                }, 2000);
+            }
+            
+            async getAgentResponse(context, actionType, data) {
+                // Simulate different types of Agent of Kaoz responses
+                const responses = {
+                    'character_activation': () => `
+                        <div class="generated-content">
+                            <h4 style="color: #ffd700;">⚡ ${data.name} Awakened</h4>
+                            <p>The spiral energies of Rosslyn Chapel flow through you. Rebecca Respawn's essence manifests as lightning clarity cutting through illusion.</p>
+                            <div class="art-preview">🌀⚡🐉 Spiral Lightning Dragon Energy Active ⚡🐉🌀</div>
+                            <p><em>"I am the fool who leaps into wisdom, transforming trauma into creation through the sacred spiral."</em></p>
+                        </div>
+                    `,
+                    'book_reading': () => `
+                        <div class="generated-content">
+                            <h4 style="color: #ffd700;">📖 Mystical Reading</h4>
+                            <p>Agent of Kaoz channels the wisdom of ${context}, weaving its teachings into your journey through the Cathedral of Circuits.</p>
+                            <div class="art-preview">📚✨ Living Words Manifest ✨📚</div>
+                            <p><em>The book's essence becomes part of your growing grimoire...</em></p>
+                        </div>
+                    `,
+                    'art_generation': () => `
+                        <div class="generated-content">
+                            <h4 style="color: #ffd700;">🎨 Art Manifestation</h4>
+                            <p>Using traditional techniques combined with ${context} energy, Agent of Kaoz generates art in the style of Leonora Carrington meets sacred geometry.</p>
+                            <div class="art-preview">
+                                🎨 Golden Ratio Spirals + Chiaroscuro Lighting
+                                <br>Inspired by ${context}
+                            </div>
+                            <p><em>The artwork pulses with living energy, connecting all elements of your exploration...</em></p>
+                        </div>
+                    `,
+                    'spell_creation': () => `
+                        <div class="generated-content">
+                            <h4 style="color: #ffd700;">✨ Spell Woven</h4>
+                            <p>The spell ${context} is now active in your Cathedral exploration, affecting your synth patches and art generation.</p>
+                            <div class="art-preview">⚡🌀✨ ${context.toUpperCase()} ACTIVE ✨🌀⚡</div>
+                            <p><em>Reality bends to your focused intention...</em></p>
+                        </div>
+                    `
+                };
+                
+                const responseGenerator = responses[actionType] || responses['art_generation'];
+                return responseGenerator();
+            }
+            
+            // Action methods
+            readBook(title) {
+                this.triggerAgentOfKaoz(title, 'book_reading');
+            }
+            
+            generateArt(context) {
+                this.triggerAgentOfKaoz(context, 'art_generation');
+            }
+            
+            createSpell(spell) {
+                this.activeSpell = spell;
+                this.showSpellPanel(spell);
+                this.triggerAgentOfKaoz(spell, 'spell_creation');
+            }
+            
+            showSpellPanel(spell) {
+                const panel = document.getElementById('spell-panel');
+                const content = document.getElementById('spell-content');
+                
+                content.innerHTML = `
+                    <div class="spell-active">
+                        <div style="color: #ffd700; font-weight: bold; margin-bottom: 10px;">✨ Active Spell: ${spell}</div>
+                        <div style="font-size: 14px; margin-bottom: 15px;">The energies of ${spell} flow through the cathedral, affecting all your interactions...</div>
+                        <div class="action-buttons">
+                            <button class="action-btn" onclick="explorer.amplifySpell()">🔮 Amplify</button>
+                            <button class="action-btn" onclick="explorer.dismissSpell()">❌ Dismiss</button>
+                        </div>
+                    </div>
+                `;
+                
+                panel.style.display = 'block';
+            }
+            
+            amplifySpell() {
+                if (this.activeSpell) {
+                    this.triggerAgentOfKaoz(this.activeSpell + '_amplified', 'spell_creation');
+                }
+            }
+            
+            dismissSpell() {
+                this.activeSpell = null;
+                document.getElementById('spell-panel').style.display = 'none';
+            }
+            
+            spiralMeditation() {
+                this.createSpell('spiral_meditation');
+            }
+            
+            lightningStrike() {
+                this.createSpell('lightning_clarity');
+            }
+            
+            dragonBreath() {
+                this.createSpell('dragon_transformation');
+            }
+            
+            generateLightningArt() {
+                this.triggerAgentOfKaoz('lightning_symbol', 'art_generation');
+            }
+            
+            updateMovement() {
+                const speed = 0.2;
+                
+                if (this.keys.w) this.camera.position.z -= speed;
+                if (this.keys.s) this.camera.position.z += speed;
+                if (this.keys.a) this.camera.position.x -= speed;
+                if (this.keys.d) this.camera.position.x += speed;
+                
+                // Keep camera above ground and within bounds
+                this.camera.position.y = Math.max(2, this.camera.position.y);
+                this.camera.position.x = Math.max(-22, Math.min(22, this.camera.position.x));
+                this.camera.position.z = Math.max(-22, Math.min(22, this.camera.position.z));
+            }
+            
+            animate() {
+                requestAnimationFrame(() => this.animate());
+                
+                this.updateMovement();
+                
+                // Animate mystical elements
+                this.scene.children.forEach(child => {
+                    if (child.material && child.material.color) {
+                        const color = child.material.color.getHex();
+                        if (color === 0xffd700 || color === 0x9966cc) {
+                            child.rotation.y += 0.005;
+                            if (child.material.emissive) {
+                                child.material.emissive.setHex(0x111100);
+                            }
+                        }
+                    }
+                });
+                
+                this.renderer.render(this.scene, this.camera);
+            }
+        }
+        
+        // Initialize the explorer
+        let explorer;
+        
+        window.addEventListener('load', () => {
+            explorer = new CathedralExplorer();
+        });
+        
+        window.addEventListener('resize', () => {
+            if (explorer) {
+                explorer.camera.aspect = window.innerWidth / window.innerHeight;
+                explorer.camera.updateProjectionMatrix();
+                explorer.renderer.setSize(window.innerWidth, window.innerHeight);
+            }
+        });
+    </script>
+</body>
+</html>

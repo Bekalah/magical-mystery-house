@@ -1,0 +1,152 @@
+/**
+ * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+ */
+{
+  "timestamp": "2025-11-28T07:52:20.347Z",
+  "summary": {
+    "validations": 33,
+    "issues": 0,
+    "byType": {
+      "progression": 22,
+      "balance": 1,
+      "probability": 7,
+      "scaling": 3
+    }
+  },
+  "validations": [
+    {
+      "file": "/apps/web/src/components/CathedralGameInterface.tsx",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/archive/old-html/book-game-launcher.js",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/archive/old-html/book-game-launcher.js",
+      "type": "probability_calculation"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/attached_assets/book-game-launcher_1761993929574.js",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/attached_assets/book-game-launcher_1761993929574.js",
+      "type": "probability_calculation"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/godot/scripts/core/game_manager.gd",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/godot/scripts/core/progression_manager.gd",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/godot/scripts/core/progression_manager.gd",
+      "type": "level_scaling"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/game-engine/src/CathedralGameInterface.js",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/game-engine/src/CodexGameEngine.js",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/src/book-game-launcher.js",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/src/book-game-launcher.js",
+      "type": "probability_calculation"
+    },
+    {
+      "file": "/archive/old-html/book-game-launcher.js",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/archive/old-html/book-game-launcher.js",
+      "type": "probability_calculation"
+    },
+    {
+      "file": "/godot/scripts/core/game_manager.gd",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/godot/scripts/core/progression_manager.gd",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/godot/scripts/core/progression_manager.gd",
+      "type": "balance_calculation"
+    },
+    {
+      "file": "/godot/scripts/core/progression_manager.gd",
+      "type": "level_scaling"
+    },
+    {
+      "file": "/packages/game-engine/src/CathedralGameInterface.js",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/packages/game-engine/src/CodexGameEngine.js",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/src/book-game-launcher.js",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/src/book-game-launcher.js",
+      "type": "probability_calculation"
+    },
+    {
+      "file": "/apps/web/src/components/CathedralExperience.tsx",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/apps/web/src/components/CathedralGameInterface.tsx",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/attached_assets/book-game-launcher_1761993929574.js",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/attached_assets/book-game-launcher_1761993929574.js",
+      "type": "probability_calculation"
+    },
+    {
+      "file": "/godot/scripts/core/game_manager.gd",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/godot/scripts/core/progression_manager.gd",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/godot/scripts/core/progression_manager.gd",
+      "type": "level_scaling"
+    },
+    {
+      "file": "/packages/game-engine/src/CathedralGameInterface.js",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/packages/game-engine/src/CodexGameEngine.js",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/src/book-game-launcher.js",
+      "type": "progression_formula"
+    },
+    {
+      "file": "/src/book-game-launcher.js",
+      "type": "probability_calculation"
+    }
+  ],
+  "issues": []
+}

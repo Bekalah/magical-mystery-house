@@ -1,0 +1,40 @@
+{
+  "name": "@cathedral/plugin-system",
+  "version": "1.0.0",
+  "description": "Unified plugin system for Codex 144:99, Liber Arcanae, and Fusion Kink integration",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "demo": "node dist/demo/demo.js",
+    "test": "node dist/test/integrationTest.js"
+  },
+  "dependencies": {
+    "@cathedral/codex-144-99": "workspace:*",
+    "@cathedral/liber-arcanae": "workspace:*",
+    "@cathedral/shared": "workspace:*",
+    "typescript": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  },
+  "keywords": [
+    "cathedral",
+    "plugin-system",
+    "codex-144-99",
+    "liber-arcanae",
+    "fusion-kink",
+    "modular-architecture",
+    "sacred-technology"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "license": "CC0-1.0",
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:00:20.362Z",
+  "packageManager": "pnpm@8.0.0"
+}

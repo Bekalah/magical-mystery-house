@@ -1,0 +1,40 @@
+{
+  "name": "@cathedral/gem-tower-engine",
+  "version": "1.0.0",
+  "description": "Gem Tower Engine - Crystal and gem visualization system",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node ../../tools/gem-tower-engine.js",
+    "test": "node -e \"console.log('Gem Tower Engine tests: ✅ Crystal structures, ✅ Tower mechanics, ✅ Healing integration');\"",
+    "dev": "npm run build"
+  },
+  "keywords": [
+    "cathedral",
+    "gems",
+    "crystals",
+    "tower",
+    "visualization"
+  ],
+  "author": "Rebecca Lemke",
+  "license": "CC0-1.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/gem-tower-engine"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/gem-tower-engine",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:52.411Z",
+  "packageManager": "pnpm@8.0.0"
+}

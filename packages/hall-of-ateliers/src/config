@@ -1,0 +1,453 @@
+/**
+ * 🛡️ Cathedral Creative Systems - Trauma-Safe Configuration
+ * Comprehensive safety protocols for neurodivergent and trauma-affected users
+ * ESC exits, motion controls, processing time, gentle defaults throughout
+ */
+
+import { 
+  TraumaSafeConfig, 
+  AccessibilityFeature,
+  RGB 
+} from '../types/index.js';
+
+// ============================================================================
+// TRAUMA-SAFE DEFAULTS CONFIGURATION
+// ============================================================================
+
+export const TRAUMA_SAFE_DEFAULTS: TraumaSafeConfig = {
+  emergencyExits: true,
+  motionReduction: true,
+  processingTime: 1000, // 1 second processing time between actions
+  gentleDefaults: true,
+  
+  sensoryControls: {
+    sound: 'reduced',        // Start with reduced audio
+    motion: 'reduced',       // Start with minimal motion effects
+    colorIntensity: 'dimmed', // Start with dimmed colors
+    frequencyRange: 'safe'    // Start with safe frequency ranges (200-800Hz)
+  },
+  
+  accessibilityFeatures: {
+    keyboardNavigation: true,
+    screenReader: true,
+    highContrast: false,     // User can enable if needed
+    fontScaling: true,
+    voiceControl: true,
+    eyeTracking: false       // Optional feature
+  },
+  
+  harmonyBalance: {
+    divineLight: 0.6,        // Slightly more divine for healing
+    infernalShadow: 0.3,     // Reduced shadow energy for safety
+    neutral: 0.1            // Some neutral space
+  }
+};
+
+// ============================================================================
+// ACCESSIBILITY FEATURE DEFINITIONS
+// ============================================================================
+
+export const ACCESSIBILITY_FEATURES: AccessibilityFeature[] = [
+  {
+    type: 'emergency_exit',
+    description: 'ESC key immediately exits any interface or returns to home',
+    compliance: ['WCAG 2.1 AA', 'Section 508', 'EN 301 549']
+  },
+  {
+    type: 'motion_control',
+    description: 'Users can disable all motion effects and animations',
+    compliance: ['WCAG 2.3.3', 'Section 508', 'EN 301 549']
+  },
+  {
+    type: 'processing_time',
+    description: 'System provides time for users to process before continuing',
+    compliance: ['WCAG 2.2.1', 'Section 508']
+  },
+  {
+    type: 'gentle_defaults',
+    description: 'All systems start with minimal, safe settings',
+    compliance: ['WCAG 3.2.6', 'Section 508']
+  },
+  {
+    type: 'keyboard_navigation',
+    description: 'Full keyboard navigation without mouse dependency',
+    compliance: ['WCAG 2.1.1', 'Section 508', 'EN 301 549']
+  },
+  {
+    type: 'screen_reader',
+    description: 'Compatible with screen readers and assistive technologies',
+    compliance: ['WCAG 4.1.2', 'Section 508', 'EN 301 549']
+  },
+  {
+    type: 'high_contrast',
+    description: 'High contrast mode for better visibility',
+    compliance: ['WCAG 1.4.6', 'Section 508']
+  },
+  {
+    type: 'font_scaling',
+    description: 'Support for large text and font scaling',
+    compliance: ['WCAG 1.4.4', 'Section 508', 'EN 301 549']
+  },
+  {
+    type: 'voice_control',
+    description: 'Voice commands for hands-free interaction',
+    compliance: ['WCAG 2.1.1', 'Section 508']
+  },
+  {
+    type: 'sensory_customization',
+    description: 'Adjustable intensity for all sensory effects',
+    compliance: ['WCAG 3.2.6', 'Section 508']
+  }
+];
+
+// ============================================================================
+// GENTLE DEFAULT COLOR PALETTES
+// ============================================================================
+
+export const GENTLE_COLOR_PALETTES = {
+  // Low stimulation, healing-focused
+  healing: {
+    primary: { r: 0.8, g: 0.9, b: 0.95 },   // Soft blue
+    secondary: { r: 0.9, g: 0.95, b: 0.85 }, // Mint green
+    accent: { r: 0.95, g: 0.9, b: 0.8 },     // Warm cream
+    neutral: { r: 0.95, g: 0.95, b: 0.95 },  // Soft white
+    divine: { r: 0.7, g: 0.85, b: 0.95 },    // Gentle divine light
+    infernal: { r: 0.8, g: 0.7, b: 0.7 },    // Soft, not harsh
+    harmony: { r: 0.8, g: 0.88, b: 0.9 }     // Balanced, calm
+  },
+  
+  // Nature-inspired, grounding
+  nature: {
+    primary: { r: 0.6, g: 0.8, b: 0.6 },     // Forest green
+    secondary: { r: 0.7, g: 0.85, b: 0.7 },  // Leaf green
+    accent: { r: 0.8, g: 0.9, b: 0.6 },      // Spring green
+    neutral: { r: 0.9, g: 0.9, b: 0.8 },     // Warm beige
+    divine: { r: 0.7, g: 0.9, b: 0.8 },      // Soft divine green
+    infernal: { r: 0.6, g: 0.5, b: 0.5 },    // Subdued earth
+    harmony: { r: 0.65, g: 0.8, b: 0.65 }    // Natural balance
+  },
+  
+  // Soft sunset, warm and inviting
+  sunset: {
+    primary: { r: 0.9, g: 0.75, b: 0.6 },    // Peach
+    secondary: { r: 0.95, g: 0.85, b: 0.7 }, // Warm cream
+    accent: { r: 0.85, g: 0.7, b: 0.8 },     // Soft pink
+    neutral: { r: 0.95, g: 0.9, b: 0.85 },   // Warm white
+    divine: { r: 0.9, g: 0.8, b: 0.7 },      // Golden light
+    infernal: { r: 0.8, g: 0.6, b: 0.6 },    // Gentle sunset
+    harmony: { r: 0.85, g: 0.75, b: 0.65 }   // Warm balance
+  },
+  
+  // Monochrome for high sensitivity
+  monochrome: {
+    primary: { r: 0.8, g: 0.8, b: 0.8 },     // Medium gray
+    secondary: { r: 0.9, g: 0.9, b: 0.9 },   // Light gray
+    accent: { r: 0.7, g: 0.7, b: 0.7 },      // Dark gray
+    neutral: { r: 0.95, g: 0.95, b: 0.95 },  // Very light gray
+    divine: { r: 0.85, g: 0.85, b: 0.85 },   // Divine gray
+    infernal: { r: 0.75, g: 0.75, b: 0.75 }, // Shadow gray
+    harmony: { r: 0.8, g: 0.8, b: 0.8 }      // Balanced gray
+  }
+};
+
+// ============================================================================
+// SENSORY CONTROL PRESETS
+// ============================================================================
+
+export const SENSORY_PRESETS = {
+  // Maximum safety for highly sensitive users
+  healing: {
+    sound: 'none' as const,
+    motion: 'none' as const,
+    colorIntensity: 'dimmed' as const,
+    frequencyRange: 'minimal' as const
+  },
+  
+  // Balanced for moderate sensitivity
+  gentle: {
+    sound: 'reduced' as const,
+    motion: 'reduced' as const,
+    colorIntensity: 'dimmed' as const,
+    frequencyRange: 'safe' as const
+  },
+  
+  // Standard experience with safety options
+  standard: {
+    sound: 'reduced' as const,
+    motion: 'reduced' as const,
+    colorIntensity: 'full' as const,
+    frequencyRange: 'safe' as const
+  },
+  
+  // Full experience with safety exits
+  full: {
+    sound: 'full' as const,
+    motion: 'full' as const,
+    colorIntensity: 'full' as const,
+    frequencyRange: 'full' as const
+  }
+};
+
+// ============================================================================
+// PROCESSING TIME CONFIGURATION
+// ============================================================================
+
+export const PROCESSING_TIME_PRESETS = {
+  instant: 250,      // 0.25 seconds
+  quick: 500,        // 0.5 seconds
+  standard: 1000,    // 1 second
+  extended: 2000,    // 2 seconds
+  slow: 3000,        // 3 seconds
+  very_slow: 5000    // 5 seconds
+};
+
+// ============================================================================
+// KEYBOARD SHORTCUTS FOR SAFETY
+// ============================================================================
+
+export const SAFETY_KEYBOARD_SHORTCUTS = {
+  // Emergency exits
+  emergency_exit: 'Escape',
+  emergency_menu: 'Shift+Escape',
+  safe_mode: 'Alt+Escape',
+  
+  // Accessibility
+  high_contrast: 'Alt+H',
+  font_increase: 'Alt+Plus',
+  font_decrease: 'Alt+Minus',
+  font_reset: 'Alt+0',
+  
+  // Motion controls
+  motion_off: 'Alt+M',
+  motion_reduced: 'Alt+R',
+  motion_full: 'Alt+F',
+  
+  // Sound controls
+  sound_off: 'Alt+S',
+  sound_reduced: 'Alt+L',
+  sound_full: 'Alt+A',
+  
+  // Color controls
+  color_dimmed: 'Alt+D',
+  color_gentle: 'Alt+G',
+  color_full: 'Alt+C',
+  
+  // Focus and navigation
+  focus_mode: 'Alt+F',
+  keyboard_help: 'Alt+K',
+  accessibility_menu: 'Alt+?',
+  
+  // Processing time
+  pause_processing: 'Alt+P',
+  slow_mode: 'Alt+T'
+};
+
+// ============================================================================
+// FREQUENCY SAFETY RANGES
+// ============================================================================
+
+export const SAFE_FREQUENCY_RANGES = {
+  // Healing frequencies (safe for most users)
+  healing: {
+    min: 174,    // Pain relief
+    max: 852,    // Spiritual connection
+    base: 528,   // DNA repair
+    safe: true
+  },
+  
+  // Extended range (for advanced users)
+  extended: {
+    min: 100,    // Very low, grounding
+    max: 1000,   // High but safe
+    base: 432,   // Universal frequency
+    safe: true
+  },
+  
+  // Full range (experienced users only)
+  full: {
+    min: 20,     // Subsonic (tactile vibration)
+    max: 20000,  // Human hearing limit
+    base: 440,   // A4 standard
+    safe: false
+  },
+  
+  // Minimal range (maximum safety)
+  minimal: {
+    min: 396,    // Liberation from fear
+    max: 741,    // Awakening intuition
+    base: 528,   // Transformation
+    safe: true
+  }
+};
+
+// ============================================================================
+// TRAUMA-TRIGGER AVOIDANCE
+// ============================================================================
+
+export const TRAUMA_SAFE_PATTERNS = {
+  // Avoid high frequency flashing (seizure prevention)
+  flashFrequency: {
+    maxHz: 3,     // Max 3 flashes per second
+    minDuration: 0.1 // Min 100ms duration
+  },
+  
+  // Avoid harsh color contrasts
+  colorContrast: {
+    maxRatio: 4.5,  // WCAG AA standard
+    preferred: 3.0  // Even more conservative
+  },
+  
+  // Avoid overwhelming information density
+  informationDensity: {
+    maxElements: 9,  // Miller's 7±2 rule with buffer
+    maxColors: 7,    // Limited palette
+    maxFonts: 3      // Consistent typography
+  },
+  
+  // Avoid sudden movements
+  motion: {
+    maxVelocity: 2,  // Pixels per frame
+    maxAcceleration: 1, // Pixels per frame squared
+    fadeInMin: 0.5,  // Min 500ms fade in
+    fadeOutMin: 0.3  // Min 300ms fade out
+  }
+};
+
+// ============================================================================
+// NEURODIVERGENT ACCOMMODATIONS
+// ============================================================================
+
+export const NEURODIVERGENT_SUPPORTS = {
+  // ADHD support
+  adhd: {
+    focusModes: ['outline', 'minimal', 'guided'],
+    taskBreakdown: true,
+    visualCues: true,
+    timeManagement: true
+  },
+  
+  // Autism spectrum support
+  autism: {
+    predictableLayouts: true,
+    consistentNavigation: true,
+    sensoryControls: true,
+    socialSafeMode: true
+  },
+  
+  // Dyslexia support
+  dyslexia: {
+    fontOptimization: true,
+    textToSpeech: true,
+    visualSpacing: true,
+    colorCues: true
+  },
+  
+  // Anxiety/PTSD support
+  anxiety: {
+    gentleTransitions: true,
+    controlRings: true,
+    safetyExits: true,
+    predictableOutcomes: true
+  }
+};
+
+// ============================================================================
+// CATHEDRAL-SPECIFIC TRAUMA SAFETY
+// ============================================================================
+
+export const CATHEDRAL_SAFETY_FEATURES = {
+  // Sacred geometry without overwhelming effects
+  sacredGeometry: {
+    maxComplexity: 5,        // Limit pattern complexity
+    animationSpeed: 0.5,     // Slower rotations
+    opacityControl: true,    // User can adjust opacity
+    staticMode: true         // Option for static patterns
+  },
+  
+  // Arcana system without triggering
+  arcana: {
+    gentleArchetypes: true,  // Focus on healing cards
+    positiveThemes: true,    // Emphasize growth
+    avoidDarkCards: false,   // User can choose
+    healingFrequencies: true // Use Solfeggio frequencies
+  },
+  
+  // Frequency work with safety
+  frequencies: {
+    gradualIntroduction: true, // Start with gentle frequencies
+    userControl: true,         // Full user control
+    safeRanges: true,          // Only healing frequencies
+    durationLimit: 1800        // Max 30 minutes continuous
+  }
+};
+
+// ============================================================================
+// CONFIGURATION VALIDATION
+// ============================================================================
+
+export const validateTraumaSafetyConfig = (config: TraumaSafeConfig): {
+  valid: boolean;
+  warnings: string[];
+  errors: string[];
+} => {
+  const warnings: string[] = [];
+  const errors: string[] = [];
+  
+  // Validate processing time
+  if (config.processingTime < 250) {
+    warnings.push('Processing time under 250ms may be too fast for some users');
+  }
+  if (config.processingTime > 10000) {
+    warnings.push('Processing time over 10s may frustrate users');
+  }
+  
+  // Validate harmony balance
+  const total = config.harmonyBalance.divineLight + 
+               config.harmonyBalance.infernalShadow + 
+               config.harmonyBalance.neutral;
+  if (Math.abs(total - 1.0) > 0.01) {
+    errors.push('Harmony balance ratios must sum to 1.0');
+  }
+  
+  // Validate sensory controls
+  if (config.sensoryControls.sound === 'full' && config.processingTime < 500) {
+    warnings.push('Full sound with fast processing may overwhelm sensitive users');
+  }
+  
+  return {
+    valid: errors.length === 0,
+    warnings,
+    errors
+  };
+};
+
+// ============================================================================
+// EXPORT
+// ============================================================================
+
+export {
+  TRAUMA_SAFE_DEFAULTS,
+  ACCESSIBILITY_FEATURES,
+  GENTLE_COLOR_PALETTES,
+  SENSORY_PRESETS,
+  PROCESSING_TIME_PRESETS,
+  SAFETY_KEYBOARD_SHORTCUTS,
+  SAFE_FREQUENCY_RANGES,
+  TRAUMA_SAFE_PATTERNS,
+  NEURODIVERGENT_SUPPORTS,
+  CATHEDRAL_SAFETY_FEATURES
+};
+
+export default {
+  defaults: TRAUMA_SAFE_DEFAULTS,
+  features: ACCESSIBILITY_FEATURES,
+  palettes: GENTLE_COLOR_PALETTES,
+  sensory: SENSORY_PRESETS,
+  processing: PROCESSING_TIME_PRESETS,
+  shortcuts: SAFETY_KEYBOARD_SHORTCUTS,
+  frequencies: SAFE_FREQUENCY_RANGES,
+  patterns: TRAUMA_SAFE_PATTERNS,
+  neurodivergent: NEURODIVERGENT_SUPPORTS,
+  cathedral: CATHEDRAL_SAFETY_FEATURES,
+  validate: validateTraumaSafetyConfig
+};

@@ -1,0 +1,22 @@
+{
+	"name": "@cathedral/types",
+	"version": "1.83.0",
+	"description": "TypeScript type definitions for Roo Code.",
+	"publishConfig": {
+		"access": "public",
+		"name": "@cathedral/types",
+		"registry": "https://registry.npmjs.org/"
+	},
+	"author": "Cathedral Master Creative Intelligence Team",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CathedralInc/cathedral.git"
+	},
+	"bugs": {
+		"url": "https://github.com/CathedralInc/cathedral/issues"
+	},
+	"homepage": "https://Cathedral.com",
+	"keywords": ["roo", "cathedral", "ai"],
+	"files": ["dist"]
+}

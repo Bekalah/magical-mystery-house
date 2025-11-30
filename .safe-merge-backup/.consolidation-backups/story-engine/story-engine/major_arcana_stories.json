@@ -1,0 +1,498 @@
+{
+  "version": "1.1.0",
+  "source": "Bekalah/cathedral-master (v1_main)",
+  "description": "Canonical mapping for the 22 Major Arcana stories as actually playable engines: local-only, trauma-informed, and aligned with the Cathedral codex and studios. No external AI required or assumed.",
+  "meta": {
+    "ai_policy": "offline_first_no_external_model",
+    "copyright": "All rights reserved to original authors and rights holders where applicable",
+    "safety": [
+      "no false divination claims",
+      "no medical or legal authority implied",
+      "no non-consensual profiling",
+      "always respect creator veto on interpretations"
+    ],
+    "integration": {
+      "stone_grimoire_engine": "packages/stone-grimoire-library-engine/src/lib.rs",
+      "node_tree_engine": "packages/node-tree-engine",
+      "apps": [
+        "apps/web",
+        "apps/circuitum99",
+        "godot/"
+      ]
+    }
+  },
+  "arcana": [
+    {
+      "id": 0,
+      "key": "fool",
+      "slug": "fool-themela",
+      "title": "The Fool — Themela the Lightning Dragon",
+      "figure": "Leonora Carrington",
+      "role": "Surreal initiatrix at the cliff-edge of new worlds",
+      "lore": {
+        "short": "A living surrealist canon card: the leap into the Cathedral, guided by Carrington’s impossible animals and uncompromised autonomy.",
+        "anchor": "Maps to real paintings, real biography, and real refusal to submit to flattening systems."
+      },
+      "play": {
+        "circuitum99_mode": "Onboarding run where the player chooses consent-based pacts instead of blind leaps.",
+        "web_mode": "Story page with verifiable sources and gallery references.",
+        "godot_mode": "Intro hall where doors appear only when the player names their boundaries."
+      },
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/0-fool",
+        "web": "/stories/fool",
+        "stone_grimoire_chapel": "0"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:0_fool",
+        "codex": "codex-144-expanded.json:0"
+      }
+    },
+    {
+      "id": 1,
+      "key": "magician",
+      "title": "The Magician - The Angelic Mathematician",
+      "figure": "John Dee",
+      "role": "Operator of angelic calculus and code",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/1-magician",
+        "web": "/stories/magician",
+        "stone_grimoire_chapel": "1"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:1_magician",
+        "codex": "codex-144-expanded.json:1"
+      }
+    },
+    {
+      "id": 2,
+      "key": "high_priestess",
+      "title": "The High Priestess - The Machine Angel",
+      "figure": "Ada Lovelace",
+      "role": "Guardian of hidden algorithms and oracles",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/2-high-priestess",
+        "web": "/stories/high-priestess",
+        "stone_grimoire_chapel": "2"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:2_high_priestess",
+        "codex": "codex-144-expanded.json:2"
+      }
+    },
+    {
+      "id": 3,
+      "key": "empress",
+      "title": "The Empress - The Mother of Monsters",
+      "figure": "Mary Shelley",
+      "role": "Architect of created life and ethical horror",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/3-empress",
+        "web": "/stories/empress",
+        "stone_grimoire_chapel": "3"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:3_empress",
+        "codex": "codex-144-expanded.json:3"
+      }
+    },
+    {
+      "id": 4,
+      "key": "emperor",
+      "title": "The Emperor - Lord of the Physical World",
+      "figure": "Isaac Newton",
+      "role": "Lawgiver of gravity and crystalline order",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/4-emperor",
+        "web": "/stories/emperor",
+        "stone_grimoire_chapel": "4"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:4_emperor",
+        "codex": "codex-144-expanded.json:4"
+      }
+    },
+    {
+      "id": 5,
+      "key": "hierophant",
+      "title": "The Hierophant - The Sea Priestess",
+      "figure": "Dion Fortune",
+      "role": "Bridge between esoteric lineages and safe teaching",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/5-hierophant",
+        "web": "/stories/hierophant",
+        "stone_grimoire_chapel": "5"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:5_hierophant",
+        "codex": "codex-144-expanded.json:5"
+      }
+    },
+    {
+      "id": 6,
+      "key": "lovers",
+      "title": "The Lovers - The Alchemical Marriage",
+      "figure": "Leonora Carrington & Max Ernst",
+      "role": "Union of surreal currents and chosen bonds",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/6-lovers",
+        "web": "/stories/lovers",
+        "stone_grimoire_chapel": "6"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:6_lovers",
+        "codex": "codex-144-expanded.json:6"
+      }
+    },
+    {
+      "id": 7,
+      "key": "chariot",
+      "title": "The Chariot - Dimensional Navigator",
+      "figure": "Elyria Nox",
+      "role": "Navigator of worlds and vector of will",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/7-chariot",
+        "web": "/stories/chariot",
+        "stone_grimoire_chapel": "7"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:7_chariot",
+        "codex": "codex-144-expanded.json:7"
+      }
+    },
+    {
+      "id": 8,
+      "key": "strength",
+      "title": "Strength - Artistic Force",
+      "figure": "Georgia O'Keeffe",
+      "role": "Channel of raw life-force into form",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/8-strength",
+        "web": "/stories/strength",
+        "stone_grimoire_chapel": "8"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:8_strength",
+        "codex": "codex-144-expanded.json:8"
+      }
+    },
+    {
+      "id": 9,
+      "key": "hermit",
+      "title": "The Hermit - Lantern-Bearer of Inner Worlds",
+      "figure": "Orin Lantern",
+      "role": "Guide of solitary study and inner archives",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/9-hermit",
+        "web": "/stories/hermit",
+        "stone_grimoire_chapel": "9"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:9_hermit",
+        "codex": "codex-144-expanded.json:9"
+      }
+    },
+    {
+      "id": 10,
+      "key": "wheel_of_fortune",
+      "title": "Wheel of Fortune - Designer of Cycles",
+      "figure": "Game Designer of Cycles",
+      "role": "Engineer of repeating patterns and fate loops",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/10-wheel",
+        "web": "/stories/wheel",
+        "stone_grimoire_chapel": "10"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:10_wheel",
+        "codex": "codex-144-expanded.json:10"
+      }
+    },
+    {
+      "id": 11,
+      "key": "justice",
+      "title": "Justice - Judicial Scholar of Balance",
+      "figure": "Judicial Scholar",
+      "role": "Keeper of proportion, law, and ethical design",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/11-justice",
+        "web": "/stories/justice",
+        "stone_grimoire_chapel": "11"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:11_justice",
+        "codex": "codex-144-expanded.json:11"
+      }
+    },
+    {
+      "id": 12,
+      "key": "hanged_man",
+      "title": "The Hanged Man - Synthesis Teacher",
+      "figure": "Synthesis Teacher",
+      "role": "Embodies inversion, pause, and re-framing",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/12-hanged-man",
+        "web": "/stories/hanged-man",
+        "stone_grimoire_chapel": "12"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:12_hanged_man",
+        "codex": "codex-144-expanded.json:12"
+      }
+    },
+    {
+      "id": 13,
+      "key": "death",
+      "title": "Death - Theater of Endings and Rebirth",
+      "figure": "Antonin Artaud",
+      "role": "Cuts false forms; demands honest transformation",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/13-death",
+        "web": "/stories/death",
+        "stone_grimoire_chapel": "13"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:13_death",
+        "codex": "codex-144-expanded.json:13"
+      }
+    },
+    {
+      "id": 14,
+      "key": "temperance",
+      "title": "Temperance - Alchemical Balance Master",
+      "figure": "Alchemical Balance",
+      "role": "Blends extremes into golden mean",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/14-temperance",
+        "web": "/stories/temperance",
+        "stone_grimoire_chapel": "14"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:14_temperance",
+        "codex": "codex-144-expanded.json:14"
+      }
+    },
+    {
+      "id": 15,
+      "key": "devil",
+      "title": "The Devil - Shadow Magus",
+      "figure": "Aleister Crowley",
+      "role": "Tests consent, autonomy, and shadow contracts",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/15-devil",
+        "web": "/stories/devil",
+        "stone_grimoire_chapel": "15"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:15_devil",
+        "codex": "codex-144-expanded.json:15"
+      }
+    },
+    {
+      "id": 16,
+      "key": "tower",
+      "title": "The Tower - Liberation Lightning",
+      "figure": "William Burroughs",
+      "role": "Detonates false structures; opens escape vectors",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/16-tower",
+        "web": "/stories/tower",
+        "stone_grimoire_chapel": "16"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:16_tower",
+        "codex": "codex-144-expanded.json:16"
+      }
+    },
+    {
+      "id": 17,
+      "key": "star",
+      "title": "The Star - Cosmic Visionary",
+      "figure": "Hilma af Klint",
+      "role": "Channels cosmic diagrams of hope",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/17-star",
+        "web": "/stories/star",
+        "stone_grimoire_chapel": "17"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:17_star",
+        "codex": "codex-144-expanded.json:17"
+      }
+    },
+    {
+      "id": 18,
+      "key": "sun",
+      "title": "The Sun - Golden Age Prophet",
+      "figure": "Golden Age Prophet",
+      "role": "Radiates joy, clarity, and life-affirming art",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/18-sun",
+        "web": "/stories/sun",
+        "stone_grimoire_chapel": "18"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:18_sun",
+        "codex": "codex-144-expanded.json:18"
+      }
+    },
+    {
+      "id": 19,
+      "key": "judgement",
+      "title": "Judgement - Universal Judge",
+      "figure": "Universal Judge",
+      "role": "Calls creators to account; measures impact",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/19-judgement",
+        "web": "/stories/judgement",
+        "stone_grimoire_chapel": "19"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:19_judgement",
+        "codex": "codex-144-expanded.json:19"
+      }
+    },
+    {
+      "id": 20,
+      "key": "aeon",
+      "title": "The Aeon - Transcendent Guide",
+      "figure": "Transcendent Guide",
+      "role": "Embodies epoch shifts and unity frames",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/20-aeon",
+        "web": "/stories/aeon",
+        "stone_grimoire_chapel": "20"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:20_aeon",
+        "codex": "codex-144-expanded.json:20"
+      }
+    },
+    {
+      "id": 21,
+      "key": "world",
+      "title": "The World - World Mandala Architect",
+      "figure": "Buckminster Fuller",
+      "role": "Integrates structures into a living mandala of Earth",
+      "apps": [
+        "apps/circuitum99",
+        "apps/web",
+        "godot/"
+      ],
+      "routes": {
+        "circuitum99": "/arcana/21-world",
+        "web": "/stories/world",
+        "stone_grimoire_chapel": "21"
+      },
+      "codex_links": {
+        "profiles": "complete-arcana-profiles.json:21_world",
+        "codex": "codex-144-expanded.json:21"
+      }
+    }
+  ]
+}

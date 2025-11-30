@@ -1,0 +1,28 @@
+{
+  "name": "@cathedral/codex-144",
+  "version": "1.0.0",
+  "description": "codex-144 package",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/codex-144"
+  },
+  "author": "Rebecca Respawn",
+  "license": "CC0-1.0",
+  "homepage": "https://bekalah.github.io/cathedral/packages/codex-144",
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=20.18.0",
+    "pnpm": ">=8.15.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

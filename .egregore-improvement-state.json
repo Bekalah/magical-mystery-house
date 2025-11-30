@@ -1,0 +1,17 @@
+{
+  "activeEgregores": [],
+  "consultations": [
+    {
+      "timestamp": "2025-11-29T05:38:49.834Z",
+      "type": "technical",
+      "domain": "code",
+      "context": "test context",
+      "egregores": [],
+      "suggestions": [],
+      "canonicalSources": []
+    }
+  ],
+  "suggestions": [],
+  "canonicalSources": [],
+  "lastUpdate": "2025-11-29T05:38:49.829Z"
+}

@@ -1,0 +1,138 @@
+{
+  "name": "@cathedral/codex-144-99",
+  "version": "2.0.0",
+  "description": "📚 Codex 144:99 Sacred Library - 144 Nodes of Mystical Knowledge with Global Research Integration",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./cli": {
+      "import": "./dist/cli.js"
+    },
+    "./validation": {
+      "import": "./dist/validation.js"
+    }
+  },
+  "engines": {
+    "node": "22.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "build:clean": "rm -rf dist && tsc",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext ts --max-warnings 0",
+    "lint:fix": "eslint src --ext ts --fix",
+    "format": "prettier --write src/**/*.{ts,js}",
+    "format:check": "prettier --check src/**/*.{ts,js}",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "validate": "node dist/cli.js validate",
+    "sync": "node dist/cli.js sync",
+    "search": "node dist/cli.js search",
+    "report": "node dist/cli.js report",
+    "generate-nodes": "node scripts/generate-nodes.js",
+    "generate-codex": "node scripts/generate-codex-data.js",
+    "update-sources": "node scripts/update-research-sources.js",
+    "validate-sources": "node scripts/validate-sources.js",
+    "benchmark": "node scripts/benchmark-search.js"
+  },
+  "files": [
+    "dist",
+    "data",
+    "README.md"
+  ],
+  "dependencies": {
+    "@cathedral/shared": "workspace:*",
+    "canvas": "^3.1.0",
+    "sharp": "^0.33.5",
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0-rc.12",
+    "fuse.js": "^7.0.0",
+    "leven": "^4.0.0",
+    "@azure-rest/ai-inference": "^1.0.0-beta.6",
+    "@azure/identity": "^4.13.0",
+    "dotenv": "^17.2.3",
+    "typescript": "^5.6.3",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^5.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@types/cheerio": "^0.22.35",
+    "vitest": "^1.6.0",
+    "@types/fuse": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0"
+  },
+  "author": "Cathedral Master Creative Intelligence Team",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/codex-144-99"
+  },
+  "homepage": "https://bekalah.github.io/cathedral",
+  "bugs": {
+    "url": "https://github.com/Bekalah/cathedral/issues"
+  },
+  "keywords": [
+    "codex-144-99",
+    "sacred-library",
+    "mystical-knowledge",
+    "research-integration",
+    "academic-libraries",
+    "global-research",
+    "sacred-geometry",
+    "occult-knowledge",
+    "alchemical-traditions",
+    "esoteric-research",
+    "library-system",
+    "sacred-texts",
+    "mystery-traditions"
+  ],
+  "cathedral": {
+    "role": "sacred_knowledge_core",
+    "features": [
+      "144-sacred-nodes",
+      "global-library-integration",
+      "real-research-sources",
+      "azure-ai-enhanced",
+      "sacred-geometry-mapping",
+      "consciousness-levels",
+      "fusion-kink-integration",
+      "public-domain-research",
+      "validated-ownership",
+      "non-dual-perspective"
+    ],
+    "connections": {
+      "library_of_congress": "American research integration",
+      "british_library": "European esoteric collections",
+      "wellcome_collection": "Medical magic traditions",
+      "internet_archive": "Digital occult collections",
+      "sacred_texts_archive": "Complete mystical texts"
+    },
+    "data_integrity": {
+      "provenance_tracking": "All sources documented with full attribution",
+      "ownership_validation": "Automated integrity checking",
+      "research_validation": "Cross-referenced with multiple sources",
+      "public_domain_only": "No copyright infringement"
+    }
+  },
+  "volta": {
+    "node": "22.0.0",
+    "pnpm": "9.15.0"
+  },
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:40:42.218Z",
+  "packageManager": "pnpm@8.0.0"
+}

@@ -1,0 +1,50 @@
+{
+  "name": "@cathedral/game-design-core",
+  "version": "1.0.0",
+  "description": "Game Design Engine - Interactive Experiences & RPG Mechanics for Cathedral",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "CC0-1.0",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "@cathedral/codex-144-99-core": "workspace:*",
+    "@cathedral/sacred-mathematics-core": "workspace:*",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rebeccalemke/cathedral-master-deployment.git",
+    "directory": "packages/game-design-core"
+  },
+  "homepage": "https://github.com/rebeccalemke/cathedral-master-deployment/tree/main/packages/game-design-core",
+  "bugs": {
+    "url": "https://github.com/rebeccalemke/cathedral-master-deployment/issues"
+  },
+  "keywords": [
+    "cathedral",
+    "game",
+    "design",
+    "rpg",
+    "interactive",
+    "144-99",
+    "codex",
+    "consciousness",
+    "trauma-aware",
+    "open-source",
+    "free"
+  ],
+  "packageManager": "pnpm@8.0.0",
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:52.342Z"
+}

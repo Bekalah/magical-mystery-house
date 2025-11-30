@@ -1,0 +1,46 @@
+{
+  "timestamp": 1764532776789,
+  "version": "1.0.0",
+  "title": "Cathedral Master Codex",
+  "license": "CC0-1.0 - Public Domain",
+  "circuitum99": {
+    "name": "Circuitum99",
+    "title": "Alpha et Omega",
+    "description": "The beginning and the end - the complete circuit of creation and transformation",
+    "type": "alpha-et-omega",
+    "status": "master",
+    "principle": "Complete cycle of transformation",
+    "alchemical": "Circularis",
+    "symbol": "○",
+    "element": "All Elements",
+    "planet": "All Planets",
+    "metal": "Philosopher's Stone",
+    "correspondences": {
+      "alpha": "Beginning, creation, initiation, first principle",
+      "omega": "Completion, fulfillment, return, final state",
+      "cycle": "Eternal return, continuous transformation, alchemical circulation",
+      "process": "Solve et Coagula - dissolution and coagulation in perfect cycle"
+    },
+    "repositories": [
+      "Bekalah/circuitum99",
+      "Bekalah/circuitum99-minimal",
+      "Bekalah/codex-14499"
+    ],
+    "integration": {
+      "cathedral": "Master integration point",
+      "circuits": "Core circuit system",
+      "magnumOpus": "Alpha et Omega of the work"
+    }
+  },
+  "masterRepos": {
+    "primary": "Bekalah/cathedral-master",
+    "consolidation": "cathedral-master-deployment",
+    "status": "consolidated"
+  },
+  "tools": {
+    "policy": "free-only",
+    "noSubscriptions": true,
+    "noPaidServices": true,
+    "localOnly": true
+  }
+}

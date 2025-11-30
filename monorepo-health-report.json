@@ -1,0 +1,550 @@
+{
+  "timestamp": 1764485865056,
+  "overall": {
+    "health": 95,
+    "status": "healthy"
+  },
+  "packages": [
+    {
+      "name": "art-engine-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-engine-core",
+      "type": "package",
+      "health": 100,
+      "status": "healthy",
+      "issues": [],
+      "metrics": {
+        "type": "JS/TS package",
+        "name": "@cathedral/art-engine-core",
+        "version": "1.0.0",
+        "hasMain": true,
+        "hasTypes": true,
+        "hasExports": false,
+        "sourceFiles": 4,
+        "hasBuild": true,
+        "buildFiles": 20,
+        "hasTsConfig": true,
+        "hasConfig": true,
+        "hasReadme": true
+      },
+      "language": "js"
+    },
+    {
+      "name": "art-standards-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-standards-core",
+      "type": "package",
+      "health": 100,
+      "status": "healthy",
+      "issues": [],
+      "metrics": {
+        "type": "JS/TS package",
+        "name": "@cathedral/art-standards-core",
+        "version": "1.0.0",
+        "hasMain": true,
+        "hasTypes": true,
+        "hasExports": false,
+        "sourceFiles": 3,
+        "hasBuild": true,
+        "buildFiles": 15,
+        "hasTsConfig": true,
+        "hasConfig": true,
+        "hasReadme": true
+      },
+      "language": "js"
+    },
+    {
+      "name": "circuitum99-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-core",
+      "type": "package",
+      "health": 85,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 2,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "codex-144-99-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144-99-core",
+      "type": "package",
+      "health": 85,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 9,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "consciousness-aware-creative",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/consciousness-aware-creative",
+      "type": "package",
+      "health": 80,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)",
+        "Source files in root (consider moving to src/)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 1,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "debug-system-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/debug-system-core",
+      "type": "package",
+      "health": 100,
+      "status": "healthy",
+      "issues": [],
+      "metrics": {
+        "type": "JS/TS package",
+        "name": "@cathedral/debug-system-core",
+        "version": "1.0.0",
+        "hasMain": true,
+        "hasTypes": true,
+        "hasExports": false,
+        "sourceFiles": 2,
+        "hasBuild": true,
+        "buildFiles": 8,
+        "hasTsConfig": true,
+        "hasConfig": true,
+        "hasReadme": true
+      },
+      "language": "js"
+    },
+    {
+      "name": "design-mathematics-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/design-mathematics-core",
+      "type": "package",
+      "health": 85,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 1,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "fusion-kink-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/fusion-kink-core",
+      "type": "package",
+      "health": 85,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 6,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "game-design-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core",
+      "type": "package",
+      "health": 100,
+      "status": "healthy",
+      "issues": [],
+      "metrics": {
+        "type": "JS/TS package",
+        "name": "@cathedral/game-design-core",
+        "version": "1.0.0",
+        "hasMain": true,
+        "hasTypes": true,
+        "hasExports": false,
+        "sourceFiles": 3,
+        "hasBuild": true,
+        "buildFiles": 16,
+        "hasTsConfig": true,
+        "hasConfig": true,
+        "hasReadme": true
+      },
+      "language": "js"
+    },
+    {
+      "name": "game-mathematics-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-mathematics-core",
+      "type": "package",
+      "health": 85,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 1,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "health-map-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/health-map-core",
+      "type": "package",
+      "health": 100,
+      "status": "healthy",
+      "issues": [],
+      "metrics": {
+        "type": "JS/TS package",
+        "name": "@cathedral/health-map-core",
+        "version": "1.0.0",
+        "hasMain": true,
+        "hasTypes": true,
+        "hasExports": false,
+        "sourceFiles": 2,
+        "hasBuild": true,
+        "buildFiles": 8,
+        "hasTsConfig": true,
+        "hasConfig": true,
+        "hasReadme": true
+      },
+      "language": "js"
+    },
+    {
+      "name": "liber-arcanae-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae-core",
+      "type": "package",
+      "health": 85,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 13,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "music-engine-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/music-engine-core",
+      "type": "package",
+      "health": 100,
+      "status": "healthy",
+      "issues": [],
+      "metrics": {
+        "type": "JS/TS package",
+        "name": "@cathedral/music-engine-core",
+        "version": "1.0.0",
+        "hasMain": true,
+        "hasTypes": true,
+        "hasExports": false,
+        "sourceFiles": 4,
+        "hasBuild": true,
+        "buildFiles": 20,
+        "hasTsConfig": true,
+        "hasConfig": true,
+        "hasReadme": true
+      },
+      "language": "js"
+    },
+    {
+      "name": "mystery-house-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/mystery-house-core",
+      "type": "package",
+      "health": 85,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 2,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "sacred-mathematics-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/sacred-mathematics-core",
+      "type": "package",
+      "health": 85,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 3,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "science-engine-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/science-engine-core",
+      "type": "package",
+      "health": 100,
+      "status": "healthy",
+      "issues": [],
+      "metrics": {
+        "type": "JS/TS package",
+        "name": "@cathedral/science-engine-core",
+        "version": "1.0.0",
+        "hasMain": true,
+        "hasTypes": true,
+        "hasExports": false,
+        "sourceFiles": 4,
+        "hasBuild": true,
+        "buildFiles": 20,
+        "hasTsConfig": true,
+        "hasConfig": true,
+        "hasReadme": true
+      },
+      "language": "js"
+    },
+    {
+      "name": "sound-mathematics-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/sound-mathematics-core",
+      "type": "package",
+      "health": 85,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 1,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "stone-grimoire-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire-core",
+      "type": "package",
+      "health": 85,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 2,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "synth-design-math-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/synth-design-math-core",
+      "type": "package",
+      "health": 85,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 1,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "tesseract-bridge-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-core",
+      "type": "package",
+      "health": 85,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 6,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "tesseract-bridge-hub",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-hub",
+      "type": "package",
+      "health": 95,
+      "status": "healthy",
+      "issues": [],
+      "metrics": {
+        "type": "JS/TS package",
+        "name": "@cathedral/tesseract-bridge-hub",
+        "version": "1.0.0",
+        "hasMain": true,
+        "hasTypes": true,
+        "hasExports": false,
+        "sourceFiles": 3,
+        "hasBuild": true,
+        "buildFiles": 18,
+        "hasTsConfig": true,
+        "hasConfig": true,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "trinity-v1-1-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/trinity-v1-1-core",
+      "type": "package",
+      "health": 80,
+      "status": "warning",
+      "issues": [
+        "Missing package.json (optional for some packages)",
+        "Source files in root (consider moving to src/)"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "sourceFiles": 17,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": false,
+        "hasReadme": false
+      },
+      "language": "js"
+    },
+    {
+      "name": "unified-codex-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-core",
+      "type": "package",
+      "health": 95,
+      "status": "healthy",
+      "issues": [],
+      "metrics": {
+        "type": "JS/TS package",
+        "name": "@cathedral/unified-codex-core",
+        "version": "1.0.0",
+        "hasMain": true,
+        "hasTypes": true,
+        "hasExports": false,
+        "sourceFiles": 2,
+        "hasBuild": true,
+        "buildFiles": 7,
+        "hasTsConfig": true,
+        "hasConfig": true,
+        "hasReadme": false
+      },
+      "language": "js"
+    }
+  ],
+  "apps": [
+    {
+      "name": "web",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/web",
+      "type": "app",
+      "health": 85,
+      "status": "warning",
+      "issues": [
+        "Missing src directory"
+      ],
+      "metrics": {
+        "type": "JS/TS package",
+        "name": "@cathedral/web",
+        "version": "1.0.0",
+        "hasMain": false,
+        "hasTypes": false,
+        "hasExports": false,
+        "hasBuild": false,
+        "hasTsConfig": false,
+        "hasConfig": true,
+        "hasReadme": true
+      },
+      "language": "js"
+    }
+  ],
+  "scripts": [],
+  "tools": [],
+  "build": {
+    "status": "success",
+    "errors": 0,
+    "warnings": 1,
+    "details": {
+      "js": {
+        "status": "failed",
+        "errors": 0,
+        "warnings": 1
+      },
+      "rust": {
+        "status": "unknown",
+        "errors": 0,
+        "warnings": 0
+      },
+      "godot": {
+        "status": "success",
+        "errors": 0,
+        "warnings": 0
+      }
+    }
+  },
+  "tests": {
+    "status": "unknown",
+    "passed": 0,
+    "failed": 0
+  },
+  "dependencies": {
+    "outdated": 0,
+    "vulnerabilities": 0
+  },
+  "typescript": {
+    "errors": 0,
+    "warnings": 0,
+    "status": "errors"
+  },
+  "coverage": {
+    "percentage": 0
+  }
+}

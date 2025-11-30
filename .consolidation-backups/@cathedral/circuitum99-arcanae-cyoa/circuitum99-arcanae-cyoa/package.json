@@ -1,0 +1,45 @@
+{
+  "name": "@cathedral/circuitum99-arcanae-cyoa",
+  "version": "1.0.0",
+  "description": "Circuitum99: Alpha et Omega CYOA Story System for Liber Arcanae",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "story": "node dist/story/storyEngine.js",
+    "random": "node dist/modes/randomMode.js",
+    "auto": "node dist/modes/autoGameMode.js",
+    "design": "node dist/modes/designMode.js",
+    "theatre": "node dist/theatre/paraTheatreEngine.js"
+  },
+  "dependencies": {
+    "@cathedral/codex-144-99": "workspace:*",
+    "@cathedral/liber-arcanae": "workspace:*",
+    "@cathedral/plugin-system": "workspace:*",
+    "@cathedral/shared": "workspace:*",
+    "typescript": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  },
+  "keywords": [
+    "circuitum99",
+    "cyoa",
+    "interactive-story",
+    "alpha-et-omega",
+    "liber-arcanae",
+    "para-theatre",
+    "sacred-storytelling",
+    "rebecca-respawn"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "license": "CC0-1.0",
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:51.730Z",
+  "packageManager": "pnpm@8.0.0"
+}

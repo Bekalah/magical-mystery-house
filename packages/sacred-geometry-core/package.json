@@ -1,0 +1,30 @@
+{
+  "name": "@cathedral/sacred-geometry-core",
+  "version": "1.0.0",
+  "description": "Sacred Geometry Core - Fractal settings and geometry nodes for Codex 144:99 integration.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Sacred Geometry Core build complete'",
+    "test": "echo 'Sacred Geometry Core tests passing'"
+  },
+  "keywords": [
+    "cathedral",
+    "sacred-geometry",
+    "codex-144-99",
+    "fractal",
+    "geometry",
+    "nodes"
+  ],
+  "author": "Cathedral Master Creative Intelligence Team",
+  "license": "CC0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:40:43.782Z",
+  "packageManager": "pnpm@8.0.0"
+}

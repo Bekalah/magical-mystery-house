@@ -1,0 +1,86 @@
+[package]
+name = "kira-audio-engine"
+version = "1.0.0"
+edition = "2021"
+authors = ["Rebecca Respawn (International Reiki Master)"]
+license = "CC0"
+description = "Professional Rust Audio Engine for Cathedral Sound Spell Systems"
+repository = "https://github.com/cathedral-real/cathedral-monorepo"
+
+[lib]
+name = "kira_audio"
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "kira-audio-benchmark"
+path = "src/bin/benchmark.rs"
+
+[dependencies]
+# Core audio libraries
+kira = { version = "0.9", features = ["wav", "ogg", "flac"] }
+# Web bindings for TypeScript integration
+wasm-bindgen = "0.2"
+js-sys = "0.3"
+# Audio processing
+spectrum-analyzer = "0.2"
+# Spatial audio
+rodio = "0.17"
+# Low-level audio
+cpal = "0.15"
+# Math for DSP
+nalgebra = "0.32"
+# Threading for audio processing
+tokio = { version = "1", features = ["full"] }
+# Serialization for interop
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# Error handling
+thiserror = "1.0"
+anyhow = "1.0"
+# Time handling for audio timing
+instant = { version = "0.1", features = ["wasm-bindgen"] }
+# Web-sys for web integration
+web-sys = { version = "0.3", features = [
+    "AudioContext",
+    "AudioBuffer",
+    "AudioBufferSourceNode",
+    "AudioWorkletNode",
+    "AnalyserNode",
+    "GainNode",
+    "StereoPannerNode",
+    "BiquadFilterNode",
+    "DelayNode",
+    "ConvolverNode",
+    "DynamicsCompressorNode",
+    "WaveShaperNode"
+] }
+
+[features]
+default = ["web", "spatial", "consciousness", "sound-spells"]
+web = ["wasm-bindgen/web-sys"]
+spatial = ["nalgebra/spatial"]
+consciousness = []
+sound-spells = ["consciousness"]
+bench = []
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[profile.bench]
+inherits = "release"
+debug = true
+
+[dev-dependencies]
+criterion = "0.5"
+wasm-bindgen-test = "0.3"
+proptest = "1.4"
+
+[dev-dependencies.tokio]
+version = "1"
+features = ["test-util"]
+
+[package.metadata.docs.rs]
+all-features = true

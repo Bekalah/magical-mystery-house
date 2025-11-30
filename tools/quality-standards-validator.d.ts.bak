@@ -1,0 +1,10 @@
+/**
+ * Type declarations for quality-standards-validator.mjs
+ * @license CC0-1.0 - Public Domain
+ */
+
+declare module '../tools/quality-standards-validator.mjs' {
+  export function validateQuality(quality: unknown): { isValid: boolean; issues: string[] };
+}
+
+

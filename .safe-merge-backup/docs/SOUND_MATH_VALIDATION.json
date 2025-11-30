@@ -1,0 +1,596 @@
+/**
+ * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+ */
+{
+  "timestamp": "2025-11-28T07:52:13.573Z",
+  "summary": {
+    "validations": 124,
+    "issues": 0,
+    "byType": {
+      "solfeggio": 12,
+      "harmonics": 26,
+      "golden_ratio": 5
+    }
+  },
+  "validations": [
+    {
+      "file": "/packages/trinity-v1-1-core/fractal-sound-synthesizer.ts",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 396
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 417
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 528
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 639
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 741
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 852
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 963
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/godot/scripts/core/audio_manager.gd",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/godot/scripts/core/audio_manager.gd",
+      "type": "golden_ratio_harmonic"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/js/pro-audio-engine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 396
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/js/pro-audio-engine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 417
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/js/pro-audio-engine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 528
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/js/pro-audio-engine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 741
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/js/pro-audio-engine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 852
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/js/pro-audio-engine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 963
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/js/pro-audio-engine.js",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/js/pro-audio-engine.js",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/brain/src/soundScience.ts",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 396
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 417
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 528
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 639
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 741
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 852
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 963
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/external/codex-144-99/src/integrations/SoundSynthesizerIntegration.ts",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/external/codex-144-99/src/integrations/SoundSynthesizerIntegration.ts",
+      "type": "golden_ratio_harmonic"
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 396
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 417
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 528
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 639
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 741
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 852
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 963
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "golden_ratio_harmonic"
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager_registry_integrated.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 396
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager_registry_integrated.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 417
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager_registry_integrated.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 528
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager_registry_integrated.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 639
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager_registry_integrated.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 741
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager_registry_integrated.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 852
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager_registry_integrated.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 963
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager_registry_integrated.gd",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager_registry_integrated.gd",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager_registry_integrated.gd",
+      "type": "golden_ratio_harmonic"
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager_validation.gd",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/js/pro-audio-engine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 396
+    },
+    {
+      "file": "/js/pro-audio-engine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 417
+    },
+    {
+      "file": "/js/pro-audio-engine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 528
+    },
+    {
+      "file": "/js/pro-audio-engine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 741
+    },
+    {
+      "file": "/js/pro-audio-engine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 852
+    },
+    {
+      "file": "/js/pro-audio-engine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 963
+    },
+    {
+      "file": "/js/pro-audio-engine.js",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/js/pro-audio-engine.js",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/packages/brain/src/soundScience.ts",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 396
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 417
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 528
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 639
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 741
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 852
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 963
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/fractal-sound-synthesizer.ts",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/webview-ui/src/components/chat/__tests__/ChatView.notification-sound.spec.tsx",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 396
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 417
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 528
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 639
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 741
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 852
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_frequency",
+      "frequency": 963
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/godot/scripts/core/audio_manager.gd",
+      "type": "golden_ratio_harmonic"
+    },
+    {
+      "file": "/packages/brain/src/soundScience.d.ts",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/packages/brain/src/soundScience.js",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/packages/brain/src/soundScience.ts",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 396
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 417
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 528
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 639
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 741
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 852
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_frequency",
+      "frequency": 963
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/packages/shared/src/tools/creative-frequency-synthesizer.ts",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/packages/shared/src/tools/sophisticated-sound-quality-enhancer.ts",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/packages/shared/src/tools/tool-sound-quality-5.ts",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/packages/synth/src/effects/improvements/sacred-frequency-weaver.ts",
+      "type": "solfeggio_frequency",
+      "frequency": 396
+    },
+    {
+      "file": "/packages/synth/src/effects/improvements/sacred-frequency-weaver.ts",
+      "type": "solfeggio_frequency",
+      "frequency": 417
+    },
+    {
+      "file": "/packages/synth/src/effects/improvements/sacred-frequency-weaver.ts",
+      "type": "solfeggio_frequency",
+      "frequency": 528
+    },
+    {
+      "file": "/packages/synth/src/effects/improvements/sacred-frequency-weaver.ts",
+      "type": "solfeggio_frequency",
+      "frequency": 639
+    },
+    {
+      "file": "/packages/synth/src/effects/improvements/sacred-frequency-weaver.ts",
+      "type": "solfeggio_frequency",
+      "frequency": 741
+    },
+    {
+      "file": "/packages/synth/src/effects/improvements/sacred-frequency-weaver.ts",
+      "type": "solfeggio_frequency",
+      "frequency": 852
+    },
+    {
+      "file": "/packages/synth/src/effects/improvements/sacred-frequency-weaver.ts",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/packages/synth/src/effects/improvements/sacred-frequency-weaver.ts",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/packages/trinity-v1-1-core/fractal-sound-synthesizer.ts",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/packages/web-platform/src/engines/consolidated/arcana-art - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 396
+    },
+    {
+      "file": "/packages/web-platform/src/engines/consolidated/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 417
+    },
+    {
+      "file": "/packages/web-platform/src/engines/consolidated/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 528
+    },
+    {
+      "file": "/packages/web-platform/src/engines/consolidated/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 639
+    },
+    {
+      "file": "/packages/web-platform/src/engines/consolidated/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 741
+    },
+    {
+      "file": "/packages/web-platform/src/engines/consolidated/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 852
+    },
+    {
+      "file": "/packages/web-platform/src/engines/consolidated/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 963
+    },
+    {
+      "file": "/packages/web-platform/src/engines/consolidated/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/packages/web-platform/src/engines/consolidated/arcana-art-synthesis-labs.js",
+      "type": "harmonic_usage"
+    },
+    {
+      "file": "/packages/web-platform/src/engines/github/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 396
+    },
+    {
+      "file": "/packages/web-platform/src/engines/github/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 417
+    },
+    {
+      "file": "/packages/web-platform/src/engines/github/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 528
+    },
+    {
+      "file": "/packages/web-platform/src/engines/github/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 639
+    },
+    {
+      "file": "/packages/web-platform/src/engines/github/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 741
+    },
+    {
+      "file": "/packages/web-platform/src/engines/github/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 852
+    },
+    {
+      "file": "/packages/web-platform/src/engines/github/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_frequency",
+      "frequency": 963
+    },
+    {
+      "file": "/packages/web-platform/src/engines/github/arcana-art-synthesis-labs.js",
+      "type": "solfeggio_usage"
+    },
+    {
+      "file": "/packages/web-platform/src/engines/github/arcana-art-synthesis-labs.js",
+      "type": "harmonic_usage"
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,63 @@
+{
+  "name": "@cathedral/unified-codex-extractor",
+  "version": "1.0.0",
+  "description": "Professional book art extraction system for unified codex - treats science, art, technology, and all knowledge domains as equal",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "extract": "node dist/extractor/bookExtractor.js",
+    "ocr": "node dist/processor/ocrProcessor.js",
+    "validate": "node dist/validator/qualityValidator.js",
+    "export": "node dist/export/codexExporter.js",
+    "test": "pnpm run validate:quality && pnpm run validate:sacred-math"
+  },
+  "dependencies": {
+    "@cathedral/codex-144-99": "workspace:*",
+    "@cathedral/cathedral-design-library": "workspace:*",
+    "@cathedral/godot-design-studio": "workspace:*",
+    "@cathedral/shared": "workspace:*",
+    "canvas": "^2.11.2",
+    "sharp": "^0.32.6",
+    "tesseract.js": "^5.0.0",
+    "pdf-parse": "^1.1.1",
+    "mammoth": "^1.6.0",
+    "jimp": "^0.22.10",
+    "svg2img": "^0.9.0",
+    "opencv4nodejs": "^5.6.0",
+    "exifreader": "^4.16.0",
+    "typescript": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  },
+  "keywords": [
+    "book-extraction",
+    "codex",
+    "unified-knowledge",
+    "ocr",
+    "art-extraction",
+    "scientific-diagrams",
+    "mystical-symbols",
+    "architectural-plans",
+    "quality-control",
+    "professional-tools"
+  ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./extractor": "./dist/extractor/index.js",
+    "./processor": "./dist/processor/index.js",
+    "./validator": "./dist/validator/index.js",
+    "./types": "./dist/types/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "license": "CC0-1.0",
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:00:30.322Z",
+  "packageManager": "pnpm@8.0.0"
+}

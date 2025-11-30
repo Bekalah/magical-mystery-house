@@ -1,0 +1,3404 @@
+{
+  "timestamp": 1764485921666,
+  "summary": {
+    "packages": 106,
+    "systems": 78,
+    "apps": 26,
+    "tools": 137,
+    "duplicates": 73,
+    "mismatches": 4,
+    "fixes": 73
+  },
+  "duplicates": [
+    {
+      "type": "package",
+      "name": "@cathedral/tesseract-bridge-hub",
+      "count": 3,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-hub",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge-hub",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge-hub",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/tesseract-bridge-hub",
+          "workspace": "/Users/rebeccalemke/cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-hub",
+          "version": "1.0.0",
+          "description": "Tesseract Bridge Hub - Central orchestration system for all Cathedral systems",
+          "packageJson": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-hub/package.json"
+        },
+        "reason": "Primary workspace"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/art-generation-node",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/art-generation-node",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-generation-node",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/art-generation-node",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/art-generation-node",
+          "version": "1.0.0",
+          "description": "High-end art generation and pattern science node connected to real data",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/art-generation-node/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/avatar-experience-system",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/avatar-experience-system",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/avatar-experience-system",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/avatar-experience-system",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/avatar-experience-system",
+          "version": "1.0.0",
+          "description": "Avatar Experience System - Multi-modal fractal avatar experiences with Liber Arcanae integration",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/avatar-experience-system/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/brain",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/brain",
+          "version": "0.1.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/brain",
+          "version": "0.1.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/brain",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/brain",
+          "version": "0.1.0",
+          "description": "",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/brain/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/cataract-book-scanner",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cataract-book-scanner",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cataract-book-scanner",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/cataract-book-scanner",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cataract-book-scanner",
+          "version": "1.0.0",
+          "description": "Cataract: Professional book-to-archetype scanner for public domain books with sacred geometry precision",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/cataract-book-scanner/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/cathedral-architect",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-architect",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-architect",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/cathedral-architect",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-architect",
+          "version": "1.0.0",
+          "description": "🏛️ Cathedral Architect Engine - Transforms Codex nodes into explorable chambers",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/cathedral-architect/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/design-library",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-design-library",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-design-library",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/design-library",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-design-library",
+          "version": "1.0.0",
+          "description": "Figma-style design library integrating Codex 144:99, Liber Arcanae, and Fusion Kink",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/cathedral-design-library/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/fusion-kink-engine",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-fusion-kink-engine",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-fusion-kink-engine",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/fusion-kink-engine",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-fusion-kink-engine",
+          "version": "1.0.0",
+          "description": "Liber Arcanae Codex Abyssiae - 78-card tarot system mirroring Codex 144:99",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/cathedral-fusion-kink-engine/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/lightweight-library",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-lightweight-library",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-lightweight-library",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/lightweight-library",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-lightweight-library",
+          "version": "1.0.0",
+          "description": "Expansive but lightweight library system for the Cathedral of Circuits",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/cathedral-lightweight-library/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/logo-system",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-logo-system",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-logo-system",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/logo-system",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-logo-system",
+          "version": "1.0.0",
+          "description": "Museum-quality animated logos and mystical branding for Cathedral of Circuits",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/cathedral-logo-system/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/plugin-system",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-plugin-system",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-plugin-system",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/plugin-system",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-plugin-system",
+          "version": "1.0.0",
+          "description": "Unified plugin system for Codex 144:99, Liber Arcanae, and Fusion Kink integration",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/cathedral-plugin-system/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/sqlite-persistence",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-sqlite-persistence",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-sqlite-persistence",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/sqlite-persistence",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-sqlite-persistence",
+          "version": "1.0.0",
+          "description": "Robust SQLite database integration for Cathedral Professional Design Suite with Node.js v25 support",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/cathedral-sqlite-persistence/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/circuit-craft-creative-game",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/circuit-craft-creative-game",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuit-craft-creative-game",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/circuit-craft-creative-game",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/circuit-craft-creative-game",
+          "version": "1.0.0",
+          "description": "CircuitCraft: Non-Linear Creative Construction Game for High-Tech Creatives",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/circuit-craft-creative-game/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/circuitum99-arcanae-cyoa",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/circuitum99-arcanae-cyoa",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuitum99-arcanae-cyoa",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/circuitum99-arcanae-cyoa",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/circuitum99-arcanae-cyoa",
+          "version": "1.0.0",
+          "description": "Circuitum99: Alpha et Omega CYOA Story System for Liber Arcanae",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/circuitum99-arcanae-cyoa/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/codex-144-99",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/codex-144-99",
+          "version": "2.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144-99",
+          "version": "2.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/codex-144-99",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/codex-144-99",
+          "version": "2.0.0",
+          "description": "📚 Codex 144:99 Sacred Library - 144 Nodes of Mystical Knowledge with Global Research Integration",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/codex-144-99/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/codex-engine",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/codex-engine",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-engine",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/codex-engine",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/codex-engine",
+          "version": "1.0.0",
+          "description": "Codex Engine - Core processing engine for Codex 144:99 nodes and data structures",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/codex-engine/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/codex-musical-system",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/codex-musical-system",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-musical-system",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/codex-musical-system",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/codex-musical-system",
+          "version": "1.0.0",
+          "description": "Codex 144:99 Musical System - Sacred tones and harmonic structures",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/codex-musical-system/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/config",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/config",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/config",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/config",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/config",
+          "version": "1.0.0",
+          "description": "Shared configuration and constants for Cathedral monorepo",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/config/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/core",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/core",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/core",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/core",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/core",
+          "version": "1.0.0",
+          "description": "Core node logic and JSON data for Codex 144:99 + Morgan Le Fay Avalon system",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/core/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/cosmogenesis",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cosmogenesis",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cosmogenesis",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/cosmogenesis",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/cosmogenesis",
+          "version": "1.0.0",
+          "description": "Cathedral of Circuits package",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/cosmogenesis/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/crystals",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/crystals",
+          "version": "0.1.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/crystals",
+          "version": "0.1.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/crystals",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/crystals",
+          "version": "0.1.0",
+          "description": "",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/crystals/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/fractal-flames-daemon-deity",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/fractal-flames-daemon-deity",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fractal-flames-daemon-deity",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/fractal-flames-daemon-deity",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/fractal-flames-daemon-deity",
+          "version": "1.0.0",
+          "description": "Fractal Flames Library - Real Elements, Daimons, and Deities as Fractals",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/fractal-flames-daemon-deity/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/fusion-kink-generator",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/fusion-kink-generator",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusion-kink-generator",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/fusion-kink-generator",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/fusion-kink-generator",
+          "version": "1.0.0",
+          "description": "Alchemical Fusion Generator - Quality-focused synthesis patterns (a + b = d)",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/fusion-kink-generator/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/game-engine",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/game-engine",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-engine",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/game-engine",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/game-engine",
+          "version": "1.0.0",
+          "description": "Guild Wars-style RPG engine with Codex 144:99 integration",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/game-engine/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/gem-tower-engine",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/gem-tower-engine",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/gem-tower-engine",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/gem-tower-engine",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/gem-tower-engine",
+          "version": "1.0.0",
+          "description": "Gem Tower Engine - Crystal and gem visualization system",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/gem-tower-engine/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/godot-codex-14499",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/godot-codex-14499",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-codex-14499",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/godot-codex-14499",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/godot-codex-14499",
+          "version": "1.0.0",
+          "description": "Godot Codex 144:99 - Sacred lattice system for games and applications",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/godot-codex-14499/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/godot-design-studio",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/godot-design-studio",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-design-studio",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/godot-design-studio",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/godot-design-studio",
+          "version": "1.0.0",
+          "description": "Free Godot Design Studio - Figma-like design tools for mystical interfaces",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/godot-design-studio/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/godot-liber-arcanae",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/godot-liber-arcanae",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-liber-arcanae",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/godot-liber-arcanae",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/godot-liber-arcanae",
+          "version": "1.0.0",
+          "description": "Godot Liber Arcanae - 78-card living tarot system for mystical games",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/godot-liber-arcanae/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/godot-vfx-library",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/godot-vfx-library",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-vfx-library",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/godot-vfx-library",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/godot-vfx-library",
+          "version": "1.0.0",
+          "description": "Free Godot VFX Library - Sacred Geometry & Mystical Effects for Cathedral of Circuits",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/godot-vfx-library/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/hall-of-ateliers",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/hall-of-ateliers",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/hall-of-ateliers",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/hall-of-ateliers",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/hall-of-ateliers",
+          "version": "1.0.0",
+          "description": "Master artistic creation and collaboration systems - Professional-grade tools for painters, sculptors, writers, musicians, and digital artists",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/hall-of-ateliers/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/inter-app-communicator",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/inter-app-communicator",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/inter-app-communicator",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/inter-app-communicator",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/inter-app-communicator",
+          "version": "1.0.0",
+          "description": "Inter-app communication system for Cathedral mystical ecosystem",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/inter-app-communicator/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/labs",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/labs",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/labs",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/labs",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/labs",
+          "version": "1.0.0",
+          "description": "",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/labs/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/liber-arcanae",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae",
+          "version": "2.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/liber-arcanae",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae",
+          "version": "2.0.0",
+          "description": "Liber Arcanae - Sacred mystical library with Codex 144:99 integration, fusion kink mechanics, and tarot CLI tools.",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral-real/liber-arcanae-tools",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-tools",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae-tools",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral-real/liber-arcanae-tools",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-tools",
+          "version": "1.0.0",
+          "description": "Liber Arcanae Tools - Professional Creative Canvas for Circuitum 99",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-tools/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/luxcrux",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/luxcrux",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/luxcrux",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/luxcrux",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/luxcrux",
+          "version": "1.0.0",
+          "description": "Luxcrux - Elemental directions and spatial consciousness",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/luxcrux/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/mystical-data-unified",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/mystical-data-unified",
+          "version": "2.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystical-data-unified",
+          "version": "2.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/mystical-data-unified",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/mystical-data-unified",
+          "version": "2.0.0",
+          "description": "Unified mystical data system - Tarot, astrology, sacred texts integration",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/mystical-data-unified/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/mystical-sound-engine",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/mystical-sound-engine",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystical-sound-engine",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/mystical-sound-engine",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/mystical-sound-engine",
+          "version": "1.0.0",
+          "description": "Real-time audio synthesis engine for mystical research and meditation",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/mystical-sound-engine/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/node-tree-engine",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/node-tree-engine",
+          "version": "2.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/node-tree-engine",
+          "version": "2.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/node-tree-engine",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/node-tree-engine",
+          "version": "2.0.0",
+          "description": "Complete Node Tree Health System for 99 Mystical Codex Nodes with Health Monitoring, Interactive Maps, and Dynamic Stories",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/node-tree-engine/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/portal-system",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/portal-system",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/portal-system",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/portal-system",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/portal-system",
+          "version": "1.0.0",
+          "description": "Portal System - Navigation and transition system for Cathedral experiences",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/portal-system/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/sacred-geometry-core",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-core",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-core",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/sacred-geometry-core",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-core",
+          "version": "1.0.0",
+          "description": "Sacred Geometry Core - Fractal settings and geometry nodes for Codex 144:99 integration.",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-core/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/shared",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/shared",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/shared",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/shared",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/shared",
+          "version": "1.0.0",
+          "description": "Cathedral shared utilities and core systems",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/shared/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/smooth-movement-system",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/smooth-movement-system",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/smooth-movement-system",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/smooth-movement-system",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/smooth-movement-system",
+          "version": "1.0.0",
+          "description": "Smooth Movement System - Fluid animation and motion controls",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/smooth-movement-system/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/soul",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/soul",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/soul",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/soul",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/soul",
+          "version": "1.0.0",
+          "description": "",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/soul/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/stone-grimoire",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/stone-grimoire",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire",
+          "version": "1.0.0",
+          "description": "Stone Grimoire - Body nodes and archive systems",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/synth",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/synth",
+          "version": "0.1.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth",
+          "version": "0.1.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/synth",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/synth",
+          "version": "0.1.0",
+          "description": "",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/synth/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/synthesis-engine",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/synthesis-engine",
+          "version": "2.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synthesis-engine",
+          "version": "2.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/synthesis-engine",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/synthesis-engine",
+          "version": "2.0.0",
+          "description": "Synthesis Engine - Core synthesis and fusion system for Cathedral projects",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/synthesis-engine/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/tesseract-bridge",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/tesseract-bridge",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge",
+          "version": "1.0.0",
+          "description": "Tesseract Bridge - Kabbalistic paths and sacred geometry",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/three-engine",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/three-engine",
+          "version": "2.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/three-engine",
+          "version": "2.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/three-engine",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/three-engine",
+          "version": "2.0.0",
+          "description": "Three.js Engine wrapper for Cathedral 3D visualizations",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/three-engine/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/trinity-architecture",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/trinity-architecture",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/trinity-architecture",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/trinity-architecture",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/trinity-architecture",
+          "version": "1.0.0",
+          "description": "Body/Soul/Spirit consciousness evolution platform with 144:99 ratio compliance",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/trinity-architecture/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/types",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/types",
+          "version": "0.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/types",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/types",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/types",
+          "version": "0.0.0",
+          "description": "",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/types/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/ui",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/ui",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/ui",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/ui",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/ui",
+          "version": "1.0.0",
+          "description": "Cathedral of Circuits - Shared UI Components",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/ui/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral/unified-codex-extractor",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/unified-codex-extractor",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/unified-codex-extractor",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/unified-codex-extractor",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/unified-codex-extractor",
+          "version": "1.0.0",
+          "description": "Professional book art extraction system for unified codex - treats science, art, technology, and all knowledge domains as equal",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/unified-codex-extractor/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "package",
+      "name": "@cathedral-trinity/accessibility",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/universal-accessibility",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/universal-accessibility",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral-trinity/accessibility",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/universal-accessibility",
+          "version": "1.0.0",
+          "description": "Cathedral v1.0 Universal Accessibility Engine - ND Support, Cognitive Load Optimization, Trauma-Safe Environments",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/packages/universal-accessibility/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "system",
+      "name": "10-hour-improvement-experiment.ts",
+      "count": 3,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/10-hour-improvement-experiment.ts",
+          "size": 50576,
+          "mtime": "2025-11-30T05:04:35.223Z"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/10-hour-improvement-experiment.ts",
+          "size": 21355,
+          "mtime": "2025-11-29T07:00:12.535Z"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/10-hour-improvement-experiment.ts",
+          "size": 21355,
+          "mtime": "2025-11-29T07:00:12.539Z"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "10-hour-improvement-experiment.ts",
+          "workspace": "/Users/rebeccalemke/cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/10-hour-improvement-experiment.ts",
+          "size": 50576,
+          "mtime": "2025-11-30T05:04:35.223Z"
+        },
+        "reason": "Largest file (most complete)"
+      }
+    },
+    {
+      "type": "system",
+      "name": "security-audit.mjs",
+      "count": 3,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/security-audit.mjs",
+          "size": 7356,
+          "mtime": "2025-11-30T00:16:20.978Z"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/security-audit.mjs",
+          "size": 8719,
+          "mtime": "2025-11-29T06:41:55.064Z"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/security-audit.mjs",
+          "size": 8719,
+          "mtime": "2025-11-29T06:41:54.928Z"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "security-audit.mjs",
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/security-audit.mjs",
+          "size": 8719,
+          "mtime": "2025-11-29T06:41:54.928Z"
+        },
+        "reason": "Largest file (most complete)"
+      }
+    },
+    {
+      "type": "system",
+      "name": "cathedral-ingest-scan.mjs",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/cathedral-ingest-scan.mjs",
+          "size": 2803,
+          "mtime": "2025-10-16T02:19:46.000Z"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/cathedral-ingest-scan.mjs",
+          "size": 2803,
+          "mtime": "2025-11-04T04:48:32.188Z"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "cathedral-ingest-scan.mjs",
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/cathedral-ingest-scan.mjs",
+          "size": 2803,
+          "mtime": "2025-11-04T04:48:32.188Z"
+        },
+        "reason": "Largest file (most complete)"
+      }
+    },
+    {
+      "type": "system",
+      "name": "comprehensive-backup-system.mjs",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/comprehensive-backup-system.mjs",
+          "size": 11775,
+          "mtime": "2025-11-29T06:17:20.097Z"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/comprehensive-backup-system.mjs",
+          "size": 11775,
+          "mtime": "2025-11-29T06:17:19.981Z"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "comprehensive-backup-system.mjs",
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/comprehensive-backup-system.mjs",
+          "size": 11775,
+          "mtime": "2025-11-29T06:17:19.981Z"
+        },
+        "reason": "Largest file (most complete)"
+      }
+    },
+    {
+      "type": "system",
+      "name": "connect_modules.js",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/connect_modules.js",
+          "size": 14119,
+          "mtime": "2025-11-01T00:34:14.710Z"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/connect_modules.js",
+          "size": 14119,
+          "mtime": "2025-11-04T04:48:32.188Z"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "connect_modules.js",
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/connect_modules.js",
+          "size": 14119,
+          "mtime": "2025-11-04T04:48:32.188Z"
+        },
+        "reason": "Largest file (most complete)"
+      }
+    },
+    {
+      "type": "system",
+      "name": "multi-repo-backup-scanner.ts",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/multi-repo-backup-scanner.ts",
+          "size": 8118,
+          "mtime": "2025-11-29T07:00:12.536Z"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/multi-repo-backup-scanner.ts",
+          "size": 8118,
+          "mtime": "2025-11-29T07:00:12.540Z"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "multi-repo-backup-scanner.ts",
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/multi-repo-backup-scanner.ts",
+          "size": 8118,
+          "mtime": "2025-11-29T07:00:12.540Z"
+        },
+        "reason": "Largest file (most complete)"
+      }
+    },
+    {
+      "type": "system",
+      "name": "verify-absent.mjs",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/verify-absent.mjs",
+          "size": 454,
+          "mtime": "2025-10-16T02:19:46.000Z"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/verify-absent.mjs",
+          "size": 454,
+          "mtime": "2025-11-04T04:48:32.199Z"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "verify-absent.mjs",
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/verify-absent.mjs",
+          "size": 454,
+          "mtime": "2025-11-04T04:48:32.199Z"
+        },
+        "reason": "Largest file (most complete)"
+      }
+    },
+    {
+      "type": "app",
+      "name": "cathedral-of-circuits",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/cathedral-of-circuits",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/cathedral-of-circuits",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "cathedral-of-circuits",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/cathedral-of-circuits",
+          "version": "1.0.0",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/apps/cathedral-of-circuits/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "app",
+      "name": "@cathedral/cathedral-unity",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/cathedral-unity",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/cathedral-unity",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/cathedral-unity",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/cathedral-unity",
+          "version": "1.0.0",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/apps/cathedral-unity/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "app",
+      "name": "cathedral-spell-frontend",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/frontend",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/frontend",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "cathedral-spell-frontend",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/frontend",
+          "version": "1.0.0",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/apps/frontend/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "app",
+      "name": "@bekalah/cathedral-monorepo",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/learning-device",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/learning-device",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@bekalah/cathedral-monorepo",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/learning-device",
+          "version": "1.0.0",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/apps/learning-device/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "app",
+      "name": "@cathedral/liber-arcanae-app",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/liber-arcanae",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/liber-arcanae",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/liber-arcanae-app",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/liber-arcanae",
+          "version": "1.0.0",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/apps/liber-arcanae/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "app",
+      "name": "@bekalah/liber-arcanae-tarot",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/liber-arcanae-tarot",
+          "version": "2.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/liber-arcanae-tarot",
+          "version": "2.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@bekalah/liber-arcanae-tarot",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/liber-arcanae-tarot",
+          "version": "2.0.0",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/apps/liber-arcanae-tarot/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "app",
+      "name": "@cathedral/mystical-treasure-hunt",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/mystical-treasure-hunt",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/mystical-treasure-hunt",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/mystical-treasure-hunt",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/mystical-treasure-hunt",
+          "version": "1.0.0",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/apps/mystical-treasure-hunt/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "app",
+      "name": "@cathedral/synth-lab",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/synth-lab",
+          "version": "0.1.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/synth-lab",
+          "version": "0.1.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/synth-lab",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/synth-lab",
+          "version": "0.1.0",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/apps/synth-lab/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "app",
+      "name": "@cathedral/tarot-arena",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/tarot-arena",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/tarot-arena",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/tarot-arena",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/tarot-arena",
+          "version": "1.0.0",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/apps/tarot-arena/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "app",
+      "name": "@cathedral/test-ground",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/test-ground",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/test-ground",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/test-ground",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/test-ground",
+          "version": "1.0.0",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/apps/test-ground/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "app",
+      "name": "@bekalah/cathedral-web",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/web",
+          "version": "2.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/web",
+          "version": "2.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@bekalah/cathedral-web",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/web",
+          "version": "2.0.0",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/apps/web/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "app",
+      "name": "@cathedral/web-from-master",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/web-from-master",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/web-from-master",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@cathedral/web-from-master",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/web-from-master",
+          "version": "1.0.0",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/apps/web-from-master/package.json"
+        },
+        "reason": "First found"
+      }
+    },
+    {
+      "type": "app",
+      "name": "@bekalah/cathedral-worker",
+      "count": 2,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/worker",
+          "version": "1.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/worker",
+          "version": "1.0.0"
+        }
+      ],
+      "recommendation": {
+        "action": "keep",
+        "item": {
+          "name": "@bekalah/cathedral-worker",
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/apps/worker",
+          "version": "1.0.0",
+          "packageJson": "/Users/rebeccalemke/cathedral-real/apps/worker/package.json"
+        },
+        "reason": "First found"
+      }
+    }
+  ],
+  "mismatches": [
+    {
+      "type": "version-mismatch",
+      "category": "package",
+      "name": "@cathedral/liber-arcanae",
+      "versions": [
+        "2.0.0",
+        "1.0.0"
+      ],
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "version": "2.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    {
+      "type": "version-mismatch",
+      "category": "package",
+      "name": "@cathedral/types",
+      "versions": [
+        "0.0.0",
+        "1.0.0"
+      ],
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "version": "0.0.0"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "version": "1.0.0"
+        }
+      ]
+    },
+    {
+      "type": "content-mismatch",
+      "category": "system",
+      "name": "10-hour-improvement-experiment.ts",
+      "sizeVariance": 189748186.88888893,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-master-deployment",
+          "size": 50576
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "size": 21355
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "size": 21355
+        }
+      ]
+    },
+    {
+      "type": "content-mismatch",
+      "category": "system",
+      "name": "security-audit.mjs",
+      "sizeVariance": 412837.5555555555,
+      "items": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-master-deployment",
+          "size": 7356
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "size": 8719
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "size": 8719
+        }
+      ]
+    }
+  ],
+  "fixes": [
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/tesseract-bridge-hub",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-hub"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge-hub"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge-hub"
+        }
+      ],
+      "reason": "Primary workspace"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/art-generation-node",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/art-generation-node"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/art-generation-node"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/avatar-experience-system",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/avatar-experience-system"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/avatar-experience-system"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/brain",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/brain"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/brain"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/cataract-book-scanner",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/cataract-book-scanner"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cataract-book-scanner"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/cathedral-architect",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-architect"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-architect"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/design-library",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-design-library"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-design-library"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/fusion-kink-engine",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-fusion-kink-engine"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-fusion-kink-engine"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/lightweight-library",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-lightweight-library"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-lightweight-library"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/logo-system",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-logo-system"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-logo-system"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/plugin-system",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-plugin-system"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-plugin-system"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/sqlite-persistence",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/cathedral-sqlite-persistence"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cathedral-sqlite-persistence"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/circuit-craft-creative-game",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/circuit-craft-creative-game"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuit-craft-creative-game"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/circuitum99-arcanae-cyoa",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/circuitum99-arcanae-cyoa"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuitum99-arcanae-cyoa"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/codex-144-99",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/codex-144-99"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-144-99"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/codex-engine",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/codex-engine"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-engine"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/codex-musical-system",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/codex-musical-system"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/codex-musical-system"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/config",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/config"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/config"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/core",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/core"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/core"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/cosmogenesis",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/cosmogenesis"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/cosmogenesis"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/crystals",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/crystals"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/crystals"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/fractal-flames-daemon-deity",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/fractal-flames-daemon-deity"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fractal-flames-daemon-deity"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/fusion-kink-generator",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/fusion-kink-generator"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusion-kink-generator"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/game-engine",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/game-engine"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/game-engine"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/gem-tower-engine",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/gem-tower-engine"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/gem-tower-engine"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/godot-codex-14499",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/godot-codex-14499"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-codex-14499"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/godot-design-studio",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/godot-design-studio"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-design-studio"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/godot-liber-arcanae",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/godot-liber-arcanae"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-liber-arcanae"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/godot-vfx-library",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/godot-vfx-library"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-vfx-library"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/hall-of-ateliers",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/hall-of-ateliers"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/hall-of-ateliers"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/inter-app-communicator",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/inter-app-communicator"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/inter-app-communicator"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/labs",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/labs"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/labs"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/liber-arcanae",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral-real/liber-arcanae-tools",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae-tools"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae-tools"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/luxcrux",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/luxcrux"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/luxcrux"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/mystical-data-unified",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/mystical-data-unified"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystical-data-unified"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/mystical-sound-engine",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/mystical-sound-engine"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystical-sound-engine"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/node-tree-engine",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/node-tree-engine"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/node-tree-engine"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/portal-system",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/portal-system"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/portal-system"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/sacred-geometry-core",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/sacred-geometry-core"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-geometry-core"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/shared",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/shared"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/shared"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/smooth-movement-system",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/smooth-movement-system"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/smooth-movement-system"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/soul",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/soul"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/soul"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/stone-grimoire",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/synth",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/synth"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synth"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/synthesis-engine",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/synthesis-engine"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/synthesis-engine"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/tesseract-bridge",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/three-engine",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/three-engine"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/three-engine"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/trinity-architecture",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/trinity-architecture"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/trinity-architecture"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/types",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/types"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/types"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/ui",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/ui"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/ui"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral/unified-codex-extractor",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/unified-codex-extractor"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/unified-codex-extractor"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "package",
+      "name": "@cathedral-trinity/accessibility",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/packages/universal-accessibility"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/universal-accessibility"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "system",
+      "name": "10-hour-improvement-experiment.ts",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-master-deployment",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/10-hour-improvement-experiment.ts"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/10-hour-improvement-experiment.ts"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/10-hour-improvement-experiment.ts"
+        }
+      ],
+      "reason": "Largest file (most complete)"
+    },
+    {
+      "type": "deduplicate",
+      "category": "system",
+      "name": "security-audit.mjs",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+        "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/security-audit.mjs"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/scripts/security-audit.mjs"
+        },
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/security-audit.mjs"
+        }
+      ],
+      "reason": "Largest file (most complete)"
+    },
+    {
+      "type": "deduplicate",
+      "category": "system",
+      "name": "cathedral-ingest-scan.mjs",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+        "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/cathedral-ingest-scan.mjs"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/cathedral-ingest-scan.mjs"
+        }
+      ],
+      "reason": "Largest file (most complete)"
+    },
+    {
+      "type": "deduplicate",
+      "category": "system",
+      "name": "comprehensive-backup-system.mjs",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+        "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/comprehensive-backup-system.mjs"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/comprehensive-backup-system.mjs"
+        }
+      ],
+      "reason": "Largest file (most complete)"
+    },
+    {
+      "type": "deduplicate",
+      "category": "system",
+      "name": "connect_modules.js",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+        "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/connect_modules.js"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/connect_modules.js"
+        }
+      ],
+      "reason": "Largest file (most complete)"
+    },
+    {
+      "type": "deduplicate",
+      "category": "system",
+      "name": "multi-repo-backup-scanner.ts",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+        "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/multi-repo-backup-scanner.ts"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/multi-repo-backup-scanner.ts"
+        }
+      ],
+      "reason": "Largest file (most complete)"
+    },
+    {
+      "type": "deduplicate",
+      "category": "system",
+      "name": "verify-absent.mjs",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+        "path": "/Users/rebeccalemke/cathedral-fixed-clean/scripts/verify-absent.mjs"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-real",
+          "path": "/Users/rebeccalemke/cathedral-real/scripts/verify-absent.mjs"
+        }
+      ],
+      "reason": "Largest file (most complete)"
+    },
+    {
+      "type": "deduplicate",
+      "category": "app",
+      "name": "cathedral-of-circuits",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/apps/cathedral-of-circuits"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/cathedral-of-circuits"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "app",
+      "name": "@cathedral/cathedral-unity",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/apps/cathedral-unity"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/cathedral-unity"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "app",
+      "name": "cathedral-spell-frontend",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/apps/frontend"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/frontend"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "app",
+      "name": "@bekalah/cathedral-monorepo",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/apps/learning-device"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/learning-device"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "app",
+      "name": "@cathedral/liber-arcanae-app",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/apps/liber-arcanae"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/liber-arcanae"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "app",
+      "name": "@bekalah/liber-arcanae-tarot",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/apps/liber-arcanae-tarot"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/liber-arcanae-tarot"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "app",
+      "name": "@cathedral/mystical-treasure-hunt",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/apps/mystical-treasure-hunt"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/mystical-treasure-hunt"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "app",
+      "name": "@cathedral/synth-lab",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/apps/synth-lab"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/synth-lab"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "app",
+      "name": "@cathedral/tarot-arena",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/apps/tarot-arena"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/tarot-arena"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "app",
+      "name": "@cathedral/test-ground",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/apps/test-ground"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/test-ground"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "app",
+      "name": "@bekalah/cathedral-web",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/apps/web"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/web"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "app",
+      "name": "@cathedral/web-from-master",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/apps/web-from-master"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/web-from-master"
+        }
+      ],
+      "reason": "First found"
+    },
+    {
+      "type": "deduplicate",
+      "category": "app",
+      "name": "@bekalah/cathedral-worker",
+      "keep": {
+        "workspace": "/Users/rebeccalemke/cathedral-real",
+        "path": "/Users/rebeccalemke/cathedral-real/apps/worker"
+      },
+      "remove": [
+        {
+          "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/apps/worker"
+        }
+      ],
+      "reason": "First found"
+    }
+  ]
+}

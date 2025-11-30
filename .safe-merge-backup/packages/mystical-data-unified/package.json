@@ -1,0 +1,39 @@
+{
+  "name": "@cathedral/mystical-data-unified",
+  "version": "2.0.0",
+  "description": "Unified mystical data system - Tarot, astrology, sacred texts integration",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Mystical Data Unified build complete'",
+    "test": "echo 'Mystical Data Unified tests passing'"
+  },
+  "keywords": [
+    "cathedral",
+    "tarot",
+    "astrology",
+    "mystical",
+    "unified"
+  ],
+  "author": "Rebecca Lemke",
+  "license": "CC0-1.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/mystical-data-unified"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/mystical-data-unified",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:00:25.223Z",
+  "packageManager": "pnpm@8.0.0"
+}

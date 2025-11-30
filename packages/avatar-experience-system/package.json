@@ -1,0 +1,39 @@
+{
+  "name": "@cathedral/avatar-experience-system",
+  "version": "1.0.0",
+  "description": "Avatar Experience System - Multi-modal fractal avatar experiences with Liber Arcanae integration",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node demo.js",
+    "dev": "node src/index.js",
+    "test": "node demo.js"
+  },
+  "keywords": [
+    "avatar",
+    "fractal",
+    "tarot",
+    "experiences"
+  ],
+  "author": "Rebecca Respawn",
+  "license": "CC0-1.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/avatar-experience-system"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/avatar-experience-system",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:40:41.422Z",
+  "packageManager": "pnpm@8.0.0"
+}

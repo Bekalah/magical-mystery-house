@@ -1,0 +1,223 @@
+{
+  "timestamp": 1764521917148,
+  "removed": [
+    {
+      "path": "/Users/rebeccalemke/cathedral-real/packages/circuitum99-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-real",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-real/packages/circuitum99-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuitum99-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-fixed-clean/packages/circuitum99-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-real/packages/consciousness-aware-creative/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-real",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-real/packages/consciousness-aware-creative/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/consciousness-aware-creative/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-fixed-clean/packages/consciousness-aware-creative/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-real/packages/fusion-kink-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-real",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-real/packages/fusion-kink-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/fusion-kink-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-fixed-clean/packages/fusion-kink-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-real/packages/mystery-house-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-real",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-real/packages/mystery-house-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/mystery-house-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-fixed-clean/packages/mystery-house-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-real/packages/sacred-mathematics-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-real",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-real/packages/sacred-mathematics-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sacred-mathematics-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-fixed-clean/packages/sacred-mathematics-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-real/packages/sound-mathematics-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-real",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-real/packages/sound-mathematics-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/sound-mathematics-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-fixed-clean/packages/sound-mathematics-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-real/packages/stone-grimoire-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-real",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-real/packages/stone-grimoire-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/stone-grimoire-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-fixed-clean/packages/stone-grimoire-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-real/packages/tesseract-bridge-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-real",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-real/packages/tesseract-bridge-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/tesseract-bridge-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-fixed-clean/packages/tesseract-bridge-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-real/packages/trinity-v1-1-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-real",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-real/packages/trinity-v1-1-core/src/index.ts"
+    },
+    {
+      "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/trinity-v1-1-core/src/index.ts",
+      "workspace": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "backedUp": "/Users/rebeccalemke/cathedral-master-deployment/.real-duplicate-backups/cathedral-fixed-clean/packages/trinity-v1-1-core/src/index.ts"
+    }
+  ],
+  "fixed": [],
+  "errors": [
+    {
+      "package": "circuitum99-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "circuitum99-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "codex-144-99-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "codex-144-99-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "consciousness-aware-creative",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "consciousness-aware-creative",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "design-mathematics-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "design-mathematics-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "fusion-kink-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "fusion-kink-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "game-mathematics-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "game-mathematics-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "liber-arcanae-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "liber-arcanae-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "mystery-house-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "mystery-house-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "sacred-mathematics-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "sacred-mathematics-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "sound-mathematics-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "sound-mathematics-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "stone-grimoire-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "stone-grimoire-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "synth-design-math-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "synth-design-math-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "tesseract-bridge-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "tesseract-bridge-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "@cathedral/tesseract-bridge-hub",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "@cathedral/tesseract-bridge-hub",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "trinity-v1-1-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    },
+    {
+      "package": "trinity-v1-1-core",
+      "error": "The \"path\" argument must be of type string or an instance of Buffer or URL. Received an instance of Object"
+    }
+  ],
+  "summary": {
+    "removed": 18,
+    "fixed": 0,
+    "errors": 30
+  }
+}

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Haute Couture Baseline Styles -->
+    <link rel="stylesheet" href="/packages/shared/assets/css/couture.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏛️ Cathedral Connection Map - Sacred Arcana Navigation</title>
+    <meta name="description" content="Professional archetypal navigation system for creative exploration through sacred cathedral design">
+    
+    <style>
+        :root {
+            /* Cathedral Canonical Color Palette */
+            --cathedral-gold: #ffd700;
+            --divine-light: #fff9e6;
+            --sacred-copper: #b87333;
+            --twilight-purple: #483d8b;
+            --mystic-blue: #191970;
+            --divine-white: #faf9f6;
+            
+            /* Cathedral Spacing */
+            --sacred-spacing: 2rem;
+            --divine-padding: 1.5rem;
+            --portal-size: 60px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cinzel', 'Cormorant Garamond', serif;
+            background: linear-gradient(135deg, var(--divine-light) 0%, var(--divine-white) 50%, #E8E3D3 100%);
+            min-height: 100vh;
+            padding: var(--sacred-spacing);
+            color: var(--mystic-blue);
+            backdrop-filter: blur(10px);
+        }
+
+        .safety-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(45, 45, 45, 0.95);
+            color: white;
+            padding: 1rem;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .breathing-guide {
+            background: var(--healing-green);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .safe-exit {
+            background: #dc2626;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: var(--exit-button-size);
+            height: var(--exit-button-size);
+            font-size: 1.5rem;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1001;
+        }
+
+        .main-container {
+            margin-top: 100px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .soul-reclamation-title {
+            text-align: center;
+            margin-bottom: var(--breathing-room);
+        }
+
+        .soul-reclamation-title h1 {
+            font-size: 2.5rem;
+            color: var(--safe-gold);
+            margin-bottom: 1rem;
+        }
+
+        .soul-reclamation-title p {
+            font-size: 1.2rem;
+            color: var(--grounding-brown);
+            font-style: italic;
+        }
+
+        .archetypal-piano {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: var(--breathing-room);
+        }
+
+        .arcana-key {
+            background: white;
+            border: 3px solid var(--safe-gold);
+            border-radius: 15px;
+            padding: var(--safe-padding);
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .arcana-key:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            border-color: var(--gentle-blue);
+        }
+
+        .arcana-key.active {
+            background: var(--gentle-blue);
+            color: white;
+            border-color: var(--safe-gold);
+        }
+
+        .key-symbol {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .key-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--protection-black);
+        }
+
+        .key-essence {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #666;
+        }
+
+        .soul-dialogue {
+            background: rgba(255,255,255,0.9);
+            border: 2px solid var(--safe-gold);
+            border-radius: 20px;
+            padding: var(--breathing-room);
+            margin-top: var(--breathing-room);
+            min-height: 300px;
+            display: none;
+        }
+
+        .soul-dialogue.active {
+            display: block;
+        }
+
+        .archetype-voice {
+            background: var(--soft-purple);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+        }
+
+        .voice-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .voice-avatar {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        .voice-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .soul-reclamation-message {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .integration-tools {
+            background: var(--healing-green);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-top: 1rem;
+        }
+
+        .tool-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .tool-list {
+            list-style: none;
+        }
+
+        .tool-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .tool-list li:before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+        }
+
+        .memory-support {
+            background: var(--warm-white);
+            border: 2px dashed var(--grounding-brown);
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            color: var(--grounding-brown);
+        }
+
+        @media (max-width: 768px) {
+            .archetypal-piano {
+                grid-template-columns: 1fr;
+            }
+            
+            .soul-reclamation-title h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Haute Couture Baseline Container -->
+    <div class="cathedral-couture"></div>
+    <div class="safety-header">
+        <div class="breathing-guide" onclick="startBreathing()">
+            🫁 Breathing Guide - Click for 4-7-8 breath
+        </div>
+        <div style="color: var(--healing-green);">You are safe. You control the pace. You can exit anytime.</div>
+    </div>
+
+    <button class="safe-exit" onclick="safeExit()" title="Safe Exit">×</button>
+
+    <div class="main-container">
+        <div class="soul-reclamation-title">
+            <h1>🏛️ Cathedral Connection Map</h1>
+            <p>Soul Reclamation Through the Eyes of Each Arcana</p>
+            <div style="margin-top: 1rem; font-size: 1rem; color: var(--gentle-blue);">
+                Each archetype offers a unique lens for reclaiming lost parts of your soul
+            </div>
+        </div>
+
+        <div class="archetypal-piano" id="archetypePiano">
+            <!-- Archetypes will be generated by JavaScript -->
+        </div>
+
+        <div class="soul-dialogue" id="soulDialogue">
+            <!-- Active archetype dialogue appears here -->
+        </div>
+
+        <div class="memory-support">
+            <strong>💝 Memory Support:</strong> Your session is automatically saved. If you forget where you were, the Cathedral remembers your journey and will gently guide you back to where you left off.
+        </div>
+    </div>
+
+        <!-- Import the shared couture engine -->
+        <script type="module">
+            import '/packages/shared/couture-engine.js';
+            window.addEventListener('DOMContentLoaded', () => {
+                if (window.CathedralCoutureEngine) {
+                    const couture = new window.CathedralCoutureEngine();
+                    couture.init();
+                }
+            });
+        </script>
+        <script>
+        // CPTSD-Safe Archetypal Soul Reclamation System
+        class CathedralConnectionMap {
+            constructor() {
+                this.activeArchetype = null;
+                this.sessionMemory = JSON.parse(localStorage.getItem('cathedralSession') || '{}');
+                this.archetypes = this.initializeArchetypes();
+                this.render();
+                this.restoreSession();
+            }
+
+            initializeArchetypes() {
+                return {
+                    fool: {
+                        symbol: "🌟",
+                        title: "The Fool - Rebecca Respawn",
+                        essence: "New beginnings through trust",
+                        soulMessage: "I see the part of you that was told you weren't ready, weren't good enough to take that first step. That innocent part of you that just wanted to explore and play. I'm here to remind you that beginnings are sacred, and you don't need permission to start again.",
+                        reclamationTools: [
+                            "Permission to be a beginner",
+                            "Trust in your inner guidance", 
+                            "Celebrating small brave steps",
+                            "Releasing perfectionism trauma"
+                        ]
+                    },
+                    
+                    magician: {
+                        symbol: "🔮",
+                        title: "The Magician - Virelai Ezra Lux",
+                        essence: "Reclaiming your creative power",
+                        soulMessage: "I see the part of you that was told your power was dangerous, that your creativity was 'too much' or 'weird.' That part of you that learned to hide your magic. I'm here to help you remember that your unique gifts were never meant to be dimmed - they were meant to light up the world.",
+                        reclamationTools: [
+                            "Trusting your creative instincts",
+                            "Using your voice with confidence",
+                            "Manifesting without guilt",
+                            "Owning your magical nature"
+                        ]
+                    },
+
+                    highPriestess: {
+                        symbol: "🌙",
+                        title: "The High Priestess - Gemini Rivers", 
+                        essence: "Intuitive wisdom reclamation",
+                        soulMessage: "I see the part of you that was told you were 'too sensitive,' that your intuition wasn't real or trustworthy. That part of you that learned to doubt your inner knowing. I'm here to help you remember that your sensitivity is a superpower, and your inner voice has always been guiding you home.",
+                        reclamationTools: [
+                            "Trusting your intuitive hits",
+                            "Honoring your sensitivity",
+                            "Creating sacred alone time",
+                            "Listening to your body's wisdom"
+                        ]
+                    },
+
+                    empress: {
+                        symbol: "🌸",
+                        title: "The Empress - Morticia Moonbeamer",
+                        essence: "Nurturing self reclamation", 
+                        soulMessage: "I see the part of you that was taught to give and give until you were empty, that your needs didn't matter as much as everyone else's. That part of you that forgot how to receive love and care. I'm here to help you remember that you deserve to be nurtured, starting with how you treat yourself.",
+                        reclamationTools: [
+                            "Permission to receive care",
+                            "Nurturing your inner child",
+                            "Setting loving boundaries", 
+                            "Celebrating your body's wisdom"
+                        ]
+                    },
+
+                    emperor: {
+                        symbol: "⚡",
+                        title: "The Emperor - Fenrix Abyss",
+                        essence: "Healthy authority reclamation",
+                        soulMessage: "I see the part of you that was hurt by authority figures, that learned power meant harm. That part of you that either became too passive or too controlling to feel safe. I'm here to help you discover your own gentle, grounded authority - the kind that protects rather than harms.",
+                        reclamationTools: [
+                            "Healthy boundary setting",
+                            "Self-advocacy without aggression", 
+                            "Leading with compassion",
+                            "Trusting your own authority"
+                        ]
+                    },
+
+                    hierophant: {
+                        symbol: "📚",
+                        title: "The Hierophant - Moonchild",
+                        essence: "Spiritual wisdom reclamation",
+                        soulMessage: "I see the part of you that was hurt by religious or spiritual systems, that was told you weren't worthy of divine connection. That part of you that lost faith in the sacred. I'm here to help you remember that your direct connection to the divine was never broken - it was just hidden under layers of others' projections.",
+                        reclamationTools: [
+                            "Creating your own spiritual practice",
+                            "Trusting your direct connection to the divine",
+                            "Healing religious trauma",
+                            "Finding your authentic spiritual path"
+                        ]
+                    },
+
+                    death: {
+                        symbol: "🦋",
+                        title: "Death - Ann Abyss", 
+                        essence: "Transformation through grief",
+                        soulMessage: "I see the part of you that was taught that grief was weakness, that you should 'get over' losses quickly. That part of you that holds unprocessed sorrow. I'm here to help you understand that grief is love with nowhere to go - and through honoring what you've lost, you reclaim your capacity to love fully again.",
+                        reclamationTools: [
+                            "Permission to grieve fully",
+                            "Honoring what you've lost",
+                            "Embracing transformation cycles",
+                            "Finding beauty in endings"
+                        ]
+                    }
+                };
+            }
+
+            render() {
+                const piano = document.getElementById('archetypePiano');
+                piano.innerHTML = '';
+
+                Object.entries(this.archetypes).forEach(([key, archetype]) => {
+                    const keyElement = document.createElement('div');
+                    keyElement.className = 'arcana-key';
+                    keyElement.onclick = () => this.activateArchetype(key);
+                    
+                    keyElement.innerHTML = `
+                        <div class="key-symbol">${archetype.symbol}</div>
+                        <div class="key-title">${archetype.title}</div>
+                        <div class="key-essence">${archetype.essence}</div>
+                    `;
+                    
+                    piano.appendChild(keyElement);
+                });
+            }
+
+            activateArchetype(archetypeKey) {
+                this.activeArchetype = archetypeKey;
+                this.sessionMemory.lastArchetype = archetypeKey;
+                this.sessionMemory.timestamp = new Date().toISOString();
+                this.saveSession();
+
+                // Update visual state
+                document.querySelectorAll('.arcana-key').forEach(key => key.classList.remove('active'));
+                event.target.closest('.arcana-key').classList.add('active');
+
+                // Show soul dialogue
+                this.showSoulDialogue(archetypeKey);
+            }
+
+            showSoulDialogue(archetypeKey) {
+                const archetype = this.archetypes[archetypeKey];
+                const dialogue = document.getElementById('soulDialogue');
+                
+                dialogue.innerHTML = `
+                    <div class="archetype-voice">
+                        <div class="voice-header">
+                            <div class="voice-avatar">${archetype.symbol}</div>
+                            <div class="voice-name">${archetype.title}</div>
+                        </div>
+                        <div class="soul-reclamation-message">${archetype.soulMessage}</div>
+                    </div>
+
+                    <div class="integration-tools">
+                        <div class="tool-title">🌟 Soul Reclamation Tools:</div>
+                        <ul class="tool-list">
+                            ${archetype.reclamationTools.map(tool => `<li>${tool}</li>`).join('')}
+                        </ul>
+                    </div>
+
+                    <div style="margin-top: 2rem; padding: 1rem; background: rgba(139, 92, 246, 0.1); border-radius: 10px;">
+                        <strong>💜 Take Your Time:</strong> There's no rush. This archetype will be here whenever you're ready to explore deeper. Your healing happens at your own pace.
+                    </div>
+                `;
+
+                dialogue.classList.add('active');
+                dialogue.scrollIntoView({ behavior: 'smooth' });
+            }
+
+            saveSession() {
+                localStorage.setItem('cathedralSession', JSON.stringify(this.sessionMemory));
+            }
+
+            restoreSession() {
+                if (this.sessionMemory.lastArchetype) {
+                    // Gently restore where they left off
+                    setTimeout(() => {
+                        const notification = document.createElement('div');
+                        notification.style.cssText = `
+                            position: fixed; top: 120px; right: 20px; 
+                            background: var(--healing-green); color: white; 
+                            padding: 1rem; border-radius: 10px; z-index: 1000;
+                            max-width: 300px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                        `;
+                        notification.innerHTML = `
+                            <div style="font-weight: bold; margin-bottom: 0.5rem;">💝 Welcome Back</div>
+                            <div style="font-size: 0.9rem;">You were last exploring ${this.archetypes[this.sessionMemory.lastArchetype].title}. Would you like to continue?</div>
+                            <button onclick="this.parentElement.remove(); cathedralMap.activateArchetype('${this.sessionMemory.lastArchetype}')" 
+                                    style="margin-top: 0.5rem; background: white; color: var(--healing-green); border: none; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer;">
+                                Yes, continue my journey
+                            </button>
+                            <button onclick="this.parentElement.remove()" 
+                                    style="margin-left: 0.5rem; background: transparent; color: white; border: 1px solid white; padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer;">
+                                Start fresh
+                            </button>
+                        `;
+                        document.body.appendChild(notification);
+
+                        setTimeout(() => {
+                            if (notification.parentElement) {
+                                notification.remove();
+                            }
+                        }, 15000);
+                    }, 2000);
+                }
+            }
+        }
+
+        // CPTSD-Safe Navigation Functions
+        function startBreathing() {
+            const guide = document.querySelector('.breathing-guide');
+            let step = 0;
+            const steps = ['Breathe in for 4...', 'Hold for 7...', 'Exhale for 8...', 'Rest...'];
+            const times = [4000, 7000, 8000, 2000];
+            
+            function nextStep() {
+                guide.textContent = steps[step];
+                setTimeout(() => {
+                    step = (step + 1) % steps.length;
+                    if (step === 0) {
+                        guide.textContent = '🫁 Breathing Guide - Click for 4-7-8 breath';
+                        return;
+                    }
+                    nextStep();
+                }, times[step]);
+            }
+            
+            nextStep();
+        }
+
+        function safeExit() {
+            if (confirm('Are you ready to leave? Your progress is saved and you can return anytime.')) {
+                // Could redirect to a safe space or close window
+                window.close() || (window.location.href = 'about:blank');
+            }
+        }
+
+        // Initialize the application
+        const cathedralMap = new CathedralConnectionMap();
+
+        // Auto-save session every 30 seconds
+        setInterval(() => {
+            if (cathedralMap.activeArchetype) {
+                cathedralMap.sessionMemory.activeTime = (cathedralMap.sessionMemory.activeTime || 0) + 30;
+                cathedralMap.saveSession();
+            }
+        }, 30000);
+    </script>
+</body>
+</html>

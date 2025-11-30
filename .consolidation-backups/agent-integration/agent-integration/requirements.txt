@@ -1,0 +1,8 @@
+# Agent of Kaoz Integration Requirements
+agent-framework-azure-ai
+azure-identity
+fastapi
+uvicorn
+pydantic
+python-multipart
+aiofiles

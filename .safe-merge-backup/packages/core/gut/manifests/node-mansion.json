@@ -1,0 +1,97 @@
+{
+  "assetId": "mansion-20251011",
+  "sourcePhotos": [
+    "r2://uploads/mansion-raw/001.jpg",
+    "r2://uploads/mansion-raw/002.jpg",
+    "r2://uploads/mansion-raw/003.jpg",
+    "r2://uploads/mansion-raw/004.jpg",
+    "r2://uploads/mansion-raw/005.jpg"
+  ],
+  "archetype": "Tarot-Maj-X",
+  "boon": "Avalon Veil",
+  "textures": {
+    "albedo": "r2://textures/mansion/albedo.png",
+    "normal": "r2://textures/mansion/normal.png",
+    "roughness": "r2://textures/mansion/roughness.png",
+    "metallic": "r2://textures/mansion/metallic.png",
+    "emissive": "r2://textures/mansion/emissive.png"
+  },
+  "gltf": "r2://exports/mansion.glb",
+  "codexNode": "C144:N12",
+  "cosmology": "OldGods-NewGods",
+  "musicDesign": "Fibonacci-Harmonic-Scale-C",
+  "ndFriendly": true,
+  "shemAssigned": [
+    "shem-01-ingest",
+    "shem-02-photogrammetry",
+    "shem-05-texture-enhance",
+    "shem-07-crystal-physics",
+    "shem-09-lighting"
+  ],
+  "mysticalProperties": {
+    "tiffanyInspired": true,
+    "consciousnessResponsive": true,
+    "traumaSafe": true,
+    "morganLeFayApproved": true,
+    "dionFortuneStyle": true,
+    "ronaldHuttonWisdom": true,
+    "avalonCompatible": true
+  },
+  "processingMetadata": {
+    "shemWorkers": [
+      "shem-01-ingest",
+      "shem-02-photogrammetry",
+      "shem-05-texture-enhance"
+    ],
+    "processingTime": 45000,
+    "aiModels": [
+      "Azure Computer Vision",
+      "Azure OpenAI Vision",
+      "Custom Photogrammetry Model",
+      "Tiffany Material Analysis",
+      "Mystical Style Transfer"
+    ],
+    "generated": "2025-10-11T14:30:00.000Z"
+  },
+  "tags": [
+    "mansion",
+    "architectural",
+    "tiffany-inspired",
+    "crystalline",
+    "consciousness-responsive",
+    "avalon-realm",
+    "codex-node-12",
+    "trauma-safe",
+    "mystical-architecture"
+  ],
+  "license": "Cathedral of Circuits - Creative Commons",
+  "description": "Magnificent mansion structure with Tiffany-inspired crystalline details, processed through Morgan Le Fay's Avalon system for consciousness-responsive mystical architecture.",
+  "dimensions": {
+    "width": 15.5,
+    "height": 12.3,
+    "depth": 8.7,
+    "unit": "meters"
+  },
+  "mysticalFeatures": [
+    "Consciousness-responsive luminosity that brightens with focused awareness",
+    "Sacred geometry patterns that reveal themselves during meditation",
+    "Trauma-safe color palettes that automatically adjust for emotional comfort",
+    "Living architecture that breathes and subtly shifts with user's emotional state",
+    "Authentic British mystical symbolism integrated into architectural details"
+  ],
+  "codexIntegration": {
+    "primaryNode": "C144:N12",
+    "fusionGate": 12,
+    "livingSpineChapter": 3,
+    "archetypeCorrespondence": "The Hanged Man",
+    "elementalAffinity": "Water",
+    "frequencyResonance": 417,
+    "planetaryInfluence": "Neptune"
+  },
+  "gameplayMechanics": {
+    "exploration": "Players can walk through consciousness-responsive rooms that change based on their emotional state",
+    "puzzleSolving": "Sacred geometry patterns reveal hidden doors and passages when solved",
+    "healing": "Trauma-safe spaces provide restorative energy for emotional healing",
+    "manifestation": "Creative visualization spaces where thoughts become temporary architectural features"
+  }
+}

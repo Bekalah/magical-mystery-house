@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏛️ Stone Grimoire - Sacred Art Teaching Realm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cathedral-gold: #ffd700;
+            --divine-light: #fff9e6;
+            --sacred-copper: #b87333;
+            --twilight-purple: #483d8b;
+            --mystic-blue: #191970;
+            --abyss-deep: #0b0b1a;
+            --emerald-heart: #50c878;
+            --ruby-fire: #e0115f;
+            --celestial-silver: #c0c0c0;
+            --ancient-stone: #a0956b;
+            --sacred-shadows: #2c1810;
+            --veil-mist: rgba(160, 149, 107, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(180deg, 
+                var(--sacred-shadows) 0%, 
+                var(--ancient-stone) 30%,
+                var(--divine-light) 70%,
+                var(--cathedral-gold) 100%);
+            color: var(--divine-light);
+            font-family: 'Cormorant Garamond', serif;
+            overflow: hidden;
+            height: 100vh;
+            perspective: 1000px;
+            cursor: move;
+        }
+
+        .realm-navigator {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            background: var(--veil-mist);
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--cathedral-gold);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .realm-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.2em;
+            color: var(--cathedral-gold);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .trinity-portals {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .portal-btn {
+            padding: 8px 12px;
+            background: var(--twilight-purple);
+            border: 1px solid var(--cathedral-gold);
+            border-radius: 8px;
+            color: var(--divine-light);
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .portal-btn:hover {
+            background: var(--cathedral-gold);
+            color: var(--abyss-deep);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .chapel-selector {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .chapel-btn {
+            padding: 6px 10px;
+            background: var(--emerald-heart);
+            border: 1px solid var(--ancient-stone);
+            border-radius: 6px;
+            color: var(--abyss-deep);
+            font-size: 0.7em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .chapel-btn:hover {
+            background: var(--ruby-fire);
+            color: var(--divine-light);
+            transform: scale(1.05);
+        }
+
+        .chapel-btn.active {
+            background: var(--cathedral-gold);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+        }
+
+        .stone-grimoire-world {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            transform-style: preserve-3d;
+            transition: transform 1s ease-in-out;
+        }
+
+        .chapel-chamber {
+            position: absolute;
+            width: 800px;
+            height: 600px;
+            left: 50%;
+            top: 50%;
+            margin-left: -400px;
+            margin-top: -300px;
+            transform-style: preserve-3d;
+            transition: all 1s ease-in-out;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .chapel-chamber.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .chapel-walls {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+
+        .wall {
+            position: absolute;
+            background: linear-gradient(135deg, var(--ancient-stone), var(--sacred-copper));
+            border: 3px solid var(--cathedral-gold);
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .wall.front {
+            width: 800px;
+            height: 600px;
+            transform: translateZ(200px);
+        }
+
+        .wall.back {
+            width: 800px;
+            height: 600px;
+            transform: translateZ(-200px) rotateY(180deg);
+        }
+
+        .wall.left {
+            width: 400px;
+            height: 600px;
+            left: -200px;
+            transform: rotateY(-90deg);
+        }
+
+        .wall.right {
+            width: 400px;
+            height: 600px;
+            right: -200px;
+            transform: rotateY(90deg);
+        }
+
+        .wall.ceiling {
+            width: 800px;
+            height: 400px;
+            top: -200px;
+            transform: rotateX(90deg);
+            background: linear-gradient(45deg, var(--twilight-purple), var(--mystic-blue));
+        }
+
+        .wall.floor {
+            width: 800px;
+            height: 400px;
+            bottom: -200px;
+            transform: rotateX(-90deg);
+            background: linear-gradient(45deg, var(--sacred-shadows), var(--ancient-stone));
+        }
+
+        .sacred-carving {
+            position: absolute;
+            background: var(--cathedral-gold);
+            border-radius: 50%;
+            box-shadow: 0 0 20px var(--cathedral-gold);
+            animation: sacredPulse 3s ease-in-out infinite;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--abyss-deep);
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .sacred-carving:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 30px var(--cathedral-gold);
+        }
+
+        @keyframes sacredPulse {
+            0%, 100% { opacity: 0.7; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        .teaching-artifact {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, var(--emerald-heart), var(--celestial-silver));
+            border: 2px solid var(--divine-light);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 2em;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .teaching-artifact:hover {
+            transform: translateY(-10px) rotateY(15deg);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .chapel-info {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--veil-mist);
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--cathedral-gold);
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 300px;
+            color: var(--divine-light);
+        }
+
+        .chapel-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3em;
+            color: var(--cathedral-gold);
+            margin-bottom: 10px;
+        }
+
+        .chapel-teaching {
+            font-size: 0.9em;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .chapel-entities {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .entity-badge {
+            padding: 4px 8px;
+            background: var(--twilight-purple);
+            border-radius: 12px;
+            font-size: 0.7em;
+            color: var(--divine-light);
+        }
+
+        .movement-hint {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--celestial-silver);
+            font-size: 0.9em;
+            opacity: 0.7;
+            text-align: center;
+        }
+
+        @keyframes breatheBackground {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .art-portal {
+            position: absolute;
+            width: 150px;
+            height: 200px;
+            background: linear-gradient(45deg, var(--mystic-blue), var(--twilight-purple));
+            border: 3px solid var(--cathedral-gold);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .art-portal:hover {
+            transform: scale(1.1) rotateY(10deg);
+            box-shadow: 0 20px 50px rgba(255, 215, 0, 0.3);
+        }
+
+        .portal-symbol {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .portal-label {
+            font-size: 0.8em;
+            text-align: center;
+            color: var(--divine-light);
+        }
+    </style>
+</head>
+<body>
+    <div class="realm-navigator">
+        <div class="realm-title">Stone Grimoire Realm</div>
+        <div class="trinity-portals">
+            <a href="../web/index.html" class="portal-btn">Soul</a>
+            <div class="portal-btn active">Body</div>
+            <a href="../cosmogenesis-visualizer/index.html" class="portal-btn">Spirit</a>
+        </div>
+        <div class="chapel-selector">
+            <div class="chapel-btn active" data-chapel="0">Fool's Gate</div>
+            <div class="chapel-btn" data-chapel="1">Magician Lab</div>
+            <div class="chapel-btn" data-chapel="2">Priestess Hall</div>
+            <div class="chapel-btn" data-chapel="3">Empress Studio</div>
+            <div class="chapel-btn" data-chapel="4">Emperor Forge</div>
+            <div class="chapel-btn" data-chapel="5">Hierophant Archive</div>
+            <div class="chapel-btn" data-chapel="6">Lovers Atrium</div>
+            <div class="chapel-btn" data-chapel="7">Chariot Arena</div>
+        </div>
+    </div>
+
+    <div class="stone-grimoire-world" id="grimoire-world">
+        <!-- Chapel 0: Fool's Chapel - Beginner Art Exploration -->
+        <div class="chapel-chamber active" data-chapel="0">
+            <div class="chapel-walls">
+                <div class="wall front">
+                    <div class="sacred-carving" style="top: 100px; left: 150px; width: 80px; height: 80px;">⚡</div>
+                    <div class="sacred-carving" style="top: 200px; right: 150px; width: 60px; height: 60px;">✨</div>
+                    <div class="art-portal" style="top: 50px; left: 300px;">
+                        <div class="portal-symbol">🎨</div>
+                        <div class="portal-label">Drawing Basics</div>
+                    </div>
+                </div>
+                <div class="wall back">
+                    <div class="teaching-artifact" style="top: 150px; left: 200px;">📚</div>
+                    <div class="teaching-artifact" style="top: 250px; right: 200px;">🖼️</div>
+                </div>
+                <div class="wall left">
+                    <div class="sacred-carving" style="top: 150px; left: 50px; width: 70px; height: 70px;">🌟</div>
+                </div>
+                <div class="wall right">
+                    <div class="art-portal" style="top: 100px; left: 50px;">
+                        <div class="portal-symbol">🖌️</div>
+                        <div class="portal-label">Color Theory</div>
+                    </div>
+                </div>
+                <div class="wall ceiling"></div>
+                <div class="wall floor"></div>
+            </div>
+        </div>
+
+        <!-- Chapel 1: Magician's Lab - Advanced Creation -->
+        <div class="chapel-chamber" data-chapel="1">
+            <div class="chapel-walls">
+                <div class="wall front">
+                    <div class="art-portal" style="top: 50px; left: 100px;">
+                        <div class="portal-symbol">🔮</div>
+                        <div class="portal-label">Digital Alchemy</div>
+                    </div>
+                    <div class="art-portal" style="top: 150px; right: 100px;">
+                        <div class="portal-symbol">⚗️</div>
+                        <div class="portal-label">3D Modeling</div>
+                    </div>
+                </div>
+                <div class="wall back">
+                    <div class="teaching-artifact" style="top: 100px; left: 150px;">🛠️</div>
+                    <div class="sacred-carving" style="top: 300px; right: 100px; width: 90px; height: 90px;">🌀</div>
+                </div>
+                <div class="wall left">
+                    <div class="art-portal" style="top: 200px; left: 50px;">
+                        <div class="portal-symbol">💫</div>
+                        <div class="portal-label">Animation</div>
+                    </div>
+                </div>
+                <div class="wall right">
+                    <div class="teaching-artifact" style="top: 180px; left: 100px;">🎭</div>
+                </div>
+                <div class="wall ceiling"></div>
+                <div class="wall floor"></div>
+            </div>
+        </div>
+
+        <!-- Chapel 2: High Priestess Hall - Sacred Geometry & Mystical Arts -->
+        <div class="chapel-chamber" data-chapel="2">
+            <div class="chapel-walls">
+                <div class="wall front">
+                    <div class="art-portal" style="top: 50px; left: 100px;">
+                        <div class="portal-symbol">🔮</div>
+                        <div class="portal-label">Sacred Geometry</div>
+                    </div>
+                    <div class="sacred-carving" style="top: 200px; right: 100px; width: 80px; height: 80px;">🌙</div>
+                </div>
+                <div class="wall back">
+                    <div class="art-portal" style="top: 100px; left: 200px;">
+                        <div class="portal-symbol">📜</div>
+                        <div class="portal-label">Sigil Creation</div>
+                    </div>
+                    <div class="teaching-artifact" style="top: 300px; right: 150px;">🕯️</div>
+                </div>
+                <div class="wall left">
+                    <div class="teaching-artifact" style="top: 150px; left: 80px;">🗝️</div>
+                </div>
+                <div class="wall right">
+                    <div class="art-portal" style="top: 180px; left: 50px;">
+                        <div class="portal-symbol">🔯</div>
+                        <div class="portal-label">Mandala Art</div>
+                    </div>
+                </div>
+                <div class="wall ceiling"></div>
+                <div class="wall floor"></div>
+            </div>
+        </div>
+
+        <!-- Chapel 3: Empress Studio - Nature Art & Life Drawing -->
+        <div class="chapel-chamber" data-chapel="3">
+            <div class="chapel-walls">
+                <div class="wall front">
+                    <div class="art-portal" style="top: 70px; left: 150px;">
+                        <div class="portal-symbol">🌿</div>
+                        <div class="portal-label">Botanical Drawing</div>
+                    </div>
+                    <div class="art-portal" style="top: 200px; right: 120px;">
+                        <div class="portal-symbol">🎨</div>
+                        <div class="portal-label">Life Drawing</div>
+                    </div>
+                </div>
+                <div class="wall back">
+                    <div class="teaching-artifact" style="top: 120px; left: 180px;">🌸</div>
+                    <div class="sacred-carving" style="top: 280px; right: 130px; width: 75px; height: 75px;">🌺</div>
+                </div>
+                <div class="wall left">
+                    <div class="art-portal" style="top: 160px; left: 60px;">
+                        <div class="portal-symbol">🖼️</div>
+                        <div class="portal-label">Portrait Studies</div>
+                    </div>
+                </div>
+                <div class="wall right">
+                    <div class="teaching-artifact" style="top: 200px; left: 90px;">🏺</div>
+                </div>
+                <div class="wall ceiling"></div>
+                <div class="wall floor"></div>
+            </div>
+        </div>
+
+        <!-- Chapel 4: Emperor Forge - Architecture & Structure -->
+        <div class="chapel-chamber" data-chapel="4">
+            <div class="chapel-walls">
+                <div class="wall front">
+                    <div class="art-portal" style="top: 60px; left: 120px;">
+                        <div class="portal-symbol">🏛️</div>
+                        <div class="portal-label">Architecture</div>
+                    </div>
+                    <div class="art-portal" style="top: 180px; right: 100px;">
+                        <div class="portal-symbol">📐</div>
+                        <div class="portal-label">Technical Drawing</div>
+                    </div>
+                </div>
+                <div class="wall back">
+                    <div class="teaching-artifact" style="top: 100px; left: 160px;">⚒️</div>
+                    <div class="sacred-carving" style="top: 250px; right: 140px; width: 85px; height: 85px;">♦</div>
+                </div>
+                <div class="wall left">
+                    <div class="art-portal" style="top: 140px; left: 70px;">
+                        <div class="portal-symbol">🗿</div>
+                        <div class="portal-label">Sculpture</div>
+                    </div>
+                </div>
+                <div class="wall right">
+                    <div class="teaching-artifact" style="top: 190px; left: 100px;">🔨</div>
+                </div>
+                <div class="wall ceiling"></div>
+                <div class="wall floor"></div>
+            </div>
+        </div>
+
+        <!-- Chapel 5: Hierophant Archive - Traditional Arts & Masters -->
+        <div class="chapel-chamber" data-chapel="5">
+            <div class="chapel-walls">
+                <div class="wall front">
+                    <div class="art-portal" style="top: 80px; left: 140px;">
+                        <div class="portal-symbol">📚</div>
+                        <div class="portal-label">Master Studies</div>
+                    </div>
+                    <div class="art-portal" style="top: 220px; right: 110px;">
+                        <div class="portal-symbol">🖋️</div>
+                        <div class="portal-label">Calligraphy</div>
+                    </div>
+                </div>
+                <div class="wall back">
+                    <div class="teaching-artifact" style="top: 110px; left: 170px;">📖</div>
+                    <div class="sacred-carving" style="top: 270px; right: 120px; width: 80px; height: 80px;">🔱</div>
+                </div>
+                <div class="wall left">
+                    <div class="art-portal" style="top: 150px; left: 65px;">
+                        <div class="portal-symbol">🎭</div>
+                        <div class="portal-label">Classical Arts</div>
+                    </div>
+                </div>
+                <div class="wall right">
+                    <div class="teaching-artifact" style="top: 180px; left: 85px;">⚖️</div>
+                </div>
+                <div class="wall ceiling"></div>
+                <div class="wall floor"></div>
+            </div>
+        </div>
+
+        <!-- Chapel 6: Lovers Atrium - Collaborative & Expressive Arts -->
+        <div class="chapel-chamber" data-chapel="6">
+            <div class="chapel-walls">
+                <div class="wall front">
+                    <div class="art-portal" style="top: 90px; left: 130px;">
+                        <div class="portal-symbol">💝</div>
+                        <div class="portal-label">Collaborative Art</div>
+                    </div>
+                    <div class="art-portal" style="top: 190px; right: 120px;">
+                        <div class="portal-symbol">💃</div>
+                        <div class="portal-label">Movement Art</div>
+                    </div>
+                </div>
+                <div class="wall back">
+                    <div class="teaching-artifact" style="top: 130px; left: 190px;">💕</div>
+                    <div class="sacred-carving" style="top: 260px; right: 110px; width: 85px; height: 85px;">♥</div>
+                </div>
+                <div class="wall left">
+                    <div class="art-portal" style="top: 170px; left: 55px;">
+                        <div class="portal-symbol">🎨</div>
+                        <div class="portal-label">Expressive Arts</div>
+                    </div>
+                </div>
+                <div class="wall right">
+                    <div class="teaching-artifact" style="top: 200px; left: 95px;">🌈</div>
+                </div>
+                <div class="wall ceiling"></div>
+                <div class="wall floor"></div>
+            </div>
+        </div>
+
+        <!-- Chapel 7: Chariot Arena - Dynamic & Digital Arts -->
+        <div class="chapel-chamber" data-chapel="7">
+            <div class="chapel-walls">
+                <div class="wall front">
+                    <div class="art-portal" style="top: 70px; left: 110px;">
+                        <div class="portal-symbol">⚡</div>
+                        <div class="portal-label">Digital Mastery</div>
+                    </div>
+                    <div class="art-portal" style="top: 210px; right: 130px;">
+                        <div class="portal-symbol">🎮</div>
+                        <div class="portal-label">Game Art</div>
+                    </div>
+                </div>
+                <div class="wall back">
+                    <div class="teaching-artifact" style="top: 140px; left: 200px;">🚀</div>
+                    <div class="sacred-carving" style="top: 280px; right: 100px; width: 90px; height: 90px;">⚡</div>
+                </div>
+                <div class="wall left">
+                    <div class="art-portal" style="top: 160px; left: 45px;">
+                        <div class="portal-symbol">🌟</div>
+                        <div class="portal-label">VFX & Motion</div>
+                    </div>
+                </div>
+                <div class="wall right">
+                    <div class="teaching-artifact" style="top: 170px; left: 110px;">🎬</div>
+                </div>
+                <div class="wall ceiling"></div>
+                <div class="wall floor"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="chapel-info" id="chapel-info">
+        <div class="chapel-name">Fool's Gate</div>
+        <div class="character-guide" style="color: var(--emerald-heart); font-weight: bold; margin-bottom: 8px;">
+            Guide: Rebecca Respawn
+        </div>
+        <div class="chapel-teaching">
+            Gateway to artistic awakening where infinite potential meets creative courage. Begin any artistic journey here with the blessing of wonder and fearless exploration.
+        </div>
+        <div class="chapel-entities">
+            <div class="entity-badge">Vehuiah</div>
+            <div class="entity-badge">Rebecca Respawn</div>
+            <div class="entity-badge">The Void Guardian</div>
+        </div>
+        <div class="integration-links" style="margin-top: 15px; font-size: 0.8em;">
+            <div style="color: var(--celestial-silver);">Connects to: Soul App • Fractal Engine</div>
+        </div>
+    </div>
+
+    <div class="movement-hint">
+        Click and drag to explore • Click chapels to travel • Hover artifacts to learn
+    </div>
+
+    <script>
+        class StoneGrimoireRealm {
+            constructor() {
+                this.currentChapel = 0;
+                this.isMoving = false;
+                this.mouseX = 0;
+                this.mouseY = 0;
+                this.worldRotationX = 0;
+                this.worldRotationY = 0;
+                
+                this.chapelData = {
+                    0: {
+                        name: "Fool's Gate",
+                        character: "Rebecca Respawn",
+                        teaching: "Gateway to artistic awakening where infinite potential meets creative courage. Begin any artistic journey here with the blessing of wonder and fearless exploration.",
+                        entities: ["Vehuiah", "Rebecca Respawn", "The Void Guardian"],
+                        artForms: ["Drawing Basics", "Color Theory", "Creative Courage"],
+                        connects_to: ["../circuitum99/fool.html", "../web/src/tools/cathedral-fractal-engine.html"],
+                        datasets: ["codex_nodes.json:1", "angels-72.json:1", "majors-complete.json:fool"]
+                    },
+                    1: {
+                        name: "Magician Lab",
+                        character: "Virelai Ezra Lux",
+                        teaching: "Master manifestation through digital alchemy. Transform pure intention into visual reality using sacred technology and traditional media in perfect union.",
+                        entities: ["Jeliel", "Virelai Ezra Lux", "Olympic Spirits"],
+                        artForms: ["Digital Alchemy", "3D Modeling", "Animation Magic"],
+                        connects_to: ["../circuitum99/magician.html", "../web/src/tools/3d-creation-lab.html"],
+                        datasets: ["codex_nodes.json:2", "angels-72.json:2", "majors-complete.json:magician"]
+                    },
+                    2: {
+                        name: "High Priestess Hall",
+                        character: "Gemini Rivers",
+                        teaching: "Sanctuary of intuitive arts where sacred geometry and mystical symbols reveal their secrets through meditation and inspired creation.",
+                        entities: ["Sitael", "Gemini Rivers", "Wisdom Keepers"],
+                        artForms: ["Sacred Geometry", "Sigil Creation", "Mandala Art"],
+                        connects_to: ["../circuitum99/high-priestess.html", "../web/src/tools/sacred-geometry-lab.html"],
+                        datasets: ["codex_nodes.json:3", "angels-72.json:3", "majors-complete.json:high_priestess"]
+                    },
+                    3: {
+                        name: "Empress Studio",
+                        character: "Morticia Moonbeamer",
+                        teaching: "Creative mother's realm of natural beauty. Study life, flora, and the abundant forms of nature through nurturing artistic practice.",
+                        entities: ["Elemiah", "Morticia Moonbeamer", "Nature Spirits"],
+                        artForms: ["Botanical Drawing", "Life Drawing", "Portrait Studies"],
+                        connects_to: ["../circuitum99/empress.html", "../web/src/tools/nature-art-studio.html"],
+                        datasets: ["codex_nodes.json:4", "angels-72.json:4", "majors-complete.json:empress"]
+                    },
+                    4: {
+                        name: "Emperor Forge",
+                        character: "Stone Architect",
+                        teaching: "Foundation builder's workshop of structure and form. Master technical drawing, architecture, and the art of bringing order to creative chaos.",
+                        entities: ["Mahasiah", "Stone Architect", "Building Masters"],
+                        artForms: ["Architecture", "Technical Drawing", "Sculpture"],
+                        connects_to: ["../circuitum99/emperor.html", "../web/src/tools/architecture-lab.html"],
+                        datasets: ["codex_nodes.json:5", "angels-72.json:5", "majors-complete.json:emperor"]
+                    },
+                    5: {
+                        name: "Hierophant Archive",
+                        character: "Master Keeper",
+                        teaching: "Sacred repository of traditional arts and wisdom of the masters. Study classical techniques and connect to the lineage of great artists.",
+                        entities: ["Nith-Haiah", "Master Keeper", "Art Masters"],
+                        artForms: ["Master Studies", "Calligraphy", "Classical Arts"],
+                        connects_to: ["../circuitum99/hierophant.html", "../web/src/tools/masters-archive.html"],
+                        datasets: ["codex_nodes.json:6", "angels-72.json:6", "majors-complete.json:hierophant"]
+                    },
+                    6: {
+                        name: "Lovers Atrium",
+                        character: "Scarlett Lady",
+                        teaching: "Sacred union of collaborative creation. Explore expressive arts, movement, and the magic that emerges when creative souls unite.",
+                        entities: ["Haaiah", "Scarlett Lady", "Union Guides"],
+                        artForms: ["Collaborative Art", "Movement Art", "Expressive Arts"],
+                        connects_to: ["../circuitum99/lovers.html", "../web/src/tools/collaboration-studio.html"],
+                        datasets: ["codex_nodes.json:7", "angels-72.json:7", "majors-complete.json:lovers"]
+                    },
+                    7: {
+                        name: "Chariot Arena",
+                        character: "Elyria Nox",
+                        teaching: "Dynamic mastery of digital realms. Race forward into the future of art with game design, VFX, and cutting-edge digital creation tools.",
+                        entities: ["Yerathel", "Elyria Nox", "Digital Warriors"],
+                        artForms: ["Digital Mastery", "Game Art", "VFX & Motion"],
+                        connects_to: ["../circuitum99/chariot.html", "../web/src/tools/digital-arena.html"],
+                        datasets: ["codex_nodes.json:8", "angels-72.json:8", "majors-complete.json:chariot"]
+                    }
+                };
+
+                this.init();
+            }
+
+            init() {
+                this.setupEventListeners();
+                this.loadAngelsData();
+                this.updateChapelInfo();
+            }
+
+            async loadAngelsData() {
+                try {
+                    const response = await fetch('../../packages/codex-144/angels-72.json');
+                    const data = await response.json();
+                    this.angelsData = data.angels;
+                } catch (error) {
+                    console.warn('Could not load angels data');
+                }
+            }
+
+            setupEventListeners() {
+                const world = document.getElementById('grimoire-world');
+                
+                // Chapel navigation
+                document.querySelectorAll('.chapel-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const chapelIndex = parseInt(e.target.dataset.chapel);
+                        this.enterChapel(chapelIndex);
+                    });
+                });
+
+                // Mouse movement for 3D exploration
+                document.addEventListener('mousedown', (e) => {
+                    this.isMoving = true;
+                    this.mouseX = e.clientX;
+                    this.mouseY = e.clientY;
+                });
+
+                document.addEventListener('mousemove', (e) => {
+                    if (!this.isMoving) return;
+                    
+                    const deltaX = e.clientX - this.mouseX;
+                    const deltaY = e.clientY - this.mouseY;
+                    
+                    this.worldRotationY += deltaX * 0.5;
+                    this.worldRotationX -= deltaY * 0.5;
+                    
+                    // Limit vertical rotation
+                    this.worldRotationX = Math.max(-30, Math.min(30, this.worldRotationX));
+                    
+                    world.style.transform = `rotateX(${this.worldRotationX}deg) rotateY(${this.worldRotationY}deg)`;
+                    
+                    this.mouseX = e.clientX;
+                    this.mouseY = e.clientY;
+                });
+
+                document.addEventListener('mouseup', () => {
+                    this.isMoving = false;
+                });
+
+                // Art portal interactions
+                document.addEventListener('click', (e) => {
+                    if (e.target.closest('.art-portal')) {
+                        const portal = e.target.closest('.art-portal');
+                        const label = portal.querySelector('.portal-label').textContent;
+                        this.enterArtLab(label);
+                    }
+                    
+                    if (e.target.closest('.teaching-artifact')) {
+                        this.activateArtifact(e.target.closest('.teaching-artifact'));
+                    }
+                    
+                    if (e.target.closest('.sacred-carving')) {
+                        this.revealCarving(e.target.closest('.sacred-carving'));
+                    }
+                });
+            }
+
+            enterChapel(chapelIndex) {
+                // Hide current chapel
+                document.querySelectorAll('.chapel-chamber').forEach(chamber => {
+                    chamber.classList.remove('active');
+                });
+                
+                // Update chapel buttons
+                document.querySelectorAll('.chapel-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Show new chapel
+                const newChapel = document.querySelector(`[data-chapel="${chapelIndex}"]`);
+                if (newChapel) {
+                    newChapel.classList.add('active');
+                    document.querySelector(`.chapel-btn[data-chapel="${chapelIndex}"]`).classList.add('active');
+                    
+                    this.currentChapel = chapelIndex;
+                    this.updateChapelInfo();
+                    
+                    // Reset world rotation for new chapel
+                    this.worldRotationX = 0;
+                    this.worldRotationY = 0;
+                    document.getElementById('grimoire-world').style.transform = 'rotateX(0deg) rotateY(0deg)';
+                }
+            }
+
+            updateChapelInfo() {
+                const info = this.chapelData[this.currentChapel];
+                if (!info) return;
+                
+                document.querySelector('.chapel-name').textContent = info.name;
+                document.querySelector('.character-guide').textContent = `Guide: ${info.character}`;
+                document.querySelector('.chapel-teaching').textContent = info.teaching;
+                
+                const entitiesContainer = document.querySelector('.chapel-entities');
+                entitiesContainer.innerHTML = '';
+                info.entities.forEach(entity => {
+                    const badge = document.createElement('div');
+                    badge.className = 'entity-badge';
+                    badge.textContent = entity;
+                    entitiesContainer.appendChild(badge);
+                });
+                
+                const connectionsDiv = document.querySelector('.integration-links div');
+                const connectionNames = info.connects_to.map(path => {
+                    if (path.includes('circuitum99')) return 'Soul App';
+                    if (path.includes('fractal')) return 'Fractal Engine';
+                    if (path.includes('3d-creation')) return '3D Lab';
+                    if (path.includes('sacred-geometry')) return 'Geometry Lab';
+                    if (path.includes('nature-art')) return 'Nature Studio';
+                    if (path.includes('architecture')) return 'Architecture Lab';
+                    if (path.includes('masters')) return 'Masters Archive';
+                    if (path.includes('collaboration')) return 'Collaboration Studio';
+                    if (path.includes('digital-arena')) return 'Digital Arena';
+                    return 'Connected App';
+                }).join(' • ');
+                connectionsDiv.textContent = `Connects to: ${connectionNames}`;
+            }
+
+            enterArtLab(labName) {
+                // Create a portal effect
+                const portal = document.createElement('div');
+                portal.style.cssText = `
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    width: 200px;
+                    height: 200px;
+                    margin: -100px 0 0 -100px;
+                    background: radial-gradient(circle, var(--cathedral-gold), transparent);
+                    border-radius: 50%;
+                    animation: portalExpand 1s ease-out forwards;
+                    z-index: 10000;
+                    pointer-events: none;
+                `;
+                
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes portalExpand {
+                        0% { transform: scale(0); opacity: 1; }
+                        100% { transform: scale(50); opacity: 0; }
+                    }
+                `;
+                document.head.appendChild(style);
+                document.body.appendChild(portal);
+                
+                setTimeout(() => {
+                    portal.remove();
+                    style.remove();
+                    
+                    // Navigate to specific art teaching tools based on current chapel
+                    const currentChapelInfo = this.chapelData[this.currentChapel];
+                    
+                    if (labName === 'Drawing Basics' || labName === 'Color Theory') {
+                        window.location.href = '../web/src/tools/cathedral-fractal-engine.html';
+                    } else if (labName === 'Digital Alchemy' || labName === '3D Modeling') {
+                        // Connect to Magician's digital tools
+                        window.location.href = '../web/src/tools/3d-creation-lab.html';
+                    } else if (labName === 'Sacred Geometry' || labName === 'Mandala Art') {
+                        // Connect to High Priestess sacred geometry
+                        window.location.href = '../web/src/tools/sacred-geometry-lab.html';
+                    } else if (labName === 'Collaborative Art' || labName === 'Movement Art') {
+                        // Connect to Lovers collaboration tools
+                        window.location.href = '../web/src/tools/collaboration-studio.html';
+                    } else if (labName === 'Digital Mastery' || labName === 'Game Art') {
+                        // Connect to Chariot digital arena
+                        window.location.href = '../web/src/tools/digital-arena.html';
+                    } else {
+                        // For other labs, show integration info
+                        alert(`🎨 ${labName} Sacred Lab\n\nGuided by ${currentChapelInfo.character}\n\nThis specialized teaching space integrates with:\n• ${currentChapelInfo.connects_to.join('\n• ')}\n\nConnecting to the Cathedral ecosystem...`);
+                        
+                        // Try to connect to the soul app for this archetype
+                        if (currentChapelInfo.connects_to[0]) {
+                            window.open(currentChapelInfo.connects_to[0], '_blank');
+                        }
+                    }
+                }, 100);
+            }
+
+            activateArtifact(artifact) {
+                // Animate the artifact
+                artifact.style.transform = 'translateY(-20px) rotateY(360deg) scale(1.2)';
+                artifact.style.boxShadow = '0 20px 40px rgba(255, 215, 0, 0.6)';
+                
+                setTimeout(() => {
+                    artifact.style.transform = 'translateY(-10px) rotateY(15deg)';
+                    artifact.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.5)';
+                }, 500);
+                
+                // Show teaching
+                alert('🎨 Sacred Teaching Unlocked!\n\nThis artifact contains ancient wisdom about artistic creation. Each piece in the Stone Grimoire holds secrets of the masters, waiting to be discovered through practice and reverence.');
+            }
+
+            revealCarving(carving) {
+                // Create ripple effect
+                const ripple = document.createElement('div');
+                ripple.style.cssText = `
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 20px;
+                    height: 20px;
+                    margin: -10px 0 0 -10px;
+                    border: 2px solid var(--cathedral-gold);
+                    border-radius: 50%;
+                    animation: rippleExpand 1s ease-out forwards;
+                    pointer-events: none;
+                `;
+                
+                carving.style.position = 'relative';
+                carving.appendChild(ripple);
+                
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes rippleExpand {
+                        0% { transform: scale(1); opacity: 1; }
+                        100% { transform: scale(10); opacity: 0; }
+                    }
+                `;
+                document.head.appendChild(style);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                    style.remove();
+                }, 1000);
+                
+                // Connect to angel wisdom
+                const currentAngel = this.chapelData[this.currentChapel]?.entities[0];
+                alert(`✨ Sacred Carving Awakened!\n\nThe symbol resonates with the energy of ${currentAngel}. Ancient knowledge flows through stone into your consciousness, revealing artistic secrets passed down through generations of sacred creators.`);
+            }
+        }
+
+        // Initialize the Stone Grimoire Realm
+        window.addEventListener('load', () => {
+            window.stoneGrimoire = new StoneGrimoireRealm();
+        });
+    </script>
+</body>
+</html>

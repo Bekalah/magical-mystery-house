@@ -1,0 +1,173 @@
+/**
+ * Sacred mathematics: 144:99 ratio, golden ratio, Fibonacci - foundational
+ */
+/**
+ * ND joy: Central to all tools - honors neurodivergent creative expression
+ */
+/**
+ * @author Rebecca Respawn
+ */
+/**
+ * @license CC0-1.0 - Public Domain
+ */
+
+#!/usr/bin/env node
+
+/**
+ * Cleanup Duplicates
+ * Removes duplicate files intelligently
+ */
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import EnhancedLogger from './enhanced-logger.mjs';
+import UserFeedback from './user-feedback.mjs';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const BASE_DIR = path.join(__dirname, '..');
+
+const logger = new EnhancedLogger();
+
+logger.info('🔧 IMPROVEMENT: Creating Duplicate Cleanup Tool');
+logger.info('   → Finds duplicate files by name');
+logger.info('   → Keeps best version');
+logger.info('   → Archives or removes duplicates\n');
+
+// Files that should only exist once (keep in docs/ or root)
+const SINGLETON_FILES = [
+  'README.md',
+  'experiment.md',
+  'complete.md',
+  'IMPROVEMENTS_COMPLETE.md',
+  'IMPROVEMENTS_MADE.md',
+  'ONGOING_IMPROVEMENTS.md'
+];
+
+function findDuplicateFiles() {
+  const fileMap = new Map();
+  const duplicates = [];
+  const excludeDirs = ['node_modules', '.git', 'dist', '.turbo', 'build', '.next', '.archive'];
+
+  function search(currentDir, depth = 0) {
+    if (depth > 10) return;
+
+    try {
+      const entries = fs.readdirSync(currentDir);
+      for (const entry of entries) {
+        if (entry.startsWith('.') && entry !== '.git') continue;
+        if (excludeDirs.includes(entry)) continue;
+
+        const fullPath = path.join(currentDir, entry);
+        const stat = fs.statSync(fullPath);
+
+        if (stat.isDirectory()) {
+          search(fullPath, depth + 1);
+        } else if (SINGLETON_FILES.includes(entry)) {
+          if (fileMap.has(entry)) {
+            duplicates.push({
+              filename: entry,
+              original: fileMap.get(entry),
+              duplicate: fullPath
+            });
+          } else {
+            fileMap.set(entry, fullPath);
+          }
+        }
+      }
+    } catch {
+      // Skip
+    }
+  }
+
+  search(BASE_DIR);
+  return { fileMap, duplicates };
+}
+
+function chooseBestFile(original, duplicate) {
+  // Prefer files in docs/ directory
+  const origInDocs = original.includes('/docs/');
+  const dupInDocs = duplicate.includes('/docs/');
+  
+  if (origInDocs && !dupInDocs) return { keep: original, remove: duplicate };
+  if (dupInDocs && !origInDocs) return { keep: duplicate, remove: original };
+  
+  // Prefer root level
+  const origInRoot = original.split(path.sep).length <= 3;
+  const dupInRoot = duplicate.split(path.sep).length <= 3;
+  
+  if (origInRoot && !dupInRoot) return { keep: original, remove: duplicate };
+  if (dupInRoot && !origInRoot) return { keep: duplicate, remove: original };
+  
+  // Prefer newer file
+  const origStat = fs.statSync(original);
+  const dupStat = fs.statSync(duplicate);
+  
+  if (origStat.mtime > dupStat.mtime) {
+    return { keep: original, remove: duplicate };
+  }
+  
+  return { keep: duplicate, remove: original };
+}
+
+function cleanupDuplicates() {
+  logger.info('🏛️✨ Duplicate Cleanup');
+  logger.info('=============================================\n');
+
+  const { fileMap, duplicates } = findDuplicateFiles();
+
+  if (duplicates.length === 0) {
+    logger.info('✅ No duplicate files found');
+    return { removed: 0, archived: 0 };
+  }
+
+  logger.info(`Found ${duplicates.length} duplicate file(s)\n`);
+
+  const archiveDir = path.join(BASE_DIR, '.archive');
+  if (!fs.existsSync(archiveDir)) {
+    fs.mkdirSync(archiveDir, { recursive: true });
+  }
+
+  let removed = 0;
+  let archived = 0;
+
+  for (const dup of duplicates) {
+    const { keep, remove } = chooseBestFile(dup.original, dup.duplicate);
+    
+    try {
+      // Archive before removing
+      const archivePath = path.join(archiveDir, path.basename(remove) + '.' + Date.now());
+      fs.copyFileSync(remove, archivePath);
+      
+      // Remove duplicate
+      fs.unlinkSync(remove);
+      
+      logger.info(`   ✅ Removed: ${path.relative(BASE_DIR, remove)}`);
+      logger.info(`      Kept: ${path.relative(BASE_DIR, keep)}`);
+      logger.info(`      Archived: ${path.relative(BASE_DIR, archivePath)}\n`);
+      
+      removed++;
+      archived++;
+    } catch (error) {
+      logger.info(`   ❌ Failed to remove ${path.relative(BASE_DIR, remove)}: ${error.message}\n`);
+    }
+  }
+
+  logger.info(`📊 Cleanup Summary`);
+  logger.info(`=============================================`);
+  logger.info(`Duplicates found: ${duplicates.length}`);
+  logger.info(`Removed: ${removed}`);
+  logger.info(`Archived: ${archived}`);
+
+  logger.info('Duplicate cleanup completed', { removed, archived });
+  return { removed, archived };
+}
+
+// CLI usage
+if (import.meta.url === `file://${process.argv[1]}`) {
+  cleanupDuplicates();
+}
+
+export { findDuplicateFiles, cleanupDuplicates };
+

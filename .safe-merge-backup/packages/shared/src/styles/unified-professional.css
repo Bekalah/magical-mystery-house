@@ -1,0 +1,374 @@
+/**
+ * Unified Professional Theme - CSS
+ * 
+ * High-end, portfolio-quality design standards
+ * Applied across all tools, games, design math, fusionkink, books
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
+:root {
+  /* Colors - High-End Professional */
+  --color-primary: #D4AF37;        /* Burnished Gold */
+  --color-secondary: #6B46C1;     /* Deep Violet */
+  --color-accent: #F59E0B;        /* Amber */
+  --color-background: #0A0A0A;     /* Deep Black */
+  --color-surface: #1A1333;       /* Rich Dark Purple */
+  --color-text-primary: #F5E6D3;  /* Champagne */
+  --color-text-secondary: #D4AF37; /* Soft Gold */
+  --color-text-muted: #6B7280;    /* Deep Gray */
+  
+  /* Alchemical Colors */
+  --color-fire: #FFD700;           /* Gold */
+  --color-water: #C0C0C0;          /* Silver */
+  --color-air: #E6E6FA;            /* Mercury (Lavender) */
+  --color-earth: #2F4F4F;          /* Lead (Dark Slate) */
+  
+  /* Typography - Museum-Quality */
+  --font-display: 'Cormorant Garamond', 'EB Garamond', serif;
+  --font-body: 'Crimson Text', 'Lora', serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  
+  /* Spacing - Sacred Geometry */
+  --spacing-unit: 8px;
+  --spacing-fibonacci: 8px 13px 21px 34px 55px 89px 144px;
+  --ratio-golden: 1.618033988749895;
+  --ratio-cathedral: 1.4545454545454546; /* 144:99 */
+  
+  /* Shadows - Professional Layering */
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(212, 175, 55, 0.1);
+  --shadow-deep: 0 8px 32px rgba(0, 0, 0, 0.5), 0 4px 8px rgba(212, 175, 55, 0.15);
+  --shadow-glow: 0 0 24px rgba(212, 175, 55, 0.3), 0 0 48px rgba(212, 175, 55, 0.15);
+  --shadow-alchemical: 0 0 32px rgba(212, 175, 55, 0.4), inset 0 0 16px rgba(107, 70, 193, 0.2);
+  
+  /* Borders - Never Flat */
+  --border-radius-subtle: 2px;
+  --border-radius-medium: 4px;
+  --border-radius-large: 8px;
+  --border-radius-organic: 4px 8px 12px 6px; /* Asymmetric, breathing */
+  
+  /* Gradients - High-End Depth */
+  --gradient-background: radial-gradient(ellipse at 50% 0%, rgba(25, 20, 35, 0.98) 0%, rgba(8, 6, 12, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  --gradient-surface: linear-gradient(135deg, rgba(26, 19, 51, 0.95) 0%, rgba(10, 10, 10, 0.98) 100%);
+  --gradient-accent: linear-gradient(135deg, #D4AF37 0%, #F59E0B 50%, #D4AF37 100%);
+  --gradient-fire: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  --gradient-water: linear-gradient(135deg, #C0C0C0 0%, #E6E6FA 100%);
+  --gradient-air: linear-gradient(135deg, #E6E6FA 0%, #B0E0E6 100%);
+  --gradient-earth: linear-gradient(135deg, #2F4F4F 0%, #556B2F 100%);
+  
+  /* Animations - Sophisticated */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 600ms;
+  --duration-glacial: 1200ms;
+  --easing-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --easing-breathe: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --easing-reveal: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --easing-alchemical: cubic-bezier(0.618, 0, 0.382, 1); /* Golden ratio */
+}
+
+/* Base Styles - Professional Foundation */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background: var(--gradient-background);
+  line-height: var(--ratio-golden);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Typography - Museum-Quality */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--color-text-secondary);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: clamp(48px, 8vw, 120px); }
+h2 { font-size: clamp(36px, 6vw, 80px); }
+h3 { font-size: clamp(28px, 4vw, 64px); }
+h4 { font-size: clamp(24px, 3vw, 48px); }
+
+/* Glass Panel - Cathedral Window Aesthetic */
+.glass-panel {
+  background: rgba(26, 19, 51, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: var(--border-radius-organic);
+  box-shadow: var(--shadow-medium);
+  transition: all var(--duration-normal) var(--easing-smooth);
+}
+
+.glass-panel:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: var(--shadow-deep);
+  transform: translateY(-2px);
+}
+
+/* Sophisticated Button - Never Pill-Shaped */
+.btn {
+  font-family: var(--font-body);
+  font-weight: 500;
+  padding: 12px 24px;
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius-medium);
+  background: var(--gradient-surface);
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--easing-smooth);
+  box-shadow: var(--shadow-subtle);
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+.btn:hover {
+  background: var(--gradient-accent);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-subtle);
+}
+
+/* Sophisticated Card - Asymmetric, Breathing */
+.card {
+  background: var(--gradient-surface);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: var(--border-radius-organic);
+  box-shadow: var(--shadow-medium);
+  padding: 24px;
+  transition: all var(--duration-slow) var(--easing-breathe);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-deep);
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-4px) scale(1.01);
+}
+
+/* Golden Ratio Container */
+.golden-ratio-container {
+  display: flex;
+  gap: calc(var(--spacing-unit) * var(--ratio-golden));
+}
+
+.golden-ratio-horizontal {
+  width: 100%;
+  max-width: calc(100vw * var(--ratio-golden) / (1 + var(--ratio-golden)));
+}
+
+.golden-ratio-vertical {
+  height: 100%;
+  max-height: calc(100vh * var(--ratio-golden) / (1 + var(--ratio-golden)));
+}
+
+/* Sacred Geometry Patterns */
+.sacred-geometry-vesica-piscis {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.sacred-geometry-pentagram {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.sacred-geometry-fibonacci {
+  position: relative;
+  width: 200px;
+  height: calc(200px * var(--ratio-golden));
+}
+
+/* Alchemical Element Styles */
+.element-fire {
+  background: var(--gradient-fire);
+  border: 2px solid var(--color-fire);
+  box-shadow: var(--shadow-glow);
+}
+
+.element-water {
+  background: var(--gradient-water);
+  border: 2px solid var(--color-water);
+  box-shadow: var(--shadow-glow);
+}
+
+.element-air {
+  background: var(--gradient-air);
+  border: 2px solid var(--color-air);
+  box-shadow: var(--shadow-glow);
+}
+
+.element-earth {
+  background: var(--gradient-earth);
+  border: 2px solid var(--color-earth);
+  box-shadow: var(--shadow-glow);
+}
+
+/* Professional Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn var(--duration-normal) var(--easing-smooth);
+}
+
+.reveal {
+  animation: reveal var(--duration-slow) var(--easing-reveal);
+}
+
+.breathe {
+  animation: breathe 3s var(--easing-breathe) infinite;
+}
+
+/* Component-Specific Styles */
+.game-container {
+  font-family: var(--font-display);
+  background: var(--gradient-fire);
+  border: 2px solid var(--color-fire);
+  box-shadow: var(--shadow-alchemical);
+}
+
+.design-math-container {
+  background: var(--gradient-air);
+  border: 2px solid var(--color-air);
+  font-family: var(--font-mono);
+}
+
+.fusionkink-container {
+  background: var(--gradient-water);
+  border: 2px solid var(--color-water);
+  box-shadow: var(--shadow-glow);
+}
+
+.book-container {
+  background: var(--gradient-surface);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  font-family: var(--font-body);
+  box-shadow: var(--shadow-medium);
+}
+
+.tool-container {
+  background: var(--gradient-surface);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: var(--shadow-medium);
+  border-radius: var(--border-radius-organic);
+}
+
+/* Professional Layout - Asymmetric, Breathing */
+.sophisticated-layout {
+  display: grid;
+  gap: calc(var(--spacing-unit) * var(--ratio-golden));
+  padding: calc(var(--spacing-unit) * var(--ratio-golden));
+}
+
+.layout-golden-ratio {
+  grid-template-columns: 1fr calc(1fr * var(--ratio-golden));
+}
+
+.layout-asymmetric {
+  grid-template-columns: 2fr 3fr 2fr;
+}
+
+.layout-breathing {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: calc(var(--spacing-unit) * var(--ratio-golden));
+}
+
+/* High-End Details */
+.professional-detail {
+  position: relative;
+}
+
+.professional-detail::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  opacity: 0.5;
+}
+
+.professional-detail::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  opacity: 0.5;
+}
+
+/* Museum-Grade Quality Indicators */
+.museum-quality {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+}
+
+/* Responsive - Professional at All Sizes */
+@media (max-width: 768px) {
+  .sophisticated-layout {
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing-unit) * 2);
+  }
+  
+  h1 { font-size: 48px; }
+  h2 { font-size: 36px; }
+  h3 { font-size: 28px; }
+}
+

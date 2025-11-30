@@ -1,0 +1,335 @@
+{
+  "timestamp": 1764531290985,
+  "localRepos": [],
+  "remoteRepos": [
+    {
+      "name": "Bekalah/cathedral-master",
+      "url": "https://github.com/Bekalah/cathedral-master.git",
+      "exists": true,
+      "branches": [
+        "cline",
+        "feature/cathedral-monorepo-standardization",
+        "feature/monorepo-repair-and-deployment",
+        "gh-pages",
+        "kilo-integration",
+        "main",
+        "master",
+        "v1_archived_legacy",
+        "v1_core_vertical_slice",
+        "v1_creator_suite_extended",
+        "v1_integration_tooling",
+        "v1_main",
+        "v1_master"
+      ]
+    },
+    {
+      "name": "Bekalah/cathedral",
+      "url": "https://github.com/Bekalah/cathedral.git",
+      "exists": true,
+      "branches": [
+        "clean-main",
+        "clean-pr-branch",
+        "develop",
+        "fix/vercel-cloudflare-build-monorepo",
+        "main",
+        "master-version",
+        "wip/local-20251101"
+      ]
+    },
+    {
+      "name": "Bekalah/BUILDING-CATHEDRALS",
+      "url": "https://github.com/Bekalah/BUILDING-CATHEDRALS.git",
+      "exists": true,
+      "branches": [
+        "dependabot/npm_and_yarn/npm_and_yarn-424bcd4fc1",
+        "main"
+      ]
+    },
+    {
+      "name": "Bekalah/cathedral-integration-workspace",
+      "url": "https://github.com/Bekalah/cathedral-integration-workspace.git",
+      "exists": true,
+      "branches": [
+        "dependabot/github_actions/actions/checkout-5",
+        "dependabot/github_actions/actions/setup-node-6",
+        "dependabot/github_actions/actions/upload-artifact-5",
+        "dependabot/github_actions/codecov/codecov-action-5",
+        "dependabot/npm_and_yarn/eslint-9.38.0",
+        "dependabot/npm_and_yarn/types/node-24.9.1",
+        "main"
+      ]
+    },
+    {
+      "name": "Bekalah/cathedral-minimal",
+      "url": "https://github.com/Bekalah/cathedral-minimal.git",
+      "exists": false
+    },
+    {
+      "name": "Bekalah/circuitum99-minimal",
+      "url": "https://github.com/Bekalah/circuitum99-minimal.git",
+      "exists": true,
+      "branches": [
+        "master"
+      ]
+    },
+    {
+      "name": "Bekalah/stone-grimoire",
+      "url": "https://github.com/Bekalah/stone-grimoire.git",
+      "exists": true,
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "name": "Bekalah/codex-14499",
+      "url": "https://github.com/Bekalah/codex-14499.git",
+      "exists": true,
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "name": "Bekalah/cathedral-vercel",
+      "url": "https://github.com/Bekalah/cathedral-vercel.git",
+      "exists": true,
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "name": "Bekalah/master-catalog-browser",
+      "url": "https://github.com/Bekalah/master-catalog-browser.git",
+      "exists": false
+    },
+    {
+      "name": "Bekalah/cathedral-connection-map",
+      "url": "https://github.com/Bekalah/cathedral-connection-map.git",
+      "exists": false
+    },
+    {
+      "name": "Bekalah/cosmogenesis-learning-engine",
+      "url": "https://github.com/Bekalah/cosmogenesis-learning-engine.git",
+      "exists": true,
+      "branches": [
+        "cathedral-integration-20251001",
+        "main"
+      ]
+    },
+    {
+      "name": "Bekalah/circuitum99",
+      "url": "https://github.com/Bekalah/circuitum99.git",
+      "exists": true,
+      "branches": [
+        "main",
+        "main-upstream"
+      ]
+    },
+    {
+      "name": "Bekalah/cathedral-research",
+      "url": "https://github.com/Bekalah/cathedral-research.git",
+      "exists": true,
+      "branches": [
+        "dependabot/npm_and_yarn/apps/cathedral-of-circuits/npm_and_yarn-cf068aab7f",
+        "dependabot/npm_and_yarn/npm_and_yarn-67728f9449",
+        "master"
+      ]
+    },
+    {
+      "name": "Bekalah/liber-arcanae",
+      "url": "https://github.com/Bekalah/liber-arcanae.git",
+      "exists": true,
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "name": "Bekalah/magical-mystery-house",
+      "url": "https://github.com/Bekalah/magical-mystery-house.git",
+      "exists": true,
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "name": "Bekalah/liber-arcanae-game",
+      "url": "https://github.com/Bekalah/liber-arcanae-game.git",
+      "exists": true,
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "name": "Bekalah/Cathedral-updates",
+      "url": "https://github.com/Bekalah/Cathedral-updates.git",
+      "exists": true,
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "name": "Bekalah/wallaby-tutorial",
+      "url": "https://github.com/Bekalah/wallaby-tutorial.git",
+      "exists": false
+    },
+    {
+      "name": "Bekalah/BOOKS",
+      "url": "https://github.com/Bekalah/BOOKS.git",
+      "exists": true,
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "connections": [],
+  "orphaned": [],
+  "missing": [
+    {
+      "remote": "Bekalah/cathedral-master",
+      "url": "https://github.com/Bekalah/cathedral-master.git",
+      "branches": [
+        "cline",
+        "feature/cathedral-monorepo-standardization",
+        "feature/monorepo-repair-and-deployment",
+        "gh-pages",
+        "kilo-integration",
+        "main",
+        "master",
+        "v1_archived_legacy",
+        "v1_core_vertical_slice",
+        "v1_creator_suite_extended",
+        "v1_integration_tooling",
+        "v1_main",
+        "v1_master"
+      ]
+    },
+    {
+      "remote": "Bekalah/cathedral",
+      "url": "https://github.com/Bekalah/cathedral.git",
+      "branches": [
+        "clean-main",
+        "clean-pr-branch",
+        "develop",
+        "fix/vercel-cloudflare-build-monorepo",
+        "main",
+        "master-version",
+        "wip/local-20251101"
+      ]
+    },
+    {
+      "remote": "Bekalah/BUILDING-CATHEDRALS",
+      "url": "https://github.com/Bekalah/BUILDING-CATHEDRALS.git",
+      "branches": [
+        "dependabot/npm_and_yarn/npm_and_yarn-424bcd4fc1",
+        "main"
+      ]
+    },
+    {
+      "remote": "Bekalah/cathedral-integration-workspace",
+      "url": "https://github.com/Bekalah/cathedral-integration-workspace.git",
+      "branches": [
+        "dependabot/github_actions/actions/checkout-5",
+        "dependabot/github_actions/actions/setup-node-6",
+        "dependabot/github_actions/actions/upload-artifact-5",
+        "dependabot/github_actions/codecov/codecov-action-5",
+        "dependabot/npm_and_yarn/eslint-9.38.0",
+        "dependabot/npm_and_yarn/types/node-24.9.1",
+        "main"
+      ]
+    },
+    {
+      "remote": "Bekalah/circuitum99-minimal",
+      "url": "https://github.com/Bekalah/circuitum99-minimal.git",
+      "branches": [
+        "master"
+      ]
+    },
+    {
+      "remote": "Bekalah/stone-grimoire",
+      "url": "https://github.com/Bekalah/stone-grimoire.git",
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "remote": "Bekalah/codex-14499",
+      "url": "https://github.com/Bekalah/codex-14499.git",
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "remote": "Bekalah/cathedral-vercel",
+      "url": "https://github.com/Bekalah/cathedral-vercel.git",
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "remote": "Bekalah/cosmogenesis-learning-engine",
+      "url": "https://github.com/Bekalah/cosmogenesis-learning-engine.git",
+      "branches": [
+        "cathedral-integration-20251001",
+        "main"
+      ]
+    },
+    {
+      "remote": "Bekalah/circuitum99",
+      "url": "https://github.com/Bekalah/circuitum99.git",
+      "branches": [
+        "main",
+        "main-upstream"
+      ]
+    },
+    {
+      "remote": "Bekalah/cathedral-research",
+      "url": "https://github.com/Bekalah/cathedral-research.git",
+      "branches": [
+        "dependabot/npm_and_yarn/apps/cathedral-of-circuits/npm_and_yarn-cf068aab7f",
+        "dependabot/npm_and_yarn/npm_and_yarn-67728f9449",
+        "master"
+      ]
+    },
+    {
+      "remote": "Bekalah/liber-arcanae",
+      "url": "https://github.com/Bekalah/liber-arcanae.git",
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "remote": "Bekalah/magical-mystery-house",
+      "url": "https://github.com/Bekalah/magical-mystery-house.git",
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "remote": "Bekalah/liber-arcanae-game",
+      "url": "https://github.com/Bekalah/liber-arcanae-game.git",
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "remote": "Bekalah/Cathedral-updates",
+      "url": "https://github.com/Bekalah/Cathedral-updates.git",
+      "branches": [
+        "main"
+      ]
+    },
+    {
+      "remote": "Bekalah/BOOKS",
+      "url": "https://github.com/Bekalah/BOOKS.git",
+      "branches": [
+        "main"
+      ]
+    }
+  ],
+  "summary": {
+    "totalLocal": 0,
+    "totalRemote": 16,
+    "connected": 0,
+    "orphaned": 0,
+    "missing": 16
+  }
+}

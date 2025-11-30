@@ -1,0 +1,1114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cathedral Visual Systems Hub - Master V1 Control System</title>
+    <meta
+      name="description"
+      content="Comprehensive visual systems and interactive maps for the Cathedral Master V1 Control System" />
+
+    <!-- Cathedral Master V1 Control System Styles -->
+    <style>
+      :root {
+        --cathedral-deep-blue: #1a237e;
+        --cathedral-gold: #ffd700;
+        --cathedral-silver: #c0c0c0;
+        --cathedral-crystal: #e1f5fe;
+        --cathedral-stone: #795548;
+        --cathedral-light: #fafafa;
+        --cathedral-accent: #4caf50;
+        --cathedral-warning: #ff9800;
+        --cathedral-error: #f44336;
+        --cathedral-shadow: rgba(0, 0, 0, 0.2);
+        --cathedral-transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        background: linear-gradient(
+          135deg,
+          var(--cathedral-deep-blue) 0%,
+          #283593 50%,
+          #1a237e 100%
+        );
+        color: var(--cathedral-light);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      /* Navigation Header */
+      .cathedral-header {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid var(--cathedral-gold);
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .cathedral-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .cathedral-logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        text-decoration: none;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+
+      .nav-item a {
+        color: var(--cathedral-light);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: var(--cathedral-transition);
+      }
+
+      .nav-item a:hover,
+      .nav-item a.active {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-deep-blue);
+      }
+
+      /* Main Content */
+      .cathedral-main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .hero-section {
+        text-align: center;
+        padding: 4rem 2rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        margin-bottom: 3rem;
+        backdrop-filter: blur(5px);
+      }
+
+      .hero-title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px var(--cathedral-shadow);
+      }
+
+      .hero-subtitle {
+        font-size: 1.2rem;
+        color: var(--cathedral-crystal);
+        margin-bottom: 2rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-stats {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 2rem;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+      }
+
+      .stat-label {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+      }
+
+      /* Visual Systems Grid */
+      .visual-systems-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .visual-system-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid transparent;
+        border-radius: 16px;
+        padding: 2rem;
+        transition: var(--cathedral-transition);
+        backdrop-filter: blur(10px);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .visual-system-card:hover {
+        border-color: var(--cathedral-gold);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px var(--cathedral-shadow);
+      }
+
+      .system-card-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .system-icon {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+        background: var(--cathedral-gold);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--cathedral-deep-blue);
+      }
+
+      .system-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+      }
+
+      .system-status {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+
+      .status-active {
+        background: var(--cathedral-accent);
+        color: white;
+      }
+
+      .status-development {
+        background: var(--cathedral-warning);
+        color: white;
+      }
+
+      .status-planned {
+        background: var(--cathedral-silver);
+        color: var(--cathedral-deep-blue);
+      }
+
+      .system-description {
+        color: var(--cathedral-crystal);
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+
+      .system-features {
+        list-style: none;
+        margin-bottom: 1.5rem;
+      }
+
+      .system-features li {
+        padding: 0.3rem 0;
+        padding-left: 1.5rem;
+        position: relative;
+        color: var(--cathedral-light);
+        font-size: 0.9rem;
+      }
+
+      .system-features li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: var(--cathedral-accent);
+        font-weight: bold;
+      }
+
+      .system-link {
+        display: inline-block;
+        background: var(--cathedral-gold);
+        color: var(--cathedral-deep-blue);
+        padding: 0.8rem 1.5rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: var(--cathedral-transition);
+      }
+
+      .system-link:hover {
+        background: var(--cathedral-light);
+        transform: scale(1.05);
+      }
+
+      /* Interactive Architecture Map */
+      .architecture-map-section {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        padding: 3rem;
+        margin-bottom: 3rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .interactive-map {
+        background: rgba(0, 0, 0, 0.3);
+        border: 2px solid var(--cathedral-gold);
+        border-radius: 16px;
+        padding: 2rem;
+        margin: 2rem 0;
+        position: relative;
+        min-height: 500px;
+      }
+
+      .repository-nodes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .repo-node {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid var(--cathedral-silver);
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: center;
+        transition: var(--cathedral-transition);
+        cursor: pointer;
+      }
+
+      .repo-node:hover {
+        border-color: var(--cathedral-gold);
+        transform: scale(1.05);
+      }
+
+      .repo-node.active {
+        border-color: var(--cathedral-accent);
+        background: rgba(76, 175, 80, 0.2);
+      }
+
+      .repo-name {
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 0.5rem;
+      }
+
+      .repo-role {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+        margin-bottom: 0.5rem;
+      }
+
+      .repo-status {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.8rem;
+        border-radius: 15px;
+        background: var(--cathedral-accent);
+        color: white;
+        display: inline-block;
+      }
+
+      /* Data Integration Panel */
+      .data-integration-panel {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .registry-sources {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .data-source {
+        background: rgba(255, 255, 255, 0.1);
+        border-left: 4px solid var(--cathedral-gold);
+        border-radius: 8px;
+        padding: 1.5rem;
+      }
+
+      .source-title {
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 0.5rem;
+      }
+
+      .source-path {
+        font-family: "Monaco", "Menlo", monospace;
+        font-size: 0.8rem;
+        color: var(--cathedral-crystal);
+        background: rgba(0, 0, 0, 0.3);
+        padding: 0.5rem;
+        border-radius: 4px;
+        margin: 0.5rem 0;
+      }
+
+      /* Footer */
+      .cathedral-footer {
+        background: rgba(0, 0, 0, 0.3);
+        border-top: 2px solid var(--cathedral-gold);
+        padding: 2rem;
+        text-align: center;
+        margin-top: 4rem;
+      }
+
+      .footer-content {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .footer-links a {
+        color: var(--cathedral-crystal);
+        text-decoration: none;
+        transition: var(--cathedral-transition);
+      }
+
+      .footer-links a:hover {
+        color: var(--cathedral-gold);
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        .cathedral-nav {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .nav-menu {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .hero-title {
+          font-size: 2rem;
+        }
+
+        .hero-stats {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .visual-systems-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .cathedral-main {
+          padding: 1rem;
+        }
+
+        .architecture-map-section {
+          padding: 2rem 1rem;
+        }
+      }
+
+      /* Accessibility */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      /* Focus styles for keyboard navigation */
+      a:focus,
+      button:focus,
+      .nav-item a:focus {
+        outline: 2px solid var(--cathedral-gold);
+        outline-offset: 2px;
+      }
+
+      /* Loading animation */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .visual-system-card {
+        animation: fadeInUp 0.6s ease-out;
+      }
+
+      .visual-system-card:nth-child(even) {
+        animation-delay: 0.1s;
+      }
+
+      .visual-system-card:nth-child(3n) {
+        animation-delay: 0.2s;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="cathedral-header">
+      <nav class="cathedral-nav">
+        <a href="#" class="cathedral-logo">🕍 Cathedral Visual Systems</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#architecture" class="active">Architecture</a>
+          </li>
+          <li class="nav-item"><a href="#systems">Visual Systems</a></li>
+          <li class="nav-item"><a href="#data">Data Sources</a></li>
+          <li class="nav-item"><a href="#navigation">Navigation</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="cathedral-main">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <h1 class="hero-title">Cathedral Visual Systems Hub</h1>
+        <p class="hero-subtitle">
+          Master V1 Control System - Comprehensive visual ecosystem for the
+          complete Cathedral cosmos builder architecture
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">12</div>
+            <div class="stat-label">Visual Systems</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">10</div>
+            <div class="stat-label">Repositories</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">144</div>
+            <div class="stat-label">Cathedral Rooms</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Possibilities</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visual Systems Grid -->
+      <section id="systems" class="visual-systems-grid">
+        <!-- Phase D.1: Interactive System Architecture Maps -->
+        <div class="visual-system-card">
+          <div class="system-card-header">
+            <div class="system-icon">🏗️</div>
+            <h3 class="system-title">Interactive Architecture Maps</h3>
+          </div>
+          <span class="system-status status-active">Active</span>
+          <p class="system-description">
+            Interactive visualization of the 10-repository Cathedral ecosystem
+            with real-time deployment status and integration flows.
+          </p>
+          <ul class="system-features">
+            <li>Master repository hub visualization</li>
+            <li>Sub-repository relationship mapping</li>
+            <li>Deployment architecture diagrams</li>
+            <li>Integration flow visualizations</li>
+          </ul>
+          <a href="#architecture" class="system-link">Explore Architecture</a>
+        </div>
+
+        <!-- Phase D.2: REGISTRY Data Visualization -->
+        <div class="visual-system-card">
+          <div class="system-card-header">
+            <div class="system-icon">🗺️</div>
+            <h3 class="system-title">REGISTRY Data Visualization</h3>
+          </div>
+          <span class="system-status status-active">Active</span>
+          <p class="system-description">
+            Dynamic visualization of the complete REGISTRY data structure with
+            interactive filtering and exploration capabilities.
+          </p>
+          <ul class="system-features">
+            <li>Node-to-room relationship maps</li>
+            <li>Chapel organization systems</li>
+            <li>Arcana pathway visualizations</li>
+            <li>Angel-demon pair relationships</li>
+          </ul>
+          <a href="registry-viewer.html" class="system-link">View REGISTRY</a>
+        </div>
+
+        <!-- Phase D.3: 144-Room Navigation -->
+        <div class="visual-system-card">
+          <div class="system-card-header">
+            <div class="system-icon">🏛️</div>
+            <h3 class="system-title">Cathedral Navigation System</h3>
+          </div>
+          <span class="system-status status-active">Active</span>
+          <p class="system-description">
+            Interactive 3D navigation system for exploring the complete 144-room
+            Cathedral structure with spatial relationships.
+          </p>
+          <ul class="system-features">
+            <li>3D room layout visualization</li>
+            <li>Spatial relationship mapping</li>
+            <li>Navigation path optimization</li>
+            <li>Room detail exploration</li>
+          </ul>
+          <a href="cathedral-navigation.html" class="system-link"
+            >Navigate Cathedral</a
+          >
+        </div>
+
+        <!-- Phase D.4: Process Flowcharts -->
+        <div class="visual-system-card">
+          <div class="system-card-header">
+            <div class="system-icon">📊</div>
+            <h3 class="system-title">Process Flowchart Visualizer</h3>
+          </div>
+          <span class="system-status status-development">Development</span>
+          <p class="system-description">
+            Comprehensive development and deployment process visualization with
+            interactive workflow optimization.
+          </p>
+          <ul class="system-features">
+            <li>CI/CD pipeline diagrams</li>
+            <li>Development workflow charts</li>
+            <li>Quality assurance processes</li>
+            <li>Release management flows</li>
+          </ul>
+          <a href="flowchart-visualizer.html" class="system-link"
+            >View Workflows</a
+          >
+        </div>
+
+        <!-- Phase D.5: Data Flow Generator -->
+        <div class="visual-system-card">
+          <div class="system-card-header">
+            <div class="system-icon">🔄</div>
+            <h3 class="system-title">Data Flow Diagram Generator</h3>
+          </div>
+          <span class="system-status status-development">Development</span>
+          <p class="system-description">
+            Real-time system data movement visualization with cross-platform
+            integration mapping.
+          </p>
+          <ul class="system-features">
+            <li>Cross-platform data flows</li>
+            <li>API integration mapping</li>
+            <li>Database relationship diagrams</li>
+            <li>Real-time data streaming</li>
+          </ul>
+          <a href="data-flow-generator.html" class="system-link"
+            >Generate Flows</a
+          >
+        </div>
+
+        <!-- Phase D.6: Component Maps -->
+        <div class="visual-system-card">
+          <div class="system-card-header">
+            <div class="system-icon">🧩</div>
+            <h3 class="system-title">Component Relationship Maps</h3>
+          </div>
+          <span class="system-status status-development">Development</span>
+          <p class="system-description">
+            Interactive mapping of Cathedral packages and component
+            relationships with dependency visualization.
+          </p>
+          <ul class="system-features">
+            <li>Package dependency visualization</li>
+            <li>Component interaction mapping</li>
+            <li>Architecture boundary diagrams</li>
+            <li>Integration point identification</li>
+          </ul>
+          <a href="component-relationships.html" class="system-link">View Components</a>
+        </div>
+
+        <!-- Phase D.7: Performance Dashboard -->
+        <div class="visual-system-card">
+          <div class="system-card-header">
+            <div class="system-icon">📈</div>
+            <h3 class="system-title">Performance Monitoring</h3>
+          </div>
+          <span class="system-status status-development">Development</span>
+          <p class="system-description">
+            Real-time performance and health monitoring dashboard with
+            comprehensive system metrics.
+          </p>
+          <ul class="system-features">
+            <li>System performance metrics</li>
+            <li>Application health indicators</li>
+            <li>Resource utilization charts</li>
+            <li>Error tracking visualizations</li>
+          </ul>
+          <a href="performance-dashboard.html" class="system-link"
+            >Monitor Performance</a
+          >
+        </div>
+
+        <!-- Phase D.8: User Journey Maps -->
+        <div class="visual-system-card">
+          <div class="system-card-header">
+            <div class="system-icon">👥</div>
+            <h3 class="system-title">User Journey Visualization</h3>
+          </div>
+          <span class="system-status status-planned">Planned</span>
+          <p class="system-description">
+            Comprehensive stakeholder journey and interaction flow visualization
+            system.
+          </p>
+          <ul class="system-features">
+            <li>Developer workflow paths</li>
+            <li>User interaction sequences</li>
+            <li>Decision tree visualizations</li>
+            <li>Experience optimization mapping</li>
+          </ul>
+          <a href="user-journey-maps.html" class="system-link">Map Journeys</a>
+        </div>
+
+        <!-- Phase D.9: Integration Platform -->
+        <div class="visual-system-card">
+          <div class="system-card-header">
+            <div class="system-icon">🔗</div>
+            <h3 class="system-title">Integration Visualization</h3>
+          </div>
+          <span class="system-status status-planned">Planned</span>
+          <p class="system-description">
+            Cross-platform integration visualization with comprehensive service
+            mapping and health monitoring.
+          </p>
+          <ul class="system-features">
+            <li>API connection mapping</li>
+            <li>Service integration flows</li>
+            <li>External dependency tracking</li>
+            <li>Integration health monitoring</li>
+          </ul>
+          <a href="integration-platform.html" class="system-link"
+            >View Integrations</a
+          >
+        </div>
+      </section>
+
+      <!-- Interactive Architecture Map -->
+      <section id="architecture" class="architecture-map-section">
+        <h2 class="section-title">Interactive System Architecture</h2>
+        <p
+          style="
+            text-align: center;
+            color: var(--cathedral-crystal);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+          ">
+          Explore the complete Cathedral Master V1 Control System architecture
+          with live data from REGISTRY
+        </p>
+
+        <div class="interactive-map">
+          <h3
+            style="
+              color: var(--cathedral-gold);
+              margin-bottom: 1.5rem;
+              text-align: center;
+            ">
+            Repository Ecosystem
+          </h3>
+          <div class="repository-nodes" id="repositoryNodes">
+            <!-- Repository nodes will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Data Integration Panel -->
+      <section id="data" class="data-integration-panel">
+        <h2 class="section-title">Data Sources & Integration</h2>
+        <p
+          style="
+            text-align: center;
+            color: var(--cathedral-crystal);
+            margin-bottom: 2rem;
+          ">
+          Dynamic content generation from canonical REGISTRY data sources
+        </p>
+
+        <div class="registry-sources">
+          <div class="data-source">
+            <h4 class="source-title">Master Repository Ecosystem</h4>
+            <p style="color: var(--cathedral-light); margin: 0.5rem 0">
+              Primary hub configuration and deployment architecture
+            </p>
+            <div class="source-path">
+              /REGISTRY/cathedral-master-repository-ecosystem.json
+            </div>
+            <small style="color: var(--cathedral-crystal)"
+              >Last updated: 2025-11-21T16:52:58.277Z</small
+            >
+          </div>
+
+          <div class="data-source">
+            <h4 class="source-title">Mapping Relationships</h4>
+            <p style="color: var(--cathedral-light); margin: 0.5rem 0">
+              Arcana, nodes, rooms, and chapel relationship mappings
+            </p>
+            <div class="source-path">/REGISTRY/maps/*.csv</div>
+            <small style="color: var(--cathedral-crystal)"
+              >Dynamic CSV-based mappings</small
+            >
+          </div>
+
+          <div class="data-source">
+            <h4 class="source-title">Node Definitions</h4>
+            <p style="color: var(--cathedral-light); margin: 0.5rem 0">
+              Individual node definitions and configurations
+            </p>
+            <div class="source-path">/REGISTRY/nodes/*.json</div>
+            <small style="color: var(--cathedral-crystal)"
+              >JSON-based node data</small
+            >
+          </div>
+
+          <div class="data-source">
+            <h4 class="source-title">Room Catalog</h4>
+            <p style="color: var(--cathedral-light); margin: 0.5rem 0">
+              Vertical slice room catalog with navigation data
+            </p>
+            <div class="source-path">
+              /REGISTRY/rooms/room_catalog.vertical_slice.json
+            </div>
+            <small style="color: var(--cathedral-crystal)"
+              >Canonical room definitions</small
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cathedral-footer">
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="/docs/PHASE_D_VISUAL_SYSTEMS_PLAN.md">Implementation Plan</a>
+          <a href="/REGISTRY/">REGISTRY Data</a>
+          <a href="/openspec/AGENTS.md">OpenSpec AGENTS</a>
+          <a href="https://github.com/cathedral-real">GitHub Repository</a>
+        </div>
+        <p style="color: var(--cathedral-crystal); font-size: 0.9rem">
+          Cathedral Master V1 Control System - Visual Systems Hub<br />
+          Generated by Cathedral Architect Roo - Phase D Implementation
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Cathedral Visual Systems Hub JavaScript
+      class CathedralVisualSystemsHub {
+        constructor() {
+          this.registryData = null;
+          this.activeRepository = null;
+          this.init();
+        }
+
+        async init() {
+          await this.loadRegistryData();
+          this.setupEventListeners();
+          this.renderRepositoryNodes();
+          this.initializeAnimations();
+        }
+
+        async loadRegistryData() {
+          try {
+            // Load REGISTRY data for dynamic content
+            const ecosystemResponse = await fetch(
+              "/REGISTRY/cathedral-master-repository-ecosystem.json"
+            );
+            this.registryData = await ecosystemResponse.json();
+          } catch (error) {
+            console.warn(
+              "Unable to load live REGISTRY data, using fallback data"
+            );
+            this.registryData = this.getFallbackData();
+          }
+        }
+
+        getFallbackData() {
+          return {
+            repository_ecosystem: {
+              master_cathedral: {
+                name: "Cathedral Master Repository",
+                role: "Primary deployment hub and monorepo",
+                status: "ACTIVE",
+                function: "Living monorepo organizing all creative work",
+              },
+              circuitum99: {
+                name: "Circuitum 99 Soul System",
+                role: "Soul/Codex system",
+                status: "ACTIVE",
+                function:
+                  "The 99 dissolution depths, artistic expression, soul codex",
+              },
+              stone_grimoire: {
+                name: "Stone Grimoire Sacred Archive",
+                role: "Sacred archive and chapel navigation (BODY system)",
+                status: "ACTIVE",
+                function:
+                  "Research foundation, major archetypal guides, solid frameworks",
+              },
+              cosmogenesis_engine: {
+                name: "Cosmogenesis Learning Engine",
+                role: "Spiral learning platform (SPIRIT system)",
+                status: "ACTIVE",
+                function:
+                  "Sacred geometry navigation, Kabbalistic path-working",
+              },
+              liber_arcanae: {
+                name: "Liber Arcanae Living Tarot",
+                role: "Living tarot connecting to all other apps",
+                status: "ACTIVE",
+                function:
+                  "Living tarot system, daily navigation tools, minor arcana",
+              },
+              tesseract_bridge: {
+                name: "Tesseract Bridge Connector",
+                role: "Central connector linking all five living repos",
+                status: "ACTIVE",
+                function:
+                  "Extended archetypal work, planetary/zodiacal consciousness",
+              },
+              magical_mystery_house: {
+                name: "Magical Mystery House",
+                role: "Open-world exploration framework",
+                status: "ACTIVE",
+                function:
+                  "Cultural wisdom traditions, runic systems, spatial consciousness",
+              },
+              luxcrux: {
+                name: "LuxCrux Compassion Foundation",
+                role: "Elemental direction work and compassion foundation",
+                status: "ACTIVE",
+                function: "Elemental direction work, light/shadow synthesis",
+              },
+              books_collection: {
+                name: "BOOKS Collection",
+                role: "Parent collection and documentation hub",
+                status: "ACTIVE",
+                function: "Parent collection and documentation hub",
+              },
+            },
+          };
+        }
+
+        setupEventListeners() {
+          // Navigation smooth scrolling
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+              e.preventDefault();
+              const target = document.querySelector(this.getAttribute("href"));
+              if (target) {
+                target.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }
+            });
+          });
+
+          // Update active navigation
+          window.addEventListener("scroll", () => {
+            this.updateActiveNavigation();
+          });
+        }
+
+        updateActiveNavigation() {
+          const sections = document.querySelectorAll("section[id]");
+          const navLinks = document.querySelectorAll(".nav-item a");
+
+          let current = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionHeight = section.clientHeight;
+            if (
+              window.scrollY >= sectionTop &&
+              window.scrollY < sectionTop + sectionHeight
+            ) {
+              current = section.getAttribute("id");
+            }
+          });
+
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${current}`) {
+              link.classList.add("active");
+            }
+          });
+        }
+
+        renderRepositoryNodes() {
+          const container = document.getElementById("repositoryNodes");
+          if (!this.registryData || !this.registryData.repository_ecosystem) {
+            return;
+          }
+
+          const repos = this.registryData.repository_ecosystem;
+          const nodes = Object.entries(repos)
+            .map(([key, repo]) => {
+              const statusClass =
+                repo.status === "ACTIVE" ? "active" : "inactive";
+              const statusText =
+                repo.status === "ACTIVE" ? "Active" : "Inactive";
+
+              return `
+                        <div class="repo-node ${statusClass}" data-repo="${key}">
+                            <div class="repo-name">${repo.name}</div>
+                            <div class="repo-role">${repo.role}</div>
+                            <div class="repo-status">${statusText}</div>
+                        </div>
+                    `;
+            })
+            .join("");
+
+          container.innerHTML = nodes;
+
+          // Add click listeners for interactive exploration
+          container.querySelectorAll(".repo-node").forEach((node) => {
+            node.addEventListener("click", () => {
+              this.exploreRepository(node.dataset.repo);
+            });
+          });
+        }
+
+        exploreRepository(repoKey) {
+          if (
+            !this.registryData ||
+            !this.registryData.repository_ecosystem[repoKey]
+          ) {
+            return;
+          }
+
+          const repo = this.registryData.repository_ecosystem[repoKey];
+
+          // Create modal or expanded view
+          this.showRepositoryDetails(repo, repoKey);
+        }
+
+        showRepositoryDetails(repo, repoKey) {
+          const modal = document.createElement("div");
+          modal.style.cssText = `
+                    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+                    background: rgba(0, 0, 0, 0.8); z-index: 2000;
+                    display: flex; align-items: center; justify-content: center;
+                    padding: 2rem;
+                `;
+
+          modal.innerHTML = `
+                    <div style="background: linear-gradient(135deg, var(--cathedral-deep-blue), var(--cathedral-light)); 
+                                color: var(--cathedral-light); padding: 3rem; border-radius: 20px; 
+                                border: 3px solid var(--cathedral-gold); text-align: center; max-width: 600px;
+                                box-shadow: 0 0 50px var(--cathedral-gold);">
+                        <h2 style="color: var(--cathedral-gold); margin-bottom: 1rem;">${repo.name}</h2>
+                        <p style="margin-bottom: 1rem; color: var(--cathedral-crystal);">${repo.role}</p>
+                        <p style="margin-bottom: 2rem; line-height: 1.6;">${repo.function}</p>
+                        <div style="background: rgba(255, 255, 255, 0.1); padding: 1rem; border-radius: 10px; margin-bottom: 2rem;">
+                            <strong>Status:</strong> ${repo.status}
+                        </div>
+                        <button onclick="this.parentElement.parentElement.remove()"
+                                style="background: var(--cathedral-gold); color: var(--cathedral-deep-blue); 
+                                       padding: 1rem 2rem; border: none; border-radius: 10px; 
+                                       font-size: 1.1rem; cursor: pointer; font-weight: bold;">
+                            Explore More
+                        </button>
+                    </div>
+                `;
+
+          document.body.appendChild(modal);
+
+          // Remove modal on click outside
+          modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+              modal.remove();
+            }
+          });
+        }
+
+        initializeAnimations() {
+          // Intersection Observer for fade-in animations
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.style.opacity = "1";
+                  entry.target.style.transform = "translateY(0)";
+                }
+              });
+            },
+            {
+              threshold: 0.1,
+            }
+          );
+
+          // Observe all cards
+          document.querySelectorAll(".visual-system-card").forEach((card) => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(30px)";
+            card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+            observer.observe(card);
+          });
+        }
+      }
+
+      // Initialize when DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        new CathedralVisualSystemsHub();
+      });
+
+      // Keyboard navigation support
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          // Close any open modals
+          document
+            .querySelectorAll('[style*="z-index: 2000"]')
+            .forEach((modal) => {
+              modal.remove();
+            });
+        }
+      });
+    </script>
+  </body>
+</html>

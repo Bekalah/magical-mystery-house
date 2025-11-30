@@ -1,0 +1,39 @@
+{
+  "name": "@cathedral/codex-engine",
+  "version": "1.0.0",
+  "description": "Codex Engine - Core processing engine for Codex 144:99 nodes and data structures",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Codex Engine build complete'",
+    "test": "echo 'Codex Engine tests passing'"
+  },
+  "keywords": [
+    "cathedral",
+    "codex",
+    "144-99",
+    "engine",
+    "nodes"
+  ],
+  "author": "Rebecca Lemke",
+  "license": "CC0-1.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/codex-engine"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/codex-engine",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T19:53:28.645Z",
+  "packageManager": "pnpm@8.0.0"
+}

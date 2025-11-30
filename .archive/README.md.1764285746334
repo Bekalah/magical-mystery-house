@@ -1,0 +1,64 @@
+# OpenSpec Spec-Kit
+
+**Organized specification management for Cathedral**
+
+---
+
+## 📁 Structure
+
+```
+spec-kit/
+├── specs/           # Active specifications
+├── changes/         # Change proposals and implementations
+└── archive/         # Archived specifications
+```
+
+---
+
+## 📝 Usage
+
+### Creating a Specification
+
+1. Create a new spec file in `specs/`:
+   ```bash
+   openspec/spec-kit/specs/my-feature/spec.md
+   ```
+
+2. Follow OpenSpec format:
+   - Title and description
+   - Requirements
+   - Implementation details
+   - Testing criteria
+   - Documentation requirements
+
+### Creating a Change Proposal
+
+1. Create a change directory in `changes/`:
+   ```bash
+   openspec/changes/my-change-proposal/
+   ├── proposal.md
+   ├── tasks.md
+   └── specs/
+       └── implementation-details/
+           └── spec.md
+   ```
+
+2. Document the change:
+   - **proposal.md**: Overview, rationale, impact
+   - **tasks.md**: Implementation tasks
+   - **specs/**: Detailed specifications
+
+---
+
+## 🔄 Workflow
+
+1. **Proposal**: Create change proposal in `changes/`
+2. **Review**: Review and approve proposal
+3. **Specification**: Create detailed specs in `specs/`
+4. **Implementation**: Implement following specs
+5. **Archive**: Move completed changes to `archive/`
+
+---
+
+**OpenSpec Compliance**: All changes follow OpenSpec change management protocols.
+

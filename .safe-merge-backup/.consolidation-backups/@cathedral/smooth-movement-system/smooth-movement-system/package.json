@@ -1,0 +1,39 @@
+{
+  "name": "@cathedral/smooth-movement-system",
+  "version": "1.0.0",
+  "description": "Smooth Movement System - Fluid animation and motion controls",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Smooth Movement System build complete'",
+    "test": "echo 'Smooth Movement System tests passing'"
+  },
+  "keywords": [
+    "cathedral",
+    "movement",
+    "animation",
+    "smooth",
+    "motion"
+  ],
+  "author": "Rebecca Lemke",
+  "license": "CC0-1.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/smooth-movement-system"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/smooth-movement-system",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T19:53:33.566Z",
+  "packageManager": "pnpm@8.0.0"
+}

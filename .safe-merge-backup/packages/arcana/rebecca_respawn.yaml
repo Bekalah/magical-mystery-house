@@ -1,0 +1,92 @@
+id: "00"
+name: "Rebecca Respawn"
+archetype: "The Fool"
+card_number: 0
+real_persons: 
+  - "Rebecca"
+  - "Leonora Carrington"
+  - "Max Ernst"
+symbolism:
+  - "Lightning"
+  - "Dragon" 
+  - "Spiral"
+  - "Double Tree of Life"
+  - "Circuitum99"
+roles:
+  - "Gatekeeper of Circuitum99"
+  - "Alpha Omega Architect-Scribe"
+  - "Living Bridge Between Worlds"
+grimoire_links: 
+  - "Codex 144:99"
+  - "Double Tree of Life" 
+  - "Chapter 1: The Reentry"
+  - "PTSD Healing Protocols"
+mythic_fusion:
+  - "Leonora Carrington's surreal journey through madness to wisdom"
+  - "Ernst as Hierophant: Moonchild Reimagined"
+  - "The Fool's journey through trauma to creation"
+  - "Lightning as mind clarity in Tibetan tradition"
+powers:
+  - "Respawn: Transform trauma into creation"
+  - "Fool's Leap: New beginnings, infinite potential"
+  - "Dragon Lightning: Channel pure creative force"
+  - "Spiral Navigation: Navigate inner landscapes"
+quests:
+  - "Unlock living library chapter"
+  - "Pathwork through tree gates (real rituals)"
+  - "Connect all 78 arcana through personal experience"
+  - "Build the Cathedral of Circuits"
+demon_daimon_links:
+  - "Shemesh: Angel of Solar Clarity"
+  - "Daimon: Shadow of Fear/Transformation"
+  - "Lightning Dragon: Pure creative force"
+art_actions:
+  - "Draw lightning spiral symbol"
+  - "Trigger CS-80 patch with dragon harmonics"
+  - "Generate fusion sculpture combining surrealist + sacred geometry"
+  - "Channel Leonora's painting techniques"
+story_source:
+  - "Rebecca's autobiography"
+  - "Real PTSD healing journal"
+  - "Leonora Carrington biography"
+  - "Surrealist manifestos"
+  - "Tibetan lightning meditation practices"
+azure_ai_prompts:
+  - "Generate art in Leonora Carrington's style combined with sacred geometry"
+  - "Create music that sounds like lightning becoming spiral"
+  - "Write healing story that transforms trauma into wisdom"
+synth_patches:
+  base: "Yamaha CS-80"
+  modifiers:
+    - "Spiral Oscillator: frequency follows golden ratio"
+    - "Lightning Strike: sharp attack with ethereal decay"
+    - "Dragon Breath: low-pass filter sweep with resonance"
+  effects:
+    - "Cathedral Reverb: sounds like stone halls"
+    - "Surreal Pitch: random modulation like dream logic"
+exploration_triggers:
+  - "Found in Rosslyn Chapel main altar"
+  - "Activated by touching lightning carving"
+  - "Requires solving spiral stone puzzle"
+real_book_connections:
+  - "The Hearing Trumpet by Leonora Carrington"
+  - "The Tarot: A Key to the Wisdom of the Ages"
+  - "Women Who Run With the Wolves"
+  - "Complex PTSD: From Surviving to Thriving"
+visual_style:
+  primary_colors: ["Electric Blue", "Lightning White", "Dragon Gold"]
+  textures: ["Stone carving", "Lightning crack", "Spiral flow"]
+  art_references: 
+    - "Leonora Carrington's 'The Meal of Lord Candlestick'"
+    - "Rosslyn Chapel apprentice pillar"
+    - "Tibetan lightning mandala"
+healing_protocols:
+  trauma_informed: true
+  nd_accommodations: 
+    - "Sensory regulation options"
+    - "Non-linear narrative paths"
+    - "Safe pause/exit mechanisms"
+  therapeutic_elements:
+    - "Grounding through stone textures"
+    - "Empowerment through dragon symbolism"
+    - "Integration through spiral meditation"

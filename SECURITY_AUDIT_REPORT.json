@@ -1,0 +1,13 @@
+{
+  "total": 0,
+  "critical": 0,
+  "xss": 0,
+  "unsafe": 0,
+  "issues": {
+    "eval": [],
+    "xss": [],
+    "unsafePatterns": [],
+    "missingValidation": [],
+    "other": []
+  }
+}

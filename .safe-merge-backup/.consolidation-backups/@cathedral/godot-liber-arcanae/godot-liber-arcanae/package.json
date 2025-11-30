@@ -1,0 +1,101 @@
+{
+  "name": "@cathedral/godot-liber-arcanae",
+  "version": "1.0.0",
+  "description": "Godot Liber Arcanae - 78-card living tarot system for mystical games",
+  "main": "liber_arcanae.gd",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "validate": "echo 'Validating tarot correspondences...' && node validate-tarot.js",
+    "export": "echo 'Exporting tarot system...' && ppnpm run build",
+    "test": "echo 'Testing card interactions...' && node test-cards.js"
+  },
+  "keywords": [
+    "godot",
+    "tarot",
+    "liber-arcanae",
+    "78-cards",
+    "archetypes",
+    "trauma-safe",
+    "free",
+    "open-source",
+    "cathedral-of-circuits",
+    "living-tarot"
+  ],
+  "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/godot-liber-arcanae"
+  },
+  "homepage": "https://bekalah.github.io/cathedral/godot-liber-arcanae",
+  "godot": {
+    "version": "4.3+",
+    "compatibility": "4.0+",
+    "asset_type": "game_system",
+    "themes": [
+      "tarot",
+      "archetypes",
+      "trauma_safe",
+      "living_systems"
+    ]
+  },
+  "cathedral": {
+    "sacred_mathematics": {
+      "major_arcana": 22,
+      "minor_arcana": 56,
+      "total_cards": 78,
+      "golden_ratio": 1.618,
+      "divine_proportions": true
+    },
+    "trauma_safety": {
+      "no_autoplay": true,
+      "esc_exit": true,
+      "motion_controls": true,
+      "intensity_adjustment": true,
+      "gentle_defaults": true,
+      "consent_based": true
+    },
+    "living_system": {
+      "archetype_beings": true,
+      "interactive_cards": true,
+      "fusion_kink_compatible": true,
+      "trauma_healing": true
+    },
+    "integration": {
+      "connects_to": [
+        "godot-codex-14499",
+        "godot-tesseract-bridge",
+        "godot-vfx-library"
+      ]
+    }
+  },
+  "files": [
+    "scenes/",
+    "scripts/",
+    "resources/",
+    "cards/",
+    "archetypes/",
+    "documentation/",
+    "examples/",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  },
+  "types": "dist/index.d.ts",
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=20.18.0",
+    "pnpm": ">=8.15.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T19:53:29.961Z"
+}

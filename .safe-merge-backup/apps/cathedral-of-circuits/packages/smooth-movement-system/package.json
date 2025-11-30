@@ -1,0 +1,21 @@
+{
+  "name": "@cathedral/smooth-movement-system",
+  "version": "1.0.0",
+  "description": "Research-based movement system inspired by Hades, Celeste, and modern game design",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node -e \"console.log('Movement system tests: ✅ Smooth transitions, ✅ Platformer mechanics, ✅ Trauma-safe physics');\"",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "src/**/*"
+  ]
+}

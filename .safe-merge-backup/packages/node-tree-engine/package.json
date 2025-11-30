@@ -1,0 +1,60 @@
+{
+  "name": "@cathedral/node-tree-engine",
+  "version": "2.0.0",
+  "description": "Complete Node Tree Health System for 99 Mystical Codex Nodes with Health Monitoring, Interactive Maps, and Dynamic Stories",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "vitest",
+    "lint": "eslint src/**/*.{js,ts}",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "circus": "^3.0.0",
+    "d3-hierarchy": "^3.1.2",
+    "d3-force": "^3.0.0",
+    "d3-selection": "^3.0.0",
+    "graphql": "^16.8.1",
+    "async-mutex": "^0.4.0",
+    "fast-xml-parser": "^4.3.2",
+    "marked": "^12.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "rollup": "^4.9.6",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/d3-hierarchy": "^3.1.6",
+    "@types/d3-force": "^3.0.8",
+    "@types/d3-selection": "^3.0.10",
+    "@types/marked": "^5.0.2",
+    "vitest": "^1.2.0"
+  },
+  "keywords": [
+    "node-tree",
+    "health-system",
+    "mystical-tree",
+    "codex-nodes",
+    "interactive-map",
+    "grimoire",
+    "dynamic-stories"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "license": "CC0-1.0",
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:00:25.427Z",
+  "packageManager": "pnpm@8.0.0"
+}

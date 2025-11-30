@@ -1,0 +1,47 @@
+{
+  "name": "@cathedral/inter-app-communicator",
+  "version": "1.0.0",
+  "description": "Inter-app communication system for Cathedral mystical ecosystem",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo 'Tests for inter-app communication'"
+  },
+  "keywords": [
+    "cathedral",
+    "mystical",
+    "communication",
+    "message-bus",
+    "sacred-geometry"
+  ],
+  "author": "Cathedral Research Team",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "typescript": "^5.3.0"
+  },
+  "cathedral": {
+    "system": "communication",
+    "sacred_ratio": "144:99",
+    "energy_flow": "continuous"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/inter-app-communicator"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/inter-app-communicator",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:52.573Z",
+  "packageManager": "pnpm@8.0.0"
+}

@@ -1,0 +1,1052 @@
+{
+  "timestamp": 1764485867538,
+  "summary": {
+    "totalPackages": 23,
+    "totalApps": 1,
+    "totalDependencies": 20,
+    "internalRelationships": 26,
+    "externalRelationships": 0
+  },
+  "packages": [
+    {
+      "name": "@cathedral/art-engine-core",
+      "version": "1.0.0",
+      "type": "commonjs",
+      "language": "js",
+      "main": "dist/index.js",
+      "types": "dist/index.d.ts",
+      "exports": {
+        "main": "dist/index.js",
+        "types": "dist/index.d.ts",
+        "modules": []
+      },
+      "dependencies": {
+        "@cathedral/codex-144-99-core": "workspace:*",
+        "@cathedral/sacred-mathematics-core": "workspace:*"
+      },
+      "devDependencies": {
+        "typescript": "^5.0.0"
+      },
+      "peerDependencies": {},
+      "scripts": {
+        "build": "tsc",
+        "test": "echo \"No tests yet\""
+      },
+      "files": {
+        "source": [
+          "src/ArtComposition.ts",
+          "src/ArtEngine.ts",
+          "src/ArtRendering.ts",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [
+          "package.json",
+          "tsconfig.json"
+        ],
+        "docs": [
+          "README.md"
+        ]
+      }
+    },
+    {
+      "name": "@cathedral/art-standards-core",
+      "version": "1.0.0",
+      "type": "commonjs",
+      "language": "js",
+      "main": "dist/index.js",
+      "types": "dist/index.d.ts",
+      "exports": {
+        "main": "dist/index.js",
+        "types": "dist/index.d.ts",
+        "modules": []
+      },
+      "dependencies": {
+        "@cathedral/sacred-mathematics-core": "workspace:*"
+      },
+      "devDependencies": {
+        "typescript": "^5.0.0"
+      },
+      "peerDependencies": {},
+      "scripts": {
+        "build": "tsc",
+        "test": "echo \"No tests yet\""
+      },
+      "files": {
+        "source": [
+          "src/ArtQuality.ts",
+          "src/ArtStandards.ts",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [
+          "package.json",
+          "tsconfig.json"
+        ],
+        "docs": [
+          "README.md"
+        ]
+      }
+    },
+    {
+      "name": "circuitum99-core",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "src/Circuitum99StoryEngine.ts",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "codex-144-99-core",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "src/Codex144Engine.d.ts",
+          "src/Codex144Engine.d.ts.map",
+          "src/Codex144Engine.js",
+          "src/Codex144Engine.js.map",
+          "src/Codex144Engine.ts",
+          "src/Codex144Security.d.ts",
+          "src/Codex144Security.d.ts.map",
+          "src/Codex144Security.js",
+          "src/Codex144Security.js.map",
+          "src/Codex144Security.ts",
+          "src/index.d.ts",
+          "src/index.d.ts.map",
+          "src/index.js",
+          "src/index.js.map",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "consciousness-aware-creative",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "ConsciousnessAwareCreativeEngine.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "@cathedral/debug-system-core",
+      "version": "1.0.0",
+      "type": "commonjs",
+      "language": "js",
+      "main": "dist/index.js",
+      "types": "dist/index.d.ts",
+      "exports": {
+        "main": "dist/index.js",
+        "types": "dist/index.d.ts",
+        "modules": []
+      },
+      "dependencies": {
+        "@cathedral/health-map-core": "workspace:*"
+      },
+      "devDependencies": {
+        "typescript": "^5.0.0",
+        "@types/node": "^20.0.0"
+      },
+      "peerDependencies": {},
+      "scripts": {
+        "build": "tsc",
+        "test": "echo \"No tests yet\""
+      },
+      "files": {
+        "source": [
+          "src/DebugSystem.ts",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [
+          "package.json",
+          "tsconfig.json"
+        ],
+        "docs": [
+          "README.md"
+        ]
+      }
+    },
+    {
+      "name": "design-mathematics-core",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "fusion-kink-core",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "src/FusionKinkDesignMathematics.d.ts",
+          "src/FusionKinkDesignMathematics.d.ts.map",
+          "src/FusionKinkDesignMathematics.js",
+          "src/FusionKinkDesignMathematics.js.map",
+          "src/FusionKinkDesignMathematics.ts",
+          "src/index.d.ts",
+          "src/index.d.ts.map",
+          "src/index.js",
+          "src/index.js.map",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "@cathedral/game-design-core",
+      "version": "1.0.0",
+      "type": "commonjs",
+      "language": "js",
+      "main": "dist/index.js",
+      "types": "dist/index.d.ts",
+      "exports": {
+        "main": "dist/index.js",
+        "types": "dist/index.d.ts",
+        "modules": []
+      },
+      "dependencies": {
+        "@cathedral/codex-144-99-core": "workspace:*",
+        "@cathedral/sacred-mathematics-core": "workspace:*"
+      },
+      "devDependencies": {
+        "typescript": "^5.0.0"
+      },
+      "peerDependencies": {},
+      "scripts": {
+        "build": "tsc",
+        "test": "echo \"No tests yet\""
+      },
+      "files": {
+        "source": [
+          "src/GameDesignEngine.ts",
+          "src/GameMechanics.ts",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [
+          "package.json",
+          "tsconfig.json"
+        ],
+        "docs": [
+          "README.md"
+        ]
+      }
+    },
+    {
+      "name": "game-mathematics-core",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "@cathedral/health-map-core",
+      "version": "1.0.0",
+      "type": "commonjs",
+      "language": "js",
+      "main": "dist/index.js",
+      "types": "dist/index.d.ts",
+      "exports": {
+        "main": "dist/index.js",
+        "types": "dist/index.d.ts",
+        "modules": []
+      },
+      "dependencies": {},
+      "devDependencies": {
+        "typescript": "^5.0.0",
+        "@types/node": "^20.0.0",
+        "glob": "^10.3.10"
+      },
+      "peerDependencies": {},
+      "scripts": {
+        "build": "tsc",
+        "test": "echo \"No tests yet\""
+      },
+      "files": {
+        "source": [
+          "src/HealthMapEngine.ts",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [
+          "package.json",
+          "tsconfig.json"
+        ],
+        "docs": [
+          "README.md"
+        ]
+      }
+    },
+    {
+      "name": "liber-arcanae-core",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "src/LiberArcanaeDesignMode.d.ts",
+          "src/LiberArcanaeDesignMode.d.ts.map",
+          "src/LiberArcanaeDesignMode.js",
+          "src/LiberArcanaeDesignMode.js.map",
+          "src/LiberArcanaeDesignMode.ts",
+          "src/LiberArcanaeEngine.d.ts",
+          "src/LiberArcanaeEngine.d.ts.map",
+          "src/LiberArcanaeEngine.js",
+          "src/LiberArcanaeEngine.js.map",
+          "src/LiberArcanaeEngine.ts",
+          "src/LiberArcanaeRPG.d.ts",
+          "src/LiberArcanaeRPG.d.ts.map",
+          "src/LiberArcanaeRPG.js",
+          "src/LiberArcanaeRPG.js.map",
+          "src/LiberArcanaeRPG.ts",
+          "src/LiberArcanaeSecurity.d.ts",
+          "src/LiberArcanaeSecurity.d.ts.map",
+          "src/LiberArcanaeSecurity.js",
+          "src/LiberArcanaeSecurity.js.map",
+          "src/LiberArcanaeSecurity.ts",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "@cathedral/music-engine-core",
+      "version": "1.0.0",
+      "type": "commonjs",
+      "language": "js",
+      "main": "dist/index.js",
+      "types": "dist/index.d.ts",
+      "exports": {
+        "main": "dist/index.js",
+        "types": "dist/index.d.ts",
+        "modules": []
+      },
+      "dependencies": {
+        "@cathedral/codex-144-99-core": "workspace:*",
+        "@cathedral/sacred-mathematics-core": "workspace:*"
+      },
+      "devDependencies": {
+        "typescript": "^5.0.0"
+      },
+      "peerDependencies": {},
+      "scripts": {
+        "build": "tsc",
+        "test": "echo \"No tests yet\""
+      },
+      "files": {
+        "source": [
+          "src/MusicComposition.ts",
+          "src/MusicEngine.ts",
+          "src/MusicPerformance.ts",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [
+          "package.json",
+          "tsconfig.json"
+        ],
+        "docs": [
+          "README.md"
+        ]
+      }
+    },
+    {
+      "name": "mystery-house-core",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "src/MysteryHouseEngine.ts",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "sacred-mathematics-core",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "src/index.d.ts",
+          "src/index.d.ts.map",
+          "src/index.js",
+          "src/index.js.map",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "@cathedral/science-engine-core",
+      "version": "1.0.0",
+      "type": "commonjs",
+      "language": "js",
+      "main": "dist/index.js",
+      "types": "dist/index.d.ts",
+      "exports": {
+        "main": "dist/index.js",
+        "types": "dist/index.d.ts",
+        "modules": []
+      },
+      "dependencies": {
+        "@cathedral/codex-144-99-core": "workspace:*",
+        "@cathedral/sacred-mathematics-core": "workspace:*"
+      },
+      "devDependencies": {
+        "typescript": "^5.0.0"
+      },
+      "peerDependencies": {},
+      "scripts": {
+        "build": "tsc",
+        "test": "echo \"No tests yet\""
+      },
+      "files": {
+        "source": [
+          "src/ScienceAnalysis.ts",
+          "src/ScienceEngine.ts",
+          "src/ScienceVisualization.ts",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [
+          "package.json",
+          "tsconfig.json"
+        ],
+        "docs": [
+          "README.md"
+        ]
+      }
+    },
+    {
+      "name": "sound-mathematics-core",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "stone-grimoire-core",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "src/StoneGrimoireEngine.ts",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "synth-design-math-core",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "tesseract-bridge-core",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "src/TesseractBridge.d.ts",
+          "src/TesseractBridge.d.ts.map",
+          "src/TesseractBridge.js",
+          "src/TesseractBridge.js.map",
+          "src/TesseractBridge.ts",
+          "src/index.d.ts",
+          "src/index.d.ts.map",
+          "src/index.js",
+          "src/index.js.map",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "@cathedral/tesseract-bridge-hub",
+      "version": "1.0.0",
+      "type": "commonjs",
+      "language": "js",
+      "main": "dist/index.js",
+      "types": "dist/index.d.ts",
+      "exports": {
+        "main": "dist/index.js",
+        "types": "dist/index.d.ts",
+        "modules": []
+      },
+      "dependencies": {
+        "@cathedral/tesseract-bridge-core": "workspace:*",
+        "@cathedral/liber-arcanae-core": "workspace:*",
+        "@cathedral/codex-144-99-core": "workspace:*",
+        "@cathedral/circuitum99-core": "workspace:*",
+        "@cathedral/stone-grimoire-core": "workspace:*",
+        "@cathedral/mystery-house-core": "workspace:*"
+      },
+      "devDependencies": {
+        "typescript": "^5.0.0",
+        "@types/node": "^20.0.0"
+      },
+      "peerDependencies": {},
+      "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "start": "node dist/server.js"
+      },
+      "files": {
+        "source": [
+          "src/TesseractHub.ts",
+          "src/index.ts",
+          "src/server.ts"
+        ],
+        "tests": [],
+        "config": [
+          "package.json",
+          "tsconfig.json"
+        ],
+        "docs": []
+      }
+    },
+    {
+      "name": "trinity-v1-1-core",
+      "version": "unknown",
+      "type": "legacy",
+      "language": "js",
+      "files": {
+        "source": [
+          "TrinityV11Core.ts",
+          "apply-security-fixes-monorepo.d.ts",
+          "connections.ts",
+          "consciousness-mapper.ts",
+          "creative-optimizer.ts",
+          "cross-component-sync.ts",
+          "error-handler.ts",
+          "flow-state-detector.ts",
+          "fractal-sound-synthesizer.ts",
+          "logger.ts",
+          "memory-palace-manager.ts",
+          "narrative-thread-manager.ts",
+          "pattern-recognizer.ts",
+          "performance-optimizer.ts",
+          "real-time-monitor.ts",
+          "skill-mastery-tracker.ts",
+          "state-persister.ts"
+        ],
+        "tests": [],
+        "config": [],
+        "docs": []
+      },
+      "dependencies": {}
+    },
+    {
+      "name": "@cathedral/unified-codex-core",
+      "version": "1.0.0",
+      "type": "commonjs",
+      "language": "js",
+      "main": "dist/index.js",
+      "types": "dist/index.d.ts",
+      "exports": {
+        "main": "dist/index.js",
+        "types": "dist/index.d.ts",
+        "modules": []
+      },
+      "dependencies": {
+        "@cathedral/codex-144-99-core": "workspace:*",
+        "@cathedral/stone-grimoire-core": "workspace:*",
+        "@cathedral/mystery-house-core": "workspace:*",
+        "@cathedral/liber-arcanae-core": "workspace:*",
+        "@cathedral/sacred-mathematics-core": "workspace:*",
+        "@cathedral/music-engine-core": "workspace:*",
+        "@cathedral/art-engine-core": "workspace:*",
+        "@cathedral/science-engine-core": "workspace:*",
+        "@cathedral/art-standards-core": "workspace:*",
+        "@cathedral/game-design-core": "workspace:*"
+      },
+      "devDependencies": {},
+      "peerDependencies": {},
+      "scripts": {
+        "build": "tsc",
+        "test": "echo \"No tests yet\""
+      },
+      "files": {
+        "source": [
+          "src/UnifiedCodexEngine.ts",
+          "src/index.ts"
+        ],
+        "tests": [],
+        "config": [
+          "package.json",
+          "tsconfig.json"
+        ],
+        "docs": []
+      }
+    }
+  ],
+  "apps": [
+    {
+      "name": "@cathedral/web",
+      "version": "1.0.0",
+      "type": "commonjs",
+      "language": "js",
+      "exports": {
+        "main": null,
+        "types": null,
+        "modules": []
+      },
+      "dependencies": {
+        "next": "^14.0.0",
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "three": "^0.160.0",
+        "@react-three/fiber": "^8.15.0",
+        "@react-three/drei": "^9.88.0",
+        "@cathedral/codex-144-99-core": "workspace:*",
+        "@cathedral/unified-codex-core": "workspace:*",
+        "@cathedral/stone-grimoire-core": "workspace:*",
+        "@cathedral/mystery-house-core": "workspace:*",
+        "@cathedral/liber-arcanae-core": "workspace:*",
+        "@cathedral/music-engine-core": "workspace:*",
+        "@cathedral/art-engine-core": "workspace:*",
+        "@cathedral/science-engine-core": "workspace:*",
+        "@cathedral/art-standards-core": "workspace:*",
+        "@cathedral/game-design-core": "workspace:*"
+      },
+      "devDependencies": {
+        "@types/node": "^20.0.0",
+        "@types/react": "^18.0.0",
+        "@types/react-dom": "^18.0.0",
+        "@types/three": "^0.160.0",
+        "typescript": "^5.0.0",
+        "tailwindcss": "^3.4.0",
+        "autoprefixer": "^10.4.0",
+        "postcss": "^8.4.0"
+      },
+      "peerDependencies": {},
+      "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+      },
+      "files": {
+        "source": [],
+        "tests": [],
+        "config": [
+          "package.json"
+        ],
+        "docs": [
+          "README.md"
+        ]
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "@cathedral/codex-144-99-core",
+      "packages": [
+        "art-engine-core",
+        "game-design-core",
+        "music-engine-core",
+        "science-engine-core",
+        "tesseract-bridge-hub",
+        "unified-codex-core"
+      ],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "@cathedral/sacred-mathematics-core",
+      "packages": [
+        "art-engine-core",
+        "art-standards-core",
+        "game-design-core",
+        "music-engine-core",
+        "science-engine-core",
+        "unified-codex-core"
+      ],
+      "apps": []
+    },
+    {
+      "name": "@cathedral/health-map-core",
+      "packages": [
+        "debug-system-core"
+      ],
+      "apps": []
+    },
+    {
+      "name": "@cathedral/tesseract-bridge-core",
+      "packages": [
+        "tesseract-bridge-hub"
+      ],
+      "apps": []
+    },
+    {
+      "name": "@cathedral/liber-arcanae-core",
+      "packages": [
+        "tesseract-bridge-hub",
+        "unified-codex-core"
+      ],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "@cathedral/circuitum99-core",
+      "packages": [
+        "tesseract-bridge-hub"
+      ],
+      "apps": []
+    },
+    {
+      "name": "@cathedral/stone-grimoire-core",
+      "packages": [
+        "tesseract-bridge-hub",
+        "unified-codex-core"
+      ],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "@cathedral/mystery-house-core",
+      "packages": [
+        "tesseract-bridge-hub",
+        "unified-codex-core"
+      ],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "@cathedral/music-engine-core",
+      "packages": [
+        "unified-codex-core"
+      ],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "@cathedral/art-engine-core",
+      "packages": [
+        "unified-codex-core"
+      ],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "@cathedral/science-engine-core",
+      "packages": [
+        "unified-codex-core"
+      ],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "@cathedral/art-standards-core",
+      "packages": [
+        "unified-codex-core"
+      ],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "@cathedral/game-design-core",
+      "packages": [
+        "unified-codex-core"
+      ],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "next",
+      "packages": [],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "react",
+      "packages": [],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "react-dom",
+      "packages": [],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "three",
+      "packages": [],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "@react-three/fiber",
+      "packages": [],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "@react-three/drei",
+      "packages": [],
+      "apps": [
+        "web"
+      ]
+    },
+    {
+      "name": "@cathedral/unified-codex-core",
+      "packages": [],
+      "apps": [
+        "web"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "art-engine-core",
+      "to": "@cathedral/codex-144-99-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "art-engine-core",
+      "to": "@cathedral/sacred-mathematics-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "art-standards-core",
+      "to": "@cathedral/sacred-mathematics-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "debug-system-core",
+      "to": "@cathedral/health-map-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "game-design-core",
+      "to": "@cathedral/codex-144-99-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "game-design-core",
+      "to": "@cathedral/sacred-mathematics-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "music-engine-core",
+      "to": "@cathedral/codex-144-99-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "music-engine-core",
+      "to": "@cathedral/sacred-mathematics-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "science-engine-core",
+      "to": "@cathedral/codex-144-99-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "science-engine-core",
+      "to": "@cathedral/sacred-mathematics-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "tesseract-bridge-hub",
+      "to": "@cathedral/tesseract-bridge-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "tesseract-bridge-hub",
+      "to": "@cathedral/liber-arcanae-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "tesseract-bridge-hub",
+      "to": "@cathedral/codex-144-99-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "tesseract-bridge-hub",
+      "to": "@cathedral/circuitum99-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "tesseract-bridge-hub",
+      "to": "@cathedral/stone-grimoire-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "tesseract-bridge-hub",
+      "to": "@cathedral/mystery-house-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "unified-codex-core",
+      "to": "@cathedral/codex-144-99-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "unified-codex-core",
+      "to": "@cathedral/stone-grimoire-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "unified-codex-core",
+      "to": "@cathedral/mystery-house-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "unified-codex-core",
+      "to": "@cathedral/liber-arcanae-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "unified-codex-core",
+      "to": "@cathedral/sacred-mathematics-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "unified-codex-core",
+      "to": "@cathedral/music-engine-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "unified-codex-core",
+      "to": "@cathedral/art-engine-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "unified-codex-core",
+      "to": "@cathedral/science-engine-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "unified-codex-core",
+      "to": "@cathedral/art-standards-core",
+      "type": "dependency",
+      "scope": "internal"
+    },
+    {
+      "from": "unified-codex-core",
+      "to": "@cathedral/game-design-core",
+      "type": "dependency",
+      "scope": "internal"
+    }
+  ]
+}

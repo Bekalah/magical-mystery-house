@@ -1,0 +1,227 @@
+/**
+ * Sacred mathematics: 144:99 ratio, golden ratio, Fibonacci - foundational
+ */
+/**
+ * ND joy: Central to all tools - honors neurodivergent creative expression
+ */
+/**
+ * @author Rebecca Respawn
+ */
+/**
+ * @license CC0-1.0 - Public Domain
+ */
+
+#!/usr/bin/env node
+
+/**
+ * Check Consistency Tool
+ * Ensures consistency across the codebase
+ */
+
+import fs from 'fs';
+import path from 'path';
+
+const BASE_DIR = '/Users/rebeccalemke/cathedral-master-deployment';
+
+const CONSISTENCY_CHECKS = [
+  {
+    name: 'Package.json version consistency',
+    check: (filePath) => {
+      if (!filePath.endsWith('package.json')) return null;
+      try {
+        const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+        const issues = [];
+        
+        // Check for placeholder versions
+        if (content.version === '0.0.0' || content.version === '1.0.0') {
+          issues.push('Placeholder version detected');
+        }
+        
+        // Check for missing required fields
+        if (!content.name) issues.push('Missing name field');
+        if (!content.version) issues.push('Missing version field');
+        
+        return issues.length > 0 ? issues : null;
+      } catch {
+        return null;
+      }
+    }
+  },
+  {
+    name: 'Import path consistency',
+    check: (filePath) => {
+      if (!filePath.match(/\.(ts|tsx|js|jsx)$/)) return null;
+      try {
+        const content = fs.readFileSync(filePath, 'utf-8');
+        const issues = [];
+        
+        // Check for inconsistent import styles
+        const hasRequire = /require\s*\(/.test(content);
+        const hasImport = /^import\s+/.test(content);
+        
+        if (hasRequire && hasImport) {
+          issues.push('Mixed require() and import statements');
+        }
+        
+        // Check for relative path depth
+        const deepRelative = /from\s+['"]\.\.\/\.\.\/\.\.\/\.\./.test(content);
+        if (deepRelative) {
+          issues.push('Very deep relative imports (consider workspace imports)');
+        }
+        
+        return issues.length > 0 ? issues : null;
+      } catch {
+        return null;
+      }
+    }
+  },
+  {
+    name: 'File naming consistency',
+    check: (filePath) => {
+      const fileName = path.basename(filePath);
+      const issues = [];
+      
+      // Check for inconsistent casing
+      if (fileName !== fileName.toLowerCase() && fileName !== fileName.toUpperCase()) {
+        const hasCamelCase = /[a-z][A-Z]/.test(fileName);
+        const hasKebabCase = /-/.test(fileName);
+        const hasSnakeCase = /_/.test(fileName);
+        
+        if ([hasCamelCase, hasKebabCase, hasSnakeCase].filter(Boolean).length > 1) {
+          issues.push('Inconsistent naming convention');
+        }
+      }
+      
+      return issues.length > 0 ? issues : null;
+    }
+  },
+  {
+    name: 'Error handling consistency',
+    check: (filePath) => {
+      if (!filePath.match(/\.(ts|tsx|js|jsx)$/)) return null;
+      try {
+        const content = fs.readFileSync(filePath, 'utf-8');
+        const issues = [];
+        
+        // Check for empty catch blocks
+        if (/catch\s*\([^)]*\)\s*\{\s*\}/.test(content)) {
+          issues.push('Empty catch blocks found');
+        }
+        
+        // Check for console.error without proper logging
+        const hasConsoleError = /console\.error\(/.test(content);
+        const hasLogger = /logger\.(error|warn)\(/.test(content);
+        if (hasConsoleError && !hasLogger) {
+          issues.push('Using console.error instead of logger utility');
+        }
+        
+        return issues.length > 0 ? issues : null;
+      } catch {
+        return null;
+      }
+    }
+  }
+];
+
+function findFiles(dir, extensions = ['.ts', '.tsx', '.js', '.jsx', '.json'], maxDepth = 10) {
+  const files = [];
+  
+  function search(currentDir, depth = 0) {
+    if (depth > maxDepth) return;
+    
+    try {
+      const entries = fs.readdirSync(currentDir);
+      for (const entry of entries) {
+        if (entry.startsWith('.') || entry === 'node_modules' || entry === 'dist') {
+          continue;
+        }
+        
+        const fullPath = path.join(currentDir, entry);
+        const stat = fs.statSync(fullPath);
+        
+        if (stat.isDirectory()) {
+          search(fullPath, depth + 1);
+        } else if (extensions.some(ext => entry.endsWith(ext))) {
+          files.push(fullPath);
+        }
+      }
+    } catch {
+      // Skip
+    }
+  }
+  
+  search(dir);
+  return files;
+}
+
+async function main() {
+  const target = process.argv[2] || BASE_DIR;
+
+  logger.info('🔍 Consistency Check Tool');
+  logger.info('='.repeat(60));
+  logger.info('');
+  logger.info(`📁 Scanning ${target}...\n`);
+
+  if (!fs.existsSync(target)) {
+    logger.error(`❌ Directory not found: ${target}`);
+    process.exit(1);
+  }
+
+  const files = findFiles(target);
+  logger.info(`Found ${files.length} files to check\n`);
+
+  const allIssues = [];
+  let filesWithIssues = 0;
+
+  for (const file of files.slice(0, 200)) {
+    const fileIssues = [];
+    
+    for (const check of CONSISTENCY_CHECKS) {
+      const issues = check.check(file);
+      if (issues) {
+        fileIssues.push({
+          check: check.name,
+          issues
+        });
+      }
+    }
+    
+    if (fileIssues.length > 0) {
+      filesWithIssues++;
+      const relPath = path.relative(target, file);
+      
+      logger.info(`⚠️  ${relPath}:`);
+      fileIssues.forEach(({ check, issues }) => {
+        logger.info(`   • ${check}:`);
+        issues.forEach(issue => {
+          logger.info(`     - ${issue}`);
+        });
+      });
+      logger.info('');
+      
+      allIssues.push({ file: relPath, issues: fileIssues });
+    }
+  }
+
+  // Summary
+  const totalIssues = allIssues.reduce((sum, f) => 
+    sum + f.issues.reduce((s, i) => s + i.issues.length, 0), 0);
+
+  logger.info('📊 Consistency Summary:');
+  logger.info(`   📁 Files scanned: ${files.length}`);
+  logger.info(`   ⚠️  Files with issues: ${filesWithIssues}`);
+  logger.info(`   🔍 Total issues: ${totalIssues}`);
+  logger.info('');
+
+  if (totalIssues === 0) {
+    logger.info('✅ All consistency checks passed!');
+  } else {
+    logger.info('💡 Review and fix issues for better codebase consistency');
+  }
+}
+
+main().catch(error => {
+  logger.error('❌ Error:', error.message);
+  process.exit(1);
+});
+

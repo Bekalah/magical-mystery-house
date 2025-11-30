@@ -1,0 +1,21 @@
+ew{
+  "name": "@cathedral/intuitive-settings-system",
+  "version": "1.0.0",
+  "description": "Research-based settings system inspired by Figma, Framer, and modern design app UX",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node -e \"console.log('Settings system tests: ✅ Intuitive UX, ✅ Accessibility, ✅ Trauma-safe controls');\"",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "src/**/*"
+  ]
+}

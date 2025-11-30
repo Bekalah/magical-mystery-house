@@ -1,0 +1,5107 @@
+{
+  "timestamp": "2025-11-28T18:06:22.899Z",
+  "repos": {
+    "cathedral-master-deployment": {
+      "path": "/Users/rebeccalemke/cathedral-master-deployment",
+      "docs": [
+        {
+          "file": "docs/ACTIVE_IMPROVEMENTS.md",
+          "size": 4471,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/ALIGNMENT_SYSTEM_SUMMARY.md",
+          "size": 4616,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/ALL_BROKEN_FEATURES_FIXED.md",
+          "size": 6002,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/ARISTOCRATIC_AESTHETICS_STANDARDS.md",
+          "size": 7677,
+          "keywords": [
+            "collective creative",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/AUTO_RUN_STATUS.md",
+          "size": 4728,
+          "keywords": []
+        },
+        {
+          "file": "docs/CIRCUITUM99_ENHANCEMENT_PLAN.md",
+          "size": 3863,
+          "keywords": [
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/CODEX_144_99_ENHANCEMENT_PLAN.md",
+          "size": 5140,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/COMMAND_REFERENCE.md",
+          "size": 9694,
+          "keywords": []
+        },
+        {
+          "file": "docs/COMPLETE_LEARNING_AND_CHANGES_REPORT.md",
+          "size": 13953,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/COMPLETE_SYSTEM_STATUS.md",
+          "size": 4065,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/COMPLETE_VISION (Connects to sacred mathematics) (Enhances organic creative process)_UNDERSTANDING.md",
+          "size": 7952,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "neurodivergent",
+            "collective creative",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/COMPREHENSIVE_IMPROVEMENT_SUMMARY.md",
+          "size": 8946,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/CONSOLIDATED_SUMMARY.md",
+          "size": 1659,
+          "keywords": []
+        },
+        {
+          "file": "docs/CONTINUOUS_IMPROVEMENT_STATUS.md",
+          "size": 4001,
+          "keywords": [
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/CONTINUOUS_LEARNING_AND_LIVE_UPDATES.md",
+          "size": 5409,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/CREATED_TOOLS_SUMMARY.md",
+          "size": 8001,
+          "keywords": [
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/CURRENT_ACTIVITY.md",
+          "size": 2824,
+          "keywords": []
+        },
+        {
+          "file": "docs/CURRENT_STATUS.md",
+          "size": 5171,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/DEDUCED_IMPROVEMENTS.md",
+          "size": 7824,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/DEPLOYMENT_REPORT.md",
+          "size": 6533,
+          "keywords": [
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/DEVELOPER_GUIDE.md",
+          "size": 10022,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/ENHANCEMENTS_SUMMARY.md",
+          "size": 10070,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/ENTERPRISE_STANDARD_CHECKLIST.md",
+          "size": 3580,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/EXPERIMENT_RUNNING.md",
+          "size": 4122,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/FUSION_KINK_ENHANCEMENT_PLAN.md",
+          "size": 3432,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/GITHUB_SETUP.md",
+          "size": 6077,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/HOW_LEARNED_INFO_WILL_BE_USED.md",
+          "size": 9744,
+          "keywords": [
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/IMPROVEMENTS_CONFIRMED.md",
+          "size": 4622,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/IMPROVEMENTS_SUMMARY.md",
+          "size": 4330,
+          "keywords": []
+        },
+        {
+          "file": "docs/INDEPENDENT_OPERATION.md",
+          "size": 4784,
+          "keywords": []
+        },
+        {
+          "file": "docs/INTEGRATION_COMPLETE.md",
+          "size": 2695,
+          "keywords": []
+        },
+        {
+          "file": "docs/INTEGRATION_GUIDE.md",
+          "size": 4595,
+          "keywords": []
+        },
+        {
+          "file": "docs/LEARNED_ABOUT_USER.md",
+          "size": 10329,
+          "keywords": [
+            "neurodivergent",
+            "collective creative",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/LEARNING_REPORT.md",
+          "size": 4674,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/LIBER_ARCANAE_ENHANCEMENT_PLAN.md",
+          "size": 3397,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/LIVE_STATUS_AND_LEARNINGS.md",
+          "size": 8255,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/LOCKUP_FIXES_APPLIED.md",
+          "size": 3817,
+          "keywords": []
+        },
+        {
+          "file": "docs/MASTER_STANDARDS_COMPLIANCE.md",
+          "size": 5244,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/MONOREPO_IMPROVEMENT_PLAN.md",
+          "size": 6087,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/MONOREPO_IMPROVEMENT_REPORT.md",
+          "size": 3393,
+          "keywords": [
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/MORNING_IMPROVEMENTS_SUMMARY.md",
+          "size": 5152,
+          "keywords": [
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/MORNING_WORK_SUMMARY.md",
+          "size": 7978,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/MYSTERY_HOUSE_ENHANCEMENT_PLAN.md",
+          "size": 3833,
+          "keywords": [
+            "esoteric",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/NIGHTLY_IMPROVEMENTS.md",
+          "size": 4249,
+          "keywords": []
+        },
+        {
+          "file": "docs/NIGHTLY_RUN_CONFIRMED.md",
+          "size": 3943,
+          "keywords": []
+        },
+        {
+          "file": "docs/NIGHTLY_RUN_STATUS.md",
+          "size": 3649,
+          "keywords": []
+        },
+        {
+          "file": "docs/ONGOING_IMPROVEMENTS.md",
+          "size": 2968,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/PHASE_2_ENHANCEMENTS.md",
+          "size": 2370,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/PLAN_EXECUTION_COMPLETE.md",
+          "size": 2794,
+          "keywords": []
+        },
+        {
+          "file": "docs/PLAN_EXECUTION_CONTINUING.md",
+          "size": 3446,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/PLAN_EXECUTION_FINAL_REPORT.md",
+          "size": 5636,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/PLAN_EXECUTION_FINAL_STATUS.md",
+          "size": 4314,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/PLAN_EXECUTION_FIXES_APPLIED.md",
+          "size": 2351,
+          "keywords": [
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/PLAN_EXECUTION_STATUS.md",
+          "size": 1702,
+          "keywords": []
+        },
+        {
+          "file": "docs/PLAN_EXECUTION_SUMMARY.md",
+          "size": 2378,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/PLAN_IMPLEMENTATION_COMPLETE.md",
+          "size": 5908,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/PROJECT_COMPLETION_REPORT.md",
+          "size": 8602,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/README.md",
+          "size": 2319,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/REBECCA_RESPAWN_TOOLS_SUMMARY.md",
+          "size": 3787,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/RECENT_IMPROVEMENTS.md",
+          "size": 4023,
+          "keywords": [
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/REFERENCE_MAP.md",
+          "size": 3916,
+          "keywords": []
+        },
+        {
+          "file": "docs/STONE_GRIMOIRE_ENHANCEMENT_PLAN.md",
+          "size": 3524,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/SYNTH_DESIGN_MATH_CONNECTION.md",
+          "size": 5719,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/TESSERACT_BRIDGE_ENHANCEMENT_PLAN.md",
+          "size": 3934,
+          "keywords": [
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/TOOLS.md",
+          "size": 1886,
+          "keywords": []
+        },
+        {
+          "file": "docs/VERIFICATION_REPORT.md",
+          "size": 7551,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/VISIONARY_ART_VISION.md",
+          "size": 6557,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/WHAT_IM_DOING_AND_LEARNING.md",
+          "size": 10192,
+          "keywords": [
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/WHAT_IM_DOING_AND_LEARNING_FINAL.md",
+          "size": 9402,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/WHAT_IM_DOING_NOW.md",
+          "size": 6259,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/integration/COMPLETE_INTEGRATION_GUIDE.md",
+          "size": 5967,
+          "keywords": [
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/mathematical-foundation/COMPLETE_MATH_SPEC.md",
+          "size": 7077,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/mathematical-foundation/README.md",
+          "size": 4496,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/tools/TOOLS.md",
+          "size": 7487,
+          "keywords": []
+        }
+      ],
+      "stories": [],
+      "visionFiles": [
+        "docs/ACTIVE_IMPROVEMENTS.md",
+        "docs/ALIGNMENT_SYSTEM_SUMMARY.md",
+        "docs/ALL_BROKEN_FEATURES_FIXED.md",
+        "docs/ARISTOCRATIC_AESTHETICS_STANDARDS.md",
+        "docs/CIRCUITUM99_ENHANCEMENT_PLAN.md",
+        "docs/CODEX_144_99_ENHANCEMENT_PLAN.md",
+        "docs/COMPLETE_LEARNING_AND_CHANGES_REPORT.md",
+        "docs/COMPLETE_SYSTEM_STATUS.md",
+        "docs/COMPLETE_VISION_UNDERSTANDING.md",
+        "docs/COMPREHENSIVE_IMPROVEMENT_SUMMARY.md",
+        "docs/CONTINUOUS_IMPROVEMENT_STATUS.md",
+        "docs/CONTINUOUS_LEARNING_AND_LIVE_UPDATES.md",
+        "docs/CREATED_TOOLS_SUMMARY.md",
+        "docs/CURRENT_STATUS.md",
+        "docs/DEDUCED_IMPROVEMENTS.md",
+        "docs/DEPLOYMENT_REPORT.md",
+        "docs/DEVELOPER_GUIDE.md",
+        "docs/ENHANCEMENTS_SUMMARY.md",
+        "docs/ENTERPRISE_STANDARD_CHECKLIST.md",
+        "docs/EXPERIMENT_RUNNING.md",
+        "docs/FUSION_KINK_ENHANCEMENT_PLAN.md",
+        "docs/GITHUB_SETUP.md",
+        "docs/HOW_LEARNED_INFO_WILL_BE_USED.md",
+        "docs/IMPROVEMENTS_CONFIRMED.md",
+        "docs/LEARNED_ABOUT_USER.md",
+        "docs/LEARNING_REPORT.md",
+        "docs/LIBER_ARCANAE_ENHANCEMENT_PLAN.md",
+        "docs/LIVE_STATUS_AND_LEARNINGS.md",
+        "docs/MASTER_STANDARDS_COMPLIANCE.md",
+        "docs/MONOREPO_IMPROVEMENT_PLAN.md",
+        "docs/MONOREPO_IMPROVEMENT_REPORT.md",
+        "docs/MORNING_IMPROVEMENTS_SUMMARY.md",
+        "docs/MORNING_WORK_SUMMARY.md",
+        "docs/MYSTERY_HOUSE_ENHANCEMENT_PLAN.md",
+        "docs/ONGOING_IMPROVEMENTS.md",
+        "docs/PHASE_2_ENHANCEMENTS.md",
+        "docs/PLAN_EXECUTION_CONTINUING.md",
+        "docs/PLAN_EXECUTION_FINAL_REPORT.md",
+        "docs/PLAN_EXECUTION_FINAL_STATUS.md",
+        "docs/PLAN_EXECUTION_FIXES_APPLIED.md",
+        "docs/PLAN_EXECUTION_SUMMARY.md",
+        "docs/PLAN_IMPLEMENTATION_COMPLETE.md",
+        "docs/PROJECT_COMPLETION_REPORT.md",
+        "docs/README.md",
+        "docs/REBECCA_RESPAWN_TOOLS_SUMMARY.md",
+        "docs/RECENT_IMPROVEMENTS.md",
+        "docs/STONE_GRIMOIRE_ENHANCEMENT_PLAN.md",
+        "docs/SYNTH_DESIGN_MATH_CONNECTION.md",
+        "docs/TESSERACT_BRIDGE_ENHANCEMENT_PLAN.md",
+        "docs/VERIFICATION_REPORT.md",
+        "docs/VISIONARY_ART_VISION.md",
+        "docs/WHAT_IM_DOING_AND_LEARNING.md",
+        "docs/WHAT_IM_DOING_AND_LEARNING_FINAL.md",
+        "docs/WHAT_IM_DOING_NOW.md",
+        "docs/integration/COMPLETE_INTEGRATION_GUIDE.md",
+        "docs/mathematical-foundation/COMPLETE_MATH_SPEC.md",
+        "docs/mathematical-foundation/README.md"
+      ]
+    },
+    "cathedral-fixed-clean": {
+      "path": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "docs": [
+        {
+          "file": "docs/ACCESSIBILITY_AND_MEMORY_SUPPORT.md",
+          "size": 9554,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/AGENT_MEMORY_REMINDER.md",
+          "size": 805,
+          "keywords": []
+        },
+        {
+          "file": "docs/AGENT_RUN_REPORT_2025-10-30.md",
+          "size": 1961,
+          "keywords": []
+        },
+        {
+          "file": "docs/ARCHITECTURE.md",
+          "size": 7592,
+          "keywords": [
+            "I Ching",
+            "esoteric",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/CHIRON_HEALING_CODEX.md",
+          "size": 8788,
+          "keywords": [
+            "ND joy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/CLOUDFLARE_SETUP.md",
+          "size": 2684,
+          "keywords": []
+        },
+        {
+          "file": "docs/CODEX_144_99_ABYSSIAE.md",
+          "size": 8042,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/CONTINUED_RESEARCH_DOCUMENTATION.md",
+          "size": 7353,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/CONTRIBUTING.md",
+          "size": 8315,
+          "keywords": [
+            "neurodivergent"
+          ]
+        },
+        {
+          "file": "docs/CREATIVE_PROCESS_SOLVE_ET_COAGULA.md",
+          "size": 7232,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/DEVOPS_MERGE.md",
+          "size": 3274,
+          "keywords": []
+        },
+        {
+          "file": "docs/EXPANSION_PLAN.md",
+          "size": 3568,
+          "keywords": [
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/FREE_DEPLOYMENT_GUIDE.md",
+          "size": 5593,
+          "keywords": []
+        },
+        {
+          "file": "docs/HARMONIC_CONVERGENCE_SLEEP.md",
+          "size": 4058,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/INFRASTRUCTURE_COMPLETE.md",
+          "size": 4146,
+          "keywords": [
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/JEWEL_OF_INDRA_LATTICE.md",
+          "size": 4584,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/LATTICE_LINKS.md",
+          "size": 2809,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/LICENSE-CONTENT.md",
+          "size": 5467,
+          "keywords": [
+            "neurodivergent",
+            "esoteric",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/MEMORY_CREATIVE_PROCESS.md",
+          "size": 7357,
+          "keywords": [
+            "sacred geometry",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/MONETIZATION_STRATEGY.md",
+          "size": 4963,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/MOONCHILD_EGREGORE_SYSTEM.md",
+          "size": 16344,
+          "keywords": [
+            "alchemy"
+          ]
+        },
+        {
+          "file": "docs/NODE_VALIDATION_LOCKING_SYSTEM.md",
+          "size": 12367,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/PERMANENT_SESSION_RECORDS.md",
+          "size": 8093,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "ND joy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/PLUTO_CODEX_MASTER_STATUS.md",
+          "size": 7006,
+          "keywords": [
+            "alchemy",
+            "ND joy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/PRODUCTION_STANDARDS.md",
+          "size": 7742,
+          "keywords": []
+        },
+        {
+          "file": "docs/PROTECT.md",
+          "size": 3967,
+          "keywords": []
+        },
+        {
+          "file": "docs/PROTECTION_AND_PRIVACY_SYSTEM.md",
+          "size": 10590,
+          "keywords": [
+            "ND joy",
+            "neurodivergent"
+          ]
+        },
+        {
+          "file": "docs/PROVENANCE_MANIFEST_V1.md",
+          "size": 2852,
+          "keywords": []
+        },
+        {
+          "file": "docs/PUBLISHING_INFRASTRUCTURE.md",
+          "size": 2274,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/QUALITY_GUARDIAN_SYSTEM.md",
+          "size": 13119,
+          "keywords": []
+        },
+        {
+          "file": "docs/QUICK_START_MAP.md",
+          "size": 4134,
+          "keywords": []
+        },
+        {
+          "file": "docs/README.md",
+          "size": 2015,
+          "keywords": [
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/README_CATHEDRAL_NOTE.md",
+          "size": 255,
+          "keywords": []
+        },
+        {
+          "file": "docs/README_DEDUPER.md",
+          "size": 345,
+          "keywords": []
+        },
+        {
+          "file": "docs/README_RENDERER.md",
+          "size": 1878,
+          "keywords": [
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/REAL_CORRESPONDENCES.md",
+          "size": 7131,
+          "keywords": [
+            "I Ching",
+            "Kabbalah",
+            "Kabbala",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/REAL_REPOSITORY_HIGHWAY_SYSTEM.md",
+          "size": 3692,
+          "keywords": []
+        },
+        {
+          "file": "docs/RITUAL_MAP.md",
+          "size": 3564,
+          "keywords": [
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/SCALABILITY_MASTER_SYSTEM.md",
+          "size": 18634,
+          "keywords": []
+        },
+        {
+          "file": "docs/SECURITY.md",
+          "size": 619,
+          "keywords": []
+        },
+        {
+          "file": "docs/SESSION_ERROR_RECOVERY_LOG.md",
+          "size": 2022,
+          "keywords": []
+        },
+        {
+          "file": "docs/SESSION_MEMORY_COMPLETE.md",
+          "size": 5626,
+          "keywords": []
+        },
+        {
+          "file": "docs/SPDX-HEADERS.md",
+          "size": 3379,
+          "keywords": []
+        },
+        {
+          "file": "docs/SQL_SECURITY_GUIDE.md",
+          "size": 4294,
+          "keywords": []
+        },
+        {
+          "file": "docs/SYSTEM_EXPANSION_GUIDE.md",
+          "size": 9960,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/TECHNICAL_IMPLEMENTATION_ARCHETYPAL_NODES.md",
+          "size": 20939,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/THE_22_ARCANA.md",
+          "size": 11232,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy"
+          ]
+        },
+        {
+          "file": "docs/THE_DIRECT_LINEAGE.md",
+          "size": 6988,
+          "keywords": [
+            "alchemy",
+            "esoteric",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/THE_REAL_LINEAGES.md",
+          "size": 7345,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "esoteric",
+            "sacred geometry",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/THE_VISION.md",
+          "size": 6098,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/THREE_APP_PACKAGES_ORGANIZATION.md",
+          "size": 12917,
+          "keywords": [
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/TRANSCENDENT_ALICE_ENGINE.md",
+          "size": 12866,
+          "keywords": [
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/TRINITY_DEPLOYMENT_STRATEGY.md",
+          "size": 6488,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/UNIVERSAL-DESIGN.md",
+          "size": 11368,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/WHEEL_ARTICLE.md",
+          "size": 3833,
+          "keywords": [
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/WHITE_RABBIT_PORTAL_NETWORK.md",
+          "size": 12188,
+          "keywords": [
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/WORKSPACE_MERGE_REPORT_2025-10-30.md",
+          "size": 1486,
+          "keywords": []
+        },
+        {
+          "file": "docs/agent-docs/ACTION_FOCUSED_CONTEXT.md",
+          "size": 2861,
+          "keywords": []
+        },
+        {
+          "file": "docs/agent-docs/AGENT_COMPLETE_TASKS.md",
+          "size": 10193,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/agent-docs/AGENT_MEMORY_REMINDER.md",
+          "size": 805,
+          "keywords": []
+        },
+        {
+          "file": "docs/agent-docs/AGENT_PRIORITY_TASKS.md",
+          "size": 5817,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/agent-docs/DUAL_AGENT_COORDINATION.md",
+          "size": 7973,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/agent-docs/FULL_CONTEXT_FOR_AGENTS.md",
+          "size": 15161,
+          "keywords": [
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/agent-docs/MASTER_PROJECT_CONTEXT.md",
+          "size": 18985,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/architecture/CATHEDRAL_ARCHITECTURE.md",
+          "size": 3669,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/AVALON_DEPLOYMENT_README.md",
+          "size": 8981,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/AZURE_AI_SETUP.md",
+          "size": 2713,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/BUILD_COMPLETE_CATHEDRAL.md",
+          "size": 6463,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/CHIRON_HEALING_CODEX.md",
+          "size": 8788,
+          "keywords": [
+            "ND joy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/CLEANUP_MANIFEST.md",
+          "size": 1600,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/CLOUDFLARE_SETUP.md",
+          "size": 2684,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/CODEX_144_99_ABYSSIAE.md",
+          "size": 8042,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/COMPLETE_ORGANIC_SYSTEM_MAP.md",
+          "size": 9778,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/COMPLETE_RESEARCH_INTEGRATION_MASTER.md",
+          "size": 8420,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/COMPLETE_SYSTEM_INTEGRATION.md",
+          "size": 7865,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/COMPLETE_WORK_SUMMARY.md",
+          "size": 5725,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/CONSOLIDATION_AUDIT.md",
+          "size": 19105,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/CONTINUED_RESEARCH_DOCUMENTATION.md",
+          "size": 7353,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/DATA_INTEGRITY_PACKAGE_SYSTEM.md",
+          "size": 16815,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/DEVELOPMENT_GUIDE.md",
+          "size": 10129,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/archive/DEVOPS_MERGE.md",
+          "size": 3278,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/ENHANCED_AGENTS_README.md",
+          "size": 6616,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/EXPANSION_PLAN.md",
+          "size": 3568,
+          "keywords": [
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/archive/FRACTAL_FLAMES_INTEGRATION_MASTER.md",
+          "size": 9666,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/GRIMOIRE_REFERENCE_SYSTEM.md",
+          "size": 6726,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/HARMONIC_CONVERGENCE_SLEEP.md",
+          "size": 4058,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/IMPLEMENTATION_CHECKLIST.md",
+          "size": 5826,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/INFRASTRUCTURE_COMPLETE.md",
+          "size": 4146,
+          "keywords": [
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/archive/JEWEL_OF_INDRA_LATTICE.md",
+          "size": 4584,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/archive/LATTICE_LINKS.md",
+          "size": 2809,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/LIBER_ARCANAE_CODEX_ABYSSIAE.md",
+          "size": 2348,
+          "keywords": [
+            "alchemy",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/LIBER_ARCANAE_CONSISTENCY_AUDIT.md",
+          "size": 4728,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/LIVING_ARCANAE_NUMEROLOGY_0_144.md",
+          "size": 12069,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/archive/LIVING_ARCANAE_TRADITION_ENGINES.md",
+          "size": 31550,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/LIVING_ARTWORK_COMPLETE.md",
+          "size": 2769,
+          "keywords": [
+            "sacred geometry",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/archive/LIVING_CATHEDRAL_ENGINE.md",
+          "size": 16444,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/LIVING_CONNECTION_MAPS.md",
+          "size": 5660,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/LIVING_LATTICE_SAFETY.md",
+          "size": 2613,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/LIVING_NARRATIVE_ENGINE.md",
+          "size": 10419,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/LIVING_SYSTEM_DEMO.md",
+          "size": 5535,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/MASTER_CATHEDRAL_CONSOLIDATED_INFORMATION.md",
+          "size": 16265,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/MASTER_CONSOLIDATION_ARTIFACT.md",
+          "size": 12085,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/MASTER_DATASETS_REGISTRY.md",
+          "size": 7752,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/MASTER_INDEX.md",
+          "size": 16699,
+          "keywords": [
+            "Soyga",
+            "I Ching",
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/MASTER_NUMBER_EVOLUTION_CODEX.md",
+          "size": 10018,
+          "keywords": [
+            "I Ching",
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/MASTER_PROVENANCE_CODEX_144_99_ARCANAE_INTEGRATION.md",
+          "size": 17717,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/MASTER_SESSION_BACKUP_20250928.md",
+          "size": 9339,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/MASTER_V1_CONTROL.md",
+          "size": 13462,
+          "keywords": [
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/MASTER_V1_INTEGRATION.md",
+          "size": 41265,
+          "keywords": [
+            "Soyga",
+            "I Ching",
+            "alchemy",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/MONOREPO_CONSOLIDATION_PLAN.md",
+          "size": 10002,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/MONOREPO_INTEGRATION_PLAN.md",
+          "size": 8801,
+          "keywords": [
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/MONOREPO_ORGANIZATION_GUIDE.md",
+          "size": 9322,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/archive/MONOREPO_STATUS_COMPLETE.md",
+          "size": 4982,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/MOONCHILD_EGREGORE_SYSTEM.md",
+          "size": 16344,
+          "keywords": [
+            "alchemy"
+          ]
+        },
+        {
+          "file": "docs/archive/NAMING_CONSISTENCY_MASTER_GUIDE.md",
+          "size": 7379,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/NODE_VALIDATION_LOCKING_SYSTEM.md",
+          "size": 12367,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/OPEN_SPEC_CATHEDRAL_SYSTEM.md",
+          "size": 14641,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/PERMANENT_SESSION_RECORDS.md",
+          "size": 8093,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "ND joy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/PLUTO_CODEX_MASTER_STATUS.md",
+          "size": 7006,
+          "keywords": [
+            "alchemy",
+            "ND joy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/PRODUCTION_STANDARDS.md",
+          "size": 7742,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/PROTECTION_AND_PRIVACY_SYSTEM.md",
+          "size": 10590,
+          "keywords": [
+            "ND joy",
+            "neurodivergent"
+          ]
+        },
+        {
+          "file": "docs/archive/QUALITY_GUARDIAN_SYSTEM.md",
+          "size": 13119,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/QUICK_START_MAP.md",
+          "size": 4134,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/README_CATHEDRAL_NOTE.md",
+          "size": 255,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/README_DEDUPER.md",
+          "size": 345,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/README_RENDERER.md",
+          "size": 1878,
+          "keywords": [
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/REAL_REPOSITORY_HIGHWAY_SYSTEM.md",
+          "size": 3692,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/REPOSITORY_CONNECTION_VERIFICATION.md",
+          "size": 8570,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/REPOSITORY_CONSOLIDATION_PLAN.md",
+          "size": 6766,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "esoteric",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/REPOSITORY_INTEGRITY_REPORT.md",
+          "size": 6634,
+          "keywords": [
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/archive/REPOSITORY_LINKS.md",
+          "size": 2321,
+          "keywords": [
+            "alchemy"
+          ]
+        },
+        {
+          "file": "docs/archive/RITUAL_MAP.md",
+          "size": 3564,
+          "keywords": [
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/archive/SCALABILITY_MASTER_SYSTEM.md",
+          "size": 18634,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/SESSION_ERROR_RECOVERY_LOG.md",
+          "size": 2022,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/SESSION_MEMORY_COMPLETE.md",
+          "size": 5626,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/SPDX-HEADERS.md",
+          "size": 3379,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/SYSTEM_EXPANSION_GUIDE.md",
+          "size": 9960,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/TECHNICAL_IMPLEMENTATION_ARCHETYPAL_NODES.md",
+          "size": 20939,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/THE_COST_OF_CLARITY.md",
+          "size": 4387,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/THREE_APP_PACKAGES_ORGANIZATION.md",
+          "size": 12917,
+          "keywords": [
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/TRANSCENDENT_ALICE_ENGINE.md",
+          "size": 12866,
+          "keywords": [
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/TRINITY_DEPLOYMENT_STRATEGY.md",
+          "size": 6488,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/UNIVERSAL-DESIGN.md",
+          "size": 11368,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/USE_AGENT_NOW.md",
+          "size": 4515,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/WASTE_BUCKET.md",
+          "size": 7585,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/WHEEL_ARTICLE.md",
+          "size": 3833,
+          "keywords": [
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/WHITE_RABBIT_PORTAL_NETWORK.md",
+          "size": 12188,
+          "keywords": [
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/openspec-readme.md",
+          "size": 14823,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/AGENTS.md",
+          "size": 660,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/ALL_DESIGNS_AND_CODEX_FIXED.md",
+          "size": 3991,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/ALL_TOOLS_VERSION_REVIEW_COMPLETE.md",
+          "size": 1927,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/CATHEDRAL_BRANCH_CONNECTION_PLAN.md",
+          "size": 7700,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/CATHEDRAL_CONNECTION_MAP.md",
+          "size": 9561,
+          "keywords": [
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/CATHEDRAL_DUPLICATE_CATALOG.md",
+          "size": 3973,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/CLEANUP_BREAKING_CODE.md",
+          "size": 1891,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/CLEANUP_REPORT.md",
+          "size": 3125,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/CODEX_144_99_COMPLETE.md",
+          "size": 3906,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/CODEX_144_99_MAPPING_COMPLETE.md",
+          "size": 2849,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/COMPLETE_GAME_ANALYSIS.md",
+          "size": 7454,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/COMPLETE_RECOVERY_SUMMARY.md",
+          "size": 3041,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/COMPLETE_SYSTEM_DESIGN.md",
+          "size": 12862,
+          "keywords": [
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/COMPLETE_TRANSMUTATION_SYSTEM.md",
+          "size": 6568,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/CONNECTION_COMPLETE.md",
+          "size": 5713,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/CONSOLIDATION_AND_BALANCE.md",
+          "size": 4763,
+          "keywords": [
+            "Soyga",
+            "I Ching",
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/CREATIVE_FLOW_COMPLETE.md",
+          "size": 7632,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/CROSS_DIRECTORY_CONNECTIONS.md",
+          "size": 3484,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/CROSS_ENGINEERING_COMPLETE.md",
+          "size": 4985,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/CUSTOM_TOOLS_INVENTORY.md",
+          "size": 6002,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/DATA_RECOVERY_COMPLETE.md",
+          "size": 1853,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/DATA_RECOVERY_SUMMARY.md",
+          "size": 1785,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/DEPLOYMENT_STATUS.md",
+          "size": 6561,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/DIRECTORY_MAP.md",
+          "size": 7323,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/ENTERPRISE_ARCHITECTURE.md",
+          "size": 13072,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/ENTERPRISE_PACKAGE_UPGRADE.md",
+          "size": 2491,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/EXECUTE_FIXES.md",
+          "size": 4544,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/EXECUTION_RESULTS.md",
+          "size": 3766,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/FEATURES_AND_TOOLS.md",
+          "size": 8439,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/FIXES_EXECUTED.md",
+          "size": 3934,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/FIXES_EXECUTION_COMPLETE.md",
+          "size": 2472,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/FREE_SYSTEM_NOTICE.md",
+          "size": 1745,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/FULL_COOK_MODE_COMPLETE.md",
+          "size": 4707,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/IMPROVE_AND_MERGE_COMPLETE.md",
+          "size": 1733,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/INTEGRATION_LEARNINGS.md",
+          "size": 3102,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/LUXURY_DESIGN_SYSTEM.md",
+          "size": 2497,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/NEXT_PHASE_COMPLETE.md",
+          "size": 3158,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/PACKAGE_DESIGN_SPEC.md",
+          "size": 8895,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/PERFECTED_SYSTEMS.md",
+          "size": 6160,
+          "keywords": [
+            "Soyga",
+            "I Ching",
+            "Kabbalah",
+            "Kabbala",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/PERFECT_SECURE_SYSTEM_COMPLETE.md",
+          "size": 1966,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/PNPM_ONLY_ENFORCEMENT.md",
+          "size": 1727,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/PUSH_INSTRUCTIONS.md",
+          "size": 4571,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/REAL_APPS_AND_TOOLS.md",
+          "size": 2818,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/REAL_DATA_RECOVERY_COMPLETE.md",
+          "size": 2512,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/SECURE_INTEGRATE_IMPROVE_COMPLETE.md",
+          "size": 2263,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/SECURITY.md",
+          "size": 619,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/SECURITY_AND_QUALITY_UPGRADE.md",
+          "size": 4555,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/SECURITY_AND_RECOVERY.md",
+          "size": 4708,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/SPAM_REMOVAL_COMPLETE.md",
+          "size": 1302,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/SPIRAL_DYNAMICS_LEARNING_COMPLETE.md",
+          "size": 7424,
+          "keywords": [
+            "I Ching",
+            "Kabbalah",
+            "Kabbala",
+            "neurodivergent",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/SQL_SECURITY_COMPLETE.md",
+          "size": 3274,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/STONE_GRIMOIRE_AND_3D_COMPLETE.md",
+          "size": 5975,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/SYSTEM_MAP.md",
+          "size": 12425,
+          "keywords": [
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/TOOLS_MAP.md",
+          "size": 7106,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/TOOLS_VERSION_COMPLETE.md",
+          "size": 2371,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/progress-reports/VIOLET_FLAME_TRANSMUTATION.md",
+          "size": 8670,
+          "keywords": [
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/progress-reports/VISIONARY_ART_SYSTEM.md",
+          "size": 5515,
+          "keywords": [
+            "sacred geometry",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/botanical/node072_apothecary.md",
+          "size": 740,
+          "keywords": []
+        },
+        {
+          "file": "docs/cathedral-research/AZURE_DEEPSEEK_SETUP.md",
+          "size": 6787,
+          "keywords": []
+        },
+        {
+          "file": "docs/cathedral-research/CATHEDRAL_DEPLOYMENT_GUIDE.md",
+          "size": 12843,
+          "keywords": [
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/cathedral-research/CATHEDRAL_FUSION_DASHBOARD.md",
+          "size": 9628,
+          "keywords": [
+            "alchemy",
+            "esoteric",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/cathedral-research/CATHEDRAL_MASTER_ARCHITECTURE.md",
+          "size": 8398,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/cathedral-research/CLOUDFLARE_SETUP.md",
+          "size": 2684,
+          "keywords": []
+        },
+        {
+          "file": "docs/cathedral-research/COMPLETE_SYSTEM_INTEGRATION.md",
+          "size": 7865,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/curation_checklist.md",
+          "size": 2176,
+          "keywords": []
+        },
+        {
+          "file": "docs/deployment/AVALON_DEPLOYMENT_README.md",
+          "size": 8981,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/deployment/CATHEDRAL_DEPLOYMENT_GUIDE.md",
+          "size": 12843,
+          "keywords": [
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/development/ACCESSIBILITY_AND_MEMORY_SUPPORT.md",
+          "size": 9554,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/development/DEPLOYMENT_GUIDE.md",
+          "size": 6315,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/development/DEPLOYMENT_STATUS.md",
+          "size": 2131,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/fly-deployment.md",
+          "size": 1721,
+          "keywords": []
+        },
+        {
+          "file": "docs/geometry_manifests/node072_layers.md",
+          "size": 1124,
+          "keywords": [
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/guides/DEVELOPMENT_GUIDE.md",
+          "size": 5935,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/guides/IMPLEMENTATION_CHECKLIST.md",
+          "size": 5826,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/iching_node072.md",
+          "size": 715,
+          "keywords": [
+            "I Ching"
+          ]
+        },
+        {
+          "file": "docs/liber_arcanae_merge_prep.md",
+          "size": 3024,
+          "keywords": []
+        },
+        {
+          "file": "docs/master/COMPLETE_ORGANIC_SYSTEM_MAP.md",
+          "size": 9778,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/master/COMPLETE_RESEARCH_INTEGRATION_MASTER.md",
+          "size": 8420,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/master/COMPLETE_SYSTEM_INTEGRATION.md",
+          "size": 7865,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/master/MASTER_ARCHETYPAL_NODES_ARCHITECTURE.md",
+          "size": 16555,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/master/MASTER_CATHEDRAL_CONSOLIDATED_INFORMATION.md",
+          "size": 16265,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/master/MASTER_DATASETS_REGISTRY.md",
+          "size": 7752,
+          "keywords": []
+        },
+        {
+          "file": "docs/master/MASTER_NUMBER_EVOLUTION_CODEX.md",
+          "size": 10018,
+          "keywords": [
+            "I Ching",
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/master/MASTER_PROVENANCE_CODEX_144_99_ARCANAE_INTEGRATION.md",
+          "size": 17717,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/master/MASTER_SESSION_BACKUP_20250928.md",
+          "size": 9339,
+          "keywords": []
+        },
+        {
+          "file": "docs/node_072_laboratory.md",
+          "size": 6451,
+          "keywords": [
+            "I Ching",
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "neurodivergent",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/research/DATA_INTEGRITY_PACKAGE_SYSTEM.md",
+          "size": 16815,
+          "keywords": []
+        },
+        {
+          "file": "docs/research/GRIMOIRE_REFERENCE_SYSTEM.md",
+          "size": 6726,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/research/LIBER_ARCANAE_CONSISTENCY_AUDIT.md",
+          "size": 4728,
+          "keywords": []
+        },
+        {
+          "file": "docs/research/LIVING_ARCANAE_NUMEROLOGY_0_144.md",
+          "size": 12069,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/research/LIVING_ARCANAE_TRADITION_ENGINES.md",
+          "size": 31550,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/research/LIVING_ARTWORK_COMPLETE.md",
+          "size": 2769,
+          "keywords": [
+            "sacred geometry",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/research/LIVING_CATHEDRAL_ENGINE.md",
+          "size": 16444,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/research/LIVING_CONNECTION_MAPS.md",
+          "size": 5660,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/research/LIVING_LATTICE_SAFETY.md",
+          "size": 2613,
+          "keywords": []
+        },
+        {
+          "file": "docs/research/LIVING_NARRATIVE_ENGINE.md",
+          "size": 10419,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/research/LIVING_SYSTEM_DEMO.md",
+          "size": 5535,
+          "keywords": []
+        },
+        {
+          "file": "docs/research/MONOREPO_INTEGRATION_PLAN.md",
+          "size": 8801,
+          "keywords": [
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/research/MONOREPO_ORGANIZATION_GUIDE.md",
+          "size": 9322,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/research/MONOREPO_STATUS_COMPLETE.md",
+          "size": 4982,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/research/REPOSITORY_CONNECTION_VERIFICATION.md",
+          "size": 8570,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/research/REPOSITORY_CONSOLIDATION_PLAN.md",
+          "size": 6766,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "esoteric",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/research/REPOSITORY_INTEGRITY_REPORT.md",
+          "size": 6634,
+          "keywords": [
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/research/REPOSITORY_LINKS.md",
+          "size": 2321,
+          "keywords": [
+            "alchemy"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_ARCHITECTURE.md",
+          "size": 3669,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_CONSOLIDATION_PROGRESS.md",
+          "size": 2916,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_CONSOLIDATION_QUALITY_ASSURANCE.md",
+          "size": 10978,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_DEPLOYMENT_GUIDE.md",
+          "size": 23354,
+          "keywords": [
+            "alchemy",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_DESIGN_PREFERENCES.md",
+          "size": 39409,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "neurodivergent",
+            "barriers",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_ERROR_PREVENTION_SYSTEM.md",
+          "size": 4107,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_FINAL_INTEGRATION_README.md",
+          "size": 14380,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_IMMERSIVE_CREATIVE_README.md",
+          "size": 8658,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_IMPLEMENTATION_SUMMARY.md",
+          "size": 7062,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_MASTER_INTEGRATION_HUB.md",
+          "size": 12393,
+          "keywords": [
+            "esoteric",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_RESEARCH_CONSOLIDATION_FINDINGS.md",
+          "size": 9491,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_STANDARDS.md",
+          "size": 12771,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_STRUCTURE_MAP.md",
+          "size": 5302,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_TRINITY_NAMING_SYSTEM.md",
+          "size": 8833,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_UNIFIED_REGISTRY.md",
+          "size": 2264,
+          "keywords": []
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_UNIFIED_SUITE.md",
+          "size": 6452,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/specs/MASTER_ARCHETYPAL_NODES_ARCHITECTURE.md",
+          "size": 16555,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/standards/CATHEDRAL_STANDARDS.md",
+          "size": 11498,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/standards/CATHEDRAL_TRINITY_NAMING_SYSTEM.md",
+          "size": 8833,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/standards/NAMING_CONSISTENCY_MASTER_GUIDE.md",
+          "size": 7379,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/systems/CATHEDRAL_ERROR_PREVENTION_SYSTEM.md",
+          "size": 4107,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/systems/CATHEDRAL_MASTER_INTEGRATION_HUB.md",
+          "size": 6052,
+          "keywords": [
+            "esoteric",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/systems/CATHEDRAL_STRUCTURE_MAP.md",
+          "size": 5302,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/systems/CATHEDRAL_UNIFIED_REGISTRY.md",
+          "size": 2264,
+          "keywords": []
+        },
+        {
+          "file": "docs/testing-notes-verify-absent.md",
+          "size": 536,
+          "keywords": []
+        },
+        {
+          "file": "docs/wiki/HOW_TOOLS_WERE_MADE.md",
+          "size": 8613,
+          "keywords": [
+            "esoteric",
+            "sacred geometry",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/wiki/TOOLS_DESIGN_PHILOSOPHY.md",
+          "size": 3764,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "golden ratio"
+          ]
+        }
+      ],
+      "stories": [],
+      "visionFiles": [
+        "docs/ACCESSIBILITY_AND_MEMORY_SUPPORT.md",
+        "docs/ARCHITECTURE.md",
+        "docs/CHIRON_HEALING_CODEX.md",
+        "docs/CODEX_144_99_ABYSSIAE.md",
+        "docs/CONTINUED_RESEARCH_DOCUMENTATION.md",
+        "docs/CONTRIBUTING.md",
+        "docs/CREATIVE_PROCESS_SOLVE_ET_COAGULA.md",
+        "docs/EXPANSION_PLAN.md",
+        "docs/HARMONIC_CONVERGENCE_SLEEP.md",
+        "docs/INFRASTRUCTURE_COMPLETE.md",
+        "docs/JEWEL_OF_INDRA_LATTICE.md",
+        "docs/LATTICE_LINKS.md",
+        "docs/LICENSE-CONTENT.md",
+        "docs/MEMORY_CREATIVE_PROCESS.md",
+        "docs/MONETIZATION_STRATEGY.md",
+        "docs/MOONCHILD_EGREGORE_SYSTEM.md",
+        "docs/NODE_VALIDATION_LOCKING_SYSTEM.md",
+        "docs/PERMANENT_SESSION_RECORDS.md",
+        "docs/PLUTO_CODEX_MASTER_STATUS.md",
+        "docs/PROTECTION_AND_PRIVACY_SYSTEM.md",
+        "docs/PUBLISHING_INFRASTRUCTURE.md",
+        "docs/README.md",
+        "docs/README_RENDERER.md",
+        "docs/REAL_CORRESPONDENCES.md",
+        "docs/RITUAL_MAP.md",
+        "docs/SYSTEM_EXPANSION_GUIDE.md",
+        "docs/TECHNICAL_IMPLEMENTATION_ARCHETYPAL_NODES.md",
+        "docs/THE_22_ARCANA.md",
+        "docs/THE_DIRECT_LINEAGE.md",
+        "docs/THE_REAL_LINEAGES.md",
+        "docs/THE_VISION.md",
+        "docs/THREE_APP_PACKAGES_ORGANIZATION.md",
+        "docs/TRANSCENDENT_ALICE_ENGINE.md",
+        "docs/TRINITY_DEPLOYMENT_STRATEGY.md",
+        "docs/UNIVERSAL-DESIGN.md",
+        "docs/WHEEL_ARTICLE.md",
+        "docs/WHITE_RABBIT_PORTAL_NETWORK.md",
+        "docs/agent-docs/AGENT_COMPLETE_TASKS.md",
+        "docs/agent-docs/AGENT_PRIORITY_TASKS.md",
+        "docs/agent-docs/DUAL_AGENT_COORDINATION.md",
+        "docs/agent-docs/FULL_CONTEXT_FOR_AGENTS.md",
+        "docs/agent-docs/MASTER_PROJECT_CONTEXT.md",
+        "docs/architecture/CATHEDRAL_ARCHITECTURE.md",
+        "docs/archive/AVALON_DEPLOYMENT_README.md",
+        "docs/archive/BUILD_COMPLETE_CATHEDRAL.md",
+        "docs/archive/CHIRON_HEALING_CODEX.md",
+        "docs/archive/CODEX_144_99_ABYSSIAE.md",
+        "docs/archive/COMPLETE_ORGANIC_SYSTEM_MAP.md",
+        "docs/archive/COMPLETE_RESEARCH_INTEGRATION_MASTER.md",
+        "docs/archive/COMPLETE_SYSTEM_INTEGRATION.md",
+        "docs/archive/COMPLETE_WORK_SUMMARY.md",
+        "docs/archive/CONSOLIDATION_AUDIT.md",
+        "docs/archive/CONTINUED_RESEARCH_DOCUMENTATION.md",
+        "docs/archive/DEVELOPMENT_GUIDE.md",
+        "docs/archive/EXPANSION_PLAN.md",
+        "docs/archive/FRACTAL_FLAMES_INTEGRATION_MASTER.md",
+        "docs/archive/GRIMOIRE_REFERENCE_SYSTEM.md",
+        "docs/archive/HARMONIC_CONVERGENCE_SLEEP.md",
+        "docs/archive/IMPLEMENTATION_CHECKLIST.md",
+        "docs/archive/INFRASTRUCTURE_COMPLETE.md",
+        "docs/archive/JEWEL_OF_INDRA_LATTICE.md",
+        "docs/archive/LATTICE_LINKS.md",
+        "docs/archive/LIBER_ARCANAE_CODEX_ABYSSIAE.md",
+        "docs/archive/LIVING_ARCANAE_NUMEROLOGY_0_144.md",
+        "docs/archive/LIVING_ARCANAE_TRADITION_ENGINES.md",
+        "docs/archive/LIVING_ARTWORK_COMPLETE.md",
+        "docs/archive/LIVING_CATHEDRAL_ENGINE.md",
+        "docs/archive/LIVING_CONNECTION_MAPS.md",
+        "docs/archive/LIVING_NARRATIVE_ENGINE.md",
+        "docs/archive/MASTER_CATHEDRAL_CONSOLIDATED_INFORMATION.md",
+        "docs/archive/MASTER_CONSOLIDATION_ARTIFACT.md",
+        "docs/archive/MASTER_INDEX.md",
+        "docs/archive/MASTER_NUMBER_EVOLUTION_CODEX.md",
+        "docs/archive/MASTER_PROVENANCE_CODEX_144_99_ARCANAE_INTEGRATION.md",
+        "docs/archive/MASTER_V1_CONTROL.md",
+        "docs/archive/MASTER_V1_INTEGRATION.md",
+        "docs/archive/MONOREPO_CONSOLIDATION_PLAN.md",
+        "docs/archive/MONOREPO_INTEGRATION_PLAN.md",
+        "docs/archive/MONOREPO_ORGANIZATION_GUIDE.md",
+        "docs/archive/MONOREPO_STATUS_COMPLETE.md",
+        "docs/archive/MOONCHILD_EGREGORE_SYSTEM.md",
+        "docs/archive/NAMING_CONSISTENCY_MASTER_GUIDE.md",
+        "docs/archive/NODE_VALIDATION_LOCKING_SYSTEM.md",
+        "docs/archive/OPEN_SPEC_CATHEDRAL_SYSTEM.md",
+        "docs/archive/PERMANENT_SESSION_RECORDS.md",
+        "docs/archive/PLUTO_CODEX_MASTER_STATUS.md",
+        "docs/archive/PROTECTION_AND_PRIVACY_SYSTEM.md",
+        "docs/archive/README_RENDERER.md",
+        "docs/archive/REPOSITORY_CONNECTION_VERIFICATION.md",
+        "docs/archive/REPOSITORY_CONSOLIDATION_PLAN.md",
+        "docs/archive/REPOSITORY_INTEGRITY_REPORT.md",
+        "docs/archive/REPOSITORY_LINKS.md",
+        "docs/archive/RITUAL_MAP.md",
+        "docs/archive/SYSTEM_EXPANSION_GUIDE.md",
+        "docs/archive/TECHNICAL_IMPLEMENTATION_ARCHETYPAL_NODES.md",
+        "docs/archive/THE_COST_OF_CLARITY.md",
+        "docs/archive/THREE_APP_PACKAGES_ORGANIZATION.md",
+        "docs/archive/TRANSCENDENT_ALICE_ENGINE.md",
+        "docs/archive/TRINITY_DEPLOYMENT_STRATEGY.md",
+        "docs/archive/UNIVERSAL-DESIGN.md",
+        "docs/archive/USE_AGENT_NOW.md",
+        "docs/archive/WASTE_BUCKET.md",
+        "docs/archive/WHEEL_ARTICLE.md",
+        "docs/archive/WHITE_RABBIT_PORTAL_NETWORK.md",
+        "docs/archive/progress-reports/ALL_DESIGNS_AND_CODEX_FIXED.md",
+        "docs/archive/progress-reports/CATHEDRAL_BRANCH_CONNECTION_PLAN.md",
+        "docs/archive/progress-reports/CATHEDRAL_CONNECTION_MAP.md",
+        "docs/archive/progress-reports/CLEANUP_BREAKING_CODE.md",
+        "docs/archive/progress-reports/CODEX_144_99_COMPLETE.md",
+        "docs/archive/progress-reports/CODEX_144_99_MAPPING_COMPLETE.md",
+        "docs/archive/progress-reports/COMPLETE_GAME_ANALYSIS.md",
+        "docs/archive/progress-reports/COMPLETE_SYSTEM_DESIGN.md",
+        "docs/archive/progress-reports/COMPLETE_TRANSMUTATION_SYSTEM.md",
+        "docs/archive/progress-reports/CONSOLIDATION_AND_BALANCE.md",
+        "docs/archive/progress-reports/CREATIVE_FLOW_COMPLETE.md",
+        "docs/archive/progress-reports/CROSS_DIRECTORY_CONNECTIONS.md",
+        "docs/archive/progress-reports/CUSTOM_TOOLS_INVENTORY.md",
+        "docs/archive/progress-reports/DEPLOYMENT_STATUS.md",
+        "docs/archive/progress-reports/DIRECTORY_MAP.md",
+        "docs/archive/progress-reports/ENTERPRISE_ARCHITECTURE.md",
+        "docs/archive/progress-reports/FEATURES_AND_TOOLS.md",
+        "docs/archive/progress-reports/FREE_SYSTEM_NOTICE.md",
+        "docs/archive/progress-reports/FULL_COOK_MODE_COMPLETE.md",
+        "docs/archive/progress-reports/PACKAGE_DESIGN_SPEC.md",
+        "docs/archive/progress-reports/PERFECTED_SYSTEMS.md",
+        "docs/archive/progress-reports/PUSH_INSTRUCTIONS.md",
+        "docs/archive/progress-reports/SPIRAL_DYNAMICS_LEARNING_COMPLETE.md",
+        "docs/archive/progress-reports/STONE_GRIMOIRE_AND_3D_COMPLETE.md",
+        "docs/archive/progress-reports/SYSTEM_MAP.md",
+        "docs/archive/progress-reports/TOOLS_MAP.md",
+        "docs/archive/progress-reports/VIOLET_FLAME_TRANSMUTATION.md",
+        "docs/archive/progress-reports/VISIONARY_ART_SYSTEM.md",
+        "docs/cathedral-research/CATHEDRAL_DEPLOYMENT_GUIDE.md",
+        "docs/cathedral-research/CATHEDRAL_FUSION_DASHBOARD.md",
+        "docs/cathedral-research/CATHEDRAL_MASTER_ARCHITECTURE.md",
+        "docs/cathedral-research/COMPLETE_SYSTEM_INTEGRATION.md",
+        "docs/deployment/AVALON_DEPLOYMENT_README.md",
+        "docs/deployment/CATHEDRAL_DEPLOYMENT_GUIDE.md",
+        "docs/development/ACCESSIBILITY_AND_MEMORY_SUPPORT.md",
+        "docs/development/DEPLOYMENT_GUIDE.md",
+        "docs/development/DEPLOYMENT_STATUS.md",
+        "docs/geometry_manifests/node072_layers.md",
+        "docs/guides/DEVELOPMENT_GUIDE.md",
+        "docs/guides/IMPLEMENTATION_CHECKLIST.md",
+        "docs/iching_node072.md",
+        "docs/master/COMPLETE_ORGANIC_SYSTEM_MAP.md",
+        "docs/master/COMPLETE_RESEARCH_INTEGRATION_MASTER.md",
+        "docs/master/COMPLETE_SYSTEM_INTEGRATION.md",
+        "docs/master/MASTER_ARCHETYPAL_NODES_ARCHITECTURE.md",
+        "docs/master/MASTER_CATHEDRAL_CONSOLIDATED_INFORMATION.md",
+        "docs/master/MASTER_NUMBER_EVOLUTION_CODEX.md",
+        "docs/master/MASTER_PROVENANCE_CODEX_144_99_ARCANAE_INTEGRATION.md",
+        "docs/node_072_laboratory.md",
+        "docs/research/GRIMOIRE_REFERENCE_SYSTEM.md",
+        "docs/research/LIVING_ARCANAE_NUMEROLOGY_0_144.md",
+        "docs/research/LIVING_ARCANAE_TRADITION_ENGINES.md",
+        "docs/research/LIVING_ARTWORK_COMPLETE.md",
+        "docs/research/LIVING_CATHEDRAL_ENGINE.md",
+        "docs/research/LIVING_CONNECTION_MAPS.md",
+        "docs/research/LIVING_NARRATIVE_ENGINE.md",
+        "docs/research/MONOREPO_INTEGRATION_PLAN.md",
+        "docs/research/MONOREPO_ORGANIZATION_GUIDE.md",
+        "docs/research/MONOREPO_STATUS_COMPLETE.md",
+        "docs/research/REPOSITORY_CONNECTION_VERIFICATION.md",
+        "docs/research/REPOSITORY_CONSOLIDATION_PLAN.md",
+        "docs/research/REPOSITORY_INTEGRITY_REPORT.md",
+        "docs/research/REPOSITORY_LINKS.md",
+        "docs/specs/CATHEDRAL_ARCHITECTURE.md",
+        "docs/specs/CATHEDRAL_CONSOLIDATION_PROGRESS.md",
+        "docs/specs/CATHEDRAL_CONSOLIDATION_QUALITY_ASSURANCE.md",
+        "docs/specs/CATHEDRAL_DEPLOYMENT_GUIDE.md",
+        "docs/specs/CATHEDRAL_DESIGN_PREFERENCES.md",
+        "docs/specs/CATHEDRAL_ERROR_PREVENTION_SYSTEM.md",
+        "docs/specs/CATHEDRAL_FINAL_INTEGRATION_README.md",
+        "docs/specs/CATHEDRAL_IMMERSIVE_CREATIVE_README.md",
+        "docs/specs/CATHEDRAL_IMPLEMENTATION_SUMMARY.md",
+        "docs/specs/CATHEDRAL_MASTER_INTEGRATION_HUB.md",
+        "docs/specs/CATHEDRAL_RESEARCH_CONSOLIDATION_FINDINGS.md",
+        "docs/specs/CATHEDRAL_STANDARDS.md",
+        "docs/specs/CATHEDRAL_STRUCTURE_MAP.md",
+        "docs/specs/CATHEDRAL_TRINITY_NAMING_SYSTEM.md",
+        "docs/specs/CATHEDRAL_UNIFIED_SUITE.md",
+        "docs/specs/MASTER_ARCHETYPAL_NODES_ARCHITECTURE.md",
+        "docs/standards/CATHEDRAL_STANDARDS.md",
+        "docs/standards/CATHEDRAL_TRINITY_NAMING_SYSTEM.md",
+        "docs/standards/NAMING_CONSISTENCY_MASTER_GUIDE.md",
+        "docs/systems/CATHEDRAL_ERROR_PREVENTION_SYSTEM.md",
+        "docs/systems/CATHEDRAL_MASTER_INTEGRATION_HUB.md",
+        "docs/systems/CATHEDRAL_STRUCTURE_MAP.md",
+        "docs/wiki/HOW_TOOLS_WERE_MADE.md",
+        "docs/wiki/TOOLS_DESIGN_PHILOSOPHY.md"
+      ]
+    },
+    "cathedral-real": {
+      "path": "/Users/rebeccalemke/cathedral-real",
+      "docs": [
+        {
+          "file": "docs/ACCESSIBILITY_AND_MEMORY_SUPPORT.md",
+          "size": 9554,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/AGENT_MEMORY_REMINDER.md",
+          "size": 805,
+          "keywords": []
+        },
+        {
+          "file": "docs/AGENT_RUN_REPORT_2025-10-30.md",
+          "size": 1961,
+          "keywords": []
+        },
+        {
+          "file": "docs/API_DOCUMENTATION.md",
+          "size": 16903,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/BUILD_SYSTEM_OPTIMIZATION_PROMPT.md",
+          "size": 8412,
+          "keywords": []
+        },
+        {
+          "file": "docs/CATHEDRAL_PROFESSIONAL_DESIGN_SUITE_ARCHITECTURE.md",
+          "size": 21221,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/CATHEDRAL_PROFESSIONAL_DESIGN_SUITE_IMPLEMENTATION_GUIDE.md",
+          "size": 24285,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/CHIRON_HEALING_CODEX.md",
+          "size": 8788,
+          "keywords": [
+            "ND joy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/CLOUDFLARE_SETUP.md",
+          "size": 2684,
+          "keywords": []
+        },
+        {
+          "file": "docs/CODEX_144_99_ABYSSIAE.md",
+          "size": 8042,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/CONTINUED_RESEARCH_DOCUMENTATION.md",
+          "size": 7353,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/CONTRIBUTING.md",
+          "size": 2721,
+          "keywords": [
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/DEVELOPMENT_SETUP_GUIDE.md",
+          "size": 7357,
+          "keywords": []
+        },
+        {
+          "file": "docs/DEVOPS_MERGE.md",
+          "size": 3278,
+          "keywords": []
+        },
+        {
+          "file": "docs/DOCUMENTATION_CLEANUP_PLAN.md",
+          "size": 3632,
+          "keywords": []
+        },
+        {
+          "file": "docs/EXPANSION_PLAN.md",
+          "size": 3568,
+          "keywords": [
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/HARMONIC_CONVERGENCE_SLEEP.md",
+          "size": 4058,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/INFRASTRUCTURE_COMPLETE.md",
+          "size": 4146,
+          "keywords": [
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/JEWEL_OF_INDRA_LATTICE.md",
+          "size": 4584,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/LATTICE_LINKS.md",
+          "size": 2809,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/MOONCHILD_EGREGORE_SYSTEM.md",
+          "size": 16344,
+          "keywords": [
+            "alchemy"
+          ]
+        },
+        {
+          "file": "docs/NODE_VALIDATION_LOCKING_SYSTEM.md",
+          "size": 12367,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/PERMANENT_SESSION_RECORDS.md",
+          "size": 8093,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "ND joy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/PHASE_D_COMPLETION_SUMMARY.md",
+          "size": 12291,
+          "keywords": []
+        },
+        {
+          "file": "docs/PHASE_D_VISUAL_SYSTEMS_PLAN.md",
+          "size": 7120,
+          "keywords": []
+        },
+        {
+          "file": "docs/PHASE_E_VALIDATION_REPORT.md",
+          "size": 11019,
+          "keywords": []
+        },
+        {
+          "file": "docs/PLUTO_CODEX_MASTER_STATUS.md",
+          "size": 7006,
+          "keywords": [
+            "alchemy",
+            "ND joy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/PRODUCTION_STANDARDS.md",
+          "size": 7742,
+          "keywords": []
+        },
+        {
+          "file": "docs/PROVENANCE_MANIFEST_V1.md",
+          "size": 6303,
+          "keywords": []
+        },
+        {
+          "file": "docs/QUICK_START_MAP.md",
+          "size": 4134,
+          "keywords": []
+        },
+        {
+          "file": "docs/README.md",
+          "size": 2015,
+          "keywords": [
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/README_CATHEDRAL_NOTE.md",
+          "size": 255,
+          "keywords": []
+        },
+        {
+          "file": "docs/README_DEDUPER.md",
+          "size": 345,
+          "keywords": []
+        },
+        {
+          "file": "docs/README_RENDERER.md",
+          "size": 1878,
+          "keywords": [
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/REAL_REPOSITORY_HIGHWAY_SYSTEM.md",
+          "size": 3692,
+          "keywords": []
+        },
+        {
+          "file": "docs/REGISTRY_ARCHITECTURE.md",
+          "size": 9278,
+          "keywords": [
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/RITUAL_MAP.md",
+          "size": 3564,
+          "keywords": [
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/SCALABILITY_MASTER_SYSTEM.md",
+          "size": 18634,
+          "keywords": []
+        },
+        {
+          "file": "docs/SESSION_ERROR_RECOVERY_LOG.md",
+          "size": 2022,
+          "keywords": []
+        },
+        {
+          "file": "docs/SESSION_MEMORY_COMPLETE.md",
+          "size": 5626,
+          "keywords": []
+        },
+        {
+          "file": "docs/SPDX-HEADERS.md",
+          "size": 3379,
+          "keywords": []
+        },
+        {
+          "file": "docs/SYSTEM_ANALYSIS.md",
+          "size": 6360,
+          "keywords": [
+            "neurodivergent"
+          ]
+        },
+        {
+          "file": "docs/SYSTEM_EXPANSION_GUIDE.md",
+          "size": 9960,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/TECHNICAL_IMPLEMENTATION_ARCHETYPAL_NODES.md",
+          "size": 20939,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/THREE_APP_PACKAGES_ORGANIZATION.md",
+          "size": 12917,
+          "keywords": [
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/TRANSCENDENT_ALICE_ENGINE.md",
+          "size": 12866,
+          "keywords": [
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/TRINITY_DEPLOYMENT_STRATEGY.md",
+          "size": 6488,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/UNIVERSAL-DESIGN.md",
+          "size": 11368,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/WHEEL_ARTICLE.md",
+          "size": 3833,
+          "keywords": [
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/WHITE_RABBIT_PORTAL_NETWORK.md",
+          "size": 12188,
+          "keywords": [
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/WORKSPACE_MERGE_REPORT_2025-10-30.md",
+          "size": 1486,
+          "keywords": []
+        },
+        {
+          "file": "docs/agent-docs/ACTION_FOCUSED_CONTEXT.md",
+          "size": 2861,
+          "keywords": []
+        },
+        {
+          "file": "docs/agent-docs/AGENT_COMPLETE_TASKS.md",
+          "size": 10193,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/agent-docs/AGENT_MEMORY_REMINDER.md",
+          "size": 805,
+          "keywords": []
+        },
+        {
+          "file": "docs/agent-docs/AGENT_PRIORITY_TASKS.md",
+          "size": 5817,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/agent-docs/DUAL_AGENT_COORDINATION.md",
+          "size": 7973,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/agent-docs/FULL_CONTEXT_FOR_AGENTS.md",
+          "size": 15161,
+          "keywords": [
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/agent-docs/MASTER_PROJECT_CONTEXT.md",
+          "size": 18985,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/architecture/CATHEDRAL_ARCHITECTURE.md",
+          "size": 3669,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/AVALON_DEPLOYMENT_README.md",
+          "size": 8981,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/AZURE_AI_SETUP.md",
+          "size": 2713,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/BUILD_COMPLETE_CATHEDRAL.md",
+          "size": 6463,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/CHIRON_HEALING_CODEX.md",
+          "size": 8788,
+          "keywords": [
+            "ND joy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/CLEANUP_MANIFEST.md",
+          "size": 1600,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/CLOUDFLARE_SETUP.md",
+          "size": 2684,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/CODEX_144_99_ABYSSIAE.md",
+          "size": 8042,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/COMPLETE_ORGANIC_SYSTEM_MAP.md",
+          "size": 9778,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/COMPLETE_RESEARCH_INTEGRATION_MASTER.md",
+          "size": 8420,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/COMPLETE_SYSTEM_INTEGRATION.md",
+          "size": 7865,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/COMPLETE_WORK_SUMMARY.md",
+          "size": 5725,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/CONSOLIDATION_AUDIT.md",
+          "size": 19102,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/CONTINUED_RESEARCH_DOCUMENTATION.md",
+          "size": 7353,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/DATA_INTEGRITY_PACKAGE_SYSTEM.md",
+          "size": 16815,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/DEVELOPMENT_GUIDE.md",
+          "size": 10129,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/archive/DEVOPS_MERGE.md",
+          "size": 3282,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/ENHANCED_AGENTS_README.md",
+          "size": 6616,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/EXPANSION_PLAN.md",
+          "size": 3568,
+          "keywords": [
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/archive/FRACTAL_FLAMES_INTEGRATION_MASTER.md",
+          "size": 9666,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/GRIMOIRE_REFERENCE_SYSTEM.md",
+          "size": 6726,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/HARMONIC_CONVERGENCE_SLEEP.md",
+          "size": 4058,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/IMPLEMENTATION_CHECKLIST.md",
+          "size": 5826,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/INFRASTRUCTURE_COMPLETE.md",
+          "size": 4146,
+          "keywords": [
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/archive/JEWEL_OF_INDRA_LATTICE.md",
+          "size": 4584,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/archive/LATTICE_LINKS.md",
+          "size": 2809,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/LIBER_ARCANAE_CODEX_ABYSSIAE.md",
+          "size": 2348,
+          "keywords": [
+            "alchemy",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/LIBER_ARCANAE_CONSISTENCY_AUDIT.md",
+          "size": 4728,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/LIVING_ARCANAE_NUMEROLOGY_0_144.md",
+          "size": 12069,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/archive/LIVING_ARCANAE_TRADITION_ENGINES.md",
+          "size": 31550,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/LIVING_ARTWORK_COMPLETE.md",
+          "size": 2769,
+          "keywords": [
+            "sacred geometry",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/archive/LIVING_CATHEDRAL_ENGINE.md",
+          "size": 16444,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/LIVING_CONNECTION_MAPS.md",
+          "size": 5660,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/LIVING_LATTICE_SAFETY.md",
+          "size": 2613,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/LIVING_NARRATIVE_ENGINE.md",
+          "size": 10419,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/LIVING_SYSTEM_DEMO.md",
+          "size": 5535,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/MASTER_CATHEDRAL_CONSOLIDATED_INFORMATION.md",
+          "size": 16265,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/MASTER_CONSOLIDATION_ARTIFACT.md",
+          "size": 12079,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/MASTER_DATASETS_REGISTRY.md",
+          "size": 7752,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/MASTER_INDEX.md",
+          "size": 16699,
+          "keywords": [
+            "Soyga",
+            "I Ching",
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/MASTER_NUMBER_EVOLUTION_CODEX.md",
+          "size": 10018,
+          "keywords": [
+            "I Ching",
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/MASTER_PROVENANCE_CODEX_144_99_ARCANAE_INTEGRATION.md",
+          "size": 17717,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/MASTER_SESSION_BACKUP_20250928.md",
+          "size": 9339,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/MASTER_V1_CONTROL.md",
+          "size": 13462,
+          "keywords": [
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/MASTER_V1_INTEGRATION.md",
+          "size": 41265,
+          "keywords": [
+            "Soyga",
+            "I Ching",
+            "alchemy",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/MONOREPO_CONSOLIDATION_PLAN.md",
+          "size": 10002,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/MONOREPO_INTEGRATION_PLAN.md",
+          "size": 8801,
+          "keywords": [
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/MONOREPO_ORGANIZATION_GUIDE.md",
+          "size": 9322,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/archive/MONOREPO_STATUS_COMPLETE.md",
+          "size": 4982,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/MOONCHILD_EGREGORE_SYSTEM.md",
+          "size": 16344,
+          "keywords": [
+            "alchemy"
+          ]
+        },
+        {
+          "file": "docs/archive/NAMING_CONSISTENCY_MASTER_GUIDE.md",
+          "size": 7379,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/NODE_VALIDATION_LOCKING_SYSTEM.md",
+          "size": 12367,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/OPEN_SPEC_CATHEDRAL_SYSTEM.md",
+          "size": 14641,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/PERMANENT_SESSION_RECORDS.md",
+          "size": 8093,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "ND joy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/PLUTO_CODEX_MASTER_STATUS.md",
+          "size": 7006,
+          "keywords": [
+            "alchemy",
+            "ND joy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/PRODUCTION_STANDARDS.md",
+          "size": 7742,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/PROTECTION_AND_PRIVACY_SYSTEM.md",
+          "size": 10590,
+          "keywords": [
+            "ND joy",
+            "neurodivergent"
+          ]
+        },
+        {
+          "file": "docs/archive/QUALITY_GUARDIAN_SYSTEM.md",
+          "size": 13119,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/QUICK_START_MAP.md",
+          "size": 4134,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/README_CATHEDRAL_NOTE.md",
+          "size": 255,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/README_DEDUPER.md",
+          "size": 345,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/README_RENDERER.md",
+          "size": 1878,
+          "keywords": [
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/REAL_REPOSITORY_HIGHWAY_SYSTEM.md",
+          "size": 3692,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/REPOSITORY_CONNECTION_VERIFICATION.md",
+          "size": 8570,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/REPOSITORY_CONSOLIDATION_PLAN.md",
+          "size": 6766,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "esoteric",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/REPOSITORY_INTEGRITY_REPORT.md",
+          "size": 6634,
+          "keywords": [
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/archive/REPOSITORY_LINKS.md",
+          "size": 2321,
+          "keywords": [
+            "alchemy"
+          ]
+        },
+        {
+          "file": "docs/archive/RITUAL_MAP.md",
+          "size": 3564,
+          "keywords": [
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/archive/SCALABILITY_MASTER_SYSTEM.md",
+          "size": 18634,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/SESSION_ERROR_RECOVERY_LOG.md",
+          "size": 2022,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/SESSION_MEMORY_COMPLETE.md",
+          "size": 5626,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/SPDX-HEADERS.md",
+          "size": 3379,
+          "keywords": []
+        },
+        {
+          "file": "docs/archive/SYSTEM_EXPANSION_GUIDE.md",
+          "size": 9960,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/TECHNICAL_IMPLEMENTATION_ARCHETYPAL_NODES.md",
+          "size": 20939,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/THE_COST_OF_CLARITY.md",
+          "size": 4387,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/THREE_APP_PACKAGES_ORGANIZATION.md",
+          "size": 12917,
+          "keywords": [
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/TRANSCENDENT_ALICE_ENGINE.md",
+          "size": 12866,
+          "keywords": [
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/TRINITY_DEPLOYMENT_STRATEGY.md",
+          "size": 6488,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/archive/UNIVERSAL-DESIGN.md",
+          "size": 11368,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/USE_AGENT_NOW.md",
+          "size": 4515,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/WASTE_BUCKET.md",
+          "size": 7585,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/WHEEL_ARTICLE.md",
+          "size": 3833,
+          "keywords": [
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/archive/WHITE_RABBIT_PORTAL_NETWORK.md",
+          "size": 12188,
+          "keywords": [
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/archive/openspec-readme.md",
+          "size": 14826,
+          "keywords": []
+        },
+        {
+          "file": "docs/botanical/node072_apothecary.md",
+          "size": 740,
+          "keywords": []
+        },
+        {
+          "file": "docs/curation_checklist.md",
+          "size": 2176,
+          "keywords": []
+        },
+        {
+          "file": "docs/deployment/AVALON_DEPLOYMENT_README.md",
+          "size": 8981,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/deployment/CATHEDRAL_DEPLOYMENT_GUIDE.md",
+          "size": 12843,
+          "keywords": [
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/development/ACCESSIBILITY_AND_MEMORY_SUPPORT.md",
+          "size": 9554,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/development/DEPLOYMENT_GUIDE.md",
+          "size": 6315,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/development/DEPLOYMENT_STATUS.md",
+          "size": 2131,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/fly-deployment.md",
+          "size": 1725,
+          "keywords": []
+        },
+        {
+          "file": "docs/geometry_manifests/node072_layers.md",
+          "size": 1124,
+          "keywords": [
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/guides/DEVELOPMENT_GUIDE.md",
+          "size": 5935,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/guides/IMPLEMENTATION_CHECKLIST.md",
+          "size": 5826,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/iching_node072.md",
+          "size": 715,
+          "keywords": [
+            "I Ching"
+          ]
+        },
+        {
+          "file": "docs/legal/LICENSE-CONTENT.md",
+          "size": 5467,
+          "keywords": [
+            "neurodivergent",
+            "esoteric",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/legal/PROTECT.md",
+          "size": 3967,
+          "keywords": []
+        },
+        {
+          "file": "docs/liber_arcanae_merge_prep.md",
+          "size": 3024,
+          "keywords": []
+        },
+        {
+          "file": "docs/master/COMPLETE_ORGANIC_SYSTEM_MAP.md",
+          "size": 9778,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/master/COMPLETE_RESEARCH_INTEGRATION_MASTER.md",
+          "size": 8420,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/master/COMPLETE_SYSTEM_INTEGRATION.md",
+          "size": 7865,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/master/MASTER_ARCHETYPAL_NODES_ARCHITECTURE.md",
+          "size": 16555,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/master/MASTER_CATHEDRAL_CONSOLIDATED_INFORMATION.md",
+          "size": 16265,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/master/MASTER_DATASETS_REGISTRY.md",
+          "size": 7752,
+          "keywords": []
+        },
+        {
+          "file": "docs/master/MASTER_NUMBER_EVOLUTION_CODEX.md",
+          "size": 10018,
+          "keywords": [
+            "I Ching",
+            "alchemy",
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/master/MASTER_PROVENANCE_CODEX_144_99_ARCANAE_INTEGRATION.md",
+          "size": 17717,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/master/MASTER_SESSION_BACKUP_20250928.md",
+          "size": 9339,
+          "keywords": []
+        },
+        {
+          "file": "docs/node_072_laboratory.md",
+          "size": 6451,
+          "keywords": [
+            "I Ching",
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "neurodivergent",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/research/DATA_INTEGRITY_PACKAGE_SYSTEM.md",
+          "size": 16833,
+          "keywords": []
+        },
+        {
+          "file": "docs/research/GRIMOIRE_REFERENCE_SYSTEM.md",
+          "size": 6726,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/research/LIBER_ARCANAE_CONSISTENCY_AUDIT.md",
+          "size": 4728,
+          "keywords": []
+        },
+        {
+          "file": "docs/research/LIVING_ARCANAE_NUMEROLOGY_0_144.md",
+          "size": 12078,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/research/LIVING_ARCANAE_TRADITION_ENGINES.md",
+          "size": 31550,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/research/LIVING_ARTWORK_COMPLETE.md",
+          "size": 2769,
+          "keywords": [
+            "sacred geometry",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/research/LIVING_CATHEDRAL_ENGINE.md",
+          "size": 16444,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/research/LIVING_CONNECTION_MAPS.md",
+          "size": 5660,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/research/LIVING_LATTICE_SAFETY.md",
+          "size": 2613,
+          "keywords": []
+        },
+        {
+          "file": "docs/research/LIVING_NARRATIVE_ENGINE.md",
+          "size": 10419,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/research/LIVING_SYSTEM_DEMO.md",
+          "size": 5535,
+          "keywords": []
+        },
+        {
+          "file": "docs/research/MONOREPO_INTEGRATION_PLAN.md",
+          "size": 8801,
+          "keywords": [
+            "sacred geometry",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/research/MONOREPO_ORGANIZATION_GUIDE.md",
+          "size": 9322,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/research/MONOREPO_STATUS_COMPLETE.md",
+          "size": 4982,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/research/REPOSITORY_CONNECTION_VERIFICATION.md",
+          "size": 8570,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/research/REPOSITORY_CONSOLIDATION_PLAN.md",
+          "size": 6766,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "esoteric",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/research/REPOSITORY_INTEGRITY_REPORT.md",
+          "size": 6634,
+          "keywords": [
+            "esoteric"
+          ]
+        },
+        {
+          "file": "docs/research/REPOSITORY_LINKS.md",
+          "size": 2321,
+          "keywords": [
+            "alchemy"
+          ]
+        },
+        {
+          "file": "docs/security/PROTECTION_AND_PRIVACY_SYSTEM.md",
+          "size": 10590,
+          "keywords": [
+            "ND joy",
+            "neurodivergent"
+          ]
+        },
+        {
+          "file": "docs/security/QUALITY_GUARDIAN_SYSTEM.md",
+          "size": 13119,
+          "keywords": []
+        },
+        {
+          "file": "docs/security/SECURITY.md",
+          "size": 623,
+          "keywords": []
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_ARCHITECTURE.md",
+          "size": 3669,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_CONSOLIDATION_PROGRESS.md",
+          "size": 2916,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_CONSOLIDATION_QUALITY_ASSURANCE.md",
+          "size": 10978,
+          "keywords": [
+            "alchemy",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_DEPLOYMENT_GUIDE.md",
+          "size": 23354,
+          "keywords": [
+            "alchemy",
+            "esoteric",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_DESIGN_PREFERENCES.md",
+          "size": 39409,
+          "keywords": [
+            "Kabbalah",
+            "Kabbala",
+            "alchemy",
+            "neurodivergent",
+            "barriers",
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_ERROR_PREVENTION_SYSTEM.md",
+          "size": 4107,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_FINAL_INTEGRATION_README.md",
+          "size": 14380,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "esoteric",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_IMMERSIVE_CREATIVE_README.md",
+          "size": 8658,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_IMPLEMENTATION_SUMMARY.md",
+          "size": 7062,
+          "keywords": [
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_MASTER_INTEGRATION_HUB.md",
+          "size": 12393,
+          "keywords": [
+            "esoteric",
+            "sacred geometry",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_RESEARCH_CONSOLIDATION_FINDINGS.md",
+          "size": 9491,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_STANDARDS.md",
+          "size": 12771,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_STRUCTURE_MAP.md",
+          "size": 5302,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_TRINITY_NAMING_SYSTEM.md",
+          "size": 8833,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_UNIFIED_REGISTRY.md",
+          "size": 2264,
+          "keywords": []
+        },
+        {
+          "file": "docs/specs/CATHEDRAL_UNIFIED_SUITE.md",
+          "size": 6452,
+          "keywords": [
+            "sacred geometry",
+            "144:99",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/specs/MASTER_ARCHETYPAL_NODES_ARCHITECTURE.md",
+          "size": 16555,
+          "keywords": [
+            "alchemy",
+            "neurodivergent",
+            "sacred geometry",
+            "golden ratio",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/standards/CATHEDRAL_STANDARDS.md",
+          "size": 11498,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "Fibonacci"
+          ]
+        },
+        {
+          "file": "docs/standards/CATHEDRAL_TRINITY_NAMING_SYSTEM.md",
+          "size": 8833,
+          "keywords": [
+            "neurodivergent",
+            "sacred geometry",
+            "144:99",
+            "golden ratio"
+          ]
+        },
+        {
+          "file": "docs/standards/NAMING_CONSISTENCY_MASTER_GUIDE.md",
+          "size": 7379,
+          "keywords": [
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/systems/CATHEDRAL_ERROR_PREVENTION_SYSTEM.md",
+          "size": 4107,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/systems/CATHEDRAL_MASTER_INTEGRATION_HUB.md",
+          "size": 6052,
+          "keywords": [
+            "esoteric",
+            "144:99"
+          ]
+        },
+        {
+          "file": "docs/systems/CATHEDRAL_STRUCTURE_MAP.md",
+          "size": 5302,
+          "keywords": [
+            "sacred geometry"
+          ]
+        },
+        {
+          "file": "docs/systems/CATHEDRAL_UNIFIED_REGISTRY.md",
+          "size": 2264,
+          "keywords": []
+        },
+        {
+          "file": "docs/testing-notes-verify-absent.md",
+          "size": 536,
+          "keywords": []
+        }
+      ],
+      "stories": [],
+      "visionFiles": [
+        "docs/ACCESSIBILITY_AND_MEMORY_SUPPORT.md",
+        "docs/API_DOCUMENTATION.md",
+        "docs/CATHEDRAL_PROFESSIONAL_DESIGN_SUITE_ARCHITECTURE.md",
+        "docs/CATHEDRAL_PROFESSIONAL_DESIGN_SUITE_IMPLEMENTATION_GUIDE.md",
+        "docs/CHIRON_HEALING_CODEX.md",
+        "docs/CODEX_144_99_ABYSSIAE.md",
+        "docs/CONTINUED_RESEARCH_DOCUMENTATION.md",
+        "docs/CONTRIBUTING.md",
+        "docs/EXPANSION_PLAN.md",
+        "docs/HARMONIC_CONVERGENCE_SLEEP.md",
+        "docs/INFRASTRUCTURE_COMPLETE.md",
+        "docs/JEWEL_OF_INDRA_LATTICE.md",
+        "docs/LATTICE_LINKS.md",
+        "docs/MOONCHILD_EGREGORE_SYSTEM.md",
+        "docs/NODE_VALIDATION_LOCKING_SYSTEM.md",
+        "docs/PERMANENT_SESSION_RECORDS.md",
+        "docs/PLUTO_CODEX_MASTER_STATUS.md",
+        "docs/README.md",
+        "docs/README_RENDERER.md",
+        "docs/REGISTRY_ARCHITECTURE.md",
+        "docs/RITUAL_MAP.md",
+        "docs/SYSTEM_ANALYSIS.md",
+        "docs/SYSTEM_EXPANSION_GUIDE.md",
+        "docs/TECHNICAL_IMPLEMENTATION_ARCHETYPAL_NODES.md",
+        "docs/THREE_APP_PACKAGES_ORGANIZATION.md",
+        "docs/TRANSCENDENT_ALICE_ENGINE.md",
+        "docs/TRINITY_DEPLOYMENT_STRATEGY.md",
+        "docs/UNIVERSAL-DESIGN.md",
+        "docs/WHEEL_ARTICLE.md",
+        "docs/WHITE_RABBIT_PORTAL_NETWORK.md",
+        "docs/agent-docs/AGENT_COMPLETE_TASKS.md",
+        "docs/agent-docs/AGENT_PRIORITY_TASKS.md",
+        "docs/agent-docs/DUAL_AGENT_COORDINATION.md",
+        "docs/agent-docs/FULL_CONTEXT_FOR_AGENTS.md",
+        "docs/agent-docs/MASTER_PROJECT_CONTEXT.md",
+        "docs/architecture/CATHEDRAL_ARCHITECTURE.md",
+        "docs/archive/AVALON_DEPLOYMENT_README.md",
+        "docs/archive/BUILD_COMPLETE_CATHEDRAL.md",
+        "docs/archive/CHIRON_HEALING_CODEX.md",
+        "docs/archive/CODEX_144_99_ABYSSIAE.md",
+        "docs/archive/COMPLETE_ORGANIC_SYSTEM_MAP.md",
+        "docs/archive/COMPLETE_RESEARCH_INTEGRATION_MASTER.md",
+        "docs/archive/COMPLETE_SYSTEM_INTEGRATION.md",
+        "docs/archive/COMPLETE_WORK_SUMMARY.md",
+        "docs/archive/CONSOLIDATION_AUDIT.md",
+        "docs/archive/CONTINUED_RESEARCH_DOCUMENTATION.md",
+        "docs/archive/DEVELOPMENT_GUIDE.md",
+        "docs/archive/EXPANSION_PLAN.md",
+        "docs/archive/FRACTAL_FLAMES_INTEGRATION_MASTER.md",
+        "docs/archive/GRIMOIRE_REFERENCE_SYSTEM.md",
+        "docs/archive/HARMONIC_CONVERGENCE_SLEEP.md",
+        "docs/archive/IMPLEMENTATION_CHECKLIST.md",
+        "docs/archive/INFRASTRUCTURE_COMPLETE.md",
+        "docs/archive/JEWEL_OF_INDRA_LATTICE.md",
+        "docs/archive/LATTICE_LINKS.md",
+        "docs/archive/LIBER_ARCANAE_CODEX_ABYSSIAE.md",
+        "docs/archive/LIVING_ARCANAE_NUMEROLOGY_0_144.md",
+        "docs/archive/LIVING_ARCANAE_TRADITION_ENGINES.md",
+        "docs/archive/LIVING_ARTWORK_COMPLETE.md",
+        "docs/archive/LIVING_CATHEDRAL_ENGINE.md",
+        "docs/archive/LIVING_CONNECTION_MAPS.md",
+        "docs/archive/LIVING_NARRATIVE_ENGINE.md",
+        "docs/archive/MASTER_CATHEDRAL_CONSOLIDATED_INFORMATION.md",
+        "docs/archive/MASTER_CONSOLIDATION_ARTIFACT.md",
+        "docs/archive/MASTER_INDEX.md",
+        "docs/archive/MASTER_NUMBER_EVOLUTION_CODEX.md",
+        "docs/archive/MASTER_PROVENANCE_CODEX_144_99_ARCANAE_INTEGRATION.md",
+        "docs/archive/MASTER_V1_CONTROL.md",
+        "docs/archive/MASTER_V1_INTEGRATION.md",
+        "docs/archive/MONOREPO_CONSOLIDATION_PLAN.md",
+        "docs/archive/MONOREPO_INTEGRATION_PLAN.md",
+        "docs/archive/MONOREPO_ORGANIZATION_GUIDE.md",
+        "docs/archive/MONOREPO_STATUS_COMPLETE.md",
+        "docs/archive/MOONCHILD_EGREGORE_SYSTEM.md",
+        "docs/archive/NAMING_CONSISTENCY_MASTER_GUIDE.md",
+        "docs/archive/NODE_VALIDATION_LOCKING_SYSTEM.md",
+        "docs/archive/OPEN_SPEC_CATHEDRAL_SYSTEM.md",
+        "docs/archive/PERMANENT_SESSION_RECORDS.md",
+        "docs/archive/PLUTO_CODEX_MASTER_STATUS.md",
+        "docs/archive/PROTECTION_AND_PRIVACY_SYSTEM.md",
+        "docs/archive/README_RENDERER.md",
+        "docs/archive/REPOSITORY_CONNECTION_VERIFICATION.md",
+        "docs/archive/REPOSITORY_CONSOLIDATION_PLAN.md",
+        "docs/archive/REPOSITORY_INTEGRITY_REPORT.md",
+        "docs/archive/REPOSITORY_LINKS.md",
+        "docs/archive/RITUAL_MAP.md",
+        "docs/archive/SYSTEM_EXPANSION_GUIDE.md",
+        "docs/archive/TECHNICAL_IMPLEMENTATION_ARCHETYPAL_NODES.md",
+        "docs/archive/THE_COST_OF_CLARITY.md",
+        "docs/archive/THREE_APP_PACKAGES_ORGANIZATION.md",
+        "docs/archive/TRANSCENDENT_ALICE_ENGINE.md",
+        "docs/archive/TRINITY_DEPLOYMENT_STRATEGY.md",
+        "docs/archive/UNIVERSAL-DESIGN.md",
+        "docs/archive/USE_AGENT_NOW.md",
+        "docs/archive/WASTE_BUCKET.md",
+        "docs/archive/WHEEL_ARTICLE.md",
+        "docs/archive/WHITE_RABBIT_PORTAL_NETWORK.md",
+        "docs/deployment/AVALON_DEPLOYMENT_README.md",
+        "docs/deployment/CATHEDRAL_DEPLOYMENT_GUIDE.md",
+        "docs/development/ACCESSIBILITY_AND_MEMORY_SUPPORT.md",
+        "docs/development/DEPLOYMENT_GUIDE.md",
+        "docs/development/DEPLOYMENT_STATUS.md",
+        "docs/geometry_manifests/node072_layers.md",
+        "docs/guides/DEVELOPMENT_GUIDE.md",
+        "docs/guides/IMPLEMENTATION_CHECKLIST.md",
+        "docs/iching_node072.md",
+        "docs/legal/LICENSE-CONTENT.md",
+        "docs/master/COMPLETE_ORGANIC_SYSTEM_MAP.md",
+        "docs/master/COMPLETE_RESEARCH_INTEGRATION_MASTER.md",
+        "docs/master/COMPLETE_SYSTEM_INTEGRATION.md",
+        "docs/master/MASTER_ARCHETYPAL_NODES_ARCHITECTURE.md",
+        "docs/master/MASTER_CATHEDRAL_CONSOLIDATED_INFORMATION.md",
+        "docs/master/MASTER_NUMBER_EVOLUTION_CODEX.md",
+        "docs/master/MASTER_PROVENANCE_CODEX_144_99_ARCANAE_INTEGRATION.md",
+        "docs/node_072_laboratory.md",
+        "docs/research/GRIMOIRE_REFERENCE_SYSTEM.md",
+        "docs/research/LIVING_ARCANAE_NUMEROLOGY_0_144.md",
+        "docs/research/LIVING_ARCANAE_TRADITION_ENGINES.md",
+        "docs/research/LIVING_ARTWORK_COMPLETE.md",
+        "docs/research/LIVING_CATHEDRAL_ENGINE.md",
+        "docs/research/LIVING_CONNECTION_MAPS.md",
+        "docs/research/LIVING_NARRATIVE_ENGINE.md",
+        "docs/research/MONOREPO_INTEGRATION_PLAN.md",
+        "docs/research/MONOREPO_ORGANIZATION_GUIDE.md",
+        "docs/research/MONOREPO_STATUS_COMPLETE.md",
+        "docs/research/REPOSITORY_CONNECTION_VERIFICATION.md",
+        "docs/research/REPOSITORY_CONSOLIDATION_PLAN.md",
+        "docs/research/REPOSITORY_INTEGRITY_REPORT.md",
+        "docs/research/REPOSITORY_LINKS.md",
+        "docs/security/PROTECTION_AND_PRIVACY_SYSTEM.md",
+        "docs/specs/CATHEDRAL_ARCHITECTURE.md",
+        "docs/specs/CATHEDRAL_CONSOLIDATION_PROGRESS.md",
+        "docs/specs/CATHEDRAL_CONSOLIDATION_QUALITY_ASSURANCE.md",
+        "docs/specs/CATHEDRAL_DEPLOYMENT_GUIDE.md",
+        "docs/specs/CATHEDRAL_DESIGN_PREFERENCES.md",
+        "docs/specs/CATHEDRAL_ERROR_PREVENTION_SYSTEM.md",
+        "docs/specs/CATHEDRAL_FINAL_INTEGRATION_README.md",
+        "docs/specs/CATHEDRAL_IMMERSIVE_CREATIVE_README.md",
+        "docs/specs/CATHEDRAL_IMPLEMENTATION_SUMMARY.md",
+        "docs/specs/CATHEDRAL_MASTER_INTEGRATION_HUB.md",
+        "docs/specs/CATHEDRAL_RESEARCH_CONSOLIDATION_FINDINGS.md",
+        "docs/specs/CATHEDRAL_STANDARDS.md",
+        "docs/specs/CATHEDRAL_STRUCTURE_MAP.md",
+        "docs/specs/CATHEDRAL_TRINITY_NAMING_SYSTEM.md",
+        "docs/specs/CATHEDRAL_UNIFIED_SUITE.md",
+        "docs/specs/MASTER_ARCHETYPAL_NODES_ARCHITECTURE.md",
+        "docs/standards/CATHEDRAL_STANDARDS.md",
+        "docs/standards/CATHEDRAL_TRINITY_NAMING_SYSTEM.md",
+        "docs/standards/NAMING_CONSISTENCY_MASTER_GUIDE.md",
+        "docs/systems/CATHEDRAL_ERROR_PREVENTION_SYSTEM.md",
+        "docs/systems/CATHEDRAL_MASTER_INTEGRATION_HUB.md",
+        "docs/systems/CATHEDRAL_STRUCTURE_MAP.md"
+      ]
+    }
+  },
+  "visionElements": [
+    "Celebration of high creativity and collective creative riches",
+    "Celebration of high creativity and collective creative riches",
+    "Celebration of high creativity and collective creative riches"
+  ],
+  "stories": [],
+  "esotericConnections": [
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "I Ching",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "I Ching",
+    "Kabbalah",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Kabbalah",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Soyga",
+    "I Ching",
+    "Kabbalah",
+    "Alchemy",
+    "I Ching",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Soyga",
+    "I Ching",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Soyga",
+    "I Ching",
+    "Soyga",
+    "I Ching",
+    "Kabbalah",
+    "I Ching",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "I Ching",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "I Ching",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "I Ching",
+    "Kabbalah",
+    "Alchemy",
+    "Kabbalah",
+    "Kabbalah",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Kabbalah",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Soyga",
+    "I Ching",
+    "Kabbalah",
+    "Alchemy",
+    "I Ching",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Soyga",
+    "I Ching",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "I Ching",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "I Ching",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "I Ching",
+    "Kabbalah",
+    "Alchemy",
+    "Kabbalah",
+    "Kabbalah",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy",
+    "Kabbalah",
+    "Alchemy",
+    "Alchemy",
+    "Alchemy"
+  ],
+  "ndJoyReferences": [
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "ND Joy - Core principle",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "ND Joy - Core principle",
+    "ND Joy - Core principle",
+    "ND Joy - Core principle",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "ND Joy - Core principle",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "ND Joy - Core principle",
+    "ND Joy - Core principle",
+    "ND Joy - Core principle",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "ND Joy - Core principle",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "ND Joy - Core principle",
+    "ND Joy - Core principle",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "ND Joy - Core principle",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "ND Joy - Core principle",
+    "ND Joy - Core principle",
+    "ND Joy - Core principle",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "ND Joy - Core principle",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design",
+    "Neurodivergent - Central to design"
+  ],
+  "academicBarrierReferences": []
+}

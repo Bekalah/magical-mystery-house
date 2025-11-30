@@ -1,0 +1,58 @@
+{
+  "repos": [
+    {
+      "name": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment",
+      "connected": true,
+      "issues": [
+        "Missing README.md"
+      ],
+      "fixes": [
+        "Create README.md with project description"
+      ],
+      "standards": []
+    },
+    {
+      "name": "cathedral-real",
+      "path": "/Users/rebeccalemke/cathedral-real",
+      "connected": true,
+      "issues": [],
+      "fixes": [
+        "Add \"license\": \"CC0-1.0\" to package.json"
+      ],
+      "standards": [
+        {
+          "item": "Package license",
+          "status": "missing",
+          "priority": "high"
+        },
+        {
+          "item": "Package description",
+          "status": "missing",
+          "priority": "medium"
+        }
+      ]
+    },
+    {
+      "name": "cathedral-fixed-clean",
+      "path": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "connected": true,
+      "issues": [],
+      "fixes": [],
+      "standards": []
+    },
+    {
+      "name": "cosmogenesis-engine",
+      "path": "/Users/rebeccalemke/cosmogenesis-engine",
+      "connected": false,
+      "issues": [
+        "Repository directory does not exist"
+      ],
+      "fixes": [],
+      "standards": []
+    }
+  ],
+  "connected": 2,
+  "issues": 2,
+  "standards": []
+}

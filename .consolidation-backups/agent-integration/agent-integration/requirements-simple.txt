@@ -1,0 +1,6 @@
+# Simplified Agent of Kaoz Requirements
+fastapi
+uvicorn
+pydantic
+aiohttp
+python-multipart

@@ -1,0 +1,40 @@
+{
+  "name": "@cathedral/lightweight-library",
+  "version": "1.0.0",
+  "description": "Expansive but lightweight library system for the Cathedral of Circuits",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Lightweight library - no build needed'",
+    "dev": "echo 'Lightweight library - ready to use'"
+  },
+  "keywords": [
+    "cathedral",
+    "lightweight",
+    "library",
+    "modular",
+    "sacred-geometry",
+    "trauma-safe"
+  ],
+  "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
+  "license": "CC0-1.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/cathedral-lightweight-library"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/cathedral-lightweight-library",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:00:20.240Z",
+  "packageManager": "pnpm@8.0.0"
+}

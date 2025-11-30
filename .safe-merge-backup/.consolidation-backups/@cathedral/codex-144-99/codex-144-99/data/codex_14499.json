@@ -1,0 +1,439 @@
+{
+    "metadata": {
+        "title": "Cathedral of Circuits DNA Lattice",
+        "version": "14499",
+        "description": "Spiral genome for archetypal gameplay and artifact generation",
+        "created": "2025-10-29",
+        "total_nodes": 33,
+        "total_rooms": 144,
+        "lineages": [
+            "Fortune",
+            "Dee",
+            "Agrippa",
+            "Crowley",
+            "Tesla",
+            "Hypatia",
+            "Hilma"
+        ],
+        "seven_ribbons": [
+            {
+                "name": "Art",
+                "color": "#d5afe1",
+                "anchor": "geometry"
+            },
+            {
+                "name": "Science",
+                "color": "#8ef3ff",
+                "anchor": "frequency"
+            },
+            {
+                "name": "Magic",
+                "color": "#ed766f",
+                "anchor": "sigil"
+            },
+            {
+                "name": "Psychology",
+                "color": "#e7c9a9",
+                "anchor": "integration"
+            },
+            {
+                "name": "Healing",
+                "color": "#c8ffcc",
+                "anchor": "harmonic"
+            },
+            {
+                "name": "Technology",
+                "color": "#ccebff",
+                "anchor": "repo"
+            },
+            {
+                "name": "Mythos",
+                "color": "#fd83c9",
+                "anchor": "avatar"
+            }
+        ]
+    },
+    "spinal_axis": {
+        "vertebrae_1": {
+            "id": "gate_01",
+            "number": 1,
+            "position": "base_chakra",
+            "angel": "Sandalphon",
+            "daemon": "Belial",
+            "artifact_type": "Foundation_Sigil",
+            "solfeggio": 396,
+            "color": "#8b0000",
+            "geometry": "cube",
+            "tarot": "Tower",
+            "i_ching": 1,
+            "lineage": "Crowley",
+            "powers": [
+                "foundation",
+                "grounding",
+                "manifestation"
+            ],
+            "rooms": [
+                "crypt_01",
+                "root_chamber",
+                "grounding_hall"
+            ],
+            "disciplines": [
+                "Magic",
+                "Healing",
+                "Mythos"
+            ]
+        },
+        "vertebrae_2": {
+            "id": "gate_02",
+            "number": 2,
+            "position": "sacral_chakra",
+            "angel": "Gabriel",
+            "daemon": "Asmodeus",
+            "artifact_type": "Creation_Glyph",
+            "solfeggio": 417,
+            "color": "#ff4500",
+            "geometry": "spiral",
+            "tarot": "High_Priestess",
+            "i_ching": 2,
+            "lineage": "Fortune",
+            "powers": [
+                "creation",
+                "passion",
+                "flow"
+            ],
+            "rooms": [
+                "creation_forge",
+                "passion_chamber",
+                "flow_pool"
+            ],
+            "disciplines": [
+                "Art",
+                "Psychology",
+                "Healing"
+            ]
+        },
+        "vertebrae_3": {
+            "id": "gate_03",
+            "number": 3,
+            "position": "solar_plexus",
+            "angel": "Michael",
+            "daemon": "Belphegor",
+            "artifact_type": "Power_Plate",
+            "solfeggio": 528,
+            "color": "#ffd700",
+            "geometry": "triangle",
+            "tarot": "Emperor",
+            "i_ching": 3,
+            "lineage": "Tesla",
+            "powers": [
+                "power",
+                "will",
+                "transformation"
+            ],
+            "rooms": [
+                "power_core",
+                "will_chamber",
+                "transformation_lab"
+            ],
+            "disciplines": [
+                "Science",
+                "Technology",
+                "Magic"
+            ]
+        },
+        "vertebrae_4": {
+            "id": "gate_04",
+            "number": 4,
+            "position": "heart_chakra",
+            "angel": "Raphael",
+            "daemon": "Mammon",
+            "artifact_type": "Love_Mandala",
+            "solfeggio": 639,
+            "color": "#32cd32",
+            "geometry": "heart",
+            "tarot": "Lovers",
+            "i_ching": 4,
+            "lineage": "Hypatia",
+            "powers": [
+                "love",
+                "healing",
+                "connection"
+            ],
+            "rooms": [
+                "heart_sanctuary",
+                "healing_grove",
+                "connection_bridge"
+            ],
+            "disciplines": [
+                "Healing",
+                "Psychology",
+                "Art"
+            ]
+        },
+        "vertebrae_5": {
+            "id": "gate_05",
+            "number": 5,
+            "position": "throat_chakra",
+            "angel": "Uriel",
+            "daemon": "Beelzebub",
+            "artifact_type": "Truth_Seal",
+            "solfeggio": 741,
+            "color": "#4169e1",
+            "geometry": "pentagon",
+            "tarot": "Hierophant",
+            "i_ching": 5,
+            "lineage": "Dee",
+            "powers": [
+                "truth",
+                "communication",
+                "wisdom"
+            ],
+            "rooms": [
+                "truth_hall",
+                "communication_nexus",
+                "wisdom_vault"
+            ],
+            "disciplines": [
+                "Magic",
+                "Science",
+                "Technology"
+            ]
+        },
+        "vertebrae_6": {
+            "id": "gate_06",
+            "number": 6,
+            "position": "third_eye",
+            "angel": "Raziel",
+            "daemon": "Leviathan",
+            "artifact_type": "Vision_Crystal",
+            "solfeggio": 852,
+            "color": "#9932cc",
+            "geometry": "hexagon",
+            "tarot": "Star",
+            "i_ching": 6,
+            "lineage": "Agrippa",
+            "powers": [
+                "vision",
+                "intuition",
+                "prophecy"
+            ],
+            "rooms": [
+                "vision_dome",
+                "intuition_pool",
+                "prophecy_chamber"
+            ],
+            "disciplines": [
+                "Art",
+                "Mythos",
+                "Psychology"
+            ]
+        },
+        "vertebrae_7": {
+            "id": "gate_07",
+            "number": 7,
+            "position": "crown_chakra",
+            "angel": "Metatron",
+            "daemon": "Lucifer",
+            "artifact_type": "Unity_Crown",
+            "solfeggio": 963,
+            "color": "#ffffff",
+            "geometry": "heptagon",
+            "tarot": "World",
+            "i_ching": 7,
+            "lineage": "Hilma",
+            "powers": [
+                "unity",
+                "transcendence",
+                "completion"
+            ],
+            "rooms": [
+                "unity_apex",
+                "transcendence_void",
+                "completion_sphere"
+            ],
+            "disciplines": [
+                "Art",
+                "Science",
+                "Healing",
+                "Magic",
+                "Psychology",
+                "Technology",
+                "Mythos"
+            ]
+        }
+    },
+    "mystery_house_rooms": {
+        "gnosis_wing": {
+            "philosophy_hall": {
+                "id": "gnosis_01",
+                "type": "study",
+                "lineage": "Fortune",
+                "dna_index": 1,
+                "artifacts": [
+                    "Qabalah_Tree",
+                    "Soyga_Square_1"
+                ],
+                "npcs": [
+                    "Fortune",
+                    "Agrippa"
+                ],
+                "unlock_condition": "enter_with_question"
+            },
+            "soyga_chamber": {
+                "id": "gnosis_02",
+                "type": "meditation",
+                "lineage": "Dee",
+                "dna_index": 5,
+                "artifacts": [
+                    "Angel_Sigil",
+                    "Scrying_Mirror"
+                ],
+                "npcs": [
+                    "Dee",
+                    "Uriel"
+                ],
+                "unlock_condition": "solve_angelic_puzzle"
+            }
+        },
+        "shadows_wing": {
+            "integration_hall": {
+                "id": "shadows_01",
+                "type": "therapy",
+                "lineage": "Crowley",
+                "dna_index": 1,
+                "artifacts": [
+                    "Shadow_Mask",
+                    "Integration_Key"
+                ],
+                "npcs": [
+                    "Crowley_Shadow",
+                    "Psyche"
+                ],
+                "unlock_condition": "face_shadow_self"
+            }
+        },
+        "ateliers_wing": {
+            "creation_forge": {
+                "id": "ateliers_01",
+                "type": "workshop",
+                "lineage": "Hilma",
+                "dna_index": 7,
+                "artifacts": [
+                    "Creation_Brush",
+                    "Vision_Canvas"
+                ],
+                "npcs": [
+                    "Hilma",
+                    "Muse"
+                ],
+                "unlock_condition": "bring_creative_vision"
+            }
+        },
+        "sophia7_wing": {
+            "wisdom_synthesis": {
+                "id": "sophia7_01",
+                "type": "library",
+                "lineage": "Hypatia",
+                "dna_index": 4,
+                "artifacts": [
+                    "Wisdom_Scroll",
+                    "Synthesis_Stone"
+                ],
+                "npcs": [
+                    "Hypatia",
+                    "Sophia"
+                ],
+                "unlock_condition": "demonstrate_integrated_wisdom"
+            }
+        },
+        "tesla_laboratory": {
+            "invention_chamber": {
+                "id": "tesla_01",
+                "type": "laboratory",
+                "lineage": "Tesla",
+                "dna_index": 3,
+                "artifacts": [
+                    "Tesla_Coil",
+                    "Frequency_Generator"
+                ],
+                "npcs": [
+                    "Tesla",
+                    "Volta"
+                ],
+                "unlock_condition": "solve_electrical_puzzle"
+            }
+        }
+    },
+    "links": [
+        {
+            "source": "gate_01",
+            "target": "gate_02",
+            "type": "ascension",
+            "activation": "complete_foundation_work"
+        },
+        {
+            "source": "gate_02",
+            "target": "gate_03",
+            "type": "empowerment",
+            "activation": "channel_creative_force"
+        },
+        {
+            "source": "gate_03",
+            "target": "gate_04",
+            "type": "heart_opening",
+            "activation": "balance_power_with_love"
+        },
+        {
+            "source": "gate_04",
+            "target": "gate_05",
+            "type": "expression",
+            "activation": "speak_heart_truth"
+        },
+        {
+            "source": "gate_05",
+            "target": "gate_06",
+            "type": "illumination",
+            "activation": "integrate_wisdom_vision"
+        },
+        {
+            "source": "gate_06",
+            "target": "gate_07",
+            "type": "transcendence",
+            "activation": "achieve_unity_consciousness"
+        },
+        {
+            "source": "gnosis_01",
+            "target": "shadows_01",
+            "type": "shadow_work",
+            "activation": "acknowledge_dark_wisdom"
+        },
+        {
+            "source": "shadows_01",
+            "target": "ateliers_01",
+            "type": "creative_integration",
+            "activation": "transform_shadow_into_art"
+        },
+        {
+            "source": "ateliers_01",
+            "target": "sophia7_01",
+            "type": "wisdom_synthesis",
+            "activation": "merge_creation_with_knowledge"
+        },
+        {
+            "source": "tesla_01",
+            "target": "gate_03",
+            "type": "power_amplification",
+            "activation": "connect_science_to_spirit"
+        }
+    ],
+    "avatar_spawn_points": {
+        "rebecca_respawn": "gate_01",
+        "tesla": "tesla_01",
+        "fortune": "gnosis_01",
+        "dee": "gnosis_02",
+        "agrippa": "gnosis_01",
+        "hypatia": "sophia7_01",
+        "hilma": "ateliers_01",
+        "crowley_shadow": "shadows_01"
+    }
+}

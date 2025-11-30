@@ -1,0 +1,114 @@
+{
+  "timestamp": "2025-11-28T00:19:34.826Z",
+  "deployments": [
+    {
+      "name": "Cathedral Main",
+      "repo": "cathedral-real",
+      "localPath": "/Users/rebeccalemke/cathedral-real",
+      "githubRepo": "Bekalah/cathedral-master",
+      "expectedUrl": "https://bekalah.github.io/cathedral-master",
+      "type": "GitHub Pages",
+      "status": "unknown",
+      "localExists": true,
+      "hasGit": true,
+      "hasWorkflows": true,
+      "remoteConfigured": true,
+      "workflows": [
+        "cathedral-deploy.yml",
+        "cathedral-unified-ci.yml",
+        "ci.yml",
+        "deploy-design-suite.yml",
+        "deploy.yml",
+        "pages.yml",
+        "services:.yml.yml",
+        "vercel-deploy.yml"
+      ]
+    },
+    {
+      "name": "Cathedral Deployment",
+      "repo": "cathedral-master-deployment",
+      "localPath": "/Users/rebeccalemke/cathedral-master-deployment",
+      "githubRepo": "Bekalah/cathedral-master-deployment",
+      "expectedUrl": "https://bekalah.github.io/cathedral-master-deployment",
+      "type": "GitHub Pages",
+      "status": "unknown",
+      "localExists": true,
+      "hasGit": true,
+      "hasWorkflows": true,
+      "remoteConfigured": true,
+      "workflows": [
+        "ci.yml",
+        "deploy.yml"
+      ]
+    },
+    {
+      "name": "Cathedral Fixed Clean",
+      "repo": "cathedral-fixed-clean",
+      "localPath": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "githubRepo": "Bekalah/cathedral",
+      "expectedUrl": "https://bekalah.github.io/cathedral",
+      "type": "GitHub Pages / Cloudflare",
+      "status": "unknown",
+      "localExists": true,
+      "hasGit": true,
+      "hasWorkflows": true,
+      "remoteConfigured": true,
+      "workflows": [
+        "auto-build.yml",
+        "auto-security.yml",
+        "cathedral-master.yml",
+        "ci-lite.yml",
+        "deploy-all-platforms.yml",
+        "deploy-pages-free.yml",
+        "deploy.yml",
+        "gh-pages.yml",
+        "pages.yml",
+        "pr-check.yml",
+        "publish-packages.yml"
+      ]
+    }
+  ],
+  "fixes": [
+    {
+      "date": "2025-11-27",
+      "deployment": "GitHub Actions CI/CD",
+      "issue": "pnpm version mismatch, Node.js version issues, caching problems",
+      "fix": "Updated to pnpm 9, Node.js 25.2, added proper caching, improved error handling",
+      "status": "fixed"
+    },
+    {
+      "date": "2025-11-27",
+      "deployment": "GitHub Authentication",
+      "issue": "Replit-specific authentication, missing token handling",
+      "fix": "Created universal GitHub auth helper, supports both Replit and standard tokens",
+      "status": "fixed"
+    },
+    {
+      "date": "2025-11-27",
+      "deployment": "Repository Connections",
+      "issue": "Incorrect remote URLs, missing connections",
+      "fix": "Fixed all git remotes, verified connections, added repository connector tool",
+      "status": "fixed"
+    },
+    {
+      "date": "2025-11-27",
+      "deployment": "Build Process",
+      "issue": "TypeScript compilation errors, module resolution issues",
+      "fix": "Fixed tsconfig.json, improved module resolution, added proper type safety",
+      "status": "fixed"
+    },
+    {
+      "date": "2025-11-27",
+      "deployment": "Code Quality",
+      "issue": "Type safety issues, console.logs in production, missing error handling",
+      "fix": "Fixed all any types, replaced console.logs with logger, improved error handling",
+      "status": "fixed"
+    }
+  ],
+  "summary": {
+    "totalDeployments": 3,
+    "configured": 3,
+    "withWorkflows": 3,
+    "fixesApplied": 5
+  }
+}

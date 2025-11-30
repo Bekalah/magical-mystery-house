@@ -1,0 +1,46 @@
+{
+  "files": {
+    "packages/design-mathematics-core/src/index.ts": [
+      {
+        "category": "Type Safety",
+        "issues": [
+          {
+            "severity": "warning",
+            "message": "Found 2 'any' types - consider using 'unknown' or specific types",
+            "count": 2
+          }
+        ]
+      }
+    ],
+    "packages/tesseract-bridge-core/src/TesseractBridge.ts": [
+      {
+        "category": "Type Safety",
+        "issues": [
+          {
+            "severity": "warning",
+            "message": "Found 17 'any' types - consider using 'unknown' or specific types",
+            "count": 17
+          }
+        ]
+      }
+    ],
+    "packages/trinity-v1-1-core/error-handler.ts": [
+      {
+        "category": "Error Handling",
+        "issues": [
+          {
+            "severity": "warning",
+            "message": "Some async operations may not have error handling",
+            "count": 1
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "total": 159,
+    "issues": 3,
+    "warnings": 3,
+    "info": 0
+  }
+}

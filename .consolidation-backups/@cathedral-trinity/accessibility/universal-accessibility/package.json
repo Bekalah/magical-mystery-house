@@ -1,0 +1,88 @@
+{
+  "name": "@cathedral-trinity/accessibility",
+  "version": "1.0.0",
+  "description": "Cathedral v1.0 Universal Accessibility Engine - ND Support, Cognitive Load Optimization, Trauma-Safe Environments",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./nd-support": {
+      "import": "./dist/NDSupport.js",
+      "require": "./dist/NDSupport.cjs",
+      "types": "./dist/NDSupport.d.ts"
+    },
+    "/trauma-safe": {
+      "import": "./dist/TraumaSafe.js",
+      "require": "./dist/TraumaSafe.cjs",
+      "types": "./dist/TraumaSafe.d.ts"
+    },
+    "/cognitive-optimization": {
+      "import": "./dist/CognitiveOptimization.js",
+      "require": "./dist/CognitiveOptimization.cjs",
+      "types": "./dist/CognitiveOptimization.d.ts"
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && node scripts/build.js",
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest run src/**/*.test.ts",
+    "test:watch": "vitest src/**/*.test.ts",
+    "test:coverage": "vitest run --coverage src/**/*.test.ts",
+    "test:accessibility": "vitest run src/**/accessibility*.test.ts",
+    "test:trauma-safe": "vitest run src/**/trauma*.test.ts",
+    "lint": "eslint src/**/*.ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "clean": "rm -rf dist",
+    "setup": "tsc --declaration",
+    "status": "node scripts/status.js",
+    "validate": "npm run test && npm run lint"
+  },
+  "keywords": [
+    "cathedral",
+    "accessibility",
+    "neurodivergent",
+    "trauma-safe",
+    "cognitive-load",
+    "nd-support",
+    "universal-design",
+    "adhd-support",
+    "autism-support",
+    "dyslexia-support",
+    "attention-regulation",
+    "trauma-informed",
+    "creative-accessibility",
+    "cognitive-accessibility"
+  ],
+  "author": "Rebecca Lemke (Cathedral Trinity Architecture)",
+  "license": "CC0-1.0",
+  "engines": {
+    "node": ">=22.9.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {
+    "@cathedral/core": "workspace:*",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "eslint": "^9.16.0",
+    "prettier": "^3.4.2",
+    "@cathedral-trinity/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "vitest": "^1.6.0",
+    "@vitest/coverage-v8": "^1.6.0"
+  },
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:54.540Z",
+  "packageManager": "pnpm@8.0.0"
+}

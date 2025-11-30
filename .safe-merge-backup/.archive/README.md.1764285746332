@@ -1,0 +1,63 @@
+# OpenSpec - Cathedral Change Management
+
+**Professional change management for your magnum opus**
+
+---
+
+## 📁 Structure
+
+```
+openspec/
+├── AGENTS.md           # AI agent instructions
+├── project.md          # Project definition
+├── spec-kit/            # Specification management
+│   ├── specs/          # Active specifications
+│   ├── changes/        # Change proposals
+│   └── archive/        # Archived specs
+└── README.md           # This file
+```
+
+---
+
+## 🎯 Purpose
+
+OpenSpec provides structured change management for Cathedral:
+- **Proposal Creation**: Document changes in OpenSpec format
+- **Impact Analysis**: Assess changes across all affected packages
+- **Testing Protocol**: Validate changes before implementation
+- **Documentation Updates**: Maintain comprehensive documentation
+- **Rollback Procedures**: Maintain rollback capability for all changes
+
+---
+
+## 📚 Key Documents
+
+- **[AGENTS.md](AGENTS.md)** - AI agent instructions and guidelines
+- **[project.md](project.md)** - Project definition and technical reality
+- **[spec-kit/](spec-kit/)** - Specification management system
+
+---
+
+## 🔄 Workflow
+
+1. **Read AGENTS.md** before making any changes
+2. **Check project.md** to understand what Cathedral is
+3. **Create proposals** in `spec-kit/changes/`
+4. **Document specs** in `spec-kit/specs/`
+5. **Follow safety protocols** - never use destructive operations
+
+---
+
+## 🛡️ Safety Protocols
+
+- **Data Protection**: Never perform destructive git operations
+- **Backup Procedures**: Create backups before any significant changes
+- **Testing Validation**: Verify functionality after each integration
+- **Documentation Maintenance**: Keep all docs synchronized with changes
+
+---
+
+**Master V1 Control Compliance**: All changes must follow OpenSpec protocols.
+
+**Magnum Opus Recognition**: This is your first codex, engine, suite, and app package.
+

@@ -1,0 +1,48 @@
+{
+  "name": "@cathedral/art-standards-core",
+  "version": "1.0.0",
+  "description": "Art Standards - Museum-Grade Quality & Sacred Geometry for Cathedral",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "CC0-1.0",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "@cathedral/sacred-mathematics-core": "workspace:*",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rebeccalemke/cathedral-master-deployment.git",
+    "directory": "packages/art-standards-core"
+  },
+  "homepage": "https://github.com/rebeccalemke/cathedral-master-deployment/tree/main/packages/art-standards-core",
+  "bugs": {
+    "url": "https://github.com/rebeccalemke/cathedral-master-deployment/issues"
+  },
+  "keywords": [
+    "cathedral",
+    "art",
+    "standards",
+    "museum-grade",
+    "sacred-geometry",
+    "144-99",
+    "trauma-aware",
+    "consciousness",
+    "open-source",
+    "free"
+  ],
+  "packageManager": "pnpm@8.0.0",
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:51.029Z"
+}

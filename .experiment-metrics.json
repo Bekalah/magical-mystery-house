@@ -1,0 +1,312 @@
+{
+  "summary": {
+    "totalCycles": 100,
+    "totalImprovements": 1051,
+    "successfulTools": 946,
+    "failedTools": 326,
+    "successRate": 74.37,
+    "avgDuration": 40130,
+    "minDuration": 9198,
+    "maxDuration": 96384,
+    "startTime": "2025-11-27T20:41:49.596Z",
+    "lastUpdate": "2025-11-28T10:31:04.368Z"
+  },
+  "toolStats": {
+    "Repository Connection": {
+      "runs": 100,
+      "successes": 100,
+      "failures": 0,
+      "totalDuration": 62232,
+      "phases": [
+        "repo-git"
+      ],
+      "avgDuration": 622.32,
+      "successRate": "100.00"
+    },
+    "Nested Git Update": {
+      "runs": 100,
+      "successes": 100,
+      "failures": 0,
+      "totalDuration": 86532,
+      "phases": [
+        "repo-git"
+      ],
+      "avgDuration": 865.32,
+      "successRate": "100.00"
+    },
+    "Code Improvement": {
+      "runs": 100,
+      "successes": 99,
+      "failures": 1,
+      "totalDuration": 222595,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 2225.95,
+      "successRate": "99.00"
+    },
+    "Quality Check": {
+      "runs": 100,
+      "successes": 100,
+      "failures": 0,
+      "totalDuration": 220158,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 2201.58,
+      "successRate": "100.00"
+    },
+    "Dependency Analysis": {
+      "runs": 100,
+      "successes": 100,
+      "failures": 0,
+      "totalDuration": 228966,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 2289.66,
+      "successRate": "100.00"
+    },
+    "Code Optimization": {
+      "runs": 100,
+      "successes": 72,
+      "failures": 28,
+      "totalDuration": 159439,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 1594.39,
+      "successRate": "72.00"
+    },
+    "Build Optimization": {
+      "runs": 100,
+      "successes": 51,
+      "failures": 49,
+      "totalDuration": 118033,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 1180.33,
+      "successRate": "51.00"
+    },
+    "Documentation": {
+      "runs": 100,
+      "successes": 0,
+      "failures": 100,
+      "totalDuration": 0,
+      "phases": [],
+      "avgDuration": 0,
+      "successRate": "0.00"
+    },
+    "Fix All Issues": {
+      "runs": 68,
+      "successes": 68,
+      "failures": 0,
+      "totalDuration": 161519,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 2375.279411764706,
+      "successRate": "100.00"
+    },
+    "Find Unused Code": {
+      "runs": 68,
+      "successes": 68,
+      "failures": 0,
+      "totalDuration": 158783,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 2335.044117647059,
+      "successRate": "100.00"
+    },
+    "Cleanup Duplicates": {
+      "runs": 68,
+      "successes": 66,
+      "failures": 2,
+      "totalDuration": 146959,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 2161.1617647058824,
+      "successRate": "97.06"
+    },
+    "Check Consistency": {
+      "runs": 66,
+      "successes": 0,
+      "failures": 66,
+      "totalDuration": 0,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 0,
+      "successRate": "0.00"
+    },
+    "Performance Benchmark": {
+      "runs": 65,
+      "successes": 65,
+      "failures": 0,
+      "totalDuration": 150790,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 2319.846153846154,
+      "successRate": "100.00"
+    },
+    "System Integration": {
+      "runs": 64,
+      "successes": 49,
+      "failures": 15,
+      "totalDuration": 934462,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 14600.96875,
+      "successRate": "76.56"
+    },
+    "Auto Documentation": {
+      "runs": 63,
+      "successes": 0,
+      "failures": 63,
+      "totalDuration": 0,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 0,
+      "successRate": "0.00"
+    },
+    "Solve et Coagula": {
+      "runs": 2,
+      "successes": 2,
+      "failures": 0,
+      "totalDuration": 4799,
+      "phases": [
+        "solve-et-coagula"
+      ],
+      "avgDuration": 2399.5,
+      "successRate": "100.00"
+    },
+    "Validate Visionary Art": {
+      "runs": 2,
+      "successes": 2,
+      "failures": 0,
+      "totalDuration": 5598,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 2799,
+      "successRate": "100.00"
+    },
+    "Validate REGISTRY": {
+      "runs": 2,
+      "successes": 2,
+      "failures": 0,
+      "totalDuration": 7514,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 3757,
+      "successRate": "100.00"
+    },
+    "Analyze Master Docs": {
+      "runs": 2,
+      "successes": 2,
+      "failures": 0,
+      "totalDuration": 7431,
+      "phases": [
+        "code-quality"
+      ],
+      "avgDuration": 3715.5,
+      "successRate": "100.00"
+    },
+    "Learn & Deploy": {
+      "runs": 1,
+      "successes": 0,
+      "failures": 1,
+      "totalDuration": 0,
+      "phases": [
+        "learn-deploy"
+      ],
+      "avgDuration": 0,
+      "successRate": "0.00"
+    },
+    "Monorepo Improvement": {
+      "runs": 1,
+      "successes": 0,
+      "failures": 1,
+      "totalDuration": 0,
+      "phases": [
+        "learn-deploy"
+      ],
+      "avgDuration": 0,
+      "successRate": "0.00"
+    }
+  },
+  "errorPatterns": {
+    "Command failed: pnpm run optimize:code\nfile:///Use": 28,
+    "Command failed: pnpm run optimize:build\nfile:///Us": 49,
+    "Command failed: pnpm run docs:auto\nnode:fs:2391\n  ": 59,
+    "Command failed: pnpm run cleanup:duplicates\nnode:f": 1,
+    "Command failed: pnpm run check:consistency\nfile://": 66,
+    "spawnSync /bin/sh ETIMEDOUT": 15,
+    "Command failed: pnpm run docs:auto\nnode:fs:435\n   ": 102,
+    "Command failed: pnpm run docs:auto\nfile:///Users/r": 2,
+    "Command failed: pnpm run improve:code\nfile:///User": 1,
+    "Command failed: pnpm run cleanup:duplicates\nfile:/": 1,
+    "Command failed: node tools/make-updates-live.mjs\nf": 1,
+    "Command failed: pnpm run improve:monorepo\nfile:///": 1
+  },
+  "phaseStats": {
+    "repo-git": {
+      "cycles": 0,
+      "improvements": 136,
+      "errors": 0,
+      "totalDuration": 104283
+    },
+    "code-quality": {
+      "cycles": 0,
+      "improvements": 644,
+      "errors": 164,
+      "totalDuration": 2306152
+    }
+  },
+  "trend": {
+    "improvements": [
+      12,
+      12,
+      12,
+      11,
+      11,
+      12,
+      12,
+      11,
+      14,
+      13
+    ],
+    "errors": [
+      3,
+      3,
+      3,
+      4,
+      4,
+      3,
+      3,
+      4,
+      2,
+      6
+    ],
+    "durations": [
+      54451,
+      52947,
+      55036,
+      76071,
+      66322,
+      40624,
+      49982,
+      78403,
+      65138,
+      96384
+    ]
+  },
+  "cycles": 100
+}

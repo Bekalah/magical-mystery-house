@@ -1,0 +1,101 @@
+{
+  "name": "@cathedral/godot-design-studio",
+  "version": "1.0.0",
+  "description": "Free Godot Design Studio - Figma-like design tools for mystical interfaces",
+  "main": "design_studio.gd",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "validate": "echo 'Validating design tools...' && node validate-design.js",
+    "export": "echo 'Exporting design tools...' && ppnpm run build",
+    "test": "echo 'Testing design workflows...' && node test-design.js"
+  },
+  "keywords": [
+    "godot",
+    "design-studio",
+    "figma-alternative",
+    "ui-design",
+    "trauma-safe",
+    "free",
+    "open-source",
+    "cathedral-of-circuits",
+    "mystical-design",
+    "sacred-geometry"
+  ],
+  "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/godot-design-studio"
+  },
+  "homepage": "https://bekalah.github.io/cathedral/godot-design-studio",
+  "godot": {
+    "version": "4.3+",
+    "compatibility": "4.0+",
+    "asset_type": "design_tool",
+    "themes": [
+      "design_studio",
+      "mystical_ui",
+      "trauma_safe",
+      "sacred_proportions"
+    ]
+  },
+  "cathedral": {
+    "sacred_mathematics": {
+      "golden_ratio": 1.618,
+      "144_99_ratio": 1.455,
+      "fibonacci_grids": true,
+      "divine_proportions": true
+    },
+    "trauma_safety": {
+      "no_autoplay": true,
+      "esc_exit": true,
+      "motion_controls": true,
+      "intensity_adjustment": true,
+      "gentle_defaults": true,
+      "undo_redo": true
+    },
+    "design_philosophy": {
+      "flowing_interfaces": true,
+      "energy_ribbons": true,
+      "breathing_animations": true,
+      "sacred_colors": true,
+      "archetypal_forms": true
+    },
+    "integration": {
+      "connects_to": [
+        "godot-vfx-library",
+        "godot-codex-14499",
+        "godot-liber-arcanae"
+      ]
+    }
+  },
+  "files": [
+    "scenes/",
+    "scripts/",
+    "tools/",
+    "templates/",
+    "components/",
+    "documentation/",
+    "examples/",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  },
+  "types": "dist/index.d.ts",
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=20.18.0",
+    "pnpm": ">=8.15.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:40:42.781Z"
+}

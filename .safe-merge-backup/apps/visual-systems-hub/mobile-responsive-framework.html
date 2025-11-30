@@ -1,0 +1,1755 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile-Responsive Visual Framework - Cathedral Master V1 Control System</title>
+    <meta
+      name="description"
+      content="Comprehensive mobile-responsive visual framework ensuring optimal Cathedral Master V1 Control System access across all devices and screen sizes" />
+
+    <!-- D3.js for advanced data visualization -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- Cathedral Master V1 Control System Styles -->
+    <style>
+      :root {
+        --cathedral-deep-blue: #1a237e;
+        --cathedral-gold: #ffd700;
+        --cathedral-silver: #c0c0c0;
+        --cathedral-crystal: #e1f5fe;
+        --cathedral-stone: #795548;
+        --cathedral-light: #fafafa;
+        --cathedral-accent: #4caf50;
+        --cathedral-warning: #ff9800;
+        --cathedral-error: #f44336;
+        --cathedral-success: #4caf50;
+        --cathedral-shadow: rgba(0, 0, 0, 0.2);
+        --cathedral-transition: all 0.3s ease;
+        
+        /* Mobile-responsive breakpoints */
+        --mobile-max-width: 480px;
+        --tablet-max-width: 768px;
+        --desktop-min-width: 1024px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        background: linear-gradient(
+          135deg,
+          var(--cathedral-deep-blue) 0%,
+          #283593 50%,
+          #1a237e 100%
+        );
+        color: var(--cathedral-light);
+        min-height: 100vh;
+        overflow-x: hidden;
+        line-height: 1.6;
+      }
+
+      /* Mobile-First Base Styles */
+      .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+        position: relative;
+      }
+
+      /* Navigation Header - Mobile Optimized */
+      .cathedral-header {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid var(--cathedral-gold);
+        padding: 0.8rem 1rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+      }
+
+      .cathedral-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .cathedral-logo {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+      }
+
+      /* Mobile Menu Toggle */
+      .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        color: var(--cathedral-light);
+        font-size: 1.2rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 8px;
+        transition: var(--cathedral-transition);
+      }
+
+      .menu-toggle:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(26, 35, 126, 0.95);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--cathedral-gold);
+        border-radius: 12px;
+        margin-top: 0.5rem;
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem;
+        z-index: 1001;
+      }
+
+      .nav-menu.active {
+        display: flex;
+      }
+
+      .nav-item {
+        list-style: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .nav-item:last-child {
+        border-bottom: none;
+      }
+
+      .nav-item a {
+        color: var(--cathedral-light);
+        text-decoration: none;
+        padding: 0.8rem 1rem;
+        border-radius: 8px;
+        transition: var(--cathedral-transition);
+        font-size: 0.9rem;
+        display: block;
+      }
+
+      .nav-item a:hover,
+      .nav-item a.active {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-deep-blue);
+      }
+
+      .back-link {
+        background: var(--cathedral-accent);
+        color: white;
+        padding: 0.4rem 0.8rem;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.8rem;
+        transition: var(--cathedral-transition);
+        white-space: nowrap;
+      }
+
+      .back-link:hover {
+        background: #45a049;
+        transform: scale(1.05);
+      }
+
+      /* Main Content - Mobile Responsive */
+      .framework-main {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+
+      /* Framework Header */
+      .framework-header {
+        text-align: center;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(15px);
+      }
+
+      .framework-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        margin-bottom: 0.8rem;
+        text-shadow: 2px 2px 4px var(--cathedral-shadow);
+      }
+
+      .framework-subtitle {
+        font-size: 1rem;
+        color: var(--cathedral-crystal);
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+      }
+
+      .framework-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .framework-stat {
+        text-align: center;
+        padding: 0.8rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        border: 1px solid var(--cathedral-gold);
+      }
+
+      .stat-value {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        margin-bottom: 0.3rem;
+        font-family: "Monaco", "Menlo", monospace;
+      }
+
+      .stat-label {
+        font-size: 0.8rem;
+        color: var(--cathedral-crystal);
+        font-weight: 500;
+      }
+
+      /* Responsive Grid System */
+      .responsive-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      /* System Cards - Mobile Responsive */
+      .system-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid var(--cathedral-silver);
+        border-radius: 16px;
+        padding: 1.5rem;
+        backdrop-filter: blur(10px);
+        transition: var(--cathedral-transition);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        height: auto;
+        min-height: 200px;
+      }
+
+      .system-card:hover {
+        border-color: var(--cathedral-gold);
+        transform: translateY(-3px) scale(1.01);
+        box-shadow: 0 10px 30px var(--cathedral-shadow);
+      }
+
+      .system-card.architecture {
+        border-color: var(--cathedral-success);
+        background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.registry {
+        border-color: var(--cathedral-accent);
+        background: linear-gradient(135deg, rgba(0, 150, 136, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.navigation {
+        border-color: #9c27b0;
+        background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.process {
+        border-color: var(--cathedral-warning);
+        background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.responsive {
+        border-color: var(--cathedral-crystal);
+        background: linear-gradient(135deg, rgba(225, 245, 254, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.accessibility {
+        border-color: var(--cathedral-stone);
+        background: linear-gradient(135deg, rgba(121, 85, 72, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-card.performance {
+        border-color: var(--cathedral-error);
+        background: linear-gradient(135deg, rgba(244, 67, 54, 0.1), rgba(255, 255, 255, 0.05));
+      }
+
+      .system-header {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      .system-icon {
+        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+        background: var(--cathedral-gold);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--cathedral-deep-blue);
+        box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+        flex-shrink: 0;
+      }
+
+      .system-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        flex: 1;
+        line-height: 1.2;
+      }
+
+      .system-status {
+        padding: 0.3rem 0.8rem;
+        border-radius: 15px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .status-active {
+        background: var(--cathedral-success);
+        color: white;
+        animation: pulse-green 2s infinite;
+      }
+
+      @keyframes pulse-green {
+        0% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7); }
+        70% { box-shadow: 0 0 0 8px rgba(76, 175, 80, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
+      }
+
+      .system-description {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      .system-features {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.8rem;
+        color: var(--cathedral-light);
+      }
+
+      .feature-icon {
+        font-size: 0.7rem;
+        color: var(--cathedral-gold);
+        flex-shrink: 0;
+      }
+
+      .system-actions {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        position: relative;
+        z-index: 2;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        padding: 0.6rem 1.2rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: var(--cathedral-transition);
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .btn-primary {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-deep-blue);
+      }
+
+      .btn-primary:hover {
+        background: #ffc107;
+        transform: scale(1.05);
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: var(--cathedral-light);
+        border: 2px solid var(--cathedral-gold);
+      }
+
+      .btn-secondary:hover {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-deep-blue);
+      }
+
+      /* Device Preview Section */
+      .device-preview-section {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid var(--cathedral-gold);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(15px);
+      }
+
+      .preview-header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .preview-title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 0.5rem;
+      }
+
+      .preview-subtitle {
+        font-size: 1rem;
+        color: var(--cathedral-crystal);
+      }
+
+      .device-simulator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+      }
+
+      .device-frame {
+        background: #333;
+        border-radius: 20px;
+        padding: 0.8rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        position: relative;
+        transition: var(--cathedral-transition);
+      }
+
+      .device-frame:hover {
+        transform: scale(1.05);
+      }
+
+      .device-mobile {
+        width: 200px;
+        height: 350px;
+      }
+
+      .device-tablet {
+        width: 300px;
+        height: 400px;
+      }
+
+      .device-desktop {
+        width: 400px;
+        height: 300px;
+      }
+
+      .device-screen {
+        background: var(--cathedral-light);
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .device-screen.mobile-preview {
+        height: 80%;
+        margin-top: 10%;
+        border-radius: 15px;
+      }
+
+      .device-content {
+        padding: 1rem;
+        color: var(--cathedral-deep-blue);
+        font-size: 0.7rem;
+        line-height: 1.3;
+      }
+
+      .device-label {
+        position: absolute;
+        bottom: -2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.8rem;
+        color: var(--cathedral-crystal);
+        font-weight: 600;
+      }
+
+      .device-status {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 8px;
+        height: 8px;
+        background: var(--cathedral-success);
+        border-radius: 50%;
+        animation: pulse-green 2s infinite;
+      }
+
+      /* Responsive Guidelines */
+      .guidelines-section {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid var(--cathedral-silver);
+        border-radius: 16px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .guidelines-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .guidelines-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .guideline-item {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 1.5rem;
+        border: 1px solid var(--cathedral-silver);
+        transition: var(--cathedral-transition);
+      }
+
+      .guideline-item:hover {
+        border-color: var(--cathedral-gold);
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      .guideline-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .guideline-icon {
+        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+        background: var(--cathedral-gold);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--cathedral-deep-blue);
+      }
+
+      .guideline-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+      }
+
+      .guideline-description {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+        line-height: 1.5;
+      }
+
+      .guideline-code {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 6px;
+        padding: 0.8rem;
+        font-family: "Monaco", "Menlo", monospace;
+        font-size: 0.8rem;
+        color: var(--cathedral-light);
+        margin-top: 1rem;
+        overflow-x: auto;
+      }
+
+      /* Touch-Friendly Interface */
+      .touch-interface-section {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid var(--cathedral-accent);
+        border-radius: 16px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .touch-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .touch-controls {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .touch-control {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid var(--cathedral-accent);
+        border-radius: 10px;
+        padding: 1.5rem;
+        text-align: center;
+        transition: var(--cathedral-transition);
+        cursor: pointer;
+        min-height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .touch-control:hover,
+      .touch-control:active {
+        border-color: var(--cathedral-gold);
+        background: rgba(255, 255, 255, 0.15);
+        transform: scale(1.05);
+      }
+
+      .touch-icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .touch-label {
+        font-size: 0.9rem;
+        color: var(--cathedral-light);
+        font-weight: 600;
+      }
+
+      /* Media Queries for Different Screen Sizes */
+      
+      /* Tablet Portrait (481px to 768px) */
+      @media screen and (min-width: 481px) {
+        .container {
+          padding: 1.5rem;
+        }
+
+        .framework-title {
+          font-size: 2.2rem;
+        }
+
+        .framework-subtitle {
+          font-size: 1.1rem;
+        }
+
+        .framework-stats {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .responsive-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .system-card {
+          height: auto;
+          min-height: 250px;
+        }
+
+        .system-features {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .system-actions {
+          flex-direction: row;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+          flex: 1;
+        }
+
+        .device-mobile {
+          width: 180px;
+          height: 320px;
+        }
+
+        .device-tablet {
+          width: 280px;
+          height: 380px;
+        }
+
+        .guidelines-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .touch-controls {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .nav-menu {
+          display: flex;
+          position: static;
+          background: transparent;
+          border: none;
+          flex-direction: row;
+          gap: 1rem;
+          margin-top: 0;
+          padding: 0;
+        }
+
+        .nav-item {
+          border-bottom: none;
+          border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-item:last-child {
+          border-right: none;
+        }
+
+        .nav-item a {
+          padding: 0.4rem 0.8rem;
+          font-size: 0.8rem;
+        }
+
+        .menu-toggle {
+          display: none;
+        }
+
+        .cathedral-logo {
+          font-size: 1.1rem;
+        }
+
+        .back-link {
+          padding: 0.5rem 1rem;
+          font-size: 0.9rem;
+        }
+      }
+
+      /* Desktop (769px and up) */
+      @media screen and (min-width: 769px) {
+        .container {
+          padding: 2rem;
+        }
+
+        .framework-title {
+          font-size: 2.8rem;
+        }
+
+        .framework-subtitle {
+          font-size: 1.2rem;
+        }
+
+        .responsive-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .system-card {
+          height: auto;
+          min-height: 280px;
+        }
+
+        .device-mobile {
+          width: 200px;
+          height: 350px;
+        }
+
+        .device-tablet {
+          width: 300px;
+          height: 400px;
+        }
+
+        .device-desktop {
+          width: 450px;
+          height: 320px;
+        }
+
+        .guidelines-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .device-simulator {
+          flex-wrap: nowrap;
+        }
+
+        .framework-stats {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .touch-controls {
+          grid-template-columns: repeat(6, 1fr);
+        }
+      }
+
+      /* Large Desktop (1025px and up) */
+      @media screen and (min-width: 1025px) {
+        .container {
+          max-width: 1200px;
+          padding: 3rem;
+        }
+
+        .framework-title {
+          font-size: 3rem;
+        }
+
+        .responsive-grid {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2rem;
+        }
+
+        .device-desktop {
+          width: 500px;
+          height: 350px;
+        }
+      }
+
+      /* Accessibility and Motion Preferences */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+
+        .system-card:hover {
+          transform: none;
+        }
+
+        .touch-control:hover,
+        .touch-control:active {
+          transform: none;
+        }
+
+        .device-frame:hover {
+          transform: none;
+        }
+      }
+
+      /* High Contrast Support */
+      @media (prefers-contrast: high) {
+        :root {
+          --cathedral-light: #ffffff;
+          --cathedral-gold: #ffb300;
+          --cathedral-shadow: rgba(0, 0, 0, 0.8);
+        }
+      }
+
+      /* Focus Styles for Accessibility */
+      a:focus,
+      button:focus,
+      .system-card:focus,
+      .touch-control:focus,
+      .guideline-item:focus {
+        outline: 2px solid var(--cathedral-gold);
+        outline-offset: 2px;
+      }
+
+      /* Loading and Error States */
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        color: var(--cathedral-gold);
+        font-size: 1.2rem;
+      }
+
+      .error-message {
+        background: var(--cathedral-error);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        text-align: center;
+      }
+
+      .success-message {
+        background: var(--cathedral-success);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="cathedral-header">
+      <nav class="cathedral-nav">
+        <a href="#" class="cathedral-logo">
+          🕍 Cathedral V1
+        </a>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <a href="integration-hub.html" class="back-link">← Back</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+            ☰
+          </button>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item"><a href="#responsive" class="active">Responsive</a></li>
+          <li class="nav-item"><a href="#devices">Devices</a></li>
+          <li class="nav-item"><a href="#guidelines">Guidelines</a></li>
+          <li class="nav-item"><a href="#touch">Touch UI</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="framework-main">
+      <!-- Framework Header -->
+      <section class="framework-header">
+        <h1 class="framework-title">Mobile-Responsive Visual Framework</h1>
+        <p class="framework-subtitle">
+          Comprehensive mobile-responsive visual framework ensuring optimal Cathedral Master V1 Control System
+          access across all devices and screen sizes with adaptive layouts and touch-optimized interfaces
+        </p>
+        <div class="framework-stats">
+          <div class="framework-stat">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Responsive Coverage</div>
+          </div>
+          <div class="framework-stat">
+            <div class="stat-value">5</div>
+            <div class="stat-label">Breakpoints</div>
+          </div>
+          <div class="framework-stat">
+            <div class="stat-value">320px</div>
+            <div class="stat-label">Min Width</div>
+          </div>
+          <div class="framework-stat">
+            <div class="stat-value">2048px</div>
+            <div class="stat-label">Max Width</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Responsive Components Grid -->
+      <section id="responsive" class="responsive-grid">
+        <!-- System Architecture Component -->
+        <div class="system-card architecture">
+          <div class="system-header">
+            <div class="system-icon">🏗️</div>
+            <h3 class="system-title">Architecture Component</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Adaptive layout system for the Cathedral architecture visualization that responds to screen size and device capabilities.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>5 responsive breakpoints</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Touch-optimized interactions</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Adaptive grid layouts</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Progressive enhancement</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="index.html" class="btn-primary">View Architecture</a>
+            <a href="#" class="btn-secondary">Demo</a>
+          </div>
+        </div>
+
+        <!-- REGISTRY Visualization Component -->
+        <div class="system-card registry">
+          <div class="system-header">
+            <div class="system-icon">📊</div>
+            <h3 class="system-title">REGISTRY Component</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Mobile-optimized REGISTRY data visualization with collapsible panels and swipeable data views for optimal mobile experience.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Mobile data tables</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Swipe gestures</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Responsive charts</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Adaptive filtering</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="registry-viewer.html" class="btn-primary">View REGISTRY</a>
+            <a href="#" class="btn-secondary">Mobile Demo</a>
+          </div>
+        </div>
+
+        <!-- Navigation Component -->
+        <div class="system-card navigation">
+          <div class="system-header">
+            <div class="system-icon">🗺️</div>
+            <h3 class="system-title">Navigation Component</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Touch-friendly Cathedral navigation with gesture controls, collapsible sidebars, and mobile-optimized 3D interaction.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Touch gesture support</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Mobile 3D navigation</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Collapsible interface</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Responsive breadcrumbs</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="cathedral-navigation.html" class="btn-primary">Navigate</a>
+            <a href="#" class="btn-secondary">Mobile View</a>
+          </div>
+        </div>
+
+        <!-- Process Flowchart Component -->
+        <div class="system-card process">
+          <div class="system-header">
+            <div class="system-icon">📈</div>
+            <h3 class="system-title">Flowchart Component</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Mobile-responsive flowchart editor with touch-friendly drag-and-drop, pinch-to-zoom, and responsive canvas scaling.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Touch drag & drop</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Pinch-to-zoom</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Responsive canvas</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Mobile toolbar</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="process-flowchart.html" class="btn-primary">Create Flow</a>
+            <a href="#" class="btn-secondary">Mobile Editor</a>
+          </div>
+        </div>
+
+        <!-- Responsive Framework Component -->
+        <div class="system-card responsive">
+          <div class="system-header">
+            <div class="system-icon">📱</div>
+            <h3 class="system-title">Framework Core</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Core responsive framework providing CSS Grid, Flexbox layouts, and adaptive typography for all Cathedral components.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>CSS Grid layouts</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Flexbox systems</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Fluid typography</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Viewport units</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="#" class="btn-primary">View Framework</a>
+            <a href="#" class="btn-secondary">Documentation</a>
+          </div>
+        </div>
+
+        <!-- Accessibility Component -->
+        <div class="system-card accessibility">
+          <div class="system-header">
+            <div class="system-icon">♿</div>
+            <h3 class="system-title">Accessibility Features</h3>
+            <span class="system-status status-active">Active</span>
+          </div>
+          <p class="system-description">
+            Comprehensive accessibility implementation with screen reader support, keyboard navigation, and WCAG 2.1 AA compliance.
+          </p>
+          <div class="system-features">
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Screen reader support</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>Keyboard navigation</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>WCAG 2.1 AA</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">✓</span>
+              <span>High contrast mode</span>
+            </div>
+          </div>
+          <div class="system-actions">
+            <a href="#" class="btn-primary">Accessibility Guide</a>
+            <a href="#" class="btn-secondary">Testing Tools</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Device Preview Section -->
+      <section id="devices" class="device-preview-section">
+        <div class="preview-header">
+          <h3 class="preview-title">Device Compatibility Preview</h3>
+          <p class="preview-subtitle">
+            Real-time preview of Cathedral Visual Systems across different device types and screen sizes
+          </p>
+        </div>
+        <div class="device-simulator">
+          <div class="device-frame device-mobile">
+            <div class="device-screen mobile-preview">
+              <div class="device-content">
+                <h4 style="color: var(--cathedral-deep-blue); margin-bottom: 0.5rem;">Mobile View</h4>
+                <p style="margin-bottom: 0.3rem;">• Stack layout</p>
+                <p style="margin-bottom: 0.3rem;">• Touch gestures</p>
+                <p style="margin-bottom: 0.3rem;">• Simplified navigation</p>
+                <p style="margin-bottom: 0.3rem;">• Thumb-friendly controls</p>
+              </div>
+            </div>
+            <div class="device-status"></div>
+            <div class="device-label">Mobile (320px+)</div>
+          </div>
+
+          <div class="device-frame device-tablet">
+            <div class="device-screen">
+              <div class="device-content">
+                <h4 style="color: var(--cathedral-deep-blue); margin-bottom: 0.5rem;">Tablet View</h4>
+                <p style="margin-bottom: 0.3rem;">• Grid layouts</p>
+                <p style="margin-bottom: 0.3rem;">• Side navigation</p>
+                <p style="margin-bottom: 0.3rem;">• Touch + keyboard</p>
+                <p style="margin-bottom: 0.3rem;">• Responsive components</p>
+              </div>
+            </div>
+            <div class="device-status"></div>
+            <div class="device-label">Tablet (768px+)</div>
+          </div>
+
+          <div class="device-frame device-desktop">
+            <div class="device-screen">
+              <div class="device-content">
+                <h4 style="color: var(--cathedral-deep-blue); margin-bottom: 0.5rem;">Desktop View</h4>
+                <p style="margin-bottom: 0.3rem;">• Full grid systems</p>
+                <p style="margin-bottom: 0.3rem;">• Hover interactions</p>
+                <p style="margin-bottom: 0.3rem;">• Multi-panel layouts</p>
+                <p style="margin-bottom: 0.3rem;">• Advanced visualizations</p>
+              </div>
+            </div>
+            <div class="device-status"></div>
+            <div class="device-label">Desktop (1024px+)</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Responsive Guidelines -->
+      <section id="guidelines" class="guidelines-section">
+        <h3 class="guidelines-title">Responsive Design Guidelines</h3>
+        <div class="guidelines-grid">
+          <div class="guideline-item">
+            <div class="guideline-header">
+              <div class="guideline-icon">📱</div>
+              <h4 class="guideline-title">Mobile First</h4>
+            </div>
+            <p class="guideline-description">
+              Design for mobile devices first, then progressively enhance for larger screens. Start with the smallest viewport and scale up.
+            </p>
+            <div class="guideline-code">
+/* Mobile First Approach */
+.container {
+  width: 100%;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    padding: 2rem;
+  }
+}
+            </div>
+          </div>
+
+          <div class="guideline-item">
+            <div class="guideline-header">
+              <div class="guideline-icon">🔧</div>
+              <h4 class="guideline-title">Flexible Grid Systems</h4>
+            </div>
+            <p class="guideline-description">
+              Use CSS Grid and Flexbox for flexible layouts that adapt to different screen sizes and orientations.
+            </p>
+            <div class="guideline-code">
+/* Flexible Grid */
+.responsive-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .responsive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+            </div>
+          </div>
+
+          <div class="guideline-item">
+            <div class="guideline-header">
+              <div class="guideline-icon">👆</div>
+              <h4 class="guideline-title">Touch Targets</h4>
+            </div>
+            <p class="guideline-description">
+              Ensure touch targets are at least 44px × 44px for optimal mobile interaction and accessibility.
+            </p>
+            <div class="guideline-code">
+/* Touch-Friendly Buttons */
+.btn {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 12px 16px;
+  cursor: pointer;
+  user-select: none;
+}
+            </div>
+          </div>
+
+          <div class="guideline-item">
+            <div class="guideline-header">
+              <div class="guideline-icon">📖</div>
+              <h4 class="guideline-title">Readable Typography</h4>
+            </div>
+            <p class="guideline-description">
+              Use relative units (rem, em, vw) for typography to ensure consistent readability across devices.
+            </p>
+            <div class="guideline-code">
+/* Fluid Typography */
+.title {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+            </div>
+          </div>
+
+          <div class="guideline-item">
+            <div class="guideline-header">
+              <div class="guideline-icon">⚡</div>
+              <h4 class="guideline-title">Performance Optimization</h4>
+            </div>
+            <p class="guideline-description">
+              Optimize for mobile performance with compressed images, lazy loading, and efficient CSS.
+            </p>
+            <div class="guideline-code">
+/* Optimized Images */
+img {
+  max-width: 100%;
+  height: auto;
+  loading: lazy;
+}
+
+/* Efficient CSS */
+* {
+  box-sizing: border-box;
+}
+            </div>
+          </div>
+
+          <div class="guideline-item">
+            <div class="guideline-header">
+              <div class="guideline-icon">🎯</div>
+              <h4 class="guideline-title">Viewport Configuration</h4>
+            </div>
+            <p class="guideline-description">
+              Configure the viewport meta tag correctly to ensure proper rendering on mobile devices.
+            </p>
+            <div class="guideline-code">
+<!-- Proper Viewport Meta Tag -->
+<meta name="viewport" 
+      content="width=device-width, 
+               initial-scale=1.0,
+               user-scalable=no">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Touch Interface Controls -->
+      <section id="touch" class="touch-interface-section">
+        <h3 class="touch-title">Touch Interface Controls</h3>
+        <div class="touch-controls">
+          <div class="touch-control" onclick="simulateGesture('tap')">
+            <div class="touch-icon">👆</div>
+            <div class="touch-label">Tap</div>
+          </div>
+          <div class="touch-control" onclick="simulateGesture('double-tap')">
+            <div class="touch-icon">👆👆</div>
+            <div class="touch-label">Double Tap</div>
+          </div>
+          <div class="touch-control" onclick="simulateGesture('long-press')">
+            <div class="touch-icon">🖱️</div>
+            <div class="touch-label">Long Press</div>
+          </div>
+          <div class="touch-control" onclick="simulateGesture('pinch')">
+            <div class="touch-icon">🤏</div>
+            <div class="touch-label">Pinch</div>
+          </div>
+          <div class="touch-control" onclick="simulateGesture('pan')">
+            <div class="touch-icon">👉</div>
+            <div class="touch-label">Pan</div>
+          </div>
+          <div class="touch-control" onclick="simulateGesture('swipe')">
+            <div class="touch-icon">➡️</div>
+            <div class="touch-label">Swipe</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Cathedral Mobile-Responsive Framework JavaScript
+      class MobileResponsiveFramework {
+        constructor() {
+          this.currentDevice = 'desktop';
+          this.touchSupport = this.detectTouchSupport();
+          this.orientation = this.getOrientation();
+          
+          this.init();
+        }
+
+        init() {
+          this.setupEventListeners();
+          this.detectDeviceType();
+          this.setupTouchGestures();
+          this.startOrientationListener();
+        }
+
+        setupEventListeners() {
+          // Menu toggle for mobile navigation
+          const menuToggle = document.getElementById('menuToggle');
+          const navMenu = document.getElementById('navMenu');
+
+          if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+              navMenu.classList.toggle('active');
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+              if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+              }
+            });
+          }
+
+          // Smooth scrolling for navigation
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', (e) => {
+              e.preventDefault();
+              const target = document.querySelector(e.target.getAttribute('href'));
+              if (target) {
+                target.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }
+            });
+          });
+
+          // Device simulation
+          document.querySelectorAll('.device-frame').forEach((frame) => {
+            frame.addEventListener('click', () => {
+              const deviceType = frame.classList.contains('device-mobile') ? 'mobile' :
+                               frame.classList.contains('device-tablet') ? 'tablet' : 'desktop';
+              this.simulateDeviceSwitch(deviceType);
+            });
+          });
+
+          // System card interactions
+          document.querySelectorAll('.system-card').forEach((card) => {
+            card.addEventListener('click', (e) => {
+              if (!e.target.closest('a')) {
+                const systemType = card.classList[1]; // Get system type from class
+                this.showSystemDemo(systemType);
+              }
+            });
+          });
+        }
+
+        detectDeviceType() {
+          const width = window.innerWidth;
+          
+          if (width <= 480) {
+            this.currentDevice = 'mobile';
+          } else if (width <= 768) {
+            this.currentDevice = 'tablet';
+          } else {
+            this.currentDevice = 'desktop';
+          }
+
+          this.updateDeviceIndicators();
+        }
+
+        updateDeviceIndicators() {
+          // Update device status indicators
+          document.querySelectorAll('.device-status').forEach((status, index) => {
+            if (status) {
+              if (this.currentDevice === 'mobile' && index === 0) {
+                status.style.background = 'var(--cathedral-success)';
+              } else if (this.currentDevice === 'tablet' && index === 1) {
+                status.style.background = 'var(--cathedral-success)';
+              } else if (this.currentDevice === 'desktop' && index === 2) {
+                status.style.background = 'var(--cathedral-success)';
+              } else {
+                status.style.background = 'var(--cathedral-silver)';
+              }
+            }
+          });
+        }
+
+        detectTouchSupport() {
+          return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        }
+
+        getOrientation() {
+          return window.innerHeight > window.innerWidth ? 'portrait' : 'landscape';
+        }
+
+        setupTouchGestures() {
+          if (!this.touchSupport) {
+            console.log('Touch not supported, falling back to mouse interactions');
+            return;
+          }
+
+          // Add touch gesture indicators
+          document.querySelectorAll('.touch-control').forEach((control) => {
+            control.addEventListener('touchstart', (e) => {
+              control.classList.add('touch-active');
+            });
+
+            control.addEventListener('touchend', (e) => {
+              setTimeout(() => {
+                control.classList.remove('touch-active');
+              }, 200);
+            });
+          });
+        }
+
+        startOrientationListener() {
+          window.addEventListener('orientationchange', () => {
+            setTimeout(() => {
+              this.handleOrientationChange();
+            }, 100);
+          });
+
+          window.addEventListener('resize', () => {
+            this.handleResize();
+          });
+        }
+
+        handleOrientationChange() {
+          this.orientation = this.getOrientation();
+          this.detectDeviceType();
+          
+          // Adjust layouts for orientation
+          this.adjustLayoutForOrientation();
+        }
+
+        handleResize() {
+          this.detectDeviceType();
+          
+          // Throttle resize events for performance
+          clearTimeout(this.resizeTimeout);
+          this.resizeTimeout = setTimeout(() => {
+            this.optimizeForDevice();
+          }, 150);
+        }
+
+        adjustLayoutForOrientation() {
+          const isPortrait = this.orientation === 'portrait';
+          
+          // Adjust grid layouts for orientation
+          document.querySelectorAll('.responsive-grid').forEach((grid) => {
+            if (isPortrait) {
+              grid.style.gridTemplateColumns = '1fr';
+            } else {
+              const columns = this.currentDevice === 'mobile' ? 1 : 
+                            this.currentDevice === 'tablet' ? 2 : 3;
+              grid.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
+            }
+          });
+        }
+
+        optimizeForDevice() {
+          const device = this.currentDevice;
+          
+          // Add device-specific optimizations
+          document.body.className = document.body.className.replace(/device-\w+/, '');
+          document.body.classList.add(`device-${device}`);
+
+          // Optimize touch targets for device
+          if (device === 'mobile') {
+            this.optimizeTouchTargets();
+          }
+        }
+
+        optimizeTouchTargets() {
+          document.querySelectorAll('.btn, .touch-control, .system-card').forEach((element) => {
+            element.style.minHeight = '44px';
+            element.style.minWidth = '44px';
+          });
+        }
+
+        simulateDeviceSwitch(deviceType) {
+          // Simulate device switch by adjusting viewport
+          const originalWidth = window.innerWidth;
+          const originalHeight = window.innerHeight;
+
+          let newWidth, newHeight;
+          
+          switch (deviceType) {
+            case 'mobile':
+              newWidth = 375;
+              newHeight = 667;
+              break;
+            case 'tablet':
+              newWidth = 768;
+              newHeight = 1024;
+              break;
+            case 'desktop':
+              newWidth = 1200;
+              newHeight = 800;
+              break;
+          }
+
+          // Update current device
+          this.currentDevice = deviceType;
+          this.updateDeviceIndicators();
+
+          // Show device switch notification
+          this.showNotification(`Switched to ${deviceType} view`);
+        }
+
+        showSystemDemo(systemType) {
+          const systemNames = {
+            'architecture': 'System Architecture',
+            'registry': 'REGISTRY Data',
+            'navigation': 'Cathedral Navigation',
+            'process': 'Process Flowchart',
+            'responsive': 'Responsive Framework',
+            'accessibility': 'Accessibility Features'
+          };
+
+          const systemName = systemNames[systemType] || 'Unknown System';
+          
+          const modal = document.createElement('div');
+          modal.style.cssText = `
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.9); z-index: 2000;
+            display: flex; align-items: center; justify-content: center;
+            padding: 2rem;
+          `;
+
+          modal.innerHTML = `
+            <div style="background: linear-gradient(135deg, var(--cathedral-deep-blue), var(--cathedral-light)); 
+                        color: var(--cathedral-light); padding: 3rem; border-radius: 25px; 
+                        border: 3px solid var(--cathedral-gold); text-align: center; max-width: 600px;
+                        box-shadow: 0 0 100px var(--cathedral-gold);">
+              <h2 style="color: var(--cathedral-gold); margin-bottom: 1rem;">${systemName}</h2>
+              <p style="margin-bottom: 2rem; color: var(--cathedral-crystal);">
+                This component is fully responsive and optimized for all device types including touch interactions.
+              </p>
+              <div style="display: flex; gap: 1rem; justify-content: center;">
+                <button onclick="this.parentElement.parentElement.parentElement.remove()"
+                        style="background: var(--cathedral-gold); color: var(--cathedral-deep-blue); 
+                               padding: 1rem 2rem; border: none; border-radius: 12px; 
+                               font-size: 1.1rem; cursor: pointer; font-weight: bold;">
+                  Close Demo
+                </button>
+              </div>
+            </div>
+          `;
+
+          document.body.appendChild(modal);
+
+          modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+              modal.remove();
+            }
+          });
+        }
+
+        showNotification(message) {
+          const notification = document.createElement('div');
+          notification.style.cssText = `
+            position: fixed; top: 20px; right: 20px; z-index: 2000;
+            background: var(--cathedral-accent); color: white;
+            padding: 1rem 2rem; border-radius: 10px; font-weight: bold;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+          `;
+          notification.textContent = message;
+
+          document.body.appendChild(notification);
+
+          setTimeout(() => {
+            notification.style.transition = 'opacity 0.3s ease';
+            notification.style.opacity = '0';
+            setTimeout(() => {
+              notification.remove();
+            }, 300);
+          }, 2000);
+        }
+      }
+
+      // Global functions for onclick handlers
+      function simulateGesture(gestureType) {
+        const messages = {
+          'tap': 'Tap gesture activated',
+          'double-tap': 'Double tap gesture activated',
+          'long-press': 'Long press gesture activated',
+          'pinch': 'Pinch to zoom gesture activated',
+          'pan': 'Pan gesture activated',
+          'swipe': 'Swipe gesture activated'
+        };
+
+        const message = messages[gestureType] || 'Gesture activated';
+        
+        // Visual feedback
+        const notification = document.createElement('div');
+        notification.style.cssText = `
+          position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+          background: var(--cathedral-gold); color: var(--cathedral-deep-blue);
+          padding: 2rem; border-radius: 20px; font-size: 1.5rem; font-weight: bold;
+          box-shadow: 0 0 50px var(--cathedral-gold); z-index: 2000;
+          animation: gestureAnimation 1s ease-out;
+        `;
+        notification.textContent = message;
+
+        // Add animation CSS
+        const style = document.createElement('style');
+        style.textContent = `
+          @keyframes gestureAnimation {
+            0% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+            50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+            100% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
+          }
+        `;
+        document.head.appendChild(style);
+        document.body.appendChild(notification);
+
+        setTimeout(() => {
+          notification.remove();
+          style.remove();
+        }, 1000);
+      }
+
+      // Initialize mobile-responsive framework when DOM is loaded
+      document.addEventListener('DOMContentLoaded', () => {
+        new MobileResponsiveFramework();
+      });
+
+      // Keyboard navigation support
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          // Close any open modals
+          document.querySelectorAll('[style*="z-index: 2000"]').forEach(modal => {
+            modal.remove();
+          });
+        }
+      });
+
+      // Handle reduced motion preference
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.style.setProperty('--cathedral-transition', 'none');
+      }
+    </script>
+  </body>
+</html>

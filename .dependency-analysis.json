@@ -1,0 +1,47 @@
+{
+  "total": 8,
+  "dependencies": 1,
+  "devDependencies": 7,
+  "issues": {
+    "duplicates": [],
+    "unused": [
+      {
+        "package": "@octokit/rest",
+        "version": "^22.0.1",
+        "suggestion": "Check if actually used, remove if not"
+      },
+      {
+        "package": "@typescript-eslint/eslint-plugin",
+        "version": "^6.13.0",
+        "suggestion": "Check if actually used, remove if not"
+      },
+      {
+        "package": "@typescript-eslint/parser",
+        "version": "^6.13.0",
+        "suggestion": "Check if actually used, remove if not"
+      },
+      {
+        "package": "eslint",
+        "version": "^8.54.0",
+        "suggestion": "Check if actually used, remove if not"
+      },
+      {
+        "package": "prettier",
+        "version": "^3.7.1",
+        "suggestion": "Check if actually used, remove if not"
+      },
+      {
+        "package": "tsx",
+        "version": "^4.7.0",
+        "suggestion": "Check if actually used, remove if not"
+      },
+      {
+        "package": "typescript",
+        "version": "^5.3.2",
+        "suggestion": "Check if actually used, remove if not"
+      }
+    ],
+    "outdated": [],
+    "suggestions": []
+  }
+}

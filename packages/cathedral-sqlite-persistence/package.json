@@ -1,0 +1,30 @@
+{
+  "name": "@cathedral/sqlite-persistence",
+  "version": "1.0.0",
+  "description": "Robust SQLite database integration for Cathedral Professional Design Suite with Node.js v25 support",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.2.0",
+    "zod": "^3.22.0",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "license": "CC0-1.0",
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:40:41.900Z",
+  "packageManager": "pnpm@8.0.0"
+}

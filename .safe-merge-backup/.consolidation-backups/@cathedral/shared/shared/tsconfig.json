@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "skipLibCheck": true,
+  },
+  "include": ["src"],
+  "exclude": ["../codex-144-99/src", "../brain/src"],
+  "references": []
+}

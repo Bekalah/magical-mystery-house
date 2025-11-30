@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "description": "All character, goddess, faction, codex, liber arcanae, and cosmogenesis connections for the Cathedral system.",
+    "version": "1.0.0",
+    "nd_safe": true,
+    "trauma_informed": true,
+    "healing_focused": true
+  },
+  "connections": [
+    {
+      "character": "gemini-rivers",
+      "goddess": "Boann",
+      "factions": ["Order of the Living Waters", "Trinity Bridge"],
+      "gods_goddesses": ["Boann", "Brigid", "Danu"],
+      "taras": ["Green Tara", "White Tara"],
+      "codex_144_99": [90],
+      "liber_arcanae": ["high_priestess"],
+      "cosmogenesis": ["Mercury"],
+      "crystals": ["Aquamarine", "Moonstone"],
+      "sacred_geometry": ["Vesica Piscis", "Twin Spiral"],
+      "healing_grid": ["Reiki River Grid", "Hilma af Klint Chapel"],
+      "art_chapel": ["Hilma af Klint Group", "Fuchs", "Surrealists", "Mystic Artists", "Saints"]
+  }
+  ]
+}

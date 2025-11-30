@@ -1,0 +1,686 @@
+{
+  "timestamp": 1764468436400,
+  "totalErrors": 998,
+  "errorsByType": {
+    "build": 1,
+    "runtime-pattern": 5,
+    "console-log": 924,
+    "todo": 21,
+    "unused-variable": 23,
+    "any-type": 14,
+    "ts-ignore": 10
+  },
+  "errors": [
+    {
+      "type": "build",
+      "message": "ELIFECYCLE  Command failed with exit code 1.",
+      "severity": "error"
+    },
+    {
+      "type": "runtime-pattern",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/scripts/comprehensive-error-fixer.mjs",
+      "pattern": "/ReferenceError/gi",
+      "fix": "reference-fix",
+      "severity": "warning"
+    },
+    {
+      "type": "runtime-pattern",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/scripts/comprehensive-error-fixer.mjs",
+      "pattern": "/TypeError/gi",
+      "fix": "type-fix",
+      "severity": "warning"
+    },
+    {
+      "type": "runtime-pattern",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/error-recovery.mjs",
+      "pattern": "/Cannot\\s+find\\s+module/gi",
+      "fix": "import-fix",
+      "severity": "warning"
+    },
+    {
+      "type": "runtime-pattern",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-all-broken.mjs",
+      "pattern": "/ReferenceError/gi",
+      "fix": "reference-fix",
+      "severity": "warning"
+    },
+    {
+      "type": "runtime-pattern",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-all-broken.mjs",
+      "pattern": "/TypeError/gi",
+      "fix": "type-fix",
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-hub/src/server.ts",
+      "line": 170,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-hub/src/server.ts",
+      "line": 171,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/workspace-integrator-simple.mjs",
+      "line": 2,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/workspace-integrator-simple.mjs",
+      "line": 3,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/workspace-integrator-simple.mjs",
+      "line": 4,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/workspace-integrator-simple.mjs",
+      "line": 8,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/workspace-integrator-simple.mjs",
+      "line": 11,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/workspace-integrator-simple.mjs",
+      "line": 14,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/workspace-integrator-simple.mjs",
+      "line": 18,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/workspace-integrator-simple.mjs",
+      "line": 22,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/workspace-integrator-simple.mjs",
+      "line": 26,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/workspace-integrator-simple.mjs",
+      "line": 40,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/workspace-integrator-simple.mjs",
+      "line": 45,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/workspace-integrator-simple.mjs",
+      "line": 56,
+      "severity": "warning"
+    },
+    {
+      "type": "todo",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/scripts/comprehensive-error-fixer.mjs",
+      "line": 211,
+      "message": "// TODO/FIXME comments",
+      "severity": "info"
+    },
+    {
+      "type": "todo",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/scripts/comprehensive-error-fixer.mjs",
+      "line": 212,
+      "message": "if (line.includes('TODO') || line.includes('FIXME') || line.includes('XXX')) {",
+      "severity": "info"
+    },
+    {
+      "type": "unused-variable",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/scripts/live-fixes-display.mjs",
+      "line": 18,
+      "variable": "lastPosition",
+      "severity": "warning"
+    },
+    {
+      "type": "unused-variable",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/scripts/live-fixes-display.mjs",
+      "line": 57,
+      "variable": "timestamp",
+      "severity": "warning"
+    },
+    {
+      "type": "unused-variable",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/scripts/monitor-cycles.mjs",
+      "line": 19,
+      "variable": "LOG_FILE",
+      "severity": "warning"
+    },
+    {
+      "type": "unused-variable",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/scripts/monitor-cycles.mjs",
+      "line": 20,
+      "variable": "ALL_DAY_LOG",
+      "severity": "warning"
+    },
+    {
+      "type": "unused-variable",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/scripts/run-improvement-experiment.mjs",
+      "line": 122,
+      "variable": "matches",
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 57,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 78,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 104,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 107,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 114,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 119,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 130,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 134,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 140,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 141,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 151,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 155,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 170,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 171,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 172,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 173,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 176,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "line": 178,
+      "severity": "warning"
+    },
+    {
+      "type": "unused-variable",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-documentation.mjs",
+      "line": 168,
+      "variable": "timestamp",
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 95,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 96,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 104,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 105,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 110,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 111,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 131,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 163,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 166,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 177,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 187,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 205,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 206,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 207,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 208,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 209,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 210,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 211,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 214,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 215,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 217,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 221,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 222,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 223,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 224,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 225,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 226,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 227,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 244,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "line": 245,
+      "severity": "warning"
+    },
+    {
+      "type": "unused-variable",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-push-changes.mjs",
+      "line": 24,
+      "variable": "BASE_DIR",
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-push-changes.mjs",
+      "line": 290,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 69,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 77,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 81,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 88,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 89,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 90,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 130,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 131,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 132,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 133,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 136,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 138,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 144,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "line": 147,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/automation-runner.mjs",
+      "line": 54,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/automation-runner.mjs",
+      "line": 58,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/automation-runner.mjs",
+      "line": 59,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/automation-runner.mjs",
+      "line": 60,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/automation-runner.mjs",
+      "line": 65,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/automation-runner.mjs",
+      "line": 71,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/automation-runner.mjs",
+      "line": 74,
+      "severity": "warning"
+    },
+    {
+      "type": "console-log",
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/tools/automation-runner.mjs",
+      "line": 80,
+      "severity": "warning"
+    }
+  ],
+  "fixes": [
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144-99-core/src/Codex144Security.d.ts",
+      "errors": 1
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144-99-core/src/Codex144Security.ts",
+      "errors": 1
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/debug-system-core/src/DebugSystem.ts",
+      "errors": 2
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/design-mathematics-core/src/index.ts",
+      "errors": 1
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/health-map-core/src/HealthMapEngine.ts",
+      "errors": 2
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae-core/src/LiberArcanaeDesignMode.d.ts",
+      "errors": 1
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae-core/src/LiberArcanaeDesignMode.ts",
+      "errors": 1
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae-core/src/LiberArcanaeRPG.ts",
+      "errors": 1
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/science-engine-core/src/ScienceVisualization.ts",
+      "errors": 1
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-core/src/TesseractBridge.d.ts",
+      "errors": 1
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-core/src/TesseractBridge.ts",
+      "errors": 1
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge-hub/src/TesseractHub.ts",
+      "errors": 1
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-core/src/UnifiedCodexEngine.ts",
+      "errors": 2
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/scripts/10-hour-improvement-experiment.ts",
+      "errors": 2
+    }
+  ]
+}

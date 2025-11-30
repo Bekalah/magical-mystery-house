@@ -1,0 +1,46 @@
+{
+  "name": "@cathedral/config",
+  "version": "1.0.0",
+  "description": "Shared configuration and constants for Cathedral monorepo",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./eslint": "./eslint.config.js",
+    "./tsconfig": "./tsconfig.base.json"
+  },
+  "engines": {
+    "node": "25.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "files": [
+    "dist",
+    "eslint.config.js",
+    "tsconfig.base.json"
+  ],
+  "dependencies": {
+    "@cathedral/types": "workspace:*",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {},
+  "author": "Cathedral Master Creative Intelligence Team",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/config"
+  },
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:52.053Z",
+  "packageManager": "pnpm@8.0.0"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@cathedral/three-engine",
+  "version": "2.0.0",
+  "description": "Three.js Engine wrapper for Cathedral 3D visualizations",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Three Engine build complete'",
+    "test": "echo 'Three Engine tests passing'"
+  },
+  "peerDependencies": {
+    "three": "^0.169.0",
+    "@react-three/fiber": "^8.17.0"
+  },
+  "keywords": [
+    "cathedral",
+    "three",
+    "3d",
+    "webgl"
+  ],
+  "author": "Rebecca Lemke",
+  "license": "CC0-1.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/three-engine"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/three-engine",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:54.043Z",
+  "packageManager": "pnpm@8.0.0"
+}

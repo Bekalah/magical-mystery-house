@@ -1,0 +1,127 @@
+{
+  "timestamp": 1764532741600,
+  "masterRepo": "Bekalah/cathedral-master",
+  "localMaster": "cathedral-master-deployment",
+  "consolidated": [
+    {
+      "type": "cathedral",
+      "repo": "Bekalah/cathedral",
+      "consolidated": true,
+      "remote": "cathedral"
+    },
+    {
+      "type": "cathedral",
+      "repo": "Bekalah/cathedral-integration-workspace",
+      "consolidated": true,
+      "remote": "cathedral_integration_workspace"
+    },
+    {
+      "type": "cathedral",
+      "repo": "Bekalah/cathedral-minimal",
+      "consolidated": true,
+      "remote": "cathedral_minimal"
+    },
+    {
+      "type": "cathedral",
+      "repo": "Bekalah/cathedral-research",
+      "consolidated": true,
+      "remote": "cathedral_research"
+    },
+    {
+      "type": "cathedral",
+      "repo": "Bekalah/cathedral-vercel",
+      "consolidated": true,
+      "remote": "cathedral_vercel"
+    },
+    {
+      "type": "cathedral",
+      "repo": "Bekalah/cathedral-connection-map",
+      "consolidated": true,
+      "remote": "cathedral_connection_map"
+    },
+    {
+      "type": "cathedral",
+      "repo": "Bekalah/BUILDING-CATHEDRALS",
+      "consolidated": true,
+      "remote": "BUILDING_CATHEDRALS"
+    },
+    {
+      "type": "circuit",
+      "repo": "Bekalah/circuitum99",
+      "consolidated": true,
+      "remote": "circuitum99",
+      "note": "Circuitum99: Alpha et Omega"
+    },
+    {
+      "type": "circuit",
+      "repo": "Bekalah/circuitum99-minimal",
+      "consolidated": true,
+      "remote": "circuitum99_minimal",
+      "note": "Circuitum99: Alpha et Omega"
+    },
+    {
+      "type": "circuit",
+      "repo": "Bekalah/codex-14499",
+      "consolidated": true,
+      "remote": "codex_14499",
+      "note": "Circuitum99: Alpha et Omega"
+    },
+    {
+      "type": "circuit",
+      "repo": "Bekalah/tesseract-bridge",
+      "consolidated": true,
+      "remote": "tesseract_bridge",
+      "note": "Circuitum99: Alpha et Omega"
+    },
+    {
+      "type": "magnum-opus",
+      "repo": "Bekalah/stone-grimoire",
+      "consolidated": true,
+      "remote": "stone_grimoire"
+    },
+    {
+      "type": "magnum-opus",
+      "repo": "Bekalah/liber-arcanae",
+      "consolidated": true,
+      "remote": "liber_arcanae"
+    },
+    {
+      "type": "magnum-opus",
+      "repo": "Bekalah/liber-arcanae-game",
+      "consolidated": true,
+      "remote": "liber_arcanae_game"
+    },
+    {
+      "type": "magnum-opus",
+      "repo": "Bekalah/magical-mystery-house",
+      "consolidated": true,
+      "remote": "magical_mystery_house"
+    },
+    {
+      "type": "magnum-opus",
+      "repo": "Bekalah/cosmogenesis-learning-engine",
+      "consolidated": true,
+      "remote": "cosmogenesis_learning_engine"
+    },
+    {
+      "type": "magnum-opus",
+      "repo": "Bekalah/master-catalog-browser",
+      "consolidated": true,
+      "remote": "master_catalog_browser"
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "totalConsolidated": 17,
+    "cathedral": 7,
+    "circuits": 4,
+    "magnumOpus": 6,
+    "errors": 0
+  },
+  "tools": {
+    "policy": "free-only",
+    "noSubscriptions": true,
+    "noPaidServices": true,
+    "localOnly": true
+  }
+}

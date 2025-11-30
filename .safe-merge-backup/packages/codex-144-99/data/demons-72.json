@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "name": "Goetia - 72 Demons Registry",
+    "description": "Sacred registry of the 72 demons from the Lesser Key of Solomon",
+    "source": "Ars Goetia via traditional grimoire sources",
+    "business": "THE CATHEDRAL OF CIRCUITS",
+    "numerology": "72 = 8 × 9 (balances 72 angels)",
+    "sealed": true,
+    "balance_with": "angels-72.json"
+  },
+  "demons": {
+    "1": {
+      "name": "Bael",
+      "sigil": "♄",
+      "rank": "King",
+      "element": "East",
+      "legions": 66,
+      "virtue": "Invisibility and wisdom in war",
+      "balancing_angel": "Vehuiah",
+      "chapel_shadow": "Fool Hall - Shadow Gate",
+      "healing_aspect": "Integration of shadow wisdom"
+    },
+    "2": {
+      "name": "Agares", 
+      "sigil": "♃",
+      "rank": "Duke",
+      "element": "East",
+      "legions": 31,
+      "virtue": "Teaching languages and retrieving runaways",
+      "balancing_angel": "Jeliel",
+      "chapel_shadow": "Magician Hall - Shadow Dome",
+      "healing_aspect": "Communication and return to wholeness"
+    },
+    "13": {
+      "name": "Beleth",
+      "sigil": "♀",
+      "rank": "King", 
+      "element": "South",
+      "legions": 85,
+      "virtue": "Commanding love and affection",
+      "balancing_angel": "Iezalel",
+      "chapel_shadow": "Lovers Hall - Shadow Garden",
+      "healing_aspect": "Sacred relationship healing"
+    },
+    "32": {
+      "name": "Asmoday",
+      "sigil": "☉",
+      "rank": "King",
+      "element": "South",
+      "legions": 72,
+      "virtue": "Teaching arithmetic, astronomy, geometry",
+      "balancing_angel": "Vasariah", 
+      "chapel_shadow": "Hermit Hall - Shadow Cave",
+      "healing_aspect": "Integration of sacred knowledge"
+    },
+    "55": {
+      "name": "Orobas",
+      "sigil": "☿",
+      "rank": "Prince",
+      "element": "West", 
+      "legions": 20,
+      "virtue": "Revealing past and future, granting dignities",
+      "balancing_angel": "Nithael",
+      "chapel_shadow": "Wheel Hall - Shadow Spokes",
+      "healing_aspect": "Time integration and dignity restoration"
+    },
+    "72": {
+      "name": "Andromalius",
+      "sigil": "♄",
+      "rank": "Earl",
+      "element": "North",
+      "legions": 36,
+      "virtue": "Retrieving stolen goods and punishing thieves",
+      "balancing_angel": "Mumiah",
+      "chapel_shadow": "World Gate - Shadow Completion",
+      "healing_aspect": "Justice and completion of cycles"
+    }
+  },
+  "healing_integration": {
+    "trauma_informed_approach": "Demons as shadow aspects requiring integration, not banishment",
+    "ifs_compatibility": "Each demon represents an exiled part seeking healing",
+    "balance_protocol": "Always invoke corresponding angel for healing integration",
+    "chapel_work": "Use stone-grimoire shadow chambers for safe shadow work",
+    "safety_first": "Never work with demons without protection seals and angel balance"
+  },
+  "numerological_patterns": {
+    "total_demons": 72,
+    "balances_angels": "72 angels + 72 demons = 144 (complete lattice)",
+    "elemental_distribution": {
+      "east": 18,
+      "south": 18,
+      "west": 18, 
+      "north": 18
+    },
+    "rank_hierarchy": {
+      "kings": 9,
+      "dukes": 26,
+      "princes": 8,
+      "marquises": 12,
+      "earls": 17
+    },
+    "chapel_integration": "Each demon paired with angel in corresponding Octagram Hall shadow chambers"
+  },
+  "protection_protocols": {
+    "never_invoke_alone": "Always invoke balancing angel first",
+    "hexagram_protection": "Use Tesseract Bridge guardian seals", 
+    "healing_intention": "Approach as integration work, not domination",
+    "trauma_safety": "Ensure emotional safety and support systems",
+    "nd_accommodations": "Respect sensory sensitivities in ritual work"
+  },
+  "integration": {
+    "angel_balance": "Perfect 72:72 angel-demon balance for complete lattice",
+    "shadow_work_safe": "Trauma-informed approach to shadow integration",
+    "chapel_chambers": "Stone-grimoire shadow chambers for safe demon work",
+    "healing_protocols": "IFS-compatible parts integration methodology"
+  }
+}

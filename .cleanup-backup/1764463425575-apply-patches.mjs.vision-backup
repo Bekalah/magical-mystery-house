@@ -1,0 +1,177 @@
+/**
+ * @author Rebecca Respawn
+ */
+/**
+ * @license CC0-1.0 - Public Domain
+ */
+
+#!/usr/bin/env node
+
+/**
+ * Apply Patches System
+ * Automatically applies updates and patches to the codex
+ */
+
+import fs from 'fs';
+import path from 'path';
+import { execSync } from 'child_process';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.path.dirname(__filename);
+const BASE_DIR = path.join(__dirname, '..');
+
+const PATCHES_DIR = path.join(BASE_DIR, 'patches');
+const BACKUP_DIR = path.join(BASE_DIR, '.backups');
+
+function ensureDirectory(dir) {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+}
+
+function createBackup(filePath) {
+  ensureDirectory(BACKUP_DIR);
+  
+  const relativePath = path.relative(BASE_DIR, filePath);
+  const backupPath = path.join(BACKUP_DIR, relativePath);
+  const backupDir = path.dirname(backupPath);
+  
+  ensureDirectory(backupDir);
+  
+  if (fs.existsSync(filePath)) {
+    fs.copyFileSync(filePath, backupPath);
+    return backupPath;
+  }
+  
+  return null;
+}
+
+function applyPatch(patchFile) {
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`\n📦 Applying patch: ${path.basename(patchFile)}`);
+  
+  try {
+    const patchContent = fs.readFileSync(patchFile, 'utf-8');
+    const patch = JSON.parse(patchContent);
+    
+    // Validate patch structure
+    if (!patch.files || !Array.isArray(patch.files)) {
+      throw new Error('Invalid patch format: missing files array');
+    }
+    
+    let applied = 0;
+    let failed = 0;
+    
+    for (const filePatch of patch.files) {
+      const targetPath = path.join(BASE_DIR, filePatch.path);
+      
+      try {
+        // Create backup
+        const backupPath = createBackup(targetPath);
+        if (backupPath) {
+          // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   💾 Backed up: ${filePatch.path}`);
+        }
+        
+        // Ensure directory exists
+        ensureDirectory(path.dirname(targetPath));
+        
+        // Apply patch
+        if (filePatch.operation === 'replace') {
+          fs.writeFileSync(targetPath, filePatch.content, 'utf-8');
+        } else if (filePatch.operation === 'append') {
+          const existing = fs.existsSync(targetPath) 
+            ? fs.readFileSync(targetPath, 'utf-8') 
+            : '';
+          fs.writeFileSync(targetPath, existing + filePatch.content, 'utf-8');
+        } else if (filePatch.operation === 'prepend') {
+          const existing = fs.existsSync(targetPath) 
+            ? fs.readFileSync(targetPath, 'utf-8') 
+            : '';
+          fs.writeFileSync(targetPath, filePatch.content + existing, 'utf-8');
+        } else if (filePatch.operation === 'delete') {
+          if (fs.existsSync(targetPath)) {
+            createBackup(targetPath);
+            fs.unlinkSync(targetPath);
+          }
+        }
+        
+        // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   ✅ Applied: ${filePatch.path}`);
+        applied++;
+      } catch (error) {
+        // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   ❌ Failed: ${filePatch.path} - ${error.message}`);
+        failed++;
+      }
+    }
+    
+    // Run post-patch commands if specified
+    if (patch.postPatch && Array.isArray(patch.postPatch)) {
+      // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`\n🔄 Running post-patch commands...`);
+      for (const command of patch.postPatch) {
+        try {
+          execSync(command, { cwd: BASE_DIR, stdio: 'inherit' });
+        } catch (error) {
+          // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   ⚠️  Post-patch command failed: ${command}`);
+        }
+      }
+    }
+    
+    // Move patch to applied
+    const appliedDir = path.join(PATCHES_DIR, 'applied');
+    ensureDirectory(appliedDir);
+    const appliedPath = path.join(appliedDir, path.basename(patchFile));
+    fs.renameSync(patchFile, appliedPath);
+    
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`\n✅ Patch applied: ${applied} files, ${failed} failed`);
+    return { success: true, applied, failed };
+    
+  } catch (error) {
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`❌ Failed to apply patch: ${error.message}`);
+    return { success: false, error: error.message };
+  }
+}
+
+function applyAllPatches() {
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log('🏛️✨ Cathedral Patch Application System');
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log('=============================================\n');
+  
+  ensureDirectory(PATCHES_DIR);
+  
+  // Find all patch files
+  const patchFiles = fs.readdirSync(PATCHES_DIR)
+    .filter(file => file.endsWith('.json'))
+    .map(file => path.join(PATCHES_DIR, file));
+  
+  if (patchFiles.length === 0) {
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log('✅ No patches to apply');
+    return;
+  }
+  
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`📦 Found ${patchFiles.length} patch(es) to apply\n`);
+  
+  let totalApplied = 0;
+  let totalFailed = 0;
+  
+  for (const patchFile of patchFiles) {
+    const result = applyPatch(patchFile);
+    if (result.success) {
+      totalApplied += result.applied || 0;
+      totalFailed += result.failed || 0;
+    } else {
+      totalFailed++;
+    }
+  }
+  
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log('\n📊 Patch Application Summary');
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log('=============================================');
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`✅ Total files applied: ${totalApplied}`);
+  // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`❌ Total files failed: ${totalFailed}`);
+  
+  if (totalFailed === 0) {
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log('\n✅ All patches applied successfully');
+  } else {
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log('\n⚠️  Some patches had failures - check backups in .backups/');
+  }
+}
+
+applyAllPatches();
+

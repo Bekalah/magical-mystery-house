@@ -1,0 +1,1030 @@
+{
+    "metadata": {
+        "title": "Codex 144:99 - Cathedral of Circuits",
+        "version": "1.0.0",
+        "author": "Rebecca Susan Lemke / Rebecca Respawn",
+        "license": "CC0",
+        "description": "Expanded archetypal node definitions with narrative, game, architecture, and symbolism properties for generative creative engine"
+    },
+    "nodes": [
+        {
+            "id": 1,
+            "name": "Path of Fire",
+            "element": "Fire",
+            "planet": "Mars",
+            "zodiac": "Aries",
+            "chakra": "Root",
+            "solfeggio": 396,
+            "color": "#FF4500",
+            "geometry": "Tetrahedron",
+            "pigment": "vermillion",
+            "shem": "Vehuiah",
+            "goetia": "Bael",
+            "narrative": {
+                "theme": "Initiation, Courage, Transformation",
+                "archetype": "The Warrior",
+                "storyBeats": [
+                    "A call to adventure through flames",
+                    "Trial by fire reveals inner strength",
+                    "Phoenix rebirth from ashes"
+                ],
+                "dialogueStyle": "Bold, direct, passionate",
+                "keywords": [
+                    "forge",
+                    "ignite",
+                    "purify",
+                    "burn",
+                    "arise"
+                ]
+            },
+            "gameDesign": {
+                "abilityType": "Active Combat",
+                "mechanics": [
+                    "Area damage",
+                    "Burn DoT",
+                    "Cleansing fire"
+                ],
+                "questType": "Trial/Challenge",
+                "rewardStyle": "Weapons, armor, power-ups",
+                "enemyAffinity": "Ice/Water enemies take extra damage",
+                "environmentEffect": "Lights torches, melts ice, clears corruption"
+            },
+            "architecture": {
+                "spatialQuality": "Vertical, ascending, pointed",
+                "roomType": "Forge, Altar, Training Hall",
+                "lighting": "Warm, flickering, orange-red",
+                "materials": [
+                    "Bronze",
+                    "Volcanic stone",
+                    "Hardwood"
+                ],
+                "ambience": "Crackling flames, distant hammering",
+                "symbolPlacement": "High on walls, pointing upward"
+            },
+            "symbolism": {
+                "primarySymbol": "\u25b2",
+                "secondarySymbols": [
+                    "\ud83d\udd25",
+                    "\u2694\ufe0f",
+                    "\ud83c\udf1f"
+                ],
+                "geometricPattern": "Sharp angles, radiating lines",
+                "colorBlending": "Warm spectrum (red, orange, gold)"
+            },
+            "harmonics": {
+                "perfectConsonance": [
+                    5,
+                    8,
+                    41
+                ],
+                "consonance": [
+                    3,
+                    7,
+                    73
+                ],
+                "dissonance": [
+                    2,
+                    6,
+                    99
+                ],
+                "tritone": [
+                    144
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "name": "Path of Water",
+            "element": "Water",
+            "planet": "Moon",
+            "zodiac": "Cancer",
+            "chakra": "Sacral",
+            "solfeggio": 417,
+            "color": "#1E90FF",
+            "geometry": "Icosahedron",
+            "pigment": "lapis_lazuli",
+            "shem": "Jeliel",
+            "goetia": "Agares",
+            "narrative": {
+                "theme": "Emotion, Intuition, Flow",
+                "archetype": "The Healer",
+                "storyBeats": [
+                    "Emotional depths reveal hidden wisdom",
+                    "Intuitive guidance through uncertainty",
+                    "Healing waters restore balance"
+                ],
+                "dialogueStyle": "Gentle, empathetic, flowing",
+                "keywords": [
+                    "flow",
+                    "heal",
+                    "intuit",
+                    "adapt",
+                    "nurture"
+                ]
+            },
+            "gameDesign": {
+                "abilityType": "Support/Healing",
+                "mechanics": [
+                    "Healing wave",
+                    "Mana restore",
+                    "Status cleanse"
+                ],
+                "questType": "Rescue/Support",
+                "rewardStyle": "Potions, artifacts, knowledge",
+                "enemyAffinity": "Fire enemies take extra damage",
+                "environmentEffect": "Creates water, extinguishes flames, reveals hidden paths"
+            },
+            "architecture": {
+                "spatialQuality": "Curved, flowing, receptive",
+                "roomType": "Healing pool, Meditation chamber, Sanctuary",
+                "lighting": "Cool, reflective, blue-white",
+                "materials": [
+                    "Marble",
+                    "Crystal",
+                    "Flowing water"
+                ],
+                "ambience": "Gentle water sounds, distant chimes",
+                "symbolPlacement": "Near water features, low and accessible"
+            },
+            "symbolism": {
+                "primarySymbol": "\u2b29",
+                "secondarySymbols": [
+                    "\ud83d\udca7",
+                    "\ud83c\udf19",
+                    "\ud83c\udf00"
+                ],
+                "geometricPattern": "Flowing curves, circular motifs",
+                "colorBlending": "Cool spectrum (blue, teal, silver)"
+            },
+            "harmonics": {
+                "perfectConsonance": [
+                    6,
+                    8,
+                    73
+                ],
+                "consonance": [
+                    1,
+                    4,
+                    99
+                ],
+                "dissonance": [
+                    3,
+                    5,
+                    144
+                ],
+                "tritone": [
+                    7
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "name": "Path of Earth",
+            "element": "Earth",
+            "planet": "Saturn",
+            "zodiac": "Capricorn",
+            "chakra": "Root",
+            "solfeggio": 528,
+            "color": "#8B4513",
+            "geometry": "Cube",
+            "pigment": "malachite",
+            "shem": "Sitael",
+            "goetia": "Vassago",
+            "narrative": {
+                "theme": "Foundation, Stability, Growth",
+                "archetype": "The Builder",
+                "storyBeats": [
+                    "Solid foundations support great works",
+                    "Patient growth yields lasting results",
+                    "Earth wisdom grounds spiritual flight"
+                ],
+                "dialogueStyle": "Practical, grounded, patient",
+                "keywords": [
+                    "build",
+                    "ground",
+                    "stabilize",
+                    "grow",
+                    "endure"
+                ]
+            },
+            "gameDesign": {
+                "abilityType": "Defense/Buff",
+                "mechanics": [
+                    "Damage reduction",
+                    "Regeneration",
+                    "Structure creation"
+                ],
+                "questType": "Construction/Defense",
+                "rewardStyle": "Materials, tools, structures",
+                "enemyAffinity": "Air enemies take extra damage",
+                "environmentEffect": "Creates barriers, reveals minerals, stabilizes ground"
+            },
+            "architecture": {
+                "spatialQuality": "Solid, grounded, rectangular",
+                "roomType": "Library, Workshop, Foundation chamber",
+                "lighting": "Warm, steady, yellow-brown",
+                "materials": [
+                    "Stone",
+                    "Wood",
+                    "Clay"
+                ],
+                "ambience": "Deep resonance, settling sounds",
+                "symbolPlacement": "On floors, in corners, at foundations"
+            },
+            "symbolism": {
+                "primarySymbol": "\u2b1f",
+                "secondarySymbols": [
+                    "\ud83c\udf31",
+                    "\ud83c\udfd4\ufe0f",
+                    "\ud83e\uddf1"
+                ],
+                "geometricPattern": "Squares, grids, stable forms",
+                "colorBlending": "Earth tones (brown, green, ochre)"
+            },
+            "harmonics": {
+                "perfectConsonance": [
+                    7,
+                    8,
+                    99
+                ],
+                "consonance": [
+                    1,
+                    5,
+                    144
+                ],
+                "dissonance": [
+                    2,
+                    4,
+                    73
+                ],
+                "tritone": [
+                    6
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "name": "Path of Air",
+            "element": "Air",
+            "planet": "Mercury",
+            "zodiac": "Gemini",
+            "chakra": "Throat",
+            "solfeggio": 639,
+            "color": "#87CEEB",
+            "geometry": "Octahedron",
+            "pigment": "egyptian_blue",
+            "shem": "Elemiah",
+            "goetia": "Samigina",
+            "narrative": {
+                "theme": "Communication, Intellect, Freedom",
+                "archetype": "The Messenger",
+                "storyBeats": [
+                    "Words carry truth across distances",
+                    "Intellectual flight reveals new perspectives",
+                    "Freedom comes from clear communication"
+                ],
+                "dialogueStyle": "Clear, articulate, thoughtful",
+                "keywords": [
+                    "communicate",
+                    "think",
+                    "free",
+                    "connect",
+                    "express"
+                ]
+            },
+            "gameDesign": {
+                "abilityType": "Utility/Debuff",
+                "mechanics": [
+                    "Speed boost",
+                    "Evasion",
+                    "Confusion effects"
+                ],
+                "questType": "Messenger/Discovery",
+                "rewardStyle": "Information, maps, communication devices",
+                "enemyAffinity": "Earth enemies take extra damage",
+                "environmentEffect": "Creates wind, disperses gases, reveals hidden messages"
+            },
+            "architecture": {
+                "spatialQuality": "Open, light, expansive",
+                "roomType": "Library, Observatory, Communication center",
+                "lighting": "Bright, diffused, sky-blue",
+                "materials": [
+                    "Glass",
+                    "Metal",
+                    "Light fabrics"
+                ],
+                "ambience": "Wind chimes, distant echoes",
+                "symbolPlacement": "High on walls, near openings, on ceilings"
+            },
+            "symbolism": {
+                "primarySymbol": "\u2b21",
+                "secondarySymbols": [
+                    "\ud83d\udca8",
+                    "\ud83d\udd4a\ufe0f",
+                    "\ud83d\udce1"
+                ],
+                "geometricPattern": "Diamonds, hexagons, light structures",
+                "colorBlending": "Sky tones (blue, white, silver)"
+            },
+            "harmonics": {
+                "perfectConsonance": [
+                    8,
+                    41,
+                    73
+                ],
+                "consonance": [
+                    2,
+                    6,
+                    144
+                ],
+                "dissonance": [
+                    1,
+                    3,
+                    99
+                ],
+                "tritone": [
+                    5
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "name": "Solar Current",
+            "element": "Fire",
+            "planet": "Sun",
+            "zodiac": "Leo",
+            "chakra": "Solar Plexus",
+            "solfeggio": 741,
+            "color": "#FFD700",
+            "geometry": "Dodecahedron",
+            "pigment": "gold_leaf",
+            "shem": "Mahasiah",
+            "goetia": "Marbas",
+            "narrative": {
+                "theme": "Leadership, Vitality, Expression",
+                "archetype": "The Leader",
+                "storyBeats": [
+                    "Inner light guides others to truth",
+                    "Vital energy inspires collective action",
+                    "Authentic expression creates harmony"
+                ],
+                "dialogueStyle": "Confident, inspiring, warm",
+                "keywords": [
+                    "lead",
+                    "shine",
+                    "inspire",
+                    "create",
+                    "radiate"
+                ]
+            },
+            "gameDesign": {
+                "abilityType": "Leadership/Buff",
+                "mechanics": [
+                    "Team buff",
+                    "Morale boost",
+                    "Light generation"
+                ],
+                "questType": "Leadership/Guidance",
+                "rewardStyle": "Leadership items, followers, influence",
+                "enemyAffinity": "Shadow enemies take extra damage",
+                "environmentEffect": "Illuminates darkness, reveals truth, energizes allies"
+            },
+            "architecture": {
+                "spatialQuality": "Central, radiant, commanding",
+                "roomType": "Throne room, Command center, Solar temple",
+                "lighting": "Bright, golden, radiant",
+                "materials": [
+                    "Gold",
+                    "Crystal",
+                    "Polished stone"
+                ],
+                "ambience": "Majestic fanfare, resonant tones",
+                "symbolPlacement": "Central locations, high visibility, focal points"
+            },
+            "symbolism": {
+                "primarySymbol": "\u2609",
+                "secondarySymbols": [
+                    "\ud83d\udc51",
+                    "\ud83c\udf1e",
+                    "\u2b50"
+                ],
+                "geometricPattern": "Circles, stars, radiant patterns",
+                "colorBlending": "Golden spectrum (yellow, gold, amber)"
+            },
+            "harmonics": {
+                "perfectConsonance": [
+                    1,
+                    8,
+                    73
+                ],
+                "consonance": [
+                    3,
+                    7,
+                    99
+                ],
+                "dissonance": [
+                    2,
+                    4,
+                    144
+                ],
+                "tritone": [
+                    6
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "name": "Lunar Reflection",
+            "element": "Water",
+            "planet": "Moon",
+            "zodiac": "Cancer",
+            "chakra": "Third Eye",
+            "solfeggio": 852,
+            "color": "#C0C0C0",
+            "geometry": "Icosahedron",
+            "pigment": "moonstone",
+            "shem": "Lelahel",
+            "goetia": "Valefor",
+            "narrative": {
+                "theme": "Mystery, Intuition, Cycles",
+                "archetype": "The Mystic",
+                "storyBeats": [
+                    "Moonlight reveals hidden truths",
+                    "Intuition guides through uncertainty",
+                    "Cyclical wisdom brings understanding"
+                ],
+                "dialogueStyle": "Mysterious, poetic, cyclical",
+                "keywords": [
+                    "reflect",
+                    "intuit",
+                    "cycle",
+                    "reveal",
+                    "understand"
+                ]
+            },
+            "gameDesign": {
+                "abilityType": "Mystical/Support",
+                "mechanics": [
+                    "Vision enhancement",
+                    "Cycle manipulation",
+                    "Hidden knowledge"
+                ],
+                "questType": "Mystery/Revelation",
+                "rewardStyle": "Mystical items, secrets, wisdom",
+                "enemyAffinity": "Darkness enemies take extra damage",
+                "environmentEffect": "Reveals illusions, manipulates time, illuminates mysteries"
+            },
+            "architecture": {
+                "spatialQuality": "Circular, reflective, mysterious",
+                "roomType": "Oracle chamber, Reflection pool, Moon temple",
+                "lighting": "Silvery, changeable, lunar",
+                "materials": [
+                    "Silver",
+                    "Moonstone",
+                    "Reflective surfaces"
+                ],
+                "ambience": "Echoing whispers, tidal sounds",
+                "symbolPlacement": "Near reflective surfaces, circular arrangements"
+            },
+            "symbolism": {
+                "primarySymbol": "\u263d",
+                "secondarySymbols": [
+                    "\ud83d\udd2e",
+                    "\ud83c\udf19",
+                    "\ud83e\ude9e"
+                ],
+                "geometricPattern": "Circles, phases, reflective patterns",
+                "colorBlending": "Lunar spectrum (silver, white, pearl)"
+            },
+            "harmonics": {
+                "perfectConsonance": [
+                    2,
+                    8,
+                    99
+                ],
+                "consonance": [
+                    4,
+                    7,
+                    144
+                ],
+                "dissonance": [
+                    1,
+                    3,
+                    73
+                ],
+                "tritone": [
+                    5
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "name": "Mercurial Path",
+            "element": "Air",
+            "planet": "Mercury",
+            "zodiac": "Virgo",
+            "chakra": "Throat",
+            "solfeggio": 963,
+            "color": "#FFA500",
+            "geometry": "Octahedron",
+            "pigment": "cinnabar",
+            "shem": "Achaiah",
+            "goetia": "Amon",
+            "narrative": {
+                "theme": "Communication, Analysis, Adaptation",
+                "archetype": "The Analyst",
+                "storyBeats": [
+                    "Clear communication bridges understanding",
+                    "Analysis reveals hidden patterns",
+                    "Adaptation ensures survival"
+                ],
+                "dialogueStyle": "Precise, analytical, adaptive",
+                "keywords": [
+                    "analyze",
+                    "communicate",
+                    "adapt",
+                    "understand",
+                    "clarify"
+                ]
+            },
+            "gameDesign": {
+                "abilityType": "Intelligence/Utility",
+                "mechanics": [
+                    "Analysis",
+                    "Communication",
+                    "Adaptation"
+                ],
+                "questType": "Investigation/Problem-solving",
+                "rewardStyle": "Information, tools, adaptability",
+                "enemyAffinity": "Confusion enemies take extra damage",
+                "environmentEffect": "Reveals information, creates connections, adapts environment"
+            },
+            "architecture": {
+                "spatialQuality": "Modular, connected, efficient",
+                "roomType": "Communication hub, Analysis chamber, Adaptation center",
+                "lighting": "Bright, focused, orange-white",
+                "materials": [
+                    "Mercury",
+                    "Glass",
+                    "Adaptive materials"
+                ],
+                "ambience": "Rapid information flow, clicking mechanisms",
+                "symbolPlacement": "Near communication devices, network nodes"
+            },
+            "symbolism": {
+                "primarySymbol": "\u263f",
+                "secondarySymbols": [
+                    "\ud83d\udce1",
+                    "\ud83d\udd0d",
+                    "\ud83d\udd17"
+                ],
+                "geometricPattern": "Networks, connections, adaptive forms",
+                "colorBlending": "Mercury spectrum (orange, silver, quicksilver)"
+            },
+            "harmonics": {
+                "perfectConsonance": [
+                    3,
+                    8,
+                    144
+                ],
+                "consonance": [
+                    1,
+                    5,
+                    99
+                ],
+                "dissonance": [
+                    2,
+                    4,
+                    73
+                ],
+                "tritone": [
+                    6
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "name": "Venusian Love",
+            "element": "Earth",
+            "planet": "Venus",
+            "zodiac": "Taurus",
+            "chakra": "Heart",
+            "solfeggio": 528,
+            "color": "#FF69B4",
+            "geometry": "Dodecahedron",
+            "pigment": "rose_quartz",
+            "shem": "Cahetel",
+            "goetia": "Barbatos",
+            "narrative": {
+                "theme": "Love, Harmony, Beauty",
+                "archetype": "The Lover",
+                "storyBeats": [
+                    "Love transforms all it touches",
+                    "Harmony creates beauty from discord",
+                    "Beauty reveals divine order"
+                ],
+                "dialogueStyle": "Loving, harmonious, aesthetic",
+                "keywords": [
+                    "love",
+                    "harmonize",
+                    "beautify",
+                    "connect",
+                    "appreciate"
+                ]
+            },
+            "gameDesign": {
+                "abilityType": "Harmony/Support",
+                "mechanics": [
+                    "Team healing",
+                    "Conflict resolution",
+                    "Beauty creation"
+                ],
+                "questType": "Relationship/Harmony",
+                "rewardStyle": "Relationship items, beauty, harmony",
+                "enemyAffinity": "Discord enemies take extra damage",
+                "environmentEffect": "Creates harmony, resolves conflicts, enhances beauty"
+            },
+            "architecture": {
+                "spatialQuality": "Beautiful, balanced, inviting",
+                "roomType": "Love temple, Harmony chamber, Beauty salon",
+                "lighting": "Soft, pink, flattering",
+                "materials": [
+                    "Rose quartz",
+                    "Silk",
+                    "Beautiful woods"
+                ],
+                "ambience": "Harmonious music, pleasant fragrances",
+                "symbolPlacement": "Heart level, balanced arrangements, aesthetic focal points"
+            },
+            "symbolism": {
+                "primarySymbol": "\u2640",
+                "secondarySymbols": [
+                    "\ud83d\udc96",
+                    "\ud83c\udf39",
+                    "\ud83c\udfb5"
+                ],
+                "geometricPattern": "Hearts, flowers, balanced forms",
+                "colorBlending": "Love spectrum (pink, rose, magenta)"
+            },
+            "harmonics": {
+                "perfectConsonance": [
+                    1,
+                    5,
+                    73
+                ],
+                "consonance": [
+                    3,
+                    7,
+                    99
+                ],
+                "dissonance": [
+                    2,
+                    4,
+                    144
+                ],
+                "tritone": [
+                    6
+                ]
+            }
+        },
+        {
+            "id": 41,
+            "name": "Path of Solar Water",
+            "element": "Water",
+            "planet": "Sun",
+            "zodiac": "Leo",
+            "chakra": "Solar Plexus",
+            "solfeggio": 528,
+            "color": "#FFD700",
+            "geometry": "Flower of Life",
+            "pigment": "gold_leaf",
+            "shem": "Rehael",
+            "goetia": "Sallos",
+            "narrative": {
+                "theme": "Alchemical Transformation, Solar Healing",
+                "archetype": "The Alchemist",
+                "storyBeats": [
+                    "Solar water dissolves old patterns",
+                    "Alchemical fire purifies the soul",
+                    "Golden consciousness emerges"
+                ],
+                "dialogueStyle": "Transformative, golden, alchemical",
+                "keywords": [
+                    "transform",
+                    "purify",
+                    "illuminate",
+                    "heal",
+                    "evolve"
+                ]
+            },
+            "gameDesign": {
+                "abilityType": "Transformation/Healing",
+                "mechanics": [
+                    "Status transformation",
+                    "Purification",
+                    "Golden touch"
+                ],
+                "questType": "Alchemy/Transformation",
+                "rewardStyle": "Alchemical items, transformation, enlightenment",
+                "enemyAffinity": "Impure enemies take extra damage",
+                "environmentEffect": "Transforms elements, purifies corruption, creates gold"
+            },
+            "architecture": {
+                "spatialQuality": "Transformative, alchemical, radiant",
+                "roomType": "Alchemical laboratory, Solar healing chamber, Transformation temple",
+                "lighting": "Golden, transformative, alchemical",
+                "materials": [
+                    "Gold",
+                    "Crystal",
+                    "Alchemical glass"
+                ],
+                "ambience": "Bubbling liquids, harmonic tones",
+                "symbolPlacement": "Around transformation circles, alchemical arrays"
+            },
+            "symbolism": {
+                "primarySymbol": "\ud83d\udf03",
+                "secondarySymbols": [
+                    "\u2697\ufe0f",
+                    "\ud83c\udf1e",
+                    "\ud83d\udca7"
+                ],
+                "geometricPattern": "Circles, hexagons, alchemical symbols",
+                "colorBlending": "Alchemical spectrum (gold, blue, red)"
+            },
+            "harmonics": {
+                "perfectConsonance": [
+                    1,
+                    5,
+                    73
+                ],
+                "consonance": [
+                    3,
+                    7,
+                    99
+                ],
+                "dissonance": [
+                    2,
+                    4,
+                    144
+                ],
+                "tritone": [
+                    8
+                ]
+            }
+        },
+        {
+            "id": 73,
+            "name": "Twin Ray Mirror",
+            "element": "Aether",
+            "planet": "Neptune",
+            "zodiac": "Pisces",
+            "chakra": "Crown",
+            "solfeggio": 639,
+            "color": "#00CED1",
+            "geometry": "Merkaba",
+            "pigment": "aquamarine",
+            "shem": "Haamiah",
+            "goetia": "Gremory",
+            "narrative": {
+                "theme": "Twin Flame Union, Divine Reflection",
+                "archetype": "The Mirror",
+                "storyBeats": [
+                    "Twin rays recognize each other",
+                    "Mirrors reflect divine truth",
+                    "Union creates infinite possibility"
+                ],
+                "dialogueStyle": "Reflective, connective, infinite",
+                "keywords": [
+                    "mirror",
+                    "reflect",
+                    "unite",
+                    "recognize",
+                    "infinite"
+                ]
+            },
+            "gameDesign": {
+                "abilityType": "Connection/Mirroring",
+                "mechanics": [
+                    "Reflection effects",
+                    "Twin connections",
+                    "Infinite loops"
+                ],
+                "questType": "Union/Reunion",
+                "rewardStyle": "Mirror items, twin connections, infinite potential",
+                "enemyAffinity": "Separation enemies take extra damage",
+                "environmentEffect": "Creates mirrors, reflects attacks, connects realms"
+            },
+            "architecture": {
+                "spatialQuality": "Infinite, reflective, connective",
+                "roomType": "Mirror chamber, Twin flame temple, Infinite hall",
+                "lighting": "Reflective, infinite, turquoise",
+                "materials": [
+                    "Mirrors",
+                    "Crystal",
+                    "Reflective metals"
+                ],
+                "ambience": "Echoing reflections, infinite harmonies",
+                "symbolPlacement": "Mirror arrangements, infinite reflections"
+            },
+            "symbolism": {
+                "primarySymbol": "\u27e1",
+                "secondarySymbols": [
+                    "\ud83e\ude9e",
+                    "\u267e\ufe0f",
+                    "\ud83d\udc65"
+                ],
+                "geometricPattern": "Mirrors, infinities, twin forms",
+                "colorBlending": "Mirror spectrum (turquoise, silver, infinite)"
+            },
+            "harmonics": {
+                "perfectConsonance": [
+                    2,
+                    6,
+                    99
+                ],
+                "consonance": [
+                    4,
+                    8,
+                    144
+                ],
+                "dissonance": [
+                    1,
+                    3,
+                    41
+                ],
+                "tritone": [
+                    5
+                ]
+            }
+        },
+        {
+            "id": 99,
+            "name": "Angelic Resonance",
+            "element": "Aether",
+            "planet": "Uranus",
+            "zodiac": "Aquarius",
+            "chakra": "Crown",
+            "solfeggio": 963,
+            "color": "#DDA0DD",
+            "geometry": "Metatron's Cube",
+            "pigment": "amethyst",
+            "shem": "Vehuel",
+            "goetia": "Decarabia",
+            "narrative": {
+                "theme": "Divine Connection, Higher Wisdom",
+                "archetype": "The Angel",
+                "storyBeats": [
+                    "Angelic resonance opens higher realms",
+                    "Divine wisdom flows through consciousness",
+                    "Higher connection transforms reality"
+                ],
+                "dialogueStyle": "Divine, wise, transcendent",
+                "keywords": [
+                    "connect",
+                    "transcend",
+                    "wisdom",
+                    "divine",
+                    "angelic"
+                ]
+            },
+            "gameDesign": {
+                "abilityType": "Divine/Transcendent",
+                "mechanics": [
+                    "Divine intervention",
+                    "Reality bending",
+                    "Higher knowledge"
+                ],
+                "questType": "Ascension/Transcendence",
+                "rewardStyle": "Divine items, angelic wisdom, transcendence",
+                "enemyAffinity": "Lower realm enemies take extra damage",
+                "environmentEffect": "Opens portals, transcends limitations, divine protection"
+            },
+            "architecture": {
+                "spatialQuality": "Transcendent, divine, infinite",
+                "roomType": "Angelic chamber, Divine temple, Transcendence hall",
+                "lighting": "Divine, purple, transcendent",
+                "materials": [
+                    "Amethyst",
+                    "Platinum",
+                    "Divine light"
+                ],
+                "ambience": "Angelic choirs, divine harmonies",
+                "symbolPlacement": "Sacred geometries, angelic arrays, divine focal points"
+            },
+            "symbolism": {
+                "primarySymbol": "\u2b2a",
+                "secondarySymbols": [
+                    "\ud83d\udc7c",
+                    "\u2728",
+                    "\ud83c\udfb5"
+                ],
+                "geometricPattern": "Sacred geometries, angelic forms, divine patterns",
+                "colorBlending": "Divine spectrum (purple, gold, light)"
+            },
+            "harmonics": {
+                "perfectConsonance": [
+                    6,
+                    8,
+                    144
+                ],
+                "consonance": [
+                    2,
+                    4,
+                    73
+                ],
+                "dissonance": [
+                    1,
+                    3,
+                    41
+                ],
+                "tritone": [
+                    5
+                ]
+            }
+        },
+        {
+            "id": 144,
+            "name": "Completion",
+            "element": "All",
+            "planet": "Pluto",
+            "zodiac": "Scorpio",
+            "chakra": "Crown",
+            "solfeggio": 432,
+            "color": "#FFFFFF",
+            "geometry": "All",
+            "pigment": "diamond",
+            "shem": "Mumiah",
+            "goetia": "Andromalius",
+            "narrative": {
+                "theme": "Completion, Mastery, Integration",
+                "archetype": "The Master",
+                "storyBeats": [
+                    "All paths converge in completion",
+                    "Mastery integrates all wisdom",
+                    "Completion opens new beginnings"
+                ],
+                "dialogueStyle": "Complete, masterful, integrated",
+                "keywords": [
+                    "complete",
+                    "master",
+                    "integrate",
+                    "achieve",
+                    "transcend"
+                ]
+            },
+            "gameDesign": {
+                "abilityType": "Mastery/Integration",
+                "mechanics": [
+                    "All abilities",
+                    "Complete mastery",
+                    "Total integration"
+                ],
+                "questType": "Mastery/Completion",
+                "rewardStyle": "Master items, complete understanding, total achievement",
+                "enemyAffinity": "All enemies take extra damage",
+                "environmentEffect": "Completes all effects, masters all elements, integrates everything"
+            },
+            "architecture": {
+                "spatialQuality": "Complete, masterful, integrated",
+                "roomType": "Master chamber, Completion temple, Integration hall",
+                "lighting": "Complete spectrum, masterful illumination",
+                "materials": [
+                    "All materials",
+                    "Perfect combinations",
+                    "Masterful integration"
+                ],
+                "ambience": "Complete harmony, perfect resonance",
+                "symbolPlacement": "Perfect arrangements, complete geometries, masterful displays"
+            },
+            "symbolism": {
+                "primarySymbol": "\u2299",
+                "secondarySymbols": [
+                    "\ud83c\udfc6",
+                    "\ud83c\udfaf",
+                    "\u2b50"
+                ],
+                "geometricPattern": "Complete forms, perfect geometries, masterful patterns",
+                "colorBlending": "Complete spectrum (all colors in harmony)"
+            },
+            "harmonics": {
+                "perfectConsonance": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8
+                ],
+                "consonance": [
+                    41,
+                    73,
+                    99
+                ],
+                "dissonance": [],
+                "tritone": []
+            }
+        }
+    ]
+}

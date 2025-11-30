@@ -1,0 +1,1416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      REGISTRY Data Visualization Engine - Cathedral Master V1 Control System
+    </title>
+    <meta
+      name="description"
+      content="Interactive visualization of REGISTRY data structure with dynamic filtering and exploration capabilities" />
+
+    <style>
+      :root {
+        --registry-primary: #1a237e;
+        --registry-gold: #ffd700;
+        --registry-silver: #c0c0c0;
+        --registry-crystal: #e1f5fe;
+        --registry-purple: #9c27b0;
+        --registry-teal: #009688;
+        --registry-amber: #ffc107;
+        --registry-light: #fafafa;
+        --registry-shadow: rgba(0, 0, 0, 0.2);
+        --registry-transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        background: linear-gradient(
+          135deg,
+          var(--registry-primary) 0%,
+          #283593 50%,
+          #3f51b5 100%
+        );
+        color: var(--registry-light);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      /* Navigation Header */
+      .registry-header {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid var(--registry-gold);
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .registry-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .registry-logo {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--registry-gold);
+        text-decoration: none;
+      }
+
+      .nav-controls {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .control-group {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .control-label {
+        font-size: 0.9rem;
+        color: var(--registry-crystal);
+      }
+
+      .control-select,
+      .control-input {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--registry-silver);
+        color: var(--registry-light);
+        padding: 0.5rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+      }
+
+      .back-button {
+        background: var(--registry-gold);
+        color: var(--registry-primary);
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: var(--registry-transition);
+      }
+
+      .back-button:hover {
+        background: var(--registry-light);
+        transform: scale(1.05);
+      }
+
+      /* Main Content */
+      .registry-main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .registry-title {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--registry-gold);
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px var(--registry-shadow);
+      }
+
+      .registry-subtitle {
+        text-align: center;
+        font-size: 1.1rem;
+        color: var(--registry-crystal);
+        margin-bottom: 3rem;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Visualization Container */
+      .visualization-container {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .view-tabs {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid var(--registry-silver);
+        padding-bottom: 1rem;
+      }
+
+      .view-tab {
+        background: transparent;
+        border: none;
+        color: var(--registry-crystal);
+        padding: 0.8rem 1.5rem;
+        border-radius: 8px 8px 0 0;
+        cursor: pointer;
+        transition: var(--registry-transition);
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .view-tab:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--registry-gold);
+      }
+
+      .view-tab.active {
+        background: var(--registry-gold);
+        color: var(--registry-primary);
+      }
+
+      /* SVG Visualization Area */
+      .visualization-svg {
+        width: 100%;
+        height: 600px;
+        background: rgba(0, 0, 0, 0.3);
+        border: 2px solid var(--registry-gold);
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .svg-node {
+        cursor: pointer;
+        transition: var(--registry-transition);
+      }
+
+      .svg-node:hover {
+        filter: brightness(1.2);
+      }
+
+      .svg-link {
+        stroke: var(--registry-silver);
+        stroke-width: 2;
+        fill: none;
+        opacity: 0.6;
+        transition: var(--registry-transition);
+      }
+
+      .svg-link:hover {
+        stroke: var(--registry-gold);
+        opacity: 1;
+        stroke-width: 3;
+      }
+
+      /* Node Styles */
+      .node-circle {
+        stroke: var(--registry-gold);
+        stroke-width: 2;
+        fill: var(--registry-purple);
+        transition: var(--registry-transition);
+      }
+
+      .node-circle:hover {
+        fill: var(--registry-teal);
+        stroke-width: 3;
+      }
+
+      .node-label {
+        font-size: 12px;
+        fill: var(--registry-light);
+        text-anchor: middle;
+        dominant-baseline: central;
+        pointer-events: none;
+        font-weight: 600;
+      }
+
+      .node-description {
+        font-size: 10px;
+        fill: var(--registry-crystal);
+        text-anchor: middle;
+        dominant-baseline: central;
+        pointer-events: none;
+      }
+
+      /* Legend */
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+      }
+
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .legend-color {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid var(--registry-gold);
+      }
+
+      .legend-label {
+        font-size: 0.9rem;
+        color: var(--registry-crystal);
+      }
+
+      /* Statistics Panel */
+      .statistics-panel {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+      }
+
+      .stat-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid transparent;
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: center;
+        transition: var(--registry-transition);
+        backdrop-filter: blur(5px);
+      }
+
+      .stat-card:hover {
+        border-color: var(--registry-gold);
+        transform: translateY(-3px);
+      }
+
+      .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--registry-gold);
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-label {
+        font-size: 1rem;
+        color: var(--registry-crystal);
+      }
+
+      /* Data Details Panel */
+      .data-details {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .detail-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--registry-gold);
+        margin-bottom: 1.5rem;
+      }
+
+      .detail-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .detail-section {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        padding: 1.5rem;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--registry-gold);
+        margin-bottom: 1rem;
+      }
+
+      .detail-item {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .detail-item:last-child {
+        border-bottom: none;
+      }
+
+      .item-label {
+        font-weight: 600;
+        color: var(--registry-light);
+        margin-bottom: 0.25rem;
+      }
+
+      .item-value {
+        color: var(--registry-crystal);
+        font-size: 0.9rem;
+      }
+
+      /* Tooltip */
+      .tooltip {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.9);
+        color: var(--registry-light);
+        padding: 0.8rem;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        pointer-events: none;
+        z-index: 2000;
+        max-width: 250px;
+        box-shadow: 0 4px 12px var(--registry-shadow);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .tooltip.visible {
+        opacity: 1;
+      }
+
+      /* Filter Panel */
+      .filter-panel {
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .filter-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+
+      .filter-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .filter-label {
+        font-size: 0.9rem;
+        color: var(--registry-crystal);
+        font-weight: 600;
+      }
+
+      .filter-input {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--registry-silver);
+        color: var(--registry-light);
+        padding: 0.5rem;
+        border-radius: 6px;
+        font-size: 0.9rem;
+      }
+
+      .filter-input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        .registry-nav {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .nav-controls {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .view-tabs {
+          flex-wrap: wrap;
+          gap: 0.25rem;
+        }
+
+        .view-tab {
+          font-size: 0.9rem;
+          padding: 0.6rem 1rem;
+        }
+
+        .registry-title {
+          font-size: 2rem;
+        }
+
+        .filter-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .visualization-svg {
+          height: 400px;
+        }
+      }
+
+      /* Loading Animation */
+      @keyframes pulse {
+        0% {
+          opacity: 0.6;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.6;
+        }
+      }
+
+      .loading {
+        animation: pulse 1.5s infinite;
+      }
+
+      /* Accessibility */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      a:focus,
+      button:focus,
+      .view-tab:focus,
+      .control-select:focus {
+        outline: 2px solid var(--registry-gold);
+        outline-offset: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="registry-header">
+      <nav class="registry-nav">
+        <a href="index.html" class="registry-logo"
+          >🗺️ REGISTRY Visualization Engine</a
+        >
+        <div class="nav-controls">
+          <div class="control-group">
+            <span class="control-label">Data Source:</span>
+            <select class="control-select" id="dataSource">
+              <option value="ecosystem">Master Repository Ecosystem</option>
+              <option value="nodes">Node Definitions</option>
+              <option value="mappings">Mapping Relationships</option>
+            </select>
+          </div>
+          <div class="control-group">
+            <span class="control-label">Layout:</span>
+            <select class="control-select" id="layoutType">
+              <option value="force">Force Directed</option>
+              <option value="hierarchical">Hierarchical</option>
+              <option value="radial">Radial</option>
+            </select>
+          </div>
+          <a href="index.html" class="back-button">← Back to Hub</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="registry-main">
+      <h1 class="registry-title">REGISTRY Data Visualization</h1>
+      <p class="registry-subtitle">
+        Interactive exploration of the complete REGISTRY data structure with
+        real-time filtering and dynamic relationship mapping
+      </p>
+
+      <!-- Statistics Panel -->
+      <section class="statistics-panel">
+        <div class="stat-card">
+          <div class="stat-number" id="totalNodes">144</div>
+          <div class="stat-label">Total Nodes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="totalRooms">144</div>
+          <div class="stat-label">Cathedral Rooms</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="totalChapels">33</div>
+          <div class="stat-label">Chapels</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="totalConnections">∞</div>
+          <div class="stat-label">Relationships</div>
+        </div>
+      </section>
+
+      <!-- Visualization Container -->
+      <section class="visualization-container">
+        <div class="view-tabs">
+          <button class="view-tab active" data-view="node-room">
+            Node-Room Mapping
+          </button>
+          <button class="view-tab" data-view="arcana-paths">
+            Arcana Pathways
+          </button>
+          <button class="view-tab" data-view="angel-demon">
+            Angel-Demon Pairs
+          </button>
+          <button class="view-tab" data-view="chapel-organization">
+            Chapel Organization
+          </button>
+          <button class="view-tab" data-view="ecosystem-hub">
+            Ecosystem Hub
+          </button>
+        </div>
+
+        <!-- Filter Panel -->
+        <div class="filter-panel">
+          <div class="filter-grid">
+            <div class="filter-group">
+              <label class="filter-label">Search Nodes</label>
+              <input
+                type="text"
+                class="filter-input"
+                id="searchNodes"
+                placeholder="Enter node ID (e.g., C144N-001)" />
+            </div>
+            <div class="filter-group">
+              <label class="filter-label">Room Range</label>
+              <input
+                type="text"
+                class="filter-input"
+                id="roomRange"
+                placeholder="e.g., R001-R050" />
+            </div>
+            <div class="filter-group">
+              <label class="filter-label">Chapel ID</label>
+              <input
+                type="text"
+                class="filter-input"
+                id="chapelFilter"
+                placeholder="e.g., C33-01" />
+            </div>
+            <div class="filter-group">
+              <label class="filter-label">Filter by Status</label>
+              <select class="filter-input" id="statusFilter">
+                <option value="all">All Status</option>
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+                <option value="planned">Planned</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- SVG Visualization -->
+        <div class="visualization-svg" id="visualizationArea">
+          <svg
+            id="registrySvg"
+            width="100%"
+            height="100%"
+            style="background: rgba(0, 0, 0, 0.3)"></svg>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend">
+          <div class="legend-item">
+            <div class="legend-color" style="background: #9c27b0"></div>
+            <span class="legend-label">Nodes</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background: #4caf50"></div>
+            <span class="legend-label">Rooms</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background: #ff9800"></div>
+            <span class="legend-label">Chapels</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background: #e91e63"></div>
+            <span class="legend-label">Arcana</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background: #00bcd4"></div>
+            <span class="legend-label">Daimons</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Data Details Panel -->
+      <section class="data-details">
+        <h2 class="detail-title">Data Source Information</h2>
+        <div class="detail-content">
+          <div class="detail-section">
+            <h3 class="section-title">Master Repository Ecosystem</h3>
+            <div class="detail-item">
+              <div class="item-label">Source Path:</div>
+              <div class="item-value">
+                /REGISTRY/cathedral-master-repository-ecosystem.json
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="item-label">Last Updated:</div>
+              <div class="item-value">2025-11-21T16:54:36.538Z</div>
+            </div>
+            <div class="detail-item">
+              <div class="item-label">Data Type:</div>
+              <div class="item-value">Repository ecosystem configuration</div>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <h3 class="section-title">Mapping Relationships</h3>
+            <div class="detail-item">
+              <div class="item-label">Node to Room:</div>
+              <div class="item-value">/REGISTRY/maps/node_to_room.csv</div>
+            </div>
+            <div class="detail-item">
+              <div class="item-label">Node to Chapel:</div>
+              <div class="item-value">/REGISTRY/maps/node_to_chapel.csv</div>
+            </div>
+            <div class="detail-item">
+              <div class="item-label">Arcana to Paths:</div>
+              <div class="item-value">/REGISTRY/maps/arcana_to_paths.csv</div>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <h3 class="section-title">Node Definitions</h3>
+            <div class="detail-item">
+              <div class="item-label">Sample Node:</div>
+              <div class="item-value">C144N-001 → R001, C33-01</div>
+            </div>
+            <div class="detail-item">
+              <div class="item-label">Total Nodes:</div>
+              <div class="item-value">144 C144N-series nodes</div>
+            </div>
+            <div class="detail-item">
+              <div class="item-label">Coverage:</div>
+              <div class="item-value">Complete node-to-room mapping</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Tooltip -->
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+      // REGISTRY Data Visualization Engine
+      class RegistryDataVisualization {
+        constructor() {
+          this.currentData = null;
+          this.currentView = "node-room";
+          this.svg = null;
+          this.simulation = null;
+          this.nodes = [];
+          this.links = [];
+          this.selectedNode = null;
+          this.filters = {
+            searchNodes: "",
+            roomRange: "",
+            chapelFilter: "",
+            statusFilter: "all",
+          };
+
+          this.init();
+        }
+
+        init() {
+          this.svg = document.getElementById("registrySvg");
+          this.setupEventListeners();
+          this.loadData();
+          this.render();
+        }
+
+        setupEventListeners() {
+          // View tabs
+          document.querySelectorAll(".view-tab").forEach((tab) => {
+            tab.addEventListener("click", () => {
+              document
+                .querySelectorAll(".view-tab")
+                .forEach((t) => t.classList.remove("active"));
+              tab.classList.add("active");
+              this.currentView = tab.dataset.view;
+              this.render();
+            });
+          });
+
+          // Data source selector
+          document
+            .getElementById("dataSource")
+            .addEventListener("change", (e) => {
+              this.loadData(e.target.value);
+            });
+
+          // Layout selector
+          document
+            .getElementById("layoutType")
+            .addEventListener("change", (e) => {
+              this.render();
+            });
+
+          // Filter inputs
+          document
+            .getElementById("searchNodes")
+            .addEventListener("input", (e) => {
+              this.filters.searchNodes = e.target.value;
+              this.applyFilters();
+            });
+
+          document
+            .getElementById("roomRange")
+            .addEventListener("input", (e) => {
+              this.filters.roomRange = e.target.value;
+              this.applyFilters();
+            });
+
+          document
+            .getElementById("chapelFilter")
+            .addEventListener("input", (e) => {
+              this.filters.chapelFilter = e.target.value;
+              this.applyFilters();
+            });
+
+          document
+            .getElementById("statusFilter")
+            .addEventListener("change", (e) => {
+              this.filters.statusFilter = e.target.value;
+              this.applyFilters();
+            });
+
+          // Tooltip events
+          this.svg.addEventListener("mousemove", (e) => {
+            this.updateTooltip(e);
+          });
+
+          this.svg.addEventListener("mouseleave", () => {
+            this.hideTooltip();
+          });
+        }
+
+        async loadData(dataSource = "ecosystem") {
+          try {
+            // Load actual REGISTRY data
+            const response = await fetch(
+              "/REGISTRY/cathedral-master-repository-ecosystem.json"
+            );
+            const ecosystemData = await response.json();
+
+            // Load mapping files
+            const nodeRoomResponse = await fetch(
+              "/REGISTRY/maps/node_to_room.csv"
+            );
+            const nodeRoomText = await nodeRoomResponse.text();
+
+            const nodeChapelResponse = await fetch(
+              "/REGISTRY/maps/node_to_chapel.csv"
+            );
+            const nodeChapelText = await nodeChapelResponse.text();
+
+            const arcanaResponse = await fetch(
+              "/REGISTRY/maps/arcana_to_paths.csv"
+            );
+            const arcanaText = await arcanaResponse.text();
+
+            this.processData(
+              ecosystemData,
+              nodeRoomText,
+              nodeChapelText,
+              arcanaText
+            );
+          } catch (error) {
+            console.warn(
+              "Unable to load live REGISTRY data, using fallback data"
+            );
+            this.loadFallbackData();
+          }
+        }
+
+        processData(ecosystemData, nodeRoomText, nodeChapelText, arcanaText) {
+          this.currentData = {
+            ecosystem: ecosystemData,
+            nodeRoomMappings: this.parseCSV(nodeRoomText),
+            nodeChapelMappings: this.parseCSV(nodeChapelText),
+            arcanaMappings: this.parseCSV(arcanaText),
+          };
+          this.generateVisualizationData();
+          this.updateStatistics();
+        }
+
+        loadFallbackData() {
+          this.currentData = {
+            ecosystem: {
+              repository_ecosystem: {
+                master_cathedral: {
+                  name: "Master Cathedral",
+                  status: "ACTIVE",
+                },
+                circuitum99: { name: "Circuitum 99", status: "ACTIVE" },
+                stone_grimoire: { name: "Stone Grimoire", status: "ACTIVE" },
+                cosmogenesis_engine: {
+                  name: "Cosmogenesis Engine",
+                  status: "ACTIVE",
+                },
+                liber_arcanae: { name: "Liber Arcanae", status: "ACTIVE" },
+              },
+            },
+            nodeRoomMappings: [
+              { node_id: "C144N-001", room_id: "R001" },
+              { node_id: "C144N-072", room_id: "R072" },
+            ],
+            nodeChapelMappings: [
+              { node_id: "C144N-001", chapel_id: "C33-01" },
+              { node_id: "C144N-072", chapel_id: "C33-09" },
+            ],
+            arcanaMappings: [{ arcana_id: "LA-00", path: "QBL-00" }],
+          };
+          this.generateVisualizationData();
+          this.updateStatistics();
+        }
+
+        parseCSV(text) {
+          const lines = text.trim().split("\n");
+          const headers = lines[0].split(",");
+          return lines
+            .slice(1)
+            .map((line) => {
+              const values = line.split(",");
+              const obj = {};
+              headers.forEach((header, index) => {
+                obj[header.trim()] = values[index] ? values[index].trim() : "";
+              });
+              return obj;
+            })
+            .filter((obj) => Object.values(obj).some((value) => value !== ""));
+        }
+
+        generateVisualizationData() {
+          this.nodes = [];
+          this.links = [];
+
+          if (this.currentView === "node-room") {
+            this.generateNodeRoomData();
+          } else if (this.currentView === "arcana-paths") {
+            this.generateArcanaData();
+          } else if (this.currentView === "angel-demon") {
+            this.generateAngelDemonData();
+          } else if (this.currentView === "chapel-organization") {
+            this.generateChapelData();
+          } else if (this.currentView === "ecosystem-hub") {
+            this.generateEcosystemData();
+          }
+        }
+
+        generateNodeRoomData() {
+          // Generate nodes for demonstration
+          const baseNodes = [
+            { id: "C144N-001", type: "node", label: "Node 001", group: 0 },
+            { id: "C144N-072", type: "node", label: "Node 072", group: 0 },
+            { id: "R001", type: "room", label: "Room 001", group: 1 },
+            { id: "R072", type: "room", label: "Room 072", group: 1 },
+            { id: "C33-01", type: "chapel", label: "Chapel 01", group: 2 },
+            { id: "C33-09", type: "chapel", label: "Chapel 09", group: 2 },
+          ];
+
+          this.nodes = baseNodes;
+
+          // Generate links from mappings
+          this.currentData.nodeRoomMappings.forEach((mapping) => {
+            this.links.push({
+              source: mapping.node_id,
+              target: mapping.room_id,
+              type: "node-room",
+            });
+          });
+
+          this.currentData.nodeChapelMappings.forEach((mapping) => {
+            this.links.push({
+              source: mapping.node_id,
+              target: mapping.chapel_id,
+              type: "node-chapel",
+            });
+          });
+        }
+
+        generateArcanaData() {
+          this.nodes = [
+            { id: "LA-00", type: "arcana", label: "Liber Arcana 00", group: 3 },
+            { id: "QBL-00", type: "path", label: "QBL Path 00", group: 4 },
+          ];
+
+          this.links = this.currentData.arcanaMappings.map((mapping) => ({
+            source: mapping.arcana_id,
+            target: mapping.path,
+            type: "arcana-path",
+          }));
+        }
+
+        generateAngelDemonData() {
+          this.nodes = [
+            { id: "SHEM-01", type: "angel", label: "Angel 01", group: 5 },
+            { id: "DEMON-01", type: "demon", label: "Demon 01", group: 6 },
+            { id: "VIRTUE-01", type: "virtue", label: "Virtue 01", group: 7 },
+          ];
+
+          this.links = [];
+        }
+
+        generateChapelData() {
+          this.nodes = [
+            { id: "C33-01", type: "chapel", label: "Chapel 01", group: 2 },
+            { id: "C33-09", type: "chapel", label: "Chapel 09", group: 2 },
+          ];
+
+          this.links = [];
+        }
+
+        generateEcosystemData() {
+          const repos = this.currentData.ecosystem.repository_ecosystem || {};
+          Object.entries(repos).forEach(([key, repo], index) => {
+            this.nodes.push({
+              id: key,
+              type: "repository",
+              label: repo.name || key,
+              group: 8 + (index % 3),
+              status: repo.status || "ACTIVE",
+            });
+          });
+
+          this.links = [];
+        }
+
+        applyFilters() {
+          let filteredNodes = [...this.nodes];
+          let filteredLinks = [...this.links];
+
+          // Apply search filter
+          if (this.filters.searchNodes) {
+            filteredNodes = filteredNodes.filter(
+              (node) =>
+                node.id
+                  .toLowerCase()
+                  .includes(this.filters.searchNodes.toLowerCase()) ||
+                node.label
+                  .toLowerCase()
+                  .includes(this.filters.searchNodes.toLowerCase())
+            );
+          }
+
+          // Apply room range filter
+          if (this.filters.roomRange) {
+            const rangeMatch = this.filters.roomRange.match(
+              /(\w+)(\d+)-(\w+)(\d+)/
+            );
+            if (rangeMatch) {
+              const [, prefix1, start, , end] = rangeMatch;
+              const startNum = parseInt(start);
+              const endNum = parseInt(end);
+              filteredNodes = filteredNodes.filter((node) => {
+                if (!node.id.startsWith(prefix1)) return true;
+                const nodeNum = parseInt(node.id.replace(prefix1, ""));
+                return nodeNum >= startNum && nodeNum <= endNum;
+              });
+            }
+          }
+
+          // Apply chapel filter
+          if (this.filters.chapelFilter) {
+            filteredNodes = filteredNodes.filter(
+              (node) =>
+                node.id.includes(this.filters.chapelFilter) ||
+                node.label.includes(this.filters.chapelFilter)
+            );
+          }
+
+          // Update links to only include filtered nodes
+          const nodeIds = new Set(filteredNodes.map((n) => n.id));
+          filteredLinks = filteredLinks.filter(
+            (link) => nodeIds.has(link.source) && nodeIds.has(link.target)
+          );
+
+          this.nodes = filteredNodes;
+          this.links = filteredLinks;
+          this.render();
+        }
+
+        render() {
+          // Clear SVG
+          this.svg.innerHTML = "";
+
+          if (this.nodes.length === 0) {
+            const text = document.createElementNS(
+              "http://www.w3.org/2000/svg",
+              "text"
+            );
+            text.setAttribute("x", "50%");
+            text.setAttribute("y", "50%");
+            text.setAttribute("text-anchor", "middle");
+            text.setAttribute("fill", "#c0c0c0");
+            text.setAttribute("font-size", "18");
+            text.textContent = "No data to display. Please check your filters.";
+            this.svg.appendChild(text);
+            return;
+          }
+
+          const layout = document.getElementById("layoutType").value;
+
+          if (layout === "force") {
+            this.renderForceLayout();
+          } else if (layout === "hierarchical") {
+            this.renderHierarchicalLayout();
+          } else if (layout === "radial") {
+            this.renderRadialLayout();
+          }
+        }
+
+        renderForceLayout() {
+          const width = this.svg.clientWidth;
+          const height = this.svg.clientHeight;
+
+          // Create force simulation
+          this.simulation = d3
+            .forceSimulation(this.nodes)
+            .force(
+              "link",
+              d3
+                .forceLink(this.links)
+                .id((d) => d.id)
+                .distance(100)
+            )
+            .force("charge", d3.forceManyBody().strength(-300))
+            .force("center", d3.forceCenter(width / 2, height / 2))
+            .force("collision", d3.forceCollide().radius(30));
+
+          // Draw links
+          const linkGroup = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "g"
+          );
+          this.links.forEach((link) => {
+            const line = document.createElementNS(
+              "http://www.w3.org/2000/svg",
+              "line"
+            );
+            line.setAttribute("class", "svg-link");
+            line.setAttribute("data-source", link.source);
+            line.setAttribute("data-target", link.target);
+            linkGroup.appendChild(line);
+          });
+          this.svg.appendChild(linkGroup);
+
+          // Draw nodes
+          const nodeGroup = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "g"
+          );
+          this.nodes.forEach((node) => {
+            const g = document.createElementNS(
+              "http://www.w3.org/2000/svg",
+              "g"
+            );
+            g.setAttribute("class", "svg-node");
+            g.setAttribute("data-id", node.id);
+
+            const circle = document.createElementNS(
+              "http://www.w3.org/2000/svg",
+              "circle"
+            );
+            circle.setAttribute("class", "node-circle");
+            circle.setAttribute("r", this.getNodeRadius(node.type));
+            circle.setAttribute("fill", this.getNodeColor(node.type));
+            g.appendChild(circle);
+
+            const text = document.createElementNS(
+              "http://www.w3.org/2000/svg",
+              "text"
+            );
+            text.setAttribute("class", "node-label");
+            text.textContent = node.label;
+            g.appendChild(text);
+
+            // Add event listeners
+            g.addEventListener("click", () => this.selectNode(node));
+            g.addEventListener("mouseenter", () => this.showNodeTooltip(node));
+
+            nodeGroup.appendChild(g);
+          });
+          this.svg.appendChild(nodeGroup);
+
+          // Update positions on tick
+          this.simulation.on("tick", () => {
+            linkGroup.querySelectorAll("line").forEach((line, i) => {
+              const link = this.links[i];
+              const sourceNode = this.nodes.find((n) => n.id === link.source);
+              const targetNode = this.nodes.find((n) => n.id === link.target);
+
+              if (sourceNode && targetNode) {
+                line.setAttribute("x1", sourceNode.x || 0);
+                line.setAttribute("y1", sourceNode.y || 0);
+                line.setAttribute("x2", targetNode.x || 0);
+                line.setAttribute("y2", targetNode.y || 0);
+              }
+            });
+
+            nodeGroup.querySelectorAll("g").forEach((g, i) => {
+              const node = this.nodes[i];
+              if (node) {
+                g.setAttribute(
+                  "transform",
+                  `translate(${node.x || 0}, ${node.y || 0})`
+                );
+              }
+            });
+          });
+        }
+
+        renderHierarchicalLayout() {
+          const width = this.svg.clientWidth;
+          const height = this.svg.clientHeight;
+          const levels = this.getHierarchicalLevels();
+          const levelHeight = height / (levels.length + 1);
+
+          this.nodes.forEach((node, index) => {
+            const level = this.getNodeLevel(node);
+            const x =
+              (index %
+                Math.max(1, Math.ceil(this.nodes.length / levels.length))) *
+                (width /
+                  Math.max(1, Math.ceil(this.nodes.length / levels.length))) +
+              50;
+            const y = level * levelHeight + 50;
+
+            this.renderSingleNode(node, x, y);
+          });
+
+          this.renderLinks();
+        }
+
+        renderRadialLayout() {
+          const width = this.svg.clientWidth;
+          const height = this.svg.clientHeight;
+          const centerX = width / 2;
+          const centerY = height / 2;
+          const radius = Math.min(width, height) / 3;
+
+          this.nodes.forEach((node, index) => {
+            const angle = (index / this.nodes.length) * 2 * Math.PI;
+            const x = centerX + Math.cos(angle) * radius;
+            const y = centerY + Math.sin(angle) * radius;
+
+            this.renderSingleNode(node, x, y);
+          });
+
+          this.renderLinks();
+        }
+
+        renderSingleNode(node, x, y) {
+          const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+          g.setAttribute("class", "svg-node");
+          g.setAttribute("data-id", node.id);
+          g.setAttribute("transform", `translate(${x}, ${y})`);
+
+          const circle = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "circle"
+          );
+          circle.setAttribute("class", "node-circle");
+          circle.setAttribute("r", this.getNodeRadius(node.type));
+          circle.setAttribute("fill", this.getNodeColor(node.type));
+          g.appendChild(circle);
+
+          const text = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "text"
+          );
+          text.setAttribute("class", "node-label");
+          text.textContent = node.label;
+          g.appendChild(text);
+
+          // Add event listeners
+          g.addEventListener("click", () => this.selectNode(node));
+          g.addEventListener("mouseenter", () => this.showNodeTooltip(node));
+
+          this.svg.appendChild(g);
+        }
+
+        renderLinks() {
+          const linkGroup = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "g"
+          );
+          this.links.forEach((link) => {
+            const sourceNode = this.nodes.find((n) => n.id === link.source);
+            const targetNode = this.nodes.find((n) => n.id === link.target);
+
+            if (sourceNode && targetNode) {
+              const line = document.createElementNS(
+                "http://www.w3.org/2000/svg",
+                "line"
+              );
+              line.setAttribute("class", "svg-link");
+              line.setAttribute("x1", sourceNode.x || 0);
+              line.setAttribute("y1", sourceNode.y || 0);
+              line.setAttribute("x2", targetNode.x || 0);
+              line.setAttribute("y2", targetNode.y || 0);
+              linkGroup.appendChild(line);
+            }
+          });
+          this.svg.appendChild(linkGroup);
+        }
+
+        getNodeColor(type) {
+          const colors = {
+            node: "#9c27b0",
+            room: "#4caf50",
+            chapel: "#ff9800",
+            arcana: "#e91e63",
+            path: "#00bcd4",
+            angel: "#3f51b5",
+            demon: "#f44336",
+            virtue: "#8bc34a",
+            repository: "#ffc107",
+          };
+          return colors[type] || "#ffffff";
+        }
+
+        getNodeRadius(type) {
+          const radii = {
+            node: 20,
+            room: 15,
+            chapel: 18,
+            arcana: 16,
+            path: 14,
+            angel: 16,
+            demon: 16,
+            virtue: 14,
+            repository: 22,
+          };
+          return radii[type] || 15;
+        }
+
+        getHierarchicalLevels() {
+          const levels = new Set();
+          this.nodes.forEach((node) => {
+            levels.add(this.getNodeLevel(node));
+          });
+          return Array.from(levels).sort();
+        }
+
+        getNodeLevel(node) {
+          if (node.type === "repository") return 0;
+          if (node.type === "chapel") return 1;
+          if (node.type === "node") return 2;
+          if (node.type === "room") return 3;
+          if (node.type === "arcana") return 1;
+          if (node.type === "path") return 2;
+          return 2;
+        }
+
+        selectNode(node) {
+          this.selectedNode = node;
+          console.log("Selected node:", node);
+          // Add selection highlighting
+          this.highlightNode(node);
+        }
+
+        highlightNode(node) {
+          // Remove previous highlights
+          this.svg.querySelectorAll(".node-circle").forEach((circle) => {
+            circle.setAttribute("stroke-width", "2");
+          });
+
+          // Highlight selected node
+          const selectedCircle = this.svg.querySelector(
+            `[data-id="${node.id}"] .node-circle`
+          );
+          if (selectedCircle) {
+            selectedCircle.setAttribute("stroke-width", "4");
+          }
+        }
+
+        showNodeTooltip(node) {
+          const tooltip = document.getElementById("tooltip");
+          tooltip.innerHTML = `
+                    <strong>${node.label}</strong><br>
+                    ID: ${node.id}<br>
+                    Type: ${node.type}<br>
+                    Group: ${node.group}
+                `;
+          tooltip.classList.add("visible");
+        }
+
+        updateTooltip(event) {
+          const tooltip = document.getElementById("tooltip");
+          tooltip.style.left = event.pageX + 10 + "px";
+          tooltip.style.top = event.pageY - 10 + "px";
+        }
+
+        hideTooltip() {
+          const tooltip = document.getElementById("tooltip");
+          tooltip.classList.remove("visible");
+        }
+
+        updateStatistics() {
+          document.getElementById("totalNodes").textContent = this.nodes.filter(
+            (n) => n.type === "node"
+          ).length;
+          document.getElementById("totalRooms").textContent = this.nodes.filter(
+            (n) => n.type === "room"
+          ).length;
+          document.getElementById("totalChapels").textContent =
+            this.nodes.filter((n) => n.type === "chapel").length;
+        }
+      }
+
+      // Initialize when DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        // Simple D3-like simulation for fallback
+        window.d3 = {
+          forceSimulation: (nodes) => ({
+            force: () => {},
+            on: () => {},
+            nodes: () => nodes,
+            alpha: () => 1,
+            restart: () => {},
+          }),
+          forceLink: () => ({
+            id: () => (d) => d.id,
+            distance: () => (d) => 100,
+            strength: () => () => 0.1,
+          }),
+          forceManyBody: () => ({
+            strength: () => () => -300,
+          }),
+          forceCenter: () => () => {},
+          forceCollide: () => ({
+            radius: () => () => 30,
+          }),
+        };
+
+        new RegistryDataVisualization();
+      });
+
+      // Keyboard accessibility
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          // Clear selections
+          const svg = document.getElementById("registrySvg");
+          svg.querySelectorAll(".node-circle").forEach((circle) => {
+            circle.setAttribute("stroke-width", "2");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

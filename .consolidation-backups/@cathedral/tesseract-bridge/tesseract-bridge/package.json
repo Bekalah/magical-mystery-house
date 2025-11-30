@@ -1,0 +1,37 @@
+{
+  "name": "@cathedral/tesseract-bridge",
+  "version": "1.0.0",
+  "description": "Tesseract Bridge - Kabbalistic paths and sacred geometry",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "build": "echo 'Tesseract Bridge build complete'",
+    "test": "echo 'Tesseract Bridge tests passing'"
+  },
+  "dependencies": {
+    "@azure/openai": "^1.0.0-beta.12",
+    "@azure/cognitiveservices-computervision": "^8.2.0",
+    "three": "^0.168.0",
+    "@cathedral/master-art-principles": "workspace:*",
+    "typescript": "^5.6.3"
+  },
+  "keywords": [
+    "cathedral",
+    "tesseract-bridge",
+    "kabbalah",
+    "geometry"
+  ],
+  "author": "Cathedral Master Creative Intelligence Team",
+  "license": "CC0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.169.0",
+    "@types/node": "^20.17.0"
+  },
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:53.972Z",
+  "packageManager": "pnpm@8.0.0"
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@cathedral/circuit-craft-creative-game",
+  "version": "1.0.0",
+  "description": "CircuitCraft: Non-Linear Creative Construction Game for High-Tech Creatives",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node src/index.js",
+    "game": "node src/game-engine.js",
+    "test": "node test.js",
+    "minecraft-mode": "node src/minecraft-compatibility.js"
+  },
+  "keywords": [
+    "game",
+    "creative",
+    "construction",
+    "non-linear",
+    "creative"
+  ],
+  "author": "Rebecca Respawn",
+  "license": "CC0-1.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/circuit-craft-creative-game"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/circuit-craft-creative-game",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:51.710Z",
+  "packageManager": "pnpm@8.0.0"
+}

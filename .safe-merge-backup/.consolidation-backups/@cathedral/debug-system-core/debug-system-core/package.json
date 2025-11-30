@@ -1,0 +1,48 @@
+{
+  "name": "@cathedral/debug-system-core",
+  "version": "1.0.0",
+  "description": "Enterprise Debug System - Comprehensive error tracking and diagnostics for Cathedral ecosystem",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "CC0-1.0",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "@cathedral/health-map-core": "workspace:*",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rebeccalemke/cathedral-master-deployment.git",
+    "directory": "packages/debug-system-core"
+  },
+  "homepage": "https://github.com/rebeccalemke/cathedral-master-deployment/tree/main/packages/debug-system-core",
+  "bugs": {
+    "url": "https://github.com/rebeccalemke/cathedral-master-deployment/issues"
+  },
+  "keywords": [
+    "cathedral",
+    "sacred-geometry",
+    "144-99",
+    "codex",
+    "consciousness",
+    "trauma-aware",
+    "open-source",
+    "free"
+  ],
+  "packageManager": "pnpm@8.0.0",
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T19:53:29.283Z"
+}

@@ -1,0 +1,113 @@
+{
+  "name": "@cathedral/hall-of-ateliers",
+  "version": "1.0.0",
+  "description": "Master artistic creation and collaboration systems - Professional-grade tools for painters, sculptors, writers, musicians, and digital artists",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "cathedral",
+    "atelier",
+    "art",
+    "studio",
+    "collaboration",
+    "creative",
+    "mystical",
+    "trauma-safe",
+    "sacred-geometry"
+  ],
+  "author": "Rebecca Respawn",
+  "license": "CC0-1.0",
+  "engines": {
+    "node": ">=20.18.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {
+    "three": "^0.165.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "canvas": "^2.11.2",
+    "tone": "^14.7.77",
+    "fft-js": "^0.0.12",
+    "web-audio-api": "^0.2.2",
+    "@cathedral/sacred-geometry-core": "workspace:*",
+    "golden-ratio": "^1.0.0",
+    "fibonacci-js": "^1.0.0",
+    "fraction": "^0.2.0",
+    "mathjs": "^13.0.0",
+    "canvas-confetti": "^1.9.3",
+    "midi-writer-js": "^3.0.1",
+    "vibrant": "^3.1.6",
+    "color-thief": "^2.4.0",
+    "validate-color": "^1.3.4",
+    "uuid": "^10.0.0",
+    "typescript": "^5.6.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.3.0",
+    "husky": "^9.1.0",
+    "lint-staged": "^15.2.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.165.0",
+    "@types/canvas": "^0.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/node": "^20.0.0",
+    "vitest": "^2.0.0",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/jest-dom": "^6.6.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src/**/*.{ts,tsx}",
+    "format": "prettier --write src/**/*.{ts,tsx,json,md}",
+    "type-check": "tsc --noEmit",
+    "validate:sacred-math": "node scripts/validate-sacred-math.js",
+    "validate:trauma-safety": "node scripts/validate-trauma-safety.js",
+    "validate:integration": "node scripts/validate-integration.js",
+    "validate:ownership": "node scripts/validate-ownership.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./studio": {
+      "import": "./dist/studio/index.mjs"
+    },
+    "./materials": {
+      "import": "./dist/materials/index.mjs"
+    },
+    "./collaboration": {
+      "import": "./dist/collaboration/index.mjs"
+    },
+    "./exhibition": {
+      "import": "./dist/exhibition/index.mjs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bekalah/cathedral-master.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bekalah/cathedral-master/issues"
+  },
+  "homepage": "https://bekalah.github.io/cathedral",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:52.523Z",
+  "packageManager": "pnpm@8.0.0"
+}

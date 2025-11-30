@@ -1,0 +1,300 @@
+#!/usr/bin/env node
+/**
+ * Auto Push Changes - Pushes all improvements to remote repositories
+ * Runs automatically as part of continuous improvement
+ * 
+ * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+ */
+
+import { execSync } from 'child_process';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import EnhancedLogger from './enhanced-logger.mjs';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const BASE_DIR = path.join(__dirname, '..');
+
+const logger = new EnhancedLogger();
+
+class AutoPushChanges {
+  constructor() {
+    this.repos = [
+      '/Users/rebeccalemke/cathedral-master-deployment',
+      '/Users/rebeccalemke/cathedral-v1-consolidated',
+      '/Users/rebeccalemke/cathedral-fixed-clean',
+      '/Users/rebeccalemke/cathedral-real',
+      '/Users/rebeccalemke/cosmogenesis-engine'
+    ];
+  }
+
+  async pushAllChanges() {
+    logger.info('🚀 Pushing all changes to remote repositories...');
+    
+    const results = [];
+    
+    for (const repoPath of this.repos) {
+      if (!fs.existsSync(repoPath)) {
+        logger.warn(`   ⚠️  Repository not found: ${repoPath}`);
+        continue;
+      }
+      
+      try {
+        const result = await this.pushRepo(repoPath);
+        results.push(result);
+      } catch (error) {
+        logger.error(`   ❌ Error pushing ${path.basename(repoPath)}: ${error.message}`);
+        results.push({
+          repo: path.basename(repoPath),
+          success: false,
+          error: error.message
+        });
+      }
+    }
+    
+    const successful = results.filter(r => r.success).length;
+    logger.info(`\n✅ Pushed changes to ${successful}/${results.length} repositories`);
+    
+    return results;
+  }
+
+  async pushRepo(repoPath) {
+    const repoName = path.basename(repoPath);
+    logger.info(`   📤 Pushing ${repoName}...`);
+    
+    // Check if there are changes
+    const hasChanges = this.hasUncommittedChanges(repoPath) || this.hasUnpushedCommits(repoPath);
+    
+    if (!hasChanges) {
+      logger.info(`   ⏭️  ${repoName}: No changes to push`);
+      return { repo: repoName, success: true, pushed: false, reason: 'No changes' };
+    }
+    
+    // Stage all changes
+    try {
+      execSync('git add -A', { cwd: repoPath, stdio: 'pipe' });
+    } catch (error) {
+      // Ignore if nothing to stage
+    }
+    
+    // Commit if there are staged changes
+    const hasStaged = this.hasStagedChanges(repoPath);
+    if (hasStaged) {
+      const commitMessage = `Auto-improvement: Continuous enhancements (${new Date().toISOString()})`;
+      execSync(`git commit -m "${commitMessage}"`, { 
+        cwd: repoPath, 
+        stdio: 'pipe',
+        env: { ...process.env, GIT_AUTHOR_NAME: 'Rebecca Respawn', GIT_AUTHOR_EMAIL: 'rebecca@respawn.dev' }
+      });
+      logger.info(`   ✅ Committed changes in ${repoName}`);
+    }
+    
+    // Push to all remotes
+    const remotes = this.getRemotes(repoPath);
+    let pushed = false;
+    
+    for (const remote of remotes) {
+      try {
+        execSync(`git push ${remote} --all`, { 
+          cwd: repoPath, 
+          stdio: 'pipe',
+          timeout: 30000 
+        });
+        logger.info(`   ✅ Pushed to ${remote}`);
+        pushed = true;
+      } catch (error) {
+        logger.warn(`   ⚠️  Could not push to ${remote}: ${error.message}`);
+      }
+    }
+    
+    return { repo: repoName, success: pushed, pushed: true };
+  }
+
+  hasUncommittedChanges(repoPath) {
+    try {
+      const status = execSync('git status --porcelain', { 
+        cwd: repoPath, 
+        encoding: 'utf-8',
+        stdio: 'pipe' 
+      });
+      return status.trim().length > 0;
+    } catch {
+      return false;
+    }
+  }
+
+  hasStagedChanges(repoPath) {
+    try {
+      const diff = execSync('git diff --cached --quiet', { 
+        cwd: repoPath, 
+        stdio: 'pipe' 
+      });
+      return false; // If command succeeds, no staged changes
+    } catch {
+      return true; // If command fails, there are staged changes
+    }
+  }
+
+  hasUnpushedCommits(repoPath) {
+    try {
+      const remotes = this.getRemotes(repoPath);
+      for (const remote of remotes) {
+        try {
+          execSync('git fetch', { cwd: repoPath, stdio: 'pipe', timeout: 10000 });
+          const ahead = execSync(`git rev-list --count ${remote}/main..HEAD 2>/dev/null || git rev-list --count ${remote}/master..HEAD 2>/dev/null || echo 0`, { 
+            cwd: repoPath, 
+            encoding: 'utf-8',
+            stdio: 'pipe' 
+          });
+          if (parseInt(ahead.trim()) > 0) {
+            return true;
+          }
+        } catch {
+          // Continue to next remote
+        }
+      }
+      return false;
+    } catch {
+      return false;
+    }
+  }
+
+  getRemotes(repoPath) {
+    try {
+      const remotes = execSync('git remote', { 
+        cwd: repoPath, 
+        encoding: 'utf-8',
+        stdio: 'pipe' 
+      });
+      return remotes.trim().split('\n').filter(r => r.length > 0);
+    } catch {
+      return [];
+    }
+  }
+
+  async monitorRemoteWork() {
+    logger.info('👀 Monitoring remote work across repositories...');
+    
+    const status = [];
+    
+    for (const repoPath of this.repos) {
+      if (!fs.existsSync(repoPath)) continue;
+      
+      try {
+        const repoStatus = await this.checkRepoStatus(repoPath);
+        status.push(repoStatus);
+      } catch (error) {
+        logger.warn(`   ⚠️  Could not check ${path.basename(repoPath)}: ${error.message}`);
+      }
+    }
+    
+    logger.info(`\n📊 Remote status for ${status.length} repositories`);
+    
+    return status;
+  }
+
+  async checkRepoStatus(repoPath) {
+    const repoName = path.basename(repoPath);
+    
+    try {
+      // Fetch latest
+      execSync('git fetch --all', { cwd: repoPath, stdio: 'pipe', timeout: 15000 });
+      
+      const remotes = this.getRemotes(repoPath);
+      const remoteStatus = {};
+      
+      for (const remote of remotes) {
+        try {
+          const branch = execSync(`git rev-parse --abbrev-ref ${remote}/HEAD 2>/dev/null | sed 's|${remote}/||' || echo main`, {
+            cwd: repoPath,
+            encoding: 'utf-8',
+            stdio: 'pipe'
+          }).trim();
+          
+          const localCommit = execSync('git rev-parse HEAD', {
+            cwd: repoPath,
+            encoding: 'utf-8',
+            stdio: 'pipe'
+          }).trim();
+          
+          let remoteCommit = '';
+          try {
+            remoteCommit = execSync(`git rev-parse ${remote}/${branch}`, {
+              cwd: repoPath,
+              encoding: 'utf-8',
+              stdio: 'pipe'
+            }).trim();
+          } catch {
+            remoteCommit = 'unknown';
+          }
+          
+          const ahead = execSync(`git rev-list --count ${remote}/${branch}..HEAD 2>/dev/null || echo 0`, {
+            cwd: repoPath,
+            encoding: 'utf-8',
+            stdio: 'pipe'
+          }).trim();
+          
+          const behind = execSync(`git rev-list --count HEAD..${remote}/${branch} 2>/dev/null || echo 0`, {
+            cwd: repoPath,
+            encoding: 'utf-8',
+            stdio: 'pipe'
+          }).trim();
+          
+          remoteStatus[remote] = {
+            branch,
+            localCommit: localCommit.substring(0, 7),
+            remoteCommit: remoteCommit !== 'unknown' ? remoteCommit.substring(0, 7) : 'unknown',
+            ahead: parseInt(ahead),
+            behind: parseInt(behind),
+            inSync: parseInt(ahead) === 0 && parseInt(behind) === 0
+          };
+        } catch (error) {
+          remoteStatus[remote] = { error: error.message };
+        }
+      }
+      
+      return {
+        repo: repoName,
+        path: repoPath,
+        remotes: remoteStatus
+      };
+    } catch (error) {
+      return {
+        repo: repoName,
+        error: error.message
+      };
+    }
+  }
+}
+
+// Run if called directly
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const pusher = new AutoPushChanges();
+  const command = process.argv[2];
+  
+  if (command === 'push') {
+    pusher.pushAllChanges().catch(err => {
+      logger.error(`Error pushing changes: ${err.message}`);
+      process.exit(1);
+    });
+  } else if (command === 'monitor') {
+    pusher.monitorRemoteWork().then(status => {
+      console.log(JSON.stringify(status, null, 2));
+    }).catch(err => {
+      logger.error(`Error monitoring: ${err.message}`);
+      process.exit(1);
+    });
+  } else {
+    pusher.pushAllChanges().then(() => {
+      return pusher.monitorRemoteWork();
+    }).catch(err => {
+      logger.error(`Error: ${err.message}`);
+      process.exit(1);
+    });
+  }
+}
+
+export default AutoPushChanges;
+

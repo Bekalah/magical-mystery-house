@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Haute Couture Baseline Styles -->
+    <link rel="stylesheet" href="/packages/shared/assets/css/couture.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmogenesis Visualizer - Sacred World Building for Soul Healing</title>
+    <meta name="description" content="CPTSD-safe world building through sacred geometry and archetypal healing">
+    
+    <style>
+        :root {
+            --cosmos-deep: #191970;
+            --starlight-gold: #FFD700;
+            --healing-turquoise: #40E0D0;
+            --sacred-violet: #9370DB;
+            --earth-brown: #8B4513;
+            --gentle-cream: #FFF8DC;
+            --protection-indigo: #4B0082;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Garamond', serif;
+            background: radial-gradient(circle at center, var(--cosmos-deep) 0%, #000033 50%, #000011 100%);
+            min-height: 100vh;
+            color: var(--gentle-cream);
+            overflow-x: hidden;
+        }
+
+        .cosmic-header {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--protection-indigo) 0%, var(--cosmos-deep) 100%);
+            border-bottom: 3px solid var(--starlight-gold);
+        }
+
+        .cosmic-title {
+            font-size: 3rem;
+            color: var(--starlight-gold);
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 20px var(--starlight-gold);
+        }
+
+        .cosmic-subtitle {
+            font-size: 1.3rem;
+            color: var(--healing-turquoise);
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .healing-intention {
+            background: rgba(64, 224, 208, 0.2);
+            border: 2px solid var(--healing-turquoise);
+            border-radius: 15px;
+            padding: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .main-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1600px;
+            margin: 0 auto;
+            min-height: calc(100vh - 200px);
+        }
+
+        .creation-panel {
+            background: rgba(75, 0, 130, 0.3);
+            border: 2px solid var(--sacred-violet);
+            border-radius: 20px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .panel-title {
+            font-size: 1.5rem;
+            color: var(--starlight-gold);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .sacred-canvas {
+            background: rgba(0, 0, 17, 0.8);
+            border: 3px solid var(--starlight-gold);
+            border-radius: 15px;
+            position: relative;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .sacred-geometry {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border: 2px solid var(--healing-turquoise);
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: rotation 30s infinite linear;
+        }
+
+        .sacred-geometry::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 283px;
+            height: 283px;
+            border: 2px solid var(--sacred-violet);
+            border-radius: 50%;
+        }
+
+        .sacred-geometry::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            border: 2px solid var(--starlight-gold);
+            border-radius: 50%;
+        }
+
+        @keyframes rotation {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .manifestation-center {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: var(--starlight-gold);
+            font-size: 1.2rem;
+            background: rgba(25, 25, 112, 0.8);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid var(--healing-turquoise);
+        }
+
+        .integration-panel {
+            background: rgba(139, 69, 19, 0.3);
+            border: 2px solid var(--earth-brown);
+            border-radius: 20px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .archetype-selector {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .archetype-button {
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid var(--starlight-gold);
+            border-radius: 10px;
+            padding: 1rem;
+            color: var(--gentle-cream);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .archetype-button:hover {
+            background: rgba(255, 215, 0, 0.3);
+            transform: scale(1.05);
+            box-shadow: 0 0 20px var(--starlight-gold);
+        }
+
+        .archetype-button.active {
+            background: var(--starlight-gold);
+            color: var(--cosmos-deep);
+            font-weight: bold;
+        }
+
+        .world-themes {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .theme-option {
+            background: rgba(147, 112, 219, 0.2);
+            border: 2px solid var(--sacred-violet);
+            border-radius: 10px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .theme-option:hover {
+            background: rgba(147, 112, 219, 0.4);
+            border-color: var(--healing-turquoise);
+        }
+
+        .theme-title {
+            font-size: 1.1rem;
+            color: var(--starlight-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .theme-description {
+            font-size: 0.9rem;
+            color: var(--healing-turquoise);
+            font-style: italic;
+        }
+
+        .healing-aspects {
+            background: rgba(64, 224, 208, 0.2);
+            border: 2px solid var(--healing-turquoise);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .healing-list {
+            list-style: none;
+            font-size: 0.9rem;
+        }
+
+        .healing-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--gentle-cream);
+        }
+
+        .healing-list li:before {
+            content: "✨";
+            position: absolute;
+            left: 0;
+            color: var(--healing-turquoise);
+        }
+
+        .manifest-button {
+            width: 100%;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, var(--sacred-violet) 0%, var(--starlight-gold) 100%);
+            border: none;
+            border-radius: 15px;
+            color: var(--cosmos-deep);
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .manifest-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px var(--starlight-gold);
+        }
+
+        .trauma-safety {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: var(--healing-turquoise);
+            color: var(--cosmos-deep);
+            padding: 1rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            max-width: 300px;
+            box-shadow: 0 0 20px var(--healing-turquoise);
+        }
+
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--starlight-gold);
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        @media (max-width: 1024px) {
+            .main-container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .cosmic-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Haute Couture Baseline Container -->
+    <div class="cathedral-couture"></div>
+    <div class="stars" id="starField"></div>
+
+    <header class="cosmic-header">
+        <h1 class="cosmic-title">🌌 Cosmogenesis Visualizer</h1>
+        <p class="cosmic-subtitle">Sacred World Building for Soul Healing</p>
+        <div class="healing-intention">
+            <strong>🌟 Healing Intention:</strong> Through creating beautiful, sacred worlds, we reclaim our power to manifest healing, beauty, and wholeness. Each world you build is a reflection of your soul's deepest wisdom and capacity for creation.
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="creation-panel">
+            <h2 class="panel-title">🎭 Archetypal Guides</h2>
+            
+            <div class="archetype-selector" id="archetypeSelector">
+                <!-- Archetypes will be generated by JavaScript -->
+            </div>
+
+            <div class="healing-aspects">
+                <div style="color: var(--starlight-gold); font-weight: bold; margin-bottom: 1rem;">
+                    Current Guide's Healing Gifts:
+                </div>
+                <ul class="healing-list" id="healingGifts">
+                    <li>Select an archetypal guide to see their healing gifts</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="sacred-canvas">
+            <div class="sacred-geometry"></div>
+            <div class="manifestation-center" id="manifestationCenter">
+                <div style="font-size: 2rem; margin-bottom: 1rem;">🔮</div>
+                <div>Sacred Geometry Activated</div>
+                <div style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">
+                    Choose your archetypal guide and world theme to begin manifestation
+                </div>
+            </div>
+        </section>
+
+        <section class="integration-panel">
+            <h2 class="panel-title">🌍 World Themes</h2>
+            
+            <div class="world-themes" id="worldThemes">
+                <!-- World themes will be generated by JavaScript -->
+            </div>
+
+            <button class="manifest-button" onclick="cosmogenesis.manifestWorld()">
+                ✨ Manifest Sacred World ✨
+            </button>
+        </section>
+    </main>
+
+    <div class="trauma-safety">
+        <strong>🛡️ Trauma Safety Active:</strong><br>
+        All worlds are designed to be gentle and healing. If anything feels overwhelming, take a break. Your healing happens at your perfect pace.
+    </div>
+
+        <!-- Import the shared couture engine -->
+        <script type="module">
+            import '/packages/shared/couture-engine.js';
+            window.addEventListener('DOMContentLoaded', () => {
+                if (window.CathedralCoutureEngine) {
+                    const couture = new window.CathedralCoutureEngine();
+                    couture.init();
+                }
+            });
+        </script>
+        <script>
+        class CosmogenesisVisualizer {
+            constructor() {
+                this.selectedArchetype = null;
+                this.selectedTheme = null;
+                this.archetypes = this.initializeArchetypes();
+                this.themes = this.initializeThemes();
+                this.createStarField();
+                this.render();
+            }
+
+            initializeArchetypes() {
+                return {
+                    hermit: {
+                        name: "🏮 The Hermit",
+                        title: "Wisdom Seeker",
+                        description: "Guides you to create worlds of inner wisdom and spiritual retreat",
+                        healingGifts: [
+                            "Creating safe spaces for introspection",
+                            "Building wisdom libraries and temples",
+                            "Manifesting quiet gardens for reflection",
+                            "Designing healing hermitages and sanctuaries"
+                        ]
+                    },
+
+                    empress: {
+                        name: "🌺 The Empress",
+                        title: "Creative Nurturer", 
+                        description: "Helps you manifest worlds of abundance and natural beauty",
+                        healingGifts: [
+                            "Creating lush, nurturing landscapes",
+                            "Building spaces that celebrate your body",
+                            "Manifesting gardens of self-care and love",
+                            "Designing abundance and prosperity flows"
+                        ]
+                    },
+
+                    magician: {
+                        name: "⚡ The Magician",
+                        title: "Manifestation Master",
+                        description: "Empowers you to create worlds where your will becomes reality",
+                        healingGifts: [
+                            "Building powerful creation laboratories",
+                            "Manifesting goal achievement temples",
+                            "Creating confidence and power centers",
+                            "Designing skill mastery academies"
+                        ]
+                    },
+
+                    star: {
+                        name: "⭐ The Star",
+                        title: "Hope Bringer",
+                        description: "Inspires you to create worlds of infinite possibility and hope",
+                        healingGifts: [
+                            "Creating worlds of pure inspiration",
+                            "Building healing pools and star temples",
+                            "Manifesting hope after dark times",
+                            "Designing future vision sanctuaries"
+                        ]
+                    },
+
+                    sun: {
+                        name: "☀️ The Sun",
+                        title: "Joy Reclaimer",
+                        description: "Helps you manifest worlds of pure joy and childlike wonder",
+                        healingGifts: [
+                            "Creating playgrounds of pure joy",
+                            "Building sunshine healing centers", 
+                            "Manifesting celebration and laughter",
+                            "Designing inner child paradise worlds"
+                        ]
+                    },
+
+                    world: {
+                        name: "🌍 The World",
+                        title: "Integration Master",
+                        description: "Guides you to create complete, integrated healing worlds",
+                        healingGifts: [
+                            "Building complete healing ecosystems",
+                            "Creating integration and wholeness centers",
+                            "Manifesting completion and achievement",
+                            "Designing mastery and wisdom realms"
+                        ]
+                    }
+                };
+            }
+
+            initializeThemes() {
+                return {
+                    atlantis: {
+                        name: "💎 Atlantis Crystallinus",
+                        description: "Crystal-powered healing civilization",
+                        features: "Gem temples, crystal healing chambers, sacred geometry architecture",
+                        healing: "Technology + spirituality integration, clarity, precision healing"
+                    },
+
+                    lemuria: {
+                        name: "🌿 Lemuria Organicus", 
+                        description: "Living, breathing organic paradise",
+                        features: "Tree cities, flower bridges, singing crystals, telepathic harmony",
+                        healing: "Natural flow, emotional harmony, heart-chakra opening"
+                    },
+
+                    elven: {
+                        name: "🧚 Elvish Sanctuaries",
+                        description: "Ancient wisdom and magical forests",
+                        features: "Moonlit groves, starlight libraries, fairy rings, ancient oaks",
+                        healing: "Ancestral wisdom, nature connection, magical thinking return"
+                    },
+
+                    cosmic: {
+                        name: "🌌 Cosmic Temples",
+                        description: "Star-powered sacred architecture",
+                        features: "Floating temples, nebula gardens, constellation observatories",
+                        healing: "Cosmic perspective, infinite possibility, transcendence"
+                    },
+
+                    underwater: {
+                        name: "🐚 Oceanic Depths",
+                        description: "Deep sea healing kingdoms",
+                        features: "Coral palaces, singing whales, pearl temples, flowing currents",
+                        healing: "Emotional depths, unconscious wisdom, flow and release"
+                    },
+
+                    mountain: {
+                        name: "⛰️ Sacred Mountains",
+                        description: "High altitude wisdom peaks",
+                        features: "Cloud temples, eagle sanctuaries, crystal caves, stargazing peaks",
+                        healing: "Elevated perspective, grounding, spiritual climbing, peak experiences"
+                    }
+                };
+            }
+
+            createStarField() {
+                const starField = document.getElementById('starField');
+                for (let i = 0; i < 100; i++) {
+                    const star = document.createElement('div');
+                    star.className = 'star';
+                    star.style.left = Math.random() * 100 + '%';
+                    star.style.top = Math.random() * 100 + '%';
+                    star.style.animationDelay = Math.random() * 3 + 's';
+                    starField.appendChild(star);
+                }
+            }
+
+            render() {
+                this.renderArchetypes();
+                this.renderThemes();
+            }
+
+            renderArchetypes() {
+                const selector = document.getElementById('archetypeSelector');
+                selector.innerHTML = Object.entries(this.archetypes).map(([key, archetype]) => `
+                    <div class="archetype-button ${this.selectedArchetype === key ? 'active' : ''}"
+                         onclick="cosmogenesis.selectArchetype('${key}')">
+                        <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">${archetype.name}</div>
+                        <div style="font-size: 0.9rem; opacity: 0.8;">${archetype.title}</div>
+                    </div>
+                `).join('');
+            }
+
+            renderThemes() {
+                const themes = document.getElementById('worldThemes');
+                themes.innerHTML = Object.entries(this.themes).map(([key, theme]) => `
+                    <div class="theme-option ${this.selectedTheme === key ? 'active' : ''}"
+                         onclick="cosmogenesis.selectTheme('${key}')">
+                        <div class="theme-title">${theme.name}</div>
+                        <div class="theme-description">${theme.description}</div>
+                        <div style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--gentle-cream);">
+                            ${theme.features}
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            selectArchetype(archetypeKey) {
+                this.selectedArchetype = archetypeKey;
+                this.updateHealingGifts();
+                this.render();
+            }
+
+            selectTheme(themeKey) {
+                this.selectedTheme = themeKey;
+                this.render();
+                
+                // Add active styling
+                document.querySelectorAll('.theme-option').forEach(el => el.classList.remove('active'));
+                event.target.closest('.theme-option').classList.add('active');
+            }
+
+            updateHealingGifts() {
+                const giftsContainer = document.getElementById('healingGifts');
+                if (this.selectedArchetype) {
+                    const archetype = this.archetypes[this.selectedArchetype];
+                    giftsContainer.innerHTML = archetype.healingGifts.map(gift => `<li>${gift}</li>`).join('');
+                }
+            }
+
+            manifestWorld() {
+                if (!this.selectedArchetype || !this.selectedTheme) {
+                    alert('Please select both an archetypal guide and a world theme to begin manifestation! 🌟');
+                    return;
+                }
+
+                const archetype = this.archetypes[this.selectedArchetype];
+                const theme = this.themes[this.selectedTheme];
+                
+                // Update manifestation center
+                const center = document.getElementById('manifestationCenter');
+                center.innerHTML = `
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">✨🌍✨</div>
+                    <div style="font-size: 1.5rem; color: var(--starlight-gold); margin-bottom: 1rem;">
+                        Manifesting...
+                    </div>
+                    <div style="font-size: 1.1rem; margin-bottom: 1rem;">
+                        <strong>${theme.name}</strong><br>
+                        Guided by ${archetype.name}
+                    </div>
+                    <div style="font-size: 0.9rem; opacity: 0.8; line-height: 1.6;">
+                        ${archetype.description}<br><br>
+                        <strong>World Features:</strong> ${theme.features}<br><br>
+                        <strong>Healing Focus:</strong> ${theme.healing}
+                    </div>
+                `;
+
+                // Show success message
+                setTimeout(() => {
+                    const successModal = document.createElement('div');
+                    successModal.style.cssText = `
+                        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+                        background: rgba(0,0,0,0.8); z-index: 2000;
+                        display: flex; align-items: center; justify-content: center;
+                        padding: 2rem;
+                    `;
+                    
+                    successModal.innerHTML = `
+                        <div style="background: linear-gradient(135deg, var(--protection-indigo) 0%, var(--cosmos-deep) 100%); 
+                                    color: var(--gentle-cream); padding: 3rem; border-radius: 20px; 
+                                    border: 3px solid var(--starlight-gold); text-align: center; max-width: 500px;
+                                    box-shadow: 0 0 50px var(--starlight-gold);">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">🌟</div>
+                            <h2 style="color: var(--starlight-gold); margin-bottom: 1rem;">World Manifested!</h2>
+                            <p style="margin-bottom: 2rem; line-height: 1.6;">
+                                Your sacred ${theme.name} world has been successfully created with ${archetype.name} as your guide. 
+                                This world now exists as a healing sanctuary you can visit anytime in meditation or visualization.
+                            </p>
+                            <div style="background: rgba(64, 224, 208, 0.2); padding: 1rem; border-radius: 10px; margin-bottom: 2rem; font-size: 0.9rem;">
+                                <strong>✨ Integration Practice:</strong><br>
+                                Spend 5 minutes daily visualizing yourself in this world, allowing its healing energies to integrate into your daily life.
+                            </div>
+                            <button onclick="this.parentElement.parentElement.remove()"
+                                    style="background: var(--starlight-gold); color: var(--cosmos-deep); 
+                                           padding: 1rem 2rem; border: none; border-radius: 10px; 
+                                           font-size: 1.1rem; cursor: pointer; font-weight: bold;">
+                                ✨ Continue Creating ✨
+                            </button>
+                        </div>
+                    `;
+                    
+                    document.body.appendChild(successModal);
+                }, 2000);
+            }
+        }
+
+        // Initialize the Cosmogenesis Visualizer
+        const cosmogenesis = new CosmogenesisVisualizer();
+    </script>
+</body>
+</html>

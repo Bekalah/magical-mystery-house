@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "name": "Shem ha-Mephorash - 72 Angels Registry",
+    "description": "Sacred registry of the 72 angels of the Explicit Name of God",
+    "source": "Golden Dawn tradition via Stephen Skinner's angelic science",
+    "business": "THE CATHEDRAL OF CIRCUITS",
+    "numerology": "72 = 8 × 9 (lunar decan cycle)",
+    "sealed": true
+  },
+  "angels": {
+    "1": {
+      "name": "Vehuiah",
+      "hebrew": "וְהוּיָה",
+      "element": "Fire",
+      "sign": "Aries",
+      "decan": "1st decan Aries",
+      "planet": "Mars",
+      "ray": "Ray 1 - Will/Power",
+      "tone_hz": 256,
+      "crystal": "Ruby",
+      "virtue": "Courage and new beginnings",
+      "invocation": "Vehuiah, angel of divine will",
+      "chapel_hall": "Fool Hall - Respawn Gate"
+    },
+    "2": {
+      "name": "Jeliel",
+      "hebrew": "יְלִיאֵל", 
+      "element": "Fire",
+      "sign": "Aries",
+      "decan": "2nd decan Aries",
+      "planet": "Sun",
+      "ray": "Ray 2 - Love/Wisdom",
+      "tone_hz": 288,
+      "crystal": "Citrine",
+      "virtue": "Love between spouses",
+      "invocation": "Jeliel, angel of fertile love",
+      "chapel_hall": "Magician Hall - Orrery Dome"
+    },
+    "3": {
+      "name": "Sitael",
+      "hebrew": "סִיטָאֵל",
+      "element": "Fire", 
+      "sign": "Aries",
+      "decan": "3rd decan Aries",
+      "planet": "Venus",
+      "ray": "Ray 3 - Active Intelligence",
+      "tone_hz": 324,
+      "crystal": "Emerald",
+      "virtue": "Nobility and magnanimity",
+      "invocation": "Sitael, angel of noble construction",
+      "chapel_hall": "Empress Hall - Avalon Grove"
+    },
+    "18": {
+      "name": "Caliel", 
+      "hebrew": "כָּלִיאֵל",
+      "element": "Earth",
+      "sign": "Virgo",
+      "decan": "3rd decan Virgo", 
+      "planet": "Venus",
+      "ray": "Ray 6 - Devotion/Idealism",
+      "tone_hz": 432,
+      "crystal": "Rose Quartz",
+      "virtue": "Divine justice and truth",
+      "invocation": "Caliel, angel of divine justice",
+      "chapel_hall": "Justice Dome - Angelic Court"
+    },
+    "36": {
+      "name": "Hahasiah",
+      "hebrew": "הַהֲשִׁיָּה",
+      "element": "Water",
+      "sign": "Pisces", 
+      "decan": "3rd decan Pisces",
+      "planet": "Mars",
+      "ray": "Ray 7 - Ceremonial Order",
+      "tone_hz": 528,
+      "crystal": "Amethyst",
+      "virtue": "Medicine and healing",
+      "invocation": "Hahasiah, angel of universal medicine",
+      "chapel_hall": "World Gate - Compassion Mandala"
+    },
+    "42": {
+      "name": "Mikael",
+      "hebrew": "מִיכָאֵל",
+      "element": "Fire",
+      "sign": "Leo",
+      "decan": "2nd decan Leo",
+      "planet": "Jupiter", 
+      "ray": "Ray 4 - Harmony/Beauty",
+      "tone_hz": 396,
+      "crystal": "Topaz",
+      "virtue": "Political sciences and ambition",
+      "invocation": "Mikael, angel of divine politics",
+      "chapel_hall": "Emperor Hall - Solar Throne"
+    },
+    "72": {
+      "name": "Mumiah",
+      "hebrew": "מוּמִיָּה",
+      "element": "Water",
+      "sign": "Pisces",
+      "decan": "3rd decan Pisces",
+      "planet": "Moon",
+      "ray": "Ray 2 - Love/Wisdom", 
+      "tone_hz": 963,
+      "crystal": "Moonstone",
+      "virtue": "Ending and rebirth",
+      "invocation": "Mumiah, angel of endings and renewals",
+      "chapel_hall": "Death Gate - Transformation Chamber"
+    }
+  },
+  "numerological_patterns": {
+    "total_angels": 72,
+    "lunar_decans": "8 × 9 = 72",
+    "zodiac_structure": "12 signs × 3 decans × 2 angels = 72",
+    "ray_distribution": {
+      "ray_1": 12,
+      "ray_2": 12, 
+      "ray_3": 12,
+      "ray_4": 12,
+      "ray_5": 12,
+      "ray_6": 12,
+      "ray_7": 12
+    },
+    "chapel_integration": "Each angel assigned to corresponding Octagram Hall",
+    "trinity_connection": "Angels provide BODY (Stone-Grimoire) spiritual architecture"
+  },
+  "integration": {
+    "stone_grimoire_chapels": "Angels map to 8 Octagram Halls + extended chambers",
+    "liber_arcanae_tarot": "Angels balance demons in Dr. Rudd tradition",
+    "circuitum99_gates": "Angels guard wisdom gates and lattice points",
+    "protection_seals": "Angels form hexagram guardian constellation",
+    "healing_protocols": "Trauma-informed angelic invocation with IFS awareness"
+  }
+}

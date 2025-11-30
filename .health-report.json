@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-11-28T12:10:04.342Z",
+  "summary": {
+    "total": 6,
+    "healthy": 5,
+    "warnings": 0,
+    "critical": 1
+  },
+  "checks": {
+    "healthy": [
+      {
+        "name": "Dependencies",
+        "key": "dependencies",
+        "healthy": true,
+        "message": "All dependencies installed"
+      },
+      {
+        "name": "Build System",
+        "key": "build",
+        "healthy": true,
+        "message": "Build artifacts present"
+      },
+      {
+        "name": "Tools",
+        "key": "tools",
+        "healthy": true,
+        "message": "97/97 tools executable"
+      },
+      {
+        "name": "Documentation",
+        "key": "documentation",
+        "healthy": true,
+        "message": "65 documentation files"
+      },
+      {
+        "name": "Disk Space",
+        "key": "disk_space",
+        "healthy": true,
+        "message": "Disk usage: 80%"
+      }
+    ],
+    "warnings": [],
+    "critical": [
+      {
+        "name": "OpenSpec",
+        "key": "openspec",
+        "healthy": false,
+        "message": "2/3 required files present"
+      }
+    ]
+  },
+  "status": "unhealthy"
+}

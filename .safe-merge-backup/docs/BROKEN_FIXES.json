@@ -1,0 +1,42 @@
+/**
+ * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+ */
+{
+  "timestamp": "2025-11-29T04:31:42.502Z",
+  "summary": {
+    "toolsScanned": 119,
+    "packagesScanned": 50,
+    "brokenFound": 4,
+    "fixed": 0,
+    "masterV1Issues": 0
+  },
+  "broken": [
+    {
+      "file": "tools/check-consistency.mjs",
+      "issues": [
+        "Logger not instantiated"
+      ]
+    },
+    {
+      "file": "tools/enhanced-logger.mjs",
+      "issues": [
+        "Missing EnhancedLogger import"
+      ]
+    },
+    {
+      "file": "tools/optimize-code.mjs",
+      "issues": [
+        "Logger not instantiated"
+      ]
+    },
+    {
+      "file": "tools/user-feedback.mjs",
+      "issues": [
+        "Missing UserFeedback import"
+      ]
+    }
+  ],
+  "fixed": [],
+  "masterV1Issues": []
+}

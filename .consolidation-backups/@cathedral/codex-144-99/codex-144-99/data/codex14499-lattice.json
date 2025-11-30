@@ -1,0 +1,230 @@
+{
+    "version": "0.1.0-draft",
+    "primary_nodes": [
+        {
+            "id": "N001",
+            "kind": "primary",
+            "label": "Alpha Seed",
+            "coordinates": {
+                "layer": 1,
+                "ring": 1,
+                "triad": [
+                    1,
+                    1,
+                    1
+                ],
+                "factors": [
+                    1
+                ]
+            },
+            "vector_profile_ids": {
+                "geometry_profile_id": "geom-alpha-seed",
+                "color_profile_id": "col-alpha-seed",
+                "sound_profile_id": "snd-alpha-seed",
+                "crystal_profile_id": "cry-alpha-seed",
+                "archetype_profile_id": "arc-alpha-seed"
+            },
+            "references": {
+                "liber_arcanae_ids": [],
+                "monas_ids": [],
+                "double_tree_ids": [],
+                "circuitum99_ids": [],
+                "stone_library_ids": []
+            },
+            "provenance": {
+                "sources": [
+                    "codex-144-99-v1:bootstrap",
+                    "project-spec:codex144-99-architecture"
+                ],
+                "project_canon_tags": [
+                    "bootstrap",
+                    "example-only"
+                ],
+                "notes": "Bootstrap node to satisfy lattice loading and validation. Replace/extend with full lattice via editorial pipeline."
+            }
+        }
+    ],
+    "gateway_nodes": [
+        {
+            "id": "G001",
+            "kind": "gateway",
+            "label": "Gateway Seed",
+            "coordinates": {
+                "layer": 1,
+                "ring": 1,
+                "triad": [
+                    1,
+                    0,
+                    0
+                ],
+                "factors": [
+                    1
+                ]
+            },
+            "vector_profile_ids": {
+                "geometry_profile_id": "geom-gateway-seed",
+                "color_profile_id": "col-gateway-seed",
+                "sound_profile_id": "snd-gateway-seed",
+                "crystal_profile_id": "cry-gateway-seed",
+                "archetype_profile_id": "arc-gateway-seed"
+            },
+            "references": {
+                "liber_arcanae_ids": [],
+                "monas_ids": [],
+                "double_tree_ids": [],
+                "circuitum99_ids": [],
+                "stone_library_ids": []
+            },
+            "provenance": {
+                "sources": [
+                    "codex-144-99-v1:bootstrap",
+                    "project-spec:codex144-99-architecture"
+                ],
+                "project_canon_tags": [
+                    "bootstrap",
+                    "example-only"
+                ],
+                "notes": "Bootstrap gateway node; to be replaced/extended with real gateway set."
+            }
+        }
+    ],
+    "geometry_profiles": [
+        {
+            "id": "geom-alpha-seed",
+            "type": "glyph",
+            "spec": {
+                "shape": "point",
+                "dimension": 2
+            },
+            "provenance": [
+                "project-spec:codex144-99-geometry"
+            ]
+        },
+        {
+            "id": "geom-gateway-seed",
+            "type": "glyph",
+            "spec": {
+                "shape": "threshold",
+                "dimension": 2
+            },
+            "provenance": [
+                "project-spec:codex144-99-geometry"
+            ]
+        }
+    ],
+    "color_profiles": [
+        {
+            "id": "col-alpha-seed",
+            "colors": [
+                "#ffffff"
+            ],
+            "model": "sRGB",
+            "method": "project-canon",
+            "provenance": [
+                "project-spec:codex144-99-color"
+            ]
+        },
+        {
+            "id": "col-gateway-seed",
+            "colors": [
+                "#000000"
+            ],
+            "model": "sRGB",
+            "method": "project-canon",
+            "provenance": [
+                "project-spec:codex144-99-color"
+            ]
+        }
+    ],
+    "sound_profiles": [
+        {
+            "id": "snd-alpha-seed",
+            "base_frequency_hz": 432,
+            "ratios": [
+                1
+            ],
+            "system": "reference",
+            "use": "drone",
+            "provenance": [
+                "project-spec:codex144-99-sound"
+            ]
+        },
+        {
+            "id": "snd-gateway-seed",
+            "base_frequency_hz": 216,
+            "ratios": [
+                1
+            ],
+            "system": "reference",
+            "use": "drone",
+            "provenance": [
+                "project-spec:codex144-99-sound"
+            ]
+        }
+    ],
+    "crystal_profiles": [
+        {
+            "id": "cry-alpha-seed",
+            "mineral": "Quartz",
+            "lattice_system": "trigonal",
+            "color_hint": "#ffffff",
+            "index_of_refraction": 1.544,
+            "shader_hint": {
+                "roughness": 0.1,
+                "metallic": 0.0,
+                "dispersion": 0.02
+            },
+            "provenance": [
+                "public-domain:quartz-optical-properties"
+            ]
+        },
+        {
+            "id": "cry-gateway-seed",
+            "mineral": "Obsidian",
+            "lattice_system": "amorphous",
+            "color_hint": "#111111",
+            "shader_hint": {
+                "roughness": 0.4,
+                "metallic": 0.0,
+                "dispersion": 0.0
+            },
+            "provenance": [
+                "public-domain:obsidian-optical-properties"
+            ]
+        }
+    ],
+    "archetype_profiles": [
+        {
+            "id": "arc-alpha-seed",
+            "label": "Alpha Seed Archetype",
+            "tarot_links": [],
+            "narrative_roles": [
+                "origin",
+                "spark"
+            ],
+            "style_tags": [
+                "minimal",
+                "white"
+            ],
+            "provenance": [
+                "project-spec:codex144-99-archetype"
+            ]
+        },
+        {
+            "id": "arc-gateway-seed",
+            "label": "Gateway Seed Archetype",
+            "tarot_links": [],
+            "narrative_roles": [
+                "threshold",
+                "limen"
+            ],
+            "style_tags": [
+                "void",
+                "black"
+            ],
+            "provenance": [
+                "project-spec:codex144-99-archetype"
+            ]
+        }
+    ]
+}

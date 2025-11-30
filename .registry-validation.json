@@ -1,0 +1,4040 @@
+{
+  "timestamp": "2025-11-29T04:32:03.042Z",
+  "filesScanned": 660,
+  "compliantFiles": 2,
+  "complianceRate": "0.3",
+  "issues": [
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/circuitum99-core/src/Circuitum99StoryEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/circuitum99-core/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/codex-144-99-core/src/Codex144Engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/codex-144-99-core/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/consciousness-aware-creative/ConsciousnessAwareCreativeEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/design-mathematics-core/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/fusion-kink-core/src/FusionKinkDesignMathematics.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/fusion-kink-core/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/game-mathematics-core/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/liber-arcanae-core/src/LiberArcanaeEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/liber-arcanae-core/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/mystery-house-core/src/MysteryHouseEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/mystery-house-core/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/sacred-mathematics-core/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/sound-mathematics-core/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/stone-grimoire-core/src/StoneGrimoireEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/stone-grimoire-core/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/synth-design-math-core/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/tesseract-bridge-core/src/TesseractBridge.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/tesseract-bridge-core/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/TrinityV11Core.ts"
+    },
+    {
+      "type": "anti_pattern",
+      "pattern": "Hardcoded Room Data",
+      "issue": "Hardcoded room data instead of REGISTRY consumption",
+      "fix": "Import from REGISTRY/rooms",
+      "file": "packages/trinity-v1-1-core/TrinityV11Core.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/adaptive-learning-engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/arcanae-connector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/circuitum99-connector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/codex-connector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/connections.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/consciousness-mapper.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/contraction-engine.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/contraction-engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/creative-optimizer.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/cross-component-sync.ts"
+    },
+    {
+      "type": "anti_pattern",
+      "pattern": "Hardcoded Room Data",
+      "issue": "Hardcoded room data instead of REGISTRY consumption",
+      "fix": "Import from REGISTRY/rooms",
+      "file": "packages/trinity-v1-1-core/cross-component-sync.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/error-handler.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/expansion-engine.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/expansion-engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/flow-state-detector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/fractal-sound-synthesizer.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/logger.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/memory-palace-manager.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/mystery-house-connector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/narrative-thread-manager.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/pattern-recognizer.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/performance-optimizer.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/real-time-monitor.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/sacred-geometry-engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/skill-mastery-tracker.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/state-persister.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/stone-grimoire-connector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/system-connector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/unified-system-bridge.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "packages/trinity-v1-1-core/visualization-engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/alchemy/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/art-generation-node/src/azureAIFoundry.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/art-generation-node/src/facultyArtGenerator.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/art-generation-node/src/generators/patternGenerator.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/art-generation-node/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/art-generation-node/src/realDataSources.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/art-generation-node/src/types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/avatar-experience-system/demo.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/avatar-experience-system/src/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/brain/src/colorScience.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/brain/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/brain/src/soundScience.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/brain/src/styleFusion.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-144/Cathedral144.jsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-design-library/src/DesignLibrary.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-design-library/src/materials/SacredMaterials.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-design-library/src/types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-fusion-kink-engine/src/FusionKinkEngine.ts"
+    },
+    {
+      "type": "anti_pattern",
+      "pattern": "Hardcoded Palettes",
+      "issue": "Hardcoded palettes instead of REGISTRY consumption",
+      "fix": "Import from REGISTRY/palettes",
+      "file": "../cathedral-real/packages/cathedral-fusion-kink-engine/src/FusionKinkEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-fusion-kink-engine/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-fusion-kink-engine/src/types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-lightweight-library/src/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-plugin-system/examples/complete-integration.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-plugin-system/examples/integration-example.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-plugin-system/src/PluginManager.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-plugin-system/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-plugin-system/src/types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-sqlite-persistence/src/CathedralSQLiteEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cathedral-symbolic-libraries/src/kabbalah/treeOfLife.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/characters/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/circuit-craft-creative-game/build.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/circuit-craft-creative-game/psychedelic-demo.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/circuit-craft-creative-game/src/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/circuit-craft-creative-game/src/timothyLeary-adventure.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/circuitum99-arcanae-cyoa/src/types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/CloudAPI.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/CloudService.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/CloudSettingsService.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/CloudShareService.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/RefreshTimer.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/StaticSettingsService.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/StaticTokenAuthService.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/TelemetryClient.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/WebAuthService.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/__mocks__/vscode.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/__tests__/CloudService.integration.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/__tests__/CloudService.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/__tests__/CloudSettingsService.parsing.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/__tests__/CloudSettingsService.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/__tests__/CloudShareService.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/__tests__/RefreshTimer.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/__tests__/StaticSettingsService.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/__tests__/StaticTokenAuthService.spec.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/__tests__/TelemetryClient.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/__tests__/WebAuthService.spec.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/bridge/BaseChannel.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/bridge/BridgeOrchestrator.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/bridge/ExtensionChannel.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/bridge/SocketTransport.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/bridge/TaskChannel.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/bridge/__tests__/ExtensionChannel.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/bridge/__tests__/TaskChannel.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/bridge/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/errors.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/importVscode.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/retry-queue/RetryQueue.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/retry-queue/__tests__/RetryQueue.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/retry-queue/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/retry-queue/types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/src/utils.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cloud/vitest.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-144-99/src/CodexLibrary.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-144-99/src/cli.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-144-99/src/core/Codex144Engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-144-99/src/core.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-144-99/src/dev-server.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-144-99/src/engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-144-99/src/fusion-kink/FusionKinkDesignMathematics.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-144-99/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-144-99/src/integrations/DesignToolIntegration.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-144-99/src/simple-cli.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-144-99/src/types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-144-99/src/validation.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-engine/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/codex-musical-system/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/config/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/config-eslint/base.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/config-eslint/next.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/config-eslint/react.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/connections/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/consciousness-aware-creative/ConsciousnessAwareCreativeEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/core/boons/liber-777-canonical.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/core/boons/soyga-angelic-grids.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/core/ellen3/orchestration.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/core/gut/azure-ai-integration.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/core/gut/fusion-alchemy-system.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/core/gut/workers/shem-01-ingest.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/core/gut/workers/shem-05-texture-enhance.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/core/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/core/scripts/generate-avalon-data.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/core/scripts/generate-node-data.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cosmogenesis/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/creative-engine/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/data/baseCrystals.d.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/data/baseCrystals.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/data/baseCrystals.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/data/fusionSets.d.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/data/fusionSets.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/data/fusionSets.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/index.d.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/resonance.d.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/resonance.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/resonance.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/types.d.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/types.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/crystals/src/types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cyoa-book-game/src/creative-integration.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cyoa-book-game/src/gameEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cyoa-book-game/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cyoa-book-game/src/realObjects.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cyoa-book-game/src/scenes.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/cyoa-book-game/src/types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/data/arcana/living-arcanae-engine.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/data/codex-144-99-technical-implementation.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/data/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/engines/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/drizzle.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/cli/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/cli/redis.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/cli/runCi.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/cli/runEvals.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/cli/runTask.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/cli/runUnitTest.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/cli/utils.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/db/db.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/db/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/db/queries/__tests__/copyRun.spec.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/db/queries/__tests__/runs.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/db/queries/copyRun.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/db/queries/errors.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/db/queries/runs.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/db/queries/taskMetrics.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/db/queries/tasks.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/db/queries/toolErrors.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/db/schema.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/exercises/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/vitest-global-setup.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/evals/vitest.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/fractal-flames-daemon-deity/src/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/fusion-creative-suite/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/fusion-kink-generator/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/game-engine/src/ArcanaeCharacterSystem.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/game-engine/src/AudioSynthesisEngine.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/game-engine/src/AzureOpenAIIntegration.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/game-engine/src/CathedralGameInterface.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/game-engine/src/CodexGameEngine.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/game-engine/src/CodexNodeManager.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/game-engine/src/SacredGeometryRenderer.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/game-engine/src/TraumaSafeGameState.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/game-engine/src/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/game-engine/src/module.d.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/game-engine/src/types.d.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/gem-tower-engine/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/gentle-fusion-lab/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/hall-of-ateliers/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/hall-of-ateliers/src/types/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/ipc/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/ipc/src/ipc-client.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/ipc/src/ipc-server.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/labs/src/collabLab.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/labs/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/liber-arcanae/rpg-system.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/liber-arcanae/src/LiberArcanae.ts"
+    },
+    {
+      "type": "anti_pattern",
+      "pattern": "Hardcoded Styles",
+      "issue": "Hardcoded styles instead of REGISTRY consumption",
+      "fix": "Import from REGISTRY/styles",
+      "file": "../cathedral-real/packages/liber-arcanae/src/LiberArcanae.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/liber-arcanae/src/cli.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/liber-arcanae/src/dev.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/liber-arcanae/src/fusion/FusionKinkEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/liber-arcanae/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/liber-arcanae/src/types.ts"
+    },
+    {
+      "type": "anti_pattern",
+      "pattern": "Hardcoded Styles",
+      "issue": "Hardcoded styles instead of REGISTRY consumption",
+      "fix": "Import from REGISTRY/styles",
+      "file": "../cathedral-real/packages/liber-arcanae/src/types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/liber-arcanae-tools/src/canvas/liber-arcanae-canvas.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/liber-arcanae-tools/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/living-canon-engine/src/archetypes/archetype-collisions.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/living-canon-engine/src/core/living-canon-engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/living-canon-engine/src/creators/primary-source-database.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/living-canon-engine/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/living-canon-engine/src/narrative/narrative-graph.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/living-canon-engine/src/narrative/narrative-types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/living-canon-engine/src/nodes/real-creator-node.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/luxcrux/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/mystical-data-unified/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/mystical-sound-engine/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/node-tree-engine/rollup.config.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/node-tree-engine/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/packages/core/boons/liber-777-canonical.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/packages/core/boons/soyga-angelic-grids.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/packages/core/ellen3/orchestration.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/packages/core/gut/azure-ai-integration.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/packages/core/gut/fusion-alchemy-system.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/packages/core/gut/workers/shem-01-ingest.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/packages/core/gut/workers/shem-05-texture-enhance.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/packages/core/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/packages/core/scripts/generate-avalon-data.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/packages/core/scripts/generate-node-data.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/packages/cosmogenesis-learning-engine/index-clean.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/packages/cosmogenesis-learning-engine/index-obfuscated.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/packages/cosmogenesis-learning-engine/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/portal-system/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/professional-collaboration-engine/src/ProfessionalCollaborationEngine.ts"
+    },
+    {
+      "type": "anti_pattern",
+      "pattern": "Hardcoded Styles",
+      "issue": "Hardcoded styles instead of REGISTRY consumption",
+      "fix": "Import from REGISTRY/styles",
+      "file": "../cathedral-real/packages/professional-collaboration-engine/src/ProfessionalCollaborationEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/professional-export-integration/src/ProfessionalExportIntegrationSystem.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/professional-quality-control/src/ProfessionalQualityControlSystem.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/professional-typography-engine/src/ProfessionalTypographyEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/professional-vector-engine/src/ProfessionalVectorEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/sacred-geometry-core/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/sacred-geometry-simd/SacredGeometrySIMDEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/shared/alchemy-engine.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/shared/couture-engine.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/shared/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/smooth-movement-system/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/soul/src/archetypes.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/soul/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/stone-grimoire/src/enhanced-world.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/stone-grimoire/src/types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/synth/src/engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/synth/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/synth/src/integration.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/synth/src/patchLibrary.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/synth/src/types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/synthesis-engine/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/telemetry/src/BaseTelemetryClient.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/telemetry/src/PostHogTelemetryClient.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/telemetry/src/TelemetryService.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/telemetry/src/__tests__/PostHogTelemetryClient.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/telemetry/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/telemetry/vitest.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/tesseract-bridge/fusion-kink-heaven-144.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/tesseract-bridge/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/tesseract-bridge/tesseract-bridge.js"
+    },
+    {
+      "type": "anti_pattern",
+      "pattern": "Hardcoded Styles",
+      "issue": "Hardcoded styles instead of REGISTRY consumption",
+      "fix": "Import from REGISTRY/styles",
+      "file": "../cathedral-real/packages/tesseract-bridge/tesseract-bridge.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/three-engine/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trauma-safe-ui/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-architecture/src/components/body-hall-of-ateliers.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-architecture/src/components/soul-fusion-creative-suite.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-architecture/src/components/spirit-sacred-mathematics.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-architecture/src/core/consciousness-evolution-engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-architecture/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-architecture/src/integrations/codex-144-integration.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-architecture/src/main/trinity-architecture.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-architecture/src/types/arcana.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-architecture/src/types/codex-integration.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-architecture/src/types/consciousness.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-architecture/src/types/sacred-mathematics.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-architecture/src/types/trinity-architecture.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/TrinityV11Core.ts"
+    },
+    {
+      "type": "anti_pattern",
+      "pattern": "Hardcoded Room Data",
+      "issue": "Hardcoded room data instead of REGISTRY consumption",
+      "fix": "Import from REGISTRY/rooms",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/TrinityV11Core.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/adaptive-learning-engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/arcanae-connector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/circuitum99-connector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/codex-connector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/connections.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/consciousness-mapper.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/contraction-engine.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/contraction-engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/creative-optimizer.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/cross-component-sync.ts"
+    },
+    {
+      "type": "anti_pattern",
+      "pattern": "Hardcoded Room Data",
+      "issue": "Hardcoded room data instead of REGISTRY consumption",
+      "fix": "Import from REGISTRY/rooms",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/cross-component-sync.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/error-handler.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/expansion-engine.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/expansion-engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/flow-state-detector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/fractal-sound-synthesizer.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/memory-palace-manager.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/mystery-house-connector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/narrative-thread-manager.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/pattern-recognizer.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/performance-optimizer.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/real-time-monitor.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/sacred-geometry-engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/skill-mastery-tracker.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/state-persister.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/stone-grimoire-connector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/system-connector.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/unified-system-bridge.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/trinity-v1-1-core/visualization-engine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/__tests__/cloud.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/__tests__/index.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/__tests__/ipc.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/__tests__/provider-settings.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/api.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/arcana.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/cloud.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/codebase-index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/codex.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/cookie-consent.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/events.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/experiment.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/followup.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/global-settings.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/history.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/ipc.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/marketplace.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/mcp.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/message.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/mode.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/model.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/provider-settings.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/__tests__/claude-code.spec.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/anthropic.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/bedrock.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/cerebras.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/chutes.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/claude-code.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/deepinfra.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/deepseek.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/doubao.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/featherless.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/fireworks.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/gemini.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/glama.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/groq.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/huggingface.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/io-intelligence.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/lite-llm.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/lm-studio.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/minimax.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/mistral.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/moonshot.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/ollama.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/openai.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/openrouter.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/qwen-code.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/requesty.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/roo.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/sambanova.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/unbound.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/vercel-ai-gateway.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/vertex.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/vscode-llm.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/xai.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/providers/zai.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/single-file-read-models.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/task.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/telemetry.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/terminal.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/todo.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/tool.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/type-fu.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/src/vscode.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/tsup.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/types/vitest.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/ui/src/ArcanaeCard.stories.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/ui/src/ArcanaeCard.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/unified-codex-extractor/src/export/exportEngine.ts"
+    },
+    {
+      "type": "anti_pattern",
+      "pattern": "Hardcoded Styles",
+      "issue": "Hardcoded styles instead of REGISTRY consumption",
+      "fix": "Import from REGISTRY/styles",
+      "file": "../cathedral-real/packages/unified-codex-extractor/src/export/exportEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/unified-codex-extractor/src/extractor/unifiedExtractor.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/unified-codex-extractor/src/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/unified-codex-extractor/src/processor/imageProcessor.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/unified-codex-extractor/src/processor/mathematicalExtractor.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/unified-codex-extractor/src/processor/ocrProcessor.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/unified-codex-extractor/src/processor/vectorExtractor.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/unified-codex-extractor/src/quality/qualityControlSystem.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/unified-codex-extractor/src/types/extraction-types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/unified-codex-extractor/src/validation/sacredGeometryValidator.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/unified-creative-system/src/UnifiedCreativeEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/universal-accessibility/UniversalAccessibilityEngine.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/web-platform/src/App.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/web-platform/src/cathedral-core.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/web-platform/src/components/CathedralHeader.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/web-platform/src/components/DesignStudio.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/web-platform/src/components/LoadingScreen.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/web-platform/src/components/MobileInterface.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/web-platform/src/components/MusicLab.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/web-platform/src/components/ScannerInterface.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/web-platform/src/components/WelcomeScreen.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/web-platform/src/engines/real/fusion-altar-sophia7.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/web-platform/src/engines/real/fusion-quests.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/web-platform/src/shared/cymatics-bridge.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/packages/web-platform/vite.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-professional-design-suite/src/DeployArchitecture.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-professional-design-suite/src/components/CanvasManager.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-professional-design-suite/src/components/DeploymentManager.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-professional-design-suite/src/components/MenuSystem.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-professional-design-suite/src/components/QualityControl.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-professional-design-suite/src/components/SQLiteDatabaseManager.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-professional-design-suite/src/components/SQLiteManager.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-professional-design-suite/src/main.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-professional-design-suite/src/main.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-professional-design-suite/vite.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-unity/src/App.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-unity/src/main.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-unity/src/stores/cathedral-store.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/cathedral-unity/vite.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/circuitum99/src/App.tsx"
+    },
+    {
+      "type": "anti_pattern",
+      "pattern": "Hardcoded Styles",
+      "issue": "Hardcoded styles instead of REGISTRY consumption",
+      "fix": "Import from REGISTRY/styles",
+      "file": "../cathedral-real/apps/circuitum99/src/App.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/circuitum99/src/LivingArcanaDatabase.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/circuitum99/src/main.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/circuitum99/vite.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/frontend/src/App.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/frontend/src/components/SpellCaster.jsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/frontend/src/components/SpellCastingUI.jsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/frontend/src/components/VolcanicFireScene.jsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/frontend/src/index.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/liber-arcanae-tarot/src/main.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/rosslyn-explorer/agent-integration.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/synth-lab/src/main.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/synth-lab/src/ui/SynthLabApp.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/synth-lab/vite.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/tarot-arena/src/CoutureOverlay.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/tarot-arena/src/index.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/tarot-arena/vite.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/test-ground/src/index.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/test-ground/vite.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/runTest.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/extension.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/markdown-lists.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/modes.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/subtasks.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/task.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/test-utils.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/tools/apply-diff.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/tools/execute-command.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/tools/insert-content.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/tools/list-files.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/tools/read-file.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/tools/search-files.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/tools/use-mcp-tool.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/tools/write-to-file.test.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/suite/utils.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/vscode-e2e/src/types/global.d.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/next-env.d.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/next.config.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/4chbX1rsE4erkSXQkKZkN/_buildManifest.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/4chbX1rsE4erkSXQkKZkN/_ssgManifest.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/NsMaMlCp4-44aRzrCleHU/_buildManifest.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/NsMaMlCp4-44aRzrCleHU/_ssgManifest.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/126c1296637b7037.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/20b88c6ac7e74ee9.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/4b4335a423deb5e4.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/567-604af9838927c7c0.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/64c05655914c0fb8.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/684a30df114c1845.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/6b6f469a3b60434f.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/78bdf37d6e64798c.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/bfa5a005db1381dd.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/cb1654ec4c6bd41b.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/ff24cae0b81eac36.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/main-3a940cba0a7bcbf9.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/pages/_app-a1186d3f6d8453eb.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/pages/_error-d1cc8eed8a54b79e.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/pages/index-4990c63feb680a2b.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/turbopack-d94ec5a40465e50e.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/turbopack-ef44faf0147a6cd7.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/turbopack-ef689828476d6c7f.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/_next/static/chunks/webpack-8fa1640cc84ba8fe.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/out/alchemy-engine.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/packages/shared/couture-engine.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/pages/index.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/public/alchemy-engine.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/App.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/components/CathedralGameInterface.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/components/liberCodexDemo.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/main.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/pages/liber-codex-demo.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/routes/About.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/routes/Arcana.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/routes/Codex.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/routes/Fusion.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/routes/Home.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/routes/Labs.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/routes/Library.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/routes/Portal.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/types.d.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/src/vite-env.d.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web/vite.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/next-env.d.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/next.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/actions/exercises.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/actions/heartbeat.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/actions/runners.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/actions/runs.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/actions/tasks.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/app/api/health/route.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/app/api/runs/[id]/stream/route.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/app/layout.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/app/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/app/runs/[id]/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/app/runs/[id]/run-status.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/app/runs/[id]/run.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/app/runs/[id]/task-status.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/app/runs/new/new-run.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/app/runs/new/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/app/runs/new/settings-diff.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/home/run.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/home/runs.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/layout/header.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/layout/logo.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/providers/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/providers/react-query-provider.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/providers/theme-provider.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/alert-dialog.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/badge.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/button.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/command.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/dialog.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/drawer.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/dropdown-menu.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/form.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/input.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/label.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/multi-select.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/popover.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/scroll-area.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/select.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/separator.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/slider.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/sonner.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/table.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/tabs.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/textarea.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/components/ui/tooltip.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/hooks/use-copy-run.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/hooks/use-event-source.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/hooks/use-open-router-models.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/hooks/use-run-status.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/lib/actions.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/lib/formatters.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/lib/schemas.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/lib/server/__tests__/sse-stream.spec.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/lib/server/redis.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/lib/server/sse-stream.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/src/lib/utils.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-evals/vitest.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-from-master/next.config.js"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/next.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/actions/evals.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/api/og/route.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/cloud/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/enterprise/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/evals/evals.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/evals/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/evals/plot.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/evals/types.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/layout.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/legal/cookies/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/legal/subprocessors/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/pr-fixer/content-a.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/pr-fixer/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/pricing/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/privacy/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/reviewer/content-b.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/reviewer/content.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/reviewer/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/robots.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/shared/AgentLandingContent.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/shared/agent-page-content.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/shared/getContentVariant.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/shell.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/app/terms/page.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/CookieConsentWrapper.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/animated-text.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/chromes/footer.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/chromes/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/chromes/nav-bar.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/chromes/stats-display.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/chromes/theme-toggle.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/enterprise/contact-form.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/homepage/animated-background.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/homepage/code-example.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/homepage/company-logos.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/homepage/faq-section.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/homepage/features.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/homepage/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/homepage/install-section.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/homepage/testimonials.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/homepage/whats-new-button.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/providers/google-analytics-provider.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/providers/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/providers/posthog-provider.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/providers/providers.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/reviewer/agent-carousel.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/structured-data.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/ui/button.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/ui/chart.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/ui/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/ui/modal.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/ui/scroll-button.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/components/ui/table.tsx"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/analytics/consent-manager.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/analytics/google-ads.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/constants.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/format-currency.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/format-duration.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/format-score.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/format-tokens.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/hooks/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/hooks/use-logo-src.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/hooks/use-open-router-models.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/index.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/og.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/seo.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/stats.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/structured-data.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/src/lib/utils.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/web-roo-code/tailwind.config.ts"
+    },
+    {
+      "type": "missing_registry",
+      "pattern": "REGISTRY Import",
+      "description": "Must import from REGISTRY system",
+      "file": "../cathedral-real/apps/worker/src/index.ts"
+    }
+  ],
+  "patternsFound": [
+    "Schema Validation",
+    "REGISTRY Import",
+    "Room Definitions",
+    "Style Packs",
+    "Palette Catalogs"
+  ]
+}

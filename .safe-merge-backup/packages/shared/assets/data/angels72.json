@@ -1,0 +1,6 @@
+{
+  "angels": [
+    {"name": "Angel 1", "sigil": "✶", "tone": {"note": "C", "octave": 4}, "element": "fire", "stylepack": {"colors": ["#FF4500", "#FFD700"]}, "geometry": "metatron"},
+  {"name": "Angel 2", "sigil": "✷", "tone": {"note": "D", "octave": 4}, "element": "water", "stylepack": {"colors": ["#0080FF", "#B0E0E6"]}, "geometry": "flower"}
+  ]
+}

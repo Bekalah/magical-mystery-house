@@ -1,0 +1,7 @@
+{
+    "timestamp": "2025-11-07T16:02:20.725Z",
+    "rule": "Always use THEMELA_FOOL, never FOOL for ArcanaType.THEMELA_FOOL",
+    "status": "validated",
+    "checked_files": "hall-of-ateliers/*.py",
+    "last_validation": "2025-11-07T16:02:20.739Z"
+}

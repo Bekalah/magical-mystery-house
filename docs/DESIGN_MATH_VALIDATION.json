@@ -1,0 +1,400 @@
+/**
+ * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+ */
+{
+  "timestamp": "2025-11-28T07:52:16.593Z",
+  "summary": {
+    "validations": 95,
+    "issues": 0,
+    "byType": {
+      "golden_ratio": 33,
+      "fibonacci": 20,
+      "cathedral_ratio": 13,
+      "sacred_geometry": 29
+    }
+  },
+  "validations": [
+    {
+      "file": "/apps/cathedral-professional-design - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality-suite/src/ProfessionalDesignInterface.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/ProfessionalDesignInterface.tsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/ProfessionalDesignInterface.tsx",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/styles.css",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/styles.css",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/styles.css",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/apps/frontend/src/components/SpellCastingUI.jsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/apps/cathedral-professional-design-suite/src/ProfessionalDesignInterface.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/apps/cathedral-professional-design-suite/src/ProfessionalDesignInterface.tsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/apps/cathedral-professional-design-suite/src/ProfessionalDesignInterface.tsx",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/js/fractal-ui.js",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/brain/src/styleFusion.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/cathedral-design-library/src/DesignLibrary.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/cathedral-design-library/src/DesignLibrary.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/cathedral-design-library/src/DesignLibrary.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/cathedral-design-library/src/DesignLibrary.ts",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/cathedral-shaders/build-all-shaders.js",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/circuitum99/circuitum99-complete-integration.js",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/tests/design-suite.test.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/tests/design-suite.test.js",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/tests/design-suite.test.js",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/tools/copilot-build-system.js",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/archive/extracted-v1-consolidated/tools/validation/copilot-build-system.js",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/external/codex-144-99/src/fusion-kink/FusionKinkDesignMathematics.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/external/codex-144-99/src/fusion-kink/FusionKinkDesignMathematics.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/external/codex-144-99/src/fusion-kink/FusionKinkDesignMathematics.ts",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/external/codex-144-99/src/integrations/DesignToolIntegration.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/external/codex-144-99/src/integrations/DesignToolIntegration.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/external/codex-144-99/src/integrations/DesignToolIntegration.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/external/codex-144-99/src/integrations/DesignToolIntegration.ts",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/js/fractal-ui.js",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/brain/src/styleFusion.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/cathedral-design-library/src/DesignLibrary.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/cathedral-design-library/src/DesignLibrary.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/cathedral-design-library/src/DesignLibrary.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/cathedral-design-library/src/DesignLibrary.ts",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/packages/codex-144-99/src/fusion-kink/FusionKinkDesignMathematics.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/codex-144-99/src/fusion-kink/FusionKinkDesignMathematics.ts",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/packages/codex-144-99/src/integrations/DesignToolIntegration.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/codex-144-99/src/integrations/DesignToolIntegration.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/codex-144-99/src/integrations/DesignToolIntegration.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/codex-144-99/src/integrations/DesignToolIntegration.ts",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/packages/trinity-architecture/src/components/soul-fusion-creative-suite.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/trinity-architecture/src/components/soul-fusion-creative-suite.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/trinity-architecture/src/components/soul-fusion-creative-suite.ts",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/packages/web-platform/src/components/DesignStudio.tsx",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/tests/design-suite.test.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/tests/design-suite.test.js",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/tests/design-suite.test.js",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/tools/validation/copilot-build-system.js",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/ProfessionalDesignInterface.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/ProfessionalDesignInterface.tsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/ProfessionalDesignInterface.tsx",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/styles.css",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/styles.css",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/apps/cathedral-professional-design-suite/src/styles.css",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/apps/frontend/src/components/SpellCastingUI.jsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/apps/web/src/styles/japanese-design.css",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/brain/src/styleFusion.d.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/brain/src/styleFusion.js",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/brain/src/styleFusion.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/cathedral-design-library/src/DesignLibrary.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/cathedral-design-library/src/DesignLibrary.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/cathedral-design-library/src/DesignLibrary.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/cathedral-design-library/src/DesignLibrary.ts",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/packages/circuitum99/circuitum99-complete-integration.js",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/packages/circuitum99/src/Circuitum99StoryEngine.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/circuitum99/src/Circuitum99StoryEngine.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/circuitum99/src/Circuitum99StoryEngine.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/circuitum99/src/Circuitum99StoryEngine.ts",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts",
+      "type": "cathedral_ratio_usage"
+    },
+    {
+      "file": "/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/packages/japanese-design-system/src/components.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/shared/src/high-end-components.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/shared/src/high-end-components.tsx",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/shared/src/high-end-components.tsx",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/packages/shared/src/sophisticated-components.tsx",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/shared/src/tools/sophisticated-build-optimization-enhancer.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/shared/src/tools/sophisticated-component-quality-enhancer.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/shared/src/tools/sophisticated-design-aesthetics-enhancer.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/shared/src/world-class-design-system.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/shared/src/world-class-design-system.ts",
+      "type": "sacred_geometry_usage"
+    },
+    {
+      "file": "/packages/trinity-architecture/src/components/soul-fusion-creative-suite.ts",
+      "type": "golden_ratio_usage"
+    },
+    {
+      "file": "/packages/trinity-architecture/src/components/soul-fusion-creative-suite.ts",
+      "type": "fibonacci_usage"
+    },
+    {
+      "file": "/packages/trinity-architecture/src/components/soul-fusion-creative-suite.ts",
+      "type": "sacred_geometry_usage"
+    }
+  ],
+  "issues": []
+}

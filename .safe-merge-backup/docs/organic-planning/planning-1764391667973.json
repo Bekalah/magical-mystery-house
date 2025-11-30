@@ -1,0 +1,57 @@
+/**
+ * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+ */
+{
+  "id": "planning-1764391667973",
+  "timestamp": "2025-11-29T04:47:47.973Z",
+  "doubtMomentId": "doubt-1764391667924",
+  "researchId": "research-1764391667928",
+  "approach": "organic, non-linear, exploratory",
+  "considerations": [
+    "Keep it gentle and supportive",
+    "Allow for organic exploration",
+    "Make it feel like an open world, not a website",
+    "Honor the creative process with doubt and research",
+    "Support nervous energy with calm exploration",
+    "Make every interaction feel alive and responsive",
+    "Allow for non-linear discovery",
+    "Create space for organic connections"
+  ],
+  "paths": [
+    {
+      "name": "Deep exploration path",
+      "description": "Go deeper into one aspect",
+      "organic": true,
+      "openWorld": true
+    },
+    {
+      "name": "Broad connection path",
+      "description": "Explore connections across systems",
+      "organic": true,
+      "openWorld": true
+    },
+    {
+      "name": "Gentle integration path",
+      "description": "Slowly integrate insights",
+      "organic": true,
+      "traumaAware": true
+    }
+  ],
+  "gentleNextSteps": [
+    "Take a moment to breathe and reflect",
+    "Explore one connection at a time",
+    "Allow insights to settle organically",
+    "No pressure, just gentle exploration",
+    "Follow what feels right",
+    "Honor the creative process"
+  ],
+  "openWorldElements": [
+    "Free exploration without open world experience paths",
+    "Hidden discoveries and connections",
+    "Organic navigation that feels natural",
+    "Responsive environment that adapts",
+    "Multiple ways to approach everything",
+    "Living, breathing experience"
+  ]
+}

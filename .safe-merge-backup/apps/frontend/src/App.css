@@ -1,0 +1,379 @@
+@import '@cathedral/shared/src/styles/unified-professional.css';
+
+/* Cathedral Spell Engine - Frontend Styles */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  overflow: hidden;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Spell Casting UI Styles */
+.spell-casting-app {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.spell-scene-container {
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+
+.spell-ui-panel {
+  width: 400px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
+  border-left: 2px solid #9d4edd;
+  backdrop-filter: blur(10px);
+}
+
+.spell-ui-panel h1 {
+  margin-top: 0;
+  color: #9d4edd;
+  text-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+}
+
+.spell-ui-panel h2 {
+  color: #ffd700;
+  border-bottom: 1px solid #ffd700;
+  padding-bottom: 5px;
+}
+
+.spell-ui-panel h3 {
+  color: #87ceeb;
+  margin-bottom: 10px;
+}
+
+/* Spells Grid */
+.spells-section {
+  margin-bottom: 25px;
+}
+
+.spells-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.spell-button {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.spell-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.spell-button:hover::before {
+  left: 100%;
+}
+
+.spell-button.fire {
+  background: linear-gradient(135deg, #ff4500, #ff6347);
+  color: white;
+}
+
+.spell-button.water {
+  background: linear-gradient(135deg, #0077be, #4169e1);
+  color: white;
+}
+
+.spell-button.earth {
+  background: linear-gradient(135deg, #8b4513, #a0522d);
+  color: white;
+}
+
+.spell-button.air {
+  background: linear-gradient(135deg, #87ceeb, #b0e0e6);
+  color: #1a1a2e;
+}
+
+.spell-button.arcane {
+  background: linear-gradient(135deg, #9d4edd, #c77dff);
+  color: white;
+}
+
+.spell-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(157, 78, 221, 0.4);
+}
+
+.spell-button:active {
+  transform: translateY(-1px);
+}
+
+.spell-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.spell-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.spell-element {
+  font-size: 12px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.spell-intensity {
+  font-size: 12px;
+  margin-top: 6px;
+  padding: 2px 6px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Spell Result */
+.spell-result {
+  background: rgba(157, 78, 221, 0.15);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #9d4edd;
+  backdrop-filter: blur(5px);
+  animation: resultFadeIn 0.5s ease-out;
+}
+
+@keyframes resultFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.oracle-sentence {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #ffd700;
+  text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+  line-height: 1.4;
+  padding: 8px;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 6px;
+  border-left: 3px solid #ffd700;
+}
+
+.museum-sources,
+.artifacts {
+  margin: 10px 0;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+}
+
+.museum-sources strong,
+.artifacts strong {
+  color: #87ceeb;
+}
+
+.museum-sources ul,
+.artifacts ul {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
+
+.museum-sources li,
+.artifacts li {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.graph-navigation {
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(135, 206, 235, 0.1);
+  border-radius: 6px;
+  border: 1px solid #87ceeb;
+}
+
+.graph-navigation strong {
+  color: #87ceeb;
+}
+
+.graph-navigation > div {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+/* World State */
+.world-state {
+  background: rgba(0, 100, 0, 0.15);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #32cd32;
+  backdrop-filter: blur(5px);
+}
+
+.world-state > div {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.npcs {
+  margin-top: 12px;
+}
+
+.npcs strong {
+  color: #32cd32;
+}
+
+.npc {
+  font-size: 12px;
+  margin: 4px 0;
+  padding: 6px 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  border-left: 3px solid #32cd32;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.reset-button,
+.refresh-button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.reset-button {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+  color: white;
+}
+
+.refresh-button {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
+}
+
+.reset-button:hover,
+.refresh-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.reset-button:active,
+.refresh-button:active {
+  transform: translateY(0);
+}
+
+/* Loading States */
+.spell-button:disabled.loading {
+  background: linear-gradient(45deg, 
+    rgba(157, 78, 221, 0.3) 25%, 
+    transparent 25%, 
+    transparent 50%, 
+    rgba(157, 78, 221, 0.3) 50%, 
+    rgba(157, 78, 221, 0.3) 75%, 
+    transparent 75%
+  );
+  background-size: 20px 20px;
+  animation: loadingStripes 1s linear infinite;
+}
+
+@keyframes loadingStripes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 20px 0;
+  }
+}
+
+/* Scrollbar Styling */
+.spell-ui-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.spell-ui-panel::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.spell-ui-panel::-webkit-scrollbar-thumb {
+  background: #9d4edd;
+  border-radius: 4px;
+}
+
+.spell-ui-panel::-webkit-scrollbar-thumb:hover {
+  background: #c77dff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .spell-casting-app {
+    flex-direction: column;
+  }
+  
+  .spell-scene-container {
+    height: 60vh;
+  }
+  
+  .spell-ui-panel {
+    width: 100%;
+    height: 40vh;
+    border-left: none;
+    border-top: 2px solid #9d4edd;
+  }
+  
+  .controls {
+    position: sticky;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    margin: -10px -20px 0 -20px;
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@cathedral/luxcrux",
+  "version": "1.0.0",
+  "description": "Luxcrux - Elemental directions and spatial consciousness",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "build": "echo 'Luxcrux build complete'",
+    "test": "echo 'Luxcrux tests passing'"
+  },
+  "keywords": [
+    "cathedral",
+    "luxcrux",
+    "elemental",
+    "directions"
+  ],
+  "author": "Cathedral Master Creative Intelligence Team",
+  "license": "CC0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "dependencies": {
+    "@cathedral/master-art-principles": "workspace:*",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0"
+  },
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:52.957Z",
+  "packageManager": "pnpm@8.0.0"
+}

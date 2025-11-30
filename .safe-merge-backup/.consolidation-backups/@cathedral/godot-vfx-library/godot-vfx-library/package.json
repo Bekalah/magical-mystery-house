@@ -1,0 +1,98 @@
+{
+  "name": "@cathedral/godot-vfx-library",
+  "version": "1.0.0",
+  "description": "Free Godot VFX Library - Sacred Geometry & Mystical Effects for Cathedral of Circuits",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "validate": "echo 'Validating sacred mathematics in VFX...' && node validate-sacred-math.js",
+    "export": "echo 'Exporting VFX assets for Godot...' && ppnpm run build",
+    "preview": "echo 'Preview VFX effects...' && open preview/index.html"
+  },
+  "keywords": [
+    "godot",
+    "vfx",
+    "visual-effects",
+    "sacred-geometry",
+    "mystical",
+    "trauma-safe",
+    "free",
+    "open-source",
+    "cathedral-of-circuits",
+    "144:99",
+    "golden-ratio",
+    "energy-ribbons",
+    "spiral-effects"
+  ],
+  "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/godot-vfx-library"
+  },
+  "homepage": "https://bekalah.github.io/cathedral/godot-vfx",
+  "godot": {
+    "version": "4.3+",
+    "compatibility": "4.0+",
+    "asset_type": "vfx_library",
+    "themes": [
+      "sacred_geometry",
+      "mystical",
+      "trauma_safe",
+      "neurodivergent_friendly",
+      "energy_flow"
+    ]
+  },
+  "cathedral": {
+    "sacred_mathematics": {
+      "golden_ratio": 1.618,
+      "144_99_ratio": 1.455,
+      "fibonacci_sequences": true,
+      "divine_proportions": true
+    },
+    "trauma_safety": {
+      "no_autoplay": true,
+      "esc_exit": true,
+      "motion_controls": true,
+      "intensity_adjustment": true,
+      "gentle_defaults": true
+    },
+    "mystical_themes": [
+      "energy_ribbons",
+      "spiral_navigation",
+      "breathing_interfaces",
+      "sacred_colors",
+      "archetypal_forms"
+    ]
+  },
+  "files": [
+    "effects/",
+    "materials/",
+    "shaders/",
+    "scenes/",
+    "textures/",
+    "sounds/",
+    "documentation/",
+    "examples/",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  },
+  "types": "dist/index.d.ts",
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=20.18.0",
+    "pnpm": ">=8.15.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T19:53:30.000Z"
+}

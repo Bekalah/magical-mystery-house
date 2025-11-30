@@ -1,0 +1,150 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: ['25.2', '20.x']
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v4
+      with:
+        version: 9
+        run_install: false
+    
+    - name: Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'pnpm'
+    
+    - name: Get pnpm store directory
+      shell: bash
+      run: |
+        echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+    
+    - name: Setup pnpm cache
+      uses: actions/cache@v4
+      with:
+        path: ${{ env.STORE_PATH }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+    
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile --prefer-offline
+      continue-on-error: false
+    
+    - name: Verify installation
+      run: |
+        echo "Node version: $(node --version)"
+        echo "pnpm version: $(pnpm --version)"
+        echo "Checking for node_modules..."
+        if [ -d "node_modules" ]; then
+          echo "✅ node_modules exists"
+          echo "Package count: $(find node_modules -maxdepth 1 -type d | wc -l)"
+        else
+          echo "❌ node_modules not found"
+          exit 1
+        fi
+    
+    - name: Run linter
+      run: pnpm run lint || true
+      continue-on-error: true
+    
+    - name: Build project
+      run: pnpm run build
+      continue-on-error: false
+    
+    - name: Check build output
+      run: |
+        if [ ! -d "dist" ]; then
+          echo "⚠️  Build warning: dist directory not found"
+          echo "Checking for other build outputs..."
+          ls -la
+        else
+          echo "✅ Build successful! dist directory exists"
+          echo "Files in dist:"
+          find dist -type f | head -10
+        fi
+    
+    - name: Upload build artifacts
+      if: success() || failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: build-artifacts-${{ matrix.node-version }}
+        path: |
+          dist/
+          node_modules/.bin/
+        retention-days: 7
+        if-no-files-found: warn
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v4
+      with:
+        version: 9
+        run_install: false
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '25.2'
+        cache: 'pnpm'
+    
+    - name: Get pnpm store directory
+      shell: bash
+      run: |
+        echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+    
+    - name: Setup pnpm cache
+      uses: actions/cache@v4
+      with:
+        path: ${{ env.STORE_PATH }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+    
+    - name: Install dependencies
+      run: pnpm install --frozen-lockfile --prefer-offline
+    
+    - name: Build project
+      run: pnpm run build
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
+        cname: bekalah.github.io
+        destination_dir: /cathedral-master-deployment
+      if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    
+    - name: Create release
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: dist/**
+        generate_release_notes: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

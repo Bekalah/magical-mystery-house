@@ -1,0 +1,93 @@
+{
+  "name": "@cathedral/godot-codex-14499",
+  "version": "1.0.0",
+  "description": "Godot Codex 144:99 - Sacred lattice system for games and applications",
+  "main": "codex_14499.gd",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "validate": "echo 'Validating sacred mathematics...' && node validate-sacred-math.js",
+    "export": "echo 'Exporting for Godot...' && ppnpm run build",
+    "test": "echo 'Testing lattice connections...' && node test-connections.js"
+  },
+  "keywords": [
+    "godot",
+    "codex-144-99",
+    "sacred-geometry",
+    "144:99-ratio",
+    "lattice-system",
+    "trauma-safe",
+    "free",
+    "open-source",
+    "cathedral-of-circuits"
+  ],
+  "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/godot-codex-14499"
+  },
+  "homepage": "https://bekalah.github.io/cathedral/godot-codex-14499",
+  "godot": {
+    "version": "4.3+",
+    "compatibility": "4.0+",
+    "asset_type": "game_system",
+    "themes": [
+      "sacred_geometry",
+      "mystical",
+      "trauma_safe",
+      "144_99_lattice"
+    ]
+  },
+  "cathedral": {
+    "sacred_mathematics": {
+      "144_nodes": true,
+      "99_gates": true,
+      "144_99_ratio": 1.455,
+      "golden_ratio": 1.618,
+      "fibonacci_sequences": true
+    },
+    "trauma_safety": {
+      "no_autoplay": true,
+      "esc_exit": true,
+      "motion_controls": true,
+      "intensity_adjustment": true,
+      "gentle_defaults": true
+    },
+    "integration": {
+      "connects_to": [
+        "godot-liber-arcanae",
+        "godot-tesseract-bridge",
+        "godot-vfx-library"
+      ]
+    }
+  },
+  "files": [
+    "scenes/",
+    "scripts/",
+    "resources/",
+    "materials/",
+    "shaders/",
+    "documentation/",
+    "examples/",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  },
+  "types": "dist/index.d.ts",
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=20.18.0",
+    "pnpm": ">=8.15.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T20:33:52.421Z"
+}

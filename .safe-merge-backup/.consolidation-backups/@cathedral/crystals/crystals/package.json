@@ -1,0 +1,21 @@
+{
+  "name": "@cathedral/crystals",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "license": "CC0-1.0",
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T19:53:29.223Z",
+  "packageManager": "pnpm@8.0.0"
+}

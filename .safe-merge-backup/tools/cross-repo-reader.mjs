@@ -1,0 +1,196 @@
+#!/usr/bin/env node
+
+/**
+ * Cross-Repo Reader
+ * Reads docs and story across all Cathedral repos to understand vision
+ * 
+ * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+ */
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const BASE_DIR = path.join(__dirname, '..');
+
+const REPO_PATHS = [
+  '/Users/rebeccalemke/cathedral-master-deployment',
+  '/Users/rebeccalemke/cathedral-v1-consolidated',
+  '/Users/rebeccalemke/cathedral-fixed-clean',
+  '/Users/rebeccalemke/cathedral-real',
+  '/Users/rebeccalemke/cosmogenesis-engine'
+];
+
+const VISION_KEYWORDS = [
+  'Soyga', 'I Ching', 'Kabbalah', 'Kabbala', 'alchemy',
+  'ND joy', 'neurodivergent', 'Western academia', 'barriers',
+  'high creativity', 'collective creative', 'esoteric',
+  'sacred geometry', '144:99', 'golden ratio', 'Fibonacci'
+];
+
+/**
+ * Read and analyze docs across repos
+ */
+export async function readCrossRepoDocs() {
+  const findings = {
+    timestamp: new Date().toISOString(),
+    repos: {},
+    visionElements: [],
+    stories: [],
+    esotericConnections: [],
+    ndJoyReferences: [],
+    academicBarrierReferences: []
+  };
+
+  for (const repoPath of REPO_PATHS) {
+    if (!fs.existsSync(repoPath)) {
+      continue;
+    }
+
+    const repoName = path.basename(repoPath);
+    findings.repos[repoName] = {
+      path: repoPath,
+      docs: [],
+      stories: [],
+      visionFiles: []
+    };
+
+    // Find all markdown files in docs
+    const docsDir = path.join(repoPath, 'docs');
+    if (fs.existsSync(docsDir)) {
+      const files = findMarkdownFiles(docsDir);
+      for (const file of files) {
+        try {
+          const content = fs.readFileSync(file, 'utf-8');
+          const relativePath = path.relative(repoPath, file);
+          
+          findings.repos[repoName].docs.push({
+            file: relativePath,
+            size: content.length,
+            keywords: findKeywords(content)
+          });
+
+          // Extract vision elements
+          if (containsVisionKeywords(content)) {
+            findings.repos[repoName].visionFiles.push(relativePath);
+            extractVisionElements(content, findings);
+          }
+        } catch (err) {
+          // Skip files we can't read
+        }
+      }
+    }
+  }
+
+  return findings;
+}
+
+/**
+ * Find markdown files recursively
+ */
+function findMarkdownFiles(dir, maxDepth = 3, currentDepth = 0) {
+  if (currentDepth >= maxDepth) return [];
+  
+  const files = [];
+  try {
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory() && !entry.name.startsWith('.') && !entry.name.includes('node_modules')) {
+        files.push(...findMarkdownFiles(fullPath, maxDepth, currentDepth + 1));
+      } else if (entry.isFile() && entry.name.endsWith('.md')) {
+        files.push(fullPath);
+      }
+    }
+  } catch (err) {
+    // Skip directories we can't read
+  }
+  return files;
+}
+
+/**
+ * Find keywords in content
+ */
+function findKeywords(content) {
+  const found = [];
+  for (const keyword of VISION_KEYWORDS) {
+    if (content.toLowerCase().includes(keyword.toLowerCase())) {
+      found.push(keyword);
+    }
+  }
+  return found;
+}
+
+/**
+ * Check if content contains vision keywords
+ */
+function containsVisionKeywords(content) {
+  return VISION_KEYWORDS.some(kw => 
+    content.toLowerCase().includes(kw.toLowerCase())
+  );
+}
+
+/**
+ * Extract vision elements from content
+ */
+function extractVisionElements(content, findings) {
+  const lowerContent = content.toLowerCase();
+  
+  // Esoteric connections
+  if (lowerContent.includes('soyga')) {
+    findings.esotericConnections.push('Soyga');
+  }
+  if (lowerContent.includes('i ching') || lowerContent.includes('iching')) {
+    findings.esotericConnections.push('I Ching');
+  }
+  if (lowerContent.includes('kabbalah') || lowerContent.includes('kabbala')) {
+    findings.esotericConnections.push('Kabbalah');
+  }
+  if (lowerContent.includes('alchemy')) {
+    findings.esotericConnections.push('Alchemy');
+  }
+  
+  // ND Joy references
+  if (lowerContent.includes('nd joy') || lowerContent.includes('neurodivergent joy')) {
+    findings.ndJoyReferences.push('ND Joy - Core principle');
+  }
+  if (lowerContent.includes('neurodivergent')) {
+    findings.ndJoyReferences.push('Neurodivergent - Central to design');
+  }
+  
+  // Academic barrier references
+  if (lowerContent.includes('western academia') || lowerContent.includes('academic barriers')) {
+    findings.academicBarrierReferences.push('Conquering Western academia barriers');
+  }
+  if (lowerContent.includes('never fit') || lowerContent.includes('didn\'t have access')) {
+    findings.academicBarrierReferences.push('Breaking barriers - access and support');
+  }
+  
+  // High creativity celebration
+  if (lowerContent.includes('high creativity') || lowerContent.includes('collective creative')) {
+    findings.visionElements.push('Celebration of high creativity and collective creative riches');
+  }
+}
+
+// CLI usage
+if (import.meta.url === `file://${process.argv[1]}`) {
+  readCrossRepoDocs().then(findings => {
+    const outputFile = path.join(BASE_DIR, 'docs', 'CROSS_REPO_VISION_FINDINGS.json');
+    fs.writeFileSync(outputFile, JSON.stringify(findings, null, 2), 'utf-8');
+    
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log('✅ Cross-repo vision analysis complete');
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`\n📊 Findings:`);
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   Repos analyzed: ${Object.keys(findings.repos).length}`);
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   Esoteric connections: ${[...new Set(findings.esotericConnections)].join(', ')}`);
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   ND Joy references: ${findings.ndJoyReferences.length}`);
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`   Academic barrier references: ${findings.academicBarrierReferences.length}`);
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.log(`\n📄 Full report: ${outputFile}`);
+  }).catch(err => {
+    // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // console.error('Error:', err.message);
+    process.exit(1);
+  });
+}
+

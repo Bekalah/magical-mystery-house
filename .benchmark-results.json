@@ -1,0 +1,23 @@
+{
+  "file_operations": {
+    "name": "File Operations",
+    "write": 3.9091650000000016,
+    "read": 82.27837699999998,
+    "total": 86.18754199999998,
+    "status": "passed"
+  },
+  "directory_traversal": {
+    "name": "Directory Traversal",
+    "files": 1273,
+    "time": 78.32079000000002,
+    "filesPerSecond": 16253.666491361997,
+    "status": "passed"
+  },
+  "json_parsing": {
+    "name": "JSON Parsing",
+    "iterations": 1000,
+    "time": 311.22030400000006,
+    "opsPerSecond": 3213.1579692821065,
+    "status": "passed"
+  }
+}

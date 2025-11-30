@@ -1,0 +1,15 @@
+{
+  "name": "rosslyn-explorer",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "description": "",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-11-30T16:48:02.063Z"
+}

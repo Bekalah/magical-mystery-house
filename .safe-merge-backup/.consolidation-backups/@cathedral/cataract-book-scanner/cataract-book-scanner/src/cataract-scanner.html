@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cataract - Book to Archetype Scanner | Cathedral Professional Design Suite</title>
+    <style>
+        /* Cathedral Professional Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Garamond', serif;
+            background: linear-gradient(135deg, #0d0b12 0%, #1a1527 50%, #0d0b12 100%);
+            color: #f4d03f;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header with Sacred Geometry */
+        .header {
+            background: linear-gradient(90deg, rgba(244, 208, 63, 0.1), rgba(255, 159, 190, 0.1), rgba(109, 224, 224, 0.1));
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #f4d03f;
+            position: relative;
+        }
+
+        .header::before {
+            content: '⚗';
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            color: #f4d03f;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #6de0e0;
+            font-style: italic;
+        }
+
+        /* Main Interface */
+        .main-container {
+            flex: 1;
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Left Panel - Book Upload */
+        .upload-panel {
+            flex: 1;
+            background: rgba(26, 21, 39, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            border: 2px solid #8a7fff;
+            box-shadow: 0 0 30px rgba(138, 127, 255, 0.3);
+        }
+
+        .upload-zone {
+            border: 3px dashed #8a7fff;
+            border-radius: 10px;
+            padding: 50px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .upload-zone:hover {
+            border-color: #f4d03f;
+            background: rgba(244, 208, 63, 0.1);
+        }
+
+        .upload-zone.drag-over {
+            border-color: #ff9fbe;
+            background: rgba(255, 159, 190, 0.1);
+        }
+
+        .upload-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .upload-text {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .upload-formats {
+            color: #6de0e0;
+            font-size: 0.9em;
+        }
+
+        /* Book Sources */
+        .book-sources {
+            margin-top: 30px;
+        }
+
+        .book-sources h3 {
+            color: #f4d03f;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .source-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .source-item {
+            background: rgba(138, 127, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #8a7fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .source-item:hover {
+            background: rgba(138, 127, 255, 0.4);
+            transform: translateX(5px);
+        }
+
+        .source-name {
+            font-weight: bold;
+            color: #f4d03f;
+        }
+
+        .source-description {
+            color: #6de0e0;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        /* Right Panel - Scanner Interface */
+        .scanner-panel {
+            flex: 1;
+            background: rgba(26, 21, 39, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            border: 2px solid #6de0e0;
+            box-shadow: 0 0 30px rgba(109, 224, 224, 0.3);
+        }
+
+        .scanner-status {
+            background: rgba(138, 127, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .status-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .status-text {
+            font-size: 1.1em;
+            color: #6de0e0;
+        }
+
+        /* Arcana Selection */
+        .arcana-panel {
+            margin-top: 20px;
+        }
+
+        .arcana-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .arcana-card {
+            background: linear-gradient(135deg, rgba(138, 127, 255, 0.3), rgba(109, 224, 224, 0.3));
+            border: 2px solid #8a7fff;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .arcana-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(244, 208, 63, 0.4);
+            border-color: #f4d03f;
+        }
+
+        .arcana-card.selected {
+            border-color: #f4d03f;
+            background: linear-gradient(135deg, rgba(244, 208, 63, 0.3), rgba(255, 159, 190, 0.3));
+        }
+
+        .arcana-number {
+            font-size: 1.5em;
+            color: #f4d03f;
+            font-weight: bold;
+        }
+
+        .arcana-name {
+            font-size: 0.9em;
+            color: #6de0e0;
+            margin-top: 5px;
+        }
+
+        /* Results Panel */
+        .results-panel {
+            margin-top: 20px;
+            background: rgba(109, 224, 224, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            display: none;
+        }
+
+        .results-panel.active {
+            display: block;
+        }
+
+        .findings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .finding-category {
+            background: rgba(138, 127, 255, 0.2);
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        .category-title {
+            color: #f4d03f;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .finding-item {
+            color: #6de0e0;
+            margin: 5px 0;
+            padding: 5px 10px;
+            background: rgba(26, 21, 39, 0.5);
+            border-radius: 5px;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #f4d03f, #ff9fbe);
+            color: #0d0b12;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(244, 208, 63, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #8a7fff, #6de0e0);
+            color: #ffffff;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(138, 127, 255, 0.4);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #6de0e0, #f4d03f);
+            color: #0d0b12;
+        }
+
+        .btn-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(109, 224, 224, 0.4);
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            background: rgba(26, 21, 39, 0.8);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            background: rgba(138, 127, 255, 0.3);
+            border-radius: 10px;
+            height: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #f4d03f, #ff9fbe, #6de0e0);
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .progress-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #0d0b12;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .arcana-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+        }
+
+        /* Sacred Geometry Background */
+        .sacred-geometry {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        /* Emergency Exit */
+        .emergency-exit {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 0, 0, 0.8);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            z-index: 1000;
+        }
+
+        .emergency-exit:hover {
+            background: rgba(255, 0, 0, 1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Emergency Exit -->
+    <div class="emergency-exit" onclick="window.location.href='../../../apps/cathedral-professional-design-suite/index.html'">
+        🏛️ ESC: Exit to Cathedral
+    </div>
+
+    <!-- Sacred Geometry Background -->
+    <svg class="sacred-geometry" viewBox="0 0 1000 1000">
+        <!-- Golden Ratio Spiral -->
+        <path d="M 500 500 m -200 0 a 200 200 0 1 0 400 0 a 200 200 0 1 0 -400 0" 
+              stroke="#f4d03f" stroke-width="1" fill="none" opacity="0.3"/>
+        <path d="M 500 500 m -123 0 a 123 123 0 1 0 246 0 a 123 123 0 1 0 -246 0" 
+              stroke="#8a7fff" stroke-width="1" fill="none" opacity="0.3"/>
+        
+        <!-- Flower of Life -->
+        <g transform="translate(200, 200)">
+            <circle cx="0" cy="0" r="50" stroke="#6de0e0" stroke-width="1" fill="none" opacity="0.5"/>
+            <circle cx="50" cy="0" r="50" stroke="#6de0e0" stroke-width="1" fill="none" opacity="0.5"/>
+            <circle cx="25" cy="43" r="50" stroke="#6de0e0" stroke-width="1" fill="none" opacity="0.5"/>
+            <circle cx="25" cy="-43" r="50" stroke="#6de0e0" stroke-width="1" fill="none" opacity="0.5"/>
+            <circle cx="-25" cy="43" r="50" stroke="#6de0e0" stroke-width="1" fill="none" opacity="0.5"/>
+            <circle cx="-25" cy="-43" r="50" stroke="#6de0e0" stroke-width="1" fill="none" opacity="0.5"/>
+        </g>
+    </svg>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Cataract: Book to Archetype Scanner</h1>
+        <p>Professional sacred geometry precision for public domain books</p>
+    </header>
+
+    <!-- Main Interface -->
+    <div class="main-container">
+        <!-- Left Panel: Upload and Sources -->
+        <div class="upload-panel">
+            <h2 style="color: #f4d03f; margin-bottom: 20px;">📚 Book Sources</h2>
+            
+            <!-- Upload Zone -->
+            <div class="upload-zone" id="uploadZone" onclick="document.getElementById('fileInput').click()">
+                <span class="upload-icon">📖</span>
+                <div class="upload-text">Drop or Click to Upload Book</div>
+                <div class="upload-formats">PDF, TXT, DJVU, or Image Files</div>
+            </div>
+            <input type="file" id="fileInput" accept=".pdf,.txt,.djvu,.jpg,.png,.tiff" style="display: none;">
+            
+            <!-- Book Sources -->
+            <div class="book-sources">
+                <h3>Public Domain Sources</h3>
+                <div class="source-list">
+                    <div class="source-item" onclick="loadBookFromSource('gutenberg')">
+                        <div class="source-name">📜 Project Gutenberg</div>
+                        <div class="source-description">Classical literature, philosophy, and sacred texts</div>
+                    </div>
+                    <div class="source-item" onclick="loadBookFromSource('archive')">
+                        <div class="source-name">🏛️ Internet Archive</div>
+                        <div class="source-description">Historical documents, manuscripts, and rare books</div>
+                    </div>
+                    <div class="source-item" onclick="loadBookFromSource('sacred-texts')">
+                        <div class="source-name">⚗️ Sacred Texts Archive</div>
+                        <div class="source-description">Religious, esoteric, and mystical literature</div>
+                    </div>
+                    <div class="source-item" onclick="loadBookFromSource('alchemy')">
+                        <div class="source-name">🔮 Alchemy Website</div>
+                        <div class="source-description">Alchemical emblems and hermetic texts</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel: Scanner Interface -->
+        <div class="scanner-panel">
+            <h2 style="color: #f4d03f; margin-bottom: 20px;">🔮 Archetype Scanner</h2>
+            
+            <!-- Scanner Status -->
+            <div class="scanner-status">
+                <span class="status-icon" id="statusIcon">⏳</span>
+                <div class="status-text" id="statusText">Ready to scan for archetypes</div>
+            </div>
+            
+            <!-- Progress Bar -->
+            <div class="progress-container" id="progressContainer" style="display: none;">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                    <div class="progress-text" id="progressText">0%</div>
+                </div>
+            </div>
+            
+            <!-- Arcana Selection -->
+            <div class="arcana-panel">
+                <h3 style="color: #f4d03f; margin-bottom: 15px;">Select Major Arcana</h3>
+                <div class="arcana-grid" id="arcanaGrid">
+                    <!-- Arcana cards will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <!-- Results Panel -->
+            <div class="results-panel" id="resultsPanel">
+                <h3 style="color: #f4d03f; margin-bottom: 15px;">✨ Archetype Findings</h3>
+                <div class="findings-grid" id="findingsGrid">
+                    <!-- Findings will be populated by JavaScript -->
+                </div>
+                
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="btn btn-primary" onclick="integrateWithDesignSuite()">
+                        🎨 Import to Design Suite
+                    </button>
+                    <button class="btn btn-secondary" onclick="exportFindings()">
+                        📤 Export Data
+                    </button>
+                    <button class="btn btn-success" onclick="createArcanaEntry()">
+                        🃏 Create Arcana Entry
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Major Arcana Data
+        const majorArcana = [
+            { number: 0, name: "The Fool", title: "Professor of Infinite Potential" },
+            { number: 1, name: "The Magician", title: "Professor of Manifestation Arts" },
+            { number: 2, name: "The High Priestess", title: "Professor Emeritus of Hidden Knowledge" },
+            { number: 3, name: "The Empress", title: "Professor of Creative Abundance" },
+            { number: 4, name: "The Emperor", title: "Professor of Sacred Architecture" },
+            { number: 5, name: "The Hierophant", title: "Grand Professor of Sacred Tradition" },
+            { number: 6, name: "The Lovers", title: "Professor of Sacred Union" },
+            { number: 7, name: "The Chariot", title: "Professor of Triumphant Will" },
+            { number: 8, name: "Strength", title: "Professor of Inner Power" },
+            { number: 9, name: "The Hermit", title: "Professor of Inner Wisdom" },
+            { number: 10, name: "Wheel of Fortune", title: "Professor of Cosmic Cycles" },
+            { number: 11, name: "Justice", title: "Professor of Divine Balance" },
+            { number: 12, name: "The Hanged Man", title: "Professor of Surrender Wisdom" },
+            { number: 13, name: "Death", title: "Professor of Transformation" },
+            { number: 14, name: "Temperance", title: "Professor of Alchemical Balance" },
+            { number: 15, name: "The Devil", title: "Professor of Shadow Integration" },
+            { number: 16, name: "The Tower", title: "Professor of Sacred Destruction" },
+            { number: 17, name: "The Star", title: "Professor of Divine Inspiration" },
+            { number: 18, name: "The Moon", title: "Professor of Lunar Mysteries" },
+            { number: 19, name: "The Sun", title: "Professor of Solar Consciousness" },
+            { number: 20, name: "Judgement", title: "Professor of Resurrection" },
+            { number: 21, name: "The World", title: "Chancellor Emeritus of Cosmic Consciousness" }
+        ];
+
+        // Symbol and Archetype Data
+        const symbolDatabase = [
+            { name: "flame", meanings: ["transformation", "purification", "divine fire"], frequency: 528 },
+            { name: "serpent", meanings: ["transformation", "wisdom", "healing"], frequency: 396 },
+            { name: "lion", meanings: ["strength", "royalty", "courage"], frequency: 256 },
+            { name: "crown", meanings: ["authority", "divine rule", "completion"], frequency: 432 },
+            { name: "rose", meanings: ["mystical union", "spiritual love", "transcendence"], frequency: 741 },
+            { name: "cross", meanings: ["intersection", "balance", "grounding"], frequency: 639 },
+            { name: "sun", meanings: ["enlightenment", "life force", "cosmic consciousness"], frequency: 963 },
+            { name: "moon", meanings: ["intuition", "cycles", "mystery"], frequency: 285 },
+            { name: "star", meanings: ["guidance", "hope", "divine connection"], frequency: 852 },
+            { name: "tree", meanings: ["life", "growth", "cosmic connection"], frequency: 639 },
+            { name: "eye", meanings: ["vision", "truth", "divine sight"], frequency: 741 },
+            { name: "wing", meanings: ["freedom", "spirit", "elevation"], frequency: 852 }
+        ];
+
+        // Sacred Numbers
+        const sacredNumbers = [3, 7, 12, 22, 33, 72, 144, 99, 256, 288, 396, 528, 639, 741, 852, 963];
+
+        // Initialize Interface
+        function initializeInterface() {
+            populateArcanaGrid();
+            setupDragAndDrop();
+            updateStatus("Ready to scan for archetypes", "⏳");
+        }
+
+        // Populate Arcana Grid
+        function populateArcanaGrid() {
+            const grid = document.getElementById('arcanaGrid');
+            majorArcana.forEach(arcana => {
+                const card = document.createElement('div');
+                card.className = 'arcana-card';
+                card.onclick = () => selectArcana(arcana, card);
+                card.innerHTML = `
+                    <div class="arcana-number">${arcana.number}</div>
+                    <div class="arcana-name">${arcana.name}</div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Select Arcana
+        function selectArcana(arcana, element) {
+            // Remove previous selection
+            document.querySelectorAll('.arcana-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            
+            // Select new arcana
+            element.classList.add('selected');
+            
+            // Update status
+            updateStatus(`Scanning for ${arcana.name} archetypes`, "🔍");
+        }
+
+        // Setup Drag and Drop
+        function setupDragAndDrop() {
+            const uploadZone = document.getElementById('uploadZone');
+            const fileInput = document.getElementById('fileInput');
+
+            uploadZone.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                uploadZone.classList.add('drag-over');
+            });
+
+            uploadZone.addEventListener('dragleave', (e) => {
+                e.preventDefault();
+                uploadZone.classList.remove('drag-over');
+            });
+
+            uploadZone.addEventListener('drop', (e) => {
+                e.preventDefault();
+                uploadZone.classList.remove('drag-over');
+                const files = e.dataTransfer.files;
+                if (files.length > 0) {
+                    processBookFile(files[0]);
+                }
+            });
+
+            fileInput.addEventListener('change', (e) => {
+                if (e.target.files.length > 0) {
+                    processBookFile(e.target.files[0]);
+                }
+            });
+        }
+
+        // Process Book File
+        async function processBookFile(file) {
+            updateStatus(`Processing ${file.name}...`, "📖");
+            showProgress();
+            
+            // Simulate file processing
+            await simulateProgress(100, 100);
+            
+            // Extract text (in real implementation, this would use OCR)
+            const text = await extractTextFromFile(file);
+            
+            // Analyze for archetypes
+            const findings = analyzeTextForArchetypes(text);
+            
+            // Display results
+            displayResults(findings);
+            
+            updateStatus("Archetype analysis complete", "✅");
+        }
+
+        // Load Book from Source
+        async function loadBookFromSource(source) {
+            updateStatus(`Loading from ${source}...`, "📚");
+            showProgress();
+            
+            // Simulate loading process
+            await simulateProgress(100, 150);
+            
+            // In real implementation, this would fetch from the source
+            const sampleText = "In the beginning was the Word, and the Word was with God, and the Word was God. The same was in the beginning with God. All things were made by him; and without him was not any thing made that was made.";
+            
+            const findings = analyzeTextForArchetypes(sampleText);
+            displayResults(findings);
+            
+            updateStatus("Book loaded and analyzed", "✅");
+        }
+
+        // Extract Text from File (placeholder)
+        async function extractTextFromFile(file) {
+            // In real implementation, this would use PDF.js, Tesseract, etc.
+            return "Sample text from " + file.name;
+        }
+
+        // Analyze Text for Archetypes
+        function analyzeTextForArchetypes(text) {
+            const findings = {
+                symbols: [],
+                numbers: [],
+                archetypes: [],
+                frequencies: []
+            };
+
+            // Analyze symbols
+            symbolDatabase.forEach(symbol => {
+                if (text.toLowerCase().includes(symbol.name)) {
+                    findings.symbols.push({
+                        ...symbol,
+                        occurrences: (text.toLowerCase().match(new RegExp(symbol.name, 'g')) || []).length
+                    });
+                }
+                
+                // Check meanings
+                symbol.meanings.forEach(meaning => {
+                    if (text.toLowerCase().includes(meaning)) {
+                        findings.symbols.push({
+                            name: meaning,
+                            meanings: [meaning],
+                            frequency: symbol.frequency,
+                            source: symbol.name,
+                            occurrences: 1
+                        });
+                    }
+                });
+            });
+
+            // Analyze numbers
+            sacredNumbers.forEach(number => {
+                if (text.includes(number.toString())) {
+                    findings.numbers.push({
+                        value: number,
+                        meaning: getNumberMeaning(number),
+                        context: extractNumberContext(text, number)
+                    });
+                }
+            });
+
+            // Get selected arcana
+            const selectedArcana = document.querySelector('.arcana-card.selected');
+            if (selectedArcana) {
+                const arcanaNumber = parseInt(selectedArcana.querySelector('.arcana-number').textContent);
+                const arcana = majorArcana.find(a => a.number === arcanaNumber);
+                
+                if (arcana) {
+                    findings.archetypes.push({
+                        ...arcana,
+                        frequency: getArcanaFrequency(arcanaNumber),
+                        resonance: calculateResonance(text, arcana)
+                    });
+                }
+            }
+
+            // Calculate frequencies
+            const avgFrequency = findings.symbols.length > 0 
+                ? findings.symbols.reduce((sum, s) => sum + s.frequency, 0) / findings.symbols.length
+                : 432;
+            
+            findings.frequencies.push({
+                value: Math.round(avgFrequency),
+                application: "Primary resonance frequency",
+                source: "Symbol analysis"
+            });
+
+            return findings;
+        }
+
+        // Get Number Meaning
+        function getNumberMeaning(number) {
+            const meanings = {
+                3: "Trinity, Creation, Divine Expression",
+                7: "Planetary, Perfect Completeness",
+                12: "Zodiac, Universal Organization",
+                22: "Hebrew Letters, Complete Expression",
+                33: "Mastery, Spiritual Achievement",
+                72: "Shem Angels, Divine Hierarchy",
+                99: "Dissolution, Shadow Work",
+                144: "Light, Manifestation",
+                256: "Pure Potential, Fool's Frequency",
+                288: "Will, Magician's Frequency",
+                396: "Liberation, Fear Release",
+                528: "Love, Transformation",
+                639: "Connection, Relationships",
+                741: "Intuition, Expression",
+                852: "Spiritual Awakening",
+                963: "Divine Consciousness"
+            };
+            return meanings[number] || "Sacred frequency";
+        }
+
+        // Get Arcana Frequency
+        function getArcanaFrequency(arcanaNumber) {
+            const frequencies = {
+                0: 256, 1: 288, 2: 396, 3: 639, 4: 741, 5: 852,
+                6: 639, 7: 741, 8: 256, 9: 852, 10: 963, 11: 741,
+                12: 396, 13: 288, 14: 639, 15: 396, 16: 741, 17: 852,
+                18: 285, 19: 963, 20: 852, 21: 963
+            };
+            return frequencies[arcanaNumber] || 432;
+        }
+
+        // Calculate Resonance
+        function calculateResonance(text, arcana) {
+            // Simple resonance calculation
+            const baseResonance = 0.7;
+            const wordMatches = (text.toLowerCase().match(new RegExp(arcana.name.toLowerCase(), 'g')) || []).length;
+            return Math.min(baseResonance + (wordMatches * 0.1), 1.0);
+        }
+
+        // Extract Number Context
+        function extractNumberContext(text, number) {
+            const regex = new RegExp(`[^.!?]*${number}[^.!?]*[.!?]`, 'gi');
+            const matches = text.match(regex);
+            return matches ? matches[0].trim() : "";
+        }
+
+        // Display Results
+        function displayResults(findings) {
+            const resultsPanel = document.getElementById('resultsPanel');
+            const findingsGrid = document.getElementById('findingsGrid');
+            
+            findingsGrid.innerHTML = '';
+            
+            // Symbols
+            if (findings.symbols.length > 0) {
+                const symbolsDiv = document.createElement('div');
+                symbolsDiv.className = 'finding-category';
+                symbolsDiv.innerHTML = `
+                    <div class="category-title">
+                        <span>⚛️</span>
+                        <span>Symbols (${findings.symbols.length})</span>
+                    </div>
+                    ${findings.symbols.map(s => `
+                        <div class="finding-item">
+                            <strong>${s.name}</strong> - ${s.meanings.join(', ')} 
+                            <small>(Freq: ${s.frequency}Hz)</small>
+                        </div>
+                    `).join('')}
+                `;
+                findingsGrid.appendChild(symbolsDiv);
+            }
+
+            // Numbers
+            if (findings.numbers.length > 0) {
+                const numbersDiv = document.createElement('div');
+                numbersDiv.className = 'finding-category';
+                numbersDiv.innerHTML = `
+                    <div class="category-title">
+                        <span>🔢</span>
+                        <span>Sacred Numbers (${findings.numbers.length})</span>
+                    </div>
+                    ${findings.numbers.map(n => `
+                        <div class="finding-item">
+                            <strong>${n.value}</strong> - ${n.meaning}
+                        </div>
+                    `).join('')}
+                `;
+                findingsGrid.appendChild(numbersDiv);
+            }
+
+            // Arcana
+            if (findings.archetypes.length > 0) {
+                const arcanaDiv = document.createElement('div');
+                arcanaDiv.className = 'finding-category';
+                arcanaDiv.innerHTML = `
+                    <div class="category-title">
+                        <span>🃏</span>
+                        <span>Arcana (${findings.archetypes.length})</span>
+                    </div>
+                    ${findings.archetypes.map(a => `
+                        <div class="finding-item">
+                            <strong>${a.name}</strong> - ${a.title}
+                            <small>(Freq: ${a.frequency}Hz, Res: ${Math.round(a.resonance * 100)}%)</small>
+                        </div>
+                    `).join('')}
+                `;
+                findingsGrid.appendChild(arcanaDiv);
+            }
+
+            // Frequencies
+            if (findings.frequencies.length > 0) {
+                const frequenciesDiv = document.createElement('div');
+                frequenciesDiv.className = 'finding-category';
+                frequenciesDiv.innerHTML = `
+                    <div class="category-title">
+                        <span>🎵</span>
+                        <span>Frequencies (${findings.frequencies.length})</span>
+                    </div>
+                    ${findings.frequencies.map(f => `
+                        <div class="finding-item">
+                            <strong>${f.value}Hz</strong> - ${f.application}
+                        </div>
+                    `).join('')}
+                `;
+                findingsGrid.appendChild(frequenciesDiv);
+            }
+
+            resultsPanel.classList.add('active');
+        }
+
+        // Update Status
+        function updateStatus(message, icon) {
+            document.getElementById('statusText').textContent = message;
+            document.getElementById('statusIcon').textContent = icon;
+        }
+
+        // Show Progress
+        function showProgress() {
+            document.getElementById('progressContainer').style.display = 'block';
+        }
+
+        // Simulate Progress
+        async function simulateProgress(total, duration) {
+            return new Promise(resolve => {
+                const startTime = Date.now();
+                const interval = setInterval(() => {
+                    const elapsed = Date.now() - startTime;
+                    const progress = Math.min((elapsed / duration) * total, total);
+                    
+                    document.getElementById('progressFill').style.width = `${progress}%`;
+                    document.getElementById('progressText').textContent = `${Math.round(progress)}%`;
+                    
+                    if (progress >= total) {
+                        clearInterval(interval);
+                        document.getElementById('progressContainer').style.display = 'none';
+                        resolve();
+                    }
+                }, 50);
+            });
+        }
+
+        // Action Functions
+        function integrateWithDesignSuite() {
+            updateStatus("Integrating with Cathedral Design Suite...", "🔗");
+            // In real implementation, this would open the design suite with pre-loaded archetypes
+            setTimeout(() => {
+                updateStatus("Ready to integrate", "✅");
+                alert("Opening Cathedral Professional Design Suite with extracted archetypes...");
+            }, 2000);
+        }
+
+        function exportFindings() {
+            updateStatus("Exporting findings...", "📤");
+            // In real implementation, this would export as JSON/CSV
+            setTimeout(() => {
+                updateStatus("Findings exported", "✅");
+                alert("Findings exported successfully!");
+            }, 1000);
+        }
+
+        function createArcanaEntry() {
+            updateStatus("Creating new Arcana entry...", "🃏");
+            // In real implementation, this would create a new arcana entry
+            setTimeout(() => {
+                updateStatus("Arcana entry created", "✅");
+                alert("New Arcana entry created successfully!");
+            }, 1500);
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', initializeInterface);
+    </script>
+</body>
+</html>

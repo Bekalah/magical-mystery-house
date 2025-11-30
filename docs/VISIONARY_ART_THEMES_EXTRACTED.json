@@ -1,0 +1,54 @@
+/**
+ * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+ */
+{
+  "summary": {
+    "themesFound": 0,
+    "symbolsFound": 0,
+    "colorsFound": 0,
+    "compositionsFound": 0,
+    "geometricPatternsFound": 0
+  },
+  "canvasIntegration": {
+    "themes": [],
+    "symbols": []
+  },
+  "gameIntegration": {
+    "themes": [],
+    "symbols": []
+  },
+  "rawData": {
+    "themes": [],
+    "symbols": [],
+    "colorPalettes": [],
+    "compositions": [],
+    "geometricPatterns": []
+  },
+  "integrationSuggestions": [
+    {
+      "suggestion": "Create canvas tool that loads themes and symbols",
+      "systems": [
+        "canvas-apps",
+        "design - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality - Museum-grade quality-tools"
+      ],
+      "dataAvailable": 0
+    },
+    {
+      "suggestion": "Integrate symbols into game as collectible items",
+      "systems": [
+        "circuitum99",
+        "game-engine"
+      ],
+      "dataAvailable": 0
+    },
+    {
+      "suggestion": "Use themes for environment generation",
+      "systems": [
+        "mystery-house",
+        "stone-grimoire"
+      ],
+      "dataAvailable": 0
+    }
+  ]
+}
