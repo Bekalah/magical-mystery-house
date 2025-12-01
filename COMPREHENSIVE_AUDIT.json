@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764555103215,
+  "timestamp": 1764557353175,
   "workspaces": [
     {
       "name": "cathedral-master-deployment",
@@ -5113,6 +5113,12 @@
         {
           "name": ".consolidation-backups",
           "path": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups",
+          "workspace": "cathedral-master-deployment",
+          "type": "other"
+        },
+        {
+          "name": ".cursor",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/.cursor",
           "workspace": "cathedral-master-deployment",
           "type": "other"
         },
@@ -21213,6 +21219,12 @@
     {
       "name": ".consolidation-backups",
       "path": "/Users/rebeccalemke/cathedral-master-deployment/.consolidation-backups",
+      "workspace": "cathedral-master-deployment",
+      "type": "other"
+    },
+    {
+      "name": ".cursor",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/.cursor",
       "workspace": "cathedral-master-deployment",
       "type": "other"
     },
