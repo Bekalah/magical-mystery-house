@@ -19,11 +19,11 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           cache: 'pnpm'
       - name: Install dependencies
-        run: ppnpm install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
       - name: Build project
-        run: ppnpm run build
+        run: pnpm run build
       - name: Publish packages
-        run: ppnpm -r publish --access public --no-git-checks
+        run: pnpm -r publish --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         continue-on-error: true
