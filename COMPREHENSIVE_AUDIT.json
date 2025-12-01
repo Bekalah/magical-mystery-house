@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764549650391,
+  "timestamp": 1764549853134,
   "workspaces": [
     {
       "name": "cathedral-master-deployment",
@@ -3456,6 +3456,17 @@
           "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/enhanced-quality-check.mjs",
           "category": "tool",
           "description": "@author Rebecca Respawn",
+          "license": "CC0-1.0",
+          "completion": "complete",
+          "type": "tool"
+        },
+        {
+          "realName": "ensure-professional-theme-compliance",
+          "toolName": "ensure-professional-theme-compliance.mjs",
+          "workspace": "cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/ensure-professional-theme-compliance.mjs",
+          "category": "tool",
+          "description": "Ensure Professional Theme Compliance",
           "license": "CC0-1.0",
           "completion": "complete",
           "type": "tool"
@@ -18384,6 +18395,17 @@
       "type": "tool"
     },
     {
+      "realName": "ensure-professional-theme-compliance",
+      "toolName": "ensure-professional-theme-compliance.mjs",
+      "workspace": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/ensure-professional-theme-compliance.mjs",
+      "category": "tool",
+      "description": "Ensure Professional Theme Compliance",
+      "license": "CC0-1.0",
+      "completion": "complete",
+      "type": "tool"
+    },
+    {
       "realName": "error-recovery",
       "toolName": "error-recovery.mjs",
       "workspace": "cathedral-master-deployment",
@@ -21288,7 +21310,7 @@
     }
   ],
   "licensing": {
-    "publicDomain": 629,
+    "publicDomain": 630,
     "missing": [],
     "needsUpdate": []
   },
@@ -23276,6 +23298,11 @@
       },
       {
         "name": "enhanced-quality-check",
+        "type": "tool",
+        "workspace": "cathedral-master-deployment"
+      },
+      {
+        "name": "ensure-professional-theme-compliance",
         "type": "tool",
         "workspace": "cathedral-master-deployment"
       },

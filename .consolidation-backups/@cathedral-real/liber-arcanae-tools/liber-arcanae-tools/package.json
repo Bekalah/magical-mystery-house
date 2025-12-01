@@ -41,7 +41,7 @@
     "pnpm": ">=8.0.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T23:54:19.032Z",
+  "consolidatedAt": "2025-12-01T00:40:59.005Z",
   "packageManager": "pnpm@8.0.0",
   "alchemical": {
     "name": "@Cathedral Real/Liber Arcanae Tools",

@@ -18,8 +18,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     
-    - name: Setup pnpm
-      uses: pnpm/action-setup@v4
+    - name: Setup ppnpm uses: pnpm/action-setup@v4
       with:
         version: 10.23.0
         run_install: false
@@ -30,12 +29,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'pnpm'
     
-    - name: Get pnpm store directory
+    - name: Get ppnpm store directory
       shell: bash
       run: |
-        echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+        echo "STORE_PATH=$(ppnpm store path --silent)" >> $GITHUB_ENV
     
-    - name: Setup pnpm cache
+    - name: Setup ppnpm cache
       uses: actions/cache@v4
       with:
         path: ${{ env.STORE_PATH }}
@@ -44,13 +43,13 @@ jobs:
           ${{ runner.os }}-pnpm-store-
     
     - name: Install dependencies
-      run: pnpm install --frozen-lockfile --prefer-offline
+      run: ppnpm install --frozen-lockfile --prefer-offline
       continue-on-error: false
     
     - name: Verify installation
       run: |
         echo "Node version: $(node --version)"
-        echo "pnpm version: $(pnpm --version)"
+        echo "ppnpm version: $(ppnpm --version)"
         echo "Checking for node_modules..."
         if [ -d "node_modules" ]; then
           echo "✅ node_modules exists"
@@ -61,11 +60,11 @@ jobs:
         fi
     
     - name: Run linter
-      run: pnpm run lint || true
+      run: ppnpm run lint || true
       continue-on-error: true
     
     - name: Build project
-      run: pnpm run build
+      run: ppnpm run build
       continue-on-error: false
     
     - name: Check build output
@@ -100,8 +99,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     
-    - name: Setup pnpm
-      uses: pnpm/action-setup@v4
+    - name: Setup ppnpm uses: pnpm/action-setup@v4
       with:
         version: 10.23.0
         run_install: false
@@ -112,12 +110,12 @@ jobs:
         node-version: '25.2'
         cache: 'pnpm'
     
-    - name: Get pnpm store directory
+    - name: Get ppnpm store directory
       shell: bash
       run: |
-        echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+        echo "STORE_PATH=$(ppnpm store path --silent)" >> $GITHUB_ENV
     
-    - name: Setup pnpm cache
+    - name: Setup ppnpm cache
       uses: actions/cache@v4
       with:
         path: ${{ env.STORE_PATH }}
@@ -126,18 +124,17 @@ jobs:
           ${{ runner.os }}-pnpm-store-
     
     - name: Install dependencies
-      run: pnpm install --frozen-lockfile --prefer-offline
+      run: ppnpm install --frozen-lockfile --prefer-offline
     
     - name: Build project
-      run: pnpm run build
+      run: ppnpm run build
     
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
-        cname: bekalah.github.io
-        destination_dir: /cathedral-master-deployment
+        cname: cathedral.bekalah.github.io
       if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
     
     - name: Create release

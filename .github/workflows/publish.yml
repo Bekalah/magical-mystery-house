@@ -18,10 +18,12 @@ jobs:
           node-version: '25.2'
           registry-url: 'https://registry.npmjs.org'
           cache: 'pnpm'
-      - run: pnpm install
-      - run: pnpm run build
-      - run: pnpm publish --access public --no-git-checks
+      - name: Install dependencies
+        run: ppnpm install --frozen-lockfile
+      - name: Build project
+        run: ppnpm run build
+      - name: Publish packages
+        run: ppnpm -r publish --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        working-directory: packages
         continue-on-error: true

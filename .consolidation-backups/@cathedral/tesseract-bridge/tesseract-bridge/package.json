@@ -32,7 +32,7 @@
     "@types/node": "^20.17.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T23:54:21.070Z",
+  "consolidatedAt": "2025-12-01T00:41:01.827Z",
   "packageManager": "pnpm@8.0.0",
   "alchemical": {
     "name": "Tesseract",

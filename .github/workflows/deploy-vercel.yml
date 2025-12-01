@@ -10,16 +10,21 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup ppnpm uses: pnpm/action-setup@v4
         with:
           version: 10.23.0
-      - uses: actions/setup-node@v4
+          run_install: false
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '25.2'
           cache: 'pnpm'
-      - run: pnpm install
-      - run: pnpm run build
+      - name: Install dependencies
+        run: ppnpm install --frozen-lockfile
+      - name: Build project
+        run: ppnpm run build
       - uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
