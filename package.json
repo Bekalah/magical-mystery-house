@@ -104,6 +104,8 @@
     "fix:npm": "node tools/fix-npm-references.mjs",
     "remove:degraded": "node tools/remove-degraded-mentions.mjs",
     "archive:old": "node tools/archive-old-repos.mjs",
+    "theme:compliance": "node tools/ensure-professional-theme-compliance.mjs",
+    "theme:verify": "node tools/ensure-professional-theme-compliance.mjs",
     "verify:commands": "node tools/verify-commands.mjs",
     "verify:all": "node tools/verify-commands.mjs && pnpm run test:commands",
     "consolidate:workspaces": "node tools/consolidate-all-workspaces.mjs",

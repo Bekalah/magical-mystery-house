@@ -42,5 +42,11 @@
     "noSubscriptions": true,
     "noPaidServices": true,
     "localOnly": true
+  },
+  "theme": "Monas Hieroglyphica - Unity in Diversity",
+  "alchemical": {
+    "principle": "Monas Hieroglyphica - Unity in Diversity",
+    "symbol": "⊙",
+    "ratio": "144:99"
   }
 }

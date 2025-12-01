@@ -1,6 +1,6 @@
 # Completion Roadmap
 
-**Generated:** 2025-11-30T23:29:13.040Z
+**Generated:** 2025-12-01T00:40:50.391Z
 
 ## Overview
 

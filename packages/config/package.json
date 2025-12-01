@@ -41,7 +41,7 @@
     "directory": "packages/config"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T23:04:20.780Z",
+  "consolidatedAt": "2025-12-01T00:40:56.336Z",
   "packageManager": "pnpm@8.0.0",
   "alchemical": {
     "name": "Config",

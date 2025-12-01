@@ -121,5 +121,11 @@
     "totalCircuits": 4,
     "totalMagnumOpus": 6,
     "totalConnections": 18
+  },
+  "theme": "Monas Hieroglyphica - Unity in Diversity",
+  "alchemical": {
+    "principle": "Monas Hieroglyphica - Unity in Diversity",
+    "symbol": "⊙",
+    "ratio": "144:99"
   }
 }

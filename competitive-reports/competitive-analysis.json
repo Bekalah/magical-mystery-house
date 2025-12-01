@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764543852914,
+  "timestamp": 1764548352811,
   "cathedralState": {
     "packages": [
       "agent-integration",
@@ -142,6 +142,7 @@
       "apply-alchemical-labels.mjs",
       "apply-patches.mjs",
       "apply-unified-theme.mjs",
+      "archive-old-repos.mjs",
       "auto-documentation.mjs",
       "auto-fix-all.mjs",
       "auto-publish-to-github.mjs",
@@ -219,9 +220,11 @@
       "fix-all-remotes.mjs",
       "fix-bad-design.mjs",
       "fix-licensing.mjs",
+      "fix-npm-references.mjs",
       "fix-package-json-for-pnpm.mjs",
       "generate-docs.mjs",
       "generate-learning-report.mjs",
+      "generate-package-info.mjs",
       "git-hooks-setup.mjs",
       "github-auth.mjs",
       "github-diagnostics.mjs",
@@ -267,6 +270,7 @@
       "push-to-github.mjs",
       "quality-standards-validator.mjs",
       "registry-validator.mjs",
+      "remove-degraded-mentions.mjs",
       "repo-sync.mjs",
       "review-all-repos.mjs",
       "safe-branch-merge.mjs",
