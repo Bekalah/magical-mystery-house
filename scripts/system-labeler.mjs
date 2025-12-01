@@ -191,10 +191,12 @@ class SystemLabeler {
   }
 
   getAlchemicalName(packageName, type) {
-    // Expanded Thematic Name Mapping - Alchemy, Hermetica, Visionary Art, Jung, William James, Timothy Leary, Paracelsus, Neoplatonism, Golden Dawn, Thelema, Mystic Christianity
+    // Cross-Engineered Name Mapping - Jodorowsky Psychomagic + Antero Alli Angel Tech + All Traditions
+    // All unified through Codex 144:99: Soyga, I Ching, Kabbalah, Evolutionary Astrology, Solfeggio, Fractal Math, Fusion Kink
     
-    // Load expanded themes
+    // Load expanded themes and cross-engineered names
     const expandedThemes = this.loadExpandedThemes();
+    const crossEngineered = this.loadCrossEngineeredNames();
     
     // Alchemical/Hermetic Name Mapping
     const ALCHEMICAL_NAMES = {
@@ -336,6 +338,18 @@ class SystemLabeler {
       }
     }
     return { themes: {}, mappings: {} };
+  }
+
+  loadCrossEngineeredNames() {
+    const crossPath = path.join(rootDir, 'tools', 'cross-engineered-names.json');
+    if (fs.existsSync(crossPath)) {
+      try {
+        return JSON.parse(fs.readFileSync(crossPath, 'utf8'));
+      } catch (e) {
+        // Return empty if can't load
+      }
+    }
+    return { games: {}, shaders: {}, libraries: {} };
   }
 
   detectPackageType(pkgPath, pkg) {
