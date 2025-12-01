@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764551150343,
+  "timestamp": 1764553602938,
   "workspaces": [
     {
       "name": "cathedral-master-deployment",
@@ -3687,6 +3687,17 @@
           "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-package-json-for-pnpm.mjs",
           "category": "tool",
           "description": "Fix package.json for pnpm compatibility",
+          "license": "CC0-1.0",
+          "completion": "complete",
+          "type": "tool"
+        },
+        {
+          "realName": "fix-workflow-execution",
+          "toolName": "fix-workflow-execution.mjs",
+          "workspace": "cathedral-master-deployment",
+          "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-workflow-execution.mjs",
+          "category": "tool",
+          "description": "@license CC0-1.0 - Public Domain",
           "license": "CC0-1.0",
           "completion": "complete",
           "type": "tool"
@@ -18626,6 +18637,17 @@
       "type": "tool"
     },
     {
+      "realName": "fix-workflow-execution",
+      "toolName": "fix-workflow-execution.mjs",
+      "workspace": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-workflow-execution.mjs",
+      "category": "tool",
+      "description": "@license CC0-1.0 - Public Domain",
+      "license": "CC0-1.0",
+      "completion": "complete",
+      "type": "tool"
+    },
+    {
       "realName": "generate-docs",
       "toolName": "generate-docs.mjs",
       "workspace": "cathedral-master-deployment",
@@ -21310,7 +21332,7 @@
     }
   ],
   "licensing": {
-    "publicDomain": 630,
+    "publicDomain": 631,
     "missing": [],
     "needsUpdate": []
   },
@@ -23403,6 +23425,11 @@
       },
       {
         "name": "fix-package-json-for-pnpm",
+        "type": "tool",
+        "workspace": "cathedral-master-deployment"
+      },
+      {
+        "name": "fix-workflow-execution",
         "type": "tool",
         "workspace": "cathedral-master-deployment"
       },

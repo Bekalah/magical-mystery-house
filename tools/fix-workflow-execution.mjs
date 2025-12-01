@@ -1,3 +1,7 @@
+/**
+ * @license CC0-1.0 - Public Domain
+ */
+
 #!/usr/bin/env node
 /**
  * Fix Workflow Execution

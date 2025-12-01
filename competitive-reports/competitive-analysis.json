@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764550602817,
+  "timestamp": 1764552852825,
   "cathedralState": {
     "packages": [
       "agent-integration",
@@ -223,6 +223,7 @@
       "fix-licensing.mjs",
       "fix-npm-references.mjs",
       "fix-package-json-for-pnpm.mjs",
+      "fix-workflow-execution.mjs",
       "generate-docs.mjs",
       "generate-learning-report.mjs",
       "generate-package-info.mjs",
