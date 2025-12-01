@@ -38,6 +38,16 @@
 
 ---
 
+# ⊙ Debug System - debug-system-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/debug-system-core
 
 **Debug System & Diagnostics**

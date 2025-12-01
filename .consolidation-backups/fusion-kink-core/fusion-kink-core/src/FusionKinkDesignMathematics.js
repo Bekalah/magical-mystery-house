@@ -7,7 +7,17 @@
  *
  * @license CC0-1.0 - Public Domain
  */
-Object.defineProperty(exports, "__esModule", { value: true });
+Object.defineProperty(/**
+ * ⊙ Fusionkinkdesignmathematics
+ * 
+ * @alchemical Fusionkinkdesignmathematics
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
+exports, "__esModule", { value: true });
 exports.FusionKinkDesignMathematics = void 0;
 var index_1 = require("../../sacred-mathematics-core/src/index");
 // Solfeggio frequencies mapping

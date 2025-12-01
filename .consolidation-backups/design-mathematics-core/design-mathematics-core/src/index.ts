@@ -8,6 +8,16 @@
  * @license CC0-1.0
  */
 
+/**
+ * ⊙ Index
+ * 
+ * @alchemical Index
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 import { SACRED_MATH, goldenRectangle } from '../../sacred-mathematics-core/src/index';
 
 /**

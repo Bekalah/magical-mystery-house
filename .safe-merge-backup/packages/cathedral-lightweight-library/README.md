@@ -38,6 +38,16 @@
 
 ---
 
+# ⊙ Cathedral Lightweight Library - cathedral-lightweight-library
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/lightweight-library
 
 Expansive but lightweight library system for the Cathedral of Circuits

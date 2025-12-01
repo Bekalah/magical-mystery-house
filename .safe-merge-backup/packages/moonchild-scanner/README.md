@@ -38,6 +38,16 @@
 
 ---
 
+# ⊙ Moonchild Scanner - moonchild-scanner
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # moonchild-scanner
 
 No description available

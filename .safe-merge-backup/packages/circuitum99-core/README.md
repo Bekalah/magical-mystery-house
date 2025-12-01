@@ -38,6 +38,16 @@
 
 ---
 
+# ⊙ Circuitum99 - circuitum99-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # circuitum99-core
 
 No description available

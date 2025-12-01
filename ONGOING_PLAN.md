@@ -285,10 +285,12 @@ pnpm run fix:all-issues
 - **Labels:** All protected
 
 ### Discovery Settings
-- **Workspaces:** All cathedral workspaces
-- **Packages:** All packages (168+)
+- **Workspaces:** All cathedral workspaces (UNIFIED - not detached)
+- **Unified Workspaces:** cathedral-master-deployment, cathedral-real, cathedral-fixed-clean, Roo-Code, cosmogenesis-engine, CathedralOfCircuits
+- **Packages:** All packages (168+) across all unified workspaces
 - **Tools:** All tools (134+)
 - **Apps:** All apps (43+)
+- **Structure:** Single unified monorepo via pnpm-workspace.yaml
 
 ---
 

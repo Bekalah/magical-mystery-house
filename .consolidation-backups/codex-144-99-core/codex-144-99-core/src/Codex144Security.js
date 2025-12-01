@@ -7,6 +7,16 @@
  *
  * @license CC0-1.0 - Public Domain
  */
+/**
+ * ⊙ Codex144security
+ * 
+ * @alchemical Codex144security
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {

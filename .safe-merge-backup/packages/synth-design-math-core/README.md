@@ -38,6 +38,16 @@
 
 ---
 
+# ⊙ Synth Design Math - synth-design-math-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # synth-design-math-core
 
 No description available

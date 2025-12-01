@@ -38,6 +38,16 @@
 
 ---
 
+# ⊙ Synth Spells - synth-spells
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # synth-spells
 
 No description available

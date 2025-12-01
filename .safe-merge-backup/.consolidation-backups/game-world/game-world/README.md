@@ -38,6 +38,16 @@
 
 ---
 
+# ⊙ Game World - game-world
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # game-world
 
 No description available

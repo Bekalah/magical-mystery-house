@@ -7,7 +7,17 @@
  *
  * @license CC0-1.0 - Public Domain
  */
-Object.defineProperty(exports, "__esModule", { value: true });
+Object.defineProperty(/**
+ * ⊙ Codex144engine
+ * 
+ * @alchemical Codex144engine
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
+exports, "__esModule", { value: true });
 exports.Codex144Engine = void 0;
 var index_1 = require("../../sacred-mathematics-core/src/index");
 var index_2 = require("../../fusion-kink-core/src/index");

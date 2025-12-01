@@ -38,6 +38,16 @@
 
 ---
 
+# ⊙ Three - three-engine
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/three-engine
 
 Three.js Engine wrapper for Cathedral 3D visualizations

@@ -7,7 +7,17 @@
   * @author Rebecca Respawn
  * @license CC0-1.0 - Public Domain
 */
-Object.defineProperty(exports, "__esModule", { value: true });
+Object.defineProperty(/**
+ * ⊙ Index
+ * 
+ * @alchemical Index
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
+exports, "__esModule", { value: true });
 exports.default = exports.FusionKinkDesignMathematics = void 0;
 var FusionKinkDesignMathematics_1 = require("./FusionKinkDesignMathematics");
 Object.defineProperty(exports, "FusionKinkDesignMathematics", { enumerable: true, get: function () { return FusionKinkDesignMathematics_1.FusionKinkDesignMathematics; } });

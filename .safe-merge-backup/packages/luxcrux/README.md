@@ -38,6 +38,16 @@
 
 ---
 
+# ⊙ Luxcrux - luxcrux
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/luxcrux
 
 Luxcrux - Elemental directions and spatial consciousness with master art principles

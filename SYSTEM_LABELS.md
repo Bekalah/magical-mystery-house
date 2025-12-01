@@ -1,14 +1,14 @@
 # 🏷️ System Labels - All Systems, Packages, and Codex
 
-Generated: 11/30/2025, 3:59:17 PM
+Generated: 11/30/2025, 9:18:58 PM
 
 ## Summary
 
 - **Packages**: 127
-- **Codex**: 92
+- **Codex**: 93
 - **Systems**: 7
-- **Total Labels**: 226
-- **Connections**: 736
+- **Total Labels**: 227
+- **Connections**: 744
 - **Duplicates Found**: 0
 
 ## Packages
@@ -1266,6 +1266,8 @@ Generated: 11/30/2025, 3:59:17 PM
   - Path: `codex-reports/codex-analysis.json`
 - **[CODEX] package.json** (`codex:package`)
   - Path: `packages/codex-144-99-core/package.json`
+- **[CODEX] tsconfig.json** (`codex:tsconfig`)
+  - Path: `packages/codex-144-99-core/tsconfig.json`
 
 ### codex-doc
 
@@ -1315,9 +1317,9 @@ Generated: 11/30/2025, 3:59:17 PM
 
 ## Connections
 
-Total: 736
+Total: 744
 
 ### package-codex
 
-Count: 736
+Count: 744
 

@@ -38,6 +38,16 @@
 
 ---
 
+# ⊙ Ui - ui
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/ui
 
 Cathedral of Circuits - Shared UI Components

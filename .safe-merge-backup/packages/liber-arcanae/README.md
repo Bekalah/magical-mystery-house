@@ -38,6 +38,16 @@
 
 ---
 
+# ⊙ Liber Arcanae - liber-arcanae
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/liber-arcanae
 
 Liber Arcanae Codex Abyssiae - 78-card tarot system mirroring Codex 144:99

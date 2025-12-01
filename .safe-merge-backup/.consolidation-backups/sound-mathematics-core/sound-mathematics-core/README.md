@@ -38,6 +38,16 @@
 
 ---
 
+# ⊙ Sound Mathematics - sound-mathematics-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # sound-mathematics-core
 
 No description available

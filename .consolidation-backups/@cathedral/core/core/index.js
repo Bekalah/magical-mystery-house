@@ -4,6 +4,16 @@
  */
 
 // Export Morgan Le Fay Avalon System
+/**
+ * ⊙ Index
+ * 
+ * @alchemical Index
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 export { MorganLeFay } from '../../MorganLeFay.js';
 export { AvalonRealmEngine } from '../../AvalonRealmEngine.js';
 export { TarotCreatureSystem } from '../../TarotCreatureSystem.js';
