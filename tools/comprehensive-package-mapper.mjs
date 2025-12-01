@@ -65,18 +65,112 @@ class ComprehensivePackageMapper {
   }
 
   async loadDiscoveryReport() {
-    const reportPath = path.join(BASE_DIR, 'DISCOVERY_REPORT.json');
+    // Try to load from current directory first
+    let reportPath = path.join(BASE_DIR, 'DISCOVERY_REPORT.json');
+    
+    // If not found, search across all workspaces
+    if (!fs.existsSync(reportPath)) {
+      const workspaces = this.findAllWorkspaces();
+      for (const workspace of workspaces) {
+        const candidatePath = path.join(workspace, 'DISCOVERY_REPORT.json');
+        if (fs.existsSync(candidatePath)) {
+          reportPath = candidatePath;
+          break;
+        }
+      }
+    }
+
     if (!fs.existsSync(reportPath)) {
       throw new Error('DISCOVERY_REPORT.json not found. Run comprehensive-discovery first.');
     }
 
     const report = JSON.parse(fs.readFileSync(reportPath, 'utf-8'));
     this.packages = report.discovered?.packages || [];
-    console.log(`📂 Loaded ${this.packages.length} packages from discovery report\n`);
+    
+    // Also include packages from all workspaces if they're listed
+    if (report.workspaces) {
+      for (const workspace of report.workspaces) {
+        const workspaceReportPath = path.join(workspace, 'DISCOVERY_REPORT.json');
+        if (fs.existsSync(workspaceReportPath) && workspaceReportPath !== reportPath) {
+          try {
+            const workspaceReport = JSON.parse(fs.readFileSync(workspaceReportPath, 'utf-8'));
+            const workspacePackages = workspaceReport.discovered?.packages || [];
+            // Add workspace info to packages
+            for (const pkg of workspacePackages) {
+              if (!this.packages.find(p => p.path === pkg.path)) {
+                this.packages.push(pkg);
+              }
+            }
+          } catch (e) {
+            // Skip if can't read
+          }
+        }
+      }
+    }
+    
+    console.log(`📂 Loaded ${this.packages.length} packages from discovery report(s) across all workspaces\n`);
+  }
+
+  findAllWorkspaces() {
+    const workspaces = [BASE_DIR];
+    const baseDir = path.dirname(BASE_DIR);
+    
+    try {
+      const entries = fs.readdirSync(baseDir, { withFileTypes: true });
+      for (const entry of entries) {
+        if (entry.isDirectory() && (
+          entry.name.startsWith('cathedral') ||
+          entry.name.startsWith('cosmogenesis') ||
+          entry.name.includes('circuit') ||
+          entry.name.includes('codex')
+        )) {
+          const workspacePath = path.join(baseDir, entry.name);
+          if (fs.existsSync(path.join(workspacePath, 'package.json'))) {
+            workspaces.push(workspacePath);
+          }
+        }
+      }
+    } catch (e) {
+      // Skip if can't read
+    }
+
+    // Also check for remote repos directory
+    const remoteReposDir = path.join(BASE_DIR, '.remote-repos');
+    if (fs.existsSync(remoteReposDir)) {
+      try {
+        const remoteEntries = fs.readdirSync(remoteReposDir, { withFileTypes: true });
+        for (const entry of remoteEntries) {
+          if (entry.isDirectory()) {
+            const remotePath = path.join(remoteReposDir, entry.name);
+            if (fs.existsSync(path.join(remotePath, 'package.json'))) {
+              workspaces.push(remotePath);
+            }
+          }
+        }
+      } catch (e) {
+        // Skip if can't read
+      }
+    }
+
+    return workspaces;
   }
 
   async loadSystemLabels() {
-    const labelsPath = path.join(BASE_DIR, 'system-labels.json');
+    // Try to load from current directory first
+    let labelsPath = path.join(BASE_DIR, 'system-labels.json');
+    
+    // If not found, search across all workspaces
+    if (!fs.existsSync(labelsPath)) {
+      const workspaces = this.findAllWorkspaces();
+      for (const workspace of workspaces) {
+        const candidatePath = path.join(workspace, 'system-labels.json');
+        if (fs.existsSync(candidatePath)) {
+          labelsPath = candidatePath;
+          break;
+        }
+      }
+    }
+
     if (!fs.existsSync(labelsPath)) {
       console.log('⚠️  system-labels.json not found, continuing without labels\n');
       return;
@@ -89,8 +183,26 @@ class ComprehensivePackageMapper {
       labelMap.set(pkg.name || pkg.packageName, pkg);
     });
 
+    // Also load labels from other workspaces
+    const workspaces = this.findAllWorkspaces();
+    for (const workspace of workspaces) {
+      const workspaceLabelsPath = path.join(workspace, 'system-labels.json');
+      if (fs.existsSync(workspaceLabelsPath) && workspaceLabelsPath !== labelsPath) {
+        try {
+          const workspaceLabels = JSON.parse(fs.readFileSync(workspaceLabelsPath, 'utf-8'));
+          (workspaceLabels.packages || []).forEach(pkg => {
+            if (!labelMap.has(pkg.name || pkg.packageName)) {
+              labelMap.set(pkg.name || pkg.packageName, pkg);
+            }
+          });
+        } catch (e) {
+          // Skip if can't read
+        }
+      }
+    }
+
     this.labelMap = labelMap;
-    console.log(`🏷️  Loaded ${labelMap.size} package labels\n`);
+    console.log(`🏷️  Loaded ${labelMap.size} package labels from all workspaces\n`);
   }
 
   async mapDependencies() {

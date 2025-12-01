@@ -59,42 +59,147 @@ class PackageInfoGenerator {
   }
 
   async loadDataSources() {
-    console.log('📂 Loading data sources...\n');
+    console.log('📂 Loading data sources from all workspaces...\n');
 
-    // Load discovery report
-    const discoveryPath = path.join(BASE_DIR, 'DISCOVERY_REPORT.json');
-    if (fs.existsSync(discoveryPath)) {
-      this.discoveryReport = JSON.parse(fs.readFileSync(discoveryPath, 'utf-8'));
-      this.packages = this.discoveryReport.discovered?.packages || [];
-      console.log(`   ✅ Discovery report: ${this.packages.length} packages`);
+    const workspaces = this.findAllWorkspaces();
+
+    // Load discovery report from all workspaces
+    let totalPackages = 0;
+    for (const workspace of workspaces) {
+      const discoveryPath = path.join(workspace, 'DISCOVERY_REPORT.json');
+      if (fs.existsSync(discoveryPath)) {
+        try {
+          const report = JSON.parse(fs.readFileSync(discoveryPath, 'utf-8'));
+          const packages = report.discovered?.packages || [];
+          for (const pkg of packages) {
+            if (!this.packages.find(p => p.path === pkg.path)) {
+              this.packages.push(pkg);
+            }
+          }
+          totalPackages += packages.length;
+        } catch (e) {
+          // Skip if can't read
+        }
+      }
+    }
+    
+    if (this.packages.length > 0) {
+      this.discoveryReport = { discovered: { packages: this.packages } };
+      console.log(`   ✅ Discovery reports: ${totalPackages} packages from ${workspaces.length} workspaces`);
     }
 
-    // Load package map
-    const mapPath = path.join(BASE_DIR, 'PACKAGE_MAP.json');
-    if (fs.existsSync(mapPath)) {
-      this.packageMap = JSON.parse(fs.readFileSync(mapPath, 'utf-8'));
-      console.log(`   ✅ Package map: ${this.packageMap.summary?.totalPackages || 0} packages`);
+    // Load package map from all workspaces (merge them)
+    const packageMapData = { packages: [] };
+    for (const workspace of workspaces) {
+      const mapPath = path.join(workspace, 'PACKAGE_MAP.json');
+      if (fs.existsSync(mapPath)) {
+        try {
+          const map = JSON.parse(fs.readFileSync(mapPath, 'utf-8'));
+          if (map.packages) {
+            packageMapData.packages.push(...map.packages);
+          }
+        } catch (e) {
+          // Skip if can't read
+        }
+      }
+    }
+    
+    if (packageMapData.packages.length > 0) {
+      this.packageMap = packageMapData;
+      console.log(`   ✅ Package maps: ${packageMapData.packages.length} packages mapped`);
     } else {
       console.log(`   ⚠️  Package map not found (run map:packages first)`);
     }
 
-    // Load debug report
-    const debugPath = path.join(BASE_DIR, 'PACKAGE_DEBUG_REPORT.json');
-    if (fs.existsSync(debugPath)) {
-      this.debugReport = JSON.parse(fs.readFileSync(debugPath, 'utf-8'));
-      console.log(`   ✅ Debug report: ${this.debugReport.summary?.packagesWithIssues || 0} packages with issues`);
+    // Load debug report from all workspaces (merge them)
+    const debugData = { packages: [] };
+    for (const workspace of workspaces) {
+      const debugPath = path.join(workspace, 'PACKAGE_DEBUG_REPORT.json');
+      if (fs.existsSync(debugPath)) {
+        try {
+          const report = JSON.parse(fs.readFileSync(debugPath, 'utf-8'));
+          if (report.packages) {
+            debugData.packages.push(...report.packages);
+          }
+        } catch (e) {
+          // Skip if can't read
+        }
+      }
+    }
+    
+    if (debugData.packages.length > 0) {
+      this.debugReport = debugData;
+      console.log(`   ✅ Debug reports: ${debugData.packages.length} packages with issues`);
     } else {
       console.log(`   ⚠️  Debug report not found (run debug:packages first)`);
     }
 
-    // Load system labels
-    const labelsPath = path.join(BASE_DIR, 'system-labels.json');
-    if (fs.existsSync(labelsPath)) {
-      this.systemLabels = JSON.parse(fs.readFileSync(labelsPath, 'utf-8'));
-      console.log(`   ✅ System labels: ${this.systemLabels.summary?.packages || 0} packages`);
+    // Load system labels from all workspaces (merge them)
+    const labelsData = { packages: [] };
+    for (const workspace of workspaces) {
+      const labelsPath = path.join(workspace, 'system-labels.json');
+      if (fs.existsSync(labelsPath)) {
+        try {
+          const labels = JSON.parse(fs.readFileSync(labelsPath, 'utf-8'));
+          if (labels.packages) {
+            labelsData.packages.push(...labels.packages);
+          }
+        } catch (e) {
+          // Skip if can't read
+        }
+      }
+    }
+    
+    if (labelsData.packages.length > 0) {
+      this.systemLabels = labelsData;
+      console.log(`   ✅ System labels: ${labelsData.packages.length} packages`);
     }
 
     console.log('');
+  }
+
+  findAllWorkspaces() {
+    const workspaces = [BASE_DIR];
+    const baseDir = path.dirname(BASE_DIR);
+    
+    try {
+      const entries = fs.readdirSync(baseDir, { withFileTypes: true });
+      for (const entry of entries) {
+        if (entry.isDirectory() && (
+          entry.name.startsWith('cathedral') ||
+          entry.name.startsWith('cosmogenesis') ||
+          entry.name.includes('circuit') ||
+          entry.name.includes('codex')
+        )) {
+          const workspacePath = path.join(baseDir, entry.name);
+          if (fs.existsSync(path.join(workspacePath, 'package.json'))) {
+            workspaces.push(workspacePath);
+          }
+        }
+      }
+    } catch (e) {
+      // Skip if can't read
+    }
+
+    // Also check for remote repos directory
+    const remoteReposDir = path.join(BASE_DIR, '.remote-repos');
+    if (fs.existsSync(remoteReposDir)) {
+      try {
+        const remoteEntries = fs.readdirSync(remoteReposDir, { withFileTypes: true });
+        for (const entry of remoteEntries) {
+          if (entry.isDirectory()) {
+            const remotePath = path.join(remoteReposDir, entry.name);
+            if (fs.existsSync(path.join(remotePath, 'package.json'))) {
+              workspaces.push(remotePath);
+            }
+          }
+        }
+      } catch (e) {
+        // Skip if can't read
+      }
+    }
+
+    return workspaces;
   }
 
   async generatePackageInfo(pkg) {
