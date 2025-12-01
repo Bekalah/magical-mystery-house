@@ -1,0 +1,318 @@
+{
+  "philosophy": {
+    "description": "Cross-engineered naming system combining Jodorowsky psychomagic, Antero Alli angel tech, and all mystical traditions into unified beautiful names",
+    "approach": "Psychomagic + Angel Tech + Unified Tradition"
+  },
+  "games": {
+    "circuit-craft-creative-game": {
+      "primary": "Eight Circuit Angel",
+      "psychomagic": "Circuit Initiation",
+      "angel_tech": "Neurogenetic Angel",
+      "themes": ["Timothy Leary", "Angel Tech", "Psychomagic"],
+      "description": "Eight-circuit consciousness evolution through angel tech psychomagic"
+    },
+    "circuitum99-arcanae-cyoa": {
+      "primary": "Individuation Quest",
+      "psychomagic": "Shadow Work Ritual",
+      "angel_tech": "Archetypal Angel",
+      "themes": ["Jung", "Psychomagic", "Angel Tech"],
+      "description": "Jungian individuation through psychomagic angel tech"
+    },
+    "gem-tower-engine": {
+      "primary": "Tree of Life Ascent",
+      "psychomagic": "Sephirotic Ritual",
+      "angel_tech": "Qabalistic Angel",
+      "themes": ["Golden Dawn", "Psychomagic", "Angel Tech"],
+      "description": "Tree of Life pathworking through psychomagic angel tech"
+    },
+    "tarot-arena": {
+      "primary": "Archetypal Theater",
+      "psychomagic": "Tarot Psychomagic",
+      "angel_tech": "Arcana Angel",
+      "themes": ["Jung", "Hermetica", "Psychomagic"],
+      "description": "Archetypal tarot through psychomagic angel tech"
+    },
+    "mystical-treasure-hunt": {
+      "primary": "Vision Quest Angel",
+      "psychomagic": "Visionary Ritual",
+      "angel_tech": "Sacred Geometry Angel",
+      "themes": ["Visionary Art", "Psychomagic", "Angel Tech"],
+      "description": "Vision quest through psychomagic angel tech"
+    },
+    "stone-grimoire": {
+      "primary": "Emerald Tablet Angel",
+      "psychomagic": "Hermetic Ritual",
+      "angel_tech": "Thoth Angel",
+      "themes": ["Hermetica", "Psychomagic", "Angel Tech"],
+      "description": "Hermetic wisdom through psychomagic angel tech"
+    },
+    "liber-arcanae": {
+      "primary": "Corpus Hermeticum Angel",
+      "psychomagic": "Divine Pymander Ritual",
+      "angel_tech": "Hermes Angel",
+      "themes": ["Hermetica", "Psychomagic", "Angel Tech"],
+      "description": "Hermetic corpus through psychomagic angel tech"
+    },
+    "cosmogenesis-visualizer": {
+      "primary": "Emanation Angel",
+      "psychomagic": "Neoplatonic Ritual",
+      "angel_tech": "The One Angel",
+      "themes": ["Neoplatonism", "Psychomagic", "Angel Tech"],
+      "description": "Neoplatonic emanation through psychomagic angel tech"
+    },
+    "cathedral-of-circuits": {
+      "primary": "The One Circuit",
+      "psychomagic": "Henosis Ritual",
+      "angel_tech": "Unity Angel",
+      "themes": ["Neoplatonism", "Psychomagic", "Angel Tech"],
+      "description": "Neoplatonic unity through psychomagic angel tech"
+    }
+  },
+  "shaders": {
+    "art-engine": {
+      "primary": "Ignis Angel",
+      "psychomagic": "Fire Ritual",
+      "angel_tech": "Solar Angel",
+      "themes": ["Alchemy", "Psychomagic", "Angel Tech"],
+      "description": "Alchemical fire through psychomagic angel tech"
+    },
+    "music-engine": {
+      "primary": "Aqua Angel",
+      "psychomagic": "Water Ritual",
+      "angel_tech": "Lunar Angel",
+      "themes": ["Alchemy", "Psychomagic", "Angel Tech"],
+      "description": "Alchemical water through psychomagic angel tech"
+    },
+    "science-engine": {
+      "primary": "Aer Angel",
+      "psychomagic": "Air Ritual",
+      "angel_tech": "Mercurial Angel",
+      "themes": ["Alchemy", "Psychomagic", "Angel Tech"],
+      "description": "Alchemical air through psychomagic angel tech"
+    },
+    "game-design": {
+      "primary": "Terra Angel",
+      "psychomagic": "Earth Ritual",
+      "angel_tech": "Saturnian Angel",
+      "themes": ["Alchemy", "Psychomagic", "Angel Tech"],
+      "description": "Alchemical earth through psychomagic angel tech"
+    },
+    "visionary-design": {
+      "primary": "Alex Grey Angel",
+      "psychomagic": "Visionary Ritual",
+      "angel_tech": "Sacred Art Angel",
+      "themes": ["Visionary Art", "Psychomagic", "Angel Tech"],
+      "description": "Visionary art through psychomagic angel tech"
+    },
+    "sacred-geometry": {
+      "primary": "Flower of Life Angel",
+      "psychomagic": "Geometry Ritual",
+      "angel_tech": "Pattern Angel",
+      "themes": ["Visionary Art", "Psychomagic", "Angel Tech"],
+      "description": "Sacred geometry through psychomagic angel tech"
+    },
+    "fusion-kink": {
+      "primary": "Rebis Angel",
+      "psychomagic": "Unification Ritual",
+      "angel_tech": "Androgyne Angel",
+      "themes": ["Alchemy", "Psychomagic", "Angel Tech"],
+      "description": "Alchemical rebis through psychomagic angel tech"
+    },
+    "tarot-art": {
+      "primary": "Archetypal Light Angel",
+      "psychomagic": "Arcana Ritual",
+      "angel_tech": "Symbol Angel",
+      "themes": ["Jung", "Psychomagic", "Angel Tech"],
+      "description": "Archetypal light through psychomagic angel tech"
+    }
+  },
+  "libraries": {
+    "cathedral-design-library": {
+      "primary": "Bibliotheca Hermetica Angel",
+      "psychomagic": "Library Ritual",
+      "angel_tech": "Knowledge Angel",
+      "themes": ["Hermetica", "Psychomagic", "Angel Tech"],
+      "description": "Hermetic library through psychomagic angel tech"
+    },
+    "cathedral-lightweight-library": {
+      "primary": "Ars Magna Angel",
+      "psychomagic": "Great Art Ritual",
+      "angel_tech": "Art Angel",
+      "themes": ["Alchemy", "Psychomagic", "Angel Tech"],
+      "description": "Great art through psychomagic angel tech"
+    },
+    "stone-grimoire-library": {
+      "primary": "Tabula Smaragdina Angel",
+      "psychomagic": "Emerald Ritual",
+      "angel_tech": "Tablet Angel",
+      "themes": ["Alchemy", "Hermetica", "Psychomagic"],
+      "description": "Emerald tablet through psychomagic angel tech"
+    },
+    "liber-arcanae-core": {
+      "primary": "Corpus Hermeticum Angel",
+      "psychomagic": "Hermetic Ritual",
+      "angel_tech": "Text Angel",
+      "themes": ["Hermetica", "Psychomagic", "Angel Tech"],
+      "description": "Hermetic corpus through psychomagic angel tech"
+    },
+    "codex-144-99": {
+      "primary": "Emerald Tablet Angel",
+      "psychomagic": "Monad Ritual",
+      "angel_tech": "Unity Angel",
+      "themes": ["Hermetica", "Neoplatonism", "Psychomagic"],
+      "description": "Emerald tablet through psychomagic angel tech"
+    },
+    "unified-codex": {
+      "primary": "Monad Angel",
+      "psychomagic": "Unity Ritual",
+      "angel_tech": "One Angel",
+      "themes": ["Neoplatonism", "Psychomagic", "Angel Tech"],
+      "description": "Neoplatonic monad through psychomagic angel tech"
+    },
+    "sacred-mathematics": {
+      "primary": "Golden Ratio Angel",
+      "psychomagic": "Proportion Ritual",
+      "angel_tech": "Math Angel",
+      "themes": ["Visionary Art", "Psychomagic", "Angel Tech"],
+      "description": "Golden ratio through psychomagic angel tech"
+    },
+    "design-mathematics": {
+      "primary": "Divine Proportion Angel",
+      "psychomagic": "Geometry Ritual",
+      "angel_tech": "Design Angel",
+      "themes": ["Visionary Art", "Psychomagic", "Angel Tech"],
+      "description": "Divine proportion through psychomagic angel tech"
+    }
+  },
+  "psychomagic_rituals": {
+    "description": "Jodorowsky psychomagic rituals mapped to codex themes",
+    "rituals": {
+      "solve": {
+        "name": "Dissolution Ritual",
+        "psychomagic": "Dissolve blockages through symbolic action",
+        "angel_tech": "Dissolution Angel",
+        "codex_connection": "Contraction phase, moments of doubt"
+      },
+      "coagula": {
+        "name": "Coagulation Ritual",
+        "psychomagic": "Solidify intentions through symbolic action",
+        "angel_tech": "Coagulation Angel",
+        "codex_connection": "Expansion phase, implementation"
+      },
+      "coniunctio": {
+        "name": "Conjunction Ritual",
+        "psychomagic": "Unite opposites through symbolic action",
+        "angel_tech": "Conjunction Angel",
+        "codex_connection": "System integration, unity"
+      },
+      "separatio": {
+        "name": "Separation Ritual",
+        "psychomagic": "Separate what needs separation",
+        "angel_tech": "Separation Angel",
+        "codex_connection": "Discovery phase, analysis"
+      }
+    }
+  },
+  "angel_tech": {
+    "description": "Antero Alli angel tech mapped to codex themes",
+    "angels": {
+      "circuit_angel": {
+        "name": "Circuit Angel",
+        "function": "Neurogenetic evolution",
+        "codex_connection": "Eight-circuit model, consciousness evolution"
+      },
+      "archetypal_angel": {
+        "name": "Archetypal Angel",
+        "function": "Jungian archetype manifestation",
+        "codex_connection": "Major Arcana, consciousness levels"
+      },
+      "qabalistic_angel": {
+        "name": "Qabalistic Angel",
+        "function": "Tree of Life pathworking",
+        "codex_connection": "Sephiroth, gates, nodes"
+      },
+      "hermetic_angel": {
+        "name": "Hermetic Angel",
+        "function": "Hermetic wisdom transmission",
+        "codex_connection": "Emerald Tablet, Corpus Hermeticum"
+      },
+      "neoplatonic_angel": {
+        "name": "Neoplatonic Angel",
+        "function": "Emanation and return",
+        "codex_connection": "The One, Nous, World Soul"
+      },
+      "thelemic_angel": {
+        "name": "Thelemic Angel",
+        "function": "True Will manifestation",
+        "codex_connection": "Aeon of Horus, 93 current"
+      },
+      "mystic_christian_angel": {
+        "name": "Mystic Christian Angel",
+        "function": "Divine union",
+        "codex_connection": "Gnosis, Theosis, Cloud of Unknowing"
+      }
+    }
+  },
+  "cross_engineered_names": {
+    "pattern": "{Theme} {Psychomagic} {Angel Tech}",
+    "examples": {
+      "alchemical": "Ignis Ritual Angel (Fire through psychomagic angel tech)",
+      "hermetic": "Emerald Tablet Ritual Angel (Hermetic wisdom through psychomagic angel tech)",
+      "jungian": "Archetypal Ritual Angel (Individuation through psychomagic angel tech)",
+      "neoplatonic": "Emanation Ritual Angel (The One through psychomagic angel tech)",
+      "thelemic": "True Will Ritual Angel (93 current through psychomagic angel tech)",
+      "visionary": "Sacred Geometry Ritual Angel (Pattern through psychomagic angel tech)"
+    }
+  },
+  "mystery_house_expansion": {
+    "puzzles": {
+      "pattern": "Each room has puzzles connecting to codex themes",
+      "types": [
+        "Alchemical Puzzle (Solve et Coagula)",
+        "Hermetic Puzzle (As Above So Below)",
+        "Jungian Puzzle (Shadow Work)",
+        "Neoplatonic Puzzle (Emanation)",
+        "Qabalistic Puzzle (Tree of Life)",
+        "Thelemic Puzzle (True Will)",
+        "Visionary Puzzle (Sacred Geometry)"
+      ]
+    },
+    "art": {
+      "pattern": "Each room has art connecting to codex themes",
+      "traditions": [
+        "Visionary Masters (Alex Grey, Hilma af Klint)",
+        "Sacred Geometry Art",
+        "Alchemical Art",
+        "Hermetic Art",
+        "Jungian Art (Archetypal)",
+        "Neoplatonic Art (Emanation)"
+      ]
+    },
+    "science": {
+      "pattern": "Each room has science connecting to codex themes",
+      "traditions": [
+        "Sacred Mathematics (Pythagoras, Kepler)",
+        "Consciousness Science (William James, Timothy Leary)",
+        "Alchemical Medicine (Paracelsus)",
+        "Neoplatonic Science (Emanation)",
+        "Hermetic Science (As Above So Below)"
+      ]
+    },
+    "canon": {
+      "pattern": "Each room has real canon from traditions",
+      "sources": [
+        "Emerald Tablet (Hermetica)",
+        "Corpus Hermeticum (Hermetica)",
+        "Red Book (Jung)",
+        "Varieties of Religious Experience (William James)",
+        "Eight Circuit Model (Timothy Leary)",
+        "Three Principles (Paracelsus)",
+        "Enneads (Neoplatonism)",
+        "Tree of Life (Golden Dawn)",
+        "Book of the Law (Thelema)",
+        "Cloud of Unknowing (Mystic Christianity)"
+      ]
+    }
+  }
+}
+

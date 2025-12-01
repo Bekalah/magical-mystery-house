@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764559138465,
+  "timestamp": 1764559460404,
   "summary": {
     "packages": 127,
     "codex": 93,
@@ -354,26 +354,26 @@
     {
       "id": "pkg:circuit-craft-creative-game",
       "name": "@cathedral/circuit-craft-creative-game",
-      "label": "[⊙] Circuit Craft Creative Game | @cathedral/circuit-craft-creative-game",
+      "label": "[⚡] Eight Circuit Model | @cathedral/circuit-craft-creative-game",
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game",
       "packageName": "@cathedral/circuit-craft-creative-game",
       "version": "1.0.0",
       "description": "CircuitCraft: Non-Linear Creative Construction Game for High-Tech Creatives",
-      "type": "library",
-      "alchemical": "Circuit Craft Creative Game",
-      "symbol": "⊙"
+      "type": "game",
+      "alchemical": "Eight Circuit Model",
+      "symbol": "⚡"
     },
     {
       "id": "pkg:circuitum99-arcanae-cyoa",
       "name": "@cathedral/circuitum99-arcanae-cyoa",
-      "label": "[⊙] Circuitum99 Arcanae Cyoa | @cathedral/circuitum99-arcanae-cyoa",
+      "label": "[🔄] Individuation | @cathedral/circuitum99-arcanae-cyoa",
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa",
       "packageName": "@cathedral/circuitum99-arcanae-cyoa",
       "version": "1.0.0",
       "description": "Circuitum99: Alpha et Omega CYOA Story System for Liber Arcanae",
       "type": "library",
-      "alchemical": "Circuitum99 Arcanae Cyoa",
-      "symbol": "⊙"
+      "alchemical": "Individuation",
+      "symbol": "🔄"
     },
     {
       "id": "pkg:circuitum99",
@@ -549,14 +549,14 @@
     {
       "id": "pkg:design-mathematics",
       "name": "design-mathematics-core",
-      "label": "[⊙] Design Mathematics | design-mathematics-core",
+      "label": "[◊] Divine Proportion | design-mathematics-core",
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/design-mathematics-core",
       "packageName": "design-mathematics-core",
       "version": "1.0.0",
       "description": "",
       "type": "core",
-      "alchemical": "Design Mathematics",
-      "symbol": "⊙"
+      "alchemical": "Divine Proportion",
+      "symbol": "◊"
     },
     {
       "id": "pkg:fractal-flames-daemon-deity",
@@ -666,7 +666,7 @@
       "packageName": "game-world",
       "version": "1.0.0",
       "description": "",
-      "type": "library",
+      "type": "game",
       "alchemical": "Game World",
       "symbol": "⊙"
     },
@@ -1278,14 +1278,14 @@
     {
       "id": "pkg:stone-grimoire-library-engine",
       "name": "stone-grimoire-library-engine",
-      "label": "[⊙] Stone Grimoire Library | stone-grimoire-library-engine",
+      "label": "[💎] Tabula Smaragdina | stone-grimoire-library-engine",
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire-library-engine",
       "packageName": "stone-grimoire-library-engine",
       "version": "1.0.0",
       "description": "",
       "type": "engine",
-      "alchemical": "Stone Grimoire Library",
-      "symbol": "⊙"
+      "alchemical": "Tabula Smaragdina",
+      "symbol": "💎"
     },
     {
       "id": "pkg:story-engine",
@@ -1362,14 +1362,14 @@
     {
       "id": "pkg:tarot-art",
       "name": "tarot-art",
-      "label": "[⊙] Tarot Art | tarot-art",
+      "label": "[🃏] Archetypal Light | tarot-art",
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tarot-art",
       "packageName": "tarot-art",
       "version": "1.0.0",
       "description": "",
       "type": "library",
-      "alchemical": "Tarot Art",
-      "symbol": "⊙"
+      "alchemical": "Archetypal Light",
+      "symbol": "🃏"
     },
     {
       "id": "pkg:tarot-engine",
@@ -2938,35 +2938,35 @@
     {
       "id": "pkg:circuit-craft-creative-game",
       "type": "package",
-      "label": "[⊙] Circuit Craft Creative Game | @cathedral/circuit-craft-creative-game",
+      "label": "[⚡] Eight Circuit Model | @cathedral/circuit-craft-creative-game",
       "item": {
         "id": "pkg:circuit-craft-creative-game",
         "name": "@cathedral/circuit-craft-creative-game",
-        "label": "[⊙] Circuit Craft Creative Game | @cathedral/circuit-craft-creative-game",
+        "label": "[⚡] Eight Circuit Model | @cathedral/circuit-craft-creative-game",
         "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game",
         "packageName": "@cathedral/circuit-craft-creative-game",
         "version": "1.0.0",
         "description": "CircuitCraft: Non-Linear Creative Construction Game for High-Tech Creatives",
-        "type": "library",
-        "alchemical": "Circuit Craft Creative Game",
-        "symbol": "⊙"
+        "type": "game",
+        "alchemical": "Eight Circuit Model",
+        "symbol": "⚡"
       }
     },
     {
       "id": "pkg:circuitum99-arcanae-cyoa",
       "type": "package",
-      "label": "[⊙] Circuitum99 Arcanae Cyoa | @cathedral/circuitum99-arcanae-cyoa",
+      "label": "[🔄] Individuation | @cathedral/circuitum99-arcanae-cyoa",
       "item": {
         "id": "pkg:circuitum99-arcanae-cyoa",
         "name": "@cathedral/circuitum99-arcanae-cyoa",
-        "label": "[⊙] Circuitum99 Arcanae Cyoa | @cathedral/circuitum99-arcanae-cyoa",
+        "label": "[🔄] Individuation | @cathedral/circuitum99-arcanae-cyoa",
         "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa",
         "packageName": "@cathedral/circuitum99-arcanae-cyoa",
         "version": "1.0.0",
         "description": "Circuitum99: Alpha et Omega CYOA Story System for Liber Arcanae",
         "type": "library",
-        "alchemical": "Circuitum99 Arcanae Cyoa",
-        "symbol": "⊙"
+        "alchemical": "Individuation",
+        "symbol": "🔄"
       }
     },
     {
@@ -3213,18 +3213,18 @@
     {
       "id": "pkg:design-mathematics",
       "type": "package",
-      "label": "[⊙] Design Mathematics | design-mathematics-core",
+      "label": "[◊] Divine Proportion | design-mathematics-core",
       "item": {
         "id": "pkg:design-mathematics",
         "name": "design-mathematics-core",
-        "label": "[⊙] Design Mathematics | design-mathematics-core",
+        "label": "[◊] Divine Proportion | design-mathematics-core",
         "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/design-mathematics-core",
         "packageName": "design-mathematics-core",
         "version": "1.0.0",
         "description": "",
         "type": "core",
-        "alchemical": "Design Mathematics",
-        "symbol": "⊙"
+        "alchemical": "Divine Proportion",
+        "symbol": "◊"
       }
     },
     {
@@ -3379,7 +3379,7 @@
         "packageName": "game-world",
         "version": "1.0.0",
         "description": "",
-        "type": "library",
+        "type": "game",
         "alchemical": "Game World",
         "symbol": "⊙"
       }
@@ -4242,18 +4242,18 @@
     {
       "id": "pkg:stone-grimoire-library-engine",
       "type": "package",
-      "label": "[⊙] Stone Grimoire Library | stone-grimoire-library-engine",
+      "label": "[💎] Tabula Smaragdina | stone-grimoire-library-engine",
       "item": {
         "id": "pkg:stone-grimoire-library-engine",
         "name": "stone-grimoire-library-engine",
-        "label": "[⊙] Stone Grimoire Library | stone-grimoire-library-engine",
+        "label": "[💎] Tabula Smaragdina | stone-grimoire-library-engine",
         "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire-library-engine",
         "packageName": "stone-grimoire-library-engine",
         "version": "1.0.0",
         "description": "",
         "type": "engine",
-        "alchemical": "Stone Grimoire Library",
-        "symbol": "⊙"
+        "alchemical": "Tabula Smaragdina",
+        "symbol": "💎"
       }
     },
     {
@@ -4361,18 +4361,18 @@
     {
       "id": "pkg:tarot-art",
       "type": "package",
-      "label": "[⊙] Tarot Art | tarot-art",
+      "label": "[🃏] Archetypal Light | tarot-art",
       "item": {
         "id": "pkg:tarot-art",
         "name": "tarot-art",
-        "label": "[⊙] Tarot Art | tarot-art",
+        "label": "[🃏] Archetypal Light | tarot-art",
         "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/tarot-art",
         "packageName": "tarot-art",
         "version": "1.0.0",
         "description": "",
         "type": "library",
-        "alchemical": "Tarot Art",
-        "symbol": "⊙"
+        "alchemical": "Archetypal Light",
+        "symbol": "🃏"
       }
     },
     {

@@ -191,6 +191,11 @@ class SystemLabeler {
   }
 
   getAlchemicalName(packageName, type) {
+    // Expanded Thematic Name Mapping - Alchemy, Hermetica, Visionary Art, Jung, William James, Timothy Leary, Paracelsus, Neoplatonism, Golden Dawn, Thelema, Mystic Christianity
+    
+    // Load expanded themes
+    const expandedThemes = this.loadExpandedThemes();
+    
     // Alchemical/Hermetic Name Mapping
     const ALCHEMICAL_NAMES = {
       // Elements & Engines
@@ -200,6 +205,34 @@ class SystemLabeler {
       'science-engine': { alchemical: 'Aer', element: 'Air', planet: 'Mercury', metal: 'Mercury', symbol: '☿' },
       'game-design': { alchemical: 'Terra', element: 'Earth', planet: 'Saturn', metal: 'Lead', symbol: '♄' },
       'game-engine': { alchemical: 'Terra Ludus', element: 'Earth', planet: 'Saturn', metal: 'Lead', symbol: '♄' },
+      
+      // Games - Expanded Themes
+      'circuit-craft-creative-game': { alchemical: 'Eight Circuit Model', theme: 'Timothy Leary', symbol: '⚡' },
+      'circuitum99-arcanae-cyoa': { alchemical: 'Individuation', theme: 'Jung', symbol: '🔄' },
+      'gem-tower-engine': { alchemical: 'Tree of Life', theme: 'Golden Dawn', symbol: '🌳' },
+      'tarot-arena': { alchemical: 'Archetypal Journey', theme: 'Jung', symbol: '🃏' },
+      'mystical-treasure-hunt': { alchemical: 'Vision Quest', theme: 'Visionary Art', symbol: '🔍' },
+      'stone-grimoire': { alchemical: 'Emerald Tablet', theme: 'Hermetica', symbol: '💎' },
+      'liber-arcanae': { alchemical: 'Corpus Hermeticum', theme: 'Hermetica', symbol: '📜' },
+      'living-library': { alchemical: 'Bibliotheca Hermetica', theme: 'Hermetica', symbol: '📚' },
+      'cosmogenesis-visualizer': { alchemical: 'Emanation', theme: 'Neoplatonism', symbol: '✨' },
+      'cathedral-of-circuits': { alchemical: 'The One', theme: 'Neoplatonism', symbol: '⊙' },
+      
+      // Shaders - Expanded Themes
+      'visionary-design': { alchemical: 'Alex Grey', theme: 'Visionary Art', symbol: '🎨' },
+      'sacred-geometry': { alchemical: 'Flower of Life', theme: 'Visionary Art', symbol: '◊' },
+      'fusion-kink': { alchemical: 'Rebis', theme: 'Alchemy', symbol: '⚥' },
+      'tarot-art': { alchemical: 'Archetypal Light', theme: 'Jung', symbol: '🃏' },
+      
+      // Libraries - Expanded Themes
+      'cathedral-design-library': { alchemical: 'Bibliotheca Hermetica', theme: 'Hermetica', symbol: '📚' },
+      'cathedral-lightweight-library': { alchemical: 'Ars Magna', theme: 'Alchemy', symbol: '📖' },
+      'stone-grimoire-library': { alchemical: 'Tabula Smaragdina', theme: 'Alchemy', symbol: '💎' },
+      'liber-arcanae-core': { alchemical: 'Corpus Hermeticum', theme: 'Hermetica', symbol: '📜' },
+      'codex-144-99': { alchemical: 'Emerald Tablet', theme: 'Hermetica', symbol: '💎' },
+      'unified-codex': { alchemical: 'Monad', theme: 'Neoplatonism', symbol: '⊙' },
+      'sacred-mathematics': { alchemical: 'Golden Ratio', theme: 'Visionary Art', symbol: '∞' },
+      'design-mathematics': { alchemical: 'Divine Proportion', theme: 'Visionary Art', symbol: '◊' },
       
       // Alchemical Processes
       'error-fixer': { alchemical: 'Solve', process: 'Dissolution', symbol: '▽' },
@@ -293,6 +326,18 @@ class SystemLabeler {
     };
   }
 
+  loadExpandedThemes() {
+    const themesPath = path.join(rootDir, 'tools', 'expanded-thematic-names.json');
+    if (fs.existsSync(themesPath)) {
+      try {
+        return JSON.parse(fs.readFileSync(themesPath, 'utf8'));
+      } catch (e) {
+        // Return empty if can't load
+      }
+    }
+    return { themes: {}, mappings: {} };
+  }
+
   detectPackageType(pkgPath, pkg) {
     // Check for Rust
     if (fs.existsSync(path.join(pkgPath, 'Cargo.toml'))) return 'rust';
@@ -304,6 +349,9 @@ class SystemLabeler {
     if (pkg.name?.includes('engine')) return 'engine';
     if (pkg.name?.includes('core')) return 'core';
     if (pkg.name?.includes('bridge')) return 'bridge';
+    if (pkg.name?.includes('game') || pkgPath.includes('game')) return 'game';
+    if (pkg.name?.includes('shader') || pkgPath.includes('shader')) return 'shader';
+    if (pkg.name?.includes('library') || pkgPath.includes('library')) return 'library';
     
     return 'library';
   }

@@ -1,0 +1,467 @@
+{
+  "themes": {
+    "alchemy": {
+      "games": [
+        "Magnum Opus",
+        "Philosopher's Stone",
+        "Rebis",
+        "Athanor",
+        "Alembic",
+        "Retort",
+        "Calcination",
+        "Sublimation",
+        "Distillation",
+        "Coagulation",
+        "Fermentation",
+        "Multiplication",
+        "Projection",
+        "Elixir Vitae",
+        "Lapis Philosophorum"
+      ],
+      "shaders": [
+        "Ignis",
+        "Aqua",
+        "Aer",
+        "Terra",
+        "Quintessence",
+        "Mercurius",
+        "Sulphur",
+        "Sal",
+        "Prima Materia",
+        "Materia Prima",
+        "Azoth",
+        "Orichalcum",
+        "Electrum",
+        "Cinnabar",
+        "Vermilion"
+      ],
+      "libraries": [
+        "Ars Magna",
+        "Tabula Smaragdina",
+        "Rosarium Philosophorum",
+        "Aurora Consurgens",
+        "Mutus Liber",
+        "Splendor Solis",
+        "Atalanta Fugiens",
+        "Turba Philosophorum",
+        "Liber Secretus",
+        "Clavis Artis"
+      ]
+    },
+    "hermetica": {
+      "games": [
+        "Emerald Tablet",
+        "Corpus Hermeticum",
+        "Divine Pymander",
+        "Asclepius",
+        "Poimandres",
+        "Kybalion",
+        "Hermetic Axioms",
+        "Seven Principles",
+        "As Above So Below",
+        "Thrice Great Hermes"
+      ],
+      "shaders": [
+        "Hermetic Light",
+        "Divine Fire",
+        "Cosmic Water",
+        "Ethereal Air",
+        "Sacred Earth",
+        "Hermetic Gold",
+        "Silver Tincture",
+        "Mercurial Essence",
+        "Solar Ray",
+        "Lunar Reflection"
+      ],
+      "libraries": [
+        "Bibliotheca Hermetica",
+        "Hermetic Codex",
+        "Emerald Library",
+        "Thoth's Archive",
+        "Hermetic Wisdom",
+        "Divine Knowledge",
+        "Secret Doctrine",
+        "Hermetic Tradition",
+        "Ancient Wisdom",
+        "Sacred Texts"
+      ]
+    },
+    "visionary_art": {
+      "games": [
+        "Vision Quest",
+        "Sacred Geometry",
+        "Mystic Vision",
+        "Divine Proportion",
+        "Golden Ratio",
+        "Fibonacci Spiral",
+        "Vesica Piscis",
+        "Flower of Life",
+        "Seed of Life",
+        "Metatron's Cube"
+      ],
+      "shaders": [
+        "Alex Grey",
+        "Hilma af Klint",
+        "Wassily Kandinsky",
+        "Agnes Pelton",
+        "Emma Kunz",
+        "Rudolf Steiner",
+        "Johfra Bosschart",
+        "Ernst Fuchs",
+        "Robert Venosa",
+        "Martina Hoffmann"
+      ],
+      "libraries": [
+        "Visionary Archive",
+        "Sacred Art Collection",
+        "Mystical Imagery",
+        "Transcendent Forms",
+        "Divine Patterns",
+        "Cosmic Aesthetics",
+        "Spiritual Art",
+        "Mystic Visions",
+        "Sacred Geometry Library",
+        "Visionary Masters"
+      ]
+    },
+    "jung": {
+      "games": [
+        "Individuation",
+        "Collective Unconscious",
+        "Archetypal Journey",
+        "Shadow Work",
+        "Anima Animus",
+        "Persona",
+        "Self",
+        "Ego",
+        "Synchronicity",
+        "Active Imagination"
+      ],
+      "shaders": [
+        "Archetypal Light",
+        "Shadow Depth",
+        "Anima Blue",
+        "Animus Red",
+        "Collective Gold",
+        "Personal Silver",
+        "Ego White",
+        "Self Rainbow",
+        "Synchronicity Flash",
+        "Mandalic Pattern"
+      ],
+      "libraries": [
+        "Red Book",
+        "Archetypal Library",
+        "Collective Archive",
+        "Jungian Codex",
+        "Symbolic Wisdom",
+        "Depth Psychology",
+        "Analytical Psychology",
+        "Jungian Studies",
+        "Archetypal Patterns",
+        "Psychological Types"
+      ]
+    },
+    "william_james": {
+      "games": [
+        "Stream of Consciousness",
+        "Varieties of Experience",
+        "Pragmatic Truth",
+        "Radical Empiricism",
+        "Will to Believe",
+        "Pluralistic Universe",
+        "Pure Experience",
+        "Pragmatic Method",
+        "Religious Experience",
+        "Mystical States"
+      ],
+      "shaders": [
+        "Stream Flow",
+        "Pure Light",
+        "Empirical Clarity",
+        "Pragmatic Glow",
+        "Radical Brightness",
+        "Experience Spectrum",
+        "Consciousness Wave",
+        "Mystical Haze",
+        "Religious Gold",
+        "Pluralistic Rainbow"
+      ],
+      "libraries": [
+        "Pragmatic Library",
+        "Empirical Archive",
+        "Experience Collection",
+        "Varieties Archive",
+        "Jamesian Wisdom",
+        "Pragmatic Philosophy",
+        "Radical Empiricism",
+        "Religious Studies",
+        "Mystical Texts",
+        "Consciousness Library"
+      ]
+    },
+    "timothy_leary": {
+      "games": [
+        "Eight Circuit Model",
+        "Neurogenetic Evolution",
+        "SMI²LE",
+        "Space Migration",
+        "Intelligence Increase",
+        "Life Extension",
+        "Set and Setting",
+        "Turn On Tune In Drop Out",
+        "Psychedelic Experience",
+        "Neurotransmitter Journey"
+      ],
+      "shaders": [
+        "Circuit One Red",
+        "Circuit Two Orange",
+        "Circuit Three Yellow",
+        "Circuit Four Green",
+        "Circuit Five Blue",
+        "Circuit Six Indigo",
+        "Circuit Seven Violet",
+        "Circuit Eight Clear",
+        "Psychedelic Spectrum",
+        "Neurogenetic Glow"
+      ],
+      "libraries": [
+        "Eight Circuit Archive",
+        "Leary Collection",
+        "Psychedelic Library",
+        "Neurogenetic Codex",
+        "SMI²LE Archive",
+        "Evolutionary Texts",
+        "Consciousness Expansion",
+        "Psychedelic Philosophy",
+        "Neurotransmitter Studies",
+        "Evolutionary Psychology"
+      ]
+    },
+    "paracelsus": {
+      "games": [
+        "Three Principles",
+        "Sulphur Mercury Salt",
+        "Arcanum",
+        "Archaeus",
+        "Iliaster",
+        "Tincture",
+        "Elixir",
+        "Quintessence",
+        "Spagyric Art",
+        "Alchemical Medicine"
+      ],
+      "shaders": [
+        "Sulphur Yellow",
+        "Mercury Silver",
+        "Salt White",
+        "Arcanum Gold",
+        "Archaeus Green",
+        "Iliaster Blue",
+        "Tincture Red",
+        "Elixir Purple",
+        "Quintessence Rainbow",
+        "Spagyric Essence"
+      ],
+      "libraries": [
+        "Paracelsian Archive",
+        "Three Principles Library",
+        "Spagyric Collection",
+        "Alchemical Medicine",
+        "Paracelsus Codex",
+        "Arcanum Library",
+        "Medical Alchemy",
+        "Hermetic Medicine",
+        "Iatrochemistry",
+        "Paracelsian Wisdom"
+      ]
+    },
+    "neoplatonism": {
+      "games": [
+        "The One",
+        "Emanation",
+        "Return",
+        "Nous",
+        "World Soul",
+        "Demiurge",
+        "Henosis",
+        "Theurgy",
+        "Contemplation",
+        "Divine Ascent"
+      ],
+      "shaders": [
+        "The One Light",
+        "Emanation Flow",
+        "Nous Gold",
+        "World Soul Green",
+        "Demiurge Blue",
+        "Henosis White",
+        "Theurgic Purple",
+        "Contemplative Silver",
+        "Divine Ascent Rainbow",
+        "Neoplatonic Essence"
+      ],
+      "libraries": [
+        "Neoplatonic Archive",
+        "Plotinian Library",
+        "Emanation Codex",
+        "The One Collection",
+        "Nous Archive",
+        "Theurgy Library",
+        "Contemplative Texts",
+        "Neoplatonic Philosophy",
+        "Divine Ascent",
+        "Henosis Studies"
+      ]
+    },
+    "golden_dawn": {
+      "games": [
+        "Tree of Life",
+        "Sephiroth",
+        "Paths of Wisdom",
+        "Qabalah",
+        "Ceremonial Magic",
+        "Invocation",
+        "Evocation",
+        "Banishing",
+        "Consecration",
+        "Adeptship"
+      ],
+      "shaders": [
+        "Kether White",
+        "Chokmah Blue",
+        "Binah Black",
+        "Chesed Blue",
+        "Geburah Red",
+        "Tiphereth Gold",
+        "Netzach Green",
+        "Hod Orange",
+        "Yesod Violet",
+        "Malkuth Brown"
+      ],
+      "libraries": [
+        "Golden Dawn Archive",
+        "Qabalistic Library",
+        "Tree of Life Codex",
+        "Sephirotic Collection",
+        "Ceremonial Magic",
+        "Hermetic Order",
+        "Golden Dawn Texts",
+        "Qabalah Studies",
+        "Magical Library",
+        "Hermetic Archive"
+      ]
+    },
+    "thelema": {
+      "games": [
+        "Do What Thou Wilt",
+        "Aeon of Horus",
+        "True Will",
+        "Great Work",
+        "Knowledge and Conversation",
+        "Abrahadabra",
+        "93 Current",
+        "Hadit Nuit",
+        "Ra-Hoor-Khuit",
+        "Babalon"
+      ],
+      "shaders": [
+        "Horus Red",
+        "Nuit Blue",
+        "Hadit Black",
+        "Ra-Hoor-Khuit Gold",
+        "Babalon Scarlet",
+        "Thelemic Fire",
+        "93 Current",
+        "True Will Light",
+        "Great Work Rainbow",
+        "Abrahadabra Flash"
+      ],
+      "libraries": [
+        "Thelemic Archive",
+        "Crowley Collection",
+        "Book of the Law",
+        "Thelemic Library",
+        "Aeon of Horus",
+        "True Will Archive",
+        "Thelemic Philosophy",
+        "Crowley Codex",
+        "Thelemic Texts",
+        "93 Current Library"
+      ]
+    },
+    "mystic_christianity": {
+      "games": [
+        "Divine Union",
+        "Gnosis",
+        "Apophatic Theology",
+        "Via Negativa",
+        "Cloud of Unknowing",
+        "Dark Night",
+        "Spiritual Marriage",
+        "Deification",
+        "Theosis",
+        "Mystical Ascent"
+      ],
+      "shaders": [
+        "Divine Light",
+        "Gnostic Gold",
+        "Apophatic Dark",
+        "Cloud Silver",
+        "Dark Night Blue",
+        "Spiritual White",
+        "Theosis Rainbow",
+        "Mystical Purple",
+        "Divine Union Clear",
+        "Sacred Heart Red"
+      ],
+      "libraries": [
+        "Mystic Christian Archive",
+        "Gnostic Library",
+        "Cloud of Unknowing",
+        "Mystical Theology",
+        "Divine Union Texts",
+        "Apophatic Collection",
+        "Theosis Studies",
+        "Mystic Christianity",
+        "Spiritual Library",
+        "Sacred Texts"
+      ]
+    }
+  },
+  "mappings": {
+    "game": {
+      "circuit-craft-creative-game": "Eight Circuit Model",
+      "circuitum99-arcanae-cyoa": "Individuation",
+      "gem-tower-engine": "Tree of Life",
+      "tarot-arena": "Archetypal Journey",
+      "mystical-treasure-hunt": "Vision Quest",
+      "stone-grimoire": "Emerald Tablet",
+      "liber-arcanae": "Corpus Hermeticum",
+      "living-library": "Bibliotheca Hermetica",
+      "cosmogenesis-visualizer": "Emanation",
+      "cathedral-of-circuits": "The One"
+    },
+    "shader": {
+      "art-engine": "Ignis",
+      "music-engine": "Aqua",
+      "science-engine": "Aer",
+      "game-design": "Terra",
+      "visionary-design": "Alex Grey",
+      "sacred-geometry": "Flower of Life",
+      "fusion-kink": "Rebis",
+      "tarot-art": "Archetypal Light"
+    },
+    "library": {
+      "cathedral-design-library": "Bibliotheca Hermetica",
+      "cathedral-lightweight-library": "Ars Magna",
+      "stone-grimoire-library": "Tabula Smaragdina",
+      "liber-arcanae-core": "Corpus Hermeticum",
+      "codex-144-99": "Emerald Tablet",
+      "unified-codex": "Monad",
+      "sacred-mathematics": "Golden Ratio",
+      "design-mathematics": "Divine Proportion"
+    }
+  }
+}
+

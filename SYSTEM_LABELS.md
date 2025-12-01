@@ -1,6 +1,6 @@
 # 🏷️ System Labels - All Systems, Packages, and Codex
 
-Generated: 11/30/2025, 9:18:58 PM
+Generated: 11/30/2025, 9:24:20 PM
 
 ## Summary
 
@@ -249,16 +249,16 @@ Generated: 11/30/2025, 9:18:58 PM
 - **Version**: 1.0.0
 - **Path**: `packages/character-alchemical-art`
 
-### [⊙] Circuit Craft Creative Game | @cathedral/circuit-craft-creative-game
+### [⚡] Eight Circuit Model | @cathedral/circuit-craft-creative-game
 
 - **ID**: `pkg:circuit-craft-creative-game`
 - **Name**: @cathedral/circuit-craft-creative-game
-- **Type**: library
+- **Type**: game
 - **Version**: 1.0.0
 - **Description**: CircuitCraft: Non-Linear Creative Construction Game for High-Tech Creatives
 - **Path**: `packages/circuit-craft-creative-game`
 
-### [⊙] Circuitum99 Arcanae Cyoa | @cathedral/circuitum99-arcanae-cyoa
+### [🔄] Individuation | @cathedral/circuitum99-arcanae-cyoa
 
 - **ID**: `pkg:circuitum99-arcanae-cyoa`
 - **Name**: @cathedral/circuitum99-arcanae-cyoa
@@ -385,7 +385,7 @@ Generated: 11/30/2025, 9:18:58 PM
 - **Description**: Enterprise Debug System - Comprehensive error tracking and diagnostics for Cathedral ecosystem
 - **Path**: `packages/debug-system-core`
 
-### [⊙] Design Mathematics | design-mathematics-core
+### [◊] Divine Proportion | design-mathematics-core
 
 - **ID**: `pkg:design-mathematics`
 - **Name**: design-mathematics-core
@@ -465,7 +465,7 @@ Generated: 11/30/2025, 9:18:58 PM
 
 - **ID**: `pkg:game-world`
 - **Name**: game-world
-- **Type**: library
+- **Type**: game
 - **Version**: 1.0.0
 - **Path**: `packages/game-world`
 
@@ -888,7 +888,7 @@ Generated: 11/30/2025, 9:18:58 PM
 - **Version**: 1.0.0
 - **Path**: `packages/stone-grimoire-core`
 
-### [⊙] Stone Grimoire Library | stone-grimoire-library-engine
+### [💎] Tabula Smaragdina | stone-grimoire-library-engine
 
 - **ID**: `pkg:stone-grimoire-library-engine`
 - **Name**: stone-grimoire-library-engine
@@ -945,7 +945,7 @@ Generated: 11/30/2025, 9:18:58 PM
 - **Description**: Synthesis Engine - Core synthesis and fusion system for Cathedral projects
 - **Path**: `packages/synthesis-engine`
 
-### [⊙] Tarot Art | tarot-art
+### [🃏] Archetypal Light | tarot-art
 
 - **ID**: `pkg:tarot-art`
 - **Name**: tarot-art
