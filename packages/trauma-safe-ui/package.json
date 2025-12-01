@@ -11,7 +11,7 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T02:24:25.663Z",
+  "consolidatedAt": "2025-12-01T03:14:19.186Z",
   "engines": {
     "node": "*",
     "pnpm": ">=8.0.0"
