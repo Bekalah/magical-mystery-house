@@ -100,6 +100,11 @@ export interface RoomCorrespondences {
   deity?: string;
   iChing?: string;
   soyga?: string;
+  kabbalah?: string;
+  astrology?: string;
+  solfeggio?: string;
+  fractal?: string;
+  fusion_kink?: string;
 }
 
 /**

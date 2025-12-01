@@ -191,12 +191,50 @@ export class Codex144Engine {
   }
 
   private generateCorrespondences(nodeIndex: number, consciousnessLevel: number): Record<string, any> {
+    // Unified correspondences: Soyga, I Ching, Kabbalah, Evolutionary Astrology, Solfeggio, Fractal, Fusion Kink
+    const soygaTable = (nodeIndex % 36) + 1;
+    const ichingHexagram = (nodeIndex % 64) + 1;
+    const kabbalahSephirah = (consciousnessLevel % 10) + 1;
+    const kabbalahPath = consciousnessLevel; // 0-21 maps to 22 Paths
+    const solfeggioFreq = consciousnessLevelToFrequency(consciousnessLevel);
+    const fractalIteration = nodeIndex;
+    const fusionKinkCard = (nodeIndex % 78) + 1;
+    
     return {
       arcana: consciousnessLevel,
       node: nodeIndex,
-      frequency: consciousnessLevelToFrequency(consciousnessLevel),
+      frequency: solfeggioFreq,
       ratio: SACRED_MATH.CATHEDRAL_RATIO,
-      phi: SACRED_MATH.PHI
+      phi: SACRED_MATH.PHI,
+      // Unified system correspondences
+      soyga: {
+        table: soygaTable,
+        planetary: ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn'][nodeIndex % 7]
+      },
+      iching: {
+        hexagram: ichingHexagram,
+        changing_lines: [nodeIndex % 6 + 1]
+      },
+      kabbalah: {
+        sephirah: kabbalahSephirah,
+        path: kabbalahPath
+      },
+      astrology: {
+        planetary_node: ['North Node', 'South Node'][nodeIndex % 2],
+        evolution: consciousnessLevel
+      },
+      solfeggio: {
+        frequency: solfeggioFreq,
+        hz: solfeggioFreq
+      },
+      fractal: {
+        iteration: fractalIteration,
+        pattern: ['Mandelbrot', 'Julia', 'Sacred Geometry'][nodeIndex % 3]
+      },
+      fusion_kink: {
+        card: fusionKinkCard,
+        arcana: consciousnessLevel
+      }
     };
   }
 
