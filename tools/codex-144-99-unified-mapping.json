@@ -1,0 +1,305 @@
+{
+  "codex_144_99": {
+    "description": "Unified mapping of all traditions into Codex 144:99 - 144 nodes, 99 depths/rooms, all connected through psychomagic and angel tech",
+    "structure": {
+      "nodes": 144,
+      "depths": 99,
+      "rooms": 99,
+      "gates": 99,
+      "chapels": 8,
+      "arcana": 22
+    }
+  },
+  "unified_systems": {
+    "soyga": {
+      "description": "Soyga - 36 tables of planetary magic, connected to Codex nodes",
+      "mapping": "Soyga tables map to Codex nodes through planetary correspondences",
+      "psychomagic": "Soyga Ritual Angel",
+      "angel_tech": "Planetary Angel",
+      "codex_connection": "Nodes map to Soyga tables via planetary gates"
+    },
+    "iching": {
+      "description": "I Ching - 64 hexagrams, connected to Codex nodes and depths",
+      "mapping": "64 hexagrams map to Codex nodes (144 nodes = 64 hexagrams × 2.25, with overlap)",
+      "psychomagic": "I Ching Ritual Angel",
+      "angel_tech": "Change Angel",
+      "codex_connection": "Nodes 0-63 map directly to hexagrams, nodes 64-143 map to hexagram combinations"
+    },
+    "kabbalah": {
+      "description": "Kabbalah - Tree of Life (10 Sephiroth + 22 Paths = 32), connected to Codex",
+      "mapping": "10 Sephiroth + 22 Paths = 32, maps to Codex nodes through gates and arcana",
+      "psychomagic": "Qabalistic Ritual Angel",
+      "angel_tech": "Tree of Life Angel",
+      "codex_connection": "Sephiroth map to gates, Paths map to Major Arcana (22), all connect to nodes"
+    },
+    "evolutionary_astrology": {
+      "description": "Evolutionary Astrology - Soul evolution through planetary nodes, connected to Codex",
+      "mapping": "Planetary nodes (North/South) map to Codex nodes through consciousness levels",
+      "psychomagic": "Astrological Ritual Angel",
+      "angel_tech": "Soul Evolution Angel",
+      "codex_connection": "Planetary nodes map to consciousness levels (0-21), which map to nodes"
+    },
+    "solfeggio": {
+      "description": "Solfeggio Frequencies - 9 sacred frequencies, connected to Codex consciousness levels",
+      "mapping": "9 Solfeggio frequencies map to consciousness levels and depths",
+      "psychomagic": "Frequency Ritual Angel",
+      "angel_tech": "Sound Angel",
+      "codex_connection": "Frequencies map to consciousness levels (0-21), which map to nodes and depths"
+    },
+    "fractal_math": {
+      "description": "Fractal Mathematics - Mandelbrot, Julia sets, connected to Codex sacred geometry",
+      "mapping": "Fractal patterns map to Codex nodes through sacred geometry ratios",
+      "psychomagic": "Fractal Ritual Angel",
+      "angel_tech": "Pattern Angel",
+      "codex_connection": "Fractal iterations map to node progressions, depths map to fractal layers"
+    },
+    "fusion_kink": {
+      "description": "Fusion Kink - 78-card tarot system mirroring Codex 144:99",
+      "mapping": "78 cards map to Codex nodes through arcana and correspondences",
+      "psychomagic": "Fusion Ritual Angel",
+      "angel_tech": "Rebis Angel",
+      "codex_connection": "Major Arcana (22) + Minor Arcana (56) = 78, maps to nodes and depths"
+    }
+  },
+  "cross_engineered_mapping": {
+    "node_to_all_systems": {
+      "pattern": "Each Codex node (0-143) connects to:",
+      "connections": [
+        "Soyga table (via planetary gate)",
+        "I Ching hexagram (direct or combination)",
+        "Kabbalah Sephirah/Path (via gate/arcana)",
+        "Evolutionary Astrology node (via consciousness level)",
+        "Solfeggio frequency (via consciousness level)",
+        "Fractal iteration (via sacred geometry)",
+        "Fusion Kink card (via arcana/correspondence)"
+      ]
+    },
+    "depth_to_all_systems": {
+      "pattern": "Each Codex depth (0-98) connects to:",
+      "connections": [
+        "Soyga planetary cycle",
+        "I Ching changing lines",
+        "Kabbalah depth pathworking",
+        "Evolutionary Astrology soul evolution",
+        "Solfeggio frequency layer",
+        "Fractal depth layer",
+        "Fusion Kink depth reading"
+      ]
+    },
+    "room_to_all_systems": {
+      "pattern": "Each Mystery House room (1-99) connects to:",
+      "connections": [
+        "Soyga ritual space",
+        "I Ching consultation chamber",
+        "Kabbalah pathworking room",
+        "Evolutionary Astrology chart room",
+        "Solfeggio frequency chamber",
+        "Fractal visualization space",
+        "Fusion Kink tarot reading room"
+      ]
+    }
+  },
+  "psychomagic_angel_tech_names": {
+    "pattern": "{System} Ritual Angel",
+    "examples": {
+      "soyga": "Soyga Ritual Angel (Planetary magic through psychomagic angel tech)",
+      "iching": "I Ching Ritual Angel (Change through psychomagic angel tech)",
+      "kabbalah": "Qabalistic Ritual Angel (Tree of Life through psychomagic angel tech)",
+      "evolutionary_astrology": "Astrological Ritual Angel (Soul evolution through psychomagic angel tech)",
+      "solfeggio": "Frequency Ritual Angel (Sacred sound through psychomagic angel tech)",
+      "fractal_math": "Fractal Ritual Angel (Pattern through psychomagic angel tech)",
+      "fusion_kink": "Fusion Ritual Angel (Rebis through psychomagic angel tech)"
+    }
+  },
+  "mystery_house_expansion": {
+    "puzzles": {
+      "soyga_puzzles": {
+        "type": "Soyga Planetary Puzzle",
+        "description": "Solve planetary magic tables to unlock room features",
+        "canon": "Soyga tables from John Dee's magical system"
+      },
+      "iching_puzzles": {
+        "type": "I Ching Hexagram Puzzle",
+        "description": "Consult I Ching hexagrams to navigate room challenges",
+        "canon": "I Ching - Book of Changes, 64 hexagrams"
+      },
+      "kabbalah_puzzles": {
+        "type": "Tree of Life Pathworking Puzzle",
+        "description": "Pathwork through Sephiroth and Paths to unlock rooms",
+        "canon": "Kabbalah - Tree of Life, Sephiroth, Paths of Wisdom"
+      },
+      "astrology_puzzles": {
+        "type": "Evolutionary Astrology Puzzle",
+        "description": "Navigate soul evolution through planetary nodes",
+        "canon": "Evolutionary Astrology - Jeffrey Wolf Green, Soul evolution"
+      },
+      "solfeggio_puzzles": {
+        "type": "Solfeggio Frequency Puzzle",
+        "description": "Tune to sacred frequencies to unlock room features",
+        "canon": "Solfeggio Frequencies - 9 sacred tones (174, 285, 396, 417, 528, 639, 741, 852, 963 Hz)"
+      },
+      "fractal_puzzles": {
+        "type": "Fractal Mathematics Puzzle",
+        "description": "Navigate fractal patterns to unlock room geometry",
+        "canon": "Fractal Mathematics - Mandelbrot set, Julia sets, sacred geometry"
+      },
+      "fusion_kink_puzzles": {
+        "type": "Fusion Kink Tarot Puzzle",
+        "description": "Read tarot cards to unlock room correspondences",
+        "canon": "Fusion Kink - 78-card tarot system mirroring Codex 144:99"
+      }
+    },
+    "art": {
+      "soyga_art": {
+        "tradition": "Planetary Magic Art",
+        "masters": ["John Dee", "Edward Kelley", "Planetary talismans"],
+        "techniques": ["Planetary symbols", "Magic squares", "Talismanic art"]
+      },
+      "iching_art": {
+        "tradition": "I Ching Visual Art",
+        "masters": ["Chinese calligraphy", "Hexagram visualization", "Change art"],
+        "techniques": ["Hexagram patterns", "Yin-Yang balance", "Change visualization"]
+      },
+      "kabbalah_art": {
+        "tradition": "Qabalistic Art",
+        "masters": ["Tree of Life art", "Sephirotic visualization", "Path art"],
+        "techniques": ["Tree of Life diagrams", "Sephirotic colors", "Path visualization"]
+      },
+      "astrology_art": {
+        "tradition": "Evolutionary Astrology Art",
+        "masters": ["Astrological charts", "Soul evolution art", "Planetary art"],
+        "techniques": ["Chart visualization", "Soul evolution art", "Planetary symbols"]
+      },
+      "solfeggio_art": {
+        "tradition": "Solfeggio Frequency Art",
+        "masters": ["Cymatics art", "Sound visualization", "Frequency art"],
+        "techniques": ["Cymatic patterns", "Sound geometry", "Frequency visualization"]
+      },
+      "fractal_art": {
+        "tradition": "Fractal Mathematics Art",
+        "masters": ["Mandelbrot art", "Julia set art", "Fractal geometry"],
+        "techniques": ["Fractal rendering", "Sacred geometry", "Pattern art"]
+      },
+      "fusion_kink_art": {
+        "tradition": "Fusion Kink Tarot Art",
+        "masters": ["Tarot art", "Arcana visualization", "Rebis art"],
+        "techniques": ["Tarot card art", "Arcana symbols", "Unified opposites art"]
+      }
+    },
+    "science": {
+      "soyga_science": {
+        "tradition": "Planetary Magic Science",
+        "scientists": ["John Dee", "Edward Kelley", "Planetary correspondences"],
+        "discoveries": ["Planetary magic tables", "Soyga system", "Planetary correspondences"]
+      },
+      "iching_science": {
+        "tradition": "I Ching Mathematics",
+        "scientists": ["Ancient Chinese mathematicians", "Binary system", "Change mathematics"],
+        "discoveries": ["Binary system (pre-computer)", "64 hexagram system", "Change mathematics"]
+      },
+      "kabbalah_science": {
+        "tradition": "Qabalistic Mathematics",
+        "scientists": ["Kabbalistic mathematicians", "Gematria", "Tree of Life math"],
+        "discoveries": ["Gematria", "Tree of Life geometry", "Sacred mathematics"]
+      },
+      "astrology_science": {
+        "tradition": "Evolutionary Astrology Science",
+        "scientists": ["Jeffrey Wolf Green", "Evolutionary astrologers", "Soul evolution science"],
+        "discoveries": ["Soul evolution", "Planetary nodes", "Evolutionary cycles"]
+      },
+      "solfeggio_science": {
+        "tradition": "Solfeggio Frequency Science",
+        "scientists": ["Sound scientists", "Frequency researchers", "Cymatics"],
+        "discoveries": ["Solfeggio frequencies", "Cymatics", "Sound healing"]
+      },
+      "fractal_science": {
+        "tradition": "Fractal Mathematics Science",
+        "scientists": ["Benoit Mandelbrot", "Fractal mathematicians", "Chaos theory"],
+        "discoveries": ["Mandelbrot set", "Julia sets", "Fractal geometry", "Chaos theory"]
+      },
+      "fusion_kink_science": {
+        "tradition": "Fusion Kink Mathematics",
+        "scientists": ["Tarot mathematicians", "Probability theorists", "Correspondence science"],
+        "discoveries": ["78-card system", "Tarot mathematics", "Correspondence science"]
+      }
+    },
+    "canon": {
+      "soyga_canon": {
+        "sources": [
+          "Soyga tables (John Dee)",
+          "Planetary magic correspondences",
+          "Magic square systems"
+        ]
+      },
+      "iching_canon": {
+        "sources": [
+          "I Ching - Book of Changes",
+          "64 hexagrams",
+          "Yin-Yang philosophy",
+          "Change mathematics"
+        ]
+      },
+      "kabbalah_canon": {
+        "sources": [
+          "Tree of Life (Kabbalah)",
+          "10 Sephiroth",
+          "22 Paths of Wisdom",
+          "Gematria",
+          "Qabalistic correspondences"
+        ]
+      },
+      "astrology_canon": {
+        "sources": [
+          "Evolutionary Astrology (Jeffrey Wolf Green)",
+          "Soul evolution",
+          "Planetary nodes (North/South)",
+          "Evolutionary cycles"
+        ]
+      },
+      "solfeggio_canon": {
+        "sources": [
+          "Solfeggio Frequencies",
+          "9 sacred tones: 174, 285, 396, 417, 528, 639, 741, 852, 963 Hz",
+          "Cymatics",
+          "Sound healing"
+        ]
+      },
+      "fractal_canon": {
+        "sources": [
+          "Mandelbrot set (Benoit Mandelbrot)",
+          "Julia sets",
+          "Fractal geometry",
+          "Chaos theory",
+          "Sacred geometry"
+        ]
+      },
+      "fusion_kink_canon": {
+        "sources": [
+          "Fusion Kink - 78-card tarot system",
+          "Major Arcana (22)",
+          "Minor Arcana (56)",
+          "Codex 144:99 mirroring",
+          "Rebis (unified opposites)"
+        ]
+      }
+    }
+  },
+  "unified_room_structure": {
+    "pattern": "Each of 99 rooms contains:",
+    "elements": [
+      "Soyga puzzle (planetary magic)",
+      "I Ching puzzle (hexagram consultation)",
+      "Kabbalah puzzle (Tree of Life pathworking)",
+      "Evolutionary Astrology puzzle (soul evolution)",
+      "Solfeggio puzzle (frequency tuning)",
+      "Fractal puzzle (pattern navigation)",
+      "Fusion Kink puzzle (tarot reading)",
+      "Art from all traditions",
+      "Science from all traditions",
+      "Real canon from all traditions",
+      "Psychomagic ritual connection",
+      "Angel tech connection"
+    ]
+  }
+}
+
