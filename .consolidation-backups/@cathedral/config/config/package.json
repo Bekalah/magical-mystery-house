@@ -14,8 +14,8 @@
     "./tsconfig": "./tsconfig.base.json"
   },
   "engines": {
-    "node": "25.0.0",
-    "pnpm": ">=8.0.0"
+    "node": ">=20.18.0",
+    "pnpm": ">=8.15.0"
   },
   "scripts": {
     "build": "tsc",
@@ -29,26 +29,27 @@
     "tsconfig.base.json"
   ],
   "dependencies": {
-    "@cathedral/types": "workspace:*",
+    "@cathedral/types": "workspace:*"
+  },
+  "devDependencies": {
     "typescript": "^5.6.3"
   },
-  "devDependencies": {},
-  "author": "Cathedral Master Creative Intelligence Team",
+  "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
   "license": "CC0-1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/config"
   },
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:53.398Z",
-  "packageManager": "pnpm@8.0.0",
+  "homepage": "https://bekalah.github.io/cathedral/packages/config",
+  "packageManager": "pnpm@8.15.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "alchemical": {
     "name": "Config",
     "symbol": "⊙",
     "label": "⊙ Config (@cathedral/config)"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

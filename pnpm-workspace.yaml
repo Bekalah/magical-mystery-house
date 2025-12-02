@@ -1,17 +1,7 @@
 packages:
-  # Local packages in this workspace
+  # Local packages in this workspace only
   - 'packages/*'
   - 'apps/*'
-  - 'tools/*'
   
-  # Unified workspaces - all cathedral workspaces as one monorepo
-  - '../cathedral-real/packages/*'
-  - '../cathedral-real/apps/*'
-  - '../cathedral-fixed-clean/packages/*'
-  - '../cathedral-fixed-clean/apps/*'
-  - '../Roo-Code/packages/*'
-  - '../Roo-Code/apps/*'
-  - '../cosmogenesis-engine/packages/*'
-  - '../cosmogenesis-engine/apps/*'
-  - '../CathedralOfCircuits/packages/*'
-  - '../CathedralOfCircuits/apps/*'
+  # Note: Other workspaces are integrated via workspace integrator, not pnpm workspace
+  # to avoid duplicate package conflicts

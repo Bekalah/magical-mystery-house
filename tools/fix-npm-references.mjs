@@ -34,7 +34,7 @@ class NpmReferenceFixer {
       await this.fixFile(file);
     }
 
-    // Remove package-lock.json files
+    // Remove pnpm-lock.yaml files
     this.removePackageLockFiles();
 
     console.log('═'.repeat(80));
@@ -75,9 +75,9 @@ class NpmReferenceFixer {
             try {
               const content = fs.readFileSync(filePath, 'utf-8');
               if (content.includes('npm ') || content.includes('npm,') || content.includes('npm.') || 
-                  content.includes('npm install') || content.includes('npm run') || 
-                  content.includes('npm ci') || content.includes('npm audit') ||
-                  content.includes('package-lock.json') || content.includes('npm@')) {
+                  content.includes('pnpm install') || content.includes('pnpm run') || 
+                  content.includes('pnpm install --frozen-lockfile') || content.includes('npm audit') ||
+                  content.includes('pnpm-lock.yaml') || content.includes('pnpm@')) {
                 files.push(filePath);
               }
             } catch (e) {
@@ -100,15 +100,15 @@ class NpmReferenceFixer {
 
       // Replace npm commands with pnpm
       const replacements = [
-        [/npm install/g, 'pnpm install'],
-        [/npm run/g, 'pnpm run'],
-        [/npm ci/g, 'pnpm install --frozen-lockfile'],
+        [/pnpm install/g, 'pnpm install'],
+        [/pnpm run/g, 'pnpm run'],
+        [/pnpm install --frozen-lockfile/g, 'pnpm install --frozen-lockfile'],
         [/npm audit/g, 'pnpm audit'],
-        [/npm publish/g, 'pnpm publish'],
+        [/pnpm publish/g, 'pnpm publish'],
         [/npm link/g, 'pnpm link'],
         [/npm uninstall/g, 'pnpm remove'],
         [/npm update/g, 'pnpm update'],
-        [/npm@/g, 'pnpm@'],
+        [/pnpm@/g, 'pnpm@'],
         [/package-lock\.json/g, 'pnpm-lock.yaml'],
         [/npm /g, 'pnpm '],
         [/npm,/g, 'pnpm,'],
@@ -138,10 +138,10 @@ class NpmReferenceFixer {
   }
 
   removePackageLockFiles() {
-    console.log('\n🗑️  Removing package-lock.json files...\n');
+    console.log('\n🗑️  Removing pnpm-lock.yaml files...\n');
     
     try {
-      const result = execSync('find . -name "package-lock.json" -type f', {
+      const result = execSync('find . -name "pnpm-lock.yaml" -type f', {
         cwd: BASE_DIR,
         encoding: 'utf-8'
       });
@@ -157,7 +157,7 @@ class NpmReferenceFixer {
         }
       }
     } catch (e) {
-      // No package-lock.json files found
+      // No pnpm-lock.yaml files found
     }
   }
 }

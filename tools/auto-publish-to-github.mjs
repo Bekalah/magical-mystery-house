@@ -153,7 +153,7 @@ async function publishToGitHub(repoName = null) {
              f.endsWith('.gdns') ||
              f.endsWith('.gdnlib') ||
              f === 'package.json' ||
-             f === 'package-lock.json' ||
+             f === 'pnpm-lock.yaml' ||
              f === 'turbo.json' ||
              f === 'Cargo.toml' ||
              f === 'Cargo.lock' ||

@@ -1,26 +1,62 @@
-export * from "./api.js"
-export * from "./cloud.js"
-export * from "./codebase-index.js"
-export * from "./cookie-consent.js"
-export * from "./events.js"
-export * from "./experiment.js"
-export * from "./followup.js"
-export * from "./global-settings.js"
-export * from "./history.js"
-export * from "./ipc.js"
-export * from "./marketplace.js"
-export * from "./mcp.js"
-export * from "./message.js"
-export * from "./mode.js"
-export * from "./model.js"
-export * from "./provider-settings.js"
-export * from "./single-file-read-models.js"
-export * from "./task.js"
-export * from "./todo.js"
-export * from "./telemetry.js"
-export * from "./terminal.js"
-export * from "./tool.js"
-export * from "./type-fu.js"
-export * from "./vscode.js"
+/**
+ * index
+ * 
+ * @package @cathedral/types
+ */
+/**
+ * @cathedral/types
+ * Shared TypeScript type definitions for Cathedral monorepo
+ */
 
-export * from "./providers/index.js"
+// Core Cathedral Types
+export interface CathedralNode {
+  id: string;
+  name: string;
+  type: 'arcana' | 'angel' | 'demon' | 'sacred-geometry' | 'codex';
+  metadata?: Record<string, unknown>;
+}
+
+export interface SacredGeometry {
+  id: string;
+  pattern: 'flower-of-life' | 'metatrons-cube' | 'vesica-piscis' | 'golden-spiral';
+  dimensions: number;
+  coordinates?: number[][];
+}
+
+export interface ArcanaCard {
+  id: string;
+  number: number;
+  name: string;
+  divineAspect?: string;
+  shadowAspect?: string;
+  harmonyForm?: string;
+  keywords: string[];
+  upright: string[];
+  reversed: string[];
+}
+
+export interface CodexEntry {
+  node: number;
+  title: string;
+  description: string;
+  connections: number[];
+  sources?: string[];
+}
+
+// Turbo & Build Types
+export interface BuildConfig {
+  target: string;
+  minify: boolean;
+  sourcemap: boolean;
+}
+
+export interface PackageMetadata {
+  name: string;
+  version: string;
+  role: string;
+  features: string[];
+}
+
+// Export all types
+export type * from './arcana';
+export type * from './codex';

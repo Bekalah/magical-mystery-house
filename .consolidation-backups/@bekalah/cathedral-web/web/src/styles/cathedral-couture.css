@@ -1,0 +1,515 @@
+/**
+ * CATHEDRAL COUTURE
+ * 
+ * NOT flat. NOT boxed. NOT cartoony.
+ * 
+ * Depth. Layers. Dimensionality.
+ * Like walking into a Tiffany's meets sacred temple.
+ * 
+ * ESCAPE THE GRAPHIC DESIGN SCHOOL NIGHTMARE
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* =====================================================
+   RESET EVERYTHING GENERIC
+   ===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Kill the emoji spam, the cartoon borders, the flat boxes */
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/* =====================================================
+   THE PALETTE - NOT GRADIENTS, ACTUAL MATERIALS
+   ===================================================== */
+
+:root {
+  /* Deep blacks with actual depth */
+  --obsidian: #050505;
+  --onyx: #0a0a0a;
+  --graphite: #1a1a1a;
+  --carbon: #242424;
+  
+  /* Warm metallics - like real jewelry */
+  --burnished-gold: #b8860b;
+  --champagne: #f7e7ce;
+  --rose-bronze: #c9a9a6;
+  --platinum-ice: #e8e8e8;
+  
+  /* Ethereal colors - not neon, not flat */
+  --deep-violet: #2d1b4e;
+  --midnight-blue: #0d1b2a;
+  --smoke: rgba(255, 255, 255, 0.03);
+  --mist: rgba(255, 255, 255, 0.06);
+  
+  /* Text that breathes */
+  --text-light: rgba(255, 255, 255, 0.9);
+  --text-soft: rgba(255, 255, 255, 0.6);
+  --text-whisper: rgba(255, 255, 255, 0.4);
+  
+  /* The typography */
+  --font-display: 'Bodoni Moda', serif;
+  --font-body: 'DM Sans', sans-serif;
+  
+  /* Refined spacing - NOT grid boxes */
+  --space-breath: clamp(2rem, 5vw, 6rem);
+  --space-flow: clamp(1rem, 3vw, 3rem);
+}
+
+/* =====================================================
+   THE CANVAS - NOT A PAGE, A SPACE
+   ===================================================== */
+
+html, body {
+  height: 100%;
+  background: var(--obsidian);
+  color: var(--text-light);
+  font-family: var(--font-body);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* =====================================================
+   ATMOSPHERIC LAYERS - DEPTH, NOT FLATNESS
+   ===================================================== */
+
+/* The deep background field */
+.cathedral-atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  
+  /* Radial depth - like looking into space */
+  background: 
+    radial-gradient(ellipse 100% 100% at 50% 100%, 
+      var(--deep-violet) 0%, 
+      transparent 50%),
+    radial-gradient(ellipse 80% 80% at 20% 20%, 
+      var(--midnight-blue) 0%, 
+      transparent 40%),
+    var(--obsidian);
+}
+
+/* Subtle grain for texture - not flat color */
+.cathedral-atmosphere::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.015;
+  mix-blend-mode: overlay;
+}
+
+/* =====================================================
+   TYPOGRAPHY - ELEGANCE, NOT CARTOON
+   ===================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+/* Hero titles - breathtaking, not screaming */
+.title-hero {
+  font-size: clamp(3rem, 8vw, 9rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  color: var(--text-light);
+  text-transform: none; /* NOT ALL CAPS SCREAMING */
+}
+
+.title-hero span {
+  display: block;
+  color: var(--champagne);
+  font-style: italic;
+}
+
+/* Section titles - presence without force */
+.title-section {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 400;
+  color: var(--champagne);
+  margin-bottom: var(--space-flow);
+}
+
+/* Body text - readable, not decorative */
+.text-body {
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  color: var(--text-soft);
+  max-width: 45ch;
+  line-height: 1.7;
+}
+
+/* Small text - whispers, not footnotes */
+.text-whisper {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-whisper);
+}
+
+/* =====================================================
+   INTERACTIONS - TACTILE, NOT BUTTON-Y
+   ===================================================== */
+
+/* The primary action - a gesture, not a box */
+.action-primary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--champagne);
+  border: none;
+  background: none;
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.action-primary::after {
+  content: '';
+  width: 3rem;
+  height: 1px;
+  background: var(--champagne);
+  transition: width 0.4s ease, background 0.4s ease;
+}
+
+.action-primary:hover {
+  color: var(--text-light);
+  transform: translateX(0.5rem);
+}
+
+.action-primary:hover::after {
+  width: 5rem;
+  background: var(--text-light);
+}
+
+/* Secondary action - subtle presence */
+.action-secondary {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-whisper);
+  transition: color 0.4s ease;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid transparent;
+}
+
+.action-secondary:hover {
+  color: var(--text-soft);
+  border-bottom-color: var(--text-soft);
+}
+
+/* =====================================================
+   PANELS - LAYERS OF GLASS, NOT CARDS
+   ===================================================== */
+
+/* Glass panel - depth through transparency */
+.panel-glass {
+  background: var(--smoke);
+  backdrop-filter: blur(40px) saturate(150%);
+  -webkit-backdrop-filter: blur(40px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* Elevated panel - shadow creates depth */
+.panel-elevated {
+  background: var(--graphite);
+  box-shadow: 
+    0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 30px 60px -15px rgba(0, 0, 0, 0.5),
+    0 80px 100px -30px rgba(0, 0, 0, 0.3);
+}
+
+/* Inset panel - recessed into the surface */
+.panel-inset {
+  background: var(--onyx);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.02),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* =====================================================
+   SACRED GEOMETRY - MEANINGFUL, NOT DECORATIVE
+   ===================================================== */
+
+/* The geometry field - subtle backdrop */
+.geometry-field {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.03;
+}
+
+/* Single sacred form */
+.geometry-form {
+  position: absolute;
+  border: 1px solid var(--champagne);
+  border-radius: 50%;
+  opacity: 0;
+  animation: geometry-breathe 12s ease-in-out infinite;
+}
+
+.geometry-form:nth-child(1) {
+  width: 40vw;
+  height: 40vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 0s;
+}
+
+.geometry-form:nth-child(2) {
+  width: 60vw;
+  height: 60vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 2s;
+}
+
+.geometry-form:nth-child(3) {
+  width: 80vw;
+  height: 80vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 4s;
+}
+
+@keyframes geometry-breathe {
+  0%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0.95); }
+  50% { opacity: 0.1; transform: translate(-50%, -50%) scale(1); }
+}
+
+/* =====================================================
+   LAYOUT - ASYMMETRIC BREATHING, NOT GRID BOXES
+   ===================================================== */
+
+.layout-full {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-breath);
+}
+
+.layout-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-breath);
+  min-height: 100vh;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .layout-split {
+    grid-template-columns: 1fr;
+    gap: var(--space-flow);
+  }
+}
+
+/* Offset positioning - NOT centered boxes */
+.position-offset-left {
+  max-width: 40rem;
+  margin-left: 10vw;
+}
+
+.position-offset-right {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: 10vw;
+}
+
+/* =====================================================
+   ANIMATIONS - FLUID, NOT BOUNCY
+   ===================================================== */
+
+/* Fade in with presence */
+@keyframes presence-enter {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.animate-presence {
+  animation: presence-enter 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: var(--delay, 0s);
+  opacity: 0;
+}
+
+/* Stagger children */
+.stagger > * {
+  animation: presence-enter 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+.stagger > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger > *:nth-child(5) { animation-delay: 0.5s; }
+
+/* =====================================================
+   THE CODEX INTERFACE - NOT RPG BUTTONS
+   ===================================================== */
+
+/* Node indicator - subtle, meaningful */
+.node-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-whisper);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.node-indicator::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--burnished-gold);
+  border-radius: 50%;
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+/* Frequency display - data, not decoration */
+.frequency-display {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 400;
+  color: var(--champagne);
+  letter-spacing: -0.02em;
+}
+
+.frequency-display span {
+  font-size: 0.4em;
+  color: var(--text-whisper);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-left: 0.5em;
+}
+
+/* =====================================================
+   NAVIGATION - INVISIBLE UNTIL NEEDED
+   ===================================================== */
+
+.nav-subtle {
+  position: fixed;
+  top: var(--space-flow);
+  right: var(--space-flow);
+  z-index: 100;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-subtle a {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-whisper);
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.nav-subtle a:hover {
+  color: var(--text-light);
+}
+
+/* =====================================================
+   SAFETY - PRESENT BUT NOT ALARMING
+   ===================================================== */
+
+.safety-subtle {
+  position: fixed;
+  bottom: var(--space-flow);
+  left: var(--space-flow);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-whisper);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+}
+
+.safety-subtle::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #2d5a4a;
+  border-radius: 50%;
+}
+
+/* =====================================================
+   RESPONSIVE - FLUID, NOT BREAKPOINT JERKY
+   ===================================================== */
+
+@media (max-width: 768px) {
+  .position-offset-left,
+  .position-offset-right {
+    margin-left: var(--space-flow);
+    margin-right: var(--space-flow);
+    max-width: none;
+  }
+  
+  .nav-subtle {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* =====================================================
+   REDUCED MOTION - RESPECT THE USER
+   ===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+

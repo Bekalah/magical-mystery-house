@@ -65,16 +65,16 @@
 
 ```bash
 # Install dependencies
-ppnpm install
+pppnpm install
 
 # Run development server
-ppnpm run dev
+pppnpm run dev
 
 # Build for production
-ppnpm run build
+pppnpm run build
 
 # Start production server
-ppnpm run start
+pppnpm run start
 ```
 
 ## 📦 Deployment

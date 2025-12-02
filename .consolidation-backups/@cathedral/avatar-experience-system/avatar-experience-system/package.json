@@ -16,7 +16,7 @@
     "experiences"
   ],
   "author": "Rebecca Respawn",
-  "license": "CC0-1.0",
+  "license": "MIT",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -26,19 +26,5 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/avatar-experience-system"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/avatar-experience-system",
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
-  },
-  "dependencies": {},
-  "devDependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:51.990Z",
-  "packageManager": "pnpm@8.0.0",
-  "alchemical": {
-    "name": "Avatar Experience System",
-    "symbol": "⊙",
-    "label": "⊙ Avatar Experience System (@cathedral/avatar-experience-system)"
-  }
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/avatar-experience-system"
 }

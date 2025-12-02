@@ -1,15 +1,4 @@
 /**
- * index
- * 
- * @package @cathedral/tesseract-bridge
- * @license CC0-1.0 - Public Domain
- * 
- * Enhanced with sophisticated improvements - Cycle Active
- * Perfect quality with ornate bridge mechanics
- * 
- * Creative use: Bridge apps, integration apps, data apps, sync apps
- */
-/**
  * Tesseract Bridge - Cross-Repository Integration System
  * Data Synchronization and Communication Protocols
  */
@@ -156,7 +145,7 @@ export class TesseractBridge {
     try {
       // Validate security seal
       if (!this.validateSecuritySeal(endpoint.security)) {
-// console.error('Invalid security seal for endpoint:', endpoint.name);
+        console.error('Invalid security seal for endpoint:', endpoint.name);
         return false;
       }
 
@@ -165,10 +154,10 @@ export class TesseractBridge {
         status: 'active'
       });
 
-// console.log(`✅ Registered bridge endpoint: ${endpoint.name}`);
+      console.log(`✅ Registered bridge endpoint: ${endpoint.name}`);
       return true;
     } catch (error) {
-// console.error('Failed to register endpoint:', error);
+      console.error('Failed to register endpoint:', error);
       return false;
     }
   }
@@ -236,10 +225,10 @@ export class TesseractBridge {
       };
 
       syncOp.status = 'completed';
-// console.log(`✅ Synchronized with ${endpointName}`);
+      console.log(`✅ Synchronized with ${endpointName}`);
     } catch (error) {
       syncOp.status = 'failed';
-// console.error(`❌ Failed to sync with ${endpointName}:`, error);
+      console.error(`❌ Failed to sync with ${endpointName}:`, error);
     }
 
     return syncOp;
@@ -257,7 +246,7 @@ export class TesseractBridge {
    * Emit an event across the bridge
    */
   emitEvent(event: BridgeEvent): void {
-// console.log(`🌉 Bridge Event: ${event.type} from ${event.source}`);
+    console.log(`🌉 Bridge Event: ${event.type} from ${event.source}`);
 
     // Propagate to all registered listeners
     const listeners = this.eventListeners.get(event.type) || [];
@@ -265,7 +254,7 @@ export class TesseractBridge {
       try {
         listener(event);
       } catch (error) {
-// console.error('Error in event listener:', error);
+        console.error('Error in event listener:', error);
       }
     });
 
@@ -280,7 +269,7 @@ export class TesseractBridge {
     for (const [endpointName, endpoint] of this.endpoints) {
       if (endpoint.status === 'active' && !event.propagation.includes(endpointName)) {
         // Simulate event propagation
-// console.log(`📡 Propagating ${event.type} to ${endpointName}`);
+        console.log(`📡 Propagating ${event.type} to ${endpointName}`);
 
         // Add to propagation chain to prevent loops
         event.propagation.push(endpointName);
@@ -492,18 +481,6 @@ export const bridgeSecurityManager = new BridgeSecurityManager();
 
 // Default export for easy importing
 export default TesseractBridge;
-
-// ============================================
-// CREATIVE FLOW BRIDGE EXPORTS
-// ============================================
-
-// Creative Flow Bridge - Seamless mode switching for creative people
-export * from './creative-flow-bridge';
-export { creativeFlowBridge } from './creative-flow-bridge';
-
-// Art-Codex Integration - Visual properties for all 144 nodes
-export * from './art-codex-integration';
-export { artCodexIntegration } from './art-codex-integration';
 
 // Additional interfaces for the system
 export interface BridgeStatus {

@@ -47,17 +47,17 @@ This guide provides comprehensive instructions for developers on how to use the 
 
 ```bash
 # Install dependencies
-ppnpm install
+pnpm install
 
 # Build all packages
-ppnpm run build
+pnpm run build
 
 # Run validations
-ppnpm run validate:sacred-math
-ppnpm run validate:sound-math
-ppnpm run validate:design-math
-ppnpm run validate:game-math
-ppnpm run validate:enterprise
+pnpm run validate:sacred-math
+pnpm run validate:sound-math
+pnpm run validate:design-math
+pnpm run validate:game-math
+pnpm run validate:enterprise
 ```
 
 ## Mathematical Foundations
@@ -251,8 +251,8 @@ Always use the centralized mathematical functions:
 
 Run validations before committing:
 ```bash
-ppnpm run validate:sacred-math
-ppnpm run validate:enterprise
+pnpm run validate:sacred-math
+pnpm run validate:enterprise
 ```
 
 ### 3. Follow TypeScript Strict Mode
@@ -332,19 +332,19 @@ const transformation = primaryGate.storyTransformation;
 
 ```bash
 # Sacred mathematics
-ppnpm run validate:sacred-math
+pnpm run validate:sacred-math
 
 # Sound mathematics
-ppnpm run validate:sound-math
+pnpm run validate:sound-math
 
 # Design mathematics
-ppnpm run validate:design-math
+pnpm run validate:design-math
 
 # Game mathematics
-ppnpm run validate:game-math
+pnpm run validate:game-math
 
 # Enterprise standard
-ppnpm run validate:enterprise
+pnpm run validate:enterprise
 ```
 
 ### Validation Checklist

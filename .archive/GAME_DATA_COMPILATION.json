@@ -1,0 +1,2047 @@
+{
+  "timestamp": "2025-12-01T19:45:12.898Z",
+  "gamePackages": [
+    {
+      "name": "game-world",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-world",
+      "package": {
+        "name": "game-world",
+        "version": "1.0.0",
+        "license": "CC0-1.0",
+        "description": "",
+        "main": "src/index.ts",
+        "types": "src/index.ts",
+        "scripts": {
+          "build": "tsc"
+        },
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-01T19:36:51.339Z",
+        "engines": {
+          "node": "*",
+          "pnpm": ">=8.0.0"
+        },
+        "packageManager": "pnpm@10.23.0",
+        "alchemical": {
+          "name": "Game World",
+          "symbol": "⊙",
+          "label": "⊙ Game World (game-world)"
+        },
+        "publishConfig": {
+          "access": "public"
+        }
+      },
+      "sourceFiles": [
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-world/__tests__/game-world.test.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-world/dist/index.d.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-world/dist/index.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-world/src/index.ts"
+      ],
+      "hasTests": true,
+      "hasDocs": true,
+      "needsImprovement": true
+    },
+    {
+      "name": "game-engine",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine",
+      "package": {
+        "name": "@cathedral/game-engine",
+        "version": "1.0.0",
+        "description": "Guild Wars-style RPG engine with Codex 144:99 integration",
+        "type": "module",
+        "main": "dist/index.js",
+        "types": "dist/index.d.ts",
+        "scripts": {
+          "build": "tsc",
+          "dev": "tsc --watch",
+          "test": "jest",
+          "start": "node dist/index.js"
+        },
+        "dependencies": {
+          "three": "^0.158.0",
+          "typescript": "^5.3.0",
+          "jest": "^29.7.0"
+        },
+        "devDependencies": {
+          "@types/three": "^0.158.0",
+          "@types/node": "^20.10.0"
+        },
+        "engines": {
+          "node": ">=18.0.0",
+          "pnpm": ">=8.0.0"
+        },
+        "license": "CC0-1.0",
+        "consolidated": true,
+        "consolidatedAt": "2025-12-01T19:36:51.112Z",
+        "packageManager": "pnpm@10.23.0",
+        "alchemical": {
+          "name": "Game",
+          "symbol": "⊙",
+          "label": "⊙ Game (@cathedral/game-engine)"
+        }
+      },
+      "sourceFiles": [
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/__tests__/game-engine.test.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/ArcanaeCharacterSystem.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/AudioSynthesisEngine.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/AzureOpenAIIntegration.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/CathedralGameInterface.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/CodexGameEngine.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/CodexNodeManager.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/SacredGeometryRenderer.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/TraumaSafeGameState.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/improvements/abyss-crossing-mechanics.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/index.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/index.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/module.d.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/types.d.ts"
+      ],
+      "hasTests": true,
+      "hasDocs": true,
+      "needsImprovement": false
+    },
+    {
+      "name": "game-design-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core",
+      "package": {
+        "name": "@cathedral/game-design-core",
+        "version": "1.0.0",
+        "description": "Game Design Engine - Interactive Experiences & RPG Mechanics for Cathedral",
+        "main": "dist/index.js",
+        "types": "dist/index.d.ts",
+        "license": "CC0-1.0",
+        "scripts": {
+          "build": "tsc",
+          "test": "echo \"No tests yet\""
+        },
+        "dependencies": {
+          "@cathedral/codex-144-99-core": "workspace:*",
+          "@cathedral/sacred-mathematics-core": "workspace:*",
+          "typescript": "^5.0.0"
+        },
+        "devDependencies": {},
+        "engines": {
+          "node": "*",
+          "pnpm": "*"
+        },
+        "publishConfig": {
+          "access": "public"
+        },
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/rebeccalemke/cathedral-master-deployment.git",
+          "directory": "packages/game-design-core"
+        },
+        "homepage": "https://github.com/rebeccalemke/cathedral-master-deployment/tree/main/packages/game-design-core",
+        "bugs": {
+          "url": "https://github.com/rebeccalemke/cathedral-master-deployment/issues"
+        },
+        "keywords": [
+          "cathedral",
+          "game",
+          "design",
+          "rpg",
+          "interactive",
+          "144-99",
+          "codex",
+          "consciousness",
+          "trauma-aware",
+          "open-source",
+          "free"
+        ],
+        "packageManager": "pnpm@10.23.0",
+        "consolidated": true,
+        "consolidatedAt": "2025-12-01T19:36:50.611Z",
+        "alchemical": {
+          "name": "Terra",
+          "element": "Earth",
+          "planet": "Saturn",
+          "metal": "Lead",
+          "symbol": "♄",
+          "label": "♄ Terra (@cathedral/game-design-core)"
+        }
+      },
+      "sourceFiles": [
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/dist/game-design-core/src/GameDesignEngine.d.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/dist/game-design-core/src/GameDesignEngine.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/dist/game-design-core/src/GameMechanics.d.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/dist/game-design-core/src/GameMechanics.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/dist/game-design-core/src/index.d.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/dist/game-design-core/src/index.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/dist/sacred-mathematics-core/src/index.d.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/dist/sacred-mathematics-core/src/index.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/dist/sacred-mathematics-core/src/sacred-mathematics-core.d.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/dist/sacred-mathematics-core/src/sacred-mathematics-core.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/src/GameDesignEngine.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/src/GameMechanics.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/src/index.ts"
+      ],
+      "hasTests": false,
+      "hasDocs": false,
+      "needsImprovement": false
+    },
+    {
+      "name": "game-mathematics-core",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-mathematics-core",
+      "package": {
+        "name": "game-mathematics-core",
+        "version": "1.0.0",
+        "license": "CC0-1.0",
+        "description": "",
+        "main": "src/index.ts",
+        "types": "src/index.ts",
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-01T19:36:51.151Z",
+        "engines": {
+          "pnpm": ">=8.0.0"
+        },
+        "packageManager": "pnpm@10.23.0",
+        "alchemical": {
+          "name": "Game Mathematics",
+          "symbol": "⊙",
+          "label": "⊙ Game Mathematics (game-mathematics-core)"
+        }
+      },
+      "sourceFiles": [
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-mathematics-core/__tests__/game-mathematics-core.test.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/game-mathematics-core/src/index.ts"
+      ],
+      "hasTests": true,
+      "hasDocs": true,
+      "needsImprovement": true
+    },
+    {
+      "name": "circuit-craft-creative-game",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game",
+      "package": {
+        "name": "@cathedral/circuit-craft-creative-game",
+        "version": "1.0.0",
+        "description": "CircuitCraft: Non-Linear Creative Construction Game for High-Tech Creatives",
+        "main": "src/index.js",
+        "type": "module",
+        "scripts": {
+          "build": "node build.js",
+          "dev": "node src/index.js",
+          "game": "node src/game-engine.js",
+          "test": "node test.js",
+          "minecraft-mode": "node src/minecraft-compatibility.js"
+        },
+        "keywords": [
+          "game",
+          "creative",
+          "construction",
+          "non-linear",
+          "creative"
+        ],
+        "author": "Rebecca Respawn",
+        "license": "CC0-1.0",
+        "publishConfig": {
+          "access": "public",
+          "registry": "https://registry.npmjs.org/"
+        },
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/Bekalah/cathedral.git",
+          "directory": "packages/circuit-craft-creative-game"
+        },
+        "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/circuit-craft-creative-game",
+        "engines": {
+          "node": ">=18.0.0",
+          "pnpm": ">=8.0.0"
+        },
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-01T19:36:44.286Z",
+        "packageManager": "pnpm@10.23.0",
+        "alchemical": {
+          "name": "Circuit Craft Creative Game",
+          "symbol": "⊙",
+          "label": "⊙ Circuit Craft Creative Game (@cathedral/circuit-craft-creative-game)"
+        },
+        "types": "dist/index.d.ts"
+      },
+      "sourceFiles": [
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game/__tests__/circuit-craft-creative-game.test.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game/build.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game/psychedelic-demo.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game/src/index.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game/src/index.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game/src/timothyLeary-adventure.js"
+      ],
+      "hasTests": true,
+      "hasDocs": true,
+      "needsImprovement": false
+    },
+    {
+      "name": "circuitum99-arcanae-cyoa",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa",
+      "package": {
+        "name": "@cathedral/circuitum99-arcanae-cyoa",
+        "version": "1.0.0",
+        "description": "Circuitum99: Alpha et Omega CYOA Story System for Liber Arcanae",
+        "type": "module",
+        "main": "dist/index.js",
+        "types": "dist/index.d.ts",
+        "scripts": {
+          "build": "tsc",
+          "dev": "tsc --watch",
+          "story": "node dist/story/storyEngine.js",
+          "random": "node dist/modes/randomMode.js",
+          "auto": "node dist/modes/autoGameMode.js",
+          "design": "node dist/modes/designMode.js",
+          "theatre": "node dist/theatre/paraTheatreEngine.js"
+        },
+        "dependencies": {
+          "@cathedral/codex-144-99": "workspace:*",
+          "@cathedral/liber-arcanae": "workspace:*",
+          "@cathedral/plugin-system": "workspace:*",
+          "@cathedral/shared": "workspace:*",
+          "typescript": "^5.3.0",
+          "@cathedral/codex-library": "workspace:*"
+        },
+        "devDependencies": {
+          "@types/node": "^20.10.0"
+        },
+        "keywords": [
+          "circuitum99",
+          "cyoa",
+          "interactive-story",
+          "alpha-et-omega",
+          "liber-arcanae",
+          "para-theatre",
+          "sacred-storytelling",
+          "rebecca-respawn"
+        ],
+        "engines": {
+          "node": ">=18.0.0",
+          "pnpm": ">=8.0.0"
+        },
+        "license": "CC0-1.0",
+        "consolidated": true,
+        "consolidatedAt": "2025-12-01T19:36:44.887Z",
+        "packageManager": "pnpm@10.23.0",
+        "alchemical": {
+          "name": "Circuitum99 Arcanae Cyoa",
+          "symbol": "⊙",
+          "label": "⊙ Circuitum99 Arcanae Cyoa (@cathedral/circuitum99-arcanae-cyoa)"
+        },
+        "publishConfig": {
+          "access": "public"
+        }
+      },
+      "sourceFiles": [
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa/__tests__/circuitum99-arcanae-cyoa.test.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa/__tests__/circuitum99-core.test.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa/dist/Circuitum99StoryEngine.d.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa/dist/Circuitum99StoryEngine.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa/dist/index.d.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa/dist/index.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa/dist/types.d.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa/dist/types.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa/src/Circuitum99StoryEngine.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa/src/index.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa/src/types.ts"
+      ],
+      "hasTests": true,
+      "hasDocs": true,
+      "needsImprovement": false
+    },
+    {
+      "name": "gem-tower-engine",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/gem-tower-engine",
+      "package": {
+        "name": "@cathedral/gem-tower-engine",
+        "version": "1.0.0",
+        "description": "Gem Tower Engine - Crystal and gem visualization system",
+        "main": "index.js",
+        "type": "module",
+        "scripts": {
+          "build": "node ../../tools/gem-tower-engine.js",
+          "test": "node -e \"console.log('Gem Tower Engine tests: ✅ Crystal structures, ✅ Tower mechanics, ✅ Healing integration');\"",
+          "dev": "pnpm run build"
+        },
+        "keywords": [
+          "cathedral",
+          "gems",
+          "crystals",
+          "tower",
+          "visualization"
+        ],
+        "author": "Rebecca Lemke",
+        "license": "CC0-1.0",
+        "publishConfig": {
+          "access": "public",
+          "registry": "https://registry.npmjs.org/"
+        },
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/Bekalah/cathedral.git",
+          "directory": "packages/gem-tower-engine"
+        },
+        "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/gem-tower-engine",
+        "engines": {
+          "node": ">=18.0.0",
+          "pnpm": ">=8.0.0"
+        },
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-01T19:36:51.374Z",
+        "packageManager": "pnpm@10.23.0",
+        "alchemical": {
+          "name": "Gem Tower",
+          "symbol": "⊙",
+          "label": "⊙ Gem Tower (@cathedral/gem-tower-engine)"
+        }
+      },
+      "sourceFiles": [
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/gem-tower-engine/__tests__/gem-tower-engine.test.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/gem-tower-engine/index.js",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/gem-tower-engine/src/index.ts"
+      ],
+      "hasTests": true,
+      "hasDocs": true,
+      "needsImprovement": false
+    },
+    {
+      "name": "cathedral-rpg-inventory-system",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-rpg-inventory-system",
+      "package": {
+        "name": "cathedral-rpg-inventory-system",
+        "version": "1.0.0",
+        "license": "CC0-1.0",
+        "description": "",
+        "main": "src/index.ts",
+        "types": "src/index.ts",
+        "scripts": {
+          "build": "tsc"
+        },
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-01T19:36:43.052Z",
+        "engines": {
+          "pnpm": ">=8.0.0"
+        },
+        "packageManager": "pnpm@10.23.0",
+        "alchemical": {
+          "name": "Cathedral Rpg Inventory System",
+          "symbol": "⊙",
+          "label": "⊙ Cathedral Rpg Inventory System (cathedral-rpg-inventory-system)"
+        }
+      },
+      "sourceFiles": [
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-rpg-inventory-system/__tests__/cathedral-rpg-inventory-system.test.ts",
+        "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-rpg-inventory-system/src/index.ts"
+      ],
+      "hasTests": true,
+      "hasDocs": true,
+      "needsImprovement": true
+    }
+  ],
+  "designStudio": {
+    "name": "godot-design-studio",
+    "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-design-studio",
+    "package": {
+      "name": "@cathedral/godot-design-studio",
+      "version": "1.0.0",
+      "description": "Free Godot Design Studio - Figma-like design tools for mystical interfaces",
+      "main": "design_studio.gd",
+      "type": "module",
+      "scripts": {
+        "build": "echo 'Building Godot Design Studio...' && mkdir -p dist && cp -r scenes scripts tools dist/",
+        "validate": "echo 'Validating design tools...' && node validate-design.js",
+        "export": "echo 'Exporting design tools...' && pnpm run build",
+        "test": "echo 'Testing design workflows...' && node test-design.js"
+      },
+      "keywords": [
+        "godot",
+        "design-studio",
+        "figma-alternative",
+        "ui-design",
+        "trauma-safe",
+        "free",
+        "open-source",
+        "cathedral-of-circuits",
+        "mystical-design",
+        "sacred-geometry"
+      ],
+      "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
+      "license": "CC0-1.0",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/Bekalah/cathedral.git",
+        "directory": "packages/godot-design-studio"
+      },
+      "homepage": "https://bekalah.github.io/cathedral/godot-design-studio",
+      "godot": {
+        "version": "4.3+",
+        "compatibility": "4.0+",
+        "asset_type": "design_tool",
+        "themes": [
+          "design_studio",
+          "mystical_ui",
+          "trauma_safe",
+          "sacred_proportions"
+        ]
+      },
+      "cathedral": {
+        "sacred_mathematics": {
+          "golden_ratio": 1.618,
+          "144_99_ratio": 1.455,
+          "fibonacci_grids": true,
+          "divine_proportions": true
+        },
+        "trauma_safety": {
+          "no_autoplay": true,
+          "esc_exit": true,
+          "motion_controls": true,
+          "intensity_adjustment": true,
+          "gentle_defaults": true,
+          "undo_redo": true
+        },
+        "design_philosophy": {
+          "flowing_interfaces": true,
+          "energy_ribbons": true,
+          "breathing_animations": true,
+          "sacred_colors": true,
+          "archetypal_forms": true
+        },
+        "integration": {
+          "connects_to": [
+            "godot-vfx-library",
+            "godot-codex-14499",
+            "godot-liber-arcanae"
+          ]
+        }
+      },
+      "files": [
+        "scenes/",
+        "scripts/",
+        "tools/",
+        "templates/",
+        "components/",
+        "documentation/",
+        "examples/",
+        "LICENSE",
+        "README.md"
+      ],
+      "devDependencies": {
+        "@types/node": "^20.10.0"
+      },
+      "engines": {
+        "node": "*",
+        "pnpm": "*"
+      },
+      "packageManager": "pnpm@10.23.0",
+      "publishConfig": {
+        "access": "public"
+      },
+      "types": "dist/index.d.ts",
+      "alchemical": {
+        "name": "Godot Design Studio",
+        "symbol": "⊙",
+        "label": "⊙ Godot Design Studio (@cathedral/godot-design-studio)"
+      },
+      "dependencies": {},
+      "consolidated": true,
+      "consolidatedAt": "2025-12-01T19:36:51.644Z"
+    },
+    "scenes": 0,
+    "scripts": 0,
+    "tools": 0,
+    "files": {
+      "scenes": [],
+      "scripts": [],
+      "tools": []
+    },
+    "needsImprovement": false
+  },
+  "tools": [
+    {
+      "name": "alignment-cleaner.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/alignment-cleaner.mjs",
+      "size": 11851,
+      "needsImprovement": false
+    },
+    {
+      "name": "alignment-detector.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/alignment-detector.mjs",
+      "size": 14168,
+      "needsImprovement": false
+    },
+    {
+      "name": "app-completion-research.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/app-completion-research.mjs",
+      "size": 21019,
+      "needsImprovement": false
+    },
+    {
+      "name": "apply-alchemical-labels.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-alchemical-labels.mjs",
+      "size": 8918,
+      "needsImprovement": false
+    },
+    {
+      "name": "apply-patches.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-patches.mjs",
+      "size": 31335,
+      "needsImprovement": false
+    },
+    {
+      "name": "apply-unified-theme.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/apply-unified-theme.mjs",
+      "size": 6513,
+      "needsImprovement": false
+    },
+    {
+      "name": "auto-documentation.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-documentation.mjs",
+      "size": 6637,
+      "needsImprovement": false
+    },
+    {
+      "name": "auto-fix-all.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-fix-all.mjs",
+      "size": 4924,
+      "needsImprovement": false
+    },
+    {
+      "name": "auto-publish-to-github.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-publish-to-github.mjs",
+      "size": 77616,
+      "needsImprovement": false
+    },
+    {
+      "name": "auto-push-changes.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-push-changes.mjs",
+      "size": 8791,
+      "needsImprovement": false
+    },
+    {
+      "name": "auto-update.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/auto-update.mjs",
+      "size": 23893,
+      "needsImprovement": false
+    },
+    {
+      "name": "automation-runner.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/automation-runner.mjs",
+      "size": 33510,
+      "needsImprovement": false
+    },
+    {
+      "name": "backup-manager.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/backup-manager.mjs",
+      "size": 36020,
+      "needsImprovement": false
+    },
+    {
+      "name": "backup-system.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/backup-system.mjs",
+      "size": 8478,
+      "needsImprovement": false
+    },
+    {
+      "name": "batch-processor.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/batch-processor.mjs",
+      "size": 2449,
+      "needsImprovement": false
+    },
+    {
+      "name": "boost-rebecca-ideas.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/boost-rebecca-ideas.mjs",
+      "size": 22759,
+      "needsImprovement": false
+    },
+    {
+      "name": "build-optimizer.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/build-optimizer.mjs",
+      "size": 6034,
+      "needsImprovement": false
+    },
+    {
+      "name": "check-consistency.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/check-consistency.mjs",
+      "size": 6270,
+      "needsImprovement": false
+    },
+    {
+      "name": "cleanup-duplicates.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/cleanup-duplicates.mjs",
+      "size": 4954,
+      "needsImprovement": false
+    },
+    {
+      "name": "cleanup-non-repos.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/cleanup-non-repos.mjs",
+      "size": 32440,
+      "needsImprovement": false
+    },
+    {
+      "name": "cleanup-space.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/cleanup-space.mjs",
+      "size": 7139,
+      "needsImprovement": false
+    },
+    {
+      "name": "cleanup-state-file.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/cleanup-state-file.mjs",
+      "size": 18308,
+      "needsImprovement": false
+    },
+    {
+      "name": "code-formatter.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/code-formatter.mjs",
+      "size": 16632,
+      "needsImprovement": false
+    },
+    {
+      "name": "code-improver.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/code-improver.mjs",
+      "size": 9004,
+      "needsImprovement": false
+    },
+    {
+      "name": "code-optimizer.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/code-optimizer.mjs",
+      "size": 6731,
+      "needsImprovement": false
+    },
+    {
+      "name": "code-quality.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/code-quality.mjs",
+      "size": 34386,
+      "needsImprovement": false
+    },
+    {
+      "name": "codex-alignment-analyzer.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/codex-alignment-analyzer.mjs",
+      "size": 12081,
+      "needsImprovement": false
+    },
+    {
+      "name": "codex-debugger.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/codex-debugger.mjs",
+      "size": 7193,
+      "needsImprovement": false
+    },
+    {
+      "name": "codex-generator.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/codex-generator.mjs",
+      "size": 13335,
+      "needsImprovement": false
+    },
+    {
+      "name": "codex-validator.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/codex-validator.mjs",
+      "size": 6004,
+      "needsImprovement": false
+    },
+    {
+      "name": "coherence-checker.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/coherence-checker.mjs",
+      "size": 16596,
+      "needsImprovement": false
+    },
+    {
+      "name": "competitive-research.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/competitive-research.mjs",
+      "size": 12869,
+      "needsImprovement": false
+    },
+    {
+      "name": "compile-game-data.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/compile-game-data.mjs",
+      "size": 12246,
+      "needsImprovement": false
+    },
+    {
+      "name": "complete-cleanup.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/complete-cleanup.mjs",
+      "size": 8879,
+      "needsImprovement": false
+    },
+    {
+      "name": "completion-helper.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/completion-helper.mjs",
+      "size": 7316,
+      "needsImprovement": false
+    },
+    {
+      "name": "comprehensive-audit-system.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/comprehensive-audit-system.mjs",
+      "size": 23196,
+      "needsImprovement": false
+    },
+    {
+      "name": "comprehensive-cleanup.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/comprehensive-cleanup.mjs",
+      "size": 28160,
+      "needsImprovement": false
+    },
+    {
+      "name": "comprehensive-consolidator.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/comprehensive-consolidator.mjs",
+      "size": 10395,
+      "needsImprovement": false
+    },
+    {
+      "name": "comprehensive-discovery.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/comprehensive-discovery.mjs",
+      "size": 11369,
+      "needsImprovement": false
+    },
+    {
+      "name": "comprehensive-package-debugger.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/comprehensive-package-debugger.mjs",
+      "size": 24153,
+      "needsImprovement": false
+    },
+    {
+      "name": "comprehensive-package-mapper.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/comprehensive-package-mapper.mjs",
+      "size": 20715,
+      "needsImprovement": false
+    },
+    {
+      "name": "connect-and-fix-all.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/connect-and-fix-all.mjs",
+      "size": 15808,
+      "needsImprovement": false
+    },
+    {
+      "name": "connect-cathedral-work.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/connect-cathedral-work.mjs",
+      "size": 6492,
+      "needsImprovement": false
+    },
+    {
+      "name": "connect-live-deployments.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/connect-live-deployments.mjs",
+      "size": 8318,
+      "needsImprovement": false
+    },
+    {
+      "name": "connect-remotes.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/connect-remotes.mjs",
+      "size": 6369,
+      "needsImprovement": false
+    },
+    {
+      "name": "connect-synths-to-design-math.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/connect-synths-to-design-math.mjs",
+      "size": 17588,
+      "needsImprovement": false
+    },
+    {
+      "name": "consolidate-all-workspaces.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/consolidate-all-workspaces.mjs",
+      "size": 20225,
+      "needsImprovement": false
+    },
+    {
+      "name": "consolidate-docs.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/consolidate-docs.mjs",
+      "size": 13952,
+      "needsImprovement": false
+    },
+    {
+      "name": "consolidate-to-master.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/consolidate-to-master.mjs",
+      "size": 7309,
+      "needsImprovement": false
+    },
+    {
+      "name": "continuous-improvement-runner.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/continuous-improvement-runner.mjs",
+      "size": 49313,
+      "needsImprovement": false
+    },
+    {
+      "name": "create-reference-map.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/create-reference-map.mjs",
+      "size": 4271,
+      "needsImprovement": false
+    },
+    {
+      "name": "creative-insights.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/creative-insights.mjs",
+      "size": 6274,
+      "needsImprovement": false
+    },
+    {
+      "name": "cross-repo-reader.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/cross-repo-reader.mjs",
+      "size": 14943,
+      "needsImprovement": false
+    },
+    {
+      "name": "data-validator.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/data-validator.mjs",
+      "size": 8935,
+      "needsImprovement": false
+    },
+    {
+      "name": "debug-all.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/debug-all.mjs",
+      "size": 10231,
+      "needsImprovement": false
+    },
+    {
+      "name": "dependency-analyzer.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/dependency-analyzer.mjs",
+      "size": 5641,
+      "needsImprovement": false
+    },
+    {
+      "name": "dependency-checker.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/dependency-checker.mjs",
+      "size": 22581,
+      "needsImprovement": false
+    },
+    {
+      "name": "dependency-updater.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/dependency-updater.mjs",
+      "size": 22199,
+      "needsImprovement": false
+    },
+    {
+      "name": "deployment-report.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/deployment-report.mjs",
+      "size": 7690,
+      "needsImprovement": false
+    },
+    {
+      "name": "design-quality-enhancer.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/design-quality-enhancer.mjs",
+      "size": 6750,
+      "needsImprovement": false
+    },
+    {
+      "name": "discover-authentic-vision.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/discover-authentic-vision.mjs",
+      "size": 6876,
+      "needsImprovement": false
+    },
+    {
+      "name": "discover-influences.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/discover-influences.mjs",
+      "size": 7480,
+      "needsImprovement": false
+    },
+    {
+      "name": "egregore-design-assistant.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/egregore-design-assistant.mjs",
+      "size": 4966,
+      "needsImprovement": false
+    },
+    {
+      "name": "elevate-creative-caliber.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/elevate-creative-caliber.mjs",
+      "size": 16790,
+      "needsImprovement": false
+    },
+    {
+      "name": "enhanced-logger.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/enhanced-logger.mjs",
+      "size": 3910,
+      "needsImprovement": false
+    },
+    {
+      "name": "enhanced-quality-check.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/enhanced-quality-check.mjs",
+      "size": 8375,
+      "needsImprovement": false
+    },
+    {
+      "name": "ensure-professional-theme-compliance.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/ensure-professional-theme-compliance.mjs",
+      "size": 7878,
+      "needsImprovement": false
+    },
+    {
+      "name": "error-recovery.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/error-recovery.mjs",
+      "size": 7738,
+      "needsImprovement": false
+    },
+    {
+      "name": "execute-consolidation.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/execute-consolidation.mjs",
+      "size": 12010,
+      "needsImprovement": false
+    },
+    {
+      "name": "experiment-analytics.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/experiment-analytics.mjs",
+      "size": 8821,
+      "needsImprovement": false
+    },
+    {
+      "name": "experiment-monitor.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/experiment-monitor.mjs",
+      "size": 51475,
+      "needsImprovement": false
+    },
+    {
+      "name": "experiment-status.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/experiment-status.mjs",
+      "size": 8958,
+      "needsImprovement": false
+    },
+    {
+      "name": "extract-and-cleanup.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/extract-and-cleanup.mjs",
+      "size": 48817,
+      "needsImprovement": false
+    },
+    {
+      "name": "extract-spells-from-grimoires.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/extract-spells-from-grimoires.mjs",
+      "size": 10213,
+      "needsImprovement": false
+    },
+    {
+      "name": "extract-symbols-from-books.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/extract-symbols-from-books.mjs",
+      "size": 9156,
+      "needsImprovement": false
+    },
+    {
+      "name": "extract-visionary-art-themes.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/extract-visionary-art-themes.mjs",
+      "size": 21649,
+      "needsImprovement": false
+    },
+    {
+      "name": "file-ops.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/file-ops.mjs",
+      "size": 3254,
+      "needsImprovement": false
+    },
+    {
+      "name": "find-and-fix-issues.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/find-and-fix-issues.mjs",
+      "size": 47164,
+      "needsImprovement": false
+    },
+    {
+      "name": "find-unused.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/find-unused.mjs",
+      "size": 34134,
+      "needsImprovement": false
+    },
+    {
+      "name": "fix-all-broken.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-all-broken.mjs",
+      "size": 9583,
+      "needsImprovement": false
+    },
+    {
+      "name": "fix-all-deployments.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-all-deployments.mjs",
+      "size": 12656,
+      "needsImprovement": false
+    },
+    {
+      "name": "fix-all-issues.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-all-issues.mjs",
+      "size": 7824,
+      "needsImprovement": false
+    },
+    {
+      "name": "fix-all-remotes.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-all-remotes.mjs",
+      "size": 44361,
+      "needsImprovement": false
+    },
+    {
+      "name": "fix-bad-design.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-bad-design.mjs",
+      "size": 12209,
+      "needsImprovement": false
+    },
+    {
+      "name": "fix-licensing.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-licensing.mjs",
+      "size": 5367,
+      "needsImprovement": false
+    },
+    {
+      "name": "fix-npm-references.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-npm-references.mjs",
+      "size": 5113,
+      "needsImprovement": false
+    },
+    {
+      "name": "fix-package-json-for-pnpm.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-package-json-for-pnpm.mjs",
+      "size": 1321,
+      "needsImprovement": false
+    },
+    {
+      "name": "fix-workflow-execution.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-workflow-execution.mjs",
+      "size": 1230,
+      "needsImprovement": false
+    },
+    {
+      "name": "generate-docs.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/generate-docs.mjs",
+      "size": 13304,
+      "needsImprovement": false
+    },
+    {
+      "name": "generate-learning-report.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/generate-learning-report.mjs",
+      "size": 16474,
+      "needsImprovement": false
+    },
+    {
+      "name": "generate-package-info.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/generate-package-info.mjs",
+      "size": 29166,
+      "needsImprovement": false
+    },
+    {
+      "name": "git-hooks-setup.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/git-hooks-setup.mjs",
+      "size": 14752,
+      "needsImprovement": false
+    },
+    {
+      "name": "github-auth.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/github-auth.mjs",
+      "size": 21232,
+      "needsImprovement": false
+    },
+    {
+      "name": "github-diagnostics.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/github-diagnostics.mjs",
+      "size": 98091,
+      "needsImprovement": false
+    },
+    {
+      "name": "health-check.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/health-check.mjs",
+      "size": 35571,
+      "needsImprovement": false
+    },
+    {
+      "name": "health-map-generator.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/health-map-generator.mjs",
+      "size": 8674,
+      "needsImprovement": false
+    },
+    {
+      "name": "health-monitor.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/health-monitor.mjs",
+      "size": 7169,
+      "needsImprovement": false
+    },
+    {
+      "name": "improve-monorepo-wide.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/improve-monorepo-wide.mjs",
+      "size": 21532,
+      "needsImprovement": false
+    },
+    {
+      "name": "improvement-experiment-egregore-integration.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/improvement-experiment-egregore-integration.mjs",
+      "size": 8110,
+      "needsImprovement": false
+    },
+    {
+      "name": "improvement-insights.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/improvement-insights.mjs",
+      "size": 9322,
+      "needsImprovement": false
+    },
+    {
+      "name": "improvement-reporter.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/improvement-reporter.mjs",
+      "size": 8556,
+      "needsImprovement": false
+    },
+    {
+      "name": "include-remote-repos.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/include-remote-repos.mjs",
+      "size": 2348,
+      "needsImprovement": false
+    },
+    {
+      "name": "integrate-cathedral.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/integrate-cathedral.mjs",
+      "size": 51391,
+      "needsImprovement": false
+    },
+    {
+      "name": "integration-tester.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/integration-tester.mjs",
+      "size": 5517,
+      "needsImprovement": false
+    },
+    {
+      "name": "inventory-system.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/inventory-system.mjs",
+      "size": 39901,
+      "needsImprovement": false
+    },
+    {
+      "name": "learn-from-material.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/learn-from-material.mjs",
+      "size": 18276,
+      "needsImprovement": false
+    },
+    {
+      "name": "logger.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/logger.mjs",
+      "size": 2180,
+      "needsImprovement": false
+    },
+    {
+      "name": "magnum-opus-enhancer.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/magnum-opus-enhancer.mjs",
+      "size": 15434,
+      "needsImprovement": false
+    },
+    {
+      "name": "magnum-opus-rebrand.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/magnum-opus-rebrand.mjs",
+      "size": 53804,
+      "needsImprovement": false
+    },
+    {
+      "name": "make-everything-work.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/make-everything-work.mjs",
+      "size": 3413,
+      "needsImprovement": false
+    },
+    {
+      "name": "make-updates-live.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/make-updates-live.mjs",
+      "size": 13864,
+      "needsImprovement": false
+    },
+    {
+      "name": "master-docs-analyzer.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/master-docs-analyzer.mjs",
+      "size": 9357,
+      "needsImprovement": false
+    },
+    {
+      "name": "master-docs-integration.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/master-docs-integration.mjs",
+      "size": 4666,
+      "needsImprovement": false
+    },
+    {
+      "name": "merge-duplicates.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/merge-duplicates.mjs",
+      "size": 37883,
+      "needsImprovement": false
+    },
+    {
+      "name": "monad-hieroglyphica-theme.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/monad-hieroglyphica-theme.mjs",
+      "size": 17806,
+      "needsImprovement": false
+    },
+    {
+      "name": "monitor-experiment.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/monitor-experiment.mjs",
+      "size": 59770,
+      "needsImprovement": false
+    },
+    {
+      "name": "monorepo-doubt-research.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/monorepo-doubt-research.mjs",
+      "size": 10929,
+      "needsImprovement": false
+    },
+    {
+      "name": "monorepo-foundation.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/monorepo-foundation.mjs",
+      "size": 8745,
+      "needsImprovement": false
+    },
+    {
+      "name": "nested-git-updater.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/nested-git-updater.mjs",
+      "size": 9096,
+      "needsImprovement": false
+    },
+    {
+      "name": "optimize-code.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/optimize-code.mjs",
+      "size": 7190,
+      "needsImprovement": false
+    },
+    {
+      "name": "optimize-workspace-integrator.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/optimize-workspace-integrator.mjs",
+      "size": 14633,
+      "needsImprovement": false
+    },
+    {
+      "name": "orchestration-validator.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/orchestration-validator.mjs",
+      "size": 5115,
+      "needsImprovement": false
+    },
+    {
+      "name": "organic-research-planner.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/organic-research-planner.mjs",
+      "size": 14111,
+      "needsImprovement": false
+    },
+    {
+      "name": "organize-and-merge-all.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/organize-and-merge-all.mjs",
+      "size": 10542,
+      "needsImprovement": false
+    },
+    {
+      "name": "organize-debug-merge-push.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/organize-debug-merge-push.mjs",
+      "size": 2005,
+      "needsImprovement": false
+    },
+    {
+      "name": "organize-extracted-content.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/organize-extracted-content.mjs",
+      "size": 45304,
+      "needsImprovement": false
+    },
+    {
+      "name": "partial-analyzer.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/partial-analyzer.mjs",
+      "size": 10565,
+      "needsImprovement": false
+    },
+    {
+      "name": "performance-benchmark-enhanced.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/performance-benchmark-enhanced.mjs",
+      "size": 5126,
+      "needsImprovement": false
+    },
+    {
+      "name": "performance-benchmark.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/performance-benchmark.mjs",
+      "size": 30462,
+      "needsImprovement": false
+    },
+    {
+      "name": "performance-monitor.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/performance-monitor.mjs",
+      "size": 18767,
+      "needsImprovement": false
+    },
+    {
+      "name": "performance-optimizer.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/performance-optimizer.mjs",
+      "size": 6681,
+      "needsImprovement": false
+    },
+    {
+      "name": "plan-coordinator.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/plan-coordinator.mjs",
+      "size": 9689,
+      "needsImprovement": false
+    },
+    {
+      "name": "pnpm-wrapper.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/pnpm-wrapper.mjs",
+      "size": 1901,
+      "needsImprovement": false
+    },
+    {
+      "name": "push-to-github.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/push-to-github.mjs",
+      "size": 6238,
+      "needsImprovement": false
+    },
+    {
+      "name": "quality-standards-validator.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/quality-standards-validator.mjs",
+      "size": 5322,
+      "needsImprovement": false
+    },
+    {
+      "name": "registry-validator.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/registry-validator.mjs",
+      "size": 6848,
+      "needsImprovement": false
+    },
+    {
+      "name": "remove-degraded-mentions.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/remove-degraded-mentions.mjs",
+      "size": 4246,
+      "needsImprovement": false
+    },
+    {
+      "name": "repo-sync.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/repo-sync.mjs",
+      "size": 32073,
+      "needsImprovement": false
+    },
+    {
+      "name": "review-all-repos.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/review-all-repos.mjs",
+      "size": 10926,
+      "needsImprovement": false
+    },
+    {
+      "name": "safe-branch-merge.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/safe-branch-merge.mjs",
+      "size": 10758,
+      "needsImprovement": false
+    },
+    {
+      "name": "security-scanner.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/security-scanner.mjs",
+      "size": 35930,
+      "needsImprovement": false
+    },
+    {
+      "name": "self-maintain.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/self-maintain.mjs",
+      "size": 30195,
+      "needsImprovement": false
+    },
+    {
+      "name": "solve-et-coagula-improver.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/solve-et-coagula-improver.mjs",
+      "size": 16129,
+      "needsImprovement": false
+    },
+    {
+      "name": "state-consolidator.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/state-consolidator.mjs",
+      "size": 5154,
+      "needsImprovement": false
+    },
+    {
+      "name": "status-dashboard.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/status-dashboard.mjs",
+      "size": 5395,
+      "needsImprovement": false
+    },
+    {
+      "name": "story-quality-enhancer.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/story-quality-enhancer.mjs",
+      "size": 7046,
+      "needsImprovement": false
+    },
+    {
+      "name": "system-integrator.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/system-integrator.mjs",
+      "size": 5081,
+      "needsImprovement": false
+    },
+    {
+      "name": "system-summary.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/system-summary.mjs",
+      "size": 43650,
+      "needsImprovement": false
+    },
+    {
+      "name": "test-runner.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/test-runner.mjs",
+      "size": 4260,
+      "needsImprovement": false
+    },
+    {
+      "name": "tool-improver.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/tool-improver.mjs",
+      "size": 16242,
+      "needsImprovement": false
+    },
+    {
+      "name": "tool-packager.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/tool-packager.mjs",
+      "size": 12029,
+      "needsImprovement": false
+    },
+    {
+      "name": "update-all-references.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/update-all-references.mjs",
+      "size": 21804,
+      "needsImprovement": false
+    },
+    {
+      "name": "update-codex-circuitum99.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/update-codex-circuitum99.mjs",
+      "size": 6408,
+      "needsImprovement": false
+    },
+    {
+      "name": "upgrade-all-packages.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/upgrade-all-packages.mjs",
+      "size": 17127,
+      "needsImprovement": false
+    },
+    {
+      "name": "user-feedback.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/user-feedback.mjs",
+      "size": 31010,
+      "needsImprovement": false
+    },
+    {
+      "name": "utils.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/utils.mjs",
+      "size": 4553,
+      "needsImprovement": false
+    },
+    {
+      "name": "validate-all.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/validate-all.mjs",
+      "size": 28920,
+      "needsImprovement": false
+    },
+    {
+      "name": "validate-design-math.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/validate-design-math.mjs",
+      "size": 6749,
+      "needsImprovement": false
+    },
+    {
+      "name": "validate-enterprise-standard.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/validate-enterprise-standard.mjs",
+      "size": 18911,
+      "needsImprovement": false
+    },
+    {
+      "name": "validate-game-math.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/validate-game-math.mjs",
+      "size": 6683,
+      "needsImprovement": false
+    },
+    {
+      "name": "validate-sacred-math.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/validate-sacred-math.mjs",
+      "size": 8037,
+      "needsImprovement": false
+    },
+    {
+      "name": "validate-setup.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/validate-setup.mjs",
+      "size": 26334,
+      "needsImprovement": false
+    },
+    {
+      "name": "validate-sound-math.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/validate-sound-math.mjs",
+      "size": 6877,
+      "needsImprovement": false
+    },
+    {
+      "name": "verify-commands.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/verify-commands.mjs",
+      "size": 4632,
+      "needsImprovement": false
+    },
+    {
+      "name": "vision-integration.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/vision-integration.mjs",
+      "size": 16158,
+      "needsImprovement": false
+    },
+    {
+      "name": "vision-weaver.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/vision-weaver.mjs",
+      "size": 14976,
+      "needsImprovement": false
+    },
+    {
+      "name": "visionary-art-validator.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/visionary-art-validator.mjs",
+      "size": 12520,
+      "needsImprovement": false
+    },
+    {
+      "name": "workflow-runner.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/workflow-runner.mjs",
+      "size": 4673,
+      "needsImprovement": false
+    }
+  ],
+  "chapels": {
+    "name": "stone-grimoire-chapels",
+    "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire/src/chapels.ts",
+    "count": 3,
+    "data": [
+      {
+        "name": "Chapel",
+        "definition": "export interface Chapel {\n  id: string;\n  name: string;\n  number: number; // 1-8 (Octagram)\n  element: string;\n  direction: string;\n  theme: string;\n  description: string;\n  folios: number[]; // 144 f"
+      },
+      {
+        "name": "ChapelFeature",
+        "definition": "export interface ChapelFeature {\n  id: string;\n  name: string;\n  type: 'interactive' | 'exploration' | 'creation' | 'learning' | 'pathworking';\n  description: string;\n  unlockCondition?: string;\n  con"
+      },
+      {
+        "name": "ChapelCorrespondences",
+        "definition": "export interface ChapelCorrespondences {\n  planet: string;\n  zodiac: string;\n  element: string;\n  color: string;\n  geometry: string;\n  shemAngel?: string;\n  goetiaDemon?: string;\n  deity?: string; // "
+      }
+    ],
+    "needsImprovement": true
+  },
+  "mysteryRooms": {
+    "name": "mystery-house-core",
+    "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/mystery-house-core",
+    "package": {
+      "name": "mystery-house-core",
+      "version": "1.0.0",
+      "license": "CC0-1.0",
+      "description": "",
+      "main": "src/index.ts",
+      "types": "src/index.ts",
+      "dependencies": {},
+      "devDependencies": {},
+      "consolidated": true,
+      "consolidatedAt": "2025-12-01T19:36:57.411Z",
+      "engines": {
+        "pnpm": ">=8.0.0"
+      },
+      "packageManager": "pnpm@10.23.0",
+      "alchemical": {
+        "name": "Mystery House",
+        "symbol": "⊙",
+        "label": "⊙ Mystery House (mystery-house-core)"
+      }
+    },
+    "sourceFiles": [
+      "/Users/rebeccalemke/cathedral-master-deployment/packages/mystery-house-core/__tests__/mystery-house-core.test.ts",
+      "/Users/rebeccalemke/cathedral-master-deployment/packages/mystery-house-core/src/MysteryHouseEngine.ts",
+      "/Users/rebeccalemke/cathedral-master-deployment/packages/mystery-house-core/src/MysteryHouseUnified.ts",
+      "/Users/rebeccalemke/cathedral-master-deployment/packages/mystery-house-core/src/index.ts"
+    ],
+    "needsImprovement": true
+  },
+  "godotGames": [
+    {
+      "name": "godot-liber-arcanae",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae",
+      "package": {
+        "name": "@cathedral/godot-liber-arcanae",
+        "version": "1.0.0",
+        "description": "Godot Liber Arcanae - 78-card living tarot system for mystical games",
+        "main": "liber_arcanae.gd",
+        "type": "module",
+        "scripts": {
+          "build": "tsc",
+          "validate": "echo 'Validating tarot correspondences...' && node validate-tarot.js",
+          "export": "echo 'Exporting tarot system...' && pnpm run build",
+          "test": "echo 'Testing card interactions...' && node test-cards.js"
+        },
+        "keywords": [
+          "godot",
+          "tarot",
+          "liber-arcanae",
+          "78-cards",
+          "archetypes",
+          "trauma-safe",
+          "free",
+          "open-source",
+          "cathedral-of-circuits",
+          "living-tarot"
+        ],
+        "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
+        "license": "CC0-1.0",
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/Bekalah/cathedral.git",
+          "directory": "packages/godot-liber-arcanae"
+        },
+        "homepage": "https://bekalah.github.io/cathedral/godot-liber-arcanae",
+        "godot": {
+          "version": "4.3+",
+          "compatibility": "4.0+",
+          "asset_type": "game_system",
+          "themes": [
+            "tarot",
+            "archetypes",
+            "trauma_safe",
+            "living_systems"
+          ]
+        },
+        "cathedral": {
+          "sacred_mathematics": {
+            "major_arcana": 22,
+            "minor_arcana": 56,
+            "total_cards": 78,
+            "golden_ratio": 1.618,
+            "divine_proportions": true
+          },
+          "trauma_safety": {
+            "no_autoplay": true,
+            "esc_exit": true,
+            "motion_controls": true,
+            "intensity_adjustment": true,
+            "gentle_defaults": true,
+            "consent_based": true
+          },
+          "living_system": {
+            "archetype_beings": true,
+            "interactive_cards": true,
+            "fusion_kink_compatible": true,
+            "trauma_healing": true
+          },
+          "integration": {
+            "connects_to": [
+              "godot-codex-14499",
+              "godot-tesseract-bridge",
+              "godot-vfx-library"
+            ]
+          }
+        },
+        "files": [
+          "scenes/",
+          "scripts/",
+          "resources/",
+          "cards/",
+          "archetypes/",
+          "documentation/",
+          "examples/",
+          "LICENSE",
+          "README.md"
+        ],
+        "devDependencies": {
+          "@types/node": "^20.10.0"
+        },
+        "types": "dist/index.d.ts",
+        "packageManager": "pnpm@10.23.0",
+        "engines": {
+          "node": ">=20.18.0",
+          "pnpm": ">=8.15.0"
+        },
+        "publishConfig": {
+          "access": "public",
+          "registry": "https://registry.npmjs.org/"
+        },
+        "dependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-01T19:36:51.827Z",
+        "alchemical": {
+          "name": "Godot Liber Arcanae",
+          "symbol": "⊙",
+          "label": "⊙ Godot Liber Arcanae (@cathedral/godot-liber-arcanae)"
+        }
+      },
+      "scenes": 2,
+      "scripts": 5,
+      "files": {
+        "scenes": [
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae/scenes/game_scene.tscn",
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae/scenes/main_menu.tscn"
+        ],
+        "scripts": [
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae/scripts/character.gd",
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae/scripts/character_selector.gd",
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae/scripts/game_manager.gd",
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae/scripts/game_scene_handler.gd",
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae/scripts/main_menu_handler.gd"
+        ]
+      },
+      "needsImprovement": false
+    },
+    {
+      "name": "godot-codex-14499",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-codex-14499",
+      "package": {
+        "name": "@cathedral/godot-codex-14499",
+        "version": "1.0.0",
+        "description": "Godot Codex 144:99 - Sacred lattice system for games and applications",
+        "main": "codex_14499.gd",
+        "type": "module",
+        "scripts": {
+          "build": "tsc",
+          "validate": "echo 'Validating sacred mathematics...' && node validate-sacred-math.js",
+          "export": "echo 'Exporting for Godot...' && pnpm run build",
+          "test": "echo 'Testing lattice connections...' && node test-connections.js"
+        },
+        "keywords": [
+          "godot",
+          "codex-144-99",
+          "sacred-geometry",
+          "144:99-ratio",
+          "lattice-system",
+          "trauma-safe",
+          "free",
+          "open-source",
+          "cathedral-of-circuits"
+        ],
+        "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
+        "license": "CC0-1.0",
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/Bekalah/cathedral.git",
+          "directory": "packages/godot-codex-14499"
+        },
+        "homepage": "https://bekalah.github.io/cathedral/godot-codex-14499",
+        "godot": {
+          "version": "4.3+",
+          "compatibility": "4.0+",
+          "asset_type": "game_system",
+          "themes": [
+            "sacred_geometry",
+            "mystical",
+            "trauma_safe",
+            "144_99_lattice"
+          ]
+        },
+        "cathedral": {
+          "sacred_mathematics": {
+            "144_nodes": true,
+            "99_gates": true,
+            "144_99_ratio": 1.455,
+            "golden_ratio": 1.618,
+            "fibonacci_sequences": true
+          },
+          "trauma_safety": {
+            "no_autoplay": true,
+            "esc_exit": true,
+            "motion_controls": true,
+            "intensity_adjustment": true,
+            "gentle_defaults": true
+          },
+          "integration": {
+            "connects_to": [
+              "godot-liber-arcanae",
+              "godot-tesseract-bridge",
+              "godot-vfx-library"
+            ]
+          }
+        },
+        "files": [
+          "scenes/",
+          "scripts/",
+          "resources/",
+          "materials/",
+          "shaders/",
+          "documentation/",
+          "examples/",
+          "LICENSE",
+          "README.md"
+        ],
+        "devDependencies": {
+          "@types/node": "^20.10.0"
+        },
+        "types": "dist/index.d.ts",
+        "packageManager": "pnpm@10.23.0",
+        "engines": {
+          "node": ">=20.18.0",
+          "pnpm": ">=8.15.0"
+        },
+        "publishConfig": {
+          "access": "public",
+          "registry": "https://registry.npmjs.org/"
+        },
+        "dependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-01T19:36:51.427Z",
+        "alchemical": {
+          "name": "Godot Codex 14499",
+          "symbol": "⊙",
+          "label": "⊙ Godot Codex 14499 (@cathedral/godot-codex-14499)"
+        }
+      },
+      "scenes": 0,
+      "scripts": 1,
+      "files": {
+        "scenes": [],
+        "scripts": [
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-codex-14499/scripts/codex_14499.gd"
+        ]
+      },
+      "needsImprovement": false
+    },
+    {
+      "name": "godot-vfx-library",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-vfx-library",
+      "package": {
+        "name": "@cathedral/godot-vfx-library",
+        "version": "1.0.0",
+        "description": "Free Godot VFX Library - Sacred Geometry & Mystical Effects for Cathedral of Circuits",
+        "main": "index.js",
+        "type": "module",
+        "scripts": {
+          "build": "echo 'Building Godot VFX Library...' && mkdir -p dist && cp -r effects materials shaders scenes dist/",
+          "validate": "echo 'Validating sacred mathematics in VFX...' && node validate-sacred-math.js",
+          "export": "echo 'Exporting VFX assets for Godot...' && pnpm run build",
+          "preview": "echo 'Preview VFX effects...' && open preview/index.html"
+        },
+        "keywords": [
+          "godot",
+          "vfx",
+          "visual-effects",
+          "sacred-geometry",
+          "mystical",
+          "trauma-safe",
+          "free",
+          "open-source",
+          "cathedral-of-circuits",
+          "144:99",
+          "golden-ratio",
+          "energy-ribbons",
+          "spiral-effects"
+        ],
+        "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
+        "license": "CC0-1.0",
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/Bekalah/cathedral.git",
+          "directory": "packages/godot-vfx-library"
+        },
+        "homepage": "https://bekalah.github.io/cathedral/godot-vfx",
+        "godot": {
+          "version": "4.3+",
+          "compatibility": "4.0+",
+          "asset_type": "vfx_library",
+          "themes": [
+            "sacred_geometry",
+            "mystical",
+            "trauma_safe",
+            "neurodivergent_friendly",
+            "energy_flow"
+          ]
+        },
+        "cathedral": {
+          "sacred_mathematics": {
+            "golden_ratio": 1.618,
+            "144_99_ratio": 1.455,
+            "fibonacci_sequences": true,
+            "divine_proportions": true
+          },
+          "trauma_safety": {
+            "no_autoplay": true,
+            "esc_exit": true,
+            "motion_controls": true,
+            "intensity_adjustment": true,
+            "gentle_defaults": true
+          },
+          "mystical_themes": [
+            "energy_ribbons",
+            "spiral_navigation",
+            "breathing_interfaces",
+            "sacred_colors",
+            "archetypal_forms"
+          ]
+        },
+        "files": [
+          "effects/",
+          "materials/",
+          "shaders/",
+          "scenes/",
+          "textures/",
+          "sounds/",
+          "documentation/",
+          "examples/",
+          "LICENSE",
+          "README.md"
+        ],
+        "devDependencies": {
+          "@types/node": "^20.10.0"
+        },
+        "engines": {
+          "node": "*",
+          "pnpm": "*"
+        },
+        "packageManager": "pnpm@10.23.0",
+        "publishConfig": {
+          "access": "public"
+        },
+        "types": "dist/index.d.ts",
+        "alchemical": {
+          "name": "Godot Vfx Library",
+          "symbol": "⊙",
+          "label": "⊙ Godot Vfx Library (@cathedral/godot-vfx-library)"
+        },
+        "dependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-01T19:36:51.930Z"
+      },
+      "scenes": 1,
+      "scripts": 1,
+      "files": {
+        "scenes": [
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-vfx-library/effects/sacred_geometry.tscn"
+        ],
+        "scripts": [
+          "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-vfx-library/scripts/sacred_geometry.gd"
+        ]
+      },
+      "needsImprovement": false
+    }
+  ],
+  "characterData": {
+    "source": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae/data/complete-arcana-profiles.json",
+    "godotGame": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae/characters.json",
+    "arcanaCount": 9,
+    "needsImprovement": true
+  },
+  "integration": {
+    "experimentIntegration": true,
+    "improvementTargets": [
+      {
+        "type": "game-package",
+        "name": "game-world",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-world",
+        "issues": [
+          "Missing description"
+        ],
+        "priority": "high"
+      },
+      {
+        "type": "game-package",
+        "name": "game-mathematics-core",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-mathematics-core",
+        "issues": [
+          "Missing description"
+        ],
+        "priority": "high"
+      },
+      {
+        "type": "game-package",
+        "name": "cathedral-rpg-inventory-system",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-rpg-inventory-system",
+        "issues": [
+          "Missing description"
+        ],
+        "priority": "high"
+      },
+      {
+        "type": "chapels",
+        "name": "stone-grimoire-chapels",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire/src/chapels.ts",
+        "issues": [
+          "Only 3 chapels found (need 8)"
+        ],
+        "priority": "medium"
+      },
+      {
+        "type": "mystery-rooms",
+        "name": "mystery-house-core",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/mystery-house-core",
+        "issues": [
+          "Missing description"
+        ],
+        "priority": "high"
+      },
+      {
+        "type": "character-data",
+        "name": "liber-arcanae-characters",
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae/data/complete-arcana-profiles.json",
+        "issues": [
+          "Only 9 arcana found (need 22)"
+        ],
+        "priority": "high"
+      }
+    ]
+  }
+}

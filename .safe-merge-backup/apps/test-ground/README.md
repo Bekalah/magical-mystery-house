@@ -57,7 +57,7 @@ A scientific and creative playground for experimenting with all core Cathedral m
 
 ## Usage
 
-1. `pnpm install`
+1. `ppnpm install`
 2. `pnpm --filter @cathedral/test-ground dev`
 3. Open [http://localhost:5173](http://localhost:5173) in your browser
 

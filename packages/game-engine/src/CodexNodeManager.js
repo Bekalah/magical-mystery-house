@@ -26,7 +26,7 @@ export class CodexNodeManager {
 
   async loadCodexData() {
     try {
-// console.log('📊 Loading your authentic Codex 144:99 data...');
+      console.log('📊 Loading your authentic Codex 144:99 data...');
 
       // Load your real Codex data
       const response = await fetch('/data/codex-144-expanded.json');
@@ -38,12 +38,12 @@ export class CodexNodeManager {
       });
 
       this.isLoaded = true;
-// console.log(`✅ Loaded ${this.nodes.size} authentic sacred nodes`);
-// console.log(`🔢 Sacred ratio: ${this.sacredConstants.MANIFESTATION_NODES}:${this.sacredConstants.DISSOLUTION_DEPTHS}`);
-// console.log(`📈 Completion power: ${this.sacredConstants.COMPLETION_POWER}`);
+      console.log(`✅ Loaded ${this.nodes.size} authentic sacred nodes`);
+      console.log(`🔢 Sacred ratio: ${this.sacredConstants.MANIFESTATION_NODES}:${this.sacredConstants.DISSOLUTION_DEPTHS}`);
+      console.log(`📈 Completion power: ${this.sacredConstants.COMPLETION_POWER}`);
 
     } catch (error) {
-// console.error('❌ Failed to load Codex 144:99 data:', error);
+      console.error('❌ Failed to load Codex 144:99 data:', error);
       throw error;
     }
   }
@@ -104,12 +104,12 @@ export class CodexNodeManager {
       tarotTotal: this.sacredConstants.TAROT_CARDS
     };
 
-// console.log('🔢 Sacred Mathematics Validation:');
-// console.log(`📊 144:99 Ratio: ${validation.ratio144to99}`);
-// console.log(`⚡ Completion Power: ${validation.completionPower}`);
-// console.log(`🦴 Spine Vertebrae: ${validation.spineCalculation}`);
-// console.log(`👼 Angel/Demon Total: ${validation.angelsDemons}`);
-// console.log(`🃏 Tarot Cards: ${validation.tarotTotal}`);
+    console.log('🔢 Sacred Mathematics Validation:');
+    console.log(`📊 144:99 Ratio: ${validation.ratio144to99}`);
+    console.log(`⚡ Completion Power: ${validation.completionPower}`);
+    console.log(`🦴 Spine Vertebrae: ${validation.spineCalculation}`);
+    console.log(`👼 Angel/Demon Total: ${validation.angelsDemons}`);
+    console.log(`🃏 Tarot Cards: ${validation.tarotTotal}`);
 
     return validation;
   }

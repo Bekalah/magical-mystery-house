@@ -42,7 +42,7 @@
   },
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:24.313Z",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "@Cathedral Real/Liber Arcanae Tools",
     "symbol": "⊙",

@@ -151,7 +151,7 @@ The monorepo improvement tool runs as part of your continuous improvement experi
 ### Run Full Monorepo Improvement
 
 ```bash
-ppnpm run improve:monorepo
+pnpm run improve:monorepo
 ```
 
 This will:

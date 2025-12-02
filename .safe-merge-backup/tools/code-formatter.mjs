@@ -29,7 +29,7 @@ function formatCode(dir, extensions = ['.ts', '.js', '.tsx', '.jsx']) {
 
   try {
     // Use prettier if available
-    execSync('ppnpm run format', {
+    execSync('pppnpm run format', {
       cwd: dir,
       stdio: 'inherit'
     });

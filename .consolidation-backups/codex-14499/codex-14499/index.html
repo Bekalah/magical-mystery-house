@@ -1,0 +1,1482 @@
+<!doctype html>that 
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Cathedral 144:99 — Codex Abyssiae Explorer</title>
+  
+  <!-- Cathedral Provenance -->
+  <meta name="cathedral:created" content="2025-10-02">
+  <meta name="cathedral:artist" content="Rebecca Respawn">
+  <meta name="cathedral:purpose" content="Trauma-aware sacred technology">
+  <meta name="cathedral:aesthetic" content="Flowing spirals, not building flat">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      /* Spiral Cathedral Colors */
+      --spiral-gold: #ffb347;
+      --spiral-blue: #4a90e2;
+      --spiral-purple: #9370db;
+      --spiral-teal: #20b2aa;
+      --spiral-rose: #f5b7b1;
+      
+      /* Cathedral Atmosphere */
+      --cathedral-deep: #1a1a2e;
+      --cathedral-stone: #3c3c54;
+      --cathedral-light: #ffefd5;
+      
+      /* Safety Colors */
+      --escape-glow: #ffff00;
+      --safe-green: #90ee90;
+      --pause-orange: #ffa500;
+    }
+
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background: radial-gradient(ellipse at center, var(--cathedral-light) 0%, var(--cathedral-stone) 60%, var(--cathedral-deep) 100%);
+      color: var(--cathedral-light);
+      overflow: hidden;
+      height: 100vh;
+      cursor: default; /* Keep native cursor for accessibility */
+    }
+
+    /* Emergency Escape Portal (Always Visible) */
+    .escape-portal {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 10000;
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid var(--escape-glow);
+      border-radius: 12px;
+      padding: 12px;
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .escape-key {
+      background: var(--escape-glow);
+      color: black;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-family: 'Cinzel', serif;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .escape-text {
+      color: var(--safe-green);
+      font-size: 14px;
+      letter-spacing: 0.1em;
+    }
+
+        /* Custom Cursor */
+        .cursor {
+            position: fixed;
+            width: 30px;
+            height: 30px;
+            border: 2px solid rgba(212, 175, 55, 0.6);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 10000;
+            transition: transform 0.1s;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .cursor::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 4px;
+            height: 4px;
+            background: #d4af37;
+            border-radius: 50%;
+        }
+
+        /* Main Canvas */
+        #cathedral {
+            position: fixed;
+            inset: 0;
+        }
+
+        /* HUD Overlay */
+        .hud {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        /* Top Bar - Node Info */
+        .node-info {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, rgba(10, 5, 20, 0.9), rgba(30, 15, 40, 0.8));
+            border: 2px solid rgba(212, 175, 55, 0.4);
+            border-radius: 12px;
+            padding: 20px 40px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            box-shadow: 0 0 30px rgba(148, 0, 211, 0.3);
+        }
+
+        .node-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8em;
+            letter-spacing: 0.2em;
+            color: #d4af37;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.8);
+            margin-bottom: 8px;
+        }
+
+        .node-subtitle {
+            font-size: 0.9em;
+            letter-spacing: 0.3em;
+            color: #9370db;
+            text-transform: uppercase;
+        }
+
+        /* Trinity Portal Navigation */
+        .trinity-nav {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            background: rgba(10, 5, 20, 0.85);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            backdrop-filter: blur(8px);
+            pointer-events: auto;
+            z-index: 200;
+        }
+
+        .trinity-title {
+            font-family: 'Cinzel', serif;
+            font-size: 0.9em;
+            letter-spacing: 0.1em;
+            color: #d4af37;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .trinity-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .trinity-btn {
+            padding: 8px 16px;
+            background: rgba(148, 0, 211, 0.3);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: 6px;
+            font-size: 0.75em;
+            letter-spacing: 0.1em;
+            color: #d4af37;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .trinity-btn:hover {
+            background: linear-gradient(135deg, #9370db, #d4af37);
+            border-color: transparent;
+            color: #000;
+            transform: scale(1.05);
+        }
+
+        /* Bottom Left - Controls */
+        .controls {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            background: rgba(10, 5, 20, 0.85);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            backdrop-filter: blur(8px);
+        }
+
+        .control-row {
+            display: flex;
+            gap: 12px;
+            margin: 8px 0;
+            font-size: 0.85em;
+            letter-spacing: 0.1em;
+        }
+
+        .key {
+            display: inline-block;
+            padding: 4px 10px;
+            background: rgba(148, 0, 211, 0.3);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: 4px;
+            font-family: 'Cinzel', serif;
+            font-size: 0.9em;
+            color: #d4af37;
+        }
+
+        /* Bottom Right - Current Depth */
+        .depth-meter {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            background: rgba(10, 5, 20, 0.85);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            backdrop-filter: blur(8px);
+            text-align: center;
+            min-width: 180px;
+        }
+
+        .depth-label {
+            font-family: 'Cinzel', serif;
+            font-size: 0.8em;
+            letter-spacing: 0.2em;
+            color: #9370db;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .depth-value {
+            font-size: 2.5em;
+            color: #d4af37;
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+            font-family: 'Cinzel', serif;
+        }
+
+        .depth-bar {
+            margin-top: 12px;
+            height: 8px;
+            background: rgba(148, 0, 211, 0.3);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .depth-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #9370db, #d4af37);
+            transition: width 0.5s;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.6);
+        }
+
+        /* Center - Crosshair */
+        .crosshair {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            opacity: 0.6;
+        }
+
+        .crosshair::before,
+        .crosshair::after {
+            content: '';
+            position: absolute;
+            background: rgba(212, 175, 55, 0.8);
+        }
+
+        .crosshair::before {
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+        }
+
+        .crosshair::after {
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+        }
+
+        /* Sacred Geometry Corner Accents */
+        .sacred-corner {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .corner-tl { top: 20px; left: 20px; border-right: none; border-bottom: none; }
+        .corner-tr { top: 20px; right: 20px; border-left: none; border-bottom: none; }
+        .corner-bl { bottom: 20px; left: 20px; border-right: none; border-top: none; }
+        .corner-br { bottom: 20px; right: 20px; border-left: none; border-top: none; }
+
+        /* Loading Screen */
+        .loading {
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(135deg, #0a0514 0%, #1e0f28 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            transition: opacity 1s;
+        }
+
+        .loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loading-title {
+            font-family: 'Cinzel', serif;
+            font-size: 3em;
+            letter-spacing: 0.3em;
+            color: #d4af37;
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.8);
+            margin-bottom: 30px;
+        }
+
+        .loading-subtitle {
+            font-size: 1.2em;
+            letter-spacing: 0.2em;
+            color: #9370db;
+            margin-bottom: 50px;
+        }
+
+        .loading-bar {
+            width: 300px;
+            height: 4px;
+            background: rgba(148, 0, 211, 0.3);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .loading-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #9370db, #d4af37);
+            animation: loadingPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes loadingPulse {
+            0%, 100% { width: 30%; transform: translateX(0); }
+            50% { width: 70%; transform: translateX(100%); }
+        }
+
+        /* Instructions Overlay */
+        .instructions {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.95);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s;
+        }
+
+        .instructions.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .instructions-content {
+            max-width: 600px;
+            text-align: center;
+            padding: 40px;
+            border: 2px solid rgba(212, 175, 55, 0.4);
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(10, 5, 20, 0.9), rgba(30, 15, 40, 0.9));
+        }
+
+        .instructions h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 2em;
+            letter-spacing: 0.2em;
+            color: #d4af37;
+            margin-bottom: 30px;
+        }
+
+        .instructions p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #9370db;
+            margin: 15px 0;
+        }
+
+        .start-btn {
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: linear-gradient(135deg, #9370db, #d4af37);
+            border: none;
+            border-radius: 8px;
+            font-family: 'Cinzel', serif;
+            font-size: 1.1em;
+            letter-spacing: 0.2em;
+            color: #000;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+        }
+
+        .start-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-title">CATHEDRAL</div>
+        <div class="loading-subtitle">Codex 144:99 Abyssiae</div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- Instructions -->
+    <div class="instructions" id="instructions">
+        <div class="instructions-content">
+            <h2>⚠️ SACRED PROTOCOL ⚠️</h2>
+            <p><strong>ESC</strong> - Return to The Fool (safety exit)</p>
+            <p><strong>WASD</strong> - Navigate the lattice</p>
+            <p><strong>Mouse</strong> - Look around</p>
+            <p><strong>Space</strong> - Ascend through depths</p>
+            <p><strong>Shift</strong> - Descend into abyss</p>
+            <p style="margin-top: 30px; color: #d4af37;">
+                This is trauma-informed sacred technology.<br>
+                Move at your own pace. Exit anytime.
+            </p>
+            <button class="start-btn" onclick="startExperience()">ENTER CATHEDRAL</button>
+        </div>
+    </div>
+
+    <!-- Main Canvas -->
+    <canvas id="cathedral"></canvas>
+
+    <!-- HUD -->
+    <div class="hud">
+        <!-- Sacred Geometry Corners -->
+        <div class="sacred-corner corner-tl"></div>
+        <div class="sacred-corner corner-tr"></div>
+        <div class="sacred-corner corner-bl"></div>
+        <div class="sacred-corner corner-br"></div>
+
+        <!-- Trinity Navigation -->
+        <div class="trinity-nav">
+            <div class="trinity-title">Trinity Gateway</div>
+            <div class="trinity-buttons">
+                <a href="../circuitum99/" class="trinity-btn">Soul • Circuitum99</a>
+                <a href="../stone-grimoire/" class="trinity-btn">Body • Stone Grimoire</a>
+                <a href="../cosmogenesis-learning-engine/" class="trinity-btn">Spirit • Cosmogenesis</a>
+                <a href="../holographic-interface/" class="trinity-btn">Interface • Hologram</a>
+            </div>
+        </div>
+
+        <!-- Node Info -->
+        <div class="node-info">
+            <div class="node-title" id="nodeTitle">THE FOOL</div>
+            <div class="node-subtitle" id="nodeSubtitle">Node 0 · Gateway of Beginnings</div>
+        </div>
+
+        <!-- Crosshair -->
+        <div class="crosshair"></div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="control-row">
+                <span class="key">W A S D</span>
+                <span>Navigate</span>
+            </div>
+            <div class="control-row">
+                <span class="key">MOUSE</span>
+                <span>Look Around</span>
+            </div>
+            <div class="control-row">
+                <span class="key">SPACE</span>
+                <span>Ascend</span>
+            </div>
+            <div class="control-row">
+                <span class="key">SHIFT</span>
+                <span>Descend</span>
+            </div>
+            <div class="control-row">
+                <span class="key">ESC</span>
+                <span>Return to Fool</span>
+            </div>
+        </div>
+
+        <!-- Depth Meter -->
+        <div class="depth-meter">
+            <div class="depth-label">Abyss Depth</div>
+            <div class="depth-value" id="depthValue">0</div>
+            <div class="depth-bar">
+                <div class="depth-fill" id="depthFill" style="width: 0%"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // === CATHEDRAL STATE ===
+        const state = {
+            currentNode: 0,
+            currentDepth: 0,
+            locked: false
+        };
+
+        // === MAJOR ARCANA DATA ===
+        const majorArcana = [
+            { id: 0, name: "THE FOOL", subtitle: "Gateway of Beginnings", color: 0xffd700 },
+            { id: 1, name: "THE MAGICIAN", subtitle: "John Dee · Sacred Geometry", color: 0xff6b6b },
+            { id: 2, name: "THE HIGH PRIESTESS", subtitle: "Dion Fortune · Hidden Knowledge", color: 0x4a90e2 },
+            { id: 3, name: "THE EMPRESS", subtitle: "Leonora Carrington · Surreal Nature", color: 0x2ecc71 },
+            { id: 4, name: "THE EMPEROR", subtitle: "Buckminster Fuller · Cosmic Order", color: 0xe74c3c },
+            { id: 5, name: "THE HIEROPHANT", subtitle: "Max Ernst · Spirit Guide", color: 0xf39c12 },
+            { id: 6, name: "THE LOVERS", subtitle: "Remedios Varo · Sacred Union", color: 0xe91e63 },
+            { id: 7, name: "THE CHARIOT", subtitle: "Austin Osman Spare · Will in Motion", color: 0x3498db },
+            { id: 8, name: "STRENGTH", subtitle: "Hilma af Klint · Inner Power", color: 0x9b59b6 },
+            { id: 9, name: "THE HERMIT", subtitle: "Aleister Crowley · Solitary Path", color: 0x95a5a6 },
+            { id: 10, name: "WHEEL OF FORTUNE", subtitle: "Cycles of Manifestation", color: 0x1abc9c },
+            { id: 11, name: "JUSTICE", subtitle: "Cosmic Balance", color: 0x34495e },
+            { id: 12, name: "THE HANGED MAN", subtitle: "Surrender & Vision", color: 0x16a085 },
+            { id: 13, name: "DEATH", subtitle: "Transformation Gate", color: 0x2c3e50 },
+            { id: 14, name: "TEMPERANCE", subtitle: "Alchemical Synthesis", color: 0xd4af37 },
+            { id: 15, name: "THE DEVIL", subtitle: "Shadow Integration", color: 0x8e44ad },
+            { id: 16, name: "THE TOWER", subtitle: "Divine Disruption", color: 0xc0392b },
+            { id: 17, name: "THE STAR", subtitle: "Cosmic Hope", color: 0x87ceeb },
+            { id: 18, name: "THE MOON", subtitle: "Moonchild · Dream Logic", color: 0x9370db },
+            { id: 19, name: "THE SUN", subtitle: "Illuminated Consciousness", color: 0xffa500 },
+            { id: 20, name: "JUDGEMENT", subtitle: "Awakening Call", color: 0xff69b4 },
+            { id: 21, name: "THE WORLD", subtitle: "Unity Achieved", color: 0xd4af37 }
+        ];
+
+        // === THREE.JS SETUP ===
+        const scene = new THREE.Scene();
+        scene.fog = new THREE.FogExp2(0x0a0514, 0.015);
+
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(0, 5, 15);
+
+        const renderer = new THREE.WebGLRenderer({ 
+            canvas: document.getElementById('cathedral'),
+            antialias: true,
+            alpha: true
+        });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+
+        // === CAMERA CONTROLS ===
+        const controls = {
+            forward: false,
+            backward: false,
+            left: false,
+            right: false,
+            up: false,
+            down: false,
+            speed: 0.2,
+            mouseX: 0,
+            mouseY: 0
+        };
+
+        let yaw = 0, pitch = 0;
+
+        // === MATERIALS ===
+        const nodeMaterial = new THREE.ShaderMaterial({
+            uniforms: {
+                time: { value: 0 },
+                nodeColor: { value: new THREE.Color(0xd4af37) },
+                glowIntensity: { value: 1.0 },
+                fractalDepth: { value: 3.0 },
+                energyLevel: { value: 1.0 }
+            },
+            vertexShader: `
+                varying vec2 vUv;
+                varying vec3 vPosition;
+                varying vec3 vNormal;
+                varying vec3 vWorldPosition;
+                
+                void main() {
+                    vUv = uv;
+                    vPosition = position;
+                    vNormal = normalize(normalMatrix * normal);
+                    vWorldPosition = (modelMatrix * vec4(position, 1.0)).xyz;
+                    
+                    // Dynamic vertex displacement for spectacular effect
+                    vec3 displaced = position;
+                    float wave = sin(position.x * 10.0 + time * 3.0) * 
+                                sin(position.y * 8.0 + time * 2.5) * 
+                                sin(position.z * 12.0 + time * 4.0);
+                    displaced += normal * wave * 0.05;
+                    
+                    gl_Position = projectionMatrix * modelViewMatrix * vec4(displaced, 1.0);
+                }
+            `,
+            fragmentShader: `
+                uniform float time;
+                uniform vec3 nodeColor;
+                uniform float glowIntensity;
+                uniform float fractalDepth;
+                uniform float energyLevel;
+                varying vec2 vUv;
+                varying vec3 vPosition;
+                varying vec3 vNormal;
+                varying vec3 vWorldPosition;
+                
+                // FRACTAL NOISE FUNCTIONS for spectacular effects
+                float hash(vec2 p) {
+                    return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
+                }
+                
+                float noise(vec2 p) {
+                    vec2 i = floor(p);
+                    vec2 f = fract(p);
+                    float a = hash(i);
+                    float b = hash(i + vec2(1.0, 0.0));
+                    float c = hash(i + vec2(0.0, 1.0));
+                    float d = hash(i + vec2(1.0, 1.0));
+                    vec2 u = f * f * (3.0 - 2.0 * f);
+                    return mix(a, b, u.x) + (c - a) * u.y * (1.0 - u.x) + (d - b) * u.x * u.y;
+                }
+                
+                float fractalNoise(vec2 p) {
+                    float value = 0.0;
+                    float amplitude = 0.5;
+                    for(float i = 0.0; i < fractalDepth; i++) {
+                        value += amplitude * noise(p);
+                        p *= 2.0;
+                        amplitude *= 0.5;
+                    }
+                    return value;
+                }
+                
+                // SACRED GEOMETRY PATTERNS
+                float mandala(vec2 uv, float time) {
+                    vec2 center = uv - 0.5;
+                    float angle = atan(center.y, center.x);
+                    float radius = length(center);
+                    
+                    float pattern = 0.0;
+                    for(float i = 1.0; i <= 8.0; i++) {
+                        float wave = sin(angle * i + time + radius * 10.0);
+                        pattern += wave / i;
+                    }
+                    return pattern;
+                }
+                
+                void main() {
+                    vec2 uv = vUv;
+                    vec3 worldPos = vWorldPosition;
+                    
+                    // MULTI-LAYERED EFFECTS
+                    float pulse = sin(time * 2.0) * 0.5 + 0.5;
+                    float fastPulse = sin(time * 8.0) * 0.3 + 0.7;
+                    
+                    // Distance-based glow
+                    float centerDist = length(uv - 0.5);
+                    float glow = 1.0 - smoothstep(0.0, 0.7, centerDist);
+                    
+                    // FRACTAL ENERGY PATTERNS
+                    vec2 fractalUV = uv * 3.0 + time * 0.1;
+                    float fractal = fractalNoise(fractalUV);
+                    
+                    // SACRED MANDALA OVERLAY
+                    float mandalaPattern = mandala(uv, time * 0.5);
+                    
+                    // ENERGY WAVES based on world position
+                    float energyWave = sin(worldPos.x * 0.5 + time * 3.0) * 
+                                      sin(worldPos.y * 0.3 + time * 2.0) * 
+                                      sin(worldPos.z * 0.7 + time * 4.0);
+                    
+                    // SPECTRAL COLOR SHIFTING
+                    vec3 baseColor = nodeColor;
+                    vec3 shiftedColor = vec3(
+                        baseColor.r + sin(time + fractal) * 0.3,
+                        baseColor.g + sin(time * 1.3 + mandalaPattern) * 0.3,
+                        baseColor.b + sin(time * 0.7 + energyWave) * 0.3
+                    );
+                    
+                    // HOLOGRAPHIC INTERFERENCE
+                    float interference = sin(uv.x * 50.0 + time * 10.0) * 
+                                        sin(uv.y * 30.0 + time * 7.0) * 0.1;
+                    
+                    // COMBINE ALL EFFECTS
+                    vec3 finalColor = shiftedColor * glow * glowIntensity;
+                    finalColor += fractal * 0.3 * baseColor;
+                    finalColor += mandalaPattern * 0.2 * vec3(1.0, 0.8, 1.0);
+                    finalColor += energyWave * 0.15 * vec3(0.8, 1.0, 1.0);
+                    finalColor += interference * shiftedColor;
+                    
+                    // ENERGY BOOST
+                    finalColor *= energyLevel;
+                    
+                    // FRESNEL EDGE LIGHTING
+                    float fresnel = 1.0 - abs(dot(vNormal, normalize(vWorldPosition)));
+                    finalColor += pow(fresnel, 2.0) * baseColor * 0.5;
+                    
+                    // DYNAMIC ALPHA with multiple layers
+                    float alpha = glow * (0.4 + pulse * 0.4 + fractal * 0.2);
+                    alpha *= fastPulse;
+                    alpha = clamp(alpha, 0.0, 1.0);
+                    
+                    gl_FragColor = vec4(finalColor, alpha);
+                }
+            `,
+            transparent: true,
+            blending: THREE.AdditiveBlending,
+            side: THREE.DoubleSide
+        });
+
+        // === CREATE 144 NODES ===
+        const nodes = [];
+        
+        function createNodes() {
+            // ===== MAJOR ARCANA (0-21) - SPECTACULAR INNER RING =====
+            for (let i = 0; i < 22; i++) {
+                const angle = (i / 22) * Math.PI * 2;
+                const radius = 20;
+                
+                // UNIQUE GEOMETRIES for each Major Arcana
+                const geometries = [
+                    new THREE.DodecahedronGeometry(1.2, 0),     // 0 - Fool
+                    new THREE.IcosahedronGeometry(1.0, 2),      // 1 - Magician
+                    new THREE.OctahedronGeometry(1.1, 3),       // 2 - High Priestess
+                    new THREE.TetrahedronGeometry(1.3, 2),      // 3 - Empress
+                    new THREE.BoxGeometry(1.8, 1.8, 1.8, 3, 3, 3), // 4 - Emperor
+                    new THREE.ConeGeometry(1.0, 2.5, 8, 4),     // 5 - Hierophant
+                    new THREE.CylinderGeometry(0.8, 1.2, 2.0, 12, 4), // 6 - Lovers
+                    new THREE.SphereGeometry(1.0, 16, 16),      // 7 - Chariot
+                    new THREE.TorusGeometry(0.8, 0.3, 12, 20),  // 8 - Strength
+                    new THREE.TorusKnotGeometry(0.6, 0.2, 64, 8), // 9 - Hermit
+                    new THREE.DodecahedronGeometry(1.0, 1),     // 10 - Fortune
+                    new THREE.IcosahedronGeometry(1.1, 1),      // 11 - Justice
+                    new THREE.OctahedronGeometry(1.2, 1),       // 12 - Hanged Man
+                    new THREE.TetrahedronGeometry(1.4, 1),      // 13 - Death
+                    new THREE.BoxGeometry(1.6, 1.6, 1.6, 2, 2, 2), // 14 - Temperance
+                    new THREE.ConeGeometry(1.1, 2.8, 6, 3),     // 15 - Devil
+                    new THREE.CylinderGeometry(0.9, 1.3, 2.2, 10, 3), // 16 - Tower
+                    new THREE.SphereGeometry(1.1, 20, 20),      // 17 - Star
+                    new THREE.TorusGeometry(0.9, 0.4, 16, 24),  // 18 - Moon
+                    new THREE.TorusKnotGeometry(0.7, 0.25, 80, 12), // 19 - Sun
+                    new THREE.DodecahedronGeometry(1.3, 2),     // 20 - Judgement
+                    new THREE.IcosahedronGeometry(1.2, 3)       // 21 - World
+                ];
+                
+                const geometry = geometries[i];
+                const material = nodeMaterial.clone();
+                material.uniforms.nodeColor.value = new THREE.Color(majorArcana[i].color);
+                
+                const mesh = new THREE.Mesh(geometry, material);
+                mesh.position.x = Math.cos(angle) * radius;
+                mesh.position.z = Math.sin(angle) * radius;
+                mesh.position.y = 0;
+                mesh.userData = { id: i, type: 'major', data: majorArcana[i] };
+                
+                scene.add(mesh);
+                nodes.push(mesh);
+                
+                // FRACTAL GLOW LAYERS - Each Major Arcana gets unique effects
+                const layers = 3 + (i % 4); // 3-6 layers per node
+                for (let layer = 0; layer < layers; layer++) {
+                    const glowGeo = new THREE.SphereGeometry(1.5 + layer * 0.4, 16, 16);
+                    const glowMat = new THREE.MeshBasicMaterial({
+                        color: majorArcana[i].color,
+                        transparent: true,
+                        opacity: 0.15 / (layer + 1),
+                        blending: THREE.AdditiveBlending
+                    });
+                    const glow = new THREE.Mesh(glowGeo, glowMat);
+                    mesh.add(glow);
+                    
+                    // Rotating fractal effect
+                    glow.rotation.x = Math.random() * Math.PI;
+                    glow.rotation.y = Math.random() * Math.PI;
+                    glow.rotation.z = Math.random() * Math.PI;
+                }
+                
+                // PARTICLE SYSTEMS for each Major Arcana
+                const particleCount = 100 + i * 10;
+                const particleGeo = new THREE.BufferGeometry();
+                const positions = new Float32Array(particleCount * 3);
+                const velocities = new Float32Array(particleCount * 3);
+                
+                for (let p = 0; p < particleCount; p++) {
+                    const phi = Math.random() * Math.PI * 2;
+                    const costheta = Math.random() * 2 - 1;
+                    const u = Math.random();
+                    const theta = Math.acos(costheta);
+                    const r = 2 + Math.random() * 3;
+                    
+                    positions[p * 3] = r * Math.sin(theta) * Math.cos(phi);
+                    positions[p * 3 + 1] = r * Math.sin(theta) * Math.sin(phi);
+                    positions[p * 3 + 2] = r * Math.cos(theta);
+                    
+                    velocities[p * 3] = (Math.random() - 0.5) * 0.02;
+                    velocities[p * 3 + 1] = (Math.random() - 0.5) * 0.02;
+                    velocities[p * 3 + 2] = (Math.random() - 0.5) * 0.02;
+                }
+                
+                particleGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+                const particleMat = new THREE.PointsMaterial({
+                    color: majorArcana[i].color,
+                    size: 0.1,
+                    transparent: true,
+                    opacity: 0.6,
+                    blending: THREE.AdditiveBlending
+                });
+                
+                const particles = new THREE.Points(particleGeo, particleMat);
+                particles.userData = { velocities: velocities };
+                mesh.add(particles);
+            }
+
+            // ===== MINOR ARCANA & EXTENSIONS (22-143) - UNIQUE OUTER SPECTACLE =====
+            for (let i = 22; i < 144; i++) {
+                const ring = Math.floor((i - 22) / 40);
+                const angle = ((i - 22) % 40 / 40) * Math.PI * 2;
+                const radius = 30 + ring * 15;
+                const nodeIndex = i - 22;
+                
+                // CYCLING THROUGH DIFFERENT GEOMETRIES for visual variety
+                const geometryTypes = [
+                    () => new THREE.TetrahedronGeometry(0.6, 2),
+                    () => new THREE.OctahedronGeometry(0.7, 1),
+                    () => new THREE.IcosahedronGeometry(0.5, 1),
+                    () => new THREE.DodecahedronGeometry(0.6, 0),
+                    () => new THREE.BoxGeometry(1.0, 1.0, 1.0, 2, 2, 2),
+                    () => new THREE.ConeGeometry(0.5, 1.5, 8, 2),
+                    () => new THREE.CylinderGeometry(0.4, 0.6, 1.2, 10, 2),
+                    () => new THREE.SphereGeometry(0.6, 12, 12),
+                    () => new THREE.TorusGeometry(0.4, 0.15, 8, 16),
+                    () => new THREE.TorusKnotGeometry(0.3, 0.1, 32, 6)
+                ];
+                
+                const geometry = geometryTypes[nodeIndex % 10]();
+                const material = nodeMaterial.clone();
+                
+                // UNIQUE COLOR HARMONICS - each node gets a distinctive color
+                const hue = (i / 144) * 360 + (ring * 60) + (nodeIndex * 15);
+                const saturation = 0.7 + (Math.sin(nodeIndex * 0.3) * 0.3);
+                const lightness = 0.4 + (Math.cos(nodeIndex * 0.2) * 0.2);
+                material.uniforms.nodeColor.value.setHSL(hue / 360, saturation, lightness);
+                
+                const mesh = new THREE.Mesh(geometry, material);
+                mesh.position.x = Math.cos(angle) * radius;
+                mesh.position.z = Math.sin(angle) * radius;
+                mesh.position.y = ring * 3 + Math.sin(nodeIndex * 0.5) * 2;
+                mesh.userData = { id: i, type: 'minor', ring: ring, nodeIndex: nodeIndex };
+                
+                scene.add(mesh);
+                nodes.push(mesh);
+                
+                // FRACTAL CROWN EFFECTS - Each node gets unique layered glows
+                const crownLayers = 2 + (nodeIndex % 3);
+                for (let layer = 0; layer < crownLayers; layer++) {
+                    const crownGeo = new THREE.RingGeometry(0.8 + layer * 0.3, 1.2 + layer * 0.4, 8 + layer * 4);
+                    const crownMat = new THREE.MeshBasicMaterial({
+                        color: material.uniforms.nodeColor.value,
+                        transparent: true,
+                        opacity: 0.2 / (layer + 1),
+                        blending: THREE.AdditiveBlending,
+                        side: THREE.DoubleSide
+                    });
+                    const crown = new THREE.Mesh(crownGeo, crownMat);
+                    crown.rotation.x = Math.PI / 2 + (layer * 0.2);
+                    crown.position.y = 1.5 + layer * 0.5;
+                    mesh.add(crown);
+                }
+                
+                // UNIQUE ORBITAL EFFECTS - Different patterns for different rings
+                if (ring === 0) {
+                    // First ring: Spinning diamonds
+                    const orbitGeo = new THREE.OctahedronGeometry(0.2, 0);
+                    const orbitMat = new THREE.MeshBasicMaterial({
+                        color: material.uniforms.nodeColor.value,
+                        transparent: true,
+                        opacity: 0.8,
+                        blending: THREE.AdditiveBlending
+                    });
+                    
+                    for (let o = 0; o < 4; o++) {
+                        const orbit = new THREE.Mesh(orbitGeo, orbitMat);
+                        orbit.position.x = Math.cos(o * Math.PI / 2) * 2;
+                        orbit.position.z = Math.sin(o * Math.PI / 2) * 2;
+                        orbit.userData = { orbitAngle: o * Math.PI / 2, orbitRadius: 2 };
+                        mesh.add(orbit);
+                    }
+                } else if (ring === 1) {
+                    // Second ring: Floating cubes
+                    const cubeGeo = new THREE.BoxGeometry(0.3, 0.3, 0.3);
+                    const cubeMat = new THREE.MeshBasicMaterial({
+                        color: material.uniforms.nodeColor.value,
+                        transparent: true,
+                        opacity: 0.6,
+                        blending: THREE.AdditiveBlending
+                    });
+                    
+                    for (let c = 0; c < 6; c++) {
+                        const cube = new THREE.Mesh(cubeGeo, cubeMat);
+                        cube.position.x = (Math.random() - 0.5) * 4;
+                        cube.position.y = (Math.random() - 0.5) * 4;
+                        cube.position.z = (Math.random() - 0.5) * 4;
+                        cube.userData = { floatSpeed: Math.random() * 0.02 + 0.01 };
+                        mesh.add(cube);
+                    }
+                } else {
+                    // Outer rings: Spiral particles
+                    const spiralCount = 50;
+                    const spiralGeo = new THREE.BufferGeometry();
+                    const spiralPositions = new Float32Array(spiralCount * 3);
+                    
+                    for (let s = 0; s < spiralCount; s++) {
+                        const spiralAngle = (s / spiralCount) * Math.PI * 4;
+                        const spiralRadius = 1 + (s / spiralCount) * 2;
+                        spiralPositions[s * 3] = Math.cos(spiralAngle) * spiralRadius;
+                        spiralPositions[s * 3 + 1] = (s / spiralCount) * 3 - 1.5;
+                        spiralPositions[s * 3 + 2] = Math.sin(spiralAngle) * spiralRadius;
+                    }
+                    
+                    spiralGeo.setAttribute('position', new THREE.BufferAttribute(spiralPositions, 3));
+                    const spiralMat = new THREE.PointsMaterial({
+                        color: material.uniforms.nodeColor.value,
+                        size: 0.15,
+                        transparent: true,
+                        opacity: 0.8,
+                        blending: THREE.AdditiveBlending
+                    });
+                    
+                    const spiral = new THREE.Points(spiralGeo, spiralMat);
+                    mesh.add(spiral);
+                }
+            }
+        }
+
+        // === CREATE CONNECTIONS (LATTICE) ===
+        function createLattice() {
+            const connectionMaterial = new THREE.LineBasicMaterial({
+                color: 0x9370db,
+                transparent: true,
+                opacity: 0.3,
+                blending: THREE.AdditiveBlending
+            });
+
+            // Connect Major Arcana in circle
+            for (let i = 0; i < 22; i++) {
+                const points = [
+                    nodes[i].position,
+                    nodes[(i + 1) % 22].position
+                ];
+                const geometry = new THREE.BufferGeometry().setFromPoints(points);
+                const line = new THREE.Line(geometry, connectionMaterial);
+                scene.add(line);
+            }
+
+            // Connect to outer rings
+            for (let i = 0; i < 22; i++) {
+                const outerNode = nodes[22 + i * 5];
+                if (outerNode) {
+                    const points = [nodes[i].position, outerNode.position];
+                    const geometry = new THREE.BufferGeometry().setFromPoints(points);
+                    const line = new THREE.Line(geometry, connectionMaterial);
+                    scene.add(line);
+                }
+            }
+        }
+
+        // === PARTICLE SYSTEM ===
+        function createParticles() {
+            const geometry = new THREE.BufferGeometry();
+            const positions = [];
+            const colors = [];
+
+            for (let i = 0; i < 3000; i++) {
+                positions.push(
+                    (Math.random() - 0.5) * 200,
+                    (Math.random() - 0.5) * 100,
+                    (Math.random() - 0.5) * 200
+                );
+
+                const color = new THREE.Color();
+                color.setHSL(Math.random(), 0.7, 0.5);
+                colors.push(color.r, color.g, color.b);
+            }
+
+            geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+            geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+
+            const material = new THREE.PointsMaterial({
+                size: 0.1,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.6,
+                blending: THREE.AdditiveBlending
+            });
+
+            const particles = new THREE.Points(geometry, material);
+            scene.add(particles);
+        }
+
+        // === INPUT HANDLING ===
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'w' || e.key === 'W') controls.forward = true;
+            if (e.key === 's' || e.key === 'S') controls.backward = true;
+            if (e.key === 'a' || e.key === 'A') controls.left = true;
+            if (e.key === 'd' || e.key === 'D') controls.right = true;
+            if (e.key === ' ') { controls.up = true; e.preventDefault(); }
+            if (e.key === 'Shift') controls.down = true;
+            
+            // ESC - Return to Fool
+            if (e.key === 'Escape') {
+                state.currentNode = 0;
+                state.currentDepth = 0;
+                updateNodeDisplay();
+            }
+        });
+
+        document.addEventListener('keyup', (e) => {
+            if (e.key === 'w' || e.key === 'W') controls.forward = false;
+            if (e.key === 's' || e.key === 'S') controls.backward = false;
+            if (e.key === 'a' || e.key === 'A') controls.left = false;
+            if (e.key === 'd' || e.key === 'D') controls.right = false;
+            if (e.key === ' ') controls.up = false;
+            if (e.key === 'Shift') controls.down = false;
+        });
+
+        let isPointerLocked = false;
+
+        document.addEventListener('mousemove', (e) => {
+            if (isPointerLocked) {
+                yaw -= e.movementX * 0.002;
+                pitch -= e.movementY * 0.002;
+                pitch = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, pitch));
+            }
+
+            // Update custom cursor
+            document.querySelector('.cursor').style.left = e.clientX + 'px';
+            document.querySelector('.cursor').style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('click', () => {
+            if (!isPointerLocked && !document.getElementById('instructions').classList.contains('hidden')) {
+                document.body.requestPointerLock();
+            }
+        });
+
+        document.addEventListener('pointerlockchange', () => {
+            isPointerLocked = !!document.pointerLockElement;
+        });
+
+        // === UPDATE NODE DISPLAY ===
+        function updateNodeDisplay() {
+            const node = nodes[state.currentNode];
+            if (node && node.userData.data) {
+                document.getElementById('nodeTitle').textContent = node.userData.data.name;
+                document.getElementById('nodeSubtitle').textContent = node.userData.data.subtitle;
+            }
+            
+            document.getElementById('depthValue').textContent = state.currentDepth;
+            document.getElementById('depthFill').style.width = (state.currentDepth / 99 * 100) + '%';
+        }
+
+        // === ANIMATION LOOP ===
+        let time = 0;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            time += 0.01;
+
+            // Update camera
+            const direction = new THREE.Vector3();
+            camera.getWorldDirection(direction);
+            
+            const right = new THREE.Vector3();
+            right.crossVectors(camera.up, direction).normalize();
+
+            if (controls.forward) camera.position.addScaledVector(direction, controls.speed);
+            if (controls.backward) camera.position.addScaledVector(direction, -controls.speed);
+            if (controls.left) camera.position.addScaledVector(right, controls.speed);
+            if (controls.right) camera.position.addScaledVector(right, -controls.speed);
+            if (controls.up) {
+                camera.position.y += controls.speed;
+                state.currentDepth = Math.max(0, state.currentDepth - 1);
+            }
+            if (controls.down) {
+                camera.position.y -= controls.speed;
+                state.currentDepth = Math.min(99, state.currentDepth + 1);
+            }
+
+            camera.rotation.order = 'YXZ';
+            camera.rotation.y = yaw;
+            camera.rotation.x = pitch;
+
+            // ===== SPECTACULAR NODE ANIMATIONS =====
+            nodes.forEach((node, i) => {
+                // Basic rotation with unique speeds per node
+                const rotationSpeed = 0.003 + (i * 0.0001);
+                node.rotation.y += rotationSpeed;
+                node.rotation.x += rotationSpeed * 0.7;
+                node.rotation.z += rotationSpeed * 0.3;
+                
+                // Update shader time
+                node.material.uniforms.time.value = time;
+                
+                // ANIMATED FLOATING for all nodes
+                const floatSpeed = 0.5 + (i * 0.1);
+                const floatAmount = 0.3 + Math.sin(i * 0.5) * 0.2;
+                node.position.y += Math.sin(time * floatSpeed) * 0.005 * floatAmount;
+                
+                // FRACTAL GLOW ANIMATIONS
+                node.children.forEach((child, childIndex) => {
+                    if (child.geometry && child.geometry.type === 'SphereGeometry') {
+                        // Fractal layer rotations
+                        child.rotation.x += 0.01 * (childIndex + 1);
+                        child.rotation.y += 0.008 * (childIndex + 1);
+                        child.rotation.z += 0.006 * (childIndex + 1);
+                        
+                        // Pulsing opacity
+                        const pulseSpeed = 1.0 + childIndex * 0.3;
+                        const basOpacity = child.material.opacity || 0.15;
+                        child.material.opacity = basOpacity * (0.7 + 0.3 * Math.sin(time * pulseSpeed));
+                    }
+                    
+                    // RING/CROWN ANIMATIONS
+                    if (child.geometry && child.geometry.type === 'RingGeometry') {
+                        child.rotation.z += 0.02 * (childIndex + 1);
+                        child.rotation.y += 0.01 * (childIndex + 1);
+                        
+                        // Scale pulsing
+                        const scalePhase = time * 2 + childIndex;
+                        const scaleAmount = 1.0 + 0.1 * Math.sin(scalePhase);
+                        child.scale.setScalar(scaleAmount);
+                    }
+                    
+                    // PARTICLE SYSTEM ANIMATIONS
+                    if (child.type === 'Points' && child.userData.velocities) {
+                        const positions = child.geometry.attributes.position.array;
+                        const velocities = child.userData.velocities;
+                        
+                        for (let p = 0; p < positions.length; p += 3) {
+                            positions[p] += velocities[p];
+                            positions[p + 1] += velocities[p + 1];
+                            positions[p + 2] += velocities[p + 2];
+                            
+                            // Boundary wrapping for particles
+                            const dist = Math.sqrt(positions[p]**2 + positions[p+1]**2 + positions[p+2]**2);
+                            if (dist > 5) {
+                                positions[p] *= 0.1;
+                                positions[p + 1] *= 0.1;
+                                positions[p + 2] *= 0.1;
+                            }
+                        }
+                        child.geometry.attributes.position.needsUpdate = true;
+                    }
+                    
+                    // ORBITAL ANIMATIONS (for minor arcana)
+                    if (child.userData.orbitAngle !== undefined) {
+                        child.userData.orbitAngle += 0.03;
+                        const r = child.userData.orbitRadius;
+                        child.position.x = Math.cos(child.userData.orbitAngle) * r;
+                        child.position.z = Math.sin(child.userData.orbitAngle) * r;
+                        child.rotation.y += 0.05;
+                    }
+                    
+                    // FLOATING CUBE ANIMATIONS
+                    if (child.userData.floatSpeed) {
+                        child.position.y += Math.sin(time * child.userData.floatSpeed) * 0.01;
+                        child.rotation.x += child.userData.floatSpeed;
+                        child.rotation.y += child.userData.floatSpeed * 0.7;
+                        child.rotation.z += child.userData.floatSpeed * 0.5;
+                    }
+                    
+                    // SPIRAL PARTICLE ROTATION
+                    if (child.type === 'Points' && !child.userData.velocities) {
+                        child.rotation.y += 0.01;
+                        child.rotation.x += 0.005;
+                    }
+                });
+                
+                // PROXIMITY EFFECTS - Enhanced for spectacular visuals
+                const dist = camera.position.distanceTo(node.position);
+                if (dist < 5) {
+                    // Enhanced glow when near
+                    const proximity = 1.0 - (dist / 5.0);
+                    const glowMultiplier = 1.0 + proximity * 3.0;
+                    node.material.uniforms.glowIntensity.value = glowMultiplier;
+                    
+                    // Scale up nearby nodes
+                    const scaleMultiplier = 1.0 + proximity * 0.5;
+                    node.scale.setScalar(scaleMultiplier);
+                    
+                    // Update current node for UI
+                    if (dist < 3 && state.currentNode !== i) {
+                        state.currentNode = i;
+                        updateNodeDisplay();
+                    }
+                } else {
+                    node.material.uniforms.glowIntensity.value = 1.0;
+                    node.scale.setScalar(1.0);
+                }
+                
+                // MAJOR ARCANA SPECIAL EFFECTS
+                if (i < 22) {
+                    // Each Major Arcana gets unique special animation
+                    switch(i) {
+                        case 0: // Fool (White Rabbit) - FLAGSHIP SPECTACULAR TREATMENT
+                            node.position.x += Math.sin(time * 2.3) * 0.02;
+                            node.position.z += Math.cos(time * 1.9) * 0.02;
+                            
+                            // White Rabbit Portal Effect
+                            node.children.forEach(child => {
+                                if (child.material && child.material.opacity) {
+                                    child.material.opacity *= 1.5; // Extra bright
+                                    
+                                    // Rabbit hole swirl
+                                    child.rotation.z += 0.05;
+                                    const swirl = 1.0 + 0.3 * Math.sin(time * 4);
+                                    child.scale.setScalar(swirl);
+                                }
+                            });
+                            
+                            // Special White Rabbit color shifting
+                            const rabbitHue = (time * 50) % 360;
+                            node.material.uniforms.nodeColor.value.setHSL(rabbitHue / 360, 0.9, 0.8);
+                            node.material.uniforms.energyLevel.value = 2.0; // Max energy
+                            break;
+                            
+                        case 1: // Magician - Magnetic pull effect
+                            node.children.forEach(child => {
+                                if (child.type === 'Points') {
+                                    child.material.size = 0.1 + 0.05 * Math.sin(time * 3);
+                                }
+                            });
+                            break;
+                            
+                        case 2: // High Priestess - Mystical pulsing
+                            const mysticalPulse = 1.0 + 0.3 * Math.sin(time * 1.5);
+                            node.children.forEach(child => {
+                                if (child.material.opacity) {
+                                    child.material.opacity *= mysticalPulse;
+                                }
+                            });
+                            break;
+                            
+                        case 21: // World - Completion harmony
+                            node.rotation.y += 0.02 * Math.sin(time);
+                            node.rotation.x += 0.01 * Math.cos(time * 1.3);
+                            break;
+                    }
+                }
+            });
+
+            // ===== ANIMATE SPECTACULAR ENVIRONMENTAL EFFECTS =====
+            if (scene.userData.effects) {
+                const effects = scene.userData.effects;
+                
+                // COSMIC DUST ROTATION
+                if (effects.cosmicDust) {
+                    effects.cosmicDust.rotation.y += 0.0005;
+                    effects.cosmicDust.rotation.x += 0.0003;
+                }
+                
+                // ENERGY RINGS ROTATION
+                effects.energyRings.forEach(ring => {
+                    ring.rotateOnAxis(ring.userData.axis, ring.userData.rotSpeed);
+                    
+                    // Pulsing opacity
+                    const pulse = 0.05 + 0.05 * Math.sin(time * 2 + ring.position.length());
+                    ring.material.opacity = pulse;
+                });
+                
+                // HOLOGRAPHIC BACKDROP
+                if (effects.holographicBackdrop) {
+                    effects.holographicBackdrop.rotation.y += 0.0002;
+                    effects.holographicBackdrop.rotation.x += 0.0001;
+                    
+                    // Breathing effect
+                    const breathe = 1.0 + 0.05 * Math.sin(time * 0.8);
+                    effects.holographicBackdrop.scale.setScalar(breathe);
+                }
+                
+                // ENERGY CORE ANIMATION
+                if (effects.energyCore) {
+                    effects.energyCore.material.uniforms.time.value = time;
+                    effects.energyCore.rotation.y += 0.01;
+                    effects.energyCore.rotation.x += 0.007;
+                    
+                    // Core energy fluctuation
+                    const coreEnergy = 1.0 + 0.5 * Math.sin(time * 1.3);
+                    effects.energyCore.material.uniforms.coreEnergy.value = coreEnergy;
+                }
+            }
+
+            renderer.render(scene, camera);
+        }
+
+        // === INITIALIZATION ===
+        window.startExperience = function() {
+            document.getElementById('instructions').classList.add('hidden');
+            document.getElementById('loading').classList.add('hidden');
+            animate();
+        };
+
+        // Setup scene
+        // === CREATE SPECTACULAR ENVIRONMENTAL EFFECTS ===
+        function createSpectacularEnvironment() {
+            // COSMIC DUST CLOUD
+            const dustCount = 5000;
+            const dustGeometry = new THREE.BufferGeometry();
+            const dustPositions = new Float32Array(dustCount * 3);
+            const dustColors = new Float32Array(dustCount * 3);
+            
+            for (let i = 0; i < dustCount; i++) {
+                // Spherical distribution around the cathedral
+                const radius = 150 + Math.random() * 200;
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos(2 * Math.random() - 1);
+                
+                dustPositions[i * 3] = radius * Math.sin(phi) * Math.cos(theta);
+                dustPositions[i * 3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+                dustPositions[i * 3 + 2] = radius * Math.cos(phi);
+                
+                // Rainbow cosmic dust
+                const hue = Math.random();
+                const color = new THREE.Color().setHSL(hue, 0.6, 0.7);
+                dustColors[i * 3] = color.r;
+                dustColors[i * 3 + 1] = color.g;
+                dustColors[i * 3 + 2] = color.b;
+            }
+            
+            dustGeometry.setAttribute('position', new THREE.BufferAttribute(dustPositions, 3));
+            dustGeometry.setAttribute('color', new THREE.BufferAttribute(dustColors, 3));
+            
+            const dustMaterial = new THREE.PointsMaterial({
+                size: 0.5,
+                transparent: true,
+                opacity: 0.6,
+                blending: THREE.AdditiveBlending,
+                vertexColors: true
+            });
+            
+            const cosmicDust = new THREE.Points(dustGeometry, dustMaterial);
+            scene.add(cosmicDust);
+            
+            // ENERGY FIELD RINGS
+            for (let ring = 0; ring < 7; ring++) {
+                const ringRadius = 80 + ring * 25;
+                const ringGeometry = new THREE.TorusGeometry(ringRadius, 0.5, 8, 64);
+                const ringMaterial = new THREE.MeshBasicMaterial({
+                    color: new THREE.Color().setHSL(ring / 7, 0.8, 0.5),
+                    transparent: true,
+                    opacity: 0.1,
+                    blending: THREE.AdditiveBlending,
+                    wireframe: true
+                });
+                
+                const energyRing = new THREE.Mesh(ringGeometry, ringMaterial);
+                energyRing.rotation.x = Math.random() * Math.PI;
+                energyRing.rotation.y = Math.random() * Math.PI;
+                energyRing.rotation.z = Math.random() * Math.PI;
+                energyRing.userData = { 
+                    rotSpeed: 0.001 + Math.random() * 0.003,
+                    axis: new THREE.Vector3(
+                        Math.random() - 0.5,
+                        Math.random() - 0.5, 
+                        Math.random() - 0.5
+                    ).normalize()
+                };
+                scene.add(energyRing);
+            }
+            
+            // HOLOGRAPHIC GEOMETRY BACKDROP
+            const backdropGeometry = new THREE.IcosahedronGeometry(300, 2);
+            const backdropMaterial = new THREE.MeshBasicMaterial({
+                color: 0x9370db,
+                transparent: true,
+                opacity: 0.03,
+                blending: THREE.AdditiveBlending,
+                wireframe: true,
+                side: THREE.BackSide
+            });
+            
+            const holographicBackdrop = new THREE.Mesh(backdropGeometry, backdropMaterial);
+            scene.add(holographicBackdrop);
+            
+            // CENTRAL ENERGY CORE
+            const coreGeometry = new THREE.SphereGeometry(5, 32, 32);
+            const coreMaterial = new THREE.ShaderMaterial({
+                uniforms: {
+                    time: { value: 0 },
+                    coreEnergy: { value: 1.0 }
+                },
+                vertexShader: `
+                    varying vec2 vUv;
+                    varying vec3 vPosition;
+                    void main() {
+                        vUv = uv;
+                        vPosition = position;
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    uniform float time;
+                    uniform float coreEnergy;
+                    varying vec2 vUv;
+                    varying vec3 vPosition;
+                    
+                    void main() {
+                        float pulse = sin(time * 1.5) * 0.5 + 0.5;
+                        float energy = sin(length(vPosition) + time * 3.0) * 0.5 + 0.5;
+                        
+                        vec3 color = vec3(0.8, 0.4, 1.0) * pulse * energy * coreEnergy;
+                        float alpha = 0.1 + energy * 0.2;
+                        
+                        gl_FragColor = vec4(color, alpha);
+                    }
+                `,
+                transparent: true,
+                blending: THREE.AdditiveBlending
+            });
+            
+            const energyCore = new THREE.Mesh(coreGeometry, coreMaterial);
+            scene.add(energyCore);
+            
+            // Store references for animation
+            scene.userData.effects = {
+                cosmicDust: cosmicDust,
+                energyRings: scene.children.filter(child => child.userData.rotSpeed),
+                holographicBackdrop: holographicBackdrop,
+                energyCore: energyCore
+            };
+        }
+
+        createNodes();
+        createLattice();
+        createParticles();
+        createSpectacularEnvironment();
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        // Hide loading after init
+        setTimeout(() => {
+            document.getElementById('loading').classList.add('hidden');
+        }, 2000);
+    </script>
+</body>
+</html>

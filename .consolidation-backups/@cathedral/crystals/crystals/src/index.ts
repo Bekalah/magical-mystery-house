@@ -1,8 +1,3 @@
-/**
- * index
- * 
- * @package @cathedral/crystals
- */
 // index.ts - public exports
 export * from './types';
 export * from './data/baseCrystals';

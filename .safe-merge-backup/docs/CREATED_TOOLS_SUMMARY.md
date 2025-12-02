@@ -39,7 +39,7 @@ imoires into your game and canvas tools
 
 **Output**: `docs/AUTHENTIC_VISION_DISCOVERY.json`
 
-**Run**: `ppnpm run discover:vision`
+**Run**: `pppnpm run discover:vision`
 
 ### 2. Discover Influences (`discover-influences.mjs`)
 
@@ -53,7 +53,7 @@ imoires into your game and canvas tools
 
 **Output**: `docs/INFLUENCES_DISCOVERY.json`
 
-**Run**: `ppnpm run discover:influences`
+**Run**: `pppnpm run discover:influences`
 
 ### 3. Extract Symbols from Books (`extract-symbols-from-books.mjs`)
 
@@ -69,7 +69,7 @@ imoires into your game and canvas tools
 
 **Output**: `docs/SYMBOLS_EXTRACTED.json`
 
-**Run**: `ppnpm run extract:symbols`
+**Run**: `pppnpm run extract:symbols`
 
 ### 4. Extract Spells from Grimoires (`extract-spells-from-grimoires.mjs`)
 
@@ -84,7 +84,7 @@ imoires into your game and canvas tools
 
 **Output**: `docs/SPELLS_EXTRACTED.json`
 
-**Run**: `ppnpm run extract:spells`
+**Run**: `pppnpm run extract:spells`
 
 ### 5. Extract Visionary Art Themes (`extract-visionary-art-themes.mjs`)
 
@@ -104,7 +104,7 @@ imoires into your game and canvas tools
 - `data/canvas-themes-symbols.json` - Canvas integration data
 - `data/game-themes-symbols.json` - Game integration data
 
-**Run**: `ppnpm run extract:art-themes`
+**Run**: `pppnpm run extract:art-themes`
 
 ### 6. Generate Learning Report (`generate-learning-report.mjs`)
 
@@ -123,14 +123,14 @@ imoires into your game and canvas tools
 - `docs/LEARNING_REPORT.json` - Structured data
 - `docs/LEARNING_REPORT.md` - Human-readable report
 
-**Run**: `ppnpm run learn:report`
+**Run**: `pppnpm run learn:report`
 
 ## How to Use
 
 ### Run All Discovery Tools
 
 ```bash
-ppnpm run discover:all
+pppnpm run discover:all
 ```
 
 This runs all discovery tools in sequence and generates the final learning report.
@@ -139,22 +139,22 @@ This runs all discovery tools in sequence and generates the final learning repor
 
 ```bash
 # Discover your vision
-ppnpm run discover:vision
+pppnpm run discover:vision
 
 # Discover influences
-ppnpm run discover:influences
+pppnpm run discover:influences
 
 # Extract symbols
-ppnpm run extract:symbols
+pppnpm run extract:symbols
 
 # Extract spells
-ppnpm run extract:spells
+pppnpm run extract:spells
 
 # Extract art themes
-ppnpm run extract:art-themes
+pppnpm run extract:art-themes
 
 # Generate learning report
-ppnpm run learn:report
+pppnpm run learn:report
 ```
 
 ## Integration with Your Systems

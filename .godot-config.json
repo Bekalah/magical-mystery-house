@@ -1,0 +1,63 @@
+{
+  "godot_version": "4.5",
+  "godot_version_stable": "4.5.0",
+  "compatibility": {
+    "minimum": "4.0",
+    "target": "4.5",
+    "maximum": "4.5"
+  },
+  "system_requirements": {
+    "platforms": {
+      "windows": {
+        "os": "Windows 7 or later (64-bit)",
+        "cpu": "x86_64 or ARM64",
+        "ram": "4 GB minimum, 8 GB recommended",
+        "gpu": "DirectX 11/12 compatible"
+      },
+      "macos": {
+        "os": "macOS 10.14 or later",
+        "cpu": "x86_64 or Apple Silicon (ARM64)",
+        "ram": "4 GB minimum, 8 GB recommended",
+        "gpu": "Metal compatible"
+      },
+      "linux": {
+        "os": "Linux (64-bit)",
+        "cpu": "x86_64 or ARM64",
+        "ram": "4 GB minimum, 8 GB recommended",
+        "gpu": "OpenGL 3.3 or Vulkan compatible"
+      }
+    }
+  },
+  "godot_features": {
+    "gdextension": true,
+    "gdscript": true,
+    "csharp": false,
+    "vulkan": true,
+    "opengl": true,
+    "web": true
+  },
+  "project_settings": {
+    "rendering": {
+      "renderer": "forward_plus",
+      "vulkan": true,
+      "opengl": false
+    },
+    "audio": {
+      "driver": "auto"
+    },
+    "input": {
+      "keyboard": true,
+      "mouse": true,
+      "gamepad": true,
+      "touch": true
+    }
+  },
+  "packages": [
+    "@cathedral/godot-codex-14499",
+    "@cathedral/godot-design-studio",
+    "@cathedral/godot-liber-arcanae",
+    "@cathedral/godot-vfx-library"
+  ],
+  "notes": "Godot 4.5 is locked for all Cathedral packages. This ensures compatibility and stability."
+}
+

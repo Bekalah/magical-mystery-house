@@ -165,7 +165,7 @@ class MasterPublisher {
       for (const pkg of this.packages) {
         try {
           console.log(`   Publishing ${pkg.name}@${pkg.version}...`);
-          execSync('ppnpm publish --access public --no-git-checks', {
+          execSync('pppnpm publish --access public --no-git-checks', {
             cwd: pkg.path,
             encoding: 'utf8',
             stdio: 'inherit'

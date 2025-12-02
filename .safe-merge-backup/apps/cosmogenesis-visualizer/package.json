@@ -16,5 +16,6 @@
     "name": "Cosmogenesis Visualizer",
     "symbol": "⊙",
     "label": "⊙ Cosmogenesis Visualizer (cosmogenesis-visualizer)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

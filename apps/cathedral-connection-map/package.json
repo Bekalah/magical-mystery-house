@@ -11,10 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:01.502Z",
+  "consolidatedAt": "2025-12-01T21:19:39.407Z",
   "alchemical": {
     "name": "Cathedral Connection Map",
     "symbol": "⊙",
     "label": "⊙ Cathedral Connection Map (cathedral-connection-map)"
+  },
+  "packageManager": "pnpm@10.23.0",
+  "engines": {
+    "node": "*"
   }
 }

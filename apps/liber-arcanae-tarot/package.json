@@ -5,7 +5,7 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": "25.0.0"
+    "node": "*"
   },
   "scripts": {
     "dev": "vite dev --port 3001",
@@ -85,7 +85,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/user-event": "^14.5.2"
   },
-  "author": "Cathedral Master Creative Intelligence Team",
+  "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
   "license": "CC0-1.0",
   "repository": {
     "type": "git",
@@ -180,10 +180,5 @@
     }
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:01.966Z",
-  "alchemical": {
-    "name": "@Bekalah/Liber Arcanae Tarot",
-    "symbol": "⊙",
-    "label": "⊙ @Bekalah/Liber Arcanae Tarot (@bekalah/liber-arcanae-tarot)"
-  }
+  "consolidatedAt": "2025-12-01T21:19:39.766Z"
 }

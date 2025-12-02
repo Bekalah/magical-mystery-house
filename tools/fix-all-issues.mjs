@@ -56,15 +56,15 @@ class FixAllIssues {
     let content = fs.readFileSync(packageJsonPath, 'utf-8');
     let fixed = false;
 
-    // Fix pppnpm -> pnpm
-    if (content.includes('pppnpm')) {
-      content = content.replace(/pppnpm/g, 'pnpm');
+    // Fix pnpm -> pnpm
+    if (content.includes('pnpm')) {
+      content = content.replace(/pnpm/g, 'pnpm');
       fixed = true;
     }
 
-    // Fix pppnpm -> pnpm
-    if (content.includes('ppnpm')) {
-      content = content.replace(/ppnpm/g, 'pnpm');
+    // Fix pnpm -> pnpm
+    if (content.includes('pnpm')) {
+      content = content.replace(/pnpm/g, 'pnpm');
       fixed = true;
     }
 

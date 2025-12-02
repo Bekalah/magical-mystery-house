@@ -128,45 +128,45 @@
 ## 📜 Complete Script List (27 Scripts)
 
 ### Development
-- `pnpm run build` - Build project
-- `pnpm run build:watch` - Watch mode
-- `pnpm run build:scripts` - Build scripts
-- `pnpm run lint` - Lint code
-- `pnpm run format` - Format code
+- `ppnpm run build` - Build project
+- `ppnpm run build:watch` - Watch mode
+- `ppnpm run build:scripts` - Build scripts
+- `ppnpm run lint` - Lint code
+- `ppnpm run format` - Format code
 
 ### Experiment
-- `pnpm run experiment:start` - Run experiment
-- `pnpm run experiment:daemon` - Run in background
+- `ppnpm run experiment:start` - Run experiment
+- `ppnpm run experiment:daemon` - Run in background
 
 ### Integration
-- `pnpm run integrate:workspaces` - Integrate workspaces
-- `pnpm run integrate:all` - Integrate all
-- `pnpm run test:integration` - Test integration
+- `ppnpm run integrate:workspaces` - Integrate workspaces
+- `ppnpm run integrate:all` - Integrate all
+- `ppnpm run test:integration` - Test integration
 
 ### GitHub
-- `pnpm run github:diagnose` - GitHub diagnostics
-- `pnpm run github:publish` - Publish to GitHub
+- `ppnpm run github:diagnose` - GitHub diagnostics
+- `ppnpm run github:publish` - Publish to GitHub
 
 ### Maintenance
-- `pnpm run fix:remotes` - Fix git remotes
-- `pnpm run cleanup:non-repos` - Clean non-repo dirs
-- `pnpm run organize:extracted` - Organize content
+- `ppnpm run fix:remotes` - Fix git remotes
+- `ppnpm run cleanup:non-repos` - Clean non-repo dirs
+- `ppnpm run organize:extracted` - Organize content
 
 ### Health & Quality
-- `pnpm run validate:setup` - Validate setup
-- `pnpm run health:check` - Health check
-- `pnpm run check:dependencies` - Check dependencies
-- `pnpm run check:quality` - Code quality
-- `pnpm run check:all` - Run all checks
-- `pnpm run summary` - System summary
+- `ppnpm run validate:setup` - Validate setup
+- `ppnpm run health:check` - Health check
+- `ppnpm run check:dependencies` - Check dependencies
+- `ppnpm run check:quality` - Code quality
+- `ppnpm run check:all` - Run all checks
+- `ppnpm run summary` - System summary
 
 ### Performance
-- `pnpm run performance:monitor` - Performance monitoring
-- `pnpm run optimize:suggestions` - Optimization suggestions
+- `ppnpm run performance:monitor` - Performance monitoring
+- `ppnpm run optimize:suggestions` - Optimization suggestions
 
 ### Testing
-- `pnpm run test:node` - Node tests
-- `pnpm run test` - Run tests
+- `ppnpm run test:node` - Node tests
+- `ppnpm run test` - Run tests
 
 ---
 
@@ -230,18 +230,18 @@
 ### Most Used Commands
 ```bash
 # System Overview
-pnpm run summary
+ppnpm run summary
 
 # Health & Quality
-pnpm run check:all
+ppnpm run check:all
 
 # GitHub
-pnpm run github:diagnose
-pnpm run github:publish
+ppnpm run github:diagnose
+ppnpm run github:publish
 
 # Maintenance
-pnpm run fix:remotes
-pnpm run cleanup:non-repos
+ppnpm run fix:remotes
+ppnpm run cleanup:non-repos
 ```
 
 ### Key Files

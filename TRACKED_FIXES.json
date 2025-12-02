@@ -1,0 +1,323 @@
+{
+  "appliedFixes": [
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-engine-core/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:03.950Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-standards-core/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:03.960Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/avatar-experience-system/src/index.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.js",
+      "timestamp": "2025-12-02T07:15:03.962Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain/src/colorScience.d.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to colorScience.d.ts",
+      "timestamp": "2025-12-02T07:15:03.964Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain/src/colorScience.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to colorScience.js",
+      "timestamp": "2025-12-02T07:15:03.965Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain/src/index.d.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.d.ts",
+      "timestamp": "2025-12-02T07:15:03.966Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain/src/index.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.js",
+      "timestamp": "2025-12-02T07:15:03.966Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-design-library/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:03.967Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-lightweight-library/src/index.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.js",
+      "timestamp": "2025-12-02T07:15:03.969Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-plugin-system/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:03.971Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game/src/index.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.js",
+      "timestamp": "2025-12-02T07:15:03.975Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/connections/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:03.976Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/cosmogenesis/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:03.978Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/index.d.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.d.ts",
+      "timestamp": "2025-12-02T07:15:03.979Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/index.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.js",
+      "timestamp": "2025-12-02T07:15:03.980Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:03.981Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/resonance.d.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to resonance.d.ts",
+      "timestamp": "2025-12-02T07:15:03.982Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/resonance.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to resonance.js",
+      "timestamp": "2025-12-02T07:15:03.983Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/fractal-flames-daemon-deity/src/index.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.js",
+      "timestamp": "2025-12-02T07:15:03.984Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/fractal-flames-daemon-deity/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:03.985Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/fusion-creative-suite/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:03.986Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:03.988Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/ArcanaeCharacterSystem.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to ArcanaeCharacterSystem.js",
+      "timestamp": "2025-12-02T07:15:03.990Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/AudioSynthesisEngine.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to AudioSynthesisEngine.js",
+      "timestamp": "2025-12-02T07:15:03.991Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/AzureOpenAIIntegration.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to AzureOpenAIIntegration.js",
+      "timestamp": "2025-12-02T07:15:03.992Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/CathedralGameInterface.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to CathedralGameInterface.js",
+      "timestamp": "2025-12-02T07:15:03.992Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/CodexGameEngine.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to CodexGameEngine.js",
+      "timestamp": "2025-12-02T07:15:03.994Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/CodexNodeManager.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to CodexNodeManager.js",
+      "timestamp": "2025-12-02T07:15:03.995Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/SacredGeometryRenderer.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to SacredGeometryRenderer.js",
+      "timestamp": "2025-12-02T07:15:03.995Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/TraumaSafeGameState.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to TraumaSafeGameState.js",
+      "timestamp": "2025-12-02T07:15:03.996Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/index.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.js",
+      "timestamp": "2025-12-02T07:15:03.997Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-codex-14499/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:03.998Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-design-studio/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:03.999Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:04.000Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-vfx-library/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:04.001Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/graphs/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:04.002Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/hall-of-ateliers/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:04.002Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/holographic-interface/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:04.004Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae/src/22-master-arcanae-ornate-complete.d.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to 22-master-arcanae-ornate-complete.d.ts",
+      "timestamp": "2025-12-02T07:15:04.004Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae/src/22-master-arcanae-ornate-complete.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to 22-master-arcanae-ornate-complete.js",
+      "timestamp": "2025-12-02T07:15:04.008Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae/src/22-playable-characters.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to 22-playable-characters.js",
+      "timestamp": "2025-12-02T07:15:04.008Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/music-engine-core/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:04.010Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-collaboration-engine/src/ProfessionalCollaborationEngine.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to ProfessionalCollaborationEngine.js",
+      "timestamp": "2025-12-02T07:15:04.011Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-export-integration/src/ProfessionalExportIntegrationSystem.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to ProfessionalExportIntegrationSystem.js",
+      "timestamp": "2025-12-02T07:15:04.013Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-quality-control/src/ProfessionalQualityControlSystem.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to ProfessionalQualityControlSystem.js",
+      "timestamp": "2025-12-02T07:15:04.015Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/science-engine-core/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:04.016Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire/src/enhanced-world.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to enhanced-world.js",
+      "timestamp": "2025-12-02T07:15:04.017Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge/src/art-codex-integration.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to art-codex-integration.js",
+      "timestamp": "2025-12-02T07:15:04.018Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge/src/creative-flow-bridge.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to creative-flow-bridge.js",
+      "timestamp": "2025-12-02T07:15:04.020Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/ui/src/index.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to index.ts",
+      "timestamp": "2025-12-02T07:15:04.021Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-extractor/src/export/exportEngine.d.ts",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to exportEngine.d.ts",
+      "timestamp": "2025-12-02T07:15:04.021Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-extractor/src/export/exportEngine.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to exportEngine.js",
+      "timestamp": "2025-12-02T07:15:04.022Z"
+    },
+    {
+      "file": "/Users/rebeccalemke/cathedral-master-deployment/scripts/simple-test.js",
+      "type": "license",
+      "description": "Add CC0-1.0 license header to simple-test.js",
+      "timestamp": "2025-12-02T07:15:04.024Z"
+    }
+  ],
+  "failedFixes": []
+}

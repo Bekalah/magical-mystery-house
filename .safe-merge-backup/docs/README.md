@@ -118,16 +118,16 @@ docs/
 
 ```bash
 # Regenerate system inventory
-ppnpm run inventory
+pppnpm run inventory
 
 # Generate tool documentation
-ppnpm run docs:generate
+pppnpm run docs:generate
 
 # Update all file references to new locations
-ppnpm run update:references
+pppnpm run update:references
 
 # Create reference map
-ppnpm run create:reference-map
+pppnpm run create:reference-map
 ```
 
 ## 📋 Reference Map

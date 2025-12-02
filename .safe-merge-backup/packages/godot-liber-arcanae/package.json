@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "validate": "echo 'Validating tarot correspondences...' && node validate-tarot.js",
-    "export": "echo 'Exporting tarot system...' && ppnpm run build",
+    "export": "echo 'Exporting tarot system...' && ppppnpm run build",
     "test": "echo 'Testing card interactions...' && node test-cards.js"
   },
   "keywords": [
@@ -86,7 +86,7 @@
     "@types/node": "^20.10.0"
   },
   "types": "dist/index.d.ts",
-  "packageManager": "pnpm@8.15.0",
+  "packageManager": "pnpm@10.23.0",
   "engines": {
     "node": ">=20.18.0",
     "pnpm": ">=8.15.0"

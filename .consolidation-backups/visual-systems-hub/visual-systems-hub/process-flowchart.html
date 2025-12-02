@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Flowchart Visualizer - Cathedral Master V1 Control System</title>
+    <meta name="description" content="Interactive flowchart visualizer for Cathedral development workflows and business processes">
+    
+    <style>
+        :root {
+            --cathedral-primary: #1a237e;
+            --cathedral-gold: #ffd700;
+            --cathedral-silver: #c0c0c0;
+            --cathedral-crystal: #e1f5fe;
+            --cathedral-stone: #795548;
+            --cathedral-light: #fafafa;
+            --cathedral-accent: #4caf50;
+            --cathedral-warning: #ff9800;
+            --cathedral-error: #f44336;
+            --cathedral-purple: #9c27b0;
+            --cathedral-teal: #009688;
+            --cathedral-amber: #ffc107;
+            --cathedral-shadow: rgba(0, 0, 0, 0.2);
+            --cathedral-transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, var(--cathedral-primary) 0%, #283593 50%, #3f51b5 100%);
+            color: var(--cathedral-light);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Flowchart Header */
+        .flowchart-header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--cathedral-gold);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .header-logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--cathedral-gold);
+            text-decoration: none;
+        }
+
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .control-label {
+            font-size: 0.9rem;
+            color: var(--cathedral-crystal);
+        }
+
+        .control-select, .control-button {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--cathedral-silver);
+            color: var(--cathedral-light);
+            padding: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--cathedral-transition);
+        }
+
+        .control-button:hover, .control-select:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: var(--cathedral-gold);
+        }
+
+        .back-button {
+            background: var(--cathedral-gold);
+            color: var(--cathedral-primary);
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--cathedral-transition);
+        }
+
+        .back-button:hover {
+            background: var(--cathedral-light);
+            transform: scale(1.05);
+        }
+
+        /* Main Layout */
+        .flowchart-main {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 280px 1fr 320px;
+            gap: 2rem;
+            height: calc(100vh - 120px);
+        }
+
+        .flowchart-title {
+            grid-column: 1 / -1;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--cathedral-gold);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px var(--cathedral-shadow);
+        }
+
+        .flowchart-subtitle {
+            grid-column: 1 / -1;
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--cathedral-crystal);
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Tool Palette */
+        .tool-palette {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--cathedral-silver);
+            height: fit-content;
+            position: sticky;
+            top: 140px;
+        }
+
+        .palette-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--cathedral-gold);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--cathedral-silver);
+            padding-bottom: 0.5rem;
+        }
+
+        .palette-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--cathedral-crystal);
+            margin-bottom: 0.75rem;
+        }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+
+        .tool-button {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid var(--cathedral-silver);
+            color: var(--cathedral-light);
+            padding: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--cathedral-transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            min-height: 80px;
+        }
+
+        .tool-button:hover {
+            background: var(--cathedral-gold);
+            color: var(--cathedral-primary);
+            border-color: var(--cathedral-gold);
+            transform: scale(1.05);
+        }
+
+        .tool-button.active {
+            background: var(--cathedral-accent);
+            color: white;
+            border-color: var(--cathedral-accent);
+        }
+
+        .tool-icon {
+            font-size: 1.5rem;
+        }
+
+        .tool-label {
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Canvas Container */
+        .canvas-container {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            border: 3px solid var(--cathedral-gold);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .canvas-toolbar {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-bottom: 1px solid var(--cathedral-silver);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .canvas-zoom {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .zoom-button {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--cathedral-silver);
+            color: var(--cathedral-light);
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: var(--cathedral-transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .zoom-button:hover {
+            background: var(--cathedral-gold);
+            color: var(--cathedral-primary);
+        }
+
+        .zoom-display {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--cathedral-silver);
+            color: var(--cathedral-light);
+            padding: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .canvas-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-left: auto;
+        }
+
+        .action-button {
+            background: var(--cathedral-silver);
+            color: var(--cathedral-primary);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--cathedral-transition);
+            font-size: 0.9rem;
+        }
+
+        .action-button:hover {
+            background: var(--cathedral-gold);
+            transform: scale(1.05);
+        }
+
+        .action-button.primary {
+            background: var(--cathedral-gold);
+            color: var(--cathedral-primary);
+        }
+
+        .action-button.primary:hover {
+            background: var(--cathedral-light);
+        }
+
+        .canvas {
+            flex: 1;
+            position: relative;
+            background: 
+                radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                radial-gradient(circle, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 20px 20px, 100px 100px;
+            background-position: 0 0, 0 0;
+            cursor: crosshair;
+            overflow: hidden;
+        }
+
+        .flowchart-node {
+            position: absolute;
+            background: var(--cathedral-silver);
+            color: var(--cathedral-primary);
+            border: 2px solid var(--cathedral-gold);
+            border-radius: 12px;
+            padding: 1rem;
+            cursor: move;
+            user-select: none;
+            transition: var(--cathedral-transition);
+            box-shadow: 0 4px 12px var(--cathedral-shadow);
+            min-width: 120px;
+            max-width: 200px;
+            z-index: 10;
+        }
+
+        .flowchart-node:hover {
+            box-shadow: 0 8px 24px var(--cathedral-shadow);
+            transform: scale(1.05);
+        }
+
+        .flowchart-node.selected {
+            border-color: var(--cathedral-accent);
+            box-shadow: 0 0 20px var(--cathedral-accent);
+        }
+
+        .node-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .node-icon {
+            font-size: 1.2rem;
+        }
+
+        .node-title {
+            font-size: 0.9rem;
+            flex: 1;
+        }
+
+        .node-content {
+            font-size: 0.8rem;
+            line-height: 1.4;
+            color: var(--cathedral-primary);
+        }
+
+        .node-handle {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: var(--cathedral-gold);
+            border: 2px solid var(--cathedral-primary);
+            border-radius: 50%;
+            cursor: crosshair;
+            transition: var(--cathedral-transition);
+        }
+
+        .node-handle:hover {
+            background: var(--cathedral-accent);
+            transform: scale(1.5);
+        }
+
+        .node-handle.input {
+            top: 50%;
+            left: -6px;
+            transform: translateY(-50%);
+        }
+
+        .node-handle.output {
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+        }
+
+        /* Connection Lines */
+        .flowchart-connection {
+            position: absolute;
+            pointer-events: none;
+            z-index: 5;
+        }
+
+        .connection-path {
+            stroke: var(--cathedral-gold);
+            stroke-width: 3;
+            fill: none;
+            marker-end: url(#arrowhead);
+        }
+
+        .connection-path:hover {
+            stroke: var(--cathedral-accent);
+            stroke-width: 4;
+        }
+
+        .connection-label {
+            fill: var(--cathedral-light);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-anchor: middle;
+        }
+
+        /* Properties Panel */
+        .properties-panel {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--cathedral-silver);
+            height: fit-content;
+            position: sticky;
+            top: 140px;
+        }
+
+        .properties-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--cathedral-gold);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--cathedral-silver);
+            padding-bottom: 0.5rem;
+        }
+
+        .property-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .property-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--cathedral-crystal);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .property-input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--cathedral-silver);
+            color: var(--cathedral-light);
+            padding: 0.75rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: var(--cathedral-transition);
+        }
+
+        .property-input:focus {
+            outline: none;
+            border-color: var(--cathedral-gold);
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+
+        .property-select {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--cathedral-silver);
+            color: var(--cathedral-light);
+            padding: 0.75rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .property-textarea {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--cathedral-silver);
+            color: var(--cathedral-light);
+            padding: 0.75rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .color-picker {
+            width: 100%;
+            height: 40px;
+            border: 1px solid var(--cathedral-silver);
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* Templates Section */
+        .templates-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .templates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .template-card {
+            background: rgba(0, 0, 0, 0.3);
+            border: 2px solid var(--cathedral-silver);
+            border-radius: 12px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: var(--cathedral-transition);
+        }
+
+        .template-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--cathedral-gold);
+            transform: scale(1.02);
+        }
+
+        .template-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .template-icon {
+            font-size: 2rem;
+            color: var(--cathedral-gold);
+        }
+
+        .template-info h3 {
+            color: var(--cathedral-gold);
+            margin-bottom: 0.25rem;
+        }
+
+        .template-info p {
+            color: var(--cathedral-crystal);
+            font-size: 0.9rem;
+        }
+
+        .template-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .template-stat {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .template-stat-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--cathedral-gold);
+        }
+
+        .template-stat-label {
+            font-size: 0.7rem;
+            color: var(--cathedral-crystal);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 1200px) {
+            .flowchart-main {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto 1fr auto;
+                height: auto;
+            }
+
+            .tool-palette, .properties-panel {
+                position: static;
+                order: 2;
+            }
+
+            .canvas-container {
+                order: 3;
+                height: 500px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .header-controls {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .flowchart-title {
+                font-size: 2rem;
+            }
+
+            .tool-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .canvas-toolbar {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        a:focus, button:focus, .flowchart-node:focus {
+            outline: 2px solid var(--cathedral-gold);
+            outline-offset: 2px;
+        }
+
+        /* Loading Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .flowchart-main {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        /* SVG Arrow Marker */
+        svg {
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flowchart Header -->
+    <header class="flowchart-header">
+        <div class="header-container">
+            <a href="index.html" class="header-logo">📊 Process Flowchart Visualizer</a>
+            <div class="header-controls">
+                <div class="control-group">
+                    <span class="control-label">Template:</span>
+                    <select class="control-select" id="templateSelector">
+                        <option value="development">Development Workflow</option>
+                        <option value="deployment">Deployment Process</option>
+                        <option value="testing">Testing & QA</option>
+                        <option value="custom">Custom Flowchart</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <span class="control-label">View:</span>
+                    <select class="control-select" id="viewMode">
+                        <option value="design">Design Mode</option>
+                        <option value="presentation">Presentation Mode</option>
+                        <option value="debug">Debug Mode</option>
+                    </select>
+                </div>
+                <a href="index.html" class="back-button">← Back to Hub</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flowchart-main">
+        <h1 class="flowchart-title">Interactive Process Flowchart System</h1>
+        <p class="flowchart-subtitle">
+            Create, edit, and visualize Cathedral development workflows with professional flowchart tools and real-time collaboration features
+        </p>
+
+        <!-- Tool Palette -->
+        <aside class="tool-palette">
+            <h2 class="palette-title">Flowchart Tools</h2>
+            
+            <div class="palette-section">
+                <h3 class="section-title">Basic Shapes</h3>
+                <div class="tool-grid">
+                    <button class="tool-button" data-tool="start">
+                        <span class="tool-icon">🔵</span>
+                        <span class="tool-label">Start/End</span>
+                    </button>
+                    <button class="tool-button" data-tool="process">
+                        <span class="tool-icon">📦</span>
+                        <span class="tool-label">Process</span>
+                    </button>
+                    <button class="tool-button" data-tool="decision">
+                        <span class="tool-icon">♦</span>
+                        <span class="tool-label">Decision</span>
+                    </button>
+                    <button class="tool-button" data-tool="input">
+                        <span class="tool-icon">📥</span>
+                        <span class="tool-label">Input/Output</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="palette-section">
+                <h3 class="section-title">Cathedral Specific</h3>
+                <div class="tool-grid">
+                    <button class="tool-button" data-tool="registry">
+                        <span class="tool-icon">📋</span>
+                        <span class="tool-label">REGISTRY</span>
+                    </button>
+                    <button class="tool-button" data-tool="deployment">
+                        <span class="tool-icon">🚀</span>
+                        <span class="tool-label">Deployment</span>
+                    </button>
+                    <button class="tool-button" data-tool="testing">
+                        <span class="tool-icon">🧪</span>
+                        <span class="tool-label">Testing</span>
+                    </button>
+                    <button class="tool-button" data-tool="documentation">
+                        <span class="tool-icon">📚</span>
+                        <span class="tool-label">Documentation</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="palette-section">
+                <h3 class="section-title">Advanced Tools</h3>
+                <div class="tool-grid">
+                    <button class="tool-button" data-tool="connection">
+                        <span class="tool-icon">🔗</span>
+                        <span class="tool-label">Connect</span>
+                    </button>
+                    <button class="tool-button" data-tool="text">
+                        <span class="tool-icon">📝</span>
+                        <span class="tool-label">Text Box</span>
+                    </button>
+                    <button class="tool-button" data-tool="comment">
+                        <span class="tool-icon">💬</span>
+                        <span class="tool-label">Comment</span>
+                    </button>
+                    <button class="tool-button" data-tool="group">
+                        <span class="tool-icon">📦</span>
+                        <span class="tool-label">Group</span>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Canvas Container -->
+        <div class="canvas-container">
+            <div class="canvas-toolbar">
+                <div class="canvas-zoom">
+                    <button class="zoom-button" id="zoomOut">-</button>
+                    <div class="zoom-display" id="zoomDisplay">100%</div>
+                    <button class="zoom-button" id="zoomIn">+</button>
+                    <button class="zoom-button" id="zoomReset">⌂</button>
+                </div>
+                <div class="canvas-actions">
+                    <button class="action-button" id="clearCanvas">Clear</button>
+                    <button class="action-button" id="saveFlowchart">Save</button>
+                    <button class="action-button" id="exportFlowchart">Export</button>
+                    <button class="action-button primary" id="shareFlowchart">Share</button>
+                </div>
+            </div>
+            <div class="canvas" id="flowchartCanvas">
+                <svg class="flowchart-connections" id="connectionsSvg">
+                    <defs>
+                        <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+                                refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="var(--cathedral-gold)" />
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Properties Panel -->
+        <aside class="properties-panel">
+            <h2 class="properties-title">Properties</h2>
+            
+            <div class="property-group">
+                <label class="property-label">Node Type</label>
+                <select class="property-select" id="nodeType">
+                    <option value="start">Start/End</option>
+                    <option value="process">Process</option>
+                    <option value="decision">Decision</option>
+                    <option value="input">Input/Output</option>
+                    <option value="registry">REGISTRY</option>
+                    <option value="deployment">Deployment</option>
+                    <option value="testing">Testing</option>
+                </select>
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Title</label>
+                <input type="text" class="property-input" id="nodeTitle" placeholder="Enter node title">
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Description</label>
+                <textarea class="property-textarea" id="nodeDescription" placeholder="Enter node description"></textarea>
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Background Color</label>
+                <input type="color" class="color-picker" id="nodeColor" value="#c0c0c0">
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Priority</label>
+                <select class="property-select" id="nodePriority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="critical">Critical</option>
+                </select>
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Estimated Duration</label>
+                <input type="text" class="property-input" id="nodeDuration" placeholder="e.g., 2 hours">
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Assigned To</label>
+                <input type="text" class="property-input" id="nodeAssignee" placeholder="Team member or role">
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Dependencies</label>
+                <textarea class="property-textarea" id="nodeDependencies" placeholder="List dependencies or prerequisites"></textarea>
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Success Criteria</label>
+                <textarea class="property-textarea" id="nodeCriteria" placeholder="Define success criteria for this step"></textarea>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Templates Section -->
+    <section class="templates-section">
+        <h2 class="properties-title">Pre-built Cathedral Workflow Templates</h2>
+        <div class="templates-grid">
+            <div class="template-card" data-template="development">
+                <div class="template-header">
+                    <span class="template-icon">🛠️</span>
+                    <div class="template-info">
+                        <h3>Development Workflow</h3>
+                        <p>Complete development process from planning to deployment</p>
+                    </div>
+                </div>
+                <div class="template-stats">
+                    <div class="template-stat">
+                        <div class="template-stat-value">12</div>
+                        <div class="template-stat-label">Steps</div>
+                    </div>
+                    <div class="template-stat">
+                        <div class="template-stat-value">45min</div>
+                        <div class="template-stat-label">Avg Time</div>
+                    </div>
+                    <div class="template-stat">
+                        <div class="template-stat-value">5</div>
+                        <div class="template-stat-label">Teams</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="template-card" data-template="deployment">
+                <div class="template-header">
+                    <span class="template-icon">🚀</span>
+                    <div class="template-info">
+                        <h3>Deployment Pipeline</h3>
+                        <p>Automated deployment process with quality gates</p>
+                    </div>
+                </div>
+                <div class="template-stats">
+                    <div class="template-stat">
+                        <div class="template-stat-value">8</div>
+                        <div class="template-stat-label">Stages</div>
+                    </div>
+                    <div class="template-stat">
+                        <div class="template-stat-value">2hrs</div>
+                        <div class="template-stat-label">Duration</div>
+                    </div>
+                    <div class="template-stat">
+                        <div class="template-stat-value">99.9%</div>
+                        <div class="template-stat-label">Success</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="template-card" data-template="testing">
+                <div class="template-header">
+                    <span class="template-icon">🧪</span>
+                    <div class="template-info">
+                        <h3>Testing & QA Process</h3>
+                        <p>Comprehensive testing workflow for quality assurance</p>
+                    </div>
+                </div>
+                <div class="template-stats">
+                    <div class="template-stat">
+                        <div class="template-stat-value">6</div>
+                        <div class="template-stat-label">Phases</div>
+                    </div>
+                    <div class="template-stat">
+                        <div class="template-stat-value">4hrs</div>
+                        <div class="template-stat-label">Duration</div>
+                    </div>
+                    <div class="template-stat">
+                        <div class="template-stat-value">95%</div>
+                        <div class="template-stat-label">Coverage</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="template-card" data-template="documentation">
+                <div class="template-header">
+                    <span class="template-icon">📚</span>
+                    <div class="template-info">
+                        <h3>Documentation Workflow</h3>
+                        <p>Systematic documentation creation and maintenance</p>
+                    </div>
+                </div>
+                <div class="template-stats">
+                    <div class="template-stat">
+                        <div class="template-stat-value">10</div>
+                        <div class="template-stat-label">Tasks</div>
+                    </div>
+                    <div class="template-stat">
+                        <div class="template-stat-value">3hrs</div>
+                        <div class="template-stat-label">Duration</div>
+                    </div>
+                    <div class="template-stat">
+                        <div class="template-stat-value">4</div>
+                        <div class="template-stat-label">Reviewers</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Process Flowchart Visualizer
+        class FlowchartVisualizer {
+            constructor() {
+                this.canvas = document.getElementById('flowchartCanvas');
+                this.connectionsSvg = document.getElementById('connectionsSvg');
+                this.currentTool = 'process';
+                this.zoomLevel = 1;
+                this.selectedNode = null;
+                this.nodes = new Map();
+                this.connections = new Map();
+                this.isConnecting = false;
+                this.connectionStart = null;
+                
+                this.templates = {
+                    development: this.getDevelopmentTemplate(),
+                    deployment: this.getDeploymentTemplate(),
+                    testing: this.getTestingTemplate(),
+                    documentation: this.getDocumentationTemplate()
+                };
+                
+                this.init();
+            }
+
+            init() {
+                this.setupEventListeners();
+                this.setupKeyboardShortcuts();
+                this.loadTemplate('development');
+                this.updatePropertiesPanel();
+            }
+
+            setupEventListeners() {
+                // Tool palette
+                document.querySelectorAll('.tool-button').forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        this.selectTool(e.target.closest('.tool-button').dataset.tool);
+                    });
+                });
+
+                // Canvas interactions
+                this.canvas.addEventListener('click', (e) => {
+                    if (e.target === this.canvas) {
+                        this.clearSelection();
+                    }
+                });
+
+                // Zoom controls
+                document.getElementById('zoomIn').addEventListener('click', () => this.zoomIn());
+                document.getElementById('zoomOut').addEventListener('click', () => this.zoomOut());
+                document.getElementById('zoomReset').addEventListener('click', () => this.zoomReset());
+
+                // Canvas actions
+                document.getElementById('clearCanvas').addEventListener('click', () => this.clearCanvas());
+                document.getElementById('saveFlowchart').addEventListener('click', () => this.saveFlowchart());
+                document.getElementById('exportFlowchart').addEventListener('click', () => this.exportFlowchart());
+                document.getElementById('shareFlowchart').addEventListener('click', () => this.shareFlowchart());
+
+                // Template selector
+                document.getElementById('templateSelector').addEventListener('change', (e) => {
+                    this.loadTemplate(e.target.value);
+                });
+
+                // Template cards
+                document.querySelectorAll('.template-card').forEach(card => {
+                    card.addEventListener('click', () => {
+                        this.loadTemplate(card.dataset.template);
+                    });
+                });
+
+                // Properties panel
+                document.querySelectorAll('.property-input, .property-select, .property-textarea, .color-picker').forEach(input => {
+                    input.addEventListener('input', () => this.updateSelectedNode());
+                });
+            }
+
+            setupKeyboardShortcuts() {
+                document.addEventListener('keydown', (e) => {
+                    if (e.ctrlKey || e.metaKey) {
+                        switch (e.key) {
+                            case 's':
+                                e.preventDefault();
+                                this.saveFlowchart();
+                                break;
+                            case 'z':
+                                e.preventDefault();
+                                this.undo();
+                                break;
+                            case 'y':
+                                e.preventDefault();
+                                this.redo();
+                                break;
+                            case 'a':
+                                e.preventDefault();
+                                this.selectAll();
+                                break;
+                            case 'Delete':
+                                e.preventDefault();
+                                this.deleteSelected();
+                                break;
+                        }
+                    }
+                    
+                    switch (e.key) {
+                        case 'Escape':
+                            this.clearSelection();
+                            break;
+                        case 'Delete':
+                            if (this.selectedNode) {
+                                this.deleteNode(this.selectedNode.id);
+                            }
+                            break;
+                    }
+                });
+            }
+
+            selectTool(tool) {
+                this.currentTool = tool;
+                
+                // Update tool button states
+                document.querySelectorAll('.tool-button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.querySelector(`[data-tool="${tool}"]`).classList.add('active');
+                
+                // Update canvas cursor
+                const cursors = {
+                    start: 'default',
+                    process: 'crosshair',
+                    decision: 'crosshair',
+                    input: 'crosshair',
+                    registry: 'crosshair',
+                    deployment: 'crosshair',
+                    testing: 'crosshair',
+                    connection: 'pointer',
+                    text: 'text',
+                    comment: 'crosshair',
+                    group: 'crosshair'
+                };
+                this.canvas.style.cursor = cursors[tool] || 'crosshair';
+            }
+
+            createNode(type, x, y) {
+                const nodeId = `node_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+                const nodeConfig = this.getNodeConfig(type);
+                
+                const node = {
+                    id: nodeId,
+                    type: type,
+                    x: x,
+                    y: y,
+                    title: nodeConfig.defaultTitle,
+                    description: nodeConfig.defaultDescription,
+                    color: nodeConfig.defaultColor,
+                    priority: 'medium',
+                    duration: '',
+                    assignee: '',
+                    dependencies: '',
+                    criteria: ''
+                };
+                
+                this.nodes.set(nodeId, node);
+                this.renderNode(node);
+                this.selectNode(nodeId);
+                
+                return node;
+            }
+
+            getNodeConfig(type) {
+                const configs = {
+                    start: {
+                        defaultTitle: 'Start',
+                        defaultDescription: 'Process begins here',
+                        defaultColor: '#4caf50',
+                        shape: 'circle'
+                    },
+                    process: {
+                        defaultTitle: 'Process',
+                        defaultDescription: 'Execute task or operation',
+                        defaultColor: '#c0c0c0',
+                        shape: 'rectangle'
+                    },
+                    decision: {
+                        defaultTitle: 'Decision',
+                        defaultDescription: 'Branch based on condition',
+                        defaultColor: '#ffc107',
+                        shape: 'diamond'
+                    },
+                    input: {
+                        defaultTitle: 'Input/Output',
+                        defaultDescription: 'Data input or output',
+                        defaultColor: '#2196f3',
+                        shape: 'parallelogram'
+                    },
+                    registry: {
+                        defaultTitle: 'REGISTRY',
+                        defaultDescription: 'Access REGISTRY data',
+                        defaultColor: '#9c27b0',
+                        shape: 'hexagon'
+                    },
+                    deployment: {
+                        defaultTitle: 'Deploy',
+                        defaultDescription: 'Deploy to environment',
+                        defaultColor: '#ff9800',
+                        shape: 'rectangle'
+                    },
+                    testing: {
+                        defaultTitle: 'Test',
+                        defaultDescription: 'Execute tests',
+                        defaultColor: '#e91e63',
+                        shape: 'rectangle'
+                    }
+                };
+                
+                return configs[type] || configs.process;
+            }
+
+            renderNode(node) {
+                const nodeElement = document.createElement('div');
+                nodeElement.className = 'flowchart-node';
+                nodeElement.dataset.nodeId = node.id;
+                nodeElement.style.left = `${node.x}px`;
+                nodeElement.style.top = `${node.y}px`;
+                nodeElement.style.backgroundColor = node.color;
+                
+                nodeElement.innerHTML = `
+                    <div class="node-header">
+                        <span class="node-icon">${this.getNodeIcon(node.type)}</span>
+                        <span class="node-title">${node.title}</span>
+                    </div>
+                    <div class="node-content">${node.description}</div>
+                    <div class="node-handle input"></div>
+                    <div class="node-handle output"></div>
+                `;
+                
+                // Add event listeners
+                nodeElement.addEventListener('mousedown', (e) => this.startDragNode(e, node.id));
+                nodeElement.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.selectNode(node.id);
+                });
+                
+                this.canvas.appendChild(nodeElement);
+            }
+
+            getNodeIcon(type) {
+                const icons = {
+                    start: '🔵',
+                    process: '📦',
+                    decision: '♦',
+                    input: '📥',
+                    registry: '📋',
+                    deployment: '🚀',
+                    testing: '🧪',
+                    documentation: '📚'
+                };
+                return icons[type] || '📦';
+            }
+
+            startDragNode(e, nodeId) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const node = this.nodes.get(nodeId);
+                if (!node) return;
+                
+                this.selectNode(nodeId);
+                
+                const startX = e.clientX;
+                const startY = e.clientY;
+                const startNodeX = node.x;
+                const startNodeY = node.y;
+                
+                const handleMouseMove = (e) => {
+                    const deltaX = (e.clientX - startX) / this.zoomLevel;
+                    const deltaY = (e.clientY - startY) / this.zoomLevel;
+                    
+                    node.x = Math.max(0, startNodeX + deltaX);
+                    node.y = Math.max(0, startNodeY + deltaY);
+                    
+                    this.updateNodePosition(nodeId);
+                    this.updateConnections(nodeId);
+                };
+                
+                const handleMouseUp = () => {
+                    document.removeEventListener('mousemove', handleMouseMove);
+                    document.removeEventListener('mouseup', handleMouseUp);
+                };
+                
+                document.addEventListener('mousemove', handleMouseMove);
+                document.addEventListener('mouseup', handleMouseUp);
+            }
+
+            updateNodePosition(nodeId) {
+                const nodeElement = document.querySelector(`[data-node-id="${nodeId}"]`);
+                const node = this.nodes.get(nodeId);
+                
+                if (nodeElement && node) {
+                    nodeElement.style.left = `${node.x}px`;
+                    nodeElement.style.top = `${node.y}px`;
+                }
+            }
+
+            updateConnections(nodeId) {
+                // Update all connections for this node
+                this.connections.forEach((connection, connId) => {
+                    if (connection.from === nodeId || connection.to === nodeId) {
+                        this.updateConnectionPath(connId);
+                    }
+                });
+            }
+
+            createConnection(fromNodeId, toNodeId) {
+                const connectionId = `conn_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+                const connection = {
+                    id: connectionId,
+                    from: fromNodeId,
+                    to: toNodeId,
+                    label: '',
+                    type: 'default'
+                };
+                
+                this.connections.set(connectionId, connection);
+                this.renderConnection(connection);
+                
+                return connection;
+            }
+
+            renderConnection(connection) {
+                const fromNode = this.nodes.get(connection.from);
+                const toNode = this.nodes.get(connection.to);
+                
+                if (!fromNode || !toNode) return;
+                
+                const fromX = fromNode.x + 120; // Center of node
+                const fromY = fromNode.y + 60;
+                const toX = toNode.x;
+                const toY = toNode.y + 60;
+                
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                const pathId = `path_${connection.id}`;
+                path.setAttribute('id', pathId);
+                path.setAttribute('class', 'connection-path');
+                
+                // Create a smooth curve
+                const midX = (fromX + toX) / 2;
+                const d = `M ${fromX} ${fromY} Q ${midX} ${fromY} ${toX} ${toY}`;
+                path.setAttribute('d', d);
+                
+                this.connectionsSvg.appendChild(path);
+                
+                // Add label if specified
+                if (connection.label) {
+                    const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    text.setAttribute('class', 'connection-label');
+                    text.setAttribute('x', midX);
+                    text.setAttribute('y', (fromY + toY) / 2 - 10);
+                    text.textContent = connection.label;
+                    this.connectionsSvg.appendChild(text);
+                }
+            }
+
+            updateConnectionPath(connectionId) {
+                const connection = this.connections.get(connectionId);
+                if (!connection) return;
+                
+                const path = document.getElementById(`path_${connectionId}`);
+                if (!path) return;
+                
+                const fromNode = this.nodes.get(connection.from);
+                const toNode = this.nodes.get(connection.to);
+                
+                if (!fromNode || !toNode) return;
+                
+                const fromX = fromNode.x + 120;
+                const fromY = fromNode.y + 60;
+                const toX = toNode.x;
+                const toY = toNode.y + 60;
+                
+                const midX = (fromX + toX) / 2;
+                const d = `M ${fromX} ${fromY} Q ${midX} ${fromY} ${toX} ${toY}`;
+                path.setAttribute('d', d);
+            }
+
+            selectNode(nodeId) {
+                // Clear previous selection
+                this.clearSelection();
+                
+                this.selectedNode = this.nodes.get(nodeId);
+                if (this.selectedNode) {
+                    const nodeElement = document.querySelector(`[data-node-id="${nodeId}"]`);
+                    if (nodeElement) {
+                        nodeElement.classList.add('selected');
+                    }
+                    this.updatePropertiesPanel();
+                }
+            }
+
+            clearSelection() {
+                document.querySelectorAll('.flowchart-node.selected').forEach(node => {
+                    node.classList.remove('selected');
+                });
+                this.selectedNode = null;
+                this.updatePropertiesPanel();
+            }
+
+            updateSelectedNode() {
+                if (!this.selectedNode) return;
+                
+                this.selectedNode.title = document.getElementById('nodeTitle').value;
+                this.selectedNode.description = document.getElementById('nodeDescription').value;
+                this.selectedNode.color = document.getElementById('nodeColor').value;
+                this.selectedNode.priority = document.getElementById('nodePriority').value;
+                this.selectedNode.duration = document.getElementById('nodeDuration').value;
+                this.selectedNode.assignee = document.getElementById('nodeAssignee').value;
+                this.selectedNode.dependencies = document.getElementById('nodeDependencies').value;
+                this.selectedNode.criteria = document.getElementById('nodeCriteria').value;
+                
+                this.updateNodeDisplay(this.selectedNode.id);
+            }
+
+            updateNodeDisplay(nodeId) {
+                const node = this.nodes.get(nodeId);
+                const nodeElement = document.querySelector(`[data-node-id="${nodeId}"]`);
+                
+                if (node && nodeElement) {
+                    nodeElement.querySelector('.node-title').textContent = node.title;
+                    nodeElement.querySelector('.node-content').textContent = node.description;
+                    nodeElement.style.backgroundColor = node.color;
+                }
+            }
+
+            updatePropertiesPanel() {
+                const inputs = {
+                    nodeType: this.selectedNode?.type || 'process',
+                    nodeTitle: this.selectedNode?.title || '',
+                    nodeDescription: this.selectedNode?.description || '',
+                    nodeColor: this.selectedNode?.color || '#c0c0c0',
+                    nodePriority: this.selectedNode?.priority || 'medium',
+                    nodeDuration: this.selectedNode?.duration || '',
+                    nodeAssignee: this.selectedNode?.assignee || '',
+                    nodeDependencies: this.selectedNode?.dependencies || '',
+                    nodeCriteria: this.selectedNode?.criteria || ''
+                };
+                
+                Object.entries(inputs).forEach(([id, value]) => {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.value = value;
+                        element.disabled = !this.selectedNode;
+                    }
+                });
+            }
+
+            deleteNode(nodeId) {
+                this.nodes.delete(nodeId);
+                
+                // Remove element
+                const nodeElement = document.querySelector(`[data-node-id="${nodeId}"]`);
+                if (nodeElement) {
+                    nodeElement.remove();
+                }
+                
+                // Remove connections
+                this.connections.forEach((connection, connId) => {
+                    if (connection.from === nodeId || connection.to === nodeId) {
+                        this.connections.delete(connId);
+                        const path = document.getElementById(`path_${connId}`);
+                        if (path) path.remove();
+                    }
+                });
+                
+                if (this.selectedNode?.id === nodeId) {
+                    this.selectedNode = null;
+                    this.updatePropertiesPanel();
+                }
+            }
+
+            clearCanvas() {
+                if (confirm('Are you sure you want to clear the canvas? This cannot be undone.')) {
+                    this.nodes.clear();
+                    this.connections.clear();
+                    document.querySelectorAll('.flowchart-node').forEach(node => node.remove());
+                    document.querySelectorAll('.connection-path').forEach(path => path.remove());
+                    this.clearSelection();
+                }
+            }
+
+            zoomIn() {
+                this.zoomLevel = Math.min(this.zoomLevel * 1.2, 3);
+                this.updateZoom();
+            }
+
+            zoomOut() {
+                this.zoomLevel = Math.max(this.zoomLevel / 1.2, 0.5);
+                this.updateZoom();
+            }
+
+            zoomReset() {
+                this.zoomLevel = 1;
+                this.updateZoom();
+            }
+
+            updateZoom() {
+                const canvas = document.querySelector('.canvas');
+                canvas.style.transform = `scale(${this.zoomLevel})`;
+                canvas.style.transformOrigin = 'top left';
+                document.getElementById('zoomDisplay').textContent = `${Math.round(this.zoomLevel * 100)}%`;
+            }
+
+            saveFlowchart() {
+                const data = {
+                    nodes: Array.from(this.nodes.values()),
+                    connections: Array.from(this.connections.values()),
+                    timestamp: Date.now(),
+                    version: '1.0'
+                };
+                
+                const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `cathedral-flowchart-${Date.now()}.json`;
+                a.click();
+                
+                URL.revokeObjectURL(url);
+                
+                this.showNotification('Flowchart saved successfully!');
+            }
+
+            exportFlowchart() {
+                // Create SVG representation
+                const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                svg.setAttribute('width', '1200');
+                svg.setAttribute('height', '800');
+                svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+                
+                // Add background
+                const rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+                rect.setAttribute('width', '1200');
+                rect.setAttribute('height', '800');
+                rect.setAttribute('fill', '#1a237e');
+                svg.appendChild(rect);
+                
+                // Export logic would go here
+                this.showNotification('Export functionality coming soon!');
+            }
+
+            shareFlowchart() {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Cathedral Flowchart',
+                        text: 'Check out this Cathedral workflow process',
+                        url: window.location.href
+                    });
+                } else {
+                    navigator.clipboard.writeText(window.location.href);
+                    this.showNotification('Link copied to clipboard!');
+                }
+            }
+
+            loadTemplate(templateName) {
+                const template = this.templates[templateName];
+                if (!template) return;
+                
+                this.clearCanvas();
+                
+                // Create template nodes
+                template.nodes.forEach(nodeData => {
+                    const node = {
+                        ...nodeData,
+                        id: `node_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
+                    };
+                    this.nodes.set(node.id, node);
+                    this.renderNode(node);
+                });
+                
+                // Create template connections
+                template.connections.forEach(connData => {
+                    const fromNode = Array.from(this.nodes.values()).find(n => n.title === connData.from);
+                    const toNode = Array.from(this.nodes.values()).find(n => n.title === connData.to);
+                    
+                    if (fromNode && toNode) {
+                        const connection = {
+                            id: `conn_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+                            from: fromNode.id,
+                            to: toNode.id,
+                            label: connData.label || '',
+                            type: connData.type || 'default'
+                        };
+                        this.connections.set(connection.id, connection);
+                        this.renderConnection(connection);
+                    }
+                });
+                
+                this.showNotification(`${templateName} template loaded successfully!`);
+            }
+
+            getDevelopmentTemplate() {
+                return {
+                    nodes: [
+                        { x: 100, y: 100, type: 'start', title: 'Start Development', description: 'Begin new feature development', color: '#4caf50' },
+                        { x: 300, y: 100, type: 'process', title: 'Planning', description: 'Define requirements and scope', color: '#c0c0c0' },
+                        { x: 500, y: 100, type: 'registry', title: 'Check REGISTRY', description: 'Review existing implementations', color: '#9c27b0' },
+                        { x: 700, y: 100, type: 'process', title: 'Implementation', description: 'Write code and implement features', color: '#c0c0c0' },
+                        { x: 300, y: 250, type: 'testing', title: 'Unit Testing', description: 'Execute unit tests', color: '#e91e63' },
+                        { x: 500, y: 250, type: 'testing', title: 'Integration Testing', description: 'Test component integration', color: '#e91e63' },
+                        { x: 700, y: 250, type: 'process', title: 'Code Review', description: 'Peer review of changes', color: '#c0c0c0' },
+                        { x: 500, y: 400, type: 'deployment', title: 'Deploy to Staging', description: 'Deploy to staging environment', color: '#ff9800' },
+                        { x: 300, y: 550, type: 'testing', title: 'QA Testing', description: 'Quality assurance testing', color: '#e91e63' },
+                        { x: 500, y: 550, type: 'documentation', title: 'Update Docs', description: 'Update documentation', color: '#795548' },
+                        { x: 700, y: 550, type: 'deployment', title: 'Production Deploy', description: 'Deploy to production', color: '#ff9800' },
+                        { x: 500, y: 700, type: 'start', title: 'Monitor & Maintain', description: 'Monitor and maintain deployed system', color: '#4caf50' }
+                    ],
+                    connections: [
+                        { from: 'Start Development', to: 'Planning', type: 'default' },
+                        { from: 'Planning', to: 'Check REGISTRY', type: 'default' },
+                        { from: 'Check REGISTRY', to: 'Implementation', type: 'default' },
+                        { from: 'Implementation', to: 'Unit Testing', type: 'default' },
+                        { from: 'Unit Testing', to: 'Integration Testing', type: 'default' },
+                        { from: 'Integration Testing', to: 'Code Review', type: 'default' },
+                        { from: 'Code Review', to: 'Deploy to Staging', type: 'default' },
+                        { from: 'Deploy to Staging', to: 'QA Testing', type: 'default' },
+                        { from: 'QA Testing', to: 'Update Docs', type: 'default' },
+                        { from: 'Update Docs', to: 'Production Deploy', type: 'default' },
+                        { from: 'Production Deploy', to: 'Monitor & Maintain', type: 'default' }
+                    ]
+                };
+            }
+
+            getDeploymentTemplate() {
+                return {
+                    nodes: [
+                        { x: 100, y: 100, type: 'start', title: 'Start Deployment', description: 'Begin deployment process', color: '#4caf50' },
+                        { x: 300, y: 100, type: 'process', title: 'Pre-flight Check', description: 'Verify deployment prerequisites', color: '#c0c0c0' },
+                        { x: 500, y: 100, type: 'process', title: 'Build Assets', description: 'Compile and bundle assets', color: '#c0c0c0' },
+                        { x: 700, y: 100, type: 'registry', title: 'Update Config', description: 'Update REGISTRY configuration', color: '#9c27b0' },
+                        { x: 900, y: 100, type: 'deployment', title: 'Deploy to Staging', description: 'Deploy to staging environment', color: '#ff9800' },
+                        { x: 200, y: 250, type: 'testing', title: 'Health Check', description: 'Verify deployment health', color: '#e91e63' },
+                        { x: 400, y: 250, type: 'testing', title: 'Smoke Tests', description: 'Run smoke tests', color: '#e91e63' },
+                        { x: 600, y: 250, type: 'testing', title: 'Regression Tests', description: 'Run regression tests', color: '#e91e63' },
+                        { x: 800, y: 250, type: 'decision', title: 'Tests Pass?', description: 'Check if all tests pass', color: '#ffc107' },
+                        { x: 400, y: 400, type: 'deployment', title: 'Deploy to Production', description: 'Deploy to production environment', color: '#ff9800' },
+                        { x: 600, y: 400, type: 'testing', title: 'Production Tests', description: 'Verify production deployment', color: '#e91e63' },
+                        { x: 400, y: 550, type: 'process', title: 'Rollback (if needed)', description: 'Rollback to previous version', color: '#f44336' },
+                        { x: 600, y: 550, type: 'process', title: 'Monitor', description: 'Monitor system health', color: '#c0c0c0' },
+                        { x: 500, y: 700, type: 'start', title: 'Deployment Complete', description: 'Deployment process completed', color: '#4caf50' }
+                    ],
+                    connections: [
+                        { from: 'Start Deployment', to: 'Pre-flight Check', type: 'default' },
+                        { from: 'Pre-flight Check', to: 'Build Assets', type: 'default' },
+                        { from: 'Build Assets', to: 'Update Config', type: 'default' },
+                        { from: 'Update Config', to: 'Deploy to Staging', type: 'default' },
+                        { from: 'Deploy to Staging', to: 'Health Check', type: 'default' },
+                        { from: 'Health Check', to: 'Smoke Tests', type: 'default' },
+                        { from: 'Smoke Tests', to: 'Regression Tests', type: 'default' },
+                        { from: 'Regression Tests', to: 'Tests Pass?', type: 'default' },
+                        { from: 'Tests Pass?', to: 'Deploy to Production', label: 'Yes', type: 'success' },
+                        { from: 'Tests Pass?', to: 'Rollback (if needed)', label: 'No', type: 'error' },
+                        { from: 'Deploy to Production', to: 'Production Tests', type: 'default' },
+                        { from: 'Production Tests', to: 'Monitor', type: 'default' },
+                        { from: 'Rollback (if needed)', to: 'Monitor', type: 'default' },
+                        { from: 'Monitor', to: 'Deployment Complete', type: 'default' }
+                    ]
+                };
+            }
+
+            getTestingTemplate() {
+                return {
+                    nodes: [
+                        { x: 100, y: 100, type: 'start', title: 'Start Testing', description: 'Begin testing phase', color: '#4caf50' },
+                        { x: 300, y: 100, type: 'process', title: 'Test Planning', description: 'Define test strategy and scope', color: '#c0c0c0' },
+                        { x: 500, y: 100, type: 'registry', title: 'Review Test Cases', description: 'Check REGISTRY for test patterns', color: '#9c27b0' },
+                        { x: 700, y: 100, type: 'testing', title: 'Unit Tests', description: 'Execute unit tests', color: '#e91e63' },
+                        { x: 900, y: 100, type: 'testing', title: 'Integration Tests', description: 'Test component integration', color: '#e91e63' },
+                        { x: 200, y: 250, type: 'testing', title: 'API Tests', description: 'Test API endpoints', color: '#e91e63' },
+                        { x: 400, y: 250, type: 'testing', title: 'UI Tests', description: 'Test user interface', color: '#e91e63' },
+                        { x: 600, y: 250, type: 'testing', title: 'Performance Tests', description: 'Test system performance', color: '#e91e63' },
+                        { x: 800, y: 250, type: 'testing', title: 'Security Tests', description: 'Test security measures', color: '#e91e63' },
+                        { x: 400, y: 400, type: 'process', title: 'Bug Reports', description: 'Document found issues', color: '#c0c0c0' },
+                        { x: 600, y: 400, type: 'process', title: 'Fix Issues', description: 'Address identified bugs', color: '#c0c0c0' },
+                        { x: 400, y: 550, type: 'testing', title: 'Regression Testing', description: 'Retest after fixes', color: '#e91e63' },
+                        { x: 600, y: 550, type: 'documentation', title: 'Test Report', description: 'Generate test documentation', color: '#795548' },
+                        { x: 500, y: 700, type: 'start', title: 'QA Complete', description: 'Quality assurance completed', color: '#4caf50' }
+                    ],
+                    connections: [
+                        { from: 'Start Testing', to: 'Test Planning', type: 'default' },
+                        { from: 'Test Planning', to: 'Review Test Cases', type: 'default' },
+                        { from: 'Review Test Cases', to: 'Unit Tests', type: 'default' },
+                        { from: 'Unit Tests', to: 'Integration Tests', type: 'default' },
+                        { from: 'Integration Tests', to: 'API Tests', type: 'default' },
+                        { from: 'API Tests', to: 'UI Tests', type: 'default' },
+                        { from: 'UI Tests', to: 'Performance Tests', type: 'default' },
+                        { from: 'Performance Tests', to: 'Security Tests', type: 'default' },
+                        { from: 'Security Tests', to: 'Bug Reports', type: 'default' },
+                        { from: 'Bug Reports', to: 'Fix Issues', type: 'default' },
+                        { from: 'Fix Issues', to: 'Regression Testing', type: 'default' },
+                        { from: 'Regression Testing', to: 'Test Report', type: 'default' },
+                        { from: 'Test Report', to: 'QA Complete', type: 'default' }
+                    ]
+                };
+            }
+
+            getDocumentationTemplate() {
+                return {
+                    nodes: [
+                        { x: 100, y: 100, type: 'start', title: 'Start Documentation', description: 'Begin documentation process', color: '#4caf50' },
+                        { x: 300, y: 100, type: 'process', title: 'Gather Requirements', description: 'Collect documentation needs', color: '#c0c0c0' },
+                        { x: 500, y: 100, type: 'registry', title: 'Check Existing Docs', description: 'Review REGISTRY for existing documentation', color: '#9c27b0' },
+                        { x: 700, y: 100, type: 'process', title: 'Create Outline', description: 'Structure the documentation', color: '#c0c0c0' },
+                        { x: 900, y: 100, type: 'documentation', title: 'Write Content', description: 'Create documentation content', color: '#795548' },
+                        { x: 200, y: 250, type: 'process', title: 'Add Examples', description: 'Include code examples and samples', color: '#c0c0c0' },
+                        { x: 400, y: 250, type: 'process', title: 'Add Diagrams', description: 'Create visual diagrams', color: '#c0c0c0' },
+                        { x: 600, y: 250, type: 'process', title: 'Technical Review', description: 'Technical accuracy review', color: '#c0c0c0' },
+                        { x: 800, y: 250, type: 'process', title: 'Editorial Review', description: 'Grammar and style review', color: '#c0c0c0' },
+                        { x: 400, y: 400, type: 'process', title: 'Revisions', description: 'Make necessary revisions', color: '#c0c0c0' },
+                        { x: 600, y: 400, type: 'process', title: 'Format & Style', description: 'Apply formatting and styling', color: '#c0c0c0' },
+                        { x: 400, y: 550, type: 'process', title: 'Publish', description: 'Publish documentation', color: '#c0c0c0' },
+                        { x: 600, y: 550, type: 'process', title: 'Maintain', description: 'Keep documentation updated', color: '#c0c0c0' },
+                        { x: 500, y: 700, type: 'start', title: 'Documentation Ready', description: 'Documentation process complete', color: '#4caf50' }
+                    ],
+                    connections: [
+                        { from: 'Start Documentation', to: 'Gather Requirements', type: 'default' },
+                        { from: 'Gather Requirements', to: 'Check Existing Docs', type: 'default' },
+                        { from: 'Check Existing Docs', to: 'Create Outline', type: 'default' },
+                        { from: 'Create Outline', to: 'Write Content', type: 'default' },
+                        { from: 'Write Content', to: 'Add Examples', type: 'default' },
+                        { from: 'Add Examples', to: 'Add Diagrams', type: 'default' },
+                        { from: 'Add Diagrams', to: 'Technical Review', type: 'default' },
+                        { from: 'Technical Review', to: 'Editorial Review', type: 'default' },
+                        { from: 'Editorial Review', to: 'Revisions', type: 'default' },
+                        { from: 'Revisions', to: 'Format & Style', type: 'default' },
+                        { from: 'Format & Style', to: 'Publish', type: 'default' },
+                        { from: 'Publish', to: 'Maintain', type: 'default' },
+                        { from: 'Maintain', to: 'Documentation Ready', type: 'default' }
+                    ]
+                };
+            }
+
+            showNotification(message) {
+                // Simple notification system
+                const notification = document.createElement('div');
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: var(--cathedral-accent);
+                    color: white;
+                    padding: 1rem;
+                    border-radius: 8px;
+                    z-index: 10000;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                `;
+                notification.textContent = message;
+                
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.remove();
+                }, 3000);
+            }
+
+            undo() {
+                // Implementation for undo functionality
+                this.showNotification('Undo feature coming soon!');
+            }
+
+            redo() {
+                // Implementation for redo functionality
+                this.showNotification('Redo feature coming soon!');
+            }
+
+            selectAll() {
+                document.querySelectorAll('.flowchart-node').forEach(node => {
+                    node.classList.add('selected');
+                });
+            }
+
+            deleteSelected() {
+                if (this.selectedNode) {
+                    this.deleteNode(this.selectedNode.id);
+                }
+            }
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new FlowchartVisualizer();
+        });
+    </script>
+</body>
+</html>

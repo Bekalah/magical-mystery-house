@@ -261,7 +261,7 @@
 - Calculates compliance scores
 - Generates improvement recommendations
 
-**Run**: `ppnpm run analyze:master-docs`
+**Run**: `pppnpm run analyze:master-docs`
 
 ### 2. `registry-validator.mjs`
 - Validates REGISTRY integration
@@ -269,21 +269,21 @@
 - Ensures centralized data consumption
 - Reports compliance rate
 
-**Run**: `ppnpm run validate:registry`
+**Run**: `pppnpm run validate:registry`
 
 ### 3. `vision (Integrates with consciousness systems)ary-art-validator.mjs` (from previous)
 - Validates visionary art standards
 - Detects flat/immersive 3D environment patterns
 - Ensures 3D immersive environments
 
-**Run**: `ppnpm run validate:visionary-art`
+**Run**: `pppnpm run validate:visionary-art`
 
 ---
 
 ## Next Steps
 
-1. **Run Analysis**: `ppnpm run analyze:master-docs`
-2. **Check REGISTRY**: `ppnpm run validate:registry`
+1. **Run Analysis**: `pppnpm run analyze:master-docs`
+2. **Check REGISTRY**: `pppnpm run validate:registry`
 3. **Review Reports**: Check `.master-docs-analysis.json` and `.registry-validation.json`
 4. **Improve Compliance**: Update files based on recommendations
 5. **Continuous Validation**: All future improvements will be validated automatically

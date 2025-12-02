@@ -52,7 +52,7 @@ class NodeDataGenerator {
    * Generate all node data
    */
   async generateAllNodeData() {
-// console.log('🔮 Generating Codex 144:99 + Morgan Le Fay Avalon node data...');
+    console.log('🔮 Generating Codex 144:99 + Morgan Le Fay Avalon node data...');
 
     const allNodesData = {
       metadata: {
@@ -86,7 +86,7 @@ class NodeDataGenerator {
 
     // Generate data for first 12 nodes (expandable to 144)
     for (let nodeId = 1; nodeId <= 12; nodeId++) {
-// console.log(`📊 Processing Node ${nodeId}...`);
+      console.log(`📊 Processing Node ${nodeId}...`);
 
       // Generate base node data
       const nodeData = this.nodeIntegration.generateNodeData(nodeId);
@@ -136,7 +136,7 @@ class NodeDataGenerator {
     // Write main nodes file
     const nodesPath = path.join(this.outputDir, 'nodes.json');
     fs.writeFileSync(nodesPath, JSON.stringify(allNodesData, null, 2));
-// console.log(`✅ Generated ${nodesPath}`);
+    console.log(`✅ Generated ${nodesPath}`);
 
     // Generate separate files for different integrations
     await this.generateIntegrationFiles(allNodesData);
@@ -147,8 +147,8 @@ class NodeDataGenerator {
     // Generate web-specific exports
     await this.generateWebExports(allNodesData);
 
-// console.log('🎉 Node data generation complete!');
-// console.log(`📁 Files generated in: ${this.outputDir}`);
+    console.log('🎉 Node data generation complete!');
+    console.log(`📁 Files generated in: ${this.outputDir}`);
   }
 
   /**
@@ -164,7 +164,7 @@ class NodeDataGenerator {
 
     const threejsPath = path.join(this.outputDir, 'threejs-geometries.json');
     fs.writeFileSync(threejsPath, JSON.stringify(threejsData, null, 2));
-// console.log(`✅ Generated ${threejsPath}`);
+    console.log(`✅ Generated ${threejsPath}`);
 
     // Tone.js audio
     const tonejsData = {
@@ -176,7 +176,7 @@ class NodeDataGenerator {
 
     const tonejsPath = path.join(this.outputDir, 'tonejs-audio.json');
     fs.writeFileSync(tonejsPath, JSON.stringify(tonejsData, null, 2));
-// console.log(`✅ Generated ${tonejsPath}`);
+    console.log(`✅ Generated ${tonejsPath}`);
 
     // p5.js visuals
     const p5jsData = {
@@ -187,7 +187,7 @@ class NodeDataGenerator {
 
     const p5jsPath = path.join(this.outputDir, 'p5js-visuals.json');
     fs.writeFileSync(p5jsPath, JSON.stringify(p5jsData, null, 2));
-// console.log(`✅ Generated ${p5jsPath}`);
+    console.log(`✅ Generated ${p5jsPath}`);
 
     // Babylon.js scenes
     const babylonjsData = {
@@ -198,7 +198,7 @@ class NodeDataGenerator {
 
     const babylonjsPath = path.join(this.outputDir, 'babylonjs-scenes.json');
     fs.writeFileSync(babylonjsPath, JSON.stringify(babylonjsData, null, 2));
-// console.log(`✅ Generated ${babylonjsPath}`);
+    console.log(`✅ Generated ${babylonjsPath}`);
   }
 
   /**
@@ -235,7 +235,7 @@ class NodeDataGenerator {
 
     const configPath = path.join(godotDir, 'project-config.json');
     fs.writeFileSync(configPath, JSON.stringify(projectConfig, null, 2));
-// console.log(`✅ Generated Godot exports in ${godotDir}`);
+    console.log(`✅ Generated Godot exports in ${godotDir}`);
   }
 
   /**
@@ -271,7 +271,7 @@ class NodeDataGenerator {
     const tonejsWebPath = path.join(webDir, 'ToneJSNodeComponents.jsx');
     fs.writeFileSync(tonejsWebPath, tonejsComponents);
 
-// console.log(`✅ Generated web exports in ${webDir}`);
+    console.log(`✅ Generated web exports in ${webDir}`);
   }
 
   /**

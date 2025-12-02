@@ -1,0 +1,5 @@
+All code, ideas, and designs in this repository are copyright © Rebecca Lemke, 2025. All rights reserved. 
+
+This work is published for Azure, GitHub, and Cloudflare. No part may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the copyright holder.
+
+Contact: rebecca@lemke.com

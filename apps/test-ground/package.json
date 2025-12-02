@@ -18,12 +18,7 @@
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9"
   },
-  "license": "CC0-1.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:02.160Z",
-  "alchemical": {
-    "name": "Test Ground",
-    "symbol": "⊙",
-    "label": "⊙ Test Ground (@cathedral/test-ground)"
-  }
+  "consolidatedAt": "2025-12-01T21:19:40.214Z",
+  "license": "CC0-1.0"
 }

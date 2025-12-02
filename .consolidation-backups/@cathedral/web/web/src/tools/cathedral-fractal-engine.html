@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>�️ Rosslyn Cathedral Explorer - Sacred Stone Adventures</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cathedral-gold: #ffd700;
+            --divine-light: #fff9e6;
+            --sacred-copper: #b87333;
+            --twilight-purple: #483d8b;
+            --mystic-blue: #191970;
+            --abyss-deep: #0b0b1a;
+            --emerald-heart: #50c878;
+            --ruby-fire: #e0115f;
+            --celestial-silver: #c0c0c0;
+            --stone-gray: #8b8680;
+            --ancient-stone: #a0956b;
+            --sacred-shadows: #2c1810;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(180deg, 
+                var(--abyss-deep) 0%, 
+                var(--sacred-shadows) 30%,
+                var(--ancient-stone) 100%);
+            color: var(--divine-light);
+            font-family: 'Cormorant Garamond', serif;
+            overflow: hidden;
+            height: 100vh;
+            cursor: crosshair;
+        }
+
+        .cathedral-header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-bottom: 2px solid #8b5cf6;
+        }
+
+        .cathedral-title {
+            font-size: 2.5em;
+            background: linear-gradient(45deg, #8b5cf6, #06b6d4, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+        }
+
+        .sacred-numerology {
+            font-size: 0.9em;
+            color: #a78bfa;
+            margin-bottom: 15px;
+        }
+
+        .trinity-selector {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .trinity-mode {
+            padding: 10px 20px;
+            background: rgba(139, 92, 246, 0.2);
+            border: 2px solid #8b5cf6;
+            border-radius: 8px;
+            color: #e0e0e0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .trinity-mode:hover {
+            background: rgba(139, 92, 246, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .trinity-mode.active {
+            background: rgba(139, 92, 246, 0.6);
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+        }
+
+        .fractal-workspace {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            height: calc(100vh - 200px);
+        }
+
+        .controls-panel {
+            width: 300px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #8b5cf6;
+            overflow-y: auto;
+        }
+
+        .canvas-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #8b5cf6;
+        }
+
+        #fractalCanvas {
+            border: 2px solid #8b5cf6;
+            border-radius: 8px;
+            box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+            background: #000;
+        }
+
+        .control-group {
+            margin-bottom: 20px;
+        }
+
+        .control-label {
+            display: block;
+            margin-bottom: 5px;
+            color: #a78bfa;
+            font-weight: bold;
+        }
+
+        .control-input {
+            width: 100%;
+            padding: 8px;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid #8b5cf6;
+            border-radius: 4px;
+            color: #e0e0e0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .control-input:focus {
+            outline: none;
+            border-color: #06b6d4;
+            box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+        }
+
+        .fractal-selector {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .fractal-type {
+            padding: 8px;
+            background: rgba(139, 92, 246, 0.2);
+            border: 1px solid #8b5cf6;
+            border-radius: 4px;
+            color: #e0e0e0;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-size: 0.8em;
+        }
+
+        .fractal-type:hover {
+            background: rgba(139, 92, 246, 0.4);
+        }
+
+        .fractal-type.active {
+            background: rgba(139, 92, 246, 0.6);
+            box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+        }
+
+        .sacred-presets {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        .preset-btn {
+            padding: 8px;
+            background: rgba(16, 185, 129, 0.2);
+            border: 1px solid #10b981;
+            border-radius: 4px;
+            color: #e0e0e0;
+            cursor: pointer;
+            font-size: 0.8em;
+            transition: all 0.3s ease;
+        }
+
+        .preset-btn:hover {
+            background: rgba(16, 185, 129, 0.4);
+            transform: translateX(5px);
+        }
+
+        .export-controls {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .export-btn {
+            flex: 1;
+            padding: 10px;
+            background: rgba(6, 182, 212, 0.3);
+            border: 2px solid #06b6d4;
+            border-radius: 6px;
+            color: #e0e0e0;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .export-btn:hover {
+            background: rgba(6, 182, 212, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(6, 182, 212, 0.3);
+        }
+
+        .iteration-display {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            color: #06b6d4;
+        }
+
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+
+        .color-swatch {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .color-swatch:hover {
+            transform: scale(1.2);
+            border-color: #e0e0e0;
+        }
+
+        .color-swatch.active {
+            border-color: #06b6d4;
+            box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+        }
+
+        .angel-integration {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid #10b981;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .angel-name {
+            color: #10b981;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .angel-virtue {
+            color: #a78bfa;
+            font-size: 0.9em;
+        }
+
+        @keyframes sacredPulse {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+        }
+
+        .sacred-active {
+            animation: sacredPulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="cathedral-header">
+        <h1 class="cathedral-title">Cathedral Fractal Engine</h1>
+        <div class="sacred-numerology">Sacred Geometry Generator • 144 Codex Lattice • Trinity Architecture</div>
+        
+        <div class="trinity-selector">
+            <div class="trinity-mode active" data-mode="soul">Soul • Circuitum99</div>
+            <div class="trinity-mode" data-mode="body">Body • Stone-Grimoire</div>
+            <div class="trinity-mode" data-mode="spirit">Spirit • Cathedral</div>
+        </div>
+    </div>
+
+    <div class="fractal-workspace">
+        <div class="controls-panel">
+            <div class="angel-integration">
+                <div class="angel-name" id="currentAngel">Vehuiah</div>
+                <div class="angel-virtue" id="currentVirtue">Courage and new beginnings</div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Fractal Algorithm</label>
+                <div class="fractal-selector">
+                    <div class="fractal-type active" data-type="mandelbrot">Mandelbrot</div>
+                    <div class="fractal-type" data-type="julia">Julia Set</div>
+                    <div class="fractal-type" data-type="burning_ship">Burning Ship</div>
+                    <div class="fractal-type" data-type="newton">Newton</div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Sacred Presets</label>
+                <div class="sacred-presets">
+                    <div class="preset-btn" data-preset="golden_ratio">Golden Ratio φ</div>
+                    <div class="preset-btn" data-preset="fibonacci">Fibonacci Spiral</div>
+                    <div class="preset-btn" data-preset="flower_of_life">Flower of Life</div>
+                    <div class="preset-btn" data-preset="merkaba">Merkaba Star</div>
+                    <div class="preset-btn" data-preset="sri_yantra">Sri Yantra</div>
+                    <div class="preset-btn" data-preset="cathedral_gates">Cathedral Gates</div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Iterations: <span id="iterationValue">100</span></label>
+                <input type="range" class="control-input" id="iterations" min="50" max="500" value="100">
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Zoom Level</label>
+                <input type="number" class="control-input" id="zoom" value="1" step="0.1">
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Center X</label>
+                <input type="number" class="control-input" id="centerX" value="0" step="0.01">
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Center Y</label>
+                <input type="number" class="control-input" id="centerY" value="0" step="0.01">
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Julia Real</label>
+                <input type="number" class="control-input" id="juliaReal" value="-0.7" step="0.01">
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Julia Imaginary</label>
+                <input type="number" class="control-input" id="juliaImag" value="0.27015" step="0.01">
+            </div>
+
+            <div class="control-group">
+                <label class="control-label">Color Palette</label>
+                <div class="color-palette">
+                    <div class="color-swatch active" data-palette="cathedral" style="background: linear-gradient(45deg, #8b5cf6, #06b6d4);"></div>
+                    <div class="color-swatch" data-palette="fire" style="background: linear-gradient(45deg, #ff6b6b, #ffa500);"></div>
+                    <div class="color-swatch" data-palette="ocean" style="background: linear-gradient(45deg, #0077be, #00a8cc);"></div>
+                    <div class="color-swatch" data-palette="forest" style="background: linear-gradient(45deg, #2d5016, #8bc34a);"></div>
+                    <div class="color-swatch" data-palette="sunset" style="background: linear-gradient(45deg, #ff9500, #ff5722);"></div>
+                    <div class="color-swatch" data-palette="aurora" style="background: linear-gradient(45deg, #00ff88, #0099ff);"></div>
+                    <div class="color-swatch" data-palette="mystic" style="background: linear-gradient(45deg, #9c27b0, #3f51b5);"></div>
+                    <div class="color-swatch" data-palette="golden" style="background: linear-gradient(45deg, #ffd700, #ff8c00);"></div>
+                </div>
+            </div>
+
+            <div class="export-controls">
+                <button class="export-btn" onclick="exportFractal()">Export PNG</button>
+                <button class="export-btn" onclick="saveSacredGeometry()">Save Sacred</button>
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <div class="iteration-display">
+                Generating Sacred Geometry...
+            </div>
+            <canvas id="fractalCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Cathedral Fractal Engine with Angel Integration
+        class CathedralFractalEngine {
+            constructor() {
+                this.canvas = document.getElementById('fractalCanvas');
+                this.ctx = this.canvas.getContext('2d');
+                this.worker = null;
+                this.angelsData = null;
+                this.currentAngel = 1;
+                this.currentTrinity = 'soul';
+                
+                this.settings = {
+                    type: 'mandelbrot',
+                    iterations: 100,
+                    zoom: 1,
+                    centerX: 0,
+                    centerY: 0,
+                    juliaReal: -0.7,
+                    juliaImag: 0.27015,
+                    palette: 'cathedral'
+                };
+
+                this.colorPalettes = {
+                    cathedral: [
+                        [139, 92, 246],  // Purple
+                        [6, 182, 212],   // Cyan
+                        [16, 185, 129],  // Green
+                        [139, 92, 246]   // Purple
+                    ],
+                    fire: [[255, 0, 0], [255, 165, 0], [255, 255, 0], [255, 69, 0]],
+                    ocean: [[0, 119, 190], [0, 168, 204], [135, 206, 235], [0, 191, 255]],
+                    forest: [[45, 80, 22], [139, 195, 74], [76, 175, 80], [129, 199, 132]],
+                    sunset: [[255, 149, 0], [255, 87, 34], [255, 193, 7], [255, 152, 0]],
+                    aurora: [[0, 255, 136], [0, 153, 255], [204, 0, 255], [0, 255, 204]],
+                    mystic: [[156, 39, 176], [63, 81, 181], [103, 58, 183], [142, 36, 170]],
+                    golden: [[255, 215, 0], [255, 140, 0], [218, 165, 32], [255, 193, 7]]
+                };
+
+                this.init();
+            }
+
+            async init() {
+                await this.loadAngelsData();
+                this.setupEventListeners();
+                this.updateAngelDisplay();
+                this.generateFractal();
+            }
+
+            async loadAngelsData() {
+                try {
+                    // Load the real Cathedral angels dataset
+                    const response = await fetch('../../packages/codex-144/angels-72.json');
+                    const data = await response.json();
+                    this.angelsData = data.angels;
+                } catch (error) {
+                    console.warn('Could not load angels data, using fallback');
+                    this.angelsData = {
+                        "1": {
+                            "name": "Vehuiah",
+                            "virtue": "Courage and new beginnings",
+                            "tone_hz": 256
+                        }
+                    };
+                }
+            }
+
+            setupEventListeners() {
+                // Trinity mode selection
+                document.querySelectorAll('.trinity-mode').forEach(mode => {
+                    mode.addEventListener('click', (e) => {
+                        document.querySelectorAll('.trinity-mode').forEach(m => m.classList.remove('active'));
+                        e.target.classList.add('active');
+                        this.currentTrinity = e.target.dataset.mode;
+                        this.updateTrinitySettings();
+                    });
+                });
+
+                // Fractal type selection
+                document.querySelectorAll('.fractal-type').forEach(type => {
+                    type.addEventListener('click', (e) => {
+                        document.querySelectorAll('.fractal-type').forEach(t => t.classList.remove('active'));
+                        e.target.classList.add('active');
+                        this.settings.type = e.target.dataset.type;
+                        this.generateFractal();
+                    });
+                });
+
+                // Color palette selection
+                document.querySelectorAll('.color-swatch').forEach(swatch => {
+                    swatch.addEventListener('click', (e) => {
+                        document.querySelectorAll('.color-swatch').forEach(s => s.classList.remove('active'));
+                        e.target.classList.add('active');
+                        this.settings.palette = e.target.dataset.palette;
+                        this.generateFractal();
+                    });
+                });
+
+                // Sacred presets
+                document.querySelectorAll('.preset-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        this.applySacredPreset(e.target.dataset.preset);
+                    });
+                });
+
+                // Parameter controls
+                const controls = ['iterations', 'zoom', 'centerX', 'centerY', 'juliaReal', 'juliaImag'];
+                controls.forEach(control => {
+                    const element = document.getElementById(control);
+                    element.addEventListener('input', (e) => {
+                        this.settings[control] = parseFloat(e.target.value);
+                        if (control === 'iterations') {
+                            document.getElementById('iterationValue').textContent = e.target.value;
+                        }
+                        this.generateFractal();
+                    });
+                });
+
+                // Canvas click for navigation
+                this.canvas.addEventListener('click', (e) => {
+                    const rect = this.canvas.getBoundingClientRect();
+                    const x = (e.clientX - rect.left) / this.canvas.width;
+                    const y = (e.clientY - rect.top) / this.canvas.height;
+                    
+                    // Convert to fractal coordinates
+                    const fractalX = (x - 0.5) * 4 / this.settings.zoom + this.settings.centerX;
+                    const fractalY = (y - 0.5) * 3 / this.settings.zoom + this.settings.centerY;
+                    
+                    this.settings.centerX = fractalX;
+                    this.settings.centerY = fractalY;
+                    this.settings.zoom *= 2;
+                    
+                    document.getElementById('centerX').value = fractalX;
+                    document.getElementById('centerY').value = fractalY;
+                    document.getElementById('zoom').value = this.settings.zoom;
+                    
+                    this.generateFractal();
+                });
+            }
+
+            updateTrinitySettings() {
+                // Update angel based on trinity mode
+                switch(this.currentTrinity) {
+                    case 'soul':
+                        this.currentAngel = 1 + Math.floor(Math.random() * 24); // First 24 angels
+                        break;
+                    case 'body':
+                        this.currentAngel = 25 + Math.floor(Math.random() * 24); // Middle 24 angels
+                        break;
+                    case 'spirit':
+                        this.currentAngel = 49 + Math.floor(Math.random() * 24); // Last 24 angels
+                        break;
+                }
+                this.updateAngelDisplay();
+                this.generateFractal();
+            }
+
+            updateAngelDisplay() {
+                if (this.angelsData && this.angelsData[this.currentAngel.toString()]) {
+                    const angel = this.angelsData[this.currentAngel.toString()];
+                    document.getElementById('currentAngel').textContent = angel.name || 'Vehuiah';
+                    document.getElementById('currentVirtue').textContent = angel.virtue || 'Divine guidance';
+                }
+            }
+
+            applySacredPreset(preset) {
+                const presets = {
+                    golden_ratio: {
+                        centerX: -0.618,
+                        centerY: 0.618,
+                        zoom: 1.618,
+                        iterations: 144
+                    },
+                    fibonacci: {
+                        centerX: -0.235,
+                        centerY: 0.827,
+                        zoom: 2.5,
+                        iterations: 89
+                    },
+                    flower_of_life: {
+                        centerX: 0,
+                        centerY: 0,
+                        zoom: 1,
+                        iterations: 72
+                    },
+                    merkaba: {
+                        centerX: -0.8,
+                        centerY: 0.156,
+                        zoom: 3.2,
+                        iterations: 108
+                    },
+                    sri_yantra: {
+                        centerX: -0.7269,
+                        centerY: 0.1889,
+                        zoom: 2.8,
+                        iterations: 216
+                    },
+                    cathedral_gates: {
+                        centerX: -0.235125,
+                        centerY: 0.827215,
+                        zoom: 4.5,
+                        iterations: 99
+                    }
+                };
+
+                if (presets[preset]) {
+                    Object.assign(this.settings, presets[preset]);
+                    
+                    // Update UI
+                    document.getElementById('centerX').value = this.settings.centerX;
+                    document.getElementById('centerY').value = this.settings.centerY;
+                    document.getElementById('zoom').value = this.settings.zoom;
+                    document.getElementById('iterations').value = this.settings.iterations;
+                    document.getElementById('iterationValue').textContent = this.settings.iterations;
+                    
+                    this.generateFractal();
+                }
+            }
+
+            generateFractal() {
+                const imageData = this.ctx.createImageData(this.canvas.width, this.canvas.height);
+                
+                // Add sacred pulse effect
+                document.querySelector('.canvas-container').classList.add('sacred-active');
+                
+                for (let x = 0; x < this.canvas.width; x++) {
+                    for (let y = 0; y < this.canvas.height; y++) {
+                        const [r, g, b] = this.calculatePixelColor(x, y);
+                        const index = (y * this.canvas.width + x) * 4;
+                        
+                        imageData.data[index] = r;
+                        imageData.data[index + 1] = g;
+                        imageData.data[index + 2] = b;
+                        imageData.data[index + 3] = 255;
+                    }
+                }
+                
+                this.ctx.putImageData(imageData, 0, 0);
+                
+                // Remove pulse effect
+                setTimeout(() => {
+                    document.querySelector('.canvas-container').classList.remove('sacred-active');
+                }, 1000);
+            }
+
+            calculatePixelColor(px, py) {
+                const x0 = (px / this.canvas.width - 0.5) * 4 / this.settings.zoom + this.settings.centerX;
+                const y0 = (py / this.canvas.height - 0.5) * 3 / this.settings.zoom + this.settings.centerY;
+                
+                let iterations;
+                
+                switch(this.settings.type) {
+                    case 'mandelbrot':
+                        iterations = this.mandelbrot(x0, y0);
+                        break;
+                    case 'julia':
+                        iterations = this.julia(x0, y0);
+                        break;
+                    case 'burning_ship':
+                        iterations = this.burningShip(x0, y0);
+                        break;
+                    case 'newton':
+                        iterations = this.newton(x0, y0);
+                        break;
+                    default:
+                        iterations = this.mandelbrot(x0, y0);
+                }
+                
+                return this.getColor(iterations);
+            }
+
+            mandelbrot(x0, y0) {
+                let x = 0, y = 0;
+                let iteration = 0;
+                
+                while (x*x + y*y <= 4 && iteration < this.settings.iterations) {
+                    const xtemp = x*x - y*y + x0;
+                    y = 2*x*y + y0;
+                    x = xtemp;
+                    iteration++;
+                }
+                
+                return iteration;
+            }
+
+            julia(x0, y0) {
+                let x = x0, y = y0;
+                let iteration = 0;
+                
+                while (x*x + y*y <= 4 && iteration < this.settings.iterations) {
+                    const xtemp = x*x - y*y + this.settings.juliaReal;
+                    y = 2*x*y + this.settings.juliaImag;
+                    x = xtemp;
+                    iteration++;
+                }
+                
+                return iteration;
+            }
+
+            burningShip(x0, y0) {
+                let x = 0, y = 0;
+                let iteration = 0;
+                
+                while (x*x + y*y <= 4 && iteration < this.settings.iterations) {
+                    const xtemp = x*x - y*y + x0;
+                    y = Math.abs(2*x*y) + y0;
+                    x = Math.abs(xtemp);
+                    iteration++;
+                }
+                
+                return iteration;
+            }
+
+            newton(x0, y0) {
+                let x = x0, y = y0;
+                let iteration = 0;
+                
+                while (iteration < this.settings.iterations) {
+                    // Newton's method for z^3 - 1 = 0
+                    const x3 = x*x*x - 3*x*y*y;
+                    const y3 = 3*x*x*y - y*y*y;
+                    const norm = x3*x3 + y3*y3;
+                    
+                    if (norm < 0.0001) break;
+                    
+                    const denominator = 3 * (x*x + y*y);
+                    x = (2*x + (x3 - y3) / denominator) / 3;
+                    y = (2*y + (y3 + x3) / denominator) / 3;
+                    iteration++;
+                }
+                
+                return iteration;
+            }
+
+            getColor(iterations) {
+                if (iterations >= this.settings.iterations) {
+                    return [0, 0, 0]; // Black for points in the set
+                }
+                
+                const palette = this.colorPalettes[this.settings.palette];
+                const t = iterations / this.settings.iterations;
+                const scaledT = t * (palette.length - 1);
+                const index = Math.floor(scaledT);
+                const fraction = scaledT - index;
+                
+                const color1 = palette[index] || palette[0];
+                const color2 = palette[index + 1] || palette[palette.length - 1];
+                
+                // Apply angel influence to color
+                const angelInfluence = this.getAngelInfluence();
+                
+                return [
+                    Math.floor(color1[0] * (1 - fraction) + color2[0] * fraction + angelInfluence),
+                    Math.floor(color1[1] * (1 - fraction) + color2[1] * fraction + angelInfluence),
+                    Math.floor(color1[2] * (1 - fraction) + color2[2] * fraction + angelInfluence)
+                ].map(c => Math.max(0, Math.min(255, c)));
+            }
+
+            getAngelInfluence() {
+                // Subtle color influence based on current angel
+                const time = Date.now() * 0.001;
+                const angelMod = this.currentAngel % 12;
+                return Math.sin(time + angelMod) * 5;
+            }
+        }
+
+        // Export functions
+        function exportFractal() {
+            const canvas = document.getElementById('fractalCanvas');
+            const link = document.createElement('a');
+            link.download = `cathedral-fractal-${Date.now()}.png`;
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+
+        function saveSacredGeometry() {
+            const settings = window.fractalEngine.settings;
+            const sacredData = {
+                type: 'Cathedral Sacred Geometry',
+                timestamp: new Date().toISOString(),
+                trinity: window.fractalEngine.currentTrinity,
+                angel: window.fractalEngine.currentAngel,
+                settings: settings,
+                sacred_numerology: {
+                    spine_vertebrae: 33,
+                    shem_angels: 72,
+                    codex_lattice: 144
+                }
+            };
+            
+            const blob = new Blob([JSON.stringify(sacredData, null, 2)], { type: 'application/json' });
+            const link = document.createElement('a');
+            link.download = `sacred-geometry-${Date.now()}.json`;
+            link.href = URL.createObjectURL(blob);
+            link.click();
+        }
+
+        // Initialize the Cathedral Fractal Engine
+        window.addEventListener('load', () => {
+            window.fractalEngine = new CathedralFractalEngine();
+        });
+    </script>
+</body>
+</html>

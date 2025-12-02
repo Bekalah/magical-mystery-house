@@ -1,7 +1,3 @@
-/**
- * @license CC0-1.0 - Public Domain
- */
-
 // engine.ts - lightweight synthesis graph planner (placeholder Web Audio binding)
 import { PatchDefinition, ChainGraphNode, RenderRequest } from './types';
 import { patchLibrary } from './patchLibrary';

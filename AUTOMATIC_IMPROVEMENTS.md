@@ -14,7 +14,7 @@ The improvement experiment now includes **automatic cleanup and security auditin
 - Integrated into experiment - runs automatically
 
 **Script:** `scripts/security-audit.mjs`  
-**Manual Run:** `ppnpm run security:audit`
+**Manual Run:** `pnpm run security:audit`
 
 ### 🧹 Automatic Cleanup (Every 20 Cycles)
 
@@ -25,7 +25,7 @@ The improvement experiment now includes **automatic cleanup and security auditin
 - Reports space freed
 
 **Script:** `scripts/auto-cleanup.mjs`  
-**Manual Run:** `ppnpm run cleanup`
+**Manual Run:** `pnpm run cleanup`
 
 ### 🔐 Security Improvements
 
@@ -53,16 +53,16 @@ Both cleanup and security audit are automatically integrated into the improvemen
 
 ```bash
 # Run cleanup manually
-ppnpm run cleanup
+pnpm run cleanup
 
 # Run security audit manually
-ppnpm run security:audit
+pnpm run security:audit
 
 # Run both (maintenance)
-ppnpm run maintain
+pnpm run maintain
 
 # Full security check
-ppnpm run security:check
+pnpm run security:check
 ```
 
 ## Reports

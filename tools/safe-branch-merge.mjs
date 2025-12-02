@@ -57,7 +57,7 @@ class SafeBranchMerge {
       '**/dist',
       '**/.git',
       '**/pnpm-lock.yaml',
-      '**/package-lock.json',
+      '**/pnpm-lock.yaml',
       '**/yarn.lock',
     ];
 

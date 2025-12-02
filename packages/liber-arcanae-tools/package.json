@@ -19,7 +19,10 @@
     "typescript": "^5.0.0",
     "eslint": "^8.0.0",
     "jest": "^29.0.0",
-    "@cathedral/trinity-architecture": "workspace:*"
+    "@cathedral/trinity-architecture": "workspace:*",
+    "@cathedral/liber-arcanae": "workspace:*",
+    "@cathedral/liber-arcanae-core": "workspace:*",
+    "@cathedral/liber-arcanae-tools": "workspace:*"
   },
   "devDependencies": {
     "@types/fabric": "^5.3.0",
@@ -41,8 +44,8 @@
     "pnpm": ">=8.0.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:14:17.248Z",
-  "packageManager": "pnpm@8.0.0",
+  "consolidatedAt": "2025-12-01T19:36:55.935Z",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "@Cathedral Real/Liber Arcanae Tools",
     "symbol": "⊙",
@@ -51,5 +54,36 @@
   "publishConfig": {
     "access": "public"
   },
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "cathedral": {
+    "sacred_mathematics": {
+      "sacredGeometry": true,
+      "goldenRatio": 1.618,
+      "cathedralRatio": 1.455,
+      "fibonacciGrids": true,
+      "divineProportions": true
+    },
+    "trauma_safety": {
+      "noAutoplay": true,
+      "escExit": true,
+      "motionControls": true,
+      "intensityAdjustment": true,
+      "gentleDefaults": true,
+      "undoRedo": true
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
+    },
+    "integration": {
+      "connects_to": [
+        "liber-arcanae",
+        "liber-arcanae-core",
+        "liber-arcanae-tools"
+      ]
+    }
+  }
 }

@@ -1,40 +1,57 @@
 /**
- * index
+ * Liber Arcanae Tools - Professional Creative Canvas
  * 
- * @package @cathedral/liber-arcanae
+ * A hybrid art-game and creative platform built on Trinity Architecture.
+ * "Art = Spell" - every act of creation changes the world.
+ * Figma replacement with consciousness evolution integration.
  * 
- * LIBER ARCANAE CODEX ABYSSIAE
- * Complete Ornate System - All Exports
+ * @author Rebecca Respawn (Leonora Carrington)
+ * @version 1.0.0
+ * @project Circuitum 99 / Liber Arcanae
  */
-// src/index.ts — Complete exports for Liber Arcanae Codex Abyssiae
 
-export const MajorArcana = [
-  "Fool","Magician","High Priestess","Empress","Emperor","Hierophant","Lovers",
-  "Chariot","Strength","Hermit","Wheel","Justice","Hanged Man","Death","Temperance",
-  "Devil","Tower","Star","Moon","Sun","Judgment","World"
-];
+// Core Liber Arcanae Components
+export { LiberArcanaeCanvas } from './canvas/liber-arcanae-canvas';
+export { VectorDrawingEngine } from './canvas/vector-drawing-engine';
+export { MetadataSystem } from './canvas/metadata-system';
+export { ArchetypeIntegration } from './canvas/archetype-integration';
+
+// Godot Integration
+export { GodotImporter } from './godot/godot-importer';
+export { TSCNGenerator } from './godot/tscn-generator';
+export { JSONExporter } from './godot/json-exporter';
+
+// Sound & Frequency Systems
+export { SoundLoom } from './sound/sound-loom';
+export { ColorSoundCorrespondences } from './sound/color-sound-system';
+export { FrequencyVisualizer } from './sound/frequency-visualizer';
+
+// Real-time Collaboration
+export { CollaborativeEngine } from './collaboration/collaborative-engine';
+export { CRDTManager } from './collaboration/crdt-manager';
+
+// Symbol Library
+export { SacredGeometryLibrary } from './symbols/sacred-geometry-library';
+export { AlchemicalIconSystem } from './symbols/alchemical-icon-system';
+export { ArchetypeSymbolLibrary } from './symbols/archetype-symbol-library';
+
+// Accessibility & Trauma-Safety
+export { LowStimUIMode } from './accessibility/low-stim-ui';
+export { TraumaSafeCreativeTools } from './accessibility/trauma-safe-tools';
+
+// Codex Integration
+export { CodexLoggingSystem } from './codex/codex-logging';
+export { ArchetypeMentor } from './codex/archetype-mentor';
+
+// Main Factory
+import { LiberArcanaeCanvas } from './canvas/liber-arcanae-canvas';
+import { TraumaSafeConfig } from '@cathedral-real/trinity-architecture';
 
 /**
- * ⚗️ MinorSuit - The Principle
- * 
- * In the alchemical tradition, this type serves as a vessel where
- * aether energy and sacred mathematics converge to manifest
- * visionary works.
- * 
- * Like the philosopher's stone transforming base metals to gold, this type
- * transforms raw data and principles into art that speaks to the deepest
- * layers of human experience.
- * 
- * **Element**: Aether
- * **Process**: The Principle
- * **Ratio**: 144:99 (Sacred Cathedral Proportion)
- * 
- * @license CC0-1.0 - Public Domain
+ * Create a complete Liber Arcanae Creative Platform
  */
-export type MinorSuit = "Wands" | "Cups" | "Swords" | "Pentacles";
-
 /**
- * ⚗️ GetCardName - Solve et Coagula
+ * ⚗️ CreateLiberArcanaeTools - Solve et Coagula
  * 
  * In the alchemical tradition, this function serves as a vessel where
  * aether energy and sacred mathematics converge to manifest
@@ -50,77 +67,53 @@ export type MinorSuit = "Wands" | "Cups" | "Swords" | "Pentacles";
  * 
  * @license CC0-1.0 - Public Domain
  */
-export function getCardName(arc: string) {
-  return arc;
+export function createLiberArcanaeTools(traumaConfig?: Partial<TraumaSafeConfig>): LiberArcanaeCanvas {
+  const config: TraumaSafeConfig = {
+    level: 5,
+    escExitAvailable: true,
+    motionControl: true,
+    screenReaderSupport: true,
+    processingTimeAllowance: 3000,
+    gentleDefaults: true,
+    neurodivergentFriendly: true,
+    lowStimMode: true,
+    colorBlindnessSupport: true,
+    soundLevelControl: true,
+    ...traumaConfig
+  };
+
+  return new LiberArcanaeCanvas(config);
 }
 
-// Export art loader for Liber Arcanae Codex Abyssiae
-export * from './art-loader';
-export { LiberArcanae } from './LiberArcanae';
-
-// Functional engine exports - REAL, WORKING engines
-export * from './functional-tarot-engine';
-export { tarotEngine, FunctionalTarotEngine } from './functional-tarot-engine';
-export * from './complete-tarot-system';
-
-// ============================================================================
-// COMPLETE ORNATE SYSTEM EXPORTS
-// ============================================================================
-
-// Liber Arcanae Codex Abyssiae - Complete System
-export * from './liber-arcanae-codex-abyssiae-complete';
-
-// 99 Gates with Fractal Sound Art Mechanics
-export * from './99-gates-complete';
-export { ALL_99_GATES, generateAll99Gates, createGate } from './99-gates-complete';
-
-// 22 Playable Characters
-export * from './22-playable-characters';
-
-// Integral Ecosystem Integration
-export * from './integral-ecosystem-integration';
-export { integralEcosystemEngine, IntegralEcosystemEngine } from './integral-ecosystem-integration';
-
-// World App Maker Integration
-export * from './world-app-maker-integration';
-export { worldAppMakerEngine, WorldAppMakerEngine } from './world-app-maker-integration';
-
-// Magical Mystery House Complete Integration
-export * from './mystery-house-complete-integration';
-export { 
-  COMPLETE_MYSTERY_HOUSE_ROOMS,
-  getCompleteRoom,
-  getRoomsByMode,
-  getRoomsByArcana,
-  getRoomsByGate,
-  getRoomsByCodexNode,
-  getAllCompleteRooms
-} from './mystery-house-complete-integration';
-
-// Fusion Kink Complete Integration
-export * from './fusion-kink-complete-integration';
-export { 
-  fusionKinkCompleteEngine, 
-  FusionKinkCompleteEngine 
-} from './fusion-kink-complete-integration';
-
-// Data Enhancement System
-export * from './data-enhancement-system';
-export { 
-  DataEnhancementEngine,
-  enhanceAllDataFiles
-} from './data-enhancement-system';
-
-// 22 Master Arcanae - Complete Ornate System
-export * from './22-master-arcanae-ornate-complete';
-export {
-  COMPLETE_22_MASTER_ARCANAE,
-  getAll22MasterArcanae,
-  getMasterArcanaById,
-  getMasterArcanaByNumber,
-  generateOrnateArcana
-} from './22-master-arcanae-ornate-complete';
-
-// Theme Connection System
-export * from './theme-connection-system';
-export { themeConnectionEngine, ThemeConnectionEngine } from './theme-connection-system';
+/**
+ * Export default configuration for Circuitum 99 / Liber Arcanae
+ */
+export const LIBER_ARCANAE_CONFIG = {
+  name: "Circuitum 99 / Liber Arcanae",
+  version: "1.0.0",
+  philosophy: {
+    art_as_spell: true,
+    play_as_learning: true,
+    thelema_backbone: true,
+    accessibility: true
+  },
+  world: {
+    setting: "Codex Abyssiae",
+    protagonist: "Rebecca Respawn (Leonora Carrington)",
+    archetype_system: "22 Major Arcana"
+  },
+  technology: {
+    canvas_resolution: "4096x4096",
+    color_depth: "16-bit",
+    real_time_collaboration: true,
+    godot_integration: true,
+    frequency_sound_mapping: true
+  },
+  accessibility: {
+    trauma_sensitive: true,
+    low_stim_mode: true,
+    screen_reader_support: true,
+    gentle_defaults: true,
+    esc_exit_available: true
+  }
+};

@@ -53,23 +53,23 @@ async function makeEverythingWork() {
 
   // 1. Fix TypeScript build
   UserFeedback.section('Step 1: Fix TypeScript Build');
-  results.build = await runCommand('ppnpm run build:scripts', 'Building TypeScript scripts');
+  results.build = await runCommand('pnpm run build:scripts', 'Building TypeScript scripts');
 
   // 2. Validate setup
   UserFeedback.section('Step 2: Validate Setup');
-  results.validation = await runCommand('ppnpm run validate:setup', 'Validating setup');
+  results.validation = await runCommand('pnpm run validate:setup', 'Validating setup');
 
   // 3. Health check
   UserFeedback.section('Step 3: Health Check');
-  results.health = await runCommand('ppnpm run health:check', 'Running health check');
+  results.health = await runCommand('pnpm run health:check', 'Running health check');
 
   // 4. Test key tools
   UserFeedback.section('Step 4: Testing Key Tools');
   
   const keyTools = [
-    { cmd: 'ppnpm run summary', name: 'System Summary' },
-    { cmd: 'ppnpm run check:dependencies', name: 'Dependency Check' },
-    { cmd: 'ppnpm run check:quality', name: 'Code Quality Check' }
+    { cmd: 'pnpm run summary', name: 'System Summary' },
+    { cmd: 'pnpm run check:dependencies', name: 'Dependency Check' },
+    { cmd: 'pnpm run check:quality', name: 'Code Quality Check' }
   ];
 
   for (const tool of keyTools) {

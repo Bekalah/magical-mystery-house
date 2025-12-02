@@ -26,24 +26,24 @@ const BASE_DIR = '/Users/rebeccalemke/cathedral-master-deployment';
 
 const AUTOMATIONS = {
   'daily': [
-    { name: 'Health Check', command: 'ppnpm run health:check' },
-    { name: 'Code Quality', command: 'ppnpm run check:quality' },
-    { name: 'Dependency Check', command: 'ppnpm run check:dependencies' }
+    { name: 'Health Check', command: 'pnpm run health:check' },
+    { name: 'Code Quality', command: 'pnpm run check:quality' },
+    { name: 'Dependency Check', command: 'pnpm run check:dependencies' }
   ],
   'weekly': [
-    { name: 'Full System Check', command: 'ppnpm run check:all' },
-    { name: 'Security Scan', command: 'ppnpm run security:scan' },
+    { name: 'Full System Check', command: 'pnpm run check:all' },
+    { name: 'Security Scan', command: 'pnpm run security:scan' },
     { name: 'Cleanup Old Backups', command: 'node tools/backup-manager.mjs cleanup 7' }
   ],
   'pre-commit': [
-    { name: 'TypeScript Build', command: 'ppnpm run build:scripts' },
-    { name: 'Lint', command: 'ppnpm run lint' },
-    { name: 'Format', command: 'ppnpm run format' }
+    { name: 'TypeScript Build', command: 'pnpm run build:scripts' },
+    { name: 'Lint', command: 'pnpm run lint' },
+    { name: 'Format', command: 'pnpm run format' }
   ],
   'pre-push': [
-    { name: 'Full Build', command: 'ppnpm run build' },
-    { name: 'All Checks', command: 'ppnpm run check:all' },
-    { name: 'Tests', command: 'ppnpm run test' }
+    { name: 'Full Build', command: 'pnpm run build' },
+    { name: 'All Checks', command: 'pnpm run check:all' },
+    { name: 'Tests', command: 'pnpm run test' }
   ]
 };
 

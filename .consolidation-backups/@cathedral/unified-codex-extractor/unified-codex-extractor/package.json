@@ -27,11 +27,11 @@
     "jimp": "^0.22.10",
     "svg2img": "^0.9.0",
     "opencv4nodejs": "^5.6.0",
-    "exifreader": "^4.16.0",
-    "typescript": "^5.3.0"
+    "exifreader": "^4.16.0"
   },
   "devDependencies": {
-    "@types/node": "^20.10.0"
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
   },
   "keywords": [
     "book-extraction",
@@ -52,17 +52,16 @@
     "./validator": "./dist/validator/index.js",
     "./types": "./dist/types/index.js"
   },
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/unified-codex-extractor"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/unified-codex-extractor",
   "license": "CC0-1.0",
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:58.058Z",
-  "packageManager": "pnpm@8.0.0",
-  "alchemical": {
-    "name": "Unified Codex Extractor",
-    "symbol": "⊙",
-    "label": "⊙ Unified Codex Extractor (@cathedral/unified-codex-extractor)"
-  }
+  "author": "Rebecca Respawn <bekalah>"
 }

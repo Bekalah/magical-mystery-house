@@ -1,0 +1,238 @@
+{
+  "timestamp": "2025-12-01T23:45:38.605Z",
+  "systems": {},
+  "packages": {
+    "godot-liber-arcanae": {
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae",
+      "techSystems": [
+        "true-will-tech",
+        "rpg-tech",
+        "grimoire-system",
+        "spell-system"
+      ],
+      "connected": true,
+      "integrations": []
+    },
+    "liber-arcanae": {
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae",
+      "techSystems": [
+        "grimoire-system",
+        "character-grimoire-system",
+        "true-will-tech",
+        "rpg-tech"
+      ],
+      "connected": true,
+      "integrations": []
+    },
+    "codex-144": {
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144",
+      "techSystems": [
+        "daimon-grimoires",
+        "portal-tech",
+        "true-will-tech"
+      ],
+      "connected": true,
+      "integrations": []
+    },
+    "codex-144-99": {
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144-99",
+      "techSystems": [
+        "portal-tech",
+        "double-tree-pathworking-tech",
+        "true-will-tech"
+      ],
+      "connected": true,
+      "integrations": []
+    },
+    "circuitum99-core": {
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-core",
+      "techSystems": [
+        "portal-tech",
+        "rpg-tech",
+        "true-will-tech"
+      ],
+      "connected": true,
+      "integrations": []
+    },
+    "stone-grimoire": {
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire",
+      "techSystems": [
+        "grimoire-maker",
+        "dynamic-grimoire-importer",
+        "true-will-tech"
+      ],
+      "connected": true,
+      "integrations": []
+    }
+  },
+  "integrations": [
+    {
+      "package": "godot-liber-arcanae",
+      "techSystems": [
+        "true-will-tech",
+        "rpg-tech",
+        "grimoire-system",
+        "spell-system"
+      ],
+      "connected": "2025-12-01T23:45:38.612Z",
+      "connections": [
+        {
+          "tech": "true-will-tech",
+          "status": "connected",
+          "path": "tools/true-will-tech.mjs"
+        },
+        {
+          "tech": "rpg-tech",
+          "status": "connected",
+          "path": "tools/rpg-tech.mjs"
+        },
+        {
+          "tech": "grimoire-system",
+          "status": "connected",
+          "path": "tools/grimoire-system.mjs"
+        },
+        {
+          "tech": "spell-system",
+          "status": "connected",
+          "path": "tools/spell-system.mjs"
+        }
+      ]
+    },
+    {
+      "package": "liber-arcanae",
+      "techSystems": [
+        "grimoire-system",
+        "character-grimoire-system",
+        "true-will-tech",
+        "rpg-tech"
+      ],
+      "connected": "2025-12-01T23:45:38.614Z",
+      "connections": [
+        {
+          "tech": "grimoire-system",
+          "status": "connected",
+          "path": "tools/grimoire-system.mjs"
+        },
+        {
+          "tech": "character-grimoire-system",
+          "status": "connected",
+          "path": "tools/character-grimoire-system.mjs"
+        },
+        {
+          "tech": "true-will-tech",
+          "status": "connected",
+          "path": "tools/true-will-tech.mjs"
+        },
+        {
+          "tech": "rpg-tech",
+          "status": "connected",
+          "path": "tools/rpg-tech.mjs"
+        }
+      ]
+    },
+    {
+      "package": "codex-144",
+      "techSystems": [
+        "daimon-grimoires",
+        "portal-tech",
+        "true-will-tech"
+      ],
+      "connected": "2025-12-01T23:45:38.615Z",
+      "connections": [
+        {
+          "tech": "daimon-grimoires",
+          "status": "connected",
+          "path": "tools/daimon-grimoires.mjs"
+        },
+        {
+          "tech": "portal-tech",
+          "status": "connected",
+          "path": "tools/portal-tech.mjs"
+        },
+        {
+          "tech": "true-will-tech",
+          "status": "connected",
+          "path": "tools/true-will-tech.mjs"
+        }
+      ]
+    },
+    {
+      "package": "codex-144-99",
+      "techSystems": [
+        "portal-tech",
+        "double-tree-pathworking-tech",
+        "true-will-tech"
+      ],
+      "connected": "2025-12-01T23:45:38.617Z",
+      "connections": [
+        {
+          "tech": "portal-tech",
+          "status": "connected",
+          "path": "tools/portal-tech.mjs"
+        },
+        {
+          "tech": "double-tree-pathworking-tech",
+          "status": "connected",
+          "path": "tools/double-tree-pathworking-tech.mjs"
+        },
+        {
+          "tech": "true-will-tech",
+          "status": "connected",
+          "path": "tools/true-will-tech.mjs"
+        }
+      ]
+    },
+    {
+      "package": "circuitum99-core",
+      "techSystems": [
+        "portal-tech",
+        "rpg-tech",
+        "true-will-tech"
+      ],
+      "connected": "2025-12-01T23:45:38.619Z",
+      "connections": [
+        {
+          "tech": "portal-tech",
+          "status": "connected",
+          "path": "tools/portal-tech.mjs"
+        },
+        {
+          "tech": "rpg-tech",
+          "status": "connected",
+          "path": "tools/rpg-tech.mjs"
+        },
+        {
+          "tech": "true-will-tech",
+          "status": "connected",
+          "path": "tools/true-will-tech.mjs"
+        }
+      ]
+    },
+    {
+      "package": "stone-grimoire",
+      "techSystems": [
+        "grimoire-maker",
+        "dynamic-grimoire-importer",
+        "true-will-tech"
+      ],
+      "connected": "2025-12-01T23:45:38.620Z",
+      "connections": [
+        {
+          "tech": "grimoire-maker",
+          "status": "connected",
+          "path": "tools/grimoire-maker.mjs"
+        },
+        {
+          "tech": "dynamic-grimoire-importer",
+          "status": "connected",
+          "path": "tools/dynamic-grimoire-importer.mjs"
+        },
+        {
+          "tech": "true-will-tech",
+          "status": "connected",
+          "path": "tools/true-will-tech.mjs"
+        }
+      ]
+    }
+  ]
+}

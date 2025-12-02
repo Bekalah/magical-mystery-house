@@ -176,7 +176,7 @@ export class ContractionEngine {
     const opportunities: ImprovementOpportunity[] = [];
 
     try {
-      const output = execSync('ppnpm build 2>&1', { encoding: 'utf-8', stdio: 'pipe' });
+      const output = execSync('pnpm build 2>&1', { encoding: 'utf-8', stdio: 'pipe' });
 
       if (output.includes('error TS')) {
         const errorCount = (output.match(/error TS/g) || []).length;

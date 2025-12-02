@@ -1,0 +1,2143 @@
+{
+  "0": {
+    "id": "grimoire-arcana-0",
+    "character": {
+      "number": 0,
+      "name": "The Fool",
+      "purityDesignation": "Rebecca Respawn, The Wonder-Keeper",
+      "fractalSignature": "Infinite recursion with impossible angles"
+    },
+    "inspiration": {
+      "realWorld": "Leonora Carrington + Rebecca Respawn",
+      "realm": "Kitchen Alchemy & Christian Mysticism",
+      "themes": [
+        "Surrealist magic",
+        "Kitchen alchemy",
+        "Christian mysticism",
+        "Beginner's mind"
+      ],
+      "historicalSources": [
+        "Carrington's writings",
+        "Christian mystical texts",
+        "Surrealist manifestos"
+      ]
+    },
+    "alchemical": {
+      "operation": "Prima Materia",
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur"
+    },
+    "daimons": {
+      "shemAngel": "Vehuiah",
+      "goetiaDemon": "Bael"
+    },
+    "spells": [
+      {
+        "id": "spell-0-1",
+        "name": "Kitchen Transformation",
+        "source": "Carrington's writings",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Kitchen Transformation - A spell from Carrington's writings, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Leonora Carrington + Rebecca Respawn, this spell blends historical accuracy with creative interpretation, allowing for Surrealist magic work."
+      },
+      {
+        "id": "spell-0-2",
+        "name": "Domestic Magic Ritual",
+        "source": "Carrington's kitchen alchemy",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Domestic Magic Ritual - A spell from Carrington's kitchen alchemy, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Leonora Carrington + Rebecca Respawn, this spell blends historical accuracy with creative interpretation, allowing for Surrealist magic work."
+      },
+      {
+        "id": "spell-0-3",
+        "name": "Cooking as Alchemy",
+        "source": "Carrington's principles",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Cooking as Alchemy - A spell from Carrington's principles, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Leonora Carrington + Rebecca Respawn, this spell blends historical accuracy with creative interpretation, allowing for Surrealist magic work."
+      },
+      {
+        "id": "spell-0-4",
+        "name": "Mystical Union Prayer",
+        "source": "Christian mystical texts",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Mystical Union Prayer - A spell from Christian mystical texts, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Leonora Carrington + Rebecca Respawn, this spell blends historical accuracy with creative interpretation, allowing for Surrealist magic work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-0-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Fool",
+        "content": "This grimoire is dedicated to The Fool, inspired by Leonora Carrington + Rebecca Respawn. The realm of Kitchen Alchemy & Christian Mysticism serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-0-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Prima Materia\nTarot Suit: wands (Sulfur)\nDaimon Pair: Vehuiah (Shem Angel) + Bael (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.585Z",
+      "updated": "2025-12-01T23:42:27.604Z",
+      "tags": [
+        "Surrealist magic",
+        "Kitchen alchemy",
+        "Christian mysticism",
+        "Beginner's mind",
+        "Kitchen Alchemy & Christian Mysticism",
+        "Prima Materia"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "1": {
+    "id": "grimoire-arcana-1",
+    "character": {
+      "number": 1,
+      "name": "The Magician",
+      "purityDesignation": "The Manifestor",
+      "fractalSignature": "Sacred geometry manifestation patterns"
+    },
+    "inspiration": {
+      "realWorld": "John Dee",
+      "realm": "Enochian",
+      "themes": [
+        "Enochian language",
+        "Angelic communications",
+        "Dee's magic system",
+        "Conjunction"
+      ],
+      "historicalSources": [
+        "Dee's Enochian diaries",
+        "Key of Solomon",
+        "Agrippa's Three Books"
+      ]
+    },
+    "alchemical": {
+      "operation": "Conjunction",
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur"
+    },
+    "daimons": {
+      "shemAngel": "Jeliel",
+      "goetiaDemon": "Agares"
+    },
+    "spells": [
+      {
+        "id": "spell-1-1",
+        "name": "Enochian Call of the Aethyrs",
+        "source": "Dee's Enochian diaries",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Enochian Call of the Aethyrs - A spell from Dee's Enochian diaries, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of John Dee, this spell blends historical accuracy with creative interpretation, allowing for Enochian language work."
+      },
+      {
+        "id": "spell-1-2",
+        "name": "Angelic Communication Ritual",
+        "source": "Dee's Enochian diaries",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Angelic Communication Ritual - A spell from Dee's Enochian diaries, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of John Dee, this spell blends historical accuracy with creative interpretation, allowing for Enochian language work."
+      },
+      {
+        "id": "spell-1-3",
+        "name": "Enochian Tablet Invocation",
+        "source": "Key of Solomon",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Enochian Tablet Invocation - A spell from Key of Solomon, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of John Dee, this spell blends historical accuracy with creative interpretation, allowing for Enochian language work."
+      },
+      {
+        "id": "spell-1-4",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of John Dee, this spell blends historical accuracy with creative interpretation, allowing for Enochian language work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-1-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Magician",
+        "content": "This grimoire is dedicated to The Magician, inspired by John Dee. The realm of Enochian serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-1-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Conjunction\nTarot Suit: wands (Sulfur)\nDaimon Pair: Jeliel (Shem Angel) + Agares (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.605Z",
+      "updated": "2025-12-01T23:42:27.605Z",
+      "tags": [
+        "Enochian language",
+        "Angelic communications",
+        "Dee's magic system",
+        "Conjunction",
+        "Enochian",
+        "Conjunction"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "2": {
+    "id": "grimoire-arcana-2",
+    "character": {
+      "number": 2,
+      "name": "The High Priestess",
+      "purityDesignation": "Gemini Rivers, The Wisdom Keeper",
+      "fractalSignature": "Vesica piscis gateways to deeper realities"
+    },
+    "inspiration": {
+      "realWorld": "Dion Fortune",
+      "realm": "Avalon",
+      "themes": [
+        "Sea Priestess work",
+        "Avalon inner planes",
+        "Glastonbury Tor",
+        "Morgan's Cave",
+        "Reflection"
+      ],
+      "historicalSources": [
+        "Fortune's Sea Priestess",
+        "Avalon inner plane geography",
+        "Glastonbury traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Reflection",
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury"
+    },
+    "daimons": {
+      "shemAngel": "Elemiah",
+      "goetiaDemon": "Samigina"
+    },
+    "spells": [
+      {
+        "id": "spell-2-1",
+        "name": "Sea Priestess Invocation",
+        "source": "Fortune's Sea Priestess",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Sea Priestess Invocation - A spell from Fortune's Sea Priestess, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Dion Fortune, this spell blends historical accuracy with creative interpretation, allowing for Sea Priestess work work."
+      },
+      {
+        "id": "spell-2-2",
+        "name": "Glastonbury Tor Pathworking",
+        "source": "Avalon traditions",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Glastonbury Tor Pathworking - A spell from Avalon traditions, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Dion Fortune, this spell blends historical accuracy with creative interpretation, allowing for Sea Priestess work work."
+      },
+      {
+        "id": "spell-2-3",
+        "name": "Morgan's Cave Access",
+        "source": "Fortune's inner planes",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Morgan's Cave Access - A spell from Fortune's inner planes, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Dion Fortune, this spell blends historical accuracy with creative interpretation, allowing for Sea Priestess work work."
+      },
+      {
+        "id": "spell-2-4",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Dion Fortune, this spell blends historical accuracy with creative interpretation, allowing for Sea Priestess work work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-2-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The High Priestess",
+        "content": "This grimoire is dedicated to The High Priestess, inspired by Dion Fortune. The realm of Avalon serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-2-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Reflection\nTarot Suit: cups (Mercury)\nDaimon Pair: Elemiah (Shem Angel) + Samigina (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.610Z",
+      "updated": "2025-12-01T23:42:27.610Z",
+      "tags": [
+        "Sea Priestess work",
+        "Avalon inner planes",
+        "Glastonbury Tor",
+        "Morgan's Cave",
+        "Reflection",
+        "Avalon",
+        "Reflection"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "3": {
+    "id": "grimoire-arcana-3",
+    "character": {
+      "number": 3,
+      "name": "The Empress",
+      "purityDesignation": "The Fertility Guardian",
+      "fractalSignature": "Flowering life force patterns"
+    },
+    "inspiration": {
+      "realWorld": "Leonora Carrington",
+      "realm": "Doreen's Garden",
+      "themes": [
+        "Kitchen alchemy",
+        "Nature sanctuary",
+        "Fertility",
+        "Fermentation"
+      ],
+      "historicalSources": [
+        "Carrington's kitchen alchemy",
+        "Nature magic traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Fermentation",
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury"
+    },
+    "daimons": {
+      "shemAngel": "Mahasiah",
+      "goetiaDemon": "Purson"
+    },
+    "spells": [
+      {
+        "id": "spell-3-1",
+        "name": "Kitchen Transformation",
+        "source": "Carrington's writings",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Kitchen Transformation - A spell from Carrington's writings, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Leonora Carrington, this spell blends historical accuracy with creative interpretation, allowing for Kitchen alchemy work."
+      },
+      {
+        "id": "spell-3-2",
+        "name": "Domestic Magic Ritual",
+        "source": "Carrington's kitchen alchemy",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Domestic Magic Ritual - A spell from Carrington's kitchen alchemy, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Leonora Carrington, this spell blends historical accuracy with creative interpretation, allowing for Kitchen alchemy work."
+      },
+      {
+        "id": "spell-3-3",
+        "name": "Cooking as Alchemy",
+        "source": "Carrington's principles",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Cooking as Alchemy - A spell from Carrington's principles, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Leonora Carrington, this spell blends historical accuracy with creative interpretation, allowing for Kitchen alchemy work."
+      },
+      {
+        "id": "spell-3-4",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Leonora Carrington, this spell blends historical accuracy with creative interpretation, allowing for Kitchen alchemy work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-3-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Empress",
+        "content": "This grimoire is dedicated to The Empress, inspired by Leonora Carrington. The realm of Doreen's Garden serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-3-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Fermentation\nTarot Suit: cups (Mercury)\nDaimon Pair: Mahasiah (Shem Angel) + Purson (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.611Z",
+      "updated": "2025-12-01T23:42:27.611Z",
+      "tags": [
+        "Kitchen alchemy",
+        "Nature sanctuary",
+        "Fertility",
+        "Fermentation",
+        "Doreen's Garden",
+        "Fermentation"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "4": {
+    "id": "grimoire-arcana-4",
+    "character": {
+      "number": 4,
+      "name": "The Emperor",
+      "purityDesignation": "The Order Keeper",
+      "fractalSignature": "Structured authority patterns"
+    },
+    "inspiration": {
+      "realWorld": "Rudolf Steiner",
+      "realm": "Structured Authority",
+      "themes": [
+        "Architecture",
+        "Order",
+        "Structure",
+        "Fixation"
+      ],
+      "historicalSources": [
+        "Steiner's architectural work",
+        "Traditional authority systems"
+      ]
+    },
+    "alchemical": {
+      "operation": "Fixation",
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash"
+    },
+    "daimons": {
+      "shemAngel": "Lelahel",
+      "goetiaDemon": "Aamon"
+    },
+    "spells": [
+      {
+        "id": "spell-4-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of Rudolf Steiner, this spell blends historical accuracy with creative interpretation, allowing for Architecture work."
+      },
+      {
+        "id": "spell-4-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of Rudolf Steiner, this spell blends historical accuracy with creative interpretation, allowing for Architecture work."
+      },
+      {
+        "id": "spell-4-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of Rudolf Steiner, this spell blends historical accuracy with creative interpretation, allowing for Architecture work."
+      },
+      {
+        "id": "spell-4-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of Rudolf Steiner, this spell blends historical accuracy with creative interpretation, allowing for Architecture work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-4-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Emperor",
+        "content": "This grimoire is dedicated to The Emperor, inspired by Rudolf Steiner. The realm of Structured Authority serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-4-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Fixation\nTarot Suit: pentacles (Ash)\nDaimon Pair: Lelahel (Shem Angel) + Aamon (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.611Z",
+      "updated": "2025-12-01T23:42:27.611Z",
+      "tags": [
+        "Architecture",
+        "Order",
+        "Structure",
+        "Fixation",
+        "Structured Authority",
+        "Fixation"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "5": {
+    "id": "grimoire-arcana-5",
+    "character": {
+      "number": 5,
+      "name": "The Hierophant",
+      "purityDesignation": "The Chohan of the Golden Flame",
+      "fractalSignature": "Pentagonal transmission mandalas"
+    },
+    "inspiration": {
+      "realWorld": "Crowley (Moon Child) / Max Ernst",
+      "realm": "The Tower on the Tor",
+      "themes": [
+        "Teaching",
+        "Collage/frottage",
+        "Lunar current",
+        "Multiplication"
+      ],
+      "historicalSources": [
+        "Crowley's Moon Child",
+        "Ernst's surrealist techniques",
+        "Teaching traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Multiplication",
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur"
+    },
+    "daimons": {
+      "shemAngel": "Achaiah",
+      "goetiaDemon": "Barbatos"
+    },
+    "spells": [
+      {
+        "id": "spell-5-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Crowley (Moon Child) / Max Ernst, this spell blends historical accuracy with creative interpretation, allowing for Teaching work."
+      },
+      {
+        "id": "spell-5-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Crowley (Moon Child) / Max Ernst, this spell blends historical accuracy with creative interpretation, allowing for Teaching work."
+      },
+      {
+        "id": "spell-5-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Crowley (Moon Child) / Max Ernst, this spell blends historical accuracy with creative interpretation, allowing for Teaching work."
+      },
+      {
+        "id": "spell-5-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Crowley (Moon Child) / Max Ernst, this spell blends historical accuracy with creative interpretation, allowing for Teaching work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-5-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Hierophant",
+        "content": "This grimoire is dedicated to The Hierophant, inspired by Crowley (Moon Child) / Max Ernst. The realm of The Tower on the Tor serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-5-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Multiplication\nTarot Suit: wands (Sulfur)\nDaimon Pair: Achaiah (Shem Angel) + Barbatos (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.611Z",
+      "updated": "2025-12-01T23:42:27.611Z",
+      "tags": [
+        "Teaching",
+        "Collage/frottage",
+        "Lunar current",
+        "Multiplication",
+        "The Tower on the Tor",
+        "Multiplication"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "6": {
+    "id": "grimoire-arcana-6",
+    "character": {
+      "number": 6,
+      "name": "The Lovers",
+      "purityDesignation": "Scarlett Lady, The Sacred Union Master",
+      "fractalSignature": "Twin helix braided quantum entanglement"
+    },
+    "inspiration": {
+      "realWorld": "Dion Fortune (inner marriage)",
+      "realm": "Sacred Union",
+      "themes": [
+        "Inner marriage",
+        "Integration",
+        "Harmony",
+        "Conjunction"
+      ],
+      "historicalSources": [
+        "Fortune's inner marriage work",
+        "Sacred union traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Conjunction",
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury"
+    },
+    "daimons": {
+      "shemAngel": "Cahetel",
+      "goetiaDemon": "Beleth"
+    },
+    "spells": [
+      {
+        "id": "spell-6-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Dion Fortune (inner marriage), this spell blends historical accuracy with creative interpretation, allowing for Inner marriage work."
+      },
+      {
+        "id": "spell-6-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Dion Fortune (inner marriage), this spell blends historical accuracy with creative interpretation, allowing for Inner marriage work."
+      },
+      {
+        "id": "spell-6-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Dion Fortune (inner marriage), this spell blends historical accuracy with creative interpretation, allowing for Inner marriage work."
+      },
+      {
+        "id": "spell-6-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Dion Fortune (inner marriage), this spell blends historical accuracy with creative interpretation, allowing for Inner marriage work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-6-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Lovers",
+        "content": "This grimoire is dedicated to The Lovers, inspired by Dion Fortune (inner marriage). The realm of Sacred Union serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-6-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Conjunction\nTarot Suit: cups (Mercury)\nDaimon Pair: Cahetel (Shem Angel) + Beleth (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.611Z",
+      "updated": "2025-12-01T23:42:27.611Z",
+      "tags": [
+        "Inner marriage",
+        "Integration",
+        "Harmony",
+        "Conjunction",
+        "Sacred Union",
+        "Conjunction"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "7": {
+    "id": "grimoire-arcana-7",
+    "character": {
+      "number": 7,
+      "name": "The Chariot",
+      "purityDesignation": "Elyria Nox, The Dimensional Navigator",
+      "fractalSignature": "Hypercube tesseract rotation patterns"
+    },
+    "inspiration": {
+      "realWorld": "Paul Foster Case (Cube of Space)",
+      "realm": "Dimensional Navigation",
+      "themes": [
+        "Cube of Space",
+        "Direction",
+        "Will",
+        "Sublimation"
+      ],
+      "historicalSources": [
+        "Case's Cube of Space",
+        "Navigation magic"
+      ]
+    },
+    "alchemical": {
+      "operation": "Sublimation",
+      "tarotSuit": "swords",
+      "alchemicalElement": "Salt"
+    },
+    "daimons": {
+      "shemAngel": "Haziel",
+      "goetiaDemon": "Leraje"
+    },
+    "spells": [
+      {
+        "id": "spell-7-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of Paul Foster Case (Cube of Space), this spell blends historical accuracy with creative interpretation, allowing for Cube of Space work."
+      },
+      {
+        "id": "spell-7-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of Paul Foster Case (Cube of Space), this spell blends historical accuracy with creative interpretation, allowing for Cube of Space work."
+      },
+      {
+        "id": "spell-7-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of Paul Foster Case (Cube of Space), this spell blends historical accuracy with creative interpretation, allowing for Cube of Space work."
+      },
+      {
+        "id": "spell-7-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of Paul Foster Case (Cube of Space), this spell blends historical accuracy with creative interpretation, allowing for Cube of Space work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-7-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Chariot",
+        "content": "This grimoire is dedicated to The Chariot, inspired by Paul Foster Case (Cube of Space). The realm of Dimensional Navigation serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-7-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Sublimation\nTarot Suit: swords (Salt)\nDaimon Pair: Haziel (Shem Angel) + Leraje (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.616Z",
+      "updated": "2025-12-01T23:42:27.617Z",
+      "tags": [
+        "Cube of Space",
+        "Direction",
+        "Will",
+        "Sublimation",
+        "Dimensional Navigation",
+        "Sublimation"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "8": {
+    "id": "grimoire-arcana-8",
+    "character": {
+      "number": 8,
+      "name": "Strength",
+      "purityDesignation": "The Inner Power Master",
+      "fractalSignature": "Flowing strength patterns"
+    },
+    "inspiration": {
+      "realWorld": "Emma Kunz",
+      "realm": "Inner Power",
+      "themes": [
+        "Radiesthetic methods",
+        "Geometric healing",
+        "Patience",
+        "Digestion"
+      ],
+      "historicalSources": [
+        "Kunz's healing drawings",
+        "Strength traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Digestion",
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur"
+    },
+    "daimons": {
+      "shemAngel": "Aladiah",
+      "goetiaDemon": "Eligos"
+    },
+    "spells": [
+      {
+        "id": "spell-8-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Emma Kunz, this spell blends historical accuracy with creative interpretation, allowing for Radiesthetic methods work."
+      },
+      {
+        "id": "spell-8-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Emma Kunz, this spell blends historical accuracy with creative interpretation, allowing for Radiesthetic methods work."
+      },
+      {
+        "id": "spell-8-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Emma Kunz, this spell blends historical accuracy with creative interpretation, allowing for Radiesthetic methods work."
+      },
+      {
+        "id": "spell-8-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Emma Kunz, this spell blends historical accuracy with creative interpretation, allowing for Radiesthetic methods work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-8-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Strength",
+        "content": "This grimoire is dedicated to Strength, inspired by Emma Kunz. The realm of Inner Power serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-8-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Digestion\nTarot Suit: wands (Sulfur)\nDaimon Pair: Aladiah (Shem Angel) + Eligos (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.617Z",
+      "updated": "2025-12-01T23:42:27.617Z",
+      "tags": [
+        "Radiesthetic methods",
+        "Geometric healing",
+        "Patience",
+        "Digestion",
+        "Inner Power",
+        "Digestion"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "9": {
+    "id": "grimoire-arcana-9",
+    "character": {
+      "number": 9,
+      "name": "The Hermit",
+      "purityDesignation": "Orin Lantern, The Seeker Guide",
+      "fractalSignature": "Solitary pinpoint fractal focus"
+    },
+    "inspiration": {
+      "realWorld": "John Dee (library work)",
+      "realm": "Solitary Research",
+      "themes": [
+        "Library work",
+        "Research",
+        "Solitude",
+        "Separation"
+      ],
+      "historicalSources": [
+        "Dee's library work",
+        "Hermit traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Separation",
+      "tarotSuit": "swords",
+      "alchemicalElement": "Salt"
+    },
+    "daimons": {
+      "shemAngel": "Lauviah",
+      "goetiaDemon": "Zepar"
+    },
+    "spells": [
+      {
+        "id": "spell-9-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of John Dee (library work), this spell blends historical accuracy with creative interpretation, allowing for Library work work."
+      },
+      {
+        "id": "spell-9-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of John Dee (library work), this spell blends historical accuracy with creative interpretation, allowing for Library work work."
+      },
+      {
+        "id": "spell-9-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of John Dee (library work), this spell blends historical accuracy with creative interpretation, allowing for Library work work."
+      },
+      {
+        "id": "spell-9-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of John Dee (library work), this spell blends historical accuracy with creative interpretation, allowing for Library work work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-9-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Hermit",
+        "content": "This grimoire is dedicated to The Hermit, inspired by John Dee (library work). The realm of Solitary Research serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-9-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Separation\nTarot Suit: swords (Salt)\nDaimon Pair: Lauviah (Shem Angel) + Zepar (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.617Z",
+      "updated": "2025-12-01T23:42:27.617Z",
+      "tags": [
+        "Library work",
+        "Research",
+        "Solitude",
+        "Separation",
+        "Solitary Research",
+        "Separation"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "10": {
+    "id": "grimoire-arcana-10",
+    "character": {
+      "number": 10,
+      "name": "Wheel of Fortune",
+      "purityDesignation": "Grand Professor of Eternal Flux",
+      "fractalSignature": "Rotating mandalic probability distributions"
+    },
+    "inspiration": {
+      "realWorld": "Agrippa (celestial magic)",
+      "realm": "Eternal Flux",
+      "themes": [
+        "Celestial magic",
+        "Cycles",
+        "Probability",
+        "Rotation"
+      ],
+      "historicalSources": [
+        "Agrippa's celestial magic",
+        "Wheel traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Rotation",
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash"
+    },
+    "daimons": {
+      "shemAngel": "Yelahiah",
+      "goetiaDemon": "Botis"
+    },
+    "spells": [
+      {
+        "id": "spell-10-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of Agrippa (celestial magic), this spell blends historical accuracy with creative interpretation, allowing for Celestial magic work."
+      },
+      {
+        "id": "spell-10-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of Agrippa (celestial magic), this spell blends historical accuracy with creative interpretation, allowing for Celestial magic work."
+      },
+      {
+        "id": "spell-10-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of Agrippa (celestial magic), this spell blends historical accuracy with creative interpretation, allowing for Celestial magic work."
+      },
+      {
+        "id": "spell-10-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of Agrippa (celestial magic), this spell blends historical accuracy with creative interpretation, allowing for Celestial magic work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-10-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Wheel of Fortune",
+        "content": "This grimoire is dedicated to Wheel of Fortune, inspired by Agrippa (celestial magic). The realm of Eternal Flux serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-10-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Rotation\nTarot Suit: pentacles (Ash)\nDaimon Pair: Yelahiah (Shem Angel) + Botis (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.618Z",
+      "updated": "2025-12-01T23:42:27.618Z",
+      "tags": [
+        "Celestial magic",
+        "Cycles",
+        "Probability",
+        "Rotation",
+        "Eternal Flux",
+        "Rotation"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "11": {
+    "id": "grimoire-arcana-11",
+    "character": {
+      "number": 11,
+      "name": "Justice",
+      "purityDesignation": "The Balanced Judge",
+      "fractalSignature": "Equilibrium scales with mathematical precision"
+    },
+    "inspiration": {
+      "realWorld": "Paul Foster Case (scales)",
+      "realm": "Balance",
+      "themes": [
+        "Scales",
+        "Balance",
+        "Proportion",
+        "Equilibrium"
+      ],
+      "historicalSources": [
+        "Case's scales work",
+        "Justice traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Equilibrium",
+      "tarotSuit": "swords",
+      "alchemicalElement": "Salt"
+    },
+    "daimons": {
+      "shemAngel": "Sealiah",
+      "goetiaDemon": "Bathin"
+    },
+    "spells": [
+      {
+        "id": "spell-11-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of Paul Foster Case (scales), this spell blends historical accuracy with creative interpretation, allowing for Scales work."
+      },
+      {
+        "id": "spell-11-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of Paul Foster Case (scales), this spell blends historical accuracy with creative interpretation, allowing for Scales work."
+      },
+      {
+        "id": "spell-11-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of Paul Foster Case (scales), this spell blends historical accuracy with creative interpretation, allowing for Scales work."
+      },
+      {
+        "id": "spell-11-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of Paul Foster Case (scales), this spell blends historical accuracy with creative interpretation, allowing for Scales work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-11-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Justice",
+        "content": "This grimoire is dedicated to Justice, inspired by Paul Foster Case (scales). The realm of Balance serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-11-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Equilibrium\nTarot Suit: swords (Salt)\nDaimon Pair: Sealiah (Shem Angel) + Bathin (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.618Z",
+      "updated": "2025-12-01T23:42:27.618Z",
+      "tags": [
+        "Scales",
+        "Balance",
+        "Proportion",
+        "Equilibrium",
+        "Balance",
+        "Equilibrium"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "12": {
+    "id": "grimoire-arcana-12",
+    "character": {
+      "number": 12,
+      "name": "The Hanged Man",
+      "purityDesignation": "The Suspended Seeker",
+      "fractalSignature": "Inverted perspective patterns"
+    },
+    "inspiration": {
+      "realWorld": "Crowley (crossing the Abyss)",
+      "realm": "Suspended Perspective",
+      "themes": [
+        "Crossing the Abyss",
+        "Surrender",
+        "New perspective",
+        "Dissolution"
+      ],
+      "historicalSources": [
+        "Crowley's Abyss work",
+        "Hanged Man traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Dissolution",
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury"
+    },
+    "daimons": {
+      "shemAngel": "Ariel",
+      "goetiaDemon": "Sallos"
+    },
+    "spells": [
+      {
+        "id": "spell-12-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Crowley (crossing the Abyss), this spell blends historical accuracy with creative interpretation, allowing for Crossing the Abyss work."
+      },
+      {
+        "id": "spell-12-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Crowley (crossing the Abyss), this spell blends historical accuracy with creative interpretation, allowing for Crossing the Abyss work."
+      },
+      {
+        "id": "spell-12-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Crowley (crossing the Abyss), this spell blends historical accuracy with creative interpretation, allowing for Crossing the Abyss work."
+      },
+      {
+        "id": "spell-12-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Crowley (crossing the Abyss), this spell blends historical accuracy with creative interpretation, allowing for Crossing the Abyss work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-12-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Hanged Man",
+        "content": "This grimoire is dedicated to The Hanged Man, inspired by Crowley (crossing the Abyss). The realm of Suspended Perspective serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-12-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Dissolution\nTarot Suit: cups (Mercury)\nDaimon Pair: Ariel (Shem Angel) + Sallos (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.618Z",
+      "updated": "2025-12-01T23:42:27.618Z",
+      "tags": [
+        "Crossing the Abyss",
+        "Surrender",
+        "New perspective",
+        "Dissolution",
+        "Suspended Perspective",
+        "Dissolution"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "13": {
+    "id": "grimoire-arcana-13",
+    "character": {
+      "number": 13,
+      "name": "Death",
+      "purityDesignation": "The Transformation Master",
+      "fractalSignature": "Transformation spiral patterns"
+    },
+    "inspiration": {
+      "realWorld": "All (nigredo)",
+      "realm": "Transformation",
+      "themes": [
+        "Nigredo",
+        "Transformation",
+        "Endings",
+        "Putrefaction"
+      ],
+      "historicalSources": [
+        "Alchemical nigredo",
+        "Death traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Putrefaction",
+      "tarotSuit": "swords",
+      "alchemicalElement": "Salt"
+    },
+    "daimons": {
+      "shemAngel": "Asaliah",
+      "goetiaDemon": "Aim"
+    },
+    "spells": [
+      {
+        "id": "spell-13-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of All (nigredo), this spell blends historical accuracy with creative interpretation, allowing for Nigredo work."
+      },
+      {
+        "id": "spell-13-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of All (nigredo), this spell blends historical accuracy with creative interpretation, allowing for Nigredo work."
+      },
+      {
+        "id": "spell-13-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of All (nigredo), this spell blends historical accuracy with creative interpretation, allowing for Nigredo work."
+      },
+      {
+        "id": "spell-13-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of All (nigredo), this spell blends historical accuracy with creative interpretation, allowing for Nigredo work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-13-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Death",
+        "content": "This grimoire is dedicated to Death, inspired by All (nigredo). The realm of Transformation serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-13-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Putrefaction\nTarot Suit: swords (Salt)\nDaimon Pair: Asaliah (Shem Angel) + Aim (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.618Z",
+      "updated": "2025-12-01T23:42:27.618Z",
+      "tags": [
+        "Nigredo",
+        "Transformation",
+        "Endings",
+        "Putrefaction",
+        "Transformation",
+        "Putrefaction"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "14": {
+    "id": "grimoire-arcana-14",
+    "character": {
+      "number": 14,
+      "name": "Temperance",
+      "purityDesignation": "The Alchemical Balancer",
+      "fractalSignature": "Alchemical mixing patterns"
+    },
+    "inspiration": {
+      "realWorld": "Leonora Carrington (kitchen alchemy)",
+      "realm": "Alchemical Mixing",
+      "themes": [
+        "Kitchen alchemy",
+        "Mixing",
+        "Moderation",
+        "Distillation"
+      ],
+      "historicalSources": [
+        "Carrington's kitchen alchemy",
+        "Temperance traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Distillation",
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury"
+    },
+    "daimons": {
+      "shemAngel": "Mihael",
+      "goetiaDemon": "Naberius"
+    },
+    "spells": [
+      {
+        "id": "spell-14-1",
+        "name": "Kitchen Transformation",
+        "source": "Carrington's writings",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Kitchen Transformation - A spell from Carrington's writings, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Leonora Carrington (kitchen alchemy), this spell blends historical accuracy with creative interpretation, allowing for Kitchen alchemy work."
+      },
+      {
+        "id": "spell-14-2",
+        "name": "Domestic Magic Ritual",
+        "source": "Carrington's kitchen alchemy",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Domestic Magic Ritual - A spell from Carrington's kitchen alchemy, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Leonora Carrington (kitchen alchemy), this spell blends historical accuracy with creative interpretation, allowing for Kitchen alchemy work."
+      },
+      {
+        "id": "spell-14-3",
+        "name": "Cooking as Alchemy",
+        "source": "Carrington's principles",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Cooking as Alchemy - A spell from Carrington's principles, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Leonora Carrington (kitchen alchemy), this spell blends historical accuracy with creative interpretation, allowing for Kitchen alchemy work."
+      },
+      {
+        "id": "spell-14-4",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Leonora Carrington (kitchen alchemy), this spell blends historical accuracy with creative interpretation, allowing for Kitchen alchemy work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-14-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Temperance",
+        "content": "This grimoire is dedicated to Temperance, inspired by Leonora Carrington (kitchen alchemy). The realm of Alchemical Mixing serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-14-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Distillation\nTarot Suit: cups (Mercury)\nDaimon Pair: Mihael (Shem Angel) + Naberius (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.618Z",
+      "updated": "2025-12-01T23:42:27.618Z",
+      "tags": [
+        "Kitchen alchemy",
+        "Mixing",
+        "Moderation",
+        "Distillation",
+        "Alchemical Mixing",
+        "Distillation"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "15": {
+    "id": "grimoire-arcana-15",
+    "character": {
+      "number": 15,
+      "name": "The Devil",
+      "purityDesignation": "The Shadow Binder",
+      "fractalSignature": "Binding chain patterns"
+    },
+    "inspiration": {
+      "realWorld": "Crowley, Fortune",
+      "realm": "Shadow Work",
+      "themes": [
+        "Shadow work",
+        "Binding",
+        "Materialism",
+        "Calcination"
+      ],
+      "historicalSources": [
+        "Crowley's shadow work",
+        "Fortune's shadow integration",
+        "Devil traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Calcination",
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash"
+    },
+    "daimons": {
+      "shemAngel": "Veuliah",
+      "goetiaDemon": "Glasya-Labolas"
+    },
+    "spells": [
+      {
+        "id": "spell-15-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of Crowley, Fortune, this spell blends historical accuracy with creative interpretation, allowing for Shadow work work."
+      },
+      {
+        "id": "spell-15-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of Crowley, Fortune, this spell blends historical accuracy with creative interpretation, allowing for Shadow work work."
+      },
+      {
+        "id": "spell-15-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of Crowley, Fortune, this spell blends historical accuracy with creative interpretation, allowing for Shadow work work."
+      },
+      {
+        "id": "spell-15-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of Crowley, Fortune, this spell blends historical accuracy with creative interpretation, allowing for Shadow work work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-15-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Devil",
+        "content": "This grimoire is dedicated to The Devil, inspired by Crowley, Fortune. The realm of Shadow Work serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-15-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Calcination\nTarot Suit: pentacles (Ash)\nDaimon Pair: Veuliah (Shem Angel) + Glasya-Labolas (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.619Z",
+      "updated": "2025-12-01T23:42:27.619Z",
+      "tags": [
+        "Shadow work",
+        "Binding",
+        "Materialism",
+        "Calcination",
+        "Shadow Work",
+        "Calcination"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "16": {
+    "id": "grimoire-arcana-16",
+    "character": {
+      "number": 16,
+      "name": "The Tower",
+      "purityDesignation": "The Destructive Awakener",
+      "fractalSignature": "Destructive lightning patterns"
+    },
+    "inspiration": {
+      "realWorld": "John Dee (fall from grace)",
+      "realm": "Destructive Awakening",
+      "themes": [
+        "Fall from grace",
+        "Destruction",
+        "Revelation",
+        "Mortification"
+      ],
+      "historicalSources": [
+        "Dee's fall",
+        "Tower traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Mortification",
+      "tarotSuit": "swords",
+      "alchemicalElement": "Salt"
+    },
+    "daimons": {
+      "shemAngel": "Yelaiah",
+      "goetiaDemon": "Bune"
+    },
+    "spells": [
+      {
+        "id": "spell-16-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of John Dee (fall from grace), this spell blends historical accuracy with creative interpretation, allowing for Fall from grace work."
+      },
+      {
+        "id": "spell-16-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of John Dee (fall from grace), this spell blends historical accuracy with creative interpretation, allowing for Fall from grace work."
+      },
+      {
+        "id": "spell-16-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of John Dee (fall from grace), this spell blends historical accuracy with creative interpretation, allowing for Fall from grace work."
+      },
+      {
+        "id": "spell-16-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Salt (swords)",
+        "creativeInterpretation": "In the visionary tradition of John Dee (fall from grace), this spell blends historical accuracy with creative interpretation, allowing for Fall from grace work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-16-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Tower",
+        "content": "This grimoire is dedicated to The Tower, inspired by John Dee (fall from grace). The realm of Destructive Awakening serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-16-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Mortification\nTarot Suit: swords (Salt)\nDaimon Pair: Yelaiah (Shem Angel) + Bune (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.619Z",
+      "updated": "2025-12-01T23:42:27.619Z",
+      "tags": [
+        "Fall from grace",
+        "Destruction",
+        "Revelation",
+        "Mortification",
+        "Destructive Awakening",
+        "Mortification"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "17": {
+    "id": "grimoire-arcana-17",
+    "character": {
+      "number": 17,
+      "name": "The Star",
+      "purityDesignation": "The Hope Bringer",
+      "fractalSignature": "Stellar constellation patterns"
+    },
+    "inspiration": {
+      "realWorld": "Emma Kunz (healing drawings)",
+      "realm": "Hope & Healing",
+      "themes": [
+        "Healing drawings",
+        "Hope",
+        "Inspiration",
+        "Coagulation"
+      ],
+      "historicalSources": [
+        "Kunz's healing work",
+        "Star traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Coagulation",
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury"
+    },
+    "daimons": {
+      "shemAngel": "Melahel",
+      "goetiaDemon": "Roneve"
+    },
+    "spells": [
+      {
+        "id": "spell-17-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Emma Kunz (healing drawings), this spell blends historical accuracy with creative interpretation, allowing for Healing drawings work."
+      },
+      {
+        "id": "spell-17-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Emma Kunz (healing drawings), this spell blends historical accuracy with creative interpretation, allowing for Healing drawings work."
+      },
+      {
+        "id": "spell-17-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Emma Kunz (healing drawings), this spell blends historical accuracy with creative interpretation, allowing for Healing drawings work."
+      },
+      {
+        "id": "spell-17-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Emma Kunz (healing drawings), this spell blends historical accuracy with creative interpretation, allowing for Healing drawings work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-17-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Star",
+        "content": "This grimoire is dedicated to The Star, inspired by Emma Kunz (healing drawings). The realm of Hope & Healing serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-17-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Coagulation\nTarot Suit: cups (Mercury)\nDaimon Pair: Melahel (Shem Angel) + Roneve (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.619Z",
+      "updated": "2025-12-01T23:42:27.619Z",
+      "tags": [
+        "Healing drawings",
+        "Hope",
+        "Inspiration",
+        "Coagulation",
+        "Hope & Healing",
+        "Coagulation"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "18": {
+    "id": "grimoire-arcana-18",
+    "character": {
+      "number": 18,
+      "name": "The Moon",
+      "purityDesignation": "Luna Mystery, The Dream Navigator",
+      "fractalSignature": "Spiraling hypnotic wave patterns"
+    },
+    "inspiration": {
+      "realWorld": "Dion Fortune (inner planes)",
+      "realm": "Dream Navigation",
+      "themes": [
+        "Inner planes",
+        "Dreams",
+        "Illusion",
+        "Fermentation"
+      ],
+      "historicalSources": [
+        "Fortune's inner planes work",
+        "Moon traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Fermentation",
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury"
+    },
+    "daimons": {
+      "shemAngel": "Hahuiah",
+      "goetiaDemon": "Berith"
+    },
+    "spells": [
+      {
+        "id": "spell-18-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Dion Fortune (inner planes), this spell blends historical accuracy with creative interpretation, allowing for Inner planes work."
+      },
+      {
+        "id": "spell-18-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Dion Fortune (inner planes), this spell blends historical accuracy with creative interpretation, allowing for Inner planes work."
+      },
+      {
+        "id": "spell-18-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Dion Fortune (inner planes), this spell blends historical accuracy with creative interpretation, allowing for Inner planes work."
+      },
+      {
+        "id": "spell-18-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Mercury (cups)",
+        "creativeInterpretation": "In the visionary tradition of Dion Fortune (inner planes), this spell blends historical accuracy with creative interpretation, allowing for Inner planes work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-18-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Moon",
+        "content": "This grimoire is dedicated to The Moon, inspired by Dion Fortune (inner planes). The realm of Dream Navigation serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-18-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Fermentation\nTarot Suit: cups (Mercury)\nDaimon Pair: Hahuiah (Shem Angel) + Berith (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.619Z",
+      "updated": "2025-12-01T23:42:27.619Z",
+      "tags": [
+        "Inner planes",
+        "Dreams",
+        "Illusion",
+        "Fermentation",
+        "Dream Navigation",
+        "Fermentation"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "19": {
+    "id": "grimoire-arcana-19",
+    "character": {
+      "number": 19,
+      "name": "The Sun",
+      "purityDesignation": "The Radiant One",
+      "fractalSignature": "Radiant sunburst patterns"
+    },
+    "inspiration": {
+      "realWorld": "Rudolf Steiner (light work)",
+      "realm": "Radiant Illumination",
+      "themes": [
+        "Light work",
+        "Joy",
+        "Vitality",
+        "Projection"
+      ],
+      "historicalSources": [
+        "Steiner's light work",
+        "Sun traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Projection",
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur"
+    },
+    "daimons": {
+      "shemAngel": "Nithael",
+      "goetiaDemon": "Astaroth"
+    },
+    "spells": [
+      {
+        "id": "spell-19-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Rudolf Steiner (light work), this spell blends historical accuracy with creative interpretation, allowing for Light work work."
+      },
+      {
+        "id": "spell-19-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Rudolf Steiner (light work), this spell blends historical accuracy with creative interpretation, allowing for Light work work."
+      },
+      {
+        "id": "spell-19-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Rudolf Steiner (light work), this spell blends historical accuracy with creative interpretation, allowing for Light work work."
+      },
+      {
+        "id": "spell-19-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Rudolf Steiner (light work), this spell blends historical accuracy with creative interpretation, allowing for Light work work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-19-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Sun",
+        "content": "This grimoire is dedicated to The Sun, inspired by Rudolf Steiner (light work). The realm of Radiant Illumination serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-19-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Projection\nTarot Suit: wands (Sulfur)\nDaimon Pair: Nithael (Shem Angel) + Astaroth (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.619Z",
+      "updated": "2025-12-01T23:42:27.619Z",
+      "tags": [
+        "Light work",
+        "Joy",
+        "Vitality",
+        "Projection",
+        "Radiant Illumination",
+        "Projection"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "20": {
+    "id": "grimoire-arcana-20",
+    "character": {
+      "number": 20,
+      "name": "Judgment",
+      "purityDesignation": "The Awakening Caller",
+      "fractalSignature": "Awakening trumpet patterns"
+    },
+    "inspiration": {
+      "realWorld": "Paul Foster Case (resurrection)",
+      "realm": "Awakening",
+      "themes": [
+        "Resurrection",
+        "Awakening",
+        "Call",
+        "Exaltation"
+      ],
+      "historicalSources": [
+        "Case's resurrection work",
+        "Judgment traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Exaltation",
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur"
+    },
+    "daimons": {
+      "shemAngel": "Haaiah",
+      "goetiaDemon": "Forneus"
+    },
+    "spells": [
+      {
+        "id": "spell-20-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Paul Foster Case (resurrection), this spell blends historical accuracy with creative interpretation, allowing for Resurrection work."
+      },
+      {
+        "id": "spell-20-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Paul Foster Case (resurrection), this spell blends historical accuracy with creative interpretation, allowing for Resurrection work."
+      },
+      {
+        "id": "spell-20-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Paul Foster Case (resurrection), this spell blends historical accuracy with creative interpretation, allowing for Resurrection work."
+      },
+      {
+        "id": "spell-20-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Sulfur (wands)",
+        "creativeInterpretation": "In the visionary tradition of Paul Foster Case (resurrection), this spell blends historical accuracy with creative interpretation, allowing for Resurrection work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-20-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Judgment",
+        "content": "This grimoire is dedicated to Judgment, inspired by Paul Foster Case (resurrection). The realm of Awakening serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-20-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Exaltation\nTarot Suit: wands (Sulfur)\nDaimon Pair: Haaiah (Shem Angel) + Forneus (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.619Z",
+      "updated": "2025-12-01T23:42:27.619Z",
+      "tags": [
+        "Resurrection",
+        "Awakening",
+        "Call",
+        "Exaltation",
+        "Awakening",
+        "Exaltation"
+      ],
+      "category": "character-grimoire"
+    }
+  },
+  "21": {
+    "id": "grimoire-arcana-21",
+    "character": {
+      "number": 21,
+      "name": "The World",
+      "purityDesignation": "The Completion Master",
+      "fractalSignature": "Complete mandala patterns"
+    },
+    "inspiration": {
+      "realWorld": "All (rubedo)",
+      "realm": "Completion",
+      "themes": [
+        "Rubedo",
+        "Completion",
+        "Wholeness",
+        "Philosopher's Stone"
+      ],
+      "historicalSources": [
+        "Alchemical rubedo",
+        "World traditions"
+      ]
+    },
+    "alchemical": {
+      "operation": "Philosopher's Stone",
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash"
+    },
+    "daimons": {
+      "shemAngel": "Mumiah",
+      "goetiaDemon": "Andromalius"
+    },
+    "spells": [
+      {
+        "id": "spell-21-1",
+        "name": "Elemental Mastery",
+        "source": "Key of Solomon",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Elemental Mastery - A spell from Key of Solomon, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of All (rubedo), this spell blends historical accuracy with creative interpretation, allowing for Rubedo work."
+      },
+      {
+        "id": "spell-21-2",
+        "name": "Reality Manipulation",
+        "source": "Lesser Key of Solomon",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Reality Manipulation - A spell from Lesser Key of Solomon, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of All (rubedo), this spell blends historical accuracy with creative interpretation, allowing for Rubedo work."
+      },
+      {
+        "id": "spell-21-3",
+        "name": "Intuitive Vision",
+        "source": "Picatrix",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Intuitive Vision - A spell from Picatrix, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of All (rubedo), this spell blends historical accuracy with creative interpretation, allowing for Rubedo work."
+      },
+      {
+        "id": "spell-21-4",
+        "name": "Hidden Knowledge Access",
+        "source": "Agrippa's Three Books",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Hidden Knowledge Access - A spell from Agrippa's Three Books, aligned with Ash (pentacles)",
+        "creativeInterpretation": "In the visionary tradition of All (rubedo), this spell blends historical accuracy with creative interpretation, allowing for Rubedo work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-21-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The World",
+        "content": "This grimoire is dedicated to The World, inspired by All (rubedo). The realm of Completion serves as the primary workspace for this arcana's magical practice."
+      },
+      {
+        "id": "page-21-2",
+        "pageNumber": 2,
+        "title": "Alchemical Correspondences",
+        "content": "Alchemical Operation: Philosopher's Stone\nTarot Suit: pentacles (Ash)\nDaimon Pair: Mumiah (Shem Angel) + Andromalius (Goetia Demon)"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:42:27.619Z",
+      "updated": "2025-12-01T23:42:27.619Z",
+      "tags": [
+        "Rubedo",
+        "Completion",
+        "Wholeness",
+        "Philosopher's Stone",
+        "Completion",
+        "Philosopher's Stone"
+      ],
+      "category": "character-grimoire"
+    }
+  }
+}

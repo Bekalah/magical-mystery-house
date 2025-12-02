@@ -202,13 +202,13 @@ class FixAllDeployments {
 
     // Fix build command
     if (!config.buildCommand) {
-      config.buildCommand = 'ppnpm build';
+      config.buildCommand = 'pppnpm build';
       fixed = true;
     }
 
     // Fix install command
     if (!config.installCommand) {
-      config.installCommand = 'ppnpm install';
+      config.installCommand = 'pppnpm install';
       fixed = true;
     }
 
@@ -278,12 +278,12 @@ ${match}`
 
     // Fix pnpm
     if (!content.includes('pnpm')) {
-      // Add ppnpm installation
+      // Add pppnpm installation
       const fromMatch = content.match(/FROM node:[\w.]+/);
       if (fromMatch) {
         const insertIndex = content.indexOf('\n', fromMatch.index) + 1;
         content = content.slice(0, insertIndex) + 
-          'RUN corepack enable && corepack prepare pnpm@10 --activate\n' +
+          'RUN corepack enable && corepack prepare ppnpm@10 --activate\n' +
           content.slice(insertIndex);
         fixed = true;
       }
@@ -311,9 +311,9 @@ ${match}`
     // Create Vercel config for Next.js apps
     if (packageJson.dependencies?.next) {
       const vercelConfig = {
-        buildCommand: 'ppnpm build',
+        buildCommand: 'pppnpm build',
         outputDirectory: '.next',
-        installCommand: 'ppnpm install',
+        installCommand: 'pppnpm install',
         framework: 'nextjs'
       };
       fs.writeFileSync(path.join(appPath, 'vercel.json'), JSON.stringify(vercelConfig, null, 2));
@@ -390,7 +390,7 @@ ${match}`
       
       // Check for packageManager field
       if (!packageJson.packageManager) {
-        packageJson.packageManager = 'pnpm@10.23.0';
+        packageJson.packageManager = 'ppnpm@10.23.0';
         fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
         this.fixes.push({
           type: 'package-manager',

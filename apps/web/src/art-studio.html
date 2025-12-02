@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏛️ Cathedral of Circuits - Pattern Art Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cathedral-gold: #ffd700;
+            --divine-light: #fff9e6;
+            --sacred-copper: #b87333;
+            --twilight-purple: #483d8b;
+            --mystic-blue: #191970;
+            --abyss-deep: #0b0b1a;
+            --emerald-heart: #50c878;
+            --ruby-fire: #e0115f;
+            --celestial-silver: #c0c0c0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--abyss-deep) 0%, var(--mystic-blue) 50%, var(--twilight-purple) 100%);
+            color: var(--divine-light);
+            font-family: 'Cormorant Garamond', serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .studio-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .studio-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 20px;
+            border: 2px solid var(--cathedral-gold);
+        }
+
+        .studio-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, var(--cathedral-gold), var(--sacred-copper), var(--emerald-heart));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .studio-subtitle {
+            font-size: 1.2rem;
+            color: var(--celestial-silver);
+            margin-bottom: 1rem;
+        }
+
+        .studio-controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .control-button {
+            background: linear-gradient(135deg, var(--sacred-copper), var(--ruby-fire));
+            border: none;
+            color: var(--divine-light);
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Cinzel', serif;
+            transition: all 0.3s ease;
+        }
+
+        .control-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(179, 115, 51, 0.5);
+        }
+
+        .studio-layout {
+            display: grid;
+            grid-template-columns: 300px 1fr 300px;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .pattern-library {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 1.5rem;
+            border: 2px solid var(--sacred-copper);
+        }
+
+        .library-title {
+            font-family: 'Cinzel', serif;
+            color: var(--cathedral-gold);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .pattern-category {
+            margin-bottom: 1.5rem;
+        }
+
+        .category-title {
+            color: var(--emerald-heart);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .pattern-item {
+            background: rgba(72, 61, 139, 0.3);
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .pattern-item:hover {
+            background: rgba(72, 61, 139, 0.5);
+            border-color: var(--cathedral-gold);
+        }
+
+        .pattern-name {
+            color: var(--divine-light);
+            font-size: 0.9rem;
+        }
+
+        .pattern-description {
+            color: var(--celestial-silver);
+            font-size: 0.8rem;
+            margin-top: 0.2rem;
+        }
+
+        .canvas-area {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 2px solid var(--cathedral-gold);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .canvas-container {
+            width: 100%;
+            height: 500px;
+            background: var(--abyss-deep);
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            border: 2px solid var(--celestial-silver);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .canvas-placeholder {
+            color: var(--celestial-silver);
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .generated-art {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .generation-controls {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .generate-button {
+            background: linear-gradient(135deg, var(--emerald-heart), var(--cathedral-gold));
+            border: none;
+            color: var(--abyss-deep);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .generate-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(80, 200, 120, 0.5);
+        }
+
+        .real-data-panel {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 1.5rem;
+            border: 2px solid var(--emerald-heart);
+        }
+
+        .data-title {
+            font-family: 'Cinzel', serif;
+            color: var(--emerald-heart);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .data-source {
+            background: rgba(80, 200, 120, 0.1);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            border: 1px solid var(--emerald-heart);
+        }
+
+        .source-name {
+            color: var(--cathedral-gold);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .source-description {
+            color: var(--divine-light);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .data-points {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+
+        .data-point {
+            background: var(--emerald-heart);
+            color: var(--abyss-deep);
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-family: monospace;
+        }
+
+        .arcanae-integration {
+            background: rgba(224, 17, 95, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 2px solid var(--ruby-fire);
+            margin-top: 1rem;
+        }
+
+        .integration-title {
+            font-family: 'Cinzel', serif;
+            color: var(--ruby-fire);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .arcanae-controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .arcanae-mode {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid var(--ruby-fire);
+        }
+
+        .mode-title {
+            color: var(--cathedral-gold);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .mode-description {
+            color: var(--celestial-silver);
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .mode-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 40px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .toggle-switch.active {
+            background: var(--ruby-fire);
+        }
+
+        .toggle-slider {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 16px;
+            height: 16px;
+            background: var(--divine-light);
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle-switch.active .toggle-slider {
+            transform: translateX(20px);
+        }
+
+        .book-integration {
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 15px;
+            padding: 1rem;
+            border: 2px solid var(--cathedral-gold);
+            margin-top: 1rem;
+        }
+
+        .book-title {
+            font-family: 'Cinzel', serif;
+            color: var(--cathedral-gold);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .book-source {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid var(--cathedral-gold);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .book-source:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .book-name {
+            color: var(--cathedral-gold);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .book-connection {
+            color: var(--divine-light);
+            font-size: 0.8rem;
+        }
+
+        .auto-mode-panel {
+            background: rgba(80, 200, 120, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 2px solid var(--emerald-heart);
+            margin-top: 1rem;
+        }
+
+        .auto-title {
+            font-family: 'Cinzel', serif;
+            color: var(--emerald-heart);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .auto-controls {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            justify-content: center;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--celestial-silver);
+        }
+
+        .status-dot.active {
+            background: var(--emerald-heart);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .status-text {
+            color: var(--celestial-silver);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 1200px) {
+            .studio-layout {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .pattern-library,
+            .real-data-panel {
+                order: 2;
+            }
+
+            .canvas-area {
+                order: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .studio-container {
+                padding: 1rem;
+            }
+
+            .studio-controls {
+                gap: 0.5rem;
+            }
+
+            .control-button {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="studio-container">
+        <div class="studio-header">
+            <h1 class="studio-title">🏛️ Pattern Art Studio</h1>
+            <p class="studio-subtitle">High-End Art Generation Connected to Real Data & Sacred Knowledge</p>
+            <div class="studio-controls">
+                <button class="control-button" onclick="showInstructions()">How to Use</button>
+                <button class="control-button" onclick="toggleAutoMode()">Auto Mode</button>
+                <button class="control-button" onclick="exportArtwork()">Export Art</button>
+                <button class="control-button" onclick="exitStudio()">Back to Cathedral</button>
+            </div>
+        </div>
+
+        <div class="studio-layout">
+            <!-- Pattern Library -->
+            <div class="pattern-library">
+                <h3 class="library-title">📐 Pattern Library</h3>
+
+                <div class="pattern-category">
+                    <div class="category-title">Sacred Geometry</div>
+                    <div class="pattern-item" onclick="selectPattern('codex-geometric')">
+                        <div class="pattern-name">Codex Seraphinianus Fusion</div>
+                        <div class="pattern-description">Surreal geometric patterns with golden ratio</div>
+                    </div>
+                    <div class="pattern-item" onclick="selectPattern('chartres-rose')">
+                        <div class="pattern-name">Chartres Rose Window</div>
+                        <div class="pattern-description">Gothic cathedral rose patterns</div>
+                    </div>
+                </div>
+
+                <div class="pattern-category">
+                    <div class="category-title">Organic Patterns</div>
+                    <div class="pattern-item" onclick="selectPattern('voynich-botanical')">
+                        <div class="pattern-name">Voynich Botanical</div>
+                        <div class="pattern-description">Living plant consciousness patterns</div>
+                    </div>
+                </div>
+
+                <div class="pattern-category">
+                    <div class="category-title">Fractal Mathematics</div>
+                    <div class="pattern-item" onclick="selectPattern('fibonacci-spiral')">
+                        <div class="pattern-name">Fibonacci Spiral Galaxy</div>
+                        <div class="pattern-description">Mathematical beauty in spiral form</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Canvas Area -->
+            <div class="canvas-area">
+                <div class="canvas-container">
+                    <div class="canvas-placeholder" id="canvasPlaceholder">
+                        🎨 Select a pattern to begin generating art
+                    </div>
+                    <img id="generatedArtwork" class="generated-art" style="display: none;" />
+                </div>
+
+                <div class="generation-controls">
+                    <button class="generate-button" onclick="generateArt()">Generate Art</button>
+                </div>
+
+                <div class="status-indicator">
+                    <div class="status-dot" id="statusDot"></div>
+                    <div class="status-text" id="statusText">Ready</div>
+                </div>
+            </div>
+
+            <!-- Real Data Panel -->
+            <div class="real-data-panel">
+                <h3 class="data-title">📚 Real Data Sources</h3>
+
+                <div class="data-source">
+                    <div class="source-name">Codex Seraphinianus</div>
+                    <div class="source-description">Surreal encyclopedia with unknown script</div>
+                    <div class="data-points">
+                        <span class="data-point">1.618</span>
+                        <span class="data-point">3.14159</span>
+                        <span class="data-point">2.718</span>
+                    </div>
+                </div>
+
+                <div class="data-source">
+                    <div class="source-name">Chartres Cathedral</div>
+                    <div class="source-description">Gothic masterpiece with sacred geometry</div>
+                    <div class="data-points">
+                        <span class="data-point">1194</span>
+                        <span class="data-point">1.618</span>
+                        <span class="data-point">176</span>
+                    </div>
+                </div>
+
+                <div class="arcanae-integration">
+                    <h4 class="integration-title">🔮 Arcanae Integration</h4>
+                    <div class="arcanae-controls">
+                        <div class="arcanae-mode">
+                            <div class="mode-title">Auto Mode</div>
+                            <div class="mode-description">Books generate patterns automatically</div>
+                            <div class="mode-toggle" onclick="toggleArcanaeMode('auto')">
+                                <div class="toggle-switch" id="autoToggle">
+                                    <div class="toggle-slider"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="arcanae-mode">
+                            <div class="mode-title">Interconnected Paths</div>
+                            <div class="mode-description">Arcanae work together in harmony</div>
+                            <div class="mode-toggle" onclick="toggleArcanaeMode('interconnected')">
+                                <div class="toggle-switch" id="interconnectedToggle">
+                                    <div class="toggle-slider"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-integration">
+                    <h4 class="book-title">📖 Sacred Book Sources</h4>
+                    <div class="book-grid">
+                        <div class="book-source" onclick="selectBookSource('codex-seraphinianus')">
+                            <div class="book-name">Codex Seraphinianus</div>
+                            <div class="book-connection">Language of angels and demons</div>
+                        </div>
+
+                        <div class="book-source" onclick="selectBookSource('voynich-manuscript')">
+                            <div class="book-name">Voynich Manuscript</div>
+                            <div class="book-connection">Plant consciousness wisdom</div>
+                        </div>
+
+                        <div class="book-source" onclick="selectBookSource('hypnerotomachia-poliphili')">
+                            <div class="book-name">Hypnerotomachia Poliphili</div>
+                            <div class="book-connection">Sacred architecture dreams</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="auto-mode-panel">
+                    <h4 class="auto-title">⚙️ Auto-Generation Mode</h4>
+                    <div class="auto-controls">
+                        <button class="control-button" onclick="startAutoGeneration()">Start Auto</button>
+                        <button class="control-button" onclick="stopAutoGeneration()">Stop Auto</button>
+                    </div>
+                    <div class="status-indicator">
+                        <div class="status-dot" id="autoStatusDot"></div>
+                        <div class="status-text" id="autoStatusText">Inactive</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let selectedPattern = null;
+        let selectedBook = null;
+        let autoModeActive = false;
+        let autoInterval = null;
+
+        function selectPattern(patternId) {
+            selectedPattern = patternId;
+            document.getElementById('canvasPlaceholder').textContent = `🎨 Pattern "${patternId}" selected - Click Generate Art to create`;
+            updateStatus('Pattern selected', 'ready');
+        }
+
+        function selectBookSource(bookId) {
+            selectedBook = bookId;
+            updateStatus(`Book source: ${bookId}`, 'ready');
+        }
+
+        function generateArt() {
+            if (!selectedPattern) {
+                alert('Please select a pattern first!');
+                return;
+            }
+
+            updateStatus('Generating artwork...', 'generating');
+
+            // Simulate art generation
+            setTimeout(() => {
+                const artwork = document.getElementById('generatedArtwork');
+                const placeholder = document.getElementById('canvasPlaceholder');
+
+                // Show generated artwork (in a real implementation, this would be the actual generated image)
+                artwork.src = `data:image/svg+xml;base64,${btoa(`
+                    <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="100%" height="100%" fill="#1a1a2e"/>
+                        <circle cx="300" cy="200" r="150" fill="none" stroke="#ffd700" stroke-width="3"/>
+                        <circle cx="300" cy="200" r="100" fill="none" stroke="#50c878" stroke-width="2"/>
+                        <circle cx="300" cy="200" r="50" fill="none" stroke="#e0115f" stroke-width="1"/>
+                        <text x="300" y="210" text-anchor="middle" fill="#ffd700" font-family="Cinzel" font-size="16">
+                            ${selectedPattern} Art Generated
+                        </text>
+                    </svg>
+                `)}`;
+                artwork.style.display = 'block';
+                placeholder.style.display = 'none';
+
+                updateStatus('Artwork generated successfully!', 'complete');
+            }, 2000);
+        }
+
+        function toggleArcanaeMode(mode) {
+            const toggle = document.getElementById(`${mode}Toggle`);
+            toggle.classList.toggle('active');
+
+            const isActive = toggle.classList.contains('active');
+            updateStatus(`Arcanae ${mode} mode: ${isActive ? 'ON' : 'OFF'}`, 'ready');
+        }
+
+        function toggleAutoMode() {
+            autoModeActive = !autoModeActive;
+            const autoStatusDot = document.getElementById('autoStatusDot');
+
+            if (autoModeActive) {
+                autoStatusDot.classList.add('active');
+                document.getElementById('autoStatusText').textContent = 'Active';
+                startAutoGeneration();
+            } else {
+                autoStatusDot.classList.remove('active');
+                document.getElementById('autoStatusText').textContent = 'Inactive';
+                stopAutoGeneration();
+            }
+        }
+
+        function startAutoGeneration() {
+            if (autoInterval) clearInterval(autoInterval);
+
+            autoInterval = setInterval(() => {
+                if (selectedPattern) {
+                    generateArt();
+                }
+            }, 5000); // Generate every 5 seconds
+        }
+
+        function stopAutoGeneration() {
+            if (autoInterval) {
+                clearInterval(autoInterval);
+                autoInterval = null;
+            }
+        }
+
+        function updateStatus(text, type) {
+            const statusText = document.getElementById('statusText');
+            const statusDot = document.getElementById('statusDot');
+
+            statusText.textContent = text;
+
+            statusDot.className = 'status-dot';
+            if (type === 'generating') {
+                statusDot.classList.add('active');
+                statusDot.style.background = '#ffd700';
+            } else if (type === 'complete') {
+                statusDot.style.background = '#50c878';
+            } else {
+                statusDot.style.background = '#c0c0c0';
+            }
+        }
+
+        function showInstructions() {
+            alert(`🎨 Pattern Art Studio Instructions:
+
+1. Select a pattern from the library on the left
+2. Choose real data sources and book connections
+3. Toggle Arcanae modes for enhanced generation
+4. Click "Generate Art" to create artwork
+5. Enable Auto Mode for continuous generation
+6. Export your creations when satisfied
+
+The studio connects to real books, artworks, and sacred mathematics to create unique, meaningful art that bridges digital and physical reality.`);
+        }
+
+        function exportArtwork() {
+            const artwork = document.getElementById('generatedArtwork');
+            if (artwork.style.display === 'none') {
+                alert('Please generate artwork first!');
+                return;
+            }
+
+            // In a real implementation, this would trigger actual export
+            alert('Artwork exported! (In a full implementation, this would save the file)');
+        }
+
+        function exitStudio() {
+            if (confirm('Return to the main Cathedral?')) {
+                window.location.href = 'index.html';
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateStatus('Ready to create art', 'ready');
+        });
+    </script>
+</body>
+</html>

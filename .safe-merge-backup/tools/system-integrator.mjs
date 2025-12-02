@@ -73,11 +73,11 @@ class SystemIntegrator
     logger.info('🔄 Running integrated maintenance...');
     
     const steps = [
-      { name: 'Auto-recovery', cmd: 'ppnpm run recover:auto' },
-      { name: 'Health check', cmd: 'ppnpm run health:monitor:once' },
-      { name: 'Performance optimization', cmd: 'ppnpm run optimize:performance' },
-      { name: 'Code quality', cmd: 'ppnpm run check:quality' },
-      { name: 'Consistency check', cmd: 'ppnpm run check:consistency' }
+      { name: 'Auto-recovery', cmd: 'pppnpm run recover:auto' },
+      { name: 'Health check', cmd: 'pppnpm run health:monitor:once' },
+      { name: 'Performance optimization', cmd: 'pppnpm run optimize:performance' },
+      { name: 'Code quality', cmd: 'pppnpm run check:quality' },
+      { name: 'Consistency check', cmd: 'pppnpm run check:consistency' }
     ];
 
     const results = { passed: [], failed: [] };

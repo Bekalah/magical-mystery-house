@@ -16,5 +16,6 @@
     "name": "Cathedral Immersive Creative Studio",
     "symbol": "⊙",
     "label": "⊙ Cathedral Immersive Creative Studio (cathedral-immersive-creative-studio)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

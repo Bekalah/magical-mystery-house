@@ -1,0 +1,27 @@
+{
+  "name": "@cathedral/cathedral-game-engine",
+  "version": "1.0.0",
+  "description": "Interactive Choose Your Own Adventure Book Game with Real Object Integration",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "game": "node dist/game.js"
+  },
+  "dependencies": {
+    "@cathedral/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  }
+}

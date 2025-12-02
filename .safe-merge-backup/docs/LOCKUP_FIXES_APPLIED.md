@@ -44,7 +44,7 @@ The continuous improvement experiment was experiencing lockups when trying to bu
 
 ### 5. Cleanup Utility Created ✅
 - `tools/cleanup-state-file.mjs` - Standalone cleanup tool
-- `ppnpm run cleanup:state` - Script added to package.json
+- `pppnpm run cleanup:state` - Script added to package.json
 - Can be run manually or automatically by health check
 
 ## Files Modified

@@ -19,8 +19,8 @@
     }
   },
   "engines": {
-    "node": "22.0.0",
-    "pnpm": ">=8.0.0"
+    "node": ">=20.18.0",
+    "pnpm": ">=8.15.0"
   },
   "scripts": {
     "build": "tsc",
@@ -43,7 +43,10 @@
     "generate-codex": "node scripts/generate-codex-data.js",
     "update-sources": "node scripts/update-research-sources.js",
     "validate-sources": "node scripts/validate-sources.js",
-    "benchmark": "node scripts/benchmark-search.js"
+    "benchmark": "node scripts/benchmark-search.js",
+    "map": "ts-node scripts/map-codex.ts",
+    "fix": "ts-node -e \"import('./src/fix-codex').then(m => { const f = new m.CodexFixer(); console.log(f.generateReport()); })\"",
+    "codex": "ts-node src/accessible-cli.ts"
   },
   "files": [
     "dist",
@@ -58,23 +61,21 @@
     "cheerio": "^1.0.0-rc.12",
     "fuse.js": "^7.0.0",
     "leven": "^4.0.0",
-    "@azure-rest/ai-inference": "^1.0.0-beta.6",
-    "@azure/identity": "^4.13.0",
-    "dotenv": "^17.2.3",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
     "typescript": "^5.6.3",
+    "@types/cheerio": "^0.22.35",
+    "vitest": "^1.6.0",
+    "@types/fuse": "latest",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.57.0",
     "prettier": "^3.3.3",
     "rimraf": "^5.0.10"
   },
-  "devDependencies": {
-    "@types/node": "^20.17.0",
-    "@types/cheerio": "^0.22.35",
-    "vitest": "^1.6.0",
-    "@types/fuse": "^7.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0"
-  },
-  "author": "Cathedral Master Creative Intelligence Team",
+  "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
   "license": "CC0-1.0",
   "repository": {
     "type": "git",
@@ -106,7 +107,7 @@
       "144-sacred-nodes",
       "global-library-integration",
       "real-research-sources",
-      "azure-ai-enhanced",
+      "algorithmic-only",
       "sacred-geometry-mapping",
       "consciousness-levels",
       "fusion-kink-integration",
@@ -129,18 +130,17 @@
     }
   },
   "volta": {
-    "node": "22.0.0",
-    "pnpm": "9.15.0"
+    "node": "18.19.1",
+    "pnpm": "8.15.7"
   },
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:53.266Z",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@8.15.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "alchemical": {
     "name": "Codex 144 99",
     "symbol": "⊙",
     "label": "⊙ Codex 144 99 (@cathedral/codex-144-99)"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

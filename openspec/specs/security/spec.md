@@ -68,7 +68,7 @@ All repos must have `scripts/security-audit.mjs` that:
 - Checks for forbidden tools (npm, yarn, bun)
 - Verifies packageManager field
 - Verifies engines field
-- Runs ppnpm audit
+- Runs pnpm audit
 - Reports security issues
 
 ### Security Scripts
@@ -79,8 +79,8 @@ All package.json must include:
 {
   "scripts": {
     "security:audit": "node scripts/security-audit.mjs",
-    "security:check": "ppnpm audit && ppnpm run security:audit",
-    "security:fix": "ppnpm audit --fix"
+    "security:check": "pnpm audit && pnpm run security:audit",
+    "security:fix": "pnpm audit --fix"
   }
 }
 ```
@@ -105,8 +105,8 @@ All `turbo.json` files must include security task:
 
 ### Regular Audits
 
-- Run `ppnpm audit` weekly
-- Run `ppnpm run security:check` before commits
+- Run `pnpm audit` weekly
+- Run `pnpm run security:check` before commits
 - Fix vulnerabilities immediately
 
 ### Dependency Overrides
@@ -133,7 +133,7 @@ Use pnpm overrides to enforce secure versions:
 ## Compliance
 
 All repositories must:
-1. Pass `ppnpm run security:audit` with no issues
+1. Pass `pnpm run security:audit` with no issues
 2. Have `.npmrc` with security settings
 3. Have `pnpm-workspace.yaml` (if monorepo)
 4. Have `packageManager` field in package.json

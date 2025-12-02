@@ -16,24 +16,27 @@
     "geometry",
     "nodes"
   ],
-  "author": "Cathedral Master Creative Intelligence Team",
+  "author": "Rebecca Respawn",
   "license": "CC0-1.0",
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
-  },
-  "dependencies": {},
-  "devDependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:55.828Z",
-  "packageManager": "pnpm@8.0.0",
-  "alchemical": {
-    "name": "Sacred Geometry",
-    "symbol": "⊙",
-    "label": "⊙ Sacred Geometry (@cathedral/sacred-geometry-core)"
-  },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
-  "types": "dist/index.d.ts"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/sacred-geometry-core"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/sacred-geometry-core",
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "packageManager": "ppppnpm@10.23.0",
+  "types": "dist/index.d.ts",
+  "alchemical": {
+    "name": "Sacred Geometry Core",
+    "symbol": "⊙",
+    "label": "⊙ Sacred Geometry Core (@cathedral/sacred-geometry-core)"
+  }
 }

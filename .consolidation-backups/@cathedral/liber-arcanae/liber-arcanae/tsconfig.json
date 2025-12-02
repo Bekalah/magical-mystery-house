@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-  "extends": "../tsconfig.json",    "target": "ES2022",
+    "target": "ES2022",
     "module": "ESNext",
     "lib": ["ES2022"],
     "outDir": "./dist",

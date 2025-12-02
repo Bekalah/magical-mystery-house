@@ -18,12 +18,7 @@
     "@types/react": "^18.3.24",
     "@types/react-dom": "^18.3.7"
   },
-  "license": "CC0-1.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:02.134Z",
-  "alchemical": {
-    "name": "Tarot Arena",
-    "symbol": "⊙",
-    "label": "⊙ Tarot Arena (@cathedral/tarot-arena)"
-  }
+  "consolidatedAt": "2025-12-01T21:19:40.047Z",
+  "license": "CC0-1.0"
 }

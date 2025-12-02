@@ -1,0 +1,54 @@
+{
+  "id": "character-id",
+  "name": "Character Name",
+  "archetype": "archetype-name",
+  "connected_goddess": "Goddess Name",
+  "factions": ["Faction 1", "Faction 2"],
+  "connected_gods_goddesses": ["Goddess 1", "God 1"],
+  "connected_taras": ["Tara 1", "Tara 2"],
+  "codex_144_99": [
+    {
+      "node": 0,
+      "slug": "codex-slug",
+      "title": "Codex Title",
+      "layer": "Layer Name",
+      "numerology": 0,
+      "geometry": "Geometry Name",
+      "element": "Element Name",
+      "planet": "Planet Name",
+      "chakra": "Chakra Name",
+      "color_ray": "#000000",
+      "frequency_hz": 0.0,
+      "tarot_correspondence": ["Major Arcana Name"],
+      "crystal": "Crystal Name",
+      "symbol": "Symbol",
+      "teaching_function": "Teaching Function",
+      "related_gates": [0],
+      "guardian": "Guardian Name"
+    }
+  ],
+  "liber_arcanae": [
+    {
+      "major_arcana": "major-arcana-id",
+      "faculty_profile": "Faculty Title",
+      "department": "Department Name",
+      "specializations": ["Specialization 1"],
+      "element": "Element Name",
+      "hebrew_path": "Hebrew Letter",
+      "number": 0
+    }
+  ],
+  "cosmogenesis": [
+    {
+      "planet": "Planet Name",
+      "consciousness": "Consciousness Domain"
+    }
+  ],
+  "crystal_science": ["Crystal 1"],
+  "sacred_geometry": ["Geometry 1"],
+  "healing_grid": ["Grid 1"],
+  "art_chapel": ["Art Chapel 1"],
+  "docs": ["/docs/character_pd.txt"],
+  "tags": ["character", "alchemy", "esoteric"],
+  "lock": true
+}

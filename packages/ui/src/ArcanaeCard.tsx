@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '@cathedral/shared/src/styles/unified-professional.css';
 
 /**
  * ⚗️ Arcanae - The Principle

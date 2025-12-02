@@ -19,5 +19,6 @@
     "name": "Liber Arcanae App",
     "symbol": "⊙",
     "label": "⊙ Liber Arcanae App (@cathedral/liber-arcanae-app)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

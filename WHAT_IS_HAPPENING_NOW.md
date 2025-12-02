@@ -311,8 +311,8 @@ Opportunities    Fixes           Health Maps
 ---
 
 **Check status anytime:**
-- `ppnpm run improve:status` - Check if running
+- `pnpm run improve:status` - Check if running
 - `tail -f experiment-all-day.log` - Watch live
 - `cat experiment-state.json` - See current state
-- `ppnpm run improve:report` - Get detailed report
+- `pnpm run improve:report` - Get detailed report
 

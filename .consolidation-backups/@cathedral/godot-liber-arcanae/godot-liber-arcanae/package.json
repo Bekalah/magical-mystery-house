@@ -23,7 +23,7 @@
     "living-tarot"
   ],
   "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
-  "license": "CC0-1.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/Bekalah/cathedral.git",
@@ -94,13 +94,5 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  },
-  "dependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:54.301Z",
-  "alchemical": {
-    "name": "Godot Liber Arcanae",
-    "symbol": "⊙",
-    "label": "⊙ Godot Liber Arcanae (@cathedral/godot-liber-arcanae)"
   }
 }

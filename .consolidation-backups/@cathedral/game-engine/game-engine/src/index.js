@@ -27,10 +27,10 @@ export async function startRoyalInitiatePath() {
   const game = await createCathedralGame();
   const gameStart = await game.startGame();
 
-// console.log('🎮 Royal Initiate Path started!');
-// console.log(`👤 Character: ${gameStart.character.name}`);
-// console.log(`🌟 Starting Node: ${gameStart.startingNode.name}`);
-// console.log('🛡️ Trauma-safe progression active');
+  console.log('🎮 Royal Initiate Path started!');
+  console.log(`👤 Character: ${gameStart.character.name}`);
+  console.log(`🌟 Starting Node: ${gameStart.startingNode.name}`);
+  console.log('🛡️ Trauma-safe progression active');
 
   return game;
 }

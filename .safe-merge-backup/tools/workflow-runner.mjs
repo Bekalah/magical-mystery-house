@@ -31,49 +31,49 @@ const WORKFLOWS = {
     name: 'Pre-Commit Workflow',
     description: 'Run before committing code',
     steps: [
-      { name: 'Quality Check', cmd: 'ppnpm run quality:enhanced' },
-      { name: 'Consistency Check', cmd: 'ppnpm run check:consistency' },
-      { name: 'Build', cmd: 'ppnpm run build' },
-      { name: 'Tests', cmd: 'ppnpm run test:run' }
+      { name: 'Quality Check', cmd: 'pppnpm run quality:enhanced' },
+      { name: 'Consistency Check', cmd: 'pppnpm run check:consistency' },
+      { name: 'Build', cmd: 'pppnpm run build' },
+      { name: 'Tests', cmd: 'pppnpm run test:run' }
     ]
   },
   'post-update': {
     name: 'Post-Update Workflow',
     description: 'Run after Cursor updates',
     steps: [
-      { name: 'Auto-Update', cmd: 'ppnpm run auto:update' },
-      { name: 'Recovery', cmd: 'ppnpm run recover:auto' },
-      { name: 'Health Check', cmd: 'ppnpm run health:monitor:once' },
-      { name: 'Documentation', cmd: 'ppnpm run docs:auto' }
+      { name: 'Auto-Update', cmd: 'pppnpm run auto:update' },
+      { name: 'Recovery', cmd: 'pppnpm run recover:auto' },
+      { name: 'Health Check', cmd: 'pppnpm run health:monitor:once' },
+      { name: 'Documentation', cmd: 'pppnpm run docs:auto' }
     ]
   },
   'daily': {
     name: 'Daily Maintenance',
     description: 'Daily maintenance tasks',
     steps: [
-      { name: 'Quick Maintenance', cmd: 'ppnpm run maintain:quick' },
-      { name: 'Health Check', cmd: 'ppnpm run health:monitor:once' },
-      { name: 'Backup', cmd: 'ppnpm run backup:create' }
+      { name: 'Quick Maintenance', cmd: 'pppnpm run maintain:quick' },
+      { name: 'Health Check', cmd: 'pppnpm run health:monitor:once' },
+      { name: 'Backup', cmd: 'pppnpm run backup:create' }
     ]
   },
   'weekly': {
     name: 'Weekly Maintenance',
     description: 'Weekly comprehensive maintenance',
     steps: [
-      { name: 'Full Maintenance', cmd: 'ppnpm run maintain:full' },
-      { name: 'Performance Optimization', cmd: 'ppnpm run optimize:performance' },
-      { name: 'Integration Tests', cmd: 'ppnpm run test:integration' },
-      { name: 'System Integration', cmd: 'ppnpm run integrate:systems' }
+      { name: 'Full Maintenance', cmd: 'pppnpm run maintain:full' },
+      { name: 'Performance Optimization', cmd: 'pppnpm run optimize:performance' },
+      { name: 'Integration Tests', cmd: 'pppnpm run test:integration' },
+      { name: 'System Integration', cmd: 'pppnpm run integrate:systems' }
     ]
   },
   'full-check': {
     name: 'Full System Check',
     description: 'Complete system validation',
     steps: [
-      { name: 'Health Check', cmd: 'ppnpm run health:monitor:once' },
-      { name: 'Quality Check', cmd: 'ppnpm run quality:enhanced' },
-      { name: 'Integration Tests', cmd: 'ppnpm run test:integration' },
-      { name: 'Performance Check', cmd: 'ppnpm run optimize:performance' }
+      { name: 'Health Check', cmd: 'pppnpm run health:monitor:once' },
+      { name: 'Quality Check', cmd: 'pppnpm run quality:enhanced' },
+      { name: 'Integration Tests', cmd: 'pppnpm run test:integration' },
+      { name: 'Performance Check', cmd: 'pppnpm run optimize:performance' }
     ]
   }
 };
@@ -130,7 +130,7 @@ function listWorkflows() {
     logger.info(`   Name: ${workflow.name}`);
     logger.info(`   Description: ${workflow.description}`);
     logger.info(`   Steps: ${workflow.steps.length}`);
-    UserFeedback.command(`ppnpm run workflow:${key}`, `Run ${workflow.name}`);
+    UserFeedback.command(`pppnpm run workflow:${key}`, `Run ${workflow.name}`);
   }
 }
 

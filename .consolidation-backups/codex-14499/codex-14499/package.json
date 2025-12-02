@@ -1,0 +1,46 @@
+{
+  "name": "codex-14499",
+  "version": "1.0.0",
+  "description": "Cathedral Codex 144:99 - Complete lattice system connecting all Trinity apps",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "integration-test": "node scripts/test-connections.js"
+  },
+  "dependencies": {
+    "three": "^0.128.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.1"
+  },
+  "trinity": {
+    "role": "lattice",
+    "connects_to": [
+      "circuitum99",
+      "stone-grimoire",
+      "cosmogenesis-learning-engine",
+      "holographic-interface",
+      "tesseract-bridge",
+      "liber-arcanae",
+      "gentle-fusion-lab",
+      "magical-mystery-house"
+    ],
+    "integration_points": {
+      "soul_portal": "../circuitum99/",
+      "body_portal": "../stone-grimoire/",
+      "spirit_portal": "../cosmogenesis-learning-engine/",
+      "interface_portal": "../holographic-interface/",
+      "bridge_portal": "../tesseract-bridge/"
+    },
+    "datasets": {
+      "major_arcana": "../data/majors-complete.json",
+      "angels_72": "../data/angels-72.json",
+      "demons_72": "../data/demons-72.json",
+      "spine_33": "../data/spine-33.json",
+      "codex_nodes": "../data/codex_nodes.json"
+    }
+  }
+}

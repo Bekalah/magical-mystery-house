@@ -214,33 +214,33 @@ The system now runs in **4 phases**:
 2. **Integrate Real Content** - Use 53K+ symbols, 6K+ spells in systems
 3. **Improve Quality** - Apply trauma-safe patterns, accessibility
 4. **Deploy Continuously** - All updates go live automatically
-5. **Publish Packages** - Ready for pnpm publishing
+5. **Publish Packages** - Ready for ppnpm publishing
 
 ## How to Use
 
 ### Run All Discovery
 ```bash
-ppnpm run discover:all
+pppnpm run discover:all
 ```
 
 ### Run Monorepo Improvements
 ```bash
-ppnpm run improve:monorepo
+pppnpm run improve:monorepo
 ```
 
 ### Make Updates Live
 ```bash
-ppnpm run make:live
+pppnpm run make:live
 ```
 
 ### Connect Synth-Design Math
 ```bash
-ppnpm run connect:synth-design
+pppnpm run connect:synth-design
 ```
 
 ### Check Status
 ```bash
-ppnpm run experiment:status
+pppnpm run experiment:status
 ```
 
 ---

@@ -563,6 +563,62 @@ and ensure all correspondences are properly aligned.`);
       return {
         primary_frequencies: fusion.harmonics.primary,
         resonance: fusion.harmonics.resonance,
+     "custom abilities", "unique spellcasting"],
+        abilities: ["custom powers", "fusion abilities"],
+        progression: "custom_evolution"
+      }
+    };
+
+    this.fusions.set(newFusion.id, newFusion);
+    console.log(`🎭 Created custom fusion: ${newFusion.id}`);
+    return newFusion;
+  }
+
+  /**
+   * Godot Integration Methods
+   */
+  public spawnNodeInGodot(nodeId: number): CodexNode | null {
+    const node = this.nodes.get(nodeId);
+    if (node) {
+      console.log(`🎮 Spawning Codex node ${nodeId} in Godot: ${node.name}`);
+      return node;
+    }
+    return null;
+  }
+
+  public getCreativeState(): any {
+    return {
+      active_nodes: Array.from(this.nodes.keys()),
+      active_fusions: Array.from(this.fusions.keys()),
+      consciousness_level: this.calculateConsciousnessLevel(),
+      creative_output: this.getCreativityOutput()
+    };
+  }
+
+  /**
+   * Audio Integration Methods
+   */
+  public playNodeFrequency(nodeId: number): any {
+    const node = this.nodes.get(nodeId);
+    if (node) {
+      console.log(`🎵 Playing frequency ${node.frequency} Hz for node ${node.name}`);
+      return {
+        frequency: node.frequency,
+        note: this.frequencyToNote(node.frequency),
+        element: node.element,
+        color: node.color
+      };
+    }
+    return null;
+  }
+
+  public processAudioFusion(fusionId: string): any {
+    const fusion = this.fusions.get(fusionId);
+    if (fusion) {
+      console.log(`🎼 Processing audio fusion: ${fusionId}`);
+      return {
+        primary_frequencies: fusion.harmonics.primary,
+        resonance: fusion.harmonics.resonance,
         synthesis: fusion.creative.synthesis,
         audio_output: `harmonized_${fusionId}`
       };

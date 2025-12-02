@@ -45,13 +45,13 @@ git clone https://github.com/rebeccalemke/cathedral-master-deployment.git
 cd cathedral-master-deployment
 
 # Install dependencies
-ppnpm install
+pnpm install
 
 # Build
-ppnpm run build
+pnpm run build
 
 # Run tests
-ppnpm run test
+pnpm run test
 ```
 
 ## 📋 Code Standards

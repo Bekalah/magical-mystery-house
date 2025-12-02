@@ -34,7 +34,7 @@ git clone https://github.com/Bekalah/cathedral.git
 cd cathedral/packages/godot-codex-14499
 
 # Export for Godot
-pnpm run export
+ppnpm run export
 ```
 
 ### **Method 2: Godot Asset Library**
@@ -269,21 +269,21 @@ func _ready():
 # Clone and build
 git clone https://github.com/Bekalah/cathedral.git
 cd cathedral/packages/godot-codex-14499
-pnpm install
-pnpm run build
-pnpm run validate
+ppnpm install
+ppnpm run build
+ppnpm run validate
 ```
 
 ### **Testing Sacred Mathematics**
 ```bash
 # Validate all calculations
-pnpm run test
+ppnpm run test
 
 # Check trauma safety compliance
-pnpm run validate:trauma-safety
+ppnpm run validate:trauma-safety
 
 # Verify sacred proportions
-pnpm run validate:sacred-math
+ppnpm run validate:sacred-math
 ```
 
 ---

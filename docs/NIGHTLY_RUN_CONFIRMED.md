@@ -87,10 +87,10 @@ tail -f /tmp/experiment-night.log
 
 # Check experiment status
 cd /Users/rebeccalemke/cathedral-master-deployment
-ppnpm run experiment:status
+pnpm run experiment:status
 
 # View analytics
-ppnpm run analytics
+pnpm run analytics
 ```
 
 ### Expected Output
@@ -170,6 +170,6 @@ node tools/continuous-improvement-runner.mjs > /tmp/experiment-night.log 2>&1 &
 
 **Check progress in the morning with:**
 - `tail -f /tmp/experiment-night.log`
-- `ppnpm run experiment:status`
-- `ppnpm run analytics`
+- `pnpm run experiment:status`
+- `pnpm run analytics`
 

@@ -1,6 +1,6 @@
 {
   "name": "@cathedral/brain",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -16,8 +16,8 @@
   "license": "CC0-1.0",
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:14:14.547Z",
-  "packageManager": "pnpm@8.0.0",
+  "consolidatedAt": "2025-12-01T19:36:40.861Z",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "Brain",
     "symbol": "⊙",
@@ -25,5 +25,33 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "cathedral": {
+    "sacred_mathematics": {
+      "sacredGeometry": true,
+      "goldenRatio": 1.618,
+      "cathedralRatio": 1.455,
+      "fibonacciGrids": true,
+      "divineProportions": true
+    },
+    "trauma_safety": {
+      "noAutoplay": true,
+      "escExit": true,
+      "motionControls": true,
+      "intensityAdjustment": true,
+      "gentleDefaults": true,
+      "undoRedo": true
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
+    },
+    "integration": {
+      "connects_to": []
+    }
+  },
+  "description": "Brain - Part of the Cathedral of Circuits mystical ecosystem"
 }

@@ -164,12 +164,12 @@
 ## 5. 📦 Package.json (Enhanced)
 
 ### New Scripts Added
-- ✅ `pnpm run github:diagnose` - Test GitHub connectivity
-- ✅ `pnpm run github:publish` - Publish to GitHub
-- ✅ `pnpm run fix:remotes` - Fix all git remotes
-- ✅ `pnpm run cleanup:non-repos` - Clean up directories
-- ✅ `pnpm run organize:extracted` - Organize content
-- ✅ `pnpm run validate:setup` - Validate system setup
+- ✅ `ppnpm run github:diagnose` - Test GitHub connectivity
+- ✅ `ppnpm run github:publish` - Publish to GitHub
+- ✅ `ppnpm run fix:remotes` - Fix all git remotes
+- ✅ `ppnpm run cleanup:non-repos` - Clean up directories
+- ✅ `ppnpm run organize:extracted` - Organize content
+- ✅ `ppnpm run validate:setup` - Validate system setup
 
 ### Scripts Updated
 - ✅ `experiment:start` - Now uses `tsx` directly
@@ -345,17 +345,17 @@
 ### Most Used Commands
 ```bash
 # GitHub
-pnpm run github:diagnose
-pnpm run github:publish
+ppnpm run github:diagnose
+ppnpm run github:publish
 
 # Maintenance
-pnpm run fix:remotes
-pnpm run cleanup:non-repos
-pnpm run validate:setup
+ppnpm run fix:remotes
+ppnpm run cleanup:non-repos
+ppnpm run validate:setup
 
 # Experiment
-pnpm run experiment:start
-pnpm run experiment:daemon
+ppnpm run experiment:start
+ppnpm run experiment:daemon
 ```
 
 ### Key Files

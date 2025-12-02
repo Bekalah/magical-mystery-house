@@ -2,7 +2,7 @@
   "name": "sonic-physics-engine",
   "version": "1.0.0",
   "license": "CC0-1.0",
-  "description": "",
+  "description": "Sonic Physics - Part of the Cathedral of Circuits mystical ecosystem",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "scripts": {
@@ -11,14 +11,41 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:14:18.198Z",
+  "consolidatedAt": "2025-12-01T19:37:01.347Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "Sonic Physics",
     "symbol": "⊙",
     "label": "⊙ Sonic Physics (sonic-physics-engine)"
+  },
+  "cathedral": {
+    "sacred_mathematics": {
+      "sacredGeometry": true,
+      "goldenRatio": 1.618,
+      "cathedralRatio": 1.455,
+      "fibonacciGrids": true,
+      "divineProportions": true
+    },
+    "trauma_safety": {
+      "noAutoplay": true,
+      "escExit": true,
+      "motionControls": true,
+      "intensityAdjustment": true,
+      "gentleDefaults": true,
+      "undoRedo": true
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
+    },
+    "integration": {
+      "connects_to": []
+    }
   }
 }

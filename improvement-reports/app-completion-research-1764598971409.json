@@ -1,0 +1,492 @@
+{
+  "timestamp": 1764598971409,
+  "appsScanned": 21,
+  "appsWithIssues": 21,
+  "opportunities": {
+    "splitApps": [],
+    "lostApps": [
+      {
+        "name": "cathedral-connection-map",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "cathedral-design-studio",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "cathedral-immersive-creative-studio",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "cathedral-unity",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "cosmogenesis-visualizer",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "frontend",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "learning-device",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "liber-arcanae",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "liber-arcanae-tarot",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "living-library",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "master-catalog-browser",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "mystical-treasure-hunt",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "rosslyn-explorer",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "stone-grimoire",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "synth-lab",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "name": "visual-systems-hub",
+        "missingFiles": [
+          "README.md"
+        ],
+        "repo": "cathedral-master-deployment"
+      }
+    ],
+    "codeIssues": [
+      {
+        "app": "cathedral-unity",
+        "description": "Low documentation coverage in src/App.tsx (0%)",
+        "severity": "low",
+        "file": "src/App.tsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "frontend",
+        "description": "Low documentation coverage in src/components/SpellCaster.jsx (0%)",
+        "severity": "low",
+        "file": "src/components/SpellCaster.jsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "frontend",
+        "description": "Low documentation coverage in src/components/SpellCastingUI.jsx (0%)",
+        "severity": "low",
+        "file": "src/components/SpellCastingUI.jsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "frontend",
+        "description": "Low documentation coverage in src/components/VolcanicFireScene.jsx (0%)",
+        "severity": "low",
+        "file": "src/components/VolcanicFireScene.jsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "synth-lab",
+        "description": "Low documentation coverage in src/ui/SynthLabApp.tsx (0%)",
+        "severity": "low",
+        "file": "src/ui/SynthLabApp.tsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "tarot-arena",
+        "description": "Low documentation coverage in src/CoutureOverlay.tsx (0%)",
+        "severity": "low",
+        "file": "src/CoutureOverlay.tsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "tarot-arena",
+        "description": "Missing error handling in async code: src/index.tsx",
+        "severity": "medium",
+        "file": "src/index.tsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "tarot-arena",
+        "description": "Low documentation coverage in src/index.tsx (0%)",
+        "severity": "low",
+        "file": "src/index.tsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "test-ground",
+        "description": "Low documentation coverage in src/index.tsx (0%)",
+        "severity": "low",
+        "file": "src/index.tsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "web",
+        "description": "Low documentation coverage in src/components/CathedralGameInterface.tsx (4%)",
+        "severity": "low",
+        "file": "src/components/CathedralGameInterface.tsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "web",
+        "description": "Low documentation coverage in src/components/liberCodexDemo.tsx (0%)",
+        "severity": "low",
+        "file": "src/components/liberCodexDemo.tsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "web",
+        "description": "Low documentation coverage in src/pages/liber-codex-demo.tsx (0%)",
+        "severity": "low",
+        "file": "src/pages/liber-codex-demo.tsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "web",
+        "description": "Low documentation coverage in src/routes/About.tsx (0%)",
+        "severity": "low",
+        "file": "src/routes/About.tsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "web",
+        "description": "Low documentation coverage in src/routes/Portal.tsx (0%)",
+        "severity": "low",
+        "file": "src/routes/Portal.tsx",
+        "repo": "cathedral-master-deployment"
+      }
+    ],
+    "formatIssues": [
+      {
+        "app": "cathedral-connection-map",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "cathedral-design-studio",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "cathedral-immersive-creative-studio",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "cathedral-of-circuits",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "cathedral-of-circuits",
+        "description": "Missing ESLint configuration for TypeScript project",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "cathedral-unity",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "cathedral-unity",
+        "description": "Missing ESLint configuration for TypeScript project",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "cathedral-unity",
+        "description": "Mixed naming conventions in src/stores/cathedral-store.ts",
+        "type": "style",
+        "file": "src/stores/cathedral-store.ts",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "cosmogenesis-visualizer",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "frontend",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "learning-device",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "learning-device",
+        "description": "Missing ESLint configuration for TypeScript project",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "liber-arcanae",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "liber-arcanae-tarot",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "living-library",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "master-catalog-browser",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "mystical-treasure-hunt",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "mystical-treasure-hunt",
+        "description": "Missing ESLint configuration for TypeScript project",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "rosslyn-explorer",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "stone-grimoire",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "synth-lab",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "synth-lab",
+        "description": "Missing ESLint configuration for TypeScript project",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "synth-lab",
+        "description": "Mixed naming conventions in src/ui/SynthLabApp.tsx",
+        "type": "style",
+        "file": "src/ui/SynthLabApp.tsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "tarot-arena",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "tarot-arena",
+        "description": "Missing ESLint configuration for TypeScript project",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "tarot-arena",
+        "description": "Mixed naming conventions in src/CoutureOverlay.tsx",
+        "type": "style",
+        "file": "src/CoutureOverlay.tsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "test-ground",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "test-ground",
+        "description": "Missing ESLint configuration for TypeScript project",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "visual-systems-hub",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "web",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "web",
+        "description": "Missing ESLint configuration for TypeScript project",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "web",
+        "description": "Mixed naming conventions in src/components/CathedralGameInterface.tsx",
+        "type": "style",
+        "file": "src/components/CathedralGameInterface.tsx",
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "web-from-master",
+        "description": "Missing Prettier configuration",
+        "type": "format",
+        "repo": "cathedral-master-deployment"
+      }
+    ],
+    "completionIssues": [
+      {
+        "app": "frontend",
+        "description": "Missing dependency: @react-three",
+        "missing": [
+          "dependency:@react-three"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "liber-arcanae-tarot",
+        "description": "Missing dependency: @cathedral",
+        "missing": [
+          "dependency:@cathedral"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "synth-lab",
+        "description": "Missing dependency: @cathedral",
+        "missing": [
+          "dependency:@cathedral"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "tarot-arena",
+        "description": "Missing dependency: @cathedral",
+        "missing": [
+          "dependency:@cathedral"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "test-ground",
+        "description": "Missing dependency: @cathedral",
+        "missing": [
+          "dependency:@cathedral"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "web",
+        "description": "Missing dependency: liber-arcanae",
+        "missing": [
+          "dependency:liber-arcanae"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "web",
+        "description": "Missing dependency: codex-144-99",
+        "missing": [
+          "dependency:codex-144-99"
+        ],
+        "repo": "cathedral-master-deployment"
+      },
+      {
+        "app": "web",
+        "description": "Missing dependency: react-router-dom",
+        "missing": [
+          "dependency:react-router-dom"
+        ],
+        "repo": "cathedral-master-deployment"
+      }
+    ]
+  }
+}

@@ -15,13 +15,7 @@
   },
   "devDependencies": {
     "vitest": "^1.0.0"
-  },
-  "license": "CC0-1.0",
-  "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:02.731Z",
-  "alchemical": {
-    "name": "@Bekalah/Cathedral Worker",
-    "symbol": "⊙",
-    "label": "⊙ @Bekalah/Cathedral Worker (@bekalah/cathedral-worker)"
   }
+}  "consolidated": true,
+  "consolidatedAt": "2025-12-01T14:04:58.611Z"
 }

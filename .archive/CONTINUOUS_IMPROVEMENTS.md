@@ -58,8 +58,8 @@
 
 ### 3. 📦 New Scripts
 
-- ✅ `pnpm run health:check` - Comprehensive health check
-- ✅ `pnpm run optimize:suggestions` - Optimization suggestions
+- ✅ `ppnpm run health:check` - Comprehensive health check
+- ✅ `ppnpm run optimize:suggestions` - Optimization suggestions
 
 **Total Scripts**: 23
 
@@ -94,27 +94,27 @@
 
 ### Health & Monitoring
 ```bash
-pnpm run health:check          # System health check
-pnpm run validate:setup        # Setup validation
+ppnpm run health:check          # System health check
+ppnpm run validate:setup        # Setup validation
 ```
 
 ### GitHub
 ```bash
-pnpm run github:diagnose       # GitHub diagnostics
-pnpm run github:publish         # Publish to GitHub
+ppnpm run github:diagnose       # GitHub diagnostics
+ppnpm run github:publish         # Publish to GitHub
 ```
 
 ### Maintenance
 ```bash
-pnpm run fix:remotes           # Fix git remotes
-pnpm run cleanup:non-repos     # Clean non-repo dirs
-pnpm run organize:extracted     # Organize content
+ppnpm run fix:remotes           # Fix git remotes
+ppnpm run cleanup:non-repos     # Clean non-repo dirs
+ppnpm run organize:extracted     # Organize content
 ```
 
 ### Development
 ```bash
-pnpm run experiment:start       # Run experiment
-pnpm run integrate:workspaces  # Integrate workspaces
+ppnpm run experiment:start       # Run experiment
+ppnpm run integrate:workspaces  # Integrate workspaces
 ```
 
 ---

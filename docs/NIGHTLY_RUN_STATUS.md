@@ -146,7 +146,7 @@ If it stops for any reason, restart with:
 
 ```bash
 cd /Users/rebeccalemke/cathedral-master-deployment
-nohup ppnpm run experiment:run > /tmp/experiment-night.log 2>&1 &
+nohup pnpm run experiment:run > /tmp/experiment-night.log 2>&1 &
 ```
 
 ---
@@ -155,6 +155,6 @@ nohup ppnpm run experiment:run > /tmp/experiment-night.log 2>&1 &
 
 **Check progress in the morning with:**
 - `tail -f /tmp/experiment-night.log`
-- `ppnpm run experiment:status`
-- `ppnpm run analytics`
+- `pnpm run experiment:status`
+- `pnpm run analytics`
 

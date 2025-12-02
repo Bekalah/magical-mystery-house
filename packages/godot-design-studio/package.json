@@ -5,9 +5,9 @@
   "main": "design_studio.gd",
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "echo 'Building Godot Design Studio...' && mkdir -p dist && cp -r scenes scripts tools dist/",
     "validate": "echo 'Validating design tools...' && node validate-design.js",
-    "export": "echo 'Exporting design tools...' && ppnpm run build",
+    "export": "echo 'Exporting design tools...' && pnpm run build",
     "test": "echo 'Testing design workflows...' && node test-design.js"
   },
   "keywords": [
@@ -67,7 +67,18 @@
       "connects_to": [
         "godot-vfx-library",
         "godot-codex-14499",
-        "godot-liber-arcanae"
+        "godot-liber-arcanae",
+        "circuitum99-core",
+        "circuitum99-arcanae-cyoa",
+        "mystery-house-core",
+        "stone-grimoire",
+        "stone-grimoire-core",
+        "stone-grimoire-library-engine",
+        "liber-arcanae",
+        "liber-arcanae-core",
+        "liber-arcanae-tools",
+        "codex-144-99",
+        "codex-144-99-core"
       ]
     }
   },
@@ -85,22 +96,33 @@
   "devDependencies": {
     "@types/node": "^20.10.0"
   },
-  "types": "dist/index.d.ts",
-  "packageManager": "pnpm@8.15.0",
   "engines": {
-    "node": ">=20.18.0",
-    "pnpm": ">=8.15.0"
+    "node": "*",
+    "pnpm": "*"
   },
+  "packageManager": "pnpm@10.23.0",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "access": "public"
   },
-  "dependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:14:16.513Z",
+  "types": "dist/index.d.ts",
   "alchemical": {
     "name": "Godot Design Studio",
     "symbol": "⊙",
     "label": "⊙ Godot Design Studio (@cathedral/godot-design-studio)"
-  }
+  },
+  "dependencies": {
+    "@cathedral/circuitum99-core": "workspace:*",
+    "@cathedral/circuitum99-arcanae-cyoa": "workspace:*",
+    "@cathedral/mystery-house-core": "workspace:*",
+    "@cathedral/stone-grimoire": "workspace:*",
+    "@cathedral/stone-grimoire-core": "workspace:*",
+    "@cathedral/stone-grimoire-library-engine": "workspace:*",
+    "@cathedral/liber-arcanae": "workspace:*",
+    "@cathedral/liber-arcanae-core": "workspace:*",
+    "@cathedral/liber-arcanae-tools": "workspace:*",
+    "@cathedral/codex-144-99": "workspace:*",
+    "@cathedral/codex-144-99-core": "workspace:*"
+  },
+  "consolidated": true,
+  "consolidatedAt": "2025-12-01T19:36:51.644Z"
 }

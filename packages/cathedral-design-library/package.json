@@ -21,10 +21,21 @@
     "@cathedral/shared": "workspace:*",
     "canvas": "^2.11.2",
     "typescript": "^5.3.0",
-    "@cathedral/master-art-principles": "workspace:*"
+    "@cathedral/master-art-principles": "workspace:*",
+    "@cathedral/codex-library": "workspace:*",
+    "@cathedral/circuitum99-core": "workspace:*",
+    "@cathedral/circuitum99-arcanae-cyoa": "workspace:*",
+    "@cathedral/mystery-house-core": "workspace:*",
+    "@cathedral/stone-grimoire": "workspace:*",
+    "@cathedral/stone-grimoire-core": "workspace:*",
+    "@cathedral/stone-grimoire-library-engine": "workspace:*",
+    "@cathedral/liber-arcanae-core": "workspace:*",
+    "@cathedral/liber-arcanae-tools": "workspace:*",
+    "@cathedral/codex-144-99-core": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "^20.10.0"
+    "@types/node": "^20.10.0",
+    "@types/canvas": "^2.11.0"
   },
   "keywords": [
     "design-library",
@@ -37,19 +48,58 @@
     "design-system"
   ],
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": "*",
+    "pnpm": "*"
   },
   "license": "CC0-1.0",
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:14:14.935Z",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@10.23.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "alchemical": {
     "name": "Design Library",
     "symbol": "⊙",
     "label": "⊙ Design Library (@cathedral/design-library)"
   },
-  "publishConfig": {
-    "access": "public"
+  "consolidated": true,
+  "consolidatedAt": "2025-12-01T19:36:41.794Z",
+  "cathedral": {
+    "sacred_mathematics": {
+      "sacredGeometry": true,
+      "goldenRatio": 1.618,
+      "cathedralRatio": 1.455,
+      "fibonacciGrids": true,
+      "divineProportions": true
+    },
+    "trauma_safety": {
+      "noAutoplay": true,
+      "escExit": true,
+      "motionControls": true,
+      "intensityAdjustment": true,
+      "gentleDefaults": true,
+      "undoRedo": true
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
+    },
+    "integration": {
+      "connects_to": [
+        "circuitum99-core",
+        "circuitum99-arcanae-cyoa",
+        "mystery-house-core",
+        "stone-grimoire",
+        "stone-grimoire-core",
+        "stone-grimoire-library-engine",
+        "liber-arcanae",
+        "liber-arcanae-core",
+        "liber-arcanae-tools",
+        "codex-144-99",
+        "codex-144-99-core"
+      ]
+    }
   }
 }

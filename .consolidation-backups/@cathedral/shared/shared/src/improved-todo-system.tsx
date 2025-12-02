@@ -9,7 +9,6 @@
  */
 
 import React from 'react';
-import '@cathedral/shared/src/styles/unified-professional.css';
 import { ExecutiveFunctionTask, ExecutiveFunctionSupport } from './executive-function-support';
 
 export interface ImprovedTODOProps {
@@ -44,13 +43,13 @@ export function ImprovedTODO({
   const visualization = support.buildBetterData(improvedTasks);
   
   return (
-    <div className="improved-todo-system professional-theme" data-visual-style={visualStyle}>
-      <div className="todo-header professional-theme">
+    <div className="improved-todo-system" data-visual-style={visualStyle}>
+      <div className="todo-header">
         <h2>✨ Your Tasks</h2>
         <p>Organized beautifully, not flat</p>
       </div>
       
-      <div className="todo-visualization professional-theme" data-type={visualization.visualization}>
+      <div className="todo-visualization" data-type={visualization.visualization}>
         {improvedTasks.map(task => (
           <TaskCard
             key={task.id}
@@ -62,7 +61,7 @@ export function ImprovedTODO({
         ))}
       </div>
       
-      <div className="todo-suggestions professional-theme">
+      <div className="todo-suggestions">
         <h3>💫 Gentle Guidance</h3>
         <ul>
           {improvedTasks.map(task => (
@@ -97,7 +96,7 @@ function TaskCard({ task, onUpdate, onComplete, visualStyle }: TaskCardProps) {
   
   return (
     <div
-      className="task-card professional-theme"
+      className="task-card"
       data-priority={task.priority}
       data-status={task.status}
       data-energy={task.energyLevel}
@@ -107,31 +106,31 @@ function TaskCard({ task, onUpdate, onComplete, visualStyle }: TaskCardProps) {
         '--task-geometry': visual.geometry
       } as React.CSSProperties}
     >
-      <div className="task-visual professional-theme">
+      <div className="task-visual">
         <div
           className={`task-shape task-shape-${visual.shape}`}
           style={{ backgroundColor: visual.color }}
         />
-        <div className="task-geometry-pattern professional-theme" data-geometry={visual.geometry} />
+        <div className="task-geometry-pattern" data-geometry={visual.geometry} />
       </div>
       
-      <div className="task-content professional-theme">
+      <div className="task-content">
         <h3>{task.title}</h3>
         <p>{task.description}</p>
         
-        <div className="task-meta professional-theme">
-          <span className="task-priority professional-theme" data-priority={task.priority}>
+        <div className="task-meta">
+          <span className="task-priority" data-priority={task.priority}>
             {task.priority}
           </span>
-          <span className="task-status professional-theme" data-status={task.status}>
+          <span className="task-status" data-status={task.status}>
             {task.status}
           </span>
-          <span className="task-energy professional-theme" data-energy={task.energyLevel}>
+          <span className="task-energy" data-energy={task.energyLevel}>
             Energy: {task.energyLevel}
           </span>
         </div>
         
-        <div className="task-actions professional-theme">
+        <div className="task-actions">
           <button
             onClick={() => onUpdate({ ...task, status: 'in_progress' })}
             disabled={task.status === 'completed'}

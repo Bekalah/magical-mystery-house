@@ -216,7 +216,7 @@ class ExecuteConsolidation {
   async verifyConsolidation() {
     console.log('   ✅ Verifying consolidation...\n');
     try {
-      execSync('pnpm run build', { cwd: BASE_DIR, stdio: 'pipe', timeout: 120000 });
+      execSync('ppnpm run build', { cwd: BASE_DIR, stdio: 'pipe', timeout: 120000 });
       console.log('   ✅ Build successful\n');
     } catch (e) {
       console.log(`   ⚠️  Build had issues: ${e.message}\n`);

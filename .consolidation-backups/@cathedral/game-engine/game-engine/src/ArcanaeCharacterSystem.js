@@ -99,7 +99,7 @@ export class ArcanaeCharacterSystem {
       scienceCorrespondences: selectedArcanae.science_correspondences,
       fusionKinkAbilities: selectedArcanae.fusion_kink_abilities,
       labEnvironment: selectedArcanae.lab_environment,
-      artisticathedralage: selectedArcanae.artistic_lineage,
+      artisticLineage: selectedArcanae.artistic_lineage,
       traumaSafety: 'MAXIMUM - CPTSD-safe protocols active'
     };
 

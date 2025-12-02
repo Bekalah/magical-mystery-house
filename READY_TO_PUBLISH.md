@@ -94,7 +94,7 @@
 
 3. **npm** ✅ Config Ready
    - Packages: All configured
-   - Publish: `ppnpm run publish:packages`
+   - Publish: `pnpm run publish:packages`
    - Token: Need to set up
 
 4. **** ✅ Config Ready
@@ -113,11 +113,11 @@
 ### Step 1: Complete Web Interface
 ```bash
 cd apps/web
-ppnpm install
+pnpm install
 # Create Next.js app
 # Integrate Three.js
 # Connect to engines
-ppnpm run dev  # Test locally
+pnpm run dev  # Test locally
 ```
 
 ### Step 2: Set Up npm Publishing
@@ -126,10 +126,10 @@ ppnpm run dev  # Test locally
 npm login
 
 # Test publish (dry run)
-ppnpm run publish:packages --dry-run
+pnpm run publish:packages --dry-run
 
 # Publish (when ready)
-ppnpm run publish:packages
+pnpm run publish:packages
 ```
 
 ### Step 3: Deploy Web Interface

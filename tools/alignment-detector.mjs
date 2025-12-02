@@ -373,7 +373,7 @@ class AlignmentDetector {
 
     const files = [];
     const ignoreDirs = ['node_modules', 'dist', '.git', '.turbo', 'coverage', '.next'];
-    const ignoreFiles = ['.continuous-improvement-state.json', 'package-lock.json'];
+    const ignoreFiles = ['.continuous-improvement-state.json', 'pnpm-lock.yaml'];
 
     try {
       const entries = fs.readdirSync(dir);

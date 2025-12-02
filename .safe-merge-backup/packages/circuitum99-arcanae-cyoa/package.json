@@ -41,7 +41,7 @@
   "license": "CC0-1.0",
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:20.676Z",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "Circuitum99 Arcanae Cyoa",
     "symbol": "⊙",

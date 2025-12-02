@@ -1,27 +1,27 @@
 # Workspace Integration Status
 
-Generated: 2025-12-01T03:26:48.332Z
+Generated: 2025-12-01T21:21:25.790Z
 
 ## Workspace Summary
 
 ### cathedral-real
 - **Type**: real
-- **Packages**: 145
-- **Apps**: 32
+- **Packages**: 131
+- **Apps**: 0
 - **Needs Update**: Yes
 - **Priority**: medium
 
 ### cathedral-fixed-clean
 - **Type**: fixed
-- **Packages**: 155
-- **Apps**: 26
+- **Packages**: 131
+- **Apps**: 0
 - **Needs Update**: Yes
 - **Priority**: medium
 
 ### cathedral-master-deployment
 - **Type**: deployment
-- **Packages**: 23
-- **Apps**: 1
+- **Packages**: 131
+- **Apps**: 22
 - **Needs Update**: No
 - **Priority**: low
 

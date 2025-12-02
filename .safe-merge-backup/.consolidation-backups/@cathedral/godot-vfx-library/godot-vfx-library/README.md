@@ -27,7 +27,7 @@ git clone https://github.com/Bekalah/cathedral.git
 cd cathedral/packages/godot-vfx-library
 
 # Export assets
-pnpm run export
+ppnpm run export
 ```
 
 ### **Method 2: Godot Asset Library**

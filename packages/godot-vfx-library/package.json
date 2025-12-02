@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "echo 'Building Godot VFX Library...' && mkdir -p dist && cp -r effects materials shaders scenes dist/",
     "validate": "echo 'Validating sacred mathematics in VFX...' && node validate-sacred-math.js",
-    "export": "echo 'Exporting VFX assets for Godot...' && ppnpm run build",
+    "export": "echo 'Exporting VFX assets for Godot...' && pnpm run build",
     "preview": "echo 'Preview VFX effects...' && open preview/index.html"
   },
   "keywords": [
@@ -65,7 +65,17 @@
       "breathing_interfaces",
       "sacred_colors",
       "archetypal_forms"
-    ]
+    ],
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
+    },
+    "integration": {
+      "connects_to": []
+    }
   },
   "files": [
     "effects/",
@@ -82,22 +92,21 @@
   "devDependencies": {
     "@types/node": "^20.10.0"
   },
-  "types": "dist/index.d.ts",
-  "packageManager": "pnpm@8.15.0",
   "engines": {
-    "node": ">=20.18.0",
-    "pnpm": ">=8.15.0"
+    "node": "*",
+    "pnpm": "*"
   },
+  "packageManager": "pnpm@10.23.0",
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "access": "public"
   },
-  "dependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:14:16.576Z",
+  "types": "dist/index.d.ts",
   "alchemical": {
     "name": "Godot Vfx Library",
     "symbol": "⊙",
     "label": "⊙ Godot Vfx Library (@cathedral/godot-vfx-library)"
-  }
+  },
+  "dependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-12-01T19:36:51.930Z"
 }

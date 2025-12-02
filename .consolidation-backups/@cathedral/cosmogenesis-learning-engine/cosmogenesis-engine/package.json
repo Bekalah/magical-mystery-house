@@ -1,0 +1,48 @@
+{
+  "name": "@cathedral/cosmogenesis-learning-engine",
+  "version": "2.0.0",
+  "description": "Cosmogenesis Learning Engine - AI-powered mystical education with sacred geometry and gem tower integration",
+  "author": "Rebecca Lemke",
+  "license": "Copyright Rebecca Lemke, All Rights Reserved",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "clean": "rm -rf dist node_modules/.vite"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@react-three/fiber": "^8.17.10",
+    "@react-three/drei": "^9.114.3",
+    "three": "^0.169.0",
+    "@cathedral/synthesis-engine": "workspace:*",
+    "@cathedral/three-engine": "workspace:*",
+    "@cathedral/codex-musical-system": "workspace:*",
+    "@cathedral/sacred-geometry-core": "workspace:*",
+    "@cathedral/mystical-data-unified": "workspace:*",
+    "@cathedral/gem-tower-engine": "workspace:*",
+    "@cathedral/fusion-kink-generator": "workspace:*",
+    "@cathedral/smooth-movement-system": "workspace:*",
+    "@cathedral/portal-system": "workspace:*",
+    "zustand": "^5.0.1",
+    "framer-motion": "^11.11.11",
+    "tone": "^14.7.77"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.169.0",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^6.0.1",
+    "eslint": "^8.54.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5"
+  }
+}

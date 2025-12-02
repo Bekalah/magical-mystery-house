@@ -16,10 +16,10 @@ const __dirname = path.dirname(__filename);
 const BASE_DIR = path.resolve(__dirname, '..');
 
 /**
- * Setup pnpm publishing for packages
+ * Setup ppnpm publishing for packages
  */
 function setupNpmPublishing() {
-  console.log('📦 Setting up pnpm publishing...\n');
+  console.log('📦 Setting up ppnpm publishing...\n');
 
   const packagesDir = path.join(BASE_DIR, 'packages');
   const packages = fs.readdirSync(packagesDir)
@@ -83,7 +83,7 @@ function setupNpmPublishing() {
     }
   }
 
-  console.log(`\n✅ Updated ${updated} packages for pnpm publishing\n`);
+  console.log(`\n✅ Updated ${updated} packages for ppnpm publishing\n`);
 }
 
 /**
@@ -93,7 +93,7 @@ function createNpmrc() {
   console.log('📝 Creating .npmrc...\n');
 
   const npmrcPath = path.join(BASE_DIR, '.npmrc');
-  const npmrcContent = `# pnpm publishing configuration
+  const npmrcContent = `# ppnpm publishing configuration
 # Public access for all packages
 access=public
 
@@ -214,13 +214,13 @@ function setupGitHubPages() {
     <div class="feature">
       <h2>🚀 Getting Started</h2>
       <pre><code># Install
-ppnpm install
+pppnpm install
 
 # Build
-ppnpm run build
+pppnpm run build
 
 # Run
-ppnpm run dev</code></pre>
+pppnpm run dev</code></pre>
     </div>
 
     <div class="feature">
@@ -298,9 +298,9 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
-      - run: ppnpm install
-      - run: ppnpm run build
-      - run: ppnpm publish --access public
+      - run: pppnpm install
+      - run: pppnpm run build
+      - run: pppnpm publish --access public
         env:
           NODE_AUTH_TOKEN: \${{ secrets.NPM_TOKEN }}
 `;
@@ -352,7 +352,7 @@ async function main() {
   console.log('   2. Configure GitHub Pages in repository settings');
   console.log('   3. Connect Vercel: vercel login && vercel');
     console.log('   4. Create web interface (Next.js app)');
-  console.log('   6. Publish packages: ppnpm run publish:packages');
+  console.log('   6. Publish packages: pppnpm run publish:packages');
   console.log('\n✅ Ready to publish!');
 }
 

@@ -258,7 +258,7 @@
 - **Scope:** `@cathedral/` (optional)
 - **Versioning:** Semantic versioning
 - **Build:** TypeScript compilation
-- **Publish:** `ppnpm publish`
+- **Publish:** `pppnpm publish`
 
 ### Documentation Site
 - **Generator:** VitePress or Docusaurus

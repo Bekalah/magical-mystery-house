@@ -291,9 +291,9 @@ async function main() {
     logger.info('🟢 Experiment is currently running!');
   } else {
     logger.info('💡 To start the experiment:');
-    logger.info('   ppnpm run experiment:start');
+    logger.info('   pppnpm run experiment:start');
     logger.info('   or');
-    logger.info('   ppnpm run experiment:daemon');
+    logger.info('   pppnpm run experiment:daemon');
   }
 }
 

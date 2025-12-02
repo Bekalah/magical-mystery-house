@@ -1,6 +1,6 @@
-# @cathedral/liber-arcanae Documentation
+# @cathedral-real/liber-arcanae-tools Documentation
 
-Liber Arcanae Codex Abyssiae - 78-card tarot system mirroring Codex 144:99
+Liber Arcanae Tools - Professional Creative Canvas for Circuitum 99
 
 ## API Reference
 

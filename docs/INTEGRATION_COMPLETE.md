@@ -67,9 +67,9 @@ cathedral-master-deployment/
 ## 🔄 Updated Tools
 
 ### New Commands
-- `ppnpm run update:references` - Update all file references
-- `ppnpm run create:reference-map` - Create reference map
-- `ppnpm run consolidate:docs` - Consolidate documentation
+- `pnpm run update:references` - Update all file references
+- `pnpm run create:reference-map` - Create reference map
+- `pnpm run consolidate:docs` - Consolidate documentation
 
 ### Updated Tools
 - All tools now use consolidated file paths

@@ -12,5 +12,6 @@
     "name": "Synth Design Math",
     "symbol": "⊙",
     "label": "⊙ Synth Design Math (synth-design-math-core)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

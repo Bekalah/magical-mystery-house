@@ -12,7 +12,7 @@
     "ocr": "node dist/processor/ocrProcessor.js",
     "validate": "node dist/validator/qualityValidator.js",
     "export": "node dist/export/codexExporter.js",
-    "test": "pnpm run validate:quality && pnpm run validate:sacred-math"
+    "test": "pppnpm run validate:quality && pppnpm run validate:sacred-math"
   },
   "dependencies": {
     "@cathedral/codex-144-99": "workspace:*",
@@ -59,7 +59,7 @@
   "license": "CC0-1.0",
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:30.322Z",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "Unified Codex Extractor",
     "symbol": "⊙",

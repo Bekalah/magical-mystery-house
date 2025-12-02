@@ -45,7 +45,7 @@
     "clean": "rm -rf dist",
     "setup": "tsc --declaration",
     "status": "node scripts/status.js",
-    "validate": "npm run test && npm run lint"
+    "validate": "ppnpm run test && ppnpm run lint"
   },
   "keywords": [
     "cathedral",
@@ -84,5 +84,5 @@
   },
   "consolidated": true,
   "consolidatedAt": "2025-11-30T19:53:36.235Z",
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@10.23.0"
 }

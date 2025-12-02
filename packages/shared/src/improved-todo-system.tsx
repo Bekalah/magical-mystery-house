@@ -424,3 +424,137 @@ export const improvedTODOStyles = `
 }
 `;
 
+100%);
+  border-radius: 0;
+}
+
+.task-shape-hexagon {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%);
+}
+
+.task-shape-star {
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.task-geometry-pattern {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-image: var(--task-geometry);
+  pointer-events: none;
+}
+
+.task-content h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1.25rem;
+}
+
+.task-content p {
+  margin: 0 0 1rem 0;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+.task-meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.task-priority,
+.task-status,
+.task-energy {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.task-priority[data-priority="urgent"] {
+  background: #FF6B6B;
+  color: white;
+}
+
+.task-priority[data-priority="high"] {
+  background: #4ECDC4;
+  color: white;
+}
+
+.task-priority[data-priority="medium"] {
+  background: #FFE66D;
+  color: #2c3e50;
+}
+
+.task-priority[data-priority="low"] {
+  background: #95E1D3;
+  color: #2c3e50;
+}
+
+.task-status[data-status="completed"] {
+  background: #A8E6CF;
+  color: #2c3e50;
+}
+
+.task-status[data-status="in_progress"] {
+  background: #FFD3A5;
+  color: #2c3e50;
+}
+
+.task-status[data-status="blocked"] {
+  background: #FF6B6B;
+  color: white;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.task-actions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--task-color);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.task-actions button:hover:not(:disabled) {
+  opacity: 0.8;
+}
+
+.task-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.todo-suggestions {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+}
+
+.todo-suggestions h3 {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+}
+
+.todo-suggestions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-suggestions li {
+  padding: 0.5rem 0;
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+`;
+

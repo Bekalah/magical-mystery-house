@@ -84,7 +84,7 @@ git clone https://github.com/Bekalah/cathedral.git
 cd cathedral/packages/godot-design-studio
 
 # Export for Godot
-pnpm run export
+ppnpm run export
 ```
 
 ### **Method 2: Godot Asset Library**
@@ -312,21 +312,21 @@ func _ready():
 # Clone and build
 git clone https://github.com/Bekalah/cathedral.git
 cd cathedral/packages/godot-design-studio
-pnpm install
-pnpm run build
-pnpm run validate
+ppnpm install
+ppnpm run build
+ppnpm run validate
 ```
 
 ### **Testing Design Tools**
 ```bash
 # Validate all design tools
-pnpm run test
+ppnpm run test
 
 # Check trauma safety compliance
-pnpm run validate:trauma-safety
+ppnpm run validate:trauma-safety
 
 # Verify sacred proportions
-pnpm run validate:sacred-math
+ppnpm run validate:sacred-math
 ```
 
 ---

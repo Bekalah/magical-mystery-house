@@ -64,7 +64,7 @@ run_experiment() {
             # Try to build first
             echo "📦 Building TypeScript..." >> "$LOG_FILE"
             cd "$BASE_DIR"
-            ppnpm run build >> "$LOG_FILE" 2>&1 || {
+            pppnpm run build >> "$LOG_FILE" 2>&1 || {
                 echo -e "${RED}❌ Build failed${NC}"
                 sleep 60
                 continue

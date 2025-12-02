@@ -24,7 +24,7 @@
 **Output:**
 - `docs/ALIGNMENT_REPORT.json` - Detailed alignment report
 
-**Run**: `ppnpm run detect:alignment`
+**Run**: `pppnpm run detect:alignment`
 
 ### 2. Alignment Cleaner (`tools/alignment-cleaner.mjs`)
 
@@ -41,8 +41,8 @@
 - ✅ Logs all changes
 
 **Run**: 
-- `ppnpm run clean:alignment` - Fix misaligned content
-- `ppnpm run clean:alignment:dry-run` - Preview fixes without applying
+- `pppnpm run clean:alignment` - Fix misaligned content
+- `pppnpm run clean:alignment:dry-run` - Preview fixes without applying
 
 ### 3. Experiment Integration
 
@@ -119,22 +119,22 @@
 
 **Detect alignment issues:**
 ```bash
-ppnpm run detect:alignment
+pppnpm run detect:alignment
 ```
 
 **Preview fixes (dry-run):**
 ```bash
-ppnpm run clean:alignment:dry-run
+pppnpm run clean:alignment:dry-run
 ```
 
 **Fix misaligned content:**
 ```bash
-ppnpm run clean:alignment
+pppnpm run clean:alignment
 ```
 
 **Start experiment with alignment checking:**
 ```bash
-ppnpm run improve:continuous
+pppnpm run improve:continuous
 ```
 
 The experiment will automatically:

@@ -21,37 +21,37 @@ const BASE_DIR = path.join(__dirname, '..');
 const MAINTENANCE_TASKS = {
   'validate': {
     description: 'Validate system setup and dependencies',
-    command: 'ppnpm run validate:setup',
+    command: 'pppnpm run validate:setup',
     critical: true
   },
   'health': {
     description: 'Run comprehensive health check',
-    command: 'ppnpm run health:check',
+    command: 'pppnpm run health:check',
     critical: true
   },
   'dependencies': {
     description: 'Check and update dependencies',
-    command: 'ppnpm run check:dependencies',
+    command: 'pppnpm run check:dependencies',
     critical: false
   },
   'quality': {
     description: 'Check code quality',
-    command: 'ppnpm run check:quality',
+    command: 'pppnpm run check:quality',
     critical: false
   },
   'build': {
     description: 'Build all packages',
-    command: 'ppnpm run build',
+    command: 'pppnpm run build',
     critical: true
   },
   'test': {
     description: 'Run tests (if available)',
-    command: 'ppnpm run test',
+    command: 'pppnpm run test',
     critical: false
   },
   'consistency': {
     description: 'Check code consistency',
-    command: 'ppnpm run check:consistency',
+    command: 'pppnpm run check:consistency',
     critical: false
   }
 };

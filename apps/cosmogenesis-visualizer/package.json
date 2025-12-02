@@ -11,10 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:01.894Z",
+  "consolidatedAt": "2025-12-01T21:19:39.538Z",
   "alchemical": {
     "name": "Cosmogenesis Visualizer",
     "symbol": "⊙",
     "label": "⊙ Cosmogenesis Visualizer (cosmogenesis-visualizer)"
+  },
+  "packageManager": "pnpm@10.23.0",
+  "engines": {
+    "node": "*"
   }
 }

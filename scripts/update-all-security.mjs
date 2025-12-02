@@ -231,12 +231,12 @@ export class UpdateAllSecurity {
       }
 
       if (!packageJson.scripts['security:check']) {
-        packageJson.scripts['security:check'] = 'ppnpm audit && ppnpm run security:audit';
+        packageJson.scripts['security:check'] = 'pnpm audit && pnpm run security:audit';
         updated = true;
       }
 
       if (!packageJson.scripts['security:fix']) {
-        packageJson.scripts['security:fix'] = 'ppnpm audit --fix';
+        packageJson.scripts['security:fix'] = 'pnpm audit --fix';
         updated = true;
       }
 

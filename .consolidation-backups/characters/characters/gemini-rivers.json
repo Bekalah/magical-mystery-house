@@ -1,0 +1,54 @@
+{
+  "id": "gemini-rivers",
+  "name": "Gemini Rivers",
+  "archetype": "twin_rivers",
+  "connected_goddess": "Boann",
+  "factions": ["Order of the Living Waters", "Trinity Bridge"],
+  "connected_gods_goddesses": ["Boann", "Brigid", "Danu"],
+  "connected_taras": ["Green Tara", "White Tara"],
+  "codex_144_99": [
+    {
+      "node": 90,
+      "slug": "gemini-initiation",
+      "title": "Gemini Initiation",
+      "layer": "Spring Air",
+      "numerology": 90,
+      "geometry": "Twin Spiral",
+      "element": "Air",
+      "planet": "Mercury",
+      "chakra": "Throat",
+      "color_ray": "#B0E0E6",
+      "frequency_hz": 432.0,
+      "tarot_correspondence": ["The Lovers"],
+      "crystal": "Aquamarine",
+      "symbol": "♊",
+      "teaching_function": "Duality, communication, and flow",
+      "related_gates": [1, 22, 99],
+      "guardian": "The Twin Guide"
+    }
+  ],
+  "liber_arcanae": [
+    {
+      "major_arcana": "high_priestess",
+      "faculty_profile": "Professor Emeritus of Hidden Knowledge",
+      "department": "Department of Lunar Mysteries",
+      "specializations": ["Psychic Vision", "Lunar Mysteries", "Intuitive Navigation", "Sacred Silence"],
+      "element": "Moon",
+      "hebrew_path": "Gimel",
+      "number": 2
+    }
+  ],
+  "cosmogenesis": [
+    {
+      "planet": "Mercury",
+      "consciousness": "Communication-Learning"
+    }
+  ],
+  "crystal_science": ["Aquamarine", "Moonstone"],
+  "sacred_geometry": ["Vesica Piscis", "Twin Spiral"],
+  "healing_grid": ["Reiki River Grid", "Hilma af Klint Chapel"],
+  "art_chapel": ["Hilma af Klint Group", "Fuchs", "Surrealists", "Mystic Artists", "Saints"],
+  "docs": ["/docs/gemini_rivers_pd.txt"],
+  "tags": ["character", "goddess-connected", "twin", "river", "alchemy", "esoteric", "nd-friendly"],
+  "lock": true
+}

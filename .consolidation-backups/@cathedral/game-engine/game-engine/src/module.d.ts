@@ -1,9 +1,4 @@
 /**
- * module.d
- * 
- * @package @cathedral/game-engine
- */
-/**
  * 🏛️✨ CATHEDRAL GAME ENGINE - MODULE DECLARATIONS
  *
  * Module declarations for TypeScript integration

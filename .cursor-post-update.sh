@@ -13,10 +13,10 @@ echo ""
 cd "$(dirname "$0")"
 
 # Run auto-update
-ppnpm run auto:update
+pnpm run auto:update
 
 # Run quick maintenance
-ppnpm run maintain:quick
+pnpm run maintain:quick
 
 echo ""
 echo "✅ Post-update complete - codex is ready to work independently"

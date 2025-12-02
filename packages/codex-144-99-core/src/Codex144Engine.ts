@@ -190,52 +190,125 @@ export class Codex144Engine {
     return `Codex Node ${nodeIndex} - Consciousness Level ${consciousnessLevel}. A manifestation point in the 144:99 lattice.`;
   }
 
+  /**
+   * FIXED & PROTECTED: Generate unified correspondences with all system mappings
+   * 
+   * PROTECTION MARKER: DO NOT REMOVE UNIFIED CORRESPONDENCES
+   * This function contains critical unified correspondence data required for:
+   * - Game integration (codex-to-character mapping)
+   * - Design tools (color palettes, geometries, flows)
+   * - Creative neurodivergent mimic tech
+   * - Master V1 integration
+   * 
+   * Includes: Soyga, I Ching, Kabbalah, Evolutionary Astrology, Solfeggio, Fractal, Fusion Kink
+   * Last Updated: 2025-12-02 - Unified system mappings added and protected
+   */
   private generateCorrespondences(nodeIndex: number, consciousnessLevel: number): Record<string, any> {
-    // Unified correspondences: Soyga, I Ching, Kabbalah, Evolutionary Astrology, Solfeggio, Fractal, Fusion Kink
-    const soygaTable = (nodeIndex % 36) + 1;
-    const ichingHexagram = (nodeIndex % 64) + 1;
-    const kabbalahSephirah = (consciousnessLevel % 10) + 1;
-    const kabbalahPath = consciousnessLevel; // 0-21 maps to 22 Paths
-    const solfeggioFreq = consciousnessLevelToFrequency(consciousnessLevel);
-    const fractalIteration = nodeIndex;
-    const fusionKinkCard = (nodeIndex % 78) + 1;
-    
-    return {
+    // Core properties (always included)
+    const core = {
       arcana: consciousnessLevel,
       node: nodeIndex,
-      frequency: solfeggioFreq,
+      frequency: consciousnessLevelToFrequency(consciousnessLevel),
       ratio: SACRED_MATH.CATHEDRAL_RATIO,
-      phi: SACRED_MATH.PHI,
-      // Unified system correspondences
+      phi: SACRED_MATH.PHI
+    };
+    
+    // PROTECTED: Generate unified correspondences inline (protected from import failures)
+    const unified = this.generateUnifiedCorrespondencesInline(nodeIndex, consciousnessLevel);
+    
+    // PROTECTED: Return merged correspondences with all unified system mappings
+    // DO NOT REMOVE these properties - they are required for integration
+    return {
+      ...core,
+      // PROTECTED: Unified system mappings - DO NOT REMOVE
+      soyga: unified.soyga,
+      iChing: unified.iChing,
+      kabbalah: unified.kabbalah,
+      evolutionaryAstrology: unified.evolutionaryAstrology,
+      solfeggio: unified.solfeggio,
+      fractal: unified.fractal,
+      fusionKink: unified.fusionKink,
+      // Flow and aesthetic (high-end Japanese tech) - PROTECTED
+      flow: this.calculateFlow(unified),
+      aesthetic: this.determineAesthetic(unified)
+    };
+  }
+  
+  /**
+   * PROTECTED: Fallback unified correspondences generator
+   * This ensures unified mappings are always available even if external imports fail
+   * DO NOT REMOVE - Required for proper codex functionality
+   */
+  private generateUnifiedCorrespondencesInline(nodeIndex: number, consciousnessLevel: number): any {
+    const position = nodeIndex % 144;
+    const level = consciousnessLevel % 22;
+    
+    return {
       soyga: {
-        table: soygaTable,
-        planetary: ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn'][nodeIndex % 7]
+        table: ['A', 'B', 'C', 'D'][Math.floor(position / 36)],
+        letter: String.fromCharCode(65 + (position % 26)),
+        number: (position % 36) + 1,
+        color: `#${((position * 7) % 16777215).toString(16).padStart(6, '0')}`
       },
-      iching: {
-        hexagram: ichingHexagram,
-        changing_lines: [nodeIndex % 6 + 1]
+      iChing: {
+        hexagram: ((position * 7 + level * 3) % 64) + 1,
+        trigram: ['☰', '☷', '☳', '☴', '☵', '☲', '☶', '☱'][position % 8],
+        name: `Hexagram ${((position * 7 + level * 3) % 64) + 1}`,
+        meaning: `Harmonious flow at position ${position}`
       },
       kabbalah: {
-        sephirah: kabbalahSephirah,
-        path: kabbalahPath
+        sephira: ['Kether', 'Chokmah', 'Binah', 'Chesed', 'Geburah', 'Tiphereth', 'Netzach', 'Hod', 'Yesod', 'Malkuth'][level % 10],
+        path: (position % 22) + 1,
+        hebrew: 'אבגדהוזסעפצקרשת'[position % 22] || 'א',
+        meaning: `Path of ${['Kether', 'Chokmah', 'Binah', 'Chesed', 'Geburah', 'Tiphereth', 'Netzach', 'Hod', 'Yesod', 'Malkuth'][level % 10]}`
       },
-      astrology: {
-        planetary_node: ['North Node', 'South Node'][nodeIndex % 2],
-        evolution: consciousnessLevel
+      evolutionaryAstrology: {
+        planet: ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'][level % 10],
+        sign: ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'][position % 12],
+        house: (position % 12) + 1,
+        aspect: ['Conjunction', 'Sextile', 'Square', 'Trine', 'Opposition'][level % 5]
       },
       solfeggio: {
-        frequency: solfeggioFreq,
-        hz: solfeggioFreq
+        frequency: [174, 285, 396, 417, 528, 639, 741, 852, 963][level % 9],
+        tone: ['UT', 'RE', 'MI', 'FA', 'SOL', 'LA', 'SI', 'UT', 'RE'][level % 9],
+        color: ['#9B59B6', '#3498DB', '#2ECC71', '#F39C12', '#E74C3C', '#1ABC9C', '#E67E22', '#95A5A6', '#34495E'][level % 9],
+        healing: `Healing frequency for consciousness level ${level}`
       },
       fractal: {
-        iteration: fractalIteration,
-        pattern: ['Mandelbrot', 'Julia', 'Sacred Geometry'][nodeIndex % 3]
+        pattern: ['Mandelbrot', 'Julia', 'IFS', 'L-System', 'Sacred Geometry'][position % 5],
+        depth: Math.floor(position / 28) + 3,
+        signature: `Fractal-${position}-${level}`,
+        sound: [174, 285, 396, 417, 528, 639, 741, 852, 963][level % 9] * (1 + position / 144)
       },
-      fusion_kink: {
-        card: fusionKinkCard,
-        arcana: consciousnessLevel
+      fusionKink: {
+        intensity: (position % 100) / 100,
+        sophistication: (level * 5) / 100,
+        harmony: ((position + level) % 100) / 100,
+        resonance: ((position * level) % 100) / 100
       }
     };
+  }
+  
+  /**
+   * PROTECTED: Calculate flow from unified correspondences
+   * Required for high-end Japanese tech aesthetic
+   */
+  private calculateFlow(unified: any): number {
+    if (!unified || !unified.fusionKink) return 0.5;
+    return (unified.fusionKink.harmony * 0.4 + 
+            unified.fusionKink.sophistication * 0.3 + 
+            unified.fusionKink.resonance * 0.3);
+  }
+  
+  /**
+   * PROTECTED: Determine aesthetic from flow
+   * Required for optimal design flow (harmonious, flowing, minimal, dynamic)
+   */
+  private determineAesthetic(unified: any): string {
+    const flow = this.calculateFlow(unified);
+    return flow > 0.8 ? 'harmonious' :
+           flow > 0.6 ? 'flowing' :
+           flow > 0.4 ? 'minimal' : 'dynamic';
   }
 
   private initializeDepths(): void {
@@ -347,4 +420,3 @@ export class Codex144Engine {
 }
 
 export default Codex144Engine;
-

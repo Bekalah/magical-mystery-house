@@ -18,27 +18,27 @@
     "d3": "^7.8.5",
     "ml-matrix": "^6.10.4",
     "lodash": "^4.17.21",
-    "openai": "^4.28.0",
-    "typescript": "^5.3.0"
+    "@azure/openai": "^1.0.0-beta.12",
+    "@azure/cognitiveservices-computervision": "^8.2.0",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "@types/d3": "^7.4.0",
-    "@types/lodash": "^4.14.202"
+    "@types/lodash": "^4.14.202",
+    "typescript": "^5.3.0"
   },
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": "*",
+    "pnpm": "*"
   },
   "license": "CC0-1.0",
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:51.887Z",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "ppppnpm@10.23.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "alchemical": {
     "name": "Art Generation Node",
     "symbol": "⊙",
     "label": "⊙ Art Generation Node (@cathedral/art-generation-node)"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

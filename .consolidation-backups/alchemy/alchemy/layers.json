@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "description": "Esoteric alchemical layers for Cathedral: gold, silver, copper, mercury, salt, tetragrammatron, crystal science, sacred geometry.",
+    "version": "1.0.0",
+    "nd_safe": true,
+    "healing_focused": true
+  },
+  "layers": [
+    {
+      "name": "Gold",
+      "domain": "Solar illumination, genius, creative will",
+      "associated_archetypes": ["The Sun", "The Magician", "The World"],
+      "crystals": ["Citrine", "Sunstone"],
+      "geometry": ["Dodecagon", "Golden Rectangle"],
+      "healing_function": "Illumination, manifestation, creative power"
+    },
+    {
+      "name": "Silver",
+      "domain": "Lunar intuition, reflection, psychic vision",
+      "associated_archetypes": ["The Moon", "The High Priestess", "The Star"],
+      "crystals": ["Moonstone", "Selenite"],
+      "geometry": ["Vesica Piscis", "Crescent"],
+      "healing_function": "Intuition, psychic healing, dreamwork"
+    },
+    {
+      "name": "Copper",
+      "domain": "Venusian love, beauty, harmony",
+      "associated_archetypes": ["The Empress", "The Lovers", "Temperance"],
+      "crystals": ["Malachite", "Rose Quartz"],
+      "geometry": ["Flower of Life", "Spiral"],
+      "healing_function": "Love, beauty, relationship healing"
+    },
+    {
+      "name": "Mercury",
+      "domain": "Communication, intellect, adaptability",
+      "associated_archetypes": ["The Magician", "Hermit", "Gemini Rivers"],
+      "crystals": ["Aquamarine", "Mercury Quartz"],
+      "geometry": ["Caduceus", "Twin Spiral"],
+      "healing_function": "Communication, learning, adaptability"
+    },
+    {
+      "name": "Salt",
+      "domain": "Grounding, preservation, materialization",
+      "associated_archetypes": ["The Emperor", "The Hierophant", "Pentacles Suit"],
+      "crystals": ["Halite", "Black Tourmaline"],
+      "geometry": ["Cube", "Square"],
+      "healing_function": "Grounding, protection, material support"
+    },
+    {
+      "name": "Tetragrammatron",
+      "domain": "Divine name, sacred integration, four elements",
+      "associated_archetypes": ["All Four Worlds", "Unity Point", "The Fool"],
+      "crystals": ["Clear Quartz", "Obsidian"],
+      "geometry": ["Tetrahedron", "Cross"],
+      "healing_function": "Integration, wholeness, divine connection"
+    }
+  ]
+}

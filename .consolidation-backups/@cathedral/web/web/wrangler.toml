@@ -1,0 +1,31 @@
+name = "avalon-labs"
+compatibility_date = "2024-01-01"
+
+[build]
+command = "pnpm turbo run build --filter=apps/web"
+cwd = "../.."
+watch_dir = "."
+
+[build.upload]
+format = "modules"
+
+[[build.upload.rules]]
+type = "ESModule"
+globs = ["**/*.js"]
+
+[vars]
+NODE_VERSION = "18"
+
+# Environment variables for production
+[env.production.vars]
+NODE_ENV = "production"
+
+# Cloudflare Pages Functions (optional)
+[functions]
+directory = "functions/"
+
+# KV storage for node state (optional)
+[[kv_namespaces]]
+binding = "AVALON_NODES"
+id = "avalon_nodes_kv"
+preview_id = "avalon_nodes_kv_preview"

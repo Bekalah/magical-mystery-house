@@ -239,10 +239,10 @@ themes.forEach(theme => {
 
 Run validation tools:
 ```bash
-ppnpm run validate:sacred-math
-ppnpm run validate:sound-math
-ppnpm run validate:design-math
-ppnpm run validate:game-math
+pnpm run validate:sacred-math
+pnpm run validate:sound-math
+pnpm run validate:design-math
+pnpm run validate:game-math
 ```
 
 ### Integration Issues

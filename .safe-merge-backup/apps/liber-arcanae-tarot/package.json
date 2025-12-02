@@ -185,5 +185,6 @@
     "name": "@Bekalah/Liber Arcanae Tarot",
     "symbol": "⊙",
     "label": "⊙ @Bekalah/Liber Arcanae Tarot (@bekalah/liber-arcanae-tarot)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

@@ -58,13 +58,13 @@ All applications must consume data from the centralized REGISTRY system:
 - **Package Manager Lock**: All package.json must specify `"packageManager": "pnpm@8.0.0"` (or latest stable)
 
 **Security Auditing:**
-- Run `ppnpm run security:audit` regularly to check for unsafe tool usage
-- Run `ppnpm run security:check` for full security audit (includes dependency vulnerabilities)
+- Run `pnpm run security:audit` regularly to check for unsafe tool usage
+- Run `pnpm run security:check` for full security audit (includes dependency vulnerabilities)
 - All repos must have `scripts/security-audit.mjs` tool
-- Fix vulnerabilities immediately using `ppnpm audit --fix`
+- Fix vulnerabilities immediately using `pnpm audit --fix`
 
 **Dependency Security:**
-- Regular `ppnpm audit` checks required
+- Regular `pnpm audit` checks required
 - Override vulnerable dependencies in package.json when needed
 - Use pnpm overrides to enforce secure versions
 - Monitor for supply chain vulnerabilities

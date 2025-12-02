@@ -15,7 +15,7 @@
     "transition"
   ],
   "author": "Rebecca Lemke",
-  "license": "CC0-1.0",
+  "license": "Copyright Rebecca Lemke, All Rights Reserved",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -25,19 +25,5 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/portal-system"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/portal-system",
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
-  },
-  "dependencies": {},
-  "devDependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:55.480Z",
-  "packageManager": "pnpm@8.0.0",
-  "alchemical": {
-    "name": "Portal System",
-    "symbol": "⊙",
-    "label": "⊙ Portal System (@cathedral/portal-system)"
-  }
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/portal-system"
 }

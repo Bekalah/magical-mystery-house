@@ -16,5 +16,6 @@
     "name": "Visual Systems Hub",
     "symbol": "⊙",
     "label": "⊙ Visual Systems Hub (visual-systems-hub)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

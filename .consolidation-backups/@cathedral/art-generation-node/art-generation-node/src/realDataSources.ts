@@ -1,7 +1,3 @@
-/**
- * @license CC0-1.0 - Public Domain
- */
-
 import { RealWorldSource, PatternData, ArtStyle } from './types';
 
 export const SACRED_BOOKS_DATA: Record<string, RealWorldSource> = {

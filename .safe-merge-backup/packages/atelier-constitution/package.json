@@ -15,7 +15,7 @@
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "Atelier Constitution",
     "symbol": "⊙",

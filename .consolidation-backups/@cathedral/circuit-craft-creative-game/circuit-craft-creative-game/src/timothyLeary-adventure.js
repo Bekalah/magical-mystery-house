@@ -1,7 +1,3 @@
-/**
- * @license CC0-1.0 - Public Domain
- */
-
 wa/**
  * 🌈🧠🌀 TIMOTHY LEARY'S CIRCUIT CRAFT: PSYCHEDELIC ARCHETYPE ADVENTURE
  *

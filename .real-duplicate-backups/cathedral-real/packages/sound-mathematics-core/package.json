@@ -12,5 +12,6 @@
     "name": "Sound Mathematics",
     "symbol": "⊙",
     "label": "⊙ Sound Mathematics (sound-mathematics-core)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

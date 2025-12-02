@@ -10,20 +10,17 @@
   },
   "dependencies": {},
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": "*",
+    "pnpm": "*"
   },
   "license": "CC0-1.0",
-  "devDependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:53.761Z",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "ppppnpm@10.23.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "alchemical": {
     "name": "Crystals",
     "symbol": "⊙",
     "label": "⊙ Crystals (@cathedral/crystals)"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

@@ -50,7 +50,7 @@ All package.json files must include:
 
 ```json
 {
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "ppnpm@8.0.0",
   "engines": {
     "node": ">=20.0.0",
     "pnpm": ">=8.0.0"
@@ -79,7 +79,7 @@ All package.json must include:
 {
   "scripts": {
     "security:audit": "node scripts/security-audit.mjs",
-    "security:check": "ppnpm audit && ppnpm run security:audit",
+    "security:check": "ppnpm audit && pppnpm run security:audit",
     "security:fix": "ppnpm audit --fix"
   }
 }
@@ -106,7 +106,7 @@ All `turbo.json` files must include security task:
 ### Regular Audits
 
 - Run `ppnpm audit` weekly
-- Run `ppnpm run security:check` before commits
+- Run `pppnpm run security:check` before commits
 - Fix vulnerabilities immediately
 
 ### Dependency Overrides
@@ -133,7 +133,7 @@ Use pnpm overrides to enforce secure versions:
 ## Compliance
 
 All repositories must:
-1. Pass `ppnpm run security:audit` with no issues
+1. Pass `pppnpm run security:audit` with no issues
 2. Have `.npmrc` with security settings
 3. Have `pnpm-workspace.yaml` (if monorepo)
 4. Have `packageManager` field in package.json

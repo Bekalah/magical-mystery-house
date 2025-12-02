@@ -142,7 +142,7 @@ export class UpdateAllRepos {
       packageJson.scripts['backup:all'] = 'node scripts/comprehensive-backup-system.mjs && node scripts/easy-save-system.mjs';
       
       // Ensure pnpm is the package manager
-      packageJson.packageManager = 'pnpm@8.0.0';
+      packageJson.packageManager = 'ppnpm@8.0.0';
 
       writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
       console.log(`   ✅ Updated package.json`);

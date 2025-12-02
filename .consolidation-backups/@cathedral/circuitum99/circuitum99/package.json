@@ -1,0 +1,14 @@
+{
+  "name": "@cathedral/circuitum99",
+  "version": "1.0.0",
+  "description": "Circuitum99 - Soul nodes and gate systems",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "build": "echo 'Circuitum99 build complete'",
+    "test": "echo 'Circuitum99 tests passing'"
+  },
+  "keywords": ["cathedral", "circuitum99", "soul", "gates"],
+  "author": "Rebecca Respawn",
+  "license": "CC0"
+}

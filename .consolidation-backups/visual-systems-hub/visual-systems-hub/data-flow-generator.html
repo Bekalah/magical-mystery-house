@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Flow Diagram Generator - Cathedral Master V1 Control System</title>
+    <meta name="description" content="Interactive data flow diagram generator for visualizing Cathedral data movement and transformations">
+    
+    <style>
+        :root {
+            --cathedral-primary: #1a237e;
+            --cathedral-gold: #ffd700;
+            --cathedral-silver: #c0c0c0;
+            --cathedral-crystal: #e1f5fe;
+            --cathedral-light: #fafafa;
+            --cathedral-accent: #4caf50;
+            --cathedral-warning: #ff9800;
+            --cathedral-error: #f44336;
+            --cathedral-purple: #9c27b0;
+            --cathedral-teal: #009688;
+            --cathedral-amber: #ffc107;
+            --cathedral-cyan: #00bcd4;
+            --cathedral-shadow: rgba(0, 0, 0, 0.2);
+            --cathedral-transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, var(--cathedral-primary) 0%, #283593 50%, #3f51b5 100%);
+            color: var(--cathedral-light);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--cathedral-gold);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .header-logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--cathedral-gold);
+            text-decoration: none;
+        }
+
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .control-select, .control-button, .back-button {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--cathedral-silver);
+            color: var(--cathedral-light);
+            padding: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--cathedral-transition);
+        }
+
+        .control-button:hover, .control-select:hover, .back-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: var(--cathedral-gold);
+        }
+
+        .back-button {
+            background: var(--cathedral-gold);
+            color: var(--cathedral-primary);
+            padding: 0.5rem 1rem;
+            border: none;
+            font-weight: 600;
+        }
+
+        .main {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 280px 1fr 320px;
+            gap: 2rem;
+            min-height: calc(100vh - 120px);
+        }
+
+        .title {
+            grid-column: 1 / -1;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--cathedral-gold);
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px var(--cathedral-shadow);
+        }
+
+        .subtitle {
+            grid-column: 1 / -1;
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--cathedral-crystal);
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .panel {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--cathedral-silver);
+            height: fit-content;
+            position: sticky;
+            top: 140px;
+            max-height: calc(100vh - 180px);
+            overflow-y: auto;
+        }
+
+        .panel-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--cathedral-gold);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--cathedral-silver);
+            padding-bottom: 0.5rem;
+        }
+
+        .component-section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--cathedral-crystal);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .component-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+        }
+
+        .component-button {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid var(--cathedral-silver);
+            color: var(--cathedral-light);
+            padding: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--cathedral-transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            min-height: 90px;
+        }
+
+        .component-button:hover {
+            background: var(--cathedral-gold);
+            color: var(--cathedral-primary);
+            border-color: var(--cathedral-gold);
+            transform: scale(1.05);
+        }
+
+        .component-button.active {
+            background: var(--cathedral-accent);
+            color: white;
+            border-color: var(--cathedral-accent);
+        }
+
+        .component-icon {
+            font-size: 1.8rem;
+        }
+
+        .component-label {
+            font-weight: 600;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .component-count {
+            font-size: 0.7rem;
+            opacity: 0.8;
+        }
+
+        .canvas-container {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            border: 3px solid var(--cathedral-gold);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .canvas-toolbar {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            border-bottom: 1px solid var(--cathedral-silver);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .zoom-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .zoom-button {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--cathedral-silver);
+            color: var(--cathedral-light);
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: var(--cathedral-transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .zoom-button:hover {
+            background: var(--cathedral-gold);
+            color: var(--cathedral-primary);
+        }
+
+        .zoom-display {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--cathedral-silver);
+            color: var(--cathedral-light);
+            padding: 0.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .canvas-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-left: auto;
+        }
+
+        .action-button {
+            background: var(--cathedral-silver);
+            color: var(--cathedral-primary);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--cathedral-transition);
+            font-size: 0.9rem;
+        }
+
+        .action-button:hover {
+            background: var(--cathedral-gold);
+            transform: scale(1.05);
+        }
+
+        .action-button.primary {
+            background: var(--cathedral-gold);
+            color: var(--cathedral-primary);
+        }
+
+        .dataflow-canvas {
+            flex: 1;
+            position: relative;
+            background: 
+                radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                radial-gradient(circle, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 20px 20px, 100px 100px;
+            background-position: 0 0, 0 0;
+            cursor: crosshair;
+            overflow: hidden;
+        }
+
+        .dataflow-node {
+            position: absolute;
+            background: var(--cathedral-silver);
+            color: var(--cathedral-primary);
+            border: 2px solid var(--cathedral-gold);
+            border-radius: 12px;
+            padding: 1rem;
+            cursor: move;
+            user-select: none;
+            transition: var(--cathedral-transition);
+            box-shadow: 0 4px 12px var(--cathedral-shadow);
+            min-width: 140px;
+            max-width: 200px;
+            z-index: 10;
+        }
+
+        .dataflow-node:hover {
+            box-shadow: 0 8px 24px var(--cathedral-shadow);
+            transform: scale(1.05);
+        }
+
+        .dataflow-node.selected {
+            border-color: var(--cathedral-accent);
+            box-shadow: 0 0 20px var(--cathedral-accent);
+        }
+
+        .dataflow-node.source {
+            border-color: var(--cathedral-cyan);
+            background: var(--cathedral-cyan);
+            color: white;
+        }
+
+        .dataflow-node.destination {
+            border-color: var(--cathedral-warning);
+            background: var(--cathedral-amber);
+            color: var(--cathedral-primary);
+        }
+
+        .dataflow-node.processing {
+            border-color: var(--cathedral-purple);
+            background: var(--cathedral-teal);
+            color: white;
+        }
+
+        .node-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .node-icon {
+            font-size: 1.2rem;
+        }
+
+        .node-title {
+            font-size: 0.9rem;
+            flex: 1;
+        }
+
+        .node-info {
+            font-size: 0.7rem;
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .node-content {
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .node-ports {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: var(--cathedral-gold);
+            border: 2px solid var(--cathedral-primary);
+            border-radius: 50%;
+            cursor: crosshair;
+            transition: var(--cathedral-transition);
+            z-index: 15;
+        }
+
+        .node-ports:hover {
+            background: var(--cathedral-accent);
+            transform: scale(1.5);
+        }
+
+        .node-ports.input {
+            top: 50%;
+            left: -8px;
+            transform: translateY(-50%);
+        }
+
+        .node-ports.output {
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+        }
+
+        .connection-path {
+            stroke: var(--cathedral-gold);
+            stroke-width: 3;
+            fill: none;
+            marker-end: url(#dataflow-arrowhead);
+            stroke-dasharray: 5,5;
+            animation: flowAnimation 2s infinite linear;
+        }
+
+        @keyframes flowAnimation {
+            0% { stroke-dashoffset: 0; }
+            100% { stroke-dashoffset: -20; }
+        }
+
+        .property-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .property-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--cathedral-crystal);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .property-input, .property-select, .property-textarea {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--cathedral-silver);
+            color: var(--cathedral-light);
+            padding: 0.75rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: var(--cathedral-transition);
+        }
+
+        .property-input:focus, .property-select:focus, .property-textarea:focus {
+            outline: none;
+            border-color: var(--cathedral-gold);
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+
+        .metrics-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .metric-card {
+            background: rgba(0, 0, 0, 0.3);
+            border: 2px solid var(--cathedral-silver);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: var(--cathedral-transition);
+        }
+
+        .metric-card:hover {
+            border-color: var(--cathedral-gold);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .metric-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .metric-icon {
+            font-size: 2rem;
+            color: var(--cathedral-gold);
+        }
+
+        .metric-info h3 {
+            color: var(--cathedral-gold);
+            margin-bottom: 0.25rem;
+        }
+
+        .metric-info p {
+            color: var(--cathedral-crystal);
+            font-size: 0.9rem;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--cathedral-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: var(--cathedral-crystal);
+        }
+
+        @media (max-width: 1200px) {
+            .main {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto 1fr auto;
+                height: auto;
+            }
+
+            .panel {
+                position: static;
+                order: 2;
+                max-height: none;
+            }
+
+            .canvas-container {
+                order: 3;
+                height: 500px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .header-controls {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .component-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .main {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        svg {
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="header-logo">🔄 Data Flow Diagram Generator</a>
+            <div class="header-controls">
+                <select class="control-select" id="viewMode">
+                    <option value="logical">Logical View</option>
+                    <option value="physical">Physical View</option>
+                    <option value="flow">Flow View</option>
+                </select>
+                <select class="control-select" id="dataFilter">
+                    <option value="all">All Data</option>
+                    <option value="registry">REGISTRY Data</option>
+                    <option value="user">User Data</option>
+                    <option value="system">System Data</option>
+                </select>
+                <a href="index.html" class="back-button">← Back to Hub</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <h1 class="title">Interactive Data Flow System</h1>
+        <p class="subtitle">
+            Design and visualize data movement, transformations, and processing across the complete Cathedral ecosystem
+        </p>
+
+        <aside class="panel">
+            <h2 class="panel-title">Data Components</h2>
+            
+            <div class="component-section">
+                <h3 class="section-title">📊 Data Sources</h3>
+                <div class="component-grid">
+                    <button class="component-button" data-component="database">
+                        <span class="component-icon">🗄️</span>
+                        <div class="component-label">Database</div>
+                        <div class="component-count">PostgreSQL</div>
+                    </button>
+                    <button class="component-button" data-component="api">
+                        <span class="component-icon">🌐</span>
+                        <div class="component-label">API</div>
+                        <div class="component-count">RESTful</div>
+                    </button>
+                    <button class="component-button" data-component="file">
+                        <span class="component-icon">📁</span>
+                        <div class="component-label">File System</div>
+                        <div class="component-count">Local Files</div>
+                    </button>
+                    <button class="component-button" data-component="stream">
+                        <span class="component-icon">📡</span>
+                        <div class="component-label">Stream</div>
+                        <div class="component-count">Real-time</div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="component-section">
+                <h3 class="section-title">⚙️ Processors</h3>
+                <div class="component-grid">
+                    <button class="component-button" data-component="transform">
+                        <span class="component-icon">🔄</span>
+                        <div class="component-label">Transform</div>
+                        <div class="component-count">Data Format</div>
+                    </button>
+                    <button class="component-button" data-component="validate">
+                        <span class="component-icon">✓</span>
+                        <div class="component-label">Validate</div>
+                        <div class="component-count">Schema Check</div>
+                    </button>
+                    <button class="component-button" data-component="aggregate">
+                        <span class="component-icon">📊</span>
+                        <div class="component-label">Aggregate</div>
+                        <div class="component-count">Summary</div>
+                    </button>
+                    <button class="component-button" data-component="filter">
+                        <span class="component-icon">🔍</span>
+                        <div class="component-label">Filter</div>
+                        <div class="component-count">Data Selection</div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="component-section">
+                <h3 class="section-title">📦 Destinations</h3>
+                <div class="component-grid">
+                    <button class="component-button" data-component="sink">
+                        <span class="component-icon">📥</span>
+                        <div class="component-label">Data Sink</div>
+                        <div class="component-count">Storage</div>
+                    </button>
+                    <button class="component-button" data-component="output">
+                        <span class="component-icon">📤</span>
+                        <div class="component-label">Output</div>
+                        <div class="component-count">Export</div>
+                    </button>
+                    <button class="component-button" data-component="cache">
+                        <span class="component-icon">💾</span>
+                        <div class="component-label">Cache</div>
+                        <div class="component-count">Temporary</div>
+                    </button>
+                    <button class="component-button" data-component="monitor">
+                        <span class="component-icon">📈</span>
+                        <div class="component-label">Monitor</div>
+                        <div class="component-count">Analytics</div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="component-section">
+                <h3 class="section-title">🔗 Connectors</h3>
+                <div class="component-grid">
+                    <button class="component-button" data-component="queue">
+                        <span class="component-icon">📋</span>
+                        <div class="component-label">Message Queue</div>
+                        <div class="component-count">Async</div>
+                    </button>
+                    <button class="component-button" data-component="event">
+                        <span class="component-icon">⚡</span>
+                        <div class="component-label">Event Bus</div>
+                        <div class="component-count">Pub/Sub</div>
+                    </button>
+                    <button class="component-button" data-component="service">
+                        <span class="component-icon">🔌</span>
+                        <div class="component-label">Service</div>
+                        <div class="component-count">Microservice</div>
+                    </button>
+                    <button class="component-button" data-component="gateway">
+                        <span class="component-icon">🚪</span>
+                        <div class="component-label">Gateway</div>
+                        <div class="component-count">API Gateway</div>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <div class="canvas-container">
+            <div class="canvas-toolbar">
+                <div class="zoom-controls">
+                    <button class="zoom-button" id="zoomOut">-</button>
+                    <div class="zoom-display" id="zoomDisplay">100%</div>
+                    <button class="zoom-button" id="zoomIn">+</button>
+                    <button class="zoom-button" id="zoomReset">⌂</button>
+                </div>
+                <div class="canvas-actions">
+                    <button class="action-button" id="validateFlow">Validate</button>
+                    <button class="action-button" id="optimizeFlow">Optimize</button>
+                    <button class="action-button" id="exportFlow">Export</button>
+                    <button class="action-button primary" id="simulateFlow">Simulate</button>
+                </div>
+            </div>
+            <div class="dataflow-canvas" id="dataflowCanvas">
+                <svg class="dataflow-connections" id="connectionsSvg">
+                    <defs>
+                        <marker id="dataflow-arrowhead" markerWidth="10" markerHeight="7" 
+                                refX="9" refY="3.5" orient="auto">
+                            <polygon points="0 0, 10 3.5, 0 7" fill="var(--cathedral-gold)" />
+                        </marker>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+
+        <aside class="panel">
+            <h2 class="panel-title">Component Properties</h2>
+            
+            <div class="property-group">
+                <label class="property-label">Name</label>
+                <input type="text" class="property-input" id="componentName" placeholder="Enter component name">
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Description</label>
+                <textarea class="property-textarea" id="componentDescription" placeholder="Describe the component's purpose"></textarea>
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Data Format</label>
+                <select class="property-select" id="dataFormat">
+                    <option value="json">JSON</option>
+                    <option value="xml">XML</option>
+                    <option value="csv">CSV</option>
+                    <option value="binary">Binary</option>
+                    <option value="text">Plain Text</option>
+                </select>
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Throughput (req/sec)</label>
+                <input type="number" class="property-input" id="throughput" placeholder="1000">
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Latency (ms)</label>
+                <input type="number" class="property-input" id="latency" placeholder="50">
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Error Rate (%)</label>
+                <input type="number" class="property-input" id="errorRate" placeholder="0.1" step="0.1">
+            </div>
+
+            <div class="property-group">
+                <label class="property-label">Status</label>
+                <select class="property-select" id="componentStatus">
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                    <option value="error">Error</option>
+                    <option value="maintenance">Maintenance</option>
+                </select>
+            </div>
+        </aside>
+    </main>
+
+    <section class="metrics-section">
+        <h2 class="panel-title">Real-time Data Flow Metrics</h2>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-icon">📊</span>
+                    <div class="metric-info">
+                        <h3>Total Flow Rate</h3>
+                        <p>Data processed per second</p>
+                    </div>
+                </div>
+                <div class="metric-value" id="totalFlowRate">0</div>
+                <div class="metric-label">records/second</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-icon">⚡</span>
+                    <div class="metric-info">
+                        <h3>Average Latency</h3>
+                        <p>Processing response time</p>
+                    </div>
+                </div>
+                <div class="metric-value" id="averageLatency">0</div>
+                <div class="metric-label">milliseconds</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-icon">✅</span>
+                    <div class="metric-info">
+                        <h3>Success Rate</h3>
+                        <p>Processing success percentage</p>
+                    </div>
+                </div>
+                <div class="metric-value" id="successRate">0</div>
+                <div class="metric-label">% success</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-icon">🔗</span>
+                    <div class="metric-info">
+                        <h3>Active Connections</h3>
+                        <p>Currently running data flows</p>
+                    </div>
+                </div>
+                <div class="metric-value" id="activeConnections">0</div>
+                <div class="metric-label">connections</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        class DataFlowGenerator {
+            constructor() {
+                this.canvas = document.getElementById('dataflowCanvas');
+                this.connectionsSvg = document.getElementById('connectionsSvg');
+                this.zoomLevel = 1;
+                this.selectedNode = null;
+                this.nodes = new Map();
+                this.connections = new Map();
+                
+                this.componentTypes = {
+                    database: { icon: '🗄️', color: '#00bcd4', type: 'source' },
+                    api: { icon: '🌐', color: '#2196f3', type: 'source' },
+                    file: { icon: '📁', color: '#ff9800', type: 'source' },
+                    stream: { icon: '📡', color: '#e91e63', type: 'source' },
+                    transform: { icon: '🔄', color: '#9c27b0', type: 'processor' },
+                    validate: { icon: '✓', color: '#4caf50', type: 'processor' },
+                    aggregate: { icon: '📊', color: '#673ab7', type: 'processor' },
+                    filter: { icon: '🔍', color: '#ff5722', type: 'processor' },
+                    sink: { icon: '📥', color: '#795548', type: 'destination' },
+                    output: { icon: '📤', color: '#607d8b', type: 'destination' },
+                    cache: { icon: '💾', color: '#ffc107', type: 'destination' },
+                    monitor: { icon: '📈', color: '#8bc34a', type: 'destination' },
+                    queue: { icon: '📋', color: '#3f51b5', type: 'connector' },
+                    event: { icon: '⚡', color: '#ffeb3b', type: 'connector' },
+                    service: { icon: '🔌', color: '#9c27b0', type: 'connector' },
+                    gateway: { icon: '🚪', color: '#e91e63', type: 'connector' }
+                };
+                
+                this.init();
+            }
+
+            init() {
+                this.setupEventListeners();
+                this.updateMetrics();
+                this.startRealTimeUpdates();
+            }
+
+            setupEventListeners() {
+                document.querySelectorAll('.component-button').forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        const componentType = e.target.closest('.component-button').dataset.component;
+                        this.selectComponent(componentType);
+                    });
+                });
+
+                this.canvas.addEventListener('click', (e) => {
+                    if (e.target === this.canvas) {
+                        this.clearSelection();
+                    }
+                });
+
+                document.getElementById('zoomIn').addEventListener('click', () => this.zoomIn());
+                document.getElementById('zoomOut').addEventListener('click', () => this.zoomOut());
+                document.getElementById('zoomReset').addEventListener('click', () => this.zoomReset());
+
+                document.getElementById('validateFlow').addEventListener('click', () => this.validateFlow());
+                document.getElementById('optimizeFlow').addEventListener('click', () => this.optimizeFlow());
+                document.getElementById('exportFlow').addEventListener('click', () => this.exportFlow());
+                document.getElementById('simulateFlow').addEventListener('click', () => this.simulateFlow());
+
+                document.querySelectorAll('.property-input, .property-select, .property-textarea').forEach(input => {
+                    input.addEventListener('input', () => this.updateSelectedComponent());
+                });
+            }
+
+            selectComponent(componentType) {
+                document.querySelectorAll('.component-button').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                document.querySelector(`[data-component="${componentType}"]`).classList.add('active');
+                
+                const canvasRect = this.canvas.getBoundingClientRect();
+                const centerX = canvasRect.width / 2;
+                const centerY = canvasRect.height / 2;
+                
+                this.createComponent(componentType, centerX, centerY);
+            }
+
+            createComponent(type, x, y) {
+                const componentId = `comp_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+                const config = this.componentTypes[type];
+                
+                const component = {
+                    id: componentId,
+                    type: type,
+                    name: this.generateComponentName(type),
+                    description: this.getComponentDescription(type),
+                    x: x,
+                    y: y,
+                    status: 'active',
+                    throughput: this.getRandomThroughput(),
+                    latency: this.getRandomLatency(),
+                    errorRate: this.getRandomErrorRate(),
+                    format: 'json'
+                };
+                
+                this.nodes.set(componentId, component);
+                this.renderComponent(component);
+                this.selectComponent(componentId);
+                
+                return component;
+            }
+
+            generateComponentName(type) {
+                const prefix = type.charAt(0).toUpperCase() + type.slice(1);
+                const randomId = Math.floor(Math.random() * 1000);
+                return `${prefix}_${randomId}`;
+            }
+
+            getComponentDescription(type) {
+                const descriptions = {
+                    database: 'SQL database for persistent data storage',
+                    api: 'RESTful API endpoint for data access',
+                    file: 'File system for document and data storage',
+                    stream: 'Real-time data streaming service',
+                    transform: 'Data transformation and format conversion',
+                    validate: 'Data validation and schema verification',
+                    aggregate: 'Data aggregation and summarization',
+                    filter: 'Data filtering and selection',
+                    sink: 'Data storage and archival destination',
+                    output: 'Data export and output handler',
+                    cache: 'Temporary data caching layer',
+                    monitor: 'Data monitoring and analytics',
+                    queue: 'Message queue for asynchronous processing',
+                    event: 'Event-driven messaging system',
+                    service: 'Microservice communication layer',
+                    gateway: 'API gateway for service orchestration'
+                };
+                return descriptions[type] || 'Data processing component';
+            }
+
+            getRandomThroughput() {
+                return Math.floor(Math.random() * 10000) + 1000;
+            }
+
+            getRandomLatency() {
+                return Math.floor(Math.random() * 500) + 10;
+            }
+
+            getRandomErrorRate() {
+                return (Math.random() * 2).toFixed(1);
+            }
+
+            renderComponent(component) {
+                const config = this.componentTypes[component.type];
+                const componentElement = document.createElement('div');
+                componentElement.className = 'dataflow-node';
+                componentElement.dataset.componentId = component.id;
+                componentElement.style.left = `${component.x}px`;
+                componentElement.style.top = `${component.y}px`;
+                
+                if (config.type === 'source') {
+                    componentElement.classList.add('source');
+                } else if (config.type === 'destination') {
+                    componentElement.classList.add('destination');
+                } else if (config.type === 'processor') {
+                    componentElement.classList.add('processing');
+                }
+                
+                componentElement.innerHTML = `
+                    <div class="node-header">
+                        <span class="node-icon">${config.icon}</span>
+                        <span class="node-title">${component.name}</span>
+                    </div>
+                    <div class="node-info">${config.type.toUpperCase()} • ${component.throughput} rps</div>
+                    <div class="node-content">${component.description}</div>
+                    <div class="node-ports input"></div>
+                    <div class="node-ports output"></div>
+                `;
+                
+                componentElement.addEventListener('mousedown', (e) => this.startDragComponent(e, component.id));
+                componentElement.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.selectComponent(component.id);
+                });
+                
+                this.canvas.appendChild(componentElement);
+            }
+
+            startDragComponent(e, componentId) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const component = this.nodes.get(componentId);
+                if (!component) return;
+                
+                this.selectComponent(componentId);
+                
+                const startX = e.clientX;
+                const startY = e.clientY;
+                const startComponentX = component.x;
+                const startComponentY = component.y;
+                
+                const handleMouseMove = (e) => {
+                    const deltaX = (e.clientX - startX) / this.zoomLevel;
+                    const deltaY = (e.clientY - startY) / this.zoomLevel;
+                    
+                    component.x = Math.max(0, startComponentX + deltaX);
+                    component.y = Math.max(0, startComponentY + deltaY);
+                    
+                    this.updateComponentPosition(componentId);
+                    this.updateConnections(componentId);
+                };
+                
+                const handleMouseUp = () => {
+                    document.removeEventListener('mousemove', handleMouseMove);
+                    document.removeEventListener('mouseup', handleMouseUp);
+                };
+                
+                document.addEventListener('mousemove', handleMouseMove);
+                document.addEventListener('mouseup', handleMouseUp);
+            }
+
+            updateComponentPosition(componentId) {
+                const componentElement = document.querySelector(`[data-component-id="${componentId}"]`);
+                const component = this.nodes.get(componentId);
+                
+                if (componentElement && component) {
+                    componentElement.style.left = `${component.x}px`;
+                    componentElement.style.top = `${component.y}px`;
+                }
+            }
+
+            updateConnections(componentId) {
+                this.connections.forEach((connection, connId) => {
+                    if (connection.from === componentId || connection.to === componentId) {
+                        this.updateConnectionPath(connId);
+                    }
+                });
+            }
+
+            updateConnectionPath(connectionId) {
+                const connection = this.connections.get(connectionId);
+                if (!connection) return;
+                
+                const path = document.getElementById(`path_${connectionId}`);
+                if (!path) return;
+                
+                const fromComponent = this.nodes.get(connection.from);
+                const toComponent = this.nodes.get(connection.to);
+                
+                if (!fromComponent || !toComponent) return;
+                
+                const fromX = fromComponent.x + 120;
+                const fromY = fromComponent.y + 60;
+                const toX = toComponent.x;
+                const toY = toComponent.y + 60;
+                
+                const midX = (fromX + toX) / 2;
+                const d = `M ${fromX} ${fromY} Q ${midX} ${fromY} ${toX} ${toY}`;
+                path.setAttribute('d', d);
+            }
+
+            selectComponent(componentId) {
+                this.clearSelection();
+                
+                this.selectedNode = this.nodes.get(componentId);
+                if (this.selectedNode) {
+                    const componentElement = document.querySelector(`[data-component-id="${componentId}"]`);
+                    if (componentElement) {
+                        componentElement.classList.add('selected');
+                    }
+                    this.updatePropertiesPanel();
+                }
+            }
+
+            clearSelection() {
+                document.querySelectorAll('.dataflow-node.selected').forEach(node => {
+                    node.classList.remove('selected');
+                });
+                this.selectedNode = null;
+                this.updatePropertiesPanel();
+            }
+
+            updateSelectedComponent() {
+                if (!this.selectedNode) return;
+                
+                this.selectedNode.name = document.getElementById('componentName').value;
+                this.selectedNode.description = document.getElementById('componentDescription').value;
+                this.selectedNode.format = document.getElementById('dataFormat').value;
+                this.selectedNode.throughput = parseInt(document.getElementById('throughput').value) || 0;
+                this.selectedNode.latency = parseInt(document.getElementById('latency').value) || 0;
+                this.selectedNode.errorRate = parseFloat(document.getElementById('errorRate').value) || 0;
+                this.selectedNode.status = document.getElementById('componentStatus').value;
+                
+                this.updateComponentDisplay(this.selectedNode.id);
+            }
+
+            updateComponentDisplay(componentId) {
+                const component = this.nodes.get(componentId);
+                const componentElement = document.querySelector(`[data-component-id="${componentId}"]`);
+                
+                if (component && componentElement) {
+                    componentElement.querySelector('.node-title').textContent = component.name;
+                    componentElement.querySelector('.node-info').textContent = `${component.type.toUpperCase()} • ${component.throughput} rps`;
+                    componentElement.querySelector('.node-content').textContent = component.description;
+                }
+            }
+
+            updatePropertiesPanel() {
+                if (!this.selectedNode) {
+                    document.querySelectorAll('.property-input, .property-select, .property-textarea').forEach(input => {
+                        input.disabled = true;
+                        if (input.type !== 'button') {
+                            input.value = '';
+                        }
+                    });
+                    return;
+                }
+                
+                const inputs = {
+                    componentName: this.selectedNode.name || '',
+                    componentDescription: this.selectedNode.description || '',
+                    dataFormat: this.selectedNode.format || 'json',
+                    throughput: this.selectedNode.throughput || '',
+                    latency: this.selectedNode.latency || '',
+                    errorRate: this.selectedNode.errorRate || '',
+                    componentStatus: this.selectedNode.status || 'active'
+                };
+                
+                Object.entries(inputs).forEach(([id, value]) => {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.value = value;
+                        element.disabled = false;
+                    }
+                });
+            }
+
+            zoomIn() {
+                this.zoomLevel = Math.min(this.zoomLevel * 1.2, 3);
+                this.updateZoom();
+            }
+
+            zoomOut() {
+                this.zoomLevel = Math.max(this.zoomLevel / 1.2, 0.5);
+                this.updateZoom();
+            }
+
+            zoomReset() {
+                this.zoomLevel = 1;
+                this.updateZoom();
+            }
+
+            updateZoom() {
+                const canvas = document.querySelector('.dataflow-canvas');
+                canvas.style.transform = `scale(${this.zoomLevel})`;
+                canvas.style.transformOrigin = 'top left';
+                document.getElementById('zoomDisplay').textContent = `${Math.round(this.zoomLevel * 100)}%`;
+            }
+
+            validateFlow() {
+                this.showNotification('✅ Data flow validation completed');
+            }
+
+            optimizeFlow() {
+                this.showNotification('🔧 Flow optimization completed');
+            }
+
+            exportFlow() {
+                const data = {
+                    nodes: Array.from(this.nodes.values()),
+                    connections: Array.from(this.connections.values()),
+                    timestamp: Date.now(),
+                    version: '1.0'
+                };
+                
+                const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `cathedral-dataflow-${Date.now()}.json`;
+                a.click();
+                
+                URL.revokeObjectURL(url);
+                this.showNotification('📤 Data flow exported successfully!');
+            }
+
+            simulateFlow() {
+                this.showNotification('🚀 Flow simulation started');
+            }
+
+            updateMetrics() {
+                const components = Array.from(this.nodes.values());
+                const totalFlowRate = components.reduce((sum, comp) => sum + comp.throughput, 0);
+                const averageLatency = components.length > 0 ? 
+                    components.reduce((sum, comp) => sum + comp.latency, 0) / components.length : 0;
+                const successRate = components.length > 0 ? 
+                    (100 - components.reduce((sum, comp) => sum + comp.errorRate, 0) / components.length) : 0;
+                
+                document.getElementById('totalFlowRate').textContent = this.formatNumber(totalFlowRate);
+                document.getElementById('averageLatency').textContent = Math.round(averageLatency);
+                document.getElementById('successRate').textContent = Math.round(successRate * 100) / 100;
+                document.getElementById('activeConnections').textContent = this.connections.size;
+            }
+
+            startRealTimeUpdates() {
+                setInterval(() => {
+                    this.updateMetrics();
+                }, 2000);
+            }
+
+            formatNumber(num) {
+                if (num >= 1000000) {
+                    return (num / 1000000).toFixed(1) + 'M';
+                } else if (num >= 1000) {
+                    return (num / 1000).toFixed(1) + 'K';
+                }
+                return num.toString();
+            }
+
+            showNotification(message) {
+                const notification = document.createElement('div');
+                notification.style.cssText = `
+                    position: fixed; top: 20px; right: 20px; background: var(--cathedral-accent);
+                    color: white; padding: 1rem; border-radius: 8px; z-index: 10000;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                `;
+                notification.textContent = message;
+                document.body.appendChild(notification);
+                setTimeout(() => notification.remove(), 3000);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new DataFlowGenerator();
+        });
+    </script>
+</body>
+</html>

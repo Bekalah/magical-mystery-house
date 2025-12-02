@@ -3,16 +3,6 @@
  * Wrapper and utilities for Cathedral 3D visualizations
  */
 
-/**
- * ⊙ Index
- * 
- * @alchemical Index
- * @element N/A
- * @symbol ⊙
- * 
- * @license CC0-1.0 - Public Domain
- */
-
 export const createScene = (config = {}) => {
   return {
     type: "three-scene",

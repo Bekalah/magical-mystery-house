@@ -114,16 +114,16 @@ The continuous improvement experiment is actively enhancing your entire Cathedra
 
 ```bash
 # Check experiment status
-ppnpm run improve:continuous:status
+pppnpm run improve:continuous:status
 
 # View recent improvements
-ppnpm run insights
+pppnpm run insights
 
 # Check alignment
-ppnpm run detect:alignment
+pppnpm run detect:alignment
 
 # View analytics
-ppnpm run analytics
+pppnpm run analytics
 ```
 
 ## How to Stop
@@ -144,7 +144,7 @@ Until then, it will:
 ## Current Status
 
 **Running**: ✅ Active
-**Last Cycle**: Check with `ppnpm run improve:continuous:status`
+**Last Cycle**: Check with `pppnpm run improve:continuous:status`
 **Total Improvements**: Tracked in state file
 **Quality**: Museum-grade maintained
 **Vision**: Fully integrated

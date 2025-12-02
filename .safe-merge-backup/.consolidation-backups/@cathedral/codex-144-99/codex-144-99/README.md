@@ -26,8 +26,8 @@ The Codex 144:99 system creates a unique game world that blends:
 
 ```bash
 cd packages/codex-library
-npm install
-npm run build
+pnpm install
+pnpm run build
 ```
 
 ### Basic Usage
@@ -57,10 +57,10 @@ console.log(validation.isValid);
 
 ```bash
 # Validate all datasets
-npm run validate
+pnpm run validate
 
 # Search for research sources
-npm run research "sacred geometry"
+pnpm run research "sacred geometry"
 
 # Show node details
 node dist/cli.js node 1
@@ -123,19 +123,19 @@ The system is built on precise mathematical relationships:
 ### Building
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ### Validation
 
 ```bash
-npm run validate
+pnpm run validate
 ```
 
 ### Testing
 
 ```bash
-npm test
+pnpm test
 ```
 
 ## 📚 Research Integration

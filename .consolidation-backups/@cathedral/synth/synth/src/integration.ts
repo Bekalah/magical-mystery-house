@@ -1,7 +1,3 @@
-/**
- * @license CC0-1.0 - Public Domain
- */
-
 // integration.ts - future hooks bridging crystals & archetypes to synth parameters
 import { patchLibrary } from './patchLibrary';
 

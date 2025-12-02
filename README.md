@@ -127,10 +127,10 @@ git clone <repository-url>
 cd cathedral-master-deployment
 
 # Install dependencies
-ppnpm install
+pnpm install
 
 # Build all packages
-ppnpm run build
+pnpm run build
 
 # Generate health map
 node tools/health-map-generator.mjs
@@ -201,17 +201,17 @@ Cathedral improves itself automatically:
 
 Run health check:
 ```bash
-ppnpm run health:check
+pnpm run health:check
 ```
 
 Generate health map:
 ```bash
-ppnpm run health:map
+pnpm run health:map
 ```
 
 Run all debug checks:
 ```bash
-ppnpm run debug:all
+pnpm run debug:all
 ```
 
 ---
@@ -252,3 +252,8 @@ Built with sacred geometry, trauma-aware design, and open access principles.
 
 **Last Updated:** ${new Date().toISOString()}
 
+
+
+## Documentation
+
+See [Wiki](./docs/wiki/index.md) for comprehensive documentation.

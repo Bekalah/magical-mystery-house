@@ -1,0 +1,769 @@
+{
+  "startTime": "2025-12-01T05:02:35.138Z",
+  "endTime": "2025-12-01T13:02:35.578Z",
+  "totalCycles": 95,
+  "successfulCycles": 95,
+  "failedCycles": 0,
+  "cycles": [
+    {
+      "cycle": 1,
+      "startTime": "2025-12-01T05:02:35.219Z",
+      "endTime": "2025-12-01T05:02:45.366Z",
+      "success": true,
+      "duration": 10221,
+      "error": null
+    },
+    {
+      "cycle": 2,
+      "startTime": "2025-12-01T05:07:45.519Z",
+      "endTime": "2025-12-01T05:07:49.254Z",
+      "success": true,
+      "duration": 3736,
+      "error": null
+    },
+    {
+      "cycle": 3,
+      "startTime": "2025-12-01T05:12:49.295Z",
+      "endTime": "2025-12-01T05:12:53.009Z",
+      "success": true,
+      "duration": 3715,
+      "error": null
+    },
+    {
+      "cycle": 4,
+      "startTime": "2025-12-01T05:17:53.046Z",
+      "endTime": "2025-12-01T05:17:58.452Z",
+      "success": true,
+      "duration": 5406,
+      "error": null
+    },
+    {
+      "cycle": 5,
+      "startTime": "2025-12-01T05:22:58.487Z",
+      "endTime": "2025-12-01T05:23:02.682Z",
+      "success": true,
+      "duration": 4196,
+      "error": null
+    },
+    {
+      "cycle": 6,
+      "startTime": "2025-12-01T05:28:02.732Z",
+      "endTime": "2025-12-01T05:28:04.986Z",
+      "success": true,
+      "duration": 2254,
+      "error": null
+    },
+    {
+      "cycle": 7,
+      "startTime": "2025-12-01T05:33:05.023Z",
+      "endTime": "2025-12-01T05:33:07.883Z",
+      "success": true,
+      "duration": 2861,
+      "error": null
+    },
+    {
+      "cycle": 8,
+      "startTime": "2025-12-01T05:38:07.943Z",
+      "endTime": "2025-12-01T05:38:11.438Z",
+      "success": true,
+      "duration": 3495,
+      "error": null
+    },
+    {
+      "cycle": 9,
+      "startTime": "2025-12-01T05:43:11.480Z",
+      "endTime": "2025-12-01T05:43:13.802Z",
+      "success": true,
+      "duration": 2326,
+      "error": null
+    },
+    {
+      "cycle": 10,
+      "startTime": "2025-12-01T05:48:13.849Z",
+      "endTime": "2025-12-01T05:48:16.261Z",
+      "success": true,
+      "duration": 2413,
+      "error": null
+    },
+    {
+      "cycle": 11,
+      "startTime": "2025-12-01T05:53:16.314Z",
+      "endTime": "2025-12-01T05:53:19.126Z",
+      "success": true,
+      "duration": 2812,
+      "error": null
+    },
+    {
+      "cycle": 12,
+      "startTime": "2025-12-01T05:58:19.175Z",
+      "endTime": "2025-12-01T05:58:22.096Z",
+      "success": true,
+      "duration": 2921,
+      "error": null
+    },
+    {
+      "cycle": 13,
+      "startTime": "2025-12-01T06:03:22.099Z",
+      "endTime": "2025-12-01T06:03:24.860Z",
+      "success": true,
+      "duration": 2761,
+      "error": null
+    },
+    {
+      "cycle": 14,
+      "startTime": "2025-12-01T06:08:24.906Z",
+      "endTime": "2025-12-01T06:08:28.175Z",
+      "success": true,
+      "duration": 3269,
+      "error": null
+    },
+    {
+      "cycle": 15,
+      "startTime": "2025-12-01T06:13:28.200Z",
+      "endTime": "2025-12-01T06:13:31.850Z",
+      "success": true,
+      "duration": 3651,
+      "error": null
+    },
+    {
+      "cycle": 16,
+      "startTime": "2025-12-01T06:18:31.906Z",
+      "endTime": "2025-12-01T06:18:34.924Z",
+      "success": true,
+      "duration": 3018,
+      "error": null
+    },
+    {
+      "cycle": 17,
+      "startTime": "2025-12-01T06:23:34.963Z",
+      "endTime": "2025-12-01T06:23:37.668Z",
+      "success": true,
+      "duration": 2705,
+      "error": null
+    },
+    {
+      "cycle": 18,
+      "startTime": "2025-12-01T06:28:37.718Z",
+      "endTime": "2025-12-01T06:28:40.508Z",
+      "success": true,
+      "duration": 2792,
+      "error": null
+    },
+    {
+      "cycle": 19,
+      "startTime": "2025-12-01T06:33:40.541Z",
+      "endTime": "2025-12-01T06:33:43.747Z",
+      "success": true,
+      "duration": 3207,
+      "error": null
+    },
+    {
+      "cycle": 20,
+      "startTime": "2025-12-01T06:38:43.787Z",
+      "endTime": "2025-12-01T06:38:46.203Z",
+      "success": true,
+      "duration": 2417,
+      "error": null
+    },
+    {
+      "cycle": 21,
+      "startTime": "2025-12-01T06:43:46.227Z",
+      "endTime": "2025-12-01T06:43:49.638Z",
+      "success": true,
+      "duration": 3413,
+      "error": null
+    },
+    {
+      "cycle": 22,
+      "startTime": "2025-12-01T06:48:49.675Z",
+      "endTime": "2025-12-01T06:48:52.225Z",
+      "success": true,
+      "duration": 2551,
+      "error": null
+    },
+    {
+      "cycle": 23,
+      "startTime": "2025-12-01T06:53:52.261Z",
+      "endTime": "2025-12-01T06:53:55.478Z",
+      "success": true,
+      "duration": 3218,
+      "error": null
+    },
+    {
+      "cycle": 24,
+      "startTime": "2025-12-01T06:58:55.525Z",
+      "endTime": "2025-12-01T06:58:59.343Z",
+      "success": true,
+      "duration": 3818,
+      "error": null
+    },
+    {
+      "cycle": 25,
+      "startTime": "2025-12-01T07:03:59.372Z",
+      "endTime": "2025-12-01T07:04:02.109Z",
+      "success": true,
+      "duration": 2738,
+      "error": null
+    },
+    {
+      "cycle": 26,
+      "startTime": "2025-12-01T07:09:02.164Z",
+      "endTime": "2025-12-01T07:09:04.801Z",
+      "success": true,
+      "duration": 2637,
+      "error": null
+    },
+    {
+      "cycle": 27,
+      "startTime": "2025-12-01T07:14:04.839Z",
+      "endTime": "2025-12-01T07:14:07.260Z",
+      "success": true,
+      "duration": 2422,
+      "error": null
+    },
+    {
+      "cycle": 28,
+      "startTime": "2025-12-01T07:19:07.414Z",
+      "endTime": "2025-12-01T07:19:10.407Z",
+      "success": true,
+      "duration": 2994,
+      "error": null
+    },
+    {
+      "cycle": 29,
+      "startTime": "2025-12-01T07:24:10.462Z",
+      "endTime": "2025-12-01T07:24:14.016Z",
+      "success": true,
+      "duration": 3554,
+      "error": null
+    },
+    {
+      "cycle": 30,
+      "startTime": "2025-12-01T07:29:14.054Z",
+      "endTime": "2025-12-01T07:29:16.957Z",
+      "success": true,
+      "duration": 2903,
+      "error": null
+    },
+    {
+      "cycle": 31,
+      "startTime": "2025-12-01T07:34:16.994Z",
+      "endTime": "2025-12-01T07:34:19.618Z",
+      "success": true,
+      "duration": 2625,
+      "error": null
+    },
+    {
+      "cycle": 32,
+      "startTime": "2025-12-01T07:39:19.646Z",
+      "endTime": "2025-12-01T07:39:22.682Z",
+      "success": true,
+      "duration": 3037,
+      "error": null
+    },
+    {
+      "cycle": 33,
+      "startTime": "2025-12-01T07:44:22.725Z",
+      "endTime": "2025-12-01T07:44:25.569Z",
+      "success": true,
+      "duration": 2844,
+      "error": null
+    },
+    {
+      "cycle": 34,
+      "startTime": "2025-12-01T07:49:25.605Z",
+      "endTime": "2025-12-01T07:49:28.149Z",
+      "success": true,
+      "duration": 2544,
+      "error": null
+    },
+    {
+      "cycle": 35,
+      "startTime": "2025-12-01T07:54:28.202Z",
+      "endTime": "2025-12-01T07:54:30.567Z",
+      "success": true,
+      "duration": 2366,
+      "error": null
+    },
+    {
+      "cycle": 36,
+      "startTime": "2025-12-01T07:59:30.673Z",
+      "endTime": "2025-12-01T07:59:38.219Z",
+      "success": true,
+      "duration": 7548,
+      "error": null
+    },
+    {
+      "cycle": 37,
+      "startTime": "2025-12-01T08:04:38.283Z",
+      "endTime": "2025-12-01T08:04:44.187Z",
+      "success": true,
+      "duration": 5906,
+      "error": null
+    },
+    {
+      "cycle": 38,
+      "startTime": "2025-12-01T08:09:44.232Z",
+      "endTime": "2025-12-01T08:09:50.190Z",
+      "success": true,
+      "duration": 5959,
+      "error": null
+    },
+    {
+      "cycle": 39,
+      "startTime": "2025-12-01T08:14:50.261Z",
+      "endTime": "2025-12-01T08:14:56.200Z",
+      "success": true,
+      "duration": 5939,
+      "error": null
+    },
+    {
+      "cycle": 40,
+      "startTime": "2025-12-01T08:19:56.244Z",
+      "endTime": "2025-12-01T08:19:59.609Z",
+      "success": true,
+      "duration": 3365,
+      "error": null
+    },
+    {
+      "cycle": 41,
+      "startTime": "2025-12-01T08:24:59.676Z",
+      "endTime": "2025-12-01T08:25:01.843Z",
+      "success": true,
+      "duration": 2167,
+      "error": null
+    },
+    {
+      "cycle": 42,
+      "startTime": "2025-12-01T08:30:01.796Z",
+      "endTime": "2025-12-01T08:30:04.706Z",
+      "success": true,
+      "duration": 2911,
+      "error": null
+    },
+    {
+      "cycle": 43,
+      "startTime": "2025-12-01T08:35:04.745Z",
+      "endTime": "2025-12-01T08:35:06.936Z",
+      "success": true,
+      "duration": 2192,
+      "error": null
+    },
+    {
+      "cycle": 44,
+      "startTime": "2025-12-01T08:40:06.971Z",
+      "endTime": "2025-12-01T08:40:09.263Z",
+      "success": true,
+      "duration": 2293,
+      "error": null
+    },
+    {
+      "cycle": 45,
+      "startTime": "2025-12-01T08:45:09.300Z",
+      "endTime": "2025-12-01T08:45:11.610Z",
+      "success": true,
+      "duration": 2311,
+      "error": null
+    },
+    {
+      "cycle": 46,
+      "startTime": "2025-12-01T08:50:11.638Z",
+      "endTime": "2025-12-01T08:50:14.288Z",
+      "success": true,
+      "duration": 2651,
+      "error": null
+    },
+    {
+      "cycle": 47,
+      "startTime": "2025-12-01T08:55:14.329Z",
+      "endTime": "2025-12-01T08:55:16.706Z",
+      "success": true,
+      "duration": 2377,
+      "error": null
+    },
+    {
+      "cycle": 48,
+      "startTime": "2025-12-01T09:00:16.901Z",
+      "endTime": "2025-12-01T09:00:20.377Z",
+      "success": true,
+      "duration": 3476,
+      "error": null
+    },
+    {
+      "cycle": 49,
+      "startTime": "2025-12-01T09:05:20.425Z",
+      "endTime": "2025-12-01T09:05:23.732Z",
+      "success": true,
+      "duration": 3307,
+      "error": null
+    },
+    {
+      "cycle": 50,
+      "startTime": "2025-12-01T09:10:23.775Z",
+      "endTime": "2025-12-01T09:10:27.832Z",
+      "success": true,
+      "duration": 4057,
+      "error": null
+    },
+    {
+      "cycle": 51,
+      "startTime": "2025-12-01T09:15:27.887Z",
+      "endTime": "2025-12-01T09:15:30.351Z",
+      "success": true,
+      "duration": 2464,
+      "error": null
+    },
+    {
+      "cycle": 52,
+      "startTime": "2025-12-01T09:20:30.402Z",
+      "endTime": "2025-12-01T09:20:33.433Z",
+      "success": true,
+      "duration": 3031,
+      "error": null
+    },
+    {
+      "cycle": 53,
+      "startTime": "2025-12-01T09:25:33.512Z",
+      "endTime": "2025-12-01T09:25:36.061Z",
+      "success": true,
+      "duration": 2550,
+      "error": null
+    },
+    {
+      "cycle": 54,
+      "startTime": "2025-12-01T09:30:36.101Z",
+      "endTime": "2025-12-01T09:30:38.956Z",
+      "success": true,
+      "duration": 2856,
+      "error": null
+    },
+    {
+      "cycle": 55,
+      "startTime": "2025-12-01T09:35:39.013Z",
+      "endTime": "2025-12-01T09:35:42.169Z",
+      "success": true,
+      "duration": 3157,
+      "error": null
+    },
+    {
+      "cycle": 56,
+      "startTime": "2025-12-01T09:40:42.213Z",
+      "endTime": "2025-12-01T09:40:45.744Z",
+      "success": true,
+      "duration": 3532,
+      "error": null
+    },
+    {
+      "cycle": 57,
+      "startTime": "2025-12-01T09:45:45.805Z",
+      "endTime": "2025-12-01T09:45:48.450Z",
+      "success": true,
+      "duration": 2645,
+      "error": null
+    },
+    {
+      "cycle": 58,
+      "startTime": "2025-12-01T09:50:48.499Z",
+      "endTime": "2025-12-01T09:50:51.330Z",
+      "success": true,
+      "duration": 2832,
+      "error": null
+    },
+    {
+      "cycle": 59,
+      "startTime": "2025-12-01T09:55:51.449Z",
+      "endTime": "2025-12-01T09:55:54.338Z",
+      "success": true,
+      "duration": 2890,
+      "error": null
+    },
+    {
+      "cycle": 60,
+      "startTime": "2025-12-01T10:00:54.383Z",
+      "endTime": "2025-12-01T10:00:57.615Z",
+      "success": true,
+      "duration": 3232,
+      "error": null
+    },
+    {
+      "cycle": 61,
+      "startTime": "2025-12-01T10:05:57.679Z",
+      "endTime": "2025-12-01T10:06:00.386Z",
+      "success": true,
+      "duration": 2707,
+      "error": null
+    },
+    {
+      "cycle": 62,
+      "startTime": "2025-12-01T10:11:00.436Z",
+      "endTime": "2025-12-01T10:11:03.417Z",
+      "success": true,
+      "duration": 2984,
+      "error": null
+    },
+    {
+      "cycle": 63,
+      "startTime": "2025-12-01T10:16:03.472Z",
+      "endTime": "2025-12-01T10:16:06.113Z",
+      "success": true,
+      "duration": 2641,
+      "error": null
+    },
+    {
+      "cycle": 64,
+      "startTime": "2025-12-01T10:21:06.170Z",
+      "endTime": "2025-12-01T10:21:08.596Z",
+      "success": true,
+      "duration": 2431,
+      "error": null
+    },
+    {
+      "cycle": 65,
+      "startTime": "2025-12-01T10:26:08.570Z",
+      "endTime": "2025-12-01T10:26:12.058Z",
+      "success": true,
+      "duration": 3489,
+      "error": null
+    },
+    {
+      "cycle": 66,
+      "startTime": "2025-12-01T10:31:12.096Z",
+      "endTime": "2025-12-01T10:31:15.357Z",
+      "success": true,
+      "duration": 3261,
+      "error": null
+    },
+    {
+      "cycle": 67,
+      "startTime": "2025-12-01T10:36:15.398Z",
+      "endTime": "2025-12-01T10:36:18.050Z",
+      "success": true,
+      "duration": 2653,
+      "error": null
+    },
+    {
+      "cycle": 68,
+      "startTime": "2025-12-01T10:41:18.084Z",
+      "endTime": "2025-12-01T10:41:20.882Z",
+      "success": true,
+      "duration": 2799,
+      "error": null
+    },
+    {
+      "cycle": 69,
+      "startTime": "2025-12-01T10:46:20.933Z",
+      "endTime": "2025-12-01T10:46:23.734Z",
+      "success": true,
+      "duration": 2801,
+      "error": null
+    },
+    {
+      "cycle": 70,
+      "startTime": "2025-12-01T10:51:23.851Z",
+      "endTime": "2025-12-01T10:51:27.405Z",
+      "success": true,
+      "duration": 3555,
+      "error": null
+    },
+    {
+      "cycle": 71,
+      "startTime": "2025-12-01T10:56:27.460Z",
+      "endTime": "2025-12-01T10:56:30.097Z",
+      "success": true,
+      "duration": 2637,
+      "error": null
+    },
+    {
+      "cycle": 72,
+      "startTime": "2025-12-01T11:01:30.154Z",
+      "endTime": "2025-12-01T11:01:32.942Z",
+      "success": true,
+      "duration": 2789,
+      "error": null
+    },
+    {
+      "cycle": 73,
+      "startTime": "2025-12-01T11:06:32.991Z",
+      "endTime": "2025-12-01T11:06:35.713Z",
+      "success": true,
+      "duration": 2723,
+      "error": null
+    },
+    {
+      "cycle": 74,
+      "startTime": "2025-12-01T11:11:35.764Z",
+      "endTime": "2025-12-01T11:11:38.251Z",
+      "success": true,
+      "duration": 2487,
+      "error": null
+    },
+    {
+      "cycle": 75,
+      "startTime": "2025-12-01T11:16:38.428Z",
+      "endTime": "2025-12-01T11:16:41.216Z",
+      "success": true,
+      "duration": 2788,
+      "error": null
+    },
+    {
+      "cycle": 76,
+      "startTime": "2025-12-01T11:21:41.262Z",
+      "endTime": "2025-12-01T11:21:43.551Z",
+      "success": true,
+      "duration": 2289,
+      "error": null
+    },
+    {
+      "cycle": 77,
+      "startTime": "2025-12-01T11:26:43.616Z",
+      "endTime": "2025-12-01T11:26:46.273Z",
+      "success": true,
+      "duration": 2657,
+      "error": null
+    },
+    {
+      "cycle": 78,
+      "startTime": "2025-12-01T11:31:46.323Z",
+      "endTime": "2025-12-01T11:31:49.450Z",
+      "success": true,
+      "duration": 3127,
+      "error": null
+    },
+    {
+      "cycle": 79,
+      "startTime": "2025-12-01T11:36:49.525Z",
+      "endTime": "2025-12-01T11:36:52.108Z",
+      "success": true,
+      "duration": 2583,
+      "error": null
+    },
+    {
+      "cycle": 80,
+      "startTime": "2025-12-01T11:41:52.152Z",
+      "endTime": "2025-12-01T11:41:54.587Z",
+      "success": true,
+      "duration": 2436,
+      "error": null
+    },
+    {
+      "cycle": 81,
+      "startTime": "2025-12-01T11:46:54.649Z",
+      "endTime": "2025-12-01T11:46:56.903Z",
+      "success": true,
+      "duration": 2254,
+      "error": null
+    },
+    {
+      "cycle": 82,
+      "startTime": "2025-12-01T11:51:56.959Z",
+      "endTime": "2025-12-01T11:52:00.075Z",
+      "success": true,
+      "duration": 3117,
+      "error": null
+    },
+    {
+      "cycle": 83,
+      "startTime": "2025-12-01T11:57:00.154Z",
+      "endTime": "2025-12-01T11:57:02.851Z",
+      "success": true,
+      "duration": 2697,
+      "error": null
+    },
+    {
+      "cycle": 84,
+      "startTime": "2025-12-01T12:02:02.900Z",
+      "endTime": "2025-12-01T12:02:05.542Z",
+      "success": true,
+      "duration": 2643,
+      "error": null
+    },
+    {
+      "cycle": 85,
+      "startTime": "2025-12-01T12:07:05.594Z",
+      "endTime": "2025-12-01T12:07:08.703Z",
+      "success": true,
+      "duration": 3109,
+      "error": null
+    },
+    {
+      "cycle": 86,
+      "startTime": "2025-12-01T12:12:08.764Z",
+      "endTime": "2025-12-01T12:12:11.999Z",
+      "success": true,
+      "duration": 3236,
+      "error": null
+    },
+    {
+      "cycle": 87,
+      "startTime": "2025-12-01T12:17:12.056Z",
+      "endTime": "2025-12-01T12:17:14.567Z",
+      "success": true,
+      "duration": 2511,
+      "error": null
+    },
+    {
+      "cycle": 88,
+      "startTime": "2025-12-01T12:22:14.619Z",
+      "endTime": "2025-12-01T12:22:17.119Z",
+      "success": true,
+      "duration": 2500,
+      "error": null
+    },
+    {
+      "cycle": 89,
+      "startTime": "2025-12-01T12:27:17.154Z",
+      "endTime": "2025-12-01T12:27:19.873Z",
+      "success": true,
+      "duration": 2720,
+      "error": null
+    },
+    {
+      "cycle": 90,
+      "startTime": "2025-12-01T12:32:19.927Z",
+      "endTime": "2025-12-01T12:32:22.494Z",
+      "success": true,
+      "duration": 2568,
+      "error": null
+    },
+    {
+      "cycle": 91,
+      "startTime": "2025-12-01T12:37:22.550Z",
+      "endTime": "2025-12-01T12:37:25.377Z",
+      "success": true,
+      "duration": 2827,
+      "error": null
+    },
+    {
+      "cycle": 92,
+      "startTime": "2025-12-01T12:42:25.427Z",
+      "endTime": "2025-12-01T12:42:27.911Z",
+      "success": true,
+      "duration": 2485,
+      "error": null
+    },
+    {
+      "cycle": 93,
+      "startTime": "2025-12-01T12:47:27.971Z",
+      "endTime": "2025-12-01T12:47:30.476Z",
+      "success": true,
+      "duration": 2505,
+      "error": null
+    },
+    {
+      "cycle": 94,
+      "startTime": "2025-12-01T12:52:30.524Z",
+      "endTime": "2025-12-01T12:52:32.816Z",
+      "success": true,
+      "duration": 2293,
+      "error": null
+    },
+    {
+      "cycle": 95,
+      "startTime": "2025-12-01T12:57:32.877Z",
+      "endTime": "2025-12-01T12:57:35.529Z",
+      "success": true,
+      "duration": 2652,
+      "error": null
+    }
+  ]
+}

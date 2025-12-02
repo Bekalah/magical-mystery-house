@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏛️ Cathedral of Circuits - Choose Your Own Adventure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cathedral-gold: #ffd700;
+            --divine-light: #fff9e6;
+            --sacred-copper: #b87333;
+            --twilight-purple: #483d8b;
+            --mystic-blue: #191970;
+            --abyss-deep: #0b0b1a;
+            --emerald-heart: #50c878;
+            --ruby-fire: #e0115f;
+            --celestial-silver: #c0c0c0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--abyss-deep) 0%, var(--mystic-blue) 50%, var(--twilight-purple) 100%);
+            color: var(--divine-light);
+            font-family: 'Cormorant Garamond', serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .game-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .game-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 20px;
+            border: 2px solid var(--cathedral-gold);
+        }
+
+        .game-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, var(--cathedral-gold), var(--sacred-copper), var(--emerald-heart));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .game-subtitle {
+            font-size: 1.2rem;
+            color: var(--celestial-silver);
+            margin-bottom: 1rem;
+        }
+
+        .player-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            background: rgba(72, 61, 139, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            border: 1px solid var(--celestial-silver);
+            text-align: center;
+        }
+
+        .stat-value {
+            color: var(--cathedral-gold);
+            font-weight: bold;
+        }
+
+        .game-content {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 2px solid var(--sacred-copper);
+        }
+
+        .scene-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(45deg, var(--twilight-purple), var(--mystic-blue));
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--celestial-silver);
+            border: 2px solid var(--cathedral-gold);
+        }
+
+        .scene-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: var(--cathedral-gold);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .scene-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+
+        .choices {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .choice-button {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(72, 61, 139, 0.3));
+            border: 2px solid var(--cathedral-gold);
+            color: var(--divine-light);
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .choice-button:hover {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.4), rgba(72, 61, 139, 0.5));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .choice-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .real-objects {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: rgba(80, 200, 120, 0.1);
+            border-radius: 15px;
+            border: 2px solid var(--emerald-heart);
+        }
+
+        .objects-title {
+            font-family: 'Cinzel', serif;
+            color: var(--emerald-heart);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .object-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .real-object {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid var(--celestial-silver);
+        }
+
+        .object-name {
+            color: var(--cathedral-gold);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .object-description {
+            font-size: 0.9rem;
+            color: var(--divine-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .object-connection {
+            font-style: italic;
+            color: var(--emerald-heart);
+            font-size: 0.8rem;
+        }
+
+        .game-controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .control-button {
+            background: linear-gradient(135deg, var(--sacred-copper), var(--ruby-fire));
+            border: none;
+            color: var(--divine-light);
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Cinzel', serif;
+            transition: all 0.3s ease;
+        }
+
+        .control-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(179, 115, 51, 0.5);
+        }
+
+        .exit-game {
+            background: linear-gradient(135deg, var(--ruby-fire), var(--abyss-deep));
+        }
+
+        .save-load {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background: linear-gradient(135deg, var(--abyss-deep), var(--twilight-purple));
+            padding: 2rem;
+            border-radius: 20px;
+            border: 2px solid var(--cathedral-gold);
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .modal-title {
+            font-family: 'Cinzel', serif;
+            color: var(--cathedral-gold);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .modal-text {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .modal-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .game-container {
+                padding: 1rem;
+            }
+
+            .player-stats {
+                gap: 1rem;
+            }
+
+            .object-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1 class="game-title">🏛️ Cathedral of Circuits</h1>
+            <p class="game-subtitle">Choose Your Own Adventure</p>
+            <div class="player-stats">
+                <div class="stat">
+                    <div>Wisdom</div>
+                    <div class="stat-value" id="wisdom">0</div>
+                </div>
+                <div class="stat">
+                    <div>Courage</div>
+                    <div class="stat-value" id="courage">0</div>
+                </div>
+                <div class="stat">
+                    <div>Compassion</div>
+                    <div class="stat-value" id="compassion">0</div>
+                </div>
+                <div class="stat">
+                    <div>Knowledge</div>
+                    <div class="stat-value" id="knowledge">0</div>
+                </div>
+                <div class="stat">
+                    <div>Experience</div>
+                    <div class="stat-value" id="experience">0</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-content">
+            <div class="scene-image" id="sceneImage">
+                🏛️ The Cathedral Awaits
+            </div>
+
+            <h2 class="scene-title" id="sceneTitle">The Awakening</h2>
+
+            <div class="scene-description" id="sceneDescription">
+                You find yourself standing before a magnificent cathedral that seems to breathe with living light. The air shimmers with golden particles, and you hear a faint whispering of voices from another realm...
+            </div>
+
+            <div class="choices" id="choices">
+                <!-- Choices will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="real-objects" id="realObjects" style="display: none;">
+            <h3 class="objects-title">📚 Real World Connections Discovered</h3>
+            <div class="object-grid" id="objectGrid">
+                <!-- Real objects will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="game-controls">
+            <button class="control-button" onclick="showInstructions()">How to Play</button>
+            <div class="save-load">
+                <button class="control-button" onclick="saveGame()">Save Game</button>
+                <button class="control-button" onclick="loadGame()">Load Game</button>
+            </div>
+            <button class="control-button exit-game" onclick="exitGame()">Exit to Cathedral</button>
+        </div>
+    </div>
+
+    <div class="modal" id="instructionsModal">
+        <div class="modal-content">
+            <h2 class="modal-title">How to Play</h2>
+            <div class="modal-text">
+                <p>Welcome to the Cathedral of Circuits - a living, breathing choose-your-own-adventure experience that connects to real books, artworks, and sacred places.</p>
+
+                <p><strong>Your Journey:</strong></p>
+                <ul>
+                    <li>Make choices that shape your spiritual and intellectual growth</li>
+                    <li>Discover connections to real books, artworks, and sacred sites</li>
+                    <li>Build your Wisdom, Courage, Compassion, and Knowledge</li>
+                    <li>Each path offers different experiences and discoveries</li>
+                </ul>
+
+                <p><strong>Real World Integration:</strong></p>
+                <ul>
+                    <li>Books you discover can be found and read in reality</li>
+                    <li>Artworks connect to real museums and galleries</li>
+                    <li>Sacred sites can be visited and experienced</li>
+                    <li>Each connection blends digital and physical reality</li>
+                </ul>
+            </div>
+            <div class="modal-buttons">
+                <button class="control-button" onclick="closeModal()">Begin Journey</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Game state
+        let gameEngine = null;
+        let gameState = null;
+
+        // Initialize game when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeGame();
+        });
+
+        function initializeGame() {
+            // In a real implementation, this would import the game engine
+            // For now, we'll create a mock version
+            gameEngine = new MockGameEngine();
+            gameState = gameEngine.getGameState();
+
+            updateDisplay();
+            setupEventListeners();
+        }
+
+        class MockGameEngine {
+            constructor() {
+                this.currentScene = 'start';
+                this.stats = { wisdom: 0, courage: 0, compassion: 0, knowledge: 0, experience: 0 };
+                this.visitedScenes = [];
+                this.realObjects = [];
+            }
+
+            getGameState() {
+                return {
+                    currentScene: this.currentScene,
+                    stats: this.stats,
+                    visitedScenes: this.visitedScenes,
+                    realObjects: this.realObjects
+                };
+            }
+
+            makeChoice(choiceId) {
+                // Mock choice handling
+                const sceneData = MOCK_SCENE_DATA[this.currentScene];
+                const choice = sceneData.choices.find(c => c.id === choiceId);
+
+                if (choice && choice.effects) {
+                    Object.keys(choice.effects).forEach(stat => {
+                        this.stats[stat] = (this.stats[stat] || 0) + (choice.effects[stat] || 0);
+                    });
+                }
+
+                if (choice && choice.targetScene) {
+                    this.currentScene = choice.targetScene;
+                    if (!this.visitedScenes.includes(choice.targetScene)) {
+                        this.visitedScenes.push(choice.targetScene);
+                    }
+                    return true;
+                }
+                return false;
+            }
+
+            getCurrentScene() {
+                return MOCK_SCENE_DATA[this.currentScene] || MOCK_SCENE_DATA['start'];
+            }
+        }
+
+        const MOCK_SCENE_DATA = {
+            'start': {
+                title: 'The Awakening',
+                description: 'You find yourself standing before a magnificent cathedral that seems to breathe with living light. The air shimmers with golden particles, and you hear a faint whispering of voices from another realm...',
+                image: 'cathedral-entrance',
+                choices: [
+                    {
+                        id: 'enter-cathedral',
+                        text: 'Follow the white rabbit into the Cathedral',
+                        targetScene: 'grand-hall',
+                        effects: { courage: 1, experience: 10 }
+                    },
+                    {
+                        id: 'examine-rabbit',
+                        text: 'Try to touch the white rabbit - it seems strangely familiar',
+                        targetScene: 'rabbit-conversation',
+                        effects: { wisdom: 1, experience: 5 }
+                    }
+                ]
+            },
+            'grand-hall': {
+                title: 'The Grand Hall of Whispers',
+                description: 'You step into a vast hall where the walls seem to be made of living stone that pulses with inner light. Stained glass windows depict scenes from dreams you\'ve never had...',
+                image: 'grand-hall',
+                choices: [
+                    {
+                        id: 'approach-altar',
+                        text: 'Approach the altar and the circle of floating books',
+                        targetScene: 'altar-books',
+                        effects: { wisdom: 2, experience: 15 }
+                    }
+                ]
+            }
+        };
+
+        function updateDisplay() {
+            const scene = gameEngine.getCurrentScene();
+
+            document.getElementById('sceneTitle').textContent = scene.title;
+            document.getElementById('sceneDescription').textContent = scene.description;
+            document.getElementById('sceneImage').textContent = `🏛️ ${scene.title}`;
+
+            // Update stats
+            document.getElementById('wisdom').textContent = gameState.stats.wisdom || 0;
+            document.getElementById('courage').textContent = gameState.stats.courage || 0;
+            document.getElementById('compassion').textContent = gameState.stats.compassion || 0;
+            document.getElementById('knowledge').textContent = gameState.stats.knowledge || 0;
+            document.getElementById('experience').textContent = gameState.stats.experience || 0;
+
+            // Update choices
+            updateChoices(scene.choices);
+
+            // Update real objects if any
+            updateRealObjects();
+        }
+
+        function updateChoices(choices) {
+            const choicesContainer = document.getElementById('choices');
+            choicesContainer.innerHTML = '';
+
+            choices.forEach(choice => {
+                const button = document.createElement('button');
+                button.className = 'choice-button';
+                button.textContent = choice.text;
+                button.onclick = () => makeChoice(choice.id);
+                choicesContainer.appendChild(button);
+            });
+        }
+
+        function makeChoice(choiceId) {
+            if (gameEngine.makeChoice(choiceId)) {
+                gameState = gameEngine.getGameState();
+                updateDisplay();
+
+                // Add some visual feedback
+                const choicesContainer = document.getElementById('choices');
+                choicesContainer.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    choicesContainer.style.transform = 'scale(1)';
+                }, 200);
+            }
+        }
+
+        function updateRealObjects() {
+            const realObjectsSection = document.getElementById('realObjects');
+            const objectGrid = document.getElementById('objectGrid');
+
+            if (gameState.realObjects && gameState.realObjects.length > 0) {
+                realObjectsSection.style.display = 'block';
+                objectGrid.innerHTML = '';
+
+                gameState.realObjects.forEach(obj => {
+                    const objectElement = document.createElement('div');
+                    objectElement.className = 'real-object';
+                    objectElement.innerHTML = `
+                        <div class="object-name">${obj.name}</div>
+                        <div class="object-description">${obj.description}</div>
+                        <div class="object-connection">${obj.gameConnection}</div>
+                    `;
+                    objectGrid.appendChild(objectElement);
+                });
+            } else {
+                realObjectsSection.style.display = 'none';
+            }
+        }
+
+        function showInstructions() {
+            document.getElementById('instructionsModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('instructionsModal').style.display = 'none';
+        }
+
+        function saveGame() {
+            // In a real implementation, this would save to localStorage or server
+            alert('Game saved! (This is a demo - save functionality would be implemented here)');
+        }
+
+        function loadGame() {
+            // In a real implementation, this would load from localStorage or server
+            alert('Game loaded! (This is a demo - load functionality would be implemented here)');
+        }
+
+        function exitGame() {
+            if (confirm('Are you sure you want to exit the game? Your progress will be saved.')) {
+                window.location.href = 'index.html';
+            }
+        }
+
+        function setupEventListeners() {
+            // Add keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    showInstructions();
+                }
+            });
+        }
+    </script>
+</body>
+</html>

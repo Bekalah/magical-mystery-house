@@ -1,0 +1,237 @@
+/**
+ * Luxury Minimalist Design System
+ * 
+ * High-end aesthetic: Dior, Chanel, Miss Soho, Apple, Apple Glass
+ * Makes complex work look simple and feel fluid
+ * 
+ * ENHANCEMENT LAYER - Does not overwrite your existing themes
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Luxury Neutral Palette */
+  --luxury-white: #FFFFFF;
+  --luxury-off-white: #FAFAFA;
+  --luxury-cream: #F5F5F0;
+  --luxury-light-gray: #F0F0F0;
+  --luxury-gray: #E5E5E5;
+  --luxury-medium-gray: #CCCCCC;
+  --luxury-dark-gray: #999999;
+  --luxury-charcoal: #666666;
+  --luxury-black: #1A1A1A;
+  --luxury-deep-black: #000000;
+  
+  /* Luxury Accents */
+  --luxury-gold: #D4AF37;
+  --luxury-platinum: #E5E4E2;
+  --luxury-rose-gold: #E8B4B8;
+  --luxury-silver: #C0C0C0;
+  --luxury-navy: #1A1A2E;
+  --luxury-burgundy: #722F37;
+  --luxury-emerald: #50C878;
+  
+  /* Glass Morphism (Apple Glass style) */
+  --glass-light: rgba(255, 255, 255, 0.1);
+  --glass-dark: rgba(0, 0, 0, 0.1);
+  --glass-blur: blur(20px) saturate(180%);
+  
+  /* Generous Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-base: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+  --spacing-2xl: 64px;
+  --spacing-3xl: 96px;
+  --spacing-4xl: 128px;
+  
+  /* Refined Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-base: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 16px 64px rgba(0, 0, 0, 0.15);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  
+  /* Fluid Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  
+  /* Typography */
+  --font-luxury-serif: 'Cormorant Garamond', 'Playfair Display', 'EB Garamond', serif;
+  --font-luxury-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Segoe UI', sans-serif;
+  --font-luxury-mono: 'SF Mono', 'Monaco', 'Menlo', 'Consolas', monospace;
+}
+
+/* Luxury Utility Classes - Only apply when explicitly used */
+.luxury-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  width: 100%;
+}
+
+.luxury-card {
+  background: var(--luxury-white);
+  border-radius: 16px;
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-base);
+  border: 1px solid var(--luxury-gray);
+  transition: var(--transition-base);
+}
+
+.luxury-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Glass Morphism (Apple Glass style) */
+.luxury-glass {
+  background: var(--glass-light);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: var(--spacing-xl);
+}
+
+.luxury-glass-dark {
+  background: var(--glass-dark);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: var(--spacing-xl);
+}
+
+/* Luxury Buttons */
+.luxury-button {
+  font-family: var(--font-luxury-sans);
+  font-weight: 500;
+  letter-spacing: 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition-base);
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  text-transform: none;
+  padding: var(--spacing-base) var(--spacing-lg);
+  font-size: 1rem;
+}
+
+.luxury-button-primary {
+  background: var(--luxury-black);
+  color: var(--luxury-white);
+  box-shadow: var(--shadow-base);
+}
+
+.luxury-button-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.luxury-button-secondary {
+  background: transparent;
+  color: var(--luxury-black);
+  border: 2px solid var(--luxury-black);
+}
+
+.luxury-button-secondary:hover {
+  background: var(--luxury-black);
+  color: var(--luxury-white);
+}
+
+.luxury-button-glass {
+  background: var(--glass-light);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--luxury-black);
+}
+
+/* Fluid Animations */
+@keyframes luxury-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes luxury-slide-in {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes luxury-spring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes luxury-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.luxury-fade-in {
+  animation: luxury-fade-in var(--transition-base) ease-out;
+}
+
+.luxury-slide-in {
+  animation: luxury-slide-in var(--transition-base) ease-out;
+}
+
+.luxury-spring {
+  animation: luxury-spring var(--transition-spring) ease-out;
+}
+
+.luxury-float {
+  animation: luxury-float 4s ease-in-out infinite;
+}
+
+/* Typography Utilities */
+.luxury-heading {
+  font-family: var(--font-luxury-serif);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--luxury-black);
+}
+
+.luxury-body {
+  font-family: var(--font-luxury-sans);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--luxury-charcoal);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .luxury-container {
+    padding: 0 var(--spacing-base);
+  }
+  
+  .luxury-card,
+  .luxury-glass {
+    padding: var(--spacing-lg);
+  }
+}
+
+/* Note: This is an enhancement layer */
+/* Your existing themes remain unchanged */
+/* Use .luxury-* classes or CSS variables to add luxury aesthetic */

@@ -12,5 +12,6 @@
     "name": "Mystery House",
     "symbol": "⊙",
     "label": "⊙ Mystery House (mystery-house-core)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

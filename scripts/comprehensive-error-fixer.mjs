@@ -47,7 +47,7 @@ class ComprehensiveErrorFixer {
     console.log('📘 Scanning TypeScript errors...');
     
     try {
-      const result = execSync('ppnpm run type-check 2>&1', {
+      const result = execSync('pnpm run type-check 2>&1', {
         cwd: rootDir,
         encoding: 'utf8',
         timeout: 60000
@@ -84,7 +84,7 @@ class ComprehensiveErrorFixer {
     console.log('🔍 Scanning linter errors...');
     
     try {
-      const result = execSync('ppnpm run lint 2>&1', {
+      const result = execSync('pnpm run lint 2>&1', {
         cwd: rootDir,
         encoding: 'utf8',
         timeout: 60000
@@ -115,7 +115,7 @@ class ComprehensiveErrorFixer {
     console.log('🔨 Scanning build errors...');
     
     try {
-      const result = execSync('ppnpm run build 2>&1', {
+      const result = execSync('pnpm run build 2>&1', {
         cwd: rootDir,
         encoding: 'utf8',
         timeout: 120000

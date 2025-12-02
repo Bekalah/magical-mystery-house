@@ -205,30 +205,31 @@ console.log('\n🚀 Starting experiment...\n');
 
 // Run the experiment
 try {
-  // Use tsx if available, otherwise tsc + node
-  let command = 'tsx';
-  try {
-    execSync('which tsx', { stdio: 'ignore' });
-  } catch (e) {
-    // Try to build first
-    console.log('📦 Building TypeScript...');
-    try {
-      execSync('ppnpm run build', { cwd: BASE_DIR, stdio: 'inherit' });
-      command = 'node';
-    } catch (e) {
-      console.log('⚠️  Could not build - trying tsx anyway...');
-      command = 'tsx';
-    }
-  }
-  
+  // Use tsx to run TypeScript directly
   const scriptPath = path.join(__dirname, '10-hour-improvement-experiment.ts');
-  execSync(`${command} ${scriptPath}`, {
+  
+  // Use npx tsx directly (it will download if needed)
+  console.log('🚀 Running experiment with tsx...\n');
+  
+  // Run with a longer timeout and better error handling
+  const result = execSync(`npx --yes tsx ${scriptPath}`, {
     cwd: BASE_DIR,
     stdio: 'inherit',
-    env: { ...process.env, NODE_ENV: 'production' }
+    env: { ...process.env, NODE_ENV: 'production' },
+    timeout: 300000, // 5 minute timeout
+    maxBuffer: 10 * 1024 * 1024 // 10MB buffer
   });
+  
+  // If we get here, the experiment completed successfully
+  console.log('\n✅ Experiment completed successfully');
 } catch (e) {
-  console.error('❌ Experiment failed:', e.message);
+  if (e.signal === 'SIGTERM') {
+    console.error('❌ Experiment timed out after 5 minutes');
+  } else {
+    console.error('❌ Experiment failed:', e.message);
+    if (e.stdout) console.error('STDOUT:', e.stdout.toString());
+    if (e.stderr) console.error('STDERR:', e.stderr.toString());
+  }
   process.exit(1);
 }
 

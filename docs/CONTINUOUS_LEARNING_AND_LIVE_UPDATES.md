@@ -143,7 +143,7 @@ The learning and deployment system is now integrated into your continuous improv
 ### Learn & Deploy
 
 ```bash
-ppnpm run make:live
+pnpm run make:live
 ```
 
 This will:
@@ -157,7 +157,7 @@ This will:
 ### Full Discovery & Learning
 
 ```bash
-ppnpm run discover:all
+pnpm run discover:all
 ```
 
 This runs all discovery tools and generates learning report.

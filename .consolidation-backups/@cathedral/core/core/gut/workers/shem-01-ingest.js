@@ -26,10 +26,10 @@ class Shem01Ingest {
       morganLeFayGuidance = true
     } = albumConfig;
 
-// console.log(`🔮 ${this.name} beginning album processing...`);
-// console.log(`📸 Album: ${albumUrl}`);
-// console.log(`🎨 Style: ${processingStyle}`);
-// console.log(`🔗 Codex Integration: ${codexNodeMapping}`);
+    console.log(`🔮 ${this.name} beginning album processing...`);
+    console.log(`📸 Album: ${albumUrl}`);
+    console.log(`🎨 Style: ${processingStyle}`);
+    console.log(`🔗 Codex Integration: ${codexNodeMapping}`);
 
     // Step 1: Analyze album structure and content
     const albumAnalysis = await this.analyzeAlbum(albumUrl);

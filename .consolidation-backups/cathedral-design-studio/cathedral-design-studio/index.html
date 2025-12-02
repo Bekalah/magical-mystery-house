@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎨 Cathedral Design Studio - Sacred Design Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .app-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ffd700, #ff69b4, #00ced1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-btn {
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            color: #ffd700;
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background: rgba(255, 215, 0, 0.2);
+            border-color: #ffd700;
+        }
+
+        .nav-btn.active {
+            background: #ffd700;
+            color: #000;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        /* Toolbar */
+        .toolbar {
+            width: 280px;
+            background: rgba(0, 0, 0, 0.6);
+            border-right: 2px solid rgba(255, 215, 0, 0.2);
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .tool-section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 12px;
+            padding: 15px;
+        }
+
+        .tool-section h3 {
+            color: #ffd700;
+            font-size: 1rem;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .component-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+            gap: 8px;
+        }
+
+        .component-item {
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.5rem;
+        }
+
+        .component-item:hover {
+            background: rgba(255, 215, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+        }
+
+        .color-item {
+            height: 40px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .color-item:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        /* Canvas */
+        .canvas-container {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .canvas {
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+            position: relative;
+            cursor: crosshair;
+        }
+
+        .sacred-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            background-image:
+                linear-gradient(rgba(255, 215, 0, 0.3) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 215, 0, 0.3) 1px, transparent 1px);
+            background-size: 100px 100px;
+        }
+
+        .design-element {
+            position: absolute;
+            cursor: move;
+            user-select: none;
+            border: 2px solid transparent;
+        }
+
+        .design-element:hover {
+            border-color: #ffd700;
+        }
+
+        .design-element.selected {
+            border-color: #ff69b4;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+        }
+
+        .element-controls {
+            position: absolute;
+            top: -30px;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 5px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            display: none;
+        }
+
+        .design-element:hover .element-controls {
+            display: block;
+        }
+
+        /* Properties Panel */
+        .properties-panel {
+            width: 300px;
+            background: rgba(0, 0, 0, 0.8);
+            border-left: 2px solid rgba(255, 215, 0, 0.2);
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .property-group {
+            margin-bottom: 20px;
+        }
+
+        .property-group h4 {
+            color: #ffd700;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .property-control {
+            margin-bottom: 10px;
+        }
+
+        .property-control label {
+            display: block;
+            font-size: 0.8rem;
+            color: #ccc;
+            margin-bottom: 4px;
+        }
+
+        .property-control input {
+            width: 100%;
+            padding: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 4px;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .property-control input:focus {
+            outline: none;
+            border-color: #ffd700;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .properties-panel {
+                width: 250px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .toolbar {
+                width: 100%;
+                height: 200px;
+                flex-direction: row;
+                overflow-x: auto;
+            }
+
+            .properties-panel {
+                width: 100%;
+                height: 200px;
+            }
+        }
+
+        /* Sacred Geometry Canvas */
+        .sacred-geometry {
+            position: absolute;
+            pointer-events: none;
+        }
+
+        /* Element Library */
+        .element-library {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+            gap: 10px;
+        }
+
+        .element-item {
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.5rem;
+        }
+
+        .element-item:hover {
+            background: rgba(255, 215, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Color Psychology */
+        .color-meaning {
+            font-size: 0.7rem;
+            color: #999;
+            margin-top: 4px;
+        }
+
+        /* Sacred Mathematics Display */
+        .sacred-math {
+            background: rgba(255, 215, 0, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .sacred-math .ratio {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .sacred-math .sequence {
+            color: #ff69b4;
+            font-size: 0.8rem;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="logo">🎨 Cathedral Design Studio</div>
+            <nav class="nav">
+                <button class="nav-btn active" onclick="setActiveTool('select')">Select</button>
+                <button class="nav-btn" onclick="setActiveTool('sacred')">Sacred</button>
+                <button class="nav-btn" onclick="setActiveTool('fusion')">Fusion</button>
+                <button class="nav-btn" onclick="setActiveTool('export')">Export</button>
+            </nav>
+        </header>
+
+        <div class="main-content">
+            <div class="toolbar">
+                <!-- Sacred Mathematics -->
+                <div class="tool-section">
+                    <h3>📐 Sacred Mathematics</h3>
+                    <div class="sacred-math">
+                        <div class="ratio">144:99 = {(144/99).toFixed(3)}</div>
+                        <div class="sequence">Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21...</div>
+                    </div>
+                </div>
+
+                <!-- Sacred Elements -->
+                <div class="tool-section">
+                    <h3>🔥 Sacred Elements</h3>
+                    <div class="element-library">
+                        <div class="element-item" onclick="addElement('fire')" title="Fire - Transformation">🔥</div>
+                        <div class="element-item" onclick="addElement('water')" title="Water - Emotion">💧</div>
+                        <div class="element-item" onclick="addElement('earth')" title="Earth - Foundation">🌍</div>
+                        <div class="element-item" onclick="addElement('air')" title="Air - Communication">💨</div>
+                        <div class="element-item" onclick="addElement('aether')" title="Aether - Spirit">⭐</div>
+                    </div>
+                </div>
+
+                <!-- Sacred Geometry -->
+                <div class="tool-section">
+                    <h3>📐 Sacred Geometry</h3>
+                    <div class="element-library">
+                        <div class="element-item" onclick="addGeometry('tetrahedron')" title="Tetrahedron - Fire">▲</div>
+                        <div class="element-item" onclick="addGeometry('icosahedron')" title="Icosahedron - Water">⬟</div>
+                        <div class="element-item" onclick="addGeometry('cube')" title="Cube - Earth">⬜</div>
+                        <div class="element-item" onclick="addGeometry('octahedron')" title="Octahedron - Air">⬡</div>
+                        <div class="element-item" onclick="addGeometry('dodecahedron')" title="Dodecahedron - Aether">⬟</div>
+                    </div>
+                </div>
+
+                <!-- Color Palettes -->
+                <div class="tool-section">
+                    <h3>🎨 Sacred Colors</h3>
+                    <div class="color-palette">
+                        <div class="color-item" style="background: #FF4500" onclick="setColor('#FF4500')" title="Fire"></div>
+                        <div class="color-item" style="background: #1E90FF" onclick="setColor('#1E90FF')" title="Water"></div>
+                        <div class="color-item" style="background: #8B4513" onclick="setColor('#8B4513')" title="Earth"></div>
+                        <div class="color-item" style="background: #87CEEB" onclick="setColor('#87CEEB')" title="Air"></div>
+                        <div class="color-item" style="background: #DDA0DD" onclick="setColor('#DDA0DD')" title="Aether"></div>
+                        <div class="color-item" style="background: #FFD700" onclick="setColor('#FFD700')" title="Gold"></div>
+                        <div class="color-item" style="background: #C0C0C0" onclick="setColor('#C0C0C0')" title="Silver"></div>
+                        <div class="color-item" style="background: #FF69B4" onclick="setColor('#FF69B4')" title="Pink"></div>
+                        <div class="color-item" style="background: #00CED1" onclick="setColor('#00CED1')" title="Turquoise"></div>
+                        <div class="color-item" style="background: #32CD32" onclick="setColor('#32CD32')" title="Lime"></div>
+                    </div>
+                </div>
+
+                <!-- Psychological Archetypes -->
+                <div class="tool-section">
+                    <h3>🧠 Psychological Archetypes</h3>
+                    <div class="element-library">
+                        <div class="element-item" onclick="addArchetype('hero')" title="Hero - Courage">🛡️</div>
+                        <div class="element-item" onclick="addArchetype('shadow')" title="Shadow - Hidden">👤</div>
+                        <div class="element-item" onclick="addArchetype('anima')" title="Anima - Feminine">♀️</div>
+                        <div class="element-item" onclick="addArchetype('animus')" title="Animus - Masculine">♂️</div>
+                        <div class="element-item" onclick="addArchetype('self')" title="Self - Integration">🔵</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="canvas-container">
+                <div class="canvas" id="design-canvas">
+                    <div class="sacred-grid"></div>
+                    <!-- Design elements will be added here -->
+                </div>
+            </div>
+
+            <div class="properties-panel">
+                <div class="property-group">
+                    <h4>🎯 Selected Element</h4>
+                    <div id="selected-info">No element selected</div>
+                </div>
+
+                <div class="property-group">
+                    <h4>📐 Position & Size</h4>
+                    <div class="property-control">
+                        <label>X Position</label>
+                        <input type="number" id="pos-x" value="100">
+                    </div>
+                    <div class="property-control">
+                        <label>Y Position</label>
+                        <input type="number" id="pos-y" value="100">
+                    </div>
+                    <div class="property-control">
+                        <label>Width</label>
+                        <input type="number" id="width" value="100">
+                    </div>
+                    <div class="property-control">
+                        <label>Height</label>
+                        <input type="number" id="height" value="100">
+                    </div>
+                </div>
+
+                <div class="property-group">
+                    <h4>🎨 Appearance</h4>
+                    <div class="property-control">
+                        <label>Background Color</label>
+                        <input type="color" id="bg-color" value="#ffffff">
+                    </div>
+                    <div class="property-control">
+                        <label>Border Color</label>
+                        <input type="color" id="border-color" value="#ffd700">
+                    </div>
+                    <div class="property-control">
+                        <label>Border Width</label>
+                        <input type="number" id="border-width" value="2">
+                    </div>
+                </div>
+
+                <div class="property-group">
+                    <h4>🔄 Transform</h4>
+                    <div class="property-control">
+                        <label>Rotation</label>
+                        <input type="number" id="rotation" value="0" min="0" max="360">
+                    </div>
+                    <div class="property-control">
+                        <label>Scale</label>
+                        <input type="number" id="scale" value="1" min="0.1" max="5" step="0.1">
+                    </div>
+                </div>
+
+                <div class="property-group">
+                    <h4>⚗️ Sacred Properties</h4>
+                    <div class="property-control">
+                        <label>Sacred Ratio</label>
+                        <input type="number" id="sacred-ratio" value="1.618" step="0.001">
+                    </div>
+                    <div class="property-control">
+                        <label>Element</label>
+                        <select id="element-select">
+                            <option value="fire">Fire</option>
+                            <option value="water">Water</option>
+                            <option value="earth">Earth</option>
+                            <option value="air">Air</option>
+                            <option value="aether">Aether</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="property-group">
+                    <button class="nav-btn" onclick="duplicateElement()" style="width: 100%; margin-bottom: 10px;">Duplicate</button>
+                    <button class="nav-btn" onclick="deleteElement()" style="width: 100%; background: #dc3545; border-color: #dc3545;">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Design Studio State
+        let activeTool = 'select';
+        let selectedElement = null;
+        let elements = [];
+        let elementId = 0;
+
+        // Canvas and elements
+        const canvas = document.getElementById('design-canvas');
+
+        // Sacred mathematics constants
+        const SACRED_RATIO = 1.618033988749;
+        const FIBONACCI_SEQUENCE = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            setupCanvas();
+            setupEventListeners();
+            updatePropertiesPanel();
+        });
+
+        function setActiveTool(tool) {
+            activeTool = tool;
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            canvas.style.cursor = tool === 'select' ? 'default' : 'crosshair';
+        }
+
+        function setupCanvas() {
+            // Add sacred geometry background
+            const geometry = createSacredGeometry();
+            canvas.appendChild(geometry);
+        }
+
+        function createSacredGeometry() {
+            const container = document.createElement('div');
+            container.className = 'sacred-geometry';
+            container.style.width = '100%';
+            container.style.height = '100%';
+            container.style.position = 'absolute';
+            container.style.top = '0';
+            container.style.left = '0';
+            container.style.pointerEvents = 'none';
+
+            // Add golden ratio spiral
+            const spiral = createGoldenSpiral();
+            container.appendChild(spiral);
+
+            return container;
+        }
+
+        function createGoldenSpiral() {
+            const spiral = document.createElement('div');
+            spiral.style.position = 'absolute';
+            spiral.style.width = '200px';
+            spiral.style.height = '200px';
+            spiral.style.border = '2px solid rgba(255, 215, 0, 0.3)';
+            spiral.style.borderRadius = '50%';
+            spiral.style.top = '50%';
+            spiral.style.left = '50%';
+            spiral.style.transform = 'translate(-50%, -50%)';
+            spiral.style.background = 'radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%)';
+
+            return spiral;
+        }
+
+        function setupEventListeners() {
+            canvas.addEventListener('click', handleCanvasClick);
+            canvas.addEventListener('mousemove', handleMouseMove);
+
+            // Property panel inputs
+            document.getElementById('pos-x').addEventListener('input', updateElementProperty);
+            document.getElementById('pos-y').addEventListener('input', updateElementProperty);
+            document.getElementById('width').addEventListener('input', updateElementProperty);
+            document.getElementById('height').addEventListener('input', updateElementProperty);
+            document.getElementById('bg-color').addEventListener('input', updateElementProperty);
+            document.getElementById('border-color').addEventListener('input', updateElementProperty);
+            document.getElementById('border-width').addEventListener('input', updateElementProperty);
+            document.getElementById('rotation').addEventListener('input', updateElementProperty);
+            document.getElementById('scale').addEventListener('input', updateElementProperty);
+            document.getElementById('sacred-ratio').addEventListener('input', updateElementProperty);
+            document.getElementById('element-select').addEventListener('change', updateElementProperty);
+        }
+
+        function handleCanvasClick(event) {
+            const rect = canvas.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+
+            if (activeTool === 'select') {
+                selectElementAt(x, y);
+            } else {
+                addElementAt(x, y);
+            }
+        }
+
+        function selectElementAt(x, y) {
+            // Find element at position
+            selectedElement = null;
+
+            for (const element of elements) {
+                const elem = document.getElementById(element.id);
+                if (elem && isPointInElement(x, y, elem)) {
+                    selectedElement = element;
+                    elem.classList.add('selected');
+                } else {
+                    elem.classList.remove('selected');
+                }
+            }
+
+            updatePropertiesPanel();
+        }
+
+        function isPointInElement(x, y, element) {
+            const rect = element.getBoundingClientRect();
+            const canvasRect = canvas.getBoundingClientRect();
+            const elemX = rect.left - canvasRect.left;
+            const elemY = rect.top - canvasRect.top;
+
+            return x >= elemX && x <= elemX + rect.width &&
+                   y >= elemY && y <= elemY + rect.height;
+        }
+
+        function addElementAt(x, y) {
+            const element = createDesignElement(x, y);
+            elements.push(element);
+            canvas.appendChild(element.domElement);
+        }
+
+        function createDesignElement(x, y) {
+            const element = {
+                id: `element-${elementId++}`,
+                x, y,
+                width: 100,
+                height: 100,
+                bgColor: '#ffd700',
+                borderColor: '#ff69b4',
+                borderWidth: 2,
+                rotation: 0,
+                scale: 1,
+                sacredRatio: SACRED_RATIO,
+                element: 'fire',
+                symbol: '🔥',
+                type: 'sacred'
+            };
+
+            const domElement = document.createElement('div');
+            domElement.id = element.id;
+            domElement.className = 'design-element';
+            domElement.style.left = `${x}px`;
+            domElement.style.top = `${y}px`;
+            domElement.style.width = `${element.width}px`;
+            domElement.style.height = `${element.height}px`;
+            domElement.style.backgroundColor = element.bgColor;
+            domElement.style.borderColor = element.borderColor;
+            domElement.style.borderWidth = `${element.borderWidth}px`;
+            domElement.style.borderStyle = 'solid';
+            domElement.style.borderRadius = '8px';
+            domElement.style.display = 'flex';
+            domElement.style.alignItems = 'center';
+            domElement.style.justifyContent = 'center';
+            domElement.style.fontSize = '2rem';
+            domElement.style.transformOrigin = 'center';
+
+            const controls = document.createElement('div');
+            controls.className = 'element-controls';
+            controls.innerHTML = `
+                <button onclick="duplicateElement('${element.id}')" style="margin-right: 5px; padding: 2px 6px; font-size: 0.7rem;">D</button>
+                <button onclick="deleteElement('${element.id}')" style="padding: 2px 6px; font-size: 0.7rem;">X</button>
+            `;
+            domElement.appendChild(controls);
+
+            element.domElement = domElement;
+            return element;
+        }
+
+        function addElement(type) {
+            const centerX = canvas.clientWidth / 2 - 50;
+            const centerY = canvas.clientHeight / 2 - 50;
+            addElementAt(centerX, centerY);
+        }
+
+        function addGeometry(type) {
+            const centerX = canvas.clientWidth / 2 - 50;
+            const centerY = canvas.clientHeight / 2 - 50;
+
+            const symbols = {
+                'tetrahedron': '▲',
+                'icosahedron': '⬟',
+                'cube': '⬜',
+                'octahedron': '⬡',
+                'dodecahedron': '⬟'
+            };
+
+            const element = createDesignElement(centerX, centerY);
+            element.symbol = symbols[type] || '⬟';
+            element.domElement.innerHTML = symbols[type] || '⬟';
+            element.type = 'geometry';
+
+            elements.push(element);
+            canvas.appendChild(element.domElement);
+        }
+
+        function addArchetype(type) {
+            const centerX = canvas.clientWidth / 2 - 50;
+            const centerY = canvas.clientHeight / 2 - 50;
+
+            const symbols = {
+                'hero': '🛡️',
+                'shadow': '👤',
+                'anima': '♀️',
+                'animus': '♂️',
+                'self': '🔵'
+            };
+
+            const element = createDesignElement(centerX, centerY);
+            element.symbol = symbols[type] || '🔵';
+            element.domElement.innerHTML = symbols[type] || '🔵';
+            element.type = 'archetype';
+
+            elements.push(element);
+            canvas.appendChild(element.domElement);
+        }
+
+        function setColor(color) {
+            if (selectedElement) {
+                selectedElement.bgColor = color;
+                selectedElement.domElement.style.backgroundColor = color;
+            }
+        }
+
+        function updateElementProperty() {
+            if (!selectedElement) return;
+
+            const x = parseFloat(document.getElementById('pos-x').value) || 0;
+            const y = parseFloat(document.getElementById('pos-y').value) || 0;
+            const width = parseFloat(document.getElementById('width').value) || 100;
+            const height = parseFloat(document.getElementById('height').value) || 100;
+            const rotation = parseFloat(document.getElementById('rotation').value) || 0;
+            const scale = parseFloat(document.getElementById('scale').value) || 1;
+            const sacredRatio = parseFloat(document.getElementById('sacred-ratio').value) || SACRED_RATIO;
+            const element = document.getElementById('element-select').value;
+
+            selectedElement.x = x;
+            selectedElement.y = y;
+            selectedElement.width = width;
+            selectedElement.height = height;
+            selectedElement.rotation = rotation;
+            selectedElement.scale = scale;
+            selectedElement.sacredRatio = sacredRatio;
+            selectedElement.element = element;
+
+            selectedElement.domElement.style.left = `${x}px`;
+            selectedElement.domElement.style.top = `${y}px`;
+            selectedElement.domElement.style.width = `${width}px`;
+            selectedElement.domElement.style.height = `${height}px`;
+            selectedElement.domElement.style.transform = `rotate(${rotation}deg) scale(${scale})`;
+        }
+
+        function updatePropertiesPanel() {
+            if (selectedElement) {
+                document.getElementById('selected-info').textContent = `${selectedElement.type} element`;
+                document.getElementById('pos-x').value = selectedElement.x;
+                document.getElementById('pos-y').value = selectedElement.y;
+                document.getElementById('width').value = selectedElement.width;
+                document.getElementById('height').value = selectedElement.height;
+                document.getElementById('bg-color').value = selectedElement.bgColor;
+                document.getElementById('border-color').value = selectedElement.borderColor;
+                document.getElementById('border-width').value = selectedElement.borderWidth;
+                document.getElementById('rotation').value = selectedElement.rotation;
+                document.getElementById('scale').value = selectedElement.scale;
+                document.getElementById('sacred-ratio').value = selectedElement.sacredRatio;
+                document.getElementById('element-select').value = selectedElement.element;
+            } else {
+                document.getElementById('selected-info').textContent = 'No element selected';
+            }
+        }
+
+        function duplicateElement(elementId) {
+            const element = elements.find(el => el.id === elementId);
+            if (element) {
+                const newElement = createDesignElement(element.x + 20, element.y + 20);
+                Object.assign(newElement, element);
+                newElement.id = `element-${elementId++}`;
+                newElement.x += 20;
+                newElement.y += 20;
+                newElement.domElement.id = newElement.id;
+
+                elements.push(newElement);
+                canvas.appendChild(newElement.domElement);
+            }
+        }
+
+        function deleteElement(elementId) {
+            const index = elements.findIndex(el => el.id === elementId);
+            if (index > -1) {
+                const element = elements[index];
+                canvas.removeChild(element.domElement);
+                elements.splice(index, 1);
+
+                if (selectedElement && selectedElement.id === elementId) {
+                    selectedElement = null;
+                    updatePropertiesPanel();
+                }
+            }
+        }
+
+        function handleMouseMove(event) {
+            if (activeTool !== 'select' || !selectedElement) return;
+
+            const rect = canvas.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+
+            // Update element position in real-time while dragging
+            selectedElement.x = x - selectedElement.width / 2;
+            selectedElement.y = y - selectedElement.height / 2;
+            selectedElement.domElement.style.left = `${selectedElement.x}px`;
+            selectedElement.domElement.style.top = `${selectedElement.y}px`;
+
+            updatePropertiesPanel();
+        }
+
+        // Make functions global for onclick handlers
+        window.setActiveTool = setActiveTool;
+        window.addElement = addElement;
+        window.addGeometry = addGeometry;
+        window.addArchetype = addArchetype;
+        window.setColor = setColor;
+        window.updateElementProperty = updateElementProperty;
+        window.duplicateElement = duplicateElement;
+        window.deleteElement = deleteElement;
+        window.generateReading = () => console.log('Tarot reading feature available');
+    </script>
+</body>
+</html>

@@ -15,7 +15,7 @@
     "archive"
   ],
   "author": "Cathedral Master Creative Intelligence Team",
-  "license": "CC0",
+  "license": "CC0-1.0",
   "engines": {
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0"
@@ -23,18 +23,52 @@
   "dependencies": {
     "@cathedral/codex-144-99": "workspace:*",
     "@cathedral/master-art-principles": "workspace:*",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "@cathedral/stone-grimoire": "workspace:*",
+    "@cathedral/stone-grimoire-core": "workspace:*",
+    "@cathedral/stone-grimoire-library-engine": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.17.0",
     "vitest": "^1.6.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:14:18.298Z",
-  "packageManager": "pnpm@8.0.0",
+  "consolidatedAt": "2025-12-01T19:37:02.335Z",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "Stone Grimoire",
     "symbol": "⊙",
     "label": "⊙ Stone Grimoire (@cathedral/stone-grimoire)"
+  },
+  "cathedral": {
+    "sacred_mathematics": {
+      "sacredGeometry": true,
+      "goldenRatio": 1.618,
+      "cathedralRatio": 1.455,
+      "fibonacciGrids": true,
+      "divineProportions": true
+    },
+    "trauma_safety": {
+      "noAutoplay": true,
+      "escExit": true,
+      "motionControls": true,
+      "intensityAdjustment": true,
+      "gentleDefaults": true,
+      "undoRedo": true
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
+    },
+    "integration": {
+      "connects_to": [
+        "stone-grimoire",
+        "stone-grimoire-core",
+        "stone-grimoire-library-engine"
+      ]
+    }
   }
 }

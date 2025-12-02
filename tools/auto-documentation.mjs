@@ -145,7 +145,7 @@ function generateCommandReference() {
     if (categoryScripts.length > 0) {
       doc += `## ${category}\n\n`;
       for (const [name, command] of categoryScripts) {
-        doc += `### \`ppnpm run ${name}\`\n\n`;
+        doc += `### \`pnpm run ${name}\`\n\n`;
         doc += `\`\`\`bash\n${command}\n\`\`\`\n\n`;
       }
     }

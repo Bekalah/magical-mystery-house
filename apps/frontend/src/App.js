@@ -3,13 +3,12 @@
  */
 
 import React from 'react';
-import '@cathedral/shared/src/styles/unified-professional.css';
 import SpellCastingUI from './components/SpellCastingUI';
 import './App.css';
 
 function App() {
     return (
-        <div className="App professional-theme">
+        <div className="App">
             <SpellCastingUI />
         </div>
     );

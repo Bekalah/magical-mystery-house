@@ -1,6 +1,5 @@
 // Cathedral144.jsx - Complete Alice/Matrix/RPG System with High-End Graphics
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import '@cathedral/shared/src/styles/unified-professional.css';
 import * as THREE from 'three';
 import './Cathedral144.css';
 
@@ -889,39 +888,39 @@ export default function Cathedral144() {
   const currentArcana = MAJOR_ARCANA[player.currentNode] || MAJOR_ARCANA[0];
 
   return (
-    <div className="cathedral-root professional-theme">
+    <div className="cathedral-root">
       {/* PORTAL SCREEN */}
       {gameState === 'portal' && (
-        <div className="portal-screen professional-theme">
-          <div className="wonderland-bg professional-theme"></div>
-          <div className="portal-content professional-theme">
-            <div className="white-rabbit professional-theme">
-              <span className="rabbit-emoji professional-theme">🐇</span>
-              <div className="rabbit-glow professional-theme"></div>
+        <div className="portal-screen">
+          <div className="wonderland-bg"></div>
+          <div className="portal-content">
+            <div className="white-rabbit">
+              <span className="rabbit-emoji">🐇</span>
+              <div className="rabbit-glow"></div>
             </div>
-            <h1 className="portal-title professional-theme">Cathedral 144:99</h1>
-            <h2 className="portal-subtitle professional-theme">Follow the White Rabbit</h2>
-            <p className="portal-tagline professional-theme">
+            <h1 className="portal-title">Cathedral 144:99</h1>
+            <h2 className="portal-subtitle">Follow the White Rabbit</h2>
+            <p className="portal-tagline">
               "I'm late! I'm late! For a very important date with the Matrix!"<br/>
               <em>Where Alice meets Neo in Sacred Geometry</em>
             </p>
             
-            <div className="pill-choice professional-theme">
-              <button className="portal-btn red-pill professional-theme" onClick={() => enterWonderland('red')}>
+            <div className="pill-choice">
+              <button className="portal-btn red-pill" onClick={() => enterWonderland('red')}>
                 🔴 Red Pill
-                <span className="pill-desc professional-theme">See how deep the rabbit hole goes</span>
+                <span className="pill-desc">See how deep the rabbit hole goes</span>
               </button>
-              <button className="portal-btn blue-pill professional-theme" onClick={() => enterWonderland('blue')}>
+              <button className="portal-btn blue-pill" onClick={() => enterWonderland('blue')}>
                 🔵 Blue Pill  
-                <span className="pill-desc professional-theme">Stay in Wonderland a little longer</span>
+                <span className="pill-desc">Stay in Wonderland a little longer</span>
               </button>
             </div>
             
-            <p className="portal-hint professional-theme">
+            <p className="portal-hint">
               <em>"Both pills lead to the Cathedral - that's the White Rabbit's joke"</em>
             </p>
             
-            <div className="portal-stats professional-theme">
+            <div className="portal-stats">
               <div>🕰️ Time: Always 6 o'clock</div>
               <div>🎭 Mad Level: Delightfully</div>
               <div>🌀 Reality Status: Negotiable</div>
@@ -933,12 +932,12 @@ export default function Cathedral144() {
       {/* MATRIX TRANSITION */}
       {gameState === 'matrix' && (
         <>
-          <canvas id="matrix-canvas" className="matrix-canvas professional-theme"></canvas>
-          <div className="matrix-overlay professional-theme">
-            <div className="matrix-text professional-theme">
+          <canvas id="matrix-canvas" className="matrix-canvas"></canvas>
+          <div className="matrix-overlay">
+            <div className="matrix-text">
               {matrixMode ? "Welcome to the Real World" : "Welcome to Wonderland"}
             </div>
-            <div className="loading-text professional-theme">Following the White Rabbit...</div>
+            <div className="loading-text">Following the White Rabbit...</div>
           </div>
         </>
       )}
@@ -946,57 +945,57 @@ export default function Cathedral144() {
       {/* MAIN GAME */}
       {gameState === 'playing' && (
         <>
-          <div ref={mountRef} className="hologram-mount professional-theme" />
+          <div ref={mountRef} className="hologram-mount" />
           
           {/* Enhanced HUD */}
-          <div className="hud professional-theme">
+          <div className="hud">
             {/* White Rabbit Status */}
             {player.followingRabbit && (
-              <div className="rabbit-status professional-theme">
-                <span className="rabbit-icon professional-theme">🐇</span>
-                <div className="rabbit-text professional-theme">Following the White Rabbit</div>
-                <div className="rabbit-quote professional-theme">"We're painting the roses red with code!"</div>
+              <div className="rabbit-status">
+                <span className="rabbit-icon">🐇</span>
+                <div className="rabbit-text">Following the White Rabbit</div>
+                <div className="rabbit-quote">"We're painting the roses red with code!"</div>
               </div>
             )}
 
             {/* Node Card */}
-            <div className="node-card enhanced professional-theme">
-              <div className="card-arcana professional-theme">{currentArcana.name}</div>
-              <div className="card-character professional-theme">{currentArcana.char}</div>
-              <div className="card-subtitle professional-theme">{currentArcana.subtitle}</div>
-              <div className="card-element professional-theme">{currentArcana.element}</div>
+            <div className="node-card enhanced">
+              <div className="card-arcana">{currentArcana.name}</div>
+              <div className="card-character">{currentArcana.char}</div>
+              <div className="card-subtitle">{currentArcana.subtitle}</div>
+              <div className="card-element">{currentArcana.element}</div>
               {currentArcana.char === "White Rabbit" && (
-                <div className="rabbit-special professional-theme">⏰ Time Master Active</div>
+                <div className="rabbit-special">⏰ Time Master Active</div>
               )}
             </div>
 
             {/* Enhanced Player Stats */}
-            <div className="player-stats enhanced professional-theme">
-              <div className="stat-bar professional-theme">
+            <div className="player-stats enhanced">
+              <div className="stat-bar">
                 <span>HP</span>
-                <div className="bar hp-bar professional-theme">
-                  <div className="fill hp professional-theme" style={{ width: `${(player.hp/player.maxHp)*100}%` }} />
-                  <div className="bar-glow professional-theme"></div>
+                <div className="bar hp-bar">
+                  <div className="fill hp" style={{ width: `${(player.hp/player.maxHp)*100}%` }} />
+                  <div className="bar-glow"></div>
                 </div>
                 <span>{player.hp}/{player.maxHp}</span>
               </div>
-              <div className="stat-bar professional-theme">
+              <div className="stat-bar">
                 <span>MP</span>
-                <div className="bar mp-bar professional-theme">
-                  <div className="fill mp professional-theme" style={{ width: `${(player.mana/player.maxMana)*100}%` }} />
-                  <div className="bar-glow professional-theme"></div>
+                <div className="bar mp-bar">
+                  <div className="fill mp" style={{ width: `${(player.mana/player.maxMana)*100}%` }} />
+                  <div className="bar-glow"></div>
                 </div>
                 <span>{player.mana}/{player.maxMana}</span>
               </div>
-              <div className="stat-bar professional-theme">
+              <div className="stat-bar">
                 <span>XP</span>
-                <div className="bar xp-bar professional-theme">
-                  <div className="fill xp professional-theme" style={{ width: `${(player.xp/player.xpToNext)*100}%` }} />
-                  <div className="bar-glow professional-theme"></div>
+                <div className="bar xp-bar">
+                  <div className="fill xp" style={{ width: `${(player.xp/player.xpToNext)*100}%` }} />
+                  <div className="bar-glow"></div>
                 </div>
                 <span>{player.xp}/{player.xpToNext}</span>
               </div>
-              <div className="stat-row professional-theme">
+              <div className="stat-row">
                 <span>Level: {player.level}</span>
                 <span>Gold: {player.gold}g</span>
                 <span>Nodes: {player.visitedNodes.length}/144</span>
@@ -1004,9 +1003,9 @@ export default function Cathedral144() {
             </div>
 
             {/* Enhanced Abilities Panel */}
-            <div className="abilities-panel enhanced professional-theme">
+            <div className="abilities-panel enhanced">
               <h3>🎭 Arcane Abilities</h3>
-              <div className="ability-grid professional-theme">
+              <div className="ability-grid">
                 {player.abilities.map(id => {
                   const arcana = MAJOR_ARCANA[id];
                   const manaCost = Math.floor(arcana.cost / 3);
@@ -1020,17 +1019,17 @@ export default function Cathedral144() {
                       disabled={!canUse}
                       title={`${arcana.ability} - ${arcana.element} Element - ${manaCost} MP`}
                     >
-                      <div className="ability-name professional-theme">{arcana.ability}</div>
-                      <div className="ability-cost professional-theme">{manaCost} MP</div>
-                      <div className="ability-element professional-theme">{arcana.element}</div>
+                      <div className="ability-name">{arcana.ability}</div>
+                      <div className="ability-cost">{manaCost} MP</div>
+                      <div className="ability-element">{arcana.element}</div>
                     </button>
                   );
                 })}
               </div>
               
               {player.abilities.includes(0) && (
-                <div className="rabbit-controls professional-theme">
-                  <button className="rabbit-btn professional-theme" onClick={() => setMatrixMode(!matrixMode)}>
+                <div className="rabbit-controls">
+                  <button className="rabbit-btn" onClick={() => setMatrixMode(!matrixMode)}>
                     {matrixMode ? "🐇 Exit Matrix" : "🐇 Enter Matrix"}
                   </button>
                 </div>
@@ -1038,9 +1037,9 @@ export default function Cathedral144() {
             </div>
 
             {/* Enhanced Settings Panel */}
-            <div className="settings-panel enhanced professional-theme">
+            <div className="settings-panel enhanced">
               <h3>⚗️ Sacred Parameters</h3>
-              <div className="setting-group professional-theme">
+              <div className="setting-group">
                 <label>
                   <span>Frequency: {settings.frequency} Hz</span>
                   <input 
@@ -1049,7 +1048,7 @@ export default function Cathedral144() {
                     max="1000" 
                     value={settings.frequency}
                     onChange={e => setSettings(s => ({ ...s, frequency: parseInt(e.target.value) }))}
-                    className="sacred-slider professional-theme"
+                    className="sacred-slider"
                   />
                 </label>
                 <label>
@@ -1061,7 +1060,7 @@ export default function Cathedral144() {
                     step="0.001" 
                     value={settings.ratio}
                     onChange={e => setSettings(s => ({ ...s, ratio: parseFloat(e.target.value) }))}
-                    className="sacred-slider professional-theme"
+                    className="sacred-slider"
                   />
                 </label>
                 <label>
@@ -1073,7 +1072,7 @@ export default function Cathedral144() {
                     step="0.1" 
                     value={settings.flow}
                     onChange={e => setSettings(s => ({ ...s, flow: parseFloat(e.target.value) }))}
-                    className="sacred-slider professional-theme"
+                    className="sacred-slider"
                   />
                 </label>
                 <label>
@@ -1085,18 +1084,18 @@ export default function Cathedral144() {
                     step="500" 
                     value={settings.particleCount}
                     onChange={e => setSettings(s => ({ ...s, particleCount: parseInt(e.target.value) }))}
-                    className="sacred-slider professional-theme"
+                    className="sacred-slider"
                   />
                 </label>
               </div>
             </div>
 
             {/* Mode Toggle Buttons */}
-            <div className="mode-controls professional-theme">
-              <button className="hud-btn professional-theme" onClick={() => setShowCodex(!showCodex)}>
+            <div className="mode-controls">
+              <button className="hud-btn" onClick={() => setShowCodex(!showCodex)}>
                 📖 Codex Abyssiae
               </button>
-              <button className="hud-btn professional-theme" onClick={() => setShowInventory(!showInventory)}>
+              <button className="hud-btn" onClick={() => setShowInventory(!showInventory)}>
                 🎒 Wonder-Bag
               </button>
               <button className={`hud-btn ${matrixMode ? 'matrix-active' : ''}`} 
@@ -1108,44 +1107,44 @@ export default function Cathedral144() {
 
           {/* White Rabbit Dialogue */}
           {rabbitDialogue && (
-            <div className="rabbit-dialogue professional-theme">
-              <div className="dialogue-bubble professional-theme">
-                <div className="rabbit-avatar professional-theme">🐇</div>
-                <div className="dialogue-text professional-theme">{rabbitDialogue}</div>
+            <div className="rabbit-dialogue">
+              <div className="dialogue-bubble">
+                <div className="rabbit-avatar">🐇</div>
+                <div className="dialogue-text">{rabbitDialogue}</div>
               </div>
             </div>
           )}
 
           {/* Enhanced Codex Overlay */}
           {showCodex && (
-            <div className="codex-overlay enhanced professional-theme" onClick={() => setShowCodex(false)}>
-              <div className="codex-panel enhanced professional-theme" onClick={e => e.stopPropagation()}>
+            <div className="codex-overlay enhanced" onClick={() => setShowCodex(false)}>
+              <div className="codex-panel enhanced" onClick={e => e.stopPropagation()}>
                 <h2>📜 The Codex Abyssiae</h2>
                 
-                <div className="codex-tabs professional-theme">
-                  <button className="tab active professional-theme">Quests</button>
-                  <button className="tab professional-theme">Arcana Shop</button>
-                  <button className="tab professional-theme">Lore</button>
+                <div className="codex-tabs">
+                  <button className="tab active">Quests</button>
+                  <button className="tab">Arcana Shop</button>
+                  <button className="tab">Lore</button>
                 </div>
                 
-                <div className="codex-section professional-theme">
+                <div className="codex-section">
                   <h3>🎯 Active Quests</h3>
                   {questLog.map(q => (
-                    <div key={q.id} className="quest-item enhanced professional-theme">
-                      <div className="quest-header professional-theme">
-                        <div className="quest-name professional-theme">{q.name}</div>
-                        <div className="quest-status professional-theme">
+                    <div key={q.id} className="quest-item enhanced">
+                      <div className="quest-header">
+                        <div className="quest-name">{q.name}</div>
+                        <div className="quest-status">
                           {q.progress === q.max ? "✅ Complete" : "🔄 In Progress"}
                         </div>
                       </div>
-                      <div className="quest-description professional-theme">{q.description}</div>
-                      <div className="quest-progress professional-theme">
-                        <div className="quest-bar professional-theme">
-                          <div className="quest-fill professional-theme" style={{ width: `${(q.progress/q.max)*100}%` }} />
+                      <div className="quest-description">{q.description}</div>
+                      <div className="quest-progress">
+                        <div className="quest-bar">
+                          <div className="quest-fill" style={{ width: `${(q.progress/q.max)*100}%` }} />
                         </div>
                         <span>{q.progress}/{q.max}</span>
                       </div>
-                      <div className="quest-rewards professional-theme">
+                      <div className="quest-rewards">
                         Rewards: {q.reward.xp && `${q.reward.xp} XP `}
                         {q.reward.gold && `${q.reward.gold}g `}
                         {q.reward.ability && `New Ability `}
@@ -1155,21 +1154,21 @@ export default function Cathedral144() {
                   ))}
                 </div>
 
-                <div className="codex-section professional-theme">
+                <div className="codex-section">
                   <h3>🃏 Arcana Emporium</h3>
-                  <div className="arcana-shop enhanced professional-theme">
+                  <div className="arcana-shop enhanced">
                     {MAJOR_ARCANA.map(a => (
                       <div key={a.id} className={`arcana-item enhanced ${player.abilities.includes(a.id) ? 'owned' : ''}`}>
-                        <div className="arcana-header professional-theme">
-                          <div className="arcana-name professional-theme">{a.name}</div>
-                          {a.char === "White Rabbit" && <span className="special-mark professional-theme">⭐</span>}
+                        <div className="arcana-header">
+                          <div className="arcana-name">{a.name}</div>
+                          {a.char === "White Rabbit" && <span className="special-mark">⭐</span>}
                         </div>
-                        <div className="arcana-char professional-theme">{a.char}</div>
-                        <div className="arcana-ability professional-theme">{a.ability}</div>
-                        <div className="arcana-element professional-theme">{a.element} Element</div>
+                        <div className="arcana-char">{a.char}</div>
+                        <div className="arcana-ability">{a.ability}</div>
+                        <div className="arcana-element">{a.element} Element</div>
                         {!player.abilities.includes(a.id) && (
                           <button 
-                            className="unlock-btn enhanced professional-theme"
+                            className="unlock-btn enhanced"
                             onClick={() => unlockAbility(a.id)}
                             disabled={player.gold < a.cost}
                           >
@@ -1177,7 +1176,7 @@ export default function Cathedral144() {
                           </button>
                         )}
                         {player.abilities.includes(a.id) && (
-                          <div className="owned-mark professional-theme">✨ Mastered</div>
+                          <div className="owned-mark">✨ Mastered</div>
                         )}
                       </div>
                     ))}
@@ -1189,24 +1188,24 @@ export default function Cathedral144() {
 
           {/* Enhanced Inventory */}
           {showInventory && (
-            <div className="codex-overlay enhanced professional-theme" onClick={() => setShowInventory(false)}>
-              <div className="codex-panel enhanced professional-theme" onClick={e => e.stopPropagation()}>
+            <div className="codex-overlay enhanced" onClick={() => setShowInventory(false)}>
+              <div className="codex-panel enhanced" onClick={e => e.stopPropagation()}>
                 <h2>🎒 Wonderland Inventory</h2>
-                <div className="inventory-grid enhanced professional-theme">
+                <div className="inventory-grid enhanced">
                   {player.inventory.length === 0 ? (
                     <p>Your wonder-bag is empty... for now!</p>
                   ) : (
                     player.inventory.map((item, i) => (
-                      <div key={i} className="inventory-item enhanced professional-theme">
-                        <div className="item-icon professional-theme">
+                      <div key={i} className="inventory-item enhanced">
+                        <div className="item-icon">
                           {item === "Pocket Watch" ? "⏰" : 
                            item === "Red Pill" ? "🔴" : 
                            item === "Blue Pill" ? "🔵" :
                            item === "Merkaba Crystal" ? "💎" : "✨"}
                         </div>
-                        <div className="item-name professional-theme">{item}</div>
+                        <div className="item-name">{item}</div>
                         {item === "Pocket Watch" && (
-                          <div className="item-desc professional-theme">Time flows differently here...</div>
+                          <div className="item-desc">Time flows differently here...</div>
                         )}
                       </div>
                     ))
@@ -1218,24 +1217,24 @@ export default function Cathedral144() {
 
           {/* Active Ability Display */}
           {activeAbility && (
-            <div className="ability-active enhanced professional-theme">
-              <div className="ability-burst professional-theme"></div>
-              <div className="ability-name professional-theme">{activeAbility.ability}</div>
-              <div className="ability-char professional-theme">{activeAbility.char}</div>
-              <div className="ability-element professional-theme">{activeAbility.element} Element</div>
+            <div className="ability-active enhanced">
+              <div className="ability-burst"></div>
+              <div className="ability-name">{activeAbility.ability}</div>
+              <div className="ability-char">{activeAbility.char}</div>
+              <div className="ability-element">{activeAbility.element} Element</div>
               {activeAbility.char === "White Rabbit" && (
-                <div className="rabbit-effect professional-theme">⏰ Time Dilation Active!</div>
+                <div className="rabbit-effect">⏰ Time Dilation Active!</div>
               )}
             </div>
           )}
 
           {/* Matrix Mode Overlay */}
           {matrixMode && (
-            <div className="matrix-mode-overlay professional-theme">
-              <div className="matrix-hud professional-theme">
-                <div className="matrix-title professional-theme">THE MATRIX</div>
-                <div className="matrix-subtitle professional-theme">Reality.exe has stopped working</div>
-                <div className="matrix-stats professional-theme">
+            <div className="matrix-mode-overlay">
+              <div className="matrix-hud">
+                <div className="matrix-title">THE MATRIX</div>
+                <div className="matrix-subtitle">Reality.exe has stopped working</div>
+                <div className="matrix-stats">
                   <div>Red Pills Taken: {player.inventory.includes("Red Pill") ? "∞" : "0"}</div>
                   <div>Spoons Bent: 42</div>
                   <div>Reality Level: Negotiable</div>

@@ -1,0 +1,1029 @@
+{
+  "0": {
+    "character": {
+      "number": 0,
+      "name": "The Fool",
+      "purityDesignation": "Rebecca Respawn, The Wonder-Keeper"
+    },
+    "realm": "Kitchen Alchemy & Christian Mysticism",
+    "primaryDeities": [
+      {
+        "name": "Divine Sophia",
+        "type": "Goddess",
+        "pantheon": "Christian Mysticism",
+        "connection": "Wisdom and mysticism"
+      },
+      {
+        "name": "The Holy Guardian Angel",
+        "type": "Angel",
+        "pantheon": "Christian Mysticism",
+        "connection": "Crowley's HGA work"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Hermes",
+        "type": "God",
+        "pantheon": "Greek",
+        "connection": "Traveler, guide"
+      },
+      {
+        "name": "Trickster Deities",
+        "type": "Collective",
+        "pantheon": "Various",
+        "connection": "Fool energy"
+      }
+    ],
+    "connections": [
+      "Wisdom and mysticism",
+      "Crowley's HGA work"
+    ]
+  },
+  "1": {
+    "character": {
+      "number": 1,
+      "name": "The Magician",
+      "purityDesignation": "The Manifestor"
+    },
+    "realm": "Enochian",
+    "primaryDeities": [
+      {
+        "name": "Enochian Angels",
+        "type": "Angelic Host",
+        "pantheon": "Enochian",
+        "connection": "Dee's angelic system"
+      },
+      {
+        "name": "Hermes Trismegistus",
+        "type": "God",
+        "pantheon": "Hermetic",
+        "connection": "Hermetic tradition"
+      },
+      {
+        "name": "Thoth",
+        "type": "God",
+        "pantheon": "Egyptian",
+        "connection": "Wisdom and magic"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Mercury",
+        "type": "God",
+        "pantheon": "Roman",
+        "connection": "Communication and magic"
+      },
+      {
+        "name": "Odin",
+        "type": "God",
+        "pantheon": "Norse",
+        "connection": "Wisdom and magic"
+      }
+    ],
+    "connections": [
+      "Dee's angelic system",
+      "Hermetic tradition",
+      "Wisdom and magic"
+    ]
+  },
+  "2": {
+    "character": {
+      "number": 2,
+      "name": "The High Priestess",
+      "purityDesignation": "Gemini Rivers, The Wisdom Keeper"
+    },
+    "realm": "Avalon",
+    "primaryDeities": [
+      {
+        "name": "Morgan Le Fay",
+        "type": "Goddess",
+        "pantheon": "Avalon",
+        "connection": "Avalon mysteries"
+      },
+      {
+        "name": "The Lady of the Lake",
+        "type": "Goddess",
+        "pantheon": "Avalon",
+        "connection": "Water magic, Avalon"
+      },
+      {
+        "name": "Isis",
+        "type": "Goddess",
+        "pantheon": "Egyptian",
+        "connection": "Mysteries and magic"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Hecate",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Crossroads, magic"
+      },
+      {
+        "name": "Luna",
+        "type": "Goddess",
+        "pantheon": "Roman",
+        "connection": "Moon, intuition"
+      }
+    ],
+    "connections": [
+      "Avalon mysteries",
+      "Water magic, Avalon",
+      "Mysteries and magic"
+    ]
+  },
+  "3": {
+    "character": {
+      "number": 3,
+      "name": "The Empress",
+      "purityDesignation": "The Fertility Guardian"
+    },
+    "realm": "Doreen's Garden",
+    "primaryDeities": [
+      {
+        "name": "Demeter",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Fertility, nature"
+      },
+      {
+        "name": "Freya",
+        "type": "Goddess",
+        "pantheon": "Norse",
+        "connection": "Fertility, love"
+      },
+      {
+        "name": "Gaia",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Earth, nature"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Persephone",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Seasons, growth"
+      },
+      {
+        "name": "Brigid",
+        "type": "Goddess",
+        "pantheon": "Celtic",
+        "connection": "Fertility, creativity"
+      }
+    ],
+    "connections": [
+      "Fertility, nature",
+      "Fertility, love",
+      "Earth, nature"
+    ]
+  },
+  "4": {
+    "character": {
+      "number": 4,
+      "name": "The Emperor",
+      "purityDesignation": "The Order Keeper"
+    },
+    "realm": "Structured Authority",
+    "primaryDeities": [
+      {
+        "name": "Zeus",
+        "type": "God",
+        "pantheon": "Greek",
+        "connection": "Authority, order"
+      },
+      {
+        "name": "Jupiter",
+        "type": "God",
+        "pantheon": "Roman",
+        "connection": "Authority, structure"
+      },
+      {
+        "name": "Odin",
+        "type": "God",
+        "pantheon": "Norse",
+        "connection": "Wisdom, authority"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Ra",
+        "type": "God",
+        "pantheon": "Egyptian",
+        "connection": "Solar authority"
+      },
+      {
+        "name": "Marduk",
+        "type": "God",
+        "pantheon": "Mesopotamian",
+        "connection": "Order, creation"
+      }
+    ],
+    "connections": [
+      "Authority, order",
+      "Authority, structure",
+      "Wisdom, authority"
+    ]
+  },
+  "5": {
+    "character": {
+      "number": 5,
+      "name": "The Hierophant",
+      "purityDesignation": "The Chohan of the Golden Flame"
+    },
+    "realm": "The Tower on the Tor",
+    "primaryDeities": [
+      {
+        "name": "Chiron",
+        "type": "Centaur",
+        "pantheon": "Greek",
+        "connection": "Teaching, healing"
+      },
+      {
+        "name": "Thoth",
+        "type": "God",
+        "pantheon": "Egyptian",
+        "connection": "Wisdom, teaching"
+      },
+      {
+        "name": "Hermes",
+        "type": "God",
+        "pantheon": "Greek",
+        "connection": "Communication, teaching"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Ganesha",
+        "type": "God",
+        "pantheon": "Hindu",
+        "connection": "Wisdom, teaching"
+      },
+      {
+        "name": "Saraswati",
+        "type": "Goddess",
+        "pantheon": "Hindu",
+        "connection": "Knowledge, arts"
+      }
+    ],
+    "connections": [
+      "Teaching, healing",
+      "Wisdom, teaching",
+      "Communication, teaching"
+    ]
+  },
+  "6": {
+    "character": {
+      "number": 6,
+      "name": "The Lovers",
+      "purityDesignation": "Scarlett Lady, The Sacred Union Master"
+    },
+    "realm": "Sacred Union",
+    "primaryDeities": [
+      {
+        "name": "Aphrodite",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Love, union"
+      },
+      {
+        "name": "Venus",
+        "type": "Goddess",
+        "pantheon": "Roman",
+        "connection": "Love, beauty"
+      },
+      {
+        "name": "Freya",
+        "type": "Goddess",
+        "pantheon": "Norse",
+        "connection": "Love, fertility"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Eros",
+        "type": "God",
+        "pantheon": "Greek",
+        "connection": "Love, desire"
+      },
+      {
+        "name": "Cupid",
+        "type": "God",
+        "pantheon": "Roman",
+        "connection": "Love, union"
+      }
+    ],
+    "connections": [
+      "Love, union",
+      "Love, beauty",
+      "Love, fertility"
+    ]
+  },
+  "7": {
+    "character": {
+      "number": 7,
+      "name": "The Chariot",
+      "purityDesignation": "Elyria Nox, The Dimensional Navigator"
+    },
+    "realm": "Dimensional Navigation",
+    "primaryDeities": [
+      {
+        "name": "Apollo",
+        "type": "God",
+        "pantheon": "Greek",
+        "connection": "Direction, victory"
+      },
+      {
+        "name": "Sol",
+        "type": "God",
+        "pantheon": "Roman",
+        "connection": "Solar power, direction"
+      },
+      {
+        "name": "Mithras",
+        "type": "God",
+        "pantheon": "Roman",
+        "connection": "Victory, direction"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Thor",
+        "type": "God",
+        "pantheon": "Norse",
+        "connection": "Strength, victory"
+      },
+      {
+        "name": "Indra",
+        "type": "God",
+        "pantheon": "Hindu",
+        "connection": "Victory, power"
+      }
+    ],
+    "connections": [
+      "Direction, victory",
+      "Solar power, direction",
+      "Victory, direction"
+    ]
+  },
+  "8": {
+    "character": {
+      "number": 8,
+      "name": "Strength",
+      "purityDesignation": "The Inner Power Master"
+    },
+    "realm": "Inner Power",
+    "primaryDeities": [
+      {
+        "name": "Hercules",
+        "type": "Hero",
+        "pantheon": "Greek",
+        "connection": "Strength, courage"
+      },
+      {
+        "name": "Athena",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Inner strength, wisdom"
+      },
+      {
+        "name": "Durga",
+        "type": "Goddess",
+        "pantheon": "Hindu",
+        "connection": "Strength, protection"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Kali",
+        "type": "Goddess",
+        "pantheon": "Hindu",
+        "connection": "Power, transformation"
+      },
+      {
+        "name": "Sekhmet",
+        "type": "Goddess",
+        "pantheon": "Egyptian",
+        "connection": "Strength, protection"
+      }
+    ],
+    "connections": [
+      "Strength, courage",
+      "Inner strength, wisdom",
+      "Strength, protection"
+    ]
+  },
+  "9": {
+    "character": {
+      "number": 9,
+      "name": "The Hermit",
+      "purityDesignation": "Orin Lantern, The Seeker Guide"
+    },
+    "realm": "Solitary Research",
+    "primaryDeities": [
+      {
+        "name": "Thoth",
+        "type": "God",
+        "pantheon": "Egyptian",
+        "connection": "Wisdom, knowledge"
+      },
+      {
+        "name": "Odin",
+        "type": "God",
+        "pantheon": "Norse",
+        "connection": "Wisdom, solitude"
+      },
+      {
+        "name": "Hermes Trismegistus",
+        "type": "God",
+        "pantheon": "Hermetic",
+        "connection": "Hermetic wisdom"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Mercury",
+        "type": "God",
+        "pantheon": "Roman",
+        "connection": "Communication, knowledge"
+      },
+      {
+        "name": "Ganesha",
+        "type": "God",
+        "pantheon": "Hindu",
+        "connection": "Wisdom, knowledge"
+      }
+    ],
+    "connections": [
+      "Wisdom, knowledge",
+      "Wisdom, solitude",
+      "Hermetic wisdom"
+    ]
+  },
+  "10": {
+    "character": {
+      "number": 10,
+      "name": "Wheel of Fortune",
+      "purityDesignation": "Grand Professor of Eternal Flux"
+    },
+    "realm": "Eternal Flux",
+    "primaryDeities": [
+      {
+        "name": "Fortuna",
+        "type": "Goddess",
+        "pantheon": "Roman",
+        "connection": "Fortune, cycles"
+      },
+      {
+        "name": "Tyche",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Fortune, chance"
+      },
+      {
+        "name": "Lakshmi",
+        "type": "Goddess",
+        "pantheon": "Hindu",
+        "connection": "Fortune, abundance"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Nemesis",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Balance, cycles"
+      },
+      {
+        "name": "Karma Deities",
+        "type": "Collective",
+        "pantheon": "Various",
+        "connection": "Cycles, balance"
+      }
+    ],
+    "connections": [
+      "Fortune, cycles",
+      "Fortune, chance",
+      "Fortune, abundance"
+    ]
+  },
+  "11": {
+    "character": {
+      "number": 11,
+      "name": "Justice",
+      "purityDesignation": "The Balanced Judge"
+    },
+    "realm": "Balance",
+    "primaryDeities": [
+      {
+        "name": "Ma'at",
+        "type": "Goddess",
+        "pantheon": "Egyptian",
+        "connection": "Justice, balance"
+      },
+      {
+        "name": "Themis",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Justice, order"
+      },
+      {
+        "name": "Justitia",
+        "type": "Goddess",
+        "pantheon": "Roman",
+        "connection": "Justice, law"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Dike",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Justice, moral order"
+      },
+      {
+        "name": "Shamash",
+        "type": "God",
+        "pantheon": "Mesopotamian",
+        "connection": "Justice, law"
+      }
+    ],
+    "connections": [
+      "Justice, balance",
+      "Justice, order",
+      "Justice, law"
+    ]
+  },
+  "12": {
+    "character": {
+      "number": 12,
+      "name": "The Hanged Man",
+      "purityDesignation": "The Suspended Seeker"
+    },
+    "realm": "Suspended Perspective",
+    "primaryDeities": [
+      {
+        "name": "Odin",
+        "type": "God",
+        "pantheon": "Norse",
+        "connection": "Sacrifice, wisdom"
+      },
+      {
+        "name": "Prometheus",
+        "type": "Titan",
+        "pantheon": "Greek",
+        "connection": "Sacrifice, knowledge"
+      },
+      {
+        "name": "Christ",
+        "type": "Deity",
+        "pantheon": "Christian",
+        "connection": "Sacrifice, redemption"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Attis",
+        "type": "God",
+        "pantheon": "Phrygian",
+        "connection": "Sacrifice, rebirth"
+      },
+      {
+        "name": "Osiris",
+        "type": "God",
+        "pantheon": "Egyptian",
+        "connection": "Death, rebirth"
+      }
+    ],
+    "connections": [
+      "Sacrifice, wisdom",
+      "Sacrifice, knowledge",
+      "Sacrifice, redemption"
+    ]
+  },
+  "13": {
+    "character": {
+      "number": 13,
+      "name": "Death",
+      "purityDesignation": "The Transformation Master"
+    },
+    "realm": "Transformation",
+    "primaryDeities": [
+      {
+        "name": "Anubis",
+        "type": "God",
+        "pantheon": "Egyptian",
+        "connection": "Death, transformation"
+      },
+      {
+        "name": "Hades",
+        "type": "God",
+        "pantheon": "Greek",
+        "connection": "Underworld, transformation"
+      },
+      {
+        "name": "Hel",
+        "type": "Goddess",
+        "pantheon": "Norse",
+        "connection": "Death, transformation"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Persephone",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Death, rebirth"
+      },
+      {
+        "name": "Yama",
+        "type": "God",
+        "pantheon": "Hindu",
+        "connection": "Death, justice"
+      }
+    ],
+    "connections": [
+      "Death, transformation",
+      "Underworld, transformation",
+      "Death, transformation"
+    ]
+  },
+  "14": {
+    "character": {
+      "number": 14,
+      "name": "Temperance",
+      "purityDesignation": "The Alchemical Balancer"
+    },
+    "realm": "Alchemical Mixing",
+    "primaryDeities": [
+      {
+        "name": "Iris",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Rainbow, balance"
+      },
+      {
+        "name": "Hestia",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Home, balance"
+      },
+      {
+        "name": "Vesta",
+        "type": "Goddess",
+        "pantheon": "Roman",
+        "connection": "Home, balance"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Brigid",
+        "type": "Goddess",
+        "pantheon": "Celtic",
+        "connection": "Home, balance"
+      },
+      {
+        "name": "Hestia",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Kitchen, balance"
+      }
+    ],
+    "connections": [
+      "Rainbow, balance",
+      "Home, balance",
+      "Home, balance"
+    ]
+  },
+  "15": {
+    "character": {
+      "number": 15,
+      "name": "The Devil",
+      "purityDesignation": "The Shadow Binder"
+    },
+    "realm": "Shadow Work",
+    "primaryDeities": [
+      {
+        "name": "Pan",
+        "type": "God",
+        "pantheon": "Greek",
+        "connection": "Nature, shadow"
+      },
+      {
+        "name": "Baphomet",
+        "type": "Deity",
+        "pantheon": "Esoteric",
+        "connection": "Balance, shadow"
+      },
+      {
+        "name": "Loki",
+        "type": "God",
+        "pantheon": "Norse",
+        "connection": "Trickster, shadow"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Set",
+        "type": "God",
+        "pantheon": "Egyptian",
+        "connection": "Chaos, shadow"
+      },
+      {
+        "name": "Satan",
+        "type": "Deity",
+        "pantheon": "Christian",
+        "connection": "Shadow work"
+      }
+    ],
+    "connections": [
+      "Nature, shadow",
+      "Balance, shadow",
+      "Trickster, shadow"
+    ]
+  },
+  "16": {
+    "character": {
+      "number": 16,
+      "name": "The Tower",
+      "purityDesignation": "The Destructive Awakener"
+    },
+    "realm": "Destructive Awakening",
+    "primaryDeities": [
+      {
+        "name": "Zeus",
+        "type": "God",
+        "pantheon": "Greek",
+        "connection": "Lightning, destruction"
+      },
+      {
+        "name": "Thor",
+        "type": "God",
+        "pantheon": "Norse",
+        "connection": "Thunder, destruction"
+      },
+      {
+        "name": "Indra",
+        "type": "God",
+        "pantheon": "Hindu",
+        "connection": "Lightning, revelation"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Shiva",
+        "type": "God",
+        "pantheon": "Hindu",
+        "connection": "Destruction, transformation"
+      },
+      {
+        "name": "Kali",
+        "type": "Goddess",
+        "pantheon": "Hindu",
+        "connection": "Destruction, transformation"
+      }
+    ],
+    "connections": [
+      "Lightning, destruction",
+      "Thunder, destruction",
+      "Lightning, revelation"
+    ]
+  },
+  "17": {
+    "character": {
+      "number": 17,
+      "name": "The Star",
+      "purityDesignation": "The Hope Bringer"
+    },
+    "realm": "Hope & Healing",
+    "primaryDeities": [
+      {
+        "name": "Astarte",
+        "type": "Goddess",
+        "pantheon": "Canaanite",
+        "connection": "Stars, hope"
+      },
+      {
+        "name": "Ishtar",
+        "type": "Goddess",
+        "pantheon": "Mesopotamian",
+        "connection": "Stars, hope"
+      },
+      {
+        "name": "Nut",
+        "type": "Goddess",
+        "pantheon": "Egyptian",
+        "connection": "Stars, sky"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Aurora",
+        "type": "Goddess",
+        "pantheon": "Roman",
+        "connection": "Dawn, hope"
+      },
+      {
+        "name": "Eos",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Dawn, hope"
+      }
+    ],
+    "connections": [
+      "Stars, hope",
+      "Stars, hope",
+      "Stars, sky"
+    ]
+  },
+  "18": {
+    "character": {
+      "number": 18,
+      "name": "The Moon",
+      "purityDesignation": "Luna Mystery, The Dream Navigator"
+    },
+    "realm": "Dream Navigation",
+    "primaryDeities": [
+      {
+        "name": "Selene",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Moon, dreams"
+      },
+      {
+        "name": "Luna",
+        "type": "Goddess",
+        "pantheon": "Roman",
+        "connection": "Moon, intuition"
+      },
+      {
+        "name": "Hecate",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Moon, magic"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Artemis",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Moon, nature"
+      },
+      {
+        "name": "Diana",
+        "type": "Goddess",
+        "pantheon": "Roman",
+        "connection": "Moon, nature"
+      }
+    ],
+    "connections": [
+      "Moon, dreams",
+      "Moon, intuition",
+      "Moon, magic"
+    ]
+  },
+  "19": {
+    "character": {
+      "number": 19,
+      "name": "The Sun",
+      "purityDesignation": "The Radiant One"
+    },
+    "realm": "Radiant Illumination",
+    "primaryDeities": [
+      {
+        "name": "Apollo",
+        "type": "God",
+        "pantheon": "Greek",
+        "connection": "Sun, light"
+      },
+      {
+        "name": "Helios",
+        "type": "God",
+        "pantheon": "Greek",
+        "connection": "Sun, radiance"
+      },
+      {
+        "name": "Ra",
+        "type": "God",
+        "pantheon": "Egyptian",
+        "connection": "Sun, life"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Sol",
+        "type": "God",
+        "pantheon": "Roman",
+        "connection": "Sun, light"
+      },
+      {
+        "name": "Surya",
+        "type": "God",
+        "pantheon": "Hindu",
+        "connection": "Sun, vitality"
+      }
+    ],
+    "connections": [
+      "Sun, light",
+      "Sun, radiance",
+      "Sun, life"
+    ]
+  },
+  "20": {
+    "character": {
+      "number": 20,
+      "name": "Judgment",
+      "purityDesignation": "The Awakening Caller"
+    },
+    "realm": "Awakening",
+    "primaryDeities": [
+      {
+        "name": "Gabriel",
+        "type": "Angel",
+        "pantheon": "Abrahamic",
+        "connection": "Judgment, awakening"
+      },
+      {
+        "name": "Michael",
+        "type": "Angel",
+        "pantheon": "Abrahamic",
+        "connection": "Judgment, protection"
+      },
+      {
+        "name": "Raphael",
+        "type": "Angel",
+        "pantheon": "Abrahamic",
+        "connection": "Healing, judgment"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "Uriel",
+        "type": "Angel",
+        "pantheon": "Abrahamic",
+        "connection": "Wisdom, judgment"
+      },
+      {
+        "name": "Metatron",
+        "type": "Angel",
+        "pantheon": "Abrahamic",
+        "connection": "Divine judgment"
+      }
+    ],
+    "connections": [
+      "Judgment, awakening",
+      "Judgment, protection",
+      "Healing, judgment"
+    ]
+  },
+  "21": {
+    "character": {
+      "number": 21,
+      "name": "The World",
+      "purityDesignation": "The Completion Master"
+    },
+    "realm": "Completion",
+    "primaryDeities": [
+      {
+        "name": "Gaia",
+        "type": "Goddess",
+        "pantheon": "Greek",
+        "connection": "Earth, completion"
+      },
+      {
+        "name": "Terra",
+        "type": "Goddess",
+        "pantheon": "Roman",
+        "connection": "Earth, wholeness"
+      },
+      {
+        "name": "Prithvi",
+        "type": "Goddess",
+        "pantheon": "Hindu",
+        "connection": "Earth, completion"
+      }
+    ],
+    "secondaryDeities": [
+      {
+        "name": "All Deities",
+        "type": "Collective",
+        "pantheon": "All",
+        "connection": "Completion, wholeness"
+      },
+      {
+        "name": "The All",
+        "type": "Deity",
+        "pantheon": "Universal",
+        "connection": "Wholeness, completion"
+      }
+    ],
+    "connections": [
+      "Earth, completion",
+      "Earth, wholeness",
+      "Earth, completion"
+    ]
+  }
+}

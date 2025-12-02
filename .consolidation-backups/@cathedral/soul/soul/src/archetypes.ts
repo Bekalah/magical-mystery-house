@@ -1,7 +1,3 @@
-/**
- * @license CC0-1.0 - Public Domain
- */
-
 // Archetype frequency signatures and interference
 export const archetypes = {
   creator: {

@@ -103,7 +103,7 @@ tail -f experiment.log
 
 ### Check Status:
 ```bash
-ppnpm run improve:continuous:status
+pppnpm run improve:continuous:status
 ```
 
 ### View Alignment Report:

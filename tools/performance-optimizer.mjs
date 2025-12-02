@@ -45,7 +45,7 @@ const OPTIMIZATIONS = {
     },
     optimize: (filePath) => {
       logger.info(`Many imports detected: ${filePath}`);
-      return { optimized: false, suggestion: 'Run ppnpm run find:unused to detect unused imports' };
+      return { optimized: false, suggestion: 'Run pnpm run find:unused to detect unused imports' };
     }
   },
   'slow_builds': {
@@ -59,7 +59,7 @@ const OPTIMIZATIONS = {
     optimize: () => {
       logger.info('Large Turbo cache detected');
       try {
-        execSync('ppnpm run clean', { cwd: BASE_DIR, stdio: 'pipe' });
+        execSync('pnpm run clean', { cwd: BASE_DIR, stdio: 'pipe' });
         logger.success('Cleaned build cache');
         return { optimized: true };
       } catch {

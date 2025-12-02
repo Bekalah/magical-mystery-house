@@ -216,17 +216,17 @@ tail -f /tmp/experiment-night.log
 
 ### Check Status
 ```bash
-ppnpm run improve:continuous:status
+pppnpm run improve:continuous:status
 ```
 
 ### View Analytics
 ```bash
-ppnpm run analytics
+pppnpm run analytics
 ```
 
 ### View Insights
 ```bash
-ppnpm run insights
+pppnpm run insights
 ```
 
 ## 🎯 Next Steps (Automatic)

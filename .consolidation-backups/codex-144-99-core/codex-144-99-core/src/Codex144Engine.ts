@@ -7,16 +7,6 @@
  * @license CC0-1.0 - Public Domain
  */
 
-/**
- * ⊙ Codex144engine
- * 
- * @alchemical Codex144engine
- * @element N/A
- * @symbol ⊙
- * 
- * @license CC0-1.0 - Public Domain
- */
-
 import { SACRED_MATH, nodeToGateMapping, gateToNodeMapping, consciousnessLevelToFrequency } from '../../sacred-mathematics-core/src/index';
 import { FusionKinkDesignMathematics } from '../../fusion-kink-core/src/index';
 // Codex144Security available for future use

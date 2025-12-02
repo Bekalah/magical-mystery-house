@@ -6010,11 +6010,11 @@
       "connectedTo": []
     },
     {
-      "entity": "fix-package-json-for-ppnpm",
+      "entity": "fix-package-json-for-pnpm",
       "type": "tool",
-      "label": "fix-package-json-for-ppnpm",
+      "label": "fix-package-json-for-pnpm",
       "workspace": "cathedral-master-deployment",
-      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-package-json-for-ppnpm.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/fix-package-json-for-pnpm.mjs",
       "dependencies": [],
       "connectedTo": []
     },
@@ -6397,11 +6397,11 @@
       "connectedTo": []
     },
     {
-      "entity": "ppnpm-wrapper",
+      "entity": "pnpm-wrapper",
       "type": "tool",
-      "label": "ppnpm-wrapper",
+      "label": "pnpm-wrapper",
       "workspace": "cathedral-master-deployment",
-      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/ppnpm-wrapper.mjs",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/pnpm-wrapper.mjs",
       "dependencies": [],
       "connectedTo": []
     },

@@ -166,7 +166,7 @@ var ContractionEngine = /** @class */ (function () {
             return __generator(this, function (_a) {
                 opportunities = [];
                 try {
-                    output = (0, child_process_1.execSync)('pnpm build 2>&1', { encoding: 'utf-8', stdio: 'pipe' });
+                    output = (0, child_process_1.execSync)('ppnpm build 2>&1', { encoding: 'utf-8', stdio: 'pipe' });
                     if (output.includes('error TS')) {
                         errorCount = (output.match(/error TS/g) || []).length;
                         opportunities.push({

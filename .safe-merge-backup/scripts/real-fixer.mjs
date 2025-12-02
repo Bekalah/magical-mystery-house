@@ -48,7 +48,7 @@ class RealFixer {
     const reportPath = path.join(rootDir, 'real-deduplication-report.json');
     if (!fs.existsSync(reportPath)) {
       console.log('⚠️  No real deduplication report found');
-      console.log('   Run: ppnpm run deduplicate first\n');
+      console.log('   Run: pppnpm run deduplicate first\n');
       return;
     }
     

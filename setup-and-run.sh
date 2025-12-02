@@ -23,7 +23,7 @@ echo "✅ Node.js found: $(node --version)"
 if [ ! -d "node_modules" ]; then
     echo "📦 Installing dependencies..."
     if command -v pnpm &> /dev/null; then
-        ppnpm install
+        pnpm install
     elif command -v npm &> /dev/null; then
         pnpm install
     else
@@ -37,8 +37,8 @@ fi
 # Compile scripts
 echo "🔨 Compiling TypeScript scripts..."
 if command -v pnpm &> /dev/null; then
-    ppnpm run build:scripts || {
-        echo "⚠️  ppnpm build:scripts failed, trying direct tsc..."
+    pnpm run build:scripts || {
+        echo "⚠️  pnpm build:scripts failed, trying direct tsc..."
         npx tsc -p scripts/tsconfig.scripts.json
     }
 elif command -v npm &> /dev/null; then

@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cathedral | Godot Game</title>
+    <meta
+      name="description"
+      content="Cathedral Godot HTML5 export placeholder. Drop your Godot build files here to publish." />
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      body {
+        margin: 0;
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          sans-serif;
+        background: radial-gradient(
+          ellipse at center,
+          #1a1a2e 0%,
+          #16213e 100%
+        );
+        color: #fff;
+      }
+      header {
+        padding: 2rem;
+        text-align: center;
+        border-bottom: 2px solid #8b5a8c;
+        background: rgba(20, 10, 30, 0.8);
+      }
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+        background: linear-gradient(135deg, #ffd700, #ff6b35, #4ecdc4);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      main {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1rem;
+      }
+      .notice {
+        background: rgba(139, 90, 140, 0.15);
+        border: 1px solid #8b5a8c;
+        border-radius: 12px;
+        padding: 1rem 1.25rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      a.btn {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.75rem 1.25rem;
+        background: #8b5a8c;
+        border-radius: 8px;
+        color: #fff;
+        text-decoration: none;
+        border: 1px solid #ffd700;
+      }
+      footer {
+        padding: 2rem;
+        text-align: center;
+        border-top: 1px solid #4a0e4e;
+        background: rgba(20, 10, 30, 0.8);
+        color: #aaa;
+      }
+      code {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 0.1rem 0.3rem;
+        border-radius: 4px;
+      }
+      iframe {
+        width: 100%;
+        height: 70vh;
+        border: 1px solid #4a0e4e;
+        border-radius: 12px;
+        background: #0b0f1a;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🏰 Cathedral Godot Game</h1>
+      <p style="color: #ffd700; margin: 0.5rem 0 0 0">
+        HTML5 export slot — ready for your Godot + Rust build
+      </p>
+    </header>
+    <main>
+      <div id="game-container" class="grid">
+        <div class="notice" id="status">
+          <strong>No Godot export detected yet.</strong>
+          <p style="margin: 0.5rem 0 0 0">
+            Place your Godot HTML5 export files in
+            <code>apps/web/public/godot/</code> — typically
+            <code>index.html</code>, <code>*.wasm</code>,
+            <code>*.pck</code>/<code>*.zip</code>.
+          </p>
+          <p style="margin: 0.5rem 0 0 0">
+            Once added and pushed, the site at <code>/godot/</code> will serve
+            your game automatically on GitHub Pages and Vercel.
+          </p>
+          <a class="btn" href="/">← Back to Home</a>
+        </div>
+      </div>
+      <script>
+        // If a Godot loader script is present (from an actual export), redirect to it
+        (function () {
+          var candidate = "game.loader.js"; // adjust if your export uses a different loader filename
+          fetch(candidate, { method: "HEAD" })
+            .then(function (resp) {
+              if (resp.ok) {
+                window.location.href = candidate.replace(".loader.js", ".html");
+              }
+            })
+            .catch(function () {});
+        })();
+      </script>
+    </main>
+    <footer>
+      <small
+        >Publishing via Next.js static export → GitHub Pages / Vercel. Rust
+        engines supported via WebAssembly files.</small
+      >
+    </footer>
+  </body>
+</html>

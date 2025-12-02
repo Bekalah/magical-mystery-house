@@ -26,7 +26,7 @@
 
 **Usage**:
 ```bash
-ppnpm run boost:rebecca-ideas
+pppnpm run boost:rebecca-ideas
 ```
 
 ### 2. Story Quality Enhancer (`story-quality-enhancer.mjs`)
@@ -49,7 +49,7 @@ ppnpm run boost:rebecca-ideas
 
 **Usage**:
 ```bash
-ppnpm run enhance:story-quality
+pppnpm run enhance:story-quality
 ```
 
 ### 3. Design Quality Enhancer (`design-quality-enhancer.mjs`)
@@ -78,7 +78,7 @@ ppnpm run enhance:story-quality
 
 **Usage**:
 ```bash
-ppnpm run enhance:design-quality
+pppnpm run enhance:design-quality
 ```
 
 ## Integration

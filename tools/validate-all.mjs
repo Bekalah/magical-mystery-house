@@ -18,27 +18,27 @@ const BASE_DIR = '/Users/rebeccalemke/cathedral-master-deployment';
 const VALIDATIONS = [
   {
     name: 'TypeScript Build',
-    command: 'ppnpm run build:scripts',
+    command: 'pnpm run build:scripts',
     critical: true
   },
   {
     name: 'Health Check',
-    command: 'ppnpm run health:check',
+    command: 'pnpm run health:check',
     critical: false
   },
   {
     name: 'Code Quality',
-    command: 'ppnpm run check:quality',
+    command: 'pnpm run check:quality',
     critical: false
   },
   {
     name: 'Dependencies',
-    command: 'ppnpm run check:dependencies',
+    command: 'pnpm run check:dependencies',
     critical: false
   },
   {
     name: 'Security Scan',
-    command: 'ppnpm run security:scan',
+    command: 'pnpm run security:scan',
     critical: false
   }
 ];

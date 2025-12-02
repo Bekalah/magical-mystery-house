@@ -12,5 +12,6 @@
     "name": "Codex 144 99",
     "symbol": "⊙",
     "label": "⊙ Codex 144 99 (codex-144-99-core)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

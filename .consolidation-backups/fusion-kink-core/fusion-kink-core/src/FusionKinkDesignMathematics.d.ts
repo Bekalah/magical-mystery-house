@@ -6,16 +6,6 @@
  *
  * @license CC0-1.0 - Public Domain
  */
-/**
- * ⊙ Fusionkinkdesignmathematics.D
- * 
- * @alchemical Fusionkinkdesignmathematics.D
- * @element N/A
- * @symbol ⊙
- * 
- * @license CC0-1.0 - Public Domain
- */
-
 export interface QualityParameters {
     intensity: number;
     sophistication: number;

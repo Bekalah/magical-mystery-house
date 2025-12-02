@@ -96,15 +96,15 @@ class CompleteCleanup {
         const original = content;
         
         // Replace npm commands with pnpm
-        content = content.replace(/npm install/g, 'pnpm install');
-        content = content.replace(/npm run/g, 'pnpm run');
-        content = content.replace(/npm exec/g, 'pnpm exec');
+        content = content.replace(/pnpm install/g, 'pnpm install');
+        content = content.replace(/pnpm run/g, 'pnpm run');
+        content = content.replace(/pnpm exec/g, 'pnpm exec');
         content = content.replace(/npm audit/g, 'pnpm audit');
-        content = content.replace(/npm publish/g, 'pnpm publish');
-        content = content.replace(/npm ci/g, 'pnpm install --frozen-lockfile');
-        content = content.replace(/npm test/g, 'pnpm test');
-        content = content.replace(/npm start/g, 'pnpm start');
-        content = content.replace(/npm build/g, 'pnpm build');
+        content = content.replace(/pnpm publish/g, 'pnpm publish');
+        content = content.replace(/pnpm install --frozen-lockfile/g, 'pnpm install --frozen-lockfile');
+        content = content.replace(/pnpm test/g, 'pnpm test');
+        content = content.replace(/pnpm start/g, 'pnpm start');
+        content = content.replace(/pnpm build/g, 'pnpm build');
         
         // Replace npm in comments/docs
         content = content.replace(/using npm/gi, 'using pnpm');

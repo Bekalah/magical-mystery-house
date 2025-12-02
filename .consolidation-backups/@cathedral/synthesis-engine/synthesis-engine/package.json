@@ -15,7 +15,7 @@
     "alchemical"
   ],
   "author": "Rebecca Lemke",
-  "license": "CC0-1.0",
+  "license": "Copyright Rebecca Lemke, All Rights Reserved",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -25,19 +25,5 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/synthesis-engine"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/synthesis-engine",
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
-  },
-  "dependencies": {},
-  "devDependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:57.013Z",
-  "packageManager": "pnpm@8.0.0",
-  "alchemical": {
-    "name": "Synthesis",
-    "symbol": "⊙",
-    "label": "⊙ Synthesis (@cathedral/synthesis-engine)"
-  }
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/synthesis-engine"
 }

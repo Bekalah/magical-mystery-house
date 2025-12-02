@@ -1,3 +1,7 @@
+// Azure dependencies removed - free/open source only
+// This is a healing space, completely free and open
+// Azure dependencies removed - free/open source only
+// This is a healing space, completely free and open
 import type { ModelInfo } from "../model.js"
 
 // https://openai.com/api/pricing/

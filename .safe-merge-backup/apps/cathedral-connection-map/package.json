@@ -16,5 +16,6 @@
     "name": "Cathedral Connection Map",
     "symbol": "⊙",
     "label": "⊙ Cathedral Connection Map (cathedral-connection-map)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

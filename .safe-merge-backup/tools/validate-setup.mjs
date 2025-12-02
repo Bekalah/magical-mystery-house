@@ -17,7 +17,7 @@ const BASE_DIR = '/Users/rebeccalemke';
 
 const checks = {
   node: { name: 'Node.js', command: 'node --version', required: true },
-  pnpm: { name: 'pnpm', command: 'pnpm --version', required: true },
+  pnpm: { name: 'pnpm', command: 'ppnpm --version', required: true },
   git: { name: 'Git', command: 'git --version', required: true },
   githubToken: { name: 'GitHub Token', env: 'GITHUB_TOKEN', required: false }
 };

@@ -156,7 +156,7 @@ class ContractionEngine {
     async analyzeBuildStatus() {
         const opportunities = [];
         try {
-            const output = (0, child_process_1.execSync)('pnpm build 2>&1', { encoding: 'utf-8', stdio: 'pipe' });
+            const output = (0, child_process_1.execSync)('ppnpm build 2>&1', { encoding: 'utf-8', stdio: 'pipe' });
             if (output.includes('error TS')) {
                 const errorCount = (output.match(/error TS/g) || []).length;
                 opportunities.push({

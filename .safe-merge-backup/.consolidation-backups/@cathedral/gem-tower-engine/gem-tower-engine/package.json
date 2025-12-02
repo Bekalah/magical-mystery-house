@@ -7,7 +7,7 @@
   "scripts": {
     "build": "node ../../tools/gem-tower-engine.js",
     "test": "node -e \"console.log('Gem Tower Engine tests: ✅ Crystal structures, ✅ Tower mechanics, ✅ Healing integration');\"",
-    "dev": "npm run build"
+    "dev": "ppnpm run build"
   },
   "keywords": [
     "cathedral",
@@ -36,5 +36,5 @@
   "devDependencies": {},
   "consolidated": true,
   "consolidatedAt": "2025-11-30T19:53:29.817Z",
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@10.23.0"
 }

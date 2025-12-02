@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cathedral Alchemy Layer Schema",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "domain": { "type": "string" },
+    "associated_archetypes": { "type": "array", "items": { "type": "string" } },
+    "crystals": { "type": "array", "items": { "type": "string" } },
+    "geometry": { "type": "array", "items": { "type": "string" } },
+    "healing_function": { "type": "string" }
+  },
+  "required": ["name", "domain", "associated_archetypes", "crystals", "geometry", "healing_function"]
+}

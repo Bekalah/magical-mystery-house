@@ -1,26 +1,159 @@
-export * from "./api.js"
-export * from "./cloud.js"
-export * from "./codebase-index.js"
-export * from "./cookie-consent.js"
-export * from "./events.js"
-export * from "./experiment.js"
-export * from "./followup.js"
-export * from "./global-settings.js"
-export * from "./history.js"
-export * from "./ipc.js"
-export * from "./marketplace.js"
-export * from "./mcp.js"
-export * from "./message.js"
-export * from "./mode.js"
-export * from "./model.js"
-export * from "./provider-settings.js"
-export * from "./single-file-read-models.js"
-export * from "./task.js"
-export * from "./todo.js"
-export * from "./telemetry.js"
-export * from "./terminal.js"
-export * from "./tool.js"
-export * from "./type-fu.js"
-export * from "./vscode.js"
+/**
+ * @cathedral/types
+ * Shared TypeScript type definitions for Cathedral monorepo
+ */
 
-export * from "./providers/index.js"
+// Core Cathedral Types
+/**
+ * ⚗️ CathedralNode - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+export interface CathedralNode {
+  id: string;
+  name: string;
+  type: 'arcana' | 'angel' | 'demon' | 'sacred-geometry' | 'codex';
+  metadata?: Record<string, unknown>;
+}
+
+/**
+ * ⚗️ SacredGeometry - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+export interface SacredGeometry {
+  id: string;
+  pattern: 'flower-of-life' | 'metatrons-cube' | 'vesica-piscis' | 'golden-spiral';
+  dimensions: number;
+  coordinates?: number[][];
+}
+
+/**
+ * ⚗️ ArcanaCard - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+export interface ArcanaCard {
+  id: string;
+  number: number;
+  name: string;
+  divineAspect?: string;
+  shadowAspect?: string;
+  harmonyForm?: string;
+  keywords: string[];
+  upright: string[];
+  reversed: string[];
+}
+
+/**
+ * ⚗️ CodexEntry - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+export interface CodexEntry {
+  node: number;
+  title: string;
+  description: string;
+  connections: number[];
+  sources?: string[];
+}
+
+// Turbo & Build Types
+/**
+ * ⚗️ BuildConfig - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+export interface BuildConfig {
+  target: string;
+  minify: boolean;
+  sourcemap: boolean;
+}
+
+/**
+ * ⚗️ PackageMetadata - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+export interface PackageMetadata {
+  name: string;
+  version: string;
+  role: string;
+  features: string[];
+}
+
+// Export all types
+export type * from './arcana';
+export type * from './codex';

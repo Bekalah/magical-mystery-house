@@ -14,9 +14,9 @@
 ### 2. Package.json Enhancements ✅
 
 - Added new convenience scripts:
-  - `pnpm run fix:remotes` - Fix all git remotes
-  - `pnpm run cleanup:non-repos` - Clean up non-repo directories
-  - `pnpm run organize:extracted` - Organize extracted content
+  - `ppnpm run fix:remotes` - Fix all git remotes
+  - `ppnpm run cleanup:non-repos` - Clean up non-repo directories
+  - `ppnpm run organize:extracted` - Organize extracted content
 
 ### 3. README Updates ✅
 

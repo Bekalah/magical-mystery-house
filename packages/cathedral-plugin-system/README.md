@@ -53,12 +53,12 @@ The Cathedral Plugin System provides a modular architecture for integrating thre
 
 ```bash
 # Install all systems
-cd packages/codex-library && npm install
-cd ../liber-arcanae && npm install
-cd ../cathedral-plugin-system && npm install
+cd packages/codex-library && pnpm install
+cd ../liber-arcanae && pnpm install
+cd ../cathedral-plugin-system && pnpm install
 
 # Build all systems
-npm run build
+pnpm run build
 ```
 
 ### Basic Usage

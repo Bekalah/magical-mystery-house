@@ -16,5 +16,6 @@
     "name": "Rosslyn Explorer",
     "symbol": "⊙",
     "label": "⊙ Rosslyn Explorer (rosslyn-explorer)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

@@ -81,7 +81,7 @@ Applies to:
 
 ### Usage
 ```bash
-pnpm run theme:apply
+ppnpm run theme:apply
 ```
 
 ### Integration
@@ -134,7 +134,7 @@ import '@cathedral/shared/src/styles/unified-professional.css';
 All theme changes must:
 1. Update `unified-professional-theme.ts`
 2. Update `unified-professional.css`
-3. Run `pnpm run theme:apply`
+3. Run `ppnpm run theme:apply`
 4. Test across all component types
 5. Document in this spec
 

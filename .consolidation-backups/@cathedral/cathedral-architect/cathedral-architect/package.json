@@ -14,11 +14,12 @@
   "dependencies": {
     "three": "^0.158.0",
     "@cathedral/three-engine": "workspace:*",
-    "@cathedral/codex-engine": "workspace:*",
+    "@cathedral/codex-engine": "workspace:*"
+  },
+  "devDependencies": {
     "typescript": "^5.2.2",
     "rimraf": "^5.0.5"
   },
-  "devDependencies": {},
   "keywords": [
     "cathedral",
     "architecture",
@@ -27,20 +28,26 @@
     "exploration",
     "mystical-computing"
   ],
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/cathedral-architect"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/cathedral-architect",
   "license": "CC0-1.0",
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:52.270Z",
-  "packageManager": "pnpm@8.0.0",
+  "author": "Rebecca Respawn <bekalah>",
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "packageManager": "ppppnpm@10.23.0",
   "alchemical": {
     "name": "Cathedral Architect",
     "symbol": "⊙",
     "label": "⊙ Cathedral Architect (@cathedral/cathedral-architect)"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

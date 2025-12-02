@@ -24,7 +24,7 @@ async function syncAllRemotes() {
   
   if (!fs.existsSync(CONNECTIONS_FILE)) {
     console.log('⚠️  CATHEDRAL_CONNECTIONS.json not found');
-    console.log('💡 Run: pnpm run connect:cathedral first\n');
+    console.log('💡 Run: ppnpm run connect:cathedral first\n');
     return;
   }
   

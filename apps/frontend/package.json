@@ -37,17 +37,12 @@
     ]
   },
   "proxy": "http://localhost:8000",
-  "license": "CC0-1.0",
   "devDependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:01.917Z",
-  "alchemical": {
-    "name": "Cathedral Spell Frontend",
-    "symbol": "⊙",
-    "label": "⊙ Cathedral Spell Frontend (cathedral-spell-frontend)"
-  }
+  "consolidatedAt": "2025-12-01T21:19:39.671Z",
+  "license": "CC0-1.0"
 }

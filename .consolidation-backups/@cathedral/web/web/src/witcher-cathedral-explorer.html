@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏛️ Cathedral Realms - Witcher 3 Style Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cathedral-gold: #ffd700;
+            --divine-light: #fff9e6;
+            --sacred-copper: #b87333;
+            --twilight-purple: #483d8b;
+            --mystic-blue: #191970;
+            --abyss-deep: #0b0b1a;
+            --emerald-heart: #50c878;
+            --ruby-fire: #e0115f;
+            --celestial-silver: #c0c0c0;
+            --ancient-stone: #a0956b;
+            --forest-green: #228b22;
+            --ocean-blue: #006994;
+            --flame-orange: #ff4500;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: radial-gradient(ellipse at center,
+                var(--abyss-deep) 0%,
+                var(--twilight-purple) 50%,
+                var(--mystic-blue) 100%);
+            color: var(--divine-light);
+            font-family: 'Cormorant Garamond', serif;
+            overflow: hidden;
+            height: 100vh;
+            cursor: crosshair;
+        }
+
+        .game-ui {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            pointer-events: all;
+            border-bottom: 2px solid var(--cathedral-gold);
+        }
+
+        .player-info {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .player-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--cathedral-gold), var(--emerald-heart));
+            border: 3px solid var(--divine-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-family: 'Cinzel', serif;
+        }
+
+        .player-stats {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            border: 1px solid var(--celestial-silver);
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            color: var(--celestial-silver);
+        }
+
+        .stat-value {
+            font-size: 1rem;
+            color: var(--cathedral-gold);
+            font-weight: bold;
+        }
+
+        .realm-info {
+            text-align: center;
+        }
+
+        .realm-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--cathedral-gold);
+            margin-bottom: 0.2rem;
+        }
+
+        .realm-description {
+            font-size: 0.9rem;
+            color: var(--celestial-silver);
+        }
+
+        .minimap {
+            width: 200px;
+            height: 150px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid var(--emerald-heart);
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .minimap-player {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: var(--cathedral-gold);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px var(--cathedral-gold);
+        }
+
+        .minimap-location {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: var(--ruby-fire);
+            border-radius: 50%;
+        }
+
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            pointer-events: all;
+            border-top: 2px solid var(--cathedral-gold);
+        }
+
+        .quest-journal {
+            flex: 1;
+            margin-right: 2rem;
+        }
+
+        .journal-title {
+            font-family: 'Cinzel', serif;
+            color: var(--cathedral-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .active-quests {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .quest-item {
+            background: rgba(72, 61, 139, 0.5);
+            padding: 0.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--celestial-silver);
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quest-item:hover {
+            background: rgba(72, 61, 139, 0.8);
+            border-color: var(--cathedral-gold);
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .control-button {
+            background: linear-gradient(135deg, var(--sacred-copper), var(--ruby-fire));
+            border: none;
+            color: var(--divine-light);
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Cinzel', serif;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .control-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(179, 115, 51, 0.5);
+        }
+
+        .realm-map {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            bottom: 120px;
+            background: radial-gradient(circle at center, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+            overflow: hidden;
+        }
+
+        .realm-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: all 2s ease-in-out;
+        }
+
+        .realm-cathedral-hub {
+            background: linear-gradient(45deg, var(--abyss-deep), var(--twilight-purple), var(--mystic-blue));
+        }
+
+        .realm-stone-grimoire {
+            background: linear-gradient(135deg, var(--ancient-stone), var(--sacred-copper), var(--cathedral-gold));
+        }
+
+        .realm-art-realm {
+            background: linear-gradient(45deg, var(--ruby-fire), var(--emerald-heart), var(--cathedral-gold));
+        }
+
+        .realm-sound-realm {
+            background: linear-gradient(135deg, var(--ocean-blue), var(--twilight-purple), var(--mystic-blue));
+        }
+
+        .realm-science-realm {
+            background: linear-gradient(45deg, var(--forest-green), var(--emerald-heart), var(--celestial-silver));
+        }
+
+        .location-marker {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+            animation: pulse-glow 2s ease-in-out infinite alternate;
+        }
+
+        .location-marker:hover {
+            transform: scale(1.2);
+            border-color: var(--cathedral-gold);
+            box-shadow: 0 0 20px var(--cathedral-gold);
+        }
+
+        .location-study {
+            background: rgba(80, 200, 120, 0.8);
+        }
+
+        .location-art {
+            background: rgba(224, 17, 95, 0.8);
+        }
+
+        .location-sound {
+            background: rgba(0, 105, 148, 0.8);
+        }
+
+        .location-science {
+            background: rgba(34, 139, 34, 0.8);
+        }
+
+        .location-portal {
+            background: rgba(255, 215, 0, 0.8);
+            animation: portal-pulse 1.5s ease-in-out infinite;
+        }
+
+        .location-label {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: var(--divine-light);
+            padding: 0.2rem 0.5rem;
+            border-radius: 5px;
+            font-size: 0.7rem;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .location-marker:hover .location-label {
+            opacity: 1;
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 10px currentColor; }
+            100% { box-shadow: 0 0 20px currentColor; }
+        }
+
+        @keyframes portal-pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+
+        .floating-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--cathedral-gold);
+            border-radius: 50%;
+            opacity: 0;
+            animation: float-particle 8s linear infinite;
+        }
+
+        @keyframes float-particle {
+            0% {
+                opacity: 0;
+                transform: translateY(100vh) scale(0);
+            }
+            10% {
+                opacity: 1;
+                transform: translateY(90vh) scale(1);
+            }
+            90% {
+                opacity: 1;
+                transform: translateY(10vh) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(0) scale(0);
+            }
+        }
+
+        .interaction-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, var(--abyss-deep), var(--twilight-purple));
+            border: 3px solid var(--cathedral-gold);
+            border-radius: 20px;
+            padding: 2rem;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.5s ease;
+            z-index: 1000;
+        }
+
+        .interaction-popup.show {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .popup-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.8rem;
+            color: var(--cathedral-gold);
+            margin-bottom: 1rem;
+        }
+
+        .popup-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: var(--divine-light);
+        }
+
+        .popup-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .action-button {
+            background: linear-gradient(135deg, var(--emerald-heart), var(--cathedral-gold));
+            border: none;
+            color: var(--abyss-deep);
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Cinzel', serif;
+            transition: all 0.3s ease;
+        }
+
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(80, 200, 120, 0.5);
+        }
+
+        .study-interface {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            z-index: 2000;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        .study-interface.show {
+            display: block;
+        }
+
+        .study-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--cathedral-gold);
+        }
+
+        .study-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: var(--cathedral-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .study-topic {
+            font-size: 1.2rem;
+            color: var(--celestial-silver);
+        }
+
+        .study-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .study-materials {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 2px solid var(--emerald-heart);
+        }
+
+        .materials-title {
+            font-family: 'Cinzel', serif;
+            color: var(--emerald-heart);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .material-item {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            border: 1px solid var(--celestial-silver);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .material-item:hover {
+            background: rgba(80, 200, 120, 0.2);
+            border-color: var(--emerald-heart);
+        }
+
+        .material-title {
+            color: var(--cathedral-gold);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .material-description {
+            color: var(--divine-light);
+            font-size: 0.9rem;
+        }
+
+        .experiments {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 2px solid var(--ruby-fire);
+        }
+
+        .experiments-title {
+            font-family: 'Cinzel', serif;
+            color: var(--ruby-fire);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .experiment-item {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            border: 1px solid var(--celestial-silver);
+        }
+
+        .experiment-name {
+            color: var(--cathedral-gold);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .experiment-description {
+            color: var(--divine-light);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .experiment-materials {
+            font-size: 0.8rem;
+            color: var(--celestial-silver);
+            margin-bottom: 0.5rem;
+        }
+
+        .close-study {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: var(--ruby-fire);
+            border: none;
+            color: var(--divine-light);
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Cinzel', serif;
+        }
+
+        .skill-progress {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .skill-bar {
+            height: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            overflow: hidden;
+        }
+
+        .skill-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--emerald-heart), var(--cathedral-gold));
+            border-radius: 4px;
+            transition: width 1s ease;
+        }
+
+        @media (max-width: 768px) {
+            .top-bar, .bottom-bar {
+                padding: 0 1rem;
+            }
+
+            .player-stats {
+                gap: 0.5rem;
+            }
+
+            .stat {
+                padding: 0.3rem;
+            }
+
+            .active-quests {
+                gap: 0.5rem;
+            }
+
+            .quest-item {
+                font-size: 0.7rem;
+                padding: 0.3rem;
+            }
+
+            .controls {
+                gap: 0.5rem;
+            }
+
+            .control-button {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+
+            .study-content {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="game-ui">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="player-info">
+                <div class="player-avatar">🧙‍♀️</div>
+                <div class="player-stats">
+                    <div class="stat">
+                        <div class="stat-label">Art</div>
+                        <div class="stat-value" id="art-level">5</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Sound</div>
+                        <div class="stat-value" id="sound-level">3</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Science</div>
+                        <div class="stat-value" id="science-level">7</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Magic</div>
+                        <div class="stat-value" id="magic-level">4</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="realm-info">
+                <div class="realm-name" id="current-realm">Cathedral Hub</div>
+                <div class="realm-description" id="realm-description">The central nexus connecting all realms of knowledge</div>
+            </div>
+
+            <div class="minimap">
+                <div class="minimap-player"></div>
+                <div class="minimap-location" style="top: 20%; left: 30%; background: var(--ruby-fire);" title="Art Studio"></div>
+                <div class="minimap-location" style="top: 60%; left: 70%; background: var(--emerald-heart);" title="Science Lab"></div>
+                <div class="minimap-location" style="top: 80%; left: 20%; background: var(--ocean-blue);" title="Sound Realm"></div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bottom-bar">
+            <div class="quest-journal">
+                <div class="journal-title">📜 Active Quests</div>
+                <div class="active-quests" id="active-quests">
+                    <div class="quest-item">Study Sacred Geometry</div>
+                    <div class="quest-item">Create Sound Pattern</div>
+                    <div class="quest-item">Experiment with Light</div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="control-button" onclick="showMap()">🗺️ Map</button>
+                <button class="control-button" onclick="openInventory()">🎒 Inventory</button>
+                <button class="control-button" onclick="openJournal()">📖 Journal</button>
+                <button class="control-button" onclick="exitExplorer()">🏛️ Exit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game World -->
+    <div class="realm-map">
+        <div class="realm-background realm-cathedral-hub" id="realm-background">
+            <!-- Floating particles -->
+            <div class="floating-particles" id="particles"></div>
+
+            <!-- Location markers will be added by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Interaction Popup -->
+    <div class="interaction-popup" id="interaction-popup">
+        <div class="popup-title" id="popup-title">Sacred Study Area</div>
+        <div class="popup-description" id="popup-description">
+            A place of focused learning and creative exploration. Here you can study ancient wisdom, experiment with sacred arts, and deepen your understanding of the universe.
+        </div>
+        <div class="popup-actions">
+            <button class="action-button" onclick="startStudy()">📚 Study</button>
+            <button class="action-button" onclick="startExperiment()">🔬 Experiment</button>
+            <button class="action-button" onclick="meditate()">🧘 Meditate</button>
+            <button class="action-button" onclick="closePopup()">Continue Exploring</button>
+        </div>
+    </div>
+
+    <!-- Study Interface -->
+    <div class="study-interface" id="study-interface">
+        <button class="close-study" onclick="closeStudy()">✕ Close</button>
+
+        <div class="study-header">
+            <div class="study-title">Sacred Geometry Study</div>
+            <div class="study-topic">The Mathematics of Divine Creation</div>
+        </div>
+
+        <div class="study-content">
+            <div class="study-materials">
+                <h3 class="materials-title">📚 Study Materials</h3>
+
+                <div class="material-item" onclick="openMaterial('codex-seraphinianus')">
+                    <div class="material-title">Codex Seraphinianus</div>
+                    <div class="material-description">Study the surreal geometric patterns and unknown scripts</div>
+                </div>
+
+                <div class="material-item" onclick="openMaterial('chartres-study')">
+                    <div class="material-title">Chartres Cathedral Geometry</div>
+                    <div class="material-description">Learn the sacred proportions of Gothic architecture</div>
+                </div>
+
+                <div class="material-item" onclick="openMaterial('fibonacci-nature')">
+                    <div class="material-title">Fibonacci in Nature</div>
+                    <div class="material-description">Discover mathematical beauty in natural forms</div>
+                </div>
+
+                <div class="skill-progress">
+                    <div>Progress: <span id="study-progress">0%</span></div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 0%" id="skill-progress-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experiments">
+                <h3 class="experiments-title">🔬 Experiments</h3>
+
+                <div class="experiment-item">
+                    <div class="experiment-name">Golden Ratio Construction</div>
+                    <div class="experiment-description">Build geometric forms using sacred proportions</div>
+                    <div class="experiment-materials">Compass, ruler, paper, golden ratio template</div>
+                </div>
+
+                <div class="experiment-item">
+                    <div class="experiment-name">Fractal Generation</div>
+                    <div class="experiment-description">Create fractal patterns using iterative mathematics</div>
+                    <div class="experiment-materials">Graph paper, colored pencils, fractal iteration guide</div>
+                </div>
+
+                <div class="experiment-item">
+                    <div class="experiment-name">Sacred Sound Visualization</div>
+                    <div class="experiment-description">Use sound frequencies to create geometric patterns</div>
+                    <div class="experiment-materials">Tuning forks, sand, resonant plate, audio oscillator</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentRealm = 'cathedral-hub';
+        let playerPosition = { x: 0, y: 0 };
+        let selectedLocation = null;
+        let studyInProgress = false;
+
+        // Initialize the Witcher-style explorer
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeExplorer();
+        });
+
+        function initializeExplorer() {
+            createParticles();
+            setupLocationMarkers();
+            setupEventListeners();
+            updateRealmDisplay();
+        }
+
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    particle.style.left = Math.random() * 100 + 'vw';
+                    particle.style.animationDelay = Math.random() * 8 + 's';
+                    particle.style.animationDuration = (Math.random() * 4 + 6) + 's';
+
+                    particlesContainer.appendChild(particle);
+
+                    // Remove particle after animation
+                    setTimeout(() => {
+                        if (particle.parentNode) {
+                            particle.parentNode.removeChild(particle);
+                        }
+                    }, 12000);
+                }, i * 400);
+            }
+        }
+
+        function setupLocationMarkers() {
+            const realmMap = document.getElementById('realm-background');
+
+            // Create location markers based on current realm
+            const locations = getLocationsForRealm(currentRealm);
+
+            locations.forEach(location => {
+                const marker = document.createElement('div');
+                marker.className = `location-marker location-${location.type}`;
+                marker.style.left = location.x + '%';
+                marker.style.top = location.y + '%';
+                marker.onclick = () => interactWithLocation(location);
+
+                const label = document.createElement('div');
+                label.className = 'location-label';
+                label.textContent = location.name;
+
+                marker.appendChild(label);
+                realmMap.appendChild(marker);
+            });
+        }
+
+        function getLocationsForRealm(realm) {
+            const locations = {
+                'cathedral-hub': [
+                    { name: 'Pattern Art Studio', type: 'art', x: 25, y: 30 },
+                    { name: 'Sacred Sound Chamber', type: 'sound', x: 70, y: 20 },
+                    { name: 'Science Laboratory', type: 'science', x: 60, y: 70 },
+                    { name: 'Stone Grimoire Portal', type: 'portal', x: 15, y: 80 },
+                    { name: 'Meditation Garden', type: 'study', x: 45, y: 45 }
+                ],
+                'art-realm': [
+                    { name: 'Sacred Geometry Workshop', type: 'art', x: 30, y: 25 },
+                    { name: 'Digital Art Lab', type: 'art', x: 70, y: 30 },
+                    { name: 'Traditional Arts Studio', type: 'art', x: 50, y: 60 },
+                    { name: 'Color Theory Chamber', type: 'study', x: 25, y: 70 }
+                ],
+                'sound-realm': [
+                    { name: 'Music Theory Hall', type: 'sound', x: 35, y: 20 },
+                    { name: 'Recording Studio', type: 'sound', x: 65, y: 35 },
+                    { name: 'Sacred Sound Temple', type: 'sound', x: 50, y: 65 },
+                    { name: 'Acoustics Laboratory', type: 'study', x: 20, y: 80 }
+                ],
+                'science-realm': [
+                    { name: 'Mathematics Tower', type: 'science', x: 40, y: 15 },
+                    { name: 'Physics Laboratory', type: 'science', x: 25, y: 45 },
+                    { name: 'Chemistry Workshop', type: 'science', x: 75, y: 40 },
+                    { name: 'Biology Conservatory', type: 'study', x: 60, y: 75 }
+                ]
+            };
+
+            return locations[realm] || [];
+        }
+
+        function setupEventListeners() {
+            // Keyboard controls for movement
+            document.addEventListener('keydown', function(e) {
+                const moveSpeed = 20;
+
+                switch(e.key) {
+                    case 'ArrowUp':
+                    case 'w':
+                    case 'W':
+                        playerPosition.y = Math.max(0, playerPosition.y - moveSpeed);
+                        break;
+                    case 'ArrowDown':
+                    case 's':
+                    case 'S':
+                        playerPosition.y = Math.min(window.innerHeight - 200, playerPosition.y + moveSpeed);
+                        break;
+                    case 'ArrowLeft':
+                    case 'a':
+                    case 'A':
+                        playerPosition.x = Math.max(0, playerPosition.x - moveSpeed);
+                        break;
+                    case 'ArrowRight':
+                    case 'd':
+                    case 'D':
+                        playerPosition.x = Math.min(window.innerWidth - 100, playerPosition.x + moveSpeed);
+                        break;
+                    case 'Escape':
+                        toggleStudyInterface();
+                        break;
+                }
+
+                updatePlayerPosition();
+            });
+
+            // Mouse interaction for locations
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('location-marker')) {
+                    const location = getLocationsForRealm(currentRealm).find(loc =>
+                        e.target.style.left === loc.x + '%' && e.target.style.top === loc.y + '%'
+                    );
+                    if (location) {
+                        interactWithLocation(location);
+                    }
+                }
+            });
+        }
+
+        function updatePlayerPosition() {
+            // Update minimap player position
+            const minimapPlayer = document.querySelector('.minimap-player');
+            if (minimapPlayer) {
+                const minimapRect = document.querySelector('.minimap').getBoundingClientRect();
+                const mapX = (playerPosition.x / window.innerWidth) * 180 + 10; // Minimap is 200px wide
+                const mapY = (playerPosition.y / (window.innerHeight - 200)) * 130 + 10; // Account for UI bars
+
+                minimapPlayer.style.left = mapX + 'px';
+                minimapPlayer.style.top = mapY + 'px';
+            }
+        }
+
+        function interactWithLocation(location) {
+            selectedLocation = location;
+
+            document.getElementById('popup-title').textContent = location.name;
+            document.getElementById('popup-description').textContent = getLocationDescription(location);
+
+            document.getElementById('interaction-popup').classList.add('show');
+        }
+
+        function getLocationDescription(location) {
+            const descriptions = {
+                'Pattern Art Studio': 'A professional art generation studio connected to real data, sacred books, and pattern science. Create high-end art using Codex knowledge and Liber Arcanae.',
+                'Sacred Sound Chamber': 'Explore the realm of sound, music theory, and sacred frequencies. Connect with real musical traditions and create harmonious compositions.',
+                'Science Laboratory': 'Conduct experiments in mathematics, physics, and natural sciences. Study the fundamental patterns that govern our reality.',
+                'Stone Grimoire Portal': 'Enter the ancient Stone Grimoire - a Witcher 3-style realm of chapels, sacred teachings, and mystical exploration.',
+                'Meditation Garden': 'A peaceful space for contemplation, meditation, and connecting with the deeper aspects of consciousness.',
+                'Sacred Geometry Workshop': 'Master the mathematics of divine creation through hands-on geometric construction and fractal generation.',
+                'Music Theory Hall': 'Study the mathematical foundations of music, harmony, and sacred sound frequencies used in cathedrals.',
+                'Mathematics Tower': 'Explore advanced mathematics, number theory, and the sacred ratios that underlie all creation.'
+            };
+
+            return descriptions[location.name] || 'A place of learning and discovery in the Cathedral realms.';
+        }
+
+        function startStudy() {
+            closePopup();
+            document.getElementById('study-title').textContent = selectedLocation.name;
+            document.getElementById('study-topic').textContent = getStudyTopic(selectedLocation);
+            document.getElementById('study-interface').classList.add('show');
+            studyInProgress = true;
+            simulateStudyProgress();
+        }
+
+        function getStudyTopic(location) {
+            const topics = {
+                'Pattern Art Studio': 'High-End Art Generation & Pattern Science',
+                'Sacred Sound Chamber': 'Sacred Music & Harmonic frequencies',
+                'Science Laboratory': 'Sacred Mathematics & Natural Philosophy',
+                'Sacred Geometry Workshop': 'Divine Proportions & Fractal Mathematics',
+                'Music Theory Hall': 'Mathematical Foundations of Sacred Music',
+                'Mathematics Tower': 'Advanced Number Theory & Sacred Ratios'
+            };
+
+            return topics[location.name] || 'General Sacred Studies';
+        }
+
+        function simulateStudyProgress() {
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                if (!studyInProgress) {
+                    clearInterval(progressInterval);
+                    return;
+                }
+
+                progress += Math.random() * 15;
+                if (progress >= 100) {
+                    progress = 100;
+                    clearInterval(progressInterval);
+                    completeStudy();
+                }
+
+                document.getElementById('study-progress').textContent = Math.floor(progress) + '%';
+                document.getElementById('skill-progress-bar').style.width = progress + '%';
+            }, 500);
+        }
+
+        function completeStudy() {
+            // Increase relevant skill
+            const skillType = selectedLocation.type;
+            const skillElement = document.getElementById(skillType + '-level');
+            if (skillElement) {
+                const currentLevel = parseInt(skillElement.textContent);
+                skillElement.textContent = (currentLevel + 1).toString();
+            }
+
+            alert('🎓 Study Complete!\n\nYou have gained new knowledge and skills. Your understanding of the sacred arts has deepened.');
+            studyInProgress = false;
+        }
+
+        function startExperiment() {
+            closePopup();
+            alert('🔬 Experiment Started!\n\n' + getExperimentDescription(selectedLocation));
+        }
+
+        function getExperimentDescription(location) {
+            const experiments = {
+                'Pattern Art Studio': 'Generate sacred geometric patterns using the Codex Seraphinianus as inspiration. Experiment with different mathematical ratios and artistic styles.',
+                'Sacred Sound Chamber': 'Create sound visualizations using tuning forks and resonant frequencies. Discover how sound creates geometric patterns in physical matter.',
+                'Science Laboratory': 'Conduct experiments with light refraction, crystal growth, and electromagnetic fields to understand sacred energy patterns.',
+                'Sacred Geometry Workshop': 'Build physical models of sacred geometric forms and study their mathematical properties through hands-on construction.'
+            };
+
+            return experiments[location.name] || 'Conduct sacred experiments to deepen your understanding.';
+        }
+
+        function meditate() {
+            closePopup();
+            // Create meditation interface
+            const meditationTime = 30000; // 30 seconds
+            alert(`🧘 Meditation Started!\n\nYou enter a deep meditative state for ${meditationTime/1000} seconds, connecting with the sacred energies of this place.`);
+
+            setTimeout(() => {
+                alert('✨ Meditation Complete!\n\nYou feel refreshed and more attuned to the sacred energies. Your spiritual awareness has increased.');
+            }, meditationTime);
+        }
+
+        function closePopup() {
+            document.getElementById('interaction-popup').classList.remove('show');
+        }
+
+        function closeStudy() {
+            document.getElementById('study-interface').classList.remove('show');
+            studyInProgress = false;
+        }
+
+        function showMap() {
+            alert('🗺️ Realm Map\n\nNavigate between different realms:\n\n🏛️ Cathedral Hub - Central nexus\n🎨 Art Realm - Creative expression\n🎵 Sound Realm - Musical harmony\n🔬 Science Realm - Natural philosophy\n📚 Stone Grimoire - Sacred teachings');
+        }
+
+        function openInventory() {
+            alert('🎒 Sacred Inventory\n\nYour collected artifacts, books, and tools from the Cathedral realms.');
+        }
+
+        function openJournal() {
+            alert('📖 Sacred Journal\n\nYour quest log, discoveries, and personal notes from exploring the realms.');
+        }
+
+        function exitExplorer() {
+            if (confirm('Return to the main Cathedral?')) {
+                window.location.href = 'index.html';
+            }
+        }
+
+        function updateRealmDisplay() {
+            const realmNames = {
+                'cathedral-hub': 'Cathedral Hub',
+                'art-realm': 'Artistic Realm',
+                'sound-realm': 'Sound Realm',
+                'science-realm': 'Scientific Realm',
+                'stone-grimoire': 'Stone Grimoire'
+            };
+
+            const realmDescriptions = {
+                'cathedral-hub': 'The central nexus connecting all realms of knowledge',
+                'art-realm': 'Realm of creative expression and artistic mastery',
+                'sound-realm': 'Domain of music, harmony, and sacred frequencies',
+                'science-realm': 'Sphere of mathematics, physics, and natural philosophy',
+                'stone-grimoire': 'Ancient realm of sacred teachings and mystical chapels'
+            };
+
+            document.getElementById('current-realm').textContent = realmNames[currentRealm] || 'Unknown Realm';
+            document.getElementById('realm-description').textContent = realmDescriptions[currentRealm] || 'A realm of mystery and discovery';
+        }
+
+        function openMaterial(materialId) {
+            const materials = {
+                'codex-seraphinianus': '📖 Codex Seraphinianus\n\nAn illustrated encyclopedia of an imaginary world, written in an unknown script. Study the surreal geometric patterns and architectural diagrams.',
+                'chartres-study': '🏛️ Chartres Cathedral Geometry\n\nLearn the sacred proportions and Gothic design principles used in cathedral architecture.',
+                'fibonacci-nature': '🌿 Fibonacci in Nature\n\nDiscover how the golden ratio appears in sunflowers, nautilus shells, and other natural forms.'
+            };
+
+            alert(materials[materialId] || 'Study material content would be displayed here.');
+        }
+
+        // Realm navigation
+        function switchToRealm(realm) {
+            currentRealm = realm;
+            document.getElementById('realm-background').className = `realm-background realm-${realm}`;
+            updateRealmDisplay();
+
+            // Clear existing markers
+            const existingMarkers = document.querySelectorAll('.location-marker');
+            existingMarkers.forEach(marker => marker.remove());
+
+            // Add new markers for this realm
+            setupLocationMarkers();
+        }
+
+        // Add realm switching to window for external access
+        window.switchToRealm = switchToRealm;
+        window.getCurrentRealm = () => currentRealm;
+    </script>
+</body>
+</html>

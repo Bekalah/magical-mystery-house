@@ -1,3 +1,7 @@
+// Azure dependencies removed - free/open source only
+// This is a healing space, completely free and open
+// Azure dependencies removed - free/open source only
+// This is a healing space, completely free and open
 """
 Azure AI Agent Client Stub
 Azure integration disabled per user request - all operations are local-only

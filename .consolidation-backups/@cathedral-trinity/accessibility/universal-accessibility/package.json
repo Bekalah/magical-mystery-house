@@ -66,31 +66,35 @@
   "author": "Rebecca Lemke (Cathedral Trinity Architecture)",
   "license": "CC0-1.0",
   "engines": {
-    "node": ">=22.9.0",
-    "pnpm": ">=8.0.0"
+    "node": ">=20.18.0",
+    "pnpm": "*"
   },
   "dependencies": {
-    "@cathedral/core": "workspace:*",
-    "tsx": "^4.19.2",
-    "typescript": "^5.6.3",
-    "eslint": "^9.16.0",
-    "prettier": "^3.4.2",
     "@cathedral-trinity/core": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
     "vitest": "^1.6.0",
-    "@vitest/coverage-v8": "^1.6.0"
-  },
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:58.122Z",
-  "packageManager": "pnpm@8.0.0",
-  "alchemical": {
-    "name": "@Cathedral Trinity/Accessibility",
-    "symbol": "⊙",
-    "label": "⊙ @Cathedral Trinity/Accessibility (@cathedral-trinity/accessibility)"
+    "@vitest/coverage-v8": "^1.6.0",
+    "eslint": "^9.16.0",
+    "prettier": "^3.4.2"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/universal-accessibility"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/universal-accessibility",
+  "packageManager": "ppppnpm@10.23.0",
+  "alchemical": {
+    "name": "@cathedral Trinity/accessibility",
+    "symbol": "⊙",
+    "label": "⊙ @cathedral Trinity/accessibility (@cathedral-trinity/accessibility)"
   }
 }

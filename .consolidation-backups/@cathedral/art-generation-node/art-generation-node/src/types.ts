@@ -1,8 +1,3 @@
-/**
- * types
- * 
- * @package @cathedral/art-generation-node
- */
 export interface PatternData {
   id: string;
   name: string;

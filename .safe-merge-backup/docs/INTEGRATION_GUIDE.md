@@ -26,7 +26,7 @@ All old root-level documentation files have been moved to organized `docs/` subd
 
 ```bash
 # Update all references automatically
-ppnpm run update:references
+pppnpm run update:references
 ```
 
 This will:
@@ -78,7 +78,7 @@ openspec/
 
 ```bash
 # Generate complete system inventory
-ppnpm run inventory
+pppnpm run inventory
 ```
 
 This creates:
@@ -113,18 +113,18 @@ These tools have been updated to use new paths:
 
 ```bash
 # Check all tools work correctly
-ppnpm run health:check
-ppnpm run validate:all
+pppnpm run health:check
+pppnpm run validate:all
 ```
 
 ---
 
 ## 📊 Step 5: Data Integration Checklist
 
-- [ ] All file references updated (`ppnpm run update:references`)
-- [ ] Reference map created (`ppnpm run create:reference-map`)
-- [ ] System inventory generated (`ppnpm run inventory`)
-- [ ] All tools tested (`ppnpm run health:check`)
+- [ ] All file references updated (`pppnpm run update:references`)
+- [ ] Reference map created (`pppnpm run create:reference-map`)
+- [ ] System inventory generated (`pppnpm run inventory`)
+- [ ] All tools tested (`pppnpm run health:check`)
 - [ ] Documentation reviewed (`docs/README.md`)
 - [ ] OpenSpec structure verified (`openspec/README.md`)
 
@@ -137,7 +137,7 @@ ppnpm run validate:all
 When adding new files:
 1. Place them in appropriate `docs/` subdirectory
 2. Update `REFERENCE_MAP.md` if needed
-3. Run `ppnpm run update:references` to update all references
+3. Run `pppnpm run update:references` to update all references
 
 ### Maintain Structure
 
@@ -154,19 +154,19 @@ When adding new files:
 
 ```bash
 # Update all references
-ppnpm run update:references
+pppnpm run update:references
 
 # Create reference map
-ppnpm run create:reference-map
+pppnpm run create:reference-map
 
 # Generate inventory
-ppnpm run inventory
+pppnpm run inventory
 
 # Consolidate docs
-ppnpm run consolidate:docs
+pppnpm run consolidate:docs
 
 # Check everything
-ppnpm run check:all
+pppnpm run check:all
 ```
 
 ### Key Files
@@ -183,9 +183,9 @@ ppnpm run check:all
 After updating references, verify:
 
 1. **All links work**: Check markdown links in documentation
-2. **Tools function**: Run `ppnpm run health:check`
-3. **Build succeeds**: Run `ppnpm run build`
-4. **Tests pass**: Run `ppnpm run test` (if available)
+2. **Tools function**: Run `pppnpm run health:check`
+3. **Build succeeds**: Run `pppnpm run build`
+4. **Tests pass**: Run `pppnpm run test` (if available)
 
 ---
 

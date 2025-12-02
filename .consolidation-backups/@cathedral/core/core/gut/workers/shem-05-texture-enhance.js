@@ -26,9 +26,9 @@ class Shem05TextureEnhance {
       output_format = "gltf_pbr"
     } = processingConfig;
 
-// console.log(`🎨 ${this.name} processing ${photoBatch.length} photos into mystical materials...`);
-// console.log(`✨ Style: ${style}`);
-// console.log(`🧠 Consciousness Responsive: ${consciousness_responsive}`);
+    console.log(`🎨 ${this.name} processing ${photoBatch.length} photos into mystical materials...`);
+    console.log(`✨ Style: ${style}`);
+    console.log(`🧠 Consciousness Responsive: ${consciousness_responsive}`);
 
     const processedMaterials = [];
 

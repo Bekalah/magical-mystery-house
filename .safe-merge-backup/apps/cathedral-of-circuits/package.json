@@ -14,7 +14,7 @@
     "sacred-geometry": "node tools/sacred-geometry-engine.js"
   },
   "devDependencies": {},
-  "packageManager": "pnpm@8.15.0",
+  "packageManager": "pnpm@10.23.0",
   "engines": {
     "node": ">=20.18.0",
     "pnpm": ">=8.15.0"

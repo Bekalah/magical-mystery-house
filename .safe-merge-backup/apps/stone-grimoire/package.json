@@ -16,5 +16,6 @@
     "name": "Stone Grimoire",
     "symbol": "⊙",
     "label": "⊙ Stone Grimoire (stone-grimoire)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

@@ -28,7 +28,7 @@ After using Cursor for updates and patches, your codex should be able to:
 
 ```bash
 # Run critical maintenance tasks only
-ppnpm run maintain:quick
+pppnpm run maintain:quick
 ```
 
 This runs:
@@ -40,7 +40,7 @@ This runs:
 
 ```bash
 # Run all maintenance tasks
-ppnpm run maintain:full
+pppnpm run maintain:full
 ```
 
 This runs:
@@ -55,7 +55,7 @@ This runs:
 
 ```bash
 # Just validate the system
-ppnpm run maintain:validate
+pppnpm run maintain:validate
 ```
 
 ---
@@ -66,7 +66,7 @@ ppnpm run maintain:validate
 
 ```bash
 # Apply all patches in patches/ directory
-ppnpm run apply:patches
+pppnpm run apply:patches
 ```
 
 This will:
@@ -97,8 +97,8 @@ Create patch files in `patches/` directory:
     }
   ],
   "postPatch": [
-    "ppnpm run build",
-    "ppnpm run validate:setup"
+    "pppnpm run build",
+    "pppnpm run validate:setup"
   ]
 }
 ```
@@ -117,11 +117,11 @@ Create patch files in `patches/` directory:
 
 ```bash
 # Automatically update after Cursor patches
-ppnpm run auto:update
+pppnpm run auto:update
 ```
 
 This will:
-1. Update dependencies (`ppnpm install`)
+1. Update dependencies (`pppnpm install`)
 2. Update file references
 3. Consolidate documentation
 4. Validate setup
@@ -149,36 +149,36 @@ cat .update-log.json | jq '.updates[-5:]'
 
 1. **Apply patches** (if any):
    ```bash
-   ppnpm run apply:patches
+   pppnpm run apply:patches
    ```
 
 2. **Auto-update**:
    ```bash
-   ppnpm run auto:update
+   pppnpm run auto:update
    ```
 
 3. **Self-maintenance**:
    ```bash
-   ppnpm run maintain:full
+   pppnpm run maintain:full
    ```
 
 4. **Verify**:
    ```bash
-   ppnpm run health:check
+   pppnpm run health:check
    ```
 
 ### Daily Maintenance
 
 ```bash
 # Quick check
-ppnpm run maintain:quick
+pppnpm run maintain:quick
 ```
 
 ### Weekly Maintenance
 
 ```bash
 # Full maintenance
-ppnpm run maintain:full
+pppnpm run maintain:full
 ```
 
 ---
@@ -187,13 +187,13 @@ ppnpm run maintain:full
 
 After Cursor updates, verify:
 
-- [ ] Dependencies updated (`ppnpm install`)
-- [ ] File references updated (`ppnpm run update:references`)
-- [ ] Documentation consolidated (`ppnpm run consolidate:docs`)
-- [ ] System validated (`ppnpm run validate:setup`)
-- [ ] Build successful (`ppnpm run build`)
-- [ ] Health check passed (`ppnpm run health:check`)
-- [ ] Consistency checked (`ppnpm run check:consistency`)
+- [ ] Dependencies updated (`pppnpm install`)
+- [ ] File references updated (`pppnpm run update:references`)
+- [ ] Documentation consolidated (`pppnpm run consolidate:docs`)
+- [ ] System validated (`pppnpm run validate:setup`)
+- [ ] Build successful (`pppnpm run build`)
+- [ ] Health check passed (`pppnpm run health:check`)
+- [ ] Consistency checked (`pppnpm run check:consistency`)
 
 ---
 
@@ -206,9 +206,9 @@ After Cursor updates, verify:
 3. Check backups in `.backups/` directory
 4. Run individual steps manually:
    ```bash
-   ppnpm run validate:setup
-   ppnpm run health:check
-   ppnpm run build
+   pppnpm run validate:setup
+   pppnpm run health:check
+   pppnpm run build
    ```
 
 ### If Patches Fail
@@ -229,13 +229,13 @@ After Cursor updates, verify:
 
 ## 📚 Related Commands
 
-- `ppnpm run maintain:quick` - Quick maintenance
-- `ppnpm run maintain:full` - Full maintenance
-- `ppnpm run maintain:validate` - Validation only
-- `ppnpm run apply:patches` - Apply patches
-- `ppnpm run auto:update` - Auto-update after Cursor
-- `ppnpm run health:check` - Health check
-- `ppnpm run validate:setup` - Validate setup
+- `pppnpm run maintain:quick` - Quick maintenance
+- `pppnpm run maintain:full` - Full maintenance
+- `pppnpm run maintain:validate` - Validation only
+- `pppnpm run apply:patches` - Apply patches
+- `pppnpm run auto:update` - Auto-update after Cursor
+- `pppnpm run health:check` - Health check
+- `pppnpm run validate:setup` - Validate setup
 
 ---
 

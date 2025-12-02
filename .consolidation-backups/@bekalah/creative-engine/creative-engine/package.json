@@ -1,0 +1,28 @@
+{
+  "name": "@bekalah/creative-engine",
+  "version": "1.0.0",
+  "description": "Cathedral Creative Engine - Harmonic generation system for narratives, games, architecture, and symbols",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node dist/test.js",
+    "generate": "node dist/generators/harmonic-generator.js"
+  },
+  "dependencies": {
+    "@cathedral/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "creative-engine",
+    "harmonic-generation",
+    "narrative-ai",
+    "game-design",
+    "architecture-generation",
+    "symbol-fusion",
+    "cathedral-of-circuits"
+  ]
+}

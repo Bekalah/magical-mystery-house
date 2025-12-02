@@ -9,7 +9,7 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 echo ""
 
 # Run the TypeScript integrator
-ppnpm run integrate:workspaces
+pnpm run integrate:workspaces
 
 echo ""
 echo "✅ Integration complete!"

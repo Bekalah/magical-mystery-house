@@ -1,9 +1,14 @@
 {
-  "timestamp": 1764559606036,
+  "timestamp": 1764624266715,
   "fixed": [],
-  "errors": [],
+  "errors": [
+    {
+      "name": "worker",
+      "error": "Unexpected non-whitespace character after JSON at position 434 (line 19 column 4)"
+    }
+  ],
   "summary": {
     "totalFixed": 0,
-    "totalErrors": 0
+    "totalErrors": 1
   }
 }

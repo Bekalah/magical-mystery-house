@@ -96,7 +96,7 @@ class MonorepoSecurityFixer {
 
       // Ensure packageManager is set
       if (!pkgJson.packageManager) {
-        pkgJson.packageManager = 'pnpm@8.0.0';
+        pkgJson.packageManager = 'ppnpm@8.0.0';
         updated = true;
       }
 
@@ -158,7 +158,7 @@ class MonorepoSecurityFixer {
 
       // Ensure packageManager
       if (!pkgJson.packageManager) {
-        pkgJson.packageManager = 'pnpm@8.0.0';
+        pkgJson.packageManager = 'ppnpm@8.0.0';
         updated = true;
       }
 

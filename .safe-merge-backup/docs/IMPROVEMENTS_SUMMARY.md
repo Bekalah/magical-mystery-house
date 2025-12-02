@@ -35,7 +35,7 @@
 
 **Commands**:
 ```bash
-ppnpm run recover:auto
+pppnpm run recover:auto
 ```
 
 ### 3. Health Monitor
@@ -52,8 +52,8 @@ ppnpm run recover:auto
 
 **Commands**:
 ```bash
-ppnpm run health:monitor        # Continuous monitoring
-ppnpm run health:monitor:once  # Single check
+pppnpm run health:monitor        # Continuous monitoring
+pppnpm run health:monitor:once  # Single check
 ```
 
 ### 4. Performance Optimizer
@@ -67,7 +67,7 @@ ppnpm run health:monitor:once  # Single check
 
 **Commands**:
 ```bash
-ppnpm run optimize:performance
+pppnpm run optimize:performance
 ```
 
 ### 5. Automated Test Runner
@@ -78,7 +78,7 @@ ppnpm run optimize:performance
 
 **Commands**:
 ```bash
-ppnpm run test:run
+pppnpm run test:run
 ```
 
 ### 6. Enhanced Backup System
@@ -90,9 +90,9 @@ ppnpm run test:run
 
 **Commands**:
 ```bash
-ppnpm run backup:create    # Create backup
-ppnpm run backup:list      # List backups
-ppnpm run backup:restore   # Restore backup
+pppnpm run backup:create    # Create backup
+pppnpm run backup:list      # List backups
+pppnpm run backup:restore   # Restore backup
 ```
 
 ---
@@ -101,45 +101,45 @@ ppnpm run backup:restore   # Restore backup
 
 ### Maintenance
 ```bash
-ppnpm run maintain:quick      # Quick maintenance
-ppnpm run maintain:full      # Full maintenance
-ppnpm run maintain:validate  # Validation only
+pppnpm run maintain:quick      # Quick maintenance
+pppnpm run maintain:full      # Full maintenance
+pppnpm run maintain:validate  # Validation only
 ```
 
 ### Health & Monitoring
 ```bash
-ppnpm run health:check        # Single health check
-ppnpm run health:monitor      # Continuous monitoring
-ppnpm run health:monitor:once # One-time check
+pppnpm run health:check        # Single health check
+pppnpm run health:monitor      # Continuous monitoring
+pppnpm run health:monitor:once # One-time check
 ```
 
 ### Performance
 ```bash
-ppnpm run optimize:performance  # Performance optimization
-ppnpm run optimize:code         # Code optimization
+pppnpm run optimize:performance  # Performance optimization
+pppnpm run optimize:code         # Code optimization
 ```
 
 ### Error Recovery
 ```bash
-ppnpm run recover:auto  # Auto error recovery
+pppnpm run recover:auto  # Auto error recovery
 ```
 
 ### Testing
 ```bash
-ppnpm run test:run  # Run automated tests
+pppnpm run test:run  # Run automated tests
 ```
 
 ### Backups
 ```bash
-ppnpm run backup:create   # Create backup
-ppnpm run backup:list     # List backups
-ppnpm run backup:restore  # Restore backup
+pppnpm run backup:create   # Create backup
+pppnpm run backup:list     # List backups
+pppnpm run backup:restore  # Restore backup
 ```
 
 ### Independent Operation
 ```bash
-ppnpm run auto:update     # Auto-update after Cursor
-ppnpm run apply:patches   # Apply patches
+pppnpm run auto:update     # Auto-update after Cursor
+pppnpm run apply:patches   # Apply patches
 ```
 
 ---

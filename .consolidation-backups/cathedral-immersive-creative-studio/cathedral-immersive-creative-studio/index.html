@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏛️ Cathedral Immersive Creative Studio - Walk Into Creation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Book Antiqua', 'Palatino Linotype', serif;
+            background: radial-gradient(ellipse at center, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e8e8e8;
+            min-height: 100vh;
+            overflow: hidden;
+            cursor: default;
+        }
+
+        .studio-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            perspective: 2000px;
+            transform-style: preserve-3d;
+        }
+
+        /* 3D Book Environment */
+        .book-world {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 1s ease;
+        }
+
+        .book-spine {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 600px;
+            background: linear-gradient(45deg, #8B4513, #D2691E, #CD853F);
+            border-radius: 8px;
+            box-shadow:
+                inset 0 0 20px rgba(0,0,0,0.5),
+                0 0 30px rgba(255, 215, 0, 0.3);
+            transform-style: preserve-3d;
+        }
+
+        .book-spine::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            right: 10px;
+            height: 4px;
+            background: linear-gradient(90deg, #FFD700, #FFA500, #FFD700);
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+        }
+
+        .book-spine::after {
+            content: '📖 CATHEDRAL CREATIVE REALMS';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotateY(90deg);
+            color: #FFD700;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+            white-space: nowrap;
+        }
+
+        /* Archetype Realms - Like Chapters in a Book */
+        .archetype-realm {
+            position: absolute;
+            width: 800px;
+            height: 600px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 3px solid #FFD700;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transform-style: preserve-3d;
+            transition: all 0.8s ease;
+            opacity: 0;
+            transform: translateX(200px) scale(0.8);
+        }
+
+        .archetype-realm.active {
+            opacity: 1;
+            transform: translateX(0) scale(1);
+        }
+
+        .realm-header {
+            background: linear-gradient(45deg, #FFD700, #FF69B4);
+            padding: 20px;
+            border-radius: 12px 12px 0 0;
+            text-align: center;
+        }
+
+        .realm-title {
+            font-size: 2rem;
+            color: #000;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .realm-subtitle {
+            font-size: 1rem;
+            color: #333;
+            font-style: italic;
+        }
+
+        .realm-content {
+            padding: 30px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .creative-activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            flex: 1;
+        }
+
+        .activity-portal {
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .activity-portal:hover {
+            background: rgba(255, 215, 0, 0.2);
+            border-color: #FFD700;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+        }
+
+        .activity-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .activity-title {
+            font-size: 1.2rem;
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+
+        .activity-description {
+            font-size: 0.9rem;
+            color: #ccc;
+            line-height: 1.4;
+        }
+
+        /* Floating Elements */
+        .floating-element {
+            position: absolute;
+            pointer-events: none;
+            animation: float 6s ease-in-out infinite;
+            opacity: 0.6;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        /* Navigation */
+        .nav-overlay {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .nav-button {
+            background: rgba(255, 215, 0, 0.2);
+            border: 2px solid rgba(255, 215, 0, 0.5);
+            color: #FFD700;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 215, 0, 0.3);
+            border-color: #FFD700;
+            transform: translateX(5px);
+        }
+
+        /* Archetype Selection */
+        .archetype-selector {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .archetype-button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 215, 0, 0.3);
+            background: rgba(0, 0, 0, 0.6);
+            color: #FFD700;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .archetype-button:hover {
+            border-color: #FFD700;
+            background: rgba(255, 215, 0, 0.2);
+            transform: scale(1.1);
+        }
+
+        .archetype-button.active {
+            border-color: #FF69B4;
+            background: rgba(255, 105, 180, 0.3);
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+        }
+
+        /* Creative Modes */
+        .creative-mode {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+        .mode-button {
+            background: rgba(0, 206, 209, 0.2);
+            border: 2px solid rgba(0, 206, 209, 0.5);
+            color: #00CED1;
+            padding: 10px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .mode-button:hover {
+            background: rgba(0, 206, 209, 0.3);
+            border-color: #00CED1;
+        }
+
+        .mode-button.active {
+            background: #00CED1;
+            color: #000;
+        }
+
+        /* Hidden by default */
+        .hidden {
+            display: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .archetype-selector {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                flex-direction: row;
+                top: auto;
+                transform: none;
+            }
+
+            .creative-mode {
+                bottom: 80px;
+                right: 20px;
+                flex-direction: column;
+            }
+
+            .archetype-realm {
+                width: 90vw;
+                height: 70vh;
+                left: 5vw;
+                top: 15vh;
+            }
+        }
+
+        /* Sacred Geometry Background */
+        .sacred-geometry-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            background:
+                radial-gradient(circle at 25% 25%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(255, 105, 180, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(0, 206, 209, 0.05) 0%, transparent 70%);
+        }
+
+        /* Sound Wave Visualization */
+        .sound-visualization {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .sound-bar {
+            width: 4px;
+            background: linear-gradient(to top, #FFD700, #FF69B4);
+            border-radius: 2px;
+            animation: soundWave 1s ease-in-out infinite;
+        }
+
+        .sound-bar:nth-child(odd) { animation-delay: 0.1s; }
+        .sound-bar:nth-child(even) { animation-delay: 0.2s; }
+
+        @keyframes soundWave {
+            0%, 100% { height: 10px; opacity: 0.5; }
+            50% { height: 30px; opacity: 1; }
+        }
+
+        /* Learning Overlay */
+        .learning-overlay {
+            position: absolute;
+            top: 20px;
+            right: 100px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 206, 209, 0.5);
+            max-width: 300px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .learning-overlay.active {
+            opacity: 1;
+        }
+
+        .learning-content {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .learning-title {
+            color: #00CED1;
+            margin-bottom: 8px;
+        }
+
+        .learning-text {
+            color: #ccc;
+            margin-bottom: 5px;
+        }
+
+        /* Music Creation Interface */
+        .music-interface {
+            position: absolute;
+            bottom: 100px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 105, 180, 0.5);
+            width: 300px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .music-interface.active {
+            opacity: 1;
+        }
+
+        .music-controls {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .music-pad {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #FF69B4, #00CED1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .music-pad:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+        }
+
+        /* Game Interface */
+        .game-interface {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.9);
+            padding: 30px;
+            border-radius: 20px;
+            border: 3px solid rgba(255, 215, 0, 0.5);
+            width: 80vw;
+            height: 80vh;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .game-interface.active {
+            opacity: 1;
+        }
+
+        .game-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            padding: 15px;
+            background: rgba(255, 215, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #ccc;
+        }
+
+        /* Science Integration */
+        .science-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 206, 209, 0.5);
+            max-width: 250px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .science-overlay.active {
+            opacity: 1;
+        }
+
+        .science-formula {
+            font-family: 'Courier New', monospace;
+            color: #00CED1;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="studio-container">
+        <!-- Sacred Geometry Background -->
+        <div class="sacred-geometry-bg"></div>
+
+        <!-- 3D Book World -->
+        <div class="book-world">
+            <div class="book-spine"></div>
+
+            <!-- Floating Sacred Elements -->
+            <div class="floating-element" style="top: 20%; left: 15%; font-size: 2rem;">🔥</div>
+            <div class="floating-element" style="top: 30%; right: 20%; font-size: 1.5rem;">💧</div>
+            <div class="floating-element" style="bottom: 25%; left: 25%; font-size: 1.8rem;">🌍</div>
+            <div class="floating-element" style="bottom: 35%; right: 15%; font-size: 1.7rem;">💨</div>
+            <div class="floating-element" style="top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 2.5rem;">⭐</div>
+
+            <!-- Sound Visualization -->
+            <div class="sound-visualization">
+                <div class="sound-bar" style="height: 15px;"></div>
+                <div class="sound-bar" style="height: 25px;"></div>
+                <div class="sound-bar" style="height: 20px;"></div>
+                <div class="sound-bar" style="height: 30px;"></div>
+                <div class="sound-bar" style="height: 18px;"></div>
+                <div class="sound-bar" style="height: 22px;"></div>
+                <div class="sound-bar" style="height: 28px;"></div>
+                <div class="sound-bar" style="height: 16px;"></div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="nav-overlay">
+                <button class="nav-button" onclick="showRealm('home')">🏠 Home</button>
+                <button class="nav-button" onclick="showRealm('codex')">📚 Codex 144:99</button>
+                <button class="nav-button" onclick="showRealm('arcanae')">🃏 Liber Arcanae</button>
+                <button class="nav-button" onclick="showRealm('fusion')">⚗️ Fusion Kink</button>
+            </div>
+
+            <!-- Archetype Selection -->
+            <div class="archetype-selector">
+                <div class="archetype-button" onclick="selectArchetype('fire')" title="Fire - Transformation">🔥</div>
+                <div class="archetype-button" onclick="selectArchetype('water')" title="Water - Emotion">💧</div>
+                <div class="archetype-button" onclick="selectArchetype('earth')" title="Earth - Foundation">🌍</div>
+                <div class="archetype-button" onclick="selectArchetype('air')" title="Air - Communication">💨</div>
+                <div class="archetype-button" onclick="selectArchetype('aether')" title="Aether - Spirit">⭐</div>
+            </div>
+
+            <!-- Creative Modes -->
+            <div class="creative-mode">
+                <button class="mode-button" onclick="setCreativeMode('art')" title="Visual Art Creation">🎨 Art</button>
+                <button class="mode-button" onclick="setCreativeMode('music')" title="Music Creation">🎵 Music</button>
+                <button class="mode-button" onclick="setCreativeMode('game')" title="Game Experience">🎮 Game</button>
+                <button class="mode-button" onclick="setCreativeMode('science')" title="Scientific Exploration">🔬 Science</button>
+            </div>
+
+            <!-- Archetype Realms -->
+            <div id="fire-realm" class="archetype-realm">
+                <div class="realm-header">
+                    <div class="realm-title">🔥 Path of Fire</div>
+                    <div class="realm-subtitle">Transformation, Passion, Purification</div>
+                </div>
+                <div class="realm-content">
+                    <div class="creative-activities">
+                        <div class="activity-portal" onclick="startActivity('fire', 'art')">
+                            <div class="activity-icon">🎨</div>
+                            <div class="activity-title">Fire Art</div>
+                            <div class="activity-description">Create with the transformative power of fire</div>
+                        </div>
+                        <div class="activity-portal" onclick="startActivity('fire', 'music')">
+                            <div class="activity-icon">🎵</div>
+                            <div class="activity-title">Fire Music</div>
+                            <div class="activity-description">Compose with passionate, transformative sound</div>
+                        </div>
+                        <div class="activity-portal" onclick="startActivity('fire', 'game')">
+                            <div class="activity-icon">🎮</div>
+                            <div class="activity-title">Fire Quest</div>
+                            <div class="activity-description">Experience transformation through fire challenges</div>
+                        </div>
+                        <div class="activity-portal" onclick="startActivity('fire', 'science')">
+                            <div class="activity-icon">🔬</div>
+                            <div class="activity-title">Fire Science</div>
+                            <div class="activity-description">Explore the science of transformation and energy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="water-realm" class="archetype-realm">
+                <div class="realm-header">
+                    <div class="realm-title">💧 Path of Water</div>
+                    <div class="realm-subtitle">Emotion, Intuition, Flow</div>
+                </div>
+                <div class="realm-content">
+                    <div class="creative-activities">
+                        <div class="activity-portal" onclick="startActivity('water', 'art')">
+                            <div class="activity-icon">🎨</div>
+                            <div class="activity-title">Water Art</div>
+                            <div class="activity-description">Flow with emotional, intuitive creativity</div>
+                        </div>
+                        <div class="activity-portal" onclick="startActivity('water', 'music')">
+                            <div class="activity-icon">🎵</div>
+                            <div class="activity-title">Water Music</div>
+                            <div class="activity-description">Create flowing, emotional soundscapes</div>
+                        </div>
+                        <div class="activity-portal" onclick="startActivity('water', 'game')">
+                            <div class="activity-icon">🎮</div>
+                            <div class="activity-title">Water Journey</div>
+                            <div class="activity-description">Navigate emotional depths and intuitive paths</div>
+                        </div>
+                        <div class="activity-portal" onclick="startActivity('water', 'science')">
+                            <div class="activity-icon">🔬</div>
+                            <div class="activity-title">Water Science</div>
+                            <div class="activity-description">Study fluid dynamics and emotional intelligence</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more realms for other elements... -->
+
+            <!-- Overlays -->
+            <div id="learning-overlay" class="learning-overlay">
+                <div class="learning-title">🔬 Learning Integration</div>
+                <div class="learning-content">
+                    <div class="learning-text">Sacred Mathematics: 144:99 = 1.454...</div>
+                    <div class="learning-text">Element: Fire - Transformation</div>
+                    <div class="learning-text">Archetype: The Warrior</div>
+                    <div class="learning-text">Solfeggio: 528Hz - DNA Repair</div>
+                </div>
+            </div>
+
+            <div id="music-interface" class="music-interface">
+                <h3 style="color: #FF69B4; margin-bottom: 15px;">🎵 Sacred Sound Studio</h3>
+                <div class="music-controls">
+                    <div class="music-pad" onclick="playSound('fire', 'do')">🔥</div>
+                    <div class="music-pad" onclick="playSound('fire', 're')">💧</div>
+                    <div class="music-pad" onclick="playSound('fire', 'mi')">🌍</div>
+                    <div class="music-pad" onclick="playSound('fire', 'fa')">💨</div>
+                </div>
+            </div>
+
+            <div id="game-interface" class="game-interface">
+                <h2 style="color: #FFD700; text-align: center; margin-bottom: 30px;">🎮 Sacred Adventure Realm</h2>
+                <div class="game-stats">
+                    <div class="stat">
+                        <div class="stat-value">144</div>
+                        <div class="stat-label">Wisdom</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">99</div>
+                        <div class="stat-label">Depth</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">21</div>
+                        <div class="stat-label">Tarot</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value">∞</div>
+                        <div class="stat-label">Fusion</div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button class="nav-button" onclick="startGameMode()">Begin Sacred Quest</button>
+                </div>
+            </div>
+
+            <div id="science-overlay" class="science-overlay">
+                <div class="learning-title">🔬 Scientific Integration</div>
+                <div class="learning-content">
+                    <div class="science-formula">E = mc² (Sacred Energy)</div>
+                    <div class="science-formula">144 ÷ 99 = 1.454... (Golden Ratio)</div>
+                    <div class="science-formula">f = 528Hz (DNA Activation)</div>
+                    <div class="learning-text">Quantum consciousness meets sacred geometry</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentArchetype = 'fire';
+        let creativeMode = 'art';
+        let activeOverlays = new Set();
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            showRealm('home');
+            setCreativeMode('art');
+        });
+
+        function showRealm(realmType) {
+            // Hide all realms
+            document.querySelectorAll('.archetype-realm').forEach(realm => {
+                realm.classList.remove('active');
+            });
+
+            // Show selected realm
+            if (realmType !== 'home') {
+                const realm = document.getElementById(`${currentArchetype}-realm`);
+                if (realm) {
+                    realm.classList.add('active');
+                }
+            }
+
+            // Update navigation
+            document.querySelectorAll('.nav-button').forEach(btn => {
+                btn.style.background = 'rgba(255, 215, 0, 0.2)';
+                btn.style.borderColor = 'rgba(255, 215, 0, 0.5)';
+                btn.style.color = '#FFD700';
+            });
+
+            if (realmType !== 'home') {
+                event.target.style.background = 'rgba(255, 215, 0, 0.4)';
+                event.target.style.borderColor = '#FFD700';
+                event.target.style.color = '#000';
+            }
+        }
+
+        function selectArchetype(archetype) {
+            currentArchetype = archetype;
+
+            // Update button states
+            document.querySelectorAll('.archetype-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Show corresponding realm
+            showRealm('archetype');
+        }
+
+        function setCreativeMode(mode) {
+            creativeMode = mode;
+
+            // Update mode buttons
+            document.querySelectorAll('.mode-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Show/hide overlays based on mode
+            document.getElementById('learning-overlay').classList.remove('active');
+            document.getElementById('music-interface').classList.remove('active');
+            document.getElementById('game-interface').classList.remove('active');
+            document.getElementById('science-overlay').classList.remove('active');
+
+            switch(mode) {
+                case 'art':
+                    // Art mode - default view
+                    break;
+                case 'music':
+                    document.getElementById('music-interface').classList.add('active');
+                    break;
+                case 'game':
+                    document.getElementById('game-interface').classList.add('active');
+                    break;
+                case 'science':
+                    document.getElementById('science-overlay').classList.add('active');
+                    break;
+            }
+        }
+
+        function startActivity(archetype, activity) {
+            // Start the selected creative activity
+            console.log(`Starting ${activity} in ${archetype} realm`);
+
+            switch(activity) {
+                case 'art':
+                    // Start art creation
+                    showLearningOverlay();
+                    break;
+                case 'music':
+                    // Start music creation
+                    toggleMusicInterface();
+                    break;
+                case 'game':
+                    // Start game experience
+                    toggleGameInterface();
+                    break;
+                case 'science':
+                    // Start scientific exploration
+                    toggleScienceOverlay();
+                    break;
+            }
+        }
+
+        function showLearningOverlay() {
+            const overlay = document.getElementById('learning-overlay');
+            overlay.classList.toggle('active');
+        }
+
+        function toggleMusicInterface() {
+            const musicInterface = document.getElementById('music-interface');
+            musicInterface.classList.toggle('active');
+        }
+
+        function toggleGameInterface() {
+            const gameInterface = document.getElementById('game-interface');
+            gameInterface.classList.toggle('active');
+        }
+
+        function toggleScienceOverlay() {
+            const overlay = document.getElementById('science-overlay');
+            overlay.classList.toggle('active');
+        }
+
+        function playSound(element, note) {
+            // Play sacred sound based on element and note
+            console.log(`Playing ${element} ${note} sound`);
+
+            // Create audio context and play sound
+            const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+
+            // Set frequency based on sacred mathematics
+            const baseFreq = 528; // DNA repair frequency
+            const frequencies = {
+                'do': baseFreq,
+                're': baseFreq * 1.125,
+                'mi': baseFreq * 1.25,
+                'fa': baseFreq * 1.333
+            };
+
+            oscillator.frequency.setValueAtTime(frequencies[note] || baseFreq, audioContext.currentTime);
+            oscillator.type = 'sine';
+
+            gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 1);
+
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+
+            oscillator.start();
+            oscillator.stop(audioContext.currentTime + 1);
+        }
+
+        function startGameMode() {
+            console.log('Starting sacred adventure game mode');
+            // Initialize game mechanics
+        }
+
+        // Make functions global for onclick handlers
+        window.showRealm = showRealm;
+        window.selectArchetype = selectArchetype;
+        window.setCreativeMode = setCreativeMode;
+        window.startActivity = startActivity;
+        window.showLearningOverlay = showLearningOverlay;
+        window.toggleMusicInterface = toggleMusicInterface;
+        window.toggleGameInterface = toggleGameInterface;
+        window.toggleScienceOverlay = toggleScienceOverlay;
+        window.playSound = playSound;
+        window.startGameMode = startGameMode;
+    </script>
+</body>
+</html>

@@ -31,18 +31,14 @@
   },
   "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/circuit-craft-creative-game",
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": "*",
+    "pnpm": "*"
   },
-  "dependencies": {},
-  "devDependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:52.608Z",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "ppppnpm@10.23.0",
+  "types": "dist/index.d.ts",
   "alchemical": {
     "name": "Circuit Craft Creative Game",
     "symbol": "⊙",
     "label": "⊙ Circuit Craft Creative Game (@cathedral/circuit-craft-creative-game)"
-  },
-  "types": "dist/index.d.ts"
+  }
 }

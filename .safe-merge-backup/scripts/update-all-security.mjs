@@ -201,7 +201,7 @@ export class UpdateAllSecurity {
 
       // Add packageManager if missing
       if (!packageJson.packageManager) {
-        packageJson.packageManager = 'pnpm@8.0.0';
+        packageJson.packageManager = 'ppnpm@8.0.0';
         updated = true;
       }
 
@@ -231,7 +231,7 @@ export class UpdateAllSecurity {
       }
 
       if (!packageJson.scripts['security:check']) {
-        packageJson.scripts['security:check'] = 'ppnpm audit && ppnpm run security:audit';
+        packageJson.scripts['security:check'] = 'ppnpm audit && pppnpm run security:audit';
         updated = true;
       }
 

@@ -12,5 +12,6 @@
     "name": "Game Mathematics",
     "symbol": "⊙",
     "label": "⊙ Game Mathematics (game-mathematics-core)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

@@ -23,5 +23,6 @@
     "name": "@Bekalah/Cathedral Worker",
     "symbol": "⊙",
     "label": "⊙ @Bekalah/Cathedral Worker (@bekalah/cathedral-worker)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

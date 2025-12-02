@@ -17,7 +17,7 @@
     "visualization"
   ],
   "author": "Rebecca Lemke",
-  "license": "CC0-1.0",
+  "license": "Copyright Rebecca Lemke, All Rights Reserved",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -27,19 +27,5 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/gem-tower-engine"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/gem-tower-engine",
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
-  },
-  "dependencies": {},
-  "devDependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:54.187Z",
-  "packageManager": "pnpm@8.0.0",
-  "alchemical": {
-    "name": "Gem Tower",
-    "symbol": "⊙",
-    "label": "⊙ Gem Tower (@cathedral/gem-tower-engine)"
-  }
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/gem-tower-engine"
 }

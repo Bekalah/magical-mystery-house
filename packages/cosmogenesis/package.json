@@ -34,12 +34,39 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:14:15.959Z",
-  "packageManager": "pnpm@8.0.0",
+  "consolidatedAt": "2025-12-01T19:36:49.131Z",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "Cosmogenesis",
     "symbol": "⊙",
     "label": "⊙ Cosmogenesis (@cathedral/cosmogenesis)"
   },
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "cathedral": {
+    "sacred_mathematics": {
+      "sacredGeometry": true,
+      "goldenRatio": 1.618,
+      "cathedralRatio": 1.455,
+      "fibonacciGrids": true,
+      "divineProportions": true
+    },
+    "trauma_safety": {
+      "noAutoplay": true,
+      "escExit": true,
+      "motionControls": true,
+      "intensityAdjustment": true,
+      "gentleDefaults": true,
+      "undoRedo": true
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
+    },
+    "integration": {
+      "connects_to": []
+    }
+  }
 }

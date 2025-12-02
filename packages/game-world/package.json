@@ -2,21 +2,24 @@
   "name": "game-world",
   "version": "1.0.0",
   "license": "CC0-1.0",
-  "description": "",
+  "description": "Game World - Part of the Cathedral of Circuits mystical ecosystem",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@cathedral/circuitum99-core": "workspace:*",
+    "@cathedral/circuitum99-arcanae-cyoa": "workspace:*"
+  },
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:14:16.459Z",
+  "consolidatedAt": "2025-12-01T19:36:51.339Z",
   "engines": {
     "node": "*",
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "Game World",
     "symbol": "⊙",
@@ -24,5 +27,35 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "cathedral": {
+    "sacred_mathematics": {
+      "sacredGeometry": true,
+      "goldenRatio": 1.618,
+      "cathedralRatio": 1.455,
+      "fibonacciGrids": true,
+      "divineProportions": true
+    },
+    "trauma_safety": {
+      "noAutoplay": true,
+      "escExit": true,
+      "motionControls": true,
+      "intensityAdjustment": true,
+      "gentleDefaults": true,
+      "undoRedo": true
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
+    },
+    "integration": {
+      "connects_to": [
+        "circuitum99-core",
+        "circuitum99-arcanae-cyoa"
+      ]
+    }
   }
 }

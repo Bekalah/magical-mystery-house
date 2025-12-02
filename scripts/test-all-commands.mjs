@@ -48,7 +48,7 @@ for (const [name, command] of Object.entries(scripts)) {
 
   try {
     // Run with timeout and capture output
-    execSync(`ppnpm run ${name}`, {
+    execSync(`pnpm run ${name}`, {
       cwd: BASE_DIR,
       stdio: 'pipe',
       timeout: 10000, // 10 second timeout

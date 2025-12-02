@@ -1,0 +1,3803 @@
+{
+  "timestamp": "2025-12-02T00:08:14.408Z",
+  "totalMajorArcana": 22,
+  "totalMinorArcana": 56,
+  "totalArcana": 78,
+  "majorArcana": {
+    "0": {
+      "number": 0,
+      "name": "The Fool",
+      "purityDesignation": "Rebecca Respawn, The Wonder-Keeper",
+      "fractalSignature": "Infinite recursion with impossible angles",
+      "colorPalette": [
+        "#FFD700",
+        "#DDA0DD",
+        "#87CEEB",
+        "#FF1493",
+        "#FF4500"
+      ],
+      "frequencyResonance": "0.8 Hz",
+      "abilities": [
+        "Leap of Faith",
+        "Infinite Possibilities",
+        "Beginner's Mind",
+        "Quantum Jump"
+      ],
+      "playstyle": "Explorer - High mobility, unpredictable movement",
+      "realInspiration": "Leonora Carrington + Rebecca Respawn",
+      "realm": "Kitchen Alchemy & Christian Mysticism",
+      "themes": [
+        "Surrealist magic",
+        "Kitchen alchemy",
+        "Christian mysticism",
+        "Beginner's mind"
+      ],
+      "alchemicalOperation": "Prima Materia",
+      "creativeArchetype": "The Beginner's Mind",
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-0",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Vehuiah",
+          "goetiaDemon": "Bael"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Divine Sophia",
+            "type": "Goddess",
+            "pantheon": "Christian Mysticism",
+            "connection": "Wisdom and mysticism"
+          },
+          {
+            "name": "The Holy Guardian Angel",
+            "type": "Angel",
+            "pantheon": "Christian Mysticism",
+            "connection": "Crowley's HGA work"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Hermes",
+            "type": "God",
+            "pantheon": "Greek",
+            "connection": "Traveler, guide"
+          },
+          {
+            "name": "Trickster Deities",
+            "type": "Collective",
+            "pantheon": "Various",
+            "connection": "Fool energy"
+          }
+        ],
+        "realm": "Kitchen Alchemy & Christian Mysticism"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Infinite recursion with impossible angles",
+        "colorPalette": [
+          "#FFD700",
+          "#DDA0DD",
+          "#87CEEB",
+          "#FF1493",
+          "#FF4500"
+        ],
+        "frequencyResonance": "0.8 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Carrington's writings",
+          "Christian mystical texts",
+          "Surrealist manifestos"
+        ],
+        "realInspiration": "Leonora Carrington + Rebecca Respawn",
+        "realm": "Kitchen Alchemy & Christian Mysticism",
+        "alchemicalOperation": "Prima Materia",
+        "lineage": "Crowley (Holy Guardian Angel)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "1": {
+      "number": 1,
+      "name": "The Magician",
+      "purityDesignation": "The Manifestor",
+      "fractalSignature": "Sacred geometry manifestation patterns",
+      "colorPalette": [
+        "#FFD700",
+        "#FF4500",
+        "#4169E1",
+        "#228B22",
+        "#8B0000"
+      ],
+      "frequencyResonance": "528 Hz",
+      "abilities": [
+        "Elemental Mastery",
+        "Reality Manipulation",
+        "Sacred Tools",
+        "Will Power"
+      ],
+      "playstyle": "Mage - High magic damage, versatile spells",
+      "realInspiration": "John Dee",
+      "realm": "Enochian",
+      "themes": [
+        "Enochian language",
+        "Angelic communications",
+        "Dee's magic system",
+        "Conjunction"
+      ],
+      "alchemicalOperation": "Conjunction",
+      "creativeArchetype": "The Channel",
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-1",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Jeliel",
+          "goetiaDemon": "Agares"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Enochian Angels",
+            "type": "Angelic Host",
+            "pantheon": "Enochian",
+            "connection": "Dee's angelic system"
+          },
+          {
+            "name": "Hermes Trismegistus",
+            "type": "God",
+            "pantheon": "Hermetic",
+            "connection": "Hermetic tradition"
+          },
+          {
+            "name": "Thoth",
+            "type": "God",
+            "pantheon": "Egyptian",
+            "connection": "Wisdom and magic"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Mercury",
+            "type": "God",
+            "pantheon": "Roman",
+            "connection": "Communication and magic"
+          },
+          {
+            "name": "Odin",
+            "type": "God",
+            "pantheon": "Norse",
+            "connection": "Wisdom and magic"
+          }
+        ],
+        "realm": "Enochian"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Sacred geometry manifestation patterns",
+        "colorPalette": [
+          "#FFD700",
+          "#FF4500",
+          "#4169E1",
+          "#228B22",
+          "#8B0000"
+        ],
+        "frequencyResonance": "528 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Dee's Enochian diaries",
+          "Key of Solomon",
+          "Agrippa's Three Books"
+        ],
+        "realInspiration": "John Dee",
+        "realm": "Enochian",
+        "alchemicalOperation": "Conjunction",
+        "lineage": "Agrippa, Dee"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "2": {
+      "number": 2,
+      "name": "The High Priestess",
+      "purityDesignation": "Gemini Rivers, The Wisdom Keeper",
+      "fractalSignature": "Vesica piscis gateways to deeper realities",
+      "colorPalette": [
+        "#4682B4",
+        "#B0E0E6",
+        "#191970",
+        "#C0C0C0",
+        "#FFD700"
+      ],
+      "frequencyResonance": "210 Hz",
+      "abilities": [
+        "Intuitive Vision",
+        "Lunar Power",
+        "Hidden Knowledge",
+        "Mystical Shield"
+      ],
+      "playstyle": "Support - Healing, protection, wisdom",
+      "realInspiration": "Dion Fortune",
+      "realm": "Avalon",
+      "themes": [
+        "Sea Priestess work",
+        "Avalon inner planes",
+        "Glastonbury Tor",
+        "Morgan's Cave",
+        "Reflection"
+      ],
+      "alchemicalOperation": "Reflection",
+      "creativeArchetype": "The Seer",
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-2",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Elemiah",
+          "goetiaDemon": "Samigina"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Morgan Le Fay",
+            "type": "Goddess",
+            "pantheon": "Avalon",
+            "connection": "Avalon mysteries"
+          },
+          {
+            "name": "The Lady of the Lake",
+            "type": "Goddess",
+            "pantheon": "Avalon",
+            "connection": "Water magic, Avalon"
+          },
+          {
+            "name": "Isis",
+            "type": "Goddess",
+            "pantheon": "Egyptian",
+            "connection": "Mysteries and magic"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Hecate",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Crossroads, magic"
+          },
+          {
+            "name": "Luna",
+            "type": "Goddess",
+            "pantheon": "Roman",
+            "connection": "Moon, intuition"
+          }
+        ],
+        "realm": "Avalon"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Vesica piscis gateways to deeper realities",
+        "colorPalette": [
+          "#4682B4",
+          "#B0E0E6",
+          "#191970",
+          "#C0C0C0",
+          "#FFD700"
+        ],
+        "frequencyResonance": "210 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Fortune's Sea Priestess",
+          "Avalon inner plane geography",
+          "Glastonbury traditions"
+        ],
+        "realInspiration": "Dion Fortune",
+        "realm": "Avalon",
+        "alchemicalOperation": "Reflection",
+        "lineage": "Fortune (Sea Priestess)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "3": {
+      "number": 3,
+      "name": "The Empress",
+      "purityDesignation": "The Fertility Guardian",
+      "fractalSignature": "Flowering life force patterns",
+      "colorPalette": [
+        "#FF69B4",
+        "#90EE90",
+        "#FFD700",
+        "#FF6347",
+        "#FFB6C1"
+      ],
+      "frequencyResonance": "432 Hz",
+      "abilities": [
+        "Nature Command",
+        "Growth",
+        "Abundance",
+        "Life Force"
+      ],
+      "playstyle": "Summoner - Nature allies, area control",
+      "realInspiration": "Leonora Carrington",
+      "realm": "Doreen's Garden",
+      "themes": [],
+      "alchemicalOperation": "Fermentation",
+      "creativeArchetype": "The Creator",
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-3",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Mahasiah",
+          "goetiaDemon": "Purson"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Demeter",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Fertility, nature"
+          },
+          {
+            "name": "Freya",
+            "type": "Goddess",
+            "pantheon": "Norse",
+            "connection": "Fertility, love"
+          },
+          {
+            "name": "Gaia",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Earth, nature"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Persephone",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Seasons, growth"
+          },
+          {
+            "name": "Brigid",
+            "type": "Goddess",
+            "pantheon": "Celtic",
+            "connection": "Fertility, creativity"
+          }
+        ],
+        "realm": "Doreen's Garden"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Flowering life force patterns",
+        "colorPalette": [
+          "#FF69B4",
+          "#90EE90",
+          "#FFD700",
+          "#FF6347",
+          "#FFB6C1"
+        ],
+        "frequencyResonance": "432 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Carrington's kitchen alchemy",
+          "Nature magic traditions"
+        ],
+        "realInspiration": "Leonora Carrington",
+        "realm": "Doreen's Garden",
+        "alchemicalOperation": "Fermentation",
+        "lineage": "Carrington"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "4": {
+      "number": 4,
+      "name": "The Emperor",
+      "purityDesignation": "The Order Keeper",
+      "fractalSignature": "Structured authority patterns",
+      "colorPalette": [
+        "#8B0000",
+        "#FFD700",
+        "#4169E1",
+        "#C0C0C0",
+        "#228B22"
+      ],
+      "frequencyResonance": "396 Hz",
+      "abilities": [
+        "Command Authority",
+        "Structure",
+        "Protection",
+        "Leadership"
+      ],
+      "playstyle": "Tank - High defense, team buffs",
+      "realInspiration": "Rudolf Steiner",
+      "realm": "Structured Authority",
+      "themes": [],
+      "alchemicalOperation": "Fixation",
+      "creativeArchetype": "The Architect",
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-4",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Lelahel",
+          "goetiaDemon": "Aamon"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Zeus",
+            "type": "God",
+            "pantheon": "Greek",
+            "connection": "Authority, order"
+          },
+          {
+            "name": "Jupiter",
+            "type": "God",
+            "pantheon": "Roman",
+            "connection": "Authority, structure"
+          },
+          {
+            "name": "Odin",
+            "type": "God",
+            "pantheon": "Norse",
+            "connection": "Wisdom, authority"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Ra",
+            "type": "God",
+            "pantheon": "Egyptian",
+            "connection": "Solar authority"
+          },
+          {
+            "name": "Marduk",
+            "type": "God",
+            "pantheon": "Mesopotamian",
+            "connection": "Order, creation"
+          }
+        ],
+        "realm": "Structured Authority"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Structured authority patterns",
+        "colorPalette": [
+          "#8B0000",
+          "#FFD700",
+          "#4169E1",
+          "#C0C0C0",
+          "#228B22"
+        ],
+        "frequencyResonance": "396 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Steiner's architectural work",
+          "Traditional authority systems"
+        ],
+        "realInspiration": "Rudolf Steiner",
+        "realm": "Structured Authority",
+        "alchemicalOperation": "Fixation",
+        "lineage": "Steiner"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "5": {
+      "number": 5,
+      "name": "The Hierophant",
+      "purityDesignation": "The Chohan of the Golden Flame",
+      "fractalSignature": "Pentagonal transmission mandalas",
+      "colorPalette": [
+        "#FFD700",
+        "#C0C0C0",
+        "#8B0000",
+        "#228B22",
+        "#4169E1"
+      ],
+      "frequencyResonance": "396 Hz",
+      "abilities": [
+        "Sacred Teaching",
+        "Tradition",
+        "Initiation",
+        "Spiritual Guidance"
+      ],
+      "playstyle": "Support - Team enhancement, knowledge sharing",
+      "realInspiration": "Crowley (Moon Child) / Max Ernst",
+      "realm": "The Tower on the Tor",
+      "themes": [],
+      "alchemicalOperation": "Multiplication",
+      "creativeArchetype": "The Teacher",
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-5",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Achaiah",
+          "goetiaDemon": "Barbatos"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Chiron",
+            "type": "Centaur",
+            "pantheon": "Greek",
+            "connection": "Teaching, healing"
+          },
+          {
+            "name": "Thoth",
+            "type": "God",
+            "pantheon": "Egyptian",
+            "connection": "Wisdom, teaching"
+          },
+          {
+            "name": "Hermes",
+            "type": "God",
+            "pantheon": "Greek",
+            "connection": "Communication, teaching"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Ganesha",
+            "type": "God",
+            "pantheon": "Hindu",
+            "connection": "Wisdom, teaching"
+          },
+          {
+            "name": "Saraswati",
+            "type": "Goddess",
+            "pantheon": "Hindu",
+            "connection": "Knowledge, arts"
+          }
+        ],
+        "realm": "The Tower on the Tor"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Pentagonal transmission mandalas",
+        "colorPalette": [
+          "#FFD700",
+          "#C0C0C0",
+          "#8B0000",
+          "#228B22",
+          "#4169E1"
+        ],
+        "frequencyResonance": "396 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Crowley's Moon Child",
+          "Ernst's surrealist techniques",
+          "Teaching traditions"
+        ],
+        "realInspiration": "Crowley (Moon Child) / Max Ernst",
+        "realm": "The Tower on the Tor",
+        "alchemicalOperation": "Multiplication",
+        "lineage": "Crowley (*Moon Child* / Max Ernst)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "6": {
+      "number": 6,
+      "name": "The Lovers",
+      "purityDesignation": "Scarlett Lady, The Sacred Union Master",
+      "fractalSignature": "Twin helix braided quantum entanglement",
+      "colorPalette": [
+        "#FFB6C1",
+        "#FF69B4",
+        "#DC143C",
+        "#FF6347",
+        "#FFA500"
+      ],
+      "frequencyResonance": "528 Hz",
+      "abilities": [
+        "Sacred Union",
+        "Dual Power",
+        "Harmony",
+        "Love Shield"
+      ],
+      "playstyle": "Hybrid - Balanced offense and support",
+      "realInspiration": "Dion Fortune (inner marriage)",
+      "realm": "Sacred Union",
+      "themes": [],
+      "alchemicalOperation": "Conjunction",
+      "creativeArchetype": "The Integrator",
+      "tarotSuit": "swords",
+      "alchemicalElement": "Salt",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-6",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Cahetel",
+          "goetiaDemon": "Beleth"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Aphrodite",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Love, union"
+          },
+          {
+            "name": "Venus",
+            "type": "Goddess",
+            "pantheon": "Roman",
+            "connection": "Love, beauty"
+          },
+          {
+            "name": "Freya",
+            "type": "Goddess",
+            "pantheon": "Norse",
+            "connection": "Love, fertility"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Eros",
+            "type": "God",
+            "pantheon": "Greek",
+            "connection": "Love, desire"
+          },
+          {
+            "name": "Cupid",
+            "type": "God",
+            "pantheon": "Roman",
+            "connection": "Love, union"
+          }
+        ],
+        "realm": "Sacred Union"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Twin helix braided quantum entanglement",
+        "colorPalette": [
+          "#FFB6C1",
+          "#FF69B4",
+          "#DC143C",
+          "#FF6347",
+          "#FFA500"
+        ],
+        "frequencyResonance": "528 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Fortune's inner marriage work",
+          "Sacred union traditions"
+        ],
+        "realInspiration": "Dion Fortune (inner marriage)",
+        "realm": "Sacred Union",
+        "alchemicalOperation": "Conjunction",
+        "lineage": "Fortune (inner marriage)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "7": {
+      "number": 7,
+      "name": "The Chariot",
+      "purityDesignation": "Elyria Nox, The Dimensional Navigator",
+      "fractalSignature": "Hypercube tesseract rotation patterns",
+      "colorPalette": [
+        "#4169E1",
+        "#00BFFF",
+        "#1E90FF",
+        "#FFD700",
+        "#FF4500"
+      ],
+      "frequencyResonance": "594 Hz",
+      "abilities": [
+        "Dimensional Travel",
+        "Speed",
+        "Control",
+        "Victory"
+      ],
+      "playstyle": "Mobility - Fast movement, hit-and-run",
+      "realInspiration": "Paul Foster Case (Cube of Space)",
+      "realm": "Dimensional Navigation",
+      "themes": [],
+      "alchemicalOperation": "Sublimation",
+      "creativeArchetype": "The Director",
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-7",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Haziel",
+          "goetiaDemon": "Leraje"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Apollo",
+            "type": "God",
+            "pantheon": "Greek",
+            "connection": "Direction, victory"
+          },
+          {
+            "name": "Sol",
+            "type": "God",
+            "pantheon": "Roman",
+            "connection": "Solar power, direction"
+          },
+          {
+            "name": "Mithras",
+            "type": "God",
+            "pantheon": "Roman",
+            "connection": "Victory, direction"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Thor",
+            "type": "God",
+            "pantheon": "Norse",
+            "connection": "Strength, victory"
+          },
+          {
+            "name": "Indra",
+            "type": "God",
+            "pantheon": "Hindu",
+            "connection": "Victory, power"
+          }
+        ],
+        "realm": "Dimensional Navigation"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Hypercube tesseract rotation patterns",
+        "colorPalette": [
+          "#4169E1",
+          "#00BFFF",
+          "#1E90FF",
+          "#FFD700",
+          "#FF4500"
+        ],
+        "frequencyResonance": "594 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Case's Cube of Space",
+          "Navigation magic"
+        ],
+        "realInspiration": "Paul Foster Case (Cube of Space)",
+        "realm": "Dimensional Navigation",
+        "alchemicalOperation": "Sublimation",
+        "lineage": "Case (Cube of Space)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "8": {
+      "number": 8,
+      "name": "Strength",
+      "purityDesignation": "The Inner Power Master",
+      "fractalSignature": "Flowing strength patterns",
+      "colorPalette": [
+        "#FF4500",
+        "#FF6347",
+        "#FFD700",
+        "#8B0000",
+        "#DC143C"
+      ],
+      "frequencyResonance": "528 Hz",
+      "abilities": [
+        "Inner Strength",
+        "Patience",
+        "Courage",
+        "Overcoming"
+      ],
+      "playstyle": "Warrior - High physical damage, resilience",
+      "realInspiration": "Emma Kunz",
+      "realm": "Inner Power",
+      "themes": [],
+      "alchemicalOperation": "Digestion",
+      "creativeArchetype": "The Alchemist",
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-8",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Aladiah",
+          "goetiaDemon": "Eligos"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Hercules",
+            "type": "Hero",
+            "pantheon": "Greek",
+            "connection": "Strength, courage"
+          },
+          {
+            "name": "Athena",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Inner strength, wisdom"
+          },
+          {
+            "name": "Durga",
+            "type": "Goddess",
+            "pantheon": "Hindu",
+            "connection": "Strength, protection"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Kali",
+            "type": "Goddess",
+            "pantheon": "Hindu",
+            "connection": "Power, transformation"
+          },
+          {
+            "name": "Sekhmet",
+            "type": "Goddess",
+            "pantheon": "Egyptian",
+            "connection": "Strength, protection"
+          }
+        ],
+        "realm": "Inner Power"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Flowing strength patterns",
+        "colorPalette": [
+          "#FF4500",
+          "#FF6347",
+          "#FFD700",
+          "#8B0000",
+          "#DC143C"
+        ],
+        "frequencyResonance": "528 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Kunz's healing drawings",
+          "Strength traditions"
+        ],
+        "realInspiration": "Emma Kunz",
+        "realm": "Inner Power",
+        "alchemicalOperation": "Digestion",
+        "lineage": "Kunz"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "9": {
+      "number": 9,
+      "name": "The Hermit",
+      "purityDesignation": "Orin Lantern, The Seeker Guide",
+      "fractalSignature": "Solitary pinpoint fractal focus",
+      "colorPalette": [
+        "#191970",
+        "#800080",
+        "#483D8B",
+        "#2F4F4F",
+        "#FFD700"
+      ],
+      "frequencyResonance": "741 Hz",
+      "abilities": [
+        "Inner Light",
+        "Wisdom",
+        "Guidance",
+        "Solitude Power"
+      ],
+      "playstyle": "Sage - High magic, self-sufficient",
+      "realInspiration": "John Dee (library work)",
+      "realm": "Solitary Research",
+      "themes": [],
+      "alchemicalOperation": "Separation",
+      "creativeArchetype": "The Researcher",
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-9",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Lauviah",
+          "goetiaDemon": "Zepar"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Thoth",
+            "type": "God",
+            "pantheon": "Egyptian",
+            "connection": "Wisdom, knowledge"
+          },
+          {
+            "name": "Odin",
+            "type": "God",
+            "pantheon": "Norse",
+            "connection": "Wisdom, solitude"
+          },
+          {
+            "name": "Hermes Trismegistus",
+            "type": "God",
+            "pantheon": "Hermetic",
+            "connection": "Hermetic wisdom"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Mercury",
+            "type": "God",
+            "pantheon": "Roman",
+            "connection": "Communication, knowledge"
+          },
+          {
+            "name": "Ganesha",
+            "type": "God",
+            "pantheon": "Hindu",
+            "connection": "Wisdom, knowledge"
+          }
+        ],
+        "realm": "Solitary Research"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Solitary pinpoint fractal focus",
+        "colorPalette": [
+          "#191970",
+          "#800080",
+          "#483D8B",
+          "#2F4F4F",
+          "#FFD700"
+        ],
+        "frequencyResonance": "741 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Dee's library work",
+          "Hermit traditions"
+        ],
+        "realInspiration": "John Dee (library work)",
+        "realm": "Solitary Research",
+        "alchemicalOperation": "Separation",
+        "lineage": "Dee (library work)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "10": {
+      "number": 10,
+      "name": "Wheel of Fortune",
+      "purityDesignation": "Grand Professor of Eternal Flux",
+      "fractalSignature": "Rotating mandalic probability distributions",
+      "colorPalette": [
+        "#8B0000",
+        "#DC143C",
+        "#FF6347",
+        "#FFD700",
+        "#191970"
+      ],
+      "frequencyResonance": "852 Hz",
+      "abilities": [
+        "Fortune Spin",
+        "Probability Control",
+        "Cycles",
+        "Change"
+      ],
+      "playstyle": "Gambler - Random powerful effects, luck-based",
+      "realInspiration": "Agrippa (celestial magic)",
+      "realm": "Eternal Flux",
+      "themes": [],
+      "alchemicalOperation": "Rotation",
+      "creativeArchetype": "The Cycler",
+      "tarotSuit": "swords",
+      "alchemicalElement": "Salt",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-10",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Yelahiah",
+          "goetiaDemon": "Botis"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Fortuna",
+            "type": "Goddess",
+            "pantheon": "Roman",
+            "connection": "Fortune, cycles"
+          },
+          {
+            "name": "Tyche",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Fortune, chance"
+          },
+          {
+            "name": "Lakshmi",
+            "type": "Goddess",
+            "pantheon": "Hindu",
+            "connection": "Fortune, abundance"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Nemesis",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Balance, cycles"
+          },
+          {
+            "name": "Karma Deities",
+            "type": "Collective",
+            "pantheon": "Various",
+            "connection": "Cycles, balance"
+          }
+        ],
+        "realm": "Eternal Flux"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Rotating mandalic probability distributions",
+        "colorPalette": [
+          "#8B0000",
+          "#DC143C",
+          "#FF6347",
+          "#FFD700",
+          "#191970"
+        ],
+        "frequencyResonance": "852 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Agrippa's celestial magic",
+          "Wheel traditions"
+        ],
+        "realInspiration": "Agrippa (celestial magic)",
+        "realm": "Eternal Flux",
+        "alchemicalOperation": "Rotation",
+        "lineage": "Agrippa (celestial magic)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "11": {
+      "number": 11,
+      "name": "Justice",
+      "purityDesignation": "The Balanced Judge",
+      "fractalSignature": "Equilibrium scales with mathematical precision",
+      "colorPalette": [
+        "#FFD700",
+        "#4169E1",
+        "#8B0000",
+        "#C0C0C0",
+        "#228B22"
+      ],
+      "frequencyResonance": "417 Hz",
+      "abilities": [
+        "Balance",
+        "Judgment",
+        "Karma",
+        "Truth"
+      ],
+      "playstyle": "Paladin - Balanced offense/defense, justice effects",
+      "realInspiration": "Paul Foster Case (scales)",
+      "realm": "Balance",
+      "themes": [],
+      "alchemicalOperation": "Equilibrium",
+      "creativeArchetype": "The Balancer",
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash",
+      "inspirations": {
+        "literary": [
+          "Judicial scholar of karmic balance systems",
+          "Cicero De Legibus natural law philosophy",
+          "Immanuel Kant Groundwork of the Metaphysics of Morals",
+          "John Stuart Mill Utilitarianism consequentialism",
+          "Aristotle Nicomachean Ethics virtue ethics",
+          "Confucius Analects moral cultivation",
+          "Plato Republic guardian philosopher-judges"
+        ],
+        "artistic": [
+          "Lady Justice iconography through history",
+          "George Grosz Weimar corruption caricatures",
+          "Leon Golub mercenary imagery and political power dynamics"
+        ],
+        "scientific": [
+          "Legal system efficiency research",
+          "Criminal justice reform studies",
+          "Restorative justice implementation data",
+          "Judicial decision-making bias studies",
+          "Ethics in artificial intelligence",
+          "Algorithmic fairness in law enforcement"
+        ],
+        "mystical": [
+          "Karmic law universal justice principles",
+          "Ancient Egyptian Maat divine law",
+          "Greek Themis weighing of souls",
+          "Norse Norns destiny weaving justice",
+          "Hebrew Din divine judgment systems",
+          "Buddhist karma immediate justice law"
+        ],
+        "technological": [
+          "Blockchain smart contract legal frameworks",
+          "AI-powered judicial assistance systems",
+          "Digital rights management enforcement",
+          "Automated compliance monitoring",
+          "Cryptographic legal document verification",
+          "Virtual reality legal precedent visualization"
+        ]
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-11",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Sealiah",
+          "goetiaDemon": "Bathin"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Ma'at",
+            "type": "Goddess",
+            "pantheon": "Egyptian",
+            "connection": "Justice, balance"
+          },
+          {
+            "name": "Themis",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Justice, order"
+          },
+          {
+            "name": "Justitia",
+            "type": "Goddess",
+            "pantheon": "Roman",
+            "connection": "Justice, law"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Dike",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Justice, moral order"
+          },
+          {
+            "name": "Shamash",
+            "type": "God",
+            "pantheon": "Mesopotamian",
+            "connection": "Justice, law"
+          }
+        ],
+        "realm": "Balance"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Equilibrium scales with mathematical precision",
+        "colorPalette": [
+          "#FFD700",
+          "#4169E1",
+          "#8B0000",
+          "#C0C0C0",
+          "#228B22"
+        ],
+        "frequencyResonance": "417 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Case's scales work",
+          "Justice traditions"
+        ],
+        "realInspiration": "Paul Foster Case (scales)",
+        "realm": "Balance",
+        "alchemicalOperation": "Equilibrium",
+        "lineage": "Case (scales)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "12": {
+      "number": 12,
+      "name": "The Hanged Man",
+      "purityDesignation": "The Suspended Seeker",
+      "fractalSignature": "Inverted perspective patterns",
+      "colorPalette": [
+        "#4169E1",
+        "#191970",
+        "#B0C4DE",
+        "#C0C0C0",
+        "#FFD700"
+      ],
+      "frequencyResonance": "528 Hz",
+      "abilities": [
+        "Sacrifice",
+        "New Perspective",
+        "Suspension",
+        "Enlightenment"
+      ],
+      "playstyle": "Trickster - Unconventional tactics, perspective shifts",
+      "realInspiration": "Crowley (crossing the Abyss)",
+      "realm": "Suspended Perspective",
+      "themes": [],
+      "alchemicalOperation": "Dissolution",
+      "creativeArchetype": "The Surrenderer",
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-12",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Ariel",
+          "goetiaDemon": "Sallos"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Odin",
+            "type": "God",
+            "pantheon": "Norse",
+            "connection": "Sacrifice, wisdom"
+          },
+          {
+            "name": "Prometheus",
+            "type": "Titan",
+            "pantheon": "Greek",
+            "connection": "Sacrifice, knowledge"
+          },
+          {
+            "name": "Christ",
+            "type": "Deity",
+            "pantheon": "Christian",
+            "connection": "Sacrifice, redemption"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Attis",
+            "type": "God",
+            "pantheon": "Phrygian",
+            "connection": "Sacrifice, rebirth"
+          },
+          {
+            "name": "Osiris",
+            "type": "God",
+            "pantheon": "Egyptian",
+            "connection": "Death, rebirth"
+          }
+        ],
+        "realm": "Suspended Perspective"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Inverted perspective patterns",
+        "colorPalette": [
+          "#4169E1",
+          "#191970",
+          "#B0C4DE",
+          "#C0C0C0",
+          "#FFD700"
+        ],
+        "frequencyResonance": "528 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Crowley's Abyss work",
+          "Hanged Man traditions"
+        ],
+        "realInspiration": "Crowley (crossing the Abyss)",
+        "realm": "Suspended Perspective",
+        "alchemicalOperation": "Dissolution",
+        "lineage": "Crowley (crossing the Abyss)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "13": {
+      "number": 13,
+      "name": "Death",
+      "purityDesignation": "The Transformation Master",
+      "fractalSignature": "Transformation spiral patterns",
+      "colorPalette": [
+        "#2F4F4F",
+        "#000000",
+        "#800080",
+        "#191970",
+        "#FFD700"
+      ],
+      "frequencyResonance": "741 Hz",
+      "abilities": [
+        "Transformation",
+        "Endings",
+        "Rebirth",
+        "Change"
+      ],
+      "playstyle": "Necromancer - Transformation magic, rebirth",
+      "realInspiration": "All (nigredo)",
+      "realm": "Transformation",
+      "themes": [],
+      "alchemicalOperation": "Putrefaction",
+      "creativeArchetype": "The Transformer",
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-13",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Asaliah",
+          "goetiaDemon": "Aim"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Anubis",
+            "type": "God",
+            "pantheon": "Egyptian",
+            "connection": "Death, transformation"
+          },
+          {
+            "name": "Hades",
+            "type": "God",
+            "pantheon": "Greek",
+            "connection": "Underworld, transformation"
+          },
+          {
+            "name": "Hel",
+            "type": "Goddess",
+            "pantheon": "Norse",
+            "connection": "Death, transformation"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Persephone",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Death, rebirth"
+          },
+          {
+            "name": "Yama",
+            "type": "God",
+            "pantheon": "Hindu",
+            "connection": "Death, justice"
+          }
+        ],
+        "realm": "Transformation"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Transformation spiral patterns",
+        "colorPalette": [
+          "#2F4F4F",
+          "#000000",
+          "#800080",
+          "#191970",
+          "#FFD700"
+        ],
+        "frequencyResonance": "741 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Alchemical nigredo",
+          "Death traditions"
+        ],
+        "realInspiration": "All (nigredo)",
+        "realm": "Transformation",
+        "alchemicalOperation": "Putrefaction",
+        "lineage": "All (nigredo)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "14": {
+      "number": 14,
+      "name": "Temperance",
+      "purityDesignation": "The Alchemical Balancer",
+      "fractalSignature": "Alchemical mixing patterns",
+      "colorPalette": [
+        "#B0E0E6",
+        "#87CEEB",
+        "#4682B4",
+        "#FFD700",
+        "#90EE90"
+      ],
+      "frequencyResonance": "528 Hz",
+      "abilities": [
+        "Balance",
+        "Moderation",
+        "Alchemy",
+        "Harmony"
+      ],
+      "playstyle": "Alchemist - Elemental mixing, balance effects",
+      "realInspiration": "Leonora Carrington (kitchen alchemy)",
+      "realm": "Alchemical Mixing",
+      "themes": [],
+      "alchemicalOperation": "Distillation",
+      "creativeArchetype": "The Mixer",
+      "tarotSuit": "swords",
+      "alchemicalElement": "Salt",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-14",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Mihael",
+          "goetiaDemon": "Naberius"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Iris",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Rainbow, balance"
+          },
+          {
+            "name": "Hestia",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Home, balance"
+          },
+          {
+            "name": "Vesta",
+            "type": "Goddess",
+            "pantheon": "Roman",
+            "connection": "Home, balance"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Brigid",
+            "type": "Goddess",
+            "pantheon": "Celtic",
+            "connection": "Home, balance"
+          },
+          {
+            "name": "Hestia",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Kitchen, balance"
+          }
+        ],
+        "realm": "Alchemical Mixing"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Alchemical mixing patterns",
+        "colorPalette": [
+          "#B0E0E6",
+          "#87CEEB",
+          "#4682B4",
+          "#FFD700",
+          "#90EE90"
+        ],
+        "frequencyResonance": "528 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Carrington's kitchen alchemy",
+          "Temperance traditions"
+        ],
+        "realInspiration": "Leonora Carrington (kitchen alchemy)",
+        "realm": "Alchemical Mixing",
+        "alchemicalOperation": "Distillation",
+        "lineage": "Carrington (kitchen alchemy)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "15": {
+      "number": 15,
+      "name": "The Devil",
+      "purityDesignation": "The Shadow Binder",
+      "fractalSignature": "Binding chain patterns",
+      "colorPalette": [
+        "#8B0000",
+        "#000000",
+        "#2F4F4F",
+        "#FF4500",
+        "#DC143C"
+      ],
+      "frequencyResonance": "396 Hz",
+      "abilities": [
+        "Binding",
+        "Shadow Power",
+        "Materialism",
+        "Temptation"
+      ],
+      "playstyle": "Warlock - Dark magic, binding effects",
+      "realInspiration": "Crowley, Fortune",
+      "realm": "Shadow Work",
+      "themes": [],
+      "alchemicalOperation": "Calcination",
+      "creativeArchetype": "The Shadow Worker",
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-15",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Veuliah",
+          "goetiaDemon": "Glasya-Labolas"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Pan",
+            "type": "God",
+            "pantheon": "Greek",
+            "connection": "Nature, shadow"
+          },
+          {
+            "name": "Baphomet",
+            "type": "Deity",
+            "pantheon": "Esoteric",
+            "connection": "Balance, shadow"
+          },
+          {
+            "name": "Loki",
+            "type": "God",
+            "pantheon": "Norse",
+            "connection": "Trickster, shadow"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Set",
+            "type": "God",
+            "pantheon": "Egyptian",
+            "connection": "Chaos, shadow"
+          },
+          {
+            "name": "Satan",
+            "type": "Deity",
+            "pantheon": "Christian",
+            "connection": "Shadow work"
+          }
+        ],
+        "realm": "Shadow Work"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Binding chain patterns",
+        "colorPalette": [
+          "#8B0000",
+          "#000000",
+          "#2F4F4F",
+          "#FF4500",
+          "#DC143C"
+        ],
+        "frequencyResonance": "396 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Crowley's shadow work",
+          "Fortune's shadow integration",
+          "Devil traditions"
+        ],
+        "realInspiration": "Crowley, Fortune",
+        "realm": "Shadow Work",
+        "alchemicalOperation": "Calcination",
+        "lineage": "Crowley, Fortune"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "16": {
+      "number": 16,
+      "name": "The Tower",
+      "purityDesignation": "The Destructive Awakener",
+      "fractalSignature": "Destructive lightning patterns",
+      "colorPalette": [
+        "#FFD700",
+        "#FF4500",
+        "#DC143C",
+        "#8B0000",
+        "#000000"
+      ],
+      "frequencyResonance": "852 Hz",
+      "abilities": [
+        "Destruction",
+        "Revelation",
+        "Sudden Change",
+        "Breakthrough"
+      ],
+      "playstyle": "Berserker - High burst damage, area destruction",
+      "realInspiration": "John Dee (fall from grace)",
+      "realm": "Destructive Awakening",
+      "themes": [],
+      "alchemicalOperation": "Mortification",
+      "creativeArchetype": "The Destroyer",
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-16",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Yelaiah",
+          "goetiaDemon": "Bune"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Zeus",
+            "type": "God",
+            "pantheon": "Greek",
+            "connection": "Lightning, destruction"
+          },
+          {
+            "name": "Thor",
+            "type": "God",
+            "pantheon": "Norse",
+            "connection": "Thunder, destruction"
+          },
+          {
+            "name": "Indra",
+            "type": "God",
+            "pantheon": "Hindu",
+            "connection": "Lightning, revelation"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Shiva",
+            "type": "God",
+            "pantheon": "Hindu",
+            "connection": "Destruction, transformation"
+          },
+          {
+            "name": "Kali",
+            "type": "Goddess",
+            "pantheon": "Hindu",
+            "connection": "Destruction, transformation"
+          }
+        ],
+        "realm": "Destructive Awakening"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Destructive lightning patterns",
+        "colorPalette": [
+          "#FFD700",
+          "#FF4500",
+          "#DC143C",
+          "#8B0000",
+          "#000000"
+        ],
+        "frequencyResonance": "852 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Dee's fall",
+          "Tower traditions"
+        ],
+        "realInspiration": "John Dee (fall from grace)",
+        "realm": "Destructive Awakening",
+        "alchemicalOperation": "Mortification",
+        "lineage": "Dee (fall from grace)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "17": {
+      "number": 17,
+      "name": "The Star",
+      "purityDesignation": "The Hope Bringer",
+      "fractalSignature": "Stellar constellation patterns",
+      "colorPalette": [
+        "#87CEEB",
+        "#B0E0E6",
+        "#FFD700",
+        "#C0C0C0",
+        "#FFFFFF"
+      ],
+      "frequencyResonance": "528 Hz",
+      "abilities": [
+        "Hope",
+        "Inspiration",
+        "Guidance",
+        "Healing"
+      ],
+      "playstyle": "Healer - Strong healing, inspiration buffs",
+      "realInspiration": "Emma Kunz (healing drawings)",
+      "realm": "Hope & Healing",
+      "themes": [],
+      "alchemicalOperation": "Coagulation",
+      "creativeArchetype": "The Healer",
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-17",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Melahel",
+          "goetiaDemon": "Roneve"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Astarte",
+            "type": "Goddess",
+            "pantheon": "Canaanite",
+            "connection": "Stars, hope"
+          },
+          {
+            "name": "Ishtar",
+            "type": "Goddess",
+            "pantheon": "Mesopotamian",
+            "connection": "Stars, hope"
+          },
+          {
+            "name": "Nut",
+            "type": "Goddess",
+            "pantheon": "Egyptian",
+            "connection": "Stars, sky"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Aurora",
+            "type": "Goddess",
+            "pantheon": "Roman",
+            "connection": "Dawn, hope"
+          },
+          {
+            "name": "Eos",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Dawn, hope"
+          }
+        ],
+        "realm": "Hope & Healing"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Stellar constellation patterns",
+        "colorPalette": [
+          "#87CEEB",
+          "#B0E0E6",
+          "#FFD700",
+          "#C0C0C0",
+          "#FFFFFF"
+        ],
+        "frequencyResonance": "528 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Kunz's healing work",
+          "Star traditions"
+        ],
+        "realInspiration": "Emma Kunz (healing drawings)",
+        "realm": "Hope & Healing",
+        "alchemicalOperation": "Coagulation",
+        "lineage": "Kunz (healing drawings)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "18": {
+      "number": 18,
+      "name": "The Moon",
+      "purityDesignation": "Luna Mystery, The Dream Navigator",
+      "fractalSignature": "Spiraling hypnotic wave patterns",
+      "colorPalette": [
+        "#191970",
+        "#B0C4DE",
+        "#FFE4E1",
+        "#C0C0C0",
+        "#000080"
+      ],
+      "frequencyResonance": "211 Hz",
+      "abilities": [
+        "Illusion",
+        "Dreams",
+        "Intuition",
+        "Mystery"
+      ],
+      "playstyle": "Illusionist - Confusion effects, dream magic",
+      "realInspiration": "Dion Fortune (inner planes)",
+      "realm": "Dream Navigation",
+      "themes": [],
+      "alchemicalOperation": "Fermentation",
+      "creativeArchetype": "The Dreamer",
+      "tarotSuit": "swords",
+      "alchemicalElement": "Salt",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-18",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Hahuiah",
+          "goetiaDemon": "Berith"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Selene",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Moon, dreams"
+          },
+          {
+            "name": "Luna",
+            "type": "Goddess",
+            "pantheon": "Roman",
+            "connection": "Moon, intuition"
+          },
+          {
+            "name": "Hecate",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Moon, magic"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Artemis",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Moon, nature"
+          },
+          {
+            "name": "Diana",
+            "type": "Goddess",
+            "pantheon": "Roman",
+            "connection": "Moon, nature"
+          }
+        ],
+        "realm": "Dream Navigation"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Spiraling hypnotic wave patterns",
+        "colorPalette": [
+          "#191970",
+          "#B0C4DE",
+          "#FFE4E1",
+          "#C0C0C0",
+          "#000080"
+        ],
+        "frequencyResonance": "211 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Fortune's inner planes work",
+          "Moon traditions"
+        ],
+        "realInspiration": "Dion Fortune (inner planes)",
+        "realm": "Dream Navigation",
+        "alchemicalOperation": "Fermentation",
+        "lineage": "Fortune (inner planes)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "19": {
+      "number": 19,
+      "name": "The Sun",
+      "purityDesignation": "The Radiant One",
+      "fractalSignature": "Radiant sunburst patterns",
+      "colorPalette": [
+        "#FFD700",
+        "#FFA500",
+        "#FF6347",
+        "#FF4500",
+        "#FFFFFF"
+      ],
+      "frequencyResonance": "528 Hz",
+      "abilities": [
+        "Radiance",
+        "Joy",
+        "Vitality",
+        "Enlightenment"
+      ],
+      "playstyle": "Paladin - High damage, healing, positive energy",
+      "realInspiration": "Rudolf Steiner (light work)",
+      "realm": "Radiant Illumination",
+      "themes": [],
+      "alchemicalOperation": "Projection",
+      "creativeArchetype": "The Radiator",
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-19",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Nithael",
+          "goetiaDemon": "Astaroth"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Apollo",
+            "type": "God",
+            "pantheon": "Greek",
+            "connection": "Sun, light"
+          },
+          {
+            "name": "Helios",
+            "type": "God",
+            "pantheon": "Greek",
+            "connection": "Sun, radiance"
+          },
+          {
+            "name": "Ra",
+            "type": "God",
+            "pantheon": "Egyptian",
+            "connection": "Sun, life"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Sol",
+            "type": "God",
+            "pantheon": "Roman",
+            "connection": "Sun, light"
+          },
+          {
+            "name": "Surya",
+            "type": "God",
+            "pantheon": "Hindu",
+            "connection": "Sun, vitality"
+          }
+        ],
+        "realm": "Radiant Illumination"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Radiant sunburst patterns",
+        "colorPalette": [
+          "#FFD700",
+          "#FFA500",
+          "#FF6347",
+          "#FF4500",
+          "#FFFFFF"
+        ],
+        "frequencyResonance": "528 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Steiner's light work",
+          "Sun traditions"
+        ],
+        "realInspiration": "Rudolf Steiner (light work)",
+        "realm": "Radiant Illumination",
+        "alchemicalOperation": "Projection",
+        "lineage": "Steiner (light work)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "20": {
+      "number": 20,
+      "name": "Judgment",
+      "purityDesignation": "The Awakening Caller",
+      "fractalSignature": "Awakening trumpet patterns",
+      "colorPalette": [
+        "#FFD700",
+        "#FFFFFF",
+        "#C0C0C0",
+        "#4169E1",
+        "#8B0000"
+      ],
+      "frequencyResonance": "852 Hz",
+      "abilities": [
+        "Awakening",
+        "Judgment",
+        "Resurrection",
+        "Call"
+      ],
+      "playstyle": "Reviver - Resurrection, judgment effects",
+      "realInspiration": "Paul Foster Case (resurrection)",
+      "realm": "Awakening",
+      "themes": [],
+      "alchemicalOperation": "Exaltation",
+      "creativeArchetype": "The Awakener",
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-20",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Haaiah",
+          "goetiaDemon": "Forneus"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Gabriel",
+            "type": "Angel",
+            "pantheon": "Abrahamic",
+            "connection": "Judgment, awakening"
+          },
+          {
+            "name": "Michael",
+            "type": "Angel",
+            "pantheon": "Abrahamic",
+            "connection": "Judgment, protection"
+          },
+          {
+            "name": "Raphael",
+            "type": "Angel",
+            "pantheon": "Abrahamic",
+            "connection": "Healing, judgment"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "Uriel",
+            "type": "Angel",
+            "pantheon": "Abrahamic",
+            "connection": "Wisdom, judgment"
+          },
+          {
+            "name": "Metatron",
+            "type": "Angel",
+            "pantheon": "Abrahamic",
+            "connection": "Divine judgment"
+          }
+        ],
+        "realm": "Awakening"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Awakening trumpet patterns",
+        "colorPalette": [
+          "#FFD700",
+          "#FFFFFF",
+          "#C0C0C0",
+          "#4169E1",
+          "#8B0000"
+        ],
+        "frequencyResonance": "852 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Case's resurrection work",
+          "Judgment traditions"
+        ],
+        "realInspiration": "Paul Foster Case (resurrection)",
+        "realm": "Awakening",
+        "alchemicalOperation": "Exaltation",
+        "lineage": "Case (resurrection)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    },
+    "21": {
+      "number": 21,
+      "name": "The World",
+      "purityDesignation": "The Completion Master",
+      "fractalSignature": "Complete mandala patterns",
+      "colorPalette": [
+        "#228B22",
+        "#4169E1",
+        "#FFD700",
+        "#8B0000",
+        "#FFFFFF"
+      ],
+      "frequencyResonance": "528 Hz",
+      "abilities": [
+        "Completion",
+        "Integration",
+        "Wholeness",
+        "Mastery"
+      ],
+      "playstyle": "Master - Balanced all abilities, completion power",
+      "realInspiration": "All (rubedo)",
+      "realm": "Completion",
+      "themes": [],
+      "alchemicalOperation": "Philosopher's Stone",
+      "creativeArchetype": "The Completer",
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury",
+      "inspirations": {
+        "literary": [],
+        "artistic": [],
+        "scientific": [],
+        "mystical": [],
+        "technological": []
+      },
+      "grimoire": {
+        "id": "grimoire-arcana-21",
+        "spells": 4,
+        "daimons": {
+          "shemAngel": "Mumiah",
+          "goetiaDemon": "Andromalius"
+        }
+      },
+      "deities": {
+        "primary": [
+          {
+            "name": "Gaia",
+            "type": "Goddess",
+            "pantheon": "Greek",
+            "connection": "Earth, completion"
+          },
+          {
+            "name": "Terra",
+            "type": "Goddess",
+            "pantheon": "Roman",
+            "connection": "Earth, wholeness"
+          },
+          {
+            "name": "Prithvi",
+            "type": "Goddess",
+            "pantheon": "Hindu",
+            "connection": "Earth, completion"
+          }
+        ],
+        "secondary": [
+          {
+            "name": "All Deities",
+            "type": "Collective",
+            "pantheon": "All",
+            "connection": "Completion, wholeness"
+          },
+          {
+            "name": "The All",
+            "type": "Deity",
+            "pantheon": "Universal",
+            "connection": "Wholeness, completion"
+          }
+        ],
+        "realm": "Completion"
+      },
+      "techFeatures": {
+        "trueWill": true,
+        "rpg": true,
+        "grimoire": true,
+        "spells": true,
+        "deities": true,
+        "pathworking": true,
+        "portal": true,
+        "witchEye": true,
+        "witchMod": true
+      },
+      "designFeatures": {
+        "fractalSignature": "Complete mandala patterns",
+        "colorPalette": [
+          "#228B22",
+          "#4169E1",
+          "#FFD700",
+          "#8B0000",
+          "#FFFFFF"
+        ],
+        "frequencyResonance": "528 Hz",
+        "shaderEffects": true,
+        "sacredGeometry": true,
+        "alchemicalMapping": true
+      },
+      "cannon": {
+        "historicalSources": [
+          "Alchemical rubedo",
+          "World traditions"
+        ],
+        "realInspiration": "All (rubedo)",
+        "realm": "Completion",
+        "alchemicalOperation": "Philosopher's Stone",
+        "lineage": "All (rubedo)"
+      },
+      "circuitum99": {
+        "connected": true,
+        "gates": [],
+        "stories": [],
+        "pathways": [],
+        "features": [
+          "interactive-storytelling",
+          "cyoa",
+          "theatre-experience"
+        ]
+      },
+      "mysteryHouse": {
+        "connected": true,
+        "rooms": [],
+        "features": [],
+        "pathworking": [],
+        "stories": []
+      },
+      "cosmogenesis": {
+        "connected": true,
+        "learningPaths": [],
+        "features": [
+          "adaptive-learning",
+          "spiral-learning",
+          "trauma-aware"
+        ],
+        "stories": []
+      },
+      "stoneGrimoire": {
+        "connected": true,
+        "chapels": [],
+        "folios": [],
+        "features": [
+          "grimoire-maker",
+          "dynamic-pages",
+          "sacred-geometry"
+        ]
+      },
+      "stories": {
+        "circuitum99": [],
+        "mysteryHouse": [],
+        "cosmogenesis": [],
+        "stoneGrimoire": [],
+        "general": []
+      },
+      "completeness": {
+        "hasGameData": true,
+        "hasGrimoire": true,
+        "hasDeities": true,
+        "hasInspirations": true,
+        "hasRealInspiration": true,
+        "hasRealm": true,
+        "hasAlchemical": true,
+        "complete": true
+      }
+    }
+  },
+  "minorArcana": {},
+  "systems": {
+    "circuitum99": true,
+    "mysteryHouse": true,
+    "cosmogenesis": true,
+    "stoneGrimoire": true
+  }
+}

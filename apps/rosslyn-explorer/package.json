@@ -11,10 +11,14 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:02.063Z",
+  "consolidatedAt": "2025-12-01T21:19:39.897Z",
   "alchemical": {
     "name": "Rosslyn Explorer",
     "symbol": "⊙",
     "label": "⊙ Rosslyn Explorer (rosslyn-explorer)"
+  },
+  "packageManager": "pnpm@10.23.0",
+  "engines": {
+    "node": "*"
   }
 }

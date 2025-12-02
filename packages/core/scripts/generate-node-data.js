@@ -395,10 +395,10 @@ export const Node${nodeId}Component = ({ nodeData }) => {
   }, []);
 
   return (
-    <div className="node-component professional-theme">
+    <div className="node-component">
       <h3>Node ${nodeId}: {nodeData.name}</h3>
       <div ref={mountRef} style={{ width: '400px', height: '400px' }} />
-      <div className="node-info professional-theme">
+      <div className="node-info">
         <p><strong>Chakra:</strong> {nodeData.chakra}</p>
         <p><strong>Element:</strong> {nodeData.element}</p>
         <p><strong>Frequency:</strong> {nodeData.frequency_hz} Hz</p>

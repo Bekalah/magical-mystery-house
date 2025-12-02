@@ -1,16 +1,6 @@
 // Cathedral Haute Couture Engine - Miss Sohee Inspired Elegance
 // Life-size 3D presence with couture sophistication
 
-/**
- * ⊙ Couture
- * 
- * @alchemical Couture
- * @element N/A
- * @symbol ⊙
- * 
- * @license CC0-1.0 - Public Domain
- */
-
 class CathedralCoutureEngine {
   constructor() {
     this.materials = new CoutureMaterials();

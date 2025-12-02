@@ -23018,7 +23018,7 @@
               "scan": "node dist/scanner/main.js",
               "extract": "node dist/extractor/archetype-miner.js",
               "integrate": "node dist/integrator/cathedral-integrator.js",
-              "full-pipeline": "npm run scan && npm run extract && npm run integrate",
+              "full-pipeline": "pnpm run scan && pnpm run extract && pnpm run integrate",
               "validate": "node tools/trauma-safety-validator.js"
             },
             "dependencies": {
@@ -23090,7 +23090,7 @@
               "scan": "node dist/scanner/main.js",
               "extract": "node dist/extractor/archetype-miner.js",
               "integrate": "node dist/integrator/cathedral-integrator.js",
-              "full-pipeline": "npm run scan && npm run extract && npm run integrate",
+              "full-pipeline": "pnpm run scan && pnpm run extract && pnpm run integrate",
               "validate": "node tools/trauma-safety-validator.js"
             },
             "dependencies": {
@@ -26265,7 +26265,7 @@
             "scripts": {
               "build": "node ../../tools/gem-tower-engine.js",
               "test": "node -e \"console.log('Gem Tower Engine tests: ✅ Crystal structures, ✅ Tower mechanics, ✅ Healing integration');\"",
-              "dev": "npm run build"
+              "dev": "pnpm run build"
             },
             "keywords": [
               "cathedral",
@@ -26310,7 +26310,7 @@
             "scripts": {
               "build": "node ../../tools/gem-tower-engine.js",
               "test": "node -e \"console.log('Gem Tower Engine tests: ✅ Crystal structures, ✅ Tower mechanics, ✅ Healing integration');\"",
-              "dev": "npm run build"
+              "dev": "pnpm run build"
             },
             "keywords": [
               "cathedral",
@@ -26365,7 +26365,7 @@
             "scripts": {
               "build": "tsc",
               "validate": "echo 'Validating sacred mathematics...' && node validate-sacred-math.js",
-              "export": "echo 'Exporting for Godot...' && ppnpm run build",
+              "export": "echo 'Exporting for Godot...' && pnpm run build",
               "test": "echo 'Testing lattice connections...' && node test-connections.js"
             },
             "keywords": [
@@ -26464,7 +26464,7 @@
             "scripts": {
               "build": "tsc",
               "validate": "echo 'Validating sacred mathematics...' && node validate-sacred-math.js",
-              "export": "echo 'Exporting for Godot...' && ppnpm run build",
+              "export": "echo 'Exporting for Godot...' && pnpm run build",
               "test": "echo 'Testing lattice connections...' && node test-connections.js"
             },
             "keywords": [
@@ -26574,7 +26574,7 @@
             "scripts": {
               "build": "tsc",
               "validate": "echo 'Validating design tools...' && node validate-design.js",
-              "export": "echo 'Exporting design tools...' && ppnpm run build",
+              "export": "echo 'Exporting design tools...' && pnpm run build",
               "test": "echo 'Testing design workflows...' && node test-design.js"
             },
             "keywords": [
@@ -26681,7 +26681,7 @@
             "scripts": {
               "build": "tsc",
               "validate": "echo 'Validating design tools...' && node validate-design.js",
-              "export": "echo 'Exporting design tools...' && ppnpm run build",
+              "export": "echo 'Exporting design tools...' && pnpm run build",
               "test": "echo 'Testing design workflows...' && node test-design.js"
             },
             "keywords": [
@@ -26799,7 +26799,7 @@
             "scripts": {
               "build": "tsc",
               "validate": "echo 'Validating tarot correspondences...' && node validate-tarot.js",
-              "export": "echo 'Exporting tarot system...' && ppnpm run build",
+              "export": "echo 'Exporting tarot system...' && pnpm run build",
               "test": "echo 'Testing card interactions...' && node test-cards.js"
             },
             "keywords": [
@@ -26906,7 +26906,7 @@
             "scripts": {
               "build": "tsc",
               "validate": "echo 'Validating tarot correspondences...' && node validate-tarot.js",
-              "export": "echo 'Exporting tarot system...' && ppnpm run build",
+              "export": "echo 'Exporting tarot system...' && pnpm run build",
               "test": "echo 'Testing card interactions...' && node test-cards.js"
             },
             "keywords": [
@@ -27024,7 +27024,7 @@
             "scripts": {
               "build": "tsc",
               "validate": "echo 'Validating sacred mathematics in VFX...' && node validate-sacred-math.js",
-              "export": "echo 'Exporting VFX assets for Godot...' && ppnpm run build",
+              "export": "echo 'Exporting VFX assets for Godot...' && pnpm run build",
               "preview": "echo 'Preview VFX effects...' && open preview/index.html"
             },
             "keywords": [
@@ -27128,7 +27128,7 @@
             "scripts": {
               "build": "tsc",
               "validate": "echo 'Validating sacred mathematics in VFX...' && node validate-sacred-math.js",
-              "export": "echo 'Exporting VFX assets for Godot...' && ppnpm run build",
+              "export": "echo 'Exporting VFX assets for Godot...' && pnpm run build",
               "preview": "echo 'Preview VFX effects...' && open preview/index.html"
             },
             "keywords": [
@@ -31609,7 +31609,7 @@
               "clean": "rm -rf dist",
               "setup": "tsc --declaration",
               "status": "node scripts/status.js",
-              "validate": "npm run test && npm run lint"
+              "validate": "pnpm run test && pnpm run lint"
             },
             "keywords": [
               "cathedral",
@@ -31702,7 +31702,7 @@
               "clean": "rm -rf dist",
               "setup": "tsc --declaration",
               "status": "node scripts/status.js",
-              "validate": "npm run test && npm run lint"
+              "validate": "pnpm run test && pnpm run lint"
             },
             "keywords": [
               "cathedral",

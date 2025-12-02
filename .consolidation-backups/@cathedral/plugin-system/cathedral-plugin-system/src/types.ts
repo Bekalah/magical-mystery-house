@@ -1,9 +1,4 @@
 /**
- * types
- * 
- * @package @cathedral/cathedral-plugin-system
- */
-/**
  * Cathedral Plugin System Types
  * Unified architecture for modular integration of sacred systems
  */

@@ -14,7 +14,7 @@ class AgentOfKaozReal {
         try {
             this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
         } catch (e) {
-// console.warn('Web Audio not supported:', e);
+            console.warn('Web Audio not supported:', e);
         }
     }
 
@@ -39,7 +39,7 @@ class AgentOfKaozReal {
 
             return await response.json();
         } catch (error) {
-// console.error('Agent of Kaoz error:', error);
+            console.error('Agent of Kaoz error:', error);
             return {
                 response: `Agent of Kaoz is temporarily unavailable: ${error.message}`,
                 success: false
@@ -68,7 +68,7 @@ class AgentOfKaozReal {
             const data = await response.json();
             return data.art_prompt;
         } catch (error) {
-// console.error('Art generation error:', error);
+            console.error('Art generation error:', error);
             return `Art generation temporarily unavailable: ${error.message}`;
         }
     }
@@ -95,7 +95,7 @@ class AgentOfKaozReal {
 
             return spellResult;
         } catch (error) {
-// console.error('Spell casting error:', error);
+            console.error('Spell casting error:', error);
             return {
                 response: `Spell casting failed: ${error.message}`,
                 success: false

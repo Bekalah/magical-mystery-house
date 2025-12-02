@@ -38,7 +38,7 @@ A comprehensive, permanent health monitoring system for your modular monorepo. C
 
 ### Start Permanent Health Service
 ```bash
-ppnpm run health:permanent
+pnpm run health:permanent
 ```
 
 This will:
@@ -50,7 +50,7 @@ This will:
 
 ### Clean Up Files
 ```bash
-ppnpm run cleanup
+pnpm run cleanup
 ```
 
 Removes:
@@ -118,16 +118,16 @@ The permanent health system integrates with:
 
 1. **Start Permanent Health Service**:
    ```bash
-   ppnpm run health:permanent
+   pnpm run health:permanent
    ```
 
 2. **Monitor Health**:
    - Check `permanent-health.log` for activity
    - View `permanent-health-state.json` for current status
-   - Use `ppnpm run health` for one-time checks
+   - Use `pnpm run health` for one-time checks
 
 3. **Regular Cleanup**:
-   - Run `ppnpm run cleanup` periodically
+   - Run `pnpm run cleanup` periodically
    - Check `cleanup-log.json` for details
    - Restore from `.cleanup-backup/` if needed
 

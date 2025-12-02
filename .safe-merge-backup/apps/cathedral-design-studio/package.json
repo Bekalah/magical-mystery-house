@@ -16,5 +16,6 @@
     "name": "Cathedral Design Studio",
     "symbol": "⊙",
     "label": "⊙ Cathedral Design Studio (cathedral-design-studio)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

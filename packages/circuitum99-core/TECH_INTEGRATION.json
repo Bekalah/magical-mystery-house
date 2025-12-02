@@ -1,0 +1,26 @@
+{
+  "package": "circuitum99-core",
+  "techSystems": [
+    "portal-tech",
+    "rpg-tech",
+    "true-will-tech"
+  ],
+  "connected": "2025-12-01T23:45:38.619Z",
+  "connections": [
+    {
+      "tech": "portal-tech",
+      "status": "connected",
+      "path": "tools/portal-tech.mjs"
+    },
+    {
+      "tech": "rpg-tech",
+      "status": "connected",
+      "path": "tools/rpg-tech.mjs"
+    },
+    {
+      "tech": "true-will-tech",
+      "status": "connected",
+      "path": "tools/true-will-tech.mjs"
+    }
+  ]
+}

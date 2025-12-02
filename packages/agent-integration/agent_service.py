@@ -1,3 +1,7 @@
+// Azure dependencies removed - free/open source only
+// This is a healing space, completely free and open
+// Azure dependencies removed - free/open source only
+// This is a healing space, completely free and open
 #!/usr/bin/env python3
 """
 Agent of Kaoz Web Service

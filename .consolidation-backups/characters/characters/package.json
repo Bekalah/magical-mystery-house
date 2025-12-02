@@ -1,0 +1,29 @@
+{
+  "name": "characters",
+  "version": "1.0.0",
+  "description": "Consolidated characters",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests\""
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-12-01T21:14:06.476Z",
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "license": "CC0-1.0",
+  "packageManager": "ppppnpm@10.23.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts",
+  "alchemical": {
+    "name": "Characters",
+    "symbol": "⊙",
+    "label": "⊙ Characters (characters)"
+  }
+}

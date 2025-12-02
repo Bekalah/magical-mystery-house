@@ -55,12 +55,12 @@ Created comprehensive discovery and documentation system that:
 
 ```bash
 # Run full discovery and analysis
-ppnpm run discover:full
+pnpm run discover:full
 
 # Or run individually:
-ppnpm run discover:all      # Discover everything
-ppnpm run analyze:partials   # Analyze partials
-ppnpm run analyze:codex      # Check codex alignment
+pnpm run discover:all      # Discover everything
+pnpm run analyze:partials   # Analyze partials
+pnpm run analyze:codex      # Check codex alignment
 ```
 
 ## Next Steps

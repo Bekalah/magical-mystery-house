@@ -10,7 +10,7 @@
     "scan": "node dist/scanner/main.js",
     "extract": "node dist/extractor/archetype-miner.js",
     "integrate": "node dist/integrator/cathedral-integrator.js",
-    "full-pipeline": "npm run scan && npm run extract && npm run integrate",
+    "full-pipeline": "pnpm run scan && pnpm run extract && pnpm run integrate",
     "validate": "node tools/trauma-safety-validator.js"
   },
   "dependencies": {
@@ -27,7 +27,11 @@
     "vite": "^5.0.0",
     "@vitejs/plugin-react": "^4.0.0",
     "eslint": "^8.0.0",
-    "jest": "^29.0.0"
+    "jest": "^29.0.0",
+    "pytesseract": "^0.3.10",
+    "fitz": "^1.23.0",
+    "pandas": "^2.0.0",
+    "jsonschema": "^4.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.0",
@@ -62,13 +66,40 @@
   },
   "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/cataract-book-scanner",
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:14:14.586Z",
-  "packageManager": "pnpm@8.0.0",
+  "consolidatedAt": "2025-12-01T19:36:40.938Z",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "Cataract Book Scanner",
     "symbol": "⊙",
     "label": "⊙ Cataract Book Scanner (@cathedral/cataract-book-scanner)"
   },
   "main": "dist/index.js",
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "cathedral": {
+    "sacred_mathematics": {
+      "sacredGeometry": true,
+      "goldenRatio": 1.618,
+      "cathedralRatio": 1.455,
+      "fibonacciGrids": true,
+      "divineProportions": true
+    },
+    "trauma_safety": {
+      "noAutoplay": true,
+      "escExit": true,
+      "motionControls": true,
+      "intensityAdjustment": true,
+      "gentleDefaults": true,
+      "undoRedo": true
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
+    },
+    "integration": {
+      "connects_to": []
+    }
+  }
 }

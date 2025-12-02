@@ -1,0 +1,11 @@
+name = "cathedral-worker"
+main = "src/index.ts"
+compatibility_date = "2023-12-18"
+compatibility_flags = ["nodejs_compat"]
+
+[env.production]
+name = "cathedral-api"
+route = "https://cathedral-api.bekalah.workers.dev/*"
+
+[env.staging]
+name = "cathedral-api-staging"

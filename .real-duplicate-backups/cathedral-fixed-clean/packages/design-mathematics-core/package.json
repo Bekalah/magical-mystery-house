@@ -12,5 +12,6 @@
     "name": "Design Mathematics",
     "symbol": "⊙",
     "label": "⊙ Design Mathematics (design-mathematics-core)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

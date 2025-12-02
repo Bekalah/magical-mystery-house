@@ -1,7 +1,8 @@
 /**
- * @license CC0-1.0 - Public Domain
+ * types
+ * 
+ * @package @cathedral/cathedral-fusion-kink-engine
  */
-
 // Cathedral Fusion Kink Engine Types
 // Perfect integration of Liber Arcanae and Codex 144:99 systems
 

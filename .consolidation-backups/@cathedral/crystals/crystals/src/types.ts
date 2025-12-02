@@ -1,8 +1,3 @@
-/**
- * types
- * 
- * @package @cathedral/crystals
- */
 // types.ts - domain types for crystal intelligence
 export interface Crystal {
   id: string;

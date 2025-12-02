@@ -186,31 +186,31 @@ const balance = gameMathEngine.calculateGameBalance(10);
 ### Validate Sacred Mathematics
 
 ```bash
-ppnpm run validate:sacred-math
+pppnpm run validate:sacred-math
 ```
 
 ### Validate Sound Mathematics
 
 ```bash
-ppnpm run validate:sound-math
+pppnpm run validate:sound-math
 ```
 
 ### Validate Design Mathematics
 
 ```bash
-ppnpm run validate:design-math
+pppnpm run validate:design-math
 ```
 
 ### Validate Game Mathematics
 
 ```bash
-ppnpm run validate:game-math
+pppnpm run validate:game-math
 ```
 
 ### Validate Enterprise Standard
 
 ```bash
-ppnpm run validate:enterprise
+pppnpm run validate:enterprise
 ```
 
 ## Cross-System Formulas

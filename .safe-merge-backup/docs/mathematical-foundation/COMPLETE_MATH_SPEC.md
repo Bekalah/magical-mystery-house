@@ -310,7 +310,7 @@ const level = frequencyToConsciousnessLevel(528);
 ### Validation
 
 ```bash
-ppnpm run validate:sacred-math
+pppnpm run validate:sacred-math
 ```
 
 This validates all systems use correct constants and formulas.

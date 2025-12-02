@@ -56,5 +56,5 @@
   "license": "CC0-1.0",
   "consolidated": true,
   "consolidatedAt": "2025-11-30T19:53:32.243Z",
-  "packageManager": "pnpm@8.0.0"
+  "packageManager": "pnpm@10.23.0"
 }

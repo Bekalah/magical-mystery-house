@@ -11,7 +11,6 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import '@cathedral/shared/src/styles/unified-professional.css';
 import { WorldClassDesignSystem } from './world-class-design-system';
 
 export interface HumanFunInteractionProps {
@@ -67,7 +66,7 @@ export function HumanFunInteraction({
   
   return (
     <div
-      className="human-fun-interaction professional-theme"
+      className="human-fun-interaction"
       data-personality={personality}
       data-enterprise={enterpriseQuality}
       data-school={schoolDepth}
@@ -87,7 +86,7 @@ export function HumanFunInteraction({
       {children}
       
       {interactionState.delighted && (
-        <div className="delight-indicator professional-theme">
+        <div className="delight-indicator">
           ✨
         </div>
       )}
@@ -144,7 +143,7 @@ export function PlayfulButton({
   return (
     <HumanFunInteraction personality="playful">
       <button
-        className="playful-button professional-theme"
+        className="playful-button"
         data-variant={variant}
         data-size={size}
         onClick={() => {
@@ -201,7 +200,7 @@ export function EncouragingInput({
   const [focused, setFocused] = useState(false);
   
   return (
-    <div className="encouraging-input professional-theme">
+    <div className="encouraging-input">
       <label style={{ 
         display: 'block', 
         marginBottom: '0.5rem',
@@ -268,7 +267,7 @@ export function CelebratorySuccess({
   
   return (
     <div
-      className="celebratory-success professional-theme"
+      className="celebratory-success"
       style={{
         position: 'fixed',
         top: '2rem',

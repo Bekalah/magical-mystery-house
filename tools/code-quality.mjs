@@ -49,7 +49,7 @@ function analyzeFile(filePath) {
 
 function checkTypeScript() {
   try {
-    execSync('ppnpm run build:scripts', {
+    execSync('pnpm run build:scripts', {
       cwd: BASE_DIR,
       stdio: 'pipe'
     });

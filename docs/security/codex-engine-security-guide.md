@@ -198,7 +198,7 @@ const security = new Codex144Security({
 
 ### Regular Security Tasks
 
-- [ ] Run security audits (`ppnpm run security:check`)
+- [ ] Run security audits (`pnpm run security:check`)
 - [ ] Review security configurations
 - [ ] Update security modules with new patterns
 - [ ] Test input validation

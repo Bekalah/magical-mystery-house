@@ -1,6 +1,6 @@
-# circuitum99-core Documentation
+# @cathedral/circuitum99-arcanae-cyoa Documentation
 
-No description available
+Circuitum99: Alpha et Omega CYOA Story System for Liber Arcanae
 
 ## API Reference
 

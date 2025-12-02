@@ -12,5 +12,6 @@
     "name": "Tesseract",
     "symbol": "⊞",
     "label": "⊞ Tesseract (tesseract-bridge-core)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

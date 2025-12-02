@@ -16,5 +16,6 @@
     "name": "Master Catalog Browser",
     "symbol": "⊙",
     "label": "⊙ Master Catalog Browser (master-catalog-browser)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

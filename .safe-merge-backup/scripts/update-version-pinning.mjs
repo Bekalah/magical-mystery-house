@@ -55,7 +55,7 @@ function updatePackageJson(filePath) {
     if (pkg.scripts) {
       const npmScripts = Object.keys(pkg.scripts).filter(key => 
         pkg.scripts[key].includes('npm ') || 
-        pkg.scripts[key].includes('pnpm install')
+        pkg.scripts[key].includes('ppnpm install')
       );
       if (npmScripts.length > 0) {
         for (const script of npmScripts) {

@@ -84,7 +84,7 @@ git clone https://github.com/Bekalah/cathedral.git
 cd cathedral/packages/godot-liber-arcanae
 
 # Export for Godot
-pnpm run export
+ppnpm run export
 ```
 
 ### **Method 2: Godot Asset Library**
@@ -358,21 +358,21 @@ func _ready():
 # Clone and build
 git clone https://github.com/Bekalah/cathedral.git
 cd cathedral/packages/godot-liber-arcanae
-pnpm install
-pnpm run build
-pnpm run validate
+ppnpm install
+ppnpm run build
+ppnpm run validate
 ```
 
 ### **Testing Archetype Interactions**
 ```bash
 # Validate all card interactions
-pnpm run test
+ppnpm run test
 
 # Check trauma safety compliance
-pnpm run validate:trauma-safety
+ppnpm run validate:trauma-safety
 
 # Verify tarot correspondences
-pnpm run validate:tarot
+ppnpm run validate:tarot
 ```
 
 ---

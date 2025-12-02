@@ -161,7 +161,7 @@ Provide complete mystical metadata for integration.`
         messages: [
           {
             role: "system",
-            content: "You are a mystical Cathedral specializing in Avalon realm construction and tarot archetype analysis. Analyze images for their spiritual and consciousness-expanding potential."
+            content: "You are a mystical AI assistant specializing in Avalon realm construction and tarot archetype analysis. Analyze images for their spiritual and consciousness-expanding potential."
           },
           {
             role: "user",

@@ -1,0 +1,27 @@
+body, html {
+  font-family: 'Cinzel', 'Merriweather', serif;
+  background: linear-gradient(135deg, #1a1e27 60%, #9370DB 100%);
+  min-height: 100vh;
+}
+.grimoire-bg {
+  background: url('/public/grimoire-bg.png'), linear-gradient(135deg, #1a1e27 60%, #9370DB 100%);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+h1, .text-4xl {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.05em;
+}
+
+button {
+  font-family: 'Merriweather', serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.max-w-xl {
+  border: 2px solid #FFD700;
+  box-shadow: 0 4px 24px #9370DB44;
+}
+
+/* Fantasy, ND-safe, trauma-aware, and couture-inspired UI */

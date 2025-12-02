@@ -46,7 +46,7 @@ private verifyLabels(): boolean
 
 ```bash
 # Start the experiment with label protection
-ppnpm run improve:tonight
+pnpm run improve:tonight
 
 # Or use the direct script
 node scripts/run-experiment-tonight.mjs

@@ -10,7 +10,7 @@
     "scan": "node dist/scanner/main.js",
     "extract": "node dist/extractor/archetype-miner.js",
     "integrate": "node dist/integrator/cathedral-integrator.js",
-    "full-pipeline": "npm run scan && npm run extract && npm run integrate",
+    "full-pipeline": "ppnpm run scan && ppnpm run extract && ppnpm run integrate",
     "validate": "node tools/trauma-safety-validator.js"
   },
   "dependencies": {
@@ -63,7 +63,7 @@
   "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/cataract-book-scanner",
   "consolidated": true,
   "consolidatedAt": "2025-11-30T20:00:19.955Z",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "Cataract Book Scanner",
     "symbol": "⊙",

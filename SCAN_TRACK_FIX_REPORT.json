@@ -1,0 +1,4105 @@
+{
+  "timestamp": "2025-12-02T07:15:04.025Z",
+  "summary": {
+    "totalPackages": 131,
+    "totalTools": 207,
+    "totalScripts": 70,
+    "totalLicenseIssues": 53,
+    "totalThemeIssues": 0,
+    "totalFixes": 53,
+    "appliedFixes": 53,
+    "failedFixes": 0
+  },
+  "results": {
+    "packages": {
+      "agent-integration": {
+        "path": "packages/agent-integration/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "arcana": {
+        "path": "packages/arcana/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "archetypal-engine": {
+        "path": "packages/archetypal-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "art-engine-core": {
+        "path": "packages/art-engine-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/art-engine-core/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-engine-core/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "art-generation-node": {
+        "path": "packages/art-generation-node/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "art-standards-core": {
+        "path": "packages/art-standards-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/art-standards-core/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-standards-core/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "art-systems": {
+        "path": "packages/art-systems/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "atelier-constitution": {
+        "path": "packages/atelier-constitution/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "avatar-experience-system": {
+        "path": "packages/avatar-experience-system/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/avatar-experience-system/src/index.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/avatar-experience-system/src/index.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "brain": {
+        "path": "packages/brain/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/brain/src/colorScience.d.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to colorScience.d.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain/src/colorScience.d.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/brain/src/colorScience.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to colorScience.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain/src/colorScience.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/brain/src/index.d.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.d.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain/src/index.d.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/brain/src/index.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain/src/index.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "cataract-book-scanner": {
+        "path": "packages/cataract-book-scanner/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cathedral-144": {
+        "path": "packages/cathedral-144/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cathedral-architect": {
+        "path": "packages/cathedral-architect/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cathedral-audio-synthesis": {
+        "path": "packages/cathedral-audio-synthesis/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cathedral-data-core": {
+        "path": "packages/cathedral-data-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cathedral-design-library": {
+        "path": "packages/cathedral-design-library/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/cathedral-design-library/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-design-library/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "cathedral-fusion-kink-engine": {
+        "path": "packages/cathedral-fusion-kink-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cathedral-integration-bridge": {
+        "path": "packages/cathedral-integration-bridge/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cathedral-liber-arcanae-bridge": {
+        "path": "packages/cathedral-liber-arcanae-bridge/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cathedral-lightweight-library": {
+        "path": "packages/cathedral-lightweight-library/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/cathedral-lightweight-library/src/index.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-lightweight-library/src/index.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "cathedral-logo-system": {
+        "path": "packages/cathedral-logo-system/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cathedral-plugin-system": {
+        "path": "packages/cathedral-plugin-system/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/cathedral-plugin-system/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-plugin-system/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "cathedral-rpg-inventory-system": {
+        "path": "packages/cathedral-rpg-inventory-system/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cathedral-sqlite-persistence": {
+        "path": "packages/cathedral-sqlite-persistence/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cathedral-style": {
+        "path": "packages/cathedral-style/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cathedral-synthesis-core": {
+        "path": "packages/cathedral-synthesis-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cathedral-visual-engine": {
+        "path": "packages/cathedral-visual-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "character-alchemical-art": {
+        "path": "packages/character-alchemical-art/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "circuit-craft-creative-game": {
+        "path": "packages/circuit-craft-creative-game/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/circuit-craft-creative-game/src/index.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game/src/index.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "circuitum99-arcanae-cyoa": {
+        "path": "packages/circuitum99-arcanae-cyoa/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "circuitum99-core": {
+        "path": "packages/circuitum99-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "codex-144": {
+        "path": "packages/codex-144/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "codex-144-99": {
+        "path": "packages/codex-144-99/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "codex-144-99-core": {
+        "path": "packages/codex-144-99-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "codex-engine": {
+        "path": "packages/codex-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "codex-game-bridge": {
+        "path": "packages/codex-game-bridge/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "codex-musical-system": {
+        "path": "packages/codex-musical-system/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "config": {
+        "path": "packages/config/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "connections": {
+        "path": "packages/connections/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/connections/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/connections/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "consciousness-aware-creative": {
+        "path": "packages/consciousness-aware-creative/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "core": {
+        "path": "packages/core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cosmogenesis": {
+        "path": "packages/cosmogenesis/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/cosmogenesis/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/cosmogenesis/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "crystals": {
+        "path": "packages/crystals/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/crystals/src/index.d.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.d.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/index.d.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/crystals/src/index.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/index.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/crystals/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/crystals/src/resonance.d.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to resonance.d.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/resonance.d.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/crystals/src/resonance.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to resonance.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/resonance.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "daimon-gear": {
+        "path": "packages/daimon-gear/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "debug-system-core": {
+        "path": "packages/debug-system-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "design-mathematics-core": {
+        "path": "packages/design-mathematics-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fractal-flames-daemon-deity": {
+        "path": "packages/fractal-flames-daemon-deity/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/fractal-flames-daemon-deity/src/index.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/fractal-flames-daemon-deity/src/index.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/fractal-flames-daemon-deity/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/fractal-flames-daemon-deity/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "fusion-creative-suite": {
+        "path": "packages/fusion-creative-suite/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/fusion-creative-suite/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/fusion-creative-suite/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "fusion-kink-core": {
+        "path": "packages/fusion-kink-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fusion-kink-generator": {
+        "path": "packages/fusion-kink-generator/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fusionkink-engine": {
+        "path": "packages/fusionkink-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "game-design-core": {
+        "path": "packages/game-design-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/game-design-core/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "game-engine": {
+        "path": "packages/game-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/game-engine/src/ArcanaeCharacterSystem.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to ArcanaeCharacterSystem.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/ArcanaeCharacterSystem.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/game-engine/src/AudioSynthesisEngine.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to AudioSynthesisEngine.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/AudioSynthesisEngine.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/game-engine/src/AzureOpenAIIntegration.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to AzureOpenAIIntegration.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/AzureOpenAIIntegration.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/game-engine/src/CathedralGameInterface.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to CathedralGameInterface.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/CathedralGameInterface.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/game-engine/src/CodexGameEngine.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to CodexGameEngine.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/CodexGameEngine.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/game-engine/src/CodexNodeManager.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to CodexNodeManager.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/CodexNodeManager.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/game-engine/src/SacredGeometryRenderer.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to SacredGeometryRenderer.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/SacredGeometryRenderer.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/game-engine/src/TraumaSafeGameState.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to TraumaSafeGameState.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/TraumaSafeGameState.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/game-engine/src/index.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/index.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "game-mathematics-core": {
+        "path": "packages/game-mathematics-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "game-world": {
+        "path": "packages/game-world/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "gem-tower-engine": {
+        "path": "packages/gem-tower-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "godot-codex-14499": {
+        "path": "packages/godot-codex-14499/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/godot-codex-14499/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-codex-14499/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "godot-design-studio": {
+        "path": "packages/godot-design-studio/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/godot-design-studio/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-design-studio/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "godot-liber-arcanae": {
+        "path": "packages/godot-liber-arcanae/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/godot-liber-arcanae/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "godot-vfx-library": {
+        "path": "packages/godot-vfx-library/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/godot-vfx-library/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-vfx-library/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "graphs": {
+        "path": "packages/graphs/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/graphs/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/graphs/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "hall-of-ateliers": {
+        "path": "packages/hall-of-ateliers/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/hall-of-ateliers/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/hall-of-ateliers/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "health-map-core": {
+        "path": "packages/health-map-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "holographic-interface": {
+        "path": "packages/holographic-interface/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/holographic-interface/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/holographic-interface/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "inter-app-communicator": {
+        "path": "packages/inter-app-communicator/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "kira-audio-engine": {
+        "path": "packages/kira-audio-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "labs": {
+        "path": "packages/labs/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "liber-arcanae": {
+        "path": "packages/liber-arcanae/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/liber-arcanae/src/22-master-arcanae-ornate-complete.d.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to 22-master-arcanae-ornate-complete.d.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae/src/22-master-arcanae-ornate-complete.d.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/liber-arcanae/src/22-master-arcanae-ornate-complete.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to 22-master-arcanae-ornate-complete.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae/src/22-master-arcanae-ornate-complete.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/liber-arcanae/src/22-playable-characters.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to 22-playable-characters.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae/src/22-playable-characters.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "liber-arcanae-core": {
+        "path": "packages/liber-arcanae-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "liber-arcanae-tools": {
+        "path": "packages/liber-arcanae-tools/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "living-canon-engine": {
+        "path": "packages/living-canon-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "living-libraries": {
+        "path": "packages/living-libraries/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "luxcrux": {
+        "path": "packages/luxcrux/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "magnum-opus": {
+        "path": "packages/magnum-opus/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "mobile-optimization": {
+        "path": "packages/mobile-optimization/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "moonchild-scanner": {
+        "path": "packages/moonchild-scanner/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "museum-sources": {
+        "path": "packages/museum-sources/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "music-engine-core": {
+        "path": "packages/music-engine-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/music-engine-core/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/music-engine-core/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "mystery-house-core": {
+        "path": "packages/mystery-house-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "mystical-data-unified": {
+        "path": "packages/mystical-data-unified/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "mystical-sound-engine": {
+        "path": "packages/mystical-sound-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "node-tree-engine": {
+        "path": "packages/node-tree-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "physics-cannon-core": {
+        "path": "packages/physics-cannon-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "portal-system": {
+        "path": "packages/portal-system/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "professional-collaboration-engine": {
+        "path": "packages/professional-collaboration-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/professional-collaboration-engine/src/ProfessionalCollaborationEngine.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to ProfessionalCollaborationEngine.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-collaboration-engine/src/ProfessionalCollaborationEngine.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "professional-export-integration": {
+        "path": "packages/professional-export-integration/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/professional-export-integration/src/ProfessionalExportIntegrationSystem.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to ProfessionalExportIntegrationSystem.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-export-integration/src/ProfessionalExportIntegrationSystem.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "professional-quality-control": {
+        "path": "packages/professional-quality-control/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/professional-quality-control/src/ProfessionalQualityControlSystem.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to ProfessionalQualityControlSystem.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-quality-control/src/ProfessionalQualityControlSystem.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "professional-suite": {
+        "path": "packages/professional-suite/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "professional-typography-engine": {
+        "path": "packages/professional-typography-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "professional-vector-engine": {
+        "path": "packages/professional-vector-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "registry-learning-validation": {
+        "path": "packages/registry-learning-validation/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "sacred-geometry-core": {
+        "path": "packages/sacred-geometry-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "sacred-geometry-math": {
+        "path": "packages/sacred-geometry-math/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "sacred-geometry-simd": {
+        "path": "packages/sacred-geometry-simd/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "sacred-mathematics-core": {
+        "path": "packages/sacred-mathematics-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "scanner": {
+        "path": "packages/scanner/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "science-engine-core": {
+        "path": "packages/science-engine-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/science-engine-core/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/science-engine-core/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "shared": {
+        "path": "packages/shared/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "simple-learning-validation": {
+        "path": "packages/simple-learning-validation/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "smooth-movement-system": {
+        "path": "packages/smooth-movement-system/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "sonic-physics-engine": {
+        "path": "packages/sonic-physics-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "soul": {
+        "path": "packages/soul/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "sound-mathematics-core": {
+        "path": "packages/sound-mathematics-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "spells": {
+        "path": "packages/spells/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "spiral-learning-engine": {
+        "path": "packages/spiral-learning-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "stone-grimoire": {
+        "path": "packages/stone-grimoire/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/stone-grimoire/src/enhanced-world.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to enhanced-world.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire/src/enhanced-world.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "stone-grimoire-core": {
+        "path": "packages/stone-grimoire-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "stone-grimoire-library-engine": {
+        "path": "packages/stone-grimoire-library-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "story-engine": {
+        "path": "packages/story-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "synth": {
+        "path": "packages/synth/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "synth-design-math-core": {
+        "path": "packages/synth-design-math-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "synth-labs": {
+        "path": "packages/synth-labs/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "synth-spells": {
+        "path": "packages/synth-spells/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "synthesis-engine": {
+        "path": "packages/synthesis-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "tarot-art": {
+        "path": "packages/tarot-art/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "tarot-engine": {
+        "path": "packages/tarot-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "tarot-reader": {
+        "path": "packages/tarot-reader/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "tesseract-bridge": {
+        "path": "packages/tesseract-bridge/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/tesseract-bridge/src/art-codex-integration.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to art-codex-integration.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge/src/art-codex-integration.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/tesseract-bridge/src/creative-flow-bridge.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to creative-flow-bridge.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge/src/creative-flow-bridge.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "tesseract-bridge-core": {
+        "path": "packages/tesseract-bridge-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "tesseract-bridge-hub": {
+        "path": "packages/tesseract-bridge-hub/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "three-engine": {
+        "path": "packages/three-engine/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "trauma-safe-ui": {
+        "path": "packages/trauma-safe-ui/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "trinity-architecture": {
+        "path": "packages/trinity-architecture/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "trinity-v1-1-core": {
+        "path": "packages/trinity-v1-1-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "types": {
+        "path": "packages/types/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "ui": {
+        "path": "packages/ui/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/ui/src/index.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to index.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/ui/src/index.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "unified-codex-core": {
+        "path": "packages/unified-codex-core/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "unified-codex-extractor": {
+        "path": "packages/unified-codex-extractor/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": [],
+        "files": [
+          {
+            "path": "packages/unified-codex-extractor/src/export/exportEngine.d.ts",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to exportEngine.d.ts",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-extractor/src/export/exportEngine.d.ts",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          },
+          {
+            "path": "packages/unified-codex-extractor/src/export/exportEngine.js",
+            "exists": true,
+            "licenseIssues": [
+              "Missing CC0-1.0 license header"
+            ],
+            "themeIssues": [],
+            "fixes": [
+              {
+                "type": "license",
+                "description": "Add CC0-1.0 license header to exportEngine.js",
+                "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-extractor/src/export/exportEngine.js",
+                "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+              }
+            ]
+          }
+        ]
+      },
+      "unified-creative-system": {
+        "path": "packages/unified-creative-system/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "universal-accessibility": {
+        "path": "packages/universal-accessibility/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "visionary-design-system": {
+        "path": "packages/visionary-design-system/package.json",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      }
+    },
+    "tools": {
+      "alignment-cleaner.mjs": {
+        "path": "tools/alignment-cleaner.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "alignment-detector.mjs": {
+        "path": "tools/alignment-detector.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "app-completion-research.mjs": {
+        "path": "tools/app-completion-research.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "apply-alchemical-labels.mjs": {
+        "path": "tools/apply-alchemical-labels.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "apply-patches.mjs": {
+        "path": "tools/apply-patches.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "apply-unified-theme.mjs": {
+        "path": "tools/apply-unified-theme.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "arcanae-design-replication.mjs": {
+        "path": "tools/arcanae-design-replication.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "auto-documentation.mjs": {
+        "path": "tools/auto-documentation.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "auto-fix-all.mjs": {
+        "path": "tools/auto-fix-all.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "auto-publish-to-github.mjs": {
+        "path": "tools/auto-publish-to-github.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "auto-push-changes.mjs": {
+        "path": "tools/auto-push-changes.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "auto-update.mjs": {
+        "path": "tools/auto-update.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "automation-runner.mjs": {
+        "path": "tools/automation-runner.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "backup-manager.mjs": {
+        "path": "tools/backup-manager.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "backup-system.mjs": {
+        "path": "tools/backup-system.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "batch-processor.mjs": {
+        "path": "tools/batch-processor.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "boost-rebecca-ideas.mjs": {
+        "path": "tools/boost-rebecca-ideas.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "build-optimizer.mjs": {
+        "path": "tools/build-optimizer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "check-consistency.mjs": {
+        "path": "tools/check-consistency.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cleanup-duplicates.mjs": {
+        "path": "tools/cleanup-duplicates.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cleanup-non-repos.mjs": {
+        "path": "tools/cleanup-non-repos.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cleanup-space.mjs": {
+        "path": "tools/cleanup-space.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cleanup-state-file.mjs": {
+        "path": "tools/cleanup-state-file.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "code-formatter.mjs": {
+        "path": "tools/code-formatter.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "code-improver.mjs": {
+        "path": "tools/code-improver.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "code-optimizer.mjs": {
+        "path": "tools/code-optimizer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "code-quality.mjs": {
+        "path": "tools/code-quality.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "codex-alignment-analyzer.mjs": {
+        "path": "tools/codex-alignment-analyzer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "codex-debugger.mjs": {
+        "path": "tools/codex-debugger.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "codex-generator.mjs": {
+        "path": "tools/codex-generator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "codex-validator.mjs": {
+        "path": "tools/codex-validator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "coherence-checker.mjs": {
+        "path": "tools/coherence-checker.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "competitive-research.mjs": {
+        "path": "tools/competitive-research.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "compile-all-character-data.mjs": {
+        "path": "tools/compile-all-character-data.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "compile-game-data.mjs": {
+        "path": "tools/compile-game-data.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "complete-cleanup.mjs": {
+        "path": "tools/complete-cleanup.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "completion-helper.mjs": {
+        "path": "tools/completion-helper.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "comprehensive-audit-system.mjs": {
+        "path": "tools/comprehensive-audit-system.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "comprehensive-cleanup.mjs": {
+        "path": "tools/comprehensive-cleanup.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "comprehensive-consolidator.mjs": {
+        "path": "tools/comprehensive-consolidator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "comprehensive-discovery.mjs": {
+        "path": "tools/comprehensive-discovery.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "comprehensive-package-debugger.mjs": {
+        "path": "tools/comprehensive-package-debugger.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "comprehensive-package-mapper.mjs": {
+        "path": "tools/comprehensive-package-mapper.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "comprehensive-project-audit.mjs": {
+        "path": "tools/comprehensive-project-audit.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "connect-all-data-repos.mjs": {
+        "path": "tools/connect-all-data-repos.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "connect-all-packages-tech.mjs": {
+        "path": "tools/connect-all-packages-tech.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "connect-all-systems.mjs": {
+        "path": "tools/connect-all-systems.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "connect-and-fix-all.mjs": {
+        "path": "tools/connect-and-fix-all.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "connect-cathedral-work.mjs": {
+        "path": "tools/connect-cathedral-work.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "connect-live-deployments.mjs": {
+        "path": "tools/connect-live-deployments.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "connect-remotes.mjs": {
+        "path": "tools/connect-remotes.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "connect-scattered-data.mjs": {
+        "path": "tools/connect-scattered-data.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "connect-synths-to-design-math.mjs": {
+        "path": "tools/connect-synths-to-design-math.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "connect-to-master-v1.mjs": {
+        "path": "tools/connect-to-master-v1.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "consolidate-all-workspaces.mjs": {
+        "path": "tools/consolidate-all-workspaces.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "consolidate-docs.mjs": {
+        "path": "tools/consolidate-docs.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "consolidate-improvements-backups.mjs": {
+        "path": "tools/consolidate-improvements-backups.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "consolidate-to-master.mjs": {
+        "path": "tools/consolidate-to-master.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "continuous-improvement-runner.mjs": {
+        "path": "tools/continuous-improvement-runner.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "create-reference-map.mjs": {
+        "path": "tools/create-reference-map.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "creative-ideas-generator.mjs": {
+        "path": "tools/creative-ideas-generator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "creative-insights.mjs": {
+        "path": "tools/creative-insights.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "creative-neurodivergent-mimic.mjs": {
+        "path": "tools/creative-neurodivergent-mimic.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "creative-spell-generator.mjs": {
+        "path": "tools/creative-spell-generator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cross-repo-reader.mjs": {
+        "path": "tools/cross-repo-reader.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "data-validator.mjs": {
+        "path": "tools/data-validator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "debug-all.mjs": {
+        "path": "tools/debug-all.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "dependency-analyzer.mjs": {
+        "path": "tools/dependency-analyzer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "dependency-checker.mjs": {
+        "path": "tools/dependency-checker.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "dependency-updater.mjs": {
+        "path": "tools/dependency-updater.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "deployment-report.mjs": {
+        "path": "tools/deployment-report.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "design-quality-enhancer.mjs": {
+        "path": "tools/design-quality-enhancer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "discover-authentic-vision.mjs": {
+        "path": "tools/discover-authentic-vision.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "discover-influences.mjs": {
+        "path": "tools/discover-influences.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "double-tree-pathworking-tech.mjs": {
+        "path": "tools/double-tree-pathworking-tech.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "dynamic-grimoire-importer.mjs": {
+        "path": "tools/dynamic-grimoire-importer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "egregore-design-assistant.mjs": {
+        "path": "tools/egregore-design-assistant.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "elevate-creative-caliber.mjs": {
+        "path": "tools/elevate-creative-caliber.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "enhance-alchemical-quality.mjs": {
+        "path": "tools/enhance-alchemical-quality.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "enhanced-logger.mjs": {
+        "path": "tools/enhanced-logger.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "enhanced-quality-check.mjs": {
+        "path": "tools/enhanced-quality-check.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "ensure-professional-theme-compliance.mjs": {
+        "path": "tools/ensure-professional-theme-compliance.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "ensure-thematic-alignment.mjs": {
+        "path": "tools/ensure-thematic-alignment.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "error-recovery.mjs": {
+        "path": "tools/error-recovery.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "esoteric-cathedral-builder.mjs": {
+        "path": "tools/esoteric-cathedral-builder.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "execute-consolidation.mjs": {
+        "path": "tools/execute-consolidation.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "experiment-analytics.mjs": {
+        "path": "tools/experiment-analytics.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "experiment-monitor.mjs": {
+        "path": "tools/experiment-monitor.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "experiment-status.mjs": {
+        "path": "tools/experiment-status.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "extract-and-cleanup.mjs": {
+        "path": "tools/extract-and-cleanup.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "extract-spells-from-grimoires.mjs": {
+        "path": "tools/extract-spells-from-grimoires.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "extract-symbols-from-books.mjs": {
+        "path": "tools/extract-symbols-from-books.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "extract-visionary-art-themes.mjs": {
+        "path": "tools/extract-visionary-art-themes.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "file-ops.mjs": {
+        "path": "tools/file-ops.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "find-and-fix-issues.mjs": {
+        "path": "tools/find-and-fix-issues.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "find-unused.mjs": {
+        "path": "tools/find-unused.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-all-broken.mjs": {
+        "path": "tools/fix-all-broken.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-all-deployments-paths.mjs": {
+        "path": "tools/fix-all-deployments-paths.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-all-deployments.mjs": {
+        "path": "tools/fix-all-deployments.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-all-issues.mjs": {
+        "path": "tools/fix-all-issues.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-all-remotes.mjs": {
+        "path": "tools/fix-all-remotes.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-bad-design.mjs": {
+        "path": "tools/fix-bad-design.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-liber-arcanae-location.mjs": {
+        "path": "tools/fix-liber-arcanae-location.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-licensing.mjs": {
+        "path": "tools/fix-licensing.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-npm-references.mjs": {
+        "path": "tools/fix-npm-references.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-package-json-for-pnpm.mjs": {
+        "path": "tools/fix-package-json-for-pnpm.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-pnpm-typos-globally.mjs": {
+        "path": "tools/fix-pnpm-typos-globally.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-workflow-errors.mjs": {
+        "path": "tools/fix-workflow-errors.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-workflow-execution.mjs": {
+        "path": "tools/fix-workflow-execution.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "gather-all-repo-info.mjs": {
+        "path": "tools/gather-all-repo-info.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "generate-character-grimoires.mjs": {
+        "path": "tools/generate-character-grimoires.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "generate-daimon-grimoires.mjs": {
+        "path": "tools/generate-daimon-grimoires.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "generate-deity-grimoires.mjs": {
+        "path": "tools/generate-deity-grimoires.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "generate-docs.mjs": {
+        "path": "tools/generate-docs.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "generate-learning-report.mjs": {
+        "path": "tools/generate-learning-report.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "generate-package-info.mjs": {
+        "path": "tools/generate-package-info.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "git-hooks-setup.mjs": {
+        "path": "tools/git-hooks-setup.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "github-auth.mjs": {
+        "path": "tools/github-auth.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "github-diagnostics.mjs": {
+        "path": "tools/github-diagnostics.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "global-fixes-comprehensive.mjs": {
+        "path": "tools/global-fixes-comprehensive.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "gods-goddesses-per-character.mjs": {
+        "path": "tools/gods-goddesses-per-character.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "health-check.mjs": {
+        "path": "tools/health-check.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "health-map-generator.mjs": {
+        "path": "tools/health-map-generator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "health-monitor.mjs": {
+        "path": "tools/health-monitor.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "improve-monorepo-wide.mjs": {
+        "path": "tools/improve-monorepo-wide.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "improvement-experiment-egregore-integration.mjs": {
+        "path": "tools/improvement-experiment-egregore-integration.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "improvement-insights.mjs": {
+        "path": "tools/improvement-insights.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "improvement-reporter.mjs": {
+        "path": "tools/improvement-reporter.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "include-remote-repos.mjs": {
+        "path": "tools/include-remote-repos.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "integrate-cathedral.mjs": {
+        "path": "tools/integrate-cathedral.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "integration-tester.mjs": {
+        "path": "tools/integration-tester.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "inventory-system.mjs": {
+        "path": "tools/inventory-system.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "learn-from-material.mjs": {
+        "path": "tools/learn-from-material.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "living-library-system.mjs": {
+        "path": "tools/living-library-system.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "logger.mjs": {
+        "path": "tools/logger.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "magnum-opus-enhancer.mjs": {
+        "path": "tools/magnum-opus-enhancer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "magnum-opus-rebrand.mjs": {
+        "path": "tools/magnum-opus-rebrand.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "make-everything-work.mjs": {
+        "path": "tools/make-everything-work.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "make-updates-live.mjs": {
+        "path": "tools/make-updates-live.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "map-all-platforms-tools.mjs": {
+        "path": "tools/map-all-platforms-tools.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "master-docs-analyzer.mjs": {
+        "path": "tools/master-docs-analyzer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "master-docs-integration.mjs": {
+        "path": "tools/master-docs-integration.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "merge-duplicates.mjs": {
+        "path": "tools/merge-duplicates.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "monad-hieroglyphica-theme.mjs": {
+        "path": "tools/monad-hieroglyphica-theme.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "monitor-experiment.mjs": {
+        "path": "tools/monitor-experiment.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "monorepo-doubt-research.mjs": {
+        "path": "tools/monorepo-doubt-research.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "monorepo-foundation.mjs": {
+        "path": "tools/monorepo-foundation.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "nested-git-updater.mjs": {
+        "path": "tools/nested-git-updater.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "optimize-code.mjs": {
+        "path": "tools/optimize-code.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "optimize-workspace-integrator.mjs": {
+        "path": "tools/optimize-workspace-integrator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "orchestration-validator.mjs": {
+        "path": "tools/orchestration-validator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "organic-research-planner.mjs": {
+        "path": "tools/organic-research-planner.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "organize-and-merge-all.mjs": {
+        "path": "tools/organize-and-merge-all.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "organize-debug-merge-push.mjs": {
+        "path": "tools/organize-debug-merge-push.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "organize-extracted-content.mjs": {
+        "path": "tools/organize-extracted-content.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "partial-analyzer.mjs": {
+        "path": "tools/partial-analyzer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "performance-benchmark-enhanced.mjs": {
+        "path": "tools/performance-benchmark-enhanced.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "performance-benchmark.mjs": {
+        "path": "tools/performance-benchmark.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "performance-monitor.mjs": {
+        "path": "tools/performance-monitor.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "performance-optimizer.mjs": {
+        "path": "tools/performance-optimizer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "plan-coordinator.mjs": {
+        "path": "tools/plan-coordinator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "pnpm-wrapper.mjs": {
+        "path": "tools/pnpm-wrapper.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "portal-tech.mjs": {
+        "path": "tools/portal-tech.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "publish-to-wiki-github.mjs": {
+        "path": "tools/publish-to-wiki-github.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "push-to-github.mjs": {
+        "path": "tools/push-to-github.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "quality-standards-validator.mjs": {
+        "path": "tools/quality-standards-validator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "registry-validator.mjs": {
+        "path": "tools/registry-validator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "remove-degraded-mentions.mjs": {
+        "path": "tools/remove-degraded-mentions.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "repo-sync.mjs": {
+        "path": "tools/repo-sync.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "review-all-repos.mjs": {
+        "path": "tools/review-all-repos.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "rpg-tech.mjs": {
+        "path": "tools/rpg-tech.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "safe-branch-merge.mjs": {
+        "path": "tools/safe-branch-merge.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "scan-track-fix-all.mjs": {
+        "path": "tools/scan-track-fix-all.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "security-scanner.mjs": {
+        "path": "tools/security-scanner.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "self-maintain.mjs": {
+        "path": "tools/self-maintain.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "solve-et-coagula-improver.mjs": {
+        "path": "tools/solve-et-coagula-improver.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "state-consolidator.mjs": {
+        "path": "tools/state-consolidator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "status-dashboard.mjs": {
+        "path": "tools/status-dashboard.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "story-quality-enhancer.mjs": {
+        "path": "tools/story-quality-enhancer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "system-integrator.mjs": {
+        "path": "tools/system-integrator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "system-summary.mjs": {
+        "path": "tools/system-summary.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "test-all-connections.mjs": {
+        "path": "tools/test-all-connections.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "test-runner.mjs": {
+        "path": "tools/test-runner.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "tool-improver.mjs": {
+        "path": "tools/tool-improver.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "tool-packager.mjs": {
+        "path": "tools/tool-packager.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "true-will-tech.mjs": {
+        "path": "tools/true-will-tech.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "unify-master-v1-permanent.mjs": {
+        "path": "tools/unify-master-v1-permanent.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "update-all-references.mjs": {
+        "path": "tools/update-all-references.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "update-codex-circuitum99.mjs": {
+        "path": "tools/update-codex-circuitum99.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "update-github-all.mjs": {
+        "path": "tools/update-github-all.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "upgrade-all-packages.mjs": {
+        "path": "tools/upgrade-all-packages.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "user-feedback.mjs": {
+        "path": "tools/user-feedback.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "utils.mjs": {
+        "path": "tools/utils.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "validate-all.mjs": {
+        "path": "tools/validate-all.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "validate-design-math.mjs": {
+        "path": "tools/validate-design-math.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "validate-enterprise-standard.mjs": {
+        "path": "tools/validate-enterprise-standard.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "validate-game-math.mjs": {
+        "path": "tools/validate-game-math.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "validate-sacred-math.mjs": {
+        "path": "tools/validate-sacred-math.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "validate-setup.mjs": {
+        "path": "tools/validate-setup.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "validate-sound-math.mjs": {
+        "path": "tools/validate-sound-math.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "verify-commands.mjs": {
+        "path": "tools/verify-commands.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "vision-integration.mjs": {
+        "path": "tools/vision-integration.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "vision-weaver.mjs": {
+        "path": "tools/vision-weaver.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "visionary-art-validator.mjs": {
+        "path": "tools/visionary-art-validator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "witch-eye-tech.mjs": {
+        "path": "tools/witch-eye-tech.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "witch-mod-tech.mjs": {
+        "path": "tools/witch-mod-tech.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "workflow-runner.mjs": {
+        "path": "tools/workflow-runner.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      }
+    },
+    "scripts": {
+      "10-hour-improvement-experiment.js": {
+        "path": "scripts/10-hour-improvement-experiment.js",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "10-hour-improvement-experiment.ts": {
+        "path": "scripts/10-hour-improvement-experiment.ts",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "apply-security-fixes-monorepo.d.ts": {
+        "path": "scripts/apply-security-fixes-monorepo.d.ts",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "apply-security-fixes-monorepo.mjs": {
+        "path": "scripts/apply-security-fixes-monorepo.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "auto-cleanup.mjs": {
+        "path": "scripts/auto-cleanup.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "auto-run-until-completion.mjs": {
+        "path": "scripts/auto-run-until-completion.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "cleanup-flat-files.mjs": {
+        "path": "scripts/cleanup-flat-files.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "complete-monorepo-100.mjs": {
+        "path": "scripts/complete-monorepo-100.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "comprehensive-deduplicator.mjs": {
+        "path": "scripts/comprehensive-deduplicator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "comprehensive-error-fixer.mjs": {
+        "path": "scripts/comprehensive-error-fixer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "compress-experiment-state.mjs": {
+        "path": "scripts/compress-experiment-state.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "continuous-unification.mjs": {
+        "path": "scripts/continuous-unification.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "continuous-workspace-integration.ts": {
+        "path": "scripts/continuous-workspace-integration.ts",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "create-comprehensive-registry.mjs": {
+        "path": "scripts/create-comprehensive-registry.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "easy-save-system.mjs": {
+        "path": "scripts/easy-save-system.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "enforce-boundary-rules.mjs": {
+        "path": "scripts/enforce-boundary-rules.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "ensure-free-open-source.mjs": {
+        "path": "scripts/ensure-free-open-source.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "execute-all-consolidations.mjs": {
+        "path": "scripts/execute-all-consolidations.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "execute-sacred-unification.mjs": {
+        "path": "scripts/execute-sacred-unification.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "experiment-reporter.mjs": {
+        "path": "scripts/experiment-reporter.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "final-verification.mjs": {
+        "path": "scripts/final-verification.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-all-configs-pnpm-only.mjs": {
+        "path": "scripts/fix-all-configs-pnpm-only.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-all-versions-and-managers.mjs": {
+        "path": "scripts/fix-all-versions-and-managers.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-everything-complete.mjs": {
+        "path": "scripts/fix-everything-complete.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-package-names.mjs": {
+        "path": "scripts/fix-package-names.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-pnpm-only.mjs": {
+        "path": "scripts/fix-pnpm-only.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fix-workspace-dependencies.mjs": {
+        "path": "scripts/fix-workspace-dependencies.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "fusionkink-integrator.mjs": {
+        "path": "scripts/fusionkink-integrator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "health-dashboard.mjs": {
+        "path": "scripts/health-dashboard.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "keep-running.mjs": {
+        "path": "scripts/keep-running.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "live-fixes-display.mjs": {
+        "path": "scripts/live-fixes-display.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "master-publisher.mjs": {
+        "path": "scripts/master-publisher.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "monitor-cycles.mjs": {
+        "path": "scripts/monitor-cycles.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "monorepo-health-monitor.mjs": {
+        "path": "scripts/monorepo-health-monitor.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "permanent-health-service.mjs": {
+        "path": "scripts/permanent-health-service.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "publisher-connector.mjs": {
+        "path": "scripts/publisher-connector.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "quality-analyzer.mjs": {
+        "path": "scripts/quality-analyzer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "real-deduplicator.mjs": {
+        "path": "scripts/real-deduplicator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "real-fixer.mjs": {
+        "path": "scripts/real-fixer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "reset-experiment.mjs": {
+        "path": "scripts/reset-experiment.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "restart-experiment-safely.mjs": {
+        "path": "scripts/restart-experiment-safely.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "run-25-cycles.mjs": {
+        "path": "scripts/run-25-cycles.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "run-all-night.mjs": {
+        "path": "scripts/run-all-night.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "run-experiment-tonight.mjs": {
+        "path": "scripts/run-experiment-tonight.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "run-improvement-experiment.mjs": {
+        "path": "scripts/run-improvement-experiment.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "run-magnum-opus-experiment.mjs": {
+        "path": "scripts/run-magnum-opus-experiment.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "scope-analyzer.mjs": {
+        "path": "scripts/scope-analyzer.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "security-audit.mjs": {
+        "path": "scripts/security-audit.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "setup-godot-4.5.mjs": {
+        "path": "scripts/setup-godot-4.5.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "setup-publishing.mjs": {
+        "path": "scripts/setup-publishing.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "simple-test.js": {
+        "path": "scripts/simple-test.js",
+        "exists": true,
+        "licenseIssues": [
+          "Missing CC0-1.0 license header"
+        ],
+        "themeIssues": [],
+        "fixes": [
+          {
+            "type": "license",
+            "description": "Add CC0-1.0 license header to simple-test.js",
+            "file": "/Users/rebeccalemke/cathedral-master-deployment/scripts/simple-test.js",
+            "fix": "Add license header: /**\n * @license CC0-1.0 - Public Domain\n */"
+          }
+        ]
+      },
+      "system-connector.mjs": {
+        "path": "scripts/system-connector.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "system-labeler.mjs": {
+        "path": "scripts/system-labeler.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "test-all-commands.mjs": {
+        "path": "scripts/test-all-commands.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "test-integration.ts": {
+        "path": "scripts/test-integration.ts",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "tool-merger.mjs": {
+        "path": "scripts/tool-merger.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "tools-modules.d.ts": {
+        "path": "scripts/tools-modules.d.ts",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "unified-system-builder.mjs": {
+        "path": "scripts/unified-system-builder.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "update-all-repos.mjs": {
+        "path": "scripts/update-all-repos.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "update-all-security.mjs": {
+        "path": "scripts/update-all-security.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "update-all-versions-to-1.0.0.mjs": {
+        "path": "scripts/update-all-versions-to-1.0.0.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "update-version-pinning.mjs": {
+        "path": "scripts/update-version-pinning.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "validate-codexes-no-ai.mjs": {
+        "path": "scripts/validate-codexes-no-ai.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "verify-connections.mjs": {
+        "path": "scripts/verify-connections.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "verify-godot-version.mjs": {
+        "path": "scripts/verify-godot-version.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "watch-fixes.mjs": {
+        "path": "scripts/watch-fixes.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "workspace-integrator-commonjs.ts": {
+        "path": "scripts/workspace-integrator-commonjs.ts",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "workspace-integrator.js": {
+        "path": "scripts/workspace-integrator.js",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "workspace-integrator.mjs": {
+        "path": "scripts/workspace-integrator.mjs",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      },
+      "workspace-integrator.ts": {
+        "path": "scripts/workspace-integrator.ts",
+        "exists": true,
+        "licenseIssues": [],
+        "themeIssues": [],
+        "fixes": []
+      }
+    }
+  },
+  "fixes": {
+    "applied": [
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-engine-core/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:03.950Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/art-standards-core/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:03.960Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/avatar-experience-system/src/index.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.js",
+        "timestamp": "2025-12-02T07:15:03.962Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain/src/colorScience.d.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to colorScience.d.ts",
+        "timestamp": "2025-12-02T07:15:03.964Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain/src/colorScience.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to colorScience.js",
+        "timestamp": "2025-12-02T07:15:03.965Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain/src/index.d.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.d.ts",
+        "timestamp": "2025-12-02T07:15:03.966Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/brain/src/index.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.js",
+        "timestamp": "2025-12-02T07:15:03.966Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-design-library/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:03.967Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-lightweight-library/src/index.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.js",
+        "timestamp": "2025-12-02T07:15:03.969Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-plugin-system/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:03.971Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuit-craft-creative-game/src/index.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.js",
+        "timestamp": "2025-12-02T07:15:03.975Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/connections/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:03.976Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/cosmogenesis/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:03.978Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/index.d.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.d.ts",
+        "timestamp": "2025-12-02T07:15:03.979Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/index.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.js",
+        "timestamp": "2025-12-02T07:15:03.980Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:03.981Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/resonance.d.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to resonance.d.ts",
+        "timestamp": "2025-12-02T07:15:03.982Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/crystals/src/resonance.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to resonance.js",
+        "timestamp": "2025-12-02T07:15:03.983Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/fractal-flames-daemon-deity/src/index.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.js",
+        "timestamp": "2025-12-02T07:15:03.984Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/fractal-flames-daemon-deity/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:03.985Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/fusion-creative-suite/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:03.986Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-design-core/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:03.988Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/ArcanaeCharacterSystem.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to ArcanaeCharacterSystem.js",
+        "timestamp": "2025-12-02T07:15:03.990Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/AudioSynthesisEngine.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to AudioSynthesisEngine.js",
+        "timestamp": "2025-12-02T07:15:03.991Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/AzureOpenAIIntegration.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to AzureOpenAIIntegration.js",
+        "timestamp": "2025-12-02T07:15:03.992Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/CathedralGameInterface.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to CathedralGameInterface.js",
+        "timestamp": "2025-12-02T07:15:03.992Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/CodexGameEngine.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to CodexGameEngine.js",
+        "timestamp": "2025-12-02T07:15:03.994Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/CodexNodeManager.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to CodexNodeManager.js",
+        "timestamp": "2025-12-02T07:15:03.995Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/SacredGeometryRenderer.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to SacredGeometryRenderer.js",
+        "timestamp": "2025-12-02T07:15:03.995Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/TraumaSafeGameState.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to TraumaSafeGameState.js",
+        "timestamp": "2025-12-02T07:15:03.996Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/game-engine/src/index.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.js",
+        "timestamp": "2025-12-02T07:15:03.997Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-codex-14499/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:03.998Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-design-studio/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:03.999Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:04.000Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-vfx-library/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:04.001Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/graphs/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:04.002Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/hall-of-ateliers/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:04.002Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/holographic-interface/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:04.004Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae/src/22-master-arcanae-ornate-complete.d.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to 22-master-arcanae-ornate-complete.d.ts",
+        "timestamp": "2025-12-02T07:15:04.004Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae/src/22-master-arcanae-ornate-complete.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to 22-master-arcanae-ornate-complete.js",
+        "timestamp": "2025-12-02T07:15:04.008Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae/src/22-playable-characters.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to 22-playable-characters.js",
+        "timestamp": "2025-12-02T07:15:04.008Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/music-engine-core/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:04.010Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-collaboration-engine/src/ProfessionalCollaborationEngine.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to ProfessionalCollaborationEngine.js",
+        "timestamp": "2025-12-02T07:15:04.011Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-export-integration/src/ProfessionalExportIntegrationSystem.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to ProfessionalExportIntegrationSystem.js",
+        "timestamp": "2025-12-02T07:15:04.013Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/professional-quality-control/src/ProfessionalQualityControlSystem.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to ProfessionalQualityControlSystem.js",
+        "timestamp": "2025-12-02T07:15:04.015Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/science-engine-core/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:04.016Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire/src/enhanced-world.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to enhanced-world.js",
+        "timestamp": "2025-12-02T07:15:04.017Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge/src/art-codex-integration.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to art-codex-integration.js",
+        "timestamp": "2025-12-02T07:15:04.018Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/tesseract-bridge/src/creative-flow-bridge.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to creative-flow-bridge.js",
+        "timestamp": "2025-12-02T07:15:04.020Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/ui/src/index.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to index.ts",
+        "timestamp": "2025-12-02T07:15:04.021Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-extractor/src/export/exportEngine.d.ts",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to exportEngine.d.ts",
+        "timestamp": "2025-12-02T07:15:04.021Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/packages/unified-codex-extractor/src/export/exportEngine.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to exportEngine.js",
+        "timestamp": "2025-12-02T07:15:04.022Z"
+      },
+      {
+        "file": "/Users/rebeccalemke/cathedral-master-deployment/scripts/simple-test.js",
+        "type": "license",
+        "description": "Add CC0-1.0 license header to simple-test.js",
+        "timestamp": "2025-12-02T07:15:04.024Z"
+      }
+    ],
+    "failed": []
+  }
+}

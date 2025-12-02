@@ -1,0 +1,156 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+/* Cathedral Unity - Global Styles */
+
+:root {
+  --cathedral-primary: 280 100% 70%;
+  --cathedral-secondary: 320 100% 80%;
+  --cathedral-accent: 40 100% 60%;
+  --cathedral-bg: 230 25% 8%;
+  --cathedral-surface: 230 20% 12%;
+  --cathedral-text: 0 0% 95%;
+  --cathedral-text-muted: 0 0% 70%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: hsl(var(--cathedral-bg));
+  color: hsl(var(--cathedral-text));
+  overflow-x: hidden;
+}
+
+/* Sacred Geometry Animations */
+@keyframes sacred-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes consciousness-pulse {
+  0%, 100% { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
+  50% { 
+    opacity: 0.7; 
+    transform: scale(1.05); 
+  }
+}
+
+@keyframes frequency-wave {
+  0%, 100% { 
+    transform: translateY(0) rotate(0deg); 
+  }
+  25% { 
+    transform: translateY(-10px) rotate(1deg); 
+  }
+  75% { 
+    transform: translateY(10px) rotate(-1deg); 
+  }
+}
+
+/* Cathedral-specific utility classes */
+.cathedral-gradient {
+  background: linear-gradient(135deg, 
+    hsl(var(--cathedral-primary)) 0%, 
+    hsl(var(--cathedral-secondary)) 50%, 
+    hsl(var(--cathedral-accent)) 100%);
+}
+
+.sacred-geometry {
+  animation: sacred-rotate 20s linear infinite;
+}
+
+.consciousness-pulse {
+  animation: consciousness-pulse 2s ease-in-out infinite;
+}
+
+.frequency-wave {
+  animation: frequency-wave 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--cathedral-surface));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--cathedral-primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--cathedral-secondary));
+}
+
+/* Glass morphism effects */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Loading animations */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid hsl(var(--cathedral-surface));
+  border-top: 4px solid hsl(var(--cathedral-primary));
+  border-radius: 50%;
+  animation: sacred-rotate 1s linear infinite;
+}
+
+/* Error states */
+.error {
+  color: hsl(0 100% 60%);
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid hsl(0 100% 60%);
+}
+
+/* Success states */
+.success {
+  color: hsl(120 100% 40%);
+  background: rgba(0, 255, 0, 0.1);
+  border: 1px solid hsl(120 100% 40%);
+}
+
+/* Focus states for accessibility */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid hsl(var(--cathedral-primary));
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

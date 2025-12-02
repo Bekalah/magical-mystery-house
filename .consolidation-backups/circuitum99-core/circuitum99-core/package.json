@@ -8,11 +8,11 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:52.835Z",
+  "consolidatedAt": "2025-12-01T04:00:53.707Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "ppnpm@10.23.0",
   "alchemical": {
     "name": "Circuitum99",
     "symbol": "⊙",

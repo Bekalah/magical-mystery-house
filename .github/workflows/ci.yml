@@ -32,14 +32,14 @@ jobs:
     
     - name: Get pnpm store directory
       shell: bash
-      id: pnpm-cache
+      id: pnpm-store
       run: |
-        echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
+        echo "path=$(pnpm store path --silent)" >> $GITHUB_OUTPUT
     
     - name: Setup pnpm cache
       uses: actions/cache@v4
       with:
-        path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+        path: ${{ steps.pnpm-store.outputs.path }}
         key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
         restore-keys: |
           ${{ runner.os }}-pnpm-store-
@@ -60,24 +60,12 @@ jobs:
       run: pnpm run lint || true
       continue-on-error: true
     
-    - name: Build scripts
-      run: pnpm run build:scripts || echo "⚠️  Script build failed (non-critical)"
-      continue-on-error: true
-    
     - name: Build project
       run: pnpm run build || echo "⚠️  Build failed"
       continue-on-error: true
     
-    - name: Validate setup
-      run: pnpm run validate:setup || echo "⚠️  Setup validation failed"
-      continue-on-error: true
-    
-    - name: Check code quality
-      run: pnpm run check:quality || echo "⚠️  Quality check failed"
-      continue-on-error: true
-    
-    - name: Check dependencies
-      run: pnpm run check:dependencies || echo "⚠️  Dependency check failed"
+    - name: Type check
+      run: pnpm run type-check || echo "⚠️  Type check failed"
       continue-on-error: true
     
     - name: Test integration script

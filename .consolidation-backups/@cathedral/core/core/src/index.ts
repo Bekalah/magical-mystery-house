@@ -1,5 +1,12 @@
 /**
- * @license CC0-1.0 - Public Domain
+ * index
+ * 
+ * @package @cathedral/core
+ */
+/**
+ * core
+ * 
+ * Package exports
  */
 
-export * from './core';
+// Add exports here

@@ -17,5 +17,7 @@
   "files": [
     "dist/**/*",
     "src/**/*"
-  ]
+  ],
+  "license": "CC0-1.0",
+  "packageManager": "pnpm@10.23.0"
 }

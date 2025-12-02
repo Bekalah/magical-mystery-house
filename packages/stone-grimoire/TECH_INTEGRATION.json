@@ -1,0 +1,26 @@
+{
+  "package": "stone-grimoire",
+  "techSystems": [
+    "grimoire-maker",
+    "dynamic-grimoire-importer",
+    "true-will-tech"
+  ],
+  "connected": "2025-12-01T23:45:38.620Z",
+  "connections": [
+    {
+      "tech": "grimoire-maker",
+      "status": "connected",
+      "path": "tools/grimoire-maker.mjs"
+    },
+    {
+      "tech": "dynamic-grimoire-importer",
+      "status": "connected",
+      "path": "tools/dynamic-grimoire-importer.mjs"
+    },
+    {
+      "tech": "true-will-tech",
+      "status": "connected",
+      "path": "tools/true-will-tech.mjs"
+    }
+  ]
+}

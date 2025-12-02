@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cathedral Character Schema",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "archetype": { "type": "string" },
+    "connected_goddess": { "type": "string" },
+    "factions": { "type": "array", "items": { "type": "string" } },
+    "connected_gods_goddesses": { "type": "array", "items": { "type": "string" } },
+    "connected_taras": { "type": "array", "items": { "type": "string" } },
+    "codex_144_99": { "type": "array", "items": { "type": "object" } },
+    "liber_arcanae": { "type": "array", "items": { "type": "object" } },
+    "cosmogenesis": { "type": "array", "items": { "type": "object" } },
+    "crystal_science": { "type": "array", "items": { "type": "string" } },
+    "sacred_geometry": { "type": "array", "items": { "type": "string" } },
+    "healing_grid": { "type": "array", "items": { "type": "string" } },
+    "art_chapel": { "type": "array", "items": { "type": "string" } },
+    "docs": { "type": "array", "items": { "type": "string" } },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "lock": { "type": "boolean" }
+  },
+  "required": ["id", "name", "archetype", "connected_goddess", "factions", "connected_gods_goddesses", "connected_taras", "codex_144_99", "liber_arcanae", "cosmogenesis", "crystal_science", "sacred_geometry", "healing_grid", "art_chapel", "docs", "tags", "lock"]
+}

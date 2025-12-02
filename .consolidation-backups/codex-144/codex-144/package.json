@@ -2,21 +2,24 @@
   "name": "codex-144",
   "version": "1.0.0",
   "license": "CC0-1.0",
-  "description": "",
+  "description": "Codex 144 - Part of the Cathedral of Circuits mystical ecosystem",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@cathedral/codex-144-99": "workspace:*",
+    "@cathedral/codex-144-99-core": "workspace:*"
+  },
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:52.875Z",
+  "consolidatedAt": "2025-12-01T19:36:45.136Z",
   "engines": {
     "node": "*",
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "Codex 144",
     "symbol": "⊙",
@@ -24,5 +27,35 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "cathedral": {
+    "sacred_mathematics": {
+      "sacredGeometry": true,
+      "goldenRatio": 1.618,
+      "cathedralRatio": 1.455,
+      "fibonacciGrids": true,
+      "divineProportions": true
+    },
+    "trauma_safety": {
+      "noAutoplay": true,
+      "escExit": true,
+      "motionControls": true,
+      "intensityAdjustment": true,
+      "gentleDefaults": true,
+      "undoRedo": true
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
+    },
+    "integration": {
+      "connects_to": [
+        "codex-144-99",
+        "codex-144-99-core"
+      ]
+    }
   }
 }

@@ -15,16 +15,16 @@
     "export": "node dist/export/exportDesigns.js"
   },
   "dependencies": {
-    "@cathedral/codex-144-99": "workspace:*",
+    "@cathedral/codex-library": "workspace:*",
     "@cathedral/liber-arcanae": "workspace:*",
     "@cathedral/plugin-system": "workspace:*",
     "@cathedral/shared": "workspace:*",
-    "canvas": "^2.11.2",
-    "typescript": "^5.3.0",
-    "@cathedral/master-art-principles": "workspace:*"
+    "canvas": "^2.11.2"
   },
   "devDependencies": {
-    "@types/node": "^20.10.0"
+    "@types/node": "^20.10.0",
+    "@types/canvas": "^2.11.0",
+    "typescript": "^5.3.0"
   },
   "keywords": [
     "design-library",
@@ -37,19 +37,17 @@
     "design-system"
   ],
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": "*",
+    "pnpm": "*"
   },
   "license": "CC0-1.0",
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:52.345Z",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "ppppnpm@10.23.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "alchemical": {
     "name": "Design Library",
     "symbol": "⊙",
     "label": "⊙ Design Library (@cathedral/design-library)"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

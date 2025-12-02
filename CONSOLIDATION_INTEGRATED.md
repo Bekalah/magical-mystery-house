@@ -48,10 +48,10 @@
 
 ```bash
 # Run consolidation manually
-ppnpm run consolidate:all
+pnpm run consolidate:all
 
 # Or use consolidate
-ppnpm run consolidate
+pnpm run consolidate
 ```
 
 ## Safety

@@ -1,0 +1,60 @@
+{
+  "name": "tarot-arena",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/tarot-arena/src",
+  "projectType": "application",
+  "tags": ["type:app", "platform:web", "framework:react", "feature:tarot", "feature:avalon"],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{projectRoot}/dist"],
+      "defaultConfiguration": "production",
+      "options": {
+        "main": "apps/tarot-arena/index.html",
+        "configFile": "apps/tarot-arena/vite.config.ts"
+      },
+      "dependsOn": ["^generate-avalon"]
+    },
+    "dev": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "tarot-arena:build",
+        "port": 3001
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "tarot-arena:build",
+        "port": 4300
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "passWithNoTests": true,
+        "reports": [
+          "html"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/tarot-arena/**/*.{js,ts,jsx,tsx}"]
+      }
+    },
+    "generate-avalon": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "echo 'Avalon components integrated into tarot-arena'",
+        "cwd": "apps/tarot-arena"
+      },
+      "dependsOn": ["^generate-data"]
+    }
+  }
+}

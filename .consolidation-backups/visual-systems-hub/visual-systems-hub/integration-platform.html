@@ -1,0 +1,1609 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integration Visualization Platform - Cathedral Master V1 Control System</title>
+    <meta
+      name="description"
+      content="Cross-platform integration visualization with comprehensive service mapping and health monitoring for the Cathedral Master V1 Control System" />
+
+    <!-- D3.js for advanced data visualization -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- Cathedral Master V1 Control System Styles -->
+    <style>
+      :root {
+        --cathedral-deep-blue: #1a237e;
+        --cathedral-gold: #ffd700;
+        --cathedral-silver: #c0c0c0;
+        --cathedral-crystal: #e1f5fe;
+        --cathedral-stone: #795548;
+        --cathedral-light: #fafafa;
+        --cathedral-accent: #4caf50;
+        --cathedral-warning: #ff9800;
+        --cathedral-error: #f44336;
+        --cathedral-success: #4caf50;
+        --cathedral-shadow: rgba(0, 0, 0, 0.2);
+        --cathedral-transition: all 0.3s ease;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        background: linear-gradient(
+          135deg,
+          var(--cathedral-deep-blue) 0%,
+          #283593 50%,
+          #1a237e 100%
+        );
+        color: var(--cathedral-light);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      /* Navigation Header */
+      .cathedral-header {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-bottom: 2px solid var(--cathedral-gold);
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .cathedral-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      .cathedral-logo {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+      }
+
+      .nav-item a {
+        color: var(--cathedral-light);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: var(--cathedral-transition);
+        font-size: 0.9rem;
+      }
+
+      .nav-item a:hover,
+      .nav-item a.active {
+        background: var(--cathedral-gold);
+        color: var(--cathedral-deep-blue);
+      }
+
+      .back-link {
+        background: var(--cathedral-accent);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: var(--cathedral-transition);
+      }
+
+      .back-link:hover {
+        background: #45a049;
+        transform: scale(1.05);
+      }
+
+      /* Main Content */
+      .integration-main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .integration-header {
+        text-align: center;
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .integration-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--cathedral-gold);
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px var(--cathedral-shadow);
+      }
+
+      .integration-subtitle {
+        font-size: 1.1rem;
+        color: var(--cathedral-crystal);
+        margin-bottom: 1.5rem;
+      }
+
+      /* Integration Overview */
+      .integration-overview {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .overview-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid transparent;
+        border-radius: 16px;
+        padding: 1.5rem;
+        backdrop-filter: blur(10px);
+        transition: var(--cathedral-transition);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .overview-card:hover {
+        border-color: var(--cathedral-gold);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px var(--cathedral-shadow);
+      }
+
+      .overview-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .overview-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+      }
+
+      .overview-icon {
+        font-size: 1.5rem;
+        width: 40px;
+        height: 40px;
+        background: var(--cathedral-gold);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--cathedral-deep-blue);
+      }
+
+      .overview-metrics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .metric-item {
+        text-align: center;
+        padding: 0.8rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+      }
+
+      .metric-value {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--cathedral-light);
+        margin-bottom: 0.3rem;
+        font-family: "Monaco", "Menlo", monospace;
+      }
+
+      .metric-label {
+        font-size: 0.8rem;
+        color: var(--cathedral-crystal);
+      }
+
+      .status-indicator {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        margin-top: 1rem;
+      }
+
+      .status-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        animation: pulse 2s infinite;
+      }
+
+      .status-online {
+        background: var(--cathedral-success);
+      }
+
+      .status-offline {
+        background: var(--cathedral-error);
+      }
+
+      .status-degraded {
+        background: var(--cathedral-warning);
+      }
+
+      @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+      }
+
+      /* Service Map Visualization */
+      .service-map-section {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid var(--cathedral-gold);
+        border-radius: 16px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+      }
+
+      .section-controls {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .control-group {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .control-label {
+        font-size: 0.9rem;
+        color: var(--cathedral-crystal);
+      }
+
+      .control-select {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid var(--cathedral-silver);
+        border-radius: 6px;
+        padding: 0.3rem 0.8rem;
+        color: var(--cathedral-light);
+        font-size: 0.8rem;
+      }
+
+      .control-select:focus {
+        outline: none;
+        border-color: var(--cathedral-gold);
+      }
+
+      .map-container {
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--cathedral-silver);
+        border-radius: 8px;
+        padding: 1rem;
+        min-height: 600px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* API Connections Grid */
+      .connections-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .connection-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid var(--cathedral-silver);
+        border-radius: 12px;
+        padding: 1.5rem;
+        transition: var(--cathedral-transition);
+        cursor: pointer;
+        position: relative;
+      }
+
+      .connection-card:hover {
+        border-color: var(--cathedral-gold);
+        transform: scale(1.02);
+      }
+
+      .connection-card.healthy {
+        border-color: var(--cathedral-success);
+      }
+
+      .connection-card.warning {
+        border-color: var(--cathedral-warning);
+      }
+
+      .connection-card.error {
+        border-color: var(--cathedral-error);
+      }
+
+      .connection-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .connection-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+      }
+
+      .connection-status {
+        padding: 0.3rem 0.8rem;
+        border-radius: 15px;
+        font-size: 0.7rem;
+        font-weight: 600;
+      }
+
+      .status-healthy {
+        background: var(--cathedral-success);
+        color: white;
+      }
+
+      .status-warning {
+        background: var(--cathedral-warning);
+        color: white;
+      }
+
+      .status-error {
+        background: var(--cathedral-error);
+        color: white;
+      }
+
+      .connection-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .detail-item {
+        font-size: 0.9rem;
+      }
+
+      .detail-label {
+        color: var(--cathedral-crystal);
+        margin-bottom: 0.2rem;
+      }
+
+      .detail-value {
+        color: var(--cathedral-light);
+        font-weight: 600;
+        font-family: "Monaco", "Menlo", monospace;
+      }
+
+      /* Integration Health Dashboard */
+      .health-dashboard {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .health-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .health-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .health-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 1.5rem;
+        text-align: center;
+        border: 2px solid transparent;
+        transition: var(--cathedral-transition);
+      }
+
+      .health-card:hover {
+        border-color: var(--cathedral-gold);
+        transform: translateY(-2px);
+      }
+
+      .health-card.excellent {
+        border-color: var(--cathedral-success);
+      }
+
+      .health-card.good {
+        border-color: var(--cathedral-accent);
+      }
+
+      .health-card.warning {
+        border-color: var(--cathedral-warning);
+      }
+
+      .health-card.critical {
+        border-color: var(--cathedral-error);
+      }
+
+      .health-score {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .health-label {
+        font-size: 1rem;
+        color: var(--cathedral-crystal);
+        margin-bottom: 0.5rem;
+      }
+
+      .health-status {
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 0.3rem 1rem;
+        border-radius: 20px;
+        display: inline-block;
+      }
+
+      .health-status.excellent {
+        background: var(--cathedral-success);
+        color: white;
+      }
+
+      .health-status.good {
+        background: var(--cathedral-accent);
+        color: white;
+      }
+
+      .health-status.warning {
+        background: var(--cathedral-warning);
+        color: white;
+      }
+
+      .health-status.critical {
+        background: var(--cathedral-error);
+        color: white;
+      }
+
+      /* External Dependencies */
+      .dependencies-section {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid var(--cathedral-silver);
+        border-radius: 16px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        backdrop-filter: blur(10px);
+      }
+
+      .dependencies-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--cathedral-gold);
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .dependencies-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+      }
+
+      .dependency-item {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: var(--cathedral-transition);
+      }
+
+      .dependency-item:hover {
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      .dependency-name {
+        font-weight: 600;
+        color: var(--cathedral-light);
+      }
+
+      .dependency-version {
+        font-size: 0.8rem;
+        color: var(--cathedral-crystal);
+        font-family: "Monaco", "Menlo", monospace;
+      }
+
+      .dependency-status {
+        padding: 0.2rem 0.6rem;
+        border-radius: 12px;
+        font-size: 0.7rem;
+        font-weight: 600;
+      }
+
+      .dependency-updated {
+        background: var(--cathedral-success);
+        color: white;
+      }
+
+      .dependency-outdated {
+        background: var(--cathedral-warning);
+        color: white;
+      }
+
+      .dependency-deprecated {
+        background: var(--cathedral-error);
+        color: white;
+      }
+
+      /* D3.js Service Network Styles */
+      .service-node {
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .service-node:hover {
+        transform: scale(1.1);
+      }
+
+      .service-link {
+        stroke: var(--cathedral-silver);
+        stroke-width: 2px;
+        fill: none;
+        transition: var(--cathedral-transition);
+      }
+
+      .service-link:hover {
+        stroke: var(--cathedral-gold);
+        stroke-width: 3px;
+      }
+
+      .service-label {
+        fill: var(--cathedral-light);
+        font-size: 12px;
+        text-anchor: middle;
+        font-weight: 600;
+        pointer-events: none;
+      }
+
+      .service-node-circle {
+        stroke: var(--cathedral-gold);
+        stroke-width: 2px;
+        transition: var(--cathedral-transition);
+      }
+
+      .service-node-circle.healthy {
+        fill: var(--cathedral-success);
+      }
+
+      .service-node-circle.warning {
+        fill: var(--cathedral-warning);
+      }
+
+      .service-node-circle.error {
+        fill: var(--cathedral-error);
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        .cathedral-nav {
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .nav-menu {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .integration-title {
+          font-size: 2rem;
+        }
+
+        .integration-overview {
+          grid-template-columns: 1fr;
+        }
+
+        .connections-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .integration-main {
+          padding: 1rem;
+        }
+
+        .section-controls {
+          flex-direction: column;
+          gap: 0.5rem;
+          align-items: flex-start;
+        }
+
+        .health-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .dependencies-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Accessibility */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      a:focus,
+      button:focus,
+      select:focus {
+        outline: 2px solid var(--cathedral-gold);
+        outline-offset: 2px;
+      }
+
+      /* Loading and Error States */
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        color: var(--cathedral-gold);
+      }
+
+      .error-message {
+        background: var(--cathedral-error);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        text-align: center;
+      }
+
+      .success-message {
+        background: var(--cathedral-success);
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header class="cathedral-header">
+      <nav class="cathedral-nav">
+        <a href="#" class="cathedral-logo">
+          🕍 Cathedral V1
+        </a>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <a href="index.html" class="back-link">← Back to Hub</a>
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#overview" class="active">Overview</a></li>
+            <li class="nav-item"><a href="#services">Services</a></li>
+            <li class="nav-item"><a href="#connections">Connections</a></li>
+            <li class="nav-item"><a href="#health">Health</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="integration-main">
+      <!-- Integration Header -->
+      <section class="integration-header">
+        <h1 class="integration-title">Integration Visualization Platform</h1>
+        <p class="integration-subtitle">
+          Cross-platform integration visualization with comprehensive service mapping and health monitoring for the Cathedral Master V1 Control System
+        </p>
+      </section>
+
+      <!-- Integration Overview -->
+      <section id="overview" class="integration-overview">
+        <div class="overview-card">
+          <div class="overview-header">
+            <h3 class="overview-title">API Services</h3>
+            <div class="overview-icon">🔗</div>
+          </div>
+          <div class="overview-metrics">
+            <div class="metric-item">
+              <div class="metric-value">24</div>
+              <div class="metric-label">Active APIs</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">99.8%</div>
+              <div class="metric-label">Uptime</div>
+            </div>
+          </div>
+          <div class="status-indicator">
+            <div class="status-dot status-online"></div>
+            <span>All services operational</span>
+          </div>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-header">
+            <h3 class="overview-title">Database Connections</h3>
+            <div class="overview-icon">🗄️</div>
+          </div>
+          <div class="overview-metrics">
+            <div class="metric-item">
+              <div class="metric-value">8</div>
+              <div class="metric-label">Active DBs</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">147ms</div>
+              <div class="metric-label">Avg Query</div>
+            </div>
+          </div>
+          <div class="status-indicator">
+            <div class="status-dot status-online"></div>
+            <span>Database cluster healthy</span>
+          </div>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-header">
+            <h3 class="overview-title">External Services</h3>
+            <div class="overview-icon">🌐</div>
+          </div>
+          <div class="overview-metrics">
+            <div class="metric-item">
+              <div class="metric-value">12</div>
+              <div class="metric-label">3rd Party</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">234ms</div>
+              <div class="metric-label">Avg Response</div>
+            </div>
+          </div>
+          <div class="status-indicator">
+            <div class="status-dot status-degraded"></div>
+            <span>Minor latency issues</span>
+          </div>
+        </div>
+
+        <div class="overview-card">
+          <div class="overview-header">
+            <h3 class="overview-title">Message Queues</h3>
+            <div class="overview-icon">📨</div>
+          </div>
+          <div class="overview-metrics">
+            <div class="metric-item">
+              <div class="metric-value">5</div>
+              <div class="metric-label">Active Queues</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">2.3k</div>
+              <div class="metric-label">Messages/min</div>
+            </div>
+          </div>
+          <div class="status-indicator">
+            <div class="status-dot status-online"></div>
+            <span>Message flow optimal</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service Map Visualization -->
+      <section id="services" class="service-map-section">
+        <div class="section-header">
+          <h3 class="section-title">Service Integration Map</h3>
+          <div class="section-controls">
+            <div class="control-group">
+              <label class="control-label">Layout:</label>
+              <select class="control-select" id="layoutSelect">
+                <option value="force">Force Directed</option>
+                <option value="hierarchical">Hierarchical</option>
+                <option value="circular">Circular</option>
+                <option value="grid">Grid</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Filter:</label>
+              <select class="control-select" id="filterSelect">
+                <option value="all">All Services</option>
+                <option value="api">API Services</option>
+                <option value="database">Databases</option>
+                <option value="external">External</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Status:</label>
+              <select class="control-select" id="statusSelect">
+                <option value="all">All Status</option>
+                <option value="healthy">Healthy</option>
+                <option value="warning">Warning</option>
+                <option value="error">Error</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="map-container" id="serviceMap">
+          <!-- D3.js service network will be rendered here -->
+        </div>
+      </section>
+
+      <!-- API Connections -->
+      <section id="connections" class="connections-grid">
+        <div class="connection-card healthy">
+          <div class="connection-header">
+            <h4 class="connection-name">REGISTRY API</h4>
+            <span class="connection-status status-healthy">Healthy</span>
+          </div>
+          <div class="connection-details">
+            <div class="detail-item">
+              <div class="detail-label">Endpoint</div>
+              <div class="detail-value">/api/registry/v1</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Response Time</div>
+              <div class="detail-value">89ms</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Requests/min</div>
+              <div class="detail-value">1.2k</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Error Rate</div>
+              <div class="detail-value">0.02%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="connection-card healthy">
+          <div class="connection-header">
+            <h4 class="connection-name">Cathedral Analytics</h4>
+            <span class="connection-status status-healthy">Healthy</span>
+          </div>
+          <div class="connection-details">
+            <div class="detail-item">
+              <div class="detail-label">Endpoint</div>
+              <div class="detail-value">/api/analytics/v2</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Response Time</div>
+              <div class="detail-value">156ms</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Requests/min</div>
+              <div class="detail-value">847</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Error Rate</div>
+              <div class="detail-value">0.01%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="connection-card warning">
+          <div class="connection-header">
+            <h4 class="connection-name">External Payment Gateway</h4>
+            <span class="connection-status status-warning">Degraded</span>
+          </div>
+          <div class="connection-details">
+            <div class="detail-item">
+              <div class="detail-label">Endpoint</div>
+              <div class="detail-value">payment.gateway.com</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Response Time</div>
+              <div class="detail-value">1.8s</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Requests/min</div>
+              <div class="detail-value">234</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Error Rate</div>
+              <div class="detail-value">2.3%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="connection-card healthy">
+          <div class="connection-header">
+            <h4 class="connection-name">Notification Service</h4>
+            <span class="connection-status status-healthy">Healthy</span>
+          </div>
+          <div class="connection-details">
+            <div class="detail-item">
+              <div class="detail-label">Endpoint</div>
+              <div class="detail-value">/api/notifications/v1</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Response Time</div>
+              <div class="detail-value">67ms</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Requests/min</div>
+              <div class="detail-value">3.4k</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Error Rate</div>
+              <div class="detail-value">0.03%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="connection-card healthy">
+          <div class="connection-header">
+            <h4 class="connection-name">File Storage Service</h4>
+            <span class="connection-status status-healthy">Healthy</span>
+          </div>
+          <div class="connection-details">
+            <div class="detail-item">
+              <div class="detail-label">Endpoint</div>
+              <div class="detail-value">/api/storage/v1</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Response Time</div>
+              <div class="detail-value">245ms</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Requests/min</div>
+              <div class="detail-value">567</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Error Rate</div>
+              <div class="detail-value">0.01%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="connection-card error">
+          <div class="connection-header">
+            <h4 class="connection-name">Legacy Authentication</h4>
+            <span class="connection-status status-error">Down</span>
+          </div>
+          <div class="connection-details">
+            <div class="detail-item">
+              <div class="detail-label">Endpoint</div>
+              <div class="detail-value">legacy-auth.example.com</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Response Time</div>
+              <div class="detail-value">Timeout</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Requests/min</div>
+              <div class="detail-value">0</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">Error Rate</div>
+              <div class="detail-value">100%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integration Health Dashboard -->
+      <section id="health" class="health-dashboard">
+        <h3 class="health-title">Integration Health Status</h3>
+        <div class="health-grid">
+          <div class="health-card excellent">
+            <div class="health-score" style="color: var(--cathedral-success);">A+</div>
+            <div class="health-label">API Availability</div>
+            <div class="health-status excellent">Excellent</div>
+          </div>
+
+          <div class="health-card good">
+            <div class="health-score" style="color: var(--cathedral-accent);">B+</div>
+            <div class="health-label">Database Performance</div>
+            <div class="health-status good">Good</div>
+          </div>
+
+          <div class="health-card warning">
+            <div class="health-score" style="color: var(--cathedral-warning);">C</div>
+            <div class="health-label">External Dependencies</div>
+            <div class="health-status warning">Degraded</div>
+          </div>
+
+          <div class="health-card excellent">
+            <div class="health-score" style="color: var(--cathedral-success);">A</div>
+            <div class="health-label">Security Status</div>
+            <div class="health-status excellent">Secure</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- External Dependencies -->
+      <section class="dependencies-section">
+        <h3 class="dependencies-title">
+          📦 External Dependencies Health
+        </h3>
+        <div class="dependencies-grid">
+          <div class="dependency-item">
+            <div>
+              <div class="dependency-name">Express.js</div>
+              <div class="dependency-version">v4.18.2</div>
+            </div>
+            <span class="dependency-status dependency-updated">Updated</span>
+          </div>
+
+          <div class="dependency-item">
+            <div>
+              <div class="dependency-name">React</div>
+              <div class="dependency-version">v18.2.0</div>
+            </div>
+            <span class="dependency-status dependency-updated">Updated</span>
+          </div>
+
+          <div class="dependency-item">
+            <div>
+              <div class="dependency-name">PostgreSQL</div>
+              <div class="dependency-version">v14.5</div>
+            </div>
+            <span class="dependency-status dependency-outdated">Update Available</span>
+          </div>
+
+          <div class="dependency-item">
+            <div>
+              <div class="dependency-name">Redis</div>
+              <div class="dependency-version">v7.0.5</div>
+            </div>
+            <span class="dependency-status dependency-updated">Updated</span>
+          </div>
+
+          <div class="dependency-item">
+            <div>
+              <div class="dependency-name">Lodash</div>
+              <div class="dependency-version">v4.17.15</div>
+            </div>
+            <span class="dependency-status dependency-deprecated">Deprecated</span>
+          </div>
+
+          <div class="dependency-item">
+            <div>
+              <div class="dependency-name">Docker</div>
+              <div class="dependency-version">v24.0.2</div>
+            </div>
+            <span class="dependency-status dependency-updated">Updated</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      // Cathedral Integration Platform JavaScript
+      class IntegrationPlatform {
+        constructor() {
+          this.currentLayout = 'force';
+          this.currentFilter = 'all';
+          this.currentStatus = 'all';
+          this.services = [];
+          this.connections = [];
+          
+          this.init();
+        }
+
+        async init() {
+          await this.loadIntegrationData();
+          this.setupEventListeners();
+          this.initializeServiceMap();
+          this.startRealTimeUpdates();
+        }
+
+        async loadIntegrationData() {
+          try {
+            // Simulate loading REGISTRY data for integration mapping
+            this.services = this.getServiceData();
+            this.connections = this.getConnectionData();
+          } catch (error) {
+            console.warn('Loading fallback integration data:', error);
+            this.loadFallbackData();
+          }
+        }
+
+        getServiceData() {
+          return [
+            {
+              id: 'registry-api',
+              name: 'REGISTRY API',
+              type: 'api',
+              status: 'healthy',
+              x: 200,
+              y: 150,
+              connections: ['analytics-api', 'database-main']
+            },
+            {
+              id: 'analytics-api',
+              name: 'Analytics Service',
+              type: 'api',
+              status: 'healthy',
+              x: 400,
+              y: 100,
+              connections: ['database-analytics']
+            },
+            {
+              id: 'database-main',
+              name: 'Main Database',
+              type: 'database',
+              status: 'healthy',
+              x: 100,
+              y: 300,
+              connections: ['cache-redis']
+            },
+            {
+              id: 'database-analytics',
+              name: 'Analytics Database',
+              type: 'database',
+              status: 'healthy',
+              x: 500,
+              y: 250,
+              connections: []
+            },
+            {
+              id: 'cache-redis',
+              name: 'Redis Cache',
+              type: 'database',
+              status: 'healthy',
+              x: 300,
+              y: 400,
+              connections: []
+            },
+            {
+              id: 'payment-gateway',
+              name: 'Payment Gateway',
+              type: 'external',
+              status: 'warning',
+              x: 600,
+              y: 150,
+              connections: ['billing-api']
+            },
+            {
+              id: 'notification-service',
+              name: 'Notification Service',
+              type: 'api',
+              status: 'healthy',
+              x: 350,
+              y: 50,
+              connections: []
+            },
+            {
+              id: 'file-storage',
+              name: 'File Storage',
+              type: 'external',
+              status: 'healthy',
+              x: 450,
+              y: 350,
+              connections: []
+            }
+          ];
+        }
+
+        getConnectionData() {
+          return [
+            { from: 'registry-api', to: 'analytics-api', type: 'api-call', status: 'healthy' },
+            { from: 'registry-api', to: 'database-main', type: 'data-query', status: 'healthy' },
+            { from: 'analytics-api', to: 'database-analytics', type: 'data-query', status: 'healthy' },
+            { from: 'database-main', to: 'cache-redis', type: 'cache-sync', status: 'healthy' },
+            { from: 'payment-gateway', to: 'billing-api', type: 'api-call', status: 'warning' },
+            { from: 'notification-service', to: 'database-main', type: 'data-query', status: 'healthy' },
+            { from: 'file-storage', to: 'database-main', type: 'metadata-sync', status: 'healthy' }
+          ];
+        }
+
+        loadFallbackData() {
+          this.services = [
+            { id: 'service-1', name: 'Main API', type: 'api', status: 'healthy', x: 200, y: 200, connections: [] }
+          ];
+          this.connections = [];
+        }
+
+        setupEventListeners() {
+          // Layout selector
+          document.getElementById('layoutSelect').addEventListener('change', (e) => {
+            this.currentLayout = e.target.value;
+            this.updateServiceMap();
+          });
+
+          // Filter selector
+          document.getElementById('filterSelect').addEventListener('change', (e) => {
+            this.currentFilter = e.target.value;
+            this.updateServiceMap();
+          });
+
+          // Status selector
+          document.getElementById('statusSelect').addEventListener('change', (e) => {
+            this.currentStatus = e.target.value;
+            this.updateServiceMap();
+          });
+
+          // Navigation smooth scrolling
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', (e) => {
+              e.preventDefault();
+              const target = document.querySelector(e.target.getAttribute('href'));
+              if (target) {
+                target.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start'
+                });
+              }
+            });
+          });
+
+          // Connection card interactions
+          document.querySelectorAll('.connection-card').forEach((card, index) => {
+            card.addEventListener('click', () => {
+              this.showConnectionDetails(index);
+            });
+          });
+        }
+
+        initializeServiceMap() {
+          this.createServiceNetwork();
+        }
+
+        createServiceNetwork() {
+          const container = d3.select('#serviceMap');
+          container.selectAll('*').remove();
+
+          const width = container.node().getBoundingClientRect().width - 60;
+          const height = 600;
+
+          const svg = container
+            .append('svg')
+            .attr('width', width)
+            .attr('height', height);
+
+          // Apply layout based on current selection
+          this.applyLayout(width, height);
+
+          // Draw connections
+          this.drawConnections(svg);
+
+          // Draw services
+          this.drawServices(svg);
+
+          // Add interactivity
+          this.addInteractivity(svg);
+        }
+
+        applyLayout(width, height) {
+          const services = this.getFilteredServices();
+
+          switch (this.currentLayout) {
+            case 'force':
+              this.applyForceLayout(services, width, height);
+              break;
+            case 'hierarchical':
+              this.applyHierarchicalLayout(services, width, height);
+              break;
+            case 'circular':
+              this.applyCircularLayout(services, width, height);
+              break;
+            case 'grid':
+              this.applyGridLayout(services, width, height);
+              break;
+          }
+        }
+
+        applyForceLayout(services, width, height) {
+          // Simple force-directed positioning
+          services.forEach((service, i) => {
+            service.x = Math.random() * (width - 100) + 50;
+            service.y = Math.random() * (height - 100) + 50;
+          });
+        }
+
+        applyHierarchicalLayout(services, width, height) {
+          // Hierarchical layout by service type
+          const types = ['api', 'database', 'external'];
+          const typeHeight = height / types.length;
+          
+          services.forEach(service => {
+            const typeIndex = types.indexOf(service.type);
+            service.x = 100 + (Math.random() * (width - 200));
+            service.y = typeHeight * typeIndex + 50 + (Math.random() * (typeHeight - 100));
+          });
+        }
+
+        applyCircularLayout(services, width, height) {
+          const centerX = width / 2;
+          const centerY = height / 2;
+          const radius = Math.min(width, height) / 3;
+
+          services.forEach((service, i) => {
+            const angle = (2 * Math.PI * i) / services.length;
+            service.x = centerX + radius * Math.cos(angle);
+            service.y = centerY + radius * Math.sin(angle);
+          });
+        }
+
+        applyGridLayout(services, width, height) {
+          const cols = Math.ceil(Math.sqrt(services.length));
+          const rows = Math.ceil(services.length / cols);
+          const cellWidth = width / cols;
+          const cellHeight = height / rows;
+
+          services.forEach((service, i) => {
+            const row = Math.floor(i / cols);
+            const col = i % cols;
+            service.x = col * cellWidth + cellWidth / 2;
+            service.y = row * cellHeight + cellHeight / 2;
+          });
+        }
+
+        getFilteredServices() {
+          let filtered = [...this.services];
+
+          // Filter by type
+          if (this.currentFilter !== 'all') {
+            filtered = filtered.filter(service => service.type === this.currentFilter);
+          }
+
+          // Filter by status
+          if (this.currentStatus !== 'all') {
+            filtered = filtered.filter(service => service.status === this.currentStatus);
+          }
+
+          return filtered;
+        }
+
+        drawConnections(svg) {
+          const connections = this.getFilteredConnections();
+
+          svg.selectAll('.service-link')
+            .data(connections)
+            .enter()
+            .append('line')
+            .attr('class', 'service-link')
+            .attr('x1', d => this.getServiceById(d.from)?.x || 0)
+            .attr('y1', d => this.getServiceById(d.from)?.y || 0)
+            .attr('x2', d => this.getServiceById(d.to)?.x || 0)
+            .attr('y2', d => this.getServiceById(d.to)?.y || 0)
+            .style('stroke', d => {
+              switch (d.status) {
+                case 'healthy': return 'var(--cathedral-success)';
+                case 'warning': return 'var(--cathedral-warning)';
+                case 'error': return 'var(--cathedral-error)';
+                default: return 'var(--cathedral-silver)';
+              }
+            });
+        }
+
+        drawServices(svg) {
+          const services = this.getFilteredServices();
+
+          const serviceGroups = svg.selectAll('.service-node')
+            .data(services)
+            .enter()
+            .append('g')
+            .attr('class', 'service-node')
+            .attr('transform', d => `translate(${d.x}, ${d.y})`);
+
+          // Service circles
+          serviceGroups.append('circle')
+            .attr('class', 'service-node-circle')
+            .attr('r', 25)
+            .attr('fill', d => {
+              switch (d.status) {
+                case 'healthy': return 'var(--cathedral-success)';
+                case 'warning': return 'var(--cathedral-warning)';
+                case 'error': return 'var(--cathedral-error)';
+                default: return 'var(--cathedral-silver)';
+              }
+            });
+
+          // Service labels
+          serviceGroups.append('text')
+            .attr('class', 'service-label')
+            .attr('dy', 45)
+            .text(d => d.name.length > 15 ? d.name.substring(0, 15) + '...' : d.name);
+
+          // Service type indicators
+          serviceGroups.append('text')
+            .attr('class', 'service-label')
+            .attr('dy', 5)
+            .style('font-size', '10px')
+            .text(d => d.type.toUpperCase());
+        }
+
+        getFilteredConnections() {
+          let filtered = [...this.connections];
+
+          // Filter connections between visible services
+          const visibleServiceIds = new Set(this.getFilteredServices().map(s => s.id));
+          filtered = filtered.filter(conn => 
+            visibleServiceIds.has(conn.from) && visibleServiceIds.has(conn.to)
+          );
+
+          return filtered;
+        }
+
+        getServiceById(id) {
+          return this.services.find(service => service.id === id);
+        }
+
+        addInteractivity(svg) {
+          // Hover effects for service nodes
+          svg.selectAll('.service-node')
+            .on('mouseenter', function() {
+              d3.select(this).select('circle')
+                .transition()
+                .duration(200)
+                .attr('r', 30)
+                .style('filter', 'drop-shadow(0 0 15px var(--cathedral-gold))');
+            })
+            .on('mouseleave', function() {
+              d3.select(this).select('circle')
+                .transition()
+                .duration(200)
+                .attr('r', 25)
+                .style('filter', 'none');
+            })
+            .on('click', (event, d) => {
+              this.showServiceDetails(d);
+            });
+
+          // Connection hover effects
+          svg.selectAll('.service-link')
+            .on('mouseenter', function() {
+              d3.select(this)
+                .transition()
+                .duration(200)
+                .style('stroke-width', '4px');
+            })
+            .on('mouseleave', function() {
+              d3.select(this)
+                .transition()
+                .duration(200)
+                .style('stroke-width', '2px');
+            });
+        }
+
+        updateServiceMap() {
+          this.createServiceNetwork();
+        }
+
+        showServiceDetails(service) {
+          // Create modal for service details
+          const modal = document.createElement('div');
+          modal.style.cssText = `
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.8); z-index: 2000;
+            display: flex; align-items: center; justify-content: center;
+            padding: 2rem;
+          `;
+
+          modal.innerHTML = `
+            <div style="background: linear-gradient(135deg, var(--cathedral-deep-blue), var(--cathedral-light)); 
+                        color: var(--cathedral-light); padding: 3rem; border-radius: 20px; 
+                        border: 3px solid var(--cathedral-gold); text-align: center; max-width: 500px;
+                        box-shadow: 0 0 50px var(--cathedral-gold);">
+              <h2 style="color: var(--cathedral-gold); margin-bottom: 1rem;">${service.name}</h2>
+              <p style="margin-bottom: 1rem; color: var(--cathedral-crystal);">Type: ${service.type.toUpperCase()}</p>
+              <p style="margin-bottom: 1rem; color: var(--cathedral-crystal);">Status: ${service.status.toUpperCase()}</p>
+              <p style="margin-bottom: 2rem; line-height: 1.6;">
+                Service ID: ${service.id}<br/>
+                Connections: ${service.connections.length}<br/>
+                Position: (${Math.round(service.x)}, ${Math.round(service.y)})
+              </p>
+              <button onclick="this.parentElement.parentElement.remove()"
+                      style="background: var(--cathedral-gold); color: var(--cathedral-deep-blue); 
+                             padding: 1rem 2rem; border: none; border-radius: 10px; 
+                             font-size: 1.1rem; cursor: pointer; font-weight: bold;">
+                Close
+              </button>
+            </div>
+          `;
+
+          document.body.appendChild(modal);
+
+          // Remove modal on click outside
+          modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+              modal.remove();
+            }
+          });
+        }
+
+        showConnectionDetails(index) {
+          const connection = this.connections[index];
+          console.log('Connection details:', connection);
+          // Implementation for connection details modal
+        }
+
+        startRealTimeUpdates() {
+          // Simulate real-time updates
+          setInterval(() => {
+            this.updateRealTimeMetrics();
+          }, 10000);
+        }
+
+        updateRealTimeMetrics() {
+          // Update metrics with simulated real-time data
+          const metrics = {
+            apiUptime: 99.8 + (Math.random() - 0.5) * 0.2,
+            dbQueryTime: 147 + (Math.random() - 0.5) * 20,
+            externalLatency: 234 + (Math.random() - 0.5) * 50,
+            messageRate: 2300 + (Math.random() - 0.5) * 200
+          };
+
+          // Update the display
+          document.querySelectorAll('.overview-card').forEach((card, index) => {
+            const metricValues = card.querySelectorAll('.metric-value');
+            if (metricValues.length >= 2) {
+              // Update appropriate values based on card type
+              const cardTitle = card.querySelector('.overview-title').textContent;
+              if (cardTitle.includes('API')) {
+                metricValues[1].textContent = metrics.apiUptime.toFixed(1) + '%';
+              } else if (cardTitle.includes('Database')) {
+                metricValues[1].textContent = Math.round(metrics.dbQueryTime) + 'ms';
+              } else if (cardTitle.includes('External')) {
+                metricValues[1].textContent = Math.round(metrics.externalLatency) + 'ms';
+              } else if (cardTitle.includes('Message')) {
+                metricValues[1].textContent = Math.round(metrics.messageRate) + '/min';
+              }
+            }
+          });
+        }
+      }
+
+      // Initialize integration platform when DOM is loaded
+      document.addEventListener('DOMContentLoaded', () => {
+        new IntegrationPlatform();
+      });
+
+      // Keyboard navigation support
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          // Close any open modals
+          document.querySelectorAll('[style*="z-index: 2000"]').forEach(modal => {
+            modal.remove();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

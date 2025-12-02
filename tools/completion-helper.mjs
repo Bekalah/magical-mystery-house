@@ -99,7 +99,7 @@ class CompletionHelper {
     readme += `## License\n\n`;
     readme += `CC0-1.0 - Public Domain\n\n`;
     readme += `## Installation\n\n`;
-    readme += `\`\`\`bash\nppnpm install\n\`\`\`\n\n`;
+    readme += `\`\`\`bash\npnpm install\n\`\`\`\n\n`;
     readme += `## Usage\n\n`;
     readme += `\`\`\`typescript\n// TODO: Add usage examples\n\`\`\`\n\n`;
 

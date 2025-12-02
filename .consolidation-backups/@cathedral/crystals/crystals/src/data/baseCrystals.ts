@@ -1,7 +1,3 @@
-/**
- * @license CC0-1.0 - Public Domain
- */
-
 // data/baseCrystals.ts - foundational crystal dataset (seed subset)
 import { Crystal } from '../types';
 

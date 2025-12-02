@@ -6,16 +6,6 @@
  *
  * @license CC0-1.0 - Public Domain
  */
-/**
- * ⊙ Codex144engine.D
- * 
- * @alchemical Codex144engine.D
- * @element N/A
- * @symbol ⊙
- * 
- * @license CC0-1.0 - Public Domain
- */
-
 export interface CodexNode {
     nodeIndex: number;
     name: string;

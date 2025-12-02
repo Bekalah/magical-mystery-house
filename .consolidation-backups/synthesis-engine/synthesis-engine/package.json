@@ -1,0 +1,14 @@
+{
+  "name": "synthesis-engine",
+  "version": "1.0.0",
+  "description": "Consolidated synthesis-engine",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests\""
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-12-01T21:14:07.178Z"
+}

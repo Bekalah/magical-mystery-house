@@ -221,8 +221,8 @@ Based on deep security research:
 ## Testing and Validation
 
 ### Security Audits
-- ✅ `ppnpm run security:audit` - Passing
-- ✅ `ppnpm run security:check` - Passing
+- ✅ `pnpm run security:audit` - Passing
+- ✅ `pnpm run security:check` - Passing
 - ✅ All repos audited and compliant
 
 ### TypeScript Compilation
@@ -232,7 +232,7 @@ Based on deep security research:
 ## Maintenance Guidelines
 
 ### Regular Security Tasks
-- [ ] Run `ppnpm run security:check` weekly
+- [ ] Run `pnpm run security:check` weekly
 - [ ] Review security configurations quarterly
 - [ ] Update security modules with new patterns
 - [ ] Test input validation regularly

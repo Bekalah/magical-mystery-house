@@ -36,13 +36,13 @@ try {
 }
 
 try {
-  const pnpmVersion = execSync('pnpm --version', { encoding: 'utf-8' }).trim();
+  const pnpmVersion = execSync('ppnpm --version', { encoding: 'utf-8' }).trim();
   console.log(`   ✅ pnpm: ${pnpmVersion} (current/latest)`);
   checks.pnpm = true;
   
   // Verify npm is NOT being used
   try {
-    execSync('which npm', { encoding: 'utf-8', stdio: 'ignore' });
+    execSync('which pnpm', { encoding: 'utf-8', stdio: 'ignore' });
     console.log(`   ⚠️  npm detected - using pnpm instead`);
   } catch (e) {
     // npm not found - good, we only use pnpm
@@ -213,7 +213,7 @@ try {
     // Try to build first
     console.log('📦 Building TypeScript...');
     try {
-      execSync('ppnpm run build', { cwd: BASE_DIR, stdio: 'inherit' });
+      execSync('pppnpm run build', { cwd: BASE_DIR, stdio: 'inherit' });
       command = 'node';
     } catch (e) {
       console.log('⚠️  Could not build - trying tsx anyway...');

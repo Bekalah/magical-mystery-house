@@ -27,7 +27,7 @@ export class CathedralGameInterface {
   }
 
   async initialize() {
-// console.log('🏛️ Initializing Cathedral Game Interface...');
+    console.log('🏛️ Initializing Cathedral Game Interface...');
 
     // Initialize the game engine
     await this.gameEngine.initialize();
@@ -38,7 +38,7 @@ export class CathedralGameInterface {
     // Show main menu
     this.showView('menu');
 
-// console.log('✅ Game interface ready');
+    console.log('✅ Game interface ready');
   }
 
   createGameContainer() {
@@ -101,7 +101,7 @@ export class CathedralGameInterface {
   }
 
   async startNewGame() {
-// console.log('🎮 Starting new Royal Initiate Path...');
+    console.log('🎮 Starting new Royal Initiate Path...');
 
     try {
       const gameStart = await this.gameEngine.startGame();
@@ -110,6 +110,6 @@ export class CathedralGameInterface {
       // Show character creation
       this.showCharacterCreation(gameStart);
     } catch (error) {
-// console.error('Failed to start game:', error);
+      console.error('Failed to start game:', error);
       this.showError('Failed to start your sacred journey. Please try again.');
     }

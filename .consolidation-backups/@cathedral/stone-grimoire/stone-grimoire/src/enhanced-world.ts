@@ -1,8 +1,3 @@
-/**
- * enhanced-world
- * 
- * @package @cathedral/stone-grimoire
- */
 import { GameState, PlayerStats, GameObject, RealObject } from './types';
 
 export interface WitcherStyleWorld {
@@ -358,7 +353,7 @@ export class WitcherStyleEngine {
       this.notifyListeners();
       return true;
     } catch (error) {
-// console.error('Failed to load Witcher-style game:', error);
+      console.error('Failed to load Witcher-style game:', error);
       return false;
     }
   }

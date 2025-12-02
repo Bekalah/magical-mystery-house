@@ -9,21 +9,17 @@
     "clean": "rm -rf dist"
   },
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": "*",
+    "pnpm": "*"
   },
   "license": "CC0-1.0",
-  "dependencies": {},
-  "devDependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:54.486Z",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "ppppnpm@10.23.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "alchemical": {
     "name": "Labs",
     "symbol": "⊙",
     "label": "⊙ Labs (@cathedral/labs)"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

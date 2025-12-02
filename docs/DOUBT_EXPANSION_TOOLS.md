@@ -53,7 +53,7 @@ These tools implement the **Solve et Coagula** alchemical cycle, reflecting your
 
 **Usage**:
 ```bash
-ppnpm run generate:codex [context]
+pnpm run generate:codex [context]
 ```
 
 ### 2. Tool Improver (`tools/tool-improver.mjs`)
@@ -92,7 +92,7 @@ ppnpm run generate:codex [context]
 
 **Usage**:
 ```bash
-ppnpm run improve:tools [tool-name]
+pnpm run improve:tools [tool-name]
 ```
 
 ## How They Work Together

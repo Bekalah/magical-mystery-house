@@ -12,5 +12,6 @@
     "name": "Circuitum99",
     "symbol": "⊙",
     "label": "⊙ Circuitum99 (circuitum99-core)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

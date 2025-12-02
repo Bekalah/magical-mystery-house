@@ -1,0 +1,191 @@
+{
+  "timestamp": "2025-12-01T20:09:08.627Z",
+  "systems": {
+    "circuitum99": {
+      "packages": [
+        "circuitum99-core",
+        "circuitum99-arcanae-cyoa"
+      ],
+      "description": "Circuitum99: Alpha et Omega - Interactive story system"
+    },
+    "mysteryHouse": {
+      "packages": [
+        "mystery-house-core"
+      ],
+      "description": "Magical Mystery House - Mystery room system"
+    },
+    "stoneGrimoire": {
+      "packages": [
+        "stone-grimoire",
+        "stone-grimoire-core",
+        "stone-grimoire-library-engine"
+      ],
+      "description": "Stone Grimoire - 8 Chapels system with body nodes"
+    },
+    "liberArcanae": {
+      "packages": [
+        "liber-arcanae",
+        "liber-arcanae-core",
+        "liber-arcanae-tools"
+      ],
+      "description": "Liber Arcanae - 22 Major Arcana character system"
+    },
+    "codex14499": {
+      "packages": [
+        "codex-144-99",
+        "codex-144-99-core"
+      ],
+      "description": "Codex 144:99 - Sacred mathematics and geometry"
+    }
+  },
+  "connections": {
+    "circuitum99": [
+      "art-engine-core",
+      "art-engine-core",
+      "art-generation-node",
+      "art-generation-node",
+      "art-standards-core",
+      "art-standards-core",
+      "art-systems",
+      "art-systems",
+      "cathedral-design-library",
+      "cathedral-design-library",
+      "cathedral-visual-engine",
+      "cathedral-visual-engine",
+      "design-mathematics-core",
+      "design-mathematics-core",
+      "godot-design-studio",
+      "godot-design-studio",
+      "synth-design-math-core",
+      "synth-design-math-core",
+      "visionary-design-system",
+      "visionary-design-system"
+    ],
+    "mysteryHouse": [
+      "art-engine-core",
+      "art-generation-node",
+      "art-standards-core",
+      "art-systems",
+      "cathedral-design-library",
+      "cathedral-visual-engine",
+      "design-mathematics-core",
+      "godot-design-studio",
+      "synth-design-math-core",
+      "visionary-design-system"
+    ],
+    "stoneGrimoire": [
+      "art-engine-core",
+      "art-engine-core",
+      "art-engine-core",
+      "art-generation-node",
+      "art-generation-node",
+      "art-generation-node",
+      "art-standards-core",
+      "art-standards-core",
+      "art-standards-core",
+      "art-systems",
+      "art-systems",
+      "art-systems",
+      "cathedral-design-library",
+      "cathedral-design-library",
+      "cathedral-design-library",
+      "cathedral-visual-engine",
+      "cathedral-visual-engine",
+      "cathedral-visual-engine",
+      "design-mathematics-core",
+      "design-mathematics-core",
+      "design-mathematics-core",
+      "godot-design-studio",
+      "godot-design-studio",
+      "godot-design-studio",
+      "stone-grimoire",
+      "stone-grimoire-core",
+      "stone-grimoire-library-engine",
+      "synth-design-math-core",
+      "synth-design-math-core",
+      "synth-design-math-core",
+      "visionary-design-system",
+      "visionary-design-system",
+      "visionary-design-system"
+    ],
+    "liberArcanae": [
+      "art-engine-core",
+      "art-engine-core",
+      "art-engine-core",
+      "art-generation-node",
+      "art-generation-node",
+      "art-generation-node",
+      "art-standards-core",
+      "art-standards-core",
+      "art-standards-core",
+      "art-systems",
+      "art-systems",
+      "art-systems",
+      "cathedral-design-library",
+      "cathedral-design-library",
+      "cathedral-design-library",
+      "cathedral-liber-arcanae-bridge",
+      "cathedral-visual-engine",
+      "cathedral-visual-engine",
+      "cathedral-visual-engine",
+      "character-alchemical-art",
+      "design-mathematics-core",
+      "design-mathematics-core",
+      "design-mathematics-core",
+      "godot-design-studio",
+      "godot-design-studio",
+      "godot-design-studio",
+      "godot-liber-arcanae",
+      "liber-arcanae",
+      "liber-arcanae-core",
+      "liber-arcanae-tools",
+      "synth-design-math-core",
+      "synth-design-math-core",
+      "synth-design-math-core",
+      "tarot-art",
+      "tarot-engine",
+      "tarot-reader",
+      "visionary-design-system",
+      "visionary-design-system",
+      "visionary-design-system"
+    ],
+    "codex14499": [
+      "art-engine-core",
+      "art-engine-core",
+      "art-generation-node",
+      "art-generation-node",
+      "art-standards-core",
+      "art-standards-core",
+      "art-systems",
+      "art-systems",
+      "cathedral-design-library",
+      "cathedral-design-library",
+      "cathedral-visual-engine",
+      "cathedral-visual-engine",
+      "codex-144",
+      "codex-144",
+      "codex-144-99",
+      "codex-144-99",
+      "codex-144-99-core",
+      "codex-144-99-core",
+      "codex-engine",
+      "codex-engine",
+      "codex-musical-system",
+      "codex-musical-system",
+      "design-mathematics-core",
+      "design-mathematics-core",
+      "godot-codex-14499",
+      "godot-codex-14499",
+      "godot-design-studio",
+      "godot-design-studio",
+      "synth-design-math-core",
+      "synth-design-math-core",
+      "unified-codex-core",
+      "unified-codex-core",
+      "unified-codex-extractor",
+      "unified-codex-extractor",
+      "visionary-design-system",
+      "visionary-design-system"
+    ]
+  }
+}

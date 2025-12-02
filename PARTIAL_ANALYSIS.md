@@ -1,12 +1,12 @@
 # Partial Analysis Report
 
-**Generated:** 2025-12-01T03:14:13.833Z
+**Generated:** 2025-12-01T21:24:35.850Z
 
 ## Summary
 
-- **Total Partials:** 131
-- **Merge Strategies:** 131
-- **Conflicts Found:** 0
+- **Total Partials:** 166
+- **Merge Strategies:** 166
+- **Conflicts Found:** 11
 
 ## Merge Strategies
 
@@ -14,13 +14,13 @@
 ### agent-integration
 
 - **Primary Location:** agent-integration
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use agent-integration as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -30,13 +30,13 @@
 ### arcana
 
 - **Primary Location:** arcana
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use arcana as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -46,13 +46,13 @@
 ### archetypal-engine
 
 - **Primary Location:** archetypal-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use archetypal-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -78,13 +78,13 @@
 ### @cathedral/art-generation-node
 
 - **Primary Location:** art-generation-node
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 8
+- **Estimated Dependencies:** 42
 
 **Steps:**
 - 1. Use art-generation-node as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -110,13 +110,13 @@
 ### art-systems
 
 - **Primary Location:** art-systems
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
+- **Estimated Dependencies:** 22
 
 **Steps:**
 - 1. Use art-systems as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -126,13 +126,13 @@
 ### atelier-constitution
 
 - **Primary Location:** atelier-constitution
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use atelier-constitution as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -142,13 +142,13 @@
 ### @cathedral/avatar-experience-system
 
 - **Primary Location:** avatar-experience-system
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use avatar-experience-system as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -158,15 +158,15 @@
 ### @cathedral/brain
 
 - **Primary Location:** brain
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 32
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use brain as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
-- 4. Resolve conflicts (0 found)
+- 4. Resolve conflicts (1 found)
 - 5. Update all references to point to primary location
 - 6. Remove duplicate locations (with backup)
 
@@ -174,13 +174,13 @@
 ### @cathedral/cataract-book-scanner
 
 - **Primary Location:** cataract-book-scanner
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
+- **Estimated Dependencies:** 4
 
 **Steps:**
 - 1. Use cataract-book-scanner as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -190,13 +190,13 @@
 ### cathedral-144
 
 - **Primary Location:** cathedral-144
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 9
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use cathedral-144 as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -206,13 +206,13 @@
 ### @cathedral/cathedral-architect
 
 - **Primary Location:** cathedral-architect
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use cathedral-architect as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -254,13 +254,13 @@
 ### @cathedral/design-library
 
 - **Primary Location:** cathedral-design-library
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 10
+- **Estimated Dependencies:** 34
 
 **Steps:**
 - 1. Use cathedral-design-library as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -270,13 +270,13 @@
 ### @cathedral/fusion-kink-engine
 
 - **Primary Location:** cathedral-fusion-kink-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use cathedral-fusion-kink-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -286,13 +286,13 @@
 ### cathedral-integration-bridge
 
 - **Primary Location:** cathedral-integration-bridge
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use cathedral-integration-bridge as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -318,13 +318,13 @@
 ### @cathedral/lightweight-library
 
 - **Primary Location:** cathedral-lightweight-library
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use cathedral-lightweight-library as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -334,13 +334,13 @@
 ### @cathedral/logo-system
 
 - **Primary Location:** cathedral-logo-system
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use cathedral-logo-system as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -350,13 +350,13 @@
 ### @cathedral/plugin-system
 
 - **Primary Location:** cathedral-plugin-system
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 6
+- **Estimated Dependencies:** 3
 
 **Steps:**
 - 1. Use cathedral-plugin-system as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -382,13 +382,13 @@
 ### @cathedral/sqlite-persistence
 
 - **Primary Location:** cathedral-sqlite-persistence
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use cathedral-sqlite-persistence as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -398,13 +398,13 @@
 ### cathedral-style
 
 - **Primary Location:** cathedral-style
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use cathedral-style as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -462,13 +462,13 @@
 ### @cathedral/circuit-craft-creative-game
 
 - **Primary Location:** circuit-craft-creative-game
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
+- **Estimated Dependencies:** 4
 
 **Steps:**
 - 1. Use circuit-craft-creative-game as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -478,29 +478,13 @@
 ### @cathedral/circuitum99-arcanae-cyoa
 
 - **Primary Location:** circuitum99-arcanae-cyoa
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 8 location(s)
+- **Estimated Files:** 12
+- **Estimated Dependencies:** 9
 
 **Steps:**
 - 1. Use circuitum99-arcanae-cyoa as primary location
-- 2. Copy missing files from 2 other location(s)
-- 3. Merge dependencies from all locations
-- 4. Resolve conflicts (0 found)
-- 5. Update all references to point to primary location
-- 6. Remove duplicate locations (with backup)
-
-
-### circuitum99-core
-
-- **Primary Location:** circuitum99-core
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
-
-**Steps:**
-- 1. Use circuitum99-core as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 8 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -510,13 +494,13 @@
 ### codex-144
 
 - **Primary Location:** codex-144
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 9
+- **Estimated Dependencies:** 6
 
 **Steps:**
 - 1. Use codex-144 as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -526,15 +510,15 @@
 ### @cathedral/codex-144-99
 
 - **Primary Location:** codex-144-99
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 78
+- **Estimated Dependencies:** 6
 
 **Steps:**
 - 1. Use codex-144-99 as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
-- 4. Resolve conflicts (0 found)
+- 4. Resolve conflicts (1 found)
 - 5. Update all references to point to primary location
 - 6. Remove duplicate locations (with backup)
 
@@ -558,13 +542,13 @@
 ### @cathedral/codex-engine
 
 - **Primary Location:** codex-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
+- **Estimated Dependencies:** 4
 
 **Steps:**
 - 1. Use codex-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -590,13 +574,13 @@
 ### @cathedral/codex-musical-system
 
 - **Primary Location:** codex-musical-system
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
+- **Estimated Dependencies:** 4
 
 **Steps:**
 - 1. Use codex-musical-system as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -606,13 +590,13 @@
 ### @cathedral/config
 
 - **Primary Location:** config
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 4
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use config as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -622,13 +606,13 @@
 ### connections
 
 - **Primary Location:** connections
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 3
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use connections as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -638,13 +622,13 @@
 ### consciousness-aware-creative
 
 - **Primary Location:** consciousness-aware-creative
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 4
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use consciousness-aware-creative as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 3 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -654,13 +638,13 @@
 ### @cathedral/core
 
 - **Primary Location:** core
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 11
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use core as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -670,13 +654,13 @@
 ### @cathedral/cosmogenesis
 
 - **Primary Location:** cosmogenesis
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 4
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use cosmogenesis as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -686,15 +670,15 @@
 ### @cathedral/crystals
 
 - **Primary Location:** crystals
-- **Merge From:** 2 location(s)
+- **Merge From:** 5 location(s)
 - **Estimated Files:** 0
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use crystals as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
-- 4. Resolve conflicts (0 found)
+- 4. Resolve conflicts (1 found)
 - 5. Update all references to point to primary location
 - 6. Remove duplicate locations (with backup)
 
@@ -702,13 +686,13 @@
 ### daimon-gear
 
 - **Primary Location:** daimon-gear
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use daimon-gear as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -750,13 +734,13 @@
 ### @cathedral/fractal-flames-daemon-deity
 
 - **Primary Location:** fractal-flames-daemon-deity
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 4
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use fractal-flames-daemon-deity as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -766,13 +750,13 @@
 ### fusion-creative-suite
 
 - **Primary Location:** fusion-creative-suite
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 2
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use fusion-creative-suite as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 3 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -798,13 +782,13 @@
 ### @cathedral/fusion-kink-generator
 
 - **Primary Location:** fusion-kink-generator
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use fusion-kink-generator as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -846,13 +830,13 @@
 ### @cathedral/game-engine
 
 - **Primary Location:** game-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 13
+- **Estimated Dependencies:** 6
 
 **Steps:**
 - 1. Use game-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -878,13 +862,13 @@
 ### game-world
 
 - **Primary Location:** game-world
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
+- **Estimated Dependencies:** 4
 
 **Steps:**
 - 1. Use game-world as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -894,13 +878,13 @@
 ### @cathedral/gem-tower-engine
 
 - **Primary Location:** gem-tower-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use gem-tower-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -910,13 +894,13 @@
 ### @cathedral/godot-codex-14499
 
 - **Primary Location:** godot-codex-14499
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 1
+- **Estimated Dependencies:** 4
 
 **Steps:**
 - 1. Use godot-codex-14499 as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -926,13 +910,13 @@
 ### @cathedral/godot-design-studio
 
 - **Primary Location:** godot-design-studio
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 1
+- **Estimated Dependencies:** 22
 
 **Steps:**
 - 1. Use godot-design-studio as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -942,13 +926,13 @@
 ### @cathedral/godot-liber-arcanae
 
 - **Primary Location:** godot-liber-arcanae
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 1
+- **Estimated Dependencies:** 6
 
 **Steps:**
 - 1. Use godot-liber-arcanae as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -958,13 +942,13 @@
 ### @cathedral/godot-vfx-library
 
 - **Primary Location:** godot-vfx-library
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 1
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use godot-vfx-library as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -974,13 +958,13 @@
 ### graphs
 
 - **Primary Location:** graphs
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 5
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use graphs as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -990,13 +974,13 @@
 ### @cathedral/hall-of-ateliers
 
 - **Primary Location:** hall-of-ateliers
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 3
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use hall-of-ateliers as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 3 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1022,13 +1006,13 @@
 ### holographic-interface
 
 - **Primary Location:** holographic-interface
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use holographic-interface as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1038,13 +1022,13 @@
 ### @cathedral/inter-app-communicator
 
 - **Primary Location:** inter-app-communicator
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use inter-app-communicator as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1054,13 +1038,13 @@
 ### kira-audio-engine
 
 - **Primary Location:** kira-audio-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use kira-audio-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1070,13 +1054,13 @@
 ### @cathedral/labs
 
 - **Primary Location:** labs
-- **Merge From:** 2 location(s)
+- **Merge From:** 5 location(s)
 - **Estimated Files:** 0
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use labs as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1086,15 +1070,15 @@
 ### @cathedral/liber-arcanae
 
 - **Primary Location:** liber-arcanae
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 236
+- **Estimated Dependencies:** 16
 
 **Steps:**
 - 1. Use liber-arcanae as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
-- 4. Resolve conflicts (0 found)
+- 4. Resolve conflicts (1 found)
 - 5. Update all references to point to primary location
 - 6. Remove duplicate locations (with backup)
 
@@ -1118,13 +1102,13 @@
 ### @cathedral-real/liber-arcanae-tools
 
 - **Primary Location:** liber-arcanae-tools
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 4
+- **Estimated Dependencies:** 8
 
 **Steps:**
 - 1. Use liber-arcanae-tools as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1134,13 +1118,13 @@
 ### living-canon-engine
 
 - **Primary Location:** living-canon-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use living-canon-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1150,13 +1134,13 @@
 ### living-libraries
 
 - **Primary Location:** living-libraries
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use living-libraries as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1166,13 +1150,13 @@
 ### @cathedral/luxcrux
 
 - **Primary Location:** luxcrux
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 7
+- **Estimated Dependencies:** 6
 
 **Steps:**
 - 1. Use luxcrux as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1182,13 +1166,13 @@
 ### magnum-opus
 
 - **Primary Location:** magnum-opus
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use magnum-opus as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1198,13 +1182,13 @@
 ### mobile-optimization
 
 - **Primary Location:** mobile-optimization
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use mobile-optimization as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1214,13 +1198,13 @@
 ### moonchild-scanner
 
 - **Primary Location:** moonchild-scanner
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use moonchild-scanner as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1230,13 +1214,13 @@
 ### museum-sources
 
 - **Primary Location:** museum-sources
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use museum-sources as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1278,15 +1262,15 @@
 ### @cathedral/mystical-data-unified
 
 - **Primary Location:** mystical-data-unified
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use mystical-data-unified as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
-- 4. Resolve conflicts (0 found)
+- 4. Resolve conflicts (1 found)
 - 5. Update all references to point to primary location
 - 6. Remove duplicate locations (with backup)
 
@@ -1294,13 +1278,13 @@
 ### @cathedral/mystical-sound-engine
 
 - **Primary Location:** mystical-sound-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use mystical-sound-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1310,15 +1294,15 @@
 ### @cathedral/node-tree-engine
 
 - **Primary Location:** node-tree-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use node-tree-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
-- 4. Resolve conflicts (0 found)
+- 4. Resolve conflicts (1 found)
 - 5. Update all references to point to primary location
 - 6. Remove duplicate locations (with backup)
 
@@ -1342,13 +1326,13 @@
 ### @cathedral/portal-system
 
 - **Primary Location:** portal-system
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use portal-system as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1358,13 +1342,13 @@
 ### professional-collaboration-engine
 
 - **Primary Location:** professional-collaboration-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 12
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use professional-collaboration-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1374,13 +1358,13 @@
 ### professional-export-integration
 
 - **Primary Location:** professional-export-integration
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 10
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use professional-export-integration as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1390,13 +1374,13 @@
 ### professional-quality-control
 
 - **Primary Location:** professional-quality-control
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 10
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use professional-quality-control as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1406,13 +1390,13 @@
 ### professional-suite
 
 - **Primary Location:** professional-suite
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use professional-suite as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1422,13 +1406,13 @@
 ### professional-typography-engine
 
 - **Primary Location:** professional-typography-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use professional-typography-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1438,13 +1422,13 @@
 ### professional-vector-engine
 
 - **Primary Location:** professional-vector-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use professional-vector-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1470,13 +1454,13 @@
 ### @cathedral/sacred-geometry-core
 
 - **Primary Location:** sacred-geometry-core
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use sacred-geometry-core as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1486,13 +1470,13 @@
 ### sacred-geometry-math
 
 - **Primary Location:** sacred-geometry-math
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use sacred-geometry-math as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1502,13 +1486,13 @@
 ### sacred-geometry-simd
 
 - **Primary Location:** sacred-geometry-simd
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 4
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use sacred-geometry-simd as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 3 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1534,13 +1518,13 @@
 ### scanner
 
 - **Primary Location:** scanner
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use scanner as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1566,13 +1550,13 @@
 ### @cathedral/shared
 
 - **Primary Location:** shared
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 126
+- **Estimated Dependencies:** 6
 
 **Steps:**
 - 1. Use shared as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1598,13 +1582,13 @@
 ### @cathedral/smooth-movement-system
 
 - **Primary Location:** smooth-movement-system
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use smooth-movement-system as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1614,13 +1598,13 @@
 ### sonic-physics-engine
 
 - **Primary Location:** sonic-physics-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use sonic-physics-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1630,13 +1614,13 @@
 ### @cathedral/soul
 
 - **Primary Location:** soul
-- **Merge From:** 2 location(s)
+- **Merge From:** 5 location(s)
 - **Estimated Files:** 0
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use soul as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1662,13 +1646,13 @@
 ### spells
 
 - **Primary Location:** spells
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use spells as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1694,13 +1678,13 @@
 ### @cathedral/stone-grimoire
 
 - **Primary Location:** stone-grimoire
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 57
+- **Estimated Dependencies:** 19
 
 **Steps:**
 - 1. Use stone-grimoire as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1726,13 +1710,13 @@
 ### stone-grimoire-library-engine
 
 - **Primary Location:** stone-grimoire-library-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 4
+- **Estimated Dependencies:** 3
 
 **Steps:**
 - 1. Use stone-grimoire-library-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 3 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1742,13 +1726,13 @@
 ### story-engine
 
 - **Primary Location:** story-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 4
+- **Estimated Dependencies:** 2
 
 **Steps:**
 - 1. Use story-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 3 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1758,15 +1742,15 @@
 ### @cathedral/synth
 
 - **Primary Location:** synth
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 2
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use synth as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
-- 4. Resolve conflicts (0 found)
+- 4. Resolve conflicts (1 found)
 - 5. Update all references to point to primary location
 - 6. Remove duplicate locations (with backup)
 
@@ -1790,13 +1774,13 @@
 ### synth-labs
 
 - **Primary Location:** synth-labs
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use synth-labs as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1806,13 +1790,13 @@
 ### synth-spells
 
 - **Primary Location:** synth-spells
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use synth-spells as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1822,15 +1806,15 @@
 ### @cathedral/synthesis-engine
 
 - **Primary Location:** synthesis-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use synthesis-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
-- 4. Resolve conflicts (0 found)
+- 4. Resolve conflicts (1 found)
 - 5. Update all references to point to primary location
 - 6. Remove duplicate locations (with backup)
 
@@ -1838,13 +1822,13 @@
 ### tarot-art
 
 - **Primary Location:** tarot-art
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
+- **Estimated Dependencies:** 6
 
 **Steps:**
 - 1. Use tarot-art as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1870,13 +1854,13 @@
 ### tarot-reader
 
 - **Primary Location:** tarot-reader
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 6
+- **Estimated Dependencies:** 6
 
 **Steps:**
 - 1. Use tarot-reader as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1886,15 +1870,15 @@
 ### @cathedral/tesseract-bridge
 
 - **Primary Location:** tesseract-bridge
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 34
+- **Estimated Dependencies:** 10
 
 **Steps:**
 - 1. Use tesseract-bridge as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
-- 4. Resolve conflicts (0 found)
+- 4. Resolve conflicts (1 found)
 - 5. Update all references to point to primary location
 - 6. Remove duplicate locations (with backup)
 
@@ -1934,15 +1918,15 @@
 ### @cathedral/three-engine
 
 - **Primary Location:** three-engine
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use three-engine as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
-- 4. Resolve conflicts (0 found)
+- 4. Resolve conflicts (1 found)
 - 5. Update all references to point to primary location
 - 6. Remove duplicate locations (with backup)
 
@@ -1950,13 +1934,13 @@
 ### trauma-safe-ui
 
 - **Primary Location:** trauma-safe-ui
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 4
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use trauma-safe-ui as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1966,13 +1950,13 @@
 ### @cathedral/trinity-architecture
 
 - **Primary Location:** trinity-architecture
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 4
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use trinity-architecture as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1982,13 +1966,13 @@
 ### trinity-v1-1-core
 
 - **Primary Location:** trinity-v1-1-core
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 32
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use trinity-v1-1-core as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 3 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -1998,13 +1982,13 @@
 ### @cathedral/types
 
 - **Primary Location:** types
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 132
+- **Estimated Dependencies:** 14
 
 **Steps:**
 - 1. Use types as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -2014,13 +1998,13 @@
 ### @cathedral/ui
 
 - **Primary Location:** ui
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 5 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use ui as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 5 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -2046,13 +2030,13 @@
 ### @cathedral/unified-codex-extractor
 
 - **Primary Location:** unified-codex-extractor
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 42
+- **Estimated Dependencies:** 2
 
 **Steps:**
 - 1. Use unified-codex-extractor as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -2062,13 +2046,13 @@
 ### unified-creative-system
 
 - **Primary Location:** unified-creative-system
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
+- **Merge From:** 4 location(s)
+- **Estimated Files:** 8
 - **Estimated Dependencies:** 0
 
 **Steps:**
 - 1. Use unified-creative-system as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 4 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -2078,13 +2062,13 @@
 ### @cathedral-trinity/accessibility
 
 - **Primary Location:** universal-accessibility
-- **Merge From:** 2 location(s)
-- **Estimated Files:** 0
-- **Estimated Dependencies:** 0
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 4
+- **Estimated Dependencies:** 1
 
 **Steps:**
 - 1. Use universal-accessibility as primary location
-- 2. Copy missing files from 2 other location(s)
+- 2. Copy missing files from 3 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location
@@ -2101,6 +2085,582 @@
 **Steps:**
 - 1. Use visionary-design-system as primary location
 - 2. Copy missing files from 2 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### cathedral-connection-map
+
+- **Primary Location:** cathedral-connection-map
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use cathedral-connection-map as primary location
+- 2. Copy missing files from 3 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### cathedral-design-studio
+
+- **Primary Location:** cathedral-design-studio
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use cathedral-design-studio as primary location
+- 2. Copy missing files from 3 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### cathedral-immersive-creative-studio
+
+- **Primary Location:** cathedral-immersive-creative-studio
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use cathedral-immersive-creative-studio as primary location
+- 2. Copy missing files from 3 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### cathedral-of-circuits
+
+- **Primary Location:** cathedral-of-circuits
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 2
+- **Estimated Dependencies:** 14
+
+**Steps:**
+- 1. Use cathedral-of-circuits as primary location
+- 2. Copy missing files from 3 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/cathedral-unity
+
+- **Primary Location:** cathedral-unity
+- **Merge From:** 2 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use cathedral-unity as primary location
+- 2. Copy missing files from 2 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### cosmogenesis-visualizer
+
+- **Primary Location:** cosmogenesis-visualizer
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use cosmogenesis-visualizer as primary location
+- 2. Copy missing files from 3 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### cathedral-spell-frontend
+
+- **Primary Location:** frontend
+- **Merge From:** 2 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use frontend as primary location
+- 2. Copy missing files from 2 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @bekalah/cathedral-monorepo
+
+- **Primary Location:** learning-device
+- **Merge From:** 2 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use learning-device as primary location
+- 2. Copy missing files from 2 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/liber-arcanae-app
+
+- **Primary Location:** liber-arcanae
+- **Merge From:** 2 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use liber-arcanae as primary location
+- 2. Copy missing files from 2 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @bekalah/liber-arcanae-tarot
+
+- **Primary Location:** liber-arcanae-tarot
+- **Merge From:** 2 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use liber-arcanae-tarot as primary location
+- 2. Copy missing files from 2 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### master-catalog-browser
+
+- **Primary Location:** master-catalog-browser
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use master-catalog-browser as primary location
+- 2. Copy missing files from 3 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/mystical-treasure-hunt
+
+- **Primary Location:** mystical-treasure-hunt
+- **Merge From:** 2 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use mystical-treasure-hunt as primary location
+- 2. Copy missing files from 2 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### rosslyn-explorer
+
+- **Primary Location:** rosslyn-explorer
+- **Merge From:** 2 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use rosslyn-explorer as primary location
+- 2. Copy missing files from 2 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### stone-grimoire
+
+- **Primary Location:** stone-grimoire
+- **Merge From:** 2 location(s)
+- **Estimated Files:** 20
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use stone-grimoire as primary location
+- 2. Copy missing files from 2 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/synth-lab
+
+- **Primary Location:** synth-lab
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use synth-lab as primary location
+- 2. Copy missing files from 3 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/tarot-arena
+
+- **Primary Location:** tarot-arena
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use tarot-arena as primary location
+- 2. Copy missing files from 3 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/test-ground
+
+- **Primary Location:** test-ground
+- **Merge From:** 3 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use test-ground as primary location
+- 2. Copy missing files from 3 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### visual-systems-hub
+
+- **Primary Location:** visual-systems-hub
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use visual-systems-hub as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/web
+
+- **Primary Location:** web
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 1
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use web as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/web-from-master
+
+- **Primary Location:** web-from-master
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use web-from-master as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### alchemy
+
+- **Primary Location:** alchemy
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use alchemy as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### characters
+
+- **Primary Location:** characters
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use characters as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### codex-14499
+
+- **Primary Location:** codex-14499
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 1
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use codex-14499 as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @bekalah/creative-engine
+
+- **Primary Location:** creative-engine
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use creative-engine as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/cathedral-game-engine
+
+- **Primary Location:** cyoa-book-game
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use cyoa-book-game as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @bekalah/cathedral-data
+
+- **Primary Location:** data
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use data as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @bekalah/cathedral-engines
+
+- **Primary Location:** engines
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use engines as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @bekalah/gentle-fusion-lab
+
+- **Primary Location:** gentle-fusion-lab
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use gentle-fusion-lab as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/professional-design-suite
+
+- **Primary Location:** cathedral-professional-design-suite
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 8
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use cathedral-professional-design-suite as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/circuitum99
+
+- **Primary Location:** circuitum99
+- **Merge From:** 2 location(s)
+- **Estimated Files:** 15
+- **Estimated Dependencies:** 4
+
+**Steps:**
+- 1. Use circuitum99 as primary location
+- 2. Copy missing files from 2 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/cosmogenesis-learning-engine
+
+- **Primary Location:** cosmogenesis-learning-engine
+- **Merge From:** 2 location(s)
+- **Estimated Files:** 30
+- **Estimated Dependencies:** 28
+
+**Steps:**
+- 1. Use cosmogenesis-learning-engine as primary location
+- 2. Copy missing files from 2 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (1 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/magical-mystery-house
+
+- **Primary Location:** magical-mystery-house
+- **Merge From:** 2 location(s)
+- **Estimated Files:** 32
+- **Estimated Dependencies:** 7
+
+**Steps:**
+- 1. Use magical-mystery-house as primary location
+- 2. Copy missing files from 2 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @bekalah/cathedral-web
+
+- **Primary Location:** web
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use web as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @bekalah/cathedral-worker
+
+- **Primary Location:** worker
+- **Merge From:** 2 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use worker as primary location
+- 2. Copy missing files from 2 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### @cathedral/sound-kernel
+
+- **Primary Location:** sound-kernel
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use sound-kernel as primary location
+- 2. Copy missing files from 1 other location(s)
+- 3. Merge dependencies from all locations
+- 4. Resolve conflicts (0 found)
+- 5. Update all references to point to primary location
+- 6. Remove duplicate locations (with backup)
+
+
+### synthesis-engine
+
+- **Primary Location:** synthesis-engine
+- **Merge From:** 1 location(s)
+- **Estimated Files:** 0
+- **Estimated Dependencies:** 0
+
+**Steps:**
+- 1. Use synthesis-engine as primary location
+- 2. Copy missing files from 1 other location(s)
 - 3. Merge dependencies from all locations
 - 4. Resolve conflicts (0 found)
 - 5. Update all references to point to primary location

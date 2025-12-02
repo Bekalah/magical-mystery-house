@@ -357,7 +357,7 @@ export interface CollaborationRequest {
   projectDescription: string;
   proposedRoles: Record<string, string>;
   timeline: string;
-  status: 'pending' | 'accepted' | 'decathedrald' | 'negotiating';
+  status: 'pending' | 'accepted' | 'declined' | 'negotiating';
   createdAt: Date;
 }
 

@@ -1,8 +1,3 @@
-/**
- * fusionSets
- * 
- * @package @cathedral/src
- */
 // fusionSets.ts - composite resonance groupings
 import { CrystalFusionSet } from '../types';
 

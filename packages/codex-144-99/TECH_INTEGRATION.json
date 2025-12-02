@@ -1,0 +1,26 @@
+{
+  "package": "codex-144-99",
+  "techSystems": [
+    "portal-tech",
+    "double-tree-pathworking-tech",
+    "true-will-tech"
+  ],
+  "connected": "2025-12-01T23:45:38.617Z",
+  "connections": [
+    {
+      "tech": "portal-tech",
+      "status": "connected",
+      "path": "tools/portal-tech.mjs"
+    },
+    {
+      "tech": "double-tree-pathworking-tech",
+      "status": "connected",
+      "path": "tools/double-tree-pathworking-tech.mjs"
+    },
+    {
+      "tech": "true-will-tech",
+      "status": "connected",
+      "path": "tools/true-will-tech.mjs"
+    }
+  ]
+}

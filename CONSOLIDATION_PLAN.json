@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764528895858,
+  "timestamp": 1764619458376,
   "workspaces": [
     {
       "name": "cathedral-master-deployment",
@@ -18,13 +18,13 @@
     }
   ],
   "entities": {
-    "packages": 131,
-    "apps": 22,
-    "tools": 151,
+    "packages": 130,
+    "apps": 21,
+    "tools": 172,
     "systems": 2,
     "engines": 24
   },
-  "duplicates": 131,
+  "duplicates": 130,
   "consolidated": [
     {
       "type": "package",
@@ -553,7 +553,7 @@
       "name": "@cathedral/circuitum99-arcanae-cyoa",
       "primary": {
         "workspace": "cathedral-master-deployment",
-        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa"
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-core"
       },
       "mergeFrom": [
         {
@@ -561,22 +561,12 @@
           "path": "/Users/rebeccalemke/cathedral-real/packages/circuitum99-arcanae-cyoa"
         },
         {
-          "workspace": "cathedral-fixed-clean",
-          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuitum99-arcanae-cyoa"
-        }
-      ]
-    },
-    {
-      "type": "package",
-      "name": "circuitum99-core",
-      "primary": {
-        "workspace": "cathedral-master-deployment",
-        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-core"
-      },
-      "mergeFrom": [
-        {
           "workspace": "cathedral-real",
           "path": "/Users/rebeccalemke/cathedral-real/packages/circuitum99-core"
+        },
+        {
+          "workspace": "cathedral-fixed-clean",
+          "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/circuitum99-arcanae-cyoa"
         },
         {
           "workspace": "cathedral-fixed-clean",
@@ -2385,13 +2375,13 @@
       ]
     }
   ],
-  "connections": 210,
+  "connections": 237,
   "consolidationSteps": [
     {
       "step": 1,
       "action": "Merge packages",
       "description": "Copy all unique packages from other workspaces to cathedral-master-deployment/packages",
-      "entities": 131
+      "entities": 130
     },
     {
       "step": 2,

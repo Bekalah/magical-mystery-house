@@ -55,11 +55,11 @@ All applications must consume data from the centralized REGISTRY system:
   - `minimum-release-age=1440` - Delays new packages (24 hours)
   - `trust-policy=strict` - Enforces strict trust policy
 - **Workspace Configuration**: Use `pnpm-workspace.yaml` (not package.json workspaces)
-- **Package Manager Lock**: All package.json must specify `"packageManager": "pnpm@8.0.0"` (or latest stable)
+- **Package Manager Lock**: All package.json must specify `"packageManager": "ppnpm@8.0.0"` (or latest stable)
 
 **Security Auditing:**
-- Run `ppnpm run security:audit` regularly to check for unsafe tool usage
-- Run `ppnpm run security:check` for full security audit (includes dependency vulnerabilities)
+- Run `pppnpm run security:audit` regularly to check for unsafe tool usage
+- Run `pppnpm run security:check` for full security audit (includes dependency vulnerabilities)
 - All repos must have `scripts/security-audit.mjs` tool
 - Fix vulnerabilities immediately using `ppnpm audit --fix`
 

@@ -209,12 +209,12 @@
 
 ### Check Deployment Status
 ```bash
-ppnpm run report:deployments
+pnpm run report:deployments
 ```
 
 ### Check Repository Connections
 ```bash
-ppnpm run connect:repos
+pnpm run connect:repos
 ```
 
 ### Check CI/CD Status

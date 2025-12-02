@@ -17,7 +17,6 @@
  */
 
 import React, { useEffect, useRef, useState } from 'react';
-import '@cathedral/shared/src/styles/unified-professional.css';
 import { WorldClassDesignSystem } from './world-class-design-system';
 
 export interface MysticalTreeConfig {
@@ -136,7 +135,7 @@ export function MysticalTreeArt({
   
   return (
     <div
-      className="mystical-tree-art professional-theme"
+      className="mystical-tree-art"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
@@ -157,7 +156,7 @@ export function MysticalTreeArt({
       />
       
       {fullConfig.interactive && (
-        <div className="tree-interactions professional-theme" style={{
+        <div className="tree-interactions" style={{
           position: 'absolute',
           bottom: '1rem',
           left: '1rem',

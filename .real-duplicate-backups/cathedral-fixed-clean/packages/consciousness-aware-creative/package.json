@@ -12,5 +12,6 @@
     "name": "Consciousness Aware Creative",
     "symbol": "⊙",
     "label": "⊙ Consciousness Aware Creative (consciousness-aware-creative)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

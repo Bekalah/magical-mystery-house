@@ -1,50 +1,34 @@
 {
   "name": "@cathedral/web",
   "version": "1.0.0",
-  "private": true,
-  "description": "Cathedral Web Interface - 3D Open World Experience",
+  "description": "Next.js web app for Avalon labs with Three.js, Babylon.js, p5.js, and Tone.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "export": "next export",
+    "generate-avalon": "node scripts/generate-avalon-components.js"
   },
   "dependencies": {
     "next": "^14.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "three": "^0.160.0",
-    "@react-three/fiber": "^8.15.0",
-    "@react-three/drei": "^9.88.0",
-    "@cathedral/codex-144-99-core": "workspace:*",
-    "@cathedral/unified-codex-core": "workspace:*",
-    "@cathedral/stone-grimoire-core": "workspace:*",
-    "@cathedral/mystery-house-core": "workspace:*",
-    "@cathedral/liber-arcanae-core": "workspace:*",
-    "@cathedral/music-engine-core": "workspace:*",
-    "@cathedral/art-engine-core": "workspace:*",
-    "@cathedral/science-engine-core": "workspace:*",
-    "@cathedral/art-standards-core": "workspace:*",
-    "@cathedral/game-design-core": "workspace:*"
+    "three": "^0.158.0",
+    "@react-three/fiber": "^8.0.0",
+    "@react-three/drei": "^9.0.0",
+    "babylonjs": "^6.0.0",
+    "p5": "^1.7.0",
+    "tone": "^14.7.77",
+    "@cathedral/core": "workspace:*",
+    "typescript": "^5.0.0"
   },
   "devDependencies": {
+    "@types/three": "^0.158.0",
     "@types/node": "^20.0.0",
     "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "@types/three": "^0.160.0",
-    "typescript": "^5.0.0",
-    "tailwindcss": "^3.4.0",
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.0"
+    "@types/react-dom": "^18.0.0"
   },
-  "engines": {
-    "node": "*",
-    "pnpm": "*"
-  },
-  "license": "CC0-1.0",
-  "alchemical": {
-    "name": "Web",
-    "symbol": "⊙",
-    "label": "⊙ Web (@cathedral/web)"
-  }
+  "consolidated": true,
+  "consolidatedAt": "2025-12-01T21:19:40.467Z",
+  "license": "CC0-1.0"
 }

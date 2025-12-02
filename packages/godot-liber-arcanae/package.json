@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "validate": "echo 'Validating tarot correspondences...' && node validate-tarot.js",
-    "export": "echo 'Exporting tarot system...' && ppnpm run build",
+    "export": "echo 'Exporting tarot system...' && pnpm run build",
     "test": "echo 'Testing card interactions...' && node test-cards.js"
   },
   "keywords": [
@@ -67,8 +67,18 @@
       "connects_to": [
         "godot-codex-14499",
         "godot-tesseract-bridge",
-        "godot-vfx-library"
+        "godot-vfx-library",
+        "liber-arcanae",
+        "liber-arcanae-core",
+        "liber-arcanae-tools"
       ]
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
     }
   },
   "files": [
@@ -86,7 +96,7 @@
     "@types/node": "^20.10.0"
   },
   "types": "dist/index.d.ts",
-  "packageManager": "pnpm@8.15.0",
+  "packageManager": "pnpm@10.23.0",
   "engines": {
     "node": ">=20.18.0",
     "pnpm": ">=8.15.0"
@@ -95,9 +105,13 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@cathedral/liber-arcanae": "workspace:*",
+    "@cathedral/liber-arcanae-core": "workspace:*",
+    "@cathedral/liber-arcanae-tools": "workspace:*"
+  },
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:14:16.528Z",
+  "consolidatedAt": "2025-12-01T19:36:51.827Z",
   "alchemical": {
     "name": "Godot Liber Arcanae",
     "symbol": "⊙",

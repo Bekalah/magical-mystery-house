@@ -21,16 +21,6 @@
   * @license CC0-1.0 - Public Domain (Open Source)
 */
 
-/**
- * ⊙ Consciousnessawarecreativeengine
- * 
- * @alchemical Consciousnessawarecreativeengine
- * @element N/A
- * @symbol ⊙
- * 
- * @license CC0-1.0 - Public Domain
- */
-
 import logger from '../trinity-v1-1-core/logger';
 
 export interface AdaptiveCreativeEngine {

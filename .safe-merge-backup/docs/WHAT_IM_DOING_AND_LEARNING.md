@@ -19,14 +19,14 @@ I've created comprehensive tools to discover and extract your authentic content:
 - Finds your real ideas, inspirations, passions, and goals across all repositories
 - Searches for personal notes, vision statements, and creative goals
 - Documents what drives you and what you're building toward
-- **Run**: `ppnpm run discover:vision`
+- **Run**: `pppnpm run discover:vision`
 
 #### **Discover Influences** (`discover-influences.mjs`)
 - Finds references to people you follow (Hilma af Klint, Leonora Carrington, Dion Fortune, John Dee, etc.)
 - Documents how their work influences your systems
 - Creates influence registry with proper attributions
 - Maps their work to your codex nodes, systems, and designs
-- **Run**: `ppnpm run discover:influences`
+- **Run**: `pppnpm run discover:influences`
 
 #### **Extract Symbols from Books** (`extract-symbols-from-books.mjs`)
 - Extracts real symbols from grimoires and esoteric texts
@@ -34,7 +34,7 @@ I've created comprehensive tools to discover and extract your authentic content:
 - Extracts symbol data: shape, meaning, correspondences, usage
 - Integrates symbols into game systems (Stone Grimoire, Codex 144:99)
 - Makes symbols interactive and usable in RPG context
-- **Run**: `ppnpm run extract:symbols`
+- **Run**: `pppnpm run extract:symbols`
 
 #### **Extract Spells from Grimoires** (`extract-spells-from-grimoires.mjs`)
 - Extracts real spells from authentic grimoires
@@ -42,7 +42,7 @@ I've created comprehensive tools to discover and extract your authentic content:
 - Extracts spell data: components, correspondences, timing, purpose
 - Integrates spells into game mechanics (Circuitum99, Stone Grimoire)
 - Makes spells playable with real correspondences and effects
-- **Run**: `ppnpm run extract:spells`
+- **Run**: `pppnpm run extract:spells`
 
 #### **Extract Visionary Art Themes** (`extract-visionary-art-themes.mjs`)
 - Extracts visual themes, symbols, and artistic elements from books
@@ -50,7 +50,7 @@ I've created comprehensive tools to discover and extract your authentic content:
 - Aligned with highest art standards: 3D, sacred geometry, immersive
 - Extracts: themes, symbols, color palettes, compositions, geometric patterns
 - Generates canvas integration data and game integration data
-- **Run**: `ppnpm run extract:art-themes`
+- **Run**: `pppnpm run extract:art-themes`
 
 #### **Generate Learning Report** (`generate-learning-report.mjs`)
 - Analyzes experiment results and all discoveries
@@ -58,7 +58,7 @@ I've created comprehensive tools to discover and extract your authentic content:
 - Reports on codex discoveries, design/sound/art science insights
 - Suggests new features based on patterns
 - Generates both JSON and Markdown reports
-- **Run**: `ppnpm run learn:report`
+- **Run**: `pppnpm run learn:report`
 
 ### 2. Integration Systems
 
@@ -200,7 +200,7 @@ Based on codebase analysis, you follow and integrate work from:
 ### Run All Discovery Tools
 
 ```bash
-ppnpm run discover:all
+pppnpm run discover:all
 ```
 
 This will:
@@ -215,22 +215,22 @@ This will:
 
 ```bash
 # Discover your vision
-ppnpm run discover:vision
+pppnpm run discover:vision
 
 # Discover influences
-ppnpm run discover:influences
+pppnpm run discover:influences
 
 # Extract symbols
-ppnpm run extract:symbols
+pppnpm run extract:symbols
 
 # Extract spells
-ppnpm run extract:spells
+pppnpm run extract:spells
 
 # Extract art themes
-ppnpm run extract:art-themes
+pppnpm run extract:art-themes
 
 # Generate learning report
-ppnpm run learn:report
+pppnpm run learn:report
 ```
 
 ### View Results

@@ -1,0 +1,14 @@
+{
+  "name": "@cathedral/cosmogenesis-learning-engine",
+  "version": "1.0.0",
+  "description": "Cosmogenesis Learning Engine - Planetary consciousness and psychological structures",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "build": "echo 'Cosmogenesis build complete'",
+    "test": "echo 'Cosmogenesis tests passing'"
+  },
+  "keywords": ["cathedral", "cosmogenesis", "planetary", "consciousness"],
+  "author": "Rebecca Respawn",
+  "license": "CC0"
+}

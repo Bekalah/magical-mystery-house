@@ -10,20 +10,17 @@
   },
   "dependencies": {},
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": "*",
+    "pnpm": "*"
   },
   "license": "CC0-1.0",
-  "devDependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:52.094Z",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "ppppnpm@10.23.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "alchemical": {
     "name": "Brain",
     "symbol": "⊙",
     "label": "⊙ Brain (@cathedral/brain)"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

@@ -102,7 +102,7 @@ function fixPermissions(filePath) {
 function installDependencies() {
   try {
     logger.info('Installing dependencies...');
-    execSync('ppnpm install', { cwd: BASE_DIR, stdio: 'inherit' });
+    execSync('pnpm install', { cwd: BASE_DIR, stdio: 'inherit' });
     logger.success('Dependencies installed');
     return true;
   } catch (error) {
@@ -133,7 +133,7 @@ function clearCache() {
 function cleanBuild() {
   try {
     logger.info('Cleaning build...');
-    execSync('ppnpm run clean', { cwd: BASE_DIR, stdio: 'pipe' });
+    execSync('pnpm run clean', { cwd: BASE_DIR, stdio: 'pipe' });
     logger.success('Build cleaned');
     return true;
   } catch (error) {
@@ -151,7 +151,7 @@ function cleanBuild() {
 function rebuild() {
   try {
     logger.info('Rebuilding...');
-    execSync('ppnpm run build', { cwd: BASE_DIR, stdio: 'inherit' });
+    execSync('pnpm run build', { cwd: BASE_DIR, stdio: 'inherit' });
     logger.success('Rebuild complete');
     return true;
   } catch (error) {

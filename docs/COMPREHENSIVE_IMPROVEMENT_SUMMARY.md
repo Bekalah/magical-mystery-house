@@ -227,27 +227,27 @@ The system now runs in **4 phases**:
 
 ### Run All Discovery
 ```bash
-ppnpm run discover:all
+pnpm run discover:all
 ```
 
 ### Run Monorepo Improvements
 ```bash
-ppnpm run improve:monorepo
+pnpm run improve:monorepo
 ```
 
 ### Make Updates Live
 ```bash
-ppnpm run make:live
+pnpm run make:live
 ```
 
 ### Connect Synth-Design Math
 ```bash
-ppnpm run connect:synth-design
+pnpm run connect:synth-design
 ```
 
 ### Check Status
 ```bash
-ppnpm run experiment:status
+pnpm run experiment:status
 ```
 
 ---

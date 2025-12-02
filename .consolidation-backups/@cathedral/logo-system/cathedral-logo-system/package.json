@@ -18,7 +18,7 @@
     "three-js"
   ],
   "author": "Cathedral Research Team",
-  "license": "CC0-1.0",
+  "license": "MIT",
   "dependencies": {
     "typescript": "^5.3.0",
     "@react-three/fiber": "^8.0.0",
@@ -50,18 +50,5 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/cathedral-logo-system"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/cathedral-logo-system",
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
-  },
-  "devDependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:52.461Z",
-  "packageManager": "pnpm@8.0.0",
-  "alchemical": {
-    "name": "Logo System",
-    "symbol": "⊙",
-    "label": "⊙ Logo System (@cathedral/logo-system)"
-  }
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/cathedral-logo-system"
 }

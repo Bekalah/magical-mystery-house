@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import '@cathedral/shared/src/styles/unified-professional.css';
 import ReactDOM from "react-dom/client";
 // Commented out - @cathedral/soul module needs proper configuration
 // import { archetypes } from "@cathedral/soul";
@@ -76,7 +75,7 @@ function AvatarCard({ avatar, onSelect, selected }: any) {
   const [showLore, setShowLore] = React.useState(false);
   return (
     <div
-      className="avatar-card professional-theme"
+      className="avatar-card"
       style={{
         border: selected ? "2px solid gold" : "none",
         borderRadius: 24,

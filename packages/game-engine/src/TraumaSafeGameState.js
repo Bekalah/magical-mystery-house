@@ -43,7 +43,7 @@ export class TraumaSafeGameState {
   }
 
   initialize() {
-// console.log('🛡️ Initializing Trauma-Safe Game State...');
+    console.log('🛡️ Initializing Trauma-Safe Game State...');
 
     // Set up safety protocols
     this.gameState.currentSession = {
@@ -57,8 +57,8 @@ export class TraumaSafeGameState {
     // Initialize accessibility settings
     this.loadAccessibilitySettings();
 
-// console.log('✅ Trauma-safe game state initialized');
-// console.log('🛡️ Maximum CPTSD-safe protocols active');
+    console.log('✅ Trauma-safe game state initialized');
+    console.log('🛡️ Maximum CPTSD-safe protocols active');
   }
 
   initializeSafetyProtocols() {
@@ -103,7 +103,7 @@ export class TraumaSafeGameState {
         this.gameState.accessibility = { ...this.gameState.accessibility, ...JSON.parse(saved) };
       }
     } catch (error) {
-// console.warn('Failed to load accessibility settings:', error);
+      console.warn('Failed to load accessibility settings:', error);
     }
   }
 
@@ -111,7 +111,7 @@ export class TraumaSafeGameState {
     try {
       localStorage.setItem('cathedral-accessibility', JSON.stringify(this.gameState.accessibility));
     } catch (error) {
-// console.warn('Failed to save accessibility settings:', error);
+      console.warn('Failed to save accessibility settings:', error);
     }
   }
 
@@ -236,18 +236,18 @@ export class TraumaSafeGameState {
   pause() {
     this.gameState.isActive = false;
     this.saveSessionMemory('game_paused', { timestamp: new Date() });
-// console.log('🛡️ Game paused - Trauma-safe state preserved');
+    console.log('🛡️ Game paused - Trauma-safe state preserved');
   }
 
   resume() {
     this.gameState.isActive = true;
     this.gameState.currentSession.lastActivity = new Date();
     this.saveSessionMemory('game_resumed', { timestamp: new Date() });
-// console.log('🎮 Game resumed - Welcome back to your sacred journey');
+    console.log('🎮 Game resumed - Welcome back to your sacred journey');
   }
 
   emergencyExit() {
-// console.log('🚨 Emergency exit activated - Trauma-safe shutdown');
+    console.log('🚨 Emergency exit activated - Trauma-safe shutdown');
 
     // Save current state for potential return
     this.saveSessionMemory('emergency_exit', {

@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "build": "echo 'Fractal flames - permanent technology'",
-    "dev": "echo 'Fractal flames - eternal flame'",
+    "build": "tsc",
+    "dev": "tsc --watch",
     "generate": "node src/generators/fractal-flame-generator.js"
   },
   "keywords": [
@@ -17,24 +17,27 @@
     "mystical-technology",
     "permanent-flame"
   ],
-  "author": "Cathedral Master Creative Intelligence Team",
+  "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
   "license": "CC0-1.0",
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/fractal-flames-daemon-deity"
   },
-  "dependencies": {},
-  "devDependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:53.862Z",
-  "packageManager": "pnpm@8.0.0",
+  "homepage": "https://bekalah.github.io/cathedral/packages/fractal-flames-daemon-deity",
+  "packageManager": "pnpm@8.15.0",
+  "engines": {
+    "node": ">=20.18.0",
+    "pnpm": ">=8.15.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "types": "dist/index.d.ts",
   "alchemical": {
     "name": "Fractal Flames Daemon Deity",
     "symbol": "⊙",
     "label": "⊙ Fractal Flames Daemon Deity (@cathedral/fractal-flames-daemon-deity)"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "types": "dist/index.d.ts"
+  }
 }

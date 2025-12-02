@@ -556,8 +556,8 @@ class PackageInfoGenerator {
       suggestions.push('Remove or replace console.log with proper logging system');
     }
     
-    if (issues.some(i => i.type === 'dependency' && i.issue.includes('package-lock.json'))) {
-      suggestions.push('Remove package-lock.json and ensure pnpm is used');
+    if (issues.some(i => i.type === 'dependency' && i.issue.includes('pnpm-lock.yaml'))) {
+      suggestions.push('Remove pnpm-lock.yaml and ensure pnpm is used');
     }
     
     return suggestions;

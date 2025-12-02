@@ -47,7 +47,7 @@ This document confirms all ways the improvement experiment actively updates and 
 
 **Usage:**
 ```bash
-ppnpm run save
+pnpm run save
 # or
 node scripts/easy-save-system.mjs "Custom commit message"
 ```
@@ -71,7 +71,7 @@ node scripts/easy-save-system.mjs "Custom commit message"
 
 **Usage:**
 ```bash
-ppnpm run backup
+pnpm run backup
 # or
 node scripts/comprehensive-backup-system.mjs
 ```
@@ -188,7 +188,7 @@ git push origin main
 
 ```bash
 # Easy save (commits locally)
-ppnpm run save
+pnpm run save
 
 # Then push manually
 git push origin main
@@ -198,7 +198,7 @@ git push origin main
 
 ```bash
 # Create backup (includes git bundles)
-ppnpm run backup
+pnpm run backup
 
 # Git bundles can be pushed to GitHub
 git bundle verify backups/*.bundle
@@ -331,7 +331,7 @@ node tools/nested-git-updater.mjs
 4. Or use auto-push tool → `node tools/auto-push-changes.mjs`
 
 **Recommendation:**
-- Use `ppnpm run save` to commit locally automatically
+- Use `pnpm run save` to commit locally automatically
 - Review changes before pushing
 - Push manually: `git push origin main`
 - Or enable auto-push tools for automation

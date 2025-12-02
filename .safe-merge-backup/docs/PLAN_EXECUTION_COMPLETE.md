@@ -112,9 +112,9 @@ All planned improvements have been successfully implemented and tested. The cont
    - Enhanced reporting
 
 ### New Scripts
-- `ppnpm run cleanup:state` - Manual state cleanup
-- `ppnpm run read:cross-repo` - Read vision across repos
-- `ppnpm run integrate:vision` - Integrate vision findings
+- `pppnpm run cleanup:state` - Manual state cleanup
+- `pppnpm run read:cross-repo` - Read vision across repos
+- `pppnpm run integrate:vision` - Integrate vision findings
 
 ## Testing Results
 

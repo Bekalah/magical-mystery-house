@@ -451,12 +451,12 @@ class ComprehensivePackageDebugger {
       };
 
       // Check for npm (should be pnpm)
-      if (fs.existsSync(path.join(pkgPath, 'package-lock.json'))) {
+      if (fs.existsSync(path.join(pkgPath, 'pnpm-lock.yaml'))) {
         issues.push({
           type: 'dependency',
           severity: 'warning',
-          issue: 'package-lock.json found (npm), should use pnpm',
-          fix: 'Delete package-lock.json and use pnpm'
+          issue: 'pnpm-lock.yaml found (npm), should use pnpm',
+          fix: 'Delete pnpm-lock.yaml and use pnpm'
         });
       }
 

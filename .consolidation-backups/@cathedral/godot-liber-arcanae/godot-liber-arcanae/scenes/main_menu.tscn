@@ -1,0 +1,68 @@
+[gd_scene load_steps=3 format=3 uid="uid://main_menu"]
+
+[ext_resource type="Script" path="res://scripts/main_menu_handler.gd" id="1_handler"]
+[ext_resource type="Script" path="res://scripts/character_selector.gd" id="2_selector"]
+
+[node name="MainMenu" type="Control"]
+layout_mode=3
+anchors_preset=15
+anchor_right=1.0
+anchor_bottom=1.0
+grow_horizontal=2
+grow_vertical=2
+script = ExtResource("1_handler")
+
+[node name="CharacterSelector" type="Control" parent="."]
+layout_mode=1
+anchors_preset=15
+anchor_right=1.0
+anchor_bottom=1.0
+grow_horizontal=2
+grow_vertical=2
+script = ExtResource("2_selector")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CharacterSelector"]
+layout_mode=1
+anchors_preset=15
+anchor_right=1.0
+anchor_bottom=1.0
+grow_horizontal=2
+grow_vertical=2
+
+[node name="TitleLabel" type="Label" parent="CharacterSelector/VBoxContainer"]
+layout_mode=2
+text="Liber Arcanae - 22 Major Arcana"
+horizontal_alignment=1
+vertical_alignment=1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CharacterSelector/VBoxContainer"]
+layout_mode=2
+size_flags_vertical=3
+
+[node name="CharacterGrid" type="GridContainer" parent="CharacterSelector/VBoxContainer/ScrollContainer"]
+layout_mode=2
+columns=4
+
+[node name="CharacterInfo" type="VBoxContainer" parent="CharacterSelector/VBoxContainer"]
+layout_mode=2
+
+[node name="NameLabel" type="Label" parent="CharacterSelector/VBoxContainer/CharacterInfo"]
+layout_mode=2
+text="Select a Character"
+horizontal_alignment=1
+
+[node name="DescriptionLabel" type="RichTextLabel" parent="CharacterSelector/VBoxContainer/CharacterInfo"]
+layout_mode=2
+size_flags_vertical=3
+bbcode_enabled=true
+
+[node name="AbilitiesList" type="ItemList" parent="CharacterSelector/VBoxContainer/CharacterInfo"]
+layout_mode=2
+size_flags_vertical=3
+
+[node name="SelectButton" type="Button" parent="CharacterSelector/VBoxContainer/CharacterInfo"]
+layout_mode=2
+text="Select Character"
+disabled=true
+
+[connection signal="character_selected" from="CharacterSelector" to="." method="_on_character_selected"]

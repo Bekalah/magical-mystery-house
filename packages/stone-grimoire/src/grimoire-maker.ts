@@ -159,9 +159,132 @@ export interface GrimoireTemplate {
 export class GrimoireMaker {
   private grimoires: Map<string, Grimoire> = new Map();
   private templates: Map<string, GrimoireTemplate> = new Map();
+  
+  // Alchemical tarot mapping
+  private readonly tarotToAlchemical: Record<string, string> = {
+    'wands': 'Sulfur',
+    'cups': 'Mercury',
+    'swords': 'Salt',
+    'pentacles': 'Ash',
+    'disks': 'Ash'
+  };
 
   constructor() {
     this.initializeTemplates();
+  }
+  
+  /**
+   * Import a book and convert to grimoire
+   */
+  async importBook(
+    bookPath: string,
+    title?: string,
+    author?: string
+  ): Promise<Grimoire> {
+    // This would use the dynamic-grimoire-importer functionality
+    // For now, create a basic structure
+    const bookName = title || `Imported Book ${Date.now()}`;
+    
+    const grimoire: Grimoire = {
+      id: `grimoire-imported-${Date.now()}`,
+      title: bookName,
+      author: author || 'Imported',
+      created: new Date(),
+      updated: new Date(),
+      pages: this.createDynamicPagesFromBook(bookPath),
+      cover: {
+        design: 'elaborate',
+        color: '#8B4513',
+        title: bookName
+      },
+      theme: {
+        color: '#8B4513',
+        typography: 'Garamond',
+        style: 'gothic'
+      },
+      metadata: {
+        correspondences: {
+          tarot: [],
+          codexNodes: [],
+          chapels: []
+        },
+        tags: ['imported', 'dynamic'],
+        category: 'imported-grimoire'
+      }
+    };
+    
+    this.grimoires.set(grimoire.id, grimoire);
+    return grimoire;
+  }
+  
+  /**
+   * Create dynamic pages from imported book
+   */
+  private createDynamicPagesFromBook(bookPath: string): GrimoirePage[] {
+    // This would parse the book and create pages
+    // For now, return empty pages array
+    return [];
+  }
+  
+  /**
+   * Map spell to alchemical element
+   */
+  mapToAlchemicalElement(tarotSuit: string): string {
+    return this.tarotToAlchemical[tarotSuit.toLowerCase()] || 'Unknown';
+  }
+  
+  /**
+   * Create dynamic interactive page
+   */
+  createDynamicPage(
+    grimoireId: string,
+    pageConfig: {
+      layout: GrimoirePage['layout'];
+      content: Partial<GrimoirePage['content']>;
+      interactive?: boolean;
+    }
+  ): GrimoirePage {
+    const grimoire = this.grimoires.get(grimoireId);
+    if (!grimoire) {
+      throw new Error(`Grimoire ${grimoireId} not found`);
+    }
+    
+    const pageNumber = grimoire.pages.length + 1;
+    const page: GrimoirePage = {
+      id: `page-${grimoireId}-${pageNumber}`,
+      pageNumber,
+      layout: pageConfig.layout,
+      content: {
+        text: pageConfig.content.text,
+        title: pageConfig.content.title,
+        illustration: pageConfig.content.illustration,
+        diagram: pageConfig.content.diagram,
+        correspondences: pageConfig.content.correspondences
+      },
+      style: {
+        font: grimoire.theme.typography,
+        fontSize: 12,
+        color: '#000000',
+        background: '#FFFFFF'
+      }
+    };
+    
+    // Add alchemical mapping if correspondences include tarot
+    if (page.content.correspondences?.tarot && page.content.correspondences.tarot.length > 0) {
+      const tarotSuit = page.content.correspondences.tarot[0];
+      const alchemicalElement = this.mapToAlchemicalElement(tarotSuit);
+      if (!page.content.correspondences.elements) {
+        page.content.correspondences.elements = [];
+      }
+      if (!page.content.correspondences.elements.includes(alchemicalElement)) {
+        page.content.correspondences.elements.push(alchemicalElement);
+      }
+    }
+    
+    grimoire.pages.push(page);
+    grimoire.updated = new Date();
+    
+    return page;
   }
 
   /**

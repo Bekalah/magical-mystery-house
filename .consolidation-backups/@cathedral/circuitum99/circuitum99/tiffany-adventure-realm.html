@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨🏛️ Tiffany Adventure Realm - Iridescent Discovery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --tiffany-blue: #0abab5;
+            --tiffany-gold: #ffd700;
+            --iridescent-purple: #9333ea;
+            --sparkle-silver: #e2e8f0;
+            --mansion-stone: #a0956b;
+            --laser-light: #ff006e;
+            --glass-clear: rgba(255, 255, 255, 0.1);
+            --adventure-green: #10b981;
+            --discovery-gold: #f59e0b;
+            --fusion-pink: #ec4899;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: radial-gradient(ellipse at center,
+                var(--mansion-stone) 0%,
+                var(--tiffany-blue) 50%,
+                var(--iridescent-purple) 100%);
+            color: var(--sparkle-silver);
+            font-family: 'Cormorant Garamond', serif;
+            overflow: hidden;
+            height: 100vh;
+            cursor: grab;
+        }
+
+        .adventure-interface {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(135deg,
+                rgba(10, 186, 181, 0.9) 0%,
+                rgba(147, 51, 234, 0.9) 100%);
+            backdrop-filter: blur(15px);
+            border-bottom: 3px solid var(--tiffany-gold);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+            z-index: 1000;
+        }
+
+        .realm-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2em;
+            color: var(--tiffany-gold);
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+        }
+
+        .adventure-stats {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid var(--sparkle-silver);
+            border-radius: 15px;
+            padding: 8px 15px;
+            color: var(--sparkle-silver);
+            font-size: 0.9em;
+            backdrop-filter: blur(5px);
+        }
+
+        .discovery-counter {
+            color: var(--discovery-gold);
+            font-weight: bold;
+        }
+
+        .adventure-controls {
+            display: flex;
+            gap: 15px;
+        }
+
+        .control-btn {
+            padding: 10px 20px;
+            border: 2px solid var(--tiffany-gold);
+            border-radius: 25px;
+            background: transparent;
+            color: var(--sparkle-silver);
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .control-btn:hover {
+            background: var(--tiffany-gold);
+            color: var(--tiffany-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .adventure-world {
+            position: fixed;
+            top: 100px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            perspective: 1200px;
+            transform-style: preserve-3d;
+        }
+
+        .mansion-foundation {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.5s ease-out;
+        }
+
+        .architectural-element {
+            position: absolute;
+            background: linear-gradient(135deg,
+                var(--mansion-stone) 0%,
+                var(--tiffany-blue) 50%,
+                var(--iridescent-purple) 100%);
+            border: 3px solid var(--tiffany-gold);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .architectural-element:hover {
+            transform: scale(1.1) rotateY(5deg);
+            box-shadow: 0 20px 50px rgba(255, 215, 0, 0.3);
+        }
+
+        .foundation-base {
+            width: 600px;
+            height: 100px;
+            left: 50%;
+            top: 70%;
+            margin-left: -300px;
+            margin-top: -50px;
+        }
+
+        .archway {
+            width: 200px;
+            height: 300px;
+            left: 20%;
+            top: 30%;
+            border-radius: 100px 100px 50px 50px;
+        }
+
+        .sparkly-tree {
+            width: 150px;
+            height: 200px;
+            right: 15%;
+            top: 20%;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        }
+
+        .tiffany-window {
+            width: 120px;
+            height: 180px;
+            left: 70%;
+            top: 25%;
+            border-radius: 60px 60px 20px 20px;
+            background: linear-gradient(45deg,
+                var(--tiffany-blue) 0%,
+                var(--iridescent-purple) 30%,
+                var(--laser-light) 60%,
+                var(--tiffany-gold) 100%);
+            animation: iridescentShimmer 4s ease-in-out infinite;
+        }
+
+        @keyframes iridescentShimmer {
+            0%, 100% { opacity: 0.8; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        .discovery-sparkle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, var(--discovery-gold) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: sparkleFloat 3s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes sparkleFloat {
+            0%, 100% { transform: translateY(0px) scale(1); opacity: 0.7; }
+            50% { transform: translateY(-20px) scale(1.2); opacity: 1; }
+        }
+
+        .fusion-kink-zone {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            left: 40%;
+            top: 50%;
+            background: radial-gradient(circle,
+                var(--fusion-pink) 0%,
+                var(--tiffany-blue) 50%,
+                transparent 80%);
+            border: 3px solid var(--laser-light);
+            border-radius: 50%;
+            animation: fusionPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes fusionPulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 30px rgba(236, 72, 153, 0.5);
+            }
+            50% {
+                transform: scale(1.1);
+                box-shadow: 0 0 50px rgba(236, 72, 153, 0.8);
+            }
+        }
+
+        .node-texture-orb {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg,
+                var(--tiffany-blue) 0%,
+                var(--iridescent-purple) 50%,
+                var(--laser-light) 100%);
+            border: 2px solid var(--tiffany-gold);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            color: var(--sparkle-silver);
+            animation: textureFloat 4s ease-in-out infinite;
+        }
+
+        .node-texture-orb:hover {
+            transform: scale(1.3);
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.6);
+        }
+
+        @keyframes textureFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-10px) rotate(120deg); }
+            66% { transform: translateY(5px) rotate(240deg); }
+        }
+
+        .adventure-path {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: 1px solid var(--tiffany-gold);
+        }
+
+        .path-node {
+            width: 40px;
+            height: 40px;
+            border: 2px solid var(--tiffany-gold);
+            border-radius: 50%;
+            background: var(--mansion-stone);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            color: var(--sparkle-silver);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .path-node.discovered {
+            background: var(--discovery-gold);
+            color: var(--tiffany-blue);
+            animation: discoveryGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes discoveryGlow {
+            0%, 100% { box-shadow: 0 0 10px var(--discovery-gold); }
+            50% { box-shadow: 0 0 20px var(--discovery-gold); }
+        }
+
+        .social-connection-hub {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 200px;
+            height: 150px;
+            background: linear-gradient(135deg,
+                var(--fusion-pink) 0%,
+                var(--tiffany-blue) 100%);
+            border: 3px solid var(--tiffany-gold);
+            border-radius: 20px;
+            padding: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hub-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1em;
+            color: var(--sparkle-silver);
+            margin-bottom: 10px;
+        }
+
+        .connection-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .connection-btn {
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid var(--sparkle-silver);
+            border-radius: 10px;
+            color: var(--sparkle-silver);
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .connection-btn:hover {
+            background: var(--discovery-gold);
+            color: var(--tiffany-blue);
+        }
+
+        .discovery-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .discovery-content {
+            background: linear-gradient(135deg,
+                var(--tiffany-blue) 0%,
+                var(--iridescent-purple) 100%);
+            padding: 40px;
+            border-radius: 30px;
+            border: 5px solid var(--tiffany-gold);
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .discovery-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2em;
+            color: var(--tiffany-gold);
+            margin-bottom: 20px;
+        }
+
+        .discovery-description {
+            color: var(--sparkle-silver);
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .discovery-rewards {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .reward-item {
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid var(--discovery-gold);
+            border-radius: 15px;
+            padding: 10px 15px;
+            color: var(--sparkle-silver);
+            font-size: 0.9em;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .modal-btn {
+            padding: 12px 25px;
+            border: 2px solid var(--tiffany-gold);
+            border-radius: 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .modal-btn.primary {
+            background: var(--tiffany-gold);
+            color: var(--tiffany-blue);
+        }
+
+        .modal-btn.primary:hover {
+            background: var(--discovery-gold);
+            transform: translateY(-2px);
+        }
+
+        .modal-btn.secondary {
+            background: transparent;
+            color: var(--sparkle-silver);
+        }
+
+        .modal-btn.secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .laser-light-show {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .laser-beam {
+            position: absolute;
+            width: 4px;
+            background: linear-gradient(to bottom,
+                var(--laser-light) 0%,
+                var(--tiffany-blue) 50%,
+                transparent 100%);
+            animation: laserSweep 6s ease-in-out infinite;
+            border-radius: 2px;
+        }
+
+        @keyframes laserSweep {
+            0% { opacity: 0; transform: translateY(-100px) rotate(0deg); }
+            20% { opacity: 1; transform: translateY(200px) rotate(45deg); }
+            40% { opacity: 0.7; transform: translateY(400px) rotate(90deg); }
+            60% { opacity: 0.5; transform: translateY(600px) rotate(135deg); }
+            80% { opacity: 0.3; transform: translateY(800px) rotate(180deg); }
+            100% { opacity: 0; transform: translateY(900px) rotate(225deg); }
+        }
+
+        .floating-tiffany {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg,
+                var(--tiffany-blue) 0%,
+                var(--iridescent-purple) 50%,
+                var(--laser-light) 100%);
+            border: 2px solid var(--tiffany-gold);
+            border-radius: 50%;
+            animation: tiffanyFloat 8s ease-in-out infinite;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .floating-tiffany:hover {
+            transform: scale(1.5);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+        }
+
+        @keyframes tiffanyFloat {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-30px) rotate(90deg); }
+            50% { transform: translateY(-60px) rotate(180deg); }
+            75% { transform: translateY(-30px) rotate(270deg); }
+        }
+
+        .texture-palette {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 300px;
+            height: 120px;
+            background: linear-gradient(135deg,
+                var(--mansion-stone) 0%,
+                var(--tiffany-blue) 100%);
+            border: 3px solid var(--tiffany-gold);
+            border-radius: 20px;
+            padding: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .palette-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.1em;
+            color: var(--tiffany-gold);
+            margin-bottom: 10px;
+        }
+
+        .texture-swatches {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .texture-swatch {
+            width: 50px;
+            height: 50px;
+            border: 2px solid var(--sparkle-silver);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .texture-swatch:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+
+        .texture-swatch.iridescent {
+            background: linear-gradient(135deg,
+                var(--tiffany-blue) 0%,
+                var(--iridescent-purple) 50%,
+                var(--laser-light) 100%);
+        }
+
+        .texture-swatch.glassy {
+            background: linear-gradient(135deg,
+                rgba(255, 255, 255, 0.3) 0%,
+                rgba(147, 51, 234, 0.2) 50%,
+                rgba(10, 186, 181, 0.3) 100%);
+            backdrop-filter: blur(5px);
+        }
+
+        .texture-swatch.jewelry {
+            background: radial-gradient(circle,
+                var(--tiffany-gold) 0%,
+                var(--iridescent-purple) 50%,
+                var(--mansion-stone) 100%);
+        }
+
+        .texture-swatch.sparkly {
+            background: radial-gradient(circle,
+                var(--discovery-gold) 0%,
+                var(--laser-light) 50%,
+                var(--tiffany-blue) 100%);
+            animation: sparklePulse 2s ease-in-out infinite;
+        }
+
+        @keyframes sparklePulse {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; transform: scale(1.1); }
+        }
+
+        .adhd-helper {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            width: 150px;
+            height: 200px;
+            background: linear-gradient(135deg,
+                var(--adventure-green) 0%,
+                var(--discovery-gold) 100%);
+            border: 3px solid var(--tiffany-gold);
+            border-radius: 20px;
+            padding: 15px;
+            backdrop-filter: blur(10px);
+            transform: translateY(-50%);
+        }
+
+        .helper-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1em;
+            color: var(--sparkle-silver);
+            margin-bottom: 10px;
+        }
+
+        .focus-tools {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .focus-btn {
+            padding: 6px 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid var(--sparkle-silver);
+            border-radius: 10px;
+            color: var(--sparkle-silver);
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .focus-btn:hover {
+            background: var(--tiffany-gold);
+            color: var(--tiffany-blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="adventure-interface">
+        <div class="realm-title">✨🏛️ Tiffany Adventure Realm</div>
+        <div class="adventure-stats">
+            <div class="stat-item">
+                <span class="discovery-counter">⭐ Discoveries: 0</span>
+            </div>
+            <div class="stat-item">
+                <span>Fusion Level: 🌸 Beginner</span>
+            </div>
+            <div class="stat-item">
+                <span>Social Connections: 🤝 0</span>
+            </div>
+        </div>
+        <div class="adventure-controls">
+            <div class="control-btn" id="respawn-btn">🛟 Respawn</div>
+            <div class="control-btn" id="fusion-mode">🌸 Fusion Kink</div>
+            <div class="control-btn" id="social-hub">🤝 Connect</div>
+        </div>
+    </div>
+
+    <div class="adventure-world">
+        <div class="mansion-foundation" id="mansion-foundation">
+            <!-- Foundation Base -->
+            <div class="architectural-element foundation-base" onclick="discoverElement('foundation')">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.5em;">🏛️</div>
+            </div>
+
+            <!-- Archway Portal -->
+            <div class="architectural-element archway" onclick="discoverElement('archway')">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 2em;">🌀</div>
+            </div>
+
+            <!-- Sparkly Tree -->
+            <div class="architectural-element sparkly-tree" onclick="discoverElement('sparkly_tree')">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.8em;">🌳</div>
+                <div class="discovery-sparkle" style="top: 20%; left: 30%;"></div>
+                <div class="discovery-sparkle" style="top: 60%; right: 20%; animation-delay: 1s;"></div>
+                <div class="discovery-sparkle" style="bottom: 30%; left: 60%; animation-delay: 2s;"></div>
+            </div>
+
+            <!-- Tiffany Window -->
+            <div class="architectural-element tiffany-window" onclick="discoverElement('tiffany_window')">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.5em;">💎</div>
+            </div>
+
+            <!-- Fusion Kink Zone -->
+            <div class="fusion-kink-zone" onclick="enterFusionKinkZone()">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 2em;">🌸</div>
+            </div>
+
+            <!-- Iridescent Texture Nodes -->
+            <div class="node-texture-orb" style="top: 15%; left: 25%;" onclick="applyTexture('iridescent')">🌈</div>
+            <div class="node-texture-orb" style="top: 45%; right: 30%;" onclick="applyTexture('glassy')">💠</div>
+            <div class="node-texture-orb" style="bottom: 25%; left: 15%;" onclick="applyTexture('jewelry')">💍</div>
+            <div class="node-texture-orb" style="bottom: 35%; right: 15%;" onclick="applyTexture('sparkly')">✨</div>
+
+            <!-- Floating Tiffany Orbs -->
+            <div class="floating-tiffany" style="top: 20%; left: 80%;" onclick="discoverTiffany('floating_orb_1')"></div>
+            <div class="floating-tiffany" style="top: 70%; right: 25%;" onclick="discoverTiffany('floating_orb_2')"></div>
+            <div class="floating-tiffany" style="top: 40%; left: 10%;" onclick="discoverTiffany('floating_orb_3')"></div>
+        </div>
+    </div>
+
+    <!-- Laser Light Show -->
+    <div class="laser-light-show">
+        <div class="laser-beam" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="laser-beam" style="left: 30%; animation-delay: 1s;"></div>
+        <div class="laser-beam" style="left: 50%; animation-delay: 2s;"></div>
+        <div class="laser-beam" style="left: 70%; animation-delay: 3s;"></div>
+        <div class="laser-beam" style="left: 90%; animation-delay: 4s;"></div>
+    </div>
+
+    <!-- Adventure Path -->
+    <div class="adventure-path">
+        <div class="path-node discovered" onclick="explorePath('start')">🌟</div>
+        <div class="path-node" onclick="explorePath('foundation')">🏛️</div>
+        <div class="path-node" onclick="explorePath('archway')">🌀</div>
+        <div class="path-node" onclick="explorePath('tree')">🌳</div>
+        <div class="path-node" onclick="explorePath('tiffany')">💎</div>
+        <div class="path-node" onclick="explorePath('fusion')">🌸</div>
+        <div class="path-node" onclick="explorePath('social')">🤝</div>
+    </div>
+
+    <!-- Social Connection Hub -->
+    <div class="social-connection-hub">
+        <div class="hub-title">🤝 Connection Altar</div>
+        <div class="connection-options">
+            <div class="connection-btn" onclick="shareDiscovery()">Share Discovery</div>
+            <div class="connection-btn" onclick="inviteCollaborator()">Invite Friend</div>
+            <div class="connection-btn" onclick="joinCommunity()">Join Circle</div>
+            <div class="connection-btn" onclick="showCreations()">View Gallery</div>
+        </div>
+    </div>
+
+    <!-- Texture Palette -->
+    <div class="texture-palette">
+        <div class="palette-title">💎 Tiffany Textures</div>
+        <div class="texture-swatches">
+            <div class="texture-swatch iridescent" onclick="applyTexture('iridescent')" title="Iridescent Glass"></div>
+            <div class="texture-swatch glassy" onclick="applyTexture('glassy')" title="Fine Glassware"></div>
+            <div class="texture-swatch jewelry" onclick="applyTexture('jewelry')" title="Expensive Jewelry"></div>
+            <div class="texture-swatch sparkly" onclick="applyTexture('sparkly')" title="Sparkly Lights"></div>
+        </div>
+    </div>
+
+    <!-- ADHD Helper -->
+    <div class="adhd-helper">
+        <div class="helper-title">🎯 Focus Magic</div>
+        <div class="focus-tools">
+            <div class="focus-btn" onclick="quickFocus()">⚡ Quick Burst</div>
+            <div class="focus-btn" onclick="explorationMode()">🗺️ Explore Mode</div>
+            <div class="focus-btn" onclick="fusionPlay()">🌸 Fusion Fun</div>
+            <div class="focus-btn" onclick="socialConnect()">🤝 Connect Time</div>
+        </div>
+    </div>
+
+    <script>
+        class TiffanyAdventureRealm {
+            constructor() {
+                this.discoveries = 0;
+                this.fusionLevel = 'Beginner';
+                this.socialConnections = 0;
+                this.currentTexture = 'iridescent';
+                this.isDragging = false;
+                this.mouseX = 0;
+                this.mouseY = 0;
+                this.worldRotationX = 0;
+                this.worldRotationY = 0;
+
+                this.discoveredElements = new Set();
+                this.tiffanyTreasures = new Set();
+
+                this.init();
+            }
+
+            init() {
+                this.setupEventListeners();
+                this.startLaserShow();
+                this.createFloatingSparkles();
+                this.updateStats();
+            }
+
+            setupEventListeners() {
+                const foundation = document.getElementById('mansion-foundation');
+
+                // Mouse controls for exploration
+                document.addEventListener('mousedown', (e) => {
+                    this.isDragging = true;
+                    this.mouseX = e.clientX;
+                    this.mouseY = e.clientY;
+                });
+
+                document.addEventListener('mousemove', (e) => {
+                    if (!this.isDragging) return;
+
+                    const deltaX = e.clientX - this.mouseX;
+                    const deltaY = e.clientY - this.mouseY;
+
+                    this.worldRotationY += deltaX * 0.3;
+                    this.worldRotationX -= deltaY * 0.3;
+
+                    // Limit vertical rotation
+                    this.worldRotationX = Math.max(-20, Math.min(20, this.worldRotationX));
+
+                    foundation.style.transform = `rotateX(${this.worldRotationX}deg) rotateY(${this.worldRotationY}deg)`;
+
+                    this.mouseX = e.clientX;
+                    this.mouseY = e.clientY;
+                });
+
+                document.addEventListener('mouseup', () => {
+                    this.isDragging = false;
+                });
+
+                // Control buttons
+                document.getElementById('respawn-btn').addEventListener('click', () => {
+                    this.respawn();
+                });
+
+                document.getElementById('fusion-mode').addEventListener('click', () => {
+                    this.toggleFusionMode();
+                });
+
+                document.getElementById('social-hub').addEventListener('click', () => {
+                    this.openSocialHub();
+                });
+            }
+
+            discoverElement(elementType) {
+                if (this.discoveredElements.has(elementType)) {
+                    this.showRediscoveryMessage(elementType);
+                    return;
+                }
+
+                this.discoveredElements.add(elementType);
+                this.discoveries++;
+
+                // Add sparkle effect
+                this.createDiscoverySparkle(elementType);
+
+                // Show discovery modal
+                this.showDiscoveryModal(elementType);
+
+                this.updateStats();
+            }
+
+            discoverTiffany(tiffanyId) {
+                if (this.tiffanyTreasures.has(tiffanyId)) {
+                    this.showTiffanyRediscovery(tiffanyId);
+                    return;
+                }
+
+                this.tiffanyTreasures.add(tiffanyId);
+                this.showTiffanyDiscovery(tiffanyId);
+            }
+
+            showDiscoveryModal(elementType) {
+                const discoveries = {
+                    foundation: {
+                        title: "🏛️ Mansion Foundation Discovered!",
+                        description: "You've found the beautiful stone foundation that supports the entire adventure realm. Like the mansion you visited, this foundation provides stability for creative exploration.",
+                        rewards: ["🏗️ Foundation Node", "🏛️ Architecture Guide", "💎 Stability Badge"]
+                    },
+                    archway: {
+                        title: "🌀 Mystical Archway Portal!",
+                        description: "An elegant archway that connects different realms of creativity. Step through to discover new artistic possibilities and hidden pathways.",
+                        rewards: ["🌀 Portal Access", "🗝️ Gateway Key", "✨ Passage Badge"]
+                    },
+                    sparkly_tree: {
+                        title: "🌳 Sparkly Light Tree!",
+                        description: "A tree adorned with magical lights, just like the laser show at the mansion! Each light represents a creative possibility waiting to be discovered.",
+                        rewards: ["🌟 Light Node", "✨ Sparkle Guide", "💫 Illumination Badge"]
+                    },
+                    tiffany_window: {
+                        title: "💎 Tiffany Glass Window!",
+                        description: "Authentic Tiffany-style iridescent glass that changes color as you move. This represents the beautiful, expensive glassware and jewelry from the mansion collection.",
+                        rewards: ["💎 Glass Node", "🌈 Iridescent Guide", "💍 Jewelry Badge"]
+                    }
+                };
+
+                const discovery = discoveries[elementType];
+                if (!discovery) return;
+
+                const modal = document.createElement('div');
+                modal.className = 'discovery-modal';
+                modal.innerHTML = `
+                    <div class="discovery-content">
+                        <div class="discovery-title">${discovery.title}</div>
+                        <div class="discovery-description">${discovery.description}</div>
+                        <div class="discovery-rewards">
+                            ${discovery.rewards.map(reward => `<div class="reward-item">${reward}</div>`).join('')}
+                        </div>
+                        <div class="modal-buttons">
+                            <button class="modal-btn primary" onclick="window.tiffanyAdventure.addToCollection('${elementType}')">Add to Collection</button>
+                            <button class="modal-btn secondary" onclick="this.parentElement.parentElement.remove()">Continue Exploring</button>
+                        </div>
+                    </div>
+                `;
+
+                document.body.appendChild(modal);
+
+                // Auto-remove after 10 seconds
+                setTimeout(() => {
+                    if (modal.parentNode) {
+                        modal.remove();
+                    }
+                }, 10000);
+            }
+
+            addToCollection(elementType) {
+                document.querySelector('.discovery-modal').remove();
+
+                // Add to texture palette or node collection
+                this.addTextureNode(elementType);
+                this.showCollectionMessage(elementType);
+            }
+
+            addTextureNode(elementType) {
+                const texturePalette = document.querySelector('.texture-swatches');
+                const nodeTexture = document.createElement('div');
+                nodeTexture.className = `texture-swatch ${elementType}`;
+                nodeTexture.onclick = () => this.applyTexture(elementType);
+                nodeTexture.title = `${elementType} texture from discovery`;
+
+                texturePalette.appendChild(nodeTexture);
+            }
+
+            showCollectionMessage(elementType) {
+                const message = document.createElement('div');
+                message.style.cssText = `
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: linear-gradient(135deg, var(--tiffany-gold), var(--iridescent-purple));
+                    color: var(--sparkle-silver);
+                    padding: 20px 30px;
+                    border-radius: 20px;
+                    border: 3px solid var(--tiffany-gold);
+                    font-size: 1.2em;
+                    z-index: 3000;
+                    animation: collectionGlow 2s ease-in-out;
+                `;
+
+                message.innerHTML = `
+                    ✨ Added to your Creative Collection!<br>
+                    <small>Available in texture palette for art creation</small>
+                `;
+
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes collectionGlow {
+                        0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0; }
+                        50% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+                        100% { transform: translate(-50%, -50%) scale(1); opacity: 0.8; }
+                    }
+                `;
+                document.head.appendChild(style);
+                document.body.appendChild(message);
+
+                setTimeout(() => {
+                    message.remove();
+                    style.remove();
+                }, 3000);
+            }
+
+            applyTexture(textureType) {
+                this.currentTexture = textureType;
+
+                // Apply visual feedback to canvas/container
+                const foundation = document.getElementById('mansion-foundation');
+                foundation.style.filter = this.getTextureFilter(textureType);
+
+                this.showTextureMessage(textureType);
+            }
+
+            getTextureFilter(textureType) {
+                const filters = {
+                    iridescent: 'hue-rotate(45deg) saturate(1.5)',
+                    glassy: 'blur(0.5px) opacity(0.9)',
+                    jewelry: 'contrast(1.2) brightness(1.1)',
+                    sparkly: 'drop-shadow(0 0 10px gold)'
+                };
+                return filters[textureType] || 'none';
+            }
+
+            showTextureMessage(textureType) {
+                const messages = {
+                    iridescent: "🌈 Iridescent texture applied! Your creations now shimmer like Tiffany glass.",
+                    glassy: "💠 Glassy texture applied! Clean, clear, and elegantly transparent.",
+                    jewelry: "💍 Jewelry texture applied! Rich, luxurious, and finely crafted.",
+                    sparkly: "✨ Sparkly texture applied! Magical lights dance across your work."
+                };
+
+                this.showFloatingMessage(messages[textureType] || "✨ Beautiful texture applied!");
+            }
+
+            showFloatingMessage(message) {
+                const floatingMsg = document.createElement('div');
+                floatingMsg.style.cssText = `
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: rgba(0, 0, 0, 0.8);
+                    color: var(--tiffany-gold);
+                    padding: 15px 25px;
+                    border-radius: 15px;
+                    border: 2px solid var(--tiffany-gold);
+                    font-size: 1.1em;
+                    z-index: 2500;
+                    animation: floatUp 3s ease-out forwards;
+                    pointer-events: none;
+                `;
+
+                floatingMsg.textContent = message;
+
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes floatUp {
+                        0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+                        100% { transform: translate(-50%, -150%) scale(0.8); opacity: 0; }
+                    }
+                `;
+                document.head.appendChild(style);
+                document.body.appendChild(floatingMsg);
+
+                setTimeout(() => {
+                    floatingMsg.remove();
+                    style.remove();
+                }, 3000);
+            }
+
+            enterFusionKinkZone() {
+                const fusionModal = document.createElement('div');
+                fusionModal.className = 'discovery-modal';
+                fusionModal.innerHTML = `
+                    <div class="discovery-content">
+                        <div class="discovery-title">🌸 Fusion Kink Zone</div>
+                        <div class="discovery-description">
+                            Welcome to the sacred space where art meets science meets psychology!<br><br>
+                            Here you can blend different disciplines, textures, and ideas into beautiful new creations.
+                            Perfect for ADHD exploration - try combining anything and see what emerges!
+                        </div>
+                        <div class="modal-buttons">
+                            <button class="modal-btn primary" onclick="window.tiffanyAdventure.startFusionSession()">Start Fusion</button>
+                            <button class="modal-btn secondary" onclick="this.parentElement.parentElement.remove()">Maybe Later</button>
+                        </div>
+                    </div>
+                `;
+
+                document.body.appendChild(fusionModal);
+            }
+
+            startFusionSession() {
+                document.querySelector('.discovery-modal').remove();
+
+                // Create fusion interface
+                this.createFusionInterface();
+                this.showFloatingMessage("🌸 Fusion session started! Combine any elements you discover.");
+            }
+
+            createFusionInterface() {
+                // This would create a special interface for blending art/science/psychology
+                // For now, show a message about the capability
+                this.showFloatingMessage("🔬🎨🧠 Fusion interface ready! Drag nodes together to create new combinations.");
+            }
+
+            createDiscoverySparkle(elementType) {
+                const element = document.querySelector(`[onclick*="${elementType}"]`);
+                if (!element) return;
+
+                const rect = element.getBoundingClientRect();
+                const sparkle = document.createElement('div');
+                sparkle.style.cssText = `
+                    position: fixed;
+                    left: ${rect.left + rect.width/2}px;
+                    top: ${rect.top + rect.height/2}px;
+                    width: 40px;
+                    height: 40px;
+                    background: radial-gradient(circle, var(--discovery-gold) 0%, transparent 70%);
+                    border-radius: 50%;
+                    pointer-events: none;
+                    z-index: 1500;
+                    animation: discoveryBurst 2s ease-out forwards;
+                `;
+
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes discoveryBurst {
+                        0% { transform: scale(0); opacity: 1; }
+                        50% { transform: scale(3); opacity: 0.8; }
+                        100% { transform: scale(5); opacity: 0; }
+                    }
+                `;
+                document.head.appendChild(style);
+                document.body.appendChild(sparkle);
+
+                setTimeout(() => {
+                    sparkle.remove();
+                    style.remove();
+                }, 2000);
+            }
+
+            startLaserShow() {
+                // Laser show is already running via CSS animations
+                // Add random color changes for variety
+                setInterval(() => {
+                    const lasers = document.querySelectorAll('.laser-beam');
+                    lasers.forEach(laser => {
+                        const colors = ['#ff006e', '#0abab5', '#9333ea', '#ffd700'];
+                        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                        laser.style.background = `linear-gradient(to bottom, ${randomColor} 0%, var(--tiffany-blue) 50%, transparent 100%)`;
+                    });
+                }, 3000);
+            }
+
+            createFloatingSparkles() {
+                // Add random sparkles throughout the scene
+                setInterval(() => {
+                    if (Math.random() < 0.3) { // 30% chance every interval
+                        const sparkle = document.createElement('div');
+                        sparkle.className = 'discovery-sparkle';
+                        sparkle.style.left = Math.random() * 80 + 10 + '%';
+                        sparkle.style.top = Math.random() * 70 + 10 + '%';
+                        sparkle.style.animationDelay = Math.random() * 3 + 's';
+
+                        document.getElementById('mansion-foundation').appendChild(sparkle);
+
+                        // Remove after animation
+                        setTimeout(() => {
+                            if (sparkle.parentNode) {
+                                sparkle.remove();
+                            }
+                        }, 5000);
+                    }
+                }, 2000);
+            }
+
+            updateStats() {
+                document.querySelector('.discovery-counter').textContent = `⭐ Discoveries: ${this.discoveries}`;
+                document.querySelector('.adventure-stats .stat-item:nth-child(2) span').textContent = `Fusion Level: ${this.getFusionLevel()}`;
+                document.querySelector('.adventure-stats .stat-item:nth-child(3) span').textContent = `Social Connections: ${this.socialConnections}`;
+            }
+
+            getFusionLevel() {
+                if (this.discoveries >= 10) return '🌸 Master';
+                if (this.discoveries >= 7) return '🔥 Advanced';
+                if (this.discoveries >= 4) return '✨ Intermediate';
+                return '🌸 Beginner';
+            }
+
+            respawn() {
+                // Reset discoveries but keep knowledge
+                this.discoveredElements.clear();
+                this.tiffanyTreasures.clear();
+                this.discoveries = 0;
+
+                // Reset visual state
+                const foundation = document.getElementById('mansion-foundation');
+                foundation.style.transform = 'rotateX(0deg) rotateY(0deg)';
+                foundation.style.filter = 'none';
+
+                this.updateStats();
+                this.showFloatingMessage("🛟 Respawned! Fresh adventure awaits with all your knowledge intact.");
+            }
+
+            toggleFusionMode() {
+                const fusionZone = document.querySelector('.fusion-kink-zone');
+                const isActive = fusionZone.style.animationPlayState === 'running';
+
+                if (isActive) {
+                    fusionZone.style.animationPlayState = 'paused';
+                    this.showFloatingMessage("🌸 Fusion mode paused - regular exploration active");
+                } else {
+                    fusionZone.style.animationPlayState = 'running';
+                    this.showFloatingMessage("🌸 Fusion mode activated! Ready to blend art and science!");
+                }
+            }
+
+            openSocialHub() {
+                this.showFloatingMessage("🤝 Social hub opening! Connect with other creative adventurers.");
+            }
+
+            // ADHD-Friendly Helper Functions
+            quickFocus() {
+                this.showFloatingMessage("⚡ Quick focus burst activated! 5 minutes of intense creation.");
+                // Could implement pomodoro-style focus sessions
+            }
+
+            explorationMode() {
+                this.showFloatingMessage("🗺️ Exploration mode! Follow your curiosity freely.");
+                // Could highlight all clickable elements
+            }
+
+            fusionPlay() {
+                this.showFloatingMessage("🌸 Fusion play! Combine anything and see what happens!");
+                // Could enter a special fusion interface
+            }
+
+            socialConnect() {
+                this.showFloatingMessage("🤝 Connection time! Share your discoveries with others.");
+                // Could open social sharing interface
+            }
+        }
+
+        // Initialize when page loads
+        window.addEventListener('load', () => {
+            window.tiffanyAdventure = new TiffanyAdventureRealm();
+        });
+    </script>
+</body>
+</html>

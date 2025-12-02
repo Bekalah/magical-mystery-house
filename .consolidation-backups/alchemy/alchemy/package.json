@@ -1,0 +1,29 @@
+{
+  "name": "alchemy",
+  "version": "1.0.0",
+  "description": "Consolidated alchemy",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests\""
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-12-01T21:14:06.458Z",
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "license": "CC0-1.0",
+  "packageManager": "ppppnpm@10.23.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts",
+  "alchemical": {
+    "name": "Alchemy",
+    "symbol": "⊙",
+    "label": "⊙ Alchemy (alchemy)"
+  }
+}

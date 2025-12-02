@@ -42,12 +42,39 @@
     "open-source",
     "free"
   ],
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@10.23.0",
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:53.813Z",
+  "consolidatedAt": "2025-12-01T19:36:49.930Z",
   "alchemical": {
     "name": "Debug System",
     "symbol": "⊙",
     "label": "⊙ Debug System (@cathedral/debug-system-core)"
+  },
+  "cathedral": {
+    "sacred_mathematics": {
+      "sacredGeometry": true,
+      "goldenRatio": 1.618,
+      "cathedralRatio": 1.455,
+      "fibonacciGrids": true,
+      "divineProportions": true
+    },
+    "trauma_safety": {
+      "noAutoplay": true,
+      "escExit": true,
+      "motionControls": true,
+      "intensityAdjustment": true,
+      "gentleDefaults": true,
+      "undoRedo": true
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
+    },
+    "integration": {
+      "connects_to": []
+    }
   }
 }

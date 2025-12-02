@@ -1,0 +1,20 @@
+{
+  "name": "@bekalah/cathedral-worker",
+  "version": "1.0.0",
+  "description": "Cathedral of Circuits - Cloudflare Worker API",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --port 8787",
+    "deploy": "wrangler publish",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "hono": "^4.9.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "wrangler": "^3.78.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  }
+}

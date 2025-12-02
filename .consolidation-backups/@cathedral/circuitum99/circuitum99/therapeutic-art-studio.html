@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎨🏛️ Therapeutic Art Studio - Hilma af Klint Temple</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --temple-gold: #ffd700;
+            --sacred-white: #fff9e6;
+            --mystical-purple: #483d8b;
+            --wisdom-blue: #191970;
+            --creative-green: #50c878;
+            --passion-red: #e0115f;
+            --foundation-stone: #a0956b;
+            --safe-shadow: #2c1810;
+            --gentle-mist: rgba(160, 149, 107, 0.2);
+            --healing-light: rgba(80, 200, 120, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg,
+                var(--safe-shadow) 0%,
+                var(--foundation-stone) 50%,
+                var(--sacred-white) 100%);
+            color: var(--safe-shadow);
+            font-family: 'Cormorant Garamond', serif;
+            overflow: hidden;
+            height: 100vh;
+            cursor: default;
+        }
+
+        .temple-interface {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: var(--gentle-mist);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--temple-gold);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 1000;
+        }
+
+        .temple-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5em;
+            color: var(--temple-gold);
+        }
+
+        .circle-selector {
+            display: flex;
+            gap: 15px;
+        }
+
+        .circle-btn {
+            padding: 8px 16px;
+            border: 2px solid var(--temple-gold);
+            border-radius: 20px;
+            background: transparent;
+            color: var(--safe-shadow);
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .circle-btn.active {
+            background: var(--temple-gold);
+            color: var(--safe-shadow);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+
+        .teacher-consult {
+            padding: 8px 16px;
+            background: var(--mystical-purple);
+            border: 2px solid var(--temple-gold);
+            border-radius: 20px;
+            color: var(--sacred-white);
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .teacher-consult:hover {
+            background: var(--temple-gold);
+            color: var(--safe-shadow);
+        }
+
+        .main-studio {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+        }
+
+        .tools-panel {
+            width: 280px;
+            background: var(--gentle-mist);
+            backdrop-filter: blur(10px);
+            border-right: 2px solid var(--temple-gold);
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .tool-section {
+            margin-bottom: 25px;
+            background: rgba(255, 249, 230, 0.3);
+            border-radius: 15px;
+            padding: 15px;
+            border: 1px solid var(--temple-gold);
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.1em;
+            color: var(--temple-gold);
+            margin-bottom: 10px;
+        }
+
+        .tool-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .tool-btn {
+            padding: 10px;
+            background: var(--sacred-white);
+            border: 2px solid var(--foundation-stone);
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.8em;
+        }
+
+        .tool-btn:hover {
+            background: var(--temple-gold);
+            border-color: var(--temple-gold);
+            transform: translateY(-2px);
+        }
+
+        .tool-btn.active {
+            background: var(--creative-green);
+            border-color: var(--creative-green);
+            box-shadow: 0 0 15px rgba(80, 200, 120, 0.4);
+        }
+
+        .canvas-container {
+            flex: 1;
+            position: relative;
+            background: var(--sacred-white);
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .canvas-toolbar {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            height: 50px;
+            background: var(--gentle-mist);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            border: 1px solid var(--temple-gold);
+        }
+
+        .mode-toggle {
+            display: flex;
+            gap: 10px;
+        }
+
+        .mode-btn {
+            padding: 6px 12px;
+            border: 1px solid var(--temple-gold);
+            border-radius: 15px;
+            background: transparent;
+            color: var(--safe-shadow);
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .mode-btn.active {
+            background: var(--temple-gold);
+            color: var(--safe-shadow);
+        }
+
+        .canvas-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-btn {
+            padding: 6px 12px;
+            border: 1px solid var(--temple-gold);
+            border-radius: 15px;
+            background: var(--mystical-purple);
+            color: var(--sacred-white);
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .action-btn:hover {
+            background: var(--temple-gold);
+            color: var(--safe-shadow);
+        }
+
+        #drawing-canvas {
+            width: 100%;
+            height: 100%;
+            cursor: crosshair;
+        }
+
+        .teacher-guidance {
+            position: fixed;
+            bottom: 20px;
+            left: 300px;
+            right: 20px;
+            height: 120px;
+            background: var(--gentle-mist);
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--temple-gold);
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .teacher-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--mystical-purple), var(--temple-gold));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            color: var(--sacred-white);
+        }
+
+        .teacher-message {
+            flex: 1;
+            font-style: italic;
+            color: var(--safe-shadow);
+            line-height: 1.4;
+        }
+
+        .safety-indicator {
+            padding: 4px 8px;
+            background: var(--healing-light);
+            border-radius: 10px;
+            font-size: 0.7em;
+            color: var(--safe-shadow);
+        }
+
+        .node-palette {
+            position: fixed;
+            bottom: 160px;
+            left: 300px;
+            right: 20px;
+            height: 100px;
+            background: var(--gentle-mist);
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--temple-gold);
+            border-radius: 15px;
+            padding: 15px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            overflow-x: auto;
+        }
+
+        .node-item {
+            width: 80px;
+            height: 70px;
+            background: var(--sacred-white);
+            border: 2px solid var(--foundation-stone);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.7em;
+            text-align: center;
+        }
+
+        .node-item:hover {
+            background: var(--creative-green);
+            border-color: var(--creative-green);
+            transform: translateY(-3px);
+        }
+
+        .node-icon {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .professional-panel {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            width: 250px;
+            height: 200px;
+            background: var(--gentle-mist);
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--temple-gold);
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        .panel-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1em;
+            color: var(--temple-gold);
+            margin-bottom: 10px;
+        }
+
+        .workflow-options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .workflow-btn {
+            padding: 6px 10px;
+            background: var(--mystical-purple);
+            border: 1px solid var(--temple-gold);
+            border-radius: 8px;
+            color: var(--sacred-white);
+            font-size: 0.8em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .workflow-btn:hover {
+            background: var(--temple-gold);
+            color: var(--safe-shadow);
+        }
+
+        .safety-reminder {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: var(--healing-light);
+            border: 2px solid var(--creative-green);
+            border-radius: 15px;
+            padding: 10px 15px;
+            font-size: 0.8em;
+            color: var(--safe-shadow);
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="temple-interface">
+        <div class="temple-title">🏛️ Hilma af Klint Temple</div>
+        <div class="circle-selector">
+            <div class="circle-btn active" data-circle="gnosis">🌀 Gnosis Circle</div>
+            <div class="circle-btn" data-circle="atelier">🖌️ Atelier Circle</div>
+        </div>
+        <div class="teacher-consult" id="consult-teacher">👥 Consult Teacher</div>
+    </div>
+
+    <div class="main-studio">
+        <div class="tools-panel">
+            <div class="tool-section">
+                <div class="section-title">🎨 Drawing Tools</div>
+                <div class="tool-grid">
+                    <div class="tool-btn" data-tool="brush">🖌️ Brush</div>
+                    <div class="tool-btn" data-tool="pencil">✏️ Pencil</div>
+                    <div class="tool-btn" data-tool="eraser">🧽 Eraser</div>
+                    <div class="tool-btn" data-tool="fill">🌊 Fill</div>
+                </div>
+            </div>
+
+            <div class="tool-section">
+                <div class="section-title">🌈 Colors</div>
+                <div class="tool-grid">
+                    <div class="tool-btn" data-color="#ffd700">🟡 Gold</div>
+                    <div class="tool-btn" data-color="#483d8b">🟣 Purple</div>
+                    <div class="tool-btn" data-color="#50c878">🟢 Green</div>
+                    <div class="tool-btn" data-color="#e0115f">🔴 Red</div>
+                    <div class="tool-btn" data-color="#191970">🔵 Blue</div>
+                    <div class="tool-btn" data-color="#a0956b">🟤 Stone</div>
+                </div>
+            </div>
+
+            <div class="tool-section">
+                <div class="section-title">✨ Special Tools</div>
+                <div class="tool-grid">
+                    <div class="tool-btn" data-tool="sacred-geometry">🔮 Geometry</div>
+                    <div class="tool-btn" data-tool="nature-pattern">🌿 Nature</div>
+                    <div class="tool-btn" data-tool="crystal-grid">💎 Crystal</div>
+                    <div class="tool-btn" data-tool="mandala">🔯 Mandala</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <div class="canvas-toolbar">
+                <div class="mode-toggle">
+                    <div class="mode-btn active" data-mode="art">🎨 Art Mode</div>
+                    <div class="mode-btn" data-mode="science">🔬 Science Mode</div>
+                </div>
+                <div class="canvas-actions">
+                    <div class="action-btn" id="clear-canvas">🗑️ Clear</div>
+                    <div class="action-btn" id="save-work">💾 Save</div>
+                    <div class="action-btn" id="export-professional">💼 Export</div>
+                </div>
+            </div>
+            <canvas id="drawing-canvas"></canvas>
+        </div>
+    </div>
+
+    <div class="teacher-guidance" id="teacher-guidance">
+        <div class="teacher-avatar" id="teacher-avatar">👩‍🏫</div>
+        <div class="teacher-message" id="teacher-message">
+            Welcome to your therapeutic art studio. Remember: every mark is a wonder, not a test.
+        </div>
+        <div class="safety-indicator">🛡️ Trauma-Safe</div>
+    </div>
+
+    <div class="node-palette" id="node-palette">
+        <div class="node-item" data-node="trauma_safety">
+            <div class="node-icon">🛡️</div>
+            <div>Safety</div>
+        </div>
+        <div class="node-item" data-node="creative_flow">
+            <div class="node-icon">🌊</div>
+            <div>Flow</div>
+        </div>
+        <div class="node-item" data-node="drawing_foundation">
+            <div class="node-icon">✏️</div>
+            <div>Draw</div>
+        </div>
+        <div class="node-item" data-node="color_theory">
+            <div class="node-icon">🌈</div>
+            <div>Color</div>
+        </div>
+        <div class="node-item" data-node="sacred_geometry">
+            <div class="node-icon">🔮</div>
+            <div>Geometry</div>
+        </div>
+    </div>
+
+    <div class="professional-panel">
+        <div class="panel-title">💼 Professional Workflow</div>
+        <div class="workflow-options">
+            <div class="workflow-btn" data-action="save-portfolio">Save to Portfolio</div>
+            <div class="workflow-btn" data-action="export-png">Export PNG</div>
+            <div class="workflow-btn" data-action="export-pdf">Export PDF</div>
+            <div class="workflow-btn" data-action="game-asset">Create Game Asset</div>
+            <div class="workflow-btn" data-action="community-share">Share Learning</div>
+        </div>
+    </div>
+
+    <div class="safety-reminder">
+        🛡️ Safe Space: You can pause, change, or stop at any time. Your creativity is always welcome here.
+    </div>
+
+    <script>
+        class TherapeuticArtStudio {
+            constructor() {
+                this.canvas = document.getElementById('drawing-canvas');
+                this.ctx = this.canvas.getContext('2d');
+                this.currentTool = 'brush';
+                this.currentColor = '#ffd700';
+                this.brushSize = 5;
+                this.isDrawing = false;
+                this.currentMode = 'art'; // 'art' or 'science'
+                this.currentCircle = 'gnosis';
+                this.currentTeacher = 'rebecca_respawn';
+
+                this.teachers = {
+                    rebecca_respawn: {
+                        name: "Rebecca Respawn",
+                        avatar: "👩‍🎨",
+                        messages: [
+                            "Every mark is a wonder, not a test. Trust your curiosity.",
+                            "If you don't like something, we can always respawn it!",
+                            "Your beginner's mind sees things experts miss. That's magic."
+                        ]
+                    },
+                    emma_kunz: {
+                        name: "Emma Kunz",
+                        avatar: "👩‍🔬",
+                        messages: [
+                            "Sacred geometry provides structure when emotions feel chaotic.",
+                            "Numbers and patterns are always safe companions.",
+                            "Let the geometry reveal what your soul needs to express."
+                        ]
+                    },
+                    georgia_okeeffe: {
+                        name: "Georgia O'Keeffe",
+                        avatar: "👩‍🌾",
+                        messages: [
+                            "Nature doesn't rush its blooming. Your art unfolds perfectly.",
+                            "Look deeply at one thing. See what others miss.",
+                            "Your sensitivity is your greatest artistic gift."
+                        ]
+                    }
+                };
+
+                this.sacredGeometry = new SacredGeometry();
+                this.init();
+            }
+
+            init() {
+                this.setupCanvas();
+                this.setupEventListeners();
+                this.updateTeacherGuidance();
+                this.updateNodePalette();
+            }
+
+            setupCanvas() {
+                this.resizeCanvas();
+                window.addEventListener('resize', () => this.resizeCanvas());
+
+                // Gentle canvas background
+                this.ctx.fillStyle = '#fff9e6';
+                this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+            }
+
+            resizeCanvas() {
+                const container = this.canvas.parentElement;
+                this.canvas.width = container.clientWidth - 40;
+                this.canvas.height = container.clientHeight - 100;
+            }
+
+            setupEventListeners() {
+                // Tool selection
+                document.querySelectorAll('.tool-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const tool = e.target.dataset.tool;
+                        const color = e.target.dataset.color;
+
+                        // Remove active class from all tools
+                        document.querySelectorAll('.tool-btn').forEach(b => b.classList.remove('active'));
+
+                        // Add active class to clicked tool
+                        e.target.classList.add('active');
+
+                        if (tool) {
+                            this.currentTool = tool;
+                            this.updateTeacherGuidance(`Using ${tool} - ${this.getToolDescription(tool)}`);
+                        }
+
+                        if (color) {
+                            this.currentColor = color;
+                            this.updateTeacherGuidance(`Beautiful color choice! ${this.getColorMeaning(color)}`);
+                        }
+                    });
+                });
+
+                // Canvas drawing
+                this.canvas.addEventListener('mousedown', (e) => {
+                    this.isDrawing = true;
+                    this.draw(e);
+                });
+
+                this.canvas.addEventListener('mousemove', (e) => {
+                    if (this.isDrawing) {
+                        this.draw(e);
+                    }
+                });
+
+                this.canvas.addEventListener('mouseup', () => {
+                    this.isDrawing = false;
+                    this.ctx.beginPath();
+                });
+
+                // Mode toggle
+                document.querySelectorAll('.mode-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const mode = e.target.dataset.mode;
+
+                        document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+                        e.target.classList.add('active');
+
+                        this.currentMode = mode;
+                        this.updateModeDisplay();
+                    });
+                });
+
+                // Circle selection
+                document.querySelectorAll('.circle-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const circle = e.target.dataset.circle;
+
+                        document.querySelectorAll('.circle-btn').forEach(b => b.classList.remove('active'));
+                        e.target.classList.add('active');
+
+                        this.currentCircle = circle;
+                        this.updateCircleDisplay();
+                    });
+                });
+
+                // Teacher consultation
+                document.getElementById('consult-teacher').addEventListener('click', () => {
+                    this.consultTeacher();
+                });
+
+                // Canvas actions
+                document.getElementById('clear-canvas').addEventListener('click', () => {
+                    this.clearCanvas();
+                });
+
+                document.getElementById('save-work').addEventListener('click', () => {
+                    this.saveWork();
+                });
+
+                document.getElementById('export-professional').addEventListener('click', () => {
+                    this.exportProfessional();
+                });
+
+                // Node interactions
+                document.querySelectorAll('.node-item').forEach(node => {
+                    node.addEventListener('click', (e) => {
+                        const nodeType = e.target.dataset.node || e.target.closest('.node-item')?.dataset.node;
+                        if (nodeType) {
+                            this.applyNode(nodeType);
+                        }
+                    });
+                });
+
+                // Workflow actions
+                document.querySelectorAll('.workflow-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const action = e.target.dataset.action;
+                        this.handleWorkflowAction(action);
+                    });
+                });
+            }
+
+            draw(e) {
+                if (!this.isDrawing) return;
+
+                const rect = this.canvas.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                this.ctx.lineWidth = this.brushSize;
+                this.ctx.lineCap = 'round';
+                this.ctx.strokeStyle = this.currentColor;
+
+                if (this.currentTool === 'eraser') {
+                    this.ctx.strokeStyle = '#fff9e6';
+                    this.ctx.lineWidth = this.brushSize * 2;
+                }
+
+                this.ctx.lineTo(x, y);
+                this.ctx.stroke();
+                this.ctx.beginPath();
+                this.ctx.moveTo(x, y);
+            }
+
+            getToolDescription(tool) {
+                const descriptions = {
+                    brush: "Free-flowing expression, perfect for emotional release",
+                    pencil: "Precise and controllable, great for detailed work",
+                    eraser: "Not about mistakes, but about creating space for something new",
+                    fill: "Filling spaces with color, like breathing life into forms"
+                };
+                return descriptions[tool] || "A wonderful tool for expression";
+            }
+
+            getColorMeaning(color) {
+                const meanings = {
+                    '#ffd700': "Temple gold - sacred illumination and divine creativity",
+                    '#483d8b': "Mystical purple - spiritual wisdom and inner knowing",
+                    '#50c878': "Healing green - growth, balance, and heart-centered creation",
+                    '#e0115f': "Passion red - vital energy and courageous expression",
+                    '#191970': "Wisdom blue - deep insight and peaceful contemplation",
+                    '#a0956b': "Foundation stone - stability and grounded creativity"
+                };
+                return meanings[color] || "A beautiful choice for your artistic voice";
+            }
+
+            updateTeacherGuidance(message = null) {
+                const teacher = this.teachers[this.currentTeacher];
+                const guidance = document.getElementById('teacher-guidance');
+
+                document.getElementById('teacher-avatar').textContent = teacher.avatar;
+
+                if (message) {
+                    document.getElementById('teacher-message').textContent = message;
+                } else {
+                    const randomMessage = teacher.messages[Math.floor(Math.random() * teacher.messages.length)];
+                    document.getElementById('teacher-message').textContent = randomMessage;
+                }
+            }
+
+            updateModeDisplay() {
+                if (this.currentMode === 'science') {
+                    this.canvas.style.background = 'linear-gradient(45deg, #f0f8ff, #e6f3ff)';
+                    this.updateTeacherGuidance("Science mode: Where art meets empirical observation and structured exploration.");
+                } else {
+                    this.canvas.style.background = '#fff9e6';
+                    this.updateTeacherGuidance("Art mode: Free creative expression in a safe, supportive space.");
+                }
+            }
+
+            updateCircleDisplay() {
+                if (this.currentCircle === 'gnosis') {
+                    this.updateTeacherGuidance("Gnosis Circle: Wisdom traditions and mystical art practices. Your intuition leads here.");
+                } else {
+                    this.updateTeacherGuidance("Atelier Circle: Professional art skills and practical techniques. Mastery through gentle practice.");
+                }
+            }
+
+            consultTeacher() {
+                // Rotate through available teachers
+                const teacherKeys = Object.keys(this.teachers);
+                const currentIndex = teacherKeys.indexOf(this.currentTeacher);
+                const nextIndex = (currentIndex + 1) % teacherKeys.length;
+                this.currentTeacher = teacherKeys[nextIndex];
+
+                this.updateTeacherGuidance();
+            }
+
+            clearCanvas() {
+                this.ctx.fillStyle = this.currentMode === 'science' ? '#f0f8ff' : '#fff9e6';
+                this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+                this.updateTeacherGuidance("Fresh canvas! Every beginning is full of possibility.");
+            }
+
+            saveWork() {
+                const link = document.createElement('a');
+                link.download = `hilma-temple-creation-${Date.now()}.png`;
+                link.href = this.canvas.toDataURL();
+                link.click();
+
+                this.updateTeacherGuidance("Your creation is saved! Remember, this is just one moment in your artistic journey.");
+            }
+
+            exportProfessional() {
+                // Create professional export options
+                const exportModal = document.createElement('div');
+                exportModal.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, 0.8);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 10000;
+                `;
+
+                const exportContent = document.createElement('div');
+                exportContent.style.cssText = `
+                    background: var(--sacred-white);
+                    padding: 30px;
+                    border-radius: 20px;
+                    border: 3px solid var(--temple-gold);
+                    max-width: 400px;
+                    text-align: center;
+                `;
+
+                exportContent.innerHTML = `
+                    <h3 style="color: var(--temple-gold); margin-bottom: 20px;">💼 Professional Export</h3>
+                    <p style="margin-bottom: 20px; color: var(--safe-shadow);">Your creation is ready for professional use!</p>
+                    <div style="display: flex; gap: 10px; justify-content: center;">
+                        <button onclick="window.therapeuticStudio.exportAs('portfolio')" style="padding: 10px 20px; background: var(--temple-gold); border: none; border-radius: 10px; cursor: pointer;">Portfolio PDF</button>
+                        <button onclick="window.therapeuticStudio.exportAs('client')" style="padding: 10px 20px; background: var(--mystical-purple); color: white; border: none; border-radius: 10px; cursor: pointer;">Client PNG</button>
+                        <button onclick="window.therapeuticStudio.exportAs('game')" style="padding: 10px 20px; background: var(--creative-green); color: white; border: none; border-radius: 10px; cursor: pointer;">Game Asset</button>
+                    </div>
+                    <button onclick="this.parentElement.parentElement.remove()" style="margin-top: 20px; padding: 8px 16px; background: transparent; border: 2px solid var(--temple-gold); border-radius: 10px; cursor: pointer;">Close</button>
+                `;
+
+                exportModal.appendChild(exportContent);
+                document.body.appendChild(exportModal);
+
+                this.updateTeacherGuidance("Professional export prepared! Your art is ready to serve both healing and career.");
+            }
+
+            exportAs(format) {
+                const timestamp = Date.now();
+                let filename = '';
+                let dataUrl = '';
+
+                switch(format) {
+                    case 'portfolio':
+                        filename = `portfolio-${timestamp}.png`;
+                        dataUrl = this.canvas.toDataURL('image/png');
+                        break;
+                    case 'client':
+                        filename = `client-work-${timestamp}.png`;
+                        dataUrl = this.canvas.toDataURL('image/png');
+                        break;
+                    case 'game':
+                        filename = `game-asset-${timestamp}.png`;
+                        dataUrl = this.canvas.toDataURL('image/png');
+                        break;
+                }
+
+                const link = document.createElement('a');
+                link.download = filename;
+                link.href = dataUrl;
+                link.click();
+
+                document.querySelector('div[style*="position: fixed"]').remove();
+                this.updateTeacherGuidance(`Exported for ${format}! Your creativity now serves your professional path.`);
+            }
+
+            applyNode(nodeType) {
+                // Highlight selected node
+                document.querySelectorAll('.node-item').forEach(node => node.style.background = 'var(--sacred-white)');
+
+                const selectedNode = document.querySelector(`[data-node="${nodeType}"]`);
+                if (selectedNode) {
+                    selectedNode.style.background = 'var(--creative-green)';
+                }
+
+                // Apply node effect based on type
+                switch(nodeType) {
+                    case 'trauma_safety':
+                        this.applyTraumaSafety();
+                        break;
+                    case 'sacred_geometry':
+                        this.applySacredGeometry();
+                        break;
+                    case 'creative_flow':
+                        this.applyCreativeFlow();
+                        break;
+                    default:
+                        this.updateTeacherGuidance(`Node applied: ${nodeType}. See how it transforms your creative space?`);
+                }
+            }
+
+            applyTraumaSafety() {
+                // Add gentle safety indicators to canvas
+                this.updateTeacherGuidance("🛡️ Trauma safety activated. Your creative space is safe and contained.");
+
+                // Add subtle safety border
+                this.ctx.strokeStyle = 'rgba(80, 200, 120, 0.3)';
+                this.ctx.lineWidth = 10;
+                this.ctx.strokeRect(10, 10, this.canvas.width - 20, this.canvas.height - 20);
+            }
+
+            applySacredGeometry() {
+                // Draw sacred geometry overlay
+                this.sacredGeometry.drawGoldenSpiral(this.ctx, this.canvas.width, this.canvas.height);
+                this.updateTeacherGuidance("🔮 Sacred geometry revealed. Let the patterns guide your intuition.");
+            }
+
+            applyCreativeFlow() {
+                // Add flow state indicators
+                this.updateTeacherGuidance("🌊 Creative flow enhanced. Trust what emerges naturally.");
+            }
+
+            handleWorkflowAction(action) {
+                switch(action) {
+                    case 'save-portfolio':
+                        this.saveForPortfolio();
+                        break;
+                    case 'export-png':
+                        this.exportAs('client');
+                        break;
+                    case 'export-pdf':
+                        this.exportAs('portfolio');
+                        break;
+                    case 'game-asset':
+                        this.createGameAsset();
+                        break;
+                    case 'community-share':
+                        this.shareWithCommunity();
+                        break;
+                }
+            }
+
+            saveForPortfolio() {
+                this.saveWork();
+                this.updateTeacherGuidance("Added to your professional portfolio! Your healing journey creates valuable art skills.");
+            }
+
+            createGameAsset() {
+                this.exportAs('game');
+                this.updateTeacherGuidance("Game asset created! Your art now lives in the magical world of Circuitum99.");
+            }
+
+            shareWithCommunity() {
+                const shareMessage = `Learning in the Hilma af Klint Temple with ${this.teachers[this.currentTeacher].name}. Every creation is a step toward healing and professional artistry. #TherapeuticArt #PTSDArtJourney`;
+
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Therapeutic Art Learning',
+                        text: shareMessage,
+                        url: window.location.href
+                    });
+                } else {
+                    // Copy to clipboard fallback
+                    navigator.clipboard.writeText(shareMessage);
+                    this.updateTeacherGuidance("Message copied! Share your healing art journey with others.");
+                }
+            }
+        }
+
+        // Sacred Geometry Helper Class
+        class SacredGeometry {
+            drawGoldenSpiral(ctx, width, height) {
+                ctx.strokeStyle = 'rgba(255, 215, 0, 0.3)';
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+
+                const phi = (1 + Math.sqrt(5)) / 2; // Golden ratio
+                let x = width / 2;
+                let y = height / 2;
+                let radius = Math.min(width, height) / 8;
+
+                for (let i = 0; i < 10; i++) {
+                    const angle = i * Math.PI / 5;
+                    const nextX = x + Math.cos(angle) * radius;
+                    const nextY = y + Math.sin(angle) * radius;
+
+                    if (i === 0) {
+                        ctx.moveTo(nextX, nextY);
+                    } else {
+                        ctx.lineTo(nextX, nextY);
+                    }
+
+                    radius *= phi;
+                }
+
+                ctx.stroke();
+            }
+        }
+
+        // Initialize the studio when page loads
+        window.addEventListener('load', () => {
+            window.therapeuticStudio = new TherapeuticArtStudio();
+        });
+    </script>
+</body>
+</html>

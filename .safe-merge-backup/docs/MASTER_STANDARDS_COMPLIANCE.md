@@ -36,7 +36,7 @@
 
 **Sources**: OpenSpec AGENTS.md, REGISTRY_ARCHITECTURE.md
 
-**Validation**: Run `ppnpm run validate:registry`
+**Validation**: Run `pppnpm run validate:registry`
 
 ---
 
@@ -161,12 +161,12 @@
 
 ### 1. Run Analysis
 ```bash
-ppnpm run analyze:master-docs
+pppnpm run analyze:master-docs
 ```
 
 ### 2. Check REGISTRY Integration
 ```bash
-ppnpm run validate:registry
+pppnpm run validate:registry
 ```
 
 ### 3. Review Report

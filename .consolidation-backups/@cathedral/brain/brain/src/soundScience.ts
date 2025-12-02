@@ -1,7 +1,3 @@
-/**
- * @license CC0-1.0 - Public Domain
- */
-
 // SoundScience: harmonic series, binaural beats, pythagorean intervals
 export class SoundScience {
   harmonicSeries(fundamental: number, numHarmonics = 8) {

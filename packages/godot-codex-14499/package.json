@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "validate": "echo 'Validating sacred mathematics...' && node validate-sacred-math.js",
-    "export": "echo 'Exporting for Godot...' && ppnpm run build",
+    "export": "echo 'Exporting for Godot...' && pnpm run build",
     "test": "echo 'Testing lattice connections...' && node test-connections.js"
   },
   "keywords": [
@@ -59,8 +59,17 @@
       "connects_to": [
         "godot-liber-arcanae",
         "godot-tesseract-bridge",
-        "godot-vfx-library"
+        "godot-vfx-library",
+        "codex-144-99",
+        "codex-144-99-core"
       ]
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
     }
   },
   "files": [
@@ -78,7 +87,7 @@
     "@types/node": "^20.10.0"
   },
   "types": "dist/index.d.ts",
-  "packageManager": "pnpm@8.15.0",
+  "packageManager": "pnpm@10.23.0",
   "engines": {
     "node": ">=20.18.0",
     "pnpm": ">=8.15.0"
@@ -87,9 +96,12 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@cathedral/codex-144-99": "workspace:*",
+    "@cathedral/codex-144-99-core": "workspace:*"
+  },
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:14:16.492Z",
+  "consolidatedAt": "2025-12-01T19:36:51.427Z",
   "alchemical": {
     "name": "Godot Codex 14499",
     "symbol": "⊙",

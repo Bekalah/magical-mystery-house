@@ -17,7 +17,6 @@
  */
 
 import React, { useEffect, useRef, useState } from 'react';
-import '@cathedral/shared/src/styles/unified-professional.css';
 
 export interface DualityArcanaConfig {
   // Figures
@@ -141,7 +140,7 @@ export function DualityArcanaArt({
   
   return (
     <div
-      className="duality-arcana-art professional-theme"
+      className="duality-arcana-art"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
@@ -163,7 +162,7 @@ export function DualityArcanaArt({
       />
       
       {fullConfig.interactive && (
-        <div className="duality-controls professional-theme" style={{
+        <div className="duality-controls" style={{
           position: 'absolute',
           bottom: '1rem',
           left: '50%',

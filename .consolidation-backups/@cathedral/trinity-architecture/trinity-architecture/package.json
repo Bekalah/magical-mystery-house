@@ -18,11 +18,11 @@
     "@cathedral/tesseract-bridge": "workspace:*",
     "three": "^0.160.0",
     "tone": "^14.7.77",
-    "typescript": "^5.3.0",
-    "jest": "^29.7.0"
+    "@types/three": "^0.160.0"
   },
   "devDependencies": {
-    "@types/three": "^0.160.0",
+    "typescript": "^5.3.0",
+    "jest": "^29.7.0",
     "@types/node": "^20.10.0"
   },
   "keywords": [
@@ -33,21 +33,26 @@
     "trauma-safe",
     "144:99"
   ],
-  "author": "Cathedral Master Creative Intelligence Team",
+  "author": "Rebecca Respawn",
   "license": "CC0-1.0",
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:57.478Z",
-  "packageManager": "pnpm@8.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/trinity-architecture"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/trinity-architecture",
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "packageManager": "ppppnpm@10.23.0",
   "alchemical": {
     "name": "Trinity Architecture",
     "symbol": "⊙",
     "label": "⊙ Trinity Architecture (@cathedral/trinity-architecture)"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

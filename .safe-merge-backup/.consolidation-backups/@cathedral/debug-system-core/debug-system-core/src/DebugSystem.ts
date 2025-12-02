@@ -166,7 +166,7 @@ export class DebugSystem {
         if (!packageJson.scripts || !packageJson.scripts.build) continue;
 
         try {
-          execSync('ppnpm run build', { 
+          execSync('pppnpm run build', { 
             cwd: pkg.path, 
             stdio: 'pipe', 
             maxBuffer: 10 * 1024 * 1024,
@@ -177,7 +177,7 @@ export class DebugSystem {
         } catch (buildError: any) {
           errors.push({
             package: pkg.name,
-            command: 'ppnpm run build',
+            command: 'pppnpm run build',
             exitCode: buildError.status || 1,
             stdout: buildError.stdout?.toString() || '',
             stderr: buildError.stderr?.toString() || buildError.message || '',

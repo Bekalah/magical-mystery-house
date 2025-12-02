@@ -1,0 +1,937 @@
+{
+  "Morgan Le Fay": {
+    "id": "grimoire-deity-0",
+    "deity": {
+      "name": "Morgan Le Fay",
+      "type": "Goddess",
+      "realm": "Avalon",
+      "connection": "High Priestess",
+      "themes": [
+        "Sea Priestess",
+        "Avalon mysteries",
+        "Feminine power"
+      ]
+    },
+    "correspondences": {
+      "tarotSuit": "wands",
+      "alchemicalElement": "Sulfur",
+      "realm": "Avalon",
+      "connectedArcana": "High Priestess"
+    },
+    "spells": [
+      {
+        "id": "spell-deity-0-1",
+        "name": "Morgan Le Fay's Primary Invocation",
+        "source": "Traditional deity work",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Invoke Morgan Le Fay for Sea Priestess work",
+        "creativeInterpretation": "Working with Morgan Le Fay in the realm of Avalon requires honoring their Sea Priestess, Avalon mysteries, Feminine power aspects through Sulfur (wands) work."
+      },
+      {
+        "id": "spell-deity-0-2",
+        "name": "Morgan Le Fay's Realm Access",
+        "source": "Realm traditions",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Access the realm of Avalon through Morgan Le Fay",
+        "creativeInterpretation": "Working with Morgan Le Fay in the realm of Avalon requires honoring their Sea Priestess, Avalon mysteries, Feminine power aspects through Sulfur (wands) work."
+      },
+      {
+        "id": "spell-deity-0-3",
+        "name": "Morgan Le Fay's Blessing Ritual",
+        "source": "Deity traditions",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Receive blessing and power from Morgan Le Fay",
+        "creativeInterpretation": "Working with Morgan Le Fay in the realm of Avalon requires honoring their Sea Priestess, Avalon mysteries, Feminine power aspects through Sulfur (wands) work."
+      },
+      {
+        "id": "spell-deity-0-4",
+        "name": "Morgan Le Fay's Correspondence Work",
+        "source": "Traditional correspondences",
+        "tarotSuit": "wands",
+        "alchemicalElement": "Sulfur",
+        "description": "Work with Morgan Le Fay's correspondences and attributes",
+        "creativeInterpretation": "Working with Morgan Le Fay in the realm of Avalon requires honoring their Sea Priestess, Avalon mysteries, Feminine power aspects through Sulfur (wands) work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-deity-0-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Morgan Le Fay",
+        "content": "This grimoire is dedicated to Morgan Le Fay, Goddess of Avalon. Connected to the High Priestess arcana, this deity embodies Sea Priestess, Avalon mysteries, Feminine power."
+      },
+      {
+        "id": "page-deity-0-2",
+        "pageNumber": 2,
+        "title": "Realm and Correspondences",
+        "content": "Realm: Avalon\nConnected Arcana: High Priestess\nTarot Suit: wands (Sulfur)\nThemes: Sea Priestess, Avalon mysteries, Feminine power"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:43:33.245Z",
+      "updated": "2025-12-01T23:43:33.248Z",
+      "tags": [
+        "deity",
+        "goddess",
+        "avalon",
+        "high-priestess",
+        "wands",
+        "Sulfur"
+      ],
+      "category": "deity-grimoire"
+    }
+  },
+  "The Lady of the Lake": {
+    "id": "grimoire-deity-1",
+    "deity": {
+      "name": "The Lady of the Lake",
+      "type": "Goddess",
+      "realm": "Avalon",
+      "connection": "High Priestess",
+      "themes": [
+        "Water magic",
+        "Avalon",
+        "Protection"
+      ]
+    },
+    "correspondences": {
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury",
+      "realm": "Avalon",
+      "connectedArcana": "High Priestess"
+    },
+    "spells": [
+      {
+        "id": "spell-deity-1-1",
+        "name": "The Lady of the Lake's Primary Invocation",
+        "source": "Traditional deity work",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Invoke The Lady of the Lake for Water magic work",
+        "creativeInterpretation": "Working with The Lady of the Lake in the realm of Avalon requires honoring their Water magic, Avalon, Protection aspects through Mercury (cups) work."
+      },
+      {
+        "id": "spell-deity-1-2",
+        "name": "The Lady of the Lake's Realm Access",
+        "source": "Realm traditions",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Access the realm of Avalon through The Lady of the Lake",
+        "creativeInterpretation": "Working with The Lady of the Lake in the realm of Avalon requires honoring their Water magic, Avalon, Protection aspects through Mercury (cups) work."
+      },
+      {
+        "id": "spell-deity-1-3",
+        "name": "The Lady of the Lake's Blessing Ritual",
+        "source": "Deity traditions",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Receive blessing and power from The Lady of the Lake",
+        "creativeInterpretation": "Working with The Lady of the Lake in the realm of Avalon requires honoring their Water magic, Avalon, Protection aspects through Mercury (cups) work."
+      },
+      {
+        "id": "spell-deity-1-4",
+        "name": "The Lady of the Lake's Correspondence Work",
+        "source": "Traditional correspondences",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Work with The Lady of the Lake's correspondences and attributes",
+        "creativeInterpretation": "Working with The Lady of the Lake in the realm of Avalon requires honoring their Water magic, Avalon, Protection aspects through Mercury (cups) work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-deity-1-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Lady of the Lake",
+        "content": "This grimoire is dedicated to The Lady of the Lake, Goddess of Avalon. Connected to the High Priestess arcana, this deity embodies Water magic, Avalon, Protection."
+      },
+      {
+        "id": "page-deity-1-2",
+        "pageNumber": 2,
+        "title": "Realm and Correspondences",
+        "content": "Realm: Avalon\nConnected Arcana: High Priestess\nTarot Suit: cups (Mercury)\nThemes: Water magic, Avalon, Protection"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:43:33.251Z",
+      "updated": "2025-12-01T23:43:33.251Z",
+      "tags": [
+        "deity",
+        "goddess",
+        "avalon",
+        "high-priestess",
+        "cups",
+        "Mercury"
+      ],
+      "category": "deity-grimoire"
+    }
+  },
+  "Glastonbury Tor Deity": {
+    "id": "grimoire-deity-2",
+    "deity": {
+      "name": "Glastonbury Tor Deity",
+      "type": "Deity",
+      "realm": "Avalon",
+      "connection": "Hierophant",
+      "themes": [
+        "Teaching",
+        "Tor mysteries",
+        "Avalon"
+      ]
+    },
+    "correspondences": {
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash",
+      "realm": "Avalon",
+      "connectedArcana": "Hierophant"
+    },
+    "spells": [
+      {
+        "id": "spell-deity-2-1",
+        "name": "Glastonbury Tor Deity's Primary Invocation",
+        "source": "Traditional deity work",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Invoke Glastonbury Tor Deity for Teaching work",
+        "creativeInterpretation": "Working with Glastonbury Tor Deity in the realm of Avalon requires honoring their Teaching, Tor mysteries, Avalon aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-2-2",
+        "name": "Glastonbury Tor Deity's Realm Access",
+        "source": "Realm traditions",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Access the realm of Avalon through Glastonbury Tor Deity",
+        "creativeInterpretation": "Working with Glastonbury Tor Deity in the realm of Avalon requires honoring their Teaching, Tor mysteries, Avalon aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-2-3",
+        "name": "Glastonbury Tor Deity's Blessing Ritual",
+        "source": "Deity traditions",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Receive blessing and power from Glastonbury Tor Deity",
+        "creativeInterpretation": "Working with Glastonbury Tor Deity in the realm of Avalon requires honoring their Teaching, Tor mysteries, Avalon aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-2-4",
+        "name": "Glastonbury Tor Deity's Correspondence Work",
+        "source": "Traditional correspondences",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Work with Glastonbury Tor Deity's correspondences and attributes",
+        "creativeInterpretation": "Working with Glastonbury Tor Deity in the realm of Avalon requires honoring their Teaching, Tor mysteries, Avalon aspects through Ash (pentacles) work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-deity-2-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Glastonbury Tor Deity",
+        "content": "This grimoire is dedicated to Glastonbury Tor Deity, Deity of Avalon. Connected to the Hierophant arcana, this deity embodies Teaching, Tor mysteries, Avalon."
+      },
+      {
+        "id": "page-deity-2-2",
+        "pageNumber": 2,
+        "title": "Realm and Correspondences",
+        "content": "Realm: Avalon\nConnected Arcana: Hierophant\nTarot Suit: pentacles (Ash)\nThemes: Teaching, Tor mysteries, Avalon"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:43:33.252Z",
+      "updated": "2025-12-01T23:43:33.252Z",
+      "tags": [
+        "deity",
+        "goddess",
+        "avalon",
+        "hierophant",
+        "pentacles",
+        "Ash"
+      ],
+      "category": "deity-grimoire"
+    }
+  },
+  "Enochian Angels": {
+    "id": "grimoire-deity-3",
+    "deity": {
+      "name": "Enochian Angels",
+      "type": "Angelic Host",
+      "realm": "Enochian",
+      "connection": "Magician",
+      "themes": [
+        "Enochian language",
+        "Angelic communication",
+        "Dee's system"
+      ]
+    },
+    "correspondences": {
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash",
+      "realm": "Enochian",
+      "connectedArcana": "Magician"
+    },
+    "spells": [
+      {
+        "id": "spell-deity-3-1",
+        "name": "Enochian Angels's Primary Invocation",
+        "source": "Traditional deity work",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Invoke Enochian Angels for Enochian language work",
+        "creativeInterpretation": "Working with Enochian Angels in the realm of Enochian requires honoring their Enochian language, Angelic communication, Dee's system aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-3-2",
+        "name": "Enochian Angels's Realm Access",
+        "source": "Realm traditions",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Access the realm of Enochian through Enochian Angels",
+        "creativeInterpretation": "Working with Enochian Angels in the realm of Enochian requires honoring their Enochian language, Angelic communication, Dee's system aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-3-3",
+        "name": "Enochian Angels's Blessing Ritual",
+        "source": "Deity traditions",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Receive blessing and power from Enochian Angels",
+        "creativeInterpretation": "Working with Enochian Angels in the realm of Enochian requires honoring their Enochian language, Angelic communication, Dee's system aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-3-4",
+        "name": "Enochian Angels's Correspondence Work",
+        "source": "Traditional correspondences",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Work with Enochian Angels's correspondences and attributes",
+        "creativeInterpretation": "Working with Enochian Angels in the realm of Enochian requires honoring their Enochian language, Angelic communication, Dee's system aspects through Ash (pentacles) work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-deity-3-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Enochian Angels",
+        "content": "This grimoire is dedicated to Enochian Angels, Angelic Host of Enochian. Connected to the Magician arcana, this deity embodies Enochian language, Angelic communication, Dee's system."
+      },
+      {
+        "id": "page-deity-3-2",
+        "pageNumber": 2,
+        "title": "Realm and Correspondences",
+        "content": "Realm: Enochian\nConnected Arcana: Magician\nTarot Suit: pentacles (Ash)\nThemes: Enochian language, Angelic communication, Dee's system"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:43:33.252Z",
+      "updated": "2025-12-01T23:43:33.252Z",
+      "tags": [
+        "deity",
+        "goddess",
+        "enochian",
+        "magician",
+        "pentacles",
+        "Ash"
+      ],
+      "category": "deity-grimoire"
+    }
+  },
+  "The Enochian Deity": {
+    "id": "grimoire-deity-4",
+    "deity": {
+      "name": "The Enochian Deity",
+      "type": "Deity",
+      "realm": "Enochian",
+      "connection": "Magician",
+      "themes": [
+        "Enochian magic",
+        "Angelic realms",
+        "Dee's work"
+      ]
+    },
+    "correspondences": {
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash",
+      "realm": "Enochian",
+      "connectedArcana": "Magician"
+    },
+    "spells": [
+      {
+        "id": "spell-deity-4-1",
+        "name": "The Enochian Deity's Primary Invocation",
+        "source": "Traditional deity work",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Invoke The Enochian Deity for Enochian magic work",
+        "creativeInterpretation": "Working with The Enochian Deity in the realm of Enochian requires honoring their Enochian magic, Angelic realms, Dee's work aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-4-2",
+        "name": "The Enochian Deity's Realm Access",
+        "source": "Realm traditions",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Access the realm of Enochian through The Enochian Deity",
+        "creativeInterpretation": "Working with The Enochian Deity in the realm of Enochian requires honoring their Enochian magic, Angelic realms, Dee's work aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-4-3",
+        "name": "The Enochian Deity's Blessing Ritual",
+        "source": "Deity traditions",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Receive blessing and power from The Enochian Deity",
+        "creativeInterpretation": "Working with The Enochian Deity in the realm of Enochian requires honoring their Enochian magic, Angelic realms, Dee's work aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-4-4",
+        "name": "The Enochian Deity's Correspondence Work",
+        "source": "Traditional correspondences",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Work with The Enochian Deity's correspondences and attributes",
+        "creativeInterpretation": "Working with The Enochian Deity in the realm of Enochian requires honoring their Enochian magic, Angelic realms, Dee's work aspects through Ash (pentacles) work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-deity-4-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Enochian Deity",
+        "content": "This grimoire is dedicated to The Enochian Deity, Deity of Enochian. Connected to the Magician arcana, this deity embodies Enochian magic, Angelic realms, Dee's work."
+      },
+      {
+        "id": "page-deity-4-2",
+        "pageNumber": 2,
+        "title": "Realm and Correspondences",
+        "content": "Realm: Enochian\nConnected Arcana: Magician\nTarot Suit: pentacles (Ash)\nThemes: Enochian magic, Angelic realms, Dee's work"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:43:33.252Z",
+      "updated": "2025-12-01T23:43:33.253Z",
+      "tags": [
+        "deity",
+        "goddess",
+        "enochian",
+        "magician",
+        "pentacles",
+        "Ash"
+      ],
+      "category": "deity-grimoire"
+    }
+  },
+  "Divine Sophia": {
+    "id": "grimoire-deity-5",
+    "deity": {
+      "name": "Divine Sophia",
+      "type": "Goddess",
+      "realm": "Christian Mysticism",
+      "connection": "Fool",
+      "themes": [
+        "Wisdom",
+        "Christian mysticism",
+        "Divine feminine"
+      ]
+    },
+    "correspondences": {
+      "tarotSuit": "swords",
+      "alchemicalElement": "Salt",
+      "realm": "Christian Mysticism",
+      "connectedArcana": "Fool"
+    },
+    "spells": [
+      {
+        "id": "spell-deity-5-1",
+        "name": "Divine Sophia's Primary Invocation",
+        "source": "Traditional deity work",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Invoke Divine Sophia for Wisdom work",
+        "creativeInterpretation": "Working with Divine Sophia in the realm of Christian Mysticism requires honoring their Wisdom, Christian mysticism, Divine feminine aspects through Salt (swords) work."
+      },
+      {
+        "id": "spell-deity-5-2",
+        "name": "Divine Sophia's Realm Access",
+        "source": "Realm traditions",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Access the realm of Christian Mysticism through Divine Sophia",
+        "creativeInterpretation": "Working with Divine Sophia in the realm of Christian Mysticism requires honoring their Wisdom, Christian mysticism, Divine feminine aspects through Salt (swords) work."
+      },
+      {
+        "id": "spell-deity-5-3",
+        "name": "Divine Sophia's Blessing Ritual",
+        "source": "Deity traditions",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Receive blessing and power from Divine Sophia",
+        "creativeInterpretation": "Working with Divine Sophia in the realm of Christian Mysticism requires honoring their Wisdom, Christian mysticism, Divine feminine aspects through Salt (swords) work."
+      },
+      {
+        "id": "spell-deity-5-4",
+        "name": "Divine Sophia's Correspondence Work",
+        "source": "Traditional correspondences",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Work with Divine Sophia's correspondences and attributes",
+        "creativeInterpretation": "Working with Divine Sophia in the realm of Christian Mysticism requires honoring their Wisdom, Christian mysticism, Divine feminine aspects through Salt (swords) work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-deity-5-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Divine Sophia",
+        "content": "This grimoire is dedicated to Divine Sophia, Goddess of Christian Mysticism. Connected to the Fool arcana, this deity embodies Wisdom, Christian mysticism, Divine feminine."
+      },
+      {
+        "id": "page-deity-5-2",
+        "pageNumber": 2,
+        "title": "Realm and Correspondences",
+        "content": "Realm: Christian Mysticism\nConnected Arcana: Fool\nTarot Suit: swords (Salt)\nThemes: Wisdom, Christian mysticism, Divine feminine"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:43:33.253Z",
+      "updated": "2025-12-01T23:43:33.253Z",
+      "tags": [
+        "deity",
+        "goddess",
+        "christian-mysticism",
+        "fool",
+        "swords",
+        "Salt"
+      ],
+      "category": "deity-grimoire"
+    }
+  },
+  "The Holy Guardian Angel": {
+    "id": "grimoire-deity-6",
+    "deity": {
+      "name": "The Holy Guardian Angel",
+      "type": "Angel",
+      "realm": "Christian Mysticism",
+      "connection": "Fool",
+      "themes": [
+        "Crowley's HGA",
+        "Divine connection",
+        "Mysticism"
+      ]
+    },
+    "correspondences": {
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash",
+      "realm": "Christian Mysticism",
+      "connectedArcana": "Fool"
+    },
+    "spells": [
+      {
+        "id": "spell-deity-6-1",
+        "name": "The Holy Guardian Angel's Primary Invocation",
+        "source": "Traditional deity work",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Invoke The Holy Guardian Angel for Crowley's HGA work",
+        "creativeInterpretation": "Working with The Holy Guardian Angel in the realm of Christian Mysticism requires honoring their Crowley's HGA, Divine connection, Mysticism aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-6-2",
+        "name": "The Holy Guardian Angel's Realm Access",
+        "source": "Realm traditions",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Access the realm of Christian Mysticism through The Holy Guardian Angel",
+        "creativeInterpretation": "Working with The Holy Guardian Angel in the realm of Christian Mysticism requires honoring their Crowley's HGA, Divine connection, Mysticism aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-6-3",
+        "name": "The Holy Guardian Angel's Blessing Ritual",
+        "source": "Deity traditions",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Receive blessing and power from The Holy Guardian Angel",
+        "creativeInterpretation": "Working with The Holy Guardian Angel in the realm of Christian Mysticism requires honoring their Crowley's HGA, Divine connection, Mysticism aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-6-4",
+        "name": "The Holy Guardian Angel's Correspondence Work",
+        "source": "Traditional correspondences",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Work with The Holy Guardian Angel's correspondences and attributes",
+        "creativeInterpretation": "Working with The Holy Guardian Angel in the realm of Christian Mysticism requires honoring their Crowley's HGA, Divine connection, Mysticism aspects through Ash (pentacles) work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-deity-6-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of The Holy Guardian Angel",
+        "content": "This grimoire is dedicated to The Holy Guardian Angel, Angel of Christian Mysticism. Connected to the Fool arcana, this deity embodies Crowley's HGA, Divine connection, Mysticism."
+      },
+      {
+        "id": "page-deity-6-2",
+        "pageNumber": 2,
+        "title": "Realm and Correspondences",
+        "content": "Realm: Christian Mysticism\nConnected Arcana: Fool\nTarot Suit: pentacles (Ash)\nThemes: Crowley's HGA, Divine connection, Mysticism"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:43:33.253Z",
+      "updated": "2025-12-01T23:43:33.253Z",
+      "tags": [
+        "deity",
+        "goddess",
+        "christian-mysticism",
+        "fool",
+        "pentacles",
+        "Ash"
+      ],
+      "category": "deity-grimoire"
+    }
+  },
+  "Hecate": {
+    "id": "grimoire-deity-7",
+    "deity": {
+      "name": "Hecate",
+      "type": "Goddess",
+      "realm": "Crossroads",
+      "connection": "Moon",
+      "themes": [
+        "Crossroads",
+        "Magic",
+        "Moon"
+      ]
+    },
+    "correspondences": {
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash",
+      "realm": "Crossroads",
+      "connectedArcana": "Moon"
+    },
+    "spells": [
+      {
+        "id": "spell-deity-7-1",
+        "name": "Hecate's Primary Invocation",
+        "source": "Traditional deity work",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Invoke Hecate for Crossroads work",
+        "creativeInterpretation": "Working with Hecate in the realm of Crossroads requires honoring their Crossroads, Magic, Moon aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-7-2",
+        "name": "Hecate's Realm Access",
+        "source": "Realm traditions",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Access the realm of Crossroads through Hecate",
+        "creativeInterpretation": "Working with Hecate in the realm of Crossroads requires honoring their Crossroads, Magic, Moon aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-7-3",
+        "name": "Hecate's Blessing Ritual",
+        "source": "Deity traditions",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Receive blessing and power from Hecate",
+        "creativeInterpretation": "Working with Hecate in the realm of Crossroads requires honoring their Crossroads, Magic, Moon aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-7-4",
+        "name": "Hecate's Correspondence Work",
+        "source": "Traditional correspondences",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Work with Hecate's correspondences and attributes",
+        "creativeInterpretation": "Working with Hecate in the realm of Crossroads requires honoring their Crossroads, Magic, Moon aspects through Ash (pentacles) work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-deity-7-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Hecate",
+        "content": "This grimoire is dedicated to Hecate, Goddess of Crossroads. Connected to the Moon arcana, this deity embodies Crossroads, Magic, Moon."
+      },
+      {
+        "id": "page-deity-7-2",
+        "pageNumber": 2,
+        "title": "Realm and Correspondences",
+        "content": "Realm: Crossroads\nConnected Arcana: Moon\nTarot Suit: pentacles (Ash)\nThemes: Crossroads, Magic, Moon"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:43:33.253Z",
+      "updated": "2025-12-01T23:43:33.253Z",
+      "tags": [
+        "deity",
+        "goddess",
+        "crossroads",
+        "moon",
+        "pentacles",
+        "Ash"
+      ],
+      "category": "deity-grimoire"
+    }
+  },
+  "Hermes": {
+    "id": "grimoire-deity-8",
+    "deity": {
+      "name": "Hermes",
+      "type": "God",
+      "realm": "Communication",
+      "connection": "Magician",
+      "themes": [
+        "Communication",
+        "Magic",
+        "Travel"
+      ]
+    },
+    "correspondences": {
+      "tarotSuit": "pentacles",
+      "alchemicalElement": "Ash",
+      "realm": "Communication",
+      "connectedArcana": "Magician"
+    },
+    "spells": [
+      {
+        "id": "spell-deity-8-1",
+        "name": "Hermes's Primary Invocation",
+        "source": "Traditional deity work",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Invoke Hermes for Communication work",
+        "creativeInterpretation": "Working with Hermes in the realm of Communication requires honoring their Communication, Magic, Travel aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-8-2",
+        "name": "Hermes's Realm Access",
+        "source": "Realm traditions",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Access the realm of Communication through Hermes",
+        "creativeInterpretation": "Working with Hermes in the realm of Communication requires honoring their Communication, Magic, Travel aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-8-3",
+        "name": "Hermes's Blessing Ritual",
+        "source": "Deity traditions",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Receive blessing and power from Hermes",
+        "creativeInterpretation": "Working with Hermes in the realm of Communication requires honoring their Communication, Magic, Travel aspects through Ash (pentacles) work."
+      },
+      {
+        "id": "spell-deity-8-4",
+        "name": "Hermes's Correspondence Work",
+        "source": "Traditional correspondences",
+        "tarotSuit": "pentacles",
+        "alchemicalElement": "Ash",
+        "description": "Work with Hermes's correspondences and attributes",
+        "creativeInterpretation": "Working with Hermes in the realm of Communication requires honoring their Communication, Magic, Travel aspects through Ash (pentacles) work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-deity-8-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Hermes",
+        "content": "This grimoire is dedicated to Hermes, God of Communication. Connected to the Magician arcana, this deity embodies Communication, Magic, Travel."
+      },
+      {
+        "id": "page-deity-8-2",
+        "pageNumber": 2,
+        "title": "Realm and Correspondences",
+        "content": "Realm: Communication\nConnected Arcana: Magician\nTarot Suit: pentacles (Ash)\nThemes: Communication, Magic, Travel"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:43:33.254Z",
+      "updated": "2025-12-01T23:43:33.254Z",
+      "tags": [
+        "deity",
+        "goddess",
+        "communication",
+        "magician",
+        "pentacles",
+        "Ash"
+      ],
+      "category": "deity-grimoire"
+    }
+  },
+  "Aphrodite": {
+    "id": "grimoire-deity-9",
+    "deity": {
+      "name": "Aphrodite",
+      "type": "Goddess",
+      "realm": "Love",
+      "connection": "Lovers",
+      "themes": [
+        "Love",
+        "Beauty",
+        "Union"
+      ]
+    },
+    "correspondences": {
+      "tarotSuit": "cups",
+      "alchemicalElement": "Mercury",
+      "realm": "Love",
+      "connectedArcana": "Lovers"
+    },
+    "spells": [
+      {
+        "id": "spell-deity-9-1",
+        "name": "Aphrodite's Primary Invocation",
+        "source": "Traditional deity work",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Invoke Aphrodite for Love work",
+        "creativeInterpretation": "Working with Aphrodite in the realm of Love requires honoring their Love, Beauty, Union aspects through Mercury (cups) work."
+      },
+      {
+        "id": "spell-deity-9-2",
+        "name": "Aphrodite's Realm Access",
+        "source": "Realm traditions",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Access the realm of Love through Aphrodite",
+        "creativeInterpretation": "Working with Aphrodite in the realm of Love requires honoring their Love, Beauty, Union aspects through Mercury (cups) work."
+      },
+      {
+        "id": "spell-deity-9-3",
+        "name": "Aphrodite's Blessing Ritual",
+        "source": "Deity traditions",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Receive blessing and power from Aphrodite",
+        "creativeInterpretation": "Working with Aphrodite in the realm of Love requires honoring their Love, Beauty, Union aspects through Mercury (cups) work."
+      },
+      {
+        "id": "spell-deity-9-4",
+        "name": "Aphrodite's Correspondence Work",
+        "source": "Traditional correspondences",
+        "tarotSuit": "cups",
+        "alchemicalElement": "Mercury",
+        "description": "Work with Aphrodite's correspondences and attributes",
+        "creativeInterpretation": "Working with Aphrodite in the realm of Love requires honoring their Love, Beauty, Union aspects through Mercury (cups) work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-deity-9-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Aphrodite",
+        "content": "This grimoire is dedicated to Aphrodite, Goddess of Love. Connected to the Lovers arcana, this deity embodies Love, Beauty, Union."
+      },
+      {
+        "id": "page-deity-9-2",
+        "pageNumber": 2,
+        "title": "Realm and Correspondences",
+        "content": "Realm: Love\nConnected Arcana: Lovers\nTarot Suit: cups (Mercury)\nThemes: Love, Beauty, Union"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:43:33.255Z",
+      "updated": "2025-12-01T23:43:33.255Z",
+      "tags": [
+        "deity",
+        "goddess",
+        "love",
+        "lovers",
+        "cups",
+        "Mercury"
+      ],
+      "category": "deity-grimoire"
+    }
+  },
+  "Athena": {
+    "id": "grimoire-deity-10",
+    "deity": {
+      "name": "Athena",
+      "type": "Goddess",
+      "realm": "Wisdom",
+      "connection": "High Priestess",
+      "themes": [
+        "Wisdom",
+        "Strategy",
+        "Knowledge"
+      ]
+    },
+    "correspondences": {
+      "tarotSuit": "swords",
+      "alchemicalElement": "Salt",
+      "realm": "Wisdom",
+      "connectedArcana": "High Priestess"
+    },
+    "spells": [
+      {
+        "id": "spell-deity-10-1",
+        "name": "Athena's Primary Invocation",
+        "source": "Traditional deity work",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Invoke Athena for Wisdom work",
+        "creativeInterpretation": "Working with Athena in the realm of Wisdom requires honoring their Wisdom, Strategy, Knowledge aspects through Salt (swords) work."
+      },
+      {
+        "id": "spell-deity-10-2",
+        "name": "Athena's Realm Access",
+        "source": "Realm traditions",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Access the realm of Wisdom through Athena",
+        "creativeInterpretation": "Working with Athena in the realm of Wisdom requires honoring their Wisdom, Strategy, Knowledge aspects through Salt (swords) work."
+      },
+      {
+        "id": "spell-deity-10-3",
+        "name": "Athena's Blessing Ritual",
+        "source": "Deity traditions",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Receive blessing and power from Athena",
+        "creativeInterpretation": "Working with Athena in the realm of Wisdom requires honoring their Wisdom, Strategy, Knowledge aspects through Salt (swords) work."
+      },
+      {
+        "id": "spell-deity-10-4",
+        "name": "Athena's Correspondence Work",
+        "source": "Traditional correspondences",
+        "tarotSuit": "swords",
+        "alchemicalElement": "Salt",
+        "description": "Work with Athena's correspondences and attributes",
+        "creativeInterpretation": "Working with Athena in the realm of Wisdom requires honoring their Wisdom, Strategy, Knowledge aspects through Salt (swords) work."
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-deity-10-1",
+        "pageNumber": 1,
+        "title": "The Grimoire of Athena",
+        "content": "This grimoire is dedicated to Athena, Goddess of Wisdom. Connected to the High Priestess arcana, this deity embodies Wisdom, Strategy, Knowledge."
+      },
+      {
+        "id": "page-deity-10-2",
+        "pageNumber": 2,
+        "title": "Realm and Correspondences",
+        "content": "Realm: Wisdom\nConnected Arcana: High Priestess\nTarot Suit: swords (Salt)\nThemes: Wisdom, Strategy, Knowledge"
+      }
+    ],
+    "metadata": {
+      "created": "2025-12-01T23:43:33.255Z",
+      "updated": "2025-12-01T23:43:33.255Z",
+      "tags": [
+        "deity",
+        "goddess",
+        "wisdom",
+        "high-priestess",
+        "swords",
+        "Salt"
+      ],
+      "category": "deity-grimoire"
+    }
+  }
+}

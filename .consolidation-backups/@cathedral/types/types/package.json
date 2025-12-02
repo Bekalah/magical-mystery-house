@@ -1,54 +1,48 @@
 {
   "name": "@cathedral/types",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types for Cathedral monorepo",
   "type": "module",
-  "main": "./dist/index.cjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./src/index.ts",
-      "import": "./src/index.ts",
-      "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
-      }
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
   },
-  "scripts": {
-    "lint": "eslint src --ext=ts --max-warnings=0",
-    "check-types": "tsc --noEmit",
-    "test": "vitest run",
-    "build": "tsup",
-    "build:watch": "tsup --watch --outDir npm/dist --onSuccess 'echo ✅ Types rebuilt to npm/dist'",
-    "npm:publish": "node scripts/publish-npm.cjs",
-    "clean": "rimraf dist .turbo"
+  "engines": {
+    "node": ">=20.18.0",
+    "pnpm": ">=8.15.0"
   },
-  "dependencies": {
-    "zod": "^3.25.61",
-    "@cathedral/config-eslint": "workspace:^",
-    "@cathedral/config-typescript": "workspace:^",
-    "globals": "^16.3.0",
-    "tsup": "^8.3.5",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
     "typescript": "^5.6.3"
   },
-  "devDependencies": {
-    "@types/node": "^24.1.0",
-    "vitest": "^3.2.3"
-  },
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
-  },
+  "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
   "license": "CC0-1.0",
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:57.836Z",
-  "packageManager": "pnpm@8.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/types"
+  },
+  "homepage": "https://bekalah.github.io/cathedral/packages/types",
+  "packageManager": "pnpm@8.15.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "alchemical": {
     "name": "Types",
     "symbol": "⊙",
     "label": "⊙ Types (@cathedral/types)"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "types": "dist/index.d.ts"
+  }
 }

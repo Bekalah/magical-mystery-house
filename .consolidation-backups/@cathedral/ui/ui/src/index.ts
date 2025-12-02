@@ -1,5 +1,12 @@
 /**
- * @license CC0-1.0 - Public Domain
+ * index
+ * 
+ * @package @cathedral/ui
+ */
+/**
+ * ui
+ * 
+ * Package exports
  */
 
-export * from './ui';
+// Add exports here

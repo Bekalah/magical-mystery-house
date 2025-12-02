@@ -97,7 +97,7 @@ ps aux | grep continuous-improvement
 tail -f .continuous-improvement.out
 
 # Check experiment status
-ppnpm run experiment:status
+pnpm run experiment:status
 
 # View solve et coagula report
 cat .solve-et-coagula-report.json
@@ -158,5 +158,5 @@ By morning, you should have:
 
 **The experiment will run safely through the night, making continuous improvements while you sleep!**
 
-**To check progress in the morning**: `ppnpm run experiment:status`
+**To check progress in the morning**: `pnpm run experiment:status`
 

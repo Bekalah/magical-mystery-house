@@ -1,0 +1,32 @@
+{
+  "package": "godot-liber-arcanae",
+  "techSystems": [
+    "true-will-tech",
+    "rpg-tech",
+    "grimoire-system",
+    "spell-system"
+  ],
+  "connected": "2025-12-01T23:45:38.612Z",
+  "connections": [
+    {
+      "tech": "true-will-tech",
+      "status": "connected",
+      "path": "tools/true-will-tech.mjs"
+    },
+    {
+      "tech": "rpg-tech",
+      "status": "connected",
+      "path": "tools/rpg-tech.mjs"
+    },
+    {
+      "tech": "grimoire-system",
+      "status": "connected",
+      "path": "tools/grimoire-system.mjs"
+    },
+    {
+      "tech": "spell-system",
+      "status": "connected",
+      "path": "tools/spell-system.mjs"
+    }
+  ]
+}

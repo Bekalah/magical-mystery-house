@@ -13,26 +13,32 @@
   },
   "dependencies": {
     "better-sqlite3": "^9.2.0",
-    "zod": "^3.22.0",
-    "typescript": "^5.0.0"
+    "zod": "^3.22.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0"
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
   },
   "engines": {
-    "node": ">=20.0.0",
-    "pnpm": ">=8.0.0"
+    "node": ">=20.18.0",
+    "pnpm": "*"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bekalah/cathedral.git",
+    "directory": "packages/cathedral-sqlite-persistence"
+  },
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/cathedral-sqlite-persistence",
   "license": "CC0-1.0",
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:52.517Z",
-  "packageManager": "pnpm@8.0.0",
+  "author": "Rebecca Respawn <bekalah>",
+  "packageManager": "ppppnpm@10.23.0",
   "alchemical": {
     "name": "Sqlite Persistence",
     "symbol": "⊙",
     "label": "⊙ Sqlite Persistence (@cathedral/sqlite-persistence)"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

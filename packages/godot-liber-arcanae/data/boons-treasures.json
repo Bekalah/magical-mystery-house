@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "name": "Boons and Treasures - Real Cannon",
+    "description": "Boons and treasures based on real cannon things and real stories",
+    "thelemic": true,
+    "fable_like": true
+  },
+  "boons": [
+    {
+      "id": "boon-philosophers-stone",
+      "name": "The Philosopher's Stone",
+      "source": "Alchemical tradition",
+      "type": "treasure",
+      "effect": "Complete transformation",
+      "story": "The ultimate goal of alchemy, capable of transmuting base metals to gold and granting immortality",
+      "thelemic": "Represents the completion of the Great Work",
+      "rarity": "legendary",
+      "stats": {
+        "transformation": 100,
+        "immortality": true
+      }
+    },
+    {
+      "id": "boon-holy-grail",
+      "name": "The Holy Grail",
+      "source": "Arthurian legend",
+      "type": "treasure",
+      "effect": "Divine connection",
+      "story": "The cup used by Christ at the Last Supper, sought by King Arthur's knights",
+      "thelemic": "Symbol of divine union and completion",
+      "rarity": "legendary",
+      "stats": {
+        "divine_connection": 100,
+        "healing": 50
+      }
+    },
+    {
+      "id": "boon-key-of-solomon",
+      "name": "The Key of Solomon",
+      "source": "Key of Solomon grimoire",
+      "type": "boon",
+      "effect": "Mastery of magic",
+      "story": "Legendary grimoire attributed to King Solomon, containing powerful magical operations",
+      "thelemic": "Represents the keys to understanding and mastery",
+      "rarity": "epic",
+      "stats": {
+        "magic_mastery": 75,
+        "spell_power": 50
+      }
+    },
+    {
+      "id": "boon-enochian-tablets",
+      "name": "The Enochian Tablets",
+      "source": "John Dee's Enochian system",
+      "type": "treasure",
+      "effect": "Angelic communication",
+      "story": "The tablets received by John Dee through angelic communication, containing the Enochian language",
+      "thelemic": "Connection to the divine through angelic realms",
+      "rarity": "epic",
+      "stats": {
+        "angelic_communication": 100,
+        "enochian_magic": 75
+      }
+    },
+    {
+      "id": "boon-morgan-mirror",
+      "name": "Morgan Le Fay's Mirror",
+      "source": "Avalon traditions",
+      "type": "treasure",
+      "effect": "Vision and scrying",
+      "story": "The mirror of Morgan Le Fay, allowing vision into other realms and times",
+      "thelemic": "Reflection of True Will and inner vision",
+      "rarity": "rare",
+      "stats": {
+        "vision": 80,
+        "scrying": 70
+      }
+    },
+    {
+      "id": "boon-emerald-tablet",
+      "name": "The Emerald Tablet",
+      "source": "Hermetic tradition",
+      "type": "treasure",
+      "effect": "Hermetic wisdom",
+      "story": "The legendary tablet containing the secrets of alchemy, attributed to Hermes Trismegistus",
+      "thelemic": "The foundation of Hermetic and Thelemic wisdom",
+      "rarity": "legendary",
+      "stats": {
+        "hermetic_wisdom": 100,
+        "alchemical_knowledge": 90
+      }
+    },
+    {
+      "id": "boon-carrington-kitchen",
+      "name": "Carrington's Kitchen Alchemy",
+      "source": "Leonora Carrington",
+      "type": "boon",
+      "effect": "Transformation through creativity",
+      "story": "The art of transformation through kitchen work, as practiced by surrealist artist Leonora Carrington",
+      "thelemic": "Creative expression as True Will",
+      "rarity": "rare",
+      "stats": {
+        "creativity": 80,
+        "transformation": 60
+      }
+    },
+    {
+      "id": "boon-fortune-sea-priestess",
+      "name": "Fortune's Sea Priestess Current",
+      "source": "Dion Fortune",
+      "type": "boon",
+      "effect": "Avalon connection",
+      "story": "The magical current of the Sea Priestess, connecting to Avalon and the inner planes",
+      "thelemic": "Feminine mysteries and inner plane work",
+      "rarity": "rare",
+      "stats": {
+        "avalon_connection": 85,
+        "inner_plane_access": 75
+      }
+    }
+  ],
+  "treasures": [
+    {
+      "id": "treasure-philosophers-stone",
+      "name": "The Philosopher's Stone",
+      "source": "Alchemical tradition",
+      "type": "treasure",
+      "effect": "Complete transformation",
+      "story": "The ultimate goal of alchemy, capable of transmuting base metals to gold and granting immortality",
+      "thelemic": "Represents the completion of the Great Work",
+      "rarity": "legendary"
+    },
+    {
+      "id": "treasure-holy-grail",
+      "name": "The Holy Grail",
+      "source": "Arthurian legend",
+      "type": "treasure",
+      "effect": "Divine connection",
+      "story": "The cup used by Christ at the Last Supper, sought by King Arthur's knights",
+      "thelemic": "Symbol of divine union and completion",
+      "rarity": "legendary"
+    },
+    {
+      "id": "treasure-enochian-tablets",
+      "name": "The Enochian Tablets",
+      "source": "John Dee's Enochian system",
+      "type": "treasure",
+      "effect": "Angelic communication",
+      "story": "The tablets received by John Dee through angelic communication, containing the Enochian language",
+      "thelemic": "Connection to the divine through angelic realms",
+      "rarity": "epic"
+    },
+    {
+      "id": "treasure-morgan-mirror",
+      "name": "Morgan Le Fay's Mirror",
+      "source": "Avalon traditions",
+      "type": "treasure",
+      "effect": "Vision and scrying",
+      "story": "The mirror of Morgan Le Fay, allowing vision into other realms and times",
+      "thelemic": "Reflection of True Will and inner vision",
+      "rarity": "rare"
+    },
+    {
+      "id": "treasure-emerald-tablet",
+      "name": "The Emerald Tablet",
+      "source": "Hermetic tradition",
+      "type": "treasure",
+      "effect": "Hermetic wisdom",
+      "story": "The legendary tablet containing the secrets of alchemy, attributed to Hermes Trismegistus",
+      "thelemic": "The foundation of Hermetic and Thelemic wisdom",
+      "rarity": "legendary"
+    }
+  ],
+  "quests": [
+    {
+      "id": "quest-holy-grail",
+      "name": "The Quest for the Holy Grail",
+      "source": "Arthurian legend",
+      "type": "quest",
+      "boons": ["The Holy Grail", "Divine connection"],
+      "story": "The quest undertaken by King Arthur's knights to find the Holy Grail",
+      "thelemic": "The search for divine union and completion",
+      "rewards": {
+        "experience": 1000,
+        "boons": ["boon-holy-grail"],
+        "treasures": ["treasure-holy-grail"]
+      }
+    },
+    {
+      "id": "quest-enochian",
+      "name": "Dee's Enochian Communications",
+      "source": "John Dee's diaries",
+      "type": "quest",
+      "boons": ["The Enochian Tablets", "Angelic communication"],
+      "story": "John Dee's work with Edward Kelley to receive angelic communications and the Enochian language",
+      "thelemic": "Connection to the divine through angelic work",
+      "rewards": {
+        "experience": 800,
+        "boons": ["boon-enochian-tablets"],
+        "treasures": ["treasure-enochian-tablets"]
+      }
+    },
+    {
+      "id": "quest-great-work",
+      "name": "The Alchemical Great Work",
+      "source": "Alchemical tradition",
+      "type": "quest",
+      "boons": ["The Philosopher's Stone", "Complete transformation"],
+      "story": "The alchemical process of transformation from base matter to the Philosopher's Stone",
+      "thelemic": "The Great Work of Thelema, achieving True Will",
+      "rewards": {
+        "experience": 1500,
+        "boons": ["boon-philosophers-stone"],
+        "treasures": ["treasure-philosophers-stone"]
+      }
+    },
+    {
+      "id": "quest-avalon",
+      "name": "The Journey to Avalon",
+      "source": "Avalon traditions",
+      "type": "quest",
+      "boons": ["Morgan Le Fay's Mirror", "Avalon connection"],
+      "story": "The journey to the mystical isle of Avalon, realm of Morgan Le Fay",
+      "thelemic": "Inner plane work and feminine mysteries",
+      "rewards": {
+        "experience": 900,
+        "boons": ["boon-morgan-mirror"],
+        "treasures": ["treasure-morgan-mirror"]
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,27 @@
+{
+  "name": "@bekalah/gentle-fusion-lab",
+  "version": "1.0.0",
+  "description": "CPTSD-safe exploration system for art-science fusion without perfectionism burnout",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [
+    "gentle-learning",
+    "art-science-fusion", 
+    "cptsd-safe",
+    "curiosity-driven",
+    "sustainable-creativity",
+    "trauma-informed-learning"
+  ],
+  "scripts": {
+    "wonder": "echo '🌱 What are you curious about today? No pressure to achieve anything.'",
+    "explore": "echo '🔍 Gentle exploration mode: 20 minutes, then rest if needed'",
+    "create": "echo '🎨 Playful creation time: Good enough is perfect'",
+    "rest": "echo '💤 Rest is part of the process, not avoiding the process'",
+    "share": "echo '💚 Share your curiosity journey, not your achievements'",
+    "support": "echo '🫂 You deserve support for wondering, not for being perfect'",
+    "fusion": "echo '✨ Art + Science + Beauty - without the exhaustion'"
+  },
+  "dependencies": {},
+  "author": "Bekalah Cathedral Systems - CPTSD Recovery Through Creation",
+  "license": "CURIOSITY-PROTECTION-LICENSE"
+}

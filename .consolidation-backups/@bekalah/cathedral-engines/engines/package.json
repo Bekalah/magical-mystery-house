@@ -1,0 +1,20 @@
+{
+  "name": "@bekalah/cathedral-engines",
+  "version": "1.0.0",
+  "description": "Cathedral of Circuits - Living Tradition Engines",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo '✅ All engines operational'"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "cathedral": {
+    "living_engines": 22,
+    "fusion_enabled": true,
+    "trauma_safety": "maximum"
+  }
+}

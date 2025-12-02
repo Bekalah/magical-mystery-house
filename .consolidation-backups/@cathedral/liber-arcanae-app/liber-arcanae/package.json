@@ -1,0 +1,14 @@
+{
+  "name": "@cathedral/liber-arcanae-app",
+  "version": "1.0.0",
+  "description": "22 Living Tarot - Hermetic RPG Interface",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.1"
+  }
+}

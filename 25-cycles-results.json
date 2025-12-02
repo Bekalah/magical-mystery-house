@@ -1,0 +1,187 @@
+{
+  "summary": {
+    "totalCycles": 25,
+    "successful": 25,
+    "failed": 0,
+    "successRate": "100.00%",
+    "totalDuration": 145439,
+    "avgDuration": 3895.52
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "success": true,
+      "duration": 10738,
+      "error": null,
+      "timestamp": "2025-12-01T04:35:48.947Z"
+    },
+    {
+      "cycle": 2,
+      "success": true,
+      "duration": 5950,
+      "error": null,
+      "timestamp": "2025-12-01T04:35:56.902Z"
+    },
+    {
+      "cycle": 3,
+      "success": true,
+      "duration": 5975,
+      "error": null,
+      "timestamp": "2025-12-01T04:36:04.878Z"
+    },
+    {
+      "cycle": 4,
+      "success": true,
+      "duration": 4219,
+      "error": null,
+      "timestamp": "2025-12-01T04:36:11.098Z"
+    },
+    {
+      "cycle": 5,
+      "success": true,
+      "duration": 3865,
+      "error": null,
+      "timestamp": "2025-12-01T04:36:16.964Z"
+    },
+    {
+      "cycle": 6,
+      "success": true,
+      "duration": 5941,
+      "error": null,
+      "timestamp": "2025-12-01T04:36:24.907Z"
+    },
+    {
+      "cycle": 7,
+      "success": true,
+      "duration": 4096,
+      "error": null,
+      "timestamp": "2025-12-01T04:36:31.018Z"
+    },
+    {
+      "cycle": 8,
+      "success": true,
+      "duration": 2968,
+      "error": null,
+      "timestamp": "2025-12-01T04:36:35.988Z"
+    },
+    {
+      "cycle": 9,
+      "success": true,
+      "duration": 4488,
+      "error": null,
+      "timestamp": "2025-12-01T04:36:42.476Z"
+    },
+    {
+      "cycle": 10,
+      "success": true,
+      "duration": 2798,
+      "error": null,
+      "timestamp": "2025-12-01T04:36:47.276Z"
+    },
+    {
+      "cycle": 11,
+      "success": true,
+      "duration": 3483,
+      "error": null,
+      "timestamp": "2025-12-01T04:36:52.761Z"
+    },
+    {
+      "cycle": 12,
+      "success": true,
+      "duration": 3154,
+      "error": null,
+      "timestamp": "2025-12-01T04:36:57.916Z"
+    },
+    {
+      "cycle": 13,
+      "success": true,
+      "duration": 3350,
+      "error": null,
+      "timestamp": "2025-12-01T04:37:03.267Z"
+    },
+    {
+      "cycle": 14,
+      "success": true,
+      "duration": 2834,
+      "error": null,
+      "timestamp": "2025-12-01T04:37:08.104Z"
+    },
+    {
+      "cycle": 15,
+      "success": true,
+      "duration": 2869,
+      "error": null,
+      "timestamp": "2025-12-01T04:37:12.974Z"
+    },
+    {
+      "cycle": 16,
+      "success": true,
+      "duration": 3502,
+      "error": null,
+      "timestamp": "2025-12-01T04:37:18.478Z"
+    },
+    {
+      "cycle": 17,
+      "success": true,
+      "duration": 2866,
+      "error": null,
+      "timestamp": "2025-12-01T04:37:23.345Z"
+    },
+    {
+      "cycle": 18,
+      "success": true,
+      "duration": 3297,
+      "error": null,
+      "timestamp": "2025-12-01T04:37:28.643Z"
+    },
+    {
+      "cycle": 19,
+      "success": true,
+      "duration": 2847,
+      "error": null,
+      "timestamp": "2025-12-01T04:37:33.491Z"
+    },
+    {
+      "cycle": 20,
+      "success": true,
+      "duration": 2692,
+      "error": null,
+      "timestamp": "2025-12-01T04:37:38.183Z"
+    },
+    {
+      "cycle": 21,
+      "success": true,
+      "duration": 3256,
+      "error": null,
+      "timestamp": "2025-12-01T04:37:43.441Z"
+    },
+    {
+      "cycle": 22,
+      "success": true,
+      "duration": 2591,
+      "error": null,
+      "timestamp": "2025-12-01T04:37:48.034Z"
+    },
+    {
+      "cycle": 23,
+      "success": true,
+      "duration": 3268,
+      "error": null,
+      "timestamp": "2025-12-01T04:37:53.303Z"
+    },
+    {
+      "cycle": 24,
+      "success": true,
+      "duration": 2899,
+      "error": null,
+      "timestamp": "2025-12-01T04:37:58.204Z"
+    },
+    {
+      "cycle": 25,
+      "success": true,
+      "duration": 3442,
+      "error": null,
+      "timestamp": "2025-12-01T04:38:03.647Z"
+    }
+  ]
+}

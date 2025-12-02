@@ -2,13 +2,6 @@
   "name": "@cathedral/synth-lab",
   "private": true,
   "version": "0.1.0",
-  "description": "Synthesis Laboratory - 10 Legendary Synthesizers with real physics, sacred frequencies, and art synthesis",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Bekalah/cathedral.git",
-    "directory": "apps/synth-lab"
-  },
-  "homepage": "https://bekalah.github.io/cathedral/synth-lab",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -25,17 +18,7 @@
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9"
   },
-  "packageManager": "pnpm@8.15.0",
-  "engines": {
-    "node": ">=20.18.0",
-    "pnpm": ">=8.15.0"
-  },
-  "license": "CC0-1.0",
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:02.098Z",
-  "alchemical": {
-    "name": "Synth Lab",
-    "symbol": "⊙",
-    "label": "⊙ Synth Lab (@cathedral/synth-lab)"
-  }
+  "consolidatedAt": "2025-12-01T21:19:39.972Z",
+  "license": "CC0-1.0"
 }

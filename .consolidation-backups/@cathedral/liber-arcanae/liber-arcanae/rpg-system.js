@@ -215,7 +215,7 @@ class LiberArcanaeRPGSystem {
 export { LiberArcanaeRPGSystem };
 
 // Initialize high-end RPG system
-// console.log('🃏⚔️ LIBER ARCANAE RPG SYSTEM: High-end quality, public service pricing');
-// console.log('🎮 AAA game standards with real science, music, and spiritual practice');
-// console.log('📚 Open-world interactive book with 22 playable Arcana characters');
-// console.log('💝 Quality + Cheap = Public Service for Humanity');
+console.log('🃏⚔️ LIBER ARCANAE RPG SYSTEM: High-end quality, public service pricing');
+console.log('🎮 AAA game standards with real science, music, and spiritual practice');
+console.log('📚 Open-world interactive book with 22 playable Arcana characters');
+console.log('💝 Quality + Cheap = Public Service for Humanity');

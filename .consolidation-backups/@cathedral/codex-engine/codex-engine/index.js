@@ -3,16 +3,6 @@
  * Core processing engine for Codex 144:99 nodes and data structures
  */
 
-/**
- * ⊙ Index
- * 
- * @alchemical Index
- * @element N/A
- * @symbol ⊙
- * 
- * @license CC0-1.0 - Public Domain
- */
-
 export const codexConstants = {
   PRIMARY: 144,
   SECONDARY: 99,

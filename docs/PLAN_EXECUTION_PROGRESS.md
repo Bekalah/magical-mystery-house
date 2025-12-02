@@ -32,7 +32,7 @@
 - Automatically keeps only last 50 cycles
 - Archives old cycles to separate file
 - **Result**: Reduced from 726KB to 365KB (49.8% reduction)
-- Cleanup utility created: `ppnpm run cleanup:state`
+- Cleanup utility created: `pnpm run cleanup:state`
 
 ### 4. Self-Healing System ✅
 - Phase 0.25: System Health & Performance added
@@ -66,7 +66,7 @@
 - Extracts vision (Connects to sacred mathematics) elements (Soyga, I Ching, Kabbalah, alchemy)
 - Finds ND joy references
 - Identifies academic barrier references
-- Script: `ppnpm run read:cross-repo`
+- Script: `pnpm run read:cross-repo`
 
 ## In Progress
 

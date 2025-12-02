@@ -1,0 +1,520 @@
+{
+  "merge_strategy": "append",
+  "metadata": {
+    "version": "1.0.0",
+    "cathedral_system": "Living Arcanae - Complete Tradition Engines", 
+    "fusion_kink_enabled": true,
+    "trauma_safety": "maximum",
+    "nd_accommodations": true,
+    "research_base": "Public domain sources only",
+    "artistic_vision": "Björk + Tori Amos + Iris van Herpen + 21 Taras + Emma Kunz",
+    "deployment": "GitHub Pages + Cloudflare Workers"
+  },
+  "cards": [
+    {
+      "id": "fool",
+      "name": "The Fool",
+      "guardian": "rebecca-respawn",
+      "tradition_engine": "wuji_void",
+      "fusion_kink": "resets all active traditions; enables cross-path synthesis",
+      "lab_toggle": "void_lab",
+      "lineage": ["Tao Te Ching", "Giordano Bruno", "Leonora Carrington"],
+      "docs": ["/docs/tao_te_ching_pd.txt", "/docs/bruno_cosmology_pd.pdf", "/docs/carrington_pd.html"],
+      "glyph": "hebrew-aleph",
+      "portal": { "type": "artifact", "form": "obsidian-key" },
+      "science": {
+        "hz": 0,
+        "color_hex": "#0B0E14",
+        "geometry": "circle",
+        "crystal": "obsidian",
+        "pigment": "void black"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "portal", "beginning", "wuji", "trauma-safe"],
+      "lock": true
+    },
+    {
+      "id": "magus",
+      "name": "The Magus",
+      "guardian": "john-dee",
+      "tradition_engine": "enochian_magic",
+      "fusion_kink": "adds sigil generation + angelic language to any other tradition",
+      "lab_toggle": "enochian_lab",
+      "lineage": ["Monas Hieroglyphica", "Enochian Diaries"],
+      "docs": ["/docs/dee_monas_pd.pdf", "/docs/enochian_diaries_pd.pdf"],
+      "glyph": "hebrew-beth",
+      "portal": { "type": "artifact", "form": "crystal-wand" },
+      "science": {
+        "hz": 437.4,
+        "color_hex": "#FF1600",
+        "geometry": "square",
+        "crystal": "quartz",
+        "pigment": "cinnabar"
+      },
+      "heal": { "nd": true, "ptsd": false },
+      "tags": ["major", "enochian", "will", "manifestation"],
+      "lock": true
+    },
+    {
+      "id": "high-priestess",
+      "name": "The High Priestess",
+      "guardian": "dion-fortune-emma-kunz",
+      "tradition_engine": "sacred_geometry",
+      "fusion_kink": "adds geometric overlay + harmonic grid to any other tradition",
+      "lab_toggle": "kunz_lab",
+      "lineage": ["Sefer Yetzirah", "Kunz Diagrams"],
+      "docs": ["/docs/sefer_yetzirah_pd.pdf", "/docs/kunz_geometry_pd.pdf"],
+      "glyph": "hebrew-gimel",
+      "portal": { "type": "artifact", "form": "geometric-veil" },
+      "science": {
+        "hz": 442.95,
+        "color_hex": "#F8F8FF",
+        "geometry": "vesica_piscis",
+        "crystal": "selenite",
+        "pigment": "moon white"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "geometry", "intuition", "healing"],
+      "lock": true
+    },
+    {
+      "id": "empress",
+      "name": "The Empress",
+      "guardian": "emma-kunz",
+      "tradition_engine": "biomorphic_alchemy",
+      "fusion_kink": "adds growth patterns + Fibonacci spirals to any tradition",
+      "lab_toggle": "garden_lab",
+      "lineage": ["Sacred Geometry Notes", "Vitruvian Proportions"],
+      "docs": ["/docs/sacred_geometry_primer.txt", "/docs/vitruvius_de_architectura.txt"],
+      "glyph": "hebrew-daleth",
+      "portal": { "type": "artifact", "form": "living-garden" },
+      "science": {
+        "hz": 528,
+        "color_hex": "#FFB6C1",
+        "geometry": "flower_of_life",
+        "crystal": "rose_quartz",
+        "pigment": "verdigris"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "growth", "creativity", "nurturing"],
+      "lock": true
+    },
+    {
+      "id": "emperor",
+      "name": "The Emperor",
+      "guardian": "cornelius-agrippa",
+      "tradition_engine": "planetary_magic",
+      "fusion_kink": "adds Mars sigils + command structures to any tradition",
+      "lab_toggle": "mars_lab",
+      "lineage": ["De Occulta Philosophia", "Planetary Mars Tables"],
+      "docs": ["/docs/agrippa_occult_philosophia.txt", "/docs/agrippa_planets_mars.txt"],
+      "glyph": "hebrew-heh",
+      "portal": { "type": "artifact", "form": "iron-sigil" },
+      "science": {
+        "hz": 147,
+        "color_hex": "#FF5964",
+        "geometry": "pentagram",
+        "crystal": "hematite",
+        "pigment": "iron oxide"
+      },
+      "heal": { "nd": true, "ptsd": false },
+      "tags": ["major", "structure", "authority", "mars"],
+      "lock": true
+    },
+    {
+      "id": "hierophant",
+      "name": "The Hierophant",
+      "guardian": "paul-foster-case",
+      "tradition_engine": "golden_dawn_symbolism",
+      "fusion_kink": "adds GD color scales + ritual timing to any tradition",
+      "lab_toggle": "temple_lab",
+      "lineage": ["Paul Foster Case Tarot"],
+      "docs": ["/docs/pfc_tarot_pd.pdf"],
+      "glyph": "hebrew-vav",
+      "portal": { "type": "artifact", "form": "golden-staff" },
+      "science": {
+        "hz": 256,
+        "color_hex": "#C6A664",
+        "geometry": "double_cube",
+        "crystal": "lapis_lazuli",
+        "pigment": "antique gold"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "tradition", "teaching", "golden-dawn"],
+      "lock": true
+    },
+    {
+      "id": "lovers",
+      "name": "The Lovers",
+      "guardian": "leonora-carrington",
+      "tradition_engine": "alchemical_coniunctio",
+      "fusion_kink": "enables Fusion Kink mode: pair any two traditions",
+      "lab_toggle": "union_lab",
+      "lineage": ["Rosarium Philosophorum", "Plato Symposium"],
+      "docs": ["/docs/rosarium_philosophorum_coniunctio.txt", "/docs/plato_symposium_selections.txt"],
+      "glyph": "hebrew-zain",
+      "portal": { "type": "artifact", "form": "alchemical-union" },
+      "science": {
+        "hz": 396,
+        "color_hex": "#E5989B",
+        "geometry": "interlaced_circles",
+        "crystal": "rhodonite",
+        "pigment": "alizarin"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "union", "fusion-kink", "alchemy"],
+      "lock": true
+    },
+    {
+      "id": "chariot",
+      "name": "The Chariot",
+      "guardian": "athanasius-kircher",
+      "tradition_engine": "harmonograph_physics",
+      "fusion_kink": "adds motion paths + harmonic resonance to any tradition",
+      "lab_toggle": "harmonograph_lab",
+      "lineage": ["Musurgia Universalis"],
+      "docs": ["/docs/kircher_musurgia_plates.txt"],
+      "glyph": "hebrew-cheth",
+      "portal": { "type": "artifact", "form": "harmonograph" },
+      "science": {
+        "hz": 512,
+        "color_hex": "#6E45A3",
+        "geometry": "lemniscate",
+        "crystal": "amethyst",
+        "pigment": "octarine"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "movement", "harmony", "physics"],
+      "lock": true
+    },
+    {
+      "id": "strength",
+      "name": "Strength",
+      "guardian": "hypatia",
+      "tradition_engine": "neoplatonic_geometry",
+      "fusion_kink": "adds compassionate constraint + geometric proof to any tradition",
+      "lab_toggle": "lion_lab",
+      "lineage": ["Hypatia Geometry"],
+      "docs": ["/docs/hypatia_pd.pdf"],
+      "glyph": "hebrew-teth",
+      "portal": { "type": "artifact", "form": "lion-sigil" },
+      "science": {
+        "hz": 417,
+        "color_hex": "#1E5F4F",
+        "geometry": "golden_spiral",
+        "crystal": "malachite",
+        "pigment": "emerald veil"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "strength", "compassion", "geometry"],
+      "lock": true
+    },
+    {
+      "id": "hermit",
+      "name": "The Hermit",
+      "guardian": "paracelsus",
+      "tradition_engine": "iatrochemistry",
+      "fusion_kink": "adds alchemical distillation + dosage to any tradition",
+      "lab_toggle": "alembic_lab",
+      "lineage": ["Paracelsus Selected Writings"],
+      "docs": ["/docs/paracelsus_selected_pd.txt"],
+      "glyph": "hebrew-yod",
+      "portal": { "type": "artifact", "form": "lantern" },
+      "science": {
+        "hz": 639,
+        "color_hex": "#EDE6D5",
+        "geometry": "tetrahedron",
+        "crystal": "citrine",
+        "pigment": "bone parchment"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "wisdom", "alchemy", "healing"],
+      "lock": true
+    },
+    {
+      "id": "wheel",
+      "name": "Wheel of Fortune",
+      "guardian": "boethius-fortuna",
+      "tradition_engine": "astrological_timing",
+      "fusion_kink": "adds planetary hours + electional timing to any tradition",
+      "lab_toggle": "wheel_lab",
+      "lineage": ["Consolation of Philosophy", "Agrippa Astrology"],
+      "docs": ["/docs/boethius_consolation_pd.txt", "/docs/agrippa_astrology_wheels.txt"],
+      "glyph": "hebrew-kaph",
+      "portal": { "type": "artifact", "form": "cosmic-wheel" },
+      "science": {
+        "hz": 741,
+        "color_hex": "#7A2E2A",
+        "geometry": "mandala",
+        "crystal": "carnelian",
+        "pigment": "blood rust"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "fortune", "timing", "astrology"],
+      "lock": true
+    },
+    {
+      "id": "justice",
+      "name": "Justice",
+      "guardian": "hypatia-alexandria",
+      "tradition_engine": "mathematical_ethics",
+      "fusion_kink": "adds balance metrics + truth verification to any tradition",
+      "lab_toggle": "scales_lab",
+      "lineage": ["Hypatia Ethics", "Pythagorean Justice"],
+      "docs": ["/docs/hypatia_ethics_pd.txt", "/docs/pythagoras_justice.txt"],
+      "glyph": "hebrew-lamed",
+      "portal": { "type": "artifact", "form": "balanced-scales" },
+      "science": {
+        "hz": 852,
+        "color_hex": "#14192B",
+        "geometry": "cube",
+        "crystal": "black_tourmaline",
+        "pigment": "indigo night"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "justice", "balance", "ethics"],
+      "lock": true
+    },
+    {
+      "id": "hanged-man",
+      "name": "The Hanged Man",
+      "guardian": "orion-odin",
+      "tradition_engine": "sacrificial_initiation",
+      "fusion_kink": "inverts any tradition; reveals shadow correspondence",
+      "lab_toggle": "tree_lab",
+      "lineage": ["Poetic Edda", "Orion Mystery"],
+      "docs": ["/docs/poetic_edda_havamal.txt", "/docs/orion_mystery_pd.txt"],
+      "glyph": "hebrew-mem",
+      "portal": { "type": "artifact", "form": "world-tree" },
+      "science": {
+        "hz": 963,
+        "color_hex": "#0C0F14",
+        "geometry": "inverted_triangle",
+        "crystal": "smoky_quartz",
+        "pigment": "obsidian"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "sacrifice", "initiation", "perspective"],
+      "lock": true
+    },
+    {
+      "id": "death",
+      "name": "Death",
+      "guardian": "goetia-pd",
+      "tradition_engine": "goetic_transformation",
+      "fusion_kink": "dissolves old tradition; enables rebirth into new",
+      "lab_toggle": "scythe_lab",
+      "lineage": ["Lemegeton: Goetia", "Homeric Hymn to Pan"],
+      "docs": ["/docs/goetia_pd.txt", "/docs/homeric_hymn_pan.txt"],
+      "glyph": "hebrew-nun",
+      "portal": { "type": "artifact", "form": "transformation-scythe" },
+      "science": {
+        "hz": 211,
+        "color_hex": "#000000",
+        "geometry": "skull",
+        "crystal": "jet",
+        "pigment": "lamp black"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "transformation", "death", "rebirth"],
+      "lock": true
+    },
+    {
+      "id": "temperance",
+      "name": "Temperance",
+      "guardian": "paracelsus",
+      "tradition_engine": "spagyric_alchemy",
+      "fusion_kink": "blends any two traditions into a third, balanced path",
+      "lab_toggle": "alembic_lab",
+      "lineage": ["Paracelsus Selected Writings"],
+      "docs": ["/docs/paracelsus_selected_pd.txt"],
+      "glyph": "hebrew-samekh",
+      "portal": { "type": "artifact", "form": "alembic" },
+      "science": {
+        "hz": 528,
+        "color_hex": "#C0C0C0",
+        "geometry": "ouroboros",
+        "crystal": "clear_quartz",
+        "pigment": "silver"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "temperance", "balance", "alchemy"],
+      "lock": true
+    },
+    {
+      "id": "devil",
+      "name": "The Devil",
+      "guardian": "goetia-pd",
+      "tradition_engine": "shadow_integration",
+      "fusion_kink": "reveals hidden desire behind any tradition",
+      "lab_toggle": "chains_lab",
+      "lineage": ["Lemegeton: Goetia", "Homeric Hymn to Pan"],
+      "docs": ["/docs/goetia_pd.txt", "/docs/homeric_hymn_pan.txt"],
+      "glyph": "hebrew-ayin",
+      "portal": { "type": "artifact", "form": "liberation-chains" },
+      "science": {
+        "hz": 174,
+        "color_hex": "#8B0000",
+        "geometry": "pentagram_inverted",
+        "crystal": "black_obsidian",
+        "pigment": "dragon's blood"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "shadow", "liberation", "truth"],
+      "lock": true
+    },
+    {
+      "id": "tower",
+      "name": "The Tower",
+      "guardian": "agrippa-mars",
+      "tradition_engine": "mars_destruction",
+      "fusion_kink": "shatters false structures in any tradition",
+      "lab_toggle": "lightning_lab",
+      "lineage": ["De Occulta Philosophia"],
+      "docs": ["/docs/agrippa_occult_philosophia.txt"],
+      "glyph": "hebrew-peh",
+      "portal": { "type": "artifact", "form": "lightning-strike" },
+      "science": {
+        "hz": 147,
+        "color_hex": "#FF4500",
+        "geometry": "bolt",
+        "crystal": "moldavite",
+        "pigment": "mars red"
+      },
+      "heal": { "nd": true, "ptsd": false },
+      "tags": ["major", "tower", "destruction", "awakening"],
+      "lock": true
+    },
+    {
+      "id": "star",
+      "name": "The Star",
+      "guardian": "bruno-hermeticum",
+      "tradition_engine": "hermetic_cosmology",
+      "fusion_kink": "adds cosmic hope + infinite universe to any tradition",
+      "lab_toggle": "star_lab",
+      "lineage": ["Infinite Universe", "Corpus Hermeticum XII"],
+      "docs": ["/docs/bruno_infinite_universe.txt", "/docs/hermeticum_XII.txt"],
+      "glyph": "hebrew-tzaddi",
+      "portal": { "type": "artifact", "form": "stellar-fountain" },
+      "science": {
+        "hz": 852,
+        "color_hex": "#00BFB3",
+        "geometry": "stellated_octahedron",
+        "crystal": "aquamarine",
+        "pigment": "celestial blue"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "hope", "cosmos", "infinity"],
+      "lock": true
+    },
+    {
+      "id": "moon",
+      "name": "The Moon",
+      "guardian": "dion-fortune",
+      "tradition_engine": "lunar_psychology",
+      "fusion_kink": "adds dream logic + illusion navigation to any tradition",
+      "lab_toggle": "tide_lab",
+      "lineage": ["Mystical Qabalah"],
+      "docs": ["/docs/fortune_mystical_qabalah.txt"],
+      "glyph": "hebrew-qoph",
+      "portal": { "type": "artifact", "form": "lunar-mirror" },
+      "science": {
+        "hz": 288,
+        "color_hex": "#B1C4FF",
+        "geometry": "crescent",
+        "crystal": "moonstone",
+        "pigment": "lunar white"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "moon", "psychology", "dreams"],
+      "lock": true
+    },
+    {
+      "id": "sun",
+      "name": "The Sun",
+      "guardian": "leonardo-da-vinci",
+      "tradition_engine": "vitruvian_harmony",
+      "fusion_kink": "adds genius illumination + golden ratio to any tradition",
+      "lab_toggle": "helios_lab",
+      "lineage": ["Vitruvius", "Leonardo Notebooks"],
+      "docs": ["/docs/vitruvius_de_architectura.txt", "/docs/leonardo_notebooks_selections.txt"],
+      "glyph": "hebrew-resh",
+      "portal": { "type": "artifact", "form": "solar-disc" },
+      "science": {
+        "hz": 128,
+        "color_hex": "#FFD700",
+        "geometry": "golden_rectangle",
+        "crystal": "citrine",
+        "pigment": "sun gold"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "sun", "genius", "illumination"],
+      "lock": true
+    },
+    {
+      "id": "judgement",
+      "name": "Judgement",
+      "guardian": "ps-dionysius",
+      "tradition_engine": "celestial_hierarchy",
+      "fusion_kink": "adds angelic choir + remembrance to any tradition",
+      "lab_toggle": "trumpet_lab",
+      "lineage": ["Ezekiel 1", "Celestial Hierarchy", "Dies Irae"],
+      "docs": ["/docs/ezekiel_ch1_pd.txt", "/docs/ps_dionysius_celestial_hierarchy.txt", "/docs/dies_irae_pd.txt"],
+      "glyph": "hebrew-shin",
+      "portal": { "type": "artifact", "form": "celestial-trumpet" },
+      "science": {
+        "hz": 963,
+        "color_hex": "#FFFFFF",
+        "geometry": "flame",
+        "crystal": "diamond",
+        "pigment": "pure white"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "judgement", "awakening", "celestial"],
+      "lock": true
+    },
+    {
+      "id": "world",
+      "name": "The World",
+      "guardian": "cosmogenesis",
+      "tradition_engine": "hermetic_integration",
+      "fusion_kink": "completes any tradition; exports as shareable artifact",
+      "lab_toggle": "cosmos_lab",
+      "lineage": ["Corpus Hermeticum I & XII", "Ptolemy Almagest"],
+      "docs": ["/docs/hermeticum_I_XII_compendium.txt", "/docs/ptolemy_almagest_selections.txt"],
+      "glyph": "hebrew-tau",
+      "portal": { "type": "artifact", "form": "cosmic-wreath" },
+      "science": {
+        "hz": 432,
+        "color_hex": "#6E45A3",
+        "geometry": "torus",
+        "crystal": "moldavite",
+        "pigment": "cosmic violet"
+      },
+      "heal": { "nd": true, "ptsd": true },
+      "tags": ["major", "world", "completion", "integration"],
+      "lock": true
+    }
+  ],
+  "fusion_combinations": {
+    "magus_high_priestess": {
+      "name": "Enochian Sacred Geometry Laboratory",
+      "description": "Angelic communication through healing geometric patterns",
+      "lab_environment": "Floating sigils within sacred geometry grids",
+      "combined_hz": 440.175,
+      "healing_focus": "Communication trauma through geometric harmony"
+    },
+    "lovers_any": {
+      "name": "Fusion Kink Master Mode",
+      "description": "Enables pairing of any two traditions for sacred synthesis",
+      "lab_environment": "Alchemical union chamber with dual tradition synthesis",
+      "special": "Core fusion mechanism - works with any other card"
+    },
+    "fool_lovers": {
+      "name": "Void Union Sanctuary",
+      "description": "Fresh start relationships with infinite possibility",
+      "lab_environment": "Starfield with alchemical union portals",
+      "healing_focus": "Relationship trauma recovery and new beginning love"
+    }
+  }
+}

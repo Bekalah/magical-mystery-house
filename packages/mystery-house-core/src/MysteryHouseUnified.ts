@@ -20,6 +20,23 @@
 import { Codex144Engine, CodexNode } from '../../codex-144-99-core/src/Codex144Engine';
 import { MysteryRoom, RoomFeature, RoomCorrespondences } from './MysteryHouseEngine';
 
+/**
+ * ⚗️ UnifiedPuzzle - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface UnifiedPuzzle {
   id: string;
   type: 'soyga' | 'iching' | 'kabbalah' | 'astrology' | 'solfeggio' | 'fractal' | 'fusion_kink';
@@ -37,6 +54,23 @@ export interface UnifiedPuzzle {
   canon: string[];
 }
 
+/**
+ * ⚗️ UnifiedArt - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface UnifiedArt {
   id: string;
   tradition: string;
@@ -52,6 +86,23 @@ export interface UnifiedArt {
   };
 }
 
+/**
+ * ⚗️ UnifiedScience - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface UnifiedScience {
   id: string;
   tradition: string;
@@ -67,6 +118,23 @@ export interface UnifiedScience {
   };
 }
 
+/**
+ * ⚗️ UnifiedCanon - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface UnifiedCanon {
   id: string;
   tradition: string;
@@ -81,6 +149,23 @@ export interface UnifiedCanon {
   };
 }
 
+/**
+ * ⚗️ UnifiedMysteryRoom - The Principle
+ * 
+ * In the alchemical tradition, this type serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this type
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Principle
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export interface UnifiedMysteryRoom extends MysteryRoom {
   puzzles: UnifiedPuzzle[];
   art: UnifiedArt[];
@@ -99,6 +184,23 @@ export interface UnifiedMysteryRoom extends MysteryRoom {
   };
 }
 
+/**
+ * ⚗️ MysteryHouseUnified - The Crucible
+ * 
+ * In the alchemical tradition, this class serves as a vessel where
+ * aether energy and sacred mathematics converge to manifest
+ * visionary works.
+ * 
+ * Like the philosopher's stone transforming base metals to gold, this class
+ * transforms raw data and principles into art that speaks to the deepest
+ * layers of human experience.
+ * 
+ * **Element**: Aether
+ * **Process**: The Crucible
+ * **Ratio**: 144:99 (Sacred Cathedral Proportion)
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
 export class MysteryHouseUnified {
   private codex: Codex144Engine;
   private rooms: Map<number, UnifiedMysteryRoom>;
@@ -539,6 +641,102 @@ export class MysteryHouseUnified {
         id: `room-${roomNum}-fusion-kink-canon`,
         tradition: 'Fusion Kink',
         sources: ['Fusion Kink - 78-card tarot system', 'Major Arcana (22)', 'Minor Arcana (56)', 'Rebis'],
+        texts: ['Fusion Kink tarot texts', 'Rebis texts'],
+        psychomagic: 'Fusion Ritual Angel',
+        angel_tech: 'Rebis Angel',
+        codex_connection: { node: node?.nodeIndex, arcana: node?.consciousnessLevel }
+      }
+    ];
+  }
+
+  private generatePsychomagicRitual(roomNum: number, node: CodexNode | null): string {
+    if (!node) return `Psychomagic Ritual for Room ${roomNum}`;
+    
+    const rituals = [
+      'Dissolution Ritual (Solve)',
+      'Coagulation Ritual (Coagula)',
+      'Conjunction Ritual (Coniunctio)',
+      'Separation Ritual (Separatio)'
+    ];
+    
+    return `${rituals[roomNum % rituals.length]} - ${node.name} through psychomagic`;
+  }
+
+  private generateAngelTechConnection(roomNum: number, node: CodexNode | null): string {
+    if (!node) return `Angel Tech Connection for Room ${roomNum}`;
+    
+    const angels = [
+      'Circuit Angel',
+      'Archetypal Angel',
+      'Qabalistic Angel',
+      'Hermetic Angel',
+      'Neoplatonic Angel',
+      'Thelemic Angel',
+      'Mystic Christian Angel'
+    ];
+    
+    return `${angels[roomNum % angels.length]} - ${node.name} through angel tech`;
+  }
+
+  private generateAllSystemsConnection(roomNum: number, node: CodexNode | null, depth: number): UnifiedMysteryRoom['all_systems_connected'] {
+    return {
+      soyga: {
+        table: (roomNum % 36) + 1,
+        planetary: ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn'][roomNum % 7]
+      },
+      iching: {
+        hexagram: (roomNum % 64) + 1,
+        changing_lines: [depth % 6 + 1]
+      },
+      kabbalah: {
+        sephirah: node ? (node.consciousnessLevel % 10) + 1 : (roomNum % 10) + 1,
+        path: node ? node.consciousnessLevel : (roomNum % 22)
+      },
+      astrology: {
+        planetary_node: ['North Node', 'South Node'][roomNum % 2],
+        evolution: node?.consciousnessLevel || depth
+      },
+      solfeggio: {
+        frequency: node?.frequency || [174, 285, 396, 417, 528, 639, 741, 852, 963][depth % 9],
+        hz: node?.frequency || [174, 285, 396, 417, 528, 639, 741, 852, 963][depth % 9]
+      },
+      fractal: {
+        iteration: depth,
+        pattern: ['Mandelbrot', 'Julia', 'Sacred Geometry'][roomNum % 3]
+      },
+      fusion_kink: {
+        card: (roomNum % 78) + 1,
+        arcana: node?.consciousnessLevel || (roomNum % 22)
+      }
+    };
+  }
+
+  getRoom(roomNumber: number): UnifiedMysteryRoom | null {
+    return this.rooms.get(roomNumber) || null;
+  }
+
+  getAllRooms(): UnifiedMysteryRoom[] {
+    return Array.from(this.rooms.values());
+  }
+
+  getRoomsBySystem(system: 'soyga' | 'iching' | 'kabbalah' | 'astrology' | 'solfeggio' | 'fractal' | 'fusion_kink'): UnifiedMysteryRoom[] {
+    return Array.from(this.rooms.values()).filter(room => 
+      room.puzzles.some(p => p.type === system) ||
+      room.art.some(a => a.tradition.toLowerCase().includes(system)) ||
+      room.science.some(s => s.tradition.toLowerCase().includes(system))
+    );
+  }
+
+  getRoomsByArcana(arcana: number): UnifiedMysteryRoom[] {
+    return Array.from(this.rooms.values()).filter(room => 
+      room.arcanaConnections.includes(arcana)
+    );
+  }
+}
+
+export default MysteryHouseUnified;
+
+ (22)', 'Minor Arcana (56)', 'Rebis'],
         texts: ['Fusion Kink tarot texts', 'Rebis texts'],
         psychomagic: 'Fusion Ritual Angel',
         angel_tech: 'Rebis Angel',

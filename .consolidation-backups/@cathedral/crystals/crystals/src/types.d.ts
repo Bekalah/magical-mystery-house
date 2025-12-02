@@ -1,8 +1,3 @@
-/**
- * types.d
- * 
- * @package @cathedral/crystals
- */
 export interface Crystal {
     id: string;
     displayName: string;

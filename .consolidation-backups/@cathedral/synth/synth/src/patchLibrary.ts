@@ -1,7 +1,3 @@
-/**
- * @license CC0-1.0 - Public Domain
- */
-
 // patchLibrary.ts - archetype + crystal influenced patches
 import { PatchDefinition } from './types';
 

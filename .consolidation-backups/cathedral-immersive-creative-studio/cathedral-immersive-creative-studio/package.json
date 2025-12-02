@@ -1,0 +1,24 @@
+{
+  "name": "cathedral-immersive-creative-studio",
+  "version": "1.0.0",
+  "license": "CC0-1.0",
+  "description": "",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "consolidated": true,
+  "consolidatedAt": "2025-12-01T21:14:05.371Z",
+  "alchemical": {
+    "name": "Cathedral Immersive Creative Studio",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Immersive Creative Studio (cathedral-immersive-creative-studio)"
+  },
+  "packageManager": "pnpm@10.23.0",
+  "engines": {
+    "node": "*"
+  }
+}

@@ -98,7 +98,7 @@ function getSystemStatus() {
 
   // Recommendations
   if (status.health !== 'healthy') {
-    status.recommendations.push('Run health check: ppnpm run health:monitor:once');
+    status.recommendations.push('Run health check: pppnpm run health:monitor:once');
   }
 
   return status;

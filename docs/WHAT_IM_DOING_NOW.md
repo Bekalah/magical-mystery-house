@@ -191,7 +191,7 @@ cat docs/LIVE_UPDATES_REPORT.json
 
 ### Check Improvement Status
 ```bash
-ppnpm run experiment:status
+pnpm run experiment:status
 ```
 
 ### Check Monorepo Improvements

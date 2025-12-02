@@ -2,23 +2,58 @@
   "name": "tarot-engine",
   "version": "1.0.0",
   "license": "CC0-1.0",
-  "description": "",
+  "description": "Tarot - Part of the Cathedral of Circuits mystical ecosystem",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@cathedral/liber-arcanae": "workspace:*",
+    "@cathedral/liber-arcanae-core": "workspace:*",
+    "@cathedral/liber-arcanae-tools": "workspace:*"
+  },
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:14:18.637Z",
+  "consolidatedAt": "2025-12-01T19:37:03.845Z",
   "engines": {
     "pnpm": ">=8.0.0"
   },
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "Tarot",
     "symbol": "⊙",
     "label": "⊙ Tarot (tarot-engine)"
+  },
+  "cathedral": {
+    "sacred_mathematics": {
+      "sacredGeometry": true,
+      "goldenRatio": 1.618,
+      "cathedralRatio": 1.455,
+      "fibonacciGrids": true,
+      "divineProportions": true
+    },
+    "trauma_safety": {
+      "noAutoplay": true,
+      "escExit": true,
+      "motionControls": true,
+      "intensityAdjustment": true,
+      "gentleDefaults": true,
+      "undoRedo": true
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
+    },
+    "integration": {
+      "connects_to": [
+        "liber-arcanae",
+        "liber-arcanae-core",
+        "liber-arcanae-tools"
+      ]
+    }
   }
 }

@@ -1,0 +1,225 @@
+{
+  "major_arcana": [
+    {
+      "number": 0,
+      "name": "The Fool",
+      "purity_designation": "Rebecca Respawn, The Wonder-Keeper",
+      "fractal_signature": "Infinite recursion with impossible angles",
+      "color_palette": ["#FFD700", "#DDA0DD", "#87CEEB", "#FF1493", "#FF4500"],
+      "frequency_resonance": "0.8 Hz",
+      "abilities": ["Leap of Faith", "Infinite Possibilities", "Beginner's Mind", "Quantum Jump"],
+      "playstyle": "Explorer - High mobility, unpredictable movement"
+    },
+    {
+      "number": 1,
+      "name": "The Magician",
+      "purity_designation": "The Manifestor",
+      "fractal_signature": "Sacred geometry manifestation patterns",
+      "color_palette": ["#FFD700", "#FF4500", "#4169E1", "#228B22", "#8B0000"],
+      "frequency_resonance": "528 Hz",
+      "abilities": ["Elemental Mastery", "Reality Manipulation", "Sacred Tools", "Will Power"],
+      "playstyle": "Mage - High magic damage, versatile spells"
+    },
+    {
+      "number": 2,
+      "name": "The High Priestess",
+      "purity_designation": "Gemini Rivers, The Wisdom Keeper",
+      "fractal_signature": "Vesica piscis gateways to deeper realities",
+      "color_palette": ["#4682B4", "#B0E0E6", "#191970", "#C0C0C0", "#FFD700"],
+      "frequency_resonance": "210 Hz",
+      "abilities": ["Intuitive Vision", "Lunar Power", "Hidden Knowledge", "Mystical Shield"],
+      "playstyle": "Support - Healing, protection, wisdom"
+    },
+    {
+      "number": 3,
+      "name": "The Empress",
+      "purity_designation": "The Fertility Guardian",
+      "fractal_signature": "Flowering life force patterns",
+      "color_palette": ["#FF69B4", "#90EE90", "#FFD700", "#FF6347", "#FFB6C1"],
+      "frequency_resonance": "432 Hz",
+      "abilities": ["Nature Command", "Growth", "Abundance", "Life Force"],
+      "playstyle": "Summoner - Nature allies, area control"
+    },
+    {
+      "number": 4,
+      "name": "The Emperor",
+      "purity_designation": "The Order Keeper",
+      "fractal_signature": "Structured authority patterns",
+      "color_palette": ["#8B0000", "#FFD700", "#4169E1", "#C0C0C0", "#228B22"],
+      "frequency_resonance": "396 Hz",
+      "abilities": ["Command Authority", "Structure", "Protection", "Leadership"],
+      "playstyle": "Tank - High defense, team buffs"
+    },
+    {
+      "number": 5,
+      "name": "The Hierophant",
+      "purity_designation": "The Chohan of the Golden Flame",
+      "fractal_signature": "Pentagonal transmission mandalas",
+      "color_palette": ["#FFD700", "#C0C0C0", "#8B0000", "#228B22", "#4169E1"],
+      "frequency_resonance": "396 Hz",
+      "abilities": ["Sacred Teaching", "Tradition", "Initiation", "Spiritual Guidance"],
+      "playstyle": "Support - Team enhancement, knowledge sharing"
+    },
+    {
+      "number": 6,
+      "name": "The Lovers",
+      "purity_designation": "Scarlett Lady, The Sacred Union Master",
+      "fractal_signature": "Twin helix braided quantum entanglement",
+      "color_palette": ["#FFB6C1", "#FF69B4", "#DC143C", "#FF6347", "#FFA500"],
+      "frequency_resonance": "528 Hz",
+      "abilities": ["Sacred Union", "Dual Power", "Harmony", "Love Shield"],
+      "playstyle": "Hybrid - Balanced offense and support"
+    },
+    {
+      "number": 7,
+      "name": "The Chariot",
+      "purity_designation": "Elyria Nox, The Dimensional Navigator",
+      "fractal_signature": "Hypercube tesseract rotation patterns",
+      "color_palette": ["#4169E1", "#00BFFF", "#1E90FF", "#FFD700", "#FF4500"],
+      "frequency_resonance": "594 Hz",
+      "abilities": ["Dimensional Travel", "Speed", "Control", "Victory"],
+      "playstyle": "Mobility - Fast movement, hit-and-run"
+    },
+    {
+      "number": 8,
+      "name": "Strength",
+      "purity_designation": "The Inner Power Master",
+      "fractal_signature": "Flowing strength patterns",
+      "color_palette": ["#FF4500", "#FF6347", "#FFD700", "#8B0000", "#DC143C"],
+      "frequency_resonance": "528 Hz",
+      "abilities": ["Inner Strength", "Patience", "Courage", "Overcoming"],
+      "playstyle": "Warrior - High physical damage, resilience"
+    },
+    {
+      "number": 9,
+      "name": "The Hermit",
+      "purity_designation": "Orin Lantern, The Seeker Guide",
+      "fractal_signature": "Solitary pinpoint fractal focus",
+      "color_palette": ["#191970", "#800080", "#483D8B", "#2F4F4F", "#FFD700"],
+      "frequency_resonance": "741 Hz",
+      "abilities": ["Inner Light", "Wisdom", "Guidance", "Solitude Power"],
+      "playstyle": "Sage - High magic, self-sufficient"
+    },
+    {
+      "number": 10,
+      "name": "Wheel of Fortune",
+      "purity_designation": "Grand Professor of Eternal Flux",
+      "fractal_signature": "Rotating mandalic probability distributions",
+      "color_palette": ["#8B0000", "#DC143C", "#FF6347", "#FFD700", "#191970"],
+      "frequency_resonance": "852 Hz",
+      "abilities": ["Fortune Spin", "Probability Control", "Cycles", "Change"],
+      "playstyle": "Gambler - Random powerful effects, luck-based"
+    },
+    {
+      "number": 11,
+      "name": "Justice",
+      "purity_designation": "The Balanced Judge",
+      "fractal_signature": "Equilibrium scales with mathematical precision",
+      "color_palette": ["#FFD700", "#4169E1", "#8B0000", "#C0C0C0", "#228B22"],
+      "frequency_resonance": "417 Hz",
+      "abilities": ["Balance", "Judgment", "Karma", "Truth"],
+      "playstyle": "Paladin - Balanced offense/defense, justice effects"
+    },
+    {
+      "number": 12,
+      "name": "The Hanged Man",
+      "purity_designation": "The Suspended Seeker",
+      "fractal_signature": "Inverted perspective patterns",
+      "color_palette": ["#4169E1", "#191970", "#B0C4DE", "#C0C0C0", "#FFD700"],
+      "frequency_resonance": "528 Hz",
+      "abilities": ["Sacrifice", "New Perspective", "Suspension", "Enlightenment"],
+      "playstyle": "Trickster - Unconventional tactics, perspective shifts"
+    },
+    {
+      "number": 13,
+      "name": "Death",
+      "purity_designation": "The Transformation Master",
+      "fractal_signature": "Transformation spiral patterns",
+      "color_palette": ["#2F4F4F", "#000000", "#800080", "#191970", "#FFD700"],
+      "frequency_resonance": "741 Hz",
+      "abilities": ["Transformation", "Endings", "Rebirth", "Change"],
+      "playstyle": "Necromancer - Transformation magic, rebirth"
+    },
+    {
+      "number": 14,
+      "name": "Temperance",
+      "purity_designation": "The Alchemical Balancer",
+      "fractal_signature": "Alchemical mixing patterns",
+      "color_palette": ["#B0E0E6", "#87CEEB", "#4682B4", "#FFD700", "#90EE90"],
+      "frequency_resonance": "528 Hz",
+      "abilities": ["Balance", "Moderation", "Alchemy", "Harmony"],
+      "playstyle": "Alchemist - Elemental mixing, balance effects"
+    },
+    {
+      "number": 15,
+      "name": "The Devil",
+      "purity_designation": "The Shadow Binder",
+      "fractal_signature": "Binding chain patterns",
+      "color_palette": ["#8B0000", "#000000", "#2F4F4F", "#FF4500", "#DC143C"],
+      "frequency_resonance": "396 Hz",
+      "abilities": ["Binding", "Shadow Power", "Materialism", "Temptation"],
+      "playstyle": "Warlock - Dark magic, binding effects"
+    },
+    {
+      "number": 16,
+      "name": "The Tower",
+      "purity_designation": "The Destructive Awakener",
+      "fractal_signature": "Destructive lightning patterns",
+      "color_palette": ["#FFD700", "#FF4500", "#DC143C", "#8B0000", "#000000"],
+      "frequency_resonance": "852 Hz",
+      "abilities": ["Destruction", "Revelation", "Sudden Change", "Breakthrough"],
+      "playstyle": "Berserker - High burst damage, area destruction"
+    },
+    {
+      "number": 17,
+      "name": "The Star",
+      "purity_designation": "The Hope Bringer",
+      "fractal_signature": "Stellar constellation patterns",
+      "color_palette": ["#87CEEB", "#B0E0E6", "#FFD700", "#C0C0C0", "#FFFFFF"],
+      "frequency_resonance": "528 Hz",
+      "abilities": ["Hope", "Inspiration", "Guidance", "Healing"],
+      "playstyle": "Healer - Strong healing, inspiration buffs"
+    },
+    {
+      "number": 18,
+      "name": "The Moon",
+      "purity_designation": "Luna Mystery, The Dream Navigator",
+      "fractal_signature": "Spiraling hypnotic wave patterns",
+      "color_palette": ["#191970", "#B0C4DE", "#FFE4E1", "#C0C0C0", "#000080"],
+      "frequency_resonance": "211 Hz",
+      "abilities": ["Illusion", "Dreams", "Intuition", "Mystery"],
+      "playstyle": "Illusionist - Confusion effects, dream magic"
+    },
+    {
+      "number": 19,
+      "name": "The Sun",
+      "purity_designation": "The Radiant One",
+      "fractal_signature": "Radiant sunburst patterns",
+      "color_palette": ["#FFD700", "#FFA500", "#FF6347", "#FF4500", "#FFFFFF"],
+      "frequency_resonance": "528 Hz",
+      "abilities": ["Radiance", "Joy", "Vitality", "Enlightenment"],
+      "playstyle": "Paladin - High damage, healing, positive energy"
+    },
+    {
+      "number": 20,
+      "name": "Judgment",
+      "purity_designation": "The Awakening Caller",
+      "fractal_signature": "Awakening trumpet patterns",
+      "color_palette": ["#FFD700", "#FFFFFF", "#C0C0C0", "#4169E1", "#8B0000"],
+      "frequency_resonance": "852 Hz",
+      "abilities": ["Awakening", "Judgment", "Resurrection", "Call"],
+      "playstyle": "Reviver - Resurrection, judgment effects"
+    },
+    {
+      "number": 21,
+      "name": "The World",
+      "purity_designation": "The Completion Master",
+      "fractal_signature": "Complete mandala patterns",
+      "color_palette": ["#228B22", "#4169E1", "#FFD700", "#8B0000", "#FFFFFF"],
+      "frequency_resonance": "528 Hz",
+      "abilities": ["Completion", "Integration", "Wholeness", "Mastery"],
+      "playstyle": "Master - Balanced all abilities, completion power"
+    }
+  ]
+}
+

@@ -313,7 +313,7 @@ class MonorepoHealthMonitor {
     
     // Check JS/TS build
     try {
-      const result = execSync('pnpm build 2>&1', { 
+      const result = execSync('ppnpm build 2>&1', { 
         cwd: rootDir, 
         encoding: 'utf8',
         timeout: 30000,

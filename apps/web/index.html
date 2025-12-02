@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Museum-Quality Alchemy Engine Visuals -->
+    <link rel="stylesheet" href="/alchemy-engine.css" />
+    <!-- Haute Couture Baseline Styles -->
+    <link rel="stylesheet" href="/packages/shared/assets/css/couture.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/cathedral-icon.svg" />
+    <title>🏛️ Cathedral of Circuits - Living Grimoire Engine</title>
+    <meta name="description" content="Sacred consciousness technology with 22 Living Tradition Engines, Codex 144:99, and trauma-informed design" />
+    <meta name="keywords" content="cathedral, tarot, consciousness, trauma-safe, sacred geometry, archetypal work" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cathedral of Circuits - Living Grimoire Engine" />
+    <meta property="og:description" content="22 Living Tradition Engines with Fusion Kink Heaven and maximum trauma safety" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Trauma Safety Meta -->
+    <meta name="trauma-safety" content="maximum CPTSD-safe design with ND accommodations" />
+    <meta name="therapeutic-integration" content="professional trauma-informed backing available" />
+    
+    <!-- Sacred Geometry Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 10L90 50L50 90L10 50Z' fill='%234169E1'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div class="alchemy-container"></div>
+  <!-- Haute Couture Baseline Container -->
+  <div class="cathedral-couture"></div>
+    <div id="root"></div>
+    <script src="/alchemy-engine.js"></script>
+    <!-- Import the shared couture engine -->
+    <script type="module">
+      import '/packages/shared/couture-engine.js';
+      window.addEventListener('DOMContentLoaded', () => {
+        if (window.CathedralCoutureEngine) {
+          const couture = new window.CathedralCoutureEngine();
+          couture.init();
+        }
+      });
+    </script>
+    <script>
+      // Initialize the museum-quality alchemy visuals
+      window.addEventListener('DOMContentLoaded', () => {
+        if (window.AlchemyEngine) {
+          const engine = new window.AlchemyEngine();
+          engine.init();
+        }
+      });
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

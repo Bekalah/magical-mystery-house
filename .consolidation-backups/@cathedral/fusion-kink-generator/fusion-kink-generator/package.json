@@ -28,18 +28,14 @@
   },
   "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/fusion-kink-generator",
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": "*",
+    "pnpm": "*"
   },
-  "dependencies": {},
-  "devDependencies": {},
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:53.974Z",
-  "packageManager": "pnpm@8.0.0",
+  "packageManager": "ppppnpm@10.23.0",
+  "types": "dist/index.d.ts",
   "alchemical": {
     "name": "Fusion Kink Generator",
     "symbol": "⊙",
     "label": "⊙ Fusion Kink Generator (@cathedral/fusion-kink-generator)"
-  },
-  "types": "dist/index.d.ts"
+  }
 }

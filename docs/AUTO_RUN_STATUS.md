@@ -97,7 +97,7 @@ tail -f /tmp/experiment-night.log
 
 # Check status
 cd /Users/rebeccalemke/cathedral-master-deployment
-ppnpm run improve:continuous:status
+pnpm run improve:continuous:status
 ```
 
 ### View Progress
@@ -106,13 +106,13 @@ ppnpm run improve:continuous:status
 tail -f /tmp/experiment-night.log
 
 # Experiment status
-ppnpm run improve:continuous:status
+pnpm run improve:continuous:status
 
 # Analytics
-ppnpm run analytics
+pnpm run analytics
 
 # Insights
-ppnpm run insights
+pnpm run insights
 ```
 
 ## Auto-Run Safety
@@ -196,7 +196,7 @@ Or use the npm script:
 
 ```bash
 cd /Users/rebeccalemke/cathedral-master-deployment
-ppnpm run improve:continuous > /tmp/experiment-night.log 2>&1 &
+pnpm run improve:continuous > /tmp/experiment-night.log 2>&1 &
 ```
 
 ## Current Status

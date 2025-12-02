@@ -214,13 +214,13 @@ function setupGitHubPages() {
     <div class="feature">
       <h2>🚀 Getting Started</h2>
       <pre><code># Install
-ppnpm install
+pnpm install
 
 # Build
-ppnpm run build
+pnpm run build
 
 # Run
-ppnpm run dev</code></pre>
+pnpm run dev</code></pre>
     </div>
 
     <div class="feature">
@@ -298,9 +298,9 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
-      - run: ppnpm install
-      - run: ppnpm run build
-      - run: ppnpm publish --access public
+      - run: pnpm install
+      - run: pnpm run build
+      - run: pnpm publish --access public
         env:
           NODE_AUTH_TOKEN: \${{ secrets.NPM_TOKEN }}
 `;
@@ -352,7 +352,7 @@ async function main() {
   console.log('   2. Configure GitHub Pages in repository settings');
   console.log('   3. Connect Vercel: vercel login && vercel');
     console.log('   4. Create web interface (Next.js app)');
-  console.log('   6. Publish packages: ppnpm run publish:packages');
+  console.log('   6. Publish packages: pnpm run publish:packages');
   console.log('\n✅ Ready to publish!');
 }
 

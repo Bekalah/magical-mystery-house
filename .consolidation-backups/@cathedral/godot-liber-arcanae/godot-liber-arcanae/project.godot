@@ -1,0 +1,39 @@
+; Engine configuration file for Godot 4.5
+; This file is generated automatically - do not edit manually
+
+[application]
+
+config/name="Liber Arcanae - 22 Major Arcana"
+run/main_scene="res://scenes/main_menu.tscn"
+config/features=PackedStringArray("4.5", "Forward Plus")
+config/icon="res://icon.svg"
+
+[rendering]
+
+renderer/rendering_method="forward_plus"
+renderer/rendering_method.mobile="mobile"
+textures/canvas_textures/default_texture_filter=2
+2d/snap/snap_2d_transforms_to_pixel=false
+2d/snap/snap_2d_vertices_to_pixel=false
+
+[audio]
+
+driver/output_latency=15
+
+[input]
+
+[autoload]
+
+[display]
+
+window/size/viewport_width=1152
+window/size/viewport_height=648
+window/size/resizable=true
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=2
+2d/snap/snap_2d_transforms_to_pixel=false
+2d/snap/snap_2d_vertices_to_pixel=false

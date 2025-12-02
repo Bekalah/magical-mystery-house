@@ -25,10 +25,16 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Build project
         run: pnpm run build
-      - uses: amondnet/vercel-action@v20
+      - name: Deploy to Vercel
+        if: ${{ secrets.VERCEL_TOKEN != '' }}
+        uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           vercel-args: '--prod'
+          working-directory: ./
+      - name: Vercel deployment skipped
+        if: ${{ secrets.VERCEL_TOKEN == '' }}
+        run: echo "⚠️  VERCEL_TOKEN not set - deployment skipped. Set VERCEL_TOKEN, VERCEL_ORG_ID, and VERCEL_PROJECT_ID secrets to enable Vercel deployment."
 

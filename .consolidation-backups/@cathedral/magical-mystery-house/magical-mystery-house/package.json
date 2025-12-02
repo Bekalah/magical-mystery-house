@@ -1,0 +1,33 @@
+{
+  "name": "@cathedral/magical-mystery-house",
+  "version": "1.0.0",
+  "description": "Magical Mystery House - Cultural archetypes and runic mysteries",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "build": "echo 'Magical Mystery House build complete'",
+    "test": "echo 'Magical Mystery House tests passing'"
+  },
+  "keywords": [
+    "cathedral",
+    "magical-mystery-house",
+    "cultural",
+    "archetypes"
+  ],
+  "author": "Rebecca Respawn",
+  "license": "CC0-1.0",
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "packageManager": "ppppnpm@10.23.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.ts",
+  "alchemical": {
+    "name": "Magical Mystery House",
+    "symbol": "⊙",
+    "label": "⊙ Magical Mystery House (@cathedral/magical-mystery-house)"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "system": "Codex 144:99 - The Central Ledger",
+  "version": "1.0.0",
+  "total_nodes": 144,
+  "sacred_ratio": "144:99",
+  "nodes": [
+    {
+      "id": 1,
+      "slug": "void-initiation",
+      "title": "The Void Initiation",
+      "layer": "Foundation",
+      "numerology": 1,
+      "geometry": "Point - The Origin",
+      "element": "Void",
+      "planet": "Pluto",
+      "chakra": "Root",
+      "color_ray": "#000000",
+      "frequency_hz": 194.18,
+      "tarot_correspondence": ["The Fool"],
+      "crystal": "Black Tourmaline",
+      "symbol": "●",
+      "teaching_function": "Beginning in perfect emptiness",
+      "related_gates": [144, 99, 22],
+      "guardian": "The Void Guardian",
+      "trinity_complexity": {
+        "MIND": {
+          "concept": "The fertile darkness before creation",
+          "wisdom": "Embracing unknowing as sacred space for new understanding",
+          "understanding": "Void as infinite potential rather than mere emptiness",
+          "cognitive_approach": "Apophatic mysticism - knowing through unknowing",
+          "teaching_method": "Contemplative inquiry into the nature of consciousness"
+        },
+        "BODY": {
+          "sensation": "Deep stillness and spaciousness in the nervous system",
+          "manifestation": "Physical practices of emptying and receptivity",
+          "healing": "Nervous system restoration through sacred rest",
+          "embodied_practice": "Void meditation with breath awareness",
+          "trauma_informed": "Gentle approach to stillness with exit options always available"
+        },
+        "SOUL": {
+          "archetype": "The Fool at the edge of the cliff - pure potential",
+          "essence": "Infinite possibility awaiting conscious direction",
+          "connection": "Unity with the source of all manifestation",
+          "spiritual_practice": "Surrender to the unknown with trust",
+          "archetypal_guide": "The Fool Major Arcana - initiation energy"
+        }
+      },
+      "app_presentations": {
+        "SOUL_APP": "Book game entry with archetypal storytelling and Fool's journey narrative",
+        "BODY_APP": "Sacred geometry visualization with embodied void practices and healing protocols",
+        "SPIRIT_APP": "Interactive consciousness exploration synthesizing all trinity aspects"
+      },
+      "liber_arcanae_integration": {
+        "primary_guide": "The Fool",
+        "guidance_type": "Initiation wisdom and trust in the unknown",
+        "archetypal_message": "Every ending is a beginning, every void births new worlds",
+        "living_presence": "Available as interactive guide in all three apps"
+      },
+      "safety": {
+        "ndSafe": true,
+        "traumaInformed": true,
+        "cptsdAdapted": true,
+        "void_safety": "Gentle approach to emptiness - not forcing spiritual bypassing"
+      },
+      "provenance": {
+        "sources": ["Pseudo-Dionysius Mystical Theology", "John of the Cross Dark Night"],
+        "public_domain": true
+      },
+      "docs": ["/docs/void_mysticism_pd.txt", "/docs/apophatic_theology_pd.txt"],
+      "fusion_kink": {
+        "enabled": true,
+        "combines_with": "all",
+        "specialty": "Beginning states and initiation"
+      }
+    },
+    {
+      "id": 22,
+      "slug": "cosmic-completion",
+      "title": "The Cosmic Completion", 
+      "layer": "Crown",
+      "numerology": 22,
+      "geometry": "Mandala - The Whole",
+      "element": "Spirit",
+      "planet": "Uranus",
+      "chakra": "Crown",
+      "color_ray": "#FFFFFF",
+      "frequency_hz": 963.0,
+      "tarot_correspondence": ["The World"],
+      "crystal": "Clear Quartz",
+      "symbol": "⊙",
+      "teaching_function": "Integration and cosmic consciousness",
+      "related_gates": [1, 99, 144],
+      "guardian": "The World Soul",
+      "safety": {
+        "ndSafe": true,
+        "traumaInformed": true,
+        "cptsdAdapted": true
+      },
+      "provenance": {
+        "sources": ["Hermes Trismegistus Corpus Hermeticum", "Plotinus Enneads"],
+        "public_domain": true
+      },
+      "docs": ["/docs/hermetic_completion_pd.txt", "/docs/plotinus_unity_pd.txt"],
+      "fusion_kink": {
+        "enabled": true,
+        "combines_with": "all",
+        "specialty": "Integration and completion states"
+      }
+    },
+    {
+      "id": 99,
+      "slug": "dissolution-mastery",
+      "title": "The Dissolution Mastery",
+      "layer": "Depths",
+      "numerology": 9,
+      "geometry": "Spiral - The Descent",
+      "element": "Water",
+      "planet": "Neptune", 
+      "chakra": "Sacral",
+      "color_ray": "#4169E1",
+      "frequency_hz": 417.0,
+      "tarot_correspondence": ["The Hermit"],
+      "crystal": "Moonstone",
+      "symbol": "∞",
+      "teaching_function": "Sacred dissolution and letting go",
+      "related_gates": [1, 22, 144],
+      "guardian": "The Dissolution Guide",
+      "safety": {
+        "ndSafe": true,
+        "traumaInformed": true,
+        "cptsdAdapted": true,
+        "requires_consent": true
+      },
+      "provenance": {
+        "sources": ["Meister Eckhart Sermons", "Teresa of Avila Interior Castle"],
+        "public_domain": true
+      },
+      "docs": ["/docs/mystical_dissolution_pd.txt", "/docs/sacred_letting_go_pd.txt"],
+      "fusion_kink": {
+        "enabled": true,
+        "combines_with": "all", 
+        "specialty": "Dissolution and surrender states",
+        "kink_factor": "Sacred submission and ego dissolution"
+      }
+    },
+    {
+      "id": 144,
+      "slug": "manifestation-mastery",
+      "title": "The Manifestation Mastery",
+      "layer": "Heights", 
+      "numerology": 9,
+      "geometry": "Dodecagon - Perfect Form",
+      "element": "Fire",
+      "planet": "Sun",
+      "chakra": "Solar Plexus",
+      "color_ray": "#FFD700",
+      "frequency_hz": 528.0,
+      "tarot_correspondence": ["The Magician"],
+      "crystal": "Citrine",
+      "symbol": "⚡",
+      "teaching_function": "Sacred manifestation and creative will",
+      "related_gates": [1, 22, 99],
+      "guardian": "The Manifestation Master",
+      "safety": {
+        "ndSafe": true,
+        "traumaInformed": true,
+        "cptsdAdapted": true
+      },
+      "provenance": {
+        "sources": ["Paracelsus Archidoxes", "Cornelius Agrippa Three Books"],
+        "public_domain": true
+      },
+      "docs": ["/docs/paracelsus_manifestation_pd.txt", "/docs/agrippa_magical_will_pd.txt"],
+      "fusion_kink": {
+        "enabled": true,
+        "combines_with": "all",
+        "specialty": "Manifestation and creative power",
+        "kink_factor": "Sacred dominance and creative will"
+      }
+    }
+  ],
+  "fusion_combinations": {
+    "total_possible": 231,
+    "sacred_math": "144 nodes × 99 dissolution depths = 231 unique fusion states",
+    "examples": {
+      "1+22": "Void Union - Beginning meets completion",
+      "1+99": "Void Dissolution - Ultimate letting go",
+      "1+144": "Void Manifestation - Creating from nothing",
+      "22+99": "Cosmic Dissolution - Unity through surrender", 
+      "22+144": "Cosmic Manifestation - Perfect creative expression",
+      "99+144": "Sacred Alchemy - Dissolution and manifestation in harmony"
+    }
+  },
+  "trauma_safety": {
+    "maximum_cptsd_safe": true,
+    "nd_accommodations": "Full sensory and cognitive support",
+    "professional_integration": "Trauma-informed therapeutic backing",
+    "always_consensual": "Explicit consent required for all fusion activities"
+  }
+}

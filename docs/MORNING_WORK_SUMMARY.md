@@ -47,7 +47,7 @@ Created a comprehensive system to detect and fix misaligned content with Rebecca
   - Files needing enhancement
   - Recommendations for each file
 
-**Run**: `ppnpm run detect:alignment`
+**Run**: `pnpm run detect:alignment`
 
 ### 2. Alignment Cleaner (`tools/alignment-cleaner.mjs`)
 
@@ -70,8 +70,8 @@ Created a comprehensive system to detect and fix misaligned content with Rebecca
 - ✅ Preserves authentic content (only fixes patterns)
 
 **Run**: 
-- `ppnpm run clean:alignment` - Fix misaligned content
-- `ppnpm run clean:alignment:dry-run` - Preview fixes
+- `pnpm run clean:alignment` - Fix misaligned content
+- `pnpm run clean:alignment:dry-run` - Preview fixes
 
 ### 3. Experiment Integration
 

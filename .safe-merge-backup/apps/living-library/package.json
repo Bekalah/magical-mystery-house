@@ -16,5 +16,6 @@
     "name": "Living Library",
     "symbol": "⊙",
     "label": "⊙ Living Library (living-library)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

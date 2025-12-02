@@ -22,13 +22,13 @@ Applies the alchemy theme throughout all files, ensuring:
 **Usage:**
 ```bash
 # Apply theme to all files
-ppnpm run theme:monad
+pnpm run theme:monad
 
 # Check theme coherence
-ppnpm run theme:monad:check
+pnpm run theme:monad:check
 
 # Generate theme documentation
-ppnpm run theme:monad:docs
+pnpm run theme:monad:docs
 ```
 
 **Features:**
@@ -43,7 +43,7 @@ Packages tools, themes, engines, and systems with Monad Hieroglyphica theme for 
 
 **Usage:**
 ```bash
-ppnpm run package:tools
+pnpm run package:tools
 ```
 
 **Features:**
@@ -65,7 +65,7 @@ Checks and ensures Monad Hieroglyphica theme coherence across all components.
 
 **Usage:**
 ```bash
-ppnpm run check:coherence
+pnpm run check:coherence
 ```
 
 **Checks:**

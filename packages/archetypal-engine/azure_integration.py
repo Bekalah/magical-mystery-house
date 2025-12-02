@@ -1,3 +1,7 @@
+// Azure dependencies removed - free/open source only
+// This is a healing space, completely free and open
+// Azure dependencies removed - free/open source only
+// This is a healing space, completely free and open
 # Integration layer between archetypal game engine and Agent of Kaoz
 # Provides real Azure AI integration for mystical content generation
 

@@ -12,7 +12,6 @@
  */
 
 import React from 'react';
-import '@cathedral/shared/src/styles/unified-professional.css';
 import { mcqueenTokens } from '@cathedral/japanese-design-system/mcqueen-tokens';
 import './styles/sophisticated.css';
 

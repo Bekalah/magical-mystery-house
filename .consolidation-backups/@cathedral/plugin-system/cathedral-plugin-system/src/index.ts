@@ -1,9 +1,4 @@
 /**
- * index
- * 
- * @package @cathedral/cathedral-plugin-system
- */
-/**
  * Cathedral Plugin System - Main Export
  * Unified system for modular integration of sacred technologies
  */

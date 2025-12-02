@@ -95,7 +95,7 @@ CC0-1.0 - Public Domain
 ## Installation
 
 ```bash
-ppnpm install
+pppppnpm install
 ```
 
 ## Usage

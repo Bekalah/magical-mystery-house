@@ -46,5 +46,6 @@
     "name": "Web",
     "symbol": "⊙",
     "label": "⊙ Web (@cathedral/web)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

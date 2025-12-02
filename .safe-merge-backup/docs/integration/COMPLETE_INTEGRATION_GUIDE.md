@@ -232,10 +232,10 @@ themes.forEach(theme => {
 
 Run validation tools:
 ```bash
-ppnpm run validate:sacred-math
-ppnpm run validate:sound-math
-ppnpm run validate:design-math
-ppnpm run validate:game-math
+pppnpm run validate:sacred-math
+pppnpm run validate:sound-math
+pppnpm run validate:design-math
+pppnpm run validate:game-math
 ```
 
 ### Integration Issues

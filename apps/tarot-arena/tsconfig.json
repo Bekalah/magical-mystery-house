@@ -1,26 +1,16 @@
 {
-    "extends": "../../tsconfig.json",
-    "compilerOptions": {
-        "jsx": "react-jsx",
-        "outDir": "dist",
-        "module": "ESNext",
-        "moduleResolution": "bundler"
-    },
-    "include": [
-        "src"
-    ],
-    "references": [
-        {
-            "path": "../../packages/core"
-        },
-        {
-            "path": "../../packages/liber-arcanae"
-        },
-        {
-            "path": "../../packages/circuitum99"
-        },
-        {
-            "path": "../../packages/stone-grimoire"
-        }
-    ]
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "outDir": "dist",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "ignoreDeprecations": "6.0"
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "../../packages/core" },
+    { "path": "../../packages/liber-arcanae" },
+    { "path": "../../packages/stone-grimoire" }
+  ]
 }

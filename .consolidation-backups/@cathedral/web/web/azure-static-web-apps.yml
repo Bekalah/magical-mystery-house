@@ -1,0 +1,46 @@
+# Azure Static Web Apps Configuration
+name: avalon-labs
+location: East US 2
+
+# Build configuration
+build:
+  command: "pnpm turbo run build --filter=apps/web"
+  publishDir: "apps/web/out"
+  cwd: "../.."
+
+# Routes configuration
+routes:
+  - source: "/api/(.*)"
+    rewrite: "/api/$1"
+  - source: "/(.*)"
+    destination: "/index.html"
+
+# Global headers
+globalHeaders:
+  Cache-Control: "no-cache"
+
+# Response overrides
+responseOverrides:
+  404:
+    rewrite: "/404.html"
+
+# Environment variables
+env:
+  NODE_VERSION: "18"
+  PNPM_VERSION: "8"
+
+# App settings
+appSettings:
+  runtime: node:18
+  allowEmptyValue: false
+
+# Optional: API configuration
+api:
+  location: "api"
+  runtime: node:18
+
+# Optional: Database connections
+data:
+  provider: "sqlite"
+  database: "avalon-nodes.db"
+  connectionString: "Data Source=avalon-nodes.db"

@@ -33,7 +33,7 @@ class ComprehensiveConsolidator {
     // Load partial analysis
     const partialPath = path.join(BASE_DIR, 'PARTIAL_ANALYSIS.json');
     if (!fs.existsSync(partialPath)) {
-      console.error('❌ PARTIAL_ANALYSIS.json not found. Run: ppnpm run analyze:partials');
+      console.error('❌ PARTIAL_ANALYSIS.json not found. Run: pnpm run analyze:partials');
       process.exit(1);
     }
 

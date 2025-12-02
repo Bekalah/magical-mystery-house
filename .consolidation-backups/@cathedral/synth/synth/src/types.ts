@@ -1,7 +1,3 @@
-/**
- * @license CC0-1.0 - Public Domain
- */
-
 // types.ts - audio engine types
 export interface OscillatorSpec {
   id: string;

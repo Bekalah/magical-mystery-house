@@ -20,7 +20,7 @@ export class SacredGeometryRenderer {
 
   async initialize() {
     try {
-// console.log('🔷 Initializing Sacred Geometry Renderer...');
+      console.log('🔷 Initializing Sacred Geometry Renderer...');
 
       // Create canvas for Three.js
       this.canvas = document.createElement('canvas');
@@ -70,10 +70,10 @@ export class SacredGeometryRenderer {
       this.scene.add(directionalLight);
 
       this.isInitialized = true;
-// console.log('✅ Sacred Geometry Renderer initialized');
+      console.log('✅ Sacred Geometry Renderer initialized');
 
     } catch (error) {
-// console.error('❌ Failed to initialize geometry renderer:', error);
+      console.error('❌ Failed to initialize geometry renderer:', error);
       throw error;
     }
   }
@@ -84,7 +84,7 @@ export class SacredGeometryRenderer {
       const THREE = await import('https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js');
       return THREE;
     } catch (error) {
-// console.error('Failed to load Three.js:', error);
+      console.error('Failed to load Three.js:', error);
       throw error;
     }
   }
@@ -94,7 +94,7 @@ export class SacredGeometryRenderer {
       await this.initialize();
     }
 
-// console.log(`🔷 Rendering sacred geometry for ${node.name}...`);
+    console.log(`🔷 Rendering sacred geometry for ${node.name}...`);
 
     // Clear previous geometry
     this.clearGeometry();

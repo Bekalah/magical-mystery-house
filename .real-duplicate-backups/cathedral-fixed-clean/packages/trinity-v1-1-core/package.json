@@ -12,5 +12,6 @@
     "name": "Trinity V1 1",
     "symbol": "⊙",
     "label": "⊙ Trinity V1 1 (trinity-v1-1-core)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

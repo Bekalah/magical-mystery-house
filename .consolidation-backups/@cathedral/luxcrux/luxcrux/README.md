@@ -1,4 +1,4 @@
-# ⊙ Luxcrux - luxcrux
+# ⊙ @cathedral/luxcrux - @cathedral/luxcrux
 
 **Alchemical Correspondence:**
 - Element: Aether
@@ -8,7 +8,7 @@
 
 ---
 
-# ⊙ Luxcrux
+# ⊙ @cathedral/luxcrux
 
 In the alchemical tradition, this system serves as a crucible where mathematics, 
 sacred geometry, and creative consciousness converge to manifest visionary works.
@@ -25,81 +25,12 @@ deepest layers of human experience.
 **Ratio**: 144:99 (Sacred Cathedral Proportion)  
 **Principle**: Creative Expression
 
-**Alchemical Correspondence:**
-- Element: Aether
-- Planet: Jupiter
-- Metal: Copper
-- Symbol: ⊙
-
 ---
-
-# ⊙ Luxcrux
-
-In the alchemical tradition, this system serves as a crucible where mathematics, 
-sacred geometry, and creative consciousness converge to manifest visionary works.
-
-Like the philosopher's stone transforming base metals to gold, this system 
-transforms raw data and mathematical principles into art that speaks to the 
-deepest layers of human experience.
-
-
-**Purpose**: Luxcrux - Elemental directions and spatial consciousness
-
-
-**Process**: Solve et Coagula (Dissolution and Coagulation)  
-**Ratio**: 144:99 (Sacred Cathedral Proportion)  
-**Principle**: Creative Expression
-
-**Alchemical Correspondence:**
-- Element: N/A
-- Planet: N/A
-- Metal: N/A
-- Symbol: ⊙
-
----
-
-# ⊙ Luxcrux - luxcrux
-
-**Alchemical Correspondence:**
-- Element: N/A
-- Planet: N/A
-- Metal: N/A
-- Symbol: ⊙
-
----
-
-# ⊙ Luxcrux - luxcrux
-
-**Alchemical Correspondence:**
-- Element: N/A
-- Planet: N/A
-- Metal: N/A
-- Symbol: ⊙
-
----
-
-# ⊙ Luxcrux - luxcrux
-
-**Alchemical Correspondence:**
-- Element: N/A
-- Planet: N/A
-- Metal: N/A
-- Symbol: ⊙
-
----
-
-# @cathedral/luxcrux
-
-Luxcrux - Elemental directions and spatial consciousness with master art principles
-
-## License
-
-CC0-1.0 - Public Domain
 
 ## Installation
 
 ```bash
-pnpm install
+ppppnpm install @cathedral/luxcrux
 ```
 
 ## Usage
@@ -108,3 +39,6 @@ pnpm install
 // TODO: Add usage examples
 ```
 
+## License
+
+CC0-1.0 - Public Domain

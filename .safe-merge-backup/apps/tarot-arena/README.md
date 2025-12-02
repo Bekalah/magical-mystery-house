@@ -61,7 +61,7 @@ A mini-game where Arcana avatars (not just cards) interact, team up, duel, and c
 - ND/trauma-safe, consent-based, and creative
 
 ## Usage
-1. `pnpm install`
+1. `ppnpm install`
 2. `pnpm --filter @cathedral/tarot-arena dev`
 3. Open [http://localhost:5173](http://localhost:5173) in your browser
 

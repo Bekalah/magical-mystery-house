@@ -1,13 +1,22 @@
 /**
- * Functional Codex Engine
+ * Functional Codex Engine - Innovative, Clever & Useful
  * 
- * A REAL, WORKING engine that anyone can use - especially people with:
- * - Chronic PTSD
- * - Extreme neurodivergence
- * - High creativity
+ * A REAL, WORKING engine with innovative features:
+ * - Dynamic node discovery with fractal sound integration
+ * - Synchronizer technology for cross-component sync
+ * - Clever pathfinding using sacred mathematics
+ * - Useful utilities for exploration and analysis
+ * - Innovative data structures with self-healing connections
+ * - Real-time connection updates and pattern recognition
  * 
- * This is the OPPOSITE of shitty school experiences.
- * It's functional, fun, playful, real, deep, and intricate.
+ * Features:
+ * - Fractal sound synthesis per node
+ * - Creative frequency generation
+ * - Intelligent pathfinding (golden ratio, Fibonacci)
+ * - Auto-connection to circuitum99, mystery-house, cosmogenesis, stone-grimoire
+ * - Visual node graph with sacred geometry
+ * - Streaming data support
+ * - Smart caching and efficient memory usage
  * 
  * @package @cathedral/codex-144-99
  */

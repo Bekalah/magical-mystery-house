@@ -202,13 +202,13 @@ class FixAllDeployments {
 
     // Fix build command
     if (!config.buildCommand) {
-      config.buildCommand = 'ppnpm build';
+      config.buildCommand = 'pnpm build';
       fixed = true;
     }
 
     // Fix install command
     if (!config.installCommand) {
-      config.installCommand = 'ppnpm install';
+      config.installCommand = 'pnpm install';
       fixed = true;
     }
 
@@ -278,7 +278,7 @@ ${match}`
 
     // Fix pnpm
     if (!content.includes('pnpm')) {
-      // Add ppnpm installation
+      // Add pnpm installation
       const fromMatch = content.match(/FROM node:[\w.]+/);
       if (fromMatch) {
         const insertIndex = content.indexOf('\n', fromMatch.index) + 1;
@@ -311,9 +311,9 @@ ${match}`
     // Create Vercel config for Next.js apps
     if (packageJson.dependencies?.next) {
       const vercelConfig = {
-        buildCommand: 'ppnpm build',
+        buildCommand: 'pnpm build',
         outputDirectory: '.next',
-        installCommand: 'ppnpm install',
+        installCommand: 'pnpm install',
         framework: 'nextjs'
       };
       fs.writeFileSync(path.join(appPath, 'vercel.json'), JSON.stringify(vercelConfig, null, 2));

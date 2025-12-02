@@ -155,7 +155,7 @@ Cathedral Studio:
 - Ensures multi-modal support
 - Reports on visionary art standards
 
-**Run**: `ppnpm run validate:visionary-art`
+**Run**: `pnpm run validate:visionary-art`
 
 ---
 

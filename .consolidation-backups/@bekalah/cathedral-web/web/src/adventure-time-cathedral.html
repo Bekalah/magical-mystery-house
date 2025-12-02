@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏛️ Cathedral of Circuits - Adventure Time 3D Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cathedral-gold: #ffd700;
+            --divine-light: #fff9e6;
+            --sacred-copper: #b87333;
+            --twilight-purple: #483d8b;
+            --mystic-blue: #191970;
+            --abyss-deep: #0b0b1a;
+            --emerald-heart: #50c878;
+            --ruby-fire: #e0115f;
+            --celestial-silver: #c0c0c0;
+            --bjork-organic: #90EE90;
+            --tori-piano: #FFB6C1;
+            --iris-flow: #E6E6FA;
+            --emma-sacred: #F0E68C;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: radial-gradient(ellipse at center,
+                var(--abyss-deep) 0%,
+                var(--twilight-purple) 50%,
+                var(--mystic-blue) 100%);
+            color: var(--divine-light);
+            font-family: 'Cormorant Garamond', serif;
+            overflow: hidden;
+            height: 100vh;
+            perspective: 2000px;
+        }
+
+        .game-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            transform-style: preserve-3d;
+        }
+
+        .ui-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, transparent 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            pointer-events: all;
+            border-bottom: 3px solid var(--cathedral-gold);
+        }
+
+        .player-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--cathedral-gold), var(--emerald-heart));
+            border: 4px solid var(--divine-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+            animation: breathe-avatar 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes breathe-avatar {
+            0% { transform: scale(1); box-shadow: 0 0 30px rgba(255, 215, 0, 0.5); }
+            100% { transform: scale(1.05); box-shadow: 0 0 40px rgba(255, 215, 0, 0.8); }
+        }
+
+        .cathedral-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: var(--cathedral-gold);
+            text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+        }
+
+        .realm-indicator {
+            text-align: center;
+        }
+
+        .current-realm {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: var(--emerald-heart);
+            margin-bottom: 0.2rem;
+        }
+
+        .realm-description {
+            font-size: 0.9rem;
+            color: var(--celestial-silver);
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .control-button {
+            background: linear-gradient(135deg, var(--sacred-copper), var(--ruby-fire));
+            border: none;
+            color: var(--divine-light);
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Cinzel', serif;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .control-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(179, 115, 51, 0.5);
+        }
+
+        .world-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            transform-style: preserve-3d;
+            transition: transform 2s ease-in-out;
+        }
+
+        .tree-of-life-structure {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform-style: preserve-3d;
+            animation: tree-breathe 8s ease-in-out infinite alternate;
+        }
+
+        @keyframes tree-breathe {
+            0% { transform: translate(-50%, -50%) scale(1) rotateY(0deg); }
+            100% { transform: translate(-50%, -50%) scale(1.02) rotateY(5deg); }
+        }
+
+        .tree-layer {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            border: 3px solid transparent;
+        }
+
+        .tree-layer:hover {
+            transform: scale(1.1);
+            border-color: var(--cathedral-gold);
+            box-shadow: 0 0 30px currentColor;
+        }
+
+        .light-tree {
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.3) 0%, transparent 70%);
+            color: var(--cathedral-gold);
+        }
+
+        .shadow-tree {
+            background: radial-gradient(circle, rgba(75, 0, 130, 0.3) 0%, transparent 70%);
+            color: var(--twilight-purple);
+        }
+
+        .central-pillar {
+            position: absolute;
+            width: 20px;
+            height: 1000px;
+            background: linear-gradient(180deg,
+                var(--ruby-fire) 0%,
+                var(--cathedral-gold) 50%,
+                var(--emerald-heart) 100%);
+            border-radius: 10px;
+            box-shadow: 0 0 50px var(--cathedral-gold);
+        }
+
+        .sephiroth-node {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-family: 'Cinzel', serif;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            animation: node-pulse 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes node-pulse {
+            0% { opacity: 0.7; transform: scale(1); }
+            100% { opacity: 1; transform: scale(1.1); }
+        }
+
+        .sephiroth-node:hover {
+            transform: scale(1.3);
+            box-shadow: 0 0 40px currentColor;
+        }
+
+        .keter { background: rgba(255, 215, 0, 0.8); color: var(--abyss-deep); top: -450px; }
+        .chokmah { background: rgba(64, 224, 208, 0.8); color: var(--abyss-deep); top: -350px; left: -100px; }
+        .binah { background: rgba(75, 0, 130, 0.8); color: var(--divine-light); top: -350px; right: -100px; }
+        .chesed { background: rgba(0, 128, 0, 0.8); color: var(--divine-light); top: -150px; left: -150px; }
+        .geburah { background: rgba(255, 0, 0, 0.8); color: var(--divine-light); top: -150px; right: -150px; }
+        .tiphareth { background: rgba(255, 215, 0, 0.9); color: var(--abyss-deep); top: 50px; }
+        .netzach { background: rgba(0, 128, 0, 0.8); color: var(--divine-light); top: 250px; left: -100px; }
+        .hod { background: rgba(255, 140, 0, 0.8); color: var(--abyss-deep); top: 250px; right: -100px; }
+        .yesod { background: rgba(138, 43, 226, 0.8); color: var(--divine-light); top: 350px; }
+        .malkuth { background: rgba(139, 69, 19, 0.8); color: var(--divine-light); top: 450px; }
+
+        .artist-realm {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-family: 'Cinzel', serif;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            border: 4px solid transparent;
+            animation: realm-breathe 6s ease-in-out infinite alternate;
+        }
+
+        @keyframes realm-breathe {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(1.05); opacity: 1; }
+        }
+
+        .artist-realm:hover {
+            transform: scale(1.1);
+            border-color: var(--cathedral-gold);
+            box-shadow: 0 0 50px currentColor;
+        }
+
+        .bjork-realm {
+            background: radial-gradient(circle, var(--bjork-organic) 0%, transparent 70%);
+            color: var(--forest-green);
+            top: -200px;
+            left: -400px;
+        }
+
+        .tori-realm {
+            background: radial-gradient(circle, var(--tori-piano) 0%, transparent 70%);
+            color: var(--ruby-fire);
+            top: -200px;
+            right: -400px;
+        }
+
+        .iris-realm {
+            background: radial-gradient(circle, var(--iris-flow) 0%, transparent 70%);
+            color: var(--twilight-purple);
+            bottom: -200px;
+            left: -400px;
+        }
+
+        .emma-realm {
+            background: radial-gradient(circle, var(--emma-sacred) 0%, transparent 70%);
+            color: var(--sacred-copper);
+            bottom: -200px;
+            right: -400px;
+        }
+
+        .interaction-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, var(--abyss-deep), var(--twilight-purple));
+            border: 4px solid var(--cathedral-gold);
+            border-radius: 25px;
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.5s ease;
+            z-index: 2000;
+        }
+
+        .interaction-popup.show {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .popup-artist {
+            font-family: 'Cinzel', serif;
+            font-size: 2rem;
+            color: var(--cathedral-gold);
+            margin-bottom: 1rem;
+        }
+
+        .popup-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: var(--divine-light);
+        }
+
+        .popup-quote {
+            font-style: italic;
+            color: var(--emerald-heart);
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+
+        .popup-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .action-button {
+            background: linear-gradient(135deg, var(--emerald-heart), var(--cathedral-gold));
+            border: none;
+            color: var(--abyss-deep);
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Cinzel', serif;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(80, 200, 120, 0.5);
+        }
+
+        .floating-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: var(--cathedral-gold);
+            border-radius: 50%;
+            opacity: 0;
+            animation: float-particle 12s linear infinite;
+        }
+
+        @keyframes float-particle {
+            0% {
+                opacity: 0;
+                transform: translateY(100vh) scale(0);
+            }
+            10% {
+                opacity: 1;
+                transform: translateY(80vh) scale(1);
+            }
+            90% {
+                opacity: 1;
+                transform: translateY(20vh) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(0) scale(0);
+            }
+        }
+
+        .artist-info-panel {
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid var(--cathedral-gold);
+            border-radius: 20px;
+            padding: 1.5rem;
+            width: 300px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .artist-info-panel.show {
+            opacity: 1;
+        }
+
+        .artist-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .bjork-avatar { background: radial-gradient(circle, var(--bjork-organic), var(--forest-green)); }
+        .tori-avatar { background: radial-gradient(circle, var(--tori-piano), var(--ruby-fire)); }
+        .iris-avatar { background: radial-gradient(circle, var(--iris-flow), var(--twilight-purple)); }
+        .emma-avatar { background: radial-gradient(circle, var(--emma-sacred), var(--sacred-copper)); }
+
+        .artist-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: var(--cathedral-gold);
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .artist-description {
+            font-size: 0.9rem;
+            color: var(--divine-light);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .artist-specialty {
+            font-size: 0.8rem;
+            color: var(--emerald-heart);
+            margin-bottom: 1rem;
+        }
+
+        .artist-connection {
+            font-size: 0.8rem;
+            color: var(--celestial-silver);
+            font-style: italic;
+        }
+
+        .navigation-hint {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--celestial-silver);
+            font-size: 0.9rem;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                padding: 0 1rem;
+                height: 80px;
+            }
+
+            .cathedral-title {
+                font-size: 1.5rem;
+            }
+
+            .current-realm {
+                font-size: 1.2rem;
+            }
+
+            .controls {
+                gap: 0.5rem;
+            }
+
+            .control-button {
+                padding: 0.5rem 1rem;
+                font-size: 0.8rem;
+            }
+
+            .tree-of-life-structure {
+                transform: translate(-50%, -50%) scale(0.7);
+            }
+
+            .artist-realm {
+                width: 200px;
+                height: 200px;
+                font-size: 1rem;
+            }
+
+            .sephiroth-node {
+                width: 40px;
+                height: 40px;
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="ui-overlay">
+            <div class="top-bar">
+                <div class="player-avatar">🧙‍♀️</div>
+                <div class="cathedral-title">Cathedral of Circuits</div>
+                <div class="realm-indicator">
+                    <div class="current-realm" id="current-realm">Double Tree of Life</div>
+                    <div class="realm-description">72 Angels + 72 Demons + 33 Spine + 78 Tarot</div>
+                </div>
+                <div class="controls">
+                    <button class="control-button" onclick="showInstructions()">📖 Guide</button>
+                    <button class="control-button" onclick="exitCathedral()">🏛️ Exit</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="world-container" id="world-container">
+            <!-- Double Tree of Life Structure -->
+            <div class="tree-of-life-structure">
+                <!-- Central Pillar (33 Spine Vertebrae) -->
+                <div class="central-pillar"></div>
+
+                <!-- Light Tree (72 Angels) -->
+                <div class="sephiroth-node keter" onclick="enterSephiroth('keter')">Keter</div>
+                <div class="sephiroth-node chokmah" onclick="enterSephiroth('chokmah')">Chokmah</div>
+                <div class="sephiroth-node binah" onclick="enterSephiroth('binah')">Binah</div>
+                <div class="sephiroth-node chesed" onclick="enterSephiroth('chesed')">Chesed</div>
+                <div class="sephiroth-node geburah" onclick="enterSephiroth('geburah')">Geburah</div>
+                <div class="sephiroth-node tiphareth" onclick="enterSephiroth('tiphareth')">Tiphareth</div>
+                <div class="sephiroth-node netzach" onclick="enterSephiroth('netzach')">Netzach</div>
+                <div class="sephiroth-node hod" onclick="enterSephiroth('hod')">Hod</div>
+                <div class="sephiroth-node yesod" onclick="enterSephiroth('yesod')">Yesod</div>
+                <div class="sephiroth-node malkuth" onclick="enterSephiroth('malkuth')">Malkuth</div>
+
+                <!-- Shadow Tree (72 Demons) -->
+                <div class="sephiroth-node keter" style="background: rgba(75, 0, 130, 0.8); top: -450px; left: 100px;" onclick="enterDemon('keter')">Shadow</div>
+                <div class="sephiroth-node chokmah" style="background: rgba(139, 0, 139, 0.8); top: -350px; left: 200px;" onclick="enterDemon('chokmah')">Shadow</div>
+                <div class="sephiroth-node binah" style="background: rgba(25, 25, 112, 0.8); top: -350px; left: -200px;" onclick="enterDemon('binah')">Shadow</div>
+                <div class="sephiroth-node chesed" style="background: rgba(128, 0, 128, 0.8); top: -150px; left: 250px;" onclick="enterDemon('chesed')">Shadow</div>
+                <div class="sephiroth-node geburah" style="background: rgba(0, 0, 139, 0.8); top: -150px; left: -250px;" onclick="enterDemon('geburah')">Shadow</div>
+            </div>
+
+            <!-- Real Artist Realms -->
+            <div class="artist-realm bjork-realm" onclick="enterArtistRealm('bjork')">
+                <div>Björk</div>
+                <div style="font-size: 0.8rem; margin-top: 0.5rem;">Organic Sound Realms</div>
+            </div>
+
+            <div class="artist-realm tori-realm" onclick="enterArtistRealm('tori')">
+                <div>Tori Amos</div>
+                <div style="font-size: 0.8rem; margin-top: 0.5rem;">Piano Soul Chambers</div>
+            </div>
+
+            <div class="artist-realm iris-realm" onclick="enterArtistRealm('iris')">
+                <div>Iris van Herpen</div>
+                <div style="font-size: 0.8rem; margin-top: 0.5rem;">Flowing Architecture</div>
+            </div>
+
+            <div class="artist-realm emma-realm" onclick="enterArtistRealm('emma')">
+                <div>Emma Kunz</div>
+                <div style="font-size: 0.8rem; margin-top: 0.5rem;">Sacred Geometry Labs</div>
+            </div>
+
+            <!-- 21 Tara Color Temples -->
+            <div class="artist-realm" style="
+                background: radial-gradient(circle, rgba(255, 0, 0, 0.3) 0%, transparent 70%);
+                color: var(--ruby-fire);
+                top: 20%;
+                left: 70%;
+                width: 200px;
+                height: 200px;
+            " onclick="enterTaraTemple()">
+                <div>21 Taras</div>
+                <div style="font-size: 0.8rem; margin-top: 0.5rem;">Color Healing Temples</div>
+            </div>
+
+            <!-- Floating Particles -->
+            <div class="floating-particles" id="particles"></div>
+        </div>
+
+        <!-- Artist Info Panel -->
+        <div class="artist-info-panel" id="artist-info">
+            <div class="artist-avatar bjork-avatar" id="artist-avatar">🌿</div>
+            <div class="artist-name" id="artist-name">Björk</div>
+            <div class="artist-description" id="artist-description">
+                Organic, breathing interfaces that respond to consciousness and emotion. Microbeats and natural rhythms create living soundscapes.
+            </div>
+            <div class="artist-specialty" id="artist-specialty">
+                Specialty: Organic Sound Design • Consciousness-Responsive Audio
+            </div>
+            <div class="artist-connection" id="artist-connection">
+                Connected to: 72 Angels • Natural Frequencies • Healing Soundscapes
+            </div>
+        </div>
+
+        <!-- Interaction Popup -->
+        <div class="interaction-popup" id="interaction-popup">
+            <div class="popup-artist" id="popup-artist">Sacred Entity</div>
+            <div class="popup-description" id="popup-description">
+                A living consciousness within the Double Tree of Life. Each entity carries unique wisdom, healing frequencies, and creative inspiration.
+            </div>
+            <div class="popup-quote" id="popup-quote">
+                "Every breath is a song, every step is a dance, every moment is creation."
+            </div>
+            <div class="popup-actions">
+                <button class="action-button" onclick="communeWithEntity()">🧘 Commune</button>
+                <button class="action-button" onclick="learnFromEntity()">📚 Learn</button>
+                <button class="action-button" onclick="createWithEntity()">🎨 Create</button>
+                <button class="action-button" onclick="closePopup()">Continue Journey</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation-hint">
+        Click entities to interact • Drag to explore • Each realm offers unique wisdom and creation tools
+    </div>
+
+    <script>
+        let currentEntity = null;
+        let worldRotation = { x: 0, y: 0 };
+
+        // Initialize Adventure Time Cathedral
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeCathedral();
+        });
+
+        function initializeCathedral() {
+            createParticles();
+            setupEventListeners();
+            showWelcomeMessage();
+        }
+
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    particle.style.left = Math.random() * 100 + 'vw';
+                    particle.style.animationDelay = Math.random() * 12 + 's';
+                    particle.style.animationDuration = (Math.random() * 6 + 8) + 's';
+
+                    particlesContainer.appendChild(particle);
+
+                    // Remove particle after animation
+                    setTimeout(() => {
+                        if (particle.parentNode) {
+                            particle.parentNode.removeChild(particle);
+                        }
+                    }, 20000);
+                }, i * 300);
+            }
+        }
+
+        function setupEventListeners() {
+            // Mouse drag for 3D exploration
+            let isDragging = false;
+            let lastMouseX = 0;
+            let lastMouseY = 0;
+
+            document.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                lastMouseX = e.clientX;
+                lastMouseY = e.clientY;
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+
+                const deltaX = e.clientX - lastMouseX;
+                const deltaY = e.clientY - lastMouseY;
+
+                worldRotation.y += deltaX * 0.5;
+                worldRotation.x -= deltaY * 0.3;
+
+                // Limit vertical rotation
+                worldRotation.x = Math.max(-30, Math.min(30, worldRotation.x));
+
+                const world = document.getElementById('world-container');
+                world.style.transform = `rotateX(${worldRotation.x}deg) rotateY(${worldRotation.y}deg)`;
+
+                lastMouseX = e.clientX;
+                lastMouseY = e.clientY;
+            });
+
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+
+            // Entity interactions
+            document.addEventListener('click', (e) => {
+                if (e.target.classList.contains('sephiroth-node')) {
+                    const sephiroth = e.target.textContent.trim();
+                    interactWithSephiroth(sephiroth);
+                }
+
+                if (e.target.closest('.artist-realm')) {
+                    const realm = e.target.closest('.artist-realm');
+                    const artist = realm.textContent.trim();
+                    interactWithArtist(artist);
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                switch(e.key) {
+                    case 'Escape':
+                        closeAllPopups();
+                        break;
+                    case 'r':
+                    case 'R':
+                        resetView();
+                        break;
+                }
+            });
+        }
+
+        function interactWithSephiroth(sephiroth) {
+            currentEntity = sephiroth;
+
+            const sephirothData = {
+                'Keter': {
+                    name: 'Keter - The Crown',
+                    description: 'The highest sephiroth, representing divine will and pure consciousness. Gateway to the infinite light of creation.',
+                    quote: 'I am the beginning and the end, the alpha and omega of all existence.',
+                    angel: 'Metatron',
+                    demon: 'Satan (as accuser, not evil)',
+                    frequency: '963 Hz - Crown Chakra'
+                },
+                'Chokmah': {
+                    name: 'Chokmah - Wisdom',
+                    description: 'Pure wisdom and the divine masculine principle. The father of all creation and the spark of divine inspiration.',
+                    quote: 'From the depths of silence, wisdom emerges as the first breath of creation.',
+                    angel: 'Ratziel',
+                    demon: 'Beelzebub (as lord of knowledge)',
+                    frequency: '852 Hz - Third Eye Activation'
+                },
+                'Binah': {
+                    name: 'Binah - Understanding',
+                    description: 'Divine understanding and the sacred feminine. The mother of form and the architect of manifestation.',
+                    quote: 'In the womb of understanding, all forms take shape and find their purpose.',
+                    angel: 'Tzaphkiel',
+                    demon: 'Lucifuge (as keeper of hidden knowledge)',
+                    frequency: '741 Hz - Throat Chakra Expression'
+                }
+            };
+
+            const data = sephirothData[sephiroth] || {
+                name: sephiroth,
+                description: 'A sacred sphere of consciousness in the Tree of Life.',
+                quote: 'Each sephiroth holds unique wisdom waiting to be discovered.',
+                angel: 'Sacred Guardian',
+                demon: 'Shadow Teacher',
+                frequency: 'Sacred Frequency'
+            };
+
+            document.getElementById('popup-artist').textContent = data.name;
+            document.getElementById('popup-description').textContent = data.description;
+            document.getElementById('popup-quote').textContent = `"${data.quote}"`;
+
+            document.getElementById('interaction-popup').classList.add('show');
+        }
+
+        function interactWithArtist(artist) {
+            currentEntity = artist;
+
+            const artistData = {
+                'Björk': {
+                    name: 'Björk',
+                    description: 'Icelandic visionary whose organic soundscapes and microbeats create living, breathing musical ecosystems that respond to consciousness and emotion.',
+                    quote: 'Every breath is a song, every step is a dance, every moment is creation.',
+                    specialty: 'Organic Sound Design • Consciousness-Responsive Audio • Microbeat Architecture',
+                    connection: 'Connected to 72 Angels • Natural Frequencies • Healing Soundscapes • Vespertine Intimacy'
+                },
+                'Tori Amos': {
+                    name: 'Tori Amos',
+                    description: 'Piano sorceress whose archetypal voices and emotional resonance create portals between the mundane and the mystical through music.',
+                    quote: 'The piano is my portal to other dimensions of consciousness.',
+                    specialty: 'Piano Soul Magic • Archetypal Voice Generation • Emotional Resonance Engineering',
+                    connection: 'Connected to 72 Demons • Shadow Integration • Scarlet\'s Walk Wisdom • Choirgirl Hotel Mystery'
+                },
+                'Iris van Herpen': {
+                    name: 'Iris van Herpen',
+                    description: 'Dutch couturier who transforms fabric into liquid architecture, creating garments that flow like living organisms and challenge perceptions of form.',
+                    quote: 'Fashion is not just clothing, it\'s the architecture of identity.',
+                    specialty: 'Flowing Architecture • Liquid Textiles • Bio-Luminescent Design • Sensory Expansion',
+                    connection: 'Connected to 21 Taras • Color Healing • Organic Geometry • Future-Ancient Aesthetics'
+                },
+                'Emma Kunz': {
+                    name: 'Emma Kunz',
+                    description: 'Swiss healer and artist who created geometric healing patterns through pendulum divination, bridging art, mathematics, and spiritual healing.',
+                    quote: 'Art is the mathematics of the soul made visible.',
+                    specialty: 'Sacred Geometry • Pendulum Art • Healing Patterns • Consciousness Mapping',
+                    connection: 'Connected to Chartres Cathedral • Golden Ratio • Crystal Healing • Laboratory Precision'
+                }
+            };
+
+            const data = artistData[artist] || {
+                name: artist,
+                description: 'A visionary artist whose work bridges consciousness and creation.',
+                quote: 'Art is the bridge between the seen and unseen worlds.',
+                specialty: 'Creative Genius • Sacred Art • Consciousness Technology',
+                connection: 'Connected to the living cathedral of creative expression'
+            };
+
+            // Update artist info panel
+            document.getElementById('artist-avatar').className = `artist-avatar ${artist.toLowerCase()}-avatar`;
+            document.getElementById('artist-name').textContent = data.name;
+            document.getElementById('artist-description').textContent = data.description;
+            document.getElementById('artist-specialty').textContent = data.specialty;
+            document.getElementById('artist-connection').textContent = data.connection;
+
+            document.getElementById('artist-info').classList.add('show');
+
+            // Update popup
+            document.getElementById('popup-artist').textContent = data.name;
+            document.getElementById('popup-description').textContent = data.description;
+            document.getElementById('popup-quote').textContent = `"${data.quote}"`;
+
+            document.getElementById('interaction-popup').classList.add('show');
+        }
+
+        function enterTaraTemple() {
+            currentEntity = '21 Taras';
+
+            document.getElementById('popup-artist').textContent = '21 Tara Color Healing Temples';
+            document.getElementById('popup-description').textContent = 'Twenty-one manifestations of Tara, each connected to specific colors, healing frequencies, and consciousness states. Each temple offers unique healing and creative inspiration.';
+            document.getElementById('popup-quote').textContent = '"I am the mother of all Buddhas, the light of a thousand stars, the healing grace of compassion."';
+
+            document.getElementById('interaction-popup').classList.add('show');
+        }
+
+        function communeWithEntity() {
+            closePopup();
+            const communeTime = 45000; // 45 seconds
+
+            // Create communion interface
+            const communionInterface = document.createElement('div');
+            communionInterface.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: radial-gradient(circle at center, rgba(255, 215, 0, 0.2) 0%, rgba(0, 0, 0, 0.9) 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 3000;
+                flex-direction: column;
+            `;
+
+            communionInterface.innerHTML = `
+                <div style="font-family: 'Cinzel', serif; font-size: 2rem; color: var(--cathedral-gold); margin-bottom: 1rem;">
+                    Communion with ${currentEntity}
+                </div>
+                <div style="font-size: 1.2rem; color: var(--emerald-heart); margin-bottom: 2rem;">
+                    ${getCommunionMessage(currentEntity)}
+                </div>
+                <div style="width: 200px; height: 10px; background: rgba(255,255,255,0.2); border-radius: 5px; overflow: hidden;">
+                    <div id="communion-progress" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--emerald-heart), var(--cathedral-gold)); border-radius: 5px; transition: width 0.5s ease;"></div>
+                </div>
+            `;
+
+            document.body.appendChild(communionInterface);
+
+            // Simulate communion progress
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                progress += Math.random() * 10;
+                document.getElementById('communion-progress').style.width = progress + '%';
+
+                if (progress >= 100) {
+                    clearInterval(progressInterval);
+                    setTimeout(() => {
+                        communionInterface.remove();
+                        completeCommunion();
+                    }, 1000);
+                }
+            }, 400);
+        }
+
+        function getCommunionMessage(entity) {
+            const messages = {
+                'Keter': 'Feel the divine will flowing through you...',
+                'Chokmah': 'Wisdom beyond words speaks to your soul...',
+                'Binah': 'Understanding embraces your consciousness...',
+                'Björk': 'Organic rhythms sync with your heartbeat...',
+                'Tori Amos': 'Piano keys unlock chambers of your soul...',
+                'Iris van Herpen': 'Fabric becomes liquid architecture around you...',
+                'Emma Kunz': 'Geometric patterns reveal healing truths...',
+                '21 Taras': 'Twenty-one colors heal twenty-one aspects of your being...'
+            };
+
+            return messages[entity] || 'Sacred energies flow through your consciousness...';
+        }
+
+        function completeCommunion() {
+            const wisdomGained = Math.floor(Math.random() * 5) + 3;
+            alert(`✨ Communion Complete!\n\nYou have gained ${wisdomGained} wisdom points and deepened your connection to ${currentEntity}.\n\nNew creative abilities and insights are now available to you.`);
+        }
+
+        function learnFromEntity() {
+            closePopup();
+            window.location.href = 'apps/web/src/art-studio.html';
+        }
+
+        function createWithEntity() {
+            closePopup();
+            // Open appropriate creation tool based on entity
+            if (currentEntity === 'Björk' || currentEntity === 'Tori Amos') {
+                alert('🎵 Opening Sacred Sound Studio...\n\nCreate music with the wisdom of ' + currentEntity);
+            } else if (currentEntity === 'Iris van Herpen' || currentEntity === 'Emma Kunz') {
+                alert('🎨 Opening Pattern Art Studio...\n\nCreate visual art with the wisdom of ' + currentEntity);
+            } else {
+                alert('🔬 Opening Sacred Science Laboratory...\n\nExperiment with the wisdom of ' + currentEntity);
+            }
+        }
+
+        function closePopup() {
+            document.getElementById('interaction-popup').classList.remove('show');
+        }
+
+        function closeAllPopups() {
+            closePopup();
+            document.getElementById('artist-info').classList.remove('show');
+        }
+
+        function resetView() {
+            worldRotation = { x: 0, y: 0 };
+            document.getElementById('world-container').style.transform = 'rotateX(0deg) rotateY(0deg)';
+        }
+
+        function showWelcomeMessage() {
+            setTimeout(() => {
+                alert(`🏛️ Welcome to the Adventure Time Cathedral!
+
+🌟 **Double Tree of Life Experience:**
+• **Light Tree**: 72 Angels as living mentors
+• **Shadow Tree**: 72 Demons as balanced counterparts  
+• **Central Pillar**: 33 Spine vertebrae (kundalini path)
+• **Crystal Spheres**: 78 Tarot archetypes
+
+🎨 **Real Artist Realms:**
+• **Björk**: Organic soundscapes & consciousness-responsive audio
+• **Tori Amos**: Piano soul & archetypal voice generation
+• **Iris van Herpen**: Flowing architecture & liquid textiles
+• **Emma Kunz**: Sacred geometry & pendulum healing art
+• **21 Taras**: Color healing temples & frequency therapy
+
+Click any entity to begin your journey of discovery and creation! ✨`);
+            }, 1000);
+        }
+
+        function showInstructions() {
+            alert(`📖 Adventure Time Cathedral Guide:
+
+🖱️ **Navigation:**
+• Drag to rotate the 3D world
+• Click entities to interact and learn
+• Each interaction offers unique wisdom
+
+🎨 **Artist Realms:**
+• Björk: Organic, breathing sound interfaces
+• Tori Amos: Piano-based consciousness exploration
+• Iris van Herpen: Flowing, liquid architecture
+• Emma Kunz: Sacred geometry laboratories
+• 21 Taras: Color healing and frequency work
+
+🔮 **Sephiroth Nodes:**
+• 10 Light spheres (72 Angels)
+• 10 Shadow spheres (72 Demons)
+• Each contains unique wisdom and abilities
+• Click to commune and learn
+
+🎯 **Your Journey:**
+• Build real skills through interaction
+• Create art with authentic inspiration
+• Heal through sacred connection
+• Discover your true creative potential
+
+This is a living, breathing cathedral that grows with your consciousness! 🌟`);
+        }
+
+        function exitCathedral() {
+            if (confirm('Return to the main Cathedral interface?')) {
+                window.location.href = 'index.html';
+            }
+        }
+
+        // Make functions available globally for external access
+        window.enterArtistRealm = (artist) => interactWithArtist(artist);
+        window.enterSephiroth = (sephiroth) => interactWithSephiroth(sephiroth);
+        window.enterDemon = (demon) => interactWithSephiroth('Shadow ' + demon);
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+# Configuration for Avalon Labs (non-Azure)
+
+name: avalon-labs
+
+# Build configuration
+build:
+  command: "pnpm turbo run build --filter=apps/web"
+  publishDir: "apps/web/out"
+  cwd: "../.."
+
+# Routes configuration
+routes:
+  - source: "/api/(.*)"
+    rewrite: "/api/$1"
+  - source: "/(.*)"
+    destination: "/index.html"
+
+# Global headers
+globalHeaders:
+  Cache-Control: "no-cache"
+
+# Response overrides
+responseOverrides:
+  404:
+    rewrite: "/404.html"
+
+# Environment variables
+env:
+  NODE_VERSION: "25" # Updated to the latest version
+  PNPM_VERSION: "9.15.0" # Matches package.json
+
+# App settings
+appSettings:
+  allowEmptyValue: false
+
+# Optional: API configuration
+api:
+  location: "api"
+
+# Optional: Database connections
+data:
+  provider: "sqlite"
+  database: "avalon-nodes.db"
+  connectionString: "Data Source=avalon-nodes.db"

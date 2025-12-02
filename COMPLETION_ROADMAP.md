@@ -1,12 +1,20 @@
 # Completion Roadmap
 
-**Generated:** 2025-12-01T03:26:44.331Z
+**Generated:** 2025-12-01T21:24:26.344Z
 
 ## Overview
 
 This roadmap outlines the steps needed to complete the project for open source/public domain release.
 
-**Total Items:** 147
+**Total Items:** 134
+
+## Priority 1
+
+### worker
+- **Action:** Add CC0-1.0 Public Domain license
+- **Workspace:** cathedral-master-deployment
+- **Category:** licensing
+- **Reason:** Required for open source/public domain release
 
 ## Priority 3
 
@@ -31,20 +39,6 @@ This roadmap outlines the steps needed to complete the project for open source/p
 - **Reason:** Package is partially complete
 - **Missing:** tests, docs
 
-### @cathedral/plugin-system
-- **Action:** Complete package: add tests, docs
-- **Workspace:** cathedral-master-deployment
-- **Category:** completion
-- **Reason:** Package is partially complete
-- **Missing:** tests, docs
-
-### @cathedral/codex-144-99
-- **Action:** Complete package: add tests, docs
-- **Workspace:** cathedral-master-deployment
-- **Category:** completion
-- **Reason:** Package is partially complete
-- **Missing:** tests, docs
-
 ### connections
 - **Action:** Complete package: add tests, docs
 - **Workspace:** cathedral-master-deployment
@@ -178,20 +172,6 @@ This roadmap outlines the steps needed to complete the project for open source/p
 - **Reason:** Package is partially complete
 - **Missing:** tests, docs
 
-### @cathedral/plugin-system
-- **Action:** Complete package: add tests, docs
-- **Workspace:** cathedral-real
-- **Category:** completion
-- **Reason:** Package is partially complete
-- **Missing:** tests, docs
-
-### @cathedral/codex-144-99
-- **Action:** Complete package: add tests, docs
-- **Workspace:** cathedral-real
-- **Category:** completion
-- **Reason:** Package is partially complete
-- **Missing:** tests, docs
-
 ### connections
 - **Action:** Complete package: add tests, docs
 - **Workspace:** cathedral-real
@@ -319,20 +299,6 @@ This roadmap outlines the steps needed to complete the project for open source/p
 - **Missing:** tests, docs
 
 ### @cathedral/brain
-- **Action:** Complete package: add tests, docs
-- **Workspace:** cathedral-fixed-clean
-- **Category:** completion
-- **Reason:** Package is partially complete
-- **Missing:** tests, docs
-
-### @cathedral/plugin-system
-- **Action:** Complete package: add tests, docs
-- **Workspace:** cathedral-fixed-clean
-- **Category:** completion
-- **Reason:** Package is partially complete
-- **Missing:** tests, docs
-
-### @cathedral/codex-144-99
 - **Action:** Complete package: add tests, docs
 - **Workspace:** cathedral-fixed-clean
 - **Category:** completion
@@ -584,20 +550,6 @@ This roadmap outlines the steps needed to complete the project for open source/p
 - **Reason:** Package is partially complete
 - **Missing:** config
 
-### @cathedral/web
-- **Action:** Complete app: add config
-- **Workspace:** cathedral-master-deployment
-- **Category:** completion
-- **Reason:** Package is partially complete
-- **Missing:** config
-
-### @bekalah/cathedral-worker
-- **Action:** Complete app: add build, config
-- **Workspace:** cathedral-master-deployment
-- **Category:** completion
-- **Reason:** Package is partially complete
-- **Missing:** build, config
-
 ## Priority 4
 
 ### @cathedral/art-engine-core
@@ -618,18 +570,6 @@ This roadmap outlines the steps needed to complete the project for open source/p
 - **Category:** documentation
 - **Reason:** Improve open source usability
 
-### @cathedral/plugin-system
-- **Action:** Add documentation
-- **Workspace:** cathedral-master-deployment
-- **Category:** documentation
-- **Reason:** Improve open source usability
-
-### @cathedral/codex-144-99
-- **Action:** Add documentation
-- **Workspace:** cathedral-master-deployment
-- **Category:** documentation
-- **Reason:** Improve open source usability
-
 ### connections
 - **Action:** Add documentation
 - **Workspace:** cathedral-master-deployment
@@ -744,18 +684,6 @@ This roadmap outlines the steps needed to complete the project for open source/p
 - **Category:** documentation
 - **Reason:** Improve open source usability
 
-### @cathedral/plugin-system
-- **Action:** Add documentation
-- **Workspace:** cathedral-real
-- **Category:** documentation
-- **Reason:** Improve open source usability
-
-### @cathedral/codex-144-99
-- **Action:** Add documentation
-- **Workspace:** cathedral-real
-- **Category:** documentation
-- **Reason:** Improve open source usability
-
 ### connections
 - **Action:** Add documentation
 - **Workspace:** cathedral-real
@@ -865,18 +793,6 @@ This roadmap outlines the steps needed to complete the project for open source/p
 - **Reason:** Improve open source usability
 
 ### @cathedral/brain
-- **Action:** Add documentation
-- **Workspace:** cathedral-fixed-clean
-- **Category:** documentation
-- **Reason:** Improve open source usability
-
-### @cathedral/plugin-system
-- **Action:** Add documentation
-- **Workspace:** cathedral-fixed-clean
-- **Category:** documentation
-- **Reason:** Improve open source usability
-
-### @cathedral/codex-144-99
 - **Action:** Add documentation
 - **Workspace:** cathedral-fixed-clean
 - **Category:** documentation

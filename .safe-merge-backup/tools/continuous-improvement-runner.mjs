@@ -497,45 +497,45 @@ class ContinuousImprovementRunner {
 
     // Phase 2: Solve et Coagula (Doubt → Research → Implementation)
     const solveEtCoagulaTools = [
-      { name: 'Solve et Coagula', cmd: 'ppnpm run improve:solve-et-coagula', timeout: 120000 }
+      { name: 'Solve et Coagula', cmd: 'pppnpm run improve:solve-et-coagula', timeout: 120000 }
     ];
 
     // Phase 3: Code & Quality Improvements (runs after solve et coagula)
     const codeImprovementTools = [
-      { name: 'Fix All Broken', cmd: 'ppnpm run fix:all-broken', timeout: 120000 },
-      { name: 'Fix Bad Design', cmd: 'ppnpm run fix:bad-design', timeout: 90000 },
-      { name: 'Boost Rebecca Ideas', cmd: 'ppnpm run boost:rebecca-ideas', timeout: 120000 },
-      { name: 'Enhance Story Quality', cmd: 'ppnpm run enhance:story-quality', timeout: 90000 },
-      { name: 'Enhance Design Quality', cmd: 'ppnpm run enhance:design-quality', timeout: 90000 },
-      { name: 'Code Improvement', cmd: 'ppnpm run improve:code', timeout: 60000 },
-      { name: 'Code Optimization', cmd: 'ppnpm run optimize:code', timeout: 60000 },
-      { name: 'Fix All Issues', cmd: 'ppnpm run fix:all', timeout: 90000 },
-      { name: 'Cleanup Duplicates', cmd: 'ppnpm run cleanup:duplicates', timeout: 60000 },
-      { name: 'Quality Check', cmd: 'ppnpm run quality:enhanced', timeout: 30000 },
-      { name: 'Dependency Analysis', cmd: 'ppnpm run analyze:dependencies', timeout: 30000 },
-      { name: 'Build Optimization', cmd: 'ppnpm run optimize:build', timeout: 30000 },
-      { name: 'Check Consistency', cmd: 'ppnpm run check:consistency', timeout: 30000 },
-      { name: 'Find Unused Code', cmd: 'ppnpm run find:unused', timeout: 30000 },
-      { name: 'Performance Benchmark', cmd: 'ppnpm run benchmark:enhanced', timeout: 45000 },
-      { name: 'System Integration', cmd: 'ppnpm run integrate:systems', timeout: 30000 },
-      { name: 'Auto Documentation', cmd: 'ppnpm run docs:auto', timeout: 30000 },
-      { name: 'Validate Visionary Art', cmd: 'ppnpm run validate:visionary-art', timeout: 60000 },
-      { name: 'Validate Sacred Math', cmd: 'ppnpm run validate:sacred-math', timeout: 60000 },
-      { name: 'Validate Sound Math', cmd: 'ppnpm run validate:sound-math', timeout: 60000 },
-      { name: 'Validate Design Math', cmd: 'ppnpm run validate:design-math', timeout: 60000 },
-      { name: 'Validate Game Math', cmd: 'ppnpm run validate:game-math', timeout: 60000 },
-      { name: 'Validate Enterprise Standard', cmd: 'ppnpm run validate:enterprise', timeout: 120000 },
-      { name: 'Validate REGISTRY', cmd: 'ppnpm run validate:registry', timeout: 60000 },
-      { name: 'Analyze Master Docs', cmd: 'ppnpm run analyze:master-docs', timeout: 60000 }
+      { name: 'Fix All Broken', cmd: 'pppnpm run fix:all-broken', timeout: 120000 },
+      { name: 'Fix Bad Design', cmd: 'pppnpm run fix:bad-design', timeout: 90000 },
+      { name: 'Boost Rebecca Ideas', cmd: 'pppnpm run boost:rebecca-ideas', timeout: 120000 },
+      { name: 'Enhance Story Quality', cmd: 'pppnpm run enhance:story-quality', timeout: 90000 },
+      { name: 'Enhance Design Quality', cmd: 'pppnpm run enhance:design-quality', timeout: 90000 },
+      { name: 'Code Improvement', cmd: 'pppnpm run improve:code', timeout: 60000 },
+      { name: 'Code Optimization', cmd: 'pppnpm run optimize:code', timeout: 60000 },
+      { name: 'Fix All Issues', cmd: 'pppnpm run fix:all', timeout: 90000 },
+      { name: 'Cleanup Duplicates', cmd: 'pppnpm run cleanup:duplicates', timeout: 60000 },
+      { name: 'Quality Check', cmd: 'pppnpm run quality:enhanced', timeout: 30000 },
+      { name: 'Dependency Analysis', cmd: 'pppnpm run analyze:dependencies', timeout: 30000 },
+      { name: 'Build Optimization', cmd: 'pppnpm run optimize:build', timeout: 30000 },
+      { name: 'Check Consistency', cmd: 'pppnpm run check:consistency', timeout: 30000 },
+      { name: 'Find Unused Code', cmd: 'pppnpm run find:unused', timeout: 30000 },
+      { name: 'Performance Benchmark', cmd: 'pppnpm run benchmark:enhanced', timeout: 45000 },
+      { name: 'System Integration', cmd: 'pppnpm run integrate:systems', timeout: 30000 },
+      { name: 'Auto Documentation', cmd: 'pppnpm run docs:auto', timeout: 30000 },
+      { name: 'Validate Visionary Art', cmd: 'pppnpm run validate:visionary-art', timeout: 60000 },
+      { name: 'Validate Sacred Math', cmd: 'pppnpm run validate:sacred-math', timeout: 60000 },
+      { name: 'Validate Sound Math', cmd: 'pppnpm run validate:sound-math', timeout: 60000 },
+      { name: 'Validate Design Math', cmd: 'pppnpm run validate:design-math', timeout: 60000 },
+      { name: 'Validate Game Math', cmd: 'pppnpm run validate:game-math', timeout: 60000 },
+      { name: 'Validate Enterprise Standard', cmd: 'pppnpm run validate:enterprise', timeout: 120000 },
+      { name: 'Validate REGISTRY', cmd: 'pppnpm run validate:registry', timeout: 60000 },
+      { name: 'Analyze Master Docs', cmd: 'pppnpm run analyze:master-docs', timeout: 60000 }
     ];
 
     // Phase 4: Learn & Deploy (Learn your needs, deploy updates live)
     const learnAndDeployTools = [
       { name: 'Learn From Material', cmd: 'node tools/learn-from-material.mjs', timeout: 120000 },
-      { name: 'Boost Rebecca Ideas', cmd: 'ppnpm run boost:rebecca-ideas', timeout: 120000 },
-      { name: 'Update Backups', cmd: 'ppnpm run backup:create', timeout: 60000 },
+      { name: 'Boost Rebecca Ideas', cmd: 'pppnpm run boost:rebecca-ideas', timeout: 120000 },
+      { name: 'Update Backups', cmd: 'pppnpm run backup:create', timeout: 60000 },
       { name: 'Learn & Deploy', cmd: 'node tools/make-updates-live.mjs', timeout: 200000 },
-      { name: 'Monorepo Improvement', cmd: 'ppnpm run improve:monorepo', timeout: 120000 }
+      { name: 'Monorepo Improvement', cmd: 'pppnpm run improve:monorepo', timeout: 120000 }
     ];
 
     // Phase 0.5: Alignment Detection (before improvements)

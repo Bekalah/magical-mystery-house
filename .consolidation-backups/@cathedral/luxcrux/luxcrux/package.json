@@ -14,29 +14,20 @@
     "elemental",
     "directions"
   ],
-  "author": "Cathedral Master Creative Intelligence Team",
+  "author": "Rebecca Respawn",
   "license": "CC0-1.0",
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": "*",
+    "pnpm": "*"
   },
-  "dependencies": {
-    "@cathedral/master-art-principles": "workspace:*",
-    "typescript": "^5.6.3"
+  "packageManager": "ppppnpm@10.23.0",
+  "publishConfig": {
+    "access": "public"
   },
-  "devDependencies": {
-    "@types/node": "^20.17.0"
-  },
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:55.252Z",
-  "packageManager": "pnpm@8.0.0",
+  "types": "dist/index.d.ts",
   "alchemical": {
     "name": "Luxcrux",
     "symbol": "⊙",
     "label": "⊙ Luxcrux (@cathedral/luxcrux)"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "types": "dist/index.d.ts"
+  }
 }

@@ -19,7 +19,7 @@ export class AudioSynthesisEngine {
 
   async initialize() {
     try {
-// console.log('🎵 Initializing Audio Synthesis Engine...');
+      console.log('🎵 Initializing Audio Synthesis Engine...');
 
       // Initialize Web Audio API
       this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
@@ -42,11 +42,11 @@ export class AudioSynthesisEngine {
       };
 
       this.isInitialized = true;
-// console.log('✅ Audio Synthesis Engine initialized');
-// console.log('🎵 Solfeggio frequencies ready for sacred sound');
+      console.log('✅ Audio Synthesis Engine initialized');
+      console.log('🎵 Solfeggio frequencies ready for sacred sound');
 
     } catch (error) {
-// console.error('❌ Failed to initialize audio engine:', error);
+      console.error('❌ Failed to initialize audio engine:', error);
       throw error;
     }
   }
@@ -56,7 +56,7 @@ export class AudioSynthesisEngine {
       await this.initialize();
     }
 
-// console.log(`🎵 Playing frequencies for ${node.name}...`);
+    console.log(`🎵 Playing frequencies for ${node.name}...`);
 
     // Stop existing oscillators
     this.stopAllFrequencies();
@@ -129,7 +129,7 @@ export class AudioSynthesisEngine {
     // Your authentic frequency fusion
     const fusedFrequencies = [...new Set([...freq1, ...freq2])];
 
-// console.log(`🎵 Fused frequencies: ${fusedFrequencies.join(', ')} Hz`);
+    console.log(`🎵 Fused frequencies: ${fusedFrequencies.join(', ')} Hz`);
 
     return fusedFrequencies;
   }
@@ -170,12 +170,12 @@ export class AudioSynthesisEngine {
 
   playSolfeggioFrequency(frequency) {
     if (!this.solfeggioFrequencies[frequency]) {
-// console.error(`Solfeggio frequency ${frequency} Hz not found`);
+      console.error(`Solfeggio frequency ${frequency} Hz not found`);
       return;
     }
 
     const freqInfo = this.solfeggioFrequencies[frequency];
-// console.log(`🎵 Playing ${frequency} Hz - ${freqInfo.name}: ${freqInfo.intention}`);
+    console.log(`🎵 Playing ${frequency} Hz - ${freqInfo.name}: ${freqInfo.intention}`);
 
     this.stopAllFrequencies();
     this.currentFrequencies = [frequency];
@@ -187,7 +187,7 @@ export class AudioSynthesisEngine {
   }
 
   createSacredChord(frequencies) {
-// console.log(`🎵 Creating sacred chord with ${frequencies.length} frequencies...`);
+    console.log(`🎵 Creating sacred chord with ${frequencies.length} frequencies...`);
 
     this.stopAllFrequencies();
 

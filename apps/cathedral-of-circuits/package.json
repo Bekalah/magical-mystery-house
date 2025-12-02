@@ -14,29 +14,29 @@
     "sacred-geometry": "node tools/sacred-geometry-engine.js"
   },
   "devDependencies": {},
-  "packageManager": "pnpm@8.15.0",
+  "packageManager": "pnpm@9.15.0",
   "engines": {
-    "node": ">=20.18.0",
-    "pnpm": ">=8.15.0"
+    "node": "25.0.0",
+    "pnpm": ">=9.0.0"
   },
   "workspaces": [
     "packages/*",
     "apps/*",
     "edge-functions/*"
   ],
-  "license": "CC0-1.0",
   "dependencies": {
     "turbo": "^2.0.0",
     "vite": "^6.0.1",
     "typescript": "^5.0.0",
     "eslint": "^8.0.0",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@react-three/fiber": "^8.0.27",
+    "@react-three/drei": "^9.56.7",
+    "three": "^0.155.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-11-30T16:48:01.587Z",
-  "alchemical": {
-    "name": "Cathedral Of Circuits",
-    "symbol": "⊙",
-    "label": "⊙ Cathedral Of Circuits (cathedral-of-circuits)"
-  }
+  "consolidatedAt": "2025-12-01T21:19:39.498Z",
+  "license": "CC0-1.0"
 }

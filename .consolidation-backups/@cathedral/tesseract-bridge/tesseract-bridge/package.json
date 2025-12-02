@@ -1,6 +1,6 @@
 {
   "name": "@cathedral/tesseract-bridge",
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "Tesseract Bridge - Kabbalistic paths and sacred geometry",
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,7 @@
   "dependencies": {
     "@azure/openai": "^1.0.0-beta.12",
     "@azure/cognitiveservices-computervision": "^8.2.0",
-    "three": "^0.168.0",
-    "@cathedral/master-art-principles": "workspace:*",
-    "typescript": "^5.6.3"
+    "three": "^0.168.0"
   },
   "keywords": [
     "cathedral",
@@ -21,26 +19,20 @@
     "kabbalah",
     "geometry"
   ],
-  "author": "Cathedral Master Creative Intelligence Team",
+  "author": "Rebecca Respawn",
   "license": "CC0-1.0",
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": "*",
+    "pnpm": "*"
   },
-  "devDependencies": {
-    "@types/three": "^0.169.0",
-    "@types/node": "^20.17.0"
-  },
-  "consolidated": true,
-  "consolidatedAt": "2025-12-01T03:10:57.135Z",
-  "packageManager": "pnpm@8.0.0",
-  "alchemical": {
-    "name": "Tesseract",
-    "symbol": "⊞",
-    "label": "⊞ Tesseract (@cathedral/tesseract-bridge)"
-  },
+  "packageManager": "ppppnpm@10.23.0",
   "publishConfig": {
     "access": "public"
   },
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "alchemical": {
+    "name": "Tesseract Bridge",
+    "symbol": "⊙",
+    "label": "⊙ Tesseract Bridge (@cathedral/tesseract-bridge)"
+  }
 }

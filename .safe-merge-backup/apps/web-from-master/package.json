@@ -21,5 +21,6 @@
     "name": "Web From Master",
     "symbol": "⊙",
     "label": "⊙ Web From Master (@cathedral/web-from-master)"
-  }
+  },
+  "packageManager": "pnpm@10.23.0"
 }

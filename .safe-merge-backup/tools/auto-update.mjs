@@ -91,27 +91,27 @@ function autoUpdate() {
   
   const steps = [
     {
-      command: 'ppnpm install',
+      command: 'pppnpm install',
       description: 'Update dependencies'
     },
     {
-      command: 'ppnpm run update:references',
+      command: 'pppnpm run update:references',
       description: 'Update file references'
     },
     {
-      command: 'ppnpm run consolidate:docs',
+      command: 'pppnpm run consolidate:docs',
       description: 'Consolidate documentation'
     },
     {
-      command: 'ppnpm run validate:setup',
+      command: 'pppnpm run validate:setup',
       description: 'Validate setup'
     },
     {
-      command: 'ppnpm run build',
+      command: 'pppnpm run build',
       description: 'Build all packages'
     },
     {
-      command: 'ppnpm run check:consistency',
+      command: 'pppnpm run check:consistency',
       description: 'Check consistency'
     }
   ];

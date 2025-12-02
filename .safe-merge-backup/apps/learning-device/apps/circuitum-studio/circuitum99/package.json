@@ -38,5 +38,7 @@
     "eslint": "^8.54.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5"
-  }
+  },
+  "license": "CC0-1.0",
+  "packageManager": "pnpm@10.23.0"
 }

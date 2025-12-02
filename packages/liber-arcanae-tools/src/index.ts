@@ -45,7 +45,7 @@ export { ArchetypeMentor } from './codex/archetype-mentor';
 
 // Main Factory
 import { LiberArcanaeCanvas } from './canvas/liber-arcanae-canvas';
-import { TraumaSafeConfig } from '@cathedral/trinity-architecture';
+import { TraumaSafeConfig } from '@cathedral-real/trinity-architecture';
 
 /**
  * Create a complete Liber Arcanae Creative Platform

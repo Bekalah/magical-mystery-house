@@ -1,0 +1,31 @@
+{
+  "name": "@cathedral/web",
+  "version": "1.0.0",
+  "description": "Next.js web app for Avalon labs with Three.js, Babylon.js, p5.js, and Tone.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "generate-avalon": "node scripts/generate-avalon-components.js"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "three": "^0.158.0",
+    "@types/three": "^0.158.0",
+    "@react-three/fiber": "^8.0.0",
+    "@react-three/drei": "^9.0.0",
+    "babylonjs": "^6.0.0",
+    "p5": "^1.7.0",
+    "tone": "^14.7.77",
+    "@cathedral/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0"
+  }
+}

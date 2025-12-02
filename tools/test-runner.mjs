@@ -64,8 +64,8 @@ function runTests() {
 
   // Try different test runners
   const testCommands = [
-    { cmd: 'ppnpm test', name: 'ppnpm test' },
-    { cmd: 'ppnpm run test', name: 'ppnpm run test' },
+    { cmd: 'pnpm test', name: 'pnpm test' },
+    { cmd: 'pnpm run test', name: 'pnpm run test' },
     { cmd: 'pnpm test', name: 'pnpm test' }
   ];
 

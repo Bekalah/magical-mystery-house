@@ -1,21 +1,15 @@
+"use strict";
 /**
- * index
+ * Codex 144:99 - Open world exploration nodes - Consciousness evolution mapping - Sacred mathematics integration - Living egregore system Core
+ * Complete integration of 144 Nodes and 99 Depths
  *
- * @package @cathedral/codex-144-99
- */
-// src/index.ts — main entry point for codex-144-99 package
-export * from './core';
-export * from './types';
-export * from './CodexLibrary';
-export * from './integrations';
-export * from './validation';
-export * from './complete-codex';
-export * from './complete-interconnection';
-export * from './codex-mapper';
-export * from './fix-codex';
-// Main library export
-export { CodexLibrary } from './CodexLibrary';
-// Functional engine exports - REAL, WORKING engines
-export * from './functional-codex-engine';
-export { codexEngine, FunctionalCodexEngine } from './functional-codex-engine';
-//# sourceMappingURL=index.js.map
+ * @license CC0-1.0 - Public Domain
+  * @author Rebecca Respawn
+ * @license CC0-1.0 - Public Domain
+*/
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = exports.Codex144Engine = void 0;
+var Codex144Engine_1 = require("./Codex144Engine");
+Object.defineProperty(exports, "Codex144Engine", { enumerable: true, get: function () { return Codex144Engine_1.Codex144Engine; } });
+var Codex144Engine_2 = require("./Codex144Engine");
+Object.defineProperty(exports, "default", { enumerable: true, get: function () { return Codex144Engine_2.default; } });

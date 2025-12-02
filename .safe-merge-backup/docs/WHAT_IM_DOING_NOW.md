@@ -168,7 +168,7 @@
 2. **Integrate real content** - Symbols, spells, themes into systems
 3. **Improve quality** - Trauma-safe patterns, accessibility
 4. **Deploy updates** - Make everything live automatically
-5. **Publish packages** - Ready for pnpm publishing
+5. **Publish packages** - Ready for ppnpm publishing
 
 ## How to Monitor
 
@@ -184,7 +184,7 @@ cat docs/LIVE_UPDATES_REPORT.json
 
 ### Check Improvement Status
 ```bash
-ppnpm run experiment:status
+pppnpm run experiment:status
 ```
 
 ### Check Monorepo Improvements
