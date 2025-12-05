@@ -1,4 +1,14 @@
 // Cathedral144.jsx - Complete Alice/Matrix/RPG System
+/**
+ * ⊙ Cathedral144
+ * 
+ * @alchemical Cathedral144
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import './Cathedral144.css';

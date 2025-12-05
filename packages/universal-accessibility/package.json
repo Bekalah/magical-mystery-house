@@ -45,7 +45,17 @@
     "clean": "rm -rf dist",
     "setup": "tsc --declaration",
     "status": "node scripts/status.js",
-    "validate": "npm run test && npm run lint"
+    "validate": "npm run test && npm run lint",
+    "lint:fix": "eslint src/**/*.{ts,tsx,js,jsx} --fix",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,md,css,html}\"",
+    "type-check": "tsc --noEmit",
+    "clean:all": "rimraf dist build node_modules/.turbo",
+    "validate:ci": "npm run type-check && npm run lint && npm run test:coverage",
+    "benchmark": "vitest run --reporter=verbose --reporter=json --outputFile=benchmark-results.json",
+    "validate:sacred-math": "node scripts/validate-sacred-math.js",
+    "validate:trauma-safety": "node scripts/validate-trauma-safety.js",
+    "validate:integration": "node scripts/validate-integration.js",
+    "validate:ownership": "node scripts/validate-ownership.js"
   },
   "keywords": [
     "cathedral",
@@ -80,7 +90,15 @@
   "devDependencies": {
     "@types/node": "^22.9.0",
     "vitest": "^1.6.0",
-    "@vitest/coverage-v8": "^1.6.0"
+    "@vitest/coverage-v8": "^1.6.0",
+    "typescript": "^5.6.2",
+    "tsx": "^4.19.1",
+    "eslint": "^9.11.1",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "eslint-config-prettier": "^9.1.0"
   },
   "publishConfig": {
     "access": "public",

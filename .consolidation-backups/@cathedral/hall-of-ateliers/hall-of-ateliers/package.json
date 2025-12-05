@@ -105,5 +105,10 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "alchemical": {
+    "name": "Hall Of Ateliers",
+    "symbol": "⊙",
+    "label": "⊙ Hall Of Ateliers (@cathedral/hall-of-ateliers)"
   }
 }

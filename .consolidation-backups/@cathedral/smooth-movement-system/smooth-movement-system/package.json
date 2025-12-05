@@ -26,5 +26,10 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/smooth-movement-system"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/smooth-movement-system"
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/smooth-movement-system",
+  "alchemical": {
+    "name": "Smooth Movement System",
+    "symbol": "⊙",
+    "label": "⊙ Smooth Movement System (@cathedral/smooth-movement-system)"
+  }
 }

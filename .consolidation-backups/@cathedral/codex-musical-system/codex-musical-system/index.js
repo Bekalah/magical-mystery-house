@@ -3,6 +3,16 @@
  * Sacred tones and harmonic structures
  */
 
+/**
+ * ⊙ Index
+ * 
+ * @alchemical Index
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 export const codexFrequencies = {
   ROOT: 144,
   HARMONIC: 99,

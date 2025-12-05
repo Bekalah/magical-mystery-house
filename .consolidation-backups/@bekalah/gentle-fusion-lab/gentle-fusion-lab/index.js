@@ -6,6 +6,16 @@
  * Art + Science + Learning + Beauty - without the exhausting perfectionism
  */
 
+/**
+ * ⊙ Index
+ * 
+ * @alchemical Index
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 class GentleFusionLab {
     constructor() {
         this.philosophy = 'CURIOSITY_DRIVEN_LEARNING';

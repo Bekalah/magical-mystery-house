@@ -37,6 +37,11 @@
     "three": "^0.155.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T21:19:39.498Z",
-  "license": "CC0-1.0"
+  "consolidatedAt": "2025-12-04T22:13:12.686Z",
+  "license": "CC0-1.0",
+  "alchemical": {
+    "name": "Cathedral Of Circuits",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Of Circuits (cathedral-of-circuits)"
+  }
 }

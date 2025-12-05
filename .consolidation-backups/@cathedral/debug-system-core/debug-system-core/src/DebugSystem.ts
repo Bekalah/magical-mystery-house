@@ -166,7 +166,7 @@ export class DebugSystem {
         if (!packageJson.scripts || !packageJson.scripts.build) continue;
 
         try {
-          execSync('ppnpm run build', { 
+          execSync('pnpm run build', { 
             cwd: pkg.path, 
             stdio: 'pipe', 
             maxBuffer: 10 * 1024 * 1024,
@@ -177,7 +177,7 @@ export class DebugSystem {
         } catch (buildError: any) {
           errors.push({
             package: pkg.name,
-            command: 'ppnpm run build',
+            command: 'pnpm run build',
             exitCode: buildError.status || 1,
             stdout: buildError.stdout?.toString() || '',
             stderr: buildError.stderr?.toString() || buildError.message || '',
@@ -198,11 +198,11 @@ export class DebugSystem {
   private async checkDependencyIssues(_packages: PackageInfo[]): Promise<DependencyIssue[]> {
     const issues: DependencyIssue[] = [];
 
-    // Check for ppnpm audit results
+    // Check for pnpm audit results
     try {
       // @ts-expect-error - process is available in Node.js runtime
       const isWindows = typeof process !== 'undefined' && process.platform === 'win32';
-      const auditResult = execSync('ppnpm audit --json 2>&1 || true', {
+      const auditResult = execSync('pnpm audit --json 2>&1 || true', {
         cwd: this.baseDir,
         encoding: 'utf-8',
         maxBuffer: 10 * 1024 * 1024,

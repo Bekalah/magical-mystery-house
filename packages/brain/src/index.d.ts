@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * index
  *
  * @package @cathedral/brain

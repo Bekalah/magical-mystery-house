@@ -1,0 +1,77 @@
+{
+  "timestamp": "2025-12-04T22:13:15.925Z",
+  "experimentModels": [
+    {
+      "file": "experiment-state.json",
+      "size": 1065594,
+      "modified": "2025-12-04T22:12:40.436Z",
+      "description": "Current experiment state with 478+ cycles of improvements"
+    },
+    {
+      "file": "IMPROVEMENT_EXPERIMENT_LOG.json",
+      "size": 2666686,
+      "modified": "2025-12-04T22:12:38.814Z",
+      "description": "Complete log of all experiment improvements"
+    },
+    {
+      "file": ".experiment-metrics.json",
+      "size": 6704,
+      "modified": "2025-12-04T22:12:38.246Z",
+      "description": "Performance metrics and analytics"
+    },
+    {
+      "file": "scripts/10-hour-improvement-experiment.ts",
+      "size": 162656,
+      "modified": "2025-12-04T22:12:45.066Z",
+      "description": "Main experiment automation script"
+    },
+    {
+      "file": "scripts/run-magnum-opus-experiment.mjs",
+      "size": 2981,
+      "modified": "2025-12-04T22:12:45.107Z",
+      "description": "Magnum Opus business edition experiment"
+    }
+  ],
+  "codeModels": [
+    {
+      "package": "packages/codex-144-99",
+      "description": "144 nodes, 99 depths, consciousness mapping system"
+    },
+    {
+      "package": "packages/stone-grimoire",
+      "description": "8 chapels, folios, sacred archive system"
+    },
+    {
+      "package": "packages/liber-arcanae",
+      "description": "Extended tarot, 72 Shem Angels, 72 Goetic Demons"
+    },
+    {
+      "package": "packages/game-engine",
+      "description": "RPG system with boons, treasures, True Will integration"
+    },
+    {
+      "package": "packages/true-will-system",
+      "description": "Thelemic True Will system (chaos meter, alignment)"
+    }
+  ],
+  "visualModels": [
+    {
+      "package": "packages/visionary-design-system",
+      "description": "Design system with sacred geometry"
+    },
+    {
+      "package": "packages/cathedral-visual-engine",
+      "description": "Visual engine for 3D immersive environments"
+    },
+    {
+      "package": "packages/art-engine-core",
+      "description": "Art generation engine"
+    },
+    {
+      "package": "packages/sacred-geometry-core",
+      "description": "Sacred geometry mathematics (golden ratio, Fibonacci)"
+    }
+  ],
+  "dataModels": [],
+  "architectureModels": []
+}

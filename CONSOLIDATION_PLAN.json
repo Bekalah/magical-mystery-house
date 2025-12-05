@@ -1,5 +1,5 @@
 {
-  "timestamp": 1764619458376,
+  "timestamp": 1764888518889,
   "workspaces": [
     {
       "name": "cathedral-master-deployment",
@@ -18,9 +18,9 @@
     }
   ],
   "entities": {
-    "packages": 130,
+    "packages": 134,
     "apps": 21,
-    "tools": 172,
+    "tools": 214,
     "systems": 2,
     "engines": 24
   },
@@ -2375,7 +2375,7 @@
       ]
     }
   ],
-  "connections": 237,
+  "connections": 801,
   "consolidationSteps": [
     {
       "step": 1,

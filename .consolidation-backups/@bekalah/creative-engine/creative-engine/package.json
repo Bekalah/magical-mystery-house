@@ -24,5 +24,10 @@
     "architecture-generation",
     "symbol-fusion",
     "cathedral-of-circuits"
-  ]
+  ],
+  "alchemical": {
+    "name": "@Bekalah/Creative",
+    "symbol": "⊙",
+    "label": "⊙ @Bekalah/Creative (@bekalah/creative-engine)"
+  }
 }

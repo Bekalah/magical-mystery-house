@@ -1,11 +1,11 @@
 {
-  "timestamp": "2025-12-01T21:24:36.399Z",
+  "timestamp": "2025-12-04T22:42:54.474Z",
   "version": "1.0.0",
   "summary": {
     "aligned": 0,
-    "misaligned": 525,
+    "misaligned": 528,
     "missing": 0,
-    "recommendations": 525
+    "recommendations": 528
   },
   "alignment": {
     "aligned": [],
@@ -93,6 +93,13 @@
           "/Users/rebeccalemke/cathedral-master-deployment/.remote-repos/cathedral/packages/stone-grimoire",
           "/Users/rebeccalemke/cathedral-master-deployment/.remote-repos/cathedral-vercel/packages/stone-grimoire"
         ]
+      },
+      {
+        "type": "naming",
+        "name": "*",
+        "description": "Name \"*\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/*",
+        "recommendation": "@cathedral/*"
       },
       {
         "type": "naming",
@@ -597,6 +604,13 @@
         "description": "Name \"hooks\" doesn't match codex naming patterns",
         "location": "/Users/rebeccalemke/cathedral-master-deployment/.remote-repos/BUILDING-CATHEDRALS/packages/hooks",
         "recommendation": "@cathedral/hooks"
+      },
+      {
+        "type": "naming",
+        "name": "archived",
+        "description": "Name \"archived\" doesn't match codex naming patterns",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/tools/archived",
+        "recommendation": "archived"
       },
       {
         "type": "naming",
@@ -1794,6 +1808,15 @@
         "description": "Name \"codex-14499\" doesn't match codex naming patterns",
         "location": "/Users/rebeccalemke/cathedral-master-deployment/.remote-repos/cathedral-vercel/packages/codex-14499",
         "recommendation": "codex-14499-system"
+      },
+      {
+        "type": "structure",
+        "name": "*",
+        "description": "Missing required files: package.json",
+        "location": "/Users/rebeccalemke/cathedral-master-deployment/packages/*",
+        "missing": [
+          "package.json"
+        ]
       },
       {
         "type": "structure",
@@ -4382,6 +4405,12 @@
         "fix": "Merge 13 locations into one complete package"
       },
       {
+        "entity": "*",
+        "type": "naming",
+        "issue": "Name \"*\" doesn't match codex naming patterns",
+        "fix": "Rename to: @cathedral/*"
+      },
+      {
         "entity": "agent-integration",
         "type": "naming",
         "issue": "Name \"agent-integration\" doesn't match codex naming patterns",
@@ -4812,6 +4841,12 @@
         "type": "naming",
         "issue": "Name \"hooks\" doesn't match codex naming patterns",
         "fix": "Rename to: @cathedral/hooks"
+      },
+      {
+        "entity": "archived",
+        "type": "naming",
+        "issue": "Name \"archived\" doesn't match codex naming patterns",
+        "fix": "Rename to: archived"
       },
       {
         "entity": "automation",
@@ -5838,6 +5873,12 @@
         "type": "naming",
         "issue": "Name \"codex-14499\" doesn't match codex naming patterns",
         "fix": "Rename to: codex-14499-system"
+      },
+      {
+        "entity": "*",
+        "type": "structure",
+        "issue": "Missing required files: package.json",
+        "fix": "Add missing files: package.json"
       },
       {
         "entity": "agent-integration",

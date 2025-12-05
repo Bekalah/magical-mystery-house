@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
+/**
+ * ⊙ Next.Config
+ * 
+ * @alchemical Next.Config
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 const nextConfig = {
   experimental: {
     appDir: true,

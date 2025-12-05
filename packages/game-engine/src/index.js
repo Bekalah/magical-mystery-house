@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🏛️✨ CATHEDRAL OF CIRCUITS - GAME ENGINE ENTRY POINT
  *
  * Native ES module exports for your Guild Wars-style RPG engine

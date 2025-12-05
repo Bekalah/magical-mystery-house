@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🔯 Cathedral Fusion Creative Suite - Main Export
  * Professional Adobe/Figma replacement with Arcana character system
  * Merkaba 3D builder, brush engine, vector graphics, frequency visualizer

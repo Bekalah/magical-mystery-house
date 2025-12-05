@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "vite dev"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +44,15 @@
     "@testing-library/user-event": "^13.5.0"
   },
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T21:19:39.671Z",
-  "license": "CC0-1.0"
+  "consolidatedAt": "2025-12-04T22:13:12.747Z",
+  "license": "CC0-1.0",
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "alchemical": {
+    "name": "Cathedral Spell Frontend",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Spell Frontend (cathedral-spell-frontend)"
+  }
 }

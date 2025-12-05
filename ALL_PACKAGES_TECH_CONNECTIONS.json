@@ -1,5 +1,7 @@
 {
-  "timestamp": "2025-12-01T23:45:38.605Z",
+  "timestamp": "2025-12-03T00:00:00.000Z",
+  "updated": "2025-12-03T00:00:00.000Z",
+  "note": "Tech items have been integrated into packages. See individual TECH_INTEGRATION.json files for current status.",
   "systems": {},
   "packages": {
     "godot-liber-arcanae": {
@@ -11,7 +13,19 @@
         "spell-system"
       ],
       "connected": true,
-      "integrations": []
+      "integrations": [],
+      "techIntegrations": {
+        "true-will-tech": {
+          "status": "integrated",
+          "path": "packages/true-will-system/src/TrueWillTech.ts",
+          "import": "@cathedral/true-will-system"
+        },
+        "rpg-tech": {
+          "status": "integrated",
+          "path": "packages/game-engine/src/RPGTech.ts",
+          "import": "@cathedral/game-engine"
+        }
+      }
     },
     "liber-arcanae": {
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae",
@@ -19,10 +33,28 @@
         "grimoire-system",
         "character-grimoire-system",
         "true-will-tech",
-        "rpg-tech"
+        "rpg-tech",
+        "witch-eye-tech"
       ],
       "connected": true,
-      "integrations": []
+      "integrations": [],
+      "techIntegrations": {
+        "true-will-tech": {
+          "status": "integrated",
+          "path": "packages/true-will-system/src/TrueWillTech.ts",
+          "import": "@cathedral/true-will-system"
+        },
+        "rpg-tech": {
+          "status": "integrated",
+          "path": "packages/game-engine/src/RPGTech.ts",
+          "import": "@cathedral/game-engine"
+        },
+        "witch-eye-tech": {
+          "status": "integrated",
+          "path": "packages/liber-arcanae/src/WitchEyeTech.ts",
+          "import": "@cathedral/liber-arcanae"
+        }
+      }
     },
     "codex-144": {
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144",
@@ -32,7 +64,19 @@
         "true-will-tech"
       ],
       "connected": true,
-      "integrations": []
+      "integrations": [],
+      "techIntegrations": {
+        "portal-tech": {
+          "status": "integrated",
+          "path": "packages/portal-system/src/PortalTech.ts",
+          "import": "@cathedral/portal-system"
+        },
+        "true-will-tech": {
+          "status": "integrated",
+          "path": "packages/true-will-system/src/TrueWillTech.ts",
+          "import": "@cathedral/true-will-system"
+        }
+      }
     },
     "codex-144-99": {
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/codex-144-99",
@@ -42,7 +86,24 @@
         "true-will-tech"
       ],
       "connected": true,
-      "integrations": []
+      "integrations": [],
+      "techIntegrations": {
+        "portal-tech": {
+          "status": "integrated",
+          "path": "packages/portal-system/src/PortalTech.ts",
+          "import": "@cathedral/portal-system"
+        },
+        "double-tree-pathworking-tech": {
+          "status": "integrated",
+          "path": "packages/codex-144-99/src/DoubleTreePathworkingTech.ts",
+          "import": "@cathedral/codex-144-99"
+        },
+        "true-will-tech": {
+          "status": "integrated",
+          "path": "packages/true-will-system/src/TrueWillTech.ts",
+          "import": "@cathedral/true-will-system"
+        }
+      }
     },
     "circuitum99-core": {
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-core",
@@ -52,7 +113,24 @@
         "true-will-tech"
       ],
       "connected": true,
-      "integrations": []
+      "integrations": [],
+      "techIntegrations": {
+        "portal-tech": {
+          "status": "integrated",
+          "path": "packages/portal-system/src/PortalTech.ts",
+          "import": "@cathedral/portal-system"
+        },
+        "rpg-tech": {
+          "status": "integrated",
+          "path": "packages/game-engine/src/RPGTech.ts",
+          "import": "@cathedral/game-engine"
+        },
+        "true-will-tech": {
+          "status": "integrated",
+          "path": "packages/true-will-system/src/TrueWillTech.ts",
+          "import": "@cathedral/true-will-system"
+        }
+      }
     },
     "stone-grimoire": {
       "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/stone-grimoire",
@@ -62,177 +140,88 @@
         "true-will-tech"
       ],
       "connected": true,
-      "integrations": []
+      "integrations": [],
+      "techIntegrations": {
+        "true-will-tech": {
+          "status": "integrated",
+          "path": "packages/true-will-system/src/TrueWillTech.ts",
+          "import": "@cathedral/true-will-system"
+        }
+      }
+    },
+    "circuitum99-arcanae-cyoa": {
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/circuitum99-arcanae-cyoa",
+      "techSystems": [
+        "portal-tech",
+        "rpg-tech",
+        "true-will-tech"
+      ],
+      "connected": true,
+      "integrations": [],
+      "techIntegrations": {
+        "portal-tech": {
+          "status": "integrated",
+          "path": "packages/portal-system/src/PortalTech.ts",
+          "import": "@cathedral/portal-system"
+        },
+        "rpg-tech": {
+          "status": "integrated",
+          "path": "packages/game-engine/src/RPGTech.ts",
+          "import": "@cathedral/game-engine"
+        },
+        "true-will-tech": {
+          "status": "integrated",
+          "path": "packages/true-will-system/src/TrueWillTech.ts",
+          "import": "@cathedral/true-will-system"
+        }
+      }
+    },
+    "cathedral-plugin-system": {
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/cathedral-plugin-system",
+      "techSystems": [
+        "witch-mod-tech"
+      ],
+      "connected": true,
+      "integrations": [],
+      "techIntegrations": {
+        "witch-mod-tech": {
+          "status": "integrated",
+          "path": "packages/cathedral-plugin-system/src/WitchModTech.ts",
+          "import": "@cathedral/plugin-system"
+        }
+      }
     }
   },
-  "integrations": [
-    {
-      "package": "godot-liber-arcanae",
-      "techSystems": [
-        "true-will-tech",
-        "rpg-tech",
-        "grimoire-system",
-        "spell-system"
-      ],
-      "connected": "2025-12-01T23:45:38.612Z",
-      "connections": [
-        {
-          "tech": "true-will-tech",
-          "status": "connected",
-          "path": "tools/true-will-tech.mjs"
-        },
-        {
-          "tech": "rpg-tech",
-          "status": "connected",
-          "path": "tools/rpg-tech.mjs"
-        },
-        {
-          "tech": "grimoire-system",
-          "status": "connected",
-          "path": "tools/grimoire-system.mjs"
-        },
-        {
-          "tech": "spell-system",
-          "status": "connected",
-          "path": "tools/spell-system.mjs"
-        }
-      ]
+  "integratedTechItems": {
+    "portal-tech": {
+      "package": "@cathedral/portal-system",
+      "path": "packages/portal-system/src/PortalTech.ts",
+      "usedBy": ["codex-144-99", "codex-144", "circuitum99-core", "circuitum99-arcanae-cyoa"]
     },
-    {
-      "package": "liber-arcanae",
-      "techSystems": [
-        "grimoire-system",
-        "character-grimoire-system",
-        "true-will-tech",
-        "rpg-tech"
-      ],
-      "connected": "2025-12-01T23:45:38.614Z",
-      "connections": [
-        {
-          "tech": "grimoire-system",
-          "status": "connected",
-          "path": "tools/grimoire-system.mjs"
-        },
-        {
-          "tech": "character-grimoire-system",
-          "status": "connected",
-          "path": "tools/character-grimoire-system.mjs"
-        },
-        {
-          "tech": "true-will-tech",
-          "status": "connected",
-          "path": "tools/true-will-tech.mjs"
-        },
-        {
-          "tech": "rpg-tech",
-          "status": "connected",
-          "path": "tools/rpg-tech.mjs"
-        }
-      ]
+    "rpg-tech": {
+      "package": "@cathedral/game-engine",
+      "path": "packages/game-engine/src/RPGTech.ts",
+      "usedBy": ["liber-arcanae", "godot-liber-arcanae", "circuitum99-core", "circuitum99-arcanae-cyoa"]
     },
-    {
-      "package": "codex-144",
-      "techSystems": [
-        "daimon-grimoires",
-        "portal-tech",
-        "true-will-tech"
-      ],
-      "connected": "2025-12-01T23:45:38.615Z",
-      "connections": [
-        {
-          "tech": "daimon-grimoires",
-          "status": "connected",
-          "path": "tools/daimon-grimoires.mjs"
-        },
-        {
-          "tech": "portal-tech",
-          "status": "connected",
-          "path": "tools/portal-tech.mjs"
-        },
-        {
-          "tech": "true-will-tech",
-          "status": "connected",
-          "path": "tools/true-will-tech.mjs"
-        }
-      ]
+    "true-will-tech": {
+      "package": "@cathedral/true-will-system",
+      "path": "packages/true-will-system/src/TrueWillTech.ts",
+      "usedBy": ["liber-arcanae", "godot-liber-arcanae", "circuitum99-core", "codex-144-99", "codex-144", "stone-grimoire", "circuitum99-arcanae-cyoa"]
     },
-    {
-      "package": "codex-144-99",
-      "techSystems": [
-        "portal-tech",
-        "double-tree-pathworking-tech",
-        "true-will-tech"
-      ],
-      "connected": "2025-12-01T23:45:38.617Z",
-      "connections": [
-        {
-          "tech": "portal-tech",
-          "status": "connected",
-          "path": "tools/portal-tech.mjs"
-        },
-        {
-          "tech": "double-tree-pathworking-tech",
-          "status": "connected",
-          "path": "tools/double-tree-pathworking-tech.mjs"
-        },
-        {
-          "tech": "true-will-tech",
-          "status": "connected",
-          "path": "tools/true-will-tech.mjs"
-        }
-      ]
+    "witch-eye-tech": {
+      "package": "@cathedral/liber-arcanae",
+      "path": "packages/liber-arcanae/src/WitchEyeTech.ts",
+      "usedBy": ["liber-arcanae"]
     },
-    {
-      "package": "circuitum99-core",
-      "techSystems": [
-        "portal-tech",
-        "rpg-tech",
-        "true-will-tech"
-      ],
-      "connected": "2025-12-01T23:45:38.619Z",
-      "connections": [
-        {
-          "tech": "portal-tech",
-          "status": "connected",
-          "path": "tools/portal-tech.mjs"
-        },
-        {
-          "tech": "rpg-tech",
-          "status": "connected",
-          "path": "tools/rpg-tech.mjs"
-        },
-        {
-          "tech": "true-will-tech",
-          "status": "connected",
-          "path": "tools/true-will-tech.mjs"
-        }
-      ]
+    "witch-mod-tech": {
+      "package": "@cathedral/plugin-system",
+      "path": "packages/cathedral-plugin-system/src/WitchModTech.ts",
+      "usedBy": ["cathedral-plugin-system"]
     },
-    {
-      "package": "stone-grimoire",
-      "techSystems": [
-        "grimoire-maker",
-        "dynamic-grimoire-importer",
-        "true-will-tech"
-      ],
-      "connected": "2025-12-01T23:45:38.620Z",
-      "connections": [
-        {
-          "tech": "grimoire-maker",
-          "status": "connected",
-          "path": "tools/grimoire-maker.mjs"
-        },
-        {
-          "tech": "dynamic-grimoire-importer",
-          "status": "connected",
-          "path": "tools/dynamic-grimoire-importer.mjs"
-        },
-        {
-          "tech": "true-will-tech",
-          "status": "connected",
-          "path": "tools/true-will-tech.mjs"
-        }
-      ]
+    "double-tree-pathworking-tech": {
+      "package": "@cathedral/codex-144-99",
+      "path": "packages/codex-144-99/src/DoubleTreePathworkingTech.ts",
+      "usedBy": ["codex-144-99"]
     }
-  ]
+  }
 }

@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🎨 Art-Codex Integration
  *
  * Connects the Codex 144:99 directly to art generation and visual tools

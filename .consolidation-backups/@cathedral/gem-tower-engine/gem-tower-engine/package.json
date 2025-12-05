@@ -27,5 +27,10 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/gem-tower-engine"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/gem-tower-engine"
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/gem-tower-engine",
+  "alchemical": {
+    "name": "Gem Tower",
+    "symbol": "⊙",
+    "label": "⊙ Gem Tower (@cathedral/gem-tower-engine)"
+  }
 }

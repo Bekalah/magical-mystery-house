@@ -180,5 +180,10 @@
       ]
     }
   },
-  "packageManager": "pnpm@8.15.0"
+  "packageManager": "pnpm@8.15.0",
+  "alchemical": {
+    "name": "@Bekalah/Liber Arcanae Tarot",
+    "symbol": "⊙",
+    "label": "⊙ @Bekalah/Liber Arcanae Tarot (@bekalah/liber-arcanae-tarot)"
+  }
 }

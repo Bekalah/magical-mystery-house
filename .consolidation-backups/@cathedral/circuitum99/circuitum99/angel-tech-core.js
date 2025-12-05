@@ -16,6 +16,16 @@
  */
 
 // 🎯 ANGEL TECH CORE SYSTEM
+/**
+ * ⊙ Angel Tech
+ * 
+ * @alchemical Angel Tech
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 class AngelTechCore {
     constructor() {
         this.systemName = "Angel Tech - Patterned Intelligence Technology";

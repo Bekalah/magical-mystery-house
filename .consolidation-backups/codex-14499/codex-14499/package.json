@@ -42,5 +42,10 @@
       "spine_33": "../data/spine-33.json",
       "codex_nodes": "../data/codex_nodes.json"
     }
+  },
+  "alchemical": {
+    "name": "Codex 14499",
+    "symbol": "⊙",
+    "label": "⊙ Codex 14499 (codex-14499)"
   }
 }

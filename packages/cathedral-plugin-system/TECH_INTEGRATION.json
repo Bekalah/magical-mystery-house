@@ -1,0 +1,17 @@
+{
+  "package": "cathedral-plugin-system",
+  "techSystems": [
+    "witch-mod-tech"
+  ],
+  "connected": "2025-12-03T00:00:00.000Z",
+  "updated": "2025-12-03T00:00:00.000Z",
+  "connections": [
+    {
+      "tech": "witch-mod-tech",
+      "status": "integrated",
+      "path": "packages/cathedral-plugin-system/src/WitchModTech.ts",
+      "import": "@cathedral/plugin-system"
+    }
+  ]
+}
+

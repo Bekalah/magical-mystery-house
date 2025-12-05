@@ -47,5 +47,10 @@
     "typescript",
     "three.js",
     "professional-tools"
-  ]
+  ],
+  "alchemical": {
+    "name": "Cathedral Unity",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Unity (@cathedral/cathedral-unity)"
+  }
 }

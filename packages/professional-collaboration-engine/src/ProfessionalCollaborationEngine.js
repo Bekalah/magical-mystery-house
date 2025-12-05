@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * Professional Real-Time Collaboration Engine with Version Control
  *
  * Complete replacement for Figma's collaboration with enterprise-grade features:

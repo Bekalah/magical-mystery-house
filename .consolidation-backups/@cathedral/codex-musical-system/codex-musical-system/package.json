@@ -26,5 +26,10 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/codex-musical-system"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/codex-musical-system"
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/codex-musical-system",
+  "alchemical": {
+    "name": "Codex Musical System",
+    "symbol": "⊙",
+    "label": "⊙ Codex Musical System (@cathedral/codex-musical-system)"
+  }
 }

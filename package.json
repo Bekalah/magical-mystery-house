@@ -1,6 +1,7 @@
 {
   "name": "cathedral-master-deployment",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "description": "Cathedral Master Deployment - Monorepo",
   "scripts": {
@@ -18,10 +19,27 @@
     "security:check": "pnpm audit && pnpm run security:audit",
     "security:fix": "pnpm audit --fix",
     "maintain": "pnpm run cleanup && pnpm run security:audit && pnpm build",
-    "improve": "node scripts/run-improvement-experiment.mjs",
-    "improve:tonight": "node scripts/run-experiment-tonight.mjs",
-    "magnum-opus:run": "node scripts/run-magnum-opus-experiment.mjs",
-    "magnum-opus:all-night": "node scripts/run-magnum-opus-experiment.mjs",
+    "cathedral": "node tools/cathedral-cli.mjs",
+    "alchemy": "node tools/cathedral-cli.mjs alchemy",
+    "magnum-opus": "node tools/cathedral-cli.mjs magnum-opus",
+    "codex": "node tools/cathedral-cli.mjs codex",
+    "pipeline": "node tools/cathedral-cli.mjs pipeline",
+    "deploy": "node tools/cathedral-cli.mjs deploy",
+    "experiment": "tsx scripts/10-hour-improvement-experiment.ts",
+    "experiment:3hour": "node scripts/3-hour-comprehensive-run.mjs",
+    "experiment:analyze": "node scripts/comprehensive-analysis.mjs",
+    "experiment:verify": "node scripts/link-all-data.mjs",
+    "unified:experiment": "node scripts/unified-cathedral-experiment.mjs",
+    "unified:resume": "node scripts/unified-cathedral-experiment.mjs",
+    "unified:status": "node -e \"try{const s=require('./unified-experiment-state.json'); console.log('Phase:', s.currentPhase, '/', s.totalPhases, '| Completed:', Object.values(s.phases).filter(p=>p.completed).length)}catch(e){console.log('No experiment state found')}\"",
+    "unified:overnight": "node scripts/unified-cathedral-experiment.mjs",
+    "enhance:golden-standard": "node tools/enhance-golden-standard.mjs",
+    "verify:golden-standard": "node tools/verify-golden-standard.mjs",
+    "unify:workspaces": "node tools/unify-all-workspaces.mjs",
+    "trinity:integrate": "node tools/integrate-spiritus-animus-corpus.mjs",
+    "gitlab:prepare": "node tools/prepare-gitlab-migration.mjs",
+    "cleanup:flattened": "node tools/cleanup-flattened-mess.mjs",
+    "save:models": "node scripts/save-new-models.mjs",
     "improve:report": "node scripts/experiment-reporter.mjs",
     "improve:clean": "node scripts/experiment-reporter.mjs --clean",
     "improve:all-day": "node scripts/keep-running.mjs",
@@ -135,5 +153,37 @@
     "name": "Cathedral Master Deployment",
     "symbol": "⊙",
     "label": "⊙ Cathedral Master Deployment (cathedral-master-deployment)"
+  },
+  "cathedral": {
+    "quality": "A+",
+    "theme": "golden-standard-alchemy-hermetica-neoplatonic",
+    "project": "Cathedral of Circuits",
+    "author": "Rebecca Respawn",
+    "hermetic_principles": true,
+    "neoplatonic_hierarchy": true,
+    "alchemical_processes": true,
+    "sacred_mathematics": {
+      "goldenRatio": 1.618,
+      "cathedralRatio": 1.4545,
+      "fibonacci": [
+        8,
+        13,
+        21,
+        34,
+        55,
+        89,
+        144
+      ]
+    }
+  },
+  "keywords": [
+    "cathedral-of-circuits",
+    "magnum-opus-v1",
+    "golden-standard",
+    "A-plus-quality"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/bekalah/cathedral-of-circuits-magnum-opus-v1.git"
   }
 }

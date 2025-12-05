@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../cathedral-fixed-clean"
+		},
+		{
+			"path": "../../../../cathedral-backups"
+		},
+		{
+			"path": "../../../../CathedralOfCircuits"
+		},
+		{
+			"path": "../../../../cathedral-master-deployment"
+		}
+	],
+	"settings": {}
+}

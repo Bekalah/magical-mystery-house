@@ -7,7 +7,35 @@ on:
     branches: [ main, master ]
 
 jobs:
+  check-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      docs-only: ${{ steps.filter.outputs.docs == 'true' }}
+      other-files: ${{ steps.filter.outputs.other == 'true' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            docs:
+              - 'docs/**'
+              - 'README.md'
+            other:
+              - '**'
+              - '!docs/**'
+              - '!README.md'
+
   build:
+    needs: check-changes
+    # Skip build if ONLY docs changed (deploy-docs.yml handles that)
+    # Run if: PR, OR other files changed (even if docs also changed), OR no path filters matched (handles edge cases)
+    if: |
+      github.event_name == 'pull_request' ||
+      needs.check-changes.outputs.other-files == 'true' ||
+      (needs.check-changes.outputs.docs-only != 'true' && needs.check-changes.outputs.other-files != 'true')
     runs-on: ubuntu-latest
     
     strategy:
@@ -93,9 +121,16 @@ jobs:
         if-no-files-found: warn
 
   deploy:
-    needs: build
+    needs: [build, check-changes]
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    if: |
+      (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master') &&
+      needs.check-changes.outputs.other-files == 'true' &&
+      (needs.build.result == 'success' || needs.build.result == 'skipped')
+    # Use concurrency to prevent race conditions with other workflows
+    concurrency:
+      group: pages-deployment
+      cancel-in-progress: false
     
     steps:
     - name: Checkout code
@@ -145,6 +180,8 @@ jobs:
         fi
     
     - name: Deploy to GitHub Pages
+      # Note: Concurrency is configured at job level (line 100), not here
+      # The peaceiris/actions-gh-pages action does not accept concurrency as a parameter
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

@@ -17,5 +17,10 @@
     "@types/react-dom": "^18.3.7",
     "typescript": "^5.3.3",
     "vite": "^5.0.10"
+  },
+  "alchemical": {
+    "name": "Tarot Arena",
+    "symbol": "⊙",
+    "label": "⊙ Tarot Arena (@cathedral/tarot-arena)"
   }
 }

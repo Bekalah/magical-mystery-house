@@ -86,5 +86,10 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "alchemical": {
+    "name": "Godot Codex 14499",
+    "symbol": "⊙",
+    "label": "⊙ Godot Codex 14499 (@cathedral/godot-codex-14499)"
   }
 }

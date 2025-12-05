@@ -29,5 +29,10 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/three-engine"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/three-engine"
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/three-engine",
+  "alchemical": {
+    "name": "Three",
+    "symbol": "⊙",
+    "label": "⊙ Three (@cathedral/three-engine)"
+  }
 }

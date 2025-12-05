@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * Professional Export and Integration System
  *
  * Complete replacement for Adobe Creative Cloud and Figma export capabilities:

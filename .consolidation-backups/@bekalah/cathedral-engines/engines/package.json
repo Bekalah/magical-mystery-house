@@ -16,5 +16,10 @@
     "living_engines": 22,
     "fusion_enabled": true,
     "trauma_safety": "maximum"
+  },
+  "alchemical": {
+    "name": "@Bekalah/Cathedral Engines",
+    "symbol": "⊙",
+    "label": "⊙ @Bekalah/Cathedral Engines (@bekalah/cathedral-engines)"
   }
 }

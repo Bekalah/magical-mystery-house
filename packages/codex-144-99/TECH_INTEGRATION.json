@@ -6,21 +6,25 @@
     "true-will-tech"
   ],
   "connected": "2025-12-01T23:45:38.617Z",
+  "updated": "2025-12-03T00:00:00.000Z",
   "connections": [
     {
       "tech": "portal-tech",
-      "status": "connected",
-      "path": "tools/portal-tech.mjs"
+      "status": "integrated",
+      "path": "packages/portal-system/src/PortalTech.ts",
+      "import": "@cathedral/portal-system"
     },
     {
       "tech": "double-tree-pathworking-tech",
-      "status": "connected",
-      "path": "tools/double-tree-pathworking-tech.mjs"
+      "status": "integrated",
+      "path": "packages/codex-144-99/src/DoubleTreePathworkingTech.ts",
+      "import": "@cathedral/codex-144-99"
     },
     {
       "tech": "true-will-tech",
-      "status": "connected",
-      "path": "tools/true-will-tech.mjs"
+      "status": "integrated",
+      "path": "packages/true-will-system/src/TrueWillTech.ts",
+      "import": "@cathedral/true-will-system"
     }
   ]
 }

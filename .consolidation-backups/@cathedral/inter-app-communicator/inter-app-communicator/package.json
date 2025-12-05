@@ -35,5 +35,10 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/inter-app-communicator"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/inter-app-communicator"
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/inter-app-communicator",
+  "alchemical": {
+    "name": "Inter App Communicator",
+    "symbol": "⊙",
+    "label": "⊙ Inter App Communicator (@cathedral/inter-app-communicator)"
+  }
 }

@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 22 Master Arcanae - Complete Ornate System
  *
  * @package @cathedral/liber-arcanae

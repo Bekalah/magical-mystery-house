@@ -1,3 +1,7 @@
+/**
+ * @license CC0-1.0 - Public Domain
+ */
+
 export { ArtEngine } from './ArtEngine';
 export type { ArtNode, ArtComposition, GeometryShape, ColorPalette, Color, Pattern, Composition, Point } from './ArtEngine';
 export { ArtCompositionTools } from './ArtComposition';

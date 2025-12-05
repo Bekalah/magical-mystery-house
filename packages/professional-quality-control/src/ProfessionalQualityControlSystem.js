@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * Professional Quality Control and Validation System
  *
  * Enterprise-grade quality assurance for all creative tools:

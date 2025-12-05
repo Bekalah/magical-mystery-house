@@ -92,15 +92,63 @@ async function connectAllPackagesTech() {
       
       // Create integration file for package
       const integrationFile = path.join(packagePath, 'TECH_INTEGRATION.json');
+      
+      // Map tech systems to their package locations
+      const techToPackageMap = {
+        'portal-tech': {
+          path: 'packages/portal-system/src/PortalTech.ts',
+          import: '@cathedral/portal-system',
+          status: 'integrated'
+        },
+        'rpg-tech': {
+          path: 'packages/game-engine/src/RPGTech.ts',
+          import: '@cathedral/game-engine',
+          status: 'integrated'
+        },
+        'true-will-tech': {
+          path: 'packages/true-will-system/src/TrueWillTech.ts',
+          import: '@cathedral/true-will-system',
+          status: 'integrated'
+        },
+        'witch-eye-tech': {
+          path: 'packages/liber-arcanae/src/WitchEyeTech.ts',
+          import: '@cathedral/liber-arcanae',
+          status: 'integrated'
+        },
+        'witch-mod-tech': {
+          path: 'packages/cathedral-plugin-system/src/WitchModTech.ts',
+          import: '@cathedral/plugin-system',
+          status: 'integrated'
+        },
+        'double-tree-pathworking-tech': {
+          path: 'packages/codex-144-99/src/DoubleTreePathworkingTech.ts',
+          import: '@cathedral/codex-144-99',
+          status: 'integrated'
+        }
+      };
+      
       const integration = {
         package: packageName,
         techSystems: techSystems,
         connected: new Date().toISOString(),
-        connections: techSystems.map(tech => ({
-          tech: tech,
-          status: 'connected',
-          path: `tools/${tech}.mjs`
-        }))
+        updated: new Date().toISOString(),
+        connections: techSystems.map(tech => {
+          const mapped = techToPackageMap[tech];
+          if (mapped) {
+            return {
+              tech: tech,
+              status: mapped.status,
+              path: mapped.path,
+              import: mapped.import
+            };
+          }
+          // For tech systems that haven't been integrated yet, keep old path
+          return {
+            tech: tech,
+            status: 'connected',
+            path: `tools/${tech}.mjs`
+          };
+        })
       };
       
       fs.writeFileSync(integrationFile, JSON.stringify(integration, null, 2), 'utf-8');

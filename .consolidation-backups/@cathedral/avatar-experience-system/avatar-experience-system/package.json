@@ -26,5 +26,10 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/avatar-experience-system"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/avatar-experience-system"
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/avatar-experience-system",
+  "alchemical": {
+    "name": "Avatar Experience System",
+    "symbol": "⊙",
+    "label": "⊙ Avatar Experience System (@cathedral/avatar-experience-system)"
+  }
 }

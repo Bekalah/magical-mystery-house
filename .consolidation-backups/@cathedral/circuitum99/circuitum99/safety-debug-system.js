@@ -8,6 +8,16 @@
  */
 
 // 🎨 ARTIST-FRIENDLY DEBUGGING SYSTEM
+/**
+ * ⊙ Safety Debug System
+ * 
+ * @alchemical Safety Debug System
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 class ImaginationSafeDebugger {
     constructor() {
         this.debugLevel = 'artist_friendly'; // 'technical', 'artist_friendly', 'poetic'

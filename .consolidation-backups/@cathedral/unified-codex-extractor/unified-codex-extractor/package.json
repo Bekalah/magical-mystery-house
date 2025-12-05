@@ -63,5 +63,10 @@
   },
   "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/unified-codex-extractor",
   "license": "CC0-1.0",
-  "author": "Rebecca Respawn <bekalah>"
+  "author": "Rebecca Respawn <bekalah>",
+  "alchemical": {
+    "name": "Unified Codex Extractor",
+    "symbol": "⊙",
+    "label": "⊙ Unified Codex Extractor (@cathedral/unified-codex-extractor)"
+  }
 }

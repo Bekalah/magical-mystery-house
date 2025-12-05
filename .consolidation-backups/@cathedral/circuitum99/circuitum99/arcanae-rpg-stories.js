@@ -7,6 +7,16 @@
  */
 
 // 🎭 ARCANAE STORY ENGINE
+/**
+ * ⊙ Arcanae Rpg Stories
+ * 
+ * @alchemical Arcanae Rpg Stories
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 class ArcanaeRPGStories {
     constructor() {
         this.stories = this.initializeArcanaeStories();

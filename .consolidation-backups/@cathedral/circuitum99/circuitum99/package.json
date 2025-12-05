@@ -8,7 +8,17 @@
     "build": "echo 'Circuitum99 build complete'",
     "test": "echo 'Circuitum99 tests passing'"
   },
-  "keywords": ["cathedral", "circuitum99", "soul", "gates"],
+  "keywords": [
+    "cathedral",
+    "circuitum99",
+    "soul",
+    "gates"
+  ],
   "author": "Rebecca Respawn",
-  "license": "CC0"
+  "license": "CC0",
+  "alchemical": {
+    "name": "Circuitum99",
+    "symbol": "⊙",
+    "label": "⊙ Circuitum99 (@cathedral/circuitum99)"
+  }
 }

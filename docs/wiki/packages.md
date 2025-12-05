@@ -8,7 +8,7 @@
 
 ---
 
-## All Packages (131 total)
+## All Packages (136 total)
 
 ```
 agent-integration@1.0.0 - Agent Integration - Part of the Cathedral of Circuits mystical ecosystem
@@ -20,6 +20,7 @@ archetypal-engine@1.0.0 - Archetypal - Part of the Cathedral of Circuits mystica
 art-systems@1.0.0 - Art Systems - Part of the Cathedral of Circuits mystical ecosystem
 atelier-constitution@1.0.0 - Atelier Constitution - Part of the Cathedral of Circuits mystical ecosystem
 @cathedral/avatar-experience-system@1.0.0 - Avatar Experience System - Multi-modal fractal avatar experiences with Liber Arcanae integration
+@cathedral/body-of-god-core@1.0.0 - Anatomy of the Body of God - Tree of Life (Sephiroth) Technical Implementation
 @cathedral/brain@1.0.0 - Brain - Part of the Cathedral of Circuits mystical ecosystem
 @cathedral/cataract-book-scanner@1.0.0 - Cataract: Professional book-to-archetype scanner for public domain books with sacred geometry precision
 cathedral-144@1.0.0 - Cathedral 144 - Part of the Cathedral of Circuits mystical ecosystem
@@ -57,6 +58,7 @@ consciousness-aware-creative@1.0.0 - Consciousness Aware Creative - Part of the 
 daimon-gear@1.0.0 - Daimon Gear - Part of the Cathedral of Circuits mystical ecosystem
 @cathedral/debug-system-core@1.0.0 - Enterprise Debug System - Comprehensive error tracking and diagnostics for Cathedral ecosystem
 design-mathematics-core@1.0.0 - Design Mathematics - Part of the Cathedral of Circuits mystical ecosystem
+@cathedral/divine-design-core@1.0.0 - Divine Design System - Alchemy, Hermeticism & Sacred Architecture for Cathedral
 @cathedral/fractal-flames-daemon-deity@1.0.0 - Fractal Flames Library - Real Elements, Daimons, and Deities as Fractals
 fusion-creative-suite@1.0.0 - Fusion Creative Suite - Part of the Cathedral of Circuits mystical ecosystem
 fusion-kink-core@1.0.0 - Rebis - Part of the Cathedral of Circuits mystical ecosystem
@@ -135,6 +137,7 @@ tesseract-bridge-core@1.0.0 - Tesseract - Part of the Cathedral of Circuits myst
 trauma-safe-ui@1.0.0 - Trauma Safe Ui - Part of the Cathedral of Circuits mystical ecosystem
 @cathedral/trinity-architecture@1.0.0 - Body/Soul/Spirit consciousness evolution platform with 144:99 ratio compliance
 trinity-v1-1-core@1.0.0 - Trinity V1 1 - Part of the Cathedral of Circuits mystical ecosystem
+@cathedral/true-will-system@1.0.0 - Thelemic True Will system for discovering and aligning with True Will
 @cathedral/types@1.0.0 - Types - Part of the Cathedral of Circuits mystical ecosystem
 @cathedral/ui@1.0.0 - Cathedral of Circuits - Shared UI Components
 @cathedral/unified-codex-core@1.0.0 - Unified Codex Engine - Mirrors all engines with mode transitions (Art → Music → Game → Design → Science → Mathematics)
@@ -142,4 +145,5 @@ trinity-v1-1-core@1.0.0 - Trinity V1 1 - Part of the Cathedral of Circuits mysti
 unified-creative-system@1.0.0 - Unified Creative System - Part of the Cathedral of Circuits mystical ecosystem
 @cathedral-trinity/accessibility@1.0.0 - Cathedral v1.0 Universal Accessibility Engine - ND Support, Cognitive Load Optimization, Trauma-Safe Environments
 visionary-design-system@1.0.0 - Visionary Design System - Part of the Cathedral of Circuits mystical ecosystem
+@cathedral/visual-tools-connector@1.0.0 - Connects all visual and design tools together
 ```

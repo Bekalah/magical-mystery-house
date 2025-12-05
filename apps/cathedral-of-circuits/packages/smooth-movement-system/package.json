@@ -17,5 +17,10 @@
   "files": [
     "dist/**/*",
     "src/**/*"
-  ]
+  ],
+  "alchemical": {
+    "name": "Smooth Movement System",
+    "symbol": "⊙",
+    "label": "⊙ Smooth Movement System (@cathedral/smooth-movement-system)"
+  }
 }

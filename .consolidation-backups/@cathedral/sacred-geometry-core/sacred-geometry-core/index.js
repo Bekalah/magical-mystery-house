@@ -3,6 +3,16 @@
  * Fractal settings and geometry nodes for Codex 144:99 integration
  */
 
+/**
+ * ⊙ Index
+ * 
+ * @alchemical Index
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 export const geometryTypes = {
   FLOWER_OF_LIFE: "flower-of-life",
   METATRONS_CUBE: "metatrons-cube",

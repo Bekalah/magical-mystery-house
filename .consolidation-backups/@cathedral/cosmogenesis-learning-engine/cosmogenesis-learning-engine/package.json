@@ -8,7 +8,17 @@
     "build": "echo 'Cosmogenesis build complete'",
     "test": "echo 'Cosmogenesis tests passing'"
   },
-  "keywords": ["cathedral", "cosmogenesis", "planetary", "consciousness"],
+  "keywords": [
+    "cathedral",
+    "cosmogenesis",
+    "planetary",
+    "consciousness"
+  ],
   "author": "Rebecca Respawn",
-  "license": "CC0"
+  "license": "CC0",
+  "alchemical": {
+    "name": "Cosmogenesis Learning",
+    "symbol": "⊙",
+    "label": "⊙ Cosmogenesis Learning (@cathedral/cosmogenesis-learning-engine)"
+  }
 }

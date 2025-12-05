@@ -1,0 +1,89 @@
+{
+  "name": "@cathedral/visual-tools-connector",
+  "version": "1.0.0",
+  "description": "Connects all visual and design tools together",
+  "license": "CC0-1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@cathedral/cathedral-visual-engine": "workspace:*",
+    "@cathedral/visionary-design-system": "workspace:*",
+    "@cathedral/cathedral-design-library": "workspace:*",
+    "@cathedral/art-engine-core": "workspace:*",
+    "@cathedral/art-standards-core": "workspace:*",
+    "@cathedral/divine-design-core": "workspace:*",
+    "@cathedral/body-of-god-core": "workspace:*",
+    "@cathedral/fractal-flames-daemon-deity": "workspace:*",
+    "@cathedral/professional-typography-engine": "workspace:*",
+    "@cathedral/professional-vector-engine": "workspace:*",
+    "@cathedral/three-engine": "workspace:*",
+    "@cathedral/circuitum99-core": "workspace:*",
+    "@cathedral/circuitum99-arcanae-cyoa": "workspace:*",
+    "@cathedral/mystery-house-core": "workspace:*",
+    "@cathedral/stone-grimoire": "workspace:*",
+    "@cathedral/stone-grimoire-core": "workspace:*",
+    "@cathedral/stone-grimoire-library-engine": "workspace:*",
+    "@cathedral/liber-arcanae": "workspace:*",
+    "@cathedral/liber-arcanae-core": "workspace:*",
+    "@cathedral/liber-arcanae-tools": "workspace:*",
+    "@cathedral/codex-144-99": "workspace:*",
+    "@cathedral/codex-144-99-core": "workspace:*"
+  },
+  "cathedral": {
+    "sacred_mathematics": {
+      "sacredGeometry": true,
+      "goldenRatio": 1.618,
+      "cathedralRatio": 1.455,
+      "fibonacciGrids": true,
+      "divineProportions": true
+    },
+    "trauma_safety": {
+      "noAutoplay": true,
+      "escExit": true,
+      "motionControls": true,
+      "intensityAdjustment": true,
+      "gentleDefaults": true,
+      "undoRedo": true
+    },
+    "design_philosophy": {
+      "flowingInterfaces": true,
+      "energyRibbons": true,
+      "breathingAnimations": true,
+      "sacredColors": true,
+      "archetypalForms": true
+    },
+    "integration": {
+      "connects_to": [
+        "circuitum99-core",
+        "circuitum99-arcanae-cyoa",
+        "mystery-house-core",
+        "stone-grimoire",
+        "stone-grimoire-core",
+        "stone-grimoire-library-engine",
+        "liber-arcanae",
+        "liber-arcanae-core",
+        "liber-arcanae-tools",
+        "codex-144-99",
+        "codex-144-99-core"
+      ]
+    }
+  },
+  "engines": {
+    "node": "*",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "alchemical": {
+    "name": "Visual Tools Connector",
+    "symbol": "⊙",
+    "label": "⊙ Visual Tools Connector (@cathedral/visual-tools-connector)"
+  }
+}

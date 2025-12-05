@@ -1214,24 +1214,16 @@ export class SacredMaterialsLibrary {
 - **Alchemical Stage**: ${material.correspondences.alchemicalStage}
 
 ## 🛠️ Traditional Techniques
-${material.usage.traditionalTechniques.map(technique => `- ${technique}`).join('
-')
-')}
+${material.usage.traditionalTechniques.map(technique => `- ${technique}`).join('\n')}
 
 ## ✨ Sacred Applications
-${material.usage.sacredApplications.map(app => `- ${app}`).join('
-')
-')}
+${material.usage.sacredApplications.map(app => `- ${app}`).join('\n')}
 
 ## 🧪 Preparation Methods
-${material.usage.preparationMethods.map(method => `- ${method}`).join('
-')
-')}
+${material.usage.preparationMethods.map(method => `- ${method}`).join('\n')}
 
 ## ⚠️ Safety Considerations
-${material.usage.safetyConsiderations.map(safety => `- ${safety}`).join('
-')
-')}
+${material.usage.safetyConsiderations.map(safety => `- ${safety}`).join('\n')}
 
 ## 📖 Historical Context
 **Origin**: ${material.history.origin}

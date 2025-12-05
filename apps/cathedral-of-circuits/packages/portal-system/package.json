@@ -17,5 +17,10 @@
   "files": [
     "dist/**/*",
     "src/**/*"
-  ]
+  ],
+  "alchemical": {
+    "name": "Portal System",
+    "symbol": "⊙",
+    "label": "⊙ Portal System (@cathedral/portal-system)"
+  }
 }

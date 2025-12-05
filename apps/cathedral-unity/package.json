@@ -49,6 +49,11 @@
     "professional-tools"
   ],
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T21:19:39.525Z",
-  "license": "CC0-1.0"
+  "consolidatedAt": "2025-12-04T22:13:12.716Z",
+  "license": "CC0-1.0",
+  "alchemical": {
+    "name": "Cathedral Unity",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Unity (@cathedral/cathedral-unity)"
+  }
 }

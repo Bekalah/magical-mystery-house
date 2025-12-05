@@ -46,6 +46,15 @@
     "permanent-registry"
   ],
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T21:19:39.783Z",
-  "license": "CC0-1.0"
+  "consolidatedAt": "2025-12-04T22:13:12.916Z",
+  "license": "CC0-1.0",
+  "engines": {
+    "node": "*",
+    "pnpm": "*"
+  },
+  "alchemical": {
+    "name": "Mystical Treasure Hunt",
+    "symbol": "⊙",
+    "label": "⊙ Mystical Treasure Hunt (@cathedral/mystical-treasure-hunt)"
+  }
 }

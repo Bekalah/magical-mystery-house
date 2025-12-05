@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🏛️ Cathedral Hall of Ateliers - Main Export
  * Professional artistic creation and collaboration systems
  * Body component of Trinity Architecture

@@ -26,7 +26,7 @@ function fixWorkflowErrors() {
     let changed = false;
 
     // Fix Vercel action - update to v25 and add conditional
-    if (content.includes('amondnet/vercel-action@v20')) {
+    if (content.includes('amondnet/vercel-action@v25')) {
       content = content.replace(/amondnet\/vercel-action@v20/g, 'amondnet/vercel-action@v25');
       changed = true;
     }

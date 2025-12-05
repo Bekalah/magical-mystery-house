@@ -11,6 +11,16 @@
  */
 
 // 🌟 MAIN INTEGRATION HUB
+/**
+ * ⊙ Circuitum99 Complete Integration
+ * 
+ * @alchemical Circuitum99 Complete Integration
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 class Circuitum99CompleteSystem {
     constructor() {
         this.systemName = "Circuitum99: Alpha et Omega";

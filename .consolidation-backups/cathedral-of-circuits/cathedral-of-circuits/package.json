@@ -21,5 +21,10 @@
   },
   "devDependencies": {
     "vite": "^7.1.7"
+  },
+  "alchemical": {
+    "name": "Cathedral Of Circuits",
+    "symbol": "⊙",
+    "label": "⊙ Cathedral Of Circuits (cathedral-of-circuits)"
   }
 }

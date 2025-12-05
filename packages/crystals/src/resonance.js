@@ -1,3 +1,7 @@
+/**
+ * @license CC0-1.0 - Public Domain
+ */
+
 // resonance.ts - computation utilities
 import { baseCrystals } from './data/baseCrystals';
 import { fusionSets } from './data/fusionSets';

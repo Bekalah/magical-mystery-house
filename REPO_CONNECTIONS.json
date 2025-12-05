@@ -1,0 +1,1311 @@
+{
+  "packageDependencies": {
+    "agent-integration": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "arcana": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "archetypal-engine": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "art-engine-core": [
+      "@cathedral/codex-144-99-core",
+      "@cathedral/sacred-mathematics-core",
+      "typescript",
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "@cathedral/mystery-house-core",
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "@cathedral/codex-144-99"
+    ],
+    "art-generation-node": [
+      "@cathedral/shared",
+      "@cathedral/cathedral-game-engine",
+      "canvas",
+      "d3",
+      "ml-matrix",
+      "lodash",
+      "openai",
+      "typescript",
+      "@azure/openai",
+      "@azure/cognitiveservices-computervision",
+      "dotenv",
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "@cathedral/mystery-house-core",
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core"
+    ],
+    "art-standards-core": [
+      "@cathedral/sacred-mathematics-core",
+      "typescript",
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "@cathedral/mystery-house-core",
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core"
+    ],
+    "art-systems": [
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "@cathedral/mystery-house-core",
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "atelier-constitution": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "avatar-experience-system": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "body-of-god-core": [
+      "@cathedral/divine-design-core"
+    ],
+    "brain": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "cataract-book-scanner": [
+      "react",
+      "react-dom",
+      "three",
+      "framer-motion",
+      "konva",
+      "fabric",
+      "node-fetch",
+      "cheerio",
+      "crypto",
+      "typescript",
+      "vite",
+      "@vitejs/plugin-react",
+      "eslint",
+      "jest",
+      "pytesseract",
+      "fitz",
+      "pandas",
+      "jsonschema"
+    ],
+    "cathedral-144": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "cathedral-architect": [
+      "three",
+      "@cathedral/three-engine",
+      "@cathedral/codex-engine",
+      "typescript",
+      "rimraf"
+    ],
+    "cathedral-audio-synthesis": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "cathedral-data-core": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "cathedral-design-library": [
+      "@cathedral/codex-144-99",
+      "@cathedral/liber-arcanae",
+      "@cathedral/plugin-system",
+      "@cathedral/shared",
+      "canvas",
+      "typescript",
+      "@cathedral/master-art-principles",
+      "@cathedral/codex-library",
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "@cathedral/mystery-house-core",
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "@cathedral/codex-144-99-core"
+    ],
+    "cathedral-fusion-kink-engine": [
+      "@cathedral/codex-144-99",
+      "@cathedral/liber-arcanae",
+      "typescript"
+    ],
+    "cathedral-integration-bridge": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "cathedral-liber-arcanae-bridge": [
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "cathedral-lightweight-library": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "cathedral-logo-system": [
+      "typescript",
+      "@react-three/fiber",
+      "@react-three/drei",
+      "three"
+    ],
+    "cathedral-plugin-system": [
+      "@cathedral/codex-144-99",
+      "@cathedral/liber-arcanae",
+      "@cathedral/shared",
+      "typescript",
+      "@cathedral/codex-library"
+    ],
+    "cathedral-rpg-inventory-system": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "cathedral-sqlite-persistence": [
+      "better-sqlite3",
+      "zod",
+      "typescript"
+    ],
+    "cathedral-style": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "cathedral-synthesis-core": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "cathedral-visual-engine": [
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "@cathedral/mystery-house-core",
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "character-alchemical-art": [
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "circuit-craft-creative-game": [
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "circuitum99-arcanae-cyoa": [
+      "@cathedral/codex-144-99",
+      "@cathedral/liber-arcanae",
+      "@cathedral/plugin-system",
+      "@cathedral/shared",
+      "typescript",
+      "@cathedral/codex-library",
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "circuitum99-core": [
+      "@cathedral/codex-144-99",
+      "@cathedral/liber-arcanae",
+      "@cathedral/plugin-system",
+      "@cathedral/shared",
+      "typescript",
+      "@cathedral/codex-library",
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa"
+    ],
+    "codex-144": [
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "codex-144-99": [
+      "@cathedral/shared",
+      "canvas",
+      "sharp",
+      "axios",
+      "cheerio",
+      "fuse.js",
+      "leven",
+      "@azure-rest/ai-inference",
+      "@azure/identity",
+      "dotenv",
+      "typescript",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core"
+    ],
+    "codex-144-99-core": [
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "codex-engine": [
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "codex-game-bridge": [
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "codex-musical-system": [
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "config": [
+      "@cathedral/types",
+      "typescript"
+    ],
+    "connections": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "consciousness-aware-creative": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "core": [
+      "zod",
+      "lodash",
+      "typescript"
+    ],
+    "cosmogenesis": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "crystals": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "daimon-gear": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "debug-system-core": [
+      "@cathedral/health-map-core",
+      "typescript"
+    ],
+    "design-mathematics-core": [
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "@cathedral/mystery-house-core",
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "divine-design-core": [
+      "@cathedral/sacred-geometry-core",
+      "@cathedral/sacred-mathematics-core",
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "@cathedral/mystery-house-core",
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core"
+    ],
+    "fractal-flames-daemon-deity": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "fusion-creative-suite": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "fusion-kink-core": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "fusion-kink-generator": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "fusionkink-engine": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "game-design-core": [
+      "@cathedral/codex-144-99-core",
+      "@cathedral/sacred-mathematics-core",
+      "typescript",
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa"
+    ],
+    "game-engine": [
+      "three",
+      "typescript",
+      "jest",
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa"
+    ],
+    "game-mathematics-core": [
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "game-world": [
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "gem-tower-engine": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "godot-codex-14499": [
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "godot-design-studio": [
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "@cathedral/mystery-house-core",
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "godot-liber-arcanae": [
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "godot-vfx-library": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "graphs": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "hall-of-ateliers": [
+      "three",
+      "react",
+      "react-dom",
+      "canvas",
+      "tone",
+      "fft-js",
+      "web-audio-api",
+      "@cathedral/sacred-geometry-core",
+      "golden-ratio",
+      "fibonacci-js",
+      "fraction",
+      "mathjs",
+      "canvas-confetti",
+      "midi-writer-js",
+      "vibrant",
+      "color-thief",
+      "validate-color",
+      "uuid",
+      "typescript",
+      "jest",
+      "ts-jest",
+      "eslint",
+      "prettier",
+      "husky",
+      "lint-staged"
+    ],
+    "health-map-core": [
+      "typescript",
+      "glob"
+    ],
+    "holographic-interface": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "inter-app-communicator": [
+      "typescript"
+    ],
+    "kira-audio-engine": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "labs": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "liber-arcanae": [
+      "@cathedral/codex-144-99",
+      "@cathedral/shared",
+      "@cathedral/mystical-data-unified",
+      "@cathedral/sacred-geometry-core",
+      "typescript",
+      "@cathedral/codex-library",
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools"
+    ],
+    "liber-arcanae-core": [
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "liber-arcanae-tools": [
+      "@cathedral-real/trinity-architecture",
+      "fabric",
+      "tone",
+      "yjs",
+      "y-websocket",
+      "typescript",
+      "eslint",
+      "jest",
+      "@cathedral/trinity-architecture",
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools"
+    ],
+    "living-canon-engine": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "living-libraries": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "luxcrux": [
+      "@cathedral/master-art-principles",
+      "typescript"
+    ],
+    "magnum-opus": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "mobile-optimization": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "moonchild-scanner": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "museum-sources": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "music-engine-core": [
+      "@cathedral/codex-144-99-core",
+      "@cathedral/sacred-mathematics-core",
+      "typescript"
+    ],
+    "mystery-house-core": [
+      "@cathedral/mystery-house-core",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "mystical-data-unified": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "mystical-sound-engine": [
+      "next",
+      "typescript"
+    ],
+    "node-tree-engine": [
+      "circus",
+      "d3-hierarchy",
+      "d3-force",
+      "d3-selection",
+      "graphql",
+      "async-mutex",
+      "fast-xml-parser",
+      "marked",
+      "@rollup/plugin-node-resolve",
+      "@rollup/plugin-typescript",
+      "rollup",
+      "typescript"
+    ],
+    "physics-cannon-core": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "portal-system": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "professional-collaboration-engine": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "professional-export-integration": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "professional-quality-control": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "professional-suite": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "professional-typography-engine": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "professional-vector-engine": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "registry-learning-validation": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "sacred-geometry-core": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "sacred-geometry-math": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "sacred-geometry-simd": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "sacred-mathematics-core": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "scanner": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "science-engine-core": [
+      "@cathedral/codex-144-99-core",
+      "@cathedral/sacred-mathematics-core",
+      "typescript"
+    ],
+    "shared": [
+      "axios",
+      "dotenv",
+      "typescript"
+    ],
+    "simple-learning-validation": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "smooth-movement-system": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "sonic-physics-engine": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "soul": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "sound-mathematics-core": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "spells": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "spiral-learning-engine": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "stone-grimoire": [
+      "@cathedral/codex-144-99",
+      "@cathedral/master-art-principles",
+      "typescript",
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine"
+    ],
+    "stone-grimoire-core": [
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "stone-grimoire-library-engine": [
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "story-engine": [
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "synth": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "synth-design-math-core": [
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "@cathedral/mystery-house-core",
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "synth-labs": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "synth-spells": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "synthesis-engine": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "tarot-art": [
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "tarot-engine": [
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "tarot-reader": [
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "tesseract-bridge": [
+      "@azure/openai",
+      "@azure/cognitiveservices-computervision",
+      "three",
+      "@cathedral/master-art-principles",
+      "typescript"
+    ],
+    "tesseract-bridge-core": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "tesseract-bridge-hub": [
+      "@cathedral/tesseract-bridge-core",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/codex-144-99-core",
+      "@cathedral/circuitum99-core",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/mystery-house-core",
+      "typescript"
+    ],
+    "three-engine": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "trauma-safe-ui": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "trinity-architecture": [
+      "@cathedral/hall-of-ateliers",
+      "@cathedral/fusion-creative-suite",
+      "@cathedral/sacred-mathematics",
+      "@cathedral/trauma-safe-ui",
+      "@cathedral/tesseract-bridge",
+      "three",
+      "tone",
+      "typescript",
+      "jest"
+    ],
+    "trinity-v1-1-core": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "true-will-system": [],
+    "types": [
+      "zod",
+      "@cathedral/config-eslint",
+      "@cathedral/config-typescript",
+      "globals",
+      "tsup",
+      "typescript"
+    ],
+    "ui": [
+      "react",
+      "react-dom",
+      "@storybook/react",
+      "@storybook/react-vite",
+      "@storybook/addon-essentials",
+      "@storybook/addon-interactions",
+      "typescript",
+      "vite",
+      "jest"
+    ],
+    "unified-codex-core": [
+      "@cathedral/codex-144-99-core",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/mystery-house-core",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/sacred-mathematics-core",
+      "@cathedral/music-engine-core",
+      "@cathedral/art-engine-core",
+      "@cathedral/science-engine-core",
+      "@cathedral/art-standards-core",
+      "@cathedral/game-design-core",
+      "@cathedral/codex-144-99",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "unified-codex-extractor": [
+      "@cathedral/codex-144-99",
+      "@cathedral/cathedral-design-library",
+      "@cathedral/godot-design-studio",
+      "@cathedral/shared",
+      "canvas",
+      "sharp",
+      "tesseract.js",
+      "pdf-parse",
+      "mammoth",
+      "jimp",
+      "svg2img",
+      "opencv4nodejs",
+      "exifreader",
+      "typescript",
+      "@cathedral/codex-144-99-core"
+    ],
+    "unified-creative-system": [
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "universal-accessibility": [
+      "@cathedral-trinity/core",
+      "tsx",
+      "typescript",
+      "eslint",
+      "prettier",
+      "@cathedral/core"
+    ],
+    "visionary-design-system": [
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "@cathedral/mystery-house-core",
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core",
+      "typescript",
+      "tsx",
+      "eslint",
+      "prettier",
+      "rimraf",
+      "eslint-config-prettier"
+    ],
+    "visual-tools-connector": [
+      "@cathedral/cathedral-visual-engine",
+      "@cathedral/visionary-design-system",
+      "@cathedral/cathedral-design-library",
+      "@cathedral/art-engine-core",
+      "@cathedral/art-standards-core",
+      "@cathedral/divine-design-core",
+      "@cathedral/body-of-god-core",
+      "@cathedral/fractal-flames-daemon-deity",
+      "@cathedral/professional-typography-engine",
+      "@cathedral/professional-vector-engine",
+      "@cathedral/three-engine",
+      "@cathedral/circuitum99-core",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "@cathedral/mystery-house-core",
+      "@cathedral/stone-grimoire",
+      "@cathedral/stone-grimoire-core",
+      "@cathedral/stone-grimoire-library-engine",
+      "@cathedral/liber-arcanae",
+      "@cathedral/liber-arcanae-core",
+      "@cathedral/liber-arcanae-tools",
+      "@cathedral/codex-144-99",
+      "@cathedral/codex-144-99-core"
+    ]
+  },
+  "gitRemotes": {},
+  "dataConnections": {},
+  "crossReferences": [
+    {
+      "from": "package/arcana",
+      "to": "package/godot-liber-arcanae",
+      "type": "data-reference"
+    },
+    {
+      "from": "package/godot-liber-arcanae",
+      "to": "package/spells",
+      "type": "data-reference"
+    },
+    {
+      "from": "package/godot-liber-arcanae",
+      "to": "package/ui",
+      "type": "data-reference"
+    }
+  ]
+}

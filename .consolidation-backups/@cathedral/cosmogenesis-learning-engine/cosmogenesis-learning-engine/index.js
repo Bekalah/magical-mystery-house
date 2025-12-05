@@ -10,6 +10,16 @@
  * The brain that powers the entire consciousness system.
  */
 
+/**
+ * ⊙ Index
+ * 
+ * @alchemical Index
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 class CosmogenesisLearningEngine {
     constructor() {
         this.systemType = 'THE_BRAIN';

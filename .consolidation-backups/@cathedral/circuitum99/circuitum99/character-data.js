@@ -1,6 +1,16 @@
 // 🌀 CIRCUITUM99: ALPHA ET OMEGA - Living Character Data System
 // Real character data from Codex 144:99 integration
 
+/**
+ * ⊙ Character Data
+ * 
+ * @alchemical Character Data
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 const circuitum99Characters = {
     // ALPHA GATES (1-33): Foundation Wisdom
     "rebecca-respawn": {

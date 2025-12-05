@@ -1,0 +1,1728 @@
+[
+  {
+    "package": "agent-integration",
+    "name": "agent-integration",
+    "alchemicalStage": "Dissolution",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "arcana",
+    "name": "arcana",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "archetypal-engine",
+    "name": "archetypal-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/art-engine-core",
+    "name": "art-engine-core",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/art-generation-node",
+    "name": "art-generation-node",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/art-standards-core",
+    "name": "art-standards-core",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "art-systems",
+    "name": "art-systems",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "atelier-constitution",
+    "name": "atelier-constitution",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/avatar-experience-system",
+    "name": "avatar-experience-system",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/brain",
+    "name": "brain",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": "Mentalism",
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/cataract-book-scanner",
+    "name": "cataract-book-scanner",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "cathedral-144",
+    "name": "cathedral-144",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/cathedral-architect",
+    "name": "cathedral-architect",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "cathedral-audio-synthesis",
+    "name": "cathedral-audio-synthesis",
+    "alchemicalStage": "Conjunction",
+    "sephirah": "Hod",
+    "hermeticPrinciple": "Vibration",
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "cathedral-data-core",
+    "name": "cathedral-data-core",
+    "alchemicalStage": "Separation",
+    "sephirah": "Yesod",
+    "hermeticPrinciple": null,
+    "element": "Earth",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/design-library",
+    "name": "cathedral-design-library",
+    "alchemicalStage": null,
+    "sephirah": "Binah",
+    "hermeticPrinciple": null,
+    "element": "Water",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/fusion-kink-engine",
+    "name": "cathedral-fusion-kink-engine",
+    "alchemicalStage": "Conjunction",
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": "Gender",
+    "element": "Fire",
+    "fusionKink": true,
+    "recommendations": [
+      "Add divine design description to package.json"
+    ]
+  },
+  {
+    "package": "cathedral-integration-bridge",
+    "name": "cathedral-integration-bridge",
+    "alchemicalStage": "Dissolution",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "cathedral-liber-arcanae-bridge",
+    "name": "cathedral-liber-arcanae-bridge",
+    "alchemicalStage": "Dissolution",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/lightweight-library",
+    "name": "cathedral-lightweight-library",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": "Air",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/logo-system",
+    "name": "cathedral-logo-system",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/plugin-system",
+    "name": "cathedral-plugin-system",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "cathedral-rpg-inventory-system",
+    "name": "cathedral-rpg-inventory-system",
+    "alchemicalStage": null,
+    "sephirah": "Netzach",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/sqlite-persistence",
+    "name": "cathedral-sqlite-persistence",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "cathedral-style",
+    "name": "cathedral-style",
+    "alchemicalStage": null,
+    "sephirah": "Binah",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "cathedral-synthesis-core",
+    "name": "cathedral-synthesis-core",
+    "alchemicalStage": "Conjunction",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "cathedral-visual-engine",
+    "name": "cathedral-visual-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "character-alchemical-art",
+    "name": "character-alchemical-art",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/circuit-craft-creative-game",
+    "name": "circuit-craft-creative-game",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": "Cause & Effect",
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/circuitum99-arcanae-cyoa",
+    "name": "circuitum99-arcanae-cyoa",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": "Air",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/circuitum99-arcanae-cyoa",
+    "name": "circuitum99-core",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": "Air",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "codex-144",
+    "name": "codex-144",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/codex-144-99",
+    "name": "codex-144-99",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "codex-144-99-core",
+    "name": "codex-144-99-core",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/codex-engine",
+    "name": "codex-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "codex-game-bridge",
+    "name": "codex-game-bridge",
+    "alchemicalStage": "Dissolution",
+    "sephirah": "Netzach",
+    "hermeticPrinciple": "Cause & Effect",
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/codex-musical-system",
+    "name": "codex-musical-system",
+    "alchemicalStage": null,
+    "sephirah": "Hod",
+    "hermeticPrinciple": "Vibration",
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/config",
+    "name": "config",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "connections",
+    "name": "connections",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "consciousness-aware-creative",
+    "name": "consciousness-aware-creative",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": "Mentalism",
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/core",
+    "name": "core",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/cosmogenesis",
+    "name": "cosmogenesis",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/crystals",
+    "name": "crystals",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "daimon-gear",
+    "name": "daimon-gear",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/debug-system-core",
+    "name": "debug-system-core",
+    "alchemicalStage": "Calcination",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "design-mathematics-core",
+    "name": "design-mathematics-core",
+    "alchemicalStage": null,
+    "sephirah": "Binah",
+    "hermeticPrinciple": null,
+    "element": "Water",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/divine-design-core",
+    "name": "divine-design-core",
+    "alchemicalStage": null,
+    "sephirah": "Binah",
+    "hermeticPrinciple": null,
+    "element": "Water",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json"
+    ]
+  },
+  {
+    "package": "@cathedral/fractal-flames-daemon-deity",
+    "name": "fractal-flames-daemon-deity",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": "Correspondence",
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "fusion-creative-suite",
+    "name": "fusion-creative-suite",
+    "alchemicalStage": "Conjunction",
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": "Gender",
+    "element": "Fire",
+    "fusionKink": true,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "fusion-kink-core",
+    "name": "fusion-kink-core",
+    "alchemicalStage": "Conjunction",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": "Gender",
+    "element": "Aether",
+    "fusionKink": true,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/fusion-kink-generator",
+    "name": "fusion-kink-generator",
+    "alchemicalStage": "Conjunction",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": "Gender",
+    "element": "Aether",
+    "fusionKink": true,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "fusionkink-engine",
+    "name": "fusionkink-engine",
+    "alchemicalStage": "Conjunction",
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": "Gender",
+    "element": "Fire",
+    "fusionKink": true,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/game-design-core",
+    "name": "game-design-core",
+    "alchemicalStage": null,
+    "sephirah": "Binah",
+    "hermeticPrinciple": "Cause & Effect",
+    "element": "Water",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/game-engine",
+    "name": "game-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": "Cause & Effect",
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "game-mathematics-core",
+    "name": "game-mathematics-core",
+    "alchemicalStage": null,
+    "sephirah": "Netzach",
+    "hermeticPrinciple": "Cause & Effect",
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "game-world",
+    "name": "game-world",
+    "alchemicalStage": null,
+    "sephirah": "Netzach",
+    "hermeticPrinciple": "Cause & Effect",
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/gem-tower-engine",
+    "name": "gem-tower-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/godot-codex-14499",
+    "name": "godot-codex-14499",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/godot-design-studio",
+    "name": "godot-design-studio",
+    "alchemicalStage": null,
+    "sephirah": "Binah",
+    "hermeticPrinciple": null,
+    "element": "Water",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/godot-liber-arcanae",
+    "name": "godot-liber-arcanae",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/godot-vfx-library",
+    "name": "godot-vfx-library",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "graphs",
+    "name": "graphs",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/hall-of-ateliers",
+    "name": "hall-of-ateliers",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/health-map-core",
+    "name": "health-map-core",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "holographic-interface",
+    "name": "holographic-interface",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": "Air",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/inter-app-communicator",
+    "name": "inter-app-communicator",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "kira-audio-engine",
+    "name": "kira-audio-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": "Vibration",
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/labs",
+    "name": "labs",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/liber-arcanae",
+    "name": "liber-arcanae",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json"
+    ]
+  },
+  {
+    "package": "liber-arcanae-core",
+    "name": "liber-arcanae-core",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral-real/liber-arcanae-tools",
+    "name": "liber-arcanae-tools",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "living-canon-engine",
+    "name": "living-canon-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "living-libraries",
+    "name": "living-libraries",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/luxcrux",
+    "name": "luxcrux",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "magnum-opus",
+    "name": "magnum-opus",
+    "alchemicalStage": "Coagulation",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "mobile-optimization",
+    "name": "mobile-optimization",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "moonchild-scanner",
+    "name": "moonchild-scanner",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "museum-sources",
+    "name": "museum-sources",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/music-engine-core",
+    "name": "music-engine-core",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": "Vibration",
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "mystery-house-core",
+    "name": "mystery-house-core",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/mystical-data-unified",
+    "name": "mystical-data-unified",
+    "alchemicalStage": "Dissolution",
+    "sephirah": "Yesod",
+    "hermeticPrinciple": null,
+    "element": "Earth",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/mystical-sound-engine",
+    "name": "mystical-sound-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/node-tree-engine",
+    "name": "node-tree-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "physics-cannon-core",
+    "name": "physics-cannon-core",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/portal-system",
+    "name": "portal-system",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "professional-collaboration-engine",
+    "name": "professional-collaboration-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "professional-export-integration",
+    "name": "professional-export-integration",
+    "alchemicalStage": "Dissolution",
+    "sephirah": "Malkuth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "professional-quality-control",
+    "name": "professional-quality-control",
+    "alchemicalStage": null,
+    "sephirah": "Geburah",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "professional-suite",
+    "name": "professional-suite",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": "Air",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "professional-typography-engine",
+    "name": "professional-typography-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "professional-vector-engine",
+    "name": "professional-vector-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "registry-learning-validation",
+    "name": "registry-learning-validation",
+    "alchemicalStage": "Fermentation",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/sacred-geometry-core",
+    "name": "sacred-geometry-core",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": "Correspondence",
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "sacred-geometry-math",
+    "name": "sacred-geometry-math",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": "Correspondence",
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "sacred-geometry-simd",
+    "name": "sacred-geometry-simd",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": "Correspondence",
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "sacred-mathematics-core",
+    "name": "sacred-mathematics-core",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "scanner",
+    "name": "scanner",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/science-engine-core",
+    "name": "science-engine-core",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/shared",
+    "name": "shared",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "simple-learning-validation",
+    "name": "simple-learning-validation",
+    "alchemicalStage": "Fermentation",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/smooth-movement-system",
+    "name": "smooth-movement-system",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "sonic-physics-engine",
+    "name": "sonic-physics-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/soul",
+    "name": "soul",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "sound-mathematics-core",
+    "name": "sound-mathematics-core",
+    "alchemicalStage": null,
+    "sephirah": "Hod",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "spells",
+    "name": "spells",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "spiral-learning-engine",
+    "name": "spiral-learning-engine",
+    "alchemicalStage": "Fermentation",
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": "Rhythm",
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/stone-grimoire",
+    "name": "stone-grimoire",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "stone-grimoire-core",
+    "name": "stone-grimoire-core",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "stone-grimoire-library-engine",
+    "name": "stone-grimoire-library-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "story-engine",
+    "name": "story-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": "Cause & Effect",
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/synth",
+    "name": "synth",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "synth-design-math-core",
+    "name": "synth-design-math-core",
+    "alchemicalStage": null,
+    "sephirah": "Binah",
+    "hermeticPrinciple": null,
+    "element": "Water",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "synth-labs",
+    "name": "synth-labs",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "synth-spells",
+    "name": "synth-spells",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/synthesis-engine",
+    "name": "synthesis-engine",
+    "alchemicalStage": "Conjunction",
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "tarot-art",
+    "name": "tarot-art",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "tarot-engine",
+    "name": "tarot-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "tarot-reader",
+    "name": "tarot-reader",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/tesseract-bridge",
+    "name": "tesseract-bridge",
+    "alchemicalStage": "Dissolution",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "tesseract-bridge-core",
+    "name": "tesseract-bridge-core",
+    "alchemicalStage": "Dissolution",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/tesseract-bridge-hub",
+    "name": "tesseract-bridge-hub",
+    "alchemicalStage": "Dissolution",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/three-engine",
+    "name": "three-engine",
+    "alchemicalStage": null,
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "trauma-safe-ui",
+    "name": "trauma-safe-ui",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": "Air",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/trinity-architecture",
+    "name": "trinity-architecture",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": "Polarity",
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "trinity-v1-1-core",
+    "name": "trinity-v1-1-core",
+    "alchemicalStage": null,
+    "sephirah": "Kether",
+    "hermeticPrinciple": "Polarity",
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/true-will-system",
+    "name": "true-will-system",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/types",
+    "name": "types",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/ui",
+    "name": "ui",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": "Air",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/unified-codex-core",
+    "name": "unified-codex-core",
+    "alchemicalStage": "Dissolution",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": "Aether",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral/unified-codex-extractor",
+    "name": "unified-codex-extractor",
+    "alchemicalStage": "Dissolution",
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": "Aether",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "unified-creative-system",
+    "name": "unified-creative-system",
+    "alchemicalStage": "Dissolution",
+    "sephirah": "Chokmah",
+    "hermeticPrinciple": null,
+    "element": "Fire",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "@cathedral-trinity/accessibility",
+    "name": "universal-accessibility",
+    "alchemicalStage": null,
+    "sephirah": "Tiphareth",
+    "hermeticPrinciple": null,
+    "element": null,
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  },
+  {
+    "package": "visionary-design-system",
+    "name": "visionary-design-system",
+    "alchemicalStage": null,
+    "sephirah": "Binah",
+    "hermeticPrinciple": null,
+    "element": "Water",
+    "fusionKink": false,
+    "recommendations": [
+      "Add divine design description to package.json",
+      "Add divine design keywords"
+    ]
+  }
+]

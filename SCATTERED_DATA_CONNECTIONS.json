@@ -1,0 +1,54 @@
+{
+  "timestamp": "2025-12-04T23:00:38.229Z",
+  "characterData": {
+    "locations": [
+      {
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae/data/complete-arcana-profiles.json",
+        "workspace": "/Users/rebeccalemke/cathedral-master-deployment"
+      },
+      {
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/godot-liber-arcanae/characters.json",
+        "workspace": "/Users/rebeccalemke/cathedral-master-deployment"
+      },
+      {
+        "path": "/Users/rebeccalemke/cathedral-real/packages/liber-arcanae/data/complete-arcana-profiles.json",
+        "workspace": "/Users/rebeccalemke/cathedral-real"
+      },
+      {
+        "path": "/Users/rebeccalemke/cathedral-real/packages/godot-liber-arcanae/characters.json",
+        "workspace": "/Users/rebeccalemke/cathedral-real"
+      },
+      {
+        "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/liber-arcanae/data/complete-arcana-profiles.json",
+        "workspace": "/Users/rebeccalemke/cathedral-fixed-clean"
+      },
+      {
+        "path": "/Users/rebeccalemke/cathedral-fixed-clean/packages/godot-liber-arcanae/characters.json",
+        "workspace": "/Users/rebeccalemke/cathedral-fixed-clean"
+      }
+    ],
+    "primary": {
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/packages/liber-arcanae/data/complete-arcana-profiles.json",
+      "workspace": "/Users/rebeccalemke/cathedral-master-deployment"
+    },
+    "needsConsolidation": true
+  },
+  "shaderFiles": {
+    "locations": [],
+    "total": 0,
+    "needsConsolidation": false
+  },
+  "creativeIdeas": {
+    "locations": [
+      {
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/CREATIVE_IDEAS.json",
+        "workspace": "/Users/rebeccalemke/cathedral-master-deployment"
+      },
+      {
+        "path": "/Users/rebeccalemke/cathedral-master-deployment/tools/creative-ideas-generator.mjs",
+        "workspace": "/Users/rebeccalemke/cathedral-master-deployment"
+      }
+    ],
+    "needsIntegration": true
+  }
+}

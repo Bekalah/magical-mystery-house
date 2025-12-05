@@ -1,3 +1,7 @@
+/**
+ * @license CC0-1.0 - Public Domain
+ */
+
 // Simple test to verify Node.js works
 // 🎨 Visionary Art: Three.js or Babylon.js for 3D immersive environment
 // 🎨 Visionary Art: Golden ratio (1.618), Fibonacci, 144:99 ratio

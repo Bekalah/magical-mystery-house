@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🏗️⚡🎮 CIRCUIT CRAFT: PSYCHEDELIC ARCHETYPE QUEST
  *
  * "Like Fable/Witcher meets Timothy Leary's Visionary Adventures"

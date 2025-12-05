@@ -32,5 +32,10 @@
     "sacred-wisdom",
     "fusion-kink",
     "rebecca-respawn"
-  ]
+  ],
+  "alchemical": {
+    "name": "Liber Arcanae",
+    "symbol": "⊙",
+    "label": "⊙ Liber Arcanae (@cathedral/liber-arcanae)"
+  }
 }

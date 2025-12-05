@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🏛️✨ CATHEDRAL OF CIRCUITS - TRAUMA-SAFE GAME STATE
  *
  * Native ES module for your authentic trauma-safe design

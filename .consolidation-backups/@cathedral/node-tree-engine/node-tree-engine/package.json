@@ -60,5 +60,10 @@
   },
   "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/node-tree-engine",
   "license": "CC0-1.0",
-  "author": "Rebecca Respawn <bekalah>"
+  "author": "Rebecca Respawn <bekalah>",
+  "alchemical": {
+    "name": "Node Tree",
+    "symbol": "⊙",
+    "label": "⊙ Node Tree (@cathedral/node-tree-engine)"
+  }
 }

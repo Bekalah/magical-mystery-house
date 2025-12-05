@@ -10,5 +10,10 @@
   "dependencies": {},
   "devDependencies": {},
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T21:14:07.178Z"
+  "consolidatedAt": "2025-12-04T21:13:45.747Z",
+  "alchemical": {
+    "name": "Synthesis",
+    "symbol": "⊙",
+    "label": "⊙ Synthesis (synthesis-engine)"
+  }
 }

@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🏛️✨ CATHEDRAL OF CIRCUITS - CODEX NODE MANAGER
  *
  * Native ES module for managing your authentic Codex 144:99 system

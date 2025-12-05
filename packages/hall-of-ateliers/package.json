@@ -58,7 +58,13 @@
     "@testing-library/react": "^16.0.0",
     "@testing-library/jest-dom": "^6.6.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/parser": "^8.0.0"
+    "@typescript-eslint/parser": "^8.0.0",
+    "typescript": "^5.6.2",
+    "tsx": "^4.19.1",
+    "eslint": "^9.11.1",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "eslint-config-prettier": "^9.1.0"
   },
   "scripts": {
     "build": "tsc",
@@ -71,7 +77,15 @@
     "validate:sacred-math": "node scripts/validate-sacred-math.js",
     "validate:trauma-safety": "node scripts/validate-trauma-safety.js",
     "validate:integration": "node scripts/validate-integration.js",
-    "validate:ownership": "node scripts/validate-ownership.js"
+    "validate:ownership": "node scripts/validate-ownership.js",
+    "test:watch": "vitest",
+    "lint:fix": "eslint src/**/*.{ts,tsx,js,jsx} --fix",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,md,css,html}\"",
+    "clean": "rimraf dist build",
+    "clean:all": "rimraf dist build node_modules/.turbo",
+    "validate": "npm run type-check && npm run lint && npm run test",
+    "validate:ci": "npm run type-check && npm run lint && npm run test:coverage",
+    "benchmark": "vitest run --reporter=verbose --reporter=json --outputFile=benchmark-results.json"
   },
   "files": [
     "dist",

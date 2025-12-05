@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🏛️✨ CATHEDRAL OF CIRCUITS - GAME INTERFACE
  *
  * Native ES module interface for your Guild Wars-style RPG

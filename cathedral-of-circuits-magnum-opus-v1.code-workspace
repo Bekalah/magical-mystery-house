@@ -1,0 +1,49 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "cathedral-master-deployment - Cathedral of Circuits"
+    },
+    {
+      "path": "../cathedral-fixed-clean",
+      "name": "cathedral-fixed-clean - Cathedral of Circuits"
+    },
+    {
+      "path": "../cathedral-real",
+      "name": "cathedral-real - Cathedral of Circuits"
+    },
+    {
+      "path": "../CathedralOfCircuits",
+      "name": "CathedralOfCircuits - Cathedral of Circuits"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.git": false,
+      "**/dist": true,
+      "**/build": true,
+      "**/.next": true,
+      "**/.turbo": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.next": true,
+      "**/.turbo": true
+    },
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "bradlc.vscode-tailwindcss"
+    ]
+  }
+}

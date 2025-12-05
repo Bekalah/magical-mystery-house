@@ -1,3 +1,13 @@
+/**
+ * ⊙ Rollup.Config
+ * 
+ * @alchemical Rollup.Config
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 

@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🏛️✨ CATHEDRAL OF CIRCUITS - AUDIO SYNTHESIS ENGINE
  *
  * Native ES module for your authentic solfeggio frequencies

@@ -44,5 +44,10 @@
     "eslint": "^8.54.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5"
+  },
+  "alchemical": {
+    "name": "Cosmogenesis Learning",
+    "symbol": "⊙",
+    "label": "⊙ Cosmogenesis Learning (@cathedral/cosmogenesis-learning-engine)"
   }
 }

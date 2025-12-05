@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * @package @cathedral/fractal-flames-daemon-deity
  * 
  * TODO: Implement actual functionality

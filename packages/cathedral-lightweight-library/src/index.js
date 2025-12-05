@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🏛️✨ CATHEDRAL LIGHTWEIGHT LIBRARY
  *
  * Expansive but lightweight library system for the Cathedral of Circuits

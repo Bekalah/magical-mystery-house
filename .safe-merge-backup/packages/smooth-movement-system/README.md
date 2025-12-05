@@ -48,6 +48,36 @@
 
 ---
 
+# ⊙ Smooth Movement System - smooth-movement-system
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Smooth Movement System - smooth-movement-system
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Smooth Movement System - smooth-movement-system
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/smooth-movement-system
 
 Smooth Movement System - Fluid animation and motion controls

@@ -17,10 +17,25 @@
     "lint": "eslint src --ext=ts --max-warnings=0",
     "check-types": "tsc --noEmit",
     "test": "vitest run",
-    "build": "tsup",
+    "build": "tsc",
     "build:watch": "tsup --watch --outDir npm/dist --onSuccess 'echo ✅ Types rebuilt to npm/dist'",
     "npm:publish": "node scripts/publish-npm.cjs",
-    "clean": "rimraf dist .turbo"
+    "clean": "rimraf dist .turbo",
+    "dev": "tsx watch src/index.ts",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint:fix": "eslint src/**/*.{ts,tsx,js,jsx} --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md,css,html}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,md,css,html}\"",
+    "type-check": "tsc --noEmit",
+    "clean:all": "rimraf dist build node_modules/.turbo",
+    "validate": "npm run type-check && npm run lint && npm run test",
+    "validate:ci": "npm run type-check && npm run lint && npm run test:coverage",
+    "benchmark": "vitest run --reporter=verbose --reporter=json --outputFile=benchmark-results.json",
+    "validate:sacred-math": "node scripts/validate-sacred-math.js",
+    "validate:trauma-safety": "node scripts/validate-trauma-safety.js",
+    "validate:integration": "node scripts/validate-integration.js",
+    "validate:ownership": "node scripts/validate-ownership.js"
   },
   "dependencies": {
     "zod": "^3.25.61",
@@ -32,7 +47,15 @@
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
-    "vitest": "^3.2.3"
+    "vitest": "^3.2.3",
+    "typescript": "^5.6.2",
+    "tsx": "^4.19.1",
+    "eslint": "^9.11.1",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "eslint-config-prettier": "^9.1.0"
   },
   "engines": {
     "node": ">=18.0.0",

@@ -17,6 +17,16 @@
  * @license CC0 - Universal Creative Access for All
  */
 
+/**
+ * ⊙ Universalaccessibilityengine
+ * 
+ * @alchemical Universalaccessibilityengine
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 export interface UniversalAccessibilityEngine {
   // Cognitive accessibility
   optimizeCognitiveLoad(userProfile: UserAccessibilityProfile): Promise<CognitiveLoadOptimization>;

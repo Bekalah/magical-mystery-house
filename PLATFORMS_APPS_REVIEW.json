@@ -1,0 +1,1436 @@
+{
+  "timestamp": "2025-12-04T22:13:18.705Z",
+  "summary": {
+    "total": 22,
+    "ok": 20,
+    "needsFix": 1,
+    "fixable": 0,
+    "totalIssues": 3,
+    "totalFixes": 0,
+    "appliedFixes": 0,
+    "failedFixes": 0
+  },
+  "reviews": {
+    "cathedral-connection-map": {
+      "name": "cathedral-connection-map",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/cathedral-connection-map",
+      "exists": true,
+      "platform": "unknown",
+      "packageJson": {
+        "name": "cathedral-connection-map",
+        "version": "1.0.0",
+        "license": "CC0-1.0",
+        "description": "",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start"
+        },
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:12.617Z",
+        "alchemical": {
+          "name": "Cathedral Connection Map",
+          "symbol": "⊙",
+          "label": "⊙ Cathedral Connection Map (cathedral-connection-map)"
+        },
+        "packageManager": "pnpm@10.23.0",
+        "engines": {
+          "node": "*"
+        }
+      },
+      "configFiles": {},
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "cathedral-design-studio": {
+      "name": "cathedral-design-studio",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/cathedral-design-studio",
+      "exists": true,
+      "platform": "unknown",
+      "packageJson": {
+        "name": "cathedral-design-studio",
+        "version": "1.0.0",
+        "license": "CC0-1.0",
+        "description": "",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start"
+        },
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:12.628Z",
+        "alchemical": {
+          "name": "Cathedral Design Studio",
+          "symbol": "⊙",
+          "label": "⊙ Cathedral Design Studio (cathedral-design-studio)"
+        },
+        "packageManager": "pnpm@10.23.0",
+        "engines": {
+          "node": "*"
+        }
+      },
+      "configFiles": {},
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "cathedral-immersive-creative-studio": {
+      "name": "cathedral-immersive-creative-studio",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/cathedral-immersive-creative-studio",
+      "exists": true,
+      "platform": "unknown",
+      "packageJson": {
+        "name": "cathedral-immersive-creative-studio",
+        "version": "1.0.0",
+        "license": "CC0-1.0",
+        "description": "",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start"
+        },
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:12.640Z",
+        "alchemical": {
+          "name": "Cathedral Immersive Creative Studio",
+          "symbol": "⊙",
+          "label": "⊙ Cathedral Immersive Creative Studio (cathedral-immersive-creative-studio)"
+        },
+        "packageManager": "pnpm@10.23.0",
+        "engines": {
+          "node": "*"
+        }
+      },
+      "configFiles": {},
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "cathedral-of-circuits": {
+      "name": "cathedral-of-circuits",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/cathedral-of-circuits",
+      "exists": true,
+      "platform": "vite",
+      "packageJson": {
+        "name": "cathedral-of-circuits",
+        "version": "1.0.0",
+        "description": "Lightweight sacred technology monorepo - runs entirely on free hosting",
+        "private": true,
+        "type": "module",
+        "scripts": {
+          "build": "turbo run build",
+          "dev": "turbo run dev",
+          "preview": "turbo run preview",
+          "clean": "turbo run clean && rm -rf node_modules .turbo dist",
+          "gem-towers": "node tools/gem-tower-engine.js",
+          "fusion-kink": "node tools/fusion-kink-generator.js",
+          "sacred-geometry": "node tools/sacred-geometry-engine.js"
+        },
+        "devDependencies": {},
+        "packageManager": "pnpm@9.15.0",
+        "engines": {
+          "node": "25.0.0",
+          "pnpm": ">=9.0.0"
+        },
+        "workspaces": [
+          "packages/*",
+          "apps/*",
+          "edge-functions/*"
+        ],
+        "dependencies": {
+          "turbo": "^2.0.0",
+          "vite": "^6.0.1",
+          "typescript": "^5.0.0",
+          "eslint": "^8.0.0",
+          "prettier": "^3.0.0",
+          "react": "^18.2.0",
+          "react-dom": "^18.2.0",
+          "@react-three/fiber": "^8.0.27",
+          "@react-three/drei": "^9.56.7",
+          "three": "^0.155.0"
+        },
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:12.686Z",
+        "license": "CC0-1.0"
+      },
+      "configFiles": {
+        "vite": "import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\n\nexport default defineConfig({\n  base: '/',\n  plugins: [react()],\n  build: {\n    outDir: 'dist',\n    sourcemap: true\n  },\n  server: {\n    port: 3000,\n    open: true\n  }\n})\n",
+        "vercel": {
+          "buildCommand": "pnpm build",
+          "outputDirectory": "dist",
+          "installCommand": "pnpm install",
+          "framework": null
+        },
+        "tsconfig": {
+          "extends": "../../tsconfig.json",
+          "compilerOptions": {
+            "outDir": "./dist",
+            "rootDir": "./src"
+          },
+          "include": [
+            "src/**/*"
+          ],
+          "exclude": [
+            "node_modules",
+            "dist"
+          ]
+        }
+      },
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "cathedral-unity": {
+      "name": "cathedral-unity",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/cathedral-unity",
+      "exists": true,
+      "platform": "vite",
+      "packageJson": {
+        "name": "@cathedral/cathedral-unity",
+        "version": "1.0.0",
+        "type": "module",
+        "description": "Cathedral Unity - Professional Creative Technology Platform",
+        "main": "src/main.tsx",
+        "scripts": {
+          "dev": "vite",
+          "build": "tsc && vite build",
+          "preview": "vite preview",
+          "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+          "type-check": "tsc --noEmit"
+        },
+        "dependencies": {
+          "react": "^18.3.1",
+          "react-dom": "^18.3.1",
+          "react-router-dom": "^7.1.3",
+          "zustand": "^5.0.2",
+          "framer-motion": "^12.0.8",
+          "three": "^0.170.0",
+          "@react-three/fiber": "^8.17.10",
+          "@react-three/drei": "^9.114.3",
+          "lucide-react": "^0.468.0",
+          "clsx": "^2.1.1",
+          "@vitejs/plugin-react": "^4.3.3",
+          "typescript": "^5.6.3",
+          "vite": "^5.4.10",
+          "tailwindcss": "^4.0.0",
+          "autoprefixer": "^10.4.20",
+          "postcss": "^8.4.47",
+          "eslint": "^9.15.0"
+        },
+        "devDependencies": {
+          "@types/react": "^18.3.12",
+          "@types/react-dom": "^18.3.1",
+          "@types/three": "^0.170.0",
+          "@typescript-eslint/eslint-plugin": "^8.15.0",
+          "@typescript-eslint/parser": "^8.15.0"
+        },
+        "engines": {
+          "node": ">=18.0.0"
+        },
+        "keywords": [
+          "game-development",
+          "web-applications",
+          "react",
+          "typescript",
+          "three.js",
+          "professional-tools"
+        ],
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:12.716Z",
+        "license": "CC0-1.0"
+      },
+      "configFiles": {
+        "vite": "import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\nimport { resolve } from 'path'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n  plugins: [react()],\n  resolve: {\n    alias: {\n      '@': resolve(__dirname, './src'),\n    },\n  },\n  server: {\n    port: 3000,\n    host: true,\n  },\n  build: {\n    target: 'es2020',\n    outDir: 'dist',\n    sourcemap: true,\n    rollupOptions: {\n      output: {\n        manualChunks: {\n          react: ['react', 'react-dom', 'react-router-dom'],\n          three: ['three', '@react-three/fiber', '@react-three/drei'],\n          motion: ['framer-motion'],\n        },\n      },\n    },\n  },\n  optimizeDeps: {\n    include: ['react', 'react-dom', 'three', '@react-three/fiber'],\n  },\n})",
+        "vercel": {
+          "buildCommand": "pnpm build",
+          "outputDirectory": "dist",
+          "installCommand": "pnpm install",
+          "framework": null
+        },
+        "tsconfig": {
+          "compilerOptions": {
+            "target": "ES2020",
+            "useDefineForClassFields": true,
+            "lib": [
+              "ES2020",
+              "DOM",
+              "DOM.Iterable"
+            ],
+            "module": "ESNext",
+            "skipLibCheck": true,
+            "moduleResolution": "bundler",
+            "allowImportingTsExtensions": true,
+            "resolveJsonModule": true,
+            "isolatedModules": true,
+            "noEmit": true,
+            "jsx": "react-jsx",
+            "strict": true,
+            "noUnusedLocals": true,
+            "noUnusedParameters": true,
+            "noFallthroughCasesInSwitch": true,
+            "baseUrl": ".",
+            "paths": {
+              "@/*": [
+                "./src/*"
+              ],
+              "@components/*": [
+                "./src/components/*"
+              ],
+              "@stores/*": [
+                "./src/stores/*"
+              ],
+              "@hooks/*": [
+                "./src/hooks/*"
+              ],
+              "@utils/*": [
+                "./src/utils/*"
+              ],
+              "@types/*": [
+                "./src/types/*"
+              ],
+              "@data/*": [
+                "./src/data/*"
+              ],
+              "@assets/*": [
+                "./src/assets/*"
+              ],
+              "@cathedral/shared": [
+                "../../packages/shared/src"
+              ]
+            }
+          },
+          "include": [
+            "src",
+            "vite.config.ts"
+          ],
+          "references": [
+            {
+              "path": "./tsconfig.node.json"
+            }
+          ]
+        }
+      },
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "cosmogenesis-visualizer": {
+      "name": "cosmogenesis-visualizer",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/cosmogenesis-visualizer",
+      "exists": true,
+      "platform": "unknown",
+      "packageJson": {
+        "name": "cosmogenesis-visualizer",
+        "version": "1.0.0",
+        "license": "CC0-1.0",
+        "description": "",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start"
+        },
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:12.723Z",
+        "alchemical": {
+          "name": "Cosmogenesis Visualizer",
+          "symbol": "⊙",
+          "label": "⊙ Cosmogenesis Visualizer (cosmogenesis-visualizer)"
+        },
+        "packageManager": "pnpm@10.23.0",
+        "engines": {
+          "node": "*"
+        }
+      },
+      "configFiles": {},
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "frontend": {
+      "name": "frontend",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/frontend",
+      "exists": true,
+      "platform": "react",
+      "packageJson": {
+        "name": "cathedral-spell-frontend",
+        "version": "1.0.0",
+        "private": true,
+        "dependencies": {
+          "@react-three/drei": "^9.88.13",
+          "@react-three/fiber": "^8.15.11",
+          "axios": "^1.6.0",
+          "react": "^18.2.0",
+          "react-dom": "^18.2.0",
+          "react-scripts": "5.0.1",
+          "three": "^0.158.0",
+          "web-vitals": "^2.1.4"
+        },
+        "scripts": {
+          "start": "react-scripts start",
+          "build": "react-scripts build",
+          "test": "react-scripts test",
+          "eject": "react-scripts eject",
+          "dev": "vite dev"
+        },
+        "eslintConfig": {
+          "extends": [
+            "react-app",
+            "react-app/jest"
+          ]
+        },
+        "browserslist": {
+          "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+          ],
+          "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+          ]
+        },
+        "proxy": "http://localhost:8000",
+        "devDependencies": {
+          "@testing-library/jest-dom": "^5.17.0",
+          "@testing-library/react": "^13.4.0",
+          "@testing-library/user-event": "^13.5.0"
+        },
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:12.747Z",
+        "license": "CC0-1.0",
+        "engines": {
+          "node": "*",
+          "pnpm": "*"
+        }
+      },
+      "configFiles": {},
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "learning-device": {
+      "name": "learning-device",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/learning-device",
+      "exists": true,
+      "platform": "vite",
+      "packageJson": {
+        "name": "@bekalah/cathedral-monorepo",
+        "version": "1.0.0",
+        "description": "Cathedral of Circuits - Living Grimoire Engine with 22 Tradition Masters & Fusion Kink",
+        "type": "module",
+        "scripts": {
+          "turbo:dev": "turbo run dev --parallel",
+          "turbo:build": "turbo run build",
+          "turbo:lint": "turbo run lint",
+          "turbo:type-check": "turbo run type-check",
+          "dev": "pnpm run turbo:dev",
+          "dev:cathedral": "pnpm -C apps/cathedral-experience dev",
+          "build": "pnpm run turbo:build",
+          "build:cathedral": "pnpm -C apps/cathedral-experience build",
+          "lint": "pnpm run turbo:lint",
+          "type-check": "pnpm run turbo:type-check",
+          "prepare": "pnpm -w install && node tools/health-check.js || true",
+          "g:install": "node ./tools/install-g.js",
+          "concurrently-dev": "concurrently \"pnpm -C apps/web dev\" \"pnpm -C apps/worker dev\"",
+          "legacy-build": "pnpm -C packages/data build && pnpm run build:packages && pnpm -C apps/web build",
+          "build:packages": "tsc -b packages/brain packages/soul packages/labs packages/shared packages/crystals packages/synth",
+          "deploy:worker": "pnpm -C apps/worker deploy",
+          "deploy:pages": "pnpm build && ./scripts/publish.sh",
+          "validate": "pnpm -C packages/data validate",
+          "trauma-check": "node tools/trauma-safety-validator.js",
+          "fusion-kink": "node tools/fusion-kink-generator.js",
+          "living-arcanae": "echo '🃏 22 Living Tradition Engines operational'",
+          "clean": "rm -rf apps/*/dist apps/*/node_modules packages/*/node_modules node_modules",
+          "reset": "pnpm clean && pnpm install",
+          "book-game": "node book-game-launcher.js",
+          "mystery-house": "pnpm -C packages/magical-mystery-house explore",
+          "circuitum99": "pnpm -C packages/circuitum99 book-game",
+          "alpha-omega": "echo '🎨 Opening Alpha et Omega visualization...' && open circuitum99-alpha-et-omega.html",
+          "soul-library": "pnpm -C packages/magical-mystery-house soul",
+          "99-gates": "pnpm -C packages/circuitum99 alpha && pnpm -C packages/circuitum99 mystery && pnpm -C packages/circuitum99 omega",
+          "144-lattice": "pnpm -C packages/circuitum99 lattice",
+          "monorepo-setup": "./scripts/create-monorepo-structure.sh",
+          "ingest:scan": "node scripts/cathedral-ingest-scan.mjs",
+          "validate-datasets": "node scripts/validate-datasets.js",
+          "dataset-dashboard": "open scripts/dataset-dashboard.html",
+          "check-integrity": "pnpm run validate-datasets",
+          "sacred-math-check": "node -e \"console.log('144:99 =', (144/99).toFixed(6), 'Fibonacci: VALID (12th number)')\"",
+          "ecosystem-health": "pnpm run validate-datasets && echo '🎉 All mystical systems healthy!'",
+          "comprehensive-health-check": "node scripts/comprehensive-health-check.js",
+          "full-health-check": "pnpm run comprehensive-health-check",
+          "failcheck": "pnpm run check-integrity || echo '❌ Issues found - check dashboard for details'"
+        },
+        "devDependencies": {
+          "@types/node": "^20.10.0"
+        },
+        "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
+        "license": "CC0-1.0",
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/Bekalah/cathedral.git"
+        },
+        "homepage": "https://bekalah.github.io/cathedral",
+        "packageManager": "pnpm@8.14.0",
+        "cathedral": {
+          "living_arcanae": {
+            "total_cards": 22,
+            "tradition_engines": "Complete Major Arcana as living teachers",
+            "fusion_kink_enabled": true,
+            "trauma_safety": "maximum",
+            "nd_accommodations": true,
+            "research_based": "Public domain sources with full provenance"
+          },
+          "deployment": {
+            "github_pages": "https://bekalah.github.io/cathedral",
+            "cloudflare_pages": "https://cathedral.pages.dev",
+            "worker_api": "https://cathedral-api.bekalah.workers.dev"
+          },
+          "artistic_vision": {
+            "sound": "Björk organic breathing + Tori archetypal piano",
+            "visual": "Iris van Herpen flowing + Emma Kunz sacred geometry",
+            "healing": "21 Tara color temples + therapeutic trauma safety",
+            "integration": "Museum-quality couture precision throughout"
+          },
+          "brain_system": {
+            "primary": "cosmogenesis-learning-engine",
+            "architecture": "Trinity + Brain + Navigation",
+            "integration": "All moving pieces organically connected"
+          }
+        },
+        "keywords": [
+          "cathedral",
+          "living-arcanae",
+          "tradition-engines",
+          "fusion-kink",
+          "trauma-informed",
+          "nd-safe",
+          "research-backed",
+          "bjork",
+          "tori-amos",
+          "iris-van-herpen",
+          "emma-kunz",
+          "sacred-geometry",
+          "consciousness-technology"
+        ],
+        "dependencies": {
+          "express": "^4.21.2",
+          "concurrently": "^8.2.2",
+          "fs-extra": "^11.2.0",
+          "turbo": "^1.8.3",
+          "typescript": "^5.3.0",
+          "vite": "^6.0.1",
+          "wrangler": "^3.78.12"
+        },
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:12.761Z",
+        "engines": {
+          "node": "*",
+          "pnpm": "*"
+        }
+      },
+      "configFiles": {
+        "vite": "import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\n\nexport default defineConfig({\n  base: '/',\n  plugins: [react()],\n  build: {\n    outDir: 'dist',\n    sourcemap: true\n  },\n  server: {\n    port: 3000,\n    open: true\n  }\n})\n",
+        "vercel": {
+          "buildCommand": "pnpm build",
+          "outputDirectory": "dist",
+          "installCommand": "pnpm install",
+          "framework": null
+        },
+        "tsconfig": {
+          "extends": "../../tsconfig.json",
+          "compilerOptions": {
+            "outDir": "./dist",
+            "rootDir": "./src"
+          },
+          "include": [
+            "src/**/*"
+          ],
+          "exclude": [
+            "node_modules",
+            "dist"
+          ]
+        }
+      },
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "liber-arcanae": {
+      "name": "liber-arcanae",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/liber-arcanae",
+      "exists": true,
+      "platform": "vite",
+      "packageJson": {
+        "name": "@cathedral/liber-arcanae-app",
+        "version": "1.0.0",
+        "description": "22 Living Tarot - Hermetic RPG Interface",
+        "type": "module",
+        "scripts": {
+          "dev": "vite",
+          "build": "vite build",
+          "preview": "vite preview"
+        },
+        "devDependencies": {},
+        "dependencies": {
+          "vite": "^6.0.1"
+        },
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:12.802Z",
+        "license": "CC0-1.0",
+        "engines": {
+          "node": "*",
+          "pnpm": "*"
+        }
+      },
+      "configFiles": {
+        "vite": "import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\n\nexport default defineConfig({\n  base: '/',\n  plugins: [react()],\n  build: {\n    outDir: 'dist',\n    sourcemap: true\n  },\n  server: {\n    port: 3000,\n    open: true\n  }\n})\n",
+        "vercel": {
+          "buildCommand": "pnpm build",
+          "outputDirectory": "dist",
+          "installCommand": "pnpm install",
+          "framework": null
+        }
+      },
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "liber-arcanae-tarot": {
+      "name": "liber-arcanae-tarot",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/liber-arcanae-tarot",
+      "exists": true,
+      "platform": "vite",
+      "packageJson": {
+        "name": "@bekalah/liber-arcanae-tarot",
+        "version": "1.0.0",
+        "description": "🃏 Liber Arcanae Tarot - Living Major Arcana App with Interactive Readings & Sacred Art",
+        "private": true,
+        "type": "module",
+        "engines": {
+          "node": "*"
+        },
+        "scripts": {
+          "dev": "vite dev --port 3001",
+          "build": "tsc && vite build",
+          "build:analyze": "vite build --mode analyze",
+          "preview": "vite preview",
+          "serve": "vite preview --host",
+          "clean": "rm -rf dist .vite",
+          "type-check": "tsc --noEmit",
+          "type-check:watch": "tsc --noEmit --watch",
+          "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+          "lint:fix": "eslint src --ext ts,tsx --fix",
+          "format": "prettier --write src/**/*.{ts,tsx}",
+          "format:check": "prettier --check src/**/*.{ts,tsx}",
+          "test": "vitest",
+          "test:ui": "vitest --ui",
+          "test:run": "vitest run",
+          "test:coverage": "vitest run --coverage",
+          "storybook": "storybook dev -p 6007",
+          "storybook:build": "storybook build",
+          "generate-tarot": "node scripts/generate-tarot-deck.js",
+          "generate-spread": "node scripts/generate-tarot-spreads.js",
+          "generate-reading": "node scripts/generate-sample-reading.js",
+          "validate-tarot": "node scripts/validate-tarot-data.js"
+        },
+        "dependencies": {
+          "react": "^18.3.1",
+          "react-dom": "^18.3.1",
+          "vite": "^6.0.1",
+          "@vitejs/plugin-react": "^5.1.0",
+          "@cathedral/liber-arcanae": "workspace:*",
+          "@cathedral/codex-144-99": "workspace:*",
+          "@cathedral/tesseract-bridge": "workspace:*",
+          "@cathedral/art-generation-node": "workspace:*",
+          "@cathedral/crystals": "workspace:*",
+          "framer-motion": "^11.11.17",
+          "react-spring": "^9.7.4",
+          "gsap": "^3.12.5",
+          "animejs": "^3.2.2",
+          "lucide-react": "^0.263.1",
+          "clsx": "^1.2.1",
+          "tailwind-merge": "^1.14.0",
+          "zustand": "^5.0.1",
+          "react-query": "^3.39.3",
+          "howler": "^2.2.4",
+          "react-use-gesture": "^9.1.3",
+          "react-use-measure": "^2.1.1",
+          "@tanstack/react-query": "^4.36.1",
+          "date-fns": "^3.6.0",
+          "uuid": "^10.0.0",
+          "canvas-confetti": "^1.9.3",
+          "react-helmet-async": "^2.0.5",
+          "eslint": "^8.57.0",
+          "eslint-plugin-react-hooks": "^4.6.2",
+          "eslint-plugin-react-refresh": "^0.4.16",
+          "prettier": "^3.3.3",
+          "prettier-plugin-tailwindcss": "^0.5.14",
+          "jsdom": "^24.1.1",
+          "@storybook/react-vite": "^8.4.0",
+          "@storybook/addon-essentials": "^8.4.0",
+          "@storybook/addon-interactions": "^8.4.0",
+          "storybook": "^8.4.0",
+          "tailwindcss": "^3.4.14",
+          "autoprefixer": "^10.4.20",
+          "postcss": "^8.4.47"
+        },
+        "devDependencies": {
+          "@types/react": "^18.3.12",
+          "@types/react-dom": "^18.3.0",
+          "@types/uuid": "^10.0.0",
+          "@types/canvas-confetti": "^1.6.4",
+          "@types/howler": "^2.2.11",
+          "@typescript-eslint/eslint-plugin": "^6.21.0",
+          "@typescript-eslint/parser": "^6.21.0",
+          "vitest": "^1.6.0",
+          "@testing-library/react": "^15.0.7",
+          "@testing-library/jest-dom": "^6.6.3",
+          "@testing-library/user-event": "^14.5.2"
+        },
+        "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
+        "license": "CC0-1.0",
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/Bekalah/cathedral.git",
+          "directory": "apps/liber-arcanae-tarot"
+        },
+        "homepage": "https://bekalah.github.io/cathedral",
+        "bugs": {
+          "url": "https://github.com/Bekalah/cathedral/issues"
+        },
+        "keywords": [
+          "tarot",
+          "liber-arcanae",
+          "living-tarot",
+          "interactive-tarot",
+          "major-arcana",
+          "sacred-readings",
+          "circuitum99",
+          "codex-abyssiae",
+          "consciousness-technology",
+          "spiritual-guidance",
+          "interactive-reading",
+          "sacred-art",
+          "alchemy",
+          "mystery-tradition"
+        ],
+        "cathedral": {
+          "role": "tarot_application",
+          "features": [
+            "22-living-major-arcana-cards",
+            "interactive-tarot-readings",
+            "circuitum99-spreads",
+            "fusion-kink-inclusive",
+            "trauma-informed-design",
+            "azure-ai-enhanced-art",
+            "multi-format-export",
+            "personal-reading-journal",
+            "sacred-geometry-layouts",
+            "real-time-card-interactions"
+          ],
+          "integrations": {
+            "main_cathedral": "tesseract-bridge-connection",
+            "art_generation": "azure-ai-enhanced-tarot-images",
+            "consciousness_tracking": "Reading session analytics",
+            "crystal_resonance": "Card-element-resonance-system",
+            "fusion_system": "Kink-inclusive reading interpretations"
+          },
+          "user_experience": {
+            "difficulty_levels": [
+              "Beginner",
+              "Intermediate",
+              "Advanced",
+              "Master"
+            ],
+            "reading_types": [
+              "Daily Guidance",
+              "Relationship",
+              "Career",
+              "Spiritual",
+              "Custom Spread"
+            ],
+            "accessibility": "Full keyboard navigation, screen reader support",
+            "personalization": "User card preferences, journal, reading history"
+          }
+        },
+        "build": {
+          "minify": "esbuild",
+          "target": "esnext",
+          "outDir": "dist",
+          "sourcemap": true,
+          "rollupOptions": {
+            "external": [
+              "node:*"
+            ]
+          }
+        },
+        "vite": {
+          "server": {
+            "port": 3001,
+            "host": true
+          },
+          "build": {
+            "target": "esnext",
+            "minify": "esbuild",
+            "sourcemap": true
+          },
+          "test": {
+            "environment": "jsdom",
+            "setupFiles": [
+              "./src/test-setup.ts"
+            ]
+          }
+        },
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:12.866Z"
+      },
+      "configFiles": {
+        "vite": "import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\n\nexport default defineConfig({\n  base: '/',\n  plugins: [react()],\n  build: {\n    outDir: 'dist',\n    sourcemap: true\n  },\n  server: {\n    port: 3000,\n    open: true\n  }\n})\n",
+        "vercel": {
+          "buildCommand": "pnpm build",
+          "outputDirectory": "dist",
+          "installCommand": "pnpm install",
+          "framework": null
+        },
+        "tsconfig": {
+          "compilerOptions": {
+            "target": "ES2020",
+            "useDefineForClassFields": true,
+            "lib": [
+              "ES2020",
+              "DOM",
+              "DOM.Iterable"
+            ],
+            "module": "ESNext",
+            "skipLibCheck": true,
+            "moduleResolution": "bundler",
+            "allowImportingTsExtensions": true,
+            "resolveJsonModule": true,
+            "isolatedModules": true,
+            "noEmit": true,
+            "jsx": "react-jsx",
+            "strict": true,
+            "noUnusedLocals": true,
+            "noUnusedParameters": true,
+            "noFallthroughCasesInSwitch": true
+          },
+          "include": [
+            "src"
+          ],
+          "references": [
+            {
+              "path": "./tsconfig.node.json"
+            }
+          ]
+        }
+      },
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "living-library": {
+      "name": "living-library",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/living-library",
+      "exists": true,
+      "platform": "unknown",
+      "packageJson": {
+        "name": "living-library",
+        "version": "1.0.0",
+        "license": "CC0-1.0",
+        "description": "",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start"
+        },
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-11-30T16:48:01.982Z",
+        "alchemical": {
+          "name": "Living Library",
+          "symbol": "⊙",
+          "label": "⊙ Living Library (living-library)"
+        },
+        "packageManager": "pnpm@10.23.0",
+        "engines": {
+          "node": "*"
+        }
+      },
+      "configFiles": {},
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "master-catalog-browser": {
+      "name": "master-catalog-browser",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/master-catalog-browser",
+      "exists": true,
+      "platform": "unknown",
+      "packageJson": {
+        "name": "master-catalog-browser",
+        "version": "1.0.0",
+        "license": "CC0-1.0",
+        "description": "",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start"
+        },
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:12.906Z",
+        "alchemical": {
+          "name": "Master Catalog Browser",
+          "symbol": "⊙",
+          "label": "⊙ Master Catalog Browser (master-catalog-browser)"
+        },
+        "packageManager": "pnpm@10.23.0",
+        "engines": {
+          "node": "*"
+        }
+      },
+      "configFiles": {},
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "mystical-treasure-hunt": {
+      "name": "mystical-treasure-hunt",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/mystical-treasure-hunt",
+      "exists": true,
+      "platform": "vite",
+      "packageJson": {
+        "name": "@cathedral/mystical-treasure-hunt",
+        "version": "1.0.0",
+        "description": "Real-world mystical treasure hunt game with visionary art realms, arcana-specific missions, and permanent knowledge registry",
+        "type": "module",
+        "main": "dist/index.js",
+        "module": "dist/index.mjs",
+        "types": "dist/index.d.ts",
+        "scripts": {
+          "build": "vite build",
+          "dev": "vite",
+          "preview": "vite preview",
+          "type-check": "tsc --noEmit"
+        },
+        "dependencies": {
+          "@react-three/fiber": "^8.16.8",
+          "@react-three/drei": "^9.110.0",
+          "react": "^18.3.1",
+          "react-dom": "^18.3.1",
+          "three": "^0.165.0",
+          "d3": "^7.9.0",
+          "leaflet": "^1.9.4",
+          "react-leaflet": "^4.2.1",
+          "rxjs": "^7.8.1",
+          "localforage": "^1.10.0",
+          "uuid": "^10.0.0",
+          "@vitejs/plugin-react": "^5.1.0",
+          "typescript": "^5.5.4",
+          "vite": "^6.0.1"
+        },
+        "devDependencies": {
+          "@types/react": "^18.3.3",
+          "@types/react-dom": "^18.3.0",
+          "@types/d3": "^7.4.3",
+          "@types/leaflet": "^1.9.12",
+          "@types/uuid": "^10.0.0"
+        },
+        "keywords": [
+          "treasure-hunt",
+          "mystical",
+          "visionary-art",
+          "grimoire",
+          "arcanae",
+          "real-world",
+          "fusionist-glasses",
+          "permanent-registry"
+        ],
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:12.916Z",
+        "license": "CC0-1.0",
+        "engines": {
+          "node": "*",
+          "pnpm": "*"
+        }
+      },
+      "configFiles": {
+        "vite": "import { defineConfig } from 'vite'\nimport react from '@vitejs/plugin-react'\n\nexport default defineConfig({\n  base: '/',\n  plugins: [react()],\n  build: {\n    outDir: 'dist',\n    sourcemap: true\n  },\n  server: {\n    port: 3000,\n    open: true\n  }\n})\n",
+        "vercel": {
+          "buildCommand": "pnpm build",
+          "outputDirectory": "dist",
+          "installCommand": "pnpm install",
+          "framework": null
+        },
+        "tsconfig": {
+          "extends": "../../tsconfig.json",
+          "compilerOptions": {
+            "outDir": "./dist",
+            "rootDir": "./src"
+          },
+          "include": [
+            "src/**/*"
+          ],
+          "exclude": [
+            "node_modules",
+            "dist"
+          ]
+        }
+      },
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "rosslyn-explorer": {
+      "name": "rosslyn-explorer",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/rosslyn-explorer",
+      "exists": true,
+      "platform": "unknown",
+      "packageJson": {
+        "name": "rosslyn-explorer",
+        "version": "1.0.0",
+        "license": "CC0-1.0",
+        "description": "",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start"
+        },
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:12.940Z",
+        "alchemical": {
+          "name": "Rosslyn Explorer",
+          "symbol": "⊙",
+          "label": "⊙ Rosslyn Explorer (rosslyn-explorer)"
+        },
+        "packageManager": "pnpm@10.23.0",
+        "engines": {
+          "node": "*"
+        }
+      },
+      "configFiles": {},
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "stone-grimoire": {
+      "name": "stone-grimoire",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/stone-grimoire",
+      "exists": true,
+      "platform": "unknown",
+      "packageJson": {
+        "name": "stone-grimoire",
+        "version": "1.0.0",
+        "license": "CC0-1.0",
+        "description": "",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start"
+        },
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-11-30T16:48:02.072Z",
+        "alchemical": {
+          "name": "Stone Grimoire",
+          "symbol": "⊙",
+          "label": "⊙ Stone Grimoire (stone-grimoire)"
+        },
+        "packageManager": "pnpm@10.23.0",
+        "engines": {
+          "node": "*"
+        }
+      },
+      "configFiles": {},
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "synth-lab": {
+      "name": "synth-lab",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/synth-lab",
+      "exists": true,
+      "platform": "vite",
+      "packageJson": {
+        "name": "@cathedral/synth-lab",
+        "private": true,
+        "version": "1.0.0",
+        "scripts": {
+          "dev": "vite",
+          "build": "vite build",
+          "preview": "vite preview"
+        },
+        "dependencies": {
+          "react": "^18.2.0",
+          "react-dom": "^18.2.0",
+          "typescript": "^5.3.3",
+          "vite": "^6.0.1",
+          "@vitejs/plugin-react": "^5.1.0"
+        },
+        "devDependencies": {
+          "@types/react": "^19.1.16",
+          "@types/react-dom": "^19.1.9"
+        },
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:13.069Z",
+        "license": "CC0-1.0",
+        "engines": {
+          "node": "*",
+          "pnpm": "*"
+        }
+      },
+      "configFiles": {
+        "vite": "import { defineConfig } from 'vite';\nimport react from '@vitejs/plugin-react';\nimport path from 'path';\n\nexport default defineConfig({\n  plugins: [react()],\n  resolve: {\n    alias: {\n      '@cathedral/brain': path.resolve(__dirname, '../../packages/brain/dist'),\n      '@cathedral/soul': path.resolve(__dirname, '../../packages/soul/dist'),\n      '@cathedral/labs': path.resolve(__dirname, '../../packages/labs/dist'),\n      '@cathedral/shared': path.resolve(__dirname, '../../packages/shared/dist'),\n      '@cathedral/crystals': path.resolve(__dirname, '../../packages/crystals/dist'),\n      '@cathedral/synth': path.resolve(__dirname, '../../packages/synth/dist')\n    },\n  },\n});\n",
+        "vercel": {
+          "buildCommand": "pnpm build",
+          "outputDirectory": "dist",
+          "installCommand": "pnpm install",
+          "framework": null
+        },
+        "tsconfig": {
+          "extends": "../../tsconfig.json",
+          "compilerOptions": {
+            "jsx": "react-jsx",
+            "outDir": "dist"
+          },
+          "include": [
+            "src"
+          ],
+          "references": [
+            {
+              "path": "../../packages/brain"
+            },
+            {
+              "path": "../../packages/soul"
+            },
+            {
+              "path": "../../packages/labs"
+            },
+            {
+              "path": "../../packages/shared"
+            },
+            {
+              "path": "../../packages/crystals"
+            },
+            {
+              "path": "../../packages/synth"
+            }
+          ]
+        }
+      },
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "tarot-arena": {
+      "name": "tarot-arena",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/tarot-arena",
+      "exists": true,
+      "platform": "vite",
+      "packageJson": {
+        "name": "@cathedral/tarot-arena",
+        "version": "1.0.0",
+        "private": true,
+        "main": "src/index.tsx",
+        "scripts": {
+          "dev": "vite",
+          "build": "vite build",
+          "preview": "vite preview"
+        },
+        "dependencies": {
+          "react": "^18.3.1",
+          "react-dom": "^18.3.1",
+          "typescript": "^5.3.3",
+          "vite": "^6.0.1"
+        },
+        "devDependencies": {
+          "@types/react": "^18.3.24",
+          "@types/react-dom": "^18.3.7"
+        },
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:13.118Z",
+        "license": "CC0-1.0",
+        "engines": {
+          "node": "*",
+          "pnpm": "*"
+        }
+      },
+      "configFiles": {
+        "vite": "import { defineConfig } from 'vite';\nimport react from '@vitejs/plugin-react';\nimport path from 'path';\n\nexport default defineConfig({\n  plugins: [react()],\n  resolve: {\n    alias: {\n      '@cathedral/brain': path.resolve(__dirname, '../../packages/brain/dist'),\n      '@cathedral/soul': path.resolve(__dirname, '../../packages/soul/dist'),\n      '@cathedral/labs': path.resolve(__dirname, '../../packages/labs/dist'),\n      '@cathedral/shared': path.resolve(__dirname, '../../packages/shared/dist'),\n      '@cathedral/crystals': path.resolve(__dirname, '../../packages/crystals/dist'),\n    },\n  },\n});\n",
+        "vercel": {
+          "buildCommand": "pnpm build",
+          "outputDirectory": "dist",
+          "installCommand": "pnpm install",
+          "framework": null
+        },
+        "tsconfig": {
+          "extends": "../../tsconfig.json",
+          "compilerOptions": {
+            "jsx": "react-jsx",
+            "outDir": "dist",
+            "module": "ESNext",
+            "moduleResolution": "bundler",
+            "ignoreDeprecations": "6.0"
+          },
+          "include": [
+            "src"
+          ],
+          "references": [
+            {
+              "path": "../../packages/core"
+            },
+            {
+              "path": "../../packages/liber-arcanae"
+            },
+            {
+              "path": "../../packages/stone-grimoire"
+            }
+          ]
+        }
+      },
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "test-ground": {
+      "name": "test-ground",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/test-ground",
+      "exists": true,
+      "platform": "vite",
+      "packageJson": {
+        "name": "@cathedral/test-ground",
+        "version": "1.0.0",
+        "private": true,
+        "main": "src/index.tsx",
+        "scripts": {
+          "dev": "vite",
+          "build": "vite build",
+          "preview": "vite preview"
+        },
+        "dependencies": {
+          "react": "^18.2.0",
+          "react-dom": "^18.2.0",
+          "typescript": "^5.3.3",
+          "vite": "^6.0.1"
+        },
+        "devDependencies": {
+          "@types/react": "^19.1.16",
+          "@types/react-dom": "^19.1.9"
+        },
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:13.158Z",
+        "license": "CC0-1.0",
+        "engines": {
+          "node": "*",
+          "pnpm": "*"
+        }
+      },
+      "configFiles": {
+        "vite": "import { defineConfig } from 'vite';\nimport react from '@vitejs/plugin-react';\nimport path from 'path';\n\nexport default defineConfig({\n  plugins: [react()],\n  resolve: {\n    alias: {\n      '@cathedral/brain': path.resolve(__dirname, '../../packages/brain/dist'),\n      '@cathedral/soul': path.resolve(__dirname, '../../packages/soul/dist'),\n      '@cathedral/labs': path.resolve(__dirname, '../../packages/labs/dist'),\n      '@cathedral/shared': path.resolve(__dirname, '../../packages/shared/dist'),\n      '@cathedral/crystals': path.resolve(__dirname, '../../packages/crystals/dist'),\n    },\n  },\n});\n",
+        "vercel": {
+          "buildCommand": "pnpm build",
+          "outputDirectory": "dist",
+          "installCommand": "pnpm install",
+          "framework": null
+        },
+        "tsconfig": {
+          "extends": "../../tsconfig.json",
+          "compilerOptions": {
+            "jsx": "react-jsx",
+            "outDir": "dist"
+          },
+          "include": [
+            "src"
+          ],
+          "references": [
+            {
+              "path": "../../packages/brain"
+            },
+            {
+              "path": "../../packages/soul"
+            },
+            {
+              "path": "../../packages/labs"
+            },
+            {
+              "path": "../../packages/shared"
+            },
+            {
+              "path": "../../packages/crystals"
+            },
+            {
+              "path": "../../packages/synth"
+            }
+          ]
+        }
+      },
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "visual-systems-hub": {
+      "name": "visual-systems-hub",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/visual-systems-hub",
+      "exists": true,
+      "platform": "unknown",
+      "packageJson": {
+        "name": "visual-systems-hub",
+        "version": "1.0.0",
+        "license": "CC0-1.0",
+        "description": "",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start"
+        },
+        "dependencies": {},
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:13.196Z",
+        "alchemical": {
+          "name": "Visual Systems Hub",
+          "symbol": "⊙",
+          "label": "⊙ Visual Systems Hub (visual-systems-hub)"
+        },
+        "packageManager": "pnpm@10.23.0",
+        "engines": {
+          "node": "*"
+        }
+      },
+      "configFiles": {},
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "web": {
+      "name": "web",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/web",
+      "exists": true,
+      "platform": "nextjs",
+      "packageJson": {
+        "name": "@cathedral/web",
+        "version": "1.0.0",
+        "description": "Next.js web app for Avalon labs with Three.js, Babylon.js, p5.js, and Tone.js",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start",
+          "export": "next export",
+          "generate-avalon": "node scripts/generate-avalon-components.js"
+        },
+        "dependencies": {
+          "next": "^14.0.0",
+          "react": "^18.0.0",
+          "react-dom": "^18.0.0",
+          "three": "^0.158.0",
+          "@react-three/fiber": "^8.0.0",
+          "@react-three/drei": "^9.0.0",
+          "babylonjs": "^6.0.0",
+          "p5": "^1.7.0",
+          "tone": "^14.7.77",
+          "@cathedral/core": "workspace:*",
+          "typescript": "^5.0.0"
+        },
+        "devDependencies": {
+          "@types/three": "^0.158.0",
+          "@types/node": "^20.0.0",
+          "@types/react": "^18.0.0",
+          "@types/react-dom": "^18.0.0"
+        },
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:13.376Z",
+        "license": "CC0-1.0",
+        "engines": {
+          "node": "*",
+          "pnpm": "*"
+        }
+      },
+      "configFiles": {
+        "vite": "import { defineConfig } from 'vite'\n\n// https://vitejs.dev/config/\nexport default defineConfig({\n  base: process.env.VITE_BASE || '/',\n  build: {\n    outDir: 'dist',\n    emptyOutDir: true,\n    rollupOptions: {\n      output: {\n        format: 'es',\n        entryFileNames: 'assets/[name].js',\n        chunkFileNames: 'assets/[name]-[hash].js',\n        assetFileNames: 'assets/[name]-[hash].[ext]'\n      }\n    }\n  },\n  server: {\n    port: 5173,\n    host: true,\n    proxy: {\n      '/api': {\n        target: 'http://localhost:3000',\n        changeOrigin: true\n      }\n    }\n  },\n  define: {\n    __CODEX_VERSION__: JSON.stringify('144:99'),\n    __CATHEDRAL_VERSION__: JSON.stringify('2.0.0'),\n    __LIVING_ARCANAE_COUNT__: 22,\n    __FUSION_COMBINATIONS__: 231\n  },\n  optimizeDeps: {\n    include: ['@cathedral/cathedral-game-engine']\n  }\n})\n",
+        "next": "/** @type {import('next').NextConfig} */\nconst nextConfig = {\n  reactStrictMode: true,\n  swcMinify: true,\n\n  // Enable static export for Cloudflare Pages and Azure Static Web Apps\n  output: 'export',\n  trailingSlash: true,\n  images: {\n    unoptimized: true\n  },\n\n  // Webpack configuration for Three.js, Babylon.js, p5.js, and Tone.js\n  webpack: (config, { isServer }) => {\n    // Handle Three.js and other libraries that expect window object\n    if (!isServer) {\n      config.resolve.fallback = {\n        ...config.resolve.fallback,\n        fs: false,\n        path: false,\n        os: false,\n      };\n    }\n\n    // Optimize bundle size\n    config.optimization = {\n      ...config.optimization,\n      splitChunks: {\n        chunks: 'all',\n        cacheGroups: {\n          three: {\n            test: /[\\\\/]node_modules[\\\\/](three|@react-three)[\\\\/]/,\n            name: 'three',\n            chunks: 'all',\n          },\n          babylonjs: {\n            test: /[\\\\/]node_modules[\\\\/]babylonjs[\\\\/]/,\n            name: 'babylonjs',\n            chunks: 'all',\n          },\n          tone: {\n            test: /[\\\\/]node_modules[\\\\/]tone[\\\\/]/,\n            name: 'tone',\n            chunks: 'all',\n          },\n        },\n      },\n    };\n\n    return config;\n  },\n\n  // Experimental features for better performance\n  experimental: {\n    optimizeCss: true,\n    webVitalsAttribution: ['CLS', 'LCP'],\n  },\n};\n\nmodule.exports = nextConfig;\n",
+        "vercel": {
+          "buildCommand": "pnpm build",
+          "outputDirectory": ".next",
+          "installCommand": "pnpm install",
+          "framework": "nextjs"
+        }
+      },
+      "issues": [
+        "Invalid tsconfig config",
+        "Missing tsconfig.json"
+      ],
+      "fixes": [],
+      "status": "needs-fix"
+    },
+    "web-from-master": {
+      "name": "web-from-master",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/web-from-master",
+      "exists": true,
+      "platform": "nextjs",
+      "packageJson": {
+        "name": "@cathedral/web-from-master",
+        "version": "1.0.0",
+        "description": "Web application from cathedral-master for integration and comparison",
+        "main": "index.js",
+        "scripts": {
+          "dev": "next dev",
+          "build": "next build",
+          "start": "next start"
+        },
+        "dependencies": {
+          "next": "^16.0.1",
+          "react": "^18.3.1",
+          "react-dom": "^18.3.1"
+        },
+        "devDependencies": {},
+        "consolidated": true,
+        "consolidatedAt": "2025-12-04T22:13:13.396Z",
+        "license": "CC0-1.0",
+        "engines": {
+          "node": "*",
+          "pnpm": "*"
+        }
+      },
+      "configFiles": {
+        "next": "/** @type {import('next').NextConfig} */\nconst nextConfig = {\n  experimental: {\n    appDir: true,\n    optimizeCss: true, // Optimize CSS for better performance\n  },\n  swcMinify: true,\n  reactStrictMode: true,\n  eslint: {\n    ignoreDuringBuilds: true,\n  },\n  typescript: {\n    ignoreBuildErrors: true,\n  },\n  images: {\n    domains: [\"your-image-domain.com\"], // Add domains for image optimization\n  },\n  webpack: (config) => {\n    // Custom Webpack configuration for art and design tools\n    config.module.rules.push({\n      test: /\\.svg$/,\n      use: [\"@svgr/webpack\"], // Support for SVG imports\n    });\n    return config;\n  },\n};\n\nmodule.exports = nextConfig;\n",
+        "vercel": {
+          "buildCommand": "pnpm build",
+          "outputDirectory": ".next",
+          "installCommand": "pnpm install",
+          "framework": "nextjs"
+        }
+      },
+      "issues": [],
+      "fixes": [],
+      "status": "ok"
+    },
+    "worker": {
+      "name": "worker",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment/apps/worker",
+      "exists": true,
+      "platform": null,
+      "packageJson": null,
+      "configFiles": {},
+      "issues": [
+        "Invalid package.json"
+      ],
+      "fixes": [],
+      "status": "unknown"
+    }
+  }
+}

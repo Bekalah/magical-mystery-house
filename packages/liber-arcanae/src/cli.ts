@@ -49,7 +49,7 @@ Examples:
   liber-arcanae fusion "0_fool,1_magician"
   liber-arcanae report
 
-For more information, visit: https://github.com/Bekalah/cathedral
+For more information, visit: https://gitlab.com/bekalah/cathedral-master-deployment
   `));
 }
 

@@ -218,7 +218,7 @@ Examples:
   codex-library elements fire
   codex-library chakras crown
 
-For more information, visit: https://github.com/Bekalah/cathedral
+For more information, visit: https://gitlab.com/bekalah/cathedral-master-deployment
   `);
 }
 

@@ -56,3 +56,15 @@ experiment.out
 *.token
 *.key
 
+# Backup and duplicate directories (for GitLab transfer)
+cathedral-master/
+.safe-merge-backup/
+.archive/
+.backups/
+.cleanup-backup/
+.consolidation-backups/
+.real-duplicate-backups/
+.remote-repos/
+
+# Logs and temporary directories
+.logs/

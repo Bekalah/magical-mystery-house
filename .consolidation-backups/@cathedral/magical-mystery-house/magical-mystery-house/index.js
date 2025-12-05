@@ -9,6 +9,16 @@
  * that expands with every interaction.
  */
 
+/**
+ * ⊙ Index
+ * 
+ * @alchemical Index
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 class MagicalMysteryHouse {
     constructor() {
         this.systemType = 'NAVIGATION_SYSTEM';

@@ -1,3 +1,7 @@
+/**
+ * @license CC0-1.0 - Public Domain
+ */
+
 export { ScienceEngine } from './ScienceEngine';
 export type { ScienceNode, ScienceExperiment, Methodology, Variable, DataPoint, Visualization, VisualizationConfig } from './ScienceEngine';
 export { ScienceAnalysisTools } from './ScienceAnalysis';

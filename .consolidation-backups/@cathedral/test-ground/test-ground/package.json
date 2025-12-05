@@ -17,5 +17,10 @@
     "@types/react-dom": "^19.1.9",
     "typescript": "^5.3.3",
     "vite": "^5.0.10"
+  },
+  "alchemical": {
+    "name": "Test Ground",
+    "symbol": "⊙",
+    "label": "⊙ Test Ground (@cathedral/test-ground)"
   }
 }

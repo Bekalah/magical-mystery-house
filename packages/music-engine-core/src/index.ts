@@ -1,3 +1,7 @@
+/**
+ * @license CC0-1.0 - Public Domain
+ */
+
 export { MusicEngine } from './MusicEngine';
 export type { MusicNode, MusicComposition, RhythmPattern, TimbreProfile, Envelope, FilterSettings } from './MusicEngine';
 export { MusicCompositionTools } from './MusicComposition';

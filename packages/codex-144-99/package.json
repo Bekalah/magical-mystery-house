@@ -43,7 +43,16 @@
     "generate-codex": "node scripts/generate-codex-data.js",
     "update-sources": "node scripts/update-research-sources.js",
     "validate-sources": "node scripts/validate-sources.js",
-    "benchmark": "node scripts/benchmark-search.js"
+    "benchmark": "node scripts/benchmark-search.js",
+    "dev": "tsx watch src/index.ts",
+    "test:watch": "vitest",
+    "clean": "rimraf dist build",
+    "clean:all": "rimraf dist build node_modules/.turbo",
+    "validate:ci": "npm run type-check && npm run lint && npm run test:coverage",
+    "validate:sacred-math": "node scripts/validate-sacred-math.js",
+    "validate:trauma-safety": "node scripts/validate-trauma-safety.js",
+    "validate:integration": "node scripts/validate-integration.js",
+    "validate:ownership": "node scripts/validate-ownership.js"
   },
   "files": [
     "dist",
@@ -74,7 +83,13 @@
     "vitest": "^1.6.0",
     "@types/fuse": "^7.0.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0"
+    "@typescript-eslint/parser": "^6.21.0",
+    "typescript": "^5.6.2",
+    "tsx": "^4.19.1",
+    "eslint": "^9.11.1",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "eslint-config-prettier": "^9.1.0"
   },
   "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
   "license": "CC0-1.0",

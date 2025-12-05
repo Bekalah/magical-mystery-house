@@ -106,5 +106,10 @@
   ],
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "alchemical": {
+    "name": "@Bekalah/Cathedral Monorepo",
+    "symbol": "⊙",
+    "label": "⊙ @Bekalah/Cathedral Monorepo (@bekalah/cathedral-monorepo)"
   }
 }

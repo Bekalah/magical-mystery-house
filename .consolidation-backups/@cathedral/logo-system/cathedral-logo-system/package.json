@@ -50,5 +50,10 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/cathedral-logo-system"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/cathedral-logo-system"
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/cathedral-logo-system",
+  "alchemical": {
+    "name": "Logo System",
+    "symbol": "⊙",
+    "label": "⊙ Logo System (@cathedral/logo-system)"
+  }
 }

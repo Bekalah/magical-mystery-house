@@ -6,6 +6,7 @@
     "true-will-tech"
   ],
   "connected": "2025-12-01T23:45:38.615Z",
+  "updated": "2025-12-03T00:00:00.000Z",
   "connections": [
     {
       "tech": "daimon-grimoires",
@@ -14,13 +15,15 @@
     },
     {
       "tech": "portal-tech",
-      "status": "connected",
-      "path": "tools/portal-tech.mjs"
+      "status": "integrated",
+      "path": "packages/portal-system/src/PortalTech.ts",
+      "import": "@cathedral/portal-system"
     },
     {
       "tech": "true-will-tech",
-      "status": "connected",
-      "path": "tools/true-will-tech.mjs"
+      "status": "integrated",
+      "path": "packages/true-will-system/src/TrueWillTech.ts",
+      "import": "@cathedral/true-will-system"
     }
   ]
 }

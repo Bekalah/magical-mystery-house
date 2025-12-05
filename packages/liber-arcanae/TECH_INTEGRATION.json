@@ -4,9 +4,11 @@
     "grimoire-system",
     "character-grimoire-system",
     "true-will-tech",
-    "rpg-tech"
+    "rpg-tech",
+    "witch-eye-tech"
   ],
   "connected": "2025-12-01T23:45:38.614Z",
+  "updated": "2025-12-03T00:00:00.000Z",
   "connections": [
     {
       "tech": "grimoire-system",
@@ -20,13 +22,21 @@
     },
     {
       "tech": "true-will-tech",
-      "status": "connected",
-      "path": "tools/true-will-tech.mjs"
+      "status": "integrated",
+      "path": "packages/true-will-system/src/TrueWillTech.ts",
+      "import": "@cathedral/true-will-system"
     },
     {
       "tech": "rpg-tech",
-      "status": "connected",
-      "path": "tools/rpg-tech.mjs"
+      "status": "integrated",
+      "path": "packages/game-engine/src/RPGTech.ts",
+      "import": "@cathedral/game-engine"
+    },
+    {
+      "tech": "witch-eye-tech",
+      "status": "integrated",
+      "path": "packages/liber-arcanae/src/WitchEyeTech.ts",
+      "import": "@cathedral/liber-arcanae"
     }
   ]
 }

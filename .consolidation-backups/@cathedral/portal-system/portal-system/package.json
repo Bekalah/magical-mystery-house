@@ -25,5 +25,10 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/portal-system"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/portal-system"
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/portal-system",
+  "alchemical": {
+    "name": "Portal System",
+    "symbol": "⊙",
+    "label": "⊙ Portal System (@cathedral/portal-system)"
+  }
 }

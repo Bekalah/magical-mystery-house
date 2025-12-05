@@ -8,7 +8,17 @@
     "build": "echo 'Stone Grimoire build complete'",
     "test": "echo 'Stone Grimoire tests passing'"
   },
-  "keywords": ["cathedral", "stone-grimoire", "body", "archive"],
+  "keywords": [
+    "cathedral",
+    "stone-grimoire",
+    "body",
+    "archive"
+  ],
   "author": "Rebecca Respawn",
-  "license": "CC0"
+  "license": "CC0",
+  "alchemical": {
+    "name": "Stone Grimoire",
+    "symbol": "⊙",
+    "label": "⊙ Stone Grimoire (@cathedral/stone-grimoire)"
+  }
 }

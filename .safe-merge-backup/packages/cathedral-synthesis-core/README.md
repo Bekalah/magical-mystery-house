@@ -48,6 +48,36 @@
 
 ---
 
+# ⊙ Cathedral Synthesis - cathedral-synthesis-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Cathedral Synthesis - cathedral-synthesis-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Cathedral Synthesis - cathedral-synthesis-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # cathedral-synthesis-core
 
 No description available

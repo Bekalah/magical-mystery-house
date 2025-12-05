@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🏛️✨ FRACTAL FLAMES DAEMON DEITY LIBRARY
  *
  * Real Elements, Daimons, and Deities as Fractals

@@ -1,0 +1,13 @@
+name = "cathedral-master-deployment"
+compatibility_date = "2024-12-03"
+
+[site]
+bucket = "./dist"
+
+[build]
+command = "pnpm run build"
+
+[[routes]]
+pattern = "/*"
+zone_name = "cathedral.bekalah.github.io"
+

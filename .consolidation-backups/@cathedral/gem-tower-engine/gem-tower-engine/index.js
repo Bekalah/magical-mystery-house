@@ -3,6 +3,16 @@
  * Crystal and gem visualization system
  */
 
+/**
+ * ⊙ Index
+ * 
+ * @alchemical Index
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 export const gemTypes = {
   AMETHYST: { color: "#9966CC", frequency: 963, chakra: "crown" },
   CITRINE: { color: "#FFD700", frequency: 528, chakra: "solar-plexus" },

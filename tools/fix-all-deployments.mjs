@@ -244,7 +244,7 @@ class FixAllDeployments {
     if (!content.includes('node-version')) {
       content = content.replace(
         /uses: actions\/setup-node@[\w.]+/,
-        (match) => `${match}\n        with:\n          node-version: '20'`
+        (match) => `${match}\n        with:\n          node-version: '25.2'`
       );
       fixed = true;
     }

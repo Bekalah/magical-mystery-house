@@ -3,6 +3,16 @@
  * Fluid animation and motion controls for Cathedral experiences
  */
 
+/**
+ * ⊙ Index
+ * 
+ * @alchemical Index
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 export const easingFunctions = {
   LINEAR: (t) => t,
   EASE_IN: (t) => t * t,

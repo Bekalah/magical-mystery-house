@@ -12,20 +12,45 @@
     "random": "node dist/modes/randomMode.js",
     "auto": "node dist/modes/autoGameMode.js",
     "design": "node dist/modes/designMode.js",
-    "theatre": "node dist/theatre/paraTheatreEngine.js"
+    "theatre": "node dist/theatre/paraTheatreEngine.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/**/*.{ts,tsx,js,jsx} --max-warnings=0",
+    "lint:fix": "eslint src/**/*.{ts,tsx,js,jsx} --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md,css,html}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx,json,md,css,html}\"",
+    "type-check": "tsc --noEmit",
+    "clean": "rimraf dist build",
+    "clean:all": "rimraf dist build node_modules/.turbo",
+    "validate": "npm run type-check && npm run lint && npm run test",
+    "validate:ci": "npm run type-check && npm run lint && npm run test:coverage",
+    "benchmark": "vitest run --reporter=verbose --reporter=json --outputFile=benchmark-results.json",
+    "validate:sacred-math": "node scripts/validate-sacred-math.js",
+    "validate:trauma-safety": "node scripts/validate-trauma-safety.js",
+    "validate:integration": "node scripts/validate-integration.js",
+    "validate:ownership": "node scripts/validate-ownership.js"
   },
   "dependencies": {
     "@cathedral/codex-144-99": "workspace:*",
     "@cathedral/liber-arcanae": "workspace:*",
     "@cathedral/plugin-system": "workspace:*",
     "@cathedral/shared": "workspace:*",
-    "typescript": "^5.3.0",
+    "typescript": "^5.6.2",
     "@cathedral/codex-library": "workspace:*",
     "@cathedral/circuitum99-core": "workspace:*",
-    "@cathedral/circuitum99-arcanae-cyoa": "workspace:*"
+    "@cathedral/circuitum99-arcanae-cyoa": "workspace:*",
+    "tsx": "^4.19.1",
+    "eslint": "^9.11.1",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "eslint-config-prettier": "^9.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20.10.0"
+    "@types/node": "^20.10.0",
+    "vitest": "^2.1.1",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0"
   },
   "keywords": [
     "circuitum99",
@@ -43,7 +68,7 @@
   },
   "license": "CC0-1.0",
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T21:19:18.337Z",
+  "consolidatedAt": "2025-12-04T22:12:57.514Z",
   "packageManager": "pnpm@10.23.0",
   "alchemical": {
     "name": "Circuitum99 Arcanae Cyoa",

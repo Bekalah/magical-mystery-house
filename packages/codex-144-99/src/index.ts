@@ -20,3 +20,8 @@ export { CodexLibrary } from './CodexLibrary';
 // Functional engine exports - REAL, WORKING engines
 export * from './functional-codex-engine';
 export { codexEngine, FunctionalCodexEngine } from './functional-codex-engine';
+
+// Double Tree Pathworking Tech
+export * from './DoubleTreePathworkingTech';
+export { DoubleTreePathworkingTech, createPathworking, SEPHIROTH, QLIPHOTH, PATHS } from './DoubleTreePathworkingTech';
+export type { Pathworking, PathDetail, Sephirah, Qliphah, Path } from './DoubleTreePathworkingTech';

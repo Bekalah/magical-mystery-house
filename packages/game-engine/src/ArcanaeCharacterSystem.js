@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🏛️✨ CATHEDRAL OF CIRCUITS - ARCANAE CHARACTER SYSTEM
  *
  * Native ES module for your 22 Living Tradition Engines

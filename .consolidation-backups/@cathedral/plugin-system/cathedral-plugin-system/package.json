@@ -28,5 +28,10 @@
     "fusion-kink",
     "modular-architecture",
     "sacred-technology"
-  ]
+  ],
+  "alchemical": {
+    "name": "Plugin System",
+    "symbol": "⊙",
+    "label": "⊙ Plugin System (@cathedral/plugin-system)"
+  }
 }

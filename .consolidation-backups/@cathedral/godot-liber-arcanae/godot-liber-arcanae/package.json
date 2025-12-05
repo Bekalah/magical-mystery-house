@@ -94,5 +94,10 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "alchemical": {
+    "name": "Godot Liber Arcanae",
+    "symbol": "⊙",
+    "label": "⊙ Godot Liber Arcanae (@cathedral/godot-liber-arcanae)"
   }
 }

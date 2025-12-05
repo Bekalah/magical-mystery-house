@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Bekalah/cathedral.git",
+    "url": "https://gitlab.com/bekalah/cathedral-master-deployment.git",
     "directory": "packages/codex-144"
   },
   "author": "Rebecca Respawn",
@@ -24,5 +24,10 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "alchemical": {
+    "name": "Codex 144",
+    "symbol": "⊙",
+    "label": "⊙ Codex 144 (@cathedral/codex-144)"
   }
 }

@@ -1,53 +1,3 @@
-# ⊙ Cathedral Master Deployment - cathedral-master-deployment
-
-**Alchemical Correspondence:**
-- Element: N/A
-- Planet: N/A
-- Metal: N/A
-- Symbol: ⊙
-
----
-
-# ⊙ Cathedral Master Deployment - cathedral-master-deployment
-
-**Alchemical Correspondence:**
-- Element: N/A
-- Planet: N/A
-- Metal: N/A
-- Symbol: ⊙
-
----
-
-# ⊙ Cathedral Master Deployment - cathedral-master-deployment
-
-**Alchemical Correspondence:**
-- Element: N/A
-- Planet: N/A
-- Metal: N/A
-- Symbol: ⊙
-
----
-
-# ⊙ Cathedral Master Deployment - cathedral-master-deployment
-
-**Alchemical Correspondence:**
-- Element: N/A
-- Planet: N/A
-- Metal: N/A
-- Symbol: ⊙
-
----
-
-# ⊙ Cathedral Master Deployment - cathedral-master-deployment
-
-**Alchemical Correspondence:**
-- Element: N/A
-- Planet: N/A
-- Metal: N/A
-- Symbol: ⊙
-
----
-
 # Cathedral - Completely Free Art, Science, Design & Mathematics Platform
 
 **Completely Free** - No gatekeeping, no barriers, no prerequisites. Open to everyone.
@@ -154,6 +104,37 @@ tsx scripts/10-hour-improvement-experiment.ts
 
 ---
 
+## 🎨 Characters & Inspirations
+
+The characters in Cathedral are based on **real creative people** and **real art inspirations** from history. This reflects a deep fascination with visionary creators who have explored symbolic metaphor and visionary language across music, art, writing, science, and mathematics.
+
+### Real Inspirations
+
+The Major Arcana characters draw from historical and creative figures:
+
+- **The Fool (0)**: Inspired by **Leonora Carrington** and **Rebecca Respawn** - Christianity & mysticism themes, kitchen alchemy, surrealist magic
+- **The Magician (I)**: Inspired by **John Dee** - Enochian system, angelic communications, Dee's magic system
+- **The High Priestess (II)**: Inspired by **Dion Fortune** - Avalon work, Sea Priestess magic, Glastonbury Tor
+- Additional Major Arcana characters are mapped to other historical/creative inspirations from alchemical and mystical traditions
+
+### Visionary Language
+
+The work explores **deep symbolic metaphor** and **visionary language** across multiple disciplines:
+
+- **Music**: Fractal sound synthesis, sacred geometry in audio, solfeggio frequencies
+- **Art**: High-end Japanese tech aesthetics, mystical visual systems, surrealist traditions
+- **Writing**: Real cannon-based narratives, grimoire systems, visionary literature
+- **Science**: Empirical research, sacred mathematics, consciousness studies
+- **Mathematics**: Golden ratio (1.618), 144:99 ratio, Fibonacci sequences, sacred geometry
+
+### Personal Fascination
+
+This project represents a personal exploration of visionary creators, their work, and the symbolic languages they developed. It is not intended as historical accuracy but as creative interpretation and homage to those who have pushed the boundaries of creative expression.
+
+**Note**: Technical systems like fusion kink, codex, nodes, and mathematics are separate implementation details and are not directly connected to the character inspirations. They serve as structural frameworks for organizing knowledge and creative expression.
+
+---
+
 ## 🎨 What Makes Cathedral Different
 
 ### vs. Traditional Art Schools
@@ -188,12 +169,32 @@ Cathedral improves itself automatically:
 
 ---
 
-## 🌐 Platforms & Deployments
+## 🌐 Platforms & Infrastructure
 
-- **GitHub** - Version control
-- **Vercel** - Production deployments (if configured)
-- **** - Production deployments (if configured)
-- **Local** - Always available
+### Current Stack (Migrating)
+
+**Version Control & CI/CD**:
+- **GitLab** (primary) - Version control, CI/CD pipelines, package registry
+- **GitHub** (mirror) - Legacy version control, migrating to GitLab
+
+**Deployment & Hosting**:
+- **Vercel** - Primary production deployments
+- **Cloudflare** - CDN, Workers, Pages (edge computing)
+- **Render** - Additional hosting and services
+- **Local** - Always available for development
+
+**Build & Development**:
+- **Vite** - Modern build tool and dev server
+- **React** - UI framework
+- **TypeScript** - Type-safe development
+
+**Documentation**:
+- **GitLab Wiki** - Primary documentation (migrating from GitHub Wiki)
+- **Vercel-hosted docs** - Production documentation
+
+### Migration Status
+
+This project is actively migrating from GitHub-based infrastructure (GitHub Pages, GitHub Packages, GitHub Actions) to a modern, distributed platform stack. See [Platform Migration Guide](docs/PLATFORM_MIGRATION.md) for details.
 
 ---
 

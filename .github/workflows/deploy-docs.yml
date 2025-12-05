@@ -9,8 +9,40 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  check-changes:
     runs-on: ubuntu-latest
+    outputs:
+      docs-only: ${{ steps.filter.outputs.docs == 'true' }}
+      other-files: ${{ steps.filter.outputs.other == 'true' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            docs:
+              - 'docs/**'
+              - 'README.md'
+            other:
+              - '**'
+              - '!docs/**'
+              - '!README.md'
+  
+  deploy:
+    needs: check-changes
+    runs-on: ubuntu-latest
+    # Use same concurrency group as deploy.yml to prevent race conditions
+    concurrency:
+      group: pages-deployment
+      cancel-in-progress: false
+    # Only run if ONLY docs/README.md changed (not other files that would trigger deploy.yml)
+    # This prevents duplicate builds when deploy.yml also runs
+    if: |
+      github.event_name == 'workflow_dispatch' ||
+      (needs.check-changes.outputs.docs-only == 'true' && 
+       needs.check-changes.outputs.other-files == 'false')
     steps:
       - uses: actions/checkout@v4
       - name: Setup pnpm
@@ -44,6 +76,7 @@ jobs:
       
       - name: Build project
         run: pnpm run build
+        continue-on-error: false
       
       - name: Copy docs to dist
         run: |

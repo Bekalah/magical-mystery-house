@@ -43,6 +43,11 @@ export { TraumaSafeCreativeTools } from './accessibility/trauma-safe-tools';
 export { CodexLoggingSystem } from './codex/codex-logging';
 export { ArchetypeMentor } from './codex/archetype-mentor';
 
+// Witch Eye Tech
+export * from './WitchEyeTech';
+export { WitchEyeTech, activateWitchEye } from './WitchEyeTech';
+export type { Eye, EyeConfig, Filter, Enhancement, ArcanaePerspective, MultiVision } from './WitchEyeTech';
+
 // Main Factory
 import { LiberArcanaeCanvas } from './canvas/liber-arcanae-canvas';
 import { TraumaSafeConfig } from '@cathedral-real/trinity-architecture';

@@ -26,5 +26,10 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/mystical-data-unified"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/mystical-data-unified"
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/mystical-data-unified",
+  "alchemical": {
+    "name": "Mystical Data Unified",
+    "symbol": "⊙",
+    "label": "⊙ Mystical Data Unified (@cathedral/mystical-data-unified)"
+  }
 }

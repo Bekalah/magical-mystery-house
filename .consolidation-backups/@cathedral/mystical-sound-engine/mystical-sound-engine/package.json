@@ -44,5 +44,10 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/mystical-sound-engine"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/mystical-sound-engine"
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/mystical-sound-engine",
+  "alchemical": {
+    "name": "Mystical Sound",
+    "symbol": "⊙",
+    "label": "⊙ Mystical Sound (@cathedral/mystical-sound-engine)"
+  }
 }

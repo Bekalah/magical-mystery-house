@@ -1,0 +1,117 @@
+# ⚗️ Cathedral of Circuits - Magnum Opus Version 1.0
+# GitLab CI/CD Pipeline - Liber Arcanae Codex Abyssiae
+# Author: Rebecca Respawn (pen name)
+# License: CC0-1.0 - Public Domain
+
+stages:
+  - setup
+  - quality
+  - build
+  - test
+  - deploy
+
+variables:
+  PROJECT_NAME: "Cathedral of Circuits - Magnum Opus Version 1.0"
+  PROJECT_AUTHOR: "Rebecca Respawn"
+  NODE_VERSION: "20"
+  PNPM_VERSION: "10.23.0"
+
+setup:
+  stage: setup
+  image: node:${NODE_VERSION}
+  before_script:
+    - echo "⚗️ Cathedral of Circuits - Magnum Opus Version 1.0"
+    - echo "Author: Rebecca Respawn"
+    - corepack enable
+    - corepack prepare pnpm@${PNPM_VERSION} --activate
+    - pnpm install --frozen-lockfile
+  cache:
+    key: cathedral-circuits-pnpm-${CI_COMMIT_REF_SLUG}
+    paths:
+      - .pnpm-store
+      - node_modules
+    policy: pull-push
+  only:
+    - main
+    - develop
+    - merge_requests
+
+quality:lint:
+  stage: quality
+  image: node:${NODE_VERSION}
+  needs: ["setup"]
+  before_script:
+    - corepack enable
+    - corepack prepare pnpm@${PNPM_VERSION} --activate
+  script:
+    - pnpm run lint
+  cache:
+    key: cathedral-circuits-pnpm-${CI_COMMIT_REF_SLUG}
+    paths:
+      - .pnpm-store
+      - node_modules
+    policy: pull
+  only:
+    - main
+    - develop
+    - merge_requests
+
+build:
+  stage: build
+  image: node:${NODE_VERSION}
+  needs: ["quality:lint"]
+  before_script:
+    - corepack enable
+    - corepack prepare pnpm@${PNPM_VERSION} --activate
+  script:
+    - echo "Building Cathedral of Circuits - Magnum Opus Version 1.0..."
+    - pnpm run build
+  cache:
+    key: cathedral-circuits-pnpm-${CI_COMMIT_REF_SLUG}
+    paths:
+      - .pnpm-store
+      - node_modules
+      - dist
+      - build
+    policy: pull-push
+  artifacts:
+    paths:
+      - dist
+      - build
+    expire_in: 1 week
+  only:
+    - main
+    - develop
+    - merge_requests
+
+test:
+  stage: test
+  image: node:${NODE_VERSION}
+  needs: ["build"]
+  before_script:
+    - corepack enable
+    - corepack prepare pnpm@${PNPM_VERSION} --activate
+  script:
+    - pnpm run test
+  only:
+    - main
+    - develop
+    - merge_requests
+
+deploy:pages:
+  stage: deploy
+  image: node:${NODE_VERSION}
+  needs: ["test"]
+  before_script:
+    - corepack enable
+    - corepack prepare pnpm@${PNPM_VERSION} --activate
+  script:
+    - pnpm run build
+    - mkdir -p public
+    - cp -r apps/web/dist/* public/ || true
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+  only:
+    - main

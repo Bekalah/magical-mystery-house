@@ -45,8 +45,8 @@ const GLOBAL_FIXES = {
     description: 'Update Vercel action version'
   },
   nodeVersion: {
-    pattern: /node-version:\s*['"]?[^'"]*['"]?/g,
-    replacement: "node-version: '25.2'",
+    pattern: /node-version: '25.2'*['"]?/g,
+    replacement: "node-version: '25.2',
     description: 'Standardize Node.js version'
   }
 };

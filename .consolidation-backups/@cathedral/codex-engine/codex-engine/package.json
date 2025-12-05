@@ -26,5 +26,10 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/codex-engine"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/codex-engine"
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/codex-engine",
+  "alchemical": {
+    "name": "Codex",
+    "symbol": "⊙",
+    "label": "⊙ Codex (@cathedral/codex-engine)"
+  }
 }

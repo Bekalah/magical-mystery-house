@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 22-playable-characters
  *
  * @package @cathedral/liber-arcanae

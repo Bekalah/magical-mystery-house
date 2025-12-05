@@ -32,19 +32,14 @@ async function updateAllWorkflows() {
     }
     
     // Update Vercel action to v25
-    if (content.includes('amondnet/vercel-action@v20')) {
+    if (content.includes('amondnet/vercel-action@v25')) {
       content = content.replace(/amondnet\/vercel-action@v20/g, 'amondnet/vercel-action@v25');
       changed = true;
     }
     
     // Ensure Node.js version is consistent
     if (content.includes('node-version')) {
-      content = content.replace(/node-version:\s*['"]?[^'"]*['"]?/g, "node-version: '25.2'");
-      changed = true;
-    }
-    
-    // Ensure pnpm version is consistent
-    if (content.includes('pnpm/action-setup')) {
+      content = content.replace(/node-version: '25.2'*['"]?/g, "node-version: '25.2'pnpm/action-setup')) {
       content = content.replace(/version:\s*['"]?[^'"]*['"]?/g, "version: 10.23.0");
       changed = true;
     }

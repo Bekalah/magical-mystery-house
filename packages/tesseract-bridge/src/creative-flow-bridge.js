@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🌉 Creative Flow Bridge - Complete Mode Switching System
  *
  * For super creative people who want to seamlessly switch between:

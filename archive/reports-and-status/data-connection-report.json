@@ -1,0 +1,203 @@
+{
+  "timestamp": "2025-12-04T04:41:42.768Z",
+  "verified": 28,
+  "missing": 10,
+  "broken": 0,
+  "details": {
+    "verified": [
+      {
+        "path": "experiment.state",
+        "file": "experiment-state.json",
+        "status": "exists"
+      },
+      {
+        "path": "experiment.improvements",
+        "file": "IMPROVEMENT_EXPERIMENT_LOG.json",
+        "status": "exists"
+      },
+      {
+        "path": "experiment.liveReports",
+        "file": "live-reports/",
+        "status": "exists"
+      },
+      {
+        "path": "experiment.summary",
+        "file": "improvements-summary.md",
+        "status": "exists"
+      },
+      {
+        "path": "tech.integrations.connections",
+        "file": "ALL_PACKAGES_TECH_CONNECTIONS.json",
+        "status": "exists"
+      },
+      {
+        "path": "tech.packages.portalTech",
+        "file": "packages/portal-system/src/PortalTech.ts",
+        "status": "exists"
+      },
+      {
+        "path": "tech.packages.rpgTech",
+        "file": "packages/game-engine/src/RPGTech.ts",
+        "status": "exists"
+      },
+      {
+        "path": "tech.packages.trueWillTech",
+        "file": "packages/true-will-system/src/TrueWillTech.ts",
+        "status": "exists"
+      },
+      {
+        "path": "tech.packages.witchEyeTech",
+        "file": "packages/liber-arcanae/src/WitchEyeTech.ts",
+        "status": "exists"
+      },
+      {
+        "path": "tech.packages.witchModTech",
+        "file": "packages/cathedral-plugin-system/src/WitchModTech.ts",
+        "status": "exists"
+      },
+      {
+        "path": "tech.packages.doubleTreeTech",
+        "file": "packages/codex-144-99/src/DoubleTreePathworkingTech.ts",
+        "status": "exists"
+      },
+      {
+        "path": "models.archive",
+        "file": "docs/models-archive/",
+        "status": "exists"
+      },
+      {
+        "path": "models.index",
+        "file": "docs/models-archive/MODELS_INDEX.md",
+        "status": "exists"
+      },
+      {
+        "path": "models.guide",
+        "file": "docs/models-archive/VISUAL_MODELS_GUIDE.md",
+        "status": "exists"
+      },
+      {
+        "path": "models.data",
+        "file": "docs/models-archive/models-*.json",
+        "status": "exists"
+      },
+      {
+        "path": "gitlab.ci",
+        "file": ".gitlab-ci.yml",
+        "status": "exists"
+      },
+      {
+        "path": "gitlab.checklist",
+        "file": "docs/GITLAB_TRANSFER_CHECKLIST.md",
+        "status": "exists"
+      },
+      {
+        "path": "gitlab.migration",
+        "file": "docs/GITLAB_MIGRATION_READY.md",
+        "status": "exists"
+      },
+      {
+        "path": "aesthetic.vision",
+        "file": "docs/AESTHETIC_VISION.md",
+        "status": "exists"
+      },
+      {
+        "path": "aesthetic.palette",
+        "file": "docs/BUSINESS_PORTFOLIO_PALETTE.md",
+        "status": "exists"
+      },
+      {
+        "path": "aesthetic.portfolio",
+        "file": "cathedral-master/palette.json",
+        "status": "exists"
+      },
+      {
+        "path": "documentation.unified",
+        "file": "docs/UNIFIED_EXPERIMENT.md",
+        "status": "exists"
+      },
+      {
+        "path": "documentation.platform",
+        "file": "docs/PLATFORM_MIGRATION.md",
+        "status": "exists"
+      },
+      {
+        "path": "documentation.main",
+        "file": "README.md",
+        "status": "exists"
+      },
+      {
+        "path": "scripts.main",
+        "file": "scripts/10-hour-improvement-experiment.ts",
+        "status": "exists"
+      },
+      {
+        "path": "scripts.saveModels",
+        "file": "scripts/save-new-models.mjs",
+        "status": "exists"
+      },
+      {
+        "path": "scripts.linkData",
+        "file": "scripts/link-all-data.mjs",
+        "status": "exists"
+      },
+      {
+        "path": "scripts.verify",
+        "file": "scripts/verify-connections.mjs",
+        "status": "exists"
+      }
+    ],
+    "missing": [
+      {
+        "path": "version",
+        "file": "1.0.0",
+        "status": "missing"
+      },
+      {
+        "path": "created",
+        "file": "2025-12-03",
+        "status": "missing"
+      },
+      {
+        "path": "description",
+        "file": "Unified system map - all data connections in one place",
+        "status": "missing"
+      },
+      {
+        "path": "experiment.cycleComparison",
+        "file": "improvement-reports/cycle-comparison-*.json",
+        "status": "missing"
+      },
+      {
+        "path": "tech.integrations.pattern",
+        "file": "packages/*/TECH_INTEGRATION.json",
+        "status": "missing"
+      },
+      {
+        "path": "strategic.state",
+        "file": "live-reports/strategic-state.json",
+        "status": "missing"
+      },
+      {
+        "path": "strategic.fixTracking",
+        "file": "live-reports/fix-tracking.json",
+        "status": "missing"
+      },
+      {
+        "path": "strategic.reports",
+        "file": "live-reports/cycle-*.json",
+        "status": "missing"
+      },
+      {
+        "path": "strategic.latest",
+        "file": "live-reports/latest-cycle.json",
+        "status": "missing"
+      },
+      {
+        "path": "gitlab.remote",
+        "file": "cathedral-real",
+        "status": "missing"
+      }
+    ],
+    "broken": []
+  }
+}

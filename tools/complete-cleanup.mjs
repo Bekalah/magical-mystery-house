@@ -146,7 +146,7 @@ class CompleteCleanup {
         });
         
         // Update specific patterns to use * (current) or >=20.0.0
-        content = content.replace(/node-version.*18/gi, 'node-version: *');
+        content = content.replace(/node-version.*18/gi, 'node-version: '25.2');
         content = content.replace(/NODE_VERSION.*18/gi, 'NODE_VERSION = "*"');
         content = content.replace(/"node":\s*">=18\.0\.0"/g, '"node": "*"');
         content = content.replace(/"node":\s*"18\./g, '"node": "*');

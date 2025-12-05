@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * 🌟🃏🔥 AVATAR EXPERIENCE SYSTEM
  *
  * Multi-modal fractal avatar experiences integrating Liber Arcanae with unique organic fractals

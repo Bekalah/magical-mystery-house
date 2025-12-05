@@ -3,6 +3,16 @@
  * Audio synthesis studio with Tone.js
  */
 
+/**
+ * ⊙ Vite.Config.Optimized
+ * 
+ * @alchemical Vite.Config.Optimized
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';

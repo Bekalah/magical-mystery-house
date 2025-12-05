@@ -1,0 +1,5725 @@
+{
+  "project": {
+    "name": "Cathedral of Circuits",
+    "version": "1.0.0",
+    "fullName": "Cathedral of Circuits - Magnum Opus Version 1.0",
+    "author": "Rebecca Respawn",
+    "subtitle": "Liber Arcanae Codex Abyssiae"
+  },
+  "workspaces": [
+    {
+      "workspace": "cathedral-master-deployment",
+      "path": "/Users/rebeccalemke/cathedral-master-deployment",
+      "packages": [
+        {
+          "name": "agent-integration",
+          "version": "1.0.0",
+          "path": "packages/agent-integration/package.json",
+          "description": "Agent Integration - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "arcana",
+          "version": "1.0.0",
+          "path": "packages/arcana/package.json",
+          "description": "Arcana - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "archetypal-engine",
+          "version": "1.0.0",
+          "path": "packages/archetypal-engine/package.json",
+          "description": "Archetypal - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/art-engine-core",
+          "version": "1.0.0",
+          "path": "packages/art-engine-core/package.json",
+          "description": "Art Engine - Sacred Geometry & Visual Creation for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/art-generation-node",
+          "version": "1.0.0",
+          "path": "packages/art-generation-node/package.json",
+          "description": "High-end art generation and pattern science node connected to real data",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/art-standards-core",
+          "version": "1.0.0",
+          "path": "packages/art-standards-core/package.json",
+          "description": "Art Standards - Museum-Grade Quality & Sacred Geometry for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "art-systems",
+          "version": "1.0.0",
+          "path": "packages/art-systems/package.json",
+          "description": "Art Systems - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "atelier-constitution",
+          "version": "1.0.0",
+          "path": "packages/atelier-constitution/package.json",
+          "description": "Atelier Constitution - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/avatar-experience-system",
+          "version": "1.0.0",
+          "path": "packages/avatar-experience-system/package.json",
+          "description": "Avatar Experience System - Multi-modal fractal avatar experiences with Liber Arcanae integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/body-of-god-core",
+          "version": "1.0.0",
+          "path": "packages/body-of-god-core/package.json",
+          "description": "Anatomy of the Body of God - Tree of Life (Sephiroth) Technical Implementation",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/brain",
+          "version": "1.0.0",
+          "path": "packages/brain/package.json",
+          "description": "Brain - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/cataract-book-scanner",
+          "version": "1.0.0",
+          "path": "packages/cataract-book-scanner/package.json",
+          "description": "Cataract: Professional book-to-archetype scanner for public domain books with sacred geometry precision",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-144",
+          "version": "1.0.0",
+          "path": "packages/cathedral-144/package.json",
+          "description": "Cathedral 144 - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/cathedral-architect",
+          "version": "1.0.0",
+          "path": "packages/cathedral-architect/package.json",
+          "description": "🏛️ Cathedral Architect Engine - Transforms Codex nodes into explorable chambers",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-audio-synthesis",
+          "version": "1.0.0",
+          "path": "packages/cathedral-audio-synthesis/package.json",
+          "description": "Cathedral Audio Synthesis - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-data-core",
+          "version": "1.0.0",
+          "path": "packages/cathedral-data-core/package.json",
+          "description": "Cathedral Data - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/design-library",
+          "version": "1.0.0",
+          "path": "packages/cathedral-design-library/package.json",
+          "description": "Figma-style design library integrating Codex 144:99, Liber Arcanae, and Fusion Kink",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/fusion-kink-engine",
+          "version": "1.0.0",
+          "path": "packages/cathedral-fusion-kink-engine/package.json",
+          "description": "Liber Arcanae Codex Abyssiae - 78-card tarot system mirroring Codex 144:99",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-integration-bridge",
+          "version": "1.0.0",
+          "path": "packages/cathedral-integration-bridge/package.json",
+          "description": "Cathedral Integration Bridge - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-liber-arcanae-bridge",
+          "version": "1.0.0",
+          "path": "packages/cathedral-liber-arcanae-bridge/package.json",
+          "description": "Cathedral Liber Arcanae Bridge - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/lightweight-library",
+          "version": "1.0.0",
+          "path": "packages/cathedral-lightweight-library/package.json",
+          "description": "Expansive but lightweight library system for the Cathedral of Circuits",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/logo-system",
+          "version": "1.0.0",
+          "path": "packages/cathedral-logo-system/package.json",
+          "description": "Museum-quality animated logos and mystical branding for Cathedral of Circuits",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/plugin-system",
+          "version": "1.0.0",
+          "path": "packages/cathedral-plugin-system/package.json",
+          "description": "Unified plugin system for Codex 144:99, Liber Arcanae, and Fusion Kink integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-rpg-inventory-system",
+          "version": "1.0.0",
+          "path": "packages/cathedral-rpg-inventory-system/package.json",
+          "description": "Cathedral Rpg Inventory System - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/sqlite-persistence",
+          "version": "1.0.0",
+          "path": "packages/cathedral-sqlite-persistence/package.json",
+          "description": "Robust SQLite database integration for Cathedral Professional Design Suite with Node.js v25 support",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-style",
+          "version": "1.0.0",
+          "path": "packages/cathedral-style/package.json",
+          "description": "Cathedral Style - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-synthesis-core",
+          "version": "1.0.0",
+          "path": "packages/cathedral-synthesis-core/package.json",
+          "description": "Cathedral Synthesis - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-visual-engine",
+          "version": "1.0.0",
+          "path": "packages/cathedral-visual-engine/package.json",
+          "description": "Cathedral Visual - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "character-alchemical-art",
+          "version": "1.0.0",
+          "path": "packages/character-alchemical-art/package.json",
+          "description": "Character Alchemical Art - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/circuit-craft-creative-game",
+          "version": "1.0.0",
+          "path": "packages/circuit-craft-creative-game/package.json",
+          "description": "CircuitCraft: Non-Linear Creative Construction Game for High-Tech Creatives",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/circuitum99-arcanae-cyoa",
+          "version": "1.0.0",
+          "path": "packages/circuitum99-arcanae-cyoa/package.json",
+          "description": "Circuitum99: Alpha et Omega CYOA Story System for Liber Arcanae",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/circuitum99-arcanae-cyoa",
+          "version": "1.0.0",
+          "path": "packages/circuitum99-core/package.json",
+          "description": "Circuitum99: Alpha et Omega CYOA Story System for Liber Arcanae",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "codex-144",
+          "version": "1.0.0",
+          "path": "packages/codex-144/package.json",
+          "description": "Codex 144 - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/codex-144",
+          "version": "1.0.0",
+          "path": "packages/codex-144-99/data/package.json",
+          "description": "codex-144 package",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/codex-144-99",
+          "version": "1.0.0",
+          "path": "packages/codex-144-99/package.json",
+          "description": "📚 Codex 144:99 Sacred Library - 144 Nodes of Mystical Knowledge with Global Research Integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "codex-144-99-core",
+          "version": "1.0.0",
+          "path": "packages/codex-144-99-core/package.json",
+          "description": "Codex 144 99 - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/codex-engine",
+          "version": "1.0.0",
+          "path": "packages/codex-engine/package.json",
+          "description": "Codex Engine - Core processing engine for Codex 144:99 nodes and data structures",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "codex-game-bridge",
+          "version": "1.0.0",
+          "path": "packages/codex-game-bridge/package.json",
+          "description": "Codex Game Bridge - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/codex-musical-system",
+          "version": "1.0.0",
+          "path": "packages/codex-musical-system/package.json",
+          "description": "Codex 144:99 Musical System - Sacred tones and harmonic structures",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/config",
+          "version": "1.0.0",
+          "path": "packages/config/package.json",
+          "description": "Shared configuration and constants for Cathedral monorepo",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "connections",
+          "version": "1.0.0",
+          "path": "packages/connections/package.json",
+          "description": "Connections - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "consciousness-aware-creative",
+          "version": "1.0.0",
+          "path": "packages/consciousness-aware-creative/package.json",
+          "description": "Consciousness Aware Creative - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/core",
+          "version": "1.0.0",
+          "path": "packages/core/package.json",
+          "description": "Core node logic and JSON data for Codex 144:99 + Morgan Le Fay Avalon system",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/cosmogenesis",
+          "version": "1.0.0",
+          "path": "packages/cosmogenesis/package.json",
+          "description": "Cathedral of Circuits package",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/crystals",
+          "version": "1.0.0",
+          "path": "packages/crystals/package.json",
+          "description": "Crystals - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "daimon-gear",
+          "version": "1.0.0",
+          "path": "packages/daimon-gear/package.json",
+          "description": "Daimon Gear - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/debug-system-core",
+          "version": "1.0.0",
+          "path": "packages/debug-system-core/package.json",
+          "description": "Enterprise Debug System - Comprehensive error tracking and diagnostics for Cathedral ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "design-mathematics-core",
+          "version": "1.0.0",
+          "path": "packages/design-mathematics-core/package.json",
+          "description": "Design Mathematics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/divine-design-core",
+          "version": "1.0.0",
+          "path": "packages/divine-design-core/package.json",
+          "description": "Divine Design System - Alchemy, Hermeticism & Sacred Architecture for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/fractal-flames-daemon-deity",
+          "version": "1.0.0",
+          "path": "packages/fractal-flames-daemon-deity/package.json",
+          "description": "Fractal Flames Library - Real Elements, Daimons, and Deities as Fractals",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "fusion-creative-suite",
+          "version": "1.0.0",
+          "path": "packages/fusion-creative-suite/package.json",
+          "description": "Fusion Creative Suite - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "fusion-kink-core",
+          "version": "1.0.0",
+          "path": "packages/fusion-kink-core/package.json",
+          "description": "Rebis - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/fusion-kink-generator",
+          "version": "1.0.0",
+          "path": "packages/fusion-kink-generator/package.json",
+          "description": "Alchemical Fusion Generator - Quality-focused synthesis patterns (a + b = d)",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "fusionkink-engine",
+          "version": "1.0.0",
+          "path": "packages/fusionkink-engine/package.json",
+          "description": "Fusionkink - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/game-design-core",
+          "version": "1.0.0",
+          "path": "packages/game-design-core/package.json",
+          "description": "Game Design Engine - Interactive Experiences & RPG Mechanics for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/game-engine",
+          "version": "1.0.0",
+          "path": "packages/game-engine/package.json",
+          "description": "Guild Wars-style RPG engine with Codex 144:99 integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "game-mathematics-core",
+          "version": "1.0.0",
+          "path": "packages/game-mathematics-core/package.json",
+          "description": "Game Mathematics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "game-world",
+          "version": "1.0.0",
+          "path": "packages/game-world/package.json",
+          "description": "Game World - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/gem-tower-engine",
+          "version": "1.0.0",
+          "path": "packages/gem-tower-engine/package.json",
+          "description": "Gem Tower Engine - Crystal and gem visualization system",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/godot-codex-14499",
+          "version": "1.0.0",
+          "path": "packages/godot-codex-14499/package.json",
+          "description": "Godot Codex 144:99 - Sacred lattice system for games and applications",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/godot-design-studio",
+          "version": "1.0.0",
+          "path": "packages/godot-design-studio/package.json",
+          "description": "Free Godot Design Studio - Figma-like design tools for mystical interfaces",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/godot-liber-arcanae",
+          "version": "1.0.0",
+          "path": "packages/godot-liber-arcanae/package.json",
+          "description": "Godot Liber Arcanae - 78-card living tarot system for mystical games",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/godot-vfx-library",
+          "version": "1.0.0",
+          "path": "packages/godot-vfx-library/package.json",
+          "description": "Free Godot VFX Library - Sacred Geometry & Mystical Effects for Cathedral of Circuits",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "graphs",
+          "version": "1.0.0",
+          "path": "packages/graphs/package.json",
+          "description": "Graphs - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/hall-of-ateliers",
+          "version": "1.0.0",
+          "path": "packages/hall-of-ateliers/package.json",
+          "description": "Master artistic creation and collaboration systems - Professional-grade tools for painters, sculptors, writers, musicians, and digital artists",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/health-map-core",
+          "version": "1.0.0",
+          "path": "packages/health-map-core/package.json",
+          "description": "Enterprise Health Map System - Comprehensive catalog and health monitoring for Cathedral ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "holographic-interface",
+          "version": "1.0.0",
+          "path": "packages/holographic-interface/package.json",
+          "description": "Holographic Interface - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/inter-app-communicator",
+          "version": "1.0.0",
+          "path": "packages/inter-app-communicator/package.json",
+          "description": "Inter-app communication system for Cathedral mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "kira-audio-engine",
+          "version": "1.0.0",
+          "path": "packages/kira-audio-engine/package.json",
+          "description": "Kira Audio - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/labs",
+          "version": "1.0.0",
+          "path": "packages/labs/package.json",
+          "description": "Labs - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/liber-arcanae",
+          "version": "1.0.0",
+          "path": "packages/liber-arcanae/package.json",
+          "description": "Liber Arcanae - Sacred mystical library with Codex 144:99 integration, fusion kink mechanics, and tarot CLI tools.",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "liber-arcanae-core",
+          "version": "1.0.0",
+          "path": "packages/liber-arcanae-core/package.json",
+          "description": "Liber Arcanae - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral-real/liber-arcanae-tools",
+          "version": "1.0.0",
+          "path": "packages/liber-arcanae-tools/package.json",
+          "description": "Liber Arcanae Tools - Professional Creative Canvas for Circuitum 99",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "living-canon-engine",
+          "version": "1.0.0",
+          "path": "packages/living-canon-engine/package.json",
+          "description": "Living Canon - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "living-libraries",
+          "version": "1.0.0",
+          "path": "packages/living-libraries/package.json",
+          "description": "Living Libraries - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/luxcrux",
+          "version": "1.0.0",
+          "path": "packages/luxcrux/package.json",
+          "description": "Luxcrux - Elemental directions and spatial consciousness",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "magnum-opus",
+          "version": "1.0.0",
+          "path": "packages/magnum-opus/package.json",
+          "description": "Magnum Opus - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "mobile-optimization",
+          "version": "1.0.0",
+          "path": "packages/mobile-optimization/package.json",
+          "description": "Mobile Optimization - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "moonchild-scanner",
+          "version": "1.0.0",
+          "path": "packages/moonchild-scanner/package.json",
+          "description": "Moonchild Scanner - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "museum-sources",
+          "version": "1.0.0",
+          "path": "packages/museum-sources/package.json",
+          "description": "Museum Sources - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/music-engine-core",
+          "version": "1.0.0",
+          "path": "packages/music-engine-core/package.json",
+          "description": "Music Engine - Sacred Frequencies & Harmonic Synthesis for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "mystery-house-core",
+          "version": "1.0.0",
+          "path": "packages/mystery-house-core/package.json",
+          "description": "Mystery House - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/mystical-data-unified",
+          "version": "1.0.0",
+          "path": "packages/mystical-data-unified/package.json",
+          "description": "Unified mystical data system - Tarot, astrology, sacred texts integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/mystical-sound-engine",
+          "version": "1.0.0",
+          "path": "packages/mystical-sound-engine/package.json",
+          "description": "Real-time audio synthesis engine for mystical research and meditation",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/node-tree-engine",
+          "version": "1.0.0",
+          "path": "packages/node-tree-engine/package.json",
+          "description": "Complete Node Tree Health System for 99 Mystical Codex Nodes with Health Monitoring, Interactive Maps, and Dynamic Stories",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "physics-cannon-core",
+          "version": "1.0.0",
+          "path": "packages/physics-cannon-core/package.json",
+          "description": "Physics Cannon - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/portal-system",
+          "version": "1.0.0",
+          "path": "packages/portal-system/package.json",
+          "description": "Portal System - Navigation and transition system for Cathedral experiences",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-collaboration-engine",
+          "version": "1.0.0",
+          "path": "packages/professional-collaboration-engine/package.json",
+          "description": "Professional Collaboration - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-export-integration",
+          "version": "1.0.0",
+          "path": "packages/professional-export-integration/package.json",
+          "description": "Professional Export Integration - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-quality-control",
+          "version": "1.0.0",
+          "path": "packages/professional-quality-control/package.json",
+          "description": "Professional Quality Control - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-suite",
+          "version": "1.0.0",
+          "path": "packages/professional-suite/package.json",
+          "description": "Professional Suite - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-typography-engine",
+          "version": "1.0.0",
+          "path": "packages/professional-typography-engine/package.json",
+          "description": "Professional Typography - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-vector-engine",
+          "version": "1.0.0",
+          "path": "packages/professional-vector-engine/package.json",
+          "description": "Professional Vector - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "registry-learning-validation",
+          "version": "1.0.0",
+          "path": "packages/registry-learning-validation/package.json",
+          "description": "Registry Learning Validation - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/sacred-geometry-core",
+          "version": "1.0.0",
+          "path": "packages/sacred-geometry-core/package.json",
+          "description": "Sacred Geometry Core - Fractal settings and geometry nodes for Codex 144:99 integration.",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sacred-geometry-math",
+          "version": "1.0.0",
+          "path": "packages/sacred-geometry-math/package.json",
+          "description": "Sacred Geometry Math - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sacred-geometry-simd",
+          "version": "1.0.0",
+          "path": "packages/sacred-geometry-simd/package.json",
+          "description": "Sacred Geometry Simd - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sacred-mathematics-core",
+          "version": "1.0.0",
+          "path": "packages/sacred-mathematics-core/package.json",
+          "description": "Sacred Mathematics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "scanner",
+          "version": "1.0.0",
+          "path": "packages/scanner/package.json",
+          "description": "Scanner - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/science-engine-core",
+          "version": "1.0.0",
+          "path": "packages/science-engine-core/package.json",
+          "description": "Science Engine - Empirical Research & Experimentation for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/shared",
+          "version": "1.0.0",
+          "path": "packages/shared/package.json",
+          "description": "Cathedral shared utilities and core systems",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "simple-learning-validation",
+          "version": "1.0.0",
+          "path": "packages/simple-learning-validation/package.json",
+          "description": "Simple Learning Validation - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/smooth-movement-system",
+          "version": "1.0.0",
+          "path": "packages/smooth-movement-system/package.json",
+          "description": "Smooth Movement System - Fluid animation and motion controls",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sonic-physics-engine",
+          "version": "1.0.0",
+          "path": "packages/sonic-physics-engine/package.json",
+          "description": "Sonic Physics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/soul",
+          "version": "1.0.0",
+          "path": "packages/soul/package.json",
+          "description": "Soul - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sound-mathematics-core",
+          "version": "1.0.0",
+          "path": "packages/sound-mathematics-core/package.json",
+          "description": "Sound Mathematics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "spells",
+          "version": "1.0.0",
+          "path": "packages/spells/package.json",
+          "description": "Spells - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "spiral-learning-engine",
+          "version": "1.0.0",
+          "path": "packages/spiral-learning-engine/package.json",
+          "description": "Spiral Learning - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/stone-grimoire",
+          "version": "1.0.0",
+          "path": "packages/stone-grimoire/package.json",
+          "description": "Stone Grimoire - Body nodes and archive systems",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "stone-grimoire-core",
+          "version": "1.0.0",
+          "path": "packages/stone-grimoire-core/package.json",
+          "description": "Stone Grimoire - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "stone-grimoire-library-engine",
+          "version": "1.0.0",
+          "path": "packages/stone-grimoire-library-engine/package.json",
+          "description": "Stone Grimoire Library - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "story-engine",
+          "version": "1.0.0",
+          "path": "packages/story-engine/package.json",
+          "description": "Story - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/synth",
+          "version": "1.0.0",
+          "path": "packages/synth/package.json",
+          "description": "Synth - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "synth-design-math-core",
+          "version": "1.0.0",
+          "path": "packages/synth-design-math-core/package.json",
+          "description": "Synth Design Math - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "synth-labs",
+          "version": "1.0.0",
+          "path": "packages/synth-labs/package.json",
+          "description": "Synth Labs - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "synth-spells",
+          "version": "1.0.0",
+          "path": "packages/synth-spells/package.json",
+          "description": "Synth Spells - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/synthesis-engine",
+          "version": "1.0.0",
+          "path": "packages/synthesis-engine/package.json",
+          "description": "Synthesis Engine - Core synthesis and fusion system for Cathedral projects",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "tarot-art",
+          "version": "1.0.0",
+          "path": "packages/tarot-art/package.json",
+          "description": "Tarot Art - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "tarot-engine",
+          "version": "1.0.0",
+          "path": "packages/tarot-engine/package.json",
+          "description": "Tarot - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "tarot-reader",
+          "version": "1.0.0",
+          "path": "packages/tarot-reader/package.json",
+          "description": "Tarot Reader - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/tesseract-bridge",
+          "version": "1.0.0",
+          "path": "packages/tesseract-bridge/package.json",
+          "description": "Tesseract Bridge - Kabbalistic paths and sacred geometry",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "tesseract-bridge-core",
+          "version": "1.0.0",
+          "path": "packages/tesseract-bridge-core/package.json",
+          "description": "Tesseract - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/tesseract-bridge-hub",
+          "version": "1.0.0",
+          "path": "packages/tesseract-bridge-hub/package.json",
+          "description": "Tesseract Bridge Hub - Central orchestration system for all Cathedral systems",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/three-engine",
+          "version": "1.0.0",
+          "path": "packages/three-engine/package.json",
+          "description": "Three.js Engine wrapper for Cathedral 3D visualizations",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "trauma-safe-ui",
+          "version": "1.0.0",
+          "path": "packages/trauma-safe-ui/package.json",
+          "description": "Trauma Safe Ui - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/trinity-architecture",
+          "version": "1.0.0",
+          "path": "packages/trinity-architecture/package.json",
+          "description": "Body/Soul/Spirit consciousness evolution platform with 144:99 ratio compliance",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "trinity-v1-1-core",
+          "version": "1.0.0",
+          "path": "packages/trinity-v1-1-core/package.json",
+          "description": "Trinity V1 1 - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/true-will-system",
+          "version": "1.0.0",
+          "path": "packages/true-will-system/package.json",
+          "description": "Thelemic True Will system for discovering and aligning with True Will",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/types",
+          "version": "1.0.0",
+          "path": "packages/types/package.json",
+          "description": "Types - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/ui",
+          "version": "1.0.0",
+          "path": "packages/ui/package.json",
+          "description": "Cathedral of Circuits - Shared UI Components",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/unified-codex-core",
+          "version": "1.0.0",
+          "path": "packages/unified-codex-core/package.json",
+          "description": "Unified Codex Engine - Mirrors all engines with mode transitions (Art → Music → Game → Design → Science → Mathematics)",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/unified-codex-extractor",
+          "version": "1.0.0",
+          "path": "packages/unified-codex-extractor/package.json",
+          "description": "Professional book art extraction system for unified codex - treats science, art, technology, and all knowledge domains as equal",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "unified-creative-system",
+          "version": "1.0.0",
+          "path": "packages/unified-creative-system/package.json",
+          "description": "Unified Creative System - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral-trinity/accessibility",
+          "version": "1.0.0",
+          "path": "packages/universal-accessibility/package.json",
+          "description": "Cathedral v1.0 Universal Accessibility Engine - ND Support, Cognitive Load Optimization, Trauma-Safe Environments",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "visionary-design-system",
+          "version": "1.0.0",
+          "path": "packages/visionary-design-system/package.json",
+          "description": "Visionary Design System - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/visual-tools-connector",
+          "version": "1.0.0",
+          "path": "packages/visual-tools-connector/package.json",
+          "description": "Connects all visual and design tools together",
+          "category": "package",
+          "error": null
+        }
+      ],
+      "tools": [],
+      "scripts": [],
+      "apps": [
+        {
+          "name": "cathedral-connection-map",
+          "version": "1.0.0",
+          "path": "apps/cathedral-connection-map/package.json",
+          "description": "",
+          "error": null
+        },
+        {
+          "name": "cathedral-design-studio",
+          "version": "1.0.0",
+          "path": "apps/cathedral-design-studio/package.json",
+          "description": "",
+          "error": null
+        },
+        {
+          "name": "cathedral-immersive-creative-studio",
+          "version": "1.0.0",
+          "path": "apps/cathedral-immersive-creative-studio/package.json",
+          "description": "",
+          "error": null
+        },
+        {
+          "name": "cathedral-of-circuits",
+          "version": "1.0.0",
+          "path": "apps/cathedral-of-circuits/package.json",
+          "description": "Lightweight sacred technology monorepo - runs entirely on free hosting",
+          "error": null
+        },
+        {
+          "path": "apps/cathedral-of-circuits/packages/intuitive-settings-system/package.json",
+          "error": "Unexpected token 'e', \"ew{\n  \"nam\"... is not valid JSON",
+          "name": null
+        },
+        {
+          "name": "@cathedral/portal-system",
+          "version": "1.0.0",
+          "path": "apps/cathedral-of-circuits/packages/portal-system/package.json",
+          "description": "Research-based portal and transition system inspired by Skyrim, Fable, and modern RPG design",
+          "error": null
+        },
+        {
+          "name": "@cathedral/smooth-movement-system",
+          "version": "1.0.0",
+          "path": "apps/cathedral-of-circuits/packages/smooth-movement-system/package.json",
+          "description": "Research-based movement system inspired by Hades, Celeste, and modern game design",
+          "error": null
+        },
+        {
+          "name": "@cathedral/cathedral-unity",
+          "version": "1.0.0",
+          "path": "apps/cathedral-unity/package.json",
+          "description": "Cathedral Unity - Professional Creative Technology Platform",
+          "error": null
+        },
+        {
+          "name": "cosmogenesis-visualizer",
+          "version": "1.0.0",
+          "path": "apps/cosmogenesis-visualizer/package.json",
+          "description": "",
+          "error": null
+        },
+        {
+          "name": "cathedral-spell-frontend",
+          "version": "1.0.0",
+          "path": "apps/frontend/package.json",
+          "description": "",
+          "error": null
+        },
+        {
+          "name": "@cathedral/circuitum99",
+          "version": "1.0.0",
+          "path": "apps/learning-device/apps/circuitum-studio/circuitum99/package.json",
+          "description": "Circuitum99 - Mystical circuit visualization with gem tower integration and sacred geometry",
+          "error": null
+        },
+        {
+          "name": "@bekalah/cathedral-monorepo",
+          "version": "1.0.0",
+          "path": "apps/learning-device/package.json",
+          "description": "Cathedral of Circuits - Living Grimoire Engine with 22 Tradition Masters & Fusion Kink",
+          "error": null
+        },
+        {
+          "name": "@cathedral/liber-arcanae-app",
+          "version": "1.0.0",
+          "path": "apps/liber-arcanae/package.json",
+          "description": "22 Living Tarot - Hermetic RPG Interface",
+          "error": null
+        },
+        {
+          "name": "@bekalah/liber-arcanae-tarot",
+          "version": "1.0.0",
+          "path": "apps/liber-arcanae-tarot/package.json",
+          "description": "🃏 Liber Arcanae Tarot - Living Major Arcana App with Interactive Readings & Sacred Art",
+          "error": null
+        },
+        {
+          "name": "living-library",
+          "version": "1.0.0",
+          "path": "apps/living-library/package.json",
+          "description": "",
+          "error": null
+        },
+        {
+          "name": "master-catalog-browser",
+          "version": "1.0.0",
+          "path": "apps/master-catalog-browser/package.json",
+          "description": "",
+          "error": null
+        },
+        {
+          "name": "@cathedral/mystical-treasure-hunt",
+          "version": "1.0.0",
+          "path": "apps/mystical-treasure-hunt/package.json",
+          "description": "Real-world mystical treasure hunt game with visionary art realms, arcana-specific missions, and permanent knowledge registry",
+          "error": null
+        },
+        {
+          "name": "rosslyn-explorer",
+          "version": "1.0.0",
+          "path": "apps/rosslyn-explorer/package.json",
+          "description": "",
+          "error": null
+        },
+        {
+          "name": "stone-grimoire",
+          "version": "1.0.0",
+          "path": "apps/stone-grimoire/package.json",
+          "description": "",
+          "error": null
+        },
+        {
+          "name": "@cathedral/synth-lab",
+          "version": "1.0.0",
+          "path": "apps/synth-lab/package.json",
+          "description": "",
+          "error": null
+        },
+        {
+          "name": "@cathedral/tarot-arena",
+          "version": "1.0.0",
+          "path": "apps/tarot-arena/package.json",
+          "description": "",
+          "error": null
+        },
+        {
+          "name": "@cathedral/test-ground",
+          "version": "1.0.0",
+          "path": "apps/test-ground/package.json",
+          "description": "",
+          "error": null
+        },
+        {
+          "name": "visual-systems-hub",
+          "version": "1.0.0",
+          "path": "apps/visual-systems-hub/package.json",
+          "description": "",
+          "error": null
+        },
+        {
+          "name": "@cathedral/web",
+          "version": "1.0.0",
+          "path": "apps/web/package.json",
+          "description": "Next.js web app for Avalon labs with Three.js, Babylon.js, p5.js, and Tone.js",
+          "error": null
+        },
+        {
+          "name": "@cathedral/web-from-master",
+          "version": "1.0.0",
+          "path": "apps/web-from-master/package.json",
+          "description": "Web application from cathedral-master for integration and comparison",
+          "error": null
+        },
+        {
+          "path": "apps/worker/package.json",
+          "error": "Unexpected non-whitespace character after JSON at position 434 (line 19 column 4)",
+          "name": null
+        }
+      ],
+      "exists": true,
+      "packageJson": {
+        "name": "cathedral-master-deployment",
+        "version": "1.0.0",
+        "description": "Cathedral Master Deployment - Monorepo",
+        "scripts": 131
+      },
+      "turboJson": true,
+      "workspaceFile": null,
+      "errors": []
+    },
+    {
+      "workspace": "cathedral-fixed-clean",
+      "path": "/Users/rebeccalemke/cathedral-fixed-clean",
+      "packages": [
+        {
+          "name": "agent-integration",
+          "version": "1.0.0",
+          "path": "packages/agent-integration/package.json",
+          "description": "Agent Integration - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "arcana",
+          "version": "1.0.0",
+          "path": "packages/arcana/package.json",
+          "description": "Arcana - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "archetypal-engine",
+          "version": "1.0.0",
+          "path": "packages/archetypal-engine/package.json",
+          "description": "Archetypal - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/art-engine-core",
+          "version": "1.0.0",
+          "path": "packages/art-engine-core/package.json",
+          "description": "Art Engine - Sacred Geometry & Visual Creation for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/art-generation-node",
+          "version": "1.0.0",
+          "path": "packages/art-generation-node/package.json",
+          "description": "High-end art generation and pattern science node connected to real data",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/art-standards-core",
+          "version": "1.0.0",
+          "path": "packages/art-standards-core/package.json",
+          "description": "Art Standards - Museum-Grade Quality & Sacred Geometry for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "art-systems",
+          "version": "1.0.0",
+          "path": "packages/art-systems/package.json",
+          "description": "Art Systems - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "atelier-constitution",
+          "version": "1.0.0",
+          "path": "packages/atelier-constitution/package.json",
+          "description": "Atelier Constitution - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/avatar-experience-system",
+          "version": "1.0.0",
+          "path": "packages/avatar-experience-system/package.json",
+          "description": "Avatar Experience System - Multi-modal fractal avatar experiences with Liber Arcanae integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/brain",
+          "version": "1.0.0",
+          "path": "packages/brain/package.json",
+          "description": "Brain - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/cataract-book-scanner",
+          "version": "1.0.0",
+          "path": "packages/cataract-book-scanner/package.json",
+          "description": "Cataract: Professional book-to-archetype scanner for public domain books with sacred geometry precision",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-144",
+          "version": "1.0.0",
+          "path": "packages/cathedral-144/package.json",
+          "description": "Cathedral 144 - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/cathedral-architect",
+          "version": "1.0.0",
+          "path": "packages/cathedral-architect/package.json",
+          "description": "🏛️ Cathedral Architect Engine - Transforms Codex nodes into explorable chambers",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-audio-synthesis",
+          "version": "1.0.0",
+          "path": "packages/cathedral-audio-synthesis/package.json",
+          "description": "Cathedral Audio Synthesis - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-data-core",
+          "version": "1.0.0",
+          "path": "packages/cathedral-data-core/package.json",
+          "description": "Cathedral Data - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/design-library",
+          "version": "1.0.0",
+          "path": "packages/cathedral-design-library/package.json",
+          "description": "Figma-style design library integrating Codex 144:99, Liber Arcanae, and Fusion Kink",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/fusion-kink-engine",
+          "version": "1.0.0",
+          "path": "packages/cathedral-fusion-kink-engine/package.json",
+          "description": "Liber Arcanae Codex Abyssiae - 78-card tarot system mirroring Codex 144:99",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-integration-bridge",
+          "version": "1.0.0",
+          "path": "packages/cathedral-integration-bridge/package.json",
+          "description": "Cathedral Integration Bridge - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-liber-arcanae-bridge",
+          "version": "1.0.0",
+          "path": "packages/cathedral-liber-arcanae-bridge/package.json",
+          "description": "Cathedral Liber Arcanae Bridge - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/lightweight-library",
+          "version": "1.0.0",
+          "path": "packages/cathedral-lightweight-library/package.json",
+          "description": "Expansive but lightweight library system for the Cathedral of Circuits",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/logo-system",
+          "version": "1.0.0",
+          "path": "packages/cathedral-logo-system/package.json",
+          "description": "Museum-quality animated logos and mystical branding for Cathedral of Circuits",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/plugin-system",
+          "version": "1.0.0",
+          "path": "packages/cathedral-plugin-system/package.json",
+          "description": "Unified plugin system for Codex 144:99, Liber Arcanae, and Fusion Kink integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-rpg-inventory-system",
+          "version": "1.0.0",
+          "path": "packages/cathedral-rpg-inventory-system/package.json",
+          "description": "Cathedral Rpg Inventory System - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/sqlite-persistence",
+          "version": "1.0.0",
+          "path": "packages/cathedral-sqlite-persistence/package.json",
+          "description": "Robust SQLite database integration for Cathedral Professional Design Suite with Node.js v25 support",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-style",
+          "version": "1.0.0",
+          "path": "packages/cathedral-style/package.json",
+          "description": "Cathedral Style - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-synthesis-core",
+          "version": "1.0.0",
+          "path": "packages/cathedral-synthesis-core/package.json",
+          "description": "Cathedral Synthesis - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-visual-engine",
+          "version": "1.0.0",
+          "path": "packages/cathedral-visual-engine/package.json",
+          "description": "Cathedral Visual - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "character-alchemical-art",
+          "version": "1.0.0",
+          "path": "packages/character-alchemical-art/package.json",
+          "description": "Character Alchemical Art - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/circuit-craft-creative-game",
+          "version": "1.0.0",
+          "path": "packages/circuit-craft-creative-game/package.json",
+          "description": "CircuitCraft: Non-Linear Creative Construction Game for High-Tech Creatives",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/circuitum99-arcanae-cyoa",
+          "version": "1.0.0",
+          "path": "packages/circuitum99-arcanae-cyoa/package.json",
+          "description": "Circuitum99: Alpha et Omega CYOA Story System for Liber Arcanae",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/circuitum99-arcanae-cyoa",
+          "version": "1.0.0",
+          "path": "packages/circuitum99-core/package.json",
+          "description": "Circuitum99: Alpha et Omega CYOA Story System for Liber Arcanae",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "codex-144",
+          "version": "1.0.0",
+          "path": "packages/codex-144/package.json",
+          "description": "Codex 144 - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/codex-144",
+          "version": "1.0.0",
+          "path": "packages/codex-144-99/data/package.json",
+          "description": "codex-144 package",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/codex-144-99",
+          "version": "1.0.0",
+          "path": "packages/codex-144-99/package.json",
+          "description": "📚 Codex 144:99 Sacred Library - 144 Nodes of Mystical Knowledge with Global Research Integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "codex-144-99-core",
+          "version": "1.0.0",
+          "path": "packages/codex-144-99-core/package.json",
+          "description": "Codex 144 99 - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/codex-engine",
+          "version": "1.0.0",
+          "path": "packages/codex-engine/package.json",
+          "description": "Codex Engine - Core processing engine for Codex 144:99 nodes and data structures",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "codex-game-bridge",
+          "version": "1.0.0",
+          "path": "packages/codex-game-bridge/package.json",
+          "description": "Codex Game Bridge - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/codex-musical-system",
+          "version": "1.0.0",
+          "path": "packages/codex-musical-system/package.json",
+          "description": "Codex 144:99 Musical System - Sacred tones and harmonic structures",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/config",
+          "version": "1.0.0",
+          "path": "packages/config/package.json",
+          "description": "Shared configuration and constants for Cathedral monorepo",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "connections",
+          "version": "1.0.0",
+          "path": "packages/connections/package.json",
+          "description": "Connections - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "consciousness-aware-creative",
+          "version": "1.0.0",
+          "path": "packages/consciousness-aware-creative/package.json",
+          "description": "Consciousness Aware Creative - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/core",
+          "version": "1.0.0",
+          "path": "packages/core/package.json",
+          "description": "Core node logic and JSON data for Codex 144:99 + Morgan Le Fay Avalon system",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/cosmogenesis",
+          "version": "1.0.0",
+          "path": "packages/cosmogenesis/package.json",
+          "description": "Cathedral of Circuits package",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/crystals",
+          "version": "1.0.0",
+          "path": "packages/crystals/package.json",
+          "description": "Crystals - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "daimon-gear",
+          "version": "1.0.0",
+          "path": "packages/daimon-gear/package.json",
+          "description": "Daimon Gear - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/debug-system-core",
+          "version": "1.0.0",
+          "path": "packages/debug-system-core/package.json",
+          "description": "Enterprise Debug System - Comprehensive error tracking and diagnostics for Cathedral ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "design-mathematics-core",
+          "version": "1.0.0",
+          "path": "packages/design-mathematics-core/package.json",
+          "description": "Design Mathematics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/fractal-flames-daemon-deity",
+          "version": "1.0.0",
+          "path": "packages/fractal-flames-daemon-deity/package.json",
+          "description": "Fractal Flames Library - Real Elements, Daimons, and Deities as Fractals",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "fusion-creative-suite",
+          "version": "1.0.0",
+          "path": "packages/fusion-creative-suite/package.json",
+          "description": "Fusion Creative Suite - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "fusion-kink-core",
+          "version": "1.0.0",
+          "path": "packages/fusion-kink-core/package.json",
+          "description": "Rebis - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/fusion-kink-generator",
+          "version": "1.0.0",
+          "path": "packages/fusion-kink-generator/package.json",
+          "description": "Alchemical Fusion Generator - Quality-focused synthesis patterns (a + b = d)",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "fusionkink-engine",
+          "version": "1.0.0",
+          "path": "packages/fusionkink-engine/package.json",
+          "description": "Fusionkink - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/game-design-core",
+          "version": "1.0.0",
+          "path": "packages/game-design-core/package.json",
+          "description": "Game Design Engine - Interactive Experiences & RPG Mechanics for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/game-engine",
+          "version": "1.0.0",
+          "path": "packages/game-engine/package.json",
+          "description": "Guild Wars-style RPG engine with Codex 144:99 integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "game-mathematics-core",
+          "version": "1.0.0",
+          "path": "packages/game-mathematics-core/package.json",
+          "description": "Game Mathematics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "game-world",
+          "version": "1.0.0",
+          "path": "packages/game-world/package.json",
+          "description": "Game World - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/gem-tower-engine",
+          "version": "1.0.0",
+          "path": "packages/gem-tower-engine/package.json",
+          "description": "Gem Tower Engine - Crystal and gem visualization system",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/godot-codex-14499",
+          "version": "1.0.0",
+          "path": "packages/godot-codex-14499/package.json",
+          "description": "Godot Codex 144:99 - Sacred lattice system for games and applications",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/godot-design-studio",
+          "version": "1.0.0",
+          "path": "packages/godot-design-studio/package.json",
+          "description": "Free Godot Design Studio - Figma-like design tools for mystical interfaces",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/godot-liber-arcanae",
+          "version": "1.0.0",
+          "path": "packages/godot-liber-arcanae/package.json",
+          "description": "Godot Liber Arcanae - 78-card living tarot system for mystical games",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/godot-vfx-library",
+          "version": "1.0.0",
+          "path": "packages/godot-vfx-library/package.json",
+          "description": "Free Godot VFX Library - Sacred Geometry & Mystical Effects for Cathedral of Circuits",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "graphs",
+          "version": "1.0.0",
+          "path": "packages/graphs/package.json",
+          "description": "Graphs - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/hall-of-ateliers",
+          "version": "1.0.0",
+          "path": "packages/hall-of-ateliers/package.json",
+          "description": "Master artistic creation and collaboration systems - Professional-grade tools for painters, sculptors, writers, musicians, and digital artists",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/health-map-core",
+          "version": "1.0.0",
+          "path": "packages/health-map-core/package.json",
+          "description": "Enterprise Health Map System - Comprehensive catalog and health monitoring for Cathedral ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "holographic-interface",
+          "version": "1.0.0",
+          "path": "packages/holographic-interface/package.json",
+          "description": "Holographic Interface - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/inter-app-communicator",
+          "version": "1.0.0",
+          "path": "packages/inter-app-communicator/package.json",
+          "description": "Inter-app communication system for Cathedral mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "kira-audio-engine",
+          "version": "1.0.0",
+          "path": "packages/kira-audio-engine/package.json",
+          "description": "Kira Audio - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/labs",
+          "version": "1.0.0",
+          "path": "packages/labs/package.json",
+          "description": "Labs - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/liber-arcanae",
+          "version": "1.0.0",
+          "path": "packages/liber-arcanae/package.json",
+          "description": "Liber Arcanae - Sacred mystical library with Codex 144:99 integration, fusion kink mechanics, and tarot CLI tools.",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "liber-arcanae-core",
+          "version": "1.0.0",
+          "path": "packages/liber-arcanae-core/package.json",
+          "description": "Liber Arcanae - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral-real/liber-arcanae-tools",
+          "version": "1.0.0",
+          "path": "packages/liber-arcanae-tools/package.json",
+          "description": "Liber Arcanae Tools - Professional Creative Canvas for Circuitum 99",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "living-canon-engine",
+          "version": "1.0.0",
+          "path": "packages/living-canon-engine/package.json",
+          "description": "Living Canon - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "living-libraries",
+          "version": "1.0.0",
+          "path": "packages/living-libraries/package.json",
+          "description": "Living Libraries - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/luxcrux",
+          "version": "1.0.0",
+          "path": "packages/luxcrux/package.json",
+          "description": "Luxcrux - Elemental directions and spatial consciousness",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "magnum-opus",
+          "version": "1.0.0",
+          "path": "packages/magnum-opus/package.json",
+          "description": "Magnum Opus - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "mobile-optimization",
+          "version": "1.0.0",
+          "path": "packages/mobile-optimization/package.json",
+          "description": "Mobile Optimization - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "moonchild-scanner",
+          "version": "1.0.0",
+          "path": "packages/moonchild-scanner/package.json",
+          "description": "Moonchild Scanner - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "museum-sources",
+          "version": "1.0.0",
+          "path": "packages/museum-sources/package.json",
+          "description": "Museum Sources - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/music-engine-core",
+          "version": "1.0.0",
+          "path": "packages/music-engine-core/package.json",
+          "description": "Music Engine - Sacred Frequencies & Harmonic Synthesis for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "mystery-house-core",
+          "version": "1.0.0",
+          "path": "packages/mystery-house-core/package.json",
+          "description": "Mystery House - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/mystical-data-unified",
+          "version": "1.0.0",
+          "path": "packages/mystical-data-unified/package.json",
+          "description": "Unified mystical data system - Tarot, astrology, sacred texts integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/mystical-sound-engine",
+          "version": "1.0.0",
+          "path": "packages/mystical-sound-engine/package.json",
+          "description": "Real-time audio synthesis engine for mystical research and meditation",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/node-tree-engine",
+          "version": "1.0.0",
+          "path": "packages/node-tree-engine/package.json",
+          "description": "Complete Node Tree Health System for 99 Mystical Codex Nodes with Health Monitoring, Interactive Maps, and Dynamic Stories",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "physics-cannon-core",
+          "version": "1.0.0",
+          "path": "packages/physics-cannon-core/package.json",
+          "description": "Physics Cannon - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/portal-system",
+          "version": "1.0.0",
+          "path": "packages/portal-system/package.json",
+          "description": "Portal System - Navigation and transition system for Cathedral experiences",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-collaboration-engine",
+          "version": "1.0.0",
+          "path": "packages/professional-collaboration-engine/package.json",
+          "description": "Professional Collaboration - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-export-integration",
+          "version": "1.0.0",
+          "path": "packages/professional-export-integration/package.json",
+          "description": "Professional Export Integration - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-quality-control",
+          "version": "1.0.0",
+          "path": "packages/professional-quality-control/package.json",
+          "description": "Professional Quality Control - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-suite",
+          "version": "1.0.0",
+          "path": "packages/professional-suite/package.json",
+          "description": "Professional Suite - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-typography-engine",
+          "version": "1.0.0",
+          "path": "packages/professional-typography-engine/package.json",
+          "description": "Professional Typography - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-vector-engine",
+          "version": "1.0.0",
+          "path": "packages/professional-vector-engine/package.json",
+          "description": "Professional Vector - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "registry-learning-validation",
+          "version": "1.0.0",
+          "path": "packages/registry-learning-validation/package.json",
+          "description": "Registry Learning Validation - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/sacred-geometry-core",
+          "version": "1.0.0",
+          "path": "packages/sacred-geometry-core/package.json",
+          "description": "Sacred Geometry Core - Fractal settings and geometry nodes for Codex 144:99 integration.",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sacred-geometry-math",
+          "version": "1.0.0",
+          "path": "packages/sacred-geometry-math/package.json",
+          "description": "Sacred Geometry Math - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sacred-geometry-simd",
+          "version": "1.0.0",
+          "path": "packages/sacred-geometry-simd/package.json",
+          "description": "Sacred Geometry Simd - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sacred-mathematics-core",
+          "version": "1.0.0",
+          "path": "packages/sacred-mathematics-core/package.json",
+          "description": "Sacred Mathematics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "scanner",
+          "version": "1.0.0",
+          "path": "packages/scanner/package.json",
+          "description": "Scanner - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/science-engine-core",
+          "version": "1.0.0",
+          "path": "packages/science-engine-core/package.json",
+          "description": "Science Engine - Empirical Research & Experimentation for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/shared",
+          "version": "1.0.0",
+          "path": "packages/shared/package.json",
+          "description": "Cathedral shared utilities and core systems",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "simple-learning-validation",
+          "version": "1.0.0",
+          "path": "packages/simple-learning-validation/package.json",
+          "description": "Simple Learning Validation - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/smooth-movement-system",
+          "version": "1.0.0",
+          "path": "packages/smooth-movement-system/package.json",
+          "description": "Smooth Movement System - Fluid animation and motion controls",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sonic-physics-engine",
+          "version": "1.0.0",
+          "path": "packages/sonic-physics-engine/package.json",
+          "description": "Sonic Physics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/soul",
+          "version": "1.0.0",
+          "path": "packages/soul/package.json",
+          "description": "Soul - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sound-mathematics-core",
+          "version": "1.0.0",
+          "path": "packages/sound-mathematics-core/package.json",
+          "description": "Sound Mathematics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "spells",
+          "version": "1.0.0",
+          "path": "packages/spells/package.json",
+          "description": "Spells - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "spiral-learning-engine",
+          "version": "1.0.0",
+          "path": "packages/spiral-learning-engine/package.json",
+          "description": "Spiral Learning - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/stone-grimoire",
+          "version": "1.0.0",
+          "path": "packages/stone-grimoire/package.json",
+          "description": "Stone Grimoire - Body nodes and archive systems",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "stone-grimoire-core",
+          "version": "1.0.0",
+          "path": "packages/stone-grimoire-core/package.json",
+          "description": "Stone Grimoire - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "stone-grimoire-library-engine",
+          "version": "1.0.0",
+          "path": "packages/stone-grimoire-library-engine/package.json",
+          "description": "Stone Grimoire Library - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "story-engine",
+          "version": "1.0.0",
+          "path": "packages/story-engine/package.json",
+          "description": "Story - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/synth",
+          "version": "1.0.0",
+          "path": "packages/synth/package.json",
+          "description": "Synth - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "synth-design-math-core",
+          "version": "1.0.0",
+          "path": "packages/synth-design-math-core/package.json",
+          "description": "Synth Design Math - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "synth-labs",
+          "version": "1.0.0",
+          "path": "packages/synth-labs/package.json",
+          "description": "Synth Labs - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "synth-spells",
+          "version": "1.0.0",
+          "path": "packages/synth-spells/package.json",
+          "description": "Synth Spells - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/synthesis-engine",
+          "version": "1.0.0",
+          "path": "packages/synthesis-engine/package.json",
+          "description": "Synthesis Engine - Core synthesis and fusion system for Cathedral projects",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "tarot-art",
+          "version": "1.0.0",
+          "path": "packages/tarot-art/package.json",
+          "description": "Tarot Art - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "tarot-engine",
+          "version": "1.0.0",
+          "path": "packages/tarot-engine/package.json",
+          "description": "Tarot - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "tarot-reader",
+          "version": "1.0.0",
+          "path": "packages/tarot-reader/package.json",
+          "description": "Tarot Reader - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/tesseract-bridge",
+          "version": "1.0.0",
+          "path": "packages/tesseract-bridge/package.json",
+          "description": "Tesseract Bridge - Kabbalistic paths and sacred geometry",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "tesseract-bridge-core",
+          "version": "1.0.0",
+          "path": "packages/tesseract-bridge-core/package.json",
+          "description": "Tesseract - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/tesseract-bridge-hub",
+          "version": "1.0.0",
+          "path": "packages/tesseract-bridge-hub/package.json",
+          "description": "Tesseract Bridge Hub - Central orchestration system for all Cathedral systems",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/three-engine",
+          "version": "1.0.0",
+          "path": "packages/three-engine/package.json",
+          "description": "Three.js Engine wrapper for Cathedral 3D visualizations",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "trauma-safe-ui",
+          "version": "1.0.0",
+          "path": "packages/trauma-safe-ui/package.json",
+          "description": "Trauma Safe Ui - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/trinity-architecture",
+          "version": "1.0.0",
+          "path": "packages/trinity-architecture/package.json",
+          "description": "Body/Soul/Spirit consciousness evolution platform with 144:99 ratio compliance",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "trinity-v1-1-core",
+          "version": "1.0.0",
+          "path": "packages/trinity-v1-1-core/package.json",
+          "description": "Trinity V1 1 - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/types",
+          "version": "1.0.0",
+          "path": "packages/types/package.json",
+          "description": "Types - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/ui",
+          "version": "1.0.0",
+          "path": "packages/ui/package.json",
+          "description": "Cathedral of Circuits - Shared UI Components",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/unified-codex-core",
+          "version": "1.0.0",
+          "path": "packages/unified-codex-core/package.json",
+          "description": "Unified Codex Engine - Mirrors all engines with mode transitions (Art → Music → Game → Design → Science → Mathematics)",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/unified-codex-extractor",
+          "version": "1.0.0",
+          "path": "packages/unified-codex-extractor/package.json",
+          "description": "Professional book art extraction system for unified codex - treats science, art, technology, and all knowledge domains as equal",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "unified-creative-system",
+          "version": "1.0.0",
+          "path": "packages/unified-creative-system/package.json",
+          "description": "Unified Creative System - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral-trinity/accessibility",
+          "version": "1.0.0",
+          "path": "packages/universal-accessibility/package.json",
+          "description": "Cathedral v1.0 Universal Accessibility Engine - ND Support, Cognitive Load Optimization, Trauma-Safe Environments",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "visionary-design-system",
+          "version": "1.0.0",
+          "path": "packages/visionary-design-system/package.json",
+          "description": "Visionary Design System - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        }
+      ],
+      "tools": [],
+      "scripts": [],
+      "apps": [],
+      "exists": true,
+      "packageJson": null,
+      "turboJson": null,
+      "workspaceFile": null,
+      "errors": []
+    },
+    {
+      "workspace": "cathedral-real",
+      "path": "/Users/rebeccalemke/cathedral-real",
+      "packages": [
+        {
+          "name": "agent-integration",
+          "version": "1.0.0",
+          "path": "packages/agent-integration/package.json",
+          "description": "Agent Integration - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "arcana",
+          "version": "1.0.0",
+          "path": "packages/arcana/package.json",
+          "description": "Arcana - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "archetypal-engine",
+          "version": "1.0.0",
+          "path": "packages/archetypal-engine/package.json",
+          "description": "Archetypal - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/art-engine-core",
+          "version": "1.0.0",
+          "path": "packages/art-engine-core/package.json",
+          "description": "Art Engine - Sacred Geometry & Visual Creation for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/art-generation-node",
+          "version": "1.0.0",
+          "path": "packages/art-generation-node/package.json",
+          "description": "High-end art generation and pattern science node connected to real data",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/art-standards-core",
+          "version": "1.0.0",
+          "path": "packages/art-standards-core/package.json",
+          "description": "Art Standards - Museum-Grade Quality & Sacred Geometry for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "art-systems",
+          "version": "1.0.0",
+          "path": "packages/art-systems/package.json",
+          "description": "Art Systems - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "atelier-constitution",
+          "version": "1.0.0",
+          "path": "packages/atelier-constitution/package.json",
+          "description": "Atelier Constitution - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/avatar-experience-system",
+          "version": "1.0.0",
+          "path": "packages/avatar-experience-system/package.json",
+          "description": "Avatar Experience System - Multi-modal fractal avatar experiences with Liber Arcanae integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/brain",
+          "version": "1.0.0",
+          "path": "packages/brain/package.json",
+          "description": "Brain - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/cataract-book-scanner",
+          "version": "1.0.0",
+          "path": "packages/cataract-book-scanner/package.json",
+          "description": "Cataract: Professional book-to-archetype scanner for public domain books with sacred geometry precision",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-144",
+          "version": "1.0.0",
+          "path": "packages/cathedral-144/package.json",
+          "description": "Cathedral 144 - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/cathedral-architect",
+          "version": "1.0.0",
+          "path": "packages/cathedral-architect/package.json",
+          "description": "🏛️ Cathedral Architect Engine - Transforms Codex nodes into explorable chambers",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-audio-synthesis",
+          "version": "1.0.0",
+          "path": "packages/cathedral-audio-synthesis/package.json",
+          "description": "Cathedral Audio Synthesis - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-data-core",
+          "version": "1.0.0",
+          "path": "packages/cathedral-data-core/package.json",
+          "description": "Cathedral Data - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/design-library",
+          "version": "1.0.0",
+          "path": "packages/cathedral-design-library/package.json",
+          "description": "Figma-style design library integrating Codex 144:99, Liber Arcanae, and Fusion Kink",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/fusion-kink-engine",
+          "version": "1.0.0",
+          "path": "packages/cathedral-fusion-kink-engine/package.json",
+          "description": "Liber Arcanae Codex Abyssiae - 78-card tarot system mirroring Codex 144:99",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-integration-bridge",
+          "version": "1.0.0",
+          "path": "packages/cathedral-integration-bridge/package.json",
+          "description": "Cathedral Integration Bridge - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-liber-arcanae-bridge",
+          "version": "1.0.0",
+          "path": "packages/cathedral-liber-arcanae-bridge/package.json",
+          "description": "Cathedral Liber Arcanae Bridge - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/lightweight-library",
+          "version": "1.0.0",
+          "path": "packages/cathedral-lightweight-library/package.json",
+          "description": "Expansive but lightweight library system for the Cathedral of Circuits",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/logo-system",
+          "version": "1.0.0",
+          "path": "packages/cathedral-logo-system/package.json",
+          "description": "Museum-quality animated logos and mystical branding for Cathedral of Circuits",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/plugin-system",
+          "version": "1.0.0",
+          "path": "packages/cathedral-plugin-system/package.json",
+          "description": "Unified plugin system for Codex 144:99, Liber Arcanae, and Fusion Kink integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-rpg-inventory-system",
+          "version": "1.0.0",
+          "path": "packages/cathedral-rpg-inventory-system/package.json",
+          "description": "Cathedral Rpg Inventory System - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/sqlite-persistence",
+          "version": "1.0.0",
+          "path": "packages/cathedral-sqlite-persistence/package.json",
+          "description": "Robust SQLite database integration for Cathedral Professional Design Suite with Node.js v25 support",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-style",
+          "version": "1.0.0",
+          "path": "packages/cathedral-style/package.json",
+          "description": "Cathedral Style - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-synthesis-core",
+          "version": "1.0.0",
+          "path": "packages/cathedral-synthesis-core/package.json",
+          "description": "Cathedral Synthesis - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "cathedral-visual-engine",
+          "version": "1.0.0",
+          "path": "packages/cathedral-visual-engine/package.json",
+          "description": "Cathedral Visual - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "character-alchemical-art",
+          "version": "1.0.0",
+          "path": "packages/character-alchemical-art/package.json",
+          "description": "Character Alchemical Art - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/circuit-craft-creative-game",
+          "version": "1.0.0",
+          "path": "packages/circuit-craft-creative-game/package.json",
+          "description": "CircuitCraft: Non-Linear Creative Construction Game for High-Tech Creatives",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/circuitum99-arcanae-cyoa",
+          "version": "1.0.0",
+          "path": "packages/circuitum99-arcanae-cyoa/package.json",
+          "description": "Circuitum99: Alpha et Omega CYOA Story System for Liber Arcanae",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/circuitum99-arcanae-cyoa",
+          "version": "1.0.0",
+          "path": "packages/circuitum99-core/package.json",
+          "description": "Circuitum99: Alpha et Omega CYOA Story System for Liber Arcanae",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "codex-144",
+          "version": "1.0.0",
+          "path": "packages/codex-144/package.json",
+          "description": "Codex 144 - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/codex-144",
+          "version": "1.0.0",
+          "path": "packages/codex-144-99/data/package.json",
+          "description": "codex-144 package",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/codex-144-99",
+          "version": "1.0.0",
+          "path": "packages/codex-144-99/package.json",
+          "description": "📚 Codex 144:99 Sacred Library - 144 Nodes of Mystical Knowledge with Global Research Integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "codex-144-99-core",
+          "version": "1.0.0",
+          "path": "packages/codex-144-99-core/package.json",
+          "description": "Codex 144 99 - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/codex-engine",
+          "version": "1.0.0",
+          "path": "packages/codex-engine/package.json",
+          "description": "Codex Engine - Core processing engine for Codex 144:99 nodes and data structures",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "codex-game-bridge",
+          "version": "1.0.0",
+          "path": "packages/codex-game-bridge/package.json",
+          "description": "Codex Game Bridge - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/codex-musical-system",
+          "version": "1.0.0",
+          "path": "packages/codex-musical-system/package.json",
+          "description": "Codex 144:99 Musical System - Sacred tones and harmonic structures",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/config",
+          "version": "1.0.0",
+          "path": "packages/config/package.json",
+          "description": "Shared configuration and constants for Cathedral monorepo",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "connections",
+          "version": "1.0.0",
+          "path": "packages/connections/package.json",
+          "description": "Connections - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "consciousness-aware-creative",
+          "version": "1.0.0",
+          "path": "packages/consciousness-aware-creative/package.json",
+          "description": "Consciousness Aware Creative - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/core",
+          "version": "1.0.0",
+          "path": "packages/core/package.json",
+          "description": "Core node logic and JSON data for Codex 144:99 + Morgan Le Fay Avalon system",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/cosmogenesis",
+          "version": "1.0.0",
+          "path": "packages/cosmogenesis/package.json",
+          "description": "Cathedral of Circuits package",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/crystals",
+          "version": "1.0.0",
+          "path": "packages/crystals/package.json",
+          "description": "Crystals - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "daimon-gear",
+          "version": "1.0.0",
+          "path": "packages/daimon-gear/package.json",
+          "description": "Daimon Gear - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/debug-system-core",
+          "version": "1.0.0",
+          "path": "packages/debug-system-core/package.json",
+          "description": "Enterprise Debug System - Comprehensive error tracking and diagnostics for Cathedral ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "design-mathematics-core",
+          "version": "1.0.0",
+          "path": "packages/design-mathematics-core/package.json",
+          "description": "Design Mathematics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/fractal-flames-daemon-deity",
+          "version": "1.0.0",
+          "path": "packages/fractal-flames-daemon-deity/package.json",
+          "description": "Fractal Flames Library - Real Elements, Daimons, and Deities as Fractals",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "fusion-creative-suite",
+          "version": "1.0.0",
+          "path": "packages/fusion-creative-suite/package.json",
+          "description": "Fusion Creative Suite - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "fusion-kink-core",
+          "version": "1.0.0",
+          "path": "packages/fusion-kink-core/package.json",
+          "description": "Rebis - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/fusion-kink-generator",
+          "version": "1.0.0",
+          "path": "packages/fusion-kink-generator/package.json",
+          "description": "Alchemical Fusion Generator - Quality-focused synthesis patterns (a + b = d)",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "fusionkink-engine",
+          "version": "1.0.0",
+          "path": "packages/fusionkink-engine/package.json",
+          "description": "Fusionkink - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/game-design-core",
+          "version": "1.0.0",
+          "path": "packages/game-design-core/package.json",
+          "description": "Game Design Engine - Interactive Experiences & RPG Mechanics for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/game-engine",
+          "version": "1.0.0",
+          "path": "packages/game-engine/package.json",
+          "description": "Guild Wars-style RPG engine with Codex 144:99 integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "game-mathematics-core",
+          "version": "1.0.0",
+          "path": "packages/game-mathematics-core/package.json",
+          "description": "Game Mathematics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "game-world",
+          "version": "1.0.0",
+          "path": "packages/game-world/package.json",
+          "description": "Game World - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/gem-tower-engine",
+          "version": "1.0.0",
+          "path": "packages/gem-tower-engine/package.json",
+          "description": "Gem Tower Engine - Crystal and gem visualization system",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/godot-codex-14499",
+          "version": "1.0.0",
+          "path": "packages/godot-codex-14499/package.json",
+          "description": "Godot Codex 144:99 - Sacred lattice system for games and applications",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/godot-design-studio",
+          "version": "1.0.0",
+          "path": "packages/godot-design-studio/package.json",
+          "description": "Free Godot Design Studio - Figma-like design tools for mystical interfaces",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/godot-liber-arcanae",
+          "version": "1.0.0",
+          "path": "packages/godot-liber-arcanae/package.json",
+          "description": "Godot Liber Arcanae - 78-card living tarot system for mystical games",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/godot-vfx-library",
+          "version": "1.0.0",
+          "path": "packages/godot-vfx-library/package.json",
+          "description": "Free Godot VFX Library - Sacred Geometry & Mystical Effects for Cathedral of Circuits",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "graphs",
+          "version": "1.0.0",
+          "path": "packages/graphs/package.json",
+          "description": "Graphs - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/hall-of-ateliers",
+          "version": "1.0.0",
+          "path": "packages/hall-of-ateliers/package.json",
+          "description": "Master artistic creation and collaboration systems - Professional-grade tools for painters, sculptors, writers, musicians, and digital artists",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/health-map-core",
+          "version": "1.0.0",
+          "path": "packages/health-map-core/package.json",
+          "description": "Enterprise Health Map System - Comprehensive catalog and health monitoring for Cathedral ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "holographic-interface",
+          "version": "1.0.0",
+          "path": "packages/holographic-interface/package.json",
+          "description": "Holographic Interface - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/inter-app-communicator",
+          "version": "1.0.0",
+          "path": "packages/inter-app-communicator/package.json",
+          "description": "Inter-app communication system for Cathedral mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "kira-audio-engine",
+          "version": "1.0.0",
+          "path": "packages/kira-audio-engine/package.json",
+          "description": "Kira Audio - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/labs",
+          "version": "1.0.0",
+          "path": "packages/labs/package.json",
+          "description": "Labs - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/liber-arcanae",
+          "version": "1.0.0",
+          "path": "packages/liber-arcanae/package.json",
+          "description": "Liber Arcanae - Sacred mystical library with Codex 144:99 integration, fusion kink mechanics, and tarot CLI tools.",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "liber-arcanae-core",
+          "version": "1.0.0",
+          "path": "packages/liber-arcanae-core/package.json",
+          "description": "Liber Arcanae - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral-real/liber-arcanae-tools",
+          "version": "1.0.0",
+          "path": "packages/liber-arcanae-tools/package.json",
+          "description": "Liber Arcanae Tools - Professional Creative Canvas for Circuitum 99",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "living-canon-engine",
+          "version": "1.0.0",
+          "path": "packages/living-canon-engine/package.json",
+          "description": "Living Canon - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "living-libraries",
+          "version": "1.0.0",
+          "path": "packages/living-libraries/package.json",
+          "description": "Living Libraries - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/luxcrux",
+          "version": "1.0.0",
+          "path": "packages/luxcrux/package.json",
+          "description": "Luxcrux - Elemental directions and spatial consciousness",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "magnum-opus",
+          "version": "1.0.0",
+          "path": "packages/magnum-opus/package.json",
+          "description": "Magnum Opus - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "mobile-optimization",
+          "version": "1.0.0",
+          "path": "packages/mobile-optimization/package.json",
+          "description": "Mobile Optimization - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "moonchild-scanner",
+          "version": "1.0.0",
+          "path": "packages/moonchild-scanner/package.json",
+          "description": "Moonchild Scanner - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "museum-sources",
+          "version": "1.0.0",
+          "path": "packages/museum-sources/package.json",
+          "description": "Museum Sources - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/music-engine-core",
+          "version": "1.0.0",
+          "path": "packages/music-engine-core/package.json",
+          "description": "Music Engine - Sacred Frequencies & Harmonic Synthesis for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "mystery-house-core",
+          "version": "1.0.0",
+          "path": "packages/mystery-house-core/package.json",
+          "description": "Mystery House - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/mystical-data-unified",
+          "version": "1.0.0",
+          "path": "packages/mystical-data-unified/package.json",
+          "description": "Unified mystical data system - Tarot, astrology, sacred texts integration",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/mystical-sound-engine",
+          "version": "1.0.0",
+          "path": "packages/mystical-sound-engine/package.json",
+          "description": "Real-time audio synthesis engine for mystical research and meditation",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/node-tree-engine",
+          "version": "1.0.0",
+          "path": "packages/node-tree-engine/package.json",
+          "description": "Complete Node Tree Health System for 99 Mystical Codex Nodes with Health Monitoring, Interactive Maps, and Dynamic Stories",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "physics-cannon-core",
+          "version": "1.0.0",
+          "path": "packages/physics-cannon-core/package.json",
+          "description": "Physics Cannon - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/portal-system",
+          "version": "1.0.0",
+          "path": "packages/portal-system/package.json",
+          "description": "Portal System - Navigation and transition system for Cathedral experiences",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-collaboration-engine",
+          "version": "1.0.0",
+          "path": "packages/professional-collaboration-engine/package.json",
+          "description": "Professional Collaboration - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-export-integration",
+          "version": "1.0.0",
+          "path": "packages/professional-export-integration/package.json",
+          "description": "Professional Export Integration - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-quality-control",
+          "version": "1.0.0",
+          "path": "packages/professional-quality-control/package.json",
+          "description": "Professional Quality Control - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-suite",
+          "version": "1.0.0",
+          "path": "packages/professional-suite/package.json",
+          "description": "Professional Suite - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-typography-engine",
+          "version": "1.0.0",
+          "path": "packages/professional-typography-engine/package.json",
+          "description": "Professional Typography - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "professional-vector-engine",
+          "version": "1.0.0",
+          "path": "packages/professional-vector-engine/package.json",
+          "description": "Professional Vector - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "registry-learning-validation",
+          "version": "1.0.0",
+          "path": "packages/registry-learning-validation/package.json",
+          "description": "Registry Learning Validation - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/sacred-geometry-core",
+          "version": "1.0.0",
+          "path": "packages/sacred-geometry-core/package.json",
+          "description": "Sacred Geometry Core - Fractal settings and geometry nodes for Codex 144:99 integration.",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sacred-geometry-math",
+          "version": "1.0.0",
+          "path": "packages/sacred-geometry-math/package.json",
+          "description": "Sacred Geometry Math - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sacred-geometry-simd",
+          "version": "1.0.0",
+          "path": "packages/sacred-geometry-simd/package.json",
+          "description": "Sacred Geometry Simd - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sacred-mathematics-core",
+          "version": "1.0.0",
+          "path": "packages/sacred-mathematics-core/package.json",
+          "description": "Sacred Mathematics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "scanner",
+          "version": "1.0.0",
+          "path": "packages/scanner/package.json",
+          "description": "Scanner - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/science-engine-core",
+          "version": "1.0.0",
+          "path": "packages/science-engine-core/package.json",
+          "description": "Science Engine - Empirical Research & Experimentation for Cathedral",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/shared",
+          "version": "1.0.0",
+          "path": "packages/shared/package.json",
+          "description": "Cathedral shared utilities and core systems",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "simple-learning-validation",
+          "version": "1.0.0",
+          "path": "packages/simple-learning-validation/package.json",
+          "description": "Simple Learning Validation - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/smooth-movement-system",
+          "version": "1.0.0",
+          "path": "packages/smooth-movement-system/package.json",
+          "description": "Smooth Movement System - Fluid animation and motion controls",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sonic-physics-engine",
+          "version": "1.0.0",
+          "path": "packages/sonic-physics-engine/package.json",
+          "description": "Sonic Physics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/soul",
+          "version": "1.0.0",
+          "path": "packages/soul/package.json",
+          "description": "Soul - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "sound-mathematics-core",
+          "version": "1.0.0",
+          "path": "packages/sound-mathematics-core/package.json",
+          "description": "Sound Mathematics - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "spells",
+          "version": "1.0.0",
+          "path": "packages/spells/package.json",
+          "description": "Spells - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "spiral-learning-engine",
+          "version": "1.0.0",
+          "path": "packages/spiral-learning-engine/package.json",
+          "description": "Spiral Learning - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/stone-grimoire",
+          "version": "1.0.0",
+          "path": "packages/stone-grimoire/package.json",
+          "description": "Stone Grimoire - Body nodes and archive systems",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "stone-grimoire-core",
+          "version": "1.0.0",
+          "path": "packages/stone-grimoire-core/package.json",
+          "description": "Stone Grimoire - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "stone-grimoire-library-engine",
+          "version": "1.0.0",
+          "path": "packages/stone-grimoire-library-engine/package.json",
+          "description": "Stone Grimoire Library - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "story-engine",
+          "version": "1.0.0",
+          "path": "packages/story-engine/package.json",
+          "description": "Story - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/synth",
+          "version": "1.0.0",
+          "path": "packages/synth/package.json",
+          "description": "Synth - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "synth-design-math-core",
+          "version": "1.0.0",
+          "path": "packages/synth-design-math-core/package.json",
+          "description": "Synth Design Math - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "synth-labs",
+          "version": "1.0.0",
+          "path": "packages/synth-labs/package.json",
+          "description": "Synth Labs - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "synth-spells",
+          "version": "1.0.0",
+          "path": "packages/synth-spells/package.json",
+          "description": "Synth Spells - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/synthesis-engine",
+          "version": "1.0.0",
+          "path": "packages/synthesis-engine/package.json",
+          "description": "Synthesis Engine - Core synthesis and fusion system for Cathedral projects",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "tarot-art",
+          "version": "1.0.0",
+          "path": "packages/tarot-art/package.json",
+          "description": "Tarot Art - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "tarot-engine",
+          "version": "1.0.0",
+          "path": "packages/tarot-engine/package.json",
+          "description": "Tarot - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "tarot-reader",
+          "version": "1.0.0",
+          "path": "packages/tarot-reader/package.json",
+          "description": "Tarot Reader - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/tesseract-bridge",
+          "version": "1.0.0",
+          "path": "packages/tesseract-bridge/package.json",
+          "description": "Tesseract Bridge - Kabbalistic paths and sacred geometry",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "tesseract-bridge-core",
+          "version": "1.0.0",
+          "path": "packages/tesseract-bridge-core/package.json",
+          "description": "Tesseract - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/tesseract-bridge-hub",
+          "version": "1.0.0",
+          "path": "packages/tesseract-bridge-hub/package.json",
+          "description": "Tesseract Bridge Hub - Central orchestration system for all Cathedral systems",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/three-engine",
+          "version": "1.0.0",
+          "path": "packages/three-engine/package.json",
+          "description": "Three.js Engine wrapper for Cathedral 3D visualizations",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "trauma-safe-ui",
+          "version": "1.0.0",
+          "path": "packages/trauma-safe-ui/package.json",
+          "description": "Trauma Safe Ui - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/trinity-architecture",
+          "version": "1.0.0",
+          "path": "packages/trinity-architecture/package.json",
+          "description": "Body/Soul/Spirit consciousness evolution platform with 144:99 ratio compliance",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "trinity-v1-1-core",
+          "version": "1.0.0",
+          "path": "packages/trinity-v1-1-core/package.json",
+          "description": "Trinity V1 1 - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/types",
+          "version": "1.0.0",
+          "path": "packages/types/package.json",
+          "description": "Types - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/ui",
+          "version": "1.0.0",
+          "path": "packages/ui/package.json",
+          "description": "Cathedral of Circuits - Shared UI Components",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/unified-codex-core",
+          "version": "1.0.0",
+          "path": "packages/unified-codex-core/package.json",
+          "description": "Unified Codex Engine - Mirrors all engines with mode transitions (Art → Music → Game → Design → Science → Mathematics)",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral/unified-codex-extractor",
+          "version": "1.0.0",
+          "path": "packages/unified-codex-extractor/package.json",
+          "description": "Professional book art extraction system for unified codex - treats science, art, technology, and all knowledge domains as equal",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "unified-creative-system",
+          "version": "1.0.0",
+          "path": "packages/unified-creative-system/package.json",
+          "description": "Unified Creative System - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "@cathedral-trinity/accessibility",
+          "version": "1.0.0",
+          "path": "packages/universal-accessibility/package.json",
+          "description": "Cathedral v1.0 Universal Accessibility Engine - ND Support, Cognitive Load Optimization, Trauma-Safe Environments",
+          "category": "package",
+          "error": null
+        },
+        {
+          "name": "visionary-design-system",
+          "version": "1.0.0",
+          "path": "packages/visionary-design-system/package.json",
+          "description": "Visionary Design System - Part of the Cathedral of Circuits mystical ecosystem",
+          "category": "package",
+          "error": null
+        }
+      ],
+      "tools": [],
+      "scripts": [],
+      "apps": [],
+      "exists": true,
+      "packageJson": {
+        "name": "cathedral-real-monorepo",
+        "version": "1.0.0",
+        "description": "Magnum Opus v1 Cosmos Builder - Cathedral Real Monorepo",
+        "scripts": 26
+      },
+      "turboJson": true,
+      "workspaceFile": null,
+      "errors": []
+    },
+    {
+      "workspace": "CathedralOfCircuits",
+      "path": "/Users/rebeccalemke/CathedralOfCircuits",
+      "packages": [],
+      "tools": [],
+      "scripts": [],
+      "apps": [],
+      "exists": true,
+      "packageJson": null,
+      "turboJson": null,
+      "workspaceFile": null,
+      "errors": []
+    }
+  ],
+  "summary": {
+    "totalWorkspaces": 4,
+    "activeWorkspaces": 4,
+    "totalPackages": 400,
+    "totalTools": 0,
+    "totalScripts": 0,
+    "totalApps": 26,
+    "uniquePackages": [
+      "agent-integration",
+      "arcana",
+      "archetypal-engine",
+      "@cathedral/art-engine-core",
+      "@cathedral/art-generation-node",
+      "@cathedral/art-standards-core",
+      "art-systems",
+      "atelier-constitution",
+      "@cathedral/avatar-experience-system",
+      "@cathedral/body-of-god-core",
+      "@cathedral/brain",
+      "@cathedral/cataract-book-scanner",
+      "cathedral-144",
+      "@cathedral/cathedral-architect",
+      "cathedral-audio-synthesis",
+      "cathedral-data-core",
+      "@cathedral/design-library",
+      "@cathedral/fusion-kink-engine",
+      "cathedral-integration-bridge",
+      "cathedral-liber-arcanae-bridge",
+      "@cathedral/lightweight-library",
+      "@cathedral/logo-system",
+      "@cathedral/plugin-system",
+      "cathedral-rpg-inventory-system",
+      "@cathedral/sqlite-persistence",
+      "cathedral-style",
+      "cathedral-synthesis-core",
+      "cathedral-visual-engine",
+      "character-alchemical-art",
+      "@cathedral/circuit-craft-creative-game",
+      "@cathedral/circuitum99-arcanae-cyoa",
+      "codex-144",
+      "@cathedral/codex-144",
+      "@cathedral/codex-144-99",
+      "codex-144-99-core",
+      "@cathedral/codex-engine",
+      "codex-game-bridge",
+      "@cathedral/codex-musical-system",
+      "@cathedral/config",
+      "connections",
+      "consciousness-aware-creative",
+      "@cathedral/core",
+      "@cathedral/cosmogenesis",
+      "@cathedral/crystals",
+      "daimon-gear",
+      "@cathedral/debug-system-core",
+      "design-mathematics-core",
+      "@cathedral/divine-design-core",
+      "@cathedral/fractal-flames-daemon-deity",
+      "fusion-creative-suite",
+      "fusion-kink-core",
+      "@cathedral/fusion-kink-generator",
+      "fusionkink-engine",
+      "@cathedral/game-design-core",
+      "@cathedral/game-engine",
+      "game-mathematics-core",
+      "game-world",
+      "@cathedral/gem-tower-engine",
+      "@cathedral/godot-codex-14499",
+      "@cathedral/godot-design-studio",
+      "@cathedral/godot-liber-arcanae",
+      "@cathedral/godot-vfx-library",
+      "graphs",
+      "@cathedral/hall-of-ateliers",
+      "@cathedral/health-map-core",
+      "holographic-interface",
+      "@cathedral/inter-app-communicator",
+      "kira-audio-engine",
+      "@cathedral/labs",
+      "@cathedral/liber-arcanae",
+      "liber-arcanae-core",
+      "@cathedral-real/liber-arcanae-tools",
+      "living-canon-engine",
+      "living-libraries",
+      "@cathedral/luxcrux",
+      "magnum-opus",
+      "mobile-optimization",
+      "moonchild-scanner",
+      "museum-sources",
+      "@cathedral/music-engine-core",
+      "mystery-house-core",
+      "@cathedral/mystical-data-unified",
+      "@cathedral/mystical-sound-engine",
+      "@cathedral/node-tree-engine",
+      "physics-cannon-core",
+      "@cathedral/portal-system",
+      "professional-collaboration-engine",
+      "professional-export-integration",
+      "professional-quality-control",
+      "professional-suite",
+      "professional-typography-engine",
+      "professional-vector-engine",
+      "registry-learning-validation",
+      "@cathedral/sacred-geometry-core",
+      "sacred-geometry-math",
+      "sacred-geometry-simd",
+      "sacred-mathematics-core",
+      "scanner",
+      "@cathedral/science-engine-core",
+      "@cathedral/shared",
+      "simple-learning-validation",
+      "@cathedral/smooth-movement-system",
+      "sonic-physics-engine",
+      "@cathedral/soul",
+      "sound-mathematics-core",
+      "spells",
+      "spiral-learning-engine",
+      "@cathedral/stone-grimoire",
+      "stone-grimoire-core",
+      "stone-grimoire-library-engine",
+      "story-engine",
+      "@cathedral/synth",
+      "synth-design-math-core",
+      "synth-labs",
+      "synth-spells",
+      "@cathedral/synthesis-engine",
+      "tarot-art",
+      "tarot-engine",
+      "tarot-reader",
+      "@cathedral/tesseract-bridge",
+      "tesseract-bridge-core",
+      "@cathedral/tesseract-bridge-hub",
+      "@cathedral/three-engine",
+      "trauma-safe-ui",
+      "@cathedral/trinity-architecture",
+      "trinity-v1-1-core",
+      "@cathedral/true-will-system",
+      "@cathedral/types",
+      "@cathedral/ui",
+      "@cathedral/unified-codex-core",
+      "@cathedral/unified-codex-extractor",
+      "unified-creative-system",
+      "@cathedral-trinity/accessibility",
+      "visionary-design-system",
+      "@cathedral/visual-tools-connector"
+    ],
+    "packageVersions": {
+      "agent-integration": [
+        "1.0.0"
+      ],
+      "arcana": [
+        "1.0.0"
+      ],
+      "archetypal-engine": [
+        "1.0.0"
+      ],
+      "@cathedral/art-engine-core": [
+        "1.0.0"
+      ],
+      "@cathedral/art-generation-node": [
+        "1.0.0"
+      ],
+      "@cathedral/art-standards-core": [
+        "1.0.0"
+      ],
+      "art-systems": [
+        "1.0.0"
+      ],
+      "atelier-constitution": [
+        "1.0.0"
+      ],
+      "@cathedral/avatar-experience-system": [
+        "1.0.0"
+      ],
+      "@cathedral/body-of-god-core": [
+        "1.0.0"
+      ],
+      "@cathedral/brain": [
+        "1.0.0"
+      ],
+      "@cathedral/cataract-book-scanner": [
+        "1.0.0"
+      ],
+      "cathedral-144": [
+        "1.0.0"
+      ],
+      "@cathedral/cathedral-architect": [
+        "1.0.0"
+      ],
+      "cathedral-audio-synthesis": [
+        "1.0.0"
+      ],
+      "cathedral-data-core": [
+        "1.0.0"
+      ],
+      "@cathedral/design-library": [
+        "1.0.0"
+      ],
+      "@cathedral/fusion-kink-engine": [
+        "1.0.0"
+      ],
+      "cathedral-integration-bridge": [
+        "1.0.0"
+      ],
+      "cathedral-liber-arcanae-bridge": [
+        "1.0.0"
+      ],
+      "@cathedral/lightweight-library": [
+        "1.0.0"
+      ],
+      "@cathedral/logo-system": [
+        "1.0.0"
+      ],
+      "@cathedral/plugin-system": [
+        "1.0.0"
+      ],
+      "cathedral-rpg-inventory-system": [
+        "1.0.0"
+      ],
+      "@cathedral/sqlite-persistence": [
+        "1.0.0"
+      ],
+      "cathedral-style": [
+        "1.0.0"
+      ],
+      "cathedral-synthesis-core": [
+        "1.0.0"
+      ],
+      "cathedral-visual-engine": [
+        "1.0.0"
+      ],
+      "character-alchemical-art": [
+        "1.0.0"
+      ],
+      "@cathedral/circuit-craft-creative-game": [
+        "1.0.0"
+      ],
+      "@cathedral/circuitum99-arcanae-cyoa": [
+        "1.0.0"
+      ],
+      "codex-144": [
+        "1.0.0"
+      ],
+      "@cathedral/codex-144": [
+        "1.0.0"
+      ],
+      "@cathedral/codex-144-99": [
+        "1.0.0"
+      ],
+      "codex-144-99-core": [
+        "1.0.0"
+      ],
+      "@cathedral/codex-engine": [
+        "1.0.0"
+      ],
+      "codex-game-bridge": [
+        "1.0.0"
+      ],
+      "@cathedral/codex-musical-system": [
+        "1.0.0"
+      ],
+      "@cathedral/config": [
+        "1.0.0"
+      ],
+      "connections": [
+        "1.0.0"
+      ],
+      "consciousness-aware-creative": [
+        "1.0.0"
+      ],
+      "@cathedral/core": [
+        "1.0.0"
+      ],
+      "@cathedral/cosmogenesis": [
+        "1.0.0"
+      ],
+      "@cathedral/crystals": [
+        "1.0.0"
+      ],
+      "daimon-gear": [
+        "1.0.0"
+      ],
+      "@cathedral/debug-system-core": [
+        "1.0.0"
+      ],
+      "design-mathematics-core": [
+        "1.0.0"
+      ],
+      "@cathedral/divine-design-core": [
+        "1.0.0"
+      ],
+      "@cathedral/fractal-flames-daemon-deity": [
+        "1.0.0"
+      ],
+      "fusion-creative-suite": [
+        "1.0.0"
+      ],
+      "fusion-kink-core": [
+        "1.0.0"
+      ],
+      "@cathedral/fusion-kink-generator": [
+        "1.0.0"
+      ],
+      "fusionkink-engine": [
+        "1.0.0"
+      ],
+      "@cathedral/game-design-core": [
+        "1.0.0"
+      ],
+      "@cathedral/game-engine": [
+        "1.0.0"
+      ],
+      "game-mathematics-core": [
+        "1.0.0"
+      ],
+      "game-world": [
+        "1.0.0"
+      ],
+      "@cathedral/gem-tower-engine": [
+        "1.0.0"
+      ],
+      "@cathedral/godot-codex-14499": [
+        "1.0.0"
+      ],
+      "@cathedral/godot-design-studio": [
+        "1.0.0"
+      ],
+      "@cathedral/godot-liber-arcanae": [
+        "1.0.0"
+      ],
+      "@cathedral/godot-vfx-library": [
+        "1.0.0"
+      ],
+      "graphs": [
+        "1.0.0"
+      ],
+      "@cathedral/hall-of-ateliers": [
+        "1.0.0"
+      ],
+      "@cathedral/health-map-core": [
+        "1.0.0"
+      ],
+      "holographic-interface": [
+        "1.0.0"
+      ],
+      "@cathedral/inter-app-communicator": [
+        "1.0.0"
+      ],
+      "kira-audio-engine": [
+        "1.0.0"
+      ],
+      "@cathedral/labs": [
+        "1.0.0"
+      ],
+      "@cathedral/liber-arcanae": [
+        "1.0.0"
+      ],
+      "liber-arcanae-core": [
+        "1.0.0"
+      ],
+      "@cathedral-real/liber-arcanae-tools": [
+        "1.0.0"
+      ],
+      "living-canon-engine": [
+        "1.0.0"
+      ],
+      "living-libraries": [
+        "1.0.0"
+      ],
+      "@cathedral/luxcrux": [
+        "1.0.0"
+      ],
+      "magnum-opus": [
+        "1.0.0"
+      ],
+      "mobile-optimization": [
+        "1.0.0"
+      ],
+      "moonchild-scanner": [
+        "1.0.0"
+      ],
+      "museum-sources": [
+        "1.0.0"
+      ],
+      "@cathedral/music-engine-core": [
+        "1.0.0"
+      ],
+      "mystery-house-core": [
+        "1.0.0"
+      ],
+      "@cathedral/mystical-data-unified": [
+        "1.0.0"
+      ],
+      "@cathedral/mystical-sound-engine": [
+        "1.0.0"
+      ],
+      "@cathedral/node-tree-engine": [
+        "1.0.0"
+      ],
+      "physics-cannon-core": [
+        "1.0.0"
+      ],
+      "@cathedral/portal-system": [
+        "1.0.0"
+      ],
+      "professional-collaboration-engine": [
+        "1.0.0"
+      ],
+      "professional-export-integration": [
+        "1.0.0"
+      ],
+      "professional-quality-control": [
+        "1.0.0"
+      ],
+      "professional-suite": [
+        "1.0.0"
+      ],
+      "professional-typography-engine": [
+        "1.0.0"
+      ],
+      "professional-vector-engine": [
+        "1.0.0"
+      ],
+      "registry-learning-validation": [
+        "1.0.0"
+      ],
+      "@cathedral/sacred-geometry-core": [
+        "1.0.0"
+      ],
+      "sacred-geometry-math": [
+        "1.0.0"
+      ],
+      "sacred-geometry-simd": [
+        "1.0.0"
+      ],
+      "sacred-mathematics-core": [
+        "1.0.0"
+      ],
+      "scanner": [
+        "1.0.0"
+      ],
+      "@cathedral/science-engine-core": [
+        "1.0.0"
+      ],
+      "@cathedral/shared": [
+        "1.0.0"
+      ],
+      "simple-learning-validation": [
+        "1.0.0"
+      ],
+      "@cathedral/smooth-movement-system": [
+        "1.0.0"
+      ],
+      "sonic-physics-engine": [
+        "1.0.0"
+      ],
+      "@cathedral/soul": [
+        "1.0.0"
+      ],
+      "sound-mathematics-core": [
+        "1.0.0"
+      ],
+      "spells": [
+        "1.0.0"
+      ],
+      "spiral-learning-engine": [
+        "1.0.0"
+      ],
+      "@cathedral/stone-grimoire": [
+        "1.0.0"
+      ],
+      "stone-grimoire-core": [
+        "1.0.0"
+      ],
+      "stone-grimoire-library-engine": [
+        "1.0.0"
+      ],
+      "story-engine": [
+        "1.0.0"
+      ],
+      "@cathedral/synth": [
+        "1.0.0"
+      ],
+      "synth-design-math-core": [
+        "1.0.0"
+      ],
+      "synth-labs": [
+        "1.0.0"
+      ],
+      "synth-spells": [
+        "1.0.0"
+      ],
+      "@cathedral/synthesis-engine": [
+        "1.0.0"
+      ],
+      "tarot-art": [
+        "1.0.0"
+      ],
+      "tarot-engine": [
+        "1.0.0"
+      ],
+      "tarot-reader": [
+        "1.0.0"
+      ],
+      "@cathedral/tesseract-bridge": [
+        "1.0.0"
+      ],
+      "tesseract-bridge-core": [
+        "1.0.0"
+      ],
+      "@cathedral/tesseract-bridge-hub": [
+        "1.0.0"
+      ],
+      "@cathedral/three-engine": [
+        "1.0.0"
+      ],
+      "trauma-safe-ui": [
+        "1.0.0"
+      ],
+      "@cathedral/trinity-architecture": [
+        "1.0.0"
+      ],
+      "trinity-v1-1-core": [
+        "1.0.0"
+      ],
+      "@cathedral/true-will-system": [
+        "1.0.0"
+      ],
+      "@cathedral/types": [
+        "1.0.0"
+      ],
+      "@cathedral/ui": [
+        "1.0.0"
+      ],
+      "@cathedral/unified-codex-core": [
+        "1.0.0"
+      ],
+      "@cathedral/unified-codex-extractor": [
+        "1.0.0"
+      ],
+      "unified-creative-system": [
+        "1.0.0"
+      ],
+      "@cathedral-trinity/accessibility": [
+        "1.0.0"
+      ],
+      "visionary-design-system": [
+        "1.0.0"
+      ],
+      "@cathedral/visual-tools-connector": [
+        "1.0.0"
+      ]
+    },
+    "duplicates": [
+      {
+        "package": "@cathedral/circuitum99-arcanae-cyoa",
+        "instances": 6,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "agent-integration",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "arcana",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "archetypal-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/art-engine-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/art-generation-node",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/art-standards-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "art-systems",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "atelier-constitution",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/avatar-experience-system",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/brain",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/cataract-book-scanner",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "cathedral-144",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/cathedral-architect",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "cathedral-audio-synthesis",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "cathedral-data-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/design-library",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/fusion-kink-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "cathedral-integration-bridge",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "cathedral-liber-arcanae-bridge",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/lightweight-library",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/logo-system",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/plugin-system",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "cathedral-rpg-inventory-system",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/sqlite-persistence",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "cathedral-style",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "cathedral-synthesis-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "cathedral-visual-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "character-alchemical-art",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/circuit-craft-creative-game",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "codex-144",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/codex-144",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/codex-144-99",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "codex-144-99-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/codex-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "codex-game-bridge",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/codex-musical-system",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/config",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "connections",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "consciousness-aware-creative",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/cosmogenesis",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/crystals",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "daimon-gear",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/debug-system-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "design-mathematics-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/fractal-flames-daemon-deity",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "fusion-creative-suite",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "fusion-kink-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/fusion-kink-generator",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "fusionkink-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/game-design-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/game-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "game-mathematics-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "game-world",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/gem-tower-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/godot-codex-14499",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/godot-design-studio",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/godot-liber-arcanae",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/godot-vfx-library",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "graphs",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/hall-of-ateliers",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/health-map-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "holographic-interface",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/inter-app-communicator",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "kira-audio-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/labs",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/liber-arcanae",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "liber-arcanae-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral-real/liber-arcanae-tools",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "living-canon-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "living-libraries",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/luxcrux",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "magnum-opus",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "mobile-optimization",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "moonchild-scanner",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "museum-sources",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/music-engine-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "mystery-house-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/mystical-data-unified",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/mystical-sound-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/node-tree-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "physics-cannon-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/portal-system",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "professional-collaboration-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "professional-export-integration",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "professional-quality-control",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "professional-suite",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "professional-typography-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "professional-vector-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "registry-learning-validation",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/sacred-geometry-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "sacred-geometry-math",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "sacred-geometry-simd",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "sacred-mathematics-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "scanner",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/science-engine-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/shared",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "simple-learning-validation",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/smooth-movement-system",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "sonic-physics-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/soul",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "sound-mathematics-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "spells",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "spiral-learning-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/stone-grimoire",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "stone-grimoire-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "stone-grimoire-library-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "story-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/synth",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "synth-design-math-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "synth-labs",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "synth-spells",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/synthesis-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "tarot-art",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "tarot-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "tarot-reader",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/tesseract-bridge",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "tesseract-bridge-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/tesseract-bridge-hub",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/three-engine",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "trauma-safe-ui",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/trinity-architecture",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "trinity-v1-1-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/types",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/ui",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/unified-codex-core",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral/unified-codex-extractor",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "unified-creative-system",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "@cathedral-trinity/accessibility",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      },
+      {
+        "package": "visionary-design-system",
+        "instances": 3,
+        "workspaces": [
+          "cathedral-master-deployment",
+          "cathedral-fixed-clean",
+          "cathedral-real"
+        ],
+        "versions": [
+          "1.0.0"
+        ],
+        "recommendation": "Consolidate to single instance in primary workspace"
+      }
+    ],
+    "errors": []
+  },
+  "recommendations": [
+    {
+      "type": "primary_workspace",
+      "workspace": "cathedral-master-deployment",
+      "message": "Use cathedral-master-deployment as primary workspace for Cathedral of Circuits"
+    },
+    {
+      "type": "consolidate_duplicates",
+      "count": 131,
+      "message": "Consolidate 131 duplicate packages"
+    }
+  ]
+}

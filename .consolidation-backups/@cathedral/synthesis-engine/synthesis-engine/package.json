@@ -25,5 +25,10 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/synthesis-engine"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/synthesis-engine"
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/synthesis-engine",
+  "alchemical": {
+    "name": "Synthesis",
+    "symbol": "⊙",
+    "label": "⊙ Synthesis (@cathedral/synthesis-engine)"
+  }
 }

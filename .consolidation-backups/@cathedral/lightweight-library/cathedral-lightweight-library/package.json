@@ -27,5 +27,10 @@
     "url": "https://github.com/Bekalah/cathedral.git",
     "directory": "packages/cathedral-lightweight-library"
   },
-  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/cathedral-lightweight-library"
+  "homepage": "https://github.com/Bekalah/cathedral/tree/main/packages/cathedral-lightweight-library",
+  "alchemical": {
+    "name": "Lightweight Library",
+    "symbol": "⊙",
+    "label": "⊙ Lightweight Library (@cathedral/lightweight-library)"
+  }
 }

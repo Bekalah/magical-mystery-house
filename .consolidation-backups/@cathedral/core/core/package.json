@@ -16,5 +16,10 @@
   },
   "devDependencies": {
     "typescript": "^5.0.0"
+  },
+  "alchemical": {
+    "name": "Core",
+    "symbol": "⊙",
+    "label": "⊙ Core (@cathedral/core)"
   }
 }

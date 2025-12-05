@@ -1,6 +1,6 @@
 {
   "name": "@bekalah/liber-arcanae-tarot",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "🃏 Liber Arcanae Tarot - Living Major Arcana App with Interactive Readings & Sacred Art",
   "private": true,
   "type": "module",
@@ -180,5 +180,10 @@
     }
   },
   "consolidated": true,
-  "consolidatedAt": "2025-12-01T21:19:39.766Z"
+  "consolidatedAt": "2025-12-04T22:13:12.866Z",
+  "alchemical": {
+    "name": "@Bekalah/Liber Arcanae Tarot",
+    "symbol": "⊙",
+    "label": "⊙ @Bekalah/Liber Arcanae Tarot (@bekalah/liber-arcanae-tarot)"
+  }
 }

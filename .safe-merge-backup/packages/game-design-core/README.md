@@ -48,6 +48,36 @@
 
 ---
 
+# ♄ Terra - game-design-core
+
+**Alchemical Correspondence:**
+- Element: Earth
+- Planet: Saturn
+- Metal: Lead
+- Symbol: ♄
+
+---
+
+# ♄ Terra - game-design-core
+
+**Alchemical Correspondence:**
+- Element: Earth
+- Planet: Saturn
+- Metal: Lead
+- Symbol: ♄
+
+---
+
+# ♄ Terra - game-design-core
+
+**Alchemical Correspondence:**
+- Element: Earth
+- Planet: Saturn
+- Metal: Lead
+- Symbol: ♄
+
+---
+
 # @cathedral/game-design-core
 
 **Interactive Experiences & RPG Mechanics Engine**

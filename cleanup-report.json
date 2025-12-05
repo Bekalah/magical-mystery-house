@@ -1,0 +1,518 @@
+{
+  "project": {
+    "name": "Cathedral of Circuits",
+    "version": "1.0.0",
+    "fullName": "Cathedral of Circuits - Magnum Opus Version 1.0",
+    "author": "Rebecca Respawn",
+    "subtitle": "Liber Arcanae Codex Abyssiae"
+  },
+  "archived": [
+    {
+      "from": ".dependency-analysis.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/.dependency-analysis.json"
+    },
+    {
+      "from": ".deployment-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/.deployment-report.json"
+    },
+    {
+      "from": ".health-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/.health-report.json"
+    },
+    {
+      "from": ".master-docs-analysis.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/.master-docs-analysis.json"
+    },
+    {
+      "from": ".monorepo-foundation-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/.monorepo-foundation-report.json"
+    },
+    {
+      "from": ".quality-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/.quality-report.json"
+    },
+    {
+      "from": ".repo-connection-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/.repo-connection-report.json"
+    },
+    {
+      "from": ".solve-et-coagula-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/.solve-et-coagula-report.json"
+    },
+    {
+      "from": ".system-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/.system-report.json"
+    },
+    {
+      "from": "3-HOUR-EXPERIMENT-STATUS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/3-HOUR-EXPERIMENT-STATUS.md"
+    },
+    {
+      "from": "3-rounds-intervals.log",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/3-rounds-intervals.log"
+    },
+    {
+      "from": "3-rounds.pid",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/3-rounds.pid"
+    },
+    {
+      "from": "ALCHEMICAL_LABELING_SYSTEM.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/ALCHEMICAL_LABELING_SYSTEM.md"
+    },
+    {
+      "from": "ALCHEMY_TECH_PLAN.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/ALCHEMY_TECH_PLAN.md"
+    },
+    {
+      "from": "AUTOMATIC_IMPROVEMENTS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/AUTOMATIC_IMPROVEMENTS.md"
+    },
+    {
+      "from": "AZURE_REMOVAL_SUMMARY.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/AZURE_REMOVAL_SUMMARY.md"
+    },
+    {
+      "from": "BOUNDARY_RULES_FIX.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/BOUNDARY_RULES_FIX.md"
+    },
+    {
+      "from": "BUILD_COMPLETE.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/BUILD_COMPLETE.md"
+    },
+    {
+      "from": "CHANGES_IN_555_CYCLES.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/CHANGES_IN_555_CYCLES.md"
+    },
+    {
+      "from": "CHARACTER_DATA_COMPLETE.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/CHARACTER_DATA_COMPLETE.md"
+    },
+    {
+      "from": "CODEX_144_99_UNIFIED_SYSTEM.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/CODEX_144_99_UNIFIED_SYSTEM.md"
+    },
+    {
+      "from": "CODEX_ALIGNMENT_PLAN.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/CODEX_ALIGNMENT_PLAN.md"
+    },
+    {
+      "from": "COMPARISON_REPORT_README.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/COMPARISON_REPORT_README.md"
+    },
+    {
+      "from": "COMPLETE_ELEGANT_PRESTIGE_LIST.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/COMPLETE_ELEGANT_PRESTIGE_LIST.md"
+    },
+    {
+      "from": "COMPLETE_PACKAGE_INFO.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/COMPLETE_PACKAGE_INFO.md"
+    },
+    {
+      "from": "COMPLETE_PACKAGE_LIST.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/COMPLETE_PACKAGE_LIST.md"
+    },
+    {
+      "from": "COMPLETE_SYSTEM_DOCUMENTATION.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/COMPLETE_SYSTEM_DOCUMENTATION.md"
+    },
+    {
+      "from": "COMPLETE_TECH_CONNECTION_MAP.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/COMPLETE_TECH_CONNECTION_MAP.md"
+    },
+    {
+      "from": "COMPLETE_TECH_CONNECTION_REPORT.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/COMPLETE_TECH_CONNECTION_REPORT.md"
+    },
+    {
+      "from": "COMPLETION_ROADMAP.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/COMPLETION_ROADMAP.md"
+    },
+    {
+      "from": "COMPREHENSIVE_AUDIT.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/COMPREHENSIVE_AUDIT.md"
+    },
+    {
+      "from": "COMPREHENSIVE_INVENTORY_PLAN.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/COMPREHENSIVE_INVENTORY_PLAN.md"
+    },
+    {
+      "from": "COMPREHENSIVE_REGISTRY.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/COMPREHENSIVE_REGISTRY.md"
+    },
+    {
+      "from": "CONNECTED_REPOS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/CONNECTED_REPOS.md"
+    },
+    {
+      "from": "CONSOLIDATION_COMPLETE.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/CONSOLIDATION_COMPLETE.md"
+    },
+    {
+      "from": "CONSOLIDATION_INTEGRATED.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/CONSOLIDATION_INTEGRATED.md"
+    },
+    {
+      "from": "CONSOLIDATION_REPORT.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/CONSOLIDATION_REPORT.md"
+    },
+    {
+      "from": "CURSOR_GITLAB_SETUP.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/CURSOR_GITLAB_SETUP.md"
+    },
+    {
+      "from": "CYCLE_DIFFERENCES_ANALYSIS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/CYCLE_DIFFERENCES_ANALYSIS.md"
+    },
+    {
+      "from": "CYCLE_DIFFERENCES_EXPLAINED.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/CYCLE_DIFFERENCES_EXPLAINED.md"
+    },
+    {
+      "from": "DEPLOYMENT_STATUS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/DEPLOYMENT_STATUS.md"
+    },
+    {
+      "from": "DETAILED_COMPARISON_REPORT.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/DETAILED_COMPARISON_REPORT.md"
+    },
+    {
+      "from": "DIRECTORY_AND_BRANCH_PLAN.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/DIRECTORY_AND_BRANCH_PLAN.md"
+    },
+    {
+      "from": "DISCOVERY_AND_DOCUMENTATION_COMPLETE.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/DISCOVERY_AND_DOCUMENTATION_COMPLETE.md"
+    },
+    {
+      "from": "DISCOVERY_REPORT.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/DISCOVERY_REPORT.md"
+    },
+    {
+      "from": "DIVINE_DESIGN_COMPLETE.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/DIVINE_DESIGN_COMPLETE.md"
+    },
+    {
+      "from": "ELEGANT_PRESTIGE_DESIGN_PLAN.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/ELEGANT_PRESTIGE_DESIGN_PLAN.md"
+    },
+    {
+      "from": "EXPECTED_CYCLE_DIFFERENCES.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/EXPECTED_CYCLE_DIFFERENCES.md"
+    },
+    {
+      "from": "EXPERIMENT_300_CYCLES_STATUS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/EXPERIMENT_300_CYCLES_STATUS.md"
+    },
+    {
+      "from": "EXPERIMENT_3_ROUNDS_INTERVALS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/EXPERIMENT_3_ROUNDS_INTERVALS.md"
+    },
+    {
+      "from": "EXPERIMENT_3_ROUNDS_PLAN.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/EXPERIMENT_3_ROUNDS_PLAN.md"
+    },
+    {
+      "from": "EXPERIMENT_ANALYSIS_AND_IMPROVEMENTS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/EXPERIMENT_ANALYSIS_AND_IMPROVEMENTS.md"
+    },
+    {
+      "from": "FINAL_CONFIRMATION.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/FINAL_CONFIRMATION.md"
+    },
+    {
+      "from": "FIXES_APPLIED.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/FIXES_APPLIED.md"
+    },
+    {
+      "from": "FUSIONKINK_INTEGRATION.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/FUSIONKINK_INTEGRATION.md"
+    },
+    {
+      "from": "GITLAB_MIGRATION_STATUS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/GITLAB_MIGRATION_STATUS.md"
+    },
+    {
+      "from": "GRIMOIRE_SYSTEM_IMPLEMENTATION.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/GRIMOIRE_SYSTEM_IMPLEMENTATION.md"
+    },
+    {
+      "from": "HIGH_END_VISUALS_COMPLETE.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/HIGH_END_VISUALS_COMPLETE.md"
+    },
+    {
+      "from": "IMPLEMENTATION_SUMMARY.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/IMPLEMENTATION_SUMMARY.md"
+    },
+    {
+      "from": "IMPROVEMENTS_AND_DEPLOYMENT_REPORT.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/IMPROVEMENTS_AND_DEPLOYMENT_REPORT.md"
+    },
+    {
+      "from": "INTEGRATION_COMPLETE.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/INTEGRATION_COMPLETE.md"
+    },
+    {
+      "from": "INTEGRATION_VERIFICATION.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/INTEGRATION_VERIFICATION.md"
+    },
+    {
+      "from": "LABEL_PRESERVATION_CONFIRMED.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/LABEL_PRESERVATION_CONFIRMED.md"
+    },
+    {
+      "from": "LAST_2_DAYS_SUMMARY.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/LAST_2_DAYS_SUMMARY.md"
+    },
+    {
+      "from": "LEARNINGS_ABOUT_CHRONIC_PTSD.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/LEARNINGS_ABOUT_CHRONIC_PTSD.md"
+    },
+    {
+      "from": "LEARNINGS_ABOUT_YOU.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/LEARNINGS_ABOUT_YOU.md"
+    },
+    {
+      "from": "LEARNINGS_AND_UPDATES.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/LEARNINGS_AND_UPDATES.md"
+    },
+    {
+      "from": "LIVE_ANALYSIS_README.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/LIVE_ANALYSIS_README.md"
+    },
+    {
+      "from": "MASTER_PLAN.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/MASTER_PLAN.md"
+    },
+    {
+      "from": "MASTER_PLAN_CATHEDRAL_OF_CIRCUITS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/MASTER_PLAN_CATHEDRAL_OF_CIRCUITS.md"
+    },
+    {
+      "from": "MIGRATION_GUIDE.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/MIGRATION_GUIDE.md"
+    },
+    {
+      "from": "MULTI_MODAL_SYSTEM_COMPLETE.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/MULTI_MODAL_SYSTEM_COMPLETE.md"
+    },
+    {
+      "from": "NIGHTLY_UPDATE_AND_MIGRATION_STATUS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/NIGHTLY_UPDATE_AND_MIGRATION_STATUS.md"
+    },
+    {
+      "from": "NIGHT_RUN_STATUS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/NIGHT_RUN_STATUS.md"
+    },
+    {
+      "from": "PARTIAL_ANALYSIS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/PARTIAL_ANALYSIS.md"
+    },
+    {
+      "from": "PERMANENT_HEALTH_SYSTEM.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/PERMANENT_HEALTH_SYSTEM.md"
+    },
+    {
+      "from": "PLAN_IMPLEMENTATION_COMPLETE.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/PLAN_IMPLEMENTATION_COMPLETE.md"
+    },
+    {
+      "from": "PNPM_CONNECTED_REPOS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/PNPM_CONNECTED_REPOS.md"
+    },
+    {
+      "from": "PNPM_ONLY_CONNECTIONS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/PNPM_ONLY_CONNECTIONS.md"
+    },
+    {
+      "from": "PROGRESS_REPORT.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/PROGRESS_REPORT.md"
+    },
+    {
+      "from": "QUALITY_FRAMEWORK.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/QUALITY_FRAMEWORK.md"
+    },
+    {
+      "from": "QUICK_START_UNIFIED_EXPERIMENT.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/QUICK_START_UNIFIED_EXPERIMENT.md"
+    },
+    {
+      "from": "READY_TO_PUBLISH.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/READY_TO_PUBLISH.md"
+    },
+    {
+      "from": "STATUS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/STATUS.md"
+    },
+    {
+      "from": "STRATEGIC_RUNNER_READY.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/STRATEGIC_RUNNER_READY.md"
+    },
+    {
+      "from": "SYSTEM_LABELS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/SYSTEM_LABELS.md"
+    },
+    {
+      "from": "TECH_INTEGRATION_COMPLETE.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/TECH_INTEGRATION_COMPLETE.md"
+    },
+    {
+      "from": "TECH_INTEGRATION_FINAL_REPORT.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/TECH_INTEGRATION_FINAL_REPORT.md"
+    },
+    {
+      "from": "TRUE_WILL_RPG_SYSTEM.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/TRUE_WILL_RPG_SYSTEM.md"
+    },
+    {
+      "from": "UNIFIED_EXPERIMENT_INSTRUCTION.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/UNIFIED_EXPERIMENT_INSTRUCTION.md"
+    },
+    {
+      "from": "UNIFIED_SYSTEM_READY.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/UNIFIED_SYSTEM_READY.md"
+    },
+    {
+      "from": "VERIFICATION_REPORT.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/VERIFICATION_REPORT.md"
+    },
+    {
+      "from": "VISUAL_TOOLS_COMPLETE.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/VISUAL_TOOLS_COMPLETE.md"
+    },
+    {
+      "from": "WORKFLOW_FIXES.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/WORKFLOW_FIXES.md"
+    },
+    {
+      "from": "WORKFLOW_FIX_SUMMARY.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/WORKFLOW_FIX_SUMMARY.md"
+    },
+    {
+      "from": "WORKSPACE_CONSOLIDATION_REPORT.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/WORKSPACE_CONSOLIDATION_REPORT.md"
+    },
+    {
+      "from": "WORKSPACE_INTEGRATION_STATUS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/WORKSPACE_INTEGRATION_STATUS.md"
+    },
+    {
+      "from": "cleanup-log.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/cleanup-log.json"
+    },
+    {
+      "from": "comparison-report.log",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/comparison-report.log"
+    },
+    {
+      "from": "comparison-report.pid",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/comparison-report.pid"
+    },
+    {
+      "from": "comprehensive-error-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/comprehensive-error-report.json"
+    },
+    {
+      "from": "cycle-differences-analysis.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/cycle-differences-analysis.json"
+    },
+    {
+      "from": "data-connection-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/data-connection-report.json"
+    },
+    {
+      "from": "deduplication-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/deduplication-report.json"
+    },
+    {
+      "from": "detailed-comparison-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/detailed-comparison-report.json"
+    },
+    {
+      "from": "experiment-300-cycles.log",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/experiment-300-cycles.log"
+    },
+    {
+      "from": "experiment-all-day.log",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/experiment-all-day.log"
+    },
+    {
+      "from": "experiment-night-run.log",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/experiment-night-run.log"
+    },
+    {
+      "from": "experiment-run.log",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/experiment-run.log"
+    },
+    {
+      "from": "experiment-until-midnight.log",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/experiment-until-midnight.log"
+    },
+    {
+      "from": "experiment.pid",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/experiment.pid"
+    },
+    {
+      "from": "gitlab-migration-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/gitlab-migration-report.json"
+    },
+    {
+      "from": "golden-standard-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/golden-standard-report.json"
+    },
+    {
+      "from": "live-analysis.log",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/live-analysis.log"
+    },
+    {
+      "from": "live-analysis.pid",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/live-analysis.pid"
+    },
+    {
+      "from": "live-round-analysis.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/live-round-analysis.json"
+    },
+    {
+      "from": "monitor.log",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/monitor.log"
+    },
+    {
+      "from": "monorepo-health-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/monorepo-health-report.json"
+    },
+    {
+      "from": "monorepo-scope-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/monorepo-scope-report.json"
+    },
+    {
+      "from": "real-deduplication-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/real-deduplication-report.json"
+    },
+    {
+      "from": "real-fix-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/real-fix-report.json"
+    },
+    {
+      "from": "scan-track-fix.log",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/scan-track-fix.log"
+    },
+    {
+      "from": "spiritus-animus-corpus-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/spiritus-animus-corpus-report.json"
+    },
+    {
+      "from": "unified-experiment-log.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/unified-experiment-log.json"
+    },
+    {
+      "from": "workspace-consolidation-report.json",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/workspace-consolidation-report.json"
+    }
+  ],
+  "removed": [],
+  "errors": [],
+  "stats": {
+    "bytesFreed": 67913945,
+    "filesProcessed": 236
+  },
+  "timestamp": "2025-12-05T02:49:25.758Z"
+}

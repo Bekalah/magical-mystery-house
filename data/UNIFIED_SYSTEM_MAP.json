@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "created": "2025-12-03",
+  "description": "Unified system map - all data connections in one place",
+  "experiment": {
+    "state": "experiment-state.json",
+    "improvements": "IMPROVEMENT_EXPERIMENT_LOG.json",
+    "liveReports": "live-reports/",
+    "cycleComparison": "improvement-reports/cycle-comparison-*.json",
+    "summary": "improvements-summary.md"
+  },
+  "tech": {
+    "integrations": {
+      "pattern": "packages/*/TECH_INTEGRATION.json",
+      "connections": "ALL_PACKAGES_TECH_CONNECTIONS.json"
+    },
+    "packages": {
+      "portalTech": "packages/portal-system/src/PortalTech.ts",
+      "rpgTech": "packages/game-engine/src/RPGTech.ts",
+      "trueWillTech": "packages/true-will-system/src/TrueWillTech.ts",
+      "witchEyeTech": "packages/liber-arcanae/src/WitchEyeTech.ts",
+      "witchModTech": "packages/cathedral-plugin-system/src/WitchModTech.ts",
+      "doubleTreeTech": "packages/codex-144-99/src/DoubleTreePathworkingTech.ts"
+    }
+  },
+  "models": {
+    "archive": "docs/models-archive/",
+    "index": "docs/models-archive/MODELS_INDEX.md",
+    "guide": "docs/models-archive/VISUAL_MODELS_GUIDE.md",
+    "data": "docs/models-archive/models-*.json"
+  },
+  "strategic": {
+    "state": "live-reports/strategic-state.json",
+    "fixTracking": "live-reports/fix-tracking.json",
+    "reports": "live-reports/cycle-*.json",
+    "latest": "live-reports/latest-cycle.json"
+  },
+  "gitlab": {
+    "ci": ".gitlab-ci.yml",
+    "checklist": "docs/GITLAB_TRANSFER_CHECKLIST.md",
+    "migration": "docs/GITLAB_MIGRATION_READY.md",
+    "remote": "cathedral-real"
+  },
+  "aesthetic": {
+    "vision": "docs/AESTHETIC_VISION.md",
+    "palette": "docs/BUSINESS_PORTFOLIO_PALETTE.md",
+    "portfolio": "cathedral-master/palette.json"
+  },
+  "documentation": {
+    "unified": "docs/UNIFIED_EXPERIMENT.md",
+    "platform": "docs/PLATFORM_MIGRATION.md",
+    "main": "README.md"
+  },
+  "scripts": {
+    "main": "scripts/10-hour-improvement-experiment.ts",
+    "saveModels": "scripts/save-new-models.mjs",
+    "linkData": "scripts/link-all-data.mjs",
+    "verify": "scripts/verify-connections.mjs"
+  }
+}
+

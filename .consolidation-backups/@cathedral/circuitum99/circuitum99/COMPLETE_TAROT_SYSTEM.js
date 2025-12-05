@@ -11,6 +11,16 @@
  */
 
 // 🌟 MAJOR ARCANA - 22 Archetypal Portals
+/**
+ * ⊙ Complete_tarot_system
+ * 
+ * @alchemical Complete_tarot_system
+ * @element N/A
+ * @symbol ⊙
+ * 
+ * @license CC0-1.0 - Public Domain
+ */
+
 const MAJOR_ARCANA = {
     0: {
         name: "The Fool",

@@ -1,4 +1,8 @@
 /**
+ * @license CC0-1.0 - Public Domain
+ */
+
+/**
  * Export Engine for Unified Codex Extraction
  *
  * Professional export system for your original codex creation:
