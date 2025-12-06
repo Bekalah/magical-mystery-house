@@ -50,7 +50,9 @@
     "sacred-geometry",
     "three.js",
     "exploration",
-    "mystical-computing"
+    "mystical-computing",
+    "cathedral-network",
+    "science"
   ],
   "engines": {
     "node": ">=18.0.0",
@@ -93,6 +95,9 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "SCIENCE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

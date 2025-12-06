@@ -28,7 +28,9 @@
     "cathedral",
     "stone-grimoire",
     "body",
-    "archive"
+    "archive",
+    "cathedral-network",
+    "art"
   ],
   "author": "Cathedral Master Creative Intelligence Team",
   "license": "CC0-1.0",
@@ -93,6 +95,9 @@
         "stone-grimoire-core",
         "stone-grimoire-library-engine"
       ]
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

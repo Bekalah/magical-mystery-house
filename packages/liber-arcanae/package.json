@@ -68,7 +68,9 @@
     "rebecca-respawn",
     "mystical-library",
     "codex-144-99",
-    "fusion-mechanics"
+    "fusion-mechanics",
+    "cathedral-network",
+    "synthesizing"
   ],
   "author": "Rebecca Respawn",
   "license": "CC0-1.0",
@@ -116,6 +118,9 @@
         "liber-arcanae-core",
         "liber-arcanae-tools"
       ]
-    }
+    },
+    "mode": "SYNTHESIZING",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

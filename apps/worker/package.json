@@ -15,7 +15,16 @@
   },
   "devDependencies": {
     "vitest": "^1.0.0"
-  }
-}  "consolidated": true,
-  "consolidatedAt": "2025-12-01T14:04:58.611Z"
+  },
+  "consolidated": true,
+  "consolidatedAt": "2025-12-01T14:04:58.611Z",
+  "cathedral": {
+    "mode": "SCIENCE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "science"
+  ]
 }

@@ -93,6 +93,13 @@
     },
     "integration": {
       "connects_to": []
-    }
-  }
+    },
+    "mode": "SCIENCE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "science"
+  ]
 }

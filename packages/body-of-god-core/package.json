@@ -25,7 +25,9 @@
     "sephiroth",
     "body-of-god",
     "anatomy",
-    "sacred-architecture"
+    "sacred-architecture",
+    "cathedral-network",
+    "core"
   ],
   "engines": {
     "node": "*",
@@ -57,7 +59,10 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "CORE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   },
   "publishConfig": {
     "access": "public"

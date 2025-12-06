@@ -29,7 +29,9 @@
     "avatar",
     "fractal",
     "tarot",
-    "experiences"
+    "experiences",
+    "cathedral-network",
+    "synthesizing"
   ],
   "author": "Rebecca Respawn",
   "license": "CC0-1.0",
@@ -93,6 +95,9 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "SYNTHESIZING",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

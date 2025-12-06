@@ -32,7 +32,9 @@
     "creative",
     "construction",
     "non-linear",
-    "creative"
+    "creative",
+    "cathedral-network",
+    "art"
   ],
   "author": "Rebecca Respawn",
   "license": "CC0-1.0",
@@ -102,6 +104,9 @@
         "circuitum99-core",
         "circuitum99-arcanae-cyoa"
       ]
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

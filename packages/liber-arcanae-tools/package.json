@@ -59,7 +59,9 @@
     "consciousness",
     "sacred-geometry",
     "godot",
-    "collaboration"
+    "collaboration",
+    "cathedral-network",
+    "art"
   ],
   "author": "Cathedral Master Creative Intelligence Team",
   "license": "CC0-1.0",
@@ -108,6 +110,9 @@
         "liber-arcanae-core",
         "liber-arcanae-tools"
       ]
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

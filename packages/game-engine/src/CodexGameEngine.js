@@ -18,6 +18,7 @@ import { ArcanaeCharacterSystem } from './ArcanaeCharacterSystem.js';
 import { SacredGeometryRenderer } from './SacredGeometryRenderer.js';
 import { AudioSynthesisEngine } from './AudioSynthesisEngine.js';
 import { TraumaSafeGameState } from './TraumaSafeGameState.js';
+import { MarblesAndMedallionsSystem } from './MarblesAndMedallionsSystem.js';
 
 export class CodexGameEngine {
   constructor() {
@@ -26,6 +27,7 @@ export class CodexGameEngine {
     this.geometryRenderer = new SacredGeometryRenderer();
     this.audioEngine = new AudioSynthesisEngine();
     this.gameState = new TraumaSafeGameState();
+    this.marblesAndMedallions = new MarblesAndMedallionsSystem();
 
     this.isInitialized = false;
     this.currentNode = null;
@@ -124,13 +126,22 @@ export class CodexGameEngine {
     // Update game state
     this.gameState.updateNodeProgression(nodeId);
 
+    // Award wisdom boon as marble
+    const wisdomBoon = this.marblesAndMedallions.awardWisdomBoon(
+      'wisdom',
+      `node-${nodeId}`,
+      { nodeName: node.name, teaching: node.teaching_function }
+    );
+
     /* eslint-disable */console.log(...oo_oo(`329344999_125_4_125_75_4`,`🌟 Navigated to ${node.name} - ${node.teaching_function}`));
+    /* eslint-disable */console.log(...oo_oo(`329344999_125_4_125_75_4`,`🔮 Awarded ${wisdomBoon.name} marble`));
 
     return {
       node,
       geometry: await this.geometryRenderer.getCurrentGeometry(),
       audio: this.audioEngine.getCurrentFrequencies(),
-      progression: this.gameState.getProgression()
+      progression: this.gameState.getProgression(),
+      boon: wisdomBoon
     };
   }
 
@@ -152,10 +163,21 @@ export class CodexGameEngine {
       traumaSafety: 'MAXIMUM - Consent required for all fusion activities'
     };
 
+    // Award divine boon as medallion for fusion
+    const divineBoon = this.marblesAndMedallions.awardDivineBoon(
+      'arcane_power',
+      'Fusion Kink',
+      { fusion: fusion.fusionName, nodes: [node1Id, node2Id] }
+    );
+
     /* eslint-disable */console.log(...oo_oo(`329344999_153_4_153_65_4`,`⚗️ Fusion Kink activated: ${fusion.fusionName}`));
     /* eslint-disable */console.log(...oo_oo(`329344999_154_4_154_57_4`,`🔢 Sacred ratio: ${fusion.sacredRatio}`));
+    /* eslint-disable */console.log(...oo_oo(`329344999_154_4_154_57_4`,`🏅 Awarded ${divineBoon.name} medallion`));
 
-    return fusion;
+    return {
+      ...fusion,
+      boon: divineBoon
+    };
   }
 
   getGameState() {
@@ -165,8 +187,30 @@ export class CodexGameEngine {
       activeCharacter: this.activeCharacter,
       progression: this.gameState.getProgression(),
       availableNodes: this.gameState.getAccessibleNodes(),
-      traumaSafety: this.gameState.getSafetyStatus()
+      traumaSafety: this.gameState.getSafetyStatus(),
+      collection: this.marblesAndMedallions.getCollectionSummary()
     };
+  }
+
+  /**
+   * Award god/goddess boon as medallion
+   */
+  awardDivineBoon(type, deity, metadata = {}) {
+    return this.marblesAndMedallions.awardDivineBoon(type, deity, metadata);
+  }
+
+  /**
+   * Award wisdom boon as marble
+   */
+  awardWisdomBoon(type, source, metadata = {}) {
+    return this.marblesAndMedallions.awardWisdomBoon(type, source, metadata);
+  }
+
+  /**
+   * Get collection summary
+   */
+  getCollection() {
+    return this.marblesAndMedallions.getCollectionSummary();
   }
 
   // Trauma-safe pause/resume

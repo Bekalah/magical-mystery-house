@@ -84,6 +84,13 @@
         "circuitum99-core",
         "circuitum99-arcanae-cyoa"
       ]
-    }
-  }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "art"
+  ]
 }

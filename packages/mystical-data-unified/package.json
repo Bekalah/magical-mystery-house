@@ -30,7 +30,9 @@
     "tarot",
     "astrology",
     "mystical",
-    "unified"
+    "unified",
+    "cathedral-network",
+    "synthesizing"
   ],
   "author": "Rebecca Lemke",
   "license": "CC0-1.0",
@@ -95,6 +97,9 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "SYNTHESIZING",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

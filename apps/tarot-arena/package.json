@@ -29,5 +29,14 @@
     "name": "Tarot Arena",
     "symbol": "⊙",
     "label": "⊙ Tarot Arena (@cathedral/tarot-arena)"
-  }
+  },
+  "cathedral": {
+    "mode": "CODEX",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "codex"
+  ]
 }

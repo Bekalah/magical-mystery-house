@@ -25,5 +25,14 @@
     "name": "Web From Master",
     "symbol": "⊙",
     "label": "⊙ Web From Master (@cathedral/web-from-master)"
-  }
+  },
+  "cathedral": {
+    "mode": "SYNTHESIZING",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "synthesizing"
+  ]
 }

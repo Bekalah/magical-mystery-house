@@ -110,7 +110,9 @@
     "interactive-reading",
     "sacred-art",
     "alchemy",
-    "mystery-tradition"
+    "mystery-tradition",
+    "cathedral-network",
+    "art"
   ],
   "cathedral": {
     "role": "tarot_application",
@@ -149,7 +151,10 @@
       ],
       "accessibility": "Full keyboard navigation, screen reader support",
       "personalization": "User card preferences, journal, reading history"
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   },
   "build": {
     "minify": "esbuild",

@@ -40,7 +40,9 @@
     "144:99",
     "golden-ratio",
     "energy-ribbons",
-    "spiral-effects"
+    "spiral-effects",
+    "cathedral-network",
+    "visionary"
   ],
   "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
   "license": "CC0-1.0",
@@ -92,7 +94,10 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "VISIONARY",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   },
   "files": [
     "effects/",

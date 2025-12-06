@@ -14,7 +14,7 @@
     "./tsconfig": "./tsconfig.base.json"
   },
   "engines": {
-    "node": "25.0.0",
+    "node": ">=25.0.0",
     "pnpm": "*"
   },
   "scripts": {
@@ -102,6 +102,13 @@
     },
     "integration": {
       "connects_to": []
-    }
-  }
+    },
+    "mode": "CORE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "core"
+  ]
 }

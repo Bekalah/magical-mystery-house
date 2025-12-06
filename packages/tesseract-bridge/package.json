@@ -35,7 +35,9 @@
     "cathedral",
     "tesseract-bridge",
     "kabbalah",
-    "geometry"
+    "geometry",
+    "cathedral-network",
+    "visionary"
   ],
   "author": "Rebecca Respawn",
   "license": "CC0-1.0",
@@ -93,6 +95,9 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "VISIONARY",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

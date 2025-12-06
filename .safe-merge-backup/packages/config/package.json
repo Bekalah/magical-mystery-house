@@ -14,7 +14,7 @@
     "./tsconfig": "./tsconfig.base.json"
   },
   "engines": {
-    "node": "25.0.0",
+    "node": ">=25.0.0",
     "pnpm": ">=8.0.0"
   },
   "scripts": {

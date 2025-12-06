@@ -29,5 +29,14 @@
     "name": "Synth Lab",
     "symbol": "⊙",
     "label": "⊙ Synth Lab (@cathedral/synth-lab)"
-  }
+  },
+  "cathedral": {
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "art"
+  ]
 }

@@ -39,7 +39,9 @@
     "divine-design",
     "fusion-kink",
     "tree-of-life",
-    "sephiroth"
+    "sephiroth",
+    "cathedral-network",
+    "art"
   ],
   "engines": {
     "node": "*",
@@ -83,7 +85,10 @@
         "codex-144-99",
         "codex-144-99-core"
       ]
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   },
   "publishConfig": {
     "access": "public"

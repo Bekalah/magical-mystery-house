@@ -32,7 +32,9 @@
     "sacred-fractals",
     "elemental-fractals",
     "mystical-technology",
-    "permanent-flame"
+    "permanent-flame",
+    "cathedral-network",
+    "codex"
   ],
   "author": "Cathedral Master Creative Intelligence Team",
   "license": "CC0-1.0",
@@ -90,6 +92,9 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "CODEX",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

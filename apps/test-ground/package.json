@@ -29,5 +29,14 @@
     "name": "Test Ground",
     "symbol": "⊙",
     "label": "⊙ Test Ground (@cathedral/test-ground)"
-  }
+  },
+  "cathedral": {
+    "mode": "CORE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "core"
+  ]
 }

@@ -30,7 +30,9 @@
     "mystical",
     "communication",
     "message-bus",
-    "sacred-geometry"
+    "sacred-geometry",
+    "cathedral-network",
+    "core"
   ],
   "author": "Cathedral Research Team",
   "license": "CC0-1.0",
@@ -65,7 +67,10 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "CORE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   },
   "publishConfig": {
     "access": "public",

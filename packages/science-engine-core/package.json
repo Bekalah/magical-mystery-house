@@ -69,7 +69,9 @@
     "consciousness",
     "trauma-aware",
     "open-source",
-    "free"
+    "free",
+    "cathedral-network",
+    "science"
   ],
   "packageManager": "pnpm@10.23.0",
   "consolidated": true,
@@ -104,6 +106,9 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "SCIENCE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

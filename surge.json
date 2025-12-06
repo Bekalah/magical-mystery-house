@@ -1,0 +1,28 @@
+{
+  "// ⚗️ Cathedral of Circuits - Surge Configuration": "Magnum Opus Version 1.0",
+  "// Author": "Rebecca Respawn",
+  "project": "apps/web/dist",
+  "domain": "cathedral-of-circuits.surge.sh",
+  "headers": {
+    "/**": {
+      "Cache-Control": "public, max-age=31536000, immutable"
+    },
+    "/*.html": {
+      "Cache-Control": "public, max-age=0, must-revalidate"
+    },
+    "/assets/**": {
+      "Cache-Control": "public, max-age=31536000, immutable"
+    }
+  },
+  "redirects": [
+    {
+      "/": "/index.html"
+    }
+  ],
+  "routes": {
+    "/": "/index.html"
+  }
+}
+
+
+

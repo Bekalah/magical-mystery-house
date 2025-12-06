@@ -1,0 +1,16 @@
+# Archived: 2025-12-06T00:18:55.354Z
+# Original: /Users/rebeccalemke/cathedral-master-deployment/wrangler.toml
+
+name = "cathedral-master-deployment"
+compatibility_date = "2024-12-03"
+
+[site]
+bucket = "./dist"
+
+[build]
+command = "pnpm run build"
+
+[[routes]]
+pattern = "/*"
+zone_name = "cathedral.bekalah.github.io"
+

@@ -31,7 +31,9 @@
     "branding",
     "mystical",
     "sacred-geometry",
-    "three-js"
+    "three-js",
+    "cathedral-network",
+    "science"
   ],
   "author": "Cathedral Research Team",
   "license": "CC0-1.0",
@@ -80,7 +82,10 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "SCIENCE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   },
   "publishConfig": {
     "access": "public",

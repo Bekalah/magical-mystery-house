@@ -71,7 +71,9 @@
     "attention-regulation",
     "trauma-informed",
     "creative-accessibility",
-    "cognitive-accessibility"
+    "cognitive-accessibility",
+    "cathedral-network",
+    "science"
   ],
   "author": "Rebecca Lemke (Cathedral Trinity Architecture)",
   "license": "CC0-1.0",
@@ -143,6 +145,9 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "SCIENCE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

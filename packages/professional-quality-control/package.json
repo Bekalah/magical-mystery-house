@@ -79,6 +79,13 @@
     },
     "integration": {
       "connects_to": []
-    }
-  }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "art"
+  ]
 }

@@ -13,7 +13,9 @@
     "creative",
     "mystical",
     "trauma-safe",
-    "sacred-geometry"
+    "sacred-geometry",
+    "cathedral-network",
+    "art"
   ],
   "author": "Rebecca Respawn",
   "license": "CC0-1.0",
@@ -154,6 +156,9 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

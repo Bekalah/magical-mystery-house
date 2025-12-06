@@ -54,5 +54,14 @@
     "name": "Cathedral Spell Frontend",
     "symbol": "⊙",
     "label": "⊙ Cathedral Spell Frontend (cathedral-spell-frontend)"
-  }
+  },
+  "cathedral": {
+    "mode": "CORE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "core"
+  ]
 }

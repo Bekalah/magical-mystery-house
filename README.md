@@ -1,260 +1,196 @@
-# Cathedral - Completely Free Art, Science, Design & Mathematics Platform
+# ⚗️ Cathedral of Circuits - Magnum Opus Version 1.0
 
-**Completely Free** - No gatekeeping, no barriers, no prerequisites. Open to everyone.
+**Liber Arcanae Codex Abyssiae**
 
-**License:** CC0-1.0 - Public Domain (Truly Open Source)
+> A comprehensive monorepo for the Cathedral of Circuits project, featuring game development, design tools, codex systems, and more.
 
----
-
-## 🎯 What is Cathedral?
-
-Cathedral is an **enterprise-grade, completely free** platform that replaces traditional art schools and expensive design/science tools. Unlike platforms that charge fees or require credentials, Cathedral is **open to everyone** - no gatekeeping, no barriers.
-
-### Unique Features
-
-- ✅ **Completely Free** - Not "free for students" or freemium - completely free for everyone
-- ✅ **No Gatekeeping** - No prerequisites, no credentials, no barriers to entry
-- ✅ **Trauma-Aware** - Designed for people who don't fit traditional systems
-- ✅ **Sacred Geometry** - 144:99 ratio, golden ratio, Fibonacci throughout
-- ✅ **Spiral Dynamics** - Consciousness-based learning, not credential-based
-- ✅ **Multi-Modal** - Art + Music + Science + Spirituality + Mathematics integrated
-- ✅ **Open World** - 3D immersive exploration, not website-like
-- ✅ **Living Systems** - Egregores, consciousness evolution, dynamic content
-- ✅ **Open Source** - CC0-1.0 license, truly open
-
----
-
-## 🏗️ Architecture
-
-### Core Engines (17 Packages)
-
-1. **Codex144Engine** - 144 nodes, 99 depths, consciousness mapping
-2. **StoneGrimoireEngine** - 8 chapels, folios, sacred archive
-3. **MysteryHouseEngine** - 99 rooms, open exploration
-4. **LiberArcanaeEngine** - Extended tarot, 72 Shem Angels, 72 Goetic Demons
-5. **Circuitum99StoryEngine** - 99 gates, narrative paths
-6. **TrinityV11Core** - Brain + Soul + Body integration
-7. **UnifiedCodexEngine** - 6-mode system (Art, Music, Game, Design, Science, Mathematics)
-8. **TesseractBridge** - Cross-system synchronization
-9. **HealthMapEngine** - Comprehensive health monitoring
-10. **DebugSystem** - Enterprise debugging tools
-11. **SacredMathematicsCore** - Sacred geometry, 144:99 ratio
-12. **FusionKinkCore** - Multi-modal design mathematics
-13. Plus 5 more mathematics cores
-
-### Tools (100+)
-
-- Health monitoring
-- Security auditing
-- Workspace integration
-- Codex debugging
-- Competitive research
-- And 95+ more tools
-
-### Scripts (20+)
-
-- 10-hour improvement experiment
-- Workspace integrator
-- Security audit
-- Backup systems
-- And 15+ more scripts
+**Author**: Rebecca Respawn (pen name)  
+**License**: CC0-1.0 - Public Domain  
+**Repository**: [GitLab](https://gitlab.com/bekalah/cathedral-of-circuits-magnum-opus-v1)
 
 ---
 
 ## 🚀 Quick Start
 
-### Prerequisites
-
-- Node.js 14+ (MacBook Air 2017 era compatible)
-- pnpm 7+
-- TypeScript 5+
-
 ### Installation
 
 ```bash
-# Clone repository
-git clone <repository-url>
-cd cathedral-master-deployment
-
-# Install dependencies
 pnpm install
-
-# Build all packages
-pnpm run build
-
-# Generate health map
-node tools/health-map-generator.mjs
-
-# Run codex debugger
-node tools/codex-debugger.mjs
-
-# Start improvement experiment
-tsx scripts/10-hour-improvement-experiment.ts
 ```
+
+### Development
+
+```bash
+pnpm dev          # Start all dev servers
+pnpm build        # Build all packages
+pnpm lint         # Lint all packages
+pnpm test         # Run all tests
+```
+
+### Deployment Options
+
+**Free Hosting (Recommended):**
+```bash
+# Surge.sh (Static hosting - Free)
+pnpm deploy:surge
+
+# Coolify (Self-hosted PaaS - Free if you have VPS)
+pnpm deploy:coolify
+
+# Local Docker
+pnpm deploy:self-host
+```
+
+**Local Self-Hosting:**
+```bash
+# Caddy (Auto HTTPS)
+pnpm deploy:caddy
+
+# Nginx (High Performance)
+pnpm deploy:nginx
+
+# View logs
+pnpm deploy:logs
+
+# Stop services
+pnpm deploy:stop
+```
+
+**GitLab CI/CD:**
+- Push to GitLab → Automatic build → Deploy to Surge/Coolify
+- See: [docs/GITLAB_DEPLOYMENT_GUIDE.md](./docs/GITLAB_DEPLOYMENT_GUIDE.md)
+
+See: [SELF_HOSTING_QUICK_START.md](./SELF_HOSTING_QUICK_START.md)
+
+---
+
+## 📦 Project Structure
+
+```
+.
+├── apps/              # Applications
+│   ├── web/          # Main web app
+│   └── worker/       # API/Worker service
+├── packages/          # Shared packages
+│   ├── game-engine/  # Game engine core
+│   ├── design-tools/ # Design system
+│   └── ...
+├── tools/            # Development tools
+├── scripts/          # Build/utility scripts
+├── docs/             # Documentation
+└── archive/          # Archived reports/configs
+```
+
+---
+
+## 🏗️ Architecture
+
+### Trinity System: Spiritus/Animus/Corpus
+
+- **Spiritus**: Divine intellect, codex systems, sacred mathematics
+- **Animus**: Creative expression, art, music, synthesis
+- **Corpus**: Material manifestation, game engine, UI, interaction
+
+### Tech Stack
+
+- **Monorepo**: Turbo v1, pnpm
+- **Frontend**: React 18, TypeScript
+- **Game**: Godot 4.5, Rust, Three.js
+- **Deployment**: Docker, Caddy/Nginx
+- **Version Control**: GitLab
 
 ---
 
 ## 📚 Documentation
 
-- [Complete Ecosystem Map](docs/ECOSYSTEM_MAP.md)
-- [Competitive Analysis](docs/COMPETITIVE_ANALYSIS.md)
-- [Unified Codex System](docs/UNIFIED_CODEX_SYSTEM.md)
-- [Developer Guide](docs/DEVELOPER_GUIDE.md)
-- [OpenSpec Guidelines](openspec/AGENTS.md)
+- [SELF_HOSTING_QUICK_START.md](./SELF_HOSTING_QUICK_START.md) - Self-hosting guide
+- [CONTRIBUTING.md](./CONTRIBUTING.md) - Contribution guidelines
+- [docs/CLOUDFLARE_TO_SELF_HOST_MIGRATION.md](./docs/CLOUDFLARE_TO_SELF_HOST_MIGRATION.md) - Migration guide
+- [CATHEDRAL_QUALITY_STANDARDS.md](./CATHEDRAL_QUALITY_STANDARDS.md) - Quality standards
 
 ---
 
-## 🎨 Characters & Inspirations
+## 🛠️ Common Commands
 
-The characters in Cathedral are based on **real creative people** and **real art inspirations** from history. This reflects a deep fascination with visionary creators who have explored symbolic metaphor and visionary language across music, art, writing, science, and mathematics.
+### Development
 
-### Real Inspirations
-
-The Major Arcana characters draw from historical and creative figures:
-
-- **The Fool (0)**: Inspired by **Leonora Carrington** and **Rebecca Respawn** - Christianity & mysticism themes, kitchen alchemy, surrealist magic
-- **The Magician (I)**: Inspired by **John Dee** - Enochian system, angelic communications, Dee's magic system
-- **The High Priestess (II)**: Inspired by **Dion Fortune** - Avalon work, Sea Priestess magic, Glastonbury Tor
-- Additional Major Arcana characters are mapped to other historical/creative inspirations from alchemical and mystical traditions
-
-### Visionary Language
-
-The work explores **deep symbolic metaphor** and **visionary language** across multiple disciplines:
-
-- **Music**: Fractal sound synthesis, sacred geometry in audio, solfeggio frequencies
-- **Art**: High-end Japanese tech aesthetics, mystical visual systems, surrealist traditions
-- **Writing**: Real cannon-based narratives, grimoire systems, visionary literature
-- **Science**: Empirical research, sacred mathematics, consciousness studies
-- **Mathematics**: Golden ratio (1.618), 144:99 ratio, Fibonacci sequences, sacred geometry
-
-### Personal Fascination
-
-This project represents a personal exploration of visionary creators, their work, and the symbolic languages they developed. It is not intended as historical accuracy but as creative interpretation and homage to those who have pushed the boundaries of creative expression.
-
-**Note**: Technical systems like fusion kink, codex, nodes, and mathematics are separate implementation details and are not directly connected to the character inspirations. They serve as structural frameworks for organizing knowledge and creative expression.
-
----
-
-## 🎨 What Makes Cathedral Different
-
-### vs. Traditional Art Schools
-
-| Feature | Traditional Schools | Cathedral |
-|---------|---------------------|-----------|
-| Cost | $20,000-$100,000+ | **Completely Free** |
-| Prerequisites | Portfolio, grades, tests | **None** |
-| Access | Limited enrollment | **Unlimited** |
-| Gatekeeping | High barriers | **Zero barriers** |
-
-### vs. Enterprise Platforms
-
-| Feature | Enterprise Platforms | Cathedral |
-|---------|---------------------|-----------|
-| Cost | $12-$50/month | **Completely Free** |
-| Access | Paid tiers | **Full access** |
-| Open Source | No | **Yes - CC0-1.0** |
-| Sacred Geometry | No | **Yes - Core feature** |
-
----
-
-## 🔄 Continuous Improvement
-
-Cathedral improves itself automatically:
-
-- **Health Monitoring** - Every 10 cycles
-- **Debug Reporting** - Every 10 cycles
-- **Codex Analysis** - Every 20 cycles
-- **Competitive Research** - Every 15 cycles
-- **Workspace Integration** - Every 5 cycles
-
----
-
-## 🌐 Platforms & Infrastructure
-
-### Current Stack (Migrating)
-
-**Version Control & CI/CD**:
-- **GitLab** (primary) - Version control, CI/CD pipelines, package registry
-- **GitHub** (mirror) - Legacy version control, migrating to GitLab
-
-**Deployment & Hosting**:
-- **Vercel** - Primary production deployments
-- **Cloudflare** - CDN, Workers, Pages (edge computing)
-- **Render** - Additional hosting and services
-- **Local** - Always available for development
-
-**Build & Development**:
-- **Vite** - Modern build tool and dev server
-- **React** - UI framework
-- **TypeScript** - Type-safe development
-
-**Documentation**:
-- **GitLab Wiki** - Primary documentation (migrating from GitHub Wiki)
-- **Vercel-hosted docs** - Production documentation
-
-### Migration Status
-
-This project is actively migrating from GitHub-based infrastructure (GitHub Pages, GitHub Packages, GitHub Actions) to a modern, distributed platform stack. See [Platform Migration Guide](docs/PLATFORM_MIGRATION.md) for details.
-
----
-
-## 📊 System Status
-
-Run health check:
 ```bash
-pnpm run health:check
+pnpm dev              # Start dev servers
+pnpm build            # Build all
+pnpm lint             # Lint all
+pnpm type-check       # Type check
+pnpm test             # Run tests
+pnpm clean            # Clean builds
 ```
 
-Generate health map:
+### Project Management
+
 ```bash
-pnpm run health:map
+pnpm cathedral        # Cathedral CLI
+pnpm alchemy          # Alchemy tools
+pnpm codex            # Codex tools
+pnpm pipeline         # CI/CD pipeline
 ```
 
-Run all debug checks:
+### Quality & Maintenance
+
 ```bash
-pnpm run debug:all
+pnpm security:audit   # Security audit
+pnpm security:fix     # Fix security issues
+pnpm maintain         # Full maintenance
+pnpm cleanup          # Clean up files
+```
+
+### Migration & Setup
+
+```bash
+pnpm migrate:cloudflare      # Migrate from Cloudflare
+pnpm gitlab:prepare          # Prepare GitLab migration
+pnpm enhance:golden-standard # Apply Golden Standard
+pnpm trinity:integrate       # Integrate Trinity system
 ```
 
 ---
 
-## 🎯 Roadmap
+## 🎮 Game Development
 
-### High Priority
-- [ ] Interactive Notebooks
-- [ ] Real-Time Collaboration
-- [ ] 3D Web Interface
-- [ ] Enhanced Spiral Dynamics
+The project includes a complete game engine with:
 
-### Medium Priority
-- [ ] Project Portfolios
-- [ ] Virtual Galleries
-- [ ] Visual Knowledge Graphs
+- **Marbles and Medallions** boon system
+- **Codex 144:99** game engine
+- **Arcanae Character System**
+- **Trauma-safe design**
 
-See [Competitive Analysis](docs/COMPETITIVE_ANALYSIS.md) for full roadmap.
+See `packages/game-engine/` for details.
+
+---
+
+## 🎨 Design System
+
+**Cathedral Quality Standards**: A+ engineering, Golden Standard Alchemy/Hermetica/Neo-Platonic theme.
+
+See [CATHEDRAL_QUALITY_STANDARDS.md](./CATHEDRAL_QUALITY_STANDARDS.md)
+
+---
+
+## 🔄 GitLab Migration
+
+To clone from GitHub to GitLab without login:
+
+```bash
+node tools/clone-github-to-gitlab-no-login.mjs
+```
+
+See [docs/GITLAB_TOKEN_SETUP.md](./docs/GITLAB_TOKEN_SETUP.md) for details.
 
 ---
 
 ## 📝 License
 
-**CC0-1.0 - Public Domain**
-
-Completely free. No restrictions. No gatekeeping. Open to everyone.
+CC0-1.0 - Public Domain
 
 ---
 
-## 🙏 Credits
+**Part of Cathedral of Circuits - Magnum Opus Version 1.0**  
+**Liber Arcanae Codex Abyssiae**
 
-**Author:** Rebecca Respawn  
-**License:** CC0-1.0 - Public Domain
-
-Built with sacred geometry, trauma-aware design, and open access principles.
-
----
-
-**Last Updated:** ${new Date().toISOString()}
-
-
-
-## Documentation
-
-See [Wiki](./docs/wiki/index.md) for comprehensive documentation.

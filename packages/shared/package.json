@@ -80,6 +80,13 @@
     },
     "integration": {
       "connects_to": []
-    }
-  }
+    },
+    "mode": "CORE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "core"
+  ]
 }

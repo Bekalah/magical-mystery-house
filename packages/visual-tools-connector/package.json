@@ -71,7 +71,10 @@
         "codex-144-99",
         "codex-144-99-core"
       ]
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   },
   "engines": {
     "node": "*",
@@ -85,5 +88,9 @@
     "name": "Visual Tools Connector",
     "symbol": "⊙",
     "label": "⊙ Visual Tools Connector (@cathedral/visual-tools-connector)"
-  }
+  },
+  "keywords": [
+    "cathedral-network",
+    "art"
+  ]
 }

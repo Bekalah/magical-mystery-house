@@ -1,0 +1,64 @@
+{
+  "project": {
+    "name": "Cathedral of Circuits",
+    "version": "1.0.0",
+    "fullName": "Cathedral of Circuits - Magnum Opus Version 1.0",
+    "author": "Rebecca Respawn",
+    "domain": "cathedral.bekalah.github.io"
+  },
+  "cloudflare": {
+    "wranglerFiles": [
+      "apps/web/wrangler.toml",
+      "apps/worker/wrangler.toml",
+      "cathedral-master/apps/web/wrangler.toml",
+      "cathedral-master/apps/worker/wrangler.toml",
+      "cathedral-master/wrangler.toml",
+      "wrangler.toml"
+    ],
+    "packageJsonFiles": [
+      ".consolidation-backups/@bekalah/cathedral-monorepo/learning-device/package.json",
+      ".consolidation-backups/@bekalah/cathedral-worker/worker/package.json",
+      ".consolidation-backups/cathedral-of-circuits/cathedral-of-circuits/package.json",
+      ".remote-repos/BUILDING-CATHEDRALS/apps/arcanae-lab/package.json",
+      ".remote-repos/BUILDING-CATHEDRALS/apps/cathedral-of-circuits/package.json",
+      ".remote-repos/cathedral/apps/learning-device/package.json",
+      ".remote-repos/cathedral/apps/worker/package.json",
+      ".remote-repos/cathedral/package.json",
+      ".remote-repos/cathedral-master/apps/learning-device/package.json",
+      ".remote-repos/cathedral-master/apps/worker/package.json",
+      ".remote-repos/cathedral-vercel/apps/worker/package.json",
+      ".remote-repos/cathedral-vercel/package.json",
+      ".safe-merge-backup/apps/learning-device/package.json",
+      ".safe-merge-backup/apps/worker/package.json",
+      "apps/learning-device/package.json",
+      "apps/worker/package.json",
+      "cathedral-master/.consolidation-backups/@bekalah/cathedral-monorepo/learning-device/package.json",
+      "cathedral-master/.consolidation-backups/@bekalah/cathedral-worker/worker/package.json",
+      "cathedral-master/.consolidation-backups/cathedral-of-circuits/cathedral-of-circuits/package.json",
+      "cathedral-master/.safe-merge-backup/apps/learning-device/package.json",
+      "cathedral-master/.safe-merge-backup/apps/worker/package.json",
+      "cathedral-master/apps/learning-device/package.json",
+      "cathedral-master/apps/worker/package.json"
+    ],
+    "archived": [
+      "apps/web/wrangler.toml",
+      "apps/worker/wrangler.toml",
+      "cathedral-master/apps/web/wrangler.toml",
+      "cathedral-master/apps/worker/wrangler.toml",
+      "cathedral-master/wrangler.toml",
+      "wrangler.toml"
+    ]
+  },
+  "selfHosting": {
+    "configs": [
+      "Caddyfile",
+      "nginx.conf",
+      "docker-compose.yml"
+    ],
+    "dockerfiles": [
+      "Dockerfile",
+      "apps/worker/Dockerfile"
+    ]
+  },
+  "timestamp": "2025-12-06T00:18:33.366Z"
+}

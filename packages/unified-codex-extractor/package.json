@@ -68,7 +68,9 @@
     "mystical-symbols",
     "architectural-plans",
     "quality-control",
-    "professional-tools"
+    "professional-tools",
+    "cathedral-network",
+    "art"
   ],
   "exports": {
     ".": "./dist/index.js",
@@ -118,6 +120,9 @@
         "codex-144-99",
         "codex-144-99-core"
       ]
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

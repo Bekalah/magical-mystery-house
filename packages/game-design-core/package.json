@@ -71,7 +71,9 @@
     "consciousness",
     "trauma-aware",
     "open-source",
-    "free"
+    "free",
+    "cathedral-network",
+    "art"
   ],
   "packageManager": "pnpm@10.23.0",
   "consolidated": true,
@@ -112,6 +114,9 @@
         "circuitum99-core",
         "circuitum99-arcanae-cyoa"
       ]
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

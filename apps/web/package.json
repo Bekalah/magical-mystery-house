@@ -39,5 +39,14 @@
     "name": "Web",
     "symbol": "⊙",
     "label": "⊙ Web (@cathedral/web)"
-  }
+  },
+  "cathedral": {
+    "mode": "CORE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "core"
+  ]
 }

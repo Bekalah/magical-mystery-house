@@ -19,7 +19,7 @@
     }
   },
   "engines": {
-    "node": "22.0.0",
+    "node": ">=22.0.0",
     "pnpm": "*"
   },
   "scripts": {
@@ -115,7 +115,9 @@
     "esoteric-research",
     "library-system",
     "sacred-texts",
-    "mystery-traditions"
+    "mystery-traditions",
+    "cathedral-network",
+    "synthesizing"
   ],
   "cathedral": {
     "role": "sacred_knowledge_core",
@@ -171,10 +173,13 @@
         "codex-144-99",
         "codex-144-99-core"
       ]
-    }
+    },
+    "mode": "SYNTHESIZING",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   },
   "volta": {
-    "node": "22.0.0",
+    "node": ">=22.0.0",
     "pnpm": "9.15.0"
   },
   "consolidated": true,

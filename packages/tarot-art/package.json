@@ -86,6 +86,13 @@
         "liber-arcanae-core",
         "liber-arcanae-tools"
       ]
-    }
-  }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "art"
+  ]
 }

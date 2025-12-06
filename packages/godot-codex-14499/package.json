@@ -35,7 +35,9 @@
     "trauma-safe",
     "free",
     "open-source",
-    "cathedral-of-circuits"
+    "cathedral-of-circuits",
+    "cathedral-network",
+    "visionary"
   ],
   "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
   "license": "CC0-1.0",
@@ -86,7 +88,10 @@
       "breathingAnimations": true,
       "sacredColors": true,
       "archetypalForms": true
-    }
+    },
+    "mode": "VISIONARY",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   },
   "files": [
     "scenes/",

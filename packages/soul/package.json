@@ -78,7 +78,14 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   },
-  "description": "Soul - Part of the Cathedral of Circuits mystical ecosystem"
+  "description": "Soul - Part of the Cathedral of Circuits mystical ecosystem",
+  "keywords": [
+    "cathedral-network",
+    "art"
+  ]
 }

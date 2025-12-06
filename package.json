@@ -15,6 +15,7 @@
     "backup": "node scripts/comprehensive-backup-system.mjs",
     "backup:all": "node scripts/comprehensive-backup-system.mjs && node scripts/easy-save-system.mjs",
     "cleanup": "node scripts/cleanup-flat-files.mjs",
+    "cleanup:root": "node tools/cleanup-and-organize-root.mjs",
     "security:audit": "node scripts/security-audit.mjs",
     "security:check": "pnpm audit && pnpm run security:audit",
     "security:fix": "pnpm audit --fix",
@@ -135,7 +136,16 @@
     "registry:update": "node scripts/create-comprehensive-registry.mjs",
     "publish:packages": "pnpm -r publish --access public",
     "deploy:vercel": "vercel --prod",
-    "deploy:docs": "gh-pages -d docs"
+    "deploy:docs": "gh-pages -d docs",
+    "migrate:cloudflare": "node tools/migrate-cloudflare-to-self-host.mjs",
+    "deploy:surge": "cd apps/web && pnpm build && cd dist && surge .",
+    "deploy:coolify": "docker compose -f coolify.yml up -d",
+    "deploy:caddy": "caddy run",
+    "deploy:nginx": "sudo nginx -c $(pwd)/nginx.conf",
+    "deploy:docker": "docker compose up -d",
+    "deploy:self-host": "pnpm build && docker compose up -d",
+    "deploy:stop": "docker compose down",
+    "deploy:logs": "docker compose logs -f"
   },
   "devDependencies": {
     "@types/node": "^20.19.25",

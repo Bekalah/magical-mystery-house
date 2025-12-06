@@ -16,7 +16,7 @@
   "devDependencies": {},
   "packageManager": "pnpm@9.15.0",
   "engines": {
-    "node": "25.0.0",
+    "node": ">=25.0.0",
     "pnpm": ">=9.0.0"
   },
   "workspaces": [
@@ -43,5 +43,14 @@
     "name": "Cathedral Of Circuits",
     "symbol": "⊙",
     "label": "⊙ Cathedral Of Circuits (cathedral-of-circuits)"
-  }
+  },
+  "cathedral": {
+    "mode": "VISIONARY",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "visionary"
+  ]
 }

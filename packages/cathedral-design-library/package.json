@@ -71,7 +71,9 @@
     "liber-arcanae",
     "fusion-kink",
     "sacred-geometry",
-    "design-system"
+    "design-system",
+    "cathedral-network",
+    "art"
   ],
   "engines": {
     "node": "*",
@@ -126,6 +128,9 @@
         "codex-144-99",
         "codex-144-99-core"
       ]
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

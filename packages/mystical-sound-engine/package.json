@@ -32,7 +32,9 @@
     "audio",
     "synthesis",
     "binaural-beats",
-    "meditation"
+    "meditation",
+    "cathedral-network",
+    "art"
   ],
   "author": "Cathedral Research Team",
   "license": "CC0-1.0",
@@ -74,7 +76,10 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   },
   "publishConfig": {
     "access": "public",

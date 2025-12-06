@@ -30,7 +30,9 @@
     "codex",
     "144-99",
     "engine",
-    "nodes"
+    "nodes",
+    "cathedral-network",
+    "science"
   ],
   "author": "Rebecca Lemke",
   "license": "CC0-1.0",
@@ -99,6 +101,9 @@
         "codex-144-99",
         "codex-144-99-core"
       ]
-    }
+    },
+    "mode": "SCIENCE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

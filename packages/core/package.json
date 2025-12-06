@@ -82,6 +82,13 @@
     },
     "integration": {
       "connects_to": []
-    }
-  }
+    },
+    "mode": "CODEX",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "codex"
+  ]
 }

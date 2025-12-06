@@ -1,0 +1,47 @@
+# ⚗️ Cathedral of Circuits - Caddy Configuration
+# Magnum Opus Version 1.0
+# Author: Rebecca Respawn
+
+# Main domain
+cathedral.localhost {
+    # Root directory for static files
+    root * ./dist
+    file_server
+    
+    # Enable compression
+    encode gzip zstd
+    
+    # API proxy (if needed)
+    handle /api/* {
+        reverse_proxy localhost:3000
+    }
+    
+    # WebSocket support (for game)
+    handle /ws/* {
+        reverse_proxy localhost:3000 {
+            header_up Upgrade {http.upgrade}
+            header_up Connection {http.connection}
+        }
+    }
+    
+    # SPA routing
+    try_files {path} /index.html
+}
+
+# Worker API (replaces Cloudflare Workers)
+api.cathedral.localhost {
+    reverse_proxy localhost:8080
+}
+
+# Web app
+web.cathedral.localhost {
+    root * ./apps/web/dist
+    file_server
+    try_files {path} /index.html
+}
+
+# Logging
+log {
+    output file ./logs/caddy.log
+    format console
+}

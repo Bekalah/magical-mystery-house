@@ -36,7 +36,9 @@
     "open-source",
     "cathedral-of-circuits",
     "mystical-design",
-    "sacred-geometry"
+    "sacred-geometry",
+    "cathedral-network",
+    "visionary"
   ],
   "author": "Rebecca Respawn <bekalah@users.noreply.github.com>",
   "license": "CC0-1.0",
@@ -96,7 +98,10 @@
         "codex-144-99",
         "codex-144-99-core"
       ]
-    }
+    },
+    "mode": "VISIONARY",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   },
   "files": [
     "scenes/",

@@ -72,7 +72,9 @@
     "consciousness",
     "trauma-aware",
     "open-source",
-    "free"
+    "free",
+    "cathedral-network",
+    "visionary"
   ],
   "consolidated": true,
   "consolidatedAt": "2025-12-01T19:37:04.921Z",
@@ -107,6 +109,9 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "VISIONARY",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

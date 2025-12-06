@@ -60,7 +60,9 @@
     "liber-arcanae",
     "para-theatre",
     "sacred-storytelling",
-    "rebecca-respawn"
+    "rebecca-respawn",
+    "cathedral-network",
+    "science"
   ],
   "engines": {
     "node": ">=18.0.0",
@@ -108,6 +110,9 @@
         "liber-arcanae",
         "liber-arcanae-core"
       ]
-    }
+    },
+    "mode": "SCIENCE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

@@ -30,7 +30,9 @@
     "codex",
     "music",
     "harmony",
-    "144-99"
+    "144-99",
+    "cathedral-network",
+    "art"
   ],
   "author": "Rebecca Lemke",
   "license": "CC0-1.0",
@@ -99,6 +101,9 @@
         "codex-144-99",
         "codex-144-99-core"
       ]
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

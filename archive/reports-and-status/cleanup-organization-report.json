@@ -1,0 +1,429 @@
+{
+  "timestamp": "2025-12-06T00:52:35.585Z",
+  "reports": [
+    {
+      "from": "COMPLETE_TECH_CONNECTION_REPORT.json",
+      "to": "archive/reports-and-status/COMPLETE_TECH_CONNECTION_REPORT.json"
+    },
+    {
+      "from": "COMPLETION_HELPER_REPORT.json",
+      "to": "archive/reports-and-status/COMPLETION_HELPER_REPORT.json"
+    },
+    {
+      "from": "CONNECT_AND_FIX_REPORT.json",
+      "to": "archive/reports-and-status/CONNECT_AND_FIX_REPORT.json"
+    },
+    {
+      "from": "CONSOLIDATION_EXECUTION_REPORT.json",
+      "to": "archive/reports-and-status/CONSOLIDATION_EXECUTION_REPORT.json"
+    },
+    {
+      "from": "CONSOLIDATION_REPORT.json",
+      "to": "archive/reports-and-status/CONSOLIDATION_REPORT.json"
+    },
+    {
+      "from": "DISCOVERY_REPORT.json",
+      "to": "archive/reports-and-status/DISCOVERY_REPORT.json"
+    },
+    {
+      "from": "ELEGANT_PRESTIGE_DESIGN_REPORT.json",
+      "to": "archive/reports-and-status/ELEGANT_PRESTIGE_DESIGN_REPORT.json"
+    },
+    {
+      "from": "GLOBAL_FIXES_REPORT.json",
+      "to": "archive/reports-and-status/GLOBAL_FIXES_REPORT.json"
+    },
+    {
+      "from": "LICENSING_FIX_REPORT.json",
+      "to": "archive/reports-and-status/LICENSING_FIX_REPORT.json"
+    },
+    {
+      "from": "PACKAGE_UPGRADE_REPORT.json",
+      "to": "archive/reports-and-status/PACKAGE_UPGRADE_REPORT.json"
+    },
+    {
+      "from": "SCAN_TRACK_FIX_REPORT.json",
+      "to": "archive/reports-and-status/SCAN_TRACK_FIX_REPORT.json"
+    },
+    {
+      "from": "SECURITY_AUDIT_REPORT.json",
+      "to": "archive/reports-and-status/SECURITY_AUDIT_REPORT.json"
+    },
+    {
+      "from": "cleanup-report.json",
+      "to": "archive/reports-and-status/cleanup-report.json"
+    },
+    {
+      "from": "cloudflare-migration-report.json",
+      "to": "archive/reports-and-status/cloudflare-migration-report.json"
+    },
+    {
+      "from": "spiritus-animus-corpus-report.json",
+      "to": "archive/reports-and-status/spiritus-animus-corpus-report.json"
+    }
+  ],
+  "scripts": [
+    {
+      "from": "analyze-cycle-differences.mjs",
+      "to": "archive/old-scripts/analyze-cycle-differences.mjs"
+    },
+    {
+      "from": "analyze-experiment-results.mjs",
+      "to": "archive/old-scripts/analyze-experiment-results.mjs"
+    },
+    {
+      "from": "complete-and-push-300-cycles.mjs",
+      "to": "archive/old-scripts/complete-and-push-300-cycles.mjs"
+    },
+    {
+      "from": "consolidate-split-directories.mjs",
+      "to": "archive/old-scripts/consolidate-split-directories.mjs"
+    },
+    {
+      "from": "detailed-comparison-report.mjs",
+      "to": "archive/old-scripts/detailed-comparison-report.mjs"
+    },
+    {
+      "from": "elegant-prestige-design-system.mjs",
+      "to": "archive/old-scripts/elegant-prestige-design-system.mjs"
+    },
+    {
+      "from": "fix-split-directories.mjs",
+      "to": "archive/old-scripts/fix-split-directories.mjs"
+    },
+    {
+      "from": "live-round-analysis.mjs",
+      "to": "archive/old-scripts/live-round-analysis.mjs"
+    },
+    {
+      "from": "merge-and-fix-all-directories.mjs",
+      "to": "archive/old-scripts/merge-and-fix-all-directories.mjs"
+    },
+    {
+      "from": "monitor-experiment-300.mjs",
+      "to": "archive/old-scripts/monitor-experiment-300.mjs"
+    },
+    {
+      "from": "run-3-rounds-comparison.mjs",
+      "to": "archive/old-scripts/run-3-rounds-comparison.mjs"
+    },
+    {
+      "from": "run-3-rounds-different-intervals.mjs",
+      "to": "archive/old-scripts/run-3-rounds-different-intervals.mjs"
+    },
+    {
+      "from": "run-cycle-analysis.mjs",
+      "to": "archive/old-scripts/run-cycle-analysis.mjs"
+    },
+    {
+      "from": "run-until-midnight.mjs",
+      "to": "archive/old-scripts/run-until-midnight.mjs"
+    },
+    {
+      "from": "theme_organize.js",
+      "to": "archive/old-scripts/theme_organize.js"
+    },
+    {
+      "from": "migrate_to_gitlab.sh",
+      "to": "archive/old-scripts/migrate_to_gitlab.sh"
+    },
+    {
+      "from": "migrate-github-to-gitlab-free.sh",
+      "to": "archive/old-scripts/migrate-github-to-gitlab-free.sh"
+    },
+    {
+      "from": "mirror-sync.sh",
+      "to": "archive/old-scripts/mirror-sync.sh"
+    },
+    {
+      "from": "monitor-300-cycles.sh",
+      "to": "archive/old-scripts/monitor-300-cycles.sh"
+    },
+    {
+      "from": "setup_runner.sh",
+      "to": "archive/old-scripts/setup_runner.sh"
+    },
+    {
+      "from": "setup-and-run.sh",
+      "to": "archive/old-scripts/setup-and-run.sh"
+    },
+    {
+      "from": "validate-cursor-gitlab.sh",
+      "to": "archive/old-scripts/validate-cursor-gitlab.sh"
+    },
+    {
+      "from": "annotate-packages.sh",
+      "to": "archive/old-scripts/annotate-packages.sh"
+    },
+    {
+      "from": "github_repo_inventory.sh",
+      "to": "archive/old-scripts/github_repo_inventory.sh"
+    },
+    {
+      "from": "audit-and-fix-directories.mjs",
+      "to": "archive/old-scripts/audit-and-fix-directories.mjs"
+    },
+    {
+      "from": "wrangler.toml",
+      "to": "archive/old-scripts/wrangler.toml"
+    },
+    {
+      "from": "netlify.toml",
+      "to": "archive/old-scripts/netlify.toml"
+    },
+    {
+      "from": "vercel.json",
+      "to": "archive/old-scripts/vercel.json"
+    },
+    {
+      "from": "package.json.with-jsdoc",
+      "to": "archive/old-scripts/package.json.with-jsdoc"
+    }
+  ],
+  "docs": [
+    {
+      "from": "README_migration_steps.md",
+      "to": "archive/old-docs/README_migration_steps.md"
+    },
+    {
+      "from": "FINDINGS_AND_CHOICES.md",
+      "to": "archive/old-docs/FINDINGS_AND_CHOICES.md"
+    },
+    {
+      "from": "FREE_TOOLS_CONFIRMED.md",
+      "to": "archive/old-docs/FREE_TOOLS_CONFIRMED.md"
+    },
+    {
+      "from": "GODOT_SETUP.md",
+      "to": "archive/old-docs/GODOT_SETUP.md"
+    },
+    {
+      "from": "GODOT_VERSION.md",
+      "to": "archive/old-docs/GODOT_VERSION.md"
+    },
+    {
+      "from": "improvements-summary.md",
+      "to": "archive/old-docs/improvements-summary.md"
+    },
+    {
+      "from": "round-learnings.md",
+      "to": "archive/old-docs/round-learnings.md"
+    },
+    {
+      "from": "SAFE_FOR_PUBLIC_RELEASE.md",
+      "to": "archive/old-docs/SAFE_FOR_PUBLIC_RELEASE.md"
+    },
+    {
+      "from": "REPOSITORY_GUIDELINES.md",
+      "to": "archive/old-docs/REPOSITORY_GUIDELINES.md"
+    },
+    {
+      "from": "UNIFIED_WORKSPACE.md",
+      "to": "archive/old-docs/UNIFIED_WORKSPACE.md"
+    },
+    {
+      "from": "WHAT_IS_HAPPENING_NOW.md",
+      "to": "archive/old-docs/WHAT_IS_HAPPENING_NOW.md"
+    },
+    {
+      "from": "QUICK_START.md",
+      "to": "archive/old-docs/QUICK_START.md"
+    },
+    {
+      "from": "BOUNDARY_RULES_ENFORCED.md",
+      "to": "archive/old-docs/BOUNDARY_RULES_ENFORCED.md"
+    },
+    {
+      "from": "CROSS_ENGINEERED_BEAUTY.md",
+      "to": "archive/old-docs/CROSS_ENGINEERED_BEAUTY.md"
+    }
+  ],
+  "data": [
+    {
+      "from": ".benchmark-results.json",
+      "to": "archive/reports-and-status/.benchmark-results.json"
+    },
+    {
+      "from": ".eslintrc.json",
+      "to": "archive/reports-and-status/.eslintrc.json"
+    },
+    {
+      "from": ".experiment-metrics.json",
+      "to": "archive/reports-and-status/.experiment-metrics.json"
+    },
+    {
+      "from": ".godot-config.json",
+      "to": "archive/reports-and-status/.godot-config.json"
+    },
+    {
+      "from": ".live-deployments-connection.json",
+      "to": "archive/reports-and-status/.live-deployments-connection.json"
+    },
+    {
+      "from": ".registry-validation.json",
+      "to": "archive/reports-and-status/.registry-validation.json"
+    },
+    {
+      "from": ".status.json",
+      "to": "archive/reports-and-status/.status.json"
+    },
+    {
+      "from": ".visionary-art-validation.json",
+      "to": "archive/reports-and-status/.visionary-art-validation.json"
+    },
+    {
+      "from": "25-cycles-results.json",
+      "to": "archive/reports-and-status/25-cycles-results.json"
+    },
+    {
+      "from": "ALL_CHARACTER_DATA_COMPILED.json",
+      "to": "archive/reports-and-status/ALL_CHARACTER_DATA_COMPILED.json"
+    },
+    {
+      "from": "ALL_PACKAGES_TECH_CONNECTIONS.json",
+      "to": "archive/reports-and-status/ALL_PACKAGES_TECH_CONNECTIONS.json"
+    },
+    {
+      "from": "ALL_REPO_INFO_COMPILED.json",
+      "to": "archive/reports-and-status/ALL_REPO_INFO_COMPILED.json"
+    },
+    {
+      "from": "ARCHIVED_REPOS.json",
+      "to": "archive/reports-and-status/ARCHIVED_REPOS.json"
+    },
+    {
+      "from": "CATHEDRAL_CONNECTIONS.json",
+      "to": "archive/reports-and-status/CATHEDRAL_CONNECTIONS.json"
+    },
+    {
+      "from": "CHARACTER_DATA_IMPROVEMENTS.json",
+      "to": "archive/reports-and-status/CHARACTER_DATA_IMPROVEMENTS.json"
+    },
+    {
+      "from": "CODEX_ALIGNMENT_PLAN.json",
+      "to": "archive/reports-and-status/CODEX_ALIGNMENT_PLAN.json"
+    },
+    {
+      "from": "CODEX_MASTER.json",
+      "to": "archive/reports-and-status/CODEX_MASTER.json"
+    },
+    {
+      "from": "COMMAND_TEST_RESULTS.json",
+      "to": "archive/reports-and-status/COMMAND_TEST_RESULTS.json"
+    },
+    {
+      "from": "COMPLETE_PACKAGE_INFO.json",
+      "to": "archive/reports-and-status/COMPLETE_PACKAGE_INFO.json"
+    },
+    {
+      "from": "COMPREHENSIVE_AUDIT.json",
+      "to": "archive/reports-and-status/COMPREHENSIVE_AUDIT.json"
+    },
+    {
+      "from": "COMPREHENSIVE_REGISTRY.json",
+      "to": "archive/reports-and-status/COMPREHENSIVE_REGISTRY.json"
+    },
+    {
+      "from": "CONSOLIDATED_BACKUPS.json",
+      "to": "archive/reports-and-status/CONSOLIDATED_BACKUPS.json"
+    },
+    {
+      "from": "CONSOLIDATED_IMPROVEMENTS.json",
+      "to": "archive/reports-and-status/CONSOLIDATED_IMPROVEMENTS.json"
+    },
+    {
+      "from": "CONSOLIDATION_PLAN.json",
+      "to": "archive/reports-and-status/CONSOLIDATION_PLAN.json"
+    },
+    {
+      "from": "CONSOLIDATION_TO_MASTER.json",
+      "to": "archive/reports-and-status/CONSOLIDATION_TO_MASTER.json"
+    },
+    {
+      "from": "CREATIVE_IDEAS.json",
+      "to": "archive/reports-and-status/CREATIVE_IDEAS.json"
+    },
+    {
+      "from": "IMPROVEMENT_EXPERIMENT_LOG.json",
+      "to": "archive/reports-and-status/IMPROVEMENT_EXPERIMENT_LOG.json"
+    },
+    {
+      "from": "MASTER_V1_UNIFICATION.json",
+      "to": "archive/reports-and-status/MASTER_V1_UNIFICATION.json"
+    },
+    {
+      "from": "NIGHT_RUN_LOG.json",
+      "to": "archive/reports-and-status/NIGHT_RUN_LOG.json"
+    },
+    {
+      "from": "PACKAGE_MAP.json",
+      "to": "archive/reports-and-status/PACKAGE_MAP.json"
+    },
+    {
+      "from": "PARTIAL_ANALYSIS.json",
+      "to": "archive/reports-and-status/PARTIAL_ANALYSIS.json"
+    },
+    {
+      "from": "PLATFORMS_APPS_REVIEW.json",
+      "to": "archive/reports-and-status/PLATFORMS_APPS_REVIEW.json"
+    },
+    {
+      "from": "REPO_CONNECTIONS.json",
+      "to": "archive/reports-and-status/REPO_CONNECTIONS.json"
+    },
+    {
+      "from": "REPO_REVIEW.json",
+      "to": "archive/reports-and-status/REPO_REVIEW.json"
+    },
+    {
+      "from": "SCATTERED_DATA_CONNECTIONS.json",
+      "to": "archive/reports-and-status/SCATTERED_DATA_CONNECTIONS.json"
+    },
+    {
+      "from": "SYSTEM_CONNECTIONS.json",
+      "to": "archive/reports-and-status/SYSTEM_CONNECTIONS.json"
+    },
+    {
+      "from": "TRACKED_FIXES.json",
+      "to": "archive/reports-and-status/TRACKED_FIXES.json"
+    },
+    {
+      "from": "experiment-state.json",
+      "to": "archive/reports-and-status/experiment-state.json"
+    },
+    {
+      "from": "fusionkink-integration.json",
+      "to": "archive/reports-and-status/fusionkink-integration.json"
+    },
+    {
+      "from": "system-labels.backup.json",
+      "to": "archive/reports-and-status/system-labels.backup.json"
+    },
+    {
+      "from": "system-labels.json",
+      "to": "archive/reports-and-status/system-labels.json"
+    },
+    {
+      "from": "system-map.json",
+      "to": "archive/reports-and-status/system-map.json"
+    },
+    {
+      "from": "unified-experiment-log.json",
+      "to": "archive/reports-and-status/unified-experiment-log.json"
+    },
+    {
+      "from": "unified-experiment-state.json",
+      "to": "archive/reports-and-status/unified-experiment-state.json"
+    },
+    {
+      "from": "unified-system-map.json",
+      "to": "archive/reports-and-status/unified-system-map.json"
+    }
+  ],
+  "archived": [
+    {
+      "from": "wrangler.toml.archived",
+      "to": "archive/old-configs/wrangler.toml.archived"
+    }
+  ]
+}

@@ -88,6 +88,13 @@
         "circuitum99-core",
         "circuitum99-arcanae-cyoa"
       ]
-    }
-  }
+    },
+    "mode": "SCIENCE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
+  },
+  "keywords": [
+    "cathedral-network",
+    "science"
+  ]
 }

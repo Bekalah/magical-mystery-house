@@ -76,7 +76,9 @@
     "cathedral",
     "ocr",
     "nlp",
-    "symbol-detection"
+    "symbol-detection",
+    "cathedral-network",
+    "science"
   ],
   "author": "Cathedral of Circuits",
   "license": "CC0-1.0",
@@ -125,6 +127,9 @@
     },
     "integration": {
       "connects_to": []
-    }
+    },
+    "mode": "SCIENCE",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   }
 }

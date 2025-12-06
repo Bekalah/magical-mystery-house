@@ -77,7 +77,10 @@
         "codex-144-99",
         "codex-144-99-core"
       ]
-    }
+    },
+    "mode": "ART",
+    "quality": "Gold Standard A+",
+    "status": "Active"
   },
   "scripts": {
     "build": "tsc",
@@ -99,5 +102,9 @@
     "validate:trauma-safety": "node scripts/validate-trauma-safety.js",
     "validate:integration": "node scripts/validate-integration.js",
     "validate:ownership": "node scripts/validate-ownership.js"
-  }
+  },
+  "keywords": [
+    "cathedral-network",
+    "art"
+  ]
 }
