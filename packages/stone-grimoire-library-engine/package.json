@@ -27,9 +27,7 @@
     "validate:ownership": "node scripts/validate-ownership.js"
   },
   "dependencies": {
-    "@cathedral/stone-grimoire": "workspace:*",
     "@cathedral/stone-grimoire-core": "workspace:*",
-    "@cathedral/stone-grimoire-library-engine": "workspace:*",
     "typescript": "^5.6.2",
     "tsx": "^4.19.1",
     "eslint": "^9.11.1",
