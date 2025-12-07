@@ -108,7 +108,7 @@
       "connects_to": [
         "liber-arcanae",
         "liber-arcanae-core",
-        "liber-arcanae-tools"
+        "@cathedral/liber-arcanae-tools"
       ]
     },
     "mode": "ART",
