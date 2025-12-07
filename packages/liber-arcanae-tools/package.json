@@ -34,7 +34,7 @@
     "eslint": "^8.0.0",
     "jest": "^29.0.0",
     "@cathedral/trinity-architecture": "workspace:*",
-    "@cathedral/liber-arcanae-core": "workspace:*",
+    "@cathedral/liber-arcanae-core": "workspace:*"
   },
   "devDependencies": {
     "@types/fabric": "^5.3.0",
@@ -70,9 +70,9 @@
   "consolidatedAt": "2025-12-01T19:36:55.935Z",
   "packageManager": "pnpm@10.23.0",
   "alchemical": {
-    "name": "@Cathedral Real/Liber Arcanae Tools",
+    "name": "Liber Arcanae Tools",
     "symbol": "⊙",
-    "label": "⊙ @Cathedral Real/Liber Arcanae Tools (@cathedral-real/liber-arcanae-tools)"
+    "label": "⊙ Liber Arcanae Tools (@cathedral/liber-arcanae-tools)"
   },
   "publishConfig": {
     "access": "public"
