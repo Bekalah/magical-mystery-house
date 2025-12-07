@@ -1,14 +1,11 @@
 {
-  "name": "liber-arcanae-core",
+  "name": "@cathedral/liber-arcanae-core",
   "version": "1.0.0",
   "license": "CC0-1.0",
   "description": "Liber Arcanae - Part of the Cathedral of Circuits mystical ecosystem",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "dependencies": {
-    "@cathedral/liber-arcanae": "workspace:*",
-    "@cathedral/liber-arcanae-core": "workspace:*",
-    "@cathedral/liber-arcanae-tools": "workspace:*",
     "typescript": "^5.6.2",
     "tsx": "^4.19.1",
     "eslint": "^9.11.1",

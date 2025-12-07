@@ -1,14 +1,11 @@
 {
-  "name": "stone-grimoire-core",
+  "name": "@cathedral/stone-grimoire-core",
   "version": "1.0.0",
   "license": "CC0-1.0",
   "description": "Stone Grimoire - Part of the Cathedral of Circuits mystical ecosystem",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "dependencies": {
-    "@cathedral/stone-grimoire": "workspace:*",
-    "@cathedral/stone-grimoire-core": "workspace:*",
-    "@cathedral/stone-grimoire-library-engine": "workspace:*",
     "typescript": "^5.6.2",
     "tsx": "^4.19.1",
     "eslint": "^9.11.1",
