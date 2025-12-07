@@ -44,9 +44,6 @@
     "@vitejs/plugin-react": "^4.0.0",
     "eslint": "^8.0.0",
     "jest": "^29.0.0",
-    "pytesseract": "^0.3.10",
-    "fitz": "^1.23.0",
-    "pandas": "^2.0.0",
     "jsonschema": "^4.0.0"
   },
   "devDependencies": {
