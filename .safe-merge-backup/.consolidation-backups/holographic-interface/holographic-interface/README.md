@@ -78,6 +78,16 @@
 
 ---
 
+# ⊙ Holographic Interface - holographic-interface
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # holographic-interface
 
 No description available

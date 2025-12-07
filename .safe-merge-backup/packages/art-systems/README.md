@@ -78,6 +78,16 @@
 
 ---
 
+# ⊙ Art Systems - art-systems
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # art-systems
 
 No description available

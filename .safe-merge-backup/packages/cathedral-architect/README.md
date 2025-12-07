@@ -78,6 +78,16 @@
 
 ---
 
+# ⊙ Cathedral Architect - cathedral-architect
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/cathedral-architect
 
 🏛️ Cathedral Architect Engine - Transforms Codex nodes into explorable chambers

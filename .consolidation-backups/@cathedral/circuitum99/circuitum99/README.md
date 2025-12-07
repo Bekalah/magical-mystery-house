@@ -28,6 +28,16 @@
 
 ---
 
+# ⊙ Circuitum99 - circuitum99
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # 🌀📚 CIRCUITUM99: ALPHA ET OMEGA
 ## Complete Living Book System with 22 Archetypal Character Guides
 

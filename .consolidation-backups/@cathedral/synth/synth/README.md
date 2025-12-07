@@ -28,6 +28,16 @@
 
 ---
 
+# ⊙ Synth - synth
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # Cathedral Synth Lab
 
 High-fidelity modular audio synthesis + narrative-integrated signal engine.

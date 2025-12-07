@@ -78,6 +78,16 @@
 
 ---
 
+# ⊙ Spells - spells
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # spells
 
 No description available

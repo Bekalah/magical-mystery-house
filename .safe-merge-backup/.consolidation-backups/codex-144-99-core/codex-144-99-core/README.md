@@ -78,6 +78,16 @@
 
 ---
 
+# ⊙ Codex 144 99 - codex-144-99-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # codex-144-99-core
 
 No description available

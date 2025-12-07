@@ -26,5 +26,10 @@
   "keywords": [
     "cathedral-network",
     "science"
-  ]
+  ],
+  "alchemical": {
+    "name": "@Bekalah/Cathedral Worker",
+    "symbol": "⊙",
+    "label": "⊙ @Bekalah/Cathedral Worker (@bekalah/cathedral-worker)"
+  }
 }

@@ -62,7 +62,7 @@ class UnifiedCathedralExperiment {
     return {
       startTime: Date.now(),
       currentPhase: 0,
-      totalPhases: 7,
+      totalPhases: 8,
       phases: {
         goldenStandard: { completed: false, startTime: null, endTime: null, results: null, error: null },
         workspaceConsolidation: { completed: false, startTime: null, endTime: null, results: null, error: null },
@@ -70,6 +70,7 @@ class UnifiedCathedralExperiment {
         cleanup: { completed: false, startTime: null, endTime: null, results: null, error: null },
         labeling: { completed: false, startTime: null, endTime: null, results: null, error: null },
         spiritusAnimusCorpus: { completed: false, startTime: null, endTime: null, results: null, error: null },
+        geminiIntegration: { completed: false, startTime: null, endTime: null, results: null, error: null },
         verification: { completed: false, startTime: null, endTime: null, results: null, error: null }
       },
       errors: [],
@@ -423,7 +424,66 @@ class UnifiedCathedralExperiment {
     };
   }
 
-  // Phase 7: Verification
+  // Phase 7: Gemini Integration & Sync
+  async phaseGeminiIntegration() {
+    this.log('Verifying Gemini 3 integration and GitHub/GitLab sync...');
+    
+    const geminiFiles = [
+      'scripts/gemini-deployment-assistant.mjs',
+      '.github/workflows/gemini-deployment-assistant.yml',
+      '.github/workflows/deploy-render.yml',
+      '.github/workflows/deploy-surge.yml',
+      'docs/GEMINI_DEPLOYMENT_SETUP.md',
+      'scripts/sync-github-gitlab-gemini.mjs'
+    ];
+    
+    const results = {
+      filesPresent: [],
+      filesMissing: [],
+      workflowsEnhanced: 0,
+      npmScriptsAdded: 0,
+      syncScriptReady: false
+    };
+    
+    // Check Gemini files
+    geminiFiles.forEach(file => {
+      const filePath = join(rootDir, file);
+      if (existsSync(filePath)) {
+        results.filesPresent.push(file);
+        this.log(`✅ ${file} found`);
+      } else {
+        results.filesMissing.push(file);
+        this.log(`⚠️  ${file} missing`, 'warn');
+      }
+    });
+    
+    // Check package.json for Gemini scripts
+    try {
+      const packageJson = JSON.parse(readFileSync(join(rootDir, 'package.json'), 'utf-8'));
+      const geminiScripts = Object.keys(packageJson.scripts || {}).filter(s => s.includes('gemini'));
+      results.npmScriptsAdded = geminiScripts.length;
+      if (geminiScripts.length > 0) {
+        this.log(`✅ Found ${geminiScripts.length} Gemini npm scripts`);
+      }
+    } catch (e) {
+      this.log('Could not check package.json', 'warn');
+    }
+    
+    // Check if sync script exists
+    if (existsSync(join(rootDir, 'scripts/sync-github-gitlab-gemini.mjs'))) {
+      results.syncScriptReady = true;
+      this.log('✅ GitHub/GitLab sync script ready');
+    }
+    
+    return {
+      success: results.filesPresent.length > 0,
+      message: `Gemini integration: ${results.filesPresent.length}/${geminiFiles.length} files present`,
+      results,
+      report: 'gemini-integration-report.json'
+    };
+  }
+
+  // Phase 8: Verification
   async phaseVerification() {
     this.log('Running verification checks...');
     
@@ -434,6 +494,7 @@ class UnifiedCathedralExperiment {
       cleanup: false,
       labeling: false,
       trinity: false,
+      gemini: false,
       errors: []
     };
 
@@ -467,6 +528,12 @@ class UnifiedCathedralExperiment {
       if (existsSync(join(rootDir, 'spiritus-animus-corpus-report.json'))) {
         verification.trinity = true;
         this.log('✅ Trinity integration report found');
+      }
+
+      // Verify Gemini integration
+      if (existsSync(join(rootDir, 'scripts/gemini-deployment-assistant.mjs'))) {
+        verification.gemini = true;
+        this.log('✅ Gemini integration found');
       }
 
       const successCount = Object.values(verification).filter(v => v === true).length;
@@ -510,7 +577,10 @@ class UnifiedCathedralExperiment {
       // Phase 6: Spiritus/Animus/Corpus
       await this.runPhase('spiritusAnimusCorpus', function() { return this.phaseSpiritusAnimusCorpus(); });
 
-      // Phase 7: Verification
+      // Phase 7: Gemini Integration & Sync
+      await this.runPhase('geminiIntegration', function() { return this.phaseGeminiIntegration(); });
+
+      // Phase 8: Verification
       await this.runPhase('verification', function() { return this.phaseVerification(); });
 
       // Generate final report

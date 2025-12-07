@@ -78,6 +78,16 @@
 
 ---
 
+# ⊙ Circuit Craft Creative Game - circuit-craft-creative-game
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/circuit-craft-creative-game
 
 CircuitCraft: Non-Linear Creative Construction Game for High-Tech Creatives

@@ -10,19 +10,17 @@ Google Gemini 3 (Antigravity) is now **fully integrated** into your entire deplo
 
 ### ✅ All GitHub Workflows
 - `deploy.yml` - Main deployment (GitHub Pages) + Gemini
-- `deploy-vercel.yml` - Vercel deployment + Gemini
 - `deploy-render.yml` - Render deployment + Gemini (NEW)
 - `deploy-surge.yml` - Surge.sh deployment + Gemini (NEW)
 - `gemini-deployment-assistant.yml` - Standalone Gemini assistant
 
 ### ✅ All NPM Scripts
 ```bash
-pnpm deploy:gemini          # Generic deployment help
-pnpm deploy:gemini:render   # Render-specific help
-pnpm deploy:gemini:vercel   # Vercel-specific help
-pnpm deploy:gemini:surge    # Surge-specific help
-pnpm deploy:gemini:coolify  # Coolify-specific help
-pnpm deploy:gemini:self-host # Self-hosted help
+pnpm deploy:gemini          # Generic deployment help (FREE platforms only)
+pnpm deploy:gemini:render   # Render-specific help (FREE)
+pnpm deploy:gemini:surge    # Surge-specific help (FREE)
+pnpm deploy:gemini:coolify  # Coolify-specific help (FREE)
+pnpm deploy:gemini:self-host # Self-hosted help (FREE)
 ```
 
 ### ✅ Core Script
@@ -66,24 +64,26 @@ pnpm deploy:gemini:render
 
 | Platform | Free Tier | Status |
 |----------|-----------|--------|
-| Render | 750 hrs/month | ✅ Integrated |
-| Vercel | 100GB bandwidth | ✅ Integrated |
-| Surge.sh | Unlimited static | ✅ Integrated |
-| Coolify | Self-hosted | ✅ Integrated |
-| Self-Hosted | Your server | ✅ Integrated |
+| Render | 750 hrs/month (FREE) | ✅ Integrated |
+| Surge.sh | Unlimited static (FREE) | ✅ Integrated |
+| Coolify | Self-hosted (FREE software) | ✅ Integrated |
+| Self-Hosted | Your server (FREE) | ✅ Integrated |
 | GitHub Pages | Free | ✅ Integrated |
+
+**IMPORTANT**: Only 100% FREE platforms. No paid services or billing.
 
 ## 🔧 Configuration
 
 ### GitHub Secrets Needed
 ```
-GEMINI_API_KEY          # Required for AI features
-RENDER_API_TOKEN        # Optional, for Render
-VERCEL_TOKEN            # Optional, for Vercel
-SURGE_TOKEN             # Optional, for Surge
-COOLIFY_HOST            # Optional, for Coolify
-COOLIFY_TOKEN           # Optional, for Coolify
+GEMINI_API_KEY          # Required for AI features (FREE tier available)
+RENDER_API_TOKEN        # Optional, for Render (FREE tier)
+SURGE_TOKEN             # Optional, for Surge (FREE)
+COOLIFY_HOST            # Optional, for Coolify (FREE software)
+COOLIFY_TOKEN           # Optional, for Coolify (FREE software)
 ```
+
+**IMPORTANT**: All platforms are FREE-ONLY. No paid services or billing.
 
 ### Local Environment
 ```bash
@@ -93,11 +93,12 @@ export GEMINI_API_KEY=your_key_here
 ## ✨ Features
 
 - 🤖 **AI-Powered**: Gemini analyzes your codebase
-- 🆓 **Free Platforms**: All supported platforms have free tiers
+- 🆓 **FREE-ONLY Platforms**: Only 100% free platforms (no charges)
 - 🔄 **Automatic**: Works in GitHub Actions automatically
 - 🛡️ **Safe**: Never blocks deployments if Gemini fails
 - 📝 **Detailed**: Step-by-step recommendations
 - 🎯 **Context-Aware**: Understands your project structure
+- ⚠️ **Billing Protection**: Warns about free tier limits
 
 ## 📚 Documentation
 

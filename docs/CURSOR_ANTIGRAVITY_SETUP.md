@@ -11,7 +11,7 @@ Cursor IDE is now connected to Antigravity system.
 
 ### ✅ Completed
 
-- **Cloudflare Migration**: Removed, migrated to free self-hosting
+- **Paid Services**: All removed (Vercel, Cloudflare, Netlify, Fly.io, Railway)
 - **Root Directory Cleanup**: Organized, 104+ files archived
 - **GitLab Migration Tools**: Ready for GitHub → GitLab cloning
 - **Self-Hosting Configs**: Docker, Caddy, Nginx configurations ready
@@ -44,7 +44,7 @@ pnpm build
 - **SELF_HOSTING_QUICK_START.md** - Deployment guide
 - **CLEANUP_SUMMARY.md** - Cleanup details
 - **docs/UPDATED_INSTRUCTIONS.md** - Full instructions
-- **docs/CLOUDFLARE_TO_SELF_HOST_MIGRATION.md** - Migration guide
+- **PAID_SERVICES_REMOVED.md** - Removed services list
 
 ## 🎯 Next Steps
 

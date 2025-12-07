@@ -78,6 +78,16 @@
 
 ---
 
+# ⊙ Tarot Reader - tarot-reader
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # tarot-reader
 
 No description available

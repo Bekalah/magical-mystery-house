@@ -5,7 +5,9 @@
  * Magnum Opus Version 1.0
  * Author: Rebecca Respawn (pen name)
  * 
- * Connects Google Gemini 3 (Antigravity) to GitHub for free self-deployment assistance
+ * Connects Google Gemini 3 (Antigravity) to GitHub for FREE-ONLY self-deployment assistance
+ * 
+ * IMPORTANT: Only recommends 100% FREE platforms with no charges or subscriptions
  * 
  * @author Rebecca Respawn
  * @license CC0-1.0 - Public Domain
@@ -30,50 +32,53 @@ const deploymentTarget = getArg('--target') || 'render';
 const context = getArg('--context') || '';
 const outputFile = getArg('--output') || 'gemini-strategy.json';
 
-// Free deployment platforms configuration
+// FREE-ONLY deployment platforms configuration
+// IMPORTANT: Only 100% free platforms with no charges, subscriptions, or billing
 const DEPLOYMENT_PLATFORMS = {
   render: {
     name: 'Render',
     free: true,
-    hours: '750/month',
+    freeTier: '750 hours/month - completely free',
+    noCharges: true,
     features: ['Auto-deploy', 'HTTPS', 'Custom domains'],
     script: './scripts/deploy-render.sh',
     envVars: ['RENDER_API_TOKEN'],
-    url: 'https://render.com'
-  },
-  vercel: {
-    name: 'Vercel',
-    free: true,
-    bandwidth: '100GB/month',
-    features: ['Instant deploy', 'Edge network', 'Analytics'],
-    script: './scripts/deploy-vercel.sh',
-    envVars: ['VERCEL_TOKEN'],
-    url: 'https://vercel.com'
+    url: 'https://render.com',
+    warning: 'Stay within free tier limits to avoid charges'
   },
   surge: {
     name: 'Surge.sh',
     free: true,
+    freeTier: 'Unlimited static hosting - completely free',
+    noCharges: true,
     features: ['Static hosting', 'Custom domains', 'CDN'],
     script: 'pnpm deploy:surge',
     envVars: ['SURGE_TOKEN'],
-    url: 'https://surge.sh'
+    url: 'https://surge.sh',
+    warning: 'Free tier only - no paid features'
   },
   coolify: {
     name: 'Coolify',
     free: true,
-    note: 'Self-hosted (requires VPS)',
+    freeTier: 'Self-hosted - free software (you provide VPS)',
+    noCharges: true,
+    note: 'Self-hosted (requires your own VPS server)',
     features: ['Full PaaS', 'Docker', 'CI/CD'],
     script: './scripts/deploy-coolify.sh',
     envVars: ['COOLIFY_HOST', 'COOLIFY_TOKEN'],
-    url: 'https://coolify.io'
+    url: 'https://coolify.io',
+    warning: 'Free software - you pay for VPS hosting only'
   },
   'self-host': {
     name: 'Self-Hosted',
     free: true,
+    freeTier: '100% free - your own server',
+    noCharges: true,
     features: ['Docker', 'Caddy/Nginx', 'Full control'],
     script: 'pnpm deploy:self-host',
     envVars: [],
-    url: 'https://github.com/your-repo'
+    url: 'https://github.com/your-repo',
+    warning: 'Free - you control all costs'
   }
 };
 
@@ -144,23 +149,31 @@ function generateFallbackRecommendations() {
   return JSON.stringify({
     platform: platform.name,
     recommendations: [
-      `✅ ${platform.name} is configured for free deployment`,
+      `✅ ${platform.name} is configured for FREE deployment`,
+      `💰 Cost: 100% FREE - No charges expected`,
       `📦 Build command: pnpm build`,
       `🚀 Deploy script: ${platform.script}`,
-      platform.free ? `💰 Cost: FREE` : `💰 Cost: ${platform.note || 'Check pricing'}`,
+      platform.freeTier ? `🆓 Free Tier: ${platform.freeTier}` : '',
       `🔧 Required env vars: ${platform.envVars.join(', ') || 'None'}`,
-      `📚 Documentation: ${platform.url}`
-    ],
+      `📚 Documentation: ${platform.url}`,
+      platform.warning ? `⚠️  ${platform.warning}` : ''
+    ].filter(Boolean),
     steps: [
       '1. Install dependencies: pnpm install',
       `2. Build project: pnpm build`,
       `3. Run deployment: ${platform.script}`,
       '4. Verify deployment in platform dashboard',
-      '5. Check health endpoints'
+      '5. Check health endpoints',
+      '6. Monitor usage to stay within free tier limits'
     ],
-    warnings: platform.envVars.length > 0 
-      ? [`⚠️  Make sure these environment variables are set: ${platform.envVars.join(', ')}`]
-      : []
+    warnings: [
+      ...(platform.envVars.length > 0 
+        ? [`⚠️  Make sure these environment variables are set: ${platform.envVars.join(', ')}`]
+        : []),
+      ...(platform.warning ? [`⚠️  ${platform.warning}`] : []),
+      '⚠️  Always monitor usage to avoid unexpected charges',
+      '⚠️  Stay within free tier limits - no paid features'
+    ]
   }, null, 2);
 }
 
@@ -186,22 +199,30 @@ Apps: ${packageJson.scripts ? Object.keys(packageJson.scripts).filter(s => s.sta
 
 ${projectContext}
 
-The user wants to deploy to ${platform.name} (${deploymentTarget}) for FREE.
+CRITICAL: The user wants to deploy to ${platform.name} (${deploymentTarget}) for FREE ONLY.
+
+IMPORTANT CONSTRAINTS:
+- Only recommend 100% FREE options
+- Warn about any potential charges
+- Emphasize staying within free tier limits
+- No paid features, subscriptions, or billing
+- User wants zero unexpected charges
 
 Changed files in this deployment:
 ${context || 'No specific files changed'}
 
 Provide a JSON response with:
-1. recommendations: Array of deployment recommendations
+1. recommendations: Array of deployment recommendations (emphasize FREE only)
 2. steps: Array of numbered deployment steps
-3. warnings: Array of any warnings or prerequisites
+3. warnings: Array of warnings about charges, billing, or paid features
 4. estimated_time: Estimated deployment time in minutes
 
 Focus on:
-- Free tier limitations and how to stay within them
-- Best practices for this platform
-- Common pitfalls to avoid
-- Optimization tips
+- FREE tier limitations and how to stay within them
+- How to avoid any charges or billing
+- Best practices for FREE deployment
+- Common pitfalls that lead to charges
+- Optimization tips for free tier
 
 Return ONLY valid JSON, no markdown formatting.`;
 

@@ -1,0 +1,54 @@
+{
+  "project": {
+    "name": "Cathedral of Circuits",
+    "version": "1.0.0",
+    "fullName": "Cathedral of Circuits - Magnum Opus Version 1.0",
+    "author": "Rebecca Respawn",
+    "subtitle": "Liber Arcanae Codex Abyssiae"
+  },
+  "archived": [
+    {
+      "from": "CATHEDRAL_QUALITY_STANDARDS.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/CATHEDRAL_QUALITY_STANDARDS.md"
+    },
+    {
+      "from": "CLEANUP_SUMMARY.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/CLEANUP_SUMMARY.md"
+    },
+    {
+      "from": "GITLAB_SETUP_COMPLETE.md",
+      "to": "/Users/rebeccalemke/cathedral-master-deployment/archive/reports-and-status/GITLAB_SETUP_COMPLETE.md"
+    },
+    {
+      "from": "WORKSPACE_CONSOLIDATION_REPORT.md",
+      "to": "WORKSPACE_CONSOLIDATION_REPORT-2025-12-07T05-14-27-101Z.md"
+    },
+    {
+      "from": "gitlab-migration-report.json",
+      "to": "gitlab-migration-report-2025-12-07T05-14-27-107Z.json"
+    },
+    {
+      "from": "golden-standard-report.json",
+      "to": "golden-standard-report-2025-12-07T05-14-27-108Z.json"
+    },
+    {
+      "from": "monorepo-health-report.json",
+      "to": "monorepo-health-report-2025-12-07T05-14-27-108Z.json"
+    },
+    {
+      "from": "unified-experiment-log.json",
+      "to": "unified-experiment-log-2025-12-07T05-14-27-109Z.json"
+    },
+    {
+      "from": "workspace-consolidation-report.json",
+      "to": "workspace-consolidation-report-2025-12-07T05-14-27-109Z.json"
+    }
+  ],
+  "removed": [],
+  "errors": [],
+  "stats": {
+    "bytesFreed": 311335,
+    "filesProcessed": 31
+  },
+  "timestamp": "2025-12-07T05:14:27.111Z"
+}

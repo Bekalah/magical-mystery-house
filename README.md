@@ -33,7 +33,6 @@ pnpm test         # Run all tests
 ```bash
 # Get Gemini AI assistance for deployment
 pnpm deploy:gemini:render    # Render (750 free hours/month)
-pnpm deploy:gemini:vercel    # Vercel (100GB free bandwidth)
 pnpm deploy:gemini:surge     # Surge.sh (Unlimited static)
 pnpm deploy:gemini:coolify   # Coolify (Self-hosted)
 pnpm deploy:gemini:self-host  # Self-hosted
@@ -117,7 +116,6 @@ See: [SELF_HOSTING_QUICK_START.md](./SELF_HOSTING_QUICK_START.md)
 - [docs/GEMINI_DEPLOYMENT_SETUP.md](./docs/GEMINI_DEPLOYMENT_SETUP.md) - Complete Gemini integration guide
 - [SELF_HOSTING_QUICK_START.md](./SELF_HOSTING_QUICK_START.md) - Self-hosting guide
 - [CONTRIBUTING.md](./CONTRIBUTING.md) - Contribution guidelines
-- [docs/CLOUDFLARE_TO_SELF_HOST_MIGRATION.md](./docs/CLOUDFLARE_TO_SELF_HOST_MIGRATION.md) - Migration guide
 - [CATHEDRAL_QUALITY_STANDARDS.md](./CATHEDRAL_QUALITY_STANDARDS.md) - Quality standards
 
 ---
@@ -156,7 +154,6 @@ pnpm cleanup          # Clean up files
 ### Migration & Setup
 
 ```bash
-pnpm migrate:cloudflare      # Migrate from Cloudflare
 pnpm gitlab:prepare          # Prepare GitLab migration
 pnpm enhance:golden-standard # Apply Golden Standard
 pnpm trinity:integrate       # Integrate Trinity system

@@ -8,13 +8,12 @@ on:
   workflow_dispatch:
     inputs:
       deployment_target:
-        description: 'Deployment target (render, vercel, surge, coolify, self-host)'
+        description: 'Deployment target (FREE platforms only: render, surge, coolify, self-host)'
         required: true
         default: 'render'
         type: choice
         options:
           - render
-          - vercel
           - surge
           - coolify
           - self-host
@@ -93,7 +92,6 @@ jobs:
         if: steps.analyze.outputs.ASK_GEMINI == 'true'
         env:
           RENDER_API_TOKEN: ${{ secrets.RENDER_API_TOKEN }}
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
           COOLIFY_HOST: ${{ secrets.COOLIFY_HOST }}
           COOLIFY_TOKEN: ${{ secrets.COOLIFY_TOKEN }}
@@ -102,12 +100,8 @@ jobs:
           
           case "$TARGET" in
             render)
-              echo "🚀 Deploying to Render..."
+              echo "🚀 Deploying to Render (FREE tier)..."
               ./scripts/deploy-render.sh production || true
-              ;;
-            vercel)
-              echo "🚀 Deploying to Vercel..."
-              ./scripts/deploy-vercel.sh production || true
               ;;
             surge)
               echo "🚀 Deploying to Surge..."

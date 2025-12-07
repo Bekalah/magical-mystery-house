@@ -78,6 +78,16 @@
 
 ---
 
+# ⊙ Stone Grimoire - stone-grimoire
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/stone-grimoire
 
 Stone Grimoire - Body system with 8 octagram halls and 144 folios, master art principles

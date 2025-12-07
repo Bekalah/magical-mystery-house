@@ -78,6 +78,16 @@
 
 ---
 
+# ⊙ Brain - brain
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/brain
 
 Core generative engine for color science, sound science, and style fusion.

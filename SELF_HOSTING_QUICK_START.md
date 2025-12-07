@@ -3,9 +3,9 @@
 **Cathedral of Circuits - Magnum Opus Version 1.0**  
 **Author: Rebecca Respawn**
 
-## ✅ Migration Complete!
+## ✅ Free Self-Hosting Ready!
 
-Cloudflare dependencies have been removed and self-hosting configurations created.
+Self-hosting configurations created for 100% free deployment.
 
 ## 🚀 Quick Deploy (Choose One)
 
@@ -56,8 +56,7 @@ sudo nginx -c $(pwd)/nginx.conf
 
 ## 📋 What Was Changed
 
-- ✅ **6 wrangler.toml files** → Archived (`.archived` suffix)
-- ✅ **16 package.json files** → Cloudflare deps removed
+- ✅ **All paid service dependencies** → Removed
 - ✅ **New configs created:**
   - `Caddyfile` - Caddy reverse proxy config
   - `nginx.conf` - Nginx reverse proxy config
@@ -73,20 +72,9 @@ All configs are ready to use. Just choose your hosting option:
 - **Nginx**: High performance, flexible
 - **Docker**: Isolated, scalable, production-ready
 
-## 📚 Full Guide
-
-See: `docs/CLOUDFLARE_TO_SELF_HOST_MIGRATION.md`
-
-## 💰 Cost Savings
-
-| Before (Cloudflare) | After (Self-Hosted) |
-|---------------------|---------------------|
-| $53/month | $5-50/month (VPS) |
-| **Savings: $3-48/month** |
-
 ## 🎯 Next Steps
 
-1. ✅ Cloudflare removed
+1. ✅ All paid services removed
 2. ⬜ Choose hosting option (Docker/Caddy/Nginx)
 3. ⬜ Set up VPS/server (if needed)
 4. ⬜ Update DNS to point to your server
@@ -111,7 +99,7 @@ docker compose up -d
 **Need help?**
 - Check logs: `pnpm deploy:logs`
 - Review config files
-- See full guide: `docs/CLOUDFLARE_TO_SELF_HOST_MIGRATION.md`
+- See: [SELF_HOSTING_QUICK_START.md](./SELF_HOSTING_QUICK_START.md)
 
 ---
 

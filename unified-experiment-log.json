@@ -1,0 +1,242 @@
+[
+  {
+    "timestamp": "2025-12-07T05:14:15.021Z",
+    "phase": 0,
+    "type": "phase",
+    "message": "\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:15.021Z",
+    "phase": 0,
+    "type": "phase",
+    "message": "Starting Phase: goldenStandard"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:15.022Z",
+    "phase": 0,
+    "type": "phase",
+    "message": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:15.039Z",
+    "phase": 1,
+    "type": "info",
+    "message": "Applying Golden Standard Alchemy/Hermetica/Neo-Platonic theme..."
+  },
+  {
+    "timestamp": "2025-12-07T05:14:16.642Z",
+    "phase": 1,
+    "type": "success",
+    "message": "✅ Phase goldenStandard completed in 1.62s"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:16.645Z",
+    "phase": 1,
+    "type": "phase",
+    "message": "\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:16.645Z",
+    "phase": 1,
+    "type": "phase",
+    "message": "Starting Phase: workspaceConsolidation"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:16.645Z",
+    "phase": 1,
+    "type": "phase",
+    "message": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:16.646Z",
+    "phase": 2,
+    "type": "info",
+    "message": "Consolidating all workspaces..."
+  },
+  {
+    "timestamp": "2025-12-07T05:14:25.708Z",
+    "phase": 2,
+    "type": "success",
+    "message": "✅ Phase workspaceConsolidation completed in 9.06s"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:25.710Z",
+    "phase": 2,
+    "type": "phase",
+    "message": "\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:25.710Z",
+    "phase": 2,
+    "type": "phase",
+    "message": "Starting Phase: gitlabMigration"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:25.710Z",
+    "phase": 2,
+    "type": "phase",
+    "message": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:25.712Z",
+    "phase": 3,
+    "type": "info",
+    "message": "Preparing GitLab migration..."
+  },
+  {
+    "timestamp": "2025-12-07T05:14:26.464Z",
+    "phase": 3,
+    "type": "success",
+    "message": "✅ Phase gitlabMigration completed in 0.75s"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:26.465Z",
+    "phase": 3,
+    "type": "phase",
+    "message": "\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:26.465Z",
+    "phase": 3,
+    "type": "phase",
+    "message": "Starting Phase: cleanup"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:26.465Z",
+    "phase": 3,
+    "type": "phase",
+    "message": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:26.466Z",
+    "phase": 4,
+    "type": "info",
+    "message": "Cleaning up flattened mess..."
+  },
+  {
+    "timestamp": "2025-12-07T05:14:27.138Z",
+    "phase": 4,
+    "type": "success",
+    "message": "✅ Phase cleanup completed in 0.67s"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:27.140Z",
+    "phase": 4,
+    "type": "phase",
+    "message": "\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:27.140Z",
+    "phase": 4,
+    "type": "phase",
+    "message": "Starting Phase: labeling"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:27.141Z",
+    "phase": 4,
+    "type": "phase",
+    "message": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+  },
+  {
+    "timestamp": "2025-12-07T05:14:27.141Z",
+    "phase": 5,
+    "type": "info",
+    "message": "Applying Liber Arcanae Codex Abyssiae labels..."
+  },
+  {
+    "timestamp": "2025-12-07T05:15:02.926Z",
+    "phase": 5,
+    "type": "success",
+    "message": "✅ Phase labeling completed in 35.78s"
+  },
+  {
+    "timestamp": "2025-12-07T05:15:02.930Z",
+    "phase": 5,
+    "type": "phase",
+    "message": "\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  },
+  {
+    "timestamp": "2025-12-07T05:15:02.930Z",
+    "phase": 5,
+    "type": "phase",
+    "message": "Starting Phase: spiritusAnimusCorpus"
+  },
+  {
+    "timestamp": "2025-12-07T05:15:02.931Z",
+    "phase": 5,
+    "type": "phase",
+    "message": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+  },
+  {
+    "timestamp": "2025-12-07T05:15:02.932Z",
+    "phase": 6,
+    "type": "info",
+    "message": "Integrating Spiritus/Animus/Corpus Trinity system..."
+  },
+  {
+    "timestamp": "2025-12-07T05:15:03.563Z",
+    "phase": 6,
+    "type": "success",
+    "message": "✅ Phase spiritusAnimusCorpus completed in 0.63s"
+  },
+  {
+    "timestamp": "2025-12-07T05:15:03.566Z",
+    "phase": 6,
+    "type": "phase",
+    "message": "\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  },
+  {
+    "timestamp": "2025-12-07T05:15:03.566Z",
+    "phase": 6,
+    "type": "phase",
+    "message": "Starting Phase: verification"
+  },
+  {
+    "timestamp": "2025-12-07T05:15:03.566Z",
+    "phase": 6,
+    "type": "phase",
+    "message": "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
+  },
+  {
+    "timestamp": "2025-12-07T05:15:03.567Z",
+    "phase": 7,
+    "type": "info",
+    "message": "Running verification checks..."
+  },
+  {
+    "timestamp": "2025-12-07T05:15:03.568Z",
+    "phase": 7,
+    "type": "info",
+    "message": "✅ Workspace file found"
+  },
+  {
+    "timestamp": "2025-12-07T05:15:03.568Z",
+    "phase": 7,
+    "type": "info",
+    "message": "✅ GitLab CI file found"
+  },
+  {
+    "timestamp": "2025-12-07T05:15:03.568Z",
+    "phase": 7,
+    "type": "info",
+    "message": "✅ Cleanup archive found"
+  },
+  {
+    "timestamp": "2025-12-07T05:15:03.568Z",
+    "phase": 7,
+    "type": "info",
+    "message": "✅ Trinity integration report found"
+  },
+  {
+    "timestamp": "2025-12-07T05:15:03.569Z",
+    "phase": 7,
+    "type": "success",
+    "message": "✅ Phase verification completed in 0.00s"
+  },
+  {
+    "timestamp": "2025-12-07T05:15:03.574Z",
+    "phase": 7,
+    "type": "success",
+    "message": "Final report generated: /Users/rebeccalemke/cathedral-master-deployment/unified-experiment-report.md"
+  }
+]

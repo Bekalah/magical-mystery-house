@@ -28,6 +28,16 @@
 
 ---
 
+# ⊙ Godot Liber Arcanae - godot-liber-arcanae
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # Liber Arcanae - 22 Major Arcana Game
 
 A full Godot game featuring all 22 Major Arcana characters from the Liber Arcanae system as playable characters.

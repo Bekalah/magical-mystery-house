@@ -10,7 +10,7 @@ This integration connects Google Gemini 3 (Antigravity) to your GitHub repositor
 ## ✨ Features
 
 - **AI-Powered Recommendations**: Gemini analyzes your codebase and provides deployment strategies
-- **Free Platform Support**: Render, Vercel, Surge.sh, Coolify, and Self-Hosted
+- **Free Platform Support**: Render, Surge.sh, Coolify, and Self-Hosted
 - **GitHub Actions Integration**: Automated deployment assistance on push/PR
 - **Context-Aware**: Analyzes changed files to provide relevant recommendations
 - **Fallback Mode**: Works even without API key using intelligent defaults
@@ -33,7 +33,6 @@ In your GitHub repository:
 ```
 GEMINI_API_KEY=your_gemini_api_key_here
 RENDER_API_TOKEN=your_render_token (optional, for Render deployments)
-VERCEL_TOKEN=your_vercel_token (optional, for Vercel deployments)
 SURGE_TOKEN=your_surge_token (optional, for Surge deployments)
 COOLIFY_HOST=your_coolify_host (optional, for Coolify deployments)
 COOLIFY_TOKEN=your_coolify_token (optional, for Coolify deployments)
@@ -44,9 +43,6 @@ COOLIFY_TOKEN=your_coolify_token (optional, for Coolify deployments)
 ```bash
 # Get deployment recommendations for Render
 pnpm deploy:gemini:render
-
-# Get deployment recommendations for Vercel
-pnpm deploy:gemini:vercel
 
 # Get deployment recommendations for Surge
 pnpm deploy:gemini:surge
@@ -99,11 +95,6 @@ The workflow automatically runs on:
 - **Free**: 750 hours/month
 - **Features**: Auto-deploy, HTTPS, Custom domains
 - **Best for**: Web services, APIs, static sites
-
-### Vercel
-- **Free**: 100GB bandwidth/month
-- **Features**: Instant deploy, Edge network, Analytics
-- **Best for**: Frontend apps, Next.js, React
 
 ### Surge.sh
 - **Free**: Unlimited static hosting
@@ -185,7 +176,6 @@ Edit `scripts/gemini-deployment-assistant.mjs` to add more platforms or customiz
 
 - [Google Gemini API Docs](https://ai.google.dev/docs)
 - [Render Documentation](https://render.com/docs)
-- [Vercel Documentation](https://vercel.com/docs)
 - [Surge.sh Documentation](https://surge.sh/help)
 - [Coolify Documentation](https://coolify.io/docs)
 

@@ -28,6 +28,16 @@
 
 ---
 
+# ⊙ Stone Grimoire - stone-grimoire
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # Stone Grimoire
 
 A living archive and creative engine for esoteric knowledge, rituals, and digital grimoire pages. Designed with fantasy and high fashion aesthetics.

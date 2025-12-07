@@ -25,11 +25,6 @@ Google Gemini 3 (Antigravity) is now fully integrated with your GitHub repositor
 - **Status**: ✅ Enhanced with Gemini
 - **Integration**: Gemini recommendations before GitHub Pages deployment
 
-#### Vercel Deployment
-- **File**: `.github/workflows/deploy-vercel.yml`
-- **Status**: ✅ Enhanced with Gemini
-- **Integration**: Gemini recommendations for Vercel deployments
-
 #### Render Deployment (NEW)
 - **File**: `.github/workflows/deploy-render.yml`
 - **Status**: ✅ Created with Gemini
@@ -95,12 +90,13 @@ Go to **Actions** → **Gemini Deployment Assistant** → **Run workflow**
 
 | Platform | Free Tier | Gemini Integration | Workflow |
 |----------|-----------|-------------------|----------|
-| **Render** | 750 hrs/month | ✅ | `deploy-render.yml` |
-| **Vercel** | 100GB bandwidth | ✅ | `deploy-vercel.yml` |
-| **Surge.sh** | Unlimited static | ✅ | `deploy-surge.yml` |
-| **Coolify** | Self-hosted | ✅ | Manual script |
-| **Self-Hosted** | Your server | ✅ | `deploy.yml` |
+| **Render** | 750 hrs/month (FREE) | ✅ | `deploy-render.yml` |
+| **Surge.sh** | Unlimited static (FREE) | ✅ | `deploy-surge.yml` |
+| **Coolify** | Self-hosted (FREE software) | ✅ | Manual script |
+| **Self-Hosted** | Your server (FREE) | ✅ | `deploy.yml` |
 | **GitHub Pages** | Free | ✅ | `deploy.yml` |
+
+**Note**: Only 100% FREE platforms are supported. No paid services, subscriptions, or billing.
 
 ## 📊 Integration Architecture
 
@@ -108,7 +104,6 @@ Go to **Actions** → **Gemini Deployment Assistant** → **Run workflow**
 GitHub Repository
 ├── .github/workflows/
 │   ├── deploy.yml (✅ Gemini integrated)
-│   ├── deploy-vercel.yml (✅ Gemini integrated)
 │   ├── deploy-render.yml (✅ Gemini integrated)
 │   ├── deploy-surge.yml (✅ Gemini integrated)
 │   └── gemini-deployment-assistant.yml (✅ Standalone)
@@ -128,13 +123,14 @@ GitHub Repository
 ### Required GitHub Secrets
 
 ```bash
-GEMINI_API_KEY          # Required for AI recommendations
-RENDER_API_TOKEN        # Optional, for Render deployments
-VERCEL_TOKEN            # Optional, for Vercel deployments
-SURGE_TOKEN             # Optional, for Surge deployments
-COOLIFY_HOST            # Optional, for Coolify deployments
-COOLIFY_TOKEN           # Optional, for Coolify deployments
+GEMINI_API_KEY          # Required for AI recommendations (FREE tier available)
+RENDER_API_TOKEN        # Optional, for Render deployments (FREE tier)
+SURGE_TOKEN             # Optional, for Surge deployments (FREE)
+COOLIFY_HOST            # Optional, for Coolify deployments (FREE software)
+COOLIFY_TOKEN           # Optional, for Coolify deployments (FREE software)
 ```
+
+**IMPORTANT**: All platforms are FREE-ONLY. No paid services or billing.
 
 ### Environment Variables (Local)
 

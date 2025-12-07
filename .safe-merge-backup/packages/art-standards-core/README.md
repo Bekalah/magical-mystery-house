@@ -78,6 +78,16 @@
 
 ---
 
+# ⊙ Art Standards - art-standards-core
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # @cathedral/art-standards-core
 
 **Art Quality Standards & Certification**

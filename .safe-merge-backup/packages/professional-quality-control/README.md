@@ -78,6 +78,16 @@
 
 ---
 
+# ⊙ Professional Quality Control - professional-quality-control
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # professional-quality-control
 
 No description available

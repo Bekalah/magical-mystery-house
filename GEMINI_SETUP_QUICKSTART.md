@@ -26,12 +26,13 @@ pnpm deploy:gemini:render
 
 ## 🎯 That's It!
 
-Now Gemini will help you deploy for free on:
-- ✅ **Render** (750 free hours/month)
-- ✅ **Vercel** (100GB free bandwidth/month)  
-- ✅ **Surge.sh** (Unlimited static hosting)
-- ✅ **Coolify** (Self-hosted, free)
-- ✅ **Self-Hosted** (Your own server)
+Now Gemini will help you deploy for FREE ONLY on:
+- ✅ **Render** (750 free hours/month - 100% FREE)
+- ✅ **Surge.sh** (Unlimited static hosting - 100% FREE)
+- ✅ **Coolify** (Self-hosted, free software)
+- ✅ **Self-Hosted** (Your own server - 100% FREE)
+
+**IMPORTANT**: Only FREE platforms. No charges or billing.
 
 ## 📖 Full Documentation
 
