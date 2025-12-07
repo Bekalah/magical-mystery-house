@@ -29,6 +29,16 @@ pnpm test         # Run all tests
 
 ### Deployment Options
 
+**🤖 AI-Powered Deployment (NEW!):**
+```bash
+# Get Gemini AI assistance for deployment
+pnpm deploy:gemini:render    # Render (750 free hours/month)
+pnpm deploy:gemini:vercel    # Vercel (100GB free bandwidth)
+pnpm deploy:gemini:surge     # Surge.sh (Unlimited static)
+pnpm deploy:gemini:coolify   # Coolify (Self-hosted)
+pnpm deploy:gemini:self-host  # Self-hosted
+```
+
 **Free Hosting (Recommended):**
 ```bash
 # Surge.sh (Static hosting - Free)
@@ -103,6 +113,8 @@ See: [SELF_HOSTING_QUICK_START.md](./SELF_HOSTING_QUICK_START.md)
 
 ## 📚 Documentation
 
+- [GEMINI_SETUP_QUICKSTART.md](./GEMINI_SETUP_QUICKSTART.md) - 🤖 **NEW!** Gemini AI Deployment Assistant setup
+- [docs/GEMINI_DEPLOYMENT_SETUP.md](./docs/GEMINI_DEPLOYMENT_SETUP.md) - Complete Gemini integration guide
 - [SELF_HOSTING_QUICK_START.md](./SELF_HOSTING_QUICK_START.md) - Self-hosting guide
 - [CONTRIBUTING.md](./CONTRIBUTING.md) - Contribution guidelines
 - [docs/CLOUDFLARE_TO_SELF_HOST_MIGRATION.md](./docs/CLOUDFLARE_TO_SELF_HOST_MIGRATION.md) - Migration guide

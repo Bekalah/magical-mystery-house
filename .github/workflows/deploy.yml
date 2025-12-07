@@ -169,6 +169,21 @@ jobs:
       run: pnpm run build
       continue-on-error: false
     
+    - name: 🤖 Get Gemini deployment recommendations
+      if: env.GEMINI_API_KEY != ''
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      run: |
+        echo "🤖 Getting AI-powered deployment recommendations..."
+        node scripts/gemini-deployment-assistant.mjs \
+          --target self-host \
+          --output gemini-strategy.json || true
+        if [ -f gemini-strategy.json ]; then
+          echo "## 🤖 Gemini Deployment Recommendations" >> $GITHUB_STEP_SUMMARY
+          cat gemini-strategy.json | jq -r '.recommendations[]? // empty' >> $GITHUB_STEP_SUMMARY || true
+        fi
+      continue-on-error: true
+    
     - name: Copy docs to dist
       run: |
         if [ -d "docs" ]; then

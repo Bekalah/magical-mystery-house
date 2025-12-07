@@ -145,7 +145,15 @@
     "deploy:docker": "docker compose up -d",
     "deploy:self-host": "pnpm build && docker compose up -d",
     "deploy:stop": "docker compose down",
-    "deploy:logs": "docker compose logs -f"
+    "deploy:logs": "docker compose logs -f",
+    "deploy:gemini": "node scripts/gemini-deployment-assistant.mjs",
+    "deploy:gemini:render": "node scripts/gemini-deployment-assistant.mjs --target render",
+    "deploy:gemini:vercel": "node scripts/gemini-deployment-assistant.mjs --target vercel",
+    "deploy:gemini:surge": "node scripts/gemini-deployment-assistant.mjs --target surge",
+    "deploy:gemini:coolify": "node scripts/gemini-deployment-assistant.mjs --target coolify",
+    "deploy:gemini:self-host": "node scripts/gemini-deployment-assistant.mjs --target self-host",
+    "sync:github-gitlab": "node scripts/sync-github-gitlab-gemini.mjs",
+    "sync:gemini": "node scripts/sync-github-gitlab-gemini.mjs"
   },
   "devDependencies": {
     "@types/node": "^20.19.25",

@@ -38,7 +38,6 @@
     "@cathedral/shared": "workspace:*",
     "canvas": "^2.11.2",
     "typescript": "^5.3.0",
-    "@cathedral/master-art-principles": "workspace:*",
     "@cathedral/codex-library": "workspace:*",
     "@cathedral/circuitum99-core": "workspace:*",
     "@cathedral/circuitum99-arcanae-cyoa": "workspace:*",

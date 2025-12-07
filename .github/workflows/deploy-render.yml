@@ -1,9 +1,20 @@
-name: Deploy to Vercel
+name: Deploy to Render
 
 on:
   push:
     branches: [ main, master ]
   workflow_dispatch:
+    inputs:
+      service:
+        description: 'Render service to deploy'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - cataract
+          - ateliers
+          - logo
 
 jobs:
   deploy:
@@ -11,47 +22,55 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 10.23.0
           run_install: false
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '25.2'
           cache: 'pnpm'
+      
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+      
       - name: Build project
         run: pnpm run build
+      
       - name: 🤖 Get Gemini deployment recommendations
         if: env.GEMINI_API_KEY != ''
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          echo "🤖 Getting AI-powered Vercel deployment recommendations..."
+          echo "🤖 Getting AI-powered Render deployment recommendations..."
           node scripts/gemini-deployment-assistant.mjs \
-            --target vercel \
+            --target render \
             --output gemini-strategy.json || true
           if [ -f gemini-strategy.json ]; then
-            echo "## 🤖 Gemini Vercel Deployment Recommendations" >> $GITHUB_STEP_SUMMARY
+            echo "## 🤖 Gemini Render Deployment Recommendations" >> $GITHUB_STEP_SUMMARY
             cat gemini-strategy.json | jq -r '.recommendations[]? // empty' >> $GITHUB_STEP_SUMMARY || true
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "### 📝 Deployment Steps" >> $GITHUB_STEP_SUMMARY
             cat gemini-strategy.json | jq -r '.steps[]? // empty' >> $GITHUB_STEP_SUMMARY || true
           fi
         continue-on-error: true
-      - name: Deploy to Vercel
-        if: ${{ secrets.VERCEL_TOKEN != '' }}
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: '--prod'
-          working-directory: ./
-      - name: Vercel deployment skipped
-        if: ${{ secrets.VERCEL_TOKEN == '' }}
-        run: echo "⚠️  VERCEL_TOKEN not set - deployment skipped. Set VERCEL_TOKEN, VERCEL_ORG_ID, and VERCEL_PROJECT_ID secrets to enable Vercel deployment."
+      
+      - name: Deploy to Render
+        if: ${{ secrets.RENDER_API_TOKEN != '' }}
+        env:
+          RENDER_API_TOKEN: ${{ secrets.RENDER_API_TOKEN }}
+        run: |
+          echo "🚀 Deploying to Render..."
+          ./scripts/deploy-render.sh production || echo "⚠️  Render deployment script not found or failed"
+        continue-on-error: true
+      
+      - name: Render deployment skipped
+        if: ${{ secrets.RENDER_API_TOKEN == '' }}
+        run: |
+          echo "⚠️  RENDER_API_TOKEN not set - deployment skipped."
+          echo "Set RENDER_API_TOKEN and service IDs in GitHub Secrets to enable Render deployment."
 

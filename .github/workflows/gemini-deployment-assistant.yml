@@ -1,0 +1,133 @@
+name: 🤖 Gemini Deployment Assistant
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+    inputs:
+      deployment_target:
+        description: 'Deployment target (render, vercel, surge, coolify, self-host)'
+        required: true
+        default: 'render'
+        type: choice
+        options:
+          - render
+          - vercel
+          - surge
+          - coolify
+          - self-host
+      ask_gemini:
+        description: 'Ask Gemini for deployment help'
+        required: false
+        default: true
+        type: boolean
+
+jobs:
+  gemini-deployment-assistant:
+    name: 🤖 Gemini Deployment Assistant
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 📦 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: 📦 Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10.23.0
+
+      - name: 📦 Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: 🔍 Analyze deployment context
+        id: analyze
+        run: |
+          echo "DEPLOYMENT_TARGET=${{ github.event.inputs.deployment_target || 'render' }}" >> $GITHUB_OUTPUT
+          echo "ASK_GEMINI=${{ github.event.inputs.ask_gemini || 'true' }}" >> $GITHUB_OUTPUT
+          
+          # Detect what changed
+          if [ "${{ github.event_name }}" = "push" ]; then
+            CHANGED_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} || echo "")
+            echo "CHANGED_FILES<<EOF" >> $GITHUB_OUTPUT
+            echo "$CHANGED_FILES" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 🤖 Query Gemini for deployment strategy
+        if: steps.analyze.outputs.ASK_GEMINI == 'true'
+        id: gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          node scripts/gemini-deployment-assistant.mjs \
+            --target "${{ steps.analyze.outputs.DEPLOYMENT_TARGET }}" \
+            --context "${{ steps.analyze.outputs.CHANGED_FILES }}" \
+            --output strategy.json
+
+      - name: 📋 Display Gemini recommendations
+        if: steps.analyze.outputs.ASK_GEMINI == 'true'
+        run: |
+          if [ -f strategy.json ]; then
+            echo "## 🤖 Gemini Deployment Recommendations" >> $GITHUB_STEP_SUMMARY
+            cat strategy.json | jq -r '.recommendations[]' >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### 📝 Deployment Steps" >> $GITHUB_STEP_SUMMARY
+            cat strategy.json | jq -r '.steps[]' >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: 🚀 Execute deployment (if recommended)
+        if: steps.analyze.outputs.ASK_GEMINI == 'true'
+        env:
+          RENDER_API_TOKEN: ${{ secrets.RENDER_API_TOKEN }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
+          COOLIFY_HOST: ${{ secrets.COOLIFY_HOST }}
+          COOLIFY_TOKEN: ${{ secrets.COOLIFY_TOKEN }}
+        run: |
+          TARGET="${{ steps.analyze.outputs.DEPLOYMENT_TARGET }}"
+          
+          case "$TARGET" in
+            render)
+              echo "🚀 Deploying to Render..."
+              ./scripts/deploy-render.sh production || true
+              ;;
+            vercel)
+              echo "🚀 Deploying to Vercel..."
+              ./scripts/deploy-vercel.sh production || true
+              ;;
+            surge)
+              echo "🚀 Deploying to Surge..."
+              pnpm deploy:surge || true
+              ;;
+            coolify)
+              echo "🚀 Deploying to Coolify..."
+              ./scripts/deploy-coolify.sh production || true
+              ;;
+            self-host)
+              echo "🚀 Preparing self-host deployment..."
+              pnpm build || true
+              ;;
+          esac
+
+      - name: ✅ Create deployment summary
+        run: |
+          echo "## ✅ Deployment Assistant Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Target**: ${{ steps.analyze.outputs.DEPLOYMENT_TARGET }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Gemini Assisted**: ${{ steps.analyze.outputs.ASK_GEMINI }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status**: Completed" >> $GITHUB_STEP_SUMMARY
+
