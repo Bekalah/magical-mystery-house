@@ -1,5 +1,5 @@
 {
-  "name": "@cathedral-real/liber-arcanae-tools",
+  "name": "@cathedral/liber-arcanae-tools",
   "version": "1.0.0",
   "description": "Liber Arcanae Tools - Professional Creative Canvas for Circuitum 99",
   "main": "src/index.ts",
