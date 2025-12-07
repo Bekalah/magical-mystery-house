@@ -1,12 +1,11 @@
 {
-  "name": "codex-144-99-core",
+  "name": "@cathedral/codex-144-99-core",
   "version": "1.0.0",
   "license": "CC0-1.0",
   "description": "Codex 144 99 - Part of the Cathedral of Circuits mystical ecosystem",
   "main": "src/index.ts",
   "types": "src/index.ts",
   "dependencies": {
-    "codex-144-99-core": "workspace:*",
     "typescript": "^5.6.2",
     "tsx": "^4.19.1",
     "eslint": "^9.11.1",

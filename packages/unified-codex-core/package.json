@@ -27,7 +27,7 @@
     "validate:ownership": "node scripts/validate-ownership.js"
   },
   "dependencies": {
-    "codex-144-99-core": "workspace:*",
+    "@cathedral/codex-144-99-core": "workspace:*",
     "@cathedral/stone-grimoire-core": "workspace:*",
     "@cathedral/mystery-house-core": "workspace:*",
     "@cathedral/liber-arcanae-core": "workspace:*",

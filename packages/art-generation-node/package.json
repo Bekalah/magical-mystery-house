@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@cathedral/shared": "workspace:*",
-    "@cathedral/cathedral-game-engine": "workspace:*",
+    "@cathedral/game-engine": "workspace:*",
     "canvas": "^2.11.2",
     "d3": "^7.8.5",
     "ml-matrix": "^6.10.4",
@@ -50,7 +50,7 @@
     "@cathedral/liber-arcanae-core": "workspace:*",
     "@cathedral/liber-arcanae-tools": "workspace:*",
     "@cathedral/codex-144-99": "workspace:*",
-    "codex-144-99-core": "workspace:*"
+    "@cathedral/codex-144-99-core": "workspace:*"
   },
   "devDependencies": {
     "@types/d3": "^7.4.0",

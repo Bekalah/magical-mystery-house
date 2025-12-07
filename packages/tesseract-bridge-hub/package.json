@@ -33,7 +33,7 @@
   "dependencies": {
     "@cathedral/tesseract-bridge-core": "workspace:*",
     "@cathedral/liber-arcanae-core": "workspace:*",
-    "codex-144-99-core": "workspace:*",
+    "@cathedral/codex-144-99-core": "workspace:*",
     "@cathedral/circuitum99-core": "workspace:*",
     "@cathedral/stone-grimoire-core": "workspace:*",
     "@cathedral/mystery-house-core": "workspace:*",
