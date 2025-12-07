@@ -39,7 +39,7 @@
     "@cathedral/liber-arcanae-core": "workspace:*",
     "@cathedral/liber-arcanae-tools": "workspace:*",
     "@cathedral/codex-144-99": "workspace:*",
-    "@cathedral/codex-144-99-core": "workspace:*"
+    "codex-144-99-core": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.6.2",

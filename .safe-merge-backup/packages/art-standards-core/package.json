@@ -10,7 +10,7 @@
     "test": "echo \"No tests yet\""
   },
   "dependencies": {
-    "@cathedral/sacred-mathematics-core": "workspace:*",
+    "sacred-mathematics-core": "workspace:*",
     "typescript": "^5.0.0"
   },
   "devDependencies": {},

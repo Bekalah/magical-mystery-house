@@ -39,7 +39,6 @@
     "typescript": "^5.6.2",
     "@cathedral/codex-library": "workspace:*",
     "@cathedral/circuitum99-core": "workspace:*",
-    "@cathedral/circuitum99-arcanae-cyoa": "workspace:*",
     "tsx": "^4.19.1",
     "eslint": "^9.11.1",
     "prettier": "^3.3.3",

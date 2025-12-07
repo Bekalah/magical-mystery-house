@@ -42,7 +42,6 @@
     "@cathedral/codex-144-99": "workspace:*",
     "@cathedral/master-art-principles": "workspace:*",
     "typescript": "^5.6.3",
-    "@cathedral/stone-grimoire": "workspace:*",
     "@cathedral/stone-grimoire-core": "workspace:*",
     "@cathedral/stone-grimoire-library-engine": "workspace:*"
   },

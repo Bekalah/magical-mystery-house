@@ -10,11 +10,11 @@
     "test": "echo \"No tests yet\""
   },
   "dependencies": {
-    "@cathedral/codex-144-99-core": "workspace:*",
+    "codex-144-99-core": "workspace:*",
     "@cathedral/stone-grimoire-core": "workspace:*",
     "@cathedral/mystery-house-core": "workspace:*",
     "@cathedral/liber-arcanae-core": "workspace:*",
-    "@cathedral/sacred-mathematics-core": "workspace:*",
+    "sacred-mathematics-core": "workspace:*",
     "@cathedral/music-engine-core": "workspace:*",
     "@cathedral/art-engine-core": "workspace:*",
     "@cathedral/science-engine-core": "workspace:*",

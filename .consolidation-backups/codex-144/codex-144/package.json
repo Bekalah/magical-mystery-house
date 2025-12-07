@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@cathedral/codex-144-99": "workspace:*",
-    "@cathedral/codex-144-99-core": "workspace:*"
+    "codex-144-99-core": "workspace:*"
   },
   "devDependencies": {},
   "consolidated": true,

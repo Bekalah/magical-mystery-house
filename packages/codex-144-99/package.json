@@ -75,7 +75,7 @@
     "prettier": "^3.3.3",
     "rimraf": "^5.0.10",
     "@cathedral/codex-144-99": "workspace:*",
-    "@cathedral/codex-144-99-core": "workspace:*"
+    "codex-144-99-core": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.17.0",

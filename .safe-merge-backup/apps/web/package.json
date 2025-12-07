@@ -16,7 +16,7 @@
     "three": "^0.160.0",
     "@react-three/fiber": "^8.15.0",
     "@react-three/drei": "^9.88.0",
-    "@cathedral/codex-144-99-core": "workspace:*",
+    "codex-144-99-core": "workspace:*",
     "@cathedral/unified-codex-core": "workspace:*",
     "@cathedral/stone-grimoire-core": "workspace:*",
     "@cathedral/mystery-house-core": "workspace:*",

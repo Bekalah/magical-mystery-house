@@ -27,7 +27,7 @@
     "validate:ownership": "node scripts/validate-ownership.js"
   },
   "dependencies": {
-    "@cathedral/codex-144-99-core": "workspace:*",
+    "codex-144-99-core": "workspace:*",
     "@cathedral/sacred-mathematics-core": "workspace:*",
     "typescript": "^5.0.0",
     "@cathedral/circuitum99-core": "workspace:*",

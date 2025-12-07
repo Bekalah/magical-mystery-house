@@ -48,7 +48,7 @@
     "@cathedral/stone-grimoire-library-engine": "workspace:*",
     "@cathedral/liber-arcanae-core": "workspace:*",
     "@cathedral/liber-arcanae-tools": "workspace:*",
-    "@cathedral/codex-144-99-core": "workspace:*"
+    "codex-144-99-core": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
