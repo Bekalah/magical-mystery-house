@@ -1,0 +1,30 @@
+{
+  "healthCheck": {
+    "endpoint": "/health",
+    "interval": 30000,
+    "timeout": 5000
+  },
+  "metrics": {
+    "enabled": true,
+    "endpoint": "/metrics",
+    "collectionInterval": 60000
+  },
+  "logging": {
+    "level": "info",
+    "format": "json",
+    "destinations": [
+      "console",
+      "file"
+    ]
+  },
+  "alerts": {
+    "errorRate": {
+      "threshold": 0.05,
+      "window": 300000
+    },
+    "responseTime": {
+      "threshold": 1000,
+      "window": 300000
+    }
+  }
+}

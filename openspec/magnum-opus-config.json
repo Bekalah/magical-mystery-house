@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "theme": "magnum-opus-master",
+  "quality": "gold-standard-A-plus",
+  "control": {
+    "turbo": true,
+    "openspec": true,
+    "monorepo": true
+  },
+  "palette": {
+    "type": "hermetic-enochian-alchemical",
+    "colors": {
+      "nigredo": "#1a1a1a",
+      "albedo": "#ffffff",
+      "citrinitas": "#ffd700",
+      "rubedo": "#dc143c",
+      "earth": "#8b4513",
+      "water": "#1e90ff",
+      "air": "#87ceeb",
+      "fire": "#ff4500",
+      "gold": "#ffd700",
+      "silver": "#c0c0c0",
+      "copper": "#b87333",
+      "iron": "#4a4a4a",
+      "mercury": "#e6e6fa",
+      "lead": "#2f4f4f",
+      "tin": "#c0c0c0",
+      "elemental": {
+        "fire": "#ff0000",
+        "water": "#0000ff",
+        "air": "#ffff00",
+        "earth": "#008000"
+      },
+      "planetary": {
+        "saturn": "#4b0082",
+        "jupiter": "#ff8c00",
+        "mars": "#dc143c",
+        "sun": "#ffd700",
+        "venus": "#ff69b4",
+        "mercury": "#00ced1",
+        "moon": "#c0c0c0"
+      },
+      "aethyrs": {
+        "lil": "#9b59b6",
+        "arn": "#3498db",
+        "zom": "#2ecc71",
+        "paz": "#f39c12",
+        "lit": "#e74c3c"
+      },
+      "primary": "#ffd700",
+      "secondary": "#dc143c",
+      "accent": "#ffd700",
+      "background": "#0f0f0f",
+      "surface": "#1a1a1a",
+      "text": "#e8e6e3",
+      "textMuted": "#c9a961"
+    },
+    "accuracy": "artistic-scientific-creative-research-based"
+  },
+  "integration": {
+    "repos": "all-connected",
+    "branches": "unified",
+    "files": "gold-standard"
+  }
+}

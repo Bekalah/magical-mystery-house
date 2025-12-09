@@ -1,0 +1,43 @@
+{
+  "versioning": {
+    "strategy": "semantic",
+    "format": "MAJOR.MINOR.PATCH",
+    "prerelease": {
+      "enabled": true,
+      "tags": [
+        "alpha",
+        "beta",
+        "rc"
+      ]
+    }
+  },
+  "changelog": {
+    "enabled": true,
+    "format": "keepachangelog",
+    "categories": [
+      "Added",
+      "Changed",
+      "Deprecated",
+      "Removed",
+      "Fixed",
+      "Security"
+    ]
+  },
+  "release": {
+    "branches": {
+      "main": "production",
+      "develop": "development",
+      "release/*": "staging"
+    },
+    "tags": {
+      "pattern": "v*",
+      "prefix": "v"
+    }
+  },
+  "automation": {
+    "versionBump": true,
+    "changelogGeneration": true,
+    "gitTagging": true,
+    "npmPublish": false
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "optimization": {
+    "codeSplitting": {
+      "enabled": true,
+      "strategy": "route-based",
+      "chunkSize": 244000
+    },
+    "treeShaking": {
+      "enabled": true,
+      "sideEffects": false
+    },
+    "minification": {
+      "enabled": true,
+      "terserOptions": {
+        "compress": {
+          "drop_console": true,
+          "drop_debugger": true,
+          "pure_funcs": [
+            "console.log"
+          ]
+        }
+      }
+    },
+    "imageOptimization": {
+      "enabled": true,
+      "formats": [
+        "webp",
+        "avif"
+      ],
+      "quality": 85,
+      "lazyLoading": true
+    },
+    "caching": {
+      "enabled": true,
+      "strategy": "stale-while-revalidate",
+      "maxAge": 31536000
+    }
+  },
+  "metrics": {
+    "coreWebVitals": true,
+    "lighthouse": true,
+    "bundleSize": true
+  }
+}

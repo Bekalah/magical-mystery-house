@@ -21,5 +21,21 @@
     "@vitejs/plugin-react": "^4.0.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
+  },
+  "alchemical": {
+    "name": "Magical Mystery House",
+    "symbol": "⊙",
+    "label": "⊙ Magical Mystery House (magical-mystery-house)",
+    "magnumOpus": true,
+    "hermetic": true,
+    "enochian": true,
+    "goldStandard": true
+  },
+  "cathedral": {
+    "quality": "Gold Standard A+",
+    "theme": "magnum-opus-master",
+    "palette": "hermetic-enochian-alchemical",
+    "accuracy": "artistic-scientific-creative-research-based",
+    "control": "turbo-openspec"
   }
 }

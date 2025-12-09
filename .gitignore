@@ -12,3 +12,11 @@ __pycache__/
 
 # keep forbidden masters out of the repo
 site/assets/art/black-madonna-master.png
+
+# Security
+.env.local
+.env.production
+*.pem
+*.key
+secrets/
+*.secret

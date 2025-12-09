@@ -1,3 +1,43 @@
+# ⊙ Tesseract - tesseract
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Tesseract - tesseract
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Tesseract - tesseract
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
+# ⊙ Tesseract - tesseract
+
+**Alchemical Correspondence:**
+- Element: N/A
+- Planet: N/A
+- Metal: N/A
+- Symbol: ⊙
+
+---
+
 # Tesseract — Chariot Module (Codex 144:99)
 - Data-driven 3D study object: **no autoplay, stepwise rotations**, ND-safe.
 - Skins for Tarot study (RWS/Thoth/Marseilles + Liber Arcanae), palette only.
